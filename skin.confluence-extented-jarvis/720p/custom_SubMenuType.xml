@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog" id="2116">
+	<defaultcontrol always="true">450</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<left>0</left>
+		<top>0</top>
+	</coordinates>
+	<controls>
+		<control type="group">
+			<animation effect="slide" start="400,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="400,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
+			<control type="image">
+				<left>400r</left>
+				<top>0</top>
+				<width>405</width>
+				<height>720</height>
+				<texture border="15,0,0,0" flipx="true">MediaBladeSub.png</texture>
+			</control>
+			<control type="button">
+				<description>Close Window button</description>
+				<left>380r</left>
+				<top>0</top>
+				<width>64</width>
+				<height>32</height>
+				<onclick>PreviousMenu</onclick>
+				<texturefocus>DialogCloseButton-focus.png</texturefocus>
+				<texturenofocus>DialogCloseButton.png</texturenofocus>
+				<onleft>450</onleft>
+				<onright>450</onright>
+				<onup>450</onup>
+				<ondown>450</ondown>
+				<visible>system.getbool(input.enablemouse)</visible>
+			</control>
+			<control type="label">
+				<left>380r</left>
+				<top>35</top>
+				<width>360</width>
+				<height>40</height>
+				<font>font13_title</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>blue</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>$LOCALIZE[89100]</label>
+			</control>
+			<control type="list" id="450">
+				<left>390r</left>
+				<top>95</top>
+				<width>440</width>
+				<height>550</height>
+				<onup>450</onup>
+				<onleft>Dialog.Close(2116)</onleft>
+				<onright>60</onright>
+				<ondown>450</ondown>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<itemlayout height="45">
+					<control type="image">
+						<left>5</left>
+						<top>0</top>
+						<width>360</width>
+						<height>40</height>
+						<texture border="5">button-nofocus.png</texture>
+					</control>
+					<control type="label">
+						<left>15</left>
+						<top>0</top>
+						<width>340</width>
+						<height>40</height>
+						<font>font12_title</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<selectedcolor>selected</selectedcolor>
+						<info>ListItem.Label</info>
+					</control>
+				</itemlayout>
+				<focusedlayout height="45">
+					<control type="image">
+						<left>5</left>
+						<top>0</top>
+						<width>360</width>
+						<height>40</height>
+						<visible>!Control.HasFocus(450)</visible>
+						<texture border="5">button-nofocus.png</texture>
+					</control>
+					<control type="image">
+						<left>5</left>
+						<top>0</top>
+						<width>360</width>
+						<height>40</height>
+						<visible>Control.HasFocus(450)</visible>
+						<texture border="5">button-focus2.png</texture>
+					</control>
+					<control type="label">
+						<left>15</left>
+						<top>0</top>
+						<width>340</width>
+						<height>40</height>
+						<font>font12_title</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<selectedcolor>selected</selectedcolor>
+						<info>ListItem.Label</info>
+					</control>
+				</focusedlayout>
+				<content>
+					<item>
+						<description>Clear Setting</description>
+						<label>$LOCALIZE[89013]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					<item>
+						<description>Submenu set 01</description>
+						<label>$VAR[UsersSubMenu01Name]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu01)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>!IsEmpty(Skin.String(SubMenu01.Label))</visible>
+					</item>
+					<item>
+						<description>Submenu set 02</description>
+						<label>$VAR[UsersSubMenu02Name]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu02)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>!IsEmpty(Skin.String(SubMenu02.Label))</visible>
+					</item>
+					<item>
+						<description>Submenu set 03</description>
+						<label>$VAR[UsersSubMenu03Name]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu03)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>!IsEmpty(Skin.String(SubMenu03.Label))</visible>
+					</item>
+					<item>
+						<description>Submenu set 04</description>
+						<label>$VAR[UsersSubMenu04Name]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu04)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>!IsEmpty(Skin.String(SubMenu04.Label))</visible>
+					</item>
+					<item>
+						<description>Submenu set 05</description>
+						<label>$VAR[UsersSubMenu05Name]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu05)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>!IsEmpty(Skin.String(SubMenu05.Label))</visible>
+					</item>
+					<item>
+						<description>Submenu set 06</description>
+						<label>$VAR[UsersSubMenu06Name]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu06)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>!IsEmpty(Skin.String(SubMenu06.Label))</visible>
+					</item>
+					<item>
+						<description>Submenu set 07</description>
+						<label>$VAR[UsersSubMenu07Name]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu07)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>!IsEmpty(Skin.String(SubMenu07.Label))</visible>
+					</item>
+					<item>
+						<description>Submenu set 08</description>
+						<label>$VAR[UsersSubMenu08Name]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu08)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>!IsEmpty(Skin.String(SubMenu08.Label))</visible>
+					</item>
+					<item>
+						<description>Submenu set 09</description>
+						<label>$VAR[UsersSubMenu09Name]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu09)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>!IsEmpty(Skin.String(SubMenu09.Label))</visible>
+					</item>
+					<item>
+						<description>Submenu set 10</description>
+						<label>$VAR[UsersSubMenu10Name]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu10)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>!IsEmpty(Skin.String(SubMenu10.Label))</visible>
+					</item>
+					<item>
+						<description>Submenu set 11</description>
+						<label>$VAR[UsersSubMenu11Name]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu11)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>!IsEmpty(Skin.String(SubMenu11.Label))</visible>
+					</item>
+					<item>
+						<description>Submenu set 12</description>
+						<label>$VAR[UsersSubMenu12Name]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu12)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>!IsEmpty(Skin.String(SubMenu12.Label))</visible>
+					</item>
+					<item>
+						<description>Submenu set 13</description>
+						<label>$VAR[UsersSubMenu13Name]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu13)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>!IsEmpty(Skin.String(SubMenu13.Label))</visible>
+					</item>
+					<item>
+						<description>Submenu set 14</description>
+						<label>$VAR[UsersSubMenu14Name]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu14)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>!IsEmpty(Skin.String(SubMenu14.Label))</visible>
+					</item>
+					<item>
+						<description>Submenu set 15</description>
+						<label>$VAR[UsersSubMenu15Name]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu15)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>!IsEmpty(Skin.String(SubMenu16.Label))</visible>
+					</item>
+					<item>
+						<description>Submenu set 16</description>
+						<label>$VAR[UsersSubMenu16Name]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu16)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>!IsEmpty(Skin.String(SubMenu16.Label))</visible>
+					</item>
+					<item>
+						<description>Submenu set 17</description>
+						<label>$VAR[UsersSubMenu17Name]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu17)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>!IsEmpty(Skin.String(SubMenu17.Label))</visible>
+					</item>
+					<item>
+						<description>Submenu set 18</description>
+						<label>$VAR[UsersSubMenu18Name]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu18)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>!IsEmpty(Skin.String(SubMenu18.Label))</visible>
+					</item>
+					<item>
+						<description>Submenu set 19</description>
+						<label>$VAR[UsersSubMenu19Name]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu19)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>!IsEmpty(Skin.String(SubMenu19.Label))</visible>
+					</item>
+					<item>
+						<description>Submenu set 20</description>
+						<label>$VAR[UsersSubMenu20Name]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu20)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>!IsEmpty(Skin.String(SubMenu20.Label))</visible>
+					</item>
+				</content>
+			</control>
+			<control type="scrollbar" id="60">
+				<left>1253</left>
+				<top>95</top>
+				<width>25</width>
+				<height>550</height>
+				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>ScrollBarNib.png</textureslidernib>
+				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+				<onleft>450</onleft>
+				<onright>450</onright>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+				<visible>Control.IsVisible(450)</visible>
+			</control>
+		</control>
+	</controls>
+</window>

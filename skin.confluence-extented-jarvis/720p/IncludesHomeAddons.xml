@@ -1,0 +1,2299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
+	<include name="HomeAddonsDisplay">
+		<control type="group" id="9002">
+            <depth>DepthMenu</depth>
+			<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+			<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+			<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+			<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+			<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+            <!-- AddonSet01 -->
+			<control type="list" id="700">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(700).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(700).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(700).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(700).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(700).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(700).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet01)</visible>
+				<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>700</onleft>
+				<onright>700</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonSet01</include>
+				</content>
+			</control>
+            <!-- AddonSet01p -->
+			<control type="list" id="700">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(700).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(700).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(700).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(700).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(700).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(700).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet01)</visible>
+				<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>700</onleft>
+				<onright>700</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>AddonsMediaPlayingLayout</include>
+				<content>
+					<include>HomeAddonSet01</include>
+				</content>
+			</control>
+            <!-- AddonSet02 -->
+			<control type="list" id="701">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(701).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(701).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(701).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(701).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(701).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(701).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet02)</visible>
+				<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>701</onleft>
+				<onright>701</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonSet02</include>
+				</content>
+			</control>
+            <!-- AddonSet02p -->
+			<control type="list" id="701">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(701).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(701).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(701).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(701).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(701).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(701).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet02)</visible>
+				<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>701</onleft>
+				<onright>701</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>AddonsMediaPlayingLayout</include>
+				<content>
+					<include>HomeAddonSet02</include>
+				</content>
+			</control>            
+            <!-- AddonSet03 -->
+			<control type="list" id="702">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(702).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(702).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(702).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(702).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(702).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(702).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet03)</visible>
+				<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>702</onleft>
+				<onright>702</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonSet03</include>
+				</content>
+			</control>
+            <!-- AddonSet03p -->
+			<control type="list" id="702">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(702).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(702).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(702).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(702).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(702).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(702).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet03)</visible>
+				<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>702</onleft>
+				<onright>702</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>AddonsMediaPlayingLayout</include>
+				<content>
+					<include>HomeAddonSet03</include>
+				</content>
+			</control>
+            <!-- AddonSet04 -->
+			<control type="list" id="703">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(703).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(703).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(703).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(703).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(703).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(703).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet04)</visible>
+				<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>703</onleft>
+				<onright>703</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonSet04</include>
+				</content>
+			</control>
+            <!-- AddonSet04p -->
+			<control type="list" id="703">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(703).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(703).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(703).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(703).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(703).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(703).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet04)</visible>
+				<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>703</onleft>
+				<onright>703</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>AddonsMediaPlayingLayout</include>
+				<content>
+					<include>HomeAddonSet04</include>
+				</content>
+			</control>            
+            <!-- AddonSet05 -->
+			<control type="list" id="704">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(704).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(704).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(704).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(704).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(704).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(704).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet05)</visible>
+				<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>704</onleft>
+				<onright>704</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonSet05</include>
+				</content>
+			</control>
+            <!-- AddonSet05p -->
+			<control type="list" id="704">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(704).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(704).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(704).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(704).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(704).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(704).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet05)</visible>
+				<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>704</onleft>
+				<onright>704</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>AddonsMediaPlayingLayout</include>
+				<content>
+					<include>HomeAddonSet05</include>
+				</content>
+			</control>
+            <!-- AddonSet06 -->
+			<control type="list" id="705">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(705).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(705).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(705).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(705).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(705).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(705).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet06)</visible>
+				<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>705</onleft>
+				<onright>705</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonSet06</include>
+				</content>
+			</control>
+            <!-- AddonSet06p -->
+			<control type="list" id="705">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(705).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(705).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(705).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(705).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(705).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(705).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet06)</visible>
+				<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>705</onleft>
+				<onright>705</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>AddonsMediaPlayingLayout</include>
+				<content>
+					<include>HomeAddonSet06</include>
+				</content>
+			</control>            
+            <!-- AddonSet07 -->
+			<control type="list" id="706">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(706).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(706).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(706).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(706).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(706).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(706).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet07)</visible>
+				<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>706</onleft>
+				<onright>706</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonSet07</include>
+				</content>
+			</control>
+            <!-- AddonSet07p -->
+			<control type="list" id="706">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(706).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(706).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(706).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(706).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(706).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(706).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet07)</visible>
+				<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>706</onleft>
+				<onright>706</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>AddonsMediaPlayingLayout</include>
+				<content>
+					<include>HomeAddonSet07</include>
+				</content>
+			</control>
+            <!-- AddonSet08 -->
+			<control type="list" id="707">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(707).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(707).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(707).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(707).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(707).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(707).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet08)</visible>
+				<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>707</onleft>
+				<onright>707</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonSet08</include>
+				</content>
+			</control>
+            <!-- AddonSet08p -->
+			<control type="list" id="707">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(707).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(707).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(707).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(707).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(707).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(707).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet08)</visible>
+				<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>707</onleft>
+				<onright>707</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>AddonsMediaPlayingLayout</include>
+				<content>
+					<include>HomeAddonSet08</include>
+				</content>
+			</control>                        
+            <!-- AddonSet09 -->
+			<control type="list" id="708">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(708).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(708).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(708).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(708).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(708).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(708).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet09)</visible>
+				<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>708</onleft>
+				<onright>708</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonSet09</include>
+				</content>
+			</control>
+            <!-- AddonSet09p -->
+			<control type="list" id="708">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(708).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(708).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(708).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(708).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(708).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(708).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet09)</visible>
+				<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>708</onleft>
+				<onright>708</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>AddonsMediaPlayingLayout</include>
+				<content>
+					<include>HomeAddonSet09</include>
+				</content>
+			</control>
+            <!-- AddonSet10 -->
+			<control type="list" id="709">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(709).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(709).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(709).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(709).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(709).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(709).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet10)</visible>
+				<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>709</onleft>
+				<onright>709</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonSet10</include>
+				</content>
+			</control>
+            <!-- AddonSet10p -->
+			<control type="list" id="709">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(709).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(709).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(709).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(709).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(709).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(709).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet10)</visible>
+				<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>709</onleft>
+				<onright>709</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>AddonsMediaPlayingLayout</include>
+				<content>
+					<include>HomeAddonSet10</include>
+				</content>
+			</control>
+            <!-- AddonSet11 -->
+			<control type="list" id="710">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(710).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(710).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(710).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(710).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(710).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(710).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet11)</visible>
+				<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>710</onleft>
+				<onright>710</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonSet11</include>
+				</content>
+			</control>
+            <!-- AddonSet11p -->
+			<control type="list" id="710">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(710).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(710).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(710).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(710).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(710).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(710).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet11)</visible>
+				<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>710</onleft>
+				<onright>710</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>AddonsMediaPlayingLayout</include>
+				<content>
+					<include>HomeAddonSet11</include>
+				</content>
+			</control>
+            <!-- AddonSet12 -->
+			<control type="list" id="711">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(711).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(711).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(711).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(711).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(711).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(711).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet12)</visible>
+				<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>711</onleft>
+				<onright>711</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonSet12</include>
+				</content>
+			</control>
+            <!-- AddonSet12p -->
+			<control type="list" id="711">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(711).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(711).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(711).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(711).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(711).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(711).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet12)</visible>
+				<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>711</onleft>
+				<onright>711</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>AddonsMediaPlayingLayout</include>
+				<content>
+					<include>HomeAddonSet12</include>
+				</content>
+			</control>            
+            <!-- AddonSet13 -->
+			<control type="list" id="712">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(712).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(712).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(712).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(712).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(712).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(712).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet13)</visible>
+				<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>712</onleft>
+				<onright>712</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonSet13</include>
+				</content>
+			</control>
+            <!-- AddonSet13p -->
+			<control type="list" id="712">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(712).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(712).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(712).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(712).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(712).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(712).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet13)</visible>
+				<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>712</onleft>
+				<onright>712</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>AddonsMediaPlayingLayout</include>
+				<content>
+					<include>HomeAddonSet13</include>
+				</content>
+			</control>
+            <!-- AddonSet14 -->
+			<control type="list" id="713">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(713).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(713).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(713).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(713).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(713).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(713).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet14)</visible>
+				<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>713</onleft>
+				<onright>713</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonSet14</include>
+				</content>
+			</control>
+            <!-- AddonSet14p -->
+			<control type="list" id="713">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(713).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(713).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(713).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(713).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(713).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(713).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet14)</visible>
+				<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>713</onleft>
+				<onright>713</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>AddonsMediaPlayingLayout</include>
+				<content>
+					<include>HomeAddonSet14</include>
+				</content>
+			</control>            
+            <!-- AddonSet15 -->
+			<control type="list" id="714">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(714).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(714).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(714).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(714).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(714).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(714).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet15)</visible>
+				<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>714</onleft>
+				<onright>714</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonSet15</include>
+				</content>
+			</control>
+            <!-- AddonSet15p -->
+			<control type="list" id="714">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(714).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(714).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(714).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(714).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(714).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(714).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet15)</visible>
+				<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>714</onleft>
+				<onright>714</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>AddonsMediaPlayingLayout</include>
+				<content>
+					<include>HomeAddonSet15</include>
+				</content>
+			</control>
+            <!-- AddonSet16 -->
+			<control type="list" id="715">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(715).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(715).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(715).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(715).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(715).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(715).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet16)</visible>
+				<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>715</onleft>
+				<onright>715</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonSet16</include>
+				</content>
+			</control>
+            <!-- AddonSet16p -->
+			<control type="list" id="715">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(715).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(715).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(715).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(715).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(715).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(715).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet16)</visible>
+				<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>715</onleft>
+				<onright>715</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>AddonsMediaPlayingLayout</include>
+				<content>
+					<include>HomeAddonSet16</include>
+				</content>
+			</control>            
+            <!-- AddonSet17 -->
+			<control type="list" id="716">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(716).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(716).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(716).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(716).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(716).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(716).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet17)</visible>
+				<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>716</onleft>
+				<onright>716</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonSet17</include>
+				</content>
+			</control>
+            <!-- AddonSet17p -->
+			<control type="list" id="716">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(716).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(716).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(716).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(716).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(716).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(716).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet17)</visible>
+				<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>716</onleft>
+				<onright>716</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>AddonsMediaPlayingLayout</include>
+				<content>
+					<include>HomeAddonSet17</include>
+				</content>
+			</control>
+            <!-- AddonSet18 -->
+			<control type="list" id="717">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(717).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(717).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(717).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(717).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(717).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(717).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet18)</visible>
+				<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>717</onleft>
+				<onright>717</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonSet18</include>
+				</content>
+			</control>
+            <!-- AddonSet08p -->
+			<control type="list" id="717">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(717).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(717).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(717).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(717).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(717).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(717).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet18)</visible>
+				<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>717</onleft>
+				<onright>717</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>AddonsMediaPlayingLayout</include>
+				<content>
+					<include>HomeAddonSet18</include>
+				</content>
+			</control>                        
+            <!-- AddonSet19 -->
+			<control type="list" id="718">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(718).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(718).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(718).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(718).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(718).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(718).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet19)</visible>
+				<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>718</onleft>
+				<onright>718</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonSet19</include>
+				</content>
+			</control>
+            <!-- AddonSet19p -->
+			<control type="list" id="718">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(718).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(718).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(718).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(718).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(718).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(718).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet19)</visible>
+				<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>718</onleft>
+				<onright>718</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>AddonsMediaPlayingLayout</include>
+				<content>
+					<include>HomeAddonSet19</include>
+				</content>
+			</control>
+            <!-- AddonSet20 -->
+			<control type="list" id="719">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(719).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(719).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(719).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(719).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(719).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(719).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet20)</visible>
+				<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>719</onleft>
+				<onright>719</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonSet20</include>
+				</content>
+			</control>
+            <!-- AddonSet20p -->
+			<control type="list" id="719">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(719).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(719).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(719).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(719).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(719).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(719).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet20)</visible>
+				<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>719</onleft>
+				<onright>719</onright>
+				<onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+				<include>AddonsMediaPlayingLayout</include>
+				<content>
+					<include>HomeAddonSet20</include>
+				</content>
+			</control>
+		</control>
+	</include>    
+	<include name="HomeAddonsCommonLayout">
+		<include>Window_OpenClose_Animation</include>
+		<animation effect="slide" start="0,0" end="0,-205" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
+		<animation type="Visible" condition="!Skin.HasSetting(NoSlideAddon)">
+		    <effect type="slide" start="0,30" end="0,0" delay="200" easing="out" tween="quadratic" time="200"/>
+		    <effect type="fade" start="0" end="100" delay="200" time="200"/>
+		</animation>
+		<animation type="Hidden" condition="!Skin.HasSetting(NoSlideAddon)">
+		    <effect type="zoom" start="100" end="70" center="auto" easing="in" tween="quadratic" time="300" />
+		    <effect type="fade" start="100" end="0" time="300" />
+		</animation>
+		<animation effect="fade" start="100" end="0" time="200" condition="!ControlGroup(9002).HasFocus + Skin.HasSetting(NoSlideAddon)">conditional</animation>
+		<animation type="conditional" condition="ControlGroup(9002).HasFocus + Skin.HasSetting(NoSlideAddon)">
+		    <effect type="slide" start="0,30" end="0,0" delay="200" easing="out" tween="quadratic" time="200" />
+		    <effect type="fade" start="0" end="100" delay="200" time="200" />
+		</animation>
+		<animation type="Hidden" condition="ControlGroup(9002).HasFocus + Skin.HasSetting(NoSlideAddon)">
+		    <effect type="zoom" start="100" end="70" center="auto" easing="in" tween="quadratic" time="300"/>
+		    <effect type="fade" start="100" end="0" time="300"/>
+		</animation>
+		<hitrect x="0" y="530" w="1280" h="120"/>
+		<left>65</left>
+		<top>190r</top>
+		<width>1274</width>
+		<height>200</height>
+		<pagecontrol>-</pagecontrol>
+		<scrolltime>300</scrolltime>
+		<orientation>Horizontal</orientation>
+		<itemlayout height="180" width="164">
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>162</width>
+				<height>108</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<bordertexture border="5">button-nofocus.png</bordertexture>
+				<bordersize>3</bordersize>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
+			</control>
+			<control type="image">
+				<left>5</left>
+				<top>108</top>
+				<width>152</width>
+				<height>100</height>
+				<aspectratio aligny="top">keep</aspectratio>
+				<texture diffuse="diffuse_mirror2.png" flipy="true" background="true">$INFO[ListItem.Icon]</texture>
+                <visible>!Skin.HasSetting(NoFloorAll)</visible>
+				<visible>!Skin.HasSetting(LowerMenu)</visible>
+			</control>
+			<control type="label">
+				<left>1</left>
+				<top>110</top>
+				<width>162</width>
+				<height>20</height>
+				<font>font12</font>
+				<textcolor>grey2</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>                
+				<label>$INFO[ListItem.Label]</label>
+                <visible>!Skin.HasSetting(NoLabelAddon)</visible>
+			</control>
+		</itemlayout>
+		<focusedlayout height="180" width="164">
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>162</width>
+				<height>108</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<bordertexture border="5">button-nofocus.png</bordertexture>
+				<bordersize>3</bordersize>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
+				<visible>!ControlGroup(9002).HasFocus</visible>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>162</width>
+				<height>108</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<bordertexture border="5">folder-focus.png</bordertexture>
+				<bordersize>3</bordersize>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
+				<visible>ControlGroup(9002).HasFocus</visible>
+			</control>
+			<control type="image">
+				<left>5</left>
+				<top>108</top>
+				<width>152</width>
+				<height>100</height>
+				<aspectratio aligny="top">keep</aspectratio>
+				<texture diffuse="diffuse_mirror2.png" flipy="true" background="true">$INFO[ListItem.Icon]</texture>
+                <visible>!Skin.HasSetting(NoFloorAll)</visible>
+				<visible>!Skin.HasSetting(LowerMenu)</visible>
+			</control>
+			<control type="label">
+				<left>1</left>
+				<top>110</top>
+				<width>162</width>
+				<height>20</height>
+				<font>font12</font>
+				<textcolor>white</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>Control.HasFocus(9002)</visible>
+                <visible>!Skin.HasSetting(NoLabelAddon)</visible>
+			</control>
+			<control type="label">
+				<left>1</left>
+				<top>110</top>
+				<width>162</width>
+				<height>20</height>
+				<font>font12</font>
+				<textcolor>grey2</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>!Control.HasFocus(9002)</visible>
+                <visible>!Skin.HasSetting(NoLabelAddon)</visible>
+			</control>
+		</focusedlayout>
+	</include>
+	<include name="AddonsMediaPlayingLayout">
+    	<include>Window_OpenClose_Animation</include>
+		<animation effect="slide" start="0,0" end="0,-205" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
+		<animation type="Visible" condition="!Skin.HasSetting(NoSlideAddon)">
+		    <effect type="slide" start="0,30" end="0,0" delay="200" easing="out" tween="quadratic" time="200"/>
+		    <effect type="fade" start="0" end="100" delay="200" time="200"/>
+		</animation>
+		<animation type="Hidden" condition="!Skin.HasSetting(NoSlideAddon)">
+		    <effect type="zoom" start="100" end="70" center="auto" easing="in" tween="quadratic" time="300" />
+		    <effect type="fade" start="100" end="0" time="300" />
+		</animation>
+		<animation effect="fade" start="100" end="0" time="200" condition="!ControlGroup(9002).HasFocus + Skin.HasSetting(NoSlideAddon)">conditional</animation>
+		<animation type="conditional" condition="ControlGroup(9002).HasFocus + Skin.HasSetting(NoSlideAddon)">
+		    <effect type="slide" start="0,30" end="0,0" delay="200" easing="out" tween="quadratic" time="200" />
+		    <effect type="fade" start="0" end="100" delay="200" time="200" />
+		</animation>
+		<animation type="Hidden" condition="ControlGroup(9002).HasFocus + Skin.HasSetting(NoSlideAddon)">
+		    <effect type="zoom" start="100" end="70" center="auto" easing="in" tween="quadratic" time="300"/>
+		    <effect type="fade" start="100" end="0" time="300"/>
+		</animation>
+		<hitrect x="0" y="530" w="1280" h="120"/>
+		<left>229</left>
+		<top>190r</top>
+		<width>820</width>
+		<height>200</height>
+		<pagecontrol>-</pagecontrol>
+		<scrolltime>300</scrolltime>
+		<orientation>Horizontal</orientation>
+		<itemlayout height="180" width="164">
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>162</width>
+				<height>108</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<bordertexture border="5">button-nofocus.png</bordertexture>
+				<bordersize>3</bordersize>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
+			</control>
+			<control type="image">
+				<left>5</left>
+				<top>108</top>
+				<width>152</width>
+				<height>100</height>
+				<aspectratio aligny="top">keep</aspectratio>
+				<texture diffuse="diffuse_mirror2.png" flipy="true" background="true">$INFO[ListItem.Icon]</texture>
+                <visible>!Skin.HasSetting(NoFloorAll)</visible>
+				<visible>!Skin.HasSetting(LowerMenu)</visible>
+			</control>
+			<control type="label">
+				<left>1</left>
+				<top>110</top>
+				<width>162</width>
+				<height>20</height>
+				<font>font12</font>
+				<textcolor>grey2</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>                
+				<label>$INFO[ListItem.Label]</label>
+                <visible>!Skin.HasSetting(NoLabelAddon)</visible>
+			</control>
+		</itemlayout>
+		<focusedlayout height="180" width="164">
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>162</width>
+				<height>108</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<bordertexture border="5">button-nofocus.png</bordertexture>
+				<bordersize>3</bordersize>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
+				<visible>!ControlGroup(9002).HasFocus</visible>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>162</width>
+				<height>108</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<bordertexture border="5">folder-focus.png</bordertexture>
+				<bordersize>3</bordersize>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
+				<visible>ControlGroup(9002).HasFocus</visible>
+			</control>
+			<control type="image">
+				<left>5</left>
+				<top>108</top>
+				<width>152</width>
+				<height>100</height>
+				<aspectratio aligny="top">keep</aspectratio>
+				<texture diffuse="diffuse_mirror2.png" flipy="true" background="true">$INFO[ListItem.Icon]</texture>
+                <visible>!Skin.HasSetting(NoFloorAll)</visible>
+				<visible>!Skin.HasSetting(LowerMenu)</visible>
+			</control>
+			<control type="label">
+				<left>1</left>
+				<top>110</top>
+				<width>162</width>
+				<height>20</height>
+				<font>font12</font>
+				<textcolor>white</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>Control.HasFocus(9002)</visible>
+                <visible>!Skin.HasSetting(NoLabelAddon)</visible>
+			</control>
+			<control type="label">
+				<left>1</left>
+				<top>110</top>
+				<width>162</width>
+				<height>20</height>
+				<font>font12</font>
+				<textcolor>grey2</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>!Control.HasFocus(9002)</visible>
+                <visible>!Skin.HasSetting(NoLabelAddon)</visible>
+			</control>
+		</focusedlayout>
+	</include>    
+	<include name="HomeAddonSet01">
+		<item>
+			<label>$INFO[Skin.String(AddonSet01.1.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet01.1.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet01.1.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet01.1.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet01.2.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet01.2.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet01.2.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet01.2.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet01.3.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet01.3.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet01.3.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet01.3.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet01.4.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet01.4.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet01.4.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet01.4.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet01.5.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet01.5.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet01.5.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet01.5.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet01.6.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet01.6.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet01.6.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet01.6.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet01.7.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet01.7.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet01.7.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet01.7.Path))</visible>
+		</item>
+	</include>
+	<include name="HomeAddonSet02">
+		<item>
+			<label>$INFO[Skin.String(AddonSet02.1.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet02.1.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet02.1.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet02.1.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet02.2.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet02.2.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet02.2.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet02.2.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet02.3.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet02.3.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet02.3.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet02.3.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet02.4.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet02.4.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet02.4.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet02.4.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet02.5.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet02.5.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet02.5.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet02.5.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet02.6.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet02.6.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet02.6.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet02.6.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet02.7.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet02.7.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet02.7.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet02.7.Path))</visible>
+		</item>
+	</include>    
+	<include name="HomeAddonSet03">
+		<item>
+			<label>$INFO[Skin.String(AddonSet03.1.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet03.1.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet03.1.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet03.1.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet03.2.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet03.2.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet03.2.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet03.2.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet03.3.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet03.3.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet03.3.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet03.3.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet03.4.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet03.4.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet03.4.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet03.4.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet03.5.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet03.5.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet03.5.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet03.5.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet03.6.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet03.6.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet03.6.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet03.6.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet03.7.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet03.7.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet03.7.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet03.7.Path))</visible>
+		</item>
+	</include>
+	<include name="HomeAddonSet04">
+		<item>
+			<label>$INFO[Skin.String(AddonSet04.1.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet04.1.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet04.1.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet04.1.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet04.2.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet04.2.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet04.2.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet04.2.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet04.3.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet04.3.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet04.3.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet04.3.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet04.4.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet04.4.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet04.4.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet04.4.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet04.5.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet04.5.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet04.5.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet04.5.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet04.6.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet04.6.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet04.6.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet04.6.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet04.7.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet04.7.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet04.7.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet04.7.Path))</visible>
+		</item>
+	</include>    
+	<include name="HomeAddonSet05">
+		<item>
+			<label>$INFO[Skin.String(AddonSet05.1.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet05.1.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet05.1.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet05.1.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet05.2.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet05.2.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet05.2.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet05.2.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet05.3.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet05.3.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet05.3.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet05.3.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet05.4.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet05.4.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet05.4.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet05.4.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet05.5.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet05.5.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet05.5.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet05.5.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet05.6.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet05.6.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet05.6.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet05.6.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet05.7.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet05.7.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet05.7.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet05.7.Path))</visible>
+		</item>
+	</include>
+	<include name="HomeAddonSet06">
+		<item>
+			<label>$INFO[Skin.String(AddonSet06.1.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet06.1.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet06.1.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet06.1.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet06.2.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet06.2.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet06.2.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet06.2.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet06.3.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet06.3.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet06.3.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet06.3.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet06.4.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet06.4.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet06.4.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet06.4.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet06.5.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet06.5.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet06.5.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet06.5.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet06.6.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet06.6.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet06.6.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet06.6.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet06.7.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet06.7.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet06.7.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet06.7.Path))</visible>
+		</item>
+	</include>    
+	<include name="HomeAddonSet07">
+		<item>
+			<label>$INFO[Skin.String(AddonSet07.1.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet07.1.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet07.1.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet07.1.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet07.2.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet07.2.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet07.2.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet07.2.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet07.3.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet07.3.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet07.3.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet07.3.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet07.4.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet07.4.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet07.4.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet07.4.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet07.5.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet07.5.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet07.5.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet07.5.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet07.6.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet07.6.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet07.6.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet07.6.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet07.7.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet07.7.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet07.7.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet07.7.Path))</visible>
+		</item>
+	</include>
+	<include name="HomeAddonSet08">
+		<item>
+			<label>$INFO[Skin.String(AddonSet08.1.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet08.1.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet08.1.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet08.1.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet08.2.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet08.2.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet08.2.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet08.2.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet08.3.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet08.3.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet08.3.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet08.3.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet08.4.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet08.4.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet08.4.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet08.4.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet08.5.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet08.5.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet08.5.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet08.5.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet08.6.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet08.6.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet08.6.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet08.6.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet08.7.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet08.7.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet08.7.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet08.7.Path))</visible>
+		</item>
+	</include>
+	<include name="HomeAddonSet09">
+		<item>
+			<label>$INFO[Skin.String(AddonSet09.1.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet09.1.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet09.1.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet09.1.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet09.2.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet09.2.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet09.2.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet09.2.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet09.3.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet09.3.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet09.3.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet09.3.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet09.4.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet09.4.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet09.4.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet09.4.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet09.5.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet09.5.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet09.5.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet09.5.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet09.6.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet09.6.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet09.6.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet09.6.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet09.7.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet09.7.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet09.7.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet09.7.Path))</visible>
+		</item>
+	</include>
+	<include name="HomeAddonSet10">
+		<item>
+			<label>$INFO[Skin.String(AddonSet10.1.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet10.1.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet10.1.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet10.1.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet10.2.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet10.2.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet10.2.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet10.2.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet10.3.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet10.3.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet10.3.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet10.3.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet10.4.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet10.4.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet10.4.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet10.4.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet10.5.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet10.5.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet10.5.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet10.5.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet10.6.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet10.6.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet10.6.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet10.6.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet10.7.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet10.7.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet10.7.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet10.7.Path))</visible>
+		</item>
+	</include>
+	<include name="HomeAddonSet11">
+		<item>
+			<label>$INFO[Skin.String(AddonSet11.1.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet11.1.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet11.1.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet11.1.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet11.2.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet11.2.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet11.2.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet11.2.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet11.3.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet11.3.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet11.3.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet11.3.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet11.4.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet11.4.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet11.4.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet11.4.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet11.5.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet11.5.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet11.5.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet11.5.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet11.6.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet11.6.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet11.6.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet11.6.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet11.7.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet11.7.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet11.7.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet11.7.Path))</visible>
+		</item>
+	</include>
+	<include name="HomeAddonSet12">
+		<item>
+			<label>$INFO[Skin.String(AddonSet12.1.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet12.1.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet12.1.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet12.1.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet12.2.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet12.2.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet12.2.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet12.2.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet12.3.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet12.3.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet12.3.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet12.3.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet12.4.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet12.4.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet12.4.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet12.4.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet12.5.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet12.5.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet12.5.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet12.5.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet12.6.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet12.6.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet12.6.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet12.6.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet12.7.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet12.7.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet12.7.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet12.7.Path))</visible>
+		</item>
+	</include>    
+	<include name="HomeAddonSet13">
+		<item>
+			<label>$INFO[Skin.String(AddonSet13.1.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet13.1.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet13.1.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet13.1.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet13.2.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet13.2.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet13.2.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet13.2.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet13.3.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet13.3.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet13.3.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet13.3.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet13.4.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet13.4.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet13.4.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet13.4.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet13.5.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet13.5.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet13.5.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet13.5.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet13.6.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet13.6.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet13.6.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet13.6.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet13.7.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet13.7.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet13.7.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet13.7.Path))</visible>
+		</item>
+	</include>
+	<include name="HomeAddonSet14">
+		<item>
+			<label>$INFO[Skin.String(AddonSet14.1.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet14.1.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet14.1.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet14.1.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet14.2.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet14.2.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet14.2.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet14.2.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet14.3.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet14.3.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet14.3.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet14.3.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet14.4.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet14.4.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet14.4.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet14.4.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet14.5.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet14.5.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet14.5.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet14.5.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet14.6.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet14.6.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet14.6.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet14.6.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet14.7.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet14.7.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet14.7.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet14.7.Path))</visible>
+		</item>
+	</include>    
+	<include name="HomeAddonSet15">
+		<item>
+			<label>$INFO[Skin.String(AddonSet15.1.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet15.1.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet15.1.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet15.1.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet15.2.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet15.2.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet15.2.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet15.2.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet15.3.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet15.3.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet15.3.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet15.3.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet15.4.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet15.4.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet15.4.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet15.4.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet15.5.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet15.5.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet15.5.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet15.5.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet15.6.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet15.6.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet15.6.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet15.6.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet15.7.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet15.7.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet15.7.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet15.7.Path))</visible>
+		</item>
+	</include>
+	<include name="HomeAddonSet16">
+		<item>
+			<label>$INFO[Skin.String(AddonSet16.1.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet16.1.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet16.1.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet16.1.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet16.2.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet16.2.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet16.2.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet16.2.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet16.3.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet16.3.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet16.3.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet16.3.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet16.4.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet16.4.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet16.4.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet16.4.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet16.5.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet16.5.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet16.5.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet16.5.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet16.6.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet16.6.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet16.6.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet16.6.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet16.7.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet16.7.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet16.7.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet16.7.Path))</visible>
+		</item>
+	</include>    
+	<include name="HomeAddonSet17">
+		<item>
+			<label>$INFO[Skin.String(AddonSet17.1.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet17.1.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet17.1.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet17.1.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet17.2.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet17.2.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet17.2.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet17.2.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet17.3.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet17.3.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet17.3.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet17.3.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet17.4.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet17.4.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet17.4.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet17.4.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet17.5.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet17.5.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet17.5.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet17.5.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet17.6.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet17.6.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet17.6.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet17.6.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet17.7.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet17.7.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet17.7.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet17.7.Path))</visible>
+		</item>
+	</include>
+	<include name="HomeAddonSet18">
+		<item>
+			<label>$INFO[Skin.String(AddonSet18.1.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet18.1.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet18.1.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet18.1.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet18.2.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet18.2.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet18.2.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet18.2.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet18.3.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet18.3.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet18.3.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet18.3.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet18.4.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet18.4.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet18.4.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet18.4.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet18.5.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet18.5.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet18.5.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet18.5.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet18.6.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet18.6.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet18.6.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet18.6.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet18.7.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet18.7.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet18.7.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet18.7.Path))</visible>
+		</item>
+	</include>
+	<include name="HomeAddonSet19">
+		<item>
+			<label>$INFO[Skin.String(AddonSet19.1.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet19.1.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet19.1.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet19.1.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet19.2.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet19.2.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet19.2.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet19.2.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet19.3.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet19.3.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet19.3.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet19.3.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet19.4.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet19.4.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet19.4.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet19.4.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet19.5.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet19.5.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet19.5.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet19.5.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet19.6.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet19.6.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet19.6.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet19.6.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet19.7.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet19.7.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet19.7.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet19.7.Path))</visible>
+		</item>
+	</include>
+	<include name="HomeAddonSet20">
+		<item>
+			<label>$INFO[Skin.String(AddonSet20.1.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet20.1.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet20.1.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet20.1.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet20.2.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet20.2.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet20.2.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet20.2.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet20.3.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet20.3.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet20.3.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet20.3.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet20.4.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet20.4.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet20.4.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet20.4.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet20.5.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet20.5.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet20.5.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet20.5.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet20.6.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet20.6.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet20.6.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet20.6.Path))</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(AddonSet20.7.Label)]</label>
+			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+			<onclick>$INFO[Skin.String(AddonSet20.7.Path)]</onclick>
+			<icon>$INFO[Skin.String(AddonSet20.7.Icon)]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(AddonSet20.7.Path))</visible>
+		</item>
+	</include>
+</includes>
