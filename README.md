@@ -1,1 +1,1 @@
-# Confluence plood is the modernized skin for KODI.
+# Confluence extented is the modernized skin for KODI.
