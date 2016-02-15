@@ -864,7 +864,7 @@
 			<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
 			<include>Window_OpenClose_Animation</include>
 			<control type="rss">
-				<description>RSS feed</description>
+				<description>RSS feed 1</description>
 				<left>127</left>
 				<top>0</top>
 				<height>30</height>
@@ -877,7 +877,7 @@
                 <visible>!Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)</visible>
 			</control>
 			<control type="rss">
-				<description>RSS feed</description>
+				<description>RSS feed 2</description>
 				<left>73</left>
 				<top>0</top>
 				<height>30</height>
@@ -890,7 +890,7 @@
                 <visible>[Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)] | [!Skin.HasSetting(HidePowerButton) + Skin.HasSetting(HideFavoritesButton)]</visible>
 			</control>
 			<control type="rss">
-				<description>RSS feed</description>
+				<description>RSS feed 3</description>
                 <left>10</left>
 				<top>0</top>
 				<height>30</height>
@@ -956,8 +956,8 @@
 				<onclick>ActivateWindow(Favourites)</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
-				<onleft>20</onleft>
-				<onright>20</onright>
+				<onleft condition="!Skin.HasSetting(HidePowerButton)">20</onleft>
+				<onright condition="!Skin.HasSetting(HidePowerButton)">20</onright>
 				<onup condition="!Skin.HasSetting(LowerMenu)">9002</onup>
 				<onup condition="Skin.HasSetting(LowerMenu)">9001</onup>
 				<ondown condition="!Skin.HasSetting(LowerMenu)">9003</ondown>
@@ -974,7 +974,7 @@
 				<texture>icon_favourites.png</texture>
                 <visible>!Skin.HasSetting(HideFavoritesButton)</visible>
 			</control>
-			<control type="button" id="22">
+			<control type="button" id="20">
 				<description>Power push button pos1</description>
 				<left>0</left>
 				<top>0</top>
@@ -985,8 +985,8 @@
 				<onclick>ActivateWindow(ShutdownMenu)</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
-				<onleft>20</onleft>
-				<onright>20</onright>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
 				<onup condition="!Skin.HasSetting(LowerMenu)">9002</onup>
 				<onup condition="Skin.HasSetting(LowerMenu)">9001</onup>
 				<ondown condition="!Skin.HasSetting(LowerMenu)">9003</ondown>
