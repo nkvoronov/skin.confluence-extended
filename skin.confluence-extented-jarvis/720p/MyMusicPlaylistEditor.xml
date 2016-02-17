@@ -3,7 +3,6 @@
 	<defaultcontrol always="true">6</defaultcontrol>
 	<menucontrol>9000</menucontrol>
 	<controls>
-		<include>CommonMusicBackground</include>
 		<include>CommonBackground</include>
 		<control type="group">
 			<top>10</top>

@@ -2088,28 +2088,6 @@
         <value condition="!IsEmpty(Skin.String(HomeItem.20.CBackground))">$INFO[Skin.String(HomeItem.20.CBackground)]</value>
         <value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
     </variable>
-    <variable name="HomeMenuItemBackground" type="text">
-    	<value condition="Container(9000).Hasfocus(1)">$VAR[Background01]</value>
-        <value condition="Container(9000).Hasfocus(2)">$VAR[Background02]</value>
-    	<value condition="Container(9000).Hasfocus(3)">$VAR[Background03]</value>
-        <value condition="Container(9000).Hasfocus(4)">$VAR[Background04]</value>
-    	<value condition="Container(9000).Hasfocus(5)">$VAR[Background05]</value>
-        <value condition="Container(9000).Hasfocus(6)">$VAR[Background06]</value>
-    	<value condition="Container(9000).Hasfocus(7)">$VAR[Background07]</value>
-        <value condition="Container(9000).Hasfocus(8)">$VAR[Background08]</value>
-    	<value condition="Container(9000).Hasfocus(9)">$VAR[Background09]</value>
-        <value condition="Container(9000).Hasfocus(10)">$VAR[Background10]</value>
-    	<value condition="Container(9000).Hasfocus(11)">$VAR[Background11]</value>
-        <value condition="Container(9000).Hasfocus(12)">$VAR[Background12]</value>
-    	<value condition="Container(9000).Hasfocus(13)">$VAR[Background13]</value>
-        <value condition="Container(9000).Hasfocus(14)">$VAR[Background14]</value>
-    	<value condition="Container(9000).Hasfocus(15)">$VAR[Background15]</value>
-        <value condition="Container(9000).Hasfocus(16)">$VAR[Background16]</value>
-    	<value condition="Container(9000).Hasfocus(17)">$VAR[Background17]</value>
-        <value condition="Container(9000).Hasfocus(18)">$VAR[Background18]</value>
-    	<value condition="Container(9000).Hasfocus(19)">$VAR[Background19]</value>
-        <value condition="Container(9000).Hasfocus(20)">$VAR[Background20]</value>        
-    </variable>
 	<variable name="CommonMenuItemBackground" type="text">
 		<value condition="StringCompare(Window(Home).Property(MenuItemActive),Item01)">$VAR[Background01]</value>
 		<value condition="StringCompare(Window(Home).Property(MenuItemActive),Item02)">$VAR[Background02]</value>

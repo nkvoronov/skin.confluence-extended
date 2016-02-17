@@ -3,7 +3,6 @@
 	<defaultcontrol always="true">95</defaultcontrol>
 	<controls>
 		<include>CommonBackground</include>
-		<include>CommonSettingsBackground</include>
 		<control type="image">
 			<left>0</left>
 			<top>100r</top>

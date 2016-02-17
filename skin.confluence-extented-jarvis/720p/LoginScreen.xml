@@ -7,7 +7,6 @@
 	</coordinates>
 	<controls>
 		<include>CommonBackground</include>
-		<include>CommonSettingsBackground</include>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
 			<control type="image">

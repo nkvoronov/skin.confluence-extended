@@ -4,7 +4,6 @@
 	<menucontrol>9000</menucontrol>
 	<views>50</views>
 	<controls>
-		<include>CommonPVRBackground</include>
 		<include>CommonBackground</include>
 		<control type="image">
 			<left>0</left>

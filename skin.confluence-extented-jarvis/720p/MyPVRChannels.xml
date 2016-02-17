@@ -4,7 +4,6 @@
 	<menucontrol>9000</menucontrol>
 	<views>50</views>
 	<controls>
-		<include>CommonPVRBackground</include>
 		<include>CommonBackground</include>
 		<control type="image">
 			<left>0</left>
@@ -80,23 +79,44 @@
 				<onclick>Fullscreen</onclick>
 				<visible>Player.HasVideo</visible>
 			</control>
+            <!-- -->
 			<control type="image">
 				<left>5</left>
 				<top>5</top>
 				<width>680</width>
 				<height>390</height>
-				<texture fallback="special://skin/backgrounds/tv.jpg">$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</texture>
+				<texture fallback="special://skin/backgrounds/SKINDEFAULT.jpg">$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</texture>
 				<include>VisibleFadeEffect</include>
-				<visible>!Player.HasVideo + Window.IsActive(TVChannels)</visible>
+                <visible>![Skin.HasSetting(UseCustomBackground) + !IsEmpty(Skin.String(CustomBackgroundPath))]</visible>
+				<visible>!Player.HasVideo + !Skin.HasSetting(SeparateBackground)</visible>
 			</control>
 			<control type="image">
 				<left>5</left>
 				<top>5</top>
 				<width>680</width>
 				<height>390</height>
-				<texture fallback="special://skin/backgrounds/radio.jpg">$INFO[Skin.String(Home_Custom_Back_Radio_Folder)]</texture>
+				<texture>$INFO[Skin.String(CustomBackgroundPath)]</texture>
 				<include>VisibleFadeEffect</include>
-				<visible>!Player.HasVideo + Window.IsActive(RadioChannels)</visible>
+                <visible>Skin.HasSetting(UseCustomBackground) + !IsEmpty(Skin.String(CustomBackgroundPath))</visible>
+				<visible>!Player.HasVideo + !Skin.HasSetting(SeparateBackground) + !IsEmpty(Window(Home).Property(MenuItemActive))</visible>
+			</control>
+			<control type="image">
+				<left>5</left>
+				<top>5</top>
+				<width>680</width>
+				<height>390</height>
+				<texture>$VAR[CommonMenuItemBackground]</texture>
+				<include>VisibleFadeEffect</include>
+				<visible>!Player.HasVideo + Skin.HasSetting(SeparateBackground) + !IsEmpty(Window(Home).Property(MenuItemActive))</visible>
+			</control>
+            <control type="image">
+				<left>5</left>
+				<top>5</top>
+				<width>680</width>
+				<height>390</height>
+				<texture>$INFO[Window(Home).Property(SubMenuBackground)]</texture>
+				<include>VisibleFadeEffect</include>
+				<visible>!Player.HasVideo + Skin.HasSetting(SeparateBackground) + IsEmpty(Window(Home).Property(MenuItemActive))</visible>
 			</control>
 			<control type="videowindow">
 				<left>5</left>

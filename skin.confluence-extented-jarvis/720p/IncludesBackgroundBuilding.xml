@@ -21,7 +21,7 @@
 			<include>VisibleFadeEffect</include>
 			<visible>!Skin.HasSetting(SeparateBackground)</visible>
 		</control>
-			<control type="multiimage">
+		<control type="multiimage">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
@@ -32,7 +32,31 @@
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
 			<visible>Skin.HasSetting(SeparateBackground)</visible>
+		</control>    
+		<control type="multiimage">
+            <description>User Separate Background Image 01</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<imagepath background="true">$VAR[CommonMenuItemBackground]</imagepath>
+			<timeperimage>10000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<visible>!Window.IsVisible(Home) + Skin.HasSetting(SeparateBackground) + !IsEmpty(Window(Home).Property(MenuItemActive))</visible>
 		</control>
+		<control type="multiimage">
+            <description>User Separate Background Image 02</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<imagepath background="true">$INFO[Window(Home).Property(SubMenuBackground)]</imagepath>
+			<timeperimage>10000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<visible>!Window.IsVisible(Home) + Skin.HasSetting(SeparateBackground) + IsEmpty(Window(Home).Property(MenuItemActive))</visible>
+		</control>        
 		<control type="image">
 			<depth>DepthBackground</depth>
 			<include>BackgroundDimensions</include>
@@ -320,109 +344,6 @@
 					<visible>!Skin.HasSetting(NoFloorAll)</visible>
 				</control>
 			</control>
-		</control>
-	</include>
-    <!-- -->
-	<include name="CommonVideoBackground">
-		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<imagepath fallback="special://skin/backgrounds/videos.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</imagepath>
-			<timeperimage>10000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>1000</fadetime>
-			<visible>Skin.HasSetting(SeparateBackground)</visible>
-		</control>
-	</include>
-	<include name="CommonPVRBackground">
-		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<imagepath fallback="special://skin/backgrounds/tv.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</imagepath>
-			<timeperimage>10000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>1000</fadetime>
-			<visible>Skin.HasSetting(SeparateBackground) + [Window.IsActive(TVChannels) | Window.IsActive(TVGuide) | Window.IsActive(TVRecordings) | Window.IsActive(TVTimers) | Window.IsActive(TVSearch)]</visible>
-		</control>
-		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<imagepath fallback="special://skin/backgrounds/radio.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Radio_Folder)]</imagepath>
-			<timeperimage>10000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>1000</fadetime>
-			<visible>Skin.HasSetting(SeparateBackground) + [Window.IsActive(RadioChannels) | Window.IsActive(RadioGuide) | Window.IsActive(RadioRecordings) | Window.IsActive(RadioTimers) | Window.IsActive(RadioSearch)]</visible>
-		</control>
-	</include>
-	<include name="CommonMusicBackground">
-		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<imagepath fallback="special://skin/backgrounds/music.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</imagepath>
-			<timeperimage>10000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>1000</fadetime>
-			<visible>Skin.HasSetting(SeparateBackground)</visible>
-		</control>
-	</include>
-	<include name="CommonPictureBackground">
-		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<imagepath fallback="special://skin/backgrounds/pictures.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</imagepath>
-			<timeperimage>10000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>1000</fadetime>
-			<visible>Skin.HasSetting(SeparateBackground)</visible>
-		</control>
-	</include>
-	<include name="CommonProgramsBackground">
-		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<imagepath fallback="special://skin/backgrounds/programs.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</imagepath>
-			<timeperimage>10000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>1000</fadetime>
-			<visible>Skin.HasSetting(SeparateBackground)</visible>
-		</control>
-	</include>
-	<include name="CommonWeatherBackground">
-		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<imagepath fallback="special://skin/backgrounds/weather.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</imagepath>
-			<timeperimage>10000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>1000</fadetime>
-			<visible>!Skin.HasSetting(ShowWeatherFanart) + Skin.HasSetting(SeparateBackground)</visible>
-		</control>
-	</include>
-	<include name="CommonSettingsBackground">
-		<control type="multiimage">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<imagepath fallback="special://skin/backgrounds/settings.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</imagepath>
-			<timeperimage>10000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>1000</fadetime>
-			<visible>Skin.HasSetting(SeparateBackground)</visible>
 		</control>
 	</include>
 </includes>

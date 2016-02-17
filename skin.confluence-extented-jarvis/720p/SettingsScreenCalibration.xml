@@ -13,7 +13,6 @@
 		<control type="group">
 			<visible>!Player.HasVideo</visible>
 			<include>CommonBackground</include>
-			<include>CommonSettingsBackground</include>
 		</control>
 		<control type="image">
 			<description>Overlay</description>
