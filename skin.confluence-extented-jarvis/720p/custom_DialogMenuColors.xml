@@ -61,9 +61,9 @@
 			<height>45</height>
 			<font>font_MainMenu</font>
 			<textcolor>grey3</textcolor>
-			<focusedcolor>FF0084ff</focusedcolor>
+			<focusedcolor>FF0084FF</focusedcolor>
 			<label>$LOCALIZE[88107]</label>
-			<onclick>Skin.SetString(MenuColor,FF0084ff,)</onclick>
+			<onclick>Skin.SetString(MenuColor,FF0084FF,)</onclick>
 			<onclick>Skin.SetString(MenuColorName,$LOCALIZE[88107],)</onclick>
 			<onclick>PreviousMenu</onclick>
 			<texturefocus>MenuItemFO.png</texturefocus>
@@ -82,9 +82,9 @@
 			<height>45</height>
 			<font>font_MainMenu</font>
 			<textcolor>grey3</textcolor>
-			<focusedcolor>FF03d6d9</focusedcolor>
+			<focusedcolor>FF03D6D9</focusedcolor>
 			<label>$LOCALIZE[88108]</label>
-			<onclick>Skin.SetString(MenuColor,FF03d6d9,)</onclick>
+			<onclick>Skin.SetString(MenuColor,FF03D6D9,)</onclick>
 			<onclick>Skin.SetString(MenuColorName,$LOCALIZE[88108],)</onclick>
 			<onclick>PreviousMenu</onclick>
 			<texturefocus>MenuItemFO.png</texturefocus>
@@ -145,9 +145,9 @@
 			<height>45</height>
 			<font>font_MainMenu</font>
 			<textcolor>grey3</textcolor>
-			<focusedcolor>FFec0000</focusedcolor>
+			<focusedcolor>FFEC0000</focusedcolor>
 			<label>$LOCALIZE[88111]</label>
-			<onclick>Skin.SetString(MenuColor,FFec0000,)</onclick>
+			<onclick>Skin.SetString(MenuColor,FFEC0000,)</onclick>
 			<onclick>Skin.SetString(MenuColorName,$LOCALIZE[88111],)</onclick>
 			<onclick>PreviousMenu</onclick>
 			<texturefocus>MenuItemFO.png</texturefocus>
@@ -166,9 +166,9 @@
 			<height>45</height>
 			<font>font_MainMenu</font>
 			<textcolor>grey3</textcolor>
-			<focusedcolor>84ff00ff</focusedcolor>
+			<focusedcolor>84FF00FF</focusedcolor>
 			<label>$LOCALIZE[88112]</label>
-			<onclick>Skin.SetString(MenuColor,84ff00ff,)</onclick>
+			<onclick>Skin.SetString(MenuColor,84FF00FF,)</onclick>
 			<onclick>Skin.SetString(MenuColorName,$LOCALIZE[88112],)</onclick>
 			<onclick>PreviousMenu</onclick>
 			<texturefocus>MenuItemFO.png</texturefocus>
@@ -187,9 +187,9 @@
 			<height>45</height>
 			<font>font_MainMenu</font>
 			<textcolor>grey3</textcolor>
-			<focusedcolor>FF7f2baa</focusedcolor>
+			<focusedcolor>FF7F2BAA</focusedcolor>
 			<label>$LOCALIZE[88113]</label>
-			<onclick>Skin.SetString(MenuColor,FF7f2baa,)</onclick>
+			<onclick>Skin.SetString(MenuColor,FF7F2BAA,)</onclick>
 			<onclick>Skin.SetString(MenuColorName,$LOCALIZE[88113],)</onclick>
 			<onclick>PreviousMenu</onclick>
 			<texturefocus>MenuItemFO.png</texturefocus>
@@ -208,9 +208,9 @@
 			<height>45</height>
 			<font>font_MainMenu</font>
 			<textcolor>grey3</textcolor>
-			<focusedcolor>FFff8c00</focusedcolor>
+			<focusedcolor>FFFF8C00</focusedcolor>
 			<label>$LOCALIZE[88114]</label>
-			<onclick>Skin.SetString(MenuColor,FFff8c00,)</onclick>
+			<onclick>Skin.SetString(MenuColor,FFFF8C00,)</onclick>
 			<onclick>Skin.SetString(MenuColorName,$LOCALIZE[88114],)</onclick>
 			<onclick>PreviousMenu</onclick>
 			<texturefocus>MenuItemFO.png</texturefocus>
@@ -229,9 +229,9 @@
 			<height>45</height>
 			<font>font_MainMenu</font>
 			<textcolor>grey3</textcolor>
-			<focusedcolor>FFffff00</focusedcolor>
+			<focusedcolor>FFFFFF00</focusedcolor>
 			<label>$LOCALIZE[88115]</label>
-			<onclick>Skin.SetString(MenuColor,FFffff00,)</onclick>
+			<onclick>Skin.SetString(MenuColor,FFFFFF00,)</onclick>
 			<onclick>Skin.SetString(MenuColorName,$LOCALIZE[88115],)</onclick>
 			<onclick>PreviousMenu</onclick>
 			<texturefocus>MenuItemFO.png</texturefocus>

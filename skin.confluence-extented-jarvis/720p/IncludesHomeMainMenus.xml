@@ -109,7 +109,7 @@
 				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.1.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.1.Path)]</onclick>
 				<icon>$INFO[Skin.String(HomeItem.1.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.1.Fanart)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.1.Display)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.1.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.1.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.1.Addon)]</property>
@@ -134,7 +134,7 @@
 				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.2.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.2.Path)]</onclick>
 				<icon>$INFO[Skin.String(HomeItem.2.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.2.Fanart)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.2.Display)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.2.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.2.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.2.Addon)]</property>
@@ -159,7 +159,7 @@
 				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.3.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.3.Path)]</onclick>
 				<icon>$INFO[Skin.String(HomeItem.3.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.3.Fanart)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.3.Display)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.3.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.3.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.3.Addon)]</property>
@@ -184,7 +184,7 @@
 				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.4.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.4.Path)]</onclick>
 				<icon>$INFO[Skin.String(HomeItem.4.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.4.Fanart)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.4.Display)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.4.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.4.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.4.Addon)]</property>
@@ -209,7 +209,7 @@
 				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.5.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.5.Path)]</onclick>
 				<icon>$INFO[Skin.String(HomeItem.5.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.5.Fanart)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.5.Display)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.5.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.5.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.5.Addon)]</property>
@@ -234,7 +234,7 @@
 				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.6.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.6.Path)]</onclick>
 				<icon>$INFO[Skin.String(HomeItem.6.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.6.Fanart)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.6.Display)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.6.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.6.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.6.Addon)]</property>
@@ -259,7 +259,7 @@
 				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.7.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.7.Path)]</onclick>
 				<icon>$INFO[Skin.String(HomeItem.7.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.7.Fanart)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.7.Display)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.7.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.7.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.7.Addon)]</property>
@@ -284,7 +284,7 @@
 				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.8.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.8.Path)]</onclick>
 				<icon>$INFO[Skin.String(HomeItem.8.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.8.Fanart)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.8.Display)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.8.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.8.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.8.Addon)]</property>
@@ -309,7 +309,7 @@
 				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.9.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.9.Path)]</onclick>
 				<icon>$INFO[Skin.String(HomeItem.9.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.9.Fanart)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.9.Display)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.9.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.9.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.9.Addon)]</property>
@@ -334,7 +334,7 @@
 				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.10.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.10.Path)]</onclick>
 				<icon>$INFO[Skin.String(HomeItem.10.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.10.Fanart)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.10.Display)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.10.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.10.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.10.Addon)]</property>
@@ -359,7 +359,7 @@
 				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.11.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.11.Path)]</onclick>
 				<icon>$INFO[Skin.String(HomeItem.11.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.11.Fanart)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.11.Display)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.11.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.11.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.11.Addon)]</property>
@@ -384,7 +384,7 @@
 				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.12.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.12.Path)]</onclick>
 				<icon>$INFO[Skin.String(HomeItem.12.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.12.Fanart)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.12.Display)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.12.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.12.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.12.Addon)]</property>
@@ -409,7 +409,7 @@
 				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.13.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.13.Path)]</onclick>
 				<icon>$INFO[Skin.String(HomeItem.13.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.13.Fanart)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.13.Display)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.13.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.13.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.13.Addon)]</property>
@@ -434,7 +434,7 @@
 				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.14.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.14.Path)]</onclick>
 				<icon>$INFO[Skin.String(HomeItem.14.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.14.Fanart)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.14.Display)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.14.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.14.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.14.Addon)]</property>
@@ -459,7 +459,7 @@
 				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.15.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.15.Path)]</onclick>
 				<icon>$INFO[Skin.String(HomeItem.15.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.15.Fanart)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.15.Display)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.15.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.15.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.15.Addon)]</property>
@@ -484,7 +484,7 @@
 				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.16.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.16.Path)]</onclick>
 				<icon>$INFO[Skin.String(HomeItem.16.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.16.Fanart)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.16.Display)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.16.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.16.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.16.Addon)]</property>
@@ -509,7 +509,7 @@
 				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.17.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.17.Path)]</onclick>
 				<icon>$INFO[Skin.String(HomeItem.17.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.17.Fanart)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.17.Display)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.17.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.17.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.17.Addon)]</property>
@@ -534,7 +534,7 @@
 				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.18.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.18.Path)]</onclick>
 				<icon>$INFO[Skin.String(HomeItem.18.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.18.Fanart)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.18.Display)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.18.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.18.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.18.Addon)]</property>
@@ -559,7 +559,7 @@
 				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.19.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.19.Path)]</onclick>
 				<icon>$INFO[Skin.String(HomeItem.19.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.19.Fanart)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.19.Display)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.19.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.19.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.19.Addon)]</property>
@@ -584,7 +584,7 @@
 				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.20.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.20.Path)]</onclick>
 				<icon>$INFO[Skin.String(HomeItem.20.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.20.Fanart)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.20.Display)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.20.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.20.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.20.Addon)]</property>
@@ -744,7 +744,6 @@
 		<onload>Skin.SetString(HomeItem.1.Widget,Weather)</onload>
 		<onload>Skin.SetString(HomeItem.1.Type,Weather)</onload>
 		<onload>Skin.SetString(HomeItem.1.Fanart,special://skin/backgrounds/weather.jpg)</onload>
-        <onload>Skin.SetString(HomeItem.1.Display,Default)</onload>
         <!-- Pictures -->        
 		<onload>Skin.SetString(HomeItem.2.Label,$LOCALIZE[31951])</onload>
 		<onload>Skin.SetString(HomeItem.2.Path,ActivateWindow(Pictures))</onload>
@@ -753,7 +752,6 @@
 		<onload>Skin.SetString(HomeItem.2.Widget,None)</onload>
 		<onload>Skin.SetString(HomeItem.2.Type,Pictures)</onload>
 		<onload>Skin.SetString(HomeItem.2.Fanart,special://skin/backgrounds/pictures.jpg)</onload>
-        <onload>Skin.SetString(HomeItem.2.Display,Default)</onload>
         <!-- Radio -->        
 		<onload>Skin.SetString(HomeItem.3.Label,$LOCALIZE[31960])</onload>
 		<onload>Skin.SetString(HomeItem.3.Path,ActivateWindow(RadioChannels))</onload>
@@ -762,7 +760,6 @@
 		<onload>Skin.SetString(HomeItem.3.Widget,None)</onload>
 		<onload>Skin.SetString(HomeItem.3.Type,Radio)</onload>
 		<onload>Skin.SetString(HomeItem.3.Fanart,special://skin/backgrounds/tv.jpg)</onload>
-        <onload>Skin.SetString(HomeItem.3.Display,Default)</onload>
         <!-- TV -->
 		<onload>Skin.SetString(HomeItem.4.Label,$LOCALIZE[31952])</onload>
 		<onload>Skin.SetString(HomeItem.4.Path,ActivateWindow(TVChannels))</onload>
@@ -771,7 +768,6 @@
 		<onload>Skin.SetString(HomeItem.4.Widget,None)</onload>
 		<onload>Skin.SetString(HomeItem.4.Type,LiveTV)</onload>
 		<onload>Skin.SetString(HomeItem.4.Fanart,special://skin/backgrounds/tv.jpg)</onload>
-        <onload>Skin.SetString(HomeItem.4.Display,Default)</onload>
         <!-- Videos -->
 		<onload>Skin.SetString(HomeItem.5.Label,$LOCALIZE[31953])</onload>
 		<onload>Skin.SetString(HomeItem.5.Path,ActivateWindow(Videos,root,return))</onload>
@@ -780,7 +776,6 @@
 		<onload>Skin.SetString(HomeItem.5.Widget,None)</onload>
 		<onload>Skin.SetString(HomeItem.5.Type,Videos)</onload>
 		<onload>Skin.SetString(HomeItem.5.Fanart,special://skin/backgrounds/videos.jpg)</onload>
-        <onload>Skin.SetString(HomeItem.5.Display,Default)</onload>
         <!-- Movies -->
 		<onload>Skin.SetString(HomeItem.6.Label,$LOCALIZE[31954])</onload>
 		<onload>Skin.SetString(HomeItem.6.Path,ActivateWindow(Videos,MovieTitles,return))</onload>
@@ -789,7 +784,6 @@
 		<onload>Skin.SetString(HomeItem.6.Widget,RecentMovies)</onload>
 		<onload>Skin.SetString(HomeItem.6.Type,Movies)</onload>
 		<onload>Skin.SetString(HomeItem.6.Fanart,special://skin/backgrounds/movie.jpg)</onload>
-        <onload>Skin.SetString(HomeItem.6.Display,Default)</onload>
         <!-- TVShows -->
 		<onload>Skin.SetString(HomeItem.7.Label,$LOCALIZE[31955])</onload>
 		<onload>Skin.SetString(HomeItem.7.Path,ActivateWindow(Videos,TVShowTitles,return))</onload>
@@ -797,8 +791,7 @@
 		<onload>Skin.SetString(HomeItem.7.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.7.Widget,RecentEpisodes)</onload>
 		<onload>Skin.SetString(HomeItem.7.Type,TVShows)</onload>
-		<onload>Skin.SetString(HomeItem.7.Fanart,special://skin/backgrounds/tvshows.jpg)</onload>
-        <onload>Skin.SetString(HomeItem.7.Display,Default)</onload>        
+		<onload>Skin.SetString(HomeItem.7.Fanart,special://skin/backgrounds/tvshows.jpg)</onload>       
         <!-- MusicVideo -->
 		<onload>Skin.SetString(HomeItem.8.Label,$LOCALIZE[31961])</onload>
 		<onload>Skin.SetString(HomeItem.8.Path,ActivateWindow(Videos,MusicVideos,return))</onload>
@@ -806,8 +799,7 @@
 		<onload>Skin.SetString(HomeItem.8.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.8.Widget,RecentMusicVideo)</onload>
 		<onload>Skin.SetString(HomeItem.8.Type,MusicVideo)</onload>
-		<onload>Skin.SetString(HomeItem.8.Fanart,special://skin/backgrounds/musicvideos.jpg)</onload>
-        <onload>Skin.SetString(HomeItem.8.Display,Default)</onload>                
+		<onload>Skin.SetString(HomeItem.8.Fanart,special://skin/backgrounds/musicvideos.jpg)</onload>                
         <!-- Musics -->
 		<onload>Skin.SetString(HomeItem.9.Label,$LOCALIZE[31956])</onload>
 		<onload>Skin.SetString(HomeItem.9.Path,ActivateWindow(Music))</onload>
@@ -816,7 +808,6 @@
 		<onload>Skin.SetString(HomeItem.9.Widget,RecentAlbums)</onload>
 		<onload>Skin.SetString(HomeItem.9.Type,Music)</onload>
 		<onload>Skin.SetString(HomeItem.9.Fanart,special://skin/backgrounds/music.jpg)</onload>
-        <onload>Skin.SetString(HomeItem.9.Display,Default)</onload>
         <!-- Programs -->
 		<onload>Skin.SetString(HomeItem.10.Label,$LOCALIZE[31957])</onload>
 		<onload condition="!System.Platform.Android">Skin.SetString(HomeItem.10.Path,ActivateWindow(Programs,Addons,return))</onload>
@@ -826,7 +817,6 @@
 		<onload>Skin.SetString(HomeItem.10.Widget,None)</onload>
 		<onload>Skin.SetString(HomeItem.10.Type,Programs)</onload>
 		<onload>Skin.SetString(HomeItem.10.Fanart,special://skin/backgrounds/programs.jpg)</onload>
-        <onload>Skin.SetString(HomeItem.10.Display,Default)</onload>
         <!-- PlayDisc -->
 		<onload>Skin.SetString(HomeItem.11.Label,$LOCALIZE[31958])</onload>
 		<onload>Skin.SetString(HomeItem.11.Path,PlayDVD())</onload>
@@ -835,7 +825,6 @@
 		<onload>Skin.SetString(HomeItem.11.Widget,None)</onload>
 		<onload>Skin.SetString(HomeItem.11.Type,PlayDisc)</onload>
 		<onload>Skin.SetString(HomeItem.11.Fanart,special://skin/backgrounds/playdisc.jpg)</onload>
-        <onload>Skin.SetString(HomeItem.11.Display,Default)</onload>
         <!-- Settings -->
 		<onload>Skin.SetString(HomeItem.12.Label,$LOCALIZE[31959])</onload>
 		<onload>Skin.SetString(HomeItem.12.Path,ActivateWindow(Settings))</onload>
@@ -844,7 +833,6 @@
 		<onload>Skin.SetString(HomeItem.12.Widget,None)</onload>
 		<onload>Skin.SetString(HomeItem.12.Type,Settings)</onload>
 		<onload>Skin.SetString(HomeItem.12.Fanart,special://skin/backgrounds/settings.jpg)</onload>
-        <onload>Skin.SetString(HomeItem.12.Display,Default)</onload>
     </include>
 	<include name="DefaultInitialSetup">
         <!-- SubMenu -->

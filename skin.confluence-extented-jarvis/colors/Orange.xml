@@ -2,25 +2,25 @@
 <colors>
     <!-- CONFLUENCE LITE COLORS -->
     <color name="white">FFFFFFFF</color>
-    <color name="grey">FFb4b4b4</color>
+    <color name="grey">FFB4B4B4</color>
     <color name="grey2">88FFFFFF</color>
     <color name="grey3">33FFFFFF</color>
     <color name="grey4">17FFFFFF</color>
     <color name="black">FF000000</color>
-    <color name="blue">FFd22b04</color>
-    <color name="selected">FFEB9E17</color><!--def-->
+    <color name="blue">FFFF8C00</color>
+    <color name="selected">FFFF8C00</color>
     <color name="dialogheader">FFEB917</color>
-    <color name="orange">FFd22b04</color>
+    <color name="orange">FFD22B04</color>
     <!-- CONFLUENCE LITE MOD ADVANCED COLORS -->
-    <color name="MenuFocus">FFd22b04</color><!--blue-->
+    <color name="MenuFocus">FFD22B04</color><!--blue-->
     <color name="MenuNoFocus">FF505050</color><!--grey3-->
     <color name="SubMenu">FF999999</color><!--grey2-->
-    <color name="CommonBtnFocus">ffffffff</color><!--white-->
+    <color name="CommonBtnFocus">FFFFFFFF</color><!--white-->
     <color name="CommonBtnNoFocus">FF999999</color><!--grey2-->
-    <color name="HomeInfoOne">ffffffff</color><!--white-->
-    <color name="HomeInfoTwo">FFd22b04</color><!--blue-->
+    <color name="HomeInfoOne">FFFFFFFF</color><!--white-->
+    <color name="HomeInfoTwo">FFD22B04</color><!--blue-->
     <color name="HomeInfoThree">FF999999</color><!--grey2-->
-    <color name="StatsName">FFd22b04</color><!--white-->
+    <color name="StatsName">FFD22B04</color><!--white-->
     <color name="StatsAmnt">FFEB9E17</color><!--white-->
     <!-- RSS FEED -->
     <color name="RSSText">FFFFFFFF</color><!--blue-->
@@ -30,7 +30,7 @@
     <color name="HomeInfoDate">FFFFFFFF</color><!--white-->
     <color name="HomeInfoClock">FFFFFFFF</color><!--white-->
     <!--ADNVANCED COLORS HOME ALBUM INFO -->
-    <color name="NowPlayAlbum">white</color><!--white-->
+    <color name="NowPlayAlbum">FFFFFFFF</color><!--white-->
     <color name="NowPlayTitle">FFEB8E17</color><!--white-->
-    <color name="NowPlayTime">white</color><!--white-->
+    <color name="NowPlayTime">FFFFFFFF</color><!--white-->
 </colors>
