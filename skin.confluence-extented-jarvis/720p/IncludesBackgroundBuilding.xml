@@ -322,6 +322,7 @@
 			</control>
 		</control>
 	</include>
+    <!-- -->
 	<include name="CommonVideoBackground">
 		<control type="multiimage">
 			<posx>0</posx>

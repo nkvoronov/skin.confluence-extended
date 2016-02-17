@@ -106,16 +106,16 @@
 				<label>$INFO[Skin.String(HomeItem.1.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,Item01,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.1.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.1.Display)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[Background01],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.1.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.1.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.1.Display)]</thumb>
+				<icon>$INFO[Skin.String(HomeItem.1.DBackground)]</icon>
+				<thumb>$INFO[Skin.String(HomeItem.1.CBackground)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.1.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.1.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.1.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.1.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist01.Type)]</property>
-				<property name="Background">$INFO[Skin.String(HomeItem.1.Display)]</property>
+				<property name="Background">$VAR[Background01]</property>
                 <visible>!IsEmpty(Skin.String(HomeItem.1.Path))</visible>
                 <include condition="StringCompare(Skin.String(HomeItem.1.Type),Weather)">VisibleWeather</include>
                 <include condition="StringCompare(Skin.String(HomeItem.1.Type),Radio)">VisibleRadio</include>
@@ -131,16 +131,16 @@
 				<label>$INFO[Skin.String(HomeItem.2.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,Item02,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.2.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.2.Display)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[Background02],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.2.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.2.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.2.Display)]</thumb>
+				<icon>$INFO[Skin.String(HomeItem.2.DBackground)]</icon>
+				<thumb>$INFO[Skin.String(HomeItem.2.CBackground)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.2.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.2.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.2.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.2.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist02.Type)]</property>
-				<property name="Background">$INFO[Skin.String(HomeItem.2.Display)]</property>
+				<property name="Background">$VAR[Background02]</property>
                 <visible>!IsEmpty(Skin.String(HomeItem.2.Path))</visible>
                 <include condition="StringCompare(Skin.String(HomeItem.2.Type),Weather)">VisibleWeather</include>
                 <include condition="StringCompare(Skin.String(HomeItem.2.Type),Radio)">VisibleRadio</include>
@@ -156,16 +156,16 @@
 				<label>$INFO[Skin.String(HomeItem.3.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,Item03,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.3.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.3.Display)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[Background03],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.3.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.3.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.3.Display)]</thumb>
+				<icon>$INFO[Skin.String(HomeItem.3.DBackground)]</icon>
+				<thumb>$INFO[Skin.String(HomeItem.3.CBackground)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.3.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.3.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.3.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.3.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist03.Type)]</property>
-				<property name="Background">$INFO[Skin.String(HomeItem.3.Display)]</property>
+				<property name="Background">$VAR[Background03]</property>
                 <visible>!IsEmpty(Skin.String(HomeItem.3.Path))</visible>
                 <include condition="StringCompare(Skin.String(HomeItem.3.Type),Weather)">VisibleWeather</include>
                 <include condition="StringCompare(Skin.String(HomeItem.3.Type),Radio)">VisibleRadio</include>
@@ -181,16 +181,16 @@
 				<label>$INFO[Skin.String(HomeItem.4.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,Item04,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.4.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.4.Display)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[Background04],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.4.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.4.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.4.Display)]</thumb>
+				<icon>$INFO[Skin.String(HomeItem.4.DBackground)]</icon>
+				<thumb>$INFO[Skin.String(HomeItem.4.CBackground)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.4.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.4.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.4.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.4.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist04.Type)]</property>
-				<property name="Background">$INFO[Skin.String(HomeItem.4.Display)]</property>
+				<property name="Background">$VAR[Background04]</property>
 				<visible>!IsEmpty(Skin.String(HomeItem.4.Path))</visible>
                 <include condition="StringCompare(Skin.String(HomeItem.4.Type),Weather)">VisibleWeather</include>
                 <include condition="StringCompare(Skin.String(HomeItem.4.Type),Radio)">VisibleRadio</include>
@@ -206,16 +206,16 @@
 				<label>$INFO[Skin.String(HomeItem.5.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,Item05,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.5.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.5.Display)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[Background05],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.5.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.5.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.5.Display)]</thumb>
+				<icon>$INFO[Skin.String(HomeItem.5.DBackground)]</icon>
+				<thumb>$INFO[Skin.String(HomeItem.5.CBackground)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.5.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.5.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.5.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.5.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist05.Type)]</property>
-				<property name="Background">$INFO[Skin.String(HomeItem.5.Display)]</property>
+				<property name="Background">$VAR[Background05]</property>
 				<visible>!IsEmpty(Skin.String(HomeItem.5.Path))</visible>
                 <include condition="StringCompare(Skin.String(HomeItem.5.Type),Weather)">VisibleWeather</include>
                 <include condition="StringCompare(Skin.String(HomeItem.5.Type),Radio)">VisibleRadio</include>
@@ -231,16 +231,16 @@
 				<label>$INFO[Skin.String(HomeItem.6.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,Item06,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.6.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.6.Display)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[Background06],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.6.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.6.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.6.Display)]</thumb>
+				<icon>$INFO[Skin.String(HomeItem.6.DBackground)]</icon>
+				<thumb>$INFO[Skin.String(HomeItem.6.CBackground)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.6.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.6.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.6.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.6.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist06.Type)]</property>
-				<property name="Background">$INFO[Skin.String(HomeItem.6.Display)]</property>
+				<property name="Background">$VAR[Background06]</property>
 				<visible>!IsEmpty(Skin.String(HomeItem.6.Path))</visible>
                 <include condition="StringCompare(Skin.String(HomeItem.6.Type),Weather)">VisibleWeather</include>
                 <include condition="StringCompare(Skin.String(HomeItem.6.Type),Radio)">VisibleRadio</include>
@@ -256,16 +256,16 @@
 				<label>$INFO[Skin.String(HomeItem.7.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,Item07,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.7.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.7.Display)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[Background07],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.7.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.7.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.7.Display)]</thumb>
+				<icon>$INFO[Skin.String(HomeItem.7.DBackground)]</icon>
+				<thumb>$INFO[Skin.String(HomeItem.7.CBackground)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.7.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.7.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.7.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.7.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist07.Type)]</property>
-				<property name="Background">$INFO[Skin.String(HomeItem.7.Display)]</property>
+				<property name="Background">$VAR[Background07]</property>
 				<visible>!IsEmpty(Skin.String(HomeItem.7.Path))</visible>
                 <include condition="StringCompare(Skin.String(HomeItem.7.Type),Weather)">VisibleWeather</include>
                 <include condition="StringCompare(Skin.String(HomeItem.7.Type),Radio)">VisibleRadio</include>
@@ -281,16 +281,16 @@
 				<label>$INFO[Skin.String(HomeItem.8.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,Item08,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.8.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.8.Display)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[Background08],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.8.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.8.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.8.Display)]</thumb>
+				<icon>$INFO[Skin.String(HomeItem.8.DBackground)]</icon>
+				<thumb>$INFO[Skin.String(HomeItem.8.CBackground)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.8.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.8.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.8.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.8.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist08.Type)]</property>
-				<property name="Background">$INFO[Skin.String(HomeItem.8.Display)]</property>
+				<property name="Background">$VAR[Background08]</property>
 				<visible>!IsEmpty(Skin.String(HomeItem.8.Path))</visible>
                 <include condition="StringCompare(Skin.String(HomeItem.8.Type),Weather)">VisibleWeather</include>
                 <include condition="StringCompare(Skin.String(HomeItem.8.Type),Radio)">VisibleRadio</include>
@@ -306,16 +306,16 @@
 				<label>$INFO[Skin.String(HomeItem.9.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,Item09,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.9.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.9.Display)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[Background09],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.9.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.9.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.9.Display)]</thumb>
+				<icon>$INFO[Skin.String(HomeItem.9.DBackground)]</icon>
+				<thumb>$INFO[Skin.String(HomeItem.9.CBackground)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.9.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.9.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.9.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.9.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist09.Type)]</property>
-				<property name="Background">$INFO[Skin.String(HomeItem.9.Display)]</property>
+				<property name="Background">$VAR[Background09]</property>
 				<visible>!IsEmpty(Skin.String(HomeItem.9.Path))</visible>
                 <include condition="StringCompare(Skin.String(HomeItem.9.Type),Weather)">VisibleWeather</include>
                 <include condition="StringCompare(Skin.String(HomeItem.9.Type),Radio)">VisibleRadio</include>
@@ -331,16 +331,16 @@
 				<label>$INFO[Skin.String(HomeItem.10.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,Item10,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.10.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.10.Display)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[Background10],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.10.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.10.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.10.Display)]</thumb>
+				<icon>$INFO[Skin.String(HomeItem.10.DBackground)]</icon>
+				<thumb>$INFO[Skin.String(HomeItem.10.CBackground)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.10.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.10.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.10.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.10.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist10.Type)]</property>
-				<property name="Background">$INFO[Skin.String(HomeItem.10.Display)]</property>
+				<property name="Background">$VAR[Background10]</property>
 				<visible>!IsEmpty(Skin.String(HomeItem.10.Path))</visible>
                 <include condition="StringCompare(Skin.String(HomeItem.10.Type),Weather)">VisibleWeather</include>
                 <include condition="StringCompare(Skin.String(HomeItem.10.Type),Radio)">VisibleRadio</include>
@@ -356,16 +356,16 @@
 				<label>$INFO[Skin.String(HomeItem.11.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,Item11,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.11.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.11.Display)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[Background11],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.11.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.11.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.11.Display)]</thumb>
+				<icon>$INFO[Skin.String(HomeItem.11.DBackground)]</icon>
+				<thumb>$INFO[Skin.String(HomeItem.11.CBackground)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.11.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.11.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.11.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.11.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist11.Type)]</property>
-				<property name="Background">$INFO[Skin.String(HomeItem.11.Display)]</property>
+				<property name="Background">$VAR[Background11]</property>
                 <visible>!IsEmpty(Skin.String(HomeItem.11.Path))</visible>
                 <include condition="StringCompare(Skin.String(HomeItem.11.Type),Weather)">VisibleWeather</include>
                 <include condition="StringCompare(Skin.String(HomeItem.11.Type),Radio)">VisibleRadio</include>
@@ -381,16 +381,16 @@
 				<label>$INFO[Skin.String(HomeItem.12.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,Item12,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.12.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.12.Display)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[Background12],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.12.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.12.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.12.Display)]</thumb>
+				<icon>$INFO[Skin.String(HomeItem.12.DBackground)]</icon>
+				<thumb>$INFO[Skin.String(HomeItem.12.CBackground)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.12.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.12.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.12.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.12.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist12.Type)]</property>
-				<property name="Background">$INFO[Skin.String(HomeItem.12.Display)]</property>
+				<property name="Background">$VAR[Background12]</property>
 				<visible>!IsEmpty(Skin.String(HomeItem.12.Path))</visible>
                 <include condition="StringCompare(Skin.String(HomeItem.12.Type),Weather)">VisibleWeather</include>
                 <include condition="StringCompare(Skin.String(HomeItem.12.Type),Radio)">VisibleRadio</include>
@@ -406,16 +406,16 @@
 				<label>$INFO[Skin.String(HomeItem.13.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,Item13,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.13.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.13.Display)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[Background13],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.13.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.13.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.13.Display)]</thumb>
+				<icon>$INFO[Skin.String(HomeItem.13.DBackground)]</icon>
+				<thumb>$INFO[Skin.String(HomeItem.13.CBackground)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.13.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.13.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.13.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.13.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist13.Type)]</property>
-				<property name="Background">$INFO[Skin.String(HomeItem.13.Display)]</property>
+				<property name="Background">$VAR[Background13]</property>
 				<visible>!IsEmpty(Skin.String(HomeItem.13.Path))</visible>
                 <include condition="StringCompare(Skin.String(HomeItem.13.Type),Weather)">VisibleWeather</include>
                 <include condition="StringCompare(Skin.String(HomeItem.13.Type),Radio)">VisibleRadio</include>
@@ -431,16 +431,16 @@
 				<label>$INFO[Skin.String(HomeItem.14.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,Item14,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.14.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.14.Display)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[Background14],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.14.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.14.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.14.Display)]</thumb>
+				<icon>$INFO[Skin.String(HomeItem.14.DBackground)]</icon>
+				<thumb>$INFO[Skin.String(HomeItem.14.CBackground)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.14.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.14.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.14.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.14.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist14.Type)]</property>
-				<property name="Background">$INFO[Skin.String(HomeItem.14.Display)]</property>
+				<property name="Background">$VAR[Background14]</property>
 				<visible>!IsEmpty(Skin.String(HomeItem.14.Path))</visible>
                 <include condition="StringCompare(Skin.String(HomeItem.14.Type),Weather)">VisibleWeather</include>
                 <include condition="StringCompare(Skin.String(HomeItem.14.Type),Radio)">VisibleRadio</include>
@@ -456,16 +456,16 @@
 				<label>$INFO[Skin.String(HomeItem.15.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,Item15,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.15.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.15.Display)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[Background15],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.15.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.15.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.15.Display)]</thumb>
+				<icon>$INFO[Skin.String(HomeItem.15.DBackground)]</icon>
+				<thumb>$INFO[Skin.String(HomeItem.15.CBackground)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.15.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.15.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.15.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.15.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist15.Type)]</property>
-				<property name="Background">$INFO[Skin.String(HomeItem.15.Display)]</property>
+				<property name="Background">$VAR[Background15]</property>
 				<visible>!IsEmpty(Skin.String(HomeItem.15.Path))</visible>
                 <include condition="StringCompare(Skin.String(HomeItem.15.Type),Weather)">VisibleWeather</include>
                 <include condition="StringCompare(Skin.String(HomeItem.15.Type),Radio)">VisibleRadio</include>
@@ -481,16 +481,16 @@
 				<label>$INFO[Skin.String(HomeItem.16.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,Item16,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.16.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.16.Display)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[Background16],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.16.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.16.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.16.Display)]</thumb>
+				<icon>$INFO[Skin.String(HomeItem.16.DBackground)]</icon>
+				<thumb>$INFO[Skin.String(HomeItem.16.CBackground)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.16.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.16.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.16.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.16.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist16.Type)]</property>
-				<property name="Background">$INFO[Skin.String(HomeItem.16.Display)]</property>
+				<property name="Background">$VAR[Background16]</property>
 				<visible>!IsEmpty(Skin.String(HomeItem.16.Path))</visible>
                 <include condition="StringCompare(Skin.String(HomeItem.16.Type),Weather)">VisibleWeather</include>
                 <include condition="StringCompare(Skin.String(HomeItem.16.Type),Radio)">VisibleRadio</include>
@@ -506,16 +506,16 @@
 				<label>$INFO[Skin.String(HomeItem.17.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,Item17,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.17.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.17.Display)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[Background17],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.17.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.17.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.17.Display)]</thumb>
+				<icon>$INFO[Skin.String(HomeItem.17.DBackground)]</icon>
+				<thumb>$INFO[Skin.String(HomeItem.17.CBackground)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.17.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.17.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.17.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.17.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist17.Type)]</property>
-				<property name="Background">$INFO[Skin.String(HomeItem.17.Display)]</property>
+				<property name="Background">$VAR[Background17]</property>
 				<visible>!IsEmpty(Skin.String(HomeItem.17.Path))</visible>
                 <include condition="StringCompare(Skin.String(HomeItem.17.Type),Weather)">VisibleWeather</include>
                 <include condition="StringCompare(Skin.String(HomeItem.17.Type),Radio)">VisibleRadio</include>
@@ -531,16 +531,16 @@
 				<label>$INFO[Skin.String(HomeItem.18.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,Item18,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.18.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.18.Display)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[Background18],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.18.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.18.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.18.Display)]</thumb>
+				<icon>$INFO[Skin.String(HomeItem.18.DBackground)]</icon>
+				<thumb>$INFO[Skin.String(HomeItem.18.CBackground)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.18.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.18.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.18.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.18.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist18.Type)]</property>
-				<property name="Background">$INFO[Skin.String(HomeItem.18.Display)]</property>
+				<property name="Background">$VAR[Background18]</property>
 				<visible>!IsEmpty(Skin.String(HomeItem.18.Path))</visible>
                 <include condition="StringCompare(Skin.String(HomeItem.18.Type),Weather)">VisibleWeather</include>
                 <include condition="StringCompare(Skin.String(HomeItem.18.Type),Radio)">VisibleRadio</include>
@@ -556,16 +556,16 @@
 				<label>$INFO[Skin.String(HomeItem.19.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,Item19,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.19.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.19.Display)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[Background19],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.19.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.19.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.19.Display)]</thumb>
+				<icon>$INFO[Skin.String(HomeItem.19.DBackground)]</icon>
+				<thumb>$INFO[Skin.String(HomeItem.19.CBackground)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.19.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.19.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.19.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.19.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist19.Type)]</property>
-				<property name="Background">$INFO[Skin.String(HomeItem.19.Display)]</property>
+				<property name="Background">$VAR[Background19]</property>
 				<visible>!IsEmpty(Skin.String(HomeItem.19.Path))</visible>
                 <include condition="StringCompare(Skin.String(HomeItem.19.Type),Weather)">VisibleWeather</include>
                 <include condition="StringCompare(Skin.String(HomeItem.19.Type),Radio)">VisibleRadio</include>
@@ -581,16 +581,16 @@
 				<label>$INFO[Skin.String(HomeItem.20.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,Item20,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.20.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.20.Display)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[Background20],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.20.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.20.Fanart)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.20.Display)]</thumb>
+				<icon>$INFO[Skin.String(HomeItem.20.DBackground)]</icon>
+				<thumb>$INFO[Skin.String(HomeItem.20.CBackground)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.20.Sub)]</property>
 				<property name="TypeItem">$INFO[Skin.String(HomeItem.20.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.20.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.20.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist20.Type)]</property>
-				<property name="Background">$INFO[Skin.String(HomeItem.20.Display)]</property>
+				<property name="Background">$VAR[Background20]</property>
 				<visible>!IsEmpty(Skin.String(HomeItem.20.Path))</visible>
                 <include condition="StringCompare(Skin.String(HomeItem.20.Type),Weather)">VisibleWeather</include>
                 <include condition="StringCompare(Skin.String(HomeItem.20.Type),Radio)">VisibleRadio</include>
@@ -743,7 +743,7 @@
 		<onload>Skin.SetString(HomeItem.1.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.1.Widget,Weather)</onload>
 		<onload>Skin.SetString(HomeItem.1.Type,Weather)</onload>
-		<onload>Skin.SetString(HomeItem.1.Fanart,special://skin/backgrounds/weather.jpg)</onload>
+		<onload>Skin.SetString(HomeItem.1.DBackground,special://skin/backgrounds/weather.jpg)</onload>
         <!-- Pictures -->        
 		<onload>Skin.SetString(HomeItem.2.Label,$LOCALIZE[31951])</onload>
 		<onload>Skin.SetString(HomeItem.2.Path,ActivateWindow(Pictures))</onload>
@@ -751,7 +751,7 @@
 		<onload>Skin.SetString(HomeItem.2.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.2.Widget,None)</onload>
 		<onload>Skin.SetString(HomeItem.2.Type,Pictures)</onload>
-		<onload>Skin.SetString(HomeItem.2.Fanart,special://skin/backgrounds/pictures.jpg)</onload>
+		<onload>Skin.SetString(HomeItem.2.DBackground,special://skin/backgrounds/pictures.jpg)</onload>
         <!-- Radio -->        
 		<onload>Skin.SetString(HomeItem.3.Label,$LOCALIZE[31960])</onload>
 		<onload>Skin.SetString(HomeItem.3.Path,ActivateWindow(RadioChannels))</onload>
@@ -759,7 +759,7 @@
 		<onload>Skin.SetString(HomeItem.3.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.3.Widget,None)</onload>
 		<onload>Skin.SetString(HomeItem.3.Type,Radio)</onload>
-		<onload>Skin.SetString(HomeItem.3.Fanart,special://skin/backgrounds/tv.jpg)</onload>
+		<onload>Skin.SetString(HomeItem.3.DBackground,special://skin/backgrounds/tv.jpg)</onload>
         <!-- TV -->
 		<onload>Skin.SetString(HomeItem.4.Label,$LOCALIZE[31952])</onload>
 		<onload>Skin.SetString(HomeItem.4.Path,ActivateWindow(TVChannels))</onload>
@@ -767,7 +767,7 @@
 		<onload>Skin.SetString(HomeItem.4.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.4.Widget,None)</onload>
 		<onload>Skin.SetString(HomeItem.4.Type,LiveTV)</onload>
-		<onload>Skin.SetString(HomeItem.4.Fanart,special://skin/backgrounds/tv.jpg)</onload>
+		<onload>Skin.SetString(HomeItem.4.DBackground,special://skin/backgrounds/tv.jpg)</onload>
         <!-- Videos -->
 		<onload>Skin.SetString(HomeItem.5.Label,$LOCALIZE[31953])</onload>
 		<onload>Skin.SetString(HomeItem.5.Path,ActivateWindow(Videos,root,return))</onload>
@@ -775,7 +775,7 @@
 		<onload>Skin.SetString(HomeItem.5.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.5.Widget,None)</onload>
 		<onload>Skin.SetString(HomeItem.5.Type,Videos)</onload>
-		<onload>Skin.SetString(HomeItem.5.Fanart,special://skin/backgrounds/videos.jpg)</onload>
+		<onload>Skin.SetString(HomeItem.5.DBackground,special://skin/backgrounds/videos.jpg)</onload>
         <!-- Movies -->
 		<onload>Skin.SetString(HomeItem.6.Label,$LOCALIZE[31954])</onload>
 		<onload>Skin.SetString(HomeItem.6.Path,ActivateWindow(Videos,MovieTitles,return))</onload>
@@ -783,7 +783,7 @@
 		<onload>Skin.SetString(HomeItem.6.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.6.Widget,RecentMovies)</onload>
 		<onload>Skin.SetString(HomeItem.6.Type,Movies)</onload>
-		<onload>Skin.SetString(HomeItem.6.Fanart,special://skin/backgrounds/movie.jpg)</onload>
+		<onload>Skin.SetString(HomeItem.6.DBackground,special://skin/backgrounds/movie.jpg)</onload>
         <!-- TVShows -->
 		<onload>Skin.SetString(HomeItem.7.Label,$LOCALIZE[31955])</onload>
 		<onload>Skin.SetString(HomeItem.7.Path,ActivateWindow(Videos,TVShowTitles,return))</onload>
@@ -791,7 +791,7 @@
 		<onload>Skin.SetString(HomeItem.7.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.7.Widget,RecentEpisodes)</onload>
 		<onload>Skin.SetString(HomeItem.7.Type,TVShows)</onload>
-		<onload>Skin.SetString(HomeItem.7.Fanart,special://skin/backgrounds/tvshows.jpg)</onload>       
+		<onload>Skin.SetString(HomeItem.7.DBackground,special://skin/backgrounds/tvshows.jpg)</onload>       
         <!-- MusicVideo -->
 		<onload>Skin.SetString(HomeItem.8.Label,$LOCALIZE[31961])</onload>
 		<onload>Skin.SetString(HomeItem.8.Path,ActivateWindow(Videos,MusicVideos,return))</onload>
@@ -799,7 +799,7 @@
 		<onload>Skin.SetString(HomeItem.8.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.8.Widget,RecentMusicVideo)</onload>
 		<onload>Skin.SetString(HomeItem.8.Type,MusicVideo)</onload>
-		<onload>Skin.SetString(HomeItem.8.Fanart,special://skin/backgrounds/musicvideos.jpg)</onload>                
+		<onload>Skin.SetString(HomeItem.8.DBackground,special://skin/backgrounds/musicvideos.jpg)</onload>                
         <!-- Musics -->
 		<onload>Skin.SetString(HomeItem.9.Label,$LOCALIZE[31956])</onload>
 		<onload>Skin.SetString(HomeItem.9.Path,ActivateWindow(Music))</onload>
@@ -807,7 +807,7 @@
 		<onload>Skin.SetString(HomeItem.9.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.9.Widget,RecentAlbums)</onload>
 		<onload>Skin.SetString(HomeItem.9.Type,Music)</onload>
-		<onload>Skin.SetString(HomeItem.9.Fanart,special://skin/backgrounds/music.jpg)</onload>
+		<onload>Skin.SetString(HomeItem.9.DBackground,special://skin/backgrounds/music.jpg)</onload>
         <!-- Programs -->
 		<onload>Skin.SetString(HomeItem.10.Label,$LOCALIZE[31957])</onload>
 		<onload condition="!System.Platform.Android">Skin.SetString(HomeItem.10.Path,ActivateWindow(Programs,Addons,return))</onload>
@@ -816,7 +816,7 @@
 		<onload>Skin.SetString(HomeItem.10.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.10.Widget,None)</onload>
 		<onload>Skin.SetString(HomeItem.10.Type,Programs)</onload>
-		<onload>Skin.SetString(HomeItem.10.Fanart,special://skin/backgrounds/programs.jpg)</onload>
+		<onload>Skin.SetString(HomeItem.10.DBackground,special://skin/backgrounds/programs.jpg)</onload>
         <!-- PlayDisc -->
 		<onload>Skin.SetString(HomeItem.11.Label,$LOCALIZE[31958])</onload>
 		<onload>Skin.SetString(HomeItem.11.Path,PlayDVD())</onload>
@@ -824,7 +824,7 @@
 		<onload>Skin.SetString(HomeItem.11.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.11.Widget,None)</onload>
 		<onload>Skin.SetString(HomeItem.11.Type,PlayDisc)</onload>
-		<onload>Skin.SetString(HomeItem.11.Fanart,special://skin/backgrounds/playdisc.jpg)</onload>
+		<onload>Skin.SetString(HomeItem.11.DBackground,special://skin/backgrounds/playdisc.jpg)</onload>
         <!-- Settings -->
 		<onload>Skin.SetString(HomeItem.12.Label,$LOCALIZE[31959])</onload>
 		<onload>Skin.SetString(HomeItem.12.Path,ActivateWindow(Settings))</onload>
@@ -832,7 +832,7 @@
 		<onload>Skin.SetString(HomeItem.12.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.12.Widget,None)</onload>
 		<onload>Skin.SetString(HomeItem.12.Type,Settings)</onload>
-		<onload>Skin.SetString(HomeItem.12.Fanart,special://skin/backgrounds/settings.jpg)</onload>
+		<onload>Skin.SetString(HomeItem.12.DBackground,special://skin/backgrounds/settings.jpg)</onload>
     </include>
 	<include name="DefaultInitialSetup">
         <!-- SubMenu -->

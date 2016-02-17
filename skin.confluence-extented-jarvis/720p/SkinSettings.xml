@@ -801,8 +801,8 @@
 						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.1.Addon)],Home)</onclick>
 						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.1.Widget)],Home)</onclick>
 						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.1.Type)],Home)</onclick>
-						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.1.Fanart)],Home)</onclick>
-						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.1.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDBackground,$INFO[Skin.String(HomeItem.1.DBackground)],Home)</onclick>
+						<onclick>SetProperty(SwapItemCBackground,$INFO[Skin.String(HomeItem.1.CBackground)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.1.Playlist)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.1.Label))</visible>
@@ -883,8 +883,8 @@
 						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.2.Addon)],Home)</onclick>
 						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.2.Widget)],Home)</onclick>
 						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.2.Type)],Home)</onclick>
-						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.2.Fanart)],Home)</onclick>
-						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.2.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDBackground,$INFO[Skin.String(HomeItem.2.DBackground)],Home)</onclick>
+						<onclick>SetProperty(SwapItemCBackground,$INFO[Skin.String(HomeItem.2.CBackground)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.2.Playlist)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.2.Label))</visible>
@@ -965,8 +965,8 @@
 						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.3.Addon)],Home)</onclick>
 						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.3.Widget)],Home)</onclick>
 						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.3.Type)],Home)</onclick>
-						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.3.Fanart)],Home)</onclick>
-						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.3.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDBackground,$INFO[Skin.String(HomeItem.3.DBackground)],Home)</onclick>
+						<onclick>SetProperty(SwapItemCBackground,$INFO[Skin.String(HomeItem.3.CBackground)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.3.Playlist)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.3.Label))</visible>
@@ -1047,8 +1047,8 @@
 						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.4.Addon)],Home)</onclick>
 						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.4.Widget)],Home)</onclick>
 						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.4.Type)],Home)</onclick>
-						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.4.Fanart)],Home)</onclick>
-						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.4.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDBackground,$INFO[Skin.String(HomeItem.4.DBackground)],Home)</onclick>
+						<onclick>SetProperty(SwapItemCBackground,$INFO[Skin.String(HomeItem.4.CBackground)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.4.Playlist)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.4.Label))</visible>
@@ -1129,8 +1129,8 @@
 						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.5.Addon)],Home)</onclick>
 						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.5.Widget)],Home)</onclick>
 						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.5.Type)],Home)</onclick>
-						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.5.Fanart)],Home)</onclick>
-						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.5.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDBackground,$INFO[Skin.String(HomeItem.5.DBackground)],Home)</onclick>
+						<onclick>SetProperty(SwapItemCBackground,$INFO[Skin.String(HomeItem.5.CBackground)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.5.Playlist)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.1.Label))</visible>
@@ -1211,8 +1211,8 @@
 						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.6.Addon)],Home)</onclick>
 						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.6.Widget)],Home)</onclick>
 						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.6.Type)],Home)</onclick>
-						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.6.Fanart)],Home)</onclick>
-						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.6.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDBackground,$INFO[Skin.String(HomeItem.6.DBackground)],Home)</onclick>
+						<onclick>SetProperty(SwapItemCBackground,$INFO[Skin.String(HomeItem.6.CBackground)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.6.Playlist)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.6.Label))</visible>
@@ -1293,8 +1293,8 @@
 						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.7.Addon)],Home)</onclick>
 						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.7.Widget)],Home)</onclick>
 						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.7.Type)],Home)</onclick>
-						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.7.Fanart)],Home)</onclick>
-						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.7.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDBackground,$INFO[Skin.String(HomeItem.7.DBackground)],Home)</onclick>
+						<onclick>SetProperty(SwapItemCBackground,$INFO[Skin.String(HomeItem.7.CBackground)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.7.Playlist)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.7.Label))</visible>
@@ -1375,8 +1375,8 @@
 						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.8.Addon)],Home)</onclick>
 						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.8.Widget)],Home)</onclick>
 						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.8.Type)],Home)</onclick>
-						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.8.Fanart)],Home)</onclick>
-						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.8.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDBackground,$INFO[Skin.String(HomeItem.8.DBackground)],Home)</onclick>
+						<onclick>SetProperty(SwapItemCBackground,$INFO[Skin.String(HomeItem.8.CBackground)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.8.Playlist)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.8.Label))</visible>
@@ -1457,8 +1457,8 @@
 						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.9.Addon)],Home)</onclick>
 						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.9.Widget)],Home)</onclick>
 						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.9.Type)],Home)</onclick>
-						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.9.Fanart)],Home)</onclick>
-						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.9.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDBackground,$INFO[Skin.String(HomeItem.9.DBackground)],Home)</onclick>
+						<onclick>SetProperty(SwapItemCBackground,$INFO[Skin.String(HomeItem.9.CBackground)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.9.Playlist)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.9.Label))</visible>
@@ -1539,8 +1539,8 @@
 						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.10.Addon)],Home)</onclick>
 						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.10.Widget)],Home)</onclick>
 						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.10.Type)],Home)</onclick>
-						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.10.Fanart)],Home)</onclick>
-						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.10.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDBackground,$INFO[Skin.String(HomeItem.10.DBackground)],Home)</onclick>
+						<onclick>SetProperty(SwapItemCBackground,$INFO[Skin.String(HomeItem.10.CBackground)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.10.Playlist)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.10.Label))</visible>
@@ -1621,8 +1621,8 @@
 						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.11.Addon)],Home)</onclick>
 						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.11.Widget)],Home)</onclick>
 						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.11.Type)],Home)</onclick>
-						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.11.Fanart)],Home)</onclick>
-						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.11.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDBackground,$INFO[Skin.String(HomeItem.11.DBackground)],Home)</onclick>
+						<onclick>SetProperty(SwapItemCBackground,$INFO[Skin.String(HomeItem.11.CBackground)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.11.Playlist)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.11.Label))</visible>
@@ -1703,8 +1703,8 @@
 						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.12.Addon)],Home)</onclick>
 						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.12.Widget)],Home)</onclick>
 						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.12.Type)],Home)</onclick>
-						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.12.Fanart)],Home)</onclick>
-						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.12.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDBackground,$INFO[Skin.String(HomeItem.12.DBackground)],Home)</onclick>
+						<onclick>SetProperty(SwapItemCBackground,$INFO[Skin.String(HomeItem.12.CBackground)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.12.Playlist)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.12.Label))</visible>
@@ -1785,8 +1785,8 @@
 						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.13.Addon)],Home)</onclick>
 						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.13.Widget)],Home)</onclick>
 						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.13.Type)],Home)</onclick>
-						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.13.Fanart)],Home)</onclick>
-						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.13.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDBackground,$INFO[Skin.String(HomeItem.13.DBackground)],Home)</onclick>
+						<onclick>SetProperty(SwapItemCBackground,$INFO[Skin.String(HomeItem.13.CBackground)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.13.Playlist)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.13.Label))</visible>
@@ -1867,8 +1867,8 @@
 						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.14.Addon)],Home)</onclick>
 						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.14.Widget)],Home)</onclick>
 						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.14.Type)],Home)</onclick>
-						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.14.Fanart)],Home)</onclick>
-						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.14.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDBackground,$INFO[Skin.String(HomeItem.14.DBackground)],Home)</onclick>
+						<onclick>SetProperty(SwapItemCBackground,$INFO[Skin.String(HomeItem.14.CBackground)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.14.Playlist)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.14.Label))</visible>
@@ -1949,8 +1949,8 @@
 						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.15.Addon)],Home)</onclick>
 						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.15.Widget)],Home)</onclick>
 						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.15.Type)],Home)</onclick>
-						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.15.Fanart)],Home)</onclick>
-						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.15.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDBackground,$INFO[Skin.String(HomeItem.15.DBackground)],Home)</onclick>
+						<onclick>SetProperty(SwapItemCBackground,$INFO[Skin.String(HomeItem.15.CBackground)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.15.Playlist)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.15.Label))</visible>
@@ -2031,8 +2031,8 @@
 						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.16.Addon)],Home)</onclick>
 						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.16.Widget)],Home)</onclick>
 						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.16.Type)],Home)</onclick>
-						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.16.Fanart)],Home)</onclick>
-						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.16.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDBackground,$INFO[Skin.String(HomeItem.16.DBackground)],Home)</onclick>
+						<onclick>SetProperty(SwapItemCBackground,$INFO[Skin.String(HomeItem.16.CBackground)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.16.Playlist)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.16.Label))</visible>
@@ -2113,8 +2113,8 @@
 						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.17.Addon)],Home)</onclick>
 						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.17.Widget)],Home)</onclick>
 						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.17.Type)],Home)</onclick>
-						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.17.Fanart)],Home)</onclick>
-						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.17.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDBackground,$INFO[Skin.String(HomeItem.17.DBackground)],Home)</onclick>
+						<onclick>SetProperty(SwapItemCBackground,$INFO[Skin.String(HomeItem.17.CBackground)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.17.Playlist)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.17.Label))</visible>
@@ -2195,8 +2195,8 @@
 						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.18.Addon)],Home)</onclick>
 						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.18.Widget)],Home)</onclick>
 						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.18.Type)],Home)</onclick>
-						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.18.Fanart)],Home)</onclick>
-						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.18.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDBackground,$INFO[Skin.String(HomeItem.18.DBackground)],Home)</onclick>
+						<onclick>SetProperty(SwapItemCBackground,$INFO[Skin.String(HomeItem.18.CBackground)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.18.Playlist)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.18.Label))</visible>
@@ -2277,8 +2277,8 @@
 						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.19.Addon)],Home)</onclick>
 						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.19.Widget)],Home)</onclick>
 						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.19.Type)],Home)</onclick>
-						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.19.Fanart)],Home)</onclick>
-						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.19.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDBackground,$INFO[Skin.String(HomeItem.19.DBackground)],Home)</onclick>
+						<onclick>SetProperty(SwapItemCBackground,$INFO[Skin.String(HomeItem.19.CBackground)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.19.Playlist)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.19.Label))</visible>
@@ -2359,8 +2359,8 @@
 						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.20.Addon)],Home)</onclick>
 						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.20.Widget)],Home)</onclick>
 						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.20.Type)],Home)</onclick>
-						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.20.Fanart)],Home)</onclick>
-						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.20.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDBackground,$INFO[Skin.String(HomeItem.20.DBackground)],Home)</onclick>
+						<onclick>SetProperty(SwapItemCBackground,$INFO[Skin.String(HomeItem.20.CBackground)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.20.Playlist)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.20.Label))</visible>
@@ -7975,162 +7975,162 @@
 						<content>
 							<item id="1">
 								<label>$INFO[Skin.String(HomeItem.1.Label)]</label>
-								<label2>HomeItem.1.Display</label2>
+								<label2>HomeItem.1.CBackground</label2>
 								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.1.Fanart)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.1.Display)]</thumb>
+								<icon>$INFO[Skin.String(HomeItem.1.DBackground)]</icon>
+								<thumb>$INFO[Skin.String(HomeItem.1.CBackground)]</thumb>
                                 <visible>!IsEmpty(Skin.String(HomeItem.1.Path))</visible>
 							</item>
 							<item id="2">
 								<label>$INFO[Skin.String(HomeItem.2.Label)]</label>
-								<label2>HomeItem.2.Display</label2>
+								<label2>HomeItem.2.CBackground</label2>
 								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.2.Fanart)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.2.Display)]</thumb>
+								<icon>$INFO[Skin.String(HomeItem.2.DBackground)]</icon>
+								<thumb>$INFO[Skin.String(HomeItem.2.CBackground)]</thumb>
                                 <visible>!IsEmpty(Skin.String(HomeItem.2.Path))</visible>
 							</item>                            
 							<item id="3">
 								<label>$INFO[Skin.String(HomeItem.3.Label)]</label>
-								<label2>HomeItem.3.Display</label2>
+								<label2>HomeItem.3.CBackground</label2>
 								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.3.Fanart)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.3.Display)]</thumb>
+								<icon>$INFO[Skin.String(HomeItem.3.DBackground)]</icon>
+								<thumb>$INFO[Skin.String(HomeItem.3.CBackground)]</thumb>
                                 <visible>!IsEmpty(Skin.String(HomeItem.3.Path))</visible>
 							</item>
 							<item id="4">
 								<label>$INFO[Skin.String(HomeItem.4.Label)]</label>
-								<label2>HomeItem.4.Display</label2>
+								<label2>HomeItem.4.CBackground</label2>
 								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.4.Fanart)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.4.Display)]</thumb>
+								<icon>$INFO[Skin.String(HomeItem.4.DBackground)]</icon>
+								<thumb>$INFO[Skin.String(HomeItem.4.CBackground)]</thumb>
                                 <visible>!IsEmpty(Skin.String(HomeItem.4.Path))</visible>
 							</item>
 							<item id="5">
 								<label>$INFO[Skin.String(HomeItem.5.Label)]</label>
-								<label2>HomeItem.5.Display</label2>
+								<label2>HomeItem.5.CBackground</label2>
 								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.5.Fanart)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.5.Display)]</thumb>
+								<icon>$INFO[Skin.String(HomeItem.5.DBackground)]</icon>
+								<thumb>$INFO[Skin.String(HomeItem.5.CBackground)]</thumb>
                                 <visible>!IsEmpty(Skin.String(HomeItem.5.Path))</visible>
 							</item>
 							<item id="6">
 								<label>$INFO[Skin.String(HomeItem.6.Label)]</label>
-								<label2>HomeItem.6.Display</label2>
+								<label2>HomeItem.6.CBackground</label2>
 								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.6.Fanart)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.6.Display)]</thumb>
+								<icon>$INFO[Skin.String(HomeItem.6.DBackground)]</icon>
+								<thumb>$INFO[Skin.String(HomeItem.6.CBackground)]</thumb>
                                 <visible>!IsEmpty(Skin.String(HomeItem.6.Path))</visible>
 							</item>                            
 							<item id="7">
 								<label>$INFO[Skin.String(HomeItem.7.Label)]</label>
-								<label2>HomeItem.7.Display</label2>
+								<label2>HomeItem.7.CBackground</label2>
 								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.7.Fanart)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.7.Display)]</thumb>
+								<icon>$INFO[Skin.String(HomeItem.7.DBackground)]</icon>
+								<thumb>$INFO[Skin.String(HomeItem.7.CBackground)]</thumb>
                                 <visible>!IsEmpty(Skin.String(HomeItem.7.Path))</visible>
 							</item>
 							<item id="8">
 								<label>$INFO[Skin.String(HomeItem.8.Label)]</label>
-								<label2>HomeItem.8.Display</label2>
+								<label2>HomeItem.8.CBackground</label2>
 								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.8.Fanart)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.8.Display)]</thumb>
+								<icon>$INFO[Skin.String(HomeItem.8.DBackground)]</icon>
+								<thumb>$INFO[Skin.String(HomeItem.8.CBackground)]</thumb>
                                 <visible>!IsEmpty(Skin.String(HomeItem.8.Path))</visible>
 							</item>
 							<item id="9">
 								<label>$INFO[Skin.String(HomeItem.9.Label)]</label>
-								<label2>HomeItem.9.Display</label2>
+								<label2>HomeItem.9.CBackground</label2>
 								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.9.Fanart)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.9.Display)]</thumb>
+								<icon>$INFO[Skin.String(HomeItem.9.DBackground)]</icon>
+								<thumb>$INFO[Skin.String(HomeItem.9.CBackground)]</thumb>
                                 <visible>!IsEmpty(Skin.String(HomeItem.9.Path))</visible>
 							</item>
 							<item id="10">
 								<label>$INFO[Skin.String(HomeItem.10.Label)]</label>
-								<label2>HomeItem.10.Display</label2>
+								<label2>HomeItem.10.CBackground</label2>
 								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.10.Fanart)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.10.Display)]</thumb>
+								<icon>$INFO[Skin.String(HomeItem.10.DBackground)]</icon>
+								<thumb>$INFO[Skin.String(HomeItem.10.CBackground)]</thumb>
                                 <visible>!IsEmpty(Skin.String(HomeItem.10.Path))</visible>
 							</item>                            
 							<item id="11">
 								<label>$INFO[Skin.String(HomeItem.11.Label)]</label>
-								<label2>HomeItem.11.Display</label2>
+								<label2>HomeItem.11.CBackground</label2>
 								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.11.Fanart)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.11.Display)]</thumb>
+								<icon>$INFO[Skin.String(HomeItem.11.DBackground)]</icon>
+								<thumb>$INFO[Skin.String(HomeItem.11.CBackground)]</thumb>
                                 <visible>!IsEmpty(Skin.String(HomeItem.11.Path))</visible>
 							</item>
 							<item id="12">
 								<label>$INFO[Skin.String(HomeItem.12.Label)]</label>
-								<label2>HomeItem.12.Display</label2>
+								<label2>HomeItem.12.CBackground</label2>
 								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.12.Fanart)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.12.Display)]</thumb>
+								<icon>$INFO[Skin.String(HomeItem.12.DBackground)]</icon>
+								<thumb>$INFO[Skin.String(HomeItem.12.CBackground)]</thumb>
                                 <visible>!IsEmpty(Skin.String(HomeItem.12.Path))</visible>
 							</item>
 							<item id="13">
 								<label>$INFO[Skin.String(HomeItem.13.Label)]</label>
-								<label2>HomeItem.13.Display</label2>
+								<label2>HomeItem.13.CBackground</label2>
 								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.13.Fanart)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.13.Display)]</thumb>
+								<icon>$INFO[Skin.String(HomeItem.13.DBackground)]</icon>
+								<thumb>$INFO[Skin.String(HomeItem.13.CBackground)]</thumb>
                                 <visible>!IsEmpty(Skin.String(HomeItem.13.Path))</visible>
 							</item>
 							<item id="14">
 								<label>$INFO[Skin.String(HomeItem.14.Label)]</label>
-								<label2>HomeItem.14.Display</label2>
+								<label2>HomeItem.14.CBackground</label2>
 								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.14.Fanart)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.14.Display)]</thumb>
+								<icon>$INFO[Skin.String(HomeItem.14.DBackground)]</icon>
+								<thumb>$INFO[Skin.String(HomeItem.14.CBackground)]</thumb>
                                 <visible>!IsEmpty(Skin.String(HomeItem.14.Path))</visible>
 							</item>                            
 							<item id="15">
 								<label>$INFO[Skin.String(HomeItem.15.Label)]</label>
-								<label2>HomeItem.15.Display</label2>
+								<label2>HomeItem.15.CBackground</label2>
 								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.15.Fanart)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.15.Display)]</thumb>
+								<icon>$INFO[Skin.String(HomeItem.15.DBackground)]</icon>
+								<thumb>$INFO[Skin.String(HomeItem.15.CBackground)]</thumb>
                                 <visible>!IsEmpty(Skin.String(HomeItem.15.Path))</visible>
 							</item>
 							<item id="16">
 								<label>$INFO[Skin.String(HomeItem.16.Label)]</label>
-								<label2>HomeItem.16.Display</label2>
+								<label2>HomeItem.16.CBackground</label2>
 								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.16.Fanart)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.16.Display)]</thumb>
+								<icon>$INFO[Skin.String(HomeItem.16.DBackground)]</icon>
+								<thumb>$INFO[Skin.String(HomeItem.16.CBackground)]</thumb>
                                 <visible>!IsEmpty(Skin.String(HomeItem.16.Path))</visible>
 							</item>
 							<item id="17">
 								<label>$INFO[Skin.String(HomeItem.17.Label)]</label>
-								<label2>HomeItem.17.Display</label2>
+								<label2>HomeItem.17.CBackground</label2>
 								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.17.Fanart)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.17.Display)]</thumb>
+								<icon>$INFO[Skin.String(HomeItem.17.DBackground)]</icon>
+								<thumb>$INFO[Skin.String(HomeItem.17.CBackground)]</thumb>
                                 <visible>!IsEmpty(Skin.String(HomeItem.17.Path))</visible>
 							</item>
 							<item id="18">
 								<label>$INFO[Skin.String(HomeItem.18.Label)]</label>
-								<label2>HomeItem.18.Display</label2>
+								<label2>HomeItem.18.CBackground</label2>
 								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.18.Fanart)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.18.Display)]</thumb>
+								<icon>$INFO[Skin.String(HomeItem.18.DBackground)]</icon>
+								<thumb>$INFO[Skin.String(HomeItem.18.CBackground)]</thumb>
                                 <visible>!IsEmpty(Skin.String(HomeItem.18.Path))</visible>
 							</item>                            
 							<item id="19">
 								<label>$INFO[Skin.String(HomeItem.19.Label)]</label>
-								<label2>HomeItem.19.Display</label2>
+								<label2>HomeItem.19.CBackground</label2>
 								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.19.Fanart)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.19.Display)]</thumb>
+								<icon>$INFO[Skin.String(HomeItem.19.DBackground)]</icon>
+								<thumb>$INFO[Skin.String(HomeItem.19.CBackground)]</thumb>
                                 <visible>!IsEmpty(Skin.String(HomeItem.19.Path))</visible>
 							</item>
 							<item id="20">
 								<label>$INFO[Skin.String(HomeItem.20.Label)]</label>
-								<label2>HomeItem.20.Display</label2>
+								<label2>HomeItem.20.CBackground</label2>
 								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.20.Fanart)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.20.Display)]</thumb>
+								<icon>$INFO[Skin.String(HomeItem.20.DBackground)]</icon>
+								<thumb>$INFO[Skin.String(HomeItem.20.CBackground)]</thumb>
                                 <visible>!IsEmpty(Skin.String(HomeItem.20.Path))</visible>
 							</item>
 						</content>
