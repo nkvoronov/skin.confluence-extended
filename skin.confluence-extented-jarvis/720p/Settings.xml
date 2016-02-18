@@ -2,8 +2,8 @@
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<controls>
-        <include>CommonCustomBackground</include>
-		<include>CommonBackground</include>
+        <include>CommonCustomBackground</include>    
+		<include>CommonBackground</include>        
 		<control type="image">
 			<left>0</left>
 			<top>100r</top>
