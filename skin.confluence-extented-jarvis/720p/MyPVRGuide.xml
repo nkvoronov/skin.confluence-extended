@@ -4,6 +4,7 @@
 	<menucontrol>9000</menucontrol>
 	<views>10,11,12,13</views>
 	<controls>
+        <include>CommonCustomBackground</include>
 		<include>CommonBackground</include>
 		<control type="image">
 			<left>0</left>
