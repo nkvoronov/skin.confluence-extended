@@ -343,7 +343,7 @@
                 <posy>0</posy>
                 <width>1280</width>
                 <height>720</height>
-                <imagepath background="true">$INFO[Window(Home).Property(SubMenuBackground)]</imagepath>
+                <imagepath background="true">$INFO[Window(Home).Property(MenuBackground)]</imagepath>
                 <timeperimage>10000</timeperimage>
                 <randomize>true</randomize>
                 <fadetime>1000</fadetime>
@@ -391,7 +391,7 @@
                     <top>5</top>
                     <width>680</width>
                     <height>390</height>
-                    <texture>$INFO[Window(Home).Property(SubMenuBackground)]</texture>
+                    <texture>$INFO[Window(Home).Property(MenuBackground)]</texture>
                     <include>VisibleFadeEffect</include>
                     <visible>IsEmpty(Window(Home).Property(MenuItemActive))</visible>
                 </control>

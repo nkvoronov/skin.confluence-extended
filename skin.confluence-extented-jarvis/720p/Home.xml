@@ -5,9 +5,9 @@
     <include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
     <onload condition="!IsEmpty(Window(Home).Property(MenuItemSelected))">ClearProperty(MenuItemSelected,Home)</onload>
 	<onload condition="!IsEmpty(Window(Home).Property(MenuItemActive))">ClearProperty(MenuItemActive,Home)</onload>
-	<onload condition="!IsEmpty(Window(Home).Property(SubMenuBackground))">ClearProperty(SubMenuBackground,Home)</onload>
 	<onload condition="!IsEmpty(Window(Home).Property(MenuBackground))">ClearProperty(MenuBackground,Home)</onload>
     <onload condition="System.HasAddon(script.favourites)">XBMC.RunScript(script.favourites)</onload>
+    <!--
     <onload condition="!Skin.HasSetting(DisableScriptPlaylist) + Library.HasContent(Movies)">XBMC.RunScript(script.randomandlastitems,type=Movie,limit=12,method=Random,playlist=special://skin/extras/Playlists/UnwatchedMovies.xsp,menu=UnWatched)</onload>
 	<onload condition="!Skin.HasSetting(DisableScriptPlaylist) + [Skin.String(HomeItem.1.Type,VideoPlayList) | Skin.String(HomeItem.1.Type,MusicPlayList)]">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.1.Playlist)],method=$VAR[PlaylistSortOrder],limit=12,unwatched=False,resume=False,property=HomePlaylist01)</onload>
 	<onload condition="!Skin.HasSetting(DisableScriptPlaylist) + [Skin.String(HomeItem.2.Type,VideoPlayList) | Skin.String(HomeItem.2.Type,MusicPlayList)]">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.2.Playlist)],method=$VAR[PlaylistSortOrder],limit=12,unwatched=False,resume=False,property=HomePlaylist02)</onload>
@@ -29,8 +29,8 @@
 	<onload condition="!Skin.HasSetting(DisableScriptPlaylist) + [Skin.String(HomeItem.18.Type,VideoPlayList) | Skin.String(HomeItem.18.Type,MusicPlayList)]">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.18.Playlist)],method=$VAR[PlaylistSortOrder],limit=12,unwatched=False,resume=False,property=HomePlaylist18)</onload>
     <onload condition="!Skin.HasSetting(DisableScriptPlaylist) + [Skin.String(HomeItem.19.Type,VideoPlayList) | Skin.String(HomeItem.19.Type,MusicPlayList)]">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.19.Playlist)],method=$VAR[PlaylistSortOrder],limit=12,unwatched=False,resume=False,property=HomePlaylist19)</onload>
 	<onload condition="!Skin.HasSetting(DisableScriptPlaylist) + [Skin.String(HomeItem.20.Type,VideoPlayList) | Skin.String(HomeItem.20.Type,MusicPlayList)]">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.20.Playlist)],method=$VAR[PlaylistSortOrder],limit=12,unwatched=False,resume=False,property=HomePlaylist20)</onload>
+    -->
     <onload condition="Window.Previous(Startup)">Control.Move(9000,$INFO[Skin.String(CustomFocus)])</onload>
-    <!-- -->
 	<onload condition="IsEmpty(Skin.String(MenuColor))">Skin.SetString(MenuColor,blue,)</onload>
 	<onload condition="!IsEmpty(Weather.Plugin) + !Weather.IsFetched">Weather.Refresh</onload>
 	<onunload condition="Container(9000).Hasfocus(10) | Container(9000).Hasfocus(11) | ControlGroup(9010).HasFocus | ControlGroup(9016).HasFocus | ControlGroup(9017).HasFocus">SetProperty(VideosDirectLink,True)</onunload>
