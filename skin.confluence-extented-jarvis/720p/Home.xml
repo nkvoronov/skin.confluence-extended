@@ -556,7 +556,7 @@
 					<description>Background image</description>
 					<left>0</left>
 					<top>0</top>
-					<width>300</width>
+					<width>205</width>
 					<height>35</height>
 					<texture flipy="true" border="5">HomeSubNF.png</texture>
 					<colordiffuse>CCFFFFFF</colordiffuse>
