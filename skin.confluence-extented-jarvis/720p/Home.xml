@@ -58,12 +58,12 @@
 			<depth>DepthMenu</depth>
 			<left>0</left>
 			<top>60</top>
-			<visible>Player.HasAudio + !Skin.HasSetting(homepageMusicinfo) + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
+			<visible>Player.HasAudio + !Skin.HasSetting(HomePageMusicInfo) + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
 			<animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
 			<control type="image">
-				<description>Cover image</description>
+				<description>Cover Image</description>
 				<left>20</left>
 				<top>45</top>
 				<width>130</width>
@@ -87,7 +87,7 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
-				<description>Title label</description>
+				<description>Title Label</description>
 				<left>170</left>
 				<top>285</top>
 				<height>30</height>
@@ -151,7 +151,7 @@
 					<texture>PVR-HasTimer.png</texture>
 				</control>
 				<control type="label">
-					<description>Next Timer Header label</description>
+					<description>Next Timer Header Label</description>
 					<left>-45</left>
 					<top>5</top>
 					<height>25</height>
@@ -164,7 +164,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>NextRecordingDateTime</description>
+					<description>Next Recording DateTime</description>
 					<left>-10</left>
 					<top>30</top>
 					<height>25</height>
@@ -177,7 +177,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>NextRecordingTitle Channel</description>
+					<description>Next Recording Title Channel</description>
 					<left>-410</left>
 					<top>50</top>
 					<height>25</height>
@@ -218,7 +218,7 @@
 					<texture>PVR-IsRecording.png</texture>
 				</control>
 				<control type="label">
-					<description>Is Recording Header label</description>
+					<description>Is Recording Header Label</description>
 					<left>-50</left>
 					<top>5</top>
 					<height>25</height>
@@ -231,7 +231,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>NextRecordingDateTime</description>
+					<description>Next Recording DateTime</description>
 					<left>-10</left>
 					<top>30</top>
 					<height>25</height>
@@ -244,7 +244,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>NextRecordingTitle Channel</description>
+					<description>Next Recording Title Channel</description>
 					<left>-410</left>
 					<top>50</top>
 					<height>30</height>
@@ -264,13 +264,13 @@
 			<left>0</left>
 			<top>50</top>
 			<animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
-			<visible>Player.HasVideo + !Skin.HasSetting(homepageVideoinfo) + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
+			<visible>Player.HasVideo + !Skin.HasSetting(HomePageVideoInfo) + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
 			<control type="group">
 				<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(LiveTV)</visible>
 				<control type="image">
-					<description>Cover image</description>
+					<description>Cover Image</description>
 					<left>20</left>
 					<top>45</top>
 					<width>150</width>
@@ -281,7 +281,7 @@
 					<bordersize>5</bordersize>
 				</control>
 				<control type="label">
-					<description>Title label</description>
+					<description>Title Label</description>
 					<left>190</left>
 					<top>285</top>
 					<height>30</height>
@@ -310,7 +310,7 @@
 			<control type="group">
 				<visible>VideoPlayer.Content(LiveTV)</visible>
 				<control type="image">
-					<description>Cover image</description>
+					<description>Cover Image</description>
 					<left>20</left>
 					<top>45</top>
 					<width>120</width>
@@ -321,7 +321,7 @@
 					<bordersize>5</bordersize>
 				</control>
 				<control type="label">
-					<description>Channel label</description>
+					<description>Channel Label</description>
 					<left>160</left>
 					<top>265</top>
 					<height>25</height>
@@ -334,7 +334,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>Title label</description>
+					<description>Title Label</description>
 					<left>160</left>
 					<top>285</top>
 					<height>30</height>
@@ -363,7 +363,7 @@
 			<control type="group">
 				<visible>VideoPlayer.Content(Movies)</visible>
 				<control type="image">
-					<description>Cover image</description>
+					<description>Cover Image</description>
 					<left>20</left>
 					<top>45</top>
 					<width>120</width>
@@ -374,7 +374,7 @@
 					<bordersize>5</bordersize>
 				</control>
 				<control type="label">
-					<description>Studio label</description>
+					<description>Studio Label</description>
 					<left>160</left>
 					<top>265</top>
 					<height>25</height>
@@ -387,7 +387,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>Title label</description>
+					<description>Title Label</description>
 					<left>160</left>
 					<top>285</top>
 					<height>30</height>
@@ -416,7 +416,7 @@
 			<control type="group">
 				<visible>VideoPlayer.Content(Episodes)</visible>
 				<control type="image">
-					<description>Cover image</description>
+					<description>Cover Image</description>
 					<left>20</left>
 					<top>225</top>
 					<width>180</width>
@@ -440,7 +440,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>Title label</description>
+					<description>Title Label</description>
 					<left>210</left>
 					<top>285</top>
 					<height>30</height>
@@ -471,7 +471,7 @@
 		<include>HomeWidgetDisplay</include>
         <!-- Players Controls -->
 		<control type="button" id="9003">
-			<description>Hidden Button to pass through navigation when recently added is disabled</description>
+			<description>Hidden Button To Pass Through Navigation When Recently Added Is Disabled</description>
 			<left>-20</left>
 			<top>-20</top>
 			<width>1</width>
@@ -488,7 +488,7 @@
 		</control>
 		<control type="group">
 			<depth>DepthMenu-</depth>
-			<description>Controls for currently playing media</description>
+			<description>Controls For Currently Playing Media</description>
 			<left>545r</left>
 			<top>370</top>
 			<animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
@@ -506,7 +506,7 @@
 			</animation>
 			<visible>IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
 			<control type="image">
-				<description>Background End image</description>
+				<description>Background End Image</description>
 				<left>0</left>
 				<top>0</top>
 				<width>35</width>
@@ -764,7 +764,7 @@
 			<control type="radiobutton" id="607">
 				<animation effect="slide" end="0,35" time="300" condition="!Player.HasMedia">conditional</animation>
 				<colordiffuse>CCFFFFFF</colordiffuse>
-				<description>Go to fullscreen Playback</description>
+				<description>Go To Fullscreen Playback</description>
 				<left>385</left>
 				<top>0</top>
 				<height>35</height>
@@ -864,7 +864,7 @@
 			<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
 			<include>Window_OpenClose_Animation</include>
 			<control type="rss">
-				<description>RSS feed 1</description>
+				<description>RSS Feed 1</description>
 				<left>127</left>
 				<top>0</top>
 				<height>30</height>
@@ -877,7 +877,7 @@
                 <visible>!Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)</visible>
 			</control>
 			<control type="rss">
-				<description>RSS feed 2</description>
+				<description>RSS Feed 2</description>
 				<left>73</left>
 				<top>0</top>
 				<height>30</height>
@@ -890,7 +890,7 @@
                 <visible>[Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)] | [!Skin.HasSetting(HidePowerButton) + Skin.HasSetting(HideFavoritesButton)]</visible>
 			</control>
 			<control type="rss">
-				<description>RSS feed 3</description>
+				<description>RSS Feed 3</description>
                 <left>10</left>
 				<top>0</top>
 				<height>30</height>
@@ -903,7 +903,7 @@
                 <visible>Skin.HasSetting(HidePowerButton) + Skin.HasSetting(HideFavoritesButton)</visible>
 			</control>
 			<control type="image">
-				<description>RSS background</description>
+				<description>RSS Background</description>
 				<left>1250</left>
 				<top>2</top>
 				<width>24</width>
@@ -917,7 +917,7 @@
 			<top>55r</top>
 			<include>Window_OpenClose_Animation</include>
 			<control type="button" id="20">
-				<description>Power push button</description>
+				<description>Power Push Button</description>
 				<left>55</left>
 				<top>0</top>
 				<width>45</width>
@@ -946,7 +946,7 @@
                 <visible>!Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)</visible>
 			</control>
 			<control type="button" id="21">
-				<description>Favourites push button</description>
+				<description>Favourites Push Button</description>
 				<left>0</left>
 				<top>0</top>
 				<width>45</width>
@@ -975,7 +975,7 @@
                 <visible>!Skin.HasSetting(HideFavoritesButton)</visible>
 			</control>
 			<control type="button" id="20">
-				<description>Power push button pos1</description>
+				<description>Power Push Button Pos1</description>
 				<left>0</left>
 				<top>0</top>
 				<width>45</width>
@@ -994,7 +994,7 @@
                 <visible>!Skin.HasSetting(HidePowerButton) + Skin.HasSetting(HideFavoritesButton)</visible>
 			</control>
 			<control type="image">
-				<description>Power Icon pos1</description>
+				<description>Power Icon Pos1</description>
 				<left>5</left>
 				<top>5</top>
 				<width>35</width>
@@ -1016,12 +1016,12 @@
 				<texture>kodi-logo.png</texture>
 				<include>VisibleFadeEffect</include>
 				<include>Window_OpenClose_Animation</include>
-				<visible>!Skin.HasSetting(homepageWeatherinfo) + !Skin.HasSetting(NoLogo)</visible>
+				<visible>!Skin.HasSetting(HomePageWeatherInfo) + !Skin.HasSetting(NoLogo)</visible>
 			</control>
 			<control type="group">
 				<left>20</left>
 				<top>0</top>
-				<visible>Skin.HasSetting(homepageWeatherinfo) + !IsEmpty(Weather.Plugin)</visible>
+				<visible>Skin.HasSetting(HomePageWeatherInfo) + !IsEmpty(Weather.Plugin)</visible>
 				<include>Window_OpenClose_Animation</include>
 				<control type="image">
 					<description>Weather image</description>
@@ -1033,7 +1033,7 @@
 					<texture>$INFO[Weather.Conditions]</texture>
 				</control>
 				<control type="label">
-					<description>Location label</description>
+					<description>Location Label</description>
 					<left>65</left>
 					<top>5</top>
 					<width>500</width>
@@ -1089,7 +1089,7 @@
 			</control>
 			<include>Clock</include>
 			<control type="label">
-				<description>Date label</description>
+				<description>Date Label</description>
 				<right>20</right>
 				<top>35</top>
 				<width>300</width>

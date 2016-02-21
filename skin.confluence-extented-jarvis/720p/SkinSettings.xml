@@ -433,8 +433,8 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label>20176</label>
-						<onclick>Skin.ToggleSetting(homepageVideoinfo)</onclick>
-						<selected>!Skin.HasSetting(homepageVideoinfo)</selected>
+						<onclick>Skin.ToggleSetting(HomePageVideoInfo)</onclick>
+						<selected>!Skin.HasSetting(HomePageVideoInfo)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
@@ -446,8 +446,8 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label>20083</label>
-						<onclick>Skin.ToggleSetting(homepageMusicinfo)</onclick>
-						<selected>!Skin.HasSetting(homepageMusicinfo)</selected>
+						<onclick>Skin.ToggleSetting(HomePageMusicInfo)</onclick>
+						<selected>!Skin.HasSetting(HomePageMusicInfo)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
@@ -459,8 +459,8 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label>20084</label>
-						<onclick>Skin.ToggleSetting(homepageWeatherinfo)</onclick>
-						<selected>Skin.HasSetting(homepageWeatherinfo)</selected>
+						<onclick>Skin.ToggleSetting(HomePageWeatherInfo)</onclick>
+						<selected>Skin.HasSetting(HomePageWeatherInfo)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<visible>!IsEmpty(Weather.Plugin)</visible>
@@ -2407,6 +2407,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(SubMenu01.Label)</onclick>
+                        <include>ResetSubMenu01</include>
 					</control>
                     <control type="button" id="2001">
 						<width>750</width>
@@ -2560,6 +2561,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(SubMenu02.Label)</onclick>
+                        <include>ResetSubMenu02</include>
 					</control>
                     <control type="button" id="2012">
 						<width>750</width>
@@ -2713,6 +2715,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(SubMenu03.Label)</onclick>
+                        <include>ResetSubMenu03</include>
 					</control>
                     <control type="button" id="2023">
 						<width>750</width>
@@ -2866,6 +2869,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(SubMenu04.Label)</onclick>
+                        <include>ResetSubMenu04</include>
 					</control>
                     <control type="button" id="2034">
 						<width>750</width>
@@ -3019,6 +3023,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(SubMenu05.Label)</onclick>
+                        <include>ResetSubMenu05</include>
 					</control>
                     <control type="button" id="2045">
 						<width>750</width>
@@ -3172,6 +3177,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(SubMenu06.Label)</onclick>
+                        <include>ResetSubMenu06</include>
 					</control>
                     <control type="button" id="2056">
 						<width>750</width>
@@ -3325,6 +3331,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(SubMenu07.Label)</onclick>
+                        <include>ResetSubMenu07</include>
 					</control>
                     <control type="button" id="2067">
 						<width>750</width>
@@ -3478,6 +3485,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(SubMenu08.Label)</onclick>
+                        <include>ResetSubMenu08</include>
 					</control>
                     <control type="button" id="2078">
 						<width>750</width>
@@ -3631,6 +3639,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(SubMenu09.Label)</onclick>
+                        <include>ResetSubMenu09</include>
 					</control>
                     <control type="button" id="2089">
 						<width>750</width>
@@ -3784,6 +3793,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(SubMenu10.Label)</onclick>
+                        <include>ResetSubMenu10</include>
 					</control>
                     <control type="button" id="2100">
 						<width>750</width>
@@ -3937,6 +3947,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(SubMenu11.Label)</onclick>
+                        <include>ResetSubMenu11</include>
 					</control>
                     <control type="button" id="2111">
 						<width>750</width>
@@ -4090,6 +4101,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(SubMenu12.Label)</onclick>
+                        <include>ResetSubMenu12</include>
 					</control>
                     <control type="button" id="2122">
 						<width>750</width>
@@ -4243,6 +4255,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(SubMenu13.Label)</onclick>
+                        <include>ResetSubMenu13</include>
 					</control>
                     <control type="button" id="2133">
 						<width>750</width>
@@ -4396,6 +4409,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(SubMenu14.Label)</onclick>
+                        <include>ResetSubMenu14</include>
 					</control>
                     <control type="button" id="2144">
 						<width>750</width>
@@ -4549,6 +4563,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(SubMenu15.Label)</onclick>
+                        <include>ResetSubMenu15</include>
 					</control>
                     <control type="button" id="2155">
 						<width>750</width>
@@ -4702,6 +4717,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(SubMenu16.Label)</onclick>
+                        <include>ResetSubMenu16</include>
 					</control>
                     <control type="button" id="2166">
 						<width>750</width>
@@ -4855,6 +4871,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(SubMenu17.Label)</onclick>
+                        <include>ResetSubMenu17</include>
 					</control>
                     <control type="button" id="2177">
 						<width>750</width>
@@ -5008,6 +5025,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(SubMenu18.Label)</onclick>
+                        <include>ResetSubMenu18</include>
 					</control>
                     <control type="button" id="2188">
 						<width>750</width>
@@ -5161,6 +5179,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(SubMenu19.Label)</onclick>
+                        <include>ResetSubMenu19</include>
 					</control>
                     <control type="button" id="2199">
 						<width>750</width>
@@ -5314,6 +5333,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(SubMenu20.Label)</onclick>
+                        <include>ResetSubMenu20</include>
 					</control>
                     <control type="button" id="2210">
 						<width>750</width>
@@ -5497,6 +5517,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(AddonSet01.Label)</onclick>
+                        <include>ResetAddonSet01</include>
 					</control>
                     <control type="button" id="3001">
 						<width>750</width>
@@ -5608,6 +5629,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(AddonSet02.Label)</onclick>
+                        <include>ResetAddonSet02</include>
 					</control>
                     <control type="button" id="3009">
 						<width>750</width>
@@ -5719,6 +5741,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(AddonSet03.Label)</onclick>
+                        <include>ResetAddonSet03</include>
 					</control>
                     <control type="button" id="3017">
 						<width>750</width>
@@ -5830,6 +5853,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(AddonSet04.Label)</onclick>
+                        <include>ResetAddonSet04</include>
 					</control>
                     <control type="button" id="3025">
 						<width>750</width>
@@ -5941,6 +5965,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(AddonSet05.Label)</onclick>
+                        <include>ResetAddonSet05</include>
 					</control>
                     <control type="button" id="3033">
 						<width>750</width>
@@ -6052,6 +6077,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(AddonSet06.Label)</onclick>
+                        <include>ResetAddonSet06</include>
 					</control>
                     <control type="button" id="3041">
 						<width>750</width>
@@ -6163,6 +6189,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(AddonSet07.Label)</onclick>
+                        <include>ResetAddonSet07</include>
 					</control>
                     <control type="button" id="3049">
 						<width>750</width>
@@ -6274,6 +6301,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(AddonSet08.Label)</onclick>
+                        <include>ResetAddonSet08</include>
 					</control>
                     <control type="button" id="3057">
 						<width>750</width>
@@ -6385,6 +6413,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(AddonSet09.Label)</onclick>
+                        <include>ResetAddonSet09</include>
 					</control>
                     <control type="button" id="3065">
 						<width>750</width>
@@ -6496,6 +6525,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(AddonSet10.Label)</onclick>
+                        <include>ResetAddonSet10</include>
 					</control>
                     <control type="button" id="3073">
 						<width>750</width>
@@ -6607,6 +6637,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(AddonSet11.Label)</onclick>
+                        <include>ResetAddonSet11</include>
 					</control>
                     <control type="button" id="3081">
 						<width>750</width>
@@ -6718,6 +6749,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(AddonSet12.Label)</onclick>
+                        <include>ResetAddonSet12</include>
 					</control>
                     <control type="button" id="3099">
 						<width>750</width>
@@ -6829,6 +6861,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(AddonSet13.Label)</onclick>
+                        <include>ResetAddonSet13</include>
 					</control>
                     <control type="button" id="3107">
 						<width>750</width>
@@ -6940,6 +6973,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(AddonSet14.Label)</onclick>
+                        <include>ResetAddonSet14</include>
 					</control>
                     <control type="button" id="3115">
 						<width>750</width>
@@ -7051,6 +7085,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(AddonSet15.Label)</onclick>
+                        <include>ResetAddonSet15</include>
 					</control>
                     <control type="button" id="3123">
 						<width>750</width>
@@ -7162,6 +7197,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(AddonSet16.Label)</onclick>
+                        <include>ResetAddonSet16</include>
 					</control>
                     <control type="button" id="3131">
 						<width>750</width>
@@ -7273,6 +7309,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(AddonSet17.Label)</onclick>
+                        <include>ResetAddonSet17</include>
 					</control>
                     <control type="button" id="3139">
 						<width>750</width>
@@ -7384,6 +7421,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(AddonSet18.Label)</onclick>
+                        <include>ResetAddonSet18</include>
 					</control>
                     <control type="button" id="3147">
 						<width>750</width>
@@ -7495,6 +7533,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(AddonSet19.Label)</onclick>
+                        <include>ResetAddonSet19</include>
 					</control>
                     <control type="button" id="3155">
 						<width>750</width>
@@ -7606,6 +7645,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.SetString(AddonSet20.Label)</onclick>
+                        <include>ResetAddonSet20</include>
 					</control>
                     <control type="button" id="3163">
 						<width>750</width>
@@ -8242,7 +8282,7 @@
 						<width>750</width>
 						<height>140</height>
 						<aspectratio aligny="center" align="center">keep</aspectratio>
-						<texture>warning.png</texture>
+						<texture>DefaultIconWarning.png</texture>
 					</control>
 					<control type="button" id="802">
 						<description>Reset Skin Values</description>

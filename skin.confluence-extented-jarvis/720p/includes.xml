@@ -1490,21 +1490,4 @@
 			!IsEmpty(Skin.String(HomeItem.20.Playlist)) + Skin.String(HomeItem.20.Type,VideoNode) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.20)
 		</visible>
 	</include>
-	<include name="ClearButtonChoice">
-		<onclick>Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
-		<onclick>Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Path)</onclick>		
-		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Playlist)</onclick>
-		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Sub)</onclick>
-		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Addon)</onclick>
-		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Type)</onclick>
-		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Widget)</onclick>
-		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].CBackground)</onclick>
-        <onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].DBackground)</onclick>
-	</include>
-	<include name="CloseMenuChoice">
-		<onclick condition="Window.IsVisible(2114)">Dialog.Close(2114)</onclick>
-		<onclick condition="Window.IsVisible(2115)">Dialog.Close(2115)</onclick>
-		<onclick>Skin.Reset(UsrSelectAddon)</onclick>
-		<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-	</include>
 </includes>

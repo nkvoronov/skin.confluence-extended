@@ -625,7 +625,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.1.Sub),SubMenu17) + !IsEmpty(Skin.String(SubMenu17.Label))">$VAR[UsersSubMenu17Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.1.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.1.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.1.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>        
+		<value condition="stringcompare(Skin.String(HomeItem.1.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
+        <value condition="stringcompare(Skin.String(HomeItem.1.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>         
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel02" type="text">
@@ -648,7 +649,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.2.Sub),SubMenu17) + !IsEmpty(Skin.String(SubMenu17.Label))">$VAR[UsersSubMenu17Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.2.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.2.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.2.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>        
+		<value condition="stringcompare(Skin.String(HomeItem.2.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
+        <value condition="stringcompare(Skin.String(HomeItem.2.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>
     	<value>$LOCALIZE[89006]</value>
 	</variable> 
     <variable name="UsrDefSubMenuLabel03" type="text">
@@ -671,7 +673,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.3.Sub),SubMenu17) + !IsEmpty(Skin.String(SubMenu17.Label))">$VAR[UsersSubMenu17Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.3.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.3.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.3.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>        
+		<value condition="stringcompare(Skin.String(HomeItem.3.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
+        <value condition="stringcompare(Skin.String(HomeItem.3.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel04" type="text">
@@ -694,7 +697,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.4.Sub),SubMenu17) + !IsEmpty(Skin.String(SubMenu17.Label))">$VAR[UsersSubMenu17Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.4.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.4.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.4.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>        
+		<value condition="stringcompare(Skin.String(HomeItem.4.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
+        <value condition="stringcompare(Skin.String(HomeItem.4.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel05" type="text">
@@ -717,7 +721,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.5.Sub),SubMenu17) + !IsEmpty(Skin.String(SubMenu17.Label))">$VAR[UsersSubMenu17Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.5.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.5.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.5.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>        
+		<value condition="stringcompare(Skin.String(HomeItem.5.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
+        <value condition="stringcompare(Skin.String(HomeItem.5.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel06" type="text">
@@ -740,7 +745,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.6.Sub),SubMenu17) + !IsEmpty(Skin.String(SubMenu17.Label))">$VAR[UsersSubMenu17Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.6.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.6.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.6.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>        
+		<value condition="stringcompare(Skin.String(HomeItem.6.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
+        <value condition="stringcompare(Skin.String(HomeItem.6.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable> 
     <variable name="UsrDefSubMenuLabel07" type="text">
@@ -763,7 +769,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.7.Sub),SubMenu17) + !IsEmpty(Skin.String(SubMenu17.Label))">$VAR[UsersSubMenu17Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.7.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.7.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.7.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>        
+		<value condition="stringcompare(Skin.String(HomeItem.7.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
+        <value condition="stringcompare(Skin.String(HomeItem.7.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel08" type="text">
@@ -786,7 +793,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.8.Sub),SubMenu17) + !IsEmpty(Skin.String(SubMenu17.Label))">$VAR[UsersSubMenu17Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.8.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.8.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.8.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>        
+		<value condition="stringcompare(Skin.String(HomeItem.8.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
+        <value condition="stringcompare(Skin.String(HomeItem.8.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel09" type="text">
@@ -809,7 +817,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.9.Sub),SubMenu17) + !IsEmpty(Skin.String(SubMenu17.Label))">$VAR[UsersSubMenu17Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.9.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.9.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.9.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>        
+		<value condition="stringcompare(Skin.String(HomeItem.9.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
+        <value condition="stringcompare(Skin.String(HomeItem.9.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel10" type="text">
@@ -832,7 +841,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.10.Sub),SubMenu17) + !IsEmpty(Skin.String(SubMenu17.Label))">$VAR[UsersSubMenu17Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.10.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.10.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.10.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>        
+		<value condition="stringcompare(Skin.String(HomeItem.10.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
+        <value condition="stringcompare(Skin.String(HomeItem.10.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable> 
     <variable name="UsrDefSubMenuLabel11" type="text">
@@ -855,7 +865,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.11.Sub),SubMenu17) + !IsEmpty(Skin.String(SubMenu17.Label))">$VAR[UsersSubMenu17Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.11.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.11.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.11.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>        
+		<value condition="stringcompare(Skin.String(HomeItem.11.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
+        <value condition="stringcompare(Skin.String(HomeItem.11.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel12" type="text">
@@ -878,7 +889,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.12.Sub),SubMenu17) + !IsEmpty(Skin.String(SubMenu17.Label))">$VAR[UsersSubMenu17Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.12.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.12.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.12.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>        
+		<value condition="stringcompare(Skin.String(HomeItem.12.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
+        <value condition="stringcompare(Skin.String(HomeItem.12.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel13" type="text">
@@ -901,7 +913,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.13.Sub),SubMenu17) + !IsEmpty(Skin.String(SubMenu17.Label))">$VAR[UsersSubMenu17Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.13.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.13.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.13.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>        
+		<value condition="stringcompare(Skin.String(HomeItem.13.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
+        <value condition="stringcompare(Skin.String(HomeItem.13.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel14" type="text">
@@ -924,7 +937,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.14.Sub),SubMenu17) + !IsEmpty(Skin.String(SubMenu17.Label))">$VAR[UsersSubMenu17Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.14.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.14.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.14.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>        
+		<value condition="stringcompare(Skin.String(HomeItem.14.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
+        <value condition="stringcompare(Skin.String(HomeItem.14.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable> 
     <variable name="UsrDefSubMenuLabel15" type="text">
@@ -947,7 +961,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.15.Sub),SubMenu17) + !IsEmpty(Skin.String(SubMenu17.Label))">$VAR[UsersSubMenu17Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.15.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.15.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.15.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>        
+		<value condition="stringcompare(Skin.String(HomeItem.15.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
+        <value condition="stringcompare(Skin.String(HomeItem.15.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel16" type="text">
@@ -970,7 +985,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.16.Sub),SubMenu17) + !IsEmpty(Skin.String(SubMenu17.Label))">$VAR[UsersSubMenu17Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.16.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.16.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.16.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>        
+		<value condition="stringcompare(Skin.String(HomeItem.16.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
+        <value condition="stringcompare(Skin.String(HomeItem.16.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel17" type="text">
@@ -993,7 +1009,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.17.Sub),SubMenu17) + !IsEmpty(Skin.String(SubMenu17.Label))">$VAR[UsersSubMenu17Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.17.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.17.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.17.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>        
+		<value condition="stringcompare(Skin.String(HomeItem.17.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
+        <value condition="stringcompare(Skin.String(HomeItem.17.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel18" type="text">
@@ -1016,7 +1033,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.18.Sub),SubMenu17) + !IsEmpty(Skin.String(SubMenu17.Label))">$VAR[UsersSubMenu17Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.18.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.18.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.18.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>        
+		<value condition="stringcompare(Skin.String(HomeItem.18.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
+        <value condition="stringcompare(Skin.String(HomeItem.18.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel19" type="text">
@@ -1039,7 +1057,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.19.Sub),SubMenu17) + !IsEmpty(Skin.String(SubMenu17.Label))">$VAR[UsersSubMenu17Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.19.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.19.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.19.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>        
+		<value condition="stringcompare(Skin.String(HomeItem.19.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
+        <value condition="stringcompare(Skin.String(HomeItem.19.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel20" type="text">
@@ -1062,7 +1081,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.20.Sub),SubMenu17) + !IsEmpty(Skin.String(SubMenu17.Label))">$VAR[UsersSubMenu17Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.20.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.20.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.20.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>        
+		<value condition="stringcompare(Skin.String(HomeItem.20.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
+        <value condition="stringcompare(Skin.String(HomeItem.20.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <!-- Addons sets -->
@@ -1989,102 +2009,102 @@
 	</variable>
     <!-- Backgrounds -->
     <variable name="Background01" type="text">
-        <value condition="!IsEmpty(Skin.String(HomeItem.1.DBackground) + IsEmpty(Skin.String(HomeItem.1.CBackground))">$INFO[Skin.String(HomeItem.1.DBackground)]</value>
+        <value condition="!IsEmpty(Skin.String(HomeItem.1.DBackground)) + IsEmpty(Skin.String(HomeItem.1.CBackground))">$INFO[Skin.String(HomeItem.1.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.1.CBackground))">$INFO[Skin.String(HomeItem.1.CBackground)]</value>
         <value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
     </variable>
     <variable name="Background02" type="text">
-        <value condition="!IsEmpty(Skin.String(HomeItem.2.DBackground) + IsEmpty(Skin.String(HomeItem.2.CBackground))">$INFO[Skin.String(HomeItem.2.DBackground)]</value>
+        <value condition="!IsEmpty(Skin.String(HomeItem.2.DBackground)) + IsEmpty(Skin.String(HomeItem.2.CBackground))">$INFO[Skin.String(HomeItem.2.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.2.CBackground))">$INFO[Skin.String(HomeItem.2.CBackground)]</value>
         <value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
     </variable>    
     <variable name="Background03" type="text">
-        <value condition="!IsEmpty(Skin.String(HomeItem.3.DBackground) + IsEmpty(Skin.String(HomeItem.3.CBackground))">$INFO[Skin.String(HomeItem.3.DBackground)]</value>
+        <value condition="!IsEmpty(Skin.String(HomeItem.3.DBackground)) + IsEmpty(Skin.String(HomeItem.3.CBackground))">$INFO[Skin.String(HomeItem.3.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.3.CBackground))">$INFO[Skin.String(HomeItem.3.CBackground)]</value>
         <value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
     </variable>
     <variable name="Background04" type="text">
-        <value condition="!IsEmpty(Skin.String(HomeItem.4.DBackground) + IsEmpty(Skin.String(HomeItem.4.CBackground))">$INFO[Skin.String(HomeItem.4.DBackground)]</value>
+        <value condition="!IsEmpty(Skin.String(HomeItem.4.DBackground)) + IsEmpty(Skin.String(HomeItem.4.CBackground))">$INFO[Skin.String(HomeItem.4.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.4.CBackground))">$INFO[Skin.String(HomeItem.4.CBackground)]</value>
         <value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
     </variable>     
     <variable name="Background05" type="text">
-        <value condition="!IsEmpty(Skin.String(HomeItem.5.DBackground) + IsEmpty(Skin.String(HomeItem.5.CBackground))">$INFO[Skin.String(HomeItem.5.DBackground)]</value>
+        <value condition="!IsEmpty(Skin.String(HomeItem.5.DBackground)) + IsEmpty(Skin.String(HomeItem.5.CBackground))">$INFO[Skin.String(HomeItem.5.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.5.CBackground))">$INFO[Skin.String(HomeItem.5.CBackground)]</value>
         <value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
     </variable>
     <variable name="Background06" type="text">
-        <value condition="!IsEmpty(Skin.String(HomeItem.6.DBackground) + IsEmpty(Skin.String(HomeItem.6.CBackground))">$INFO[Skin.String(HomeItem.6.DBackground)]</value>
+        <value condition="!IsEmpty(Skin.String(HomeItem.6.DBackground)) + IsEmpty(Skin.String(HomeItem.6.CBackground))">$INFO[Skin.String(HomeItem.6.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.6.CBackground))">$INFO[Skin.String(HomeItem.6.CBackground)]</value>
         <value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
     </variable>    
     <variable name="Background07" type="text">
-        <value condition="!IsEmpty(Skin.String(HomeItem.7.DBackground) + IsEmpty(Skin.String(HomeItem.7.CBackground))">$INFO[Skin.String(HomeItem.7.DBackground)]</value>
+        <value condition="!IsEmpty(Skin.String(HomeItem.7.DBackground)) + IsEmpty(Skin.String(HomeItem.7.CBackground))">$INFO[Skin.String(HomeItem.7.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.7.CBackground))">$INFO[Skin.String(HomeItem.7.CBackground)]</value>
         <value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
     </variable>
     <variable name="Background08" type="text">
-        <value condition="!IsEmpty(Skin.String(HomeItem.8.DBackground) + IsEmpty(Skin.String(HomeItem.8.CBackground))">$INFO[Skin.String(HomeItem.8.DBackground)]</value>
+        <value condition="!IsEmpty(Skin.String(HomeItem.8.DBackground)) + IsEmpty(Skin.String(HomeItem.8.CBackground))">$INFO[Skin.String(HomeItem.8.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.8.CBackground))">$INFO[Skin.String(HomeItem.8.CBackground)]</value>
         <value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
     </variable>
     <variable name="Background09" type="text">
-        <value condition="!IsEmpty(Skin.String(HomeItem.9.DBackground) + IsEmpty(Skin.String(HomeItem.9.CBackground))">$INFO[Skin.String(HomeItem.9.DBackground)]</value>
+        <value condition="!IsEmpty(Skin.String(HomeItem.9.DBackground)) + IsEmpty(Skin.String(HomeItem.9.CBackground))">$INFO[Skin.String(HomeItem.9.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.9.CBackground))">$INFO[Skin.String(HomeItem.9.CBackground)]</value>
         <value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
     </variable>
     <variable name="Background10" type="text">
-        <value condition="!IsEmpty(Skin.String(HomeItem.10.DBackground) + IsEmpty(Skin.String(HomeItem.10.CBackground))">$INFO[Skin.String(HomeItem.10.DBackground)]</value>
+        <value condition="!IsEmpty(Skin.String(HomeItem.10.DBackground)) + IsEmpty(Skin.String(HomeItem.10.CBackground))">$INFO[Skin.String(HomeItem.10.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.10.CBackground))">$INFO[Skin.String(HomeItem.10.CBackground)]</value>
         <value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
     </variable>    
     <variable name="Background11" type="text">
-        <value condition="!IsEmpty(Skin.String(HomeItem.11.DBackground) + IsEmpty(Skin.String(HomeItem.11.CBackground))">$INFO[Skin.String(HomeItem.11.DBackground)]</value>
+        <value condition="!IsEmpty(Skin.String(HomeItem.11.DBackground)) + IsEmpty(Skin.String(HomeItem.11.CBackground))">$INFO[Skin.String(HomeItem.11.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.11.CBackground))">$INFO[Skin.String(HomeItem.11.CBackground)]</value>
         <value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
     </variable>
     <variable name="Background12" type="text">
-        <value condition="!IsEmpty(Skin.String(HomeItem.12.DBackground) + IsEmpty(Skin.String(HomeItem.12.CBackground))">$INFO[Skin.String(HomeItem.12.DBackground)]</value>
+        <value condition="!IsEmpty(Skin.String(HomeItem.12.DBackground)) + IsEmpty(Skin.String(HomeItem.12.CBackground))">$INFO[Skin.String(HomeItem.12.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.12.CBackground))">$INFO[Skin.String(HomeItem.12.CBackground)]</value>
         <value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
     </variable>     
     <variable name="Background13" type="text">
-        <value condition="!IsEmpty(Skin.String(HomeItem.13.DBackground) + IsEmpty(Skin.String(HomeItem.13.CBackground))">$INFO[Skin.String(HomeItem.13.DBackground)]</value>
+        <value condition="!IsEmpty(Skin.String(HomeItem.13.DBackground)) + IsEmpty(Skin.String(HomeItem.13.CBackground))">$INFO[Skin.String(HomeItem.13.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.13.CBackground))">$INFO[Skin.String(HomeItem.13.CBackground)]</value>
         <value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
     </variable>
     <variable name="Background14" type="text">
-        <value condition="!IsEmpty(Skin.String(HomeItem.14.DBackground) + IsEmpty(Skin.String(HomeItem.14.CBackground))">$INFO[Skin.String(HomeItem.14.DBackground)]</value>
+        <value condition="!IsEmpty(Skin.String(HomeItem.14.DBackground)) + IsEmpty(Skin.String(HomeItem.14.CBackground))">$INFO[Skin.String(HomeItem.14.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.14.CBackground))">$INFO[Skin.String(HomeItem.14.CBackground)]</value>
         <value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
     </variable>    
     <variable name="Background15" type="text">
-        <value condition="!IsEmpty(Skin.String(HomeItem.15.DBackground) + IsEmpty(Skin.String(HomeItem.15.CBackground))">$INFO[Skin.String(HomeItem.15.DBackground)]</value>
+        <value condition="!IsEmpty(Skin.String(HomeItem.15.DBackground)) + IsEmpty(Skin.String(HomeItem.15.CBackground))">$INFO[Skin.String(HomeItem.15.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.15.CBackground))">$INFO[Skin.String(HomeItem.15.CBackground)]</value>
         <value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
     </variable>
     <variable name="Background16" type="text">
-        <value condition="!IsEmpty(Skin.String(HomeItem.16.DBackground) + IsEmpty(Skin.String(HomeItem.16.CBackground))">$INFO[Skin.String(HomeItem.16.DBackground)]</value>
+        <value condition="!IsEmpty(Skin.String(HomeItem.16.DBackground)) + IsEmpty(Skin.String(HomeItem.16.CBackground))">$INFO[Skin.String(HomeItem.16.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.16.CBackground))">$INFO[Skin.String(HomeItem.16.CBackground)]</value>
         <value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
     </variable>
     <variable name="Background17" type="text">
-        <value condition="!IsEmpty(Skin.String(HomeItem.17.DBackground) + IsEmpty(Skin.String(HomeItem.17.CBackground))">$INFO[Skin.String(HomeItem.17.DBackground)]</value>
+        <value condition="!IsEmpty(Skin.String(HomeItem.17.DBackground)) + IsEmpty(Skin.String(HomeItem.17.CBackground))">$INFO[Skin.String(HomeItem.17.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.17.CBackground))">$INFO[Skin.String(HomeItem.17.CBackground)]</value>
         <value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
     </variable>
     <variable name="Background18" type="text">
-        <value condition="!IsEmpty(Skin.String(HomeItem.18.DBackground) + IsEmpty(Skin.String(HomeItem.18.CBackground))">$INFO[Skin.String(HomeItem.18.DBackground)]</value>
+        <value condition="!IsEmpty(Skin.String(HomeItem.18.DBackground)) + IsEmpty(Skin.String(HomeItem.18.CBackground))">$INFO[Skin.String(HomeItem.18.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.18.CBackground))">$INFO[Skin.String(HomeItem.18.CBackground)]</value>
         <value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
     </variable>    
     <variable name="Background19" type="text">
-        <value condition="!IsEmpty(Skin.String(HomeItem.19.DBackground) + IsEmpty(Skin.String(HomeItem.19.CBackground))">$INFO[Skin.String(HomeItem.19.DBackground)]</value>
+        <value condition="!IsEmpty(Skin.String(HomeItem.19.DBackground)) + IsEmpty(Skin.String(HomeItem.19.CBackground))">$INFO[Skin.String(HomeItem.19.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.19.CBackground))">$INFO[Skin.String(HomeItem.19.CBackground)]</value>
         <value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
     </variable>
     <variable name="Background20" type="text">
-        <value condition="!IsEmpty(Skin.String(HomeItem.20.DBackground) + IsEmpty(Skin.String(HomeItem.20.CBackground))">$INFO[Skin.String(HomeItem.20.DBackground)]</value>
+        <value condition="!IsEmpty(Skin.String(HomeItem.20.DBackground)) + IsEmpty(Skin.String(HomeItem.20.CBackground))">$INFO[Skin.String(HomeItem.20.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.20.CBackground))">$INFO[Skin.String(HomeItem.20.CBackground)]</value>
         <value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
     </variable>

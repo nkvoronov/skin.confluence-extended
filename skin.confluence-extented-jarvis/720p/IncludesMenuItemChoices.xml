@@ -10,7 +10,7 @@
 				<visible>!StringCompare(Window.Property(MenuItemType),EditMenu)</visible>
 			</item>
 			<item>
-				<description>Clear Setting</description>
+				<description>Clear Setting 2114</description>
 				<label>$LOCALIZE[89013]</label>
 				<include>ClearButtonChoice</include>
 				<onclick condition="Window.IsVisible(2114)">Dialog.Close(2114)</onclick>
@@ -22,8 +22,8 @@
 				<visible>StringCompare(Window.Property(MenuItemType),MainMenu)</visible>
 			</item>
 			<item>
-				<description>Skin Default</description>
-				<label>$LOCALIZE[89014]</label>
+				<description>Clear Setting 2115</description>
+				<label>$LOCALIZE[89013]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Dialog.Close(2115)</onclick>
 				<onclick>Skin.Reset(UsrSelectAddon)</onclick>
@@ -31,19 +31,6 @@
                 <visible>Window.IsVisible(2115)</visible>
 				<visible>StringCompare(Window.Property(MenuItemType),MainMenu)</visible>
 			</item>
-            <!--
-			<item>
-				<description>Hide Item</description>
-				<label>$LOCALIZE[89015]</label>
-				<include>ClearButtonChoice</include>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,Hidden)</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[19022])</onclick>
-				<onclick>Dialog.Close(2115)</onclick>
-				<onclick>Skin.Reset(UsrSelectAddon)</onclick>
-				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>Window.IsVisible(2115)</visible>
-				<visible>StringCompare(Window.Property(MenuItemType),MainMenu)</visible>
-			</item> -->
 			<item>
 				<description>Weather</description>
 				<label>$LOCALIZE[8]</label>
@@ -1228,7 +1215,7 @@
 				<description>Favourites</description>
 				<label>$LOCALIZE[1036] - $LOCALIZE[89019]</label>
 				<include>ClearButtonChoice</include>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenuFavourites)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,Favourites)</onclick>
@@ -1246,7 +1233,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(Favourites))</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[1036])</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenuFavourites)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,Favourites)</onclick>
@@ -1655,5 +1642,22 @@
 				<visible>StringCompare(Window.Property(MenuItemType),EditMenu)</visible>
 			</item> -->
 		</content>
+	</include>
+    <include name="ClearButtonChoice">
+		<onclick>Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
+		<onclick>Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Path)</onclick>		
+		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Playlist)</onclick>
+		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Sub)</onclick>
+		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Addon)</onclick>
+		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Type)</onclick>
+		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Widget)</onclick>
+		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].CBackground)</onclick>
+        <onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].DBackground)</onclick>
+	</include>
+    <include name="CloseMenuChoice">
+		<onclick condition="Window.IsVisible(2114)">Dialog.Close(2114)</onclick>
+		<onclick condition="Window.IsVisible(2115)">Dialog.Close(2115)</onclick>
+		<onclick>Skin.Reset(UsrSelectAddon)</onclick>
+		<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 	</include>
 </includes>

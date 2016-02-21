@@ -1789,6 +1789,95 @@
 					<visible>IntegerGreaterThan(Container(9029).NumItems,6) + Container(9029).HasNext</visible>
 				</control>
 			</control>            
+            <!-- SubMenuFavourites -->
+			<control type="group">
+				<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),SubMenuFavourites)</visible>
+				<include>HomeSubMenuCommonAnimation</include>
+				<animation effect="slide" start="0,0" end="95,0" time="0" condition="StringCompare(Container(9030).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="190,0" time="0" condition="StringCompare(Container(9030).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="285,0" time="0" condition="StringCompare(Container(9030).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="380,0" time="0" condition="StringCompare(Container(9030).NumItems,2)">conditional</animation>
+                <animation effect="slide" start="0,0" end="475,0" time="0" condition="StringCompare(Container(9030).NumItems,1)">conditional</animation>
+				<control type="list" id="9030">
+					<include>HomeSubMenuCommonValues</include>
+					<onleft>9030</onleft>
+					<onright>9030</onright>
+					<include>HomeSubMenuCommonLayout</include>
+					<include>HomeSubMenuFavourites</include>
+				</control>
+				<control type="image">
+					<left>5</left>
+					<top>0</top>
+					<width>35</width>
+					<height>35</height>
+					<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+					<animation effect="slide" start="0,0" end="30,0" time="0" condition="!IntegerGreaterThan(Container(9030).NumItems,6) | !Container(9030).HasPrevious">conditional</animation>
+					<visible>IntegerGreaterThan(Container(9030).NumItems,0)</visible>
+				</control>
+                <control type="image">
+                    <left>40</left>
+                    <top>0</top>
+                    <width>35</width>
+                    <height>35</height>
+                    <texture border="5">HomeSubNF.png</texture>
+                    <visible>IntegerGreaterThan(Container(9030).NumItems,6) + Container(9030).HasPrevious</visible>
+                </control>
+				<control type="button" id="800">
+					<left>45</left>
+					<top>5</top>
+					<width>25</width>
+					<height>25</height>
+					<texturefocus border="0,0,0,3">arrow-big-left.png</texturefocus>
+					<texturenofocus border="0,0,0,3">arrow-big-left.png</texturenofocus>
+					<onleft>9030</onleft>
+					<onright>9030</onright>
+					<onup>9000</onup>
+					<include>HomeSubMenuDown</include>
+					<onclick>Control.Move(9030,-1)</onclick>
+					<visible>IntegerGreaterThan(Container(9030).NumItems,6) + Container(9030).HasPrevious</visible>
+				</control>
+				<control type="image">
+					<left>1240</left>
+					<top>0</top>
+					<width>35</width>
+					<height>35</height>
+					<texture border="0,0,0,3">HomeSubEnd.png</texture>
+					<animation effect="slide" start="0,0" end="-30,0" time="0" condition="!IntegerGreaterThan(Container(9030).NumItems,6) |  !Container(9030).HasNext">conditional</animation>
+					<animation effect="slide" start="0,0" end="-190,0" time="0" condition="StringCompare(Container(9030).NumItems,5)">conditional</animation>
+					<animation effect="slide" start="0,0" end="-380,0" time="0" condition="StringCompare(Container(9030).NumItems,4)">conditional</animation>
+					<animation effect="slide" start="0,0" end="-570,0" time="0" condition="StringCompare(Container(9030).NumItems,3)">conditional</animation>
+					<animation effect="slide" start="0,0" end="-760,0" time="0" condition="StringCompare(Container(9030).NumItems,2)">conditional</animation>
+                    <animation effect="slide" start="0,0" end="-950,0" time="0" condition="StringCompare(Container(9030).NumItems,1)">conditional</animation>
+					<visible>IntegerGreaterThan(Container(9030).NumItems,0)</visible>
+				</control>
+                <control type="image">
+                    <left>1205</left>
+                    <top>0</top>
+                    <width>35</width>
+                    <height>35</height>
+                    <texture border="5">HomeSubNF.png</texture>
+                    <visible>IntegerGreaterThan(Container(9030).NumItems,6) + Container(9030).HasNext</visible>
+                </control>
+				<control type="button" id="801">
+					<left>1210</left>
+					<top>5</top>
+					<width>25</width>
+					<height>25</height>
+					<texturefocus border="0,0,0,3">arrow-big-right.png</texturefocus>
+					<texturenofocus border="0,0,0,3">arrow-big-right.png</texturenofocus>
+					<onleft>9030</onleft>
+					<onright>9030</onright>
+					<onup>9000</onup>
+					<include>HomeSubMenuDown</include>
+					<onclick>Control.Move(9030,1)</onclick>
+					<animation effect="slide" start="0,0" end="-205,0" time="0" condition="StringCompare(Container(9030).NumItems,5)">conditional</animation>
+					<animation effect="slide" start="0,0" end="-410,0" time="0" condition="StringCompare(Container(9030).NumItems,4)">conditional</animation>
+					<animation effect="slide" start="0,0" end="-615,0" time="0" condition="StringCompare(Container(9030).NumItems,3)">conditional</animation>
+					<animation effect="slide" start="0,0" end="-820,0" time="0" condition="StringCompare(Container(9030).NumItems,2)">conditional</animation>
+                    <animation effect="slide" start="0,0" end="-1025,0" time="0" condition="StringCompare(Container(9030).NumItems,1)">conditional</animation>
+					<visible>IntegerGreaterThan(Container(9030).NumItems,6) + Container(9030).HasNext</visible>
+				</control>
+			</control>            
 		</control>
 	</include>
 	<include name="HomeSubMenuCommonValues">
@@ -3231,5 +3320,845 @@
     <include name="HomeSubMenuDown">
         <ondown condition="!Skin.HasSetting(HideFavoritesButton)">21</ondown>
 		<ondown condition="Skin.HasSetting(HideFavoritesButton) + !Skin.HasSetting(HidePowerButton)">20</ondown>
-    </include>    
+    </include>
+    <include name="ResetSubMenu01">
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label))">Skin.Reset(SubMenu01.1.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label))">Skin.Reset(SubMenu01.1.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label))">Skin.Reset(SubMenu01.2.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label))">Skin.Reset(SubMenu01.2.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label))">Skin.Reset(SubMenu01.3.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label))">Skin.Reset(SubMenu01.3.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label))">Skin.Reset(SubMenu01.4.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label))">Skin.Reset(SubMenu01.4.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label))">Skin.Reset(SubMenu01.5.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label))">Skin.Reset(SubMenu01.5.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label))">Skin.Reset(SubMenu01.6.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label))">Skin.Reset(SubMenu01.6.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label))">Skin.Reset(SubMenu01.7.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label))">Skin.Reset(SubMenu01.7.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label))">Skin.Reset(SubMenu01.8.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label))">Skin.Reset(SubMenu01.8.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label))">Skin.Reset(SubMenu01.9.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label))">Skin.Reset(SubMenu01.9.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label))">Skin.Reset(SubMenu01.10.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label))">Skin.Reset(SubMenu01.10.Path)</onclick>        
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label)) + stringcompare(Skin.String(HomeItem.1.Sub),SubMenu01)">Skin.Reset(HomeItem.1.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label)) + stringcompare(Skin.String(HomeItem.2.Sub),SubMenu01)">Skin.Reset(HomeItem.2.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label)) + stringcompare(Skin.String(HomeItem.3.Sub),SubMenu01)">Skin.Reset(HomeItem.3.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label)) + stringcompare(Skin.String(HomeItem.4.Sub),SubMenu01)">Skin.Reset(HomeItem.4.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label)) + stringcompare(Skin.String(HomeItem.5.Sub),SubMenu01)">Skin.Reset(HomeItem.5.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label)) + stringcompare(Skin.String(HomeItem.6.Sub),SubMenu01)">Skin.Reset(HomeItem.6.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label)) + stringcompare(Skin.String(HomeItem.7.Sub),SubMenu01)">Skin.Reset(HomeItem.7.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label)) + stringcompare(Skin.String(HomeItem.8.Sub),SubMenu01)">Skin.Reset(HomeItem.8.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label)) + stringcompare(Skin.String(HomeItem.9.Sub),SubMenu01)">Skin.Reset(HomeItem.9.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label)) + stringcompare(Skin.String(HomeItem.10.Sub),SubMenu01)">Skin.Reset(HomeItem.10.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label)) + stringcompare(Skin.String(HomeItem.11.Sub),SubMenu01)">Skin.Reset(HomeItem.11.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label)) + stringcompare(Skin.String(HomeItem.12.Sub),SubMenu01)">Skin.Reset(HomeItem.12.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label)) + stringcompare(Skin.String(HomeItem.13.Sub),SubMenu01)">Skin.Reset(HomeItem.13.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label)) + stringcompare(Skin.String(HomeItem.14.Sub),SubMenu01)">Skin.Reset(HomeItem.14.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label)) + stringcompare(Skin.String(HomeItem.15.Sub),SubMenu01)">Skin.Reset(HomeItem.15.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label)) + stringcompare(Skin.String(HomeItem.16.Sub),SubMenu01)">Skin.Reset(HomeItem.16.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label)) + stringcompare(Skin.String(HomeItem.17.Sub),SubMenu01)">Skin.Reset(HomeItem.17.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label)) + stringcompare(Skin.String(HomeItem.18.Sub),SubMenu01)">Skin.Reset(HomeItem.18.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label)) + stringcompare(Skin.String(HomeItem.19.Sub),SubMenu01)">Skin.Reset(HomeItem.19.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu01.Label)) + stringcompare(Skin.String(HomeItem.20.Sub),SubMenu01)">Skin.Reset(HomeItem.20.Sub)</onclick>
+    </include>
+    <include name="ResetSubMenu02">
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label))">Skin.Reset(SubMenu02.1.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label))">Skin.Reset(SubMenu02.1.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label))">Skin.Reset(SubMenu02.2.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label))">Skin.Reset(SubMenu02.2.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label))">Skin.Reset(SubMenu02.3.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label))">Skin.Reset(SubMenu02.3.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label))">Skin.Reset(SubMenu02.4.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label))">Skin.Reset(SubMenu02.4.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label))">Skin.Reset(SubMenu02.5.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label))">Skin.Reset(SubMenu02.5.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label))">Skin.Reset(SubMenu02.6.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label))">Skin.Reset(SubMenu02.6.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label))">Skin.Reset(SubMenu02.7.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label))">Skin.Reset(SubMenu02.7.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label))">Skin.Reset(SubMenu02.8.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label))">Skin.Reset(SubMenu02.8.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label))">Skin.Reset(SubMenu02.9.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label))">Skin.Reset(SubMenu02.9.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label))">Skin.Reset(SubMenu02.10.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label))">Skin.Reset(SubMenu02.10.Path)</onclick>        
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label)) + stringcompare(Skin.String(HomeItem.1.Sub),SubMenu02)">Skin.Reset(HomeItem.1.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label)) + stringcompare(Skin.String(HomeItem.2.Sub),SubMenu02)">Skin.Reset(HomeItem.2.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label)) + stringcompare(Skin.String(HomeItem.3.Sub),SubMenu02)">Skin.Reset(HomeItem.3.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label)) + stringcompare(Skin.String(HomeItem.4.Sub),SubMenu02)">Skin.Reset(HomeItem.4.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label)) + stringcompare(Skin.String(HomeItem.5.Sub),SubMenu02)">Skin.Reset(HomeItem.5.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label)) + stringcompare(Skin.String(HomeItem.6.Sub),SubMenu02)">Skin.Reset(HomeItem.6.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label)) + stringcompare(Skin.String(HomeItem.7.Sub),SubMenu02)">Skin.Reset(HomeItem.7.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label)) + stringcompare(Skin.String(HomeItem.8.Sub),SubMenu02)">Skin.Reset(HomeItem.8.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label)) + stringcompare(Skin.String(HomeItem.9.Sub),SubMenu02)">Skin.Reset(HomeItem.9.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label)) + stringcompare(Skin.String(HomeItem.10.Sub),SubMenu02)">Skin.Reset(HomeItem.10.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label)) + stringcompare(Skin.String(HomeItem.11.Sub),SubMenu02)">Skin.Reset(HomeItem.11.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label)) + stringcompare(Skin.String(HomeItem.12.Sub),SubMenu02)">Skin.Reset(HomeItem.12.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label)) + stringcompare(Skin.String(HomeItem.13.Sub),SubMenu02)">Skin.Reset(HomeItem.13.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label)) + stringcompare(Skin.String(HomeItem.14.Sub),SubMenu02)">Skin.Reset(HomeItem.14.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label)) + stringcompare(Skin.String(HomeItem.15.Sub),SubMenu02)">Skin.Reset(HomeItem.15.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label)) + stringcompare(Skin.String(HomeItem.16.Sub),SubMenu02)">Skin.Reset(HomeItem.16.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label)) + stringcompare(Skin.String(HomeItem.17.Sub),SubMenu02)">Skin.Reset(HomeItem.17.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label)) + stringcompare(Skin.String(HomeItem.18.Sub),SubMenu02)">Skin.Reset(HomeItem.18.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label)) + stringcompare(Skin.String(HomeItem.19.Sub),SubMenu02)">Skin.Reset(HomeItem.19.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu02.Label)) + stringcompare(Skin.String(HomeItem.20.Sub),SubMenu02)">Skin.Reset(HomeItem.20.Sub)</onclick>
+    </include>
+    <include name="ResetSubMenu03">
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label))">Skin.Reset(SubMenu03.1.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label))">Skin.Reset(SubMenu03.1.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label))">Skin.Reset(SubMenu03.2.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label))">Skin.Reset(SubMenu03.2.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label))">Skin.Reset(SubMenu03.3.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label))">Skin.Reset(SubMenu03.3.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label))">Skin.Reset(SubMenu03.4.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label))">Skin.Reset(SubMenu03.4.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label))">Skin.Reset(SubMenu03.5.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label))">Skin.Reset(SubMenu03.5.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label))">Skin.Reset(SubMenu03.6.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label))">Skin.Reset(SubMenu03.6.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label))">Skin.Reset(SubMenu03.7.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label))">Skin.Reset(SubMenu03.7.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label))">Skin.Reset(SubMenu03.8.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label))">Skin.Reset(SubMenu03.8.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label))">Skin.Reset(SubMenu03.9.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label))">Skin.Reset(SubMenu03.9.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label))">Skin.Reset(SubMenu03.10.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label))">Skin.Reset(SubMenu03.10.Path)</onclick>        
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label)) + stringcompare(Skin.String(HomeItem.1.Sub),SubMenu03)">Skin.Reset(HomeItem.1.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label)) + stringcompare(Skin.String(HomeItem.2.Sub),SubMenu03)">Skin.Reset(HomeItem.2.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label)) + stringcompare(Skin.String(HomeItem.3.Sub),SubMenu03)">Skin.Reset(HomeItem.3.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label)) + stringcompare(Skin.String(HomeItem.4.Sub),SubMenu03)">Skin.Reset(HomeItem.4.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label)) + stringcompare(Skin.String(HomeItem.5.Sub),SubMenu03)">Skin.Reset(HomeItem.5.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label)) + stringcompare(Skin.String(HomeItem.6.Sub),SubMenu03)">Skin.Reset(HomeItem.6.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label)) + stringcompare(Skin.String(HomeItem.7.Sub),SubMenu03)">Skin.Reset(HomeItem.7.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label)) + stringcompare(Skin.String(HomeItem.8.Sub),SubMenu03)">Skin.Reset(HomeItem.8.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label)) + stringcompare(Skin.String(HomeItem.9.Sub),SubMenu03)">Skin.Reset(HomeItem.9.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label)) + stringcompare(Skin.String(HomeItem.10.Sub),SubMenu03)">Skin.Reset(HomeItem.10.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label)) + stringcompare(Skin.String(HomeItem.11.Sub),SubMenu03)">Skin.Reset(HomeItem.11.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label)) + stringcompare(Skin.String(HomeItem.12.Sub),SubMenu03)">Skin.Reset(HomeItem.12.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label)) + stringcompare(Skin.String(HomeItem.13.Sub),SubMenu03)">Skin.Reset(HomeItem.13.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label)) + stringcompare(Skin.String(HomeItem.14.Sub),SubMenu03)">Skin.Reset(HomeItem.14.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label)) + stringcompare(Skin.String(HomeItem.15.Sub),SubMenu03)">Skin.Reset(HomeItem.15.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label)) + stringcompare(Skin.String(HomeItem.16.Sub),SubMenu03)">Skin.Reset(HomeItem.16.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label)) + stringcompare(Skin.String(HomeItem.17.Sub),SubMenu03)">Skin.Reset(HomeItem.17.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label)) + stringcompare(Skin.String(HomeItem.18.Sub),SubMenu03)">Skin.Reset(HomeItem.18.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label)) + stringcompare(Skin.String(HomeItem.19.Sub),SubMenu03)">Skin.Reset(HomeItem.19.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu03.Label)) + stringcompare(Skin.String(HomeItem.20.Sub),SubMenu03)">Skin.Reset(HomeItem.20.Sub)</onclick>
+    </include>
+    <include name="ResetSubMenu04">
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label))">Skin.Reset(SubMenu04.1.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label))">Skin.Reset(SubMenu04.1.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label))">Skin.Reset(SubMenu04.2.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label))">Skin.Reset(SubMenu04.2.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label))">Skin.Reset(SubMenu04.3.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label))">Skin.Reset(SubMenu04.3.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label))">Skin.Reset(SubMenu04.4.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label))">Skin.Reset(SubMenu04.4.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label))">Skin.Reset(SubMenu04.5.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label))">Skin.Reset(SubMenu04.5.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label))">Skin.Reset(SubMenu04.6.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label))">Skin.Reset(SubMenu04.6.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label))">Skin.Reset(SubMenu04.7.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label))">Skin.Reset(SubMenu04.7.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label))">Skin.Reset(SubMenu04.8.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label))">Skin.Reset(SubMenu04.8.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label))">Skin.Reset(SubMenu04.9.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label))">Skin.Reset(SubMenu04.9.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label))">Skin.Reset(SubMenu04.10.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label))">Skin.Reset(SubMenu04.10.Path)</onclick>        
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label)) + stringcompare(Skin.String(HomeItem.1.Sub),SubMenu04)">Skin.Reset(HomeItem.1.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label)) + stringcompare(Skin.String(HomeItem.2.Sub),SubMenu04)">Skin.Reset(HomeItem.2.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label)) + stringcompare(Skin.String(HomeItem.3.Sub),SubMenu04)">Skin.Reset(HomeItem.3.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label)) + stringcompare(Skin.String(HomeItem.4.Sub),SubMenu04)">Skin.Reset(HomeItem.4.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label)) + stringcompare(Skin.String(HomeItem.5.Sub),SubMenu04)">Skin.Reset(HomeItem.5.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label)) + stringcompare(Skin.String(HomeItem.6.Sub),SubMenu04)">Skin.Reset(HomeItem.6.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label)) + stringcompare(Skin.String(HomeItem.7.Sub),SubMenu04)">Skin.Reset(HomeItem.7.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label)) + stringcompare(Skin.String(HomeItem.8.Sub),SubMenu04)">Skin.Reset(HomeItem.8.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label)) + stringcompare(Skin.String(HomeItem.9.Sub),SubMenu04)">Skin.Reset(HomeItem.9.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label)) + stringcompare(Skin.String(HomeItem.10.Sub),SubMenu04)">Skin.Reset(HomeItem.10.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label)) + stringcompare(Skin.String(HomeItem.11.Sub),SubMenu04)">Skin.Reset(HomeItem.11.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label)) + stringcompare(Skin.String(HomeItem.12.Sub),SubMenu04)">Skin.Reset(HomeItem.12.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label)) + stringcompare(Skin.String(HomeItem.13.Sub),SubMenu04)">Skin.Reset(HomeItem.13.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label)) + stringcompare(Skin.String(HomeItem.14.Sub),SubMenu04)">Skin.Reset(HomeItem.14.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label)) + stringcompare(Skin.String(HomeItem.15.Sub),SubMenu04)">Skin.Reset(HomeItem.15.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label)) + stringcompare(Skin.String(HomeItem.16.Sub),SubMenu04)">Skin.Reset(HomeItem.16.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label)) + stringcompare(Skin.String(HomeItem.17.Sub),SubMenu04)">Skin.Reset(HomeItem.17.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label)) + stringcompare(Skin.String(HomeItem.18.Sub),SubMenu04)">Skin.Reset(HomeItem.18.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label)) + stringcompare(Skin.String(HomeItem.19.Sub),SubMenu04)">Skin.Reset(HomeItem.19.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu04.Label)) + stringcompare(Skin.String(HomeItem.20.Sub),SubMenu04)">Skin.Reset(HomeItem.20.Sub)</onclick>
+    </include>
+    <include name="ResetSubMenu05">
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label))">Skin.Reset(SubMenu05.1.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label))">Skin.Reset(SubMenu05.1.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label))">Skin.Reset(SubMenu05.2.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label))">Skin.Reset(SubMenu05.2.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label))">Skin.Reset(SubMenu05.3.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label))">Skin.Reset(SubMenu05.3.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label))">Skin.Reset(SubMenu05.4.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label))">Skin.Reset(SubMenu05.4.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label))">Skin.Reset(SubMenu05.5.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label))">Skin.Reset(SubMenu05.5.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label))">Skin.Reset(SubMenu05.6.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label))">Skin.Reset(SubMenu05.6.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label))">Skin.Reset(SubMenu05.7.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label))">Skin.Reset(SubMenu05.7.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label))">Skin.Reset(SubMenu05.8.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label))">Skin.Reset(SubMenu05.8.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label))">Skin.Reset(SubMenu05.9.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label))">Skin.Reset(SubMenu05.9.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label))">Skin.Reset(SubMenu05.10.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label))">Skin.Reset(SubMenu05.10.Path)</onclick>        
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label)) + stringcompare(Skin.String(HomeItem.1.Sub),SubMenu05)">Skin.Reset(HomeItem.1.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label)) + stringcompare(Skin.String(HomeItem.2.Sub),SubMenu05)">Skin.Reset(HomeItem.2.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label)) + stringcompare(Skin.String(HomeItem.3.Sub),SubMenu05)">Skin.Reset(HomeItem.3.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label)) + stringcompare(Skin.String(HomeItem.4.Sub),SubMenu05)">Skin.Reset(HomeItem.4.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label)) + stringcompare(Skin.String(HomeItem.5.Sub),SubMenu05)">Skin.Reset(HomeItem.5.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label)) + stringcompare(Skin.String(HomeItem.6.Sub),SubMenu05)">Skin.Reset(HomeItem.6.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label)) + stringcompare(Skin.String(HomeItem.7.Sub),SubMenu05)">Skin.Reset(HomeItem.7.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label)) + stringcompare(Skin.String(HomeItem.8.Sub),SubMenu05)">Skin.Reset(HomeItem.8.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label)) + stringcompare(Skin.String(HomeItem.9.Sub),SubMenu05)">Skin.Reset(HomeItem.9.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label)) + stringcompare(Skin.String(HomeItem.10.Sub),SubMenu05)">Skin.Reset(HomeItem.10.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label)) + stringcompare(Skin.String(HomeItem.11.Sub),SubMenu05)">Skin.Reset(HomeItem.11.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label)) + stringcompare(Skin.String(HomeItem.12.Sub),SubMenu05)">Skin.Reset(HomeItem.12.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label)) + stringcompare(Skin.String(HomeItem.13.Sub),SubMenu05)">Skin.Reset(HomeItem.13.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label)) + stringcompare(Skin.String(HomeItem.14.Sub),SubMenu05)">Skin.Reset(HomeItem.14.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label)) + stringcompare(Skin.String(HomeItem.15.Sub),SubMenu05)">Skin.Reset(HomeItem.15.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label)) + stringcompare(Skin.String(HomeItem.16.Sub),SubMenu05)">Skin.Reset(HomeItem.16.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label)) + stringcompare(Skin.String(HomeItem.17.Sub),SubMenu05)">Skin.Reset(HomeItem.17.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label)) + stringcompare(Skin.String(HomeItem.18.Sub),SubMenu05)">Skin.Reset(HomeItem.18.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label)) + stringcompare(Skin.String(HomeItem.19.Sub),SubMenu05)">Skin.Reset(HomeItem.19.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu05.Label)) + stringcompare(Skin.String(HomeItem.20.Sub),SubMenu05)">Skin.Reset(HomeItem.20.Sub)</onclick>
+    </include>
+    <include name="ResetSubMenu06">
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label))">Skin.Reset(SubMenu06.1.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label))">Skin.Reset(SubMenu06.1.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label))">Skin.Reset(SubMenu06.2.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label))">Skin.Reset(SubMenu06.2.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label))">Skin.Reset(SubMenu06.3.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label))">Skin.Reset(SubMenu06.3.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label))">Skin.Reset(SubMenu06.4.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label))">Skin.Reset(SubMenu06.4.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label))">Skin.Reset(SubMenu06.5.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label))">Skin.Reset(SubMenu06.5.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label))">Skin.Reset(SubMenu06.6.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label))">Skin.Reset(SubMenu06.6.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label))">Skin.Reset(SubMenu06.7.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label))">Skin.Reset(SubMenu06.7.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label))">Skin.Reset(SubMenu06.8.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label))">Skin.Reset(SubMenu06.8.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label))">Skin.Reset(SubMenu06.9.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label))">Skin.Reset(SubMenu06.9.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label))">Skin.Reset(SubMenu06.10.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label))">Skin.Reset(SubMenu06.10.Path)</onclick>        
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label)) + stringcompare(Skin.String(HomeItem.1.Sub),SubMenu06)">Skin.Reset(HomeItem.1.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label)) + stringcompare(Skin.String(HomeItem.2.Sub),SubMenu06)">Skin.Reset(HomeItem.2.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label)) + stringcompare(Skin.String(HomeItem.3.Sub),SubMenu06)">Skin.Reset(HomeItem.3.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label)) + stringcompare(Skin.String(HomeItem.4.Sub),SubMenu06)">Skin.Reset(HomeItem.4.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label)) + stringcompare(Skin.String(HomeItem.5.Sub),SubMenu06)">Skin.Reset(HomeItem.5.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label)) + stringcompare(Skin.String(HomeItem.6.Sub),SubMenu06)">Skin.Reset(HomeItem.6.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label)) + stringcompare(Skin.String(HomeItem.7.Sub),SubMenu06)">Skin.Reset(HomeItem.7.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label)) + stringcompare(Skin.String(HomeItem.8.Sub),SubMenu06)">Skin.Reset(HomeItem.8.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label)) + stringcompare(Skin.String(HomeItem.9.Sub),SubMenu06)">Skin.Reset(HomeItem.9.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label)) + stringcompare(Skin.String(HomeItem.10.Sub),SubMenu06)">Skin.Reset(HomeItem.10.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label)) + stringcompare(Skin.String(HomeItem.11.Sub),SubMenu06)">Skin.Reset(HomeItem.11.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label)) + stringcompare(Skin.String(HomeItem.12.Sub),SubMenu06)">Skin.Reset(HomeItem.12.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label)) + stringcompare(Skin.String(HomeItem.13.Sub),SubMenu06)">Skin.Reset(HomeItem.13.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label)) + stringcompare(Skin.String(HomeItem.14.Sub),SubMenu06)">Skin.Reset(HomeItem.14.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label)) + stringcompare(Skin.String(HomeItem.15.Sub),SubMenu06)">Skin.Reset(HomeItem.15.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label)) + stringcompare(Skin.String(HomeItem.16.Sub),SubMenu06)">Skin.Reset(HomeItem.16.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label)) + stringcompare(Skin.String(HomeItem.17.Sub),SubMenu06)">Skin.Reset(HomeItem.17.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label)) + stringcompare(Skin.String(HomeItem.18.Sub),SubMenu06)">Skin.Reset(HomeItem.18.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label)) + stringcompare(Skin.String(HomeItem.19.Sub),SubMenu06)">Skin.Reset(HomeItem.19.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu06.Label)) + stringcompare(Skin.String(HomeItem.20.Sub),SubMenu06)">Skin.Reset(HomeItem.20.Sub)</onclick>
+    </include>
+    <include name="ResetSubMenu07">
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label))">Skin.Reset(SubMenu07.1.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label))">Skin.Reset(SubMenu07.1.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label))">Skin.Reset(SubMenu07.2.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label))">Skin.Reset(SubMenu07.2.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label))">Skin.Reset(SubMenu07.3.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label))">Skin.Reset(SubMenu07.3.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label))">Skin.Reset(SubMenu07.4.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label))">Skin.Reset(SubMenu07.4.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label))">Skin.Reset(SubMenu07.5.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label))">Skin.Reset(SubMenu07.5.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label))">Skin.Reset(SubMenu07.6.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label))">Skin.Reset(SubMenu07.6.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label))">Skin.Reset(SubMenu07.7.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label))">Skin.Reset(SubMenu07.7.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label))">Skin.Reset(SubMenu07.8.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label))">Skin.Reset(SubMenu07.8.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label))">Skin.Reset(SubMenu07.9.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label))">Skin.Reset(SubMenu07.9.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label))">Skin.Reset(SubMenu07.10.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label))">Skin.Reset(SubMenu07.10.Path)</onclick>        
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label)) + stringcompare(Skin.String(HomeItem.1.Sub),SubMenu07)">Skin.Reset(HomeItem.1.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label)) + stringcompare(Skin.String(HomeItem.2.Sub),SubMenu07)">Skin.Reset(HomeItem.2.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label)) + stringcompare(Skin.String(HomeItem.3.Sub),SubMenu07)">Skin.Reset(HomeItem.3.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label)) + stringcompare(Skin.String(HomeItem.4.Sub),SubMenu07)">Skin.Reset(HomeItem.4.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label)) + stringcompare(Skin.String(HomeItem.5.Sub),SubMenu07)">Skin.Reset(HomeItem.5.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label)) + stringcompare(Skin.String(HomeItem.6.Sub),SubMenu07)">Skin.Reset(HomeItem.6.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label)) + stringcompare(Skin.String(HomeItem.7.Sub),SubMenu07)">Skin.Reset(HomeItem.7.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label)) + stringcompare(Skin.String(HomeItem.8.Sub),SubMenu07)">Skin.Reset(HomeItem.8.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label)) + stringcompare(Skin.String(HomeItem.9.Sub),SubMenu07)">Skin.Reset(HomeItem.9.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label)) + stringcompare(Skin.String(HomeItem.10.Sub),SubMenu07)">Skin.Reset(HomeItem.10.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label)) + stringcompare(Skin.String(HomeItem.11.Sub),SubMenu07)">Skin.Reset(HomeItem.11.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label)) + stringcompare(Skin.String(HomeItem.12.Sub),SubMenu07)">Skin.Reset(HomeItem.12.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label)) + stringcompare(Skin.String(HomeItem.13.Sub),SubMenu07)">Skin.Reset(HomeItem.13.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label)) + stringcompare(Skin.String(HomeItem.14.Sub),SubMenu07)">Skin.Reset(HomeItem.14.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label)) + stringcompare(Skin.String(HomeItem.15.Sub),SubMenu07)">Skin.Reset(HomeItem.15.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label)) + stringcompare(Skin.String(HomeItem.16.Sub),SubMenu07)">Skin.Reset(HomeItem.16.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label)) + stringcompare(Skin.String(HomeItem.17.Sub),SubMenu07)">Skin.Reset(HomeItem.17.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label)) + stringcompare(Skin.String(HomeItem.18.Sub),SubMenu07)">Skin.Reset(HomeItem.18.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label)) + stringcompare(Skin.String(HomeItem.19.Sub),SubMenu07)">Skin.Reset(HomeItem.19.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu07.Label)) + stringcompare(Skin.String(HomeItem.20.Sub),SubMenu07)">Skin.Reset(HomeItem.20.Sub)</onclick>
+    </include>
+    <include name="ResetSubMenu08">
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label))">Skin.Reset(SubMenu08.1.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label))">Skin.Reset(SubMenu08.1.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label))">Skin.Reset(SubMenu08.2.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label))">Skin.Reset(SubMenu08.2.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label))">Skin.Reset(SubMenu08.3.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label))">Skin.Reset(SubMenu08.3.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label))">Skin.Reset(SubMenu08.4.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label))">Skin.Reset(SubMenu08.4.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label))">Skin.Reset(SubMenu08.5.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label))">Skin.Reset(SubMenu08.5.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label))">Skin.Reset(SubMenu08.6.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label))">Skin.Reset(SubMenu08.6.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label))">Skin.Reset(SubMenu08.7.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label))">Skin.Reset(SubMenu08.7.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label))">Skin.Reset(SubMenu08.8.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label))">Skin.Reset(SubMenu08.8.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label))">Skin.Reset(SubMenu08.9.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label))">Skin.Reset(SubMenu08.9.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label))">Skin.Reset(SubMenu08.10.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label))">Skin.Reset(SubMenu08.10.Path)</onclick>        
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label)) + stringcompare(Skin.String(HomeItem.1.Sub),SubMenu08)">Skin.Reset(HomeItem.1.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label)) + stringcompare(Skin.String(HomeItem.2.Sub),SubMenu08)">Skin.Reset(HomeItem.2.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label)) + stringcompare(Skin.String(HomeItem.3.Sub),SubMenu08)">Skin.Reset(HomeItem.3.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label)) + stringcompare(Skin.String(HomeItem.4.Sub),SubMenu08)">Skin.Reset(HomeItem.4.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label)) + stringcompare(Skin.String(HomeItem.5.Sub),SubMenu08)">Skin.Reset(HomeItem.5.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label)) + stringcompare(Skin.String(HomeItem.6.Sub),SubMenu08)">Skin.Reset(HomeItem.6.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label)) + stringcompare(Skin.String(HomeItem.7.Sub),SubMenu08)">Skin.Reset(HomeItem.7.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label)) + stringcompare(Skin.String(HomeItem.8.Sub),SubMenu08)">Skin.Reset(HomeItem.8.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label)) + stringcompare(Skin.String(HomeItem.9.Sub),SubMenu08)">Skin.Reset(HomeItem.9.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label)) + stringcompare(Skin.String(HomeItem.10.Sub),SubMenu08)">Skin.Reset(HomeItem.10.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label)) + stringcompare(Skin.String(HomeItem.11.Sub),SubMenu08)">Skin.Reset(HomeItem.11.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label)) + stringcompare(Skin.String(HomeItem.12.Sub),SubMenu08)">Skin.Reset(HomeItem.12.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label)) + stringcompare(Skin.String(HomeItem.13.Sub),SubMenu08)">Skin.Reset(HomeItem.13.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label)) + stringcompare(Skin.String(HomeItem.14.Sub),SubMenu08)">Skin.Reset(HomeItem.14.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label)) + stringcompare(Skin.String(HomeItem.15.Sub),SubMenu08)">Skin.Reset(HomeItem.15.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label)) + stringcompare(Skin.String(HomeItem.16.Sub),SubMenu08)">Skin.Reset(HomeItem.16.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label)) + stringcompare(Skin.String(HomeItem.17.Sub),SubMenu08)">Skin.Reset(HomeItem.17.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label)) + stringcompare(Skin.String(HomeItem.18.Sub),SubMenu08)">Skin.Reset(HomeItem.18.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label)) + stringcompare(Skin.String(HomeItem.19.Sub),SubMenu08)">Skin.Reset(HomeItem.19.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu08.Label)) + stringcompare(Skin.String(HomeItem.20.Sub),SubMenu08)">Skin.Reset(HomeItem.20.Sub)</onclick>
+    </include>
+    <include name="ResetSubMenu09">
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label))">Skin.Reset(SubMenu09.1.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label))">Skin.Reset(SubMenu09.1.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label))">Skin.Reset(SubMenu09.2.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label))">Skin.Reset(SubMenu09.2.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label))">Skin.Reset(SubMenu09.3.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label))">Skin.Reset(SubMenu09.3.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label))">Skin.Reset(SubMenu09.4.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label))">Skin.Reset(SubMenu09.4.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label))">Skin.Reset(SubMenu09.5.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label))">Skin.Reset(SubMenu09.5.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label))">Skin.Reset(SubMenu09.6.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label))">Skin.Reset(SubMenu09.6.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label))">Skin.Reset(SubMenu09.7.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label))">Skin.Reset(SubMenu09.7.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label))">Skin.Reset(SubMenu09.8.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label))">Skin.Reset(SubMenu09.8.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label))">Skin.Reset(SubMenu09.9.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label))">Skin.Reset(SubMenu09.9.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label))">Skin.Reset(SubMenu09.10.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label))">Skin.Reset(SubMenu09.10.Path)</onclick>        
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label)) + stringcompare(Skin.String(HomeItem.1.Sub),SubMenu09)">Skin.Reset(HomeItem.1.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label)) + stringcompare(Skin.String(HomeItem.2.Sub),SubMenu09)">Skin.Reset(HomeItem.2.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label)) + stringcompare(Skin.String(HomeItem.3.Sub),SubMenu09)">Skin.Reset(HomeItem.3.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label)) + stringcompare(Skin.String(HomeItem.4.Sub),SubMenu09)">Skin.Reset(HomeItem.4.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label)) + stringcompare(Skin.String(HomeItem.5.Sub),SubMenu09)">Skin.Reset(HomeItem.5.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label)) + stringcompare(Skin.String(HomeItem.6.Sub),SubMenu09)">Skin.Reset(HomeItem.6.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label)) + stringcompare(Skin.String(HomeItem.7.Sub),SubMenu09)">Skin.Reset(HomeItem.7.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label)) + stringcompare(Skin.String(HomeItem.8.Sub),SubMenu09)">Skin.Reset(HomeItem.8.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label)) + stringcompare(Skin.String(HomeItem.9.Sub),SubMenu09)">Skin.Reset(HomeItem.9.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label)) + stringcompare(Skin.String(HomeItem.10.Sub),SubMenu09)">Skin.Reset(HomeItem.10.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label)) + stringcompare(Skin.String(HomeItem.11.Sub),SubMenu09)">Skin.Reset(HomeItem.11.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label)) + stringcompare(Skin.String(HomeItem.12.Sub),SubMenu09)">Skin.Reset(HomeItem.12.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label)) + stringcompare(Skin.String(HomeItem.13.Sub),SubMenu09)">Skin.Reset(HomeItem.13.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label)) + stringcompare(Skin.String(HomeItem.14.Sub),SubMenu09)">Skin.Reset(HomeItem.14.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label)) + stringcompare(Skin.String(HomeItem.15.Sub),SubMenu09)">Skin.Reset(HomeItem.15.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label)) + stringcompare(Skin.String(HomeItem.16.Sub),SubMenu09)">Skin.Reset(HomeItem.16.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label)) + stringcompare(Skin.String(HomeItem.17.Sub),SubMenu09)">Skin.Reset(HomeItem.17.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label)) + stringcompare(Skin.String(HomeItem.18.Sub),SubMenu09)">Skin.Reset(HomeItem.18.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label)) + stringcompare(Skin.String(HomeItem.19.Sub),SubMenu09)">Skin.Reset(HomeItem.19.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu09.Label)) + stringcompare(Skin.String(HomeItem.20.Sub),SubMenu09)">Skin.Reset(HomeItem.20.Sub)</onclick>
+    </include>
+    <include name="ResetSubMenu10">
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label))">Skin.Reset(SubMenu10.1.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label))">Skin.Reset(SubMenu10.1.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label))">Skin.Reset(SubMenu10.2.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label))">Skin.Reset(SubMenu10.2.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label))">Skin.Reset(SubMenu10.3.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label))">Skin.Reset(SubMenu10.3.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label))">Skin.Reset(SubMenu10.4.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label))">Skin.Reset(SubMenu10.4.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label))">Skin.Reset(SubMenu10.5.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label))">Skin.Reset(SubMenu10.5.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label))">Skin.Reset(SubMenu10.6.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label))">Skin.Reset(SubMenu10.6.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label))">Skin.Reset(SubMenu10.7.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label))">Skin.Reset(SubMenu10.7.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label))">Skin.Reset(SubMenu10.8.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label))">Skin.Reset(SubMenu10.8.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label))">Skin.Reset(SubMenu10.9.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label))">Skin.Reset(SubMenu10.9.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label))">Skin.Reset(SubMenu10.10.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label))">Skin.Reset(SubMenu10.10.Path)</onclick>        
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label)) + stringcompare(Skin.String(HomeItem.1.Sub),SubMenu10)">Skin.Reset(HomeItem.1.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label)) + stringcompare(Skin.String(HomeItem.2.Sub),SubMenu10)">Skin.Reset(HomeItem.2.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label)) + stringcompare(Skin.String(HomeItem.3.Sub),SubMenu10)">Skin.Reset(HomeItem.3.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label)) + stringcompare(Skin.String(HomeItem.4.Sub),SubMenu10)">Skin.Reset(HomeItem.4.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label)) + stringcompare(Skin.String(HomeItem.5.Sub),SubMenu10)">Skin.Reset(HomeItem.5.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label)) + stringcompare(Skin.String(HomeItem.6.Sub),SubMenu10)">Skin.Reset(HomeItem.6.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label)) + stringcompare(Skin.String(HomeItem.7.Sub),SubMenu10)">Skin.Reset(HomeItem.7.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label)) + stringcompare(Skin.String(HomeItem.8.Sub),SubMenu10)">Skin.Reset(HomeItem.8.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label)) + stringcompare(Skin.String(HomeItem.9.Sub),SubMenu10)">Skin.Reset(HomeItem.9.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label)) + stringcompare(Skin.String(HomeItem.10.Sub),SubMenu10)">Skin.Reset(HomeItem.10.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label)) + stringcompare(Skin.String(HomeItem.11.Sub),SubMenu10)">Skin.Reset(HomeItem.11.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label)) + stringcompare(Skin.String(HomeItem.12.Sub),SubMenu10)">Skin.Reset(HomeItem.12.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label)) + stringcompare(Skin.String(HomeItem.13.Sub),SubMenu10)">Skin.Reset(HomeItem.13.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label)) + stringcompare(Skin.String(HomeItem.14.Sub),SubMenu10)">Skin.Reset(HomeItem.14.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label)) + stringcompare(Skin.String(HomeItem.15.Sub),SubMenu10)">Skin.Reset(HomeItem.15.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label)) + stringcompare(Skin.String(HomeItem.16.Sub),SubMenu10)">Skin.Reset(HomeItem.16.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label)) + stringcompare(Skin.String(HomeItem.17.Sub),SubMenu10)">Skin.Reset(HomeItem.17.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label)) + stringcompare(Skin.String(HomeItem.18.Sub),SubMenu10)">Skin.Reset(HomeItem.18.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label)) + stringcompare(Skin.String(HomeItem.19.Sub),SubMenu10)">Skin.Reset(HomeItem.19.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu10.Label)) + stringcompare(Skin.String(HomeItem.20.Sub),SubMenu10)">Skin.Reset(HomeItem.20.Sub)</onclick>
+    </include>
+    <include name="ResetSubMenu11">
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label))">Skin.Reset(SubMenu11.1.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label))">Skin.Reset(SubMenu11.1.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label))">Skin.Reset(SubMenu11.2.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label))">Skin.Reset(SubMenu11.2.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label))">Skin.Reset(SubMenu11.3.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label))">Skin.Reset(SubMenu11.3.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label))">Skin.Reset(SubMenu11.4.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label))">Skin.Reset(SubMenu11.4.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label))">Skin.Reset(SubMenu11.5.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label))">Skin.Reset(SubMenu11.5.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label))">Skin.Reset(SubMenu11.6.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label))">Skin.Reset(SubMenu11.6.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label))">Skin.Reset(SubMenu11.7.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label))">Skin.Reset(SubMenu11.7.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label))">Skin.Reset(SubMenu11.8.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label))">Skin.Reset(SubMenu11.8.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label))">Skin.Reset(SubMenu11.9.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label))">Skin.Reset(SubMenu11.9.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label))">Skin.Reset(SubMenu11.10.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label))">Skin.Reset(SubMenu11.10.Path)</onclick>        
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label)) + stringcompare(Skin.String(HomeItem.1.Sub),SubMenu11)">Skin.Reset(HomeItem.1.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label)) + stringcompare(Skin.String(HomeItem.2.Sub),SubMenu11)">Skin.Reset(HomeItem.2.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label)) + stringcompare(Skin.String(HomeItem.3.Sub),SubMenu11)">Skin.Reset(HomeItem.3.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label)) + stringcompare(Skin.String(HomeItem.4.Sub),SubMenu11)">Skin.Reset(HomeItem.4.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label)) + stringcompare(Skin.String(HomeItem.5.Sub),SubMenu11)">Skin.Reset(HomeItem.5.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label)) + stringcompare(Skin.String(HomeItem.6.Sub),SubMenu11)">Skin.Reset(HomeItem.6.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label)) + stringcompare(Skin.String(HomeItem.7.Sub),SubMenu11)">Skin.Reset(HomeItem.7.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label)) + stringcompare(Skin.String(HomeItem.8.Sub),SubMenu11)">Skin.Reset(HomeItem.8.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label)) + stringcompare(Skin.String(HomeItem.9.Sub),SubMenu11)">Skin.Reset(HomeItem.9.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label)) + stringcompare(Skin.String(HomeItem.10.Sub),SubMenu11)">Skin.Reset(HomeItem.10.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label)) + stringcompare(Skin.String(HomeItem.11.Sub),SubMenu11)">Skin.Reset(HomeItem.11.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label)) + stringcompare(Skin.String(HomeItem.12.Sub),SubMenu11)">Skin.Reset(HomeItem.12.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label)) + stringcompare(Skin.String(HomeItem.13.Sub),SubMenu11)">Skin.Reset(HomeItem.13.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label)) + stringcompare(Skin.String(HomeItem.14.Sub),SubMenu11)">Skin.Reset(HomeItem.14.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label)) + stringcompare(Skin.String(HomeItem.15.Sub),SubMenu11)">Skin.Reset(HomeItem.15.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label)) + stringcompare(Skin.String(HomeItem.16.Sub),SubMenu11)">Skin.Reset(HomeItem.16.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label)) + stringcompare(Skin.String(HomeItem.17.Sub),SubMenu11)">Skin.Reset(HomeItem.17.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label)) + stringcompare(Skin.String(HomeItem.18.Sub),SubMenu11)">Skin.Reset(HomeItem.18.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label)) + stringcompare(Skin.String(HomeItem.19.Sub),SubMenu11)">Skin.Reset(HomeItem.19.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu11.Label)) + stringcompare(Skin.String(HomeItem.20.Sub),SubMenu11)">Skin.Reset(HomeItem.20.Sub)</onclick>
+    </include>
+    <include name="ResetSubMenu12">
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label))">Skin.Reset(SubMenu12.1.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label))">Skin.Reset(SubMenu12.1.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label))">Skin.Reset(SubMenu12.2.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label))">Skin.Reset(SubMenu12.2.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label))">Skin.Reset(SubMenu12.3.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label))">Skin.Reset(SubMenu12.3.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label))">Skin.Reset(SubMenu12.4.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label))">Skin.Reset(SubMenu12.4.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label))">Skin.Reset(SubMenu12.5.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label))">Skin.Reset(SubMenu12.5.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label))">Skin.Reset(SubMenu12.6.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label))">Skin.Reset(SubMenu12.6.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label))">Skin.Reset(SubMenu12.7.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label))">Skin.Reset(SubMenu12.7.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label))">Skin.Reset(SubMenu12.8.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label))">Skin.Reset(SubMenu12.8.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label))">Skin.Reset(SubMenu12.9.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label))">Skin.Reset(SubMenu12.9.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label))">Skin.Reset(SubMenu12.10.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label))">Skin.Reset(SubMenu12.10.Path)</onclick>        
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label)) + stringcompare(Skin.String(HomeItem.1.Sub),SubMenu12)">Skin.Reset(HomeItem.1.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label)) + stringcompare(Skin.String(HomeItem.2.Sub),SubMenu12)">Skin.Reset(HomeItem.2.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label)) + stringcompare(Skin.String(HomeItem.3.Sub),SubMenu12)">Skin.Reset(HomeItem.3.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label)) + stringcompare(Skin.String(HomeItem.4.Sub),SubMenu12)">Skin.Reset(HomeItem.4.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label)) + stringcompare(Skin.String(HomeItem.5.Sub),SubMenu12)">Skin.Reset(HomeItem.5.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label)) + stringcompare(Skin.String(HomeItem.6.Sub),SubMenu12)">Skin.Reset(HomeItem.6.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label)) + stringcompare(Skin.String(HomeItem.7.Sub),SubMenu12)">Skin.Reset(HomeItem.7.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label)) + stringcompare(Skin.String(HomeItem.8.Sub),SubMenu12)">Skin.Reset(HomeItem.8.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label)) + stringcompare(Skin.String(HomeItem.9.Sub),SubMenu12)">Skin.Reset(HomeItem.9.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label)) + stringcompare(Skin.String(HomeItem.10.Sub),SubMenu12)">Skin.Reset(HomeItem.10.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label)) + stringcompare(Skin.String(HomeItem.11.Sub),SubMenu12)">Skin.Reset(HomeItem.11.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label)) + stringcompare(Skin.String(HomeItem.12.Sub),SubMenu12)">Skin.Reset(HomeItem.12.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label)) + stringcompare(Skin.String(HomeItem.13.Sub),SubMenu12)">Skin.Reset(HomeItem.13.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label)) + stringcompare(Skin.String(HomeItem.14.Sub),SubMenu12)">Skin.Reset(HomeItem.14.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label)) + stringcompare(Skin.String(HomeItem.15.Sub),SubMenu12)">Skin.Reset(HomeItem.15.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label)) + stringcompare(Skin.String(HomeItem.16.Sub),SubMenu12)">Skin.Reset(HomeItem.16.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label)) + stringcompare(Skin.String(HomeItem.17.Sub),SubMenu12)">Skin.Reset(HomeItem.17.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label)) + stringcompare(Skin.String(HomeItem.18.Sub),SubMenu12)">Skin.Reset(HomeItem.18.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label)) + stringcompare(Skin.String(HomeItem.19.Sub),SubMenu12)">Skin.Reset(HomeItem.19.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu12.Label)) + stringcompare(Skin.String(HomeItem.20.Sub),SubMenu12)">Skin.Reset(HomeItem.20.Sub)</onclick>
+    </include>
+    <include name="ResetSubMenu13">
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label))">Skin.Reset(SubMenu13.1.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label))">Skin.Reset(SubMenu13.1.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label))">Skin.Reset(SubMenu13.2.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label))">Skin.Reset(SubMenu13.2.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label))">Skin.Reset(SubMenu13.3.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label))">Skin.Reset(SubMenu13.3.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label))">Skin.Reset(SubMenu13.4.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label))">Skin.Reset(SubMenu13.4.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label))">Skin.Reset(SubMenu13.5.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label))">Skin.Reset(SubMenu13.5.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label))">Skin.Reset(SubMenu13.6.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label))">Skin.Reset(SubMenu13.6.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label))">Skin.Reset(SubMenu13.7.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label))">Skin.Reset(SubMenu13.7.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label))">Skin.Reset(SubMenu13.8.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label))">Skin.Reset(SubMenu13.8.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label))">Skin.Reset(SubMenu13.9.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label))">Skin.Reset(SubMenu13.9.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label))">Skin.Reset(SubMenu13.10.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label))">Skin.Reset(SubMenu13.10.Path)</onclick>        
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label)) + stringcompare(Skin.String(HomeItem.1.Sub),SubMenu13)">Skin.Reset(HomeItem.1.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label)) + stringcompare(Skin.String(HomeItem.2.Sub),SubMenu13)">Skin.Reset(HomeItem.2.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label)) + stringcompare(Skin.String(HomeItem.3.Sub),SubMenu13)">Skin.Reset(HomeItem.3.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label)) + stringcompare(Skin.String(HomeItem.4.Sub),SubMenu13)">Skin.Reset(HomeItem.4.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label)) + stringcompare(Skin.String(HomeItem.5.Sub),SubMenu13)">Skin.Reset(HomeItem.5.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label)) + stringcompare(Skin.String(HomeItem.6.Sub),SubMenu13)">Skin.Reset(HomeItem.6.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label)) + stringcompare(Skin.String(HomeItem.7.Sub),SubMenu13)">Skin.Reset(HomeItem.7.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label)) + stringcompare(Skin.String(HomeItem.8.Sub),SubMenu13)">Skin.Reset(HomeItem.8.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label)) + stringcompare(Skin.String(HomeItem.9.Sub),SubMenu13)">Skin.Reset(HomeItem.9.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label)) + stringcompare(Skin.String(HomeItem.10.Sub),SubMenu13)">Skin.Reset(HomeItem.10.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label)) + stringcompare(Skin.String(HomeItem.11.Sub),SubMenu13)">Skin.Reset(HomeItem.11.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label)) + stringcompare(Skin.String(HomeItem.12.Sub),SubMenu13)">Skin.Reset(HomeItem.12.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label)) + stringcompare(Skin.String(HomeItem.13.Sub),SubMenu13)">Skin.Reset(HomeItem.13.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label)) + stringcompare(Skin.String(HomeItem.14.Sub),SubMenu13)">Skin.Reset(HomeItem.14.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label)) + stringcompare(Skin.String(HomeItem.15.Sub),SubMenu13)">Skin.Reset(HomeItem.15.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label)) + stringcompare(Skin.String(HomeItem.16.Sub),SubMenu13)">Skin.Reset(HomeItem.16.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label)) + stringcompare(Skin.String(HomeItem.17.Sub),SubMenu13)">Skin.Reset(HomeItem.17.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label)) + stringcompare(Skin.String(HomeItem.18.Sub),SubMenu13)">Skin.Reset(HomeItem.18.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label)) + stringcompare(Skin.String(HomeItem.19.Sub),SubMenu13)">Skin.Reset(HomeItem.19.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu13.Label)) + stringcompare(Skin.String(HomeItem.20.Sub),SubMenu13)">Skin.Reset(HomeItem.20.Sub)</onclick>
+    </include>
+    <include name="ResetSubMenu14">
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label))">Skin.Reset(SubMenu14.1.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label))">Skin.Reset(SubMenu14.1.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label))">Skin.Reset(SubMenu14.2.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label))">Skin.Reset(SubMenu14.2.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label))">Skin.Reset(SubMenu14.3.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label))">Skin.Reset(SubMenu14.3.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label))">Skin.Reset(SubMenu14.4.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label))">Skin.Reset(SubMenu14.4.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label))">Skin.Reset(SubMenu14.5.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label))">Skin.Reset(SubMenu14.5.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label))">Skin.Reset(SubMenu14.6.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label))">Skin.Reset(SubMenu14.6.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label))">Skin.Reset(SubMenu14.7.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label))">Skin.Reset(SubMenu14.7.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label))">Skin.Reset(SubMenu14.8.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label))">Skin.Reset(SubMenu14.8.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label))">Skin.Reset(SubMenu14.9.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label))">Skin.Reset(SubMenu14.9.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label))">Skin.Reset(SubMenu14.10.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label))">Skin.Reset(SubMenu14.10.Path)</onclick>        
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label)) + stringcompare(Skin.String(HomeItem.1.Sub),SubMenu14)">Skin.Reset(HomeItem.1.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label)) + stringcompare(Skin.String(HomeItem.2.Sub),SubMenu14)">Skin.Reset(HomeItem.2.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label)) + stringcompare(Skin.String(HomeItem.3.Sub),SubMenu14)">Skin.Reset(HomeItem.3.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label)) + stringcompare(Skin.String(HomeItem.4.Sub),SubMenu14)">Skin.Reset(HomeItem.4.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label)) + stringcompare(Skin.String(HomeItem.5.Sub),SubMenu14)">Skin.Reset(HomeItem.5.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label)) + stringcompare(Skin.String(HomeItem.6.Sub),SubMenu14)">Skin.Reset(HomeItem.6.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label)) + stringcompare(Skin.String(HomeItem.7.Sub),SubMenu14)">Skin.Reset(HomeItem.7.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label)) + stringcompare(Skin.String(HomeItem.8.Sub),SubMenu14)">Skin.Reset(HomeItem.8.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label)) + stringcompare(Skin.String(HomeItem.9.Sub),SubMenu14)">Skin.Reset(HomeItem.9.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label)) + stringcompare(Skin.String(HomeItem.10.Sub),SubMenu14)">Skin.Reset(HomeItem.10.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label)) + stringcompare(Skin.String(HomeItem.11.Sub),SubMenu14)">Skin.Reset(HomeItem.11.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label)) + stringcompare(Skin.String(HomeItem.12.Sub),SubMenu14)">Skin.Reset(HomeItem.12.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label)) + stringcompare(Skin.String(HomeItem.13.Sub),SubMenu14)">Skin.Reset(HomeItem.13.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label)) + stringcompare(Skin.String(HomeItem.14.Sub),SubMenu14)">Skin.Reset(HomeItem.14.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label)) + stringcompare(Skin.String(HomeItem.15.Sub),SubMenu14)">Skin.Reset(HomeItem.15.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label)) + stringcompare(Skin.String(HomeItem.16.Sub),SubMenu14)">Skin.Reset(HomeItem.16.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label)) + stringcompare(Skin.String(HomeItem.17.Sub),SubMenu14)">Skin.Reset(HomeItem.17.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label)) + stringcompare(Skin.String(HomeItem.18.Sub),SubMenu14)">Skin.Reset(HomeItem.18.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label)) + stringcompare(Skin.String(HomeItem.19.Sub),SubMenu14)">Skin.Reset(HomeItem.19.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu14.Label)) + stringcompare(Skin.String(HomeItem.20.Sub),SubMenu14)">Skin.Reset(HomeItem.20.Sub)</onclick>
+    </include>
+    <include name="ResetSubMenu15">
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label))">Skin.Reset(SubMenu15.1.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label))">Skin.Reset(SubMenu15.1.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label))">Skin.Reset(SubMenu15.2.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label))">Skin.Reset(SubMenu15.2.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label))">Skin.Reset(SubMenu15.3.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label))">Skin.Reset(SubMenu15.3.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label))">Skin.Reset(SubMenu15.4.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label))">Skin.Reset(SubMenu15.4.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label))">Skin.Reset(SubMenu15.5.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label))">Skin.Reset(SubMenu15.5.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label))">Skin.Reset(SubMenu15.6.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label))">Skin.Reset(SubMenu15.6.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label))">Skin.Reset(SubMenu15.7.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label))">Skin.Reset(SubMenu15.7.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label))">Skin.Reset(SubMenu15.8.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label))">Skin.Reset(SubMenu15.8.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label))">Skin.Reset(SubMenu15.9.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label))">Skin.Reset(SubMenu15.9.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label))">Skin.Reset(SubMenu15.10.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label))">Skin.Reset(SubMenu15.10.Path)</onclick>        
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label)) + stringcompare(Skin.String(HomeItem.1.Sub),SubMenu15)">Skin.Reset(HomeItem.1.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label)) + stringcompare(Skin.String(HomeItem.2.Sub),SubMenu15)">Skin.Reset(HomeItem.2.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label)) + stringcompare(Skin.String(HomeItem.3.Sub),SubMenu15)">Skin.Reset(HomeItem.3.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label)) + stringcompare(Skin.String(HomeItem.4.Sub),SubMenu15)">Skin.Reset(HomeItem.4.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label)) + stringcompare(Skin.String(HomeItem.5.Sub),SubMenu15)">Skin.Reset(HomeItem.5.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label)) + stringcompare(Skin.String(HomeItem.6.Sub),SubMenu15)">Skin.Reset(HomeItem.6.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label)) + stringcompare(Skin.String(HomeItem.7.Sub),SubMenu15)">Skin.Reset(HomeItem.7.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label)) + stringcompare(Skin.String(HomeItem.8.Sub),SubMenu15)">Skin.Reset(HomeItem.8.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label)) + stringcompare(Skin.String(HomeItem.9.Sub),SubMenu15)">Skin.Reset(HomeItem.9.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label)) + stringcompare(Skin.String(HomeItem.10.Sub),SubMenu15)">Skin.Reset(HomeItem.10.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label)) + stringcompare(Skin.String(HomeItem.11.Sub),SubMenu15)">Skin.Reset(HomeItem.11.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label)) + stringcompare(Skin.String(HomeItem.12.Sub),SubMenu15)">Skin.Reset(HomeItem.12.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label)) + stringcompare(Skin.String(HomeItem.13.Sub),SubMenu15)">Skin.Reset(HomeItem.13.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label)) + stringcompare(Skin.String(HomeItem.14.Sub),SubMenu15)">Skin.Reset(HomeItem.14.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label)) + stringcompare(Skin.String(HomeItem.15.Sub),SubMenu15)">Skin.Reset(HomeItem.15.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label)) + stringcompare(Skin.String(HomeItem.16.Sub),SubMenu15)">Skin.Reset(HomeItem.16.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label)) + stringcompare(Skin.String(HomeItem.17.Sub),SubMenu15)">Skin.Reset(HomeItem.17.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label)) + stringcompare(Skin.String(HomeItem.18.Sub),SubMenu15)">Skin.Reset(HomeItem.18.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label)) + stringcompare(Skin.String(HomeItem.19.Sub),SubMenu15)">Skin.Reset(HomeItem.19.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu15.Label)) + stringcompare(Skin.String(HomeItem.20.Sub),SubMenu15)">Skin.Reset(HomeItem.20.Sub)</onclick>
+    </include>
+    <include name="ResetSubMenu16">
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label))">Skin.Reset(SubMenu16.1.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label))">Skin.Reset(SubMenu16.1.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label))">Skin.Reset(SubMenu16.2.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label))">Skin.Reset(SubMenu16.2.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label))">Skin.Reset(SubMenu16.3.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label))">Skin.Reset(SubMenu16.3.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label))">Skin.Reset(SubMenu16.4.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label))">Skin.Reset(SubMenu16.4.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label))">Skin.Reset(SubMenu16.5.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label))">Skin.Reset(SubMenu16.5.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label))">Skin.Reset(SubMenu16.6.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label))">Skin.Reset(SubMenu16.6.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label))">Skin.Reset(SubMenu16.7.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label))">Skin.Reset(SubMenu16.7.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label))">Skin.Reset(SubMenu16.8.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label))">Skin.Reset(SubMenu16.8.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label))">Skin.Reset(SubMenu16.9.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label))">Skin.Reset(SubMenu16.9.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label))">Skin.Reset(SubMenu16.10.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label))">Skin.Reset(SubMenu16.10.Path)</onclick>        
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label)) + stringcompare(Skin.String(HomeItem.1.Sub),SubMenu16)">Skin.Reset(HomeItem.1.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label)) + stringcompare(Skin.String(HomeItem.2.Sub),SubMenu16)">Skin.Reset(HomeItem.2.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label)) + stringcompare(Skin.String(HomeItem.3.Sub),SubMenu16)">Skin.Reset(HomeItem.3.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label)) + stringcompare(Skin.String(HomeItem.4.Sub),SubMenu16)">Skin.Reset(HomeItem.4.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label)) + stringcompare(Skin.String(HomeItem.5.Sub),SubMenu16)">Skin.Reset(HomeItem.5.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label)) + stringcompare(Skin.String(HomeItem.6.Sub),SubMenu16)">Skin.Reset(HomeItem.6.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label)) + stringcompare(Skin.String(HomeItem.7.Sub),SubMenu16)">Skin.Reset(HomeItem.7.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label)) + stringcompare(Skin.String(HomeItem.8.Sub),SubMenu16)">Skin.Reset(HomeItem.8.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label)) + stringcompare(Skin.String(HomeItem.9.Sub),SubMenu16)">Skin.Reset(HomeItem.9.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label)) + stringcompare(Skin.String(HomeItem.10.Sub),SubMenu16)">Skin.Reset(HomeItem.10.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label)) + stringcompare(Skin.String(HomeItem.11.Sub),SubMenu16)">Skin.Reset(HomeItem.11.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label)) + stringcompare(Skin.String(HomeItem.12.Sub),SubMenu16)">Skin.Reset(HomeItem.12.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label)) + stringcompare(Skin.String(HomeItem.13.Sub),SubMenu16)">Skin.Reset(HomeItem.13.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label)) + stringcompare(Skin.String(HomeItem.14.Sub),SubMenu16)">Skin.Reset(HomeItem.14.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label)) + stringcompare(Skin.String(HomeItem.15.Sub),SubMenu16)">Skin.Reset(HomeItem.15.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label)) + stringcompare(Skin.String(HomeItem.16.Sub),SubMenu16)">Skin.Reset(HomeItem.16.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label)) + stringcompare(Skin.String(HomeItem.17.Sub),SubMenu16)">Skin.Reset(HomeItem.17.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label)) + stringcompare(Skin.String(HomeItem.18.Sub),SubMenu16)">Skin.Reset(HomeItem.18.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label)) + stringcompare(Skin.String(HomeItem.19.Sub),SubMenu16)">Skin.Reset(HomeItem.19.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu16.Label)) + stringcompare(Skin.String(HomeItem.20.Sub),SubMenu16)">Skin.Reset(HomeItem.20.Sub)</onclick>
+    </include>
+    <include name="ResetSubMenu17">
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label))">Skin.Reset(SubMenu17.1.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label))">Skin.Reset(SubMenu17.1.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label))">Skin.Reset(SubMenu17.2.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label))">Skin.Reset(SubMenu17.2.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label))">Skin.Reset(SubMenu17.3.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label))">Skin.Reset(SubMenu17.3.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label))">Skin.Reset(SubMenu17.4.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label))">Skin.Reset(SubMenu17.4.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label))">Skin.Reset(SubMenu17.5.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label))">Skin.Reset(SubMenu17.5.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label))">Skin.Reset(SubMenu17.6.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label))">Skin.Reset(SubMenu17.6.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label))">Skin.Reset(SubMenu17.7.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label))">Skin.Reset(SubMenu17.7.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label))">Skin.Reset(SubMenu17.8.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label))">Skin.Reset(SubMenu17.8.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label))">Skin.Reset(SubMenu17.9.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label))">Skin.Reset(SubMenu17.9.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label))">Skin.Reset(SubMenu17.10.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label))">Skin.Reset(SubMenu17.10.Path)</onclick>        
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label)) + stringcompare(Skin.String(HomeItem.1.Sub),SubMenu17)">Skin.Reset(HomeItem.1.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label)) + stringcompare(Skin.String(HomeItem.2.Sub),SubMenu17)">Skin.Reset(HomeItem.2.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label)) + stringcompare(Skin.String(HomeItem.3.Sub),SubMenu17)">Skin.Reset(HomeItem.3.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label)) + stringcompare(Skin.String(HomeItem.4.Sub),SubMenu17)">Skin.Reset(HomeItem.4.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label)) + stringcompare(Skin.String(HomeItem.5.Sub),SubMenu17)">Skin.Reset(HomeItem.5.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label)) + stringcompare(Skin.String(HomeItem.6.Sub),SubMenu17)">Skin.Reset(HomeItem.6.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label)) + stringcompare(Skin.String(HomeItem.7.Sub),SubMenu17)">Skin.Reset(HomeItem.7.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label)) + stringcompare(Skin.String(HomeItem.8.Sub),SubMenu17)">Skin.Reset(HomeItem.8.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label)) + stringcompare(Skin.String(HomeItem.9.Sub),SubMenu17)">Skin.Reset(HomeItem.9.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label)) + stringcompare(Skin.String(HomeItem.10.Sub),SubMenu17)">Skin.Reset(HomeItem.10.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label)) + stringcompare(Skin.String(HomeItem.11.Sub),SubMenu17)">Skin.Reset(HomeItem.11.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label)) + stringcompare(Skin.String(HomeItem.12.Sub),SubMenu17)">Skin.Reset(HomeItem.12.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label)) + stringcompare(Skin.String(HomeItem.13.Sub),SubMenu17)">Skin.Reset(HomeItem.13.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label)) + stringcompare(Skin.String(HomeItem.14.Sub),SubMenu17)">Skin.Reset(HomeItem.14.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label)) + stringcompare(Skin.String(HomeItem.15.Sub),SubMenu17)">Skin.Reset(HomeItem.15.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label)) + stringcompare(Skin.String(HomeItem.16.Sub),SubMenu17)">Skin.Reset(HomeItem.16.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label)) + stringcompare(Skin.String(HomeItem.17.Sub),SubMenu17)">Skin.Reset(HomeItem.17.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label)) + stringcompare(Skin.String(HomeItem.18.Sub),SubMenu17)">Skin.Reset(HomeItem.18.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label)) + stringcompare(Skin.String(HomeItem.19.Sub),SubMenu17)">Skin.Reset(HomeItem.19.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu17.Label)) + stringcompare(Skin.String(HomeItem.20.Sub),SubMenu17)">Skin.Reset(HomeItem.20.Sub)</onclick>
+    </include>
+    <include name="ResetSubMenu18">
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label))">Skin.Reset(SubMenu18.1.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label))">Skin.Reset(SubMenu18.1.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label))">Skin.Reset(SubMenu18.2.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label))">Skin.Reset(SubMenu18.2.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label))">Skin.Reset(SubMenu18.3.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label))">Skin.Reset(SubMenu18.3.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label))">Skin.Reset(SubMenu18.4.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label))">Skin.Reset(SubMenu18.4.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label))">Skin.Reset(SubMenu18.5.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label))">Skin.Reset(SubMenu18.5.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label))">Skin.Reset(SubMenu18.6.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label))">Skin.Reset(SubMenu18.6.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label))">Skin.Reset(SubMenu18.7.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label))">Skin.Reset(SubMenu18.7.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label))">Skin.Reset(SubMenu18.8.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label))">Skin.Reset(SubMenu18.8.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label))">Skin.Reset(SubMenu18.9.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label))">Skin.Reset(SubMenu18.9.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label))">Skin.Reset(SubMenu18.10.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label))">Skin.Reset(SubMenu18.10.Path)</onclick>        
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label)) + stringcompare(Skin.String(HomeItem.1.Sub),SubMenu18)">Skin.Reset(HomeItem.1.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label)) + stringcompare(Skin.String(HomeItem.2.Sub),SubMenu18)">Skin.Reset(HomeItem.2.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label)) + stringcompare(Skin.String(HomeItem.3.Sub),SubMenu18)">Skin.Reset(HomeItem.3.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label)) + stringcompare(Skin.String(HomeItem.4.Sub),SubMenu18)">Skin.Reset(HomeItem.4.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label)) + stringcompare(Skin.String(HomeItem.5.Sub),SubMenu18)">Skin.Reset(HomeItem.5.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label)) + stringcompare(Skin.String(HomeItem.6.Sub),SubMenu18)">Skin.Reset(HomeItem.6.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label)) + stringcompare(Skin.String(HomeItem.7.Sub),SubMenu18)">Skin.Reset(HomeItem.7.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label)) + stringcompare(Skin.String(HomeItem.8.Sub),SubMenu18)">Skin.Reset(HomeItem.8.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label)) + stringcompare(Skin.String(HomeItem.9.Sub),SubMenu18)">Skin.Reset(HomeItem.9.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label)) + stringcompare(Skin.String(HomeItem.10.Sub),SubMenu18)">Skin.Reset(HomeItem.10.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label)) + stringcompare(Skin.String(HomeItem.11.Sub),SubMenu18)">Skin.Reset(HomeItem.11.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label)) + stringcompare(Skin.String(HomeItem.12.Sub),SubMenu18)">Skin.Reset(HomeItem.12.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label)) + stringcompare(Skin.String(HomeItem.13.Sub),SubMenu18)">Skin.Reset(HomeItem.13.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label)) + stringcompare(Skin.String(HomeItem.14.Sub),SubMenu18)">Skin.Reset(HomeItem.14.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label)) + stringcompare(Skin.String(HomeItem.15.Sub),SubMenu18)">Skin.Reset(HomeItem.15.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label)) + stringcompare(Skin.String(HomeItem.16.Sub),SubMenu18)">Skin.Reset(HomeItem.16.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label)) + stringcompare(Skin.String(HomeItem.17.Sub),SubMenu18)">Skin.Reset(HomeItem.17.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label)) + stringcompare(Skin.String(HomeItem.18.Sub),SubMenu18)">Skin.Reset(HomeItem.18.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label)) + stringcompare(Skin.String(HomeItem.19.Sub),SubMenu18)">Skin.Reset(HomeItem.19.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu18.Label)) + stringcompare(Skin.String(HomeItem.20.Sub),SubMenu18)">Skin.Reset(HomeItem.20.Sub)</onclick>
+    </include>
+    <include name="ResetSubMenu19">
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label))">Skin.Reset(SubMenu19.1.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label))">Skin.Reset(SubMenu19.1.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label))">Skin.Reset(SubMenu19.2.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label))">Skin.Reset(SubMenu19.2.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label))">Skin.Reset(SubMenu19.3.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label))">Skin.Reset(SubMenu19.3.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label))">Skin.Reset(SubMenu19.4.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label))">Skin.Reset(SubMenu19.4.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label))">Skin.Reset(SubMenu19.5.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label))">Skin.Reset(SubMenu19.5.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label))">Skin.Reset(SubMenu19.6.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label))">Skin.Reset(SubMenu19.6.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label))">Skin.Reset(SubMenu19.7.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label))">Skin.Reset(SubMenu19.7.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label))">Skin.Reset(SubMenu19.8.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label))">Skin.Reset(SubMenu19.8.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label))">Skin.Reset(SubMenu19.9.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label))">Skin.Reset(SubMenu19.9.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label))">Skin.Reset(SubMenu19.10.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label))">Skin.Reset(SubMenu19.10.Path)</onclick>        
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label)) + stringcompare(Skin.String(HomeItem.1.Sub),SubMenu19)">Skin.Reset(HomeItem.1.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label)) + stringcompare(Skin.String(HomeItem.2.Sub),SubMenu19)">Skin.Reset(HomeItem.2.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label)) + stringcompare(Skin.String(HomeItem.3.Sub),SubMenu19)">Skin.Reset(HomeItem.3.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label)) + stringcompare(Skin.String(HomeItem.4.Sub),SubMenu19)">Skin.Reset(HomeItem.4.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label)) + stringcompare(Skin.String(HomeItem.5.Sub),SubMenu19)">Skin.Reset(HomeItem.5.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label)) + stringcompare(Skin.String(HomeItem.6.Sub),SubMenu19)">Skin.Reset(HomeItem.6.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label)) + stringcompare(Skin.String(HomeItem.7.Sub),SubMenu19)">Skin.Reset(HomeItem.7.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label)) + stringcompare(Skin.String(HomeItem.8.Sub),SubMenu19)">Skin.Reset(HomeItem.8.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label)) + stringcompare(Skin.String(HomeItem.9.Sub),SubMenu19)">Skin.Reset(HomeItem.9.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label)) + stringcompare(Skin.String(HomeItem.10.Sub),SubMenu19)">Skin.Reset(HomeItem.10.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label)) + stringcompare(Skin.String(HomeItem.11.Sub),SubMenu19)">Skin.Reset(HomeItem.11.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label)) + stringcompare(Skin.String(HomeItem.12.Sub),SubMenu19)">Skin.Reset(HomeItem.12.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label)) + stringcompare(Skin.String(HomeItem.13.Sub),SubMenu19)">Skin.Reset(HomeItem.13.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label)) + stringcompare(Skin.String(HomeItem.14.Sub),SubMenu19)">Skin.Reset(HomeItem.14.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label)) + stringcompare(Skin.String(HomeItem.15.Sub),SubMenu19)">Skin.Reset(HomeItem.15.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label)) + stringcompare(Skin.String(HomeItem.16.Sub),SubMenu19)">Skin.Reset(HomeItem.16.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label)) + stringcompare(Skin.String(HomeItem.17.Sub),SubMenu19)">Skin.Reset(HomeItem.17.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label)) + stringcompare(Skin.String(HomeItem.18.Sub),SubMenu19)">Skin.Reset(HomeItem.18.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label)) + stringcompare(Skin.String(HomeItem.19.Sub),SubMenu19)">Skin.Reset(HomeItem.19.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu19.Label)) + stringcompare(Skin.String(HomeItem.20.Sub),SubMenu19)">Skin.Reset(HomeItem.20.Sub)</onclick>
+    </include>
+    <include name="ResetSubMenu20">
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label))">Skin.Reset(SubMenu20.1.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label))">Skin.Reset(SubMenu20.1.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label))">Skin.Reset(SubMenu20.2.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label))">Skin.Reset(SubMenu20.2.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label))">Skin.Reset(SubMenu20.3.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label))">Skin.Reset(SubMenu20.3.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label))">Skin.Reset(SubMenu20.4.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label))">Skin.Reset(SubMenu20.4.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label))">Skin.Reset(SubMenu20.5.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label))">Skin.Reset(SubMenu20.5.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label))">Skin.Reset(SubMenu20.6.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label))">Skin.Reset(SubMenu20.6.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label))">Skin.Reset(SubMenu20.7.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label))">Skin.Reset(SubMenu20.7.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label))">Skin.Reset(SubMenu20.8.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label))">Skin.Reset(SubMenu20.8.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label))">Skin.Reset(SubMenu20.9.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label))">Skin.Reset(SubMenu20.9.Path)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label))">Skin.Reset(SubMenu20.10.Label)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label))">Skin.Reset(SubMenu20.10.Path)</onclick>        
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label)) + stringcompare(Skin.String(HomeItem.1.Sub),SubMenu20)">Skin.Reset(HomeItem.1.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label)) + stringcompare(Skin.String(HomeItem.2.Sub),SubMenu20)">Skin.Reset(HomeItem.2.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label)) + stringcompare(Skin.String(HomeItem.3.Sub),SubMenu20)">Skin.Reset(HomeItem.3.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label)) + stringcompare(Skin.String(HomeItem.4.Sub),SubMenu20)">Skin.Reset(HomeItem.4.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label)) + stringcompare(Skin.String(HomeItem.5.Sub),SubMenu20)">Skin.Reset(HomeItem.5.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label)) + stringcompare(Skin.String(HomeItem.6.Sub),SubMenu20)">Skin.Reset(HomeItem.6.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label)) + stringcompare(Skin.String(HomeItem.7.Sub),SubMenu20)">Skin.Reset(HomeItem.7.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label)) + stringcompare(Skin.String(HomeItem.8.Sub),SubMenu20)">Skin.Reset(HomeItem.8.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label)) + stringcompare(Skin.String(HomeItem.9.Sub),SubMenu20)">Skin.Reset(HomeItem.9.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label)) + stringcompare(Skin.String(HomeItem.10.Sub),SubMenu20)">Skin.Reset(HomeItem.10.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label)) + stringcompare(Skin.String(HomeItem.11.Sub),SubMenu20)">Skin.Reset(HomeItem.11.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label)) + stringcompare(Skin.String(HomeItem.12.Sub),SubMenu20)">Skin.Reset(HomeItem.12.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label)) + stringcompare(Skin.String(HomeItem.13.Sub),SubMenu20)">Skin.Reset(HomeItem.13.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label)) + stringcompare(Skin.String(HomeItem.14.Sub),SubMenu20)">Skin.Reset(HomeItem.14.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label)) + stringcompare(Skin.String(HomeItem.15.Sub),SubMenu20)">Skin.Reset(HomeItem.15.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label)) + stringcompare(Skin.String(HomeItem.16.Sub),SubMenu20)">Skin.Reset(HomeItem.16.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label)) + stringcompare(Skin.String(HomeItem.17.Sub),SubMenu20)">Skin.Reset(HomeItem.17.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label)) + stringcompare(Skin.String(HomeItem.18.Sub),SubMenu20)">Skin.Reset(HomeItem.18.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label)) + stringcompare(Skin.String(HomeItem.19.Sub),SubMenu20)">Skin.Reset(HomeItem.19.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu20.Label)) + stringcompare(Skin.String(HomeItem.20.Sub),SubMenu20)">Skin.Reset(HomeItem.20.Sub)</onclick>
+    </include>
 </includes>
