@@ -971,7 +971,7 @@ msgid "Recent Albums"
 msgstr ""
 
 msgctxt "#89026"
-msgid "Suggested Albums"
+msgid "Recommended Albums"
 msgstr ""
 
 msgctxt "#89027"
@@ -987,7 +987,7 @@ msgid "Nodes"
 msgstr ""
 
 msgctxt "#89030"
-msgid "Suggested Movies"
+msgid "Recommended Movies"
 msgstr ""
 
 msgctxt "#89031"
@@ -1003,7 +1003,7 @@ msgid "Recent Episodes"
 msgstr ""
 
 msgctxt "#89034"
-msgid "Suggested Episodes"
+msgid "Recommended Episodes"
 msgstr ""
 
 msgctxt "#89035"
@@ -1015,7 +1015,7 @@ msgid "Recent Music Video"
 msgstr ""
 
 msgctxt "#89037"
-msgid "Suggested Music Video"
+msgid "Recommended Music Video"
 msgstr ""
 
 msgctxt "#89038"
@@ -1089,7 +1089,7 @@ msgstr ""
 #msgstr ""
 
 msgctxt "#89703"
-msgid "No Suggested Media"
+msgid "No Recommended Media"
 msgstr ""
 
 msgctxt "#89704"

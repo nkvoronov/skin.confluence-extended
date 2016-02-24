@@ -871,7 +871,7 @@ msgid "Recent Albums"
 msgstr "Последние альбомы"
 
 msgctxt "#89026"
-msgid "Suggested Albums"
+msgid "Recommended Albums"
 msgstr "Рекомендуемые альбомы"
 
 msgctxt "#89027"
@@ -887,7 +887,7 @@ msgid "Nodes"
 msgstr "Узелы"
 
 msgctxt "#89030"
-msgid "Suggested Movies"
+msgid "Recommended Movies"
 msgstr "Рекомендуемые фильмы"
 
 msgctxt "#89031"
@@ -903,7 +903,7 @@ msgid "Recent Episodes"
 msgstr "Последние эпизоды"
 
 msgctxt "#89034"
-msgid "Suggested Episodes"
+msgid "Recommended Episodes"
 msgstr "Рекомендуемые эпизоды"
 
 msgctxt "#89035"
@@ -915,7 +915,7 @@ msgid "Recent Music Video"
 msgstr "Последнее музыкальное видео"
 
 msgctxt "#89037"
-msgid "Suggested Music Video"
+msgid "Recommended Music Video"
 msgstr "Рекомендуемое музыкальное видео"
 
 msgctxt "#89038"
@@ -981,7 +981,7 @@ msgstr "Выбрать"
 #msgstr "Окно избранное"
 
 msgctxt "#89703"
-msgid "No Suggested Media"
+msgid "No Recommended Media"
 msgstr "Нет рекумендуемого медиа"
 
 msgctxt "#89704"

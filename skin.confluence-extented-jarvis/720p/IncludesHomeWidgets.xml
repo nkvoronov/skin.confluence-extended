@@ -868,12 +868,12 @@
 					<include>VisibleFadeEffect</include>
 				</control>
 			</control>
-            <!-- SuggestedMovies 8003 -->
+            <!-- RecommendedMovies 8003 -->
  			<control type="group">
 				<left>190</left>
 				<top>60</top>
 				<visible>Library.HasContent(Movies)</visible>
-				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecommendedMovies)</visible>
 				<include>VisibleFadeEffect</include>
 				<control type="label">
 					<description>Title Label</description>
@@ -1383,12 +1383,12 @@
 					<include>VisibleFadeEffect</include>
 				</control>
 			</control>
-            <!-- SuggestedEpisodes 8006 -->
+            <!-- RecommendedEpisodes 8006 -->
 			<control type="group">
 				<left>160</left>
 				<top>60</top>
 				<visible>Library.HasContent(TVShows)</visible>
-				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedEpisodes)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecommendedEpisodes)</visible>
 				<include>VisibleFadeEffect</include>
 				<control type="label">
 					<description>Title label</description>
@@ -1921,12 +1921,12 @@
 					<include>VisibleFadeEffect</include>
 				</control>
             </control>
-            <!-- SuggestedMusicVideo 8009 -->
+            <!-- RecommendedMusicVideo 8009 -->
 			<control type="group">
 				<left>240</left>
 				<top>50</top>
 				<visible>Library.HasContent(MusicVideos)</visible>
-				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMusicVideo)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecommendedMusicVideo)</visible>
 				<include>VisibleFadeEffect</include>
 				<control type="label">
 					<description>Title label</description>
@@ -2615,12 +2615,12 @@
 					<include>VisibleFadeEffect</include>
 				</control>
 			</control>
-            <!-- SuggestedAlbums 8013 -->
+            <!-- RecommendedAlbums 8013 -->
 			<control type="group">
 				<left>240</left>
 				<top>60</top>
 				<visible>Library.HasContent(Music)</visible>
-				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedAlbums)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecommendedAlbums)</visible>
 				<include>VisibleFadeEffect</include>
 				<control type="label">
 					<description>Title label</description>
@@ -3277,7 +3277,7 @@
 					<top>220</top>
 					<height>20</height>
 					<width>540</width>
-					<label>89031</label>
+					<label></label>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
@@ -3419,8 +3419,46 @@
 					<include>VisibleFadeEffect</include>
 				</control>
 			</control>            
-            <!-- MusicPlayList 8018 ??? -->
-            <!-- Favourites 8019 ??? -->                        
+            <!-- MusicPlayList 8018 -->
+             <control type="group">
+				<left>190</left>
+				<top>60</top>
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),MusicPlayList)</visible>
+				<include>VisibleFadeEffect</include>
+				<control type="label">
+					<description>Title Label</description>
+					<left>180</left>
+					<top>220</top>
+					<height>20</height>
+					<width>540</width>
+					<label></label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+            </control>
+            <!-- Favourites 8019 -->
+             <control type="group">
+				<left>190</left>
+				<top>60</top>
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),Favourites)</visible>
+				<include>VisibleFadeEffect</include>
+				<control type="label">
+					<description>Title Label</description>
+					<left>180</left>
+					<top>220</top>
+					<height>20</height>
+					<width>540</width>
+					<label></label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+            </control>            
 		</control>
 	</include>        
 	<include name="WeatherForecastContent">   

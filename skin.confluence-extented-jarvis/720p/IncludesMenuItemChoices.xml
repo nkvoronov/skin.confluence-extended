@@ -404,7 +404,7 @@
 				<visible>StringCompare(Window.Property(MenuItemType),MusicMenu)</visible>
 			</item>
 			<item>
-				<description>Suggested Music</description>
+				<description>Recommended Music</description>
 				<label>$LOCALIZE[2] - $LOCALIZE[89026]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(2123))</onclick>
@@ -741,7 +741,7 @@
 				<visible>StringCompare(Window.Property(MenuItemType),MoviesMenu)</visible>
 			</item>
 			<item>
-				<description>Suggested Movies</description>
+				<description>Recommended Movies</description>
 				<label>$LOCALIZE[342] - $LOCALIZE[89030]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(2125))</onclick>
@@ -863,7 +863,7 @@
 				<visible>StringCompare(Window.Property(MenuItemType),TVShowsMenu)</visible>
 			</item>
 			<item>
-				<description>Suggested TVShows</description>
+				<description>Recommended TVShows</description>
 				<label>$LOCALIZE[89016] - $LOCALIZE[89034]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(2124))</onclick>
@@ -984,7 +984,7 @@
 				<visible>StringCompare(Window.Property(MenuItemType),MusicVideoMenu)</visible>
 			</item>            
 			<item>
-				<description>Suggested MusicVideo</description>
+				<description>Recommended MusicVideo</description>
 				<label>$LOCALIZE[89017] - $LOCALIZE[89037]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(2126))</onclick>

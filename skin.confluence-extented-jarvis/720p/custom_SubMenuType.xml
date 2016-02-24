@@ -272,6 +272,14 @@
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
                         <visible>!IsEmpty(Skin.String(SubMenu20.Label))</visible>
 					</item>
+					<item>
+						<description>Submenu Favourites</description>
+						<label>$LOCALIZE[1036]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenuFavourites)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <!-- <visible>!IsEmpty(Skin.String(SubMenu20.Label))</visible> -->
+					</item>
 				</content>
 			</control>
 			<control type="scrollbar" id="60">

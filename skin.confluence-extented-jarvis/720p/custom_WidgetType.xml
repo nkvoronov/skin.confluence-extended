@@ -187,10 +187,10 @@
 						<visible>Library.HasContent(Movies)</visible>
 					</item>
 					<item>
-						<description>Suggested Movies</description>
+						<description>Recommended Movies</description>
 						<label>$LOCALIZE[89030]</label>
 						<onclick>Dialog.Close(2118)</onclick>
-						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,SuggestedMovies)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecommendedMovies)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(Movies)</visible>
 					</item>                   
@@ -211,10 +211,10 @@
 						<visible>Library.HasContent(TVShows)</visible>
 					</item>
 					<item>
-						<description>Suggested Episodes</description>
+						<description>Recommended Episodes</description>
 						<label>$LOCALIZE[89034]</label>
 						<onclick>Dialog.Close(2118)</onclick>
-						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,SuggestedEpisodes)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecommendedEpisodes)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(TVShows)</visible>
 					</item>
@@ -235,10 +235,10 @@
 						<visible>Library.HasContent(MusicVideos)</visible>
 					</item>
 					<item>
-						<description>Suggested Music Video</description>
+						<description>Recommended Music Video</description>
 						<label>$LOCALIZE[89037]</label>
 						<onclick>Dialog.Close(2118)</onclick>
-						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,SuggestedMusicVideo)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecommendedMusicVideo)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(MusicVideos)</visible>
 					</item>
@@ -259,10 +259,10 @@
                         <visible>Library.HasContent(Music)</visible>
 					</item>
 					<item>
-						<description>Suggested Albums</description>
+						<description>Recommended Albums</description>
 						<label>$LOCALIZE[89026]</label>
 						<onclick>Dialog.Close(2118)</onclick>
-						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,SuggestedAlbums)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecommendedAlbums)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
                         <visible>Library.HasContent(Music)</visible>
 					</item>                    
