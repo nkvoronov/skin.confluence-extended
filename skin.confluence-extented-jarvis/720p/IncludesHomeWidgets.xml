@@ -79,7 +79,7 @@
 						<control type="label">
 							<left>5</left>
 							<top>165</top>
-							<width>195</width>
+							<width>190</width>
 							<height>20</height>
 							<font>font10</font>
 							<textcolor>white</textcolor>
@@ -150,7 +150,7 @@
 						<control type="label">
 							<left>5</left>
 							<top>165</top>
-							<width>195</width>
+							<width>190</width>
 							<height>20</height>
 							<font>font10</font>
 							<textcolor>white</textcolor>
@@ -3496,7 +3496,7 @@
 						<control type="label">
 							<left>5</left>
 							<top>185</top>
-							<width>195</width>
+							<width>190</width>
 							<height>20</height>
 							<font>font12</font>
 							<textcolor>white</textcolor>
@@ -3541,7 +3541,7 @@
 						<control type="label">
 							<left>5</left>
 							<top>185</top>
-							<width>195</width>
+							<width>190</width>
 							<height>20</height>
 							<font>font12</font>
 							<textcolor>white</textcolor>
@@ -3554,7 +3554,7 @@
 						<control type="label">
 							<left>5</left>
 							<top>185</top>
-							<width>195</width>
+							<width>190</width>
 							<height>20</height>
 							<font>font12</font>
 							<textcolor>blue</textcolor>
