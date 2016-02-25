@@ -1911,10 +1911,10 @@
 				<texture border="5">HomeSubNF.png</texture>
 			</control>
 			<control type="label">
-				<left>0</left>
+				<left>10</left>
 				<top>0</top>
 				<height>35</height>
-				<width>180</width>
+				<width>170</width>
 				<font>font12</font>
 				<textcolor>grey2</textcolor>
 				<align>center</align>
@@ -1939,10 +1939,10 @@
 				<visible>ControlGroup(9001).HasFocus</visible>
 			</control>
 			<control type="label">
-				<left>0</left>
+				<left>10</left>
 				<top>0</top>
 				<height>35</height>
-				<width>180</width>
+				<width>170</width>
 				<font>font12</font>
 				<textcolor>grey2</textcolor>
 				<align>center</align>
@@ -1950,10 +1950,10 @@
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 			<control type="label">
-				<left>0</left>
+				<left>10</left>
 				<top>0</top>
 				<height>35</height>
-				<width>180</width>
+				<width>170</width>
 				<font>font12</font>
 				<textcolor>white</textcolor>
 				<align>center</align>
