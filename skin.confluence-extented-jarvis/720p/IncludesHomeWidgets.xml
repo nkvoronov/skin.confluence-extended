@@ -10,14 +10,14 @@
 			<animation effect="fade" time="200">WindowClose</animation>
             <!-- Weather 8000 -->
 			<control type="group">
-				<left>190</left>
+				<left>140</left>
 				<top>60</top>
                 <visible>!IsEmpty(Weather.Plugin) + Weather.IsFetched</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),Weather)</visible>
 				<include>VisibleFadeEffect</include>
 				<control type="label">
 					<description>Title label</description>
-					<left>180</left>
+					<left>230</left>
 					<top>220</top>
 					<height>20</height>
 					<width>540</width>
@@ -29,11 +29,11 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="list" id="8000">
-					<animation effect="slide" start="0,0" end="90,0" time="0" condition="StringCompare(Container(8000).NumItems,4)">conditional</animation>
-					<animation effect="slide" start="0,0" end="180,0" time="0" condition="StringCompare(Container(8000).NumItems,3)">conditional</animation>
-					<animation effect="slide" start="0,0" end="270,0" time="0" condition="StringCompare(Container(8000).NumItems,2)">conditional</animation>
-					<animation effect="slide" start="0,0" end="360,0" time="0" condition="StringCompare(Container(8000).NumItems,1)">conditional</animation>
-					<left>-50</left>
+					<animation effect="slide" start="0,0" end="100,0" time="0" condition="StringCompare(Container(8000).NumItems,4)">conditional</animation>
+					<animation effect="slide" start="0,0" end="200,0" time="0" condition="StringCompare(Container(8000).NumItems,3)">conditional</animation>
+					<animation effect="slide" start="0,0" end="300,0" time="0" condition="StringCompare(Container(8000).NumItems,2)">conditional</animation>
+					<animation effect="slide" start="0,0" end="400,0" time="0" condition="StringCompare(Container(8000).NumItems,1)">conditional</animation>
+					<left>0</left>
 					<top>0</top>
 					<width>1000</width>
 					<height>220</height>
@@ -79,7 +79,7 @@
 						<control type="label">
 							<left>5</left>
 							<top>165</top>
-							<width>190</width>
+							<width>195</width>
 							<height>20</height>
 							<font>font10</font>
 							<textcolor>white</textcolor>
@@ -191,7 +191,7 @@
 				</control>
 				<control type="button">
 					<description>Left Arrow</description>
-					<left>-90</left>
+					<left>-40</left>
 					<top>90</top>
 					<width>30</width>
 					<height>40</height>
@@ -203,7 +203,7 @@
 				</control>
 				<control type="button">
 					<description>Right Arrow</description>
-					<left>960</left>
+					<left>1010</left>
 					<top>90</top>
 					<width>30</width>
 					<height>40</height>
@@ -3441,22 +3441,155 @@
             </control>
             <!-- Favourites 8019 -->
              <control type="group">
-				<left>190</left>
+				<left>140</left>
 				<top>60</top>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),Favourites)</visible>
 				<include>VisibleFadeEffect</include>
 				<control type="label">
 					<description>Title Label</description>
-					<left>180</left>
+					<left>230</left>
 					<top>220</top>
 					<height>20</height>
 					<width>540</width>
-					<label></label>
+					<label>$LOCALIZE[1036]</label>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
+				</control>
+                <control type="list" id="8019">
+					<animation effect="slide" start="0,0" end="100,0" time="0" condition="StringCompare(Container(8019).NumItems,4)">conditional</animation>
+					<animation effect="slide" start="0,0" end="200,0" time="0" condition="StringCompare(Container(8019).NumItems,3)">conditional</animation>
+					<animation effect="slide" start="0,0" end="300,0" time="0" condition="StringCompare(Container(8019).NumItems,2)">conditional</animation>
+					<animation effect="slide" start="0,0" end="400,0" time="0" condition="StringCompare(Container(8019).NumItems,1)">conditional</animation>
+					<left>0</left>
+					<top>0</top>
+					<width>1000</width>
+					<height>220</height>
+					<onleft>8019</onleft>
+					<onright>8019</onright>
+					<include>WidgetUpDown</include>
+					<viewtype label="535">list</viewtype>
+					<pagecontrol>-</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<orientation>Horizontal</orientation>
+					<itemlayout height="220" width="200">
+						<control type="image">
+							<description>Background</description>
+							<left>0</left>
+							<top>0</top>
+							<width>200</width>
+							<height>220</height>
+							<texture border="15">RecentAddedBack.png</texture>
+						</control>
+						<control type="image">
+							<left>10</left>
+							<top>10</top>
+							<width>180</width>
+							<height>170</height>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
+							<aspectratio>keep</aspectratio>
+							<bordertexture border="5">button-nofocus.png</bordertexture>
+							<bordersize>5</bordersize>
+						</control>
+						<control type="label">
+							<left>5</left>
+							<top>185</top>
+							<width>195</width>
+							<height>20</height>
+							<font>font12</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+					</itemlayout>
+					<focusedlayout height="220" width="200">
+						<control type="image">
+							<description>background</description>
+							<left>0</left>
+							<top>0</top>
+							<width>200</width>
+							<height>220</height>
+							<texture border="15">RecentAddedBack.png</texture>
+						</control>
+						<control type="image">
+							<left>10</left>
+							<top>10</top>
+							<width>180</width>
+							<height>170</height>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
+							<aspectratio>keep</aspectratio>
+							<bordertexture border="5">folder-focus.png</bordertexture>
+							<bordersize>5</bordersize>
+							<visible>Control.HasFocus(8019)</visible>
+						</control>
+						<control type="image">
+							<left>10</left>
+							<top>10</top>
+							<width>180</width>
+							<height>170</height>
+							<texture>$INFO[ListItem.Icon]</texture>
+							<aspectratio>keep</aspectratio>
+							<bordertexture border="5">button-nofocus.png</bordertexture>
+							<bordersize>5</bordersize>
+							<visible>!Control.HasFocus(8019)</visible>
+						</control>
+						<control type="label">
+							<left>5</left>
+							<top>185</top>
+							<width>195</width>
+							<height>20</height>
+							<font>font12</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="label">
+							<left>5</left>
+							<top>185</top>
+							<width>195</width>
+							<height>20</height>
+							<font>font12</font>
+							<textcolor>blue</textcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+							<visible>Control.HasFocus(8019)</visible>
+						</control>
+					</focusedlayout>
+                    <include>FavouritesContent</include>
+				</control>
+				<control type="button">
+					<description>Left Arrow</description>
+					<left>-40</left>
+					<top>90</top>
+					<width>30</width>
+					<height>40</height>
+					<texturefocus>arrow-big-left.png</texturefocus>
+					<texturenofocus>arrow-big-left.png</texturenofocus>
+					<onclick>Control.Move(8019,-1)</onclick>
+					<visible>Control.HasFocus(8019) + Container(8019).HasPrevious</visible>
+					<include>VisibleFadeEffect</include>
+				</control>
+				<control type="button">
+					<description>Right Arrow</description>
+					<left>1010</left>
+					<top>90</top>
+					<width>30</width>
+					<height>40</height>
+					<texturefocus>arrow-big-right.png</texturefocus>
+					<texturenofocus>arrow-big-right.png</texturenofocus>
+					<onclick>Control.Move(8019,1)</onclick>
+					<visible>Control.HasFocus(8019) + Container(8019).HasNext</visible>
+					<include>VisibleFadeEffect</include>
 				</control>
             </control>            
 		</control>
@@ -5665,6 +5798,100 @@
 			</item>
 		</content>
 	</include>
+    <include name="FavouritesContent">
+    	<content>
+			<item>
+				<label>$INFO[Window(0).Property(favourite.1.name)]</label>
+                <label2 />
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>$INFO[Window(0).Property(favourite.1.path)]</onclick>
+				<icon>$INFO[Window(0).Property(favourite.1.thumb)]</icon>
+				<thumb>-</thumb>
+				<visible>!IsEmpty(Window(0).Property(favourite.1.name)) + !IsEmpty(Window(0).Property(favourite.1.path))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(0).Property(favourite.2.name)]</label>
+                <label2 />
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>$INFO[Window(0).Property(favourite.2.path)]</onclick>
+				<icon>$INFO[Window(0).Property(favourite.2.thumb)]</icon>
+				<thumb>-</thumb>
+				<visible>!IsEmpty(Window(0).Property(favourite.2.name)) + !IsEmpty(Window(0).Property(favourite.2.path))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(0).Property(favourite.3.name)]</label>
+                <label2 />
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>$INFO[Window(0).Property(favourite.3.path)]</onclick>
+				<icon>$INFO[Window(0).Property(favourite.3.thumb)]</icon>
+				<thumb>-</thumb>
+				<visible>!IsEmpty(Window(0).Property(favourite.3.name)) + !IsEmpty(Window(0).Property(favourite.3.path))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(0).Property(favourite.4.name)]</label>
+                <label2 />
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>$INFO[Window(0).Property(favourite.4.path)]</onclick>
+				<icon>$INFO[Window(0).Property(favourite.4.thumb)]</icon>
+				<thumb>-</thumb>
+				<visible>!IsEmpty(Window(0).Property(favourite.4.name)) + !IsEmpty(Window(0).Property(favourite.4.path))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(0).Property(favourite.5.name)]</label>
+                <label2 />
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>$INFO[Window(0).Property(favourite.5.path)]</onclick>
+				<icon>$INFO[Window(0).Property(favourite.5.thumb)]</icon>
+				<thumb>-</thumb>
+				<visible>!IsEmpty(Window(0).Property(favourite.5.name)) + !IsEmpty(Window(0).Property(favourite.5.path))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(0).Property(favourite.6.name)]</label>
+                <label2 />
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>$INFO[Window(0).Property(favourite.6.path)]</onclick>
+				<icon>$INFO[Window(0).Property(favourite.6.thumb)]</icon>
+				<thumb>-</thumb>
+				<visible>!IsEmpty(Window(0).Property(favourite.6.name)) + !IsEmpty(Window(0).Property(favourite.6.path))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(0).Property(favourite.7.name)]</label>
+                <label2 />
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>$INFO[Window(0).Property(favourite.7.path)]</onclick>
+				<icon>$INFO[Window(0).Property(favourite.7.thumb)]</icon>
+				<thumb>-</thumb>
+				<visible>!IsEmpty(Window(0).Property(favourite.7.name)) + !IsEmpty(Window(0).Property(favourite.7.path))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(0).Property(favourite.8.name)]</label>
+                <label2 />
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>$INFO[Window(0).Property(favourite.8.path)]</onclick>
+				<icon>$INFO[Window(0).Property(favourite.8.thumb)]</icon>
+				<thumb>-</thumb>
+				<visible>!IsEmpty(Window(0).Property(favourite.8.name)) + !IsEmpty(Window(0).Property(favourite.8.path))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(0).Property(favourite.9.name)]</label>
+                <label2 />
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>$INFO[Window(0).Property(favourite.9.path)]</onclick>
+				<icon>$INFO[Window(0).Property(favourite.9.thumb)]</icon>
+				<thumb>-</thumb>
+				<visible>!IsEmpty(Window(0).Property(favourite.9.name)) + !IsEmpty(Window(0).Property(favourite.9.path))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(0).Property(favourite.10.name)]</label>
+                <label2 />
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>$INFO[Window(0).Property(favourite.10.path)]</onclick>
+				<icon>$INFO[Window(0).Property(favourite.10.thumb)]</icon>
+				<thumb>-</thumb>
+				<visible>!IsEmpty(Window(0).Property(favourite.10.name)) + !IsEmpty(Window(0).Property(favourite.10.path))</visible>
+			</item>
+		</content>
+    </include>
     <include name="PlayListWidgetLayout">
         <animation effect="slide" start="0,0" end="90,0" time="0" condition="StringCompare(Container(8015).NumItems,4)">conditional</animation>
         <animation effect="slide" start="0,0" end="180,0" time="0" condition="StringCompare(Container(8015).NumItems,3)">conditional</animation>
