@@ -61,7 +61,7 @@
 				<left>390r</left>
 				<top>280</top>
 				<width>450</width>
-				<height>400</height>
+				<height>360</height>
 				<onup>450</onup>
 				<onleft>Dialog.Close(2125)</onleft>
 				<onright>60</onright>
@@ -352,7 +352,7 @@
 				<left>1256</left>
 				<top>280</top>
 				<width>25</width>
-				<height>400</height>
+				<height>360</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
