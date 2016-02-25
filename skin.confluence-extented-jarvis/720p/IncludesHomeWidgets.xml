@@ -3494,9 +3494,9 @@
 							<bordersize>5</bordersize>
 						</control>
 						<control type="label">
-							<left>5</left>
+							<left>10</left>
 							<top>185</top>
-							<width>190</width>
+							<width>180</width>
 							<height>20</height>
 							<font>font12</font>
 							<textcolor>white</textcolor>
@@ -3539,9 +3539,9 @@
 							<visible>!Control.HasFocus(8019)</visible>
 						</control>
 						<control type="label">
-							<left>5</left>
+							<left>10</left>
 							<top>185</top>
-							<width>190</width>
+							<width>180</width>
 							<height>20</height>
 							<font>font12</font>
 							<textcolor>white</textcolor>
@@ -3552,9 +3552,9 @@
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 						<control type="label">
-							<left>5</left>
+							<left>10</left>
 							<top>185</top>
-							<width>190</width>
+							<width>180</width>
 							<height>20</height>
 							<font>font12</font>
 							<textcolor>blue</textcolor>
