@@ -738,8 +738,8 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(UsrSelectBtn,HomeItem.1,Home)</onclick>
                         <onclick condition="Skin.String(HomeItem.1.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
-						<onclick condition="Skin.String(HomeItem.1.Path) + !Skin.String(HomeItem.1.Playlist)">SetProperty(UsrSelectPath,InUse,home)</onclick>
-						<onclick condition="Skin.String(HomeItem.1.Path) + Skin.String(HomeItem.1.Playlist)">SetProperty(UsrSelectPath,PlaylistInUse,home)</onclick>
+						<onclick condition="Skin.String(HomeItem.1.Path) + !Skin.String(HomeItem.1.Playlist)">SetProperty(UsrSelectPath,InUse,Home)</onclick>
+						<onclick condition="Skin.String(HomeItem.1.Path) + Skin.String(HomeItem.1.Playlist)">SetProperty(UsrSelectPath,PlaylistInUse,Home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
 					</control>
 					<control type="button" id="1001">

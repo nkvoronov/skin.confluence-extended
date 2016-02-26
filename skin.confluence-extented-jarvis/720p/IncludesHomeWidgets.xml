@@ -4,7 +4,7 @@
 		<control type="group" id="9003">
             <depth>DepthMenu</depth>
             <include>WidgetUpDown</include>
-			<visible>!Window.IsVisible(Favourites)</visible>
+			<visible>![Window.IsVisible(2123) | Window.IsVisible(2124) | Window.IsVisible(2125) | Window.IsVisible(2126) | Window.IsVisible(Favourites)]</visible>
 			<include>VisibleFadeEffect</include>
 			<animation effect="fade" time="300" delay="1000">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -3420,10 +3420,11 @@
 				</control>
 			</control>            
             <!-- MusicPlayList 8018 -->
-             <control type="group">
+ 			<control type="group">
 				<left>190</left>
 				<top>60</top>
-				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),MusicPlayList)</visible>
+                <visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),MusicPlayList) + !Skin.HasSetting(DisableScriptPlayList)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(PlayListType),Music)</visible>
 				<include>VisibleFadeEffect</include>
 				<control type="label">
 					<description>Title Label</description>
@@ -3438,7 +3439,131 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
-            </control>
+				<control type="list" id="8018">
+                    <visible>Container(9000).HasFocus(1)</visible>                    
+                    <include>PlayListWidgetLayout</include>
+					<include>PlayList01Content</include>
+				</control>
+				<control type="list" id="8018">
+                    <visible>Container(9000).HasFocus(2)</visible>                    
+                    <include>PlayListWidgetLayout</include>
+					<include>PlayList02Content</include>
+				</control>
+				<control type="list" id="8018">
+                    <visible>Container(9000).HasFocus(3)</visible>                    
+                    <include>PlayListWidgetLayout</include>
+					<include>PlayList03Content</include>
+				</control>
+				<control type="list" id="8018">
+                    <visible>Container(9000).HasFocus(4)</visible>                    
+                    <include>PlayListWidgetLayout</include>
+					<include>PlayList04Content</include>
+				</control>
+				<control type="list" id="8018">
+                    <visible>Container(9000).HasFocus(5)</visible>                    
+                    <include>PlayListWidgetLayout</include>
+					<include>PlayList05Content</include>
+				</control>
+				<control type="list" id="8018">
+                    <visible>Container(9000).HasFocus(6)</visible>                    
+                    <include>PlayListWidgetLayout</include>
+					<include>PlayList06Content</include>
+				</control>
+				<control type="list" id="8018">
+                    <visible>Container(9000).HasFocus(7)</visible>                    
+                    <include>PlayListWidgetLayout</include>
+					<include>PlayList07Content</include>
+				</control>
+				<control type="list" id="8018">
+                    <visible>Container(9000).HasFocus(8)</visible>                    
+                    <include>PlayListWidgetLayout</include>
+					<include>PlayList08Content</include>
+				</control>
+				<control type="list" id="8018">
+                    <visible>Container(9000).HasFocus(9)</visible>                    
+                    <include>PlayListWidgetLayout</include>
+					<include>PlayList09Content</include>
+				</control>
+				<control type="list" id="8018">
+                    <visible>Container(9000).HasFocus(10)</visible>                    
+                    <include>PlayListWidgetLayout</include>
+					<include>PlayList10Content</include>
+				</control>
+				<control type="list" id="8018">
+                    <visible>Container(9000).HasFocus(11)</visible>                    
+                    <include>PlayListWidgetLayout</include>
+					<include>PlayList11Content</include>
+				</control>
+				<control type="list" id="8018">
+                    <visible>Container(9000).HasFocus(12)</visible>                    
+                    <include>PlayListWidgetLayout</include>
+					<include>PlayList12Content</include>
+				</control>
+				<control type="list" id="8018">
+                    <visible>Container(9000).HasFocus(13)</visible>                    
+                    <include>PlayListWidgetLayout</include>
+					<include>PlayList13Content</include>
+				</control>
+				<control type="list" id="8018">
+                    <visible>Container(9000).HasFocus(14)</visible>                    
+                    <include>PlayListWidgetLayout</include>
+					<include>PlayList14Content</include>
+				</control>
+				<control type="list" id="8018">
+                    <visible>Container(9000).HasFocus(15)</visible>                    
+                    <include>PlayListWidgetLayout</include>
+					<include>PlayList15Content</include>
+				</control>
+				<control type="list" id="8018">
+                    <visible>Container(9000).HasFocus(16)</visible>                    
+                    <include>PlayListWidgetLayout</include>
+					<include>PlayList16Content</include>
+				</control>
+				<control type="list" id="8018">
+                    <visible>Container(9000).HasFocus(17)</visible>                    
+                    <include>PlayListWidgetLayout</include>
+					<include>PlayList17Content</include>
+				</control>
+				<control type="list" id="8018">
+                    <visible>Container(9000).HasFocus(18)</visible>                    
+                    <include>PlayListWidgetLayout</include>
+					<include>PlayList18Content</include>
+				</control>
+				<control type="list" id="8018">
+                    <visible>Container(9000).HasFocus(19)</visible>                    
+                    <include>PlayListWidgetLayout</include>
+					<include>PlayList19Content</include>
+				</control>
+				<control type="list" id="8018">
+                    <visible>Container(9000).HasFocus(20)</visible>                    
+                    <include>PlayListWidgetLayout</include>
+					<include>PlayList20Content</include>
+				</control>                
+				<control type="button">
+					<description>Left Arrow</description>
+					<left>-40</left>
+					<top>90</top>
+					<width>30</width>
+					<height>40</height>
+					<texturefocus>arrow-big-left.png</texturefocus>
+					<texturenofocus>arrow-big-left.png</texturenofocus>
+					<onclick>Control.Move(8018,-1)</onclick>
+					<visible>Control.HasFocus(8018) + Container(8018).HasPrevious</visible>
+					<include>VisibleFadeEffect</include>
+				</control>
+				<control type="button">
+					<description>Right Arrow</description>
+					<left>910</left>
+					<top>90</top>
+					<width>30</width>
+					<height>40</height>
+					<texturefocus>arrow-big-right.png</texturefocus>
+					<texturenofocus>arrow-big-right.png</texturenofocus>
+					<onclick>Control.Move(8018,1)</onclick>
+					<visible>Control.HasFocus(8018) + Container(8018).HasNext</visible>
+					<include>VisibleFadeEffect</include>
+				</control>
+			</control>
             <!-- Favourites 8019 -->
              <control type="group">
 				<left>140</left>
