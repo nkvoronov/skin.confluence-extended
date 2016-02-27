@@ -620,11 +620,11 @@ msgctxt "#31961"
 msgid "MUSIC VIDEOS"
 msgstr "МУЗ. КЛИПЫ"
 
-# plood added value
+# extented added value
 
 msgctxt "#88070"
 msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add and remove home menu items[CR]Change skin backgrounds"
-msgstr "[B]НАСТРОЙКА ПАРАМЕТРОВ ОБЛОЖКИ[/B][CR][CR]Настройка обложки Confluence • Добавление и удаление пунктов главного меню[CR]Изменение фона обложки"
+msgstr "[B]НАСТРОЙКА ПАРАМЕТРОВ ОБЛОЖКИ[/B][CR][CR]Настройка обложки • Добавление и удаление пунктов главного меню[CR]Изменение фона обложки"
 
 msgctxt "#88071"
 msgid "Enable Stats Bar"

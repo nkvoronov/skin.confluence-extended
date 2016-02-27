@@ -204,6 +204,18 @@ msgctxt "#31112"
 msgid "Options"
 msgstr "Параметри"
 
+msgctxt "#31113"
+msgid "logo"
+msgstr "логотип"
+
+msgctxt "#31114"
+msgid "Show Recently added Episode"
+msgstr "Показувати останні додані епізоди"
+
+msgctxt "#31115"
+msgid "Show Recently added MusicVideo"
+msgstr "Показувати останнє доданий музичне відео"
+
 msgctxt "#31116"
 msgid "Show recently added albums"
 msgstr "Показати останні додані альбоми"
@@ -220,13 +232,17 @@ msgctxt "#31119"
 msgid "Hide background fanart"
 msgstr "Приховати фоновий фанарт"
 
+msgctxt "#31122"
+msgid "Hide EPG if RDS is present on channel window"
+msgstr "Приховати EPG, якщо RDS присутній у вікні каналу"
+
 msgctxt "#31124"
 msgid "Show background \"Now playing\" video"
-msgstr "Показувати на відео \"Відтворюється\""
+msgstr "Відтворення відео в якості фону"
 
 msgctxt "#31125"
 msgid "Show background \"Now playing\" visualisation"
-msgstr "Показувати на візуалізації \"Відтворюється\""
+msgstr "Музична візуалізація в якості фону"
 
 msgctxt "#31128"
 msgid "Lyrics"
@@ -238,7 +254,7 @@ msgstr "Приховати фанарт в режимі візуалізації
 
 msgctxt "#31132"
 msgid "Lyrics add-on"
-msgstr "Надбудова \"Тексти\""
+msgstr "Додавання текстів пісень"
 
 msgctxt "#31134"
 msgid "Home page \"Videos\" submenu"
@@ -430,7 +446,11 @@ msgstr "[B]НАЛАШТУВАННЯ ЗОВНІШНЬОГО ВИГЛЯДУ[/B][CR
 
 msgctxt "#31401"
 msgid "[B]CONFIGURE VIDEO SETTINGS[/B][CR][CR]Manage your video library · Set video playback options · Change video listing options[CR]Set subtitle fonts"
-msgstr "[B]НАЛАШТУВАННЯ ПАРАМЕТРІВ ВІДЕО[/B][CR][CR]Керування медіатекою відео • Параметри відтворення відео[CR]Налаштування списку відео • Налаштування шрифту субтитрів"
+msgstr "[B]НАСТРОЙКА ПАРАМЕТРІВ ВІДЕО[/B][CR][CR]Управління медіатекою відео • Параметри відтворення відео[CR]Налаштування списку відео • Налаштування шрифту субтитрів"
+
+msgctxt "#31402"
+msgid "[B]CONFIGURE MUSIC SETTINGS[/B][CR][CR]Manage your music library · Set music playback options · Change music listing options[CR]Setup song submission"
+msgstr "[B]НАСТРОЙКА ПАРАМЕТРІВ МУЗИКИ[/B][CR][CR]Управління медіатекою аудіо • Параметри відтворення аудіо[CR]Налаштування списку аудіо • Налаштування додавання пісень"
 
 msgctxt "#31403"
 msgid "[B]CONFIGURE PICTURE SETTINGS[/B][CR][CR]Set picture listing options · Configure slideshow"
@@ -586,7 +606,7 @@ msgstr "ПРОГРАМИ"
 
 msgctxt "#31958"
 msgid "PLAY DISC"
-msgstr "ВІДТВОРЕННЯ"
+msgstr "ГРАТИ ДИСК"
 
 msgctxt "#31959"
 msgid "SYSTEM"
@@ -595,3 +615,375 @@ msgstr "СИСТЕМА"
 msgctxt "#31960"
 msgid "RADIO"
 msgstr "РАДІО"
+
+msgctxt "#31961"
+msgid "MUSIC VIDEOS"
+msgstr "МУЗ. КЛІПИ"
+
+# extented added value
+
+msgctxt "#88070"
+msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add and remove home menu items[CR]Change skin backgrounds"
+msgstr "[B]НАСТРОЙКА ПАРАМЕТРІВ ОБКЛАДИНКИ[/B][CR][CR]Налаштування обкладинки • Додавання і видалення пунктів головного меню[CR]Зміна фону обкладинки"
+
+msgctxt "#88071"
+msgid "Enable Stats Bar"
+msgstr "Включити панель статистики"
+
+msgctxt "#88072"
+msgid "Disable automatic opening submenu"
+msgstr "Відключити автоматичне розкриття підміню"
+
+msgctxt "#88073"
+msgid "Disable automatic opening add-on submenu"
+msgstr "Відключити автоматичне приховування панелі доповнень"
+
+msgctxt "#88074"
+msgid "Hide - Title of add-on"
+msgstr "Приховати - Назви доповнень"
+
+msgctxt "#88075"
+msgid "Hide - Bottom line in home page"
+msgstr "Приховати - Нижню лінію в головному екрані"
+
+msgctxt "#88076"
+msgid "Hide - Bottom line everywhere except the home page"
+msgstr "Приховати - Нижню лінію всюди, крім головного екрану"
+
+msgctxt "#88077"
+msgid "Hide - Player control panel"
+msgstr "Приховати - Панель управління програвачем"
+
+msgctxt "#88078"
+msgid "Hide - Power button"
+msgstr "Приховати - Кнопку виключення"
+
+msgctxt "#88079"
+msgid "Hide - Favorites button"
+msgstr "Приховати - Кнопку обраного"
+
+msgctxt "#88080"
+msgid "Select"
+msgstr "Вибрати"
+
+msgctxt "#88081"
+msgid "backlight color for main menu"
+msgstr "колір підсвічування для головного меню"
+
+msgctxt "#88082"
+msgid "After startup KODI, move focus main menu to:"
+msgstr "Після запуску Коди, перемістити фокус головного меню на:"
+
+msgctxt "#88083"
+msgid "To the left"
+msgstr "Вліво на"
+
+msgctxt "#88084"
+msgid "To the right"
+msgstr "Вправо на"
+
+msgctxt "#88085"
+msgid "Manually"
+msgstr "Вручну"
+
+msgctxt "#88086"
+msgid "Enable Wrap Around Menu"
+msgstr "Дозволити нескінченне меню"
+
+msgctxt "#88087"
+msgid "Enable Return to Start Menu Scroll"
+msgstr "Дозволити прокрутку меню"
+
+msgctxt "#88900"
+msgid "Skin Jarvis"
+msgstr "Jarvis"
+
+msgctxt "#88910"
+msgid "Skin Jarvis Massive"
+msgstr "Jarvis Великий шрифт"
+
+msgctxt "#88920"
+msgid "Skin Jarvis with no Caps"
+msgstr "Jarvis без ПРОПИСНИХ"
+
+msgctxt "#88107"
+msgid "Blue"
+msgstr "Сіний"
+
+msgctxt "#88108"
+msgid "Azure"
+msgstr "Блакитний"
+
+msgctxt "#88109"
+msgid "White"
+msgstr "Білий"
+
+msgctxt "#88110"
+msgid "Gray"
+msgstr "Сірий"
+
+msgctxt "#88111"
+msgid "Red"
+msgstr "Червоний"
+
+msgctxt "#88112"
+msgid "Pink"
+msgstr "Рожевий"
+
+msgctxt "#88113"
+msgid "Purple"
+msgstr "Фіолетовий"
+
+msgctxt "#88114"
+msgid "Orange"
+msgstr "Помаранчевий"
+
+msgctxt "#88115"
+msgid "Yellow"
+msgstr "Жовтий"
+
+msgctxt "#88116"
+msgid "Green"
+msgstr "Зелений"
+
+msgctxt "#88117"
+msgid "Select color"
+msgstr "Виберіть колір"
+
+msgctxt "#88118"
+msgid "Events"
+msgstr "Події"
+
+msgctxt "#88121"
+msgid "Outlook"
+msgstr "Поточний стан"
+
+msgctxt "#88122"
+msgid "No Disc Media Detected"
+msgstr "Немає"
+
+msgctxt "#88123"
+msgid "Submenus"
+msgstr "Підміню"
+
+msgctxt "#88124"
+msgid "Reset"
+msgstr "Скидання"
+
+msgctxt "#88125"
+msgid "Initial defaults"
+msgstr "За замовчуванням"
+
+msgctxt "#88126"
+msgid "User Data"
+msgstr "данні користовача"
+
+# home menu
+
+msgctxt "#89001"
+msgid "Menu item"
+msgstr "Меню"
+
+msgctxt "#89002"
+msgid "Submenu set"
+msgstr "Підміню"
+
+msgctxt "#89003"
+msgid "Addon set"
+msgstr "Набір ярликів"
+
+msgctxt "#89004"
+msgid "Widget set"
+msgstr "Віджет"
+
+msgctxt "#89005"
+msgid "Move menu item"
+msgstr "Перемістити меню"
+
+msgctxt "#89006"
+msgid "None"
+msgstr "Нема"
+
+# add menu item
+
+msgctxt "#89010"
+msgid "Select Menu Item"
+msgstr "Вибрати елемент меню"
+
+msgctxt "#89011"
+msgid "Select Menu Item"
+msgstr "Вибрати елемент меню"
+
+msgctxt "#89012"
+msgid "Up One Level"
+msgstr "Вгору не один рівень"
+
+msgctxt "#89013"
+msgid "Clear item"
+msgstr "Очистити елемент"
+
+msgctxt "#89014"
+msgid "Default"
+msgstr "За замовчуванням"
+
+msgctxt "#89015"
+msgid "Hide Item"
+msgstr "Приховати елемент"
+
+msgctxt "#89016"
+msgid "TVShows"
+msgstr "Серіали"
+
+msgctxt "#89017"
+msgid "Music Video"
+msgstr "Музичне відео"
+
+msgctxt "#89018"
+msgid "Radio"
+msgstr "Радіо"
+
+msgctxt "#89019"
+msgid "Select"
+msgstr "Вибрати"
+
+msgctxt "#89020"
+msgid "Global Search"
+msgstr "Глобальний пошук"
+
+msgctxt "#89021"
+msgid "Launcher"
+msgstr "Запуск"
+
+msgctxt "#89022"
+msgid "Kodi Command"
+msgstr "Команда Kodi"
+
+msgctxt "#89023"
+msgid "Watch it Later"
+msgstr "Переглянути пізніше"
+
+msgctxt "#89024"
+msgid "Recently Played Albums"
+msgstr "Останні програні альбоми"
+
+msgctxt "#89025"
+msgid "Recent Albums"
+msgstr "Останні альбоми"
+
+msgctxt "#89026"
+msgid "Recommended Albums"
+msgstr "Рекомендовані альбоми"
+
+msgctxt "#89027"
+msgid "Random Albums"
+msgstr "Випадкові альбоми"
+
+msgctxt "#89028"
+msgid "Clean Library"
+msgstr "Очистити медіатеку"
+
+msgctxt "#89029"
+msgid "Nodes"
+msgstr "Вузли"
+
+msgctxt "#89030"
+msgid "Recommended Movies"
+msgstr "Рекомендовані фільми"
+
+msgctxt "#89031"
+msgid "Recent Movies"
+msgstr "Останні фільми"
+
+msgctxt "#89032"
+msgid "Random Movies"
+msgstr "Випадкові фільми"
+
+msgctxt "#89033"
+msgid "Recent Episodes"
+msgstr "Останні епізоди"
+
+msgctxt "#89034"
+msgid "Recommended Episodes"
+msgstr "Рекомендовані епізоди"
+
+msgctxt "#89035"
+msgid "Random Episodes"
+msgstr "Випадкові епізоди"
+
+msgctxt "#89036"
+msgid "Recent Music Video"
+msgstr "Останнє музичне відео"
+
+msgctxt "#89037"
+msgid "Recommended Music Video"
+msgstr "Рекомендоване музичне відео"
+
+msgctxt "#89038"
+msgid "Random Music Video"
+msgstr "Випадкове музичне відео"
+
+# submenu set
+
+msgctxt "#89100"
+msgid "Select SubMenu Set"
+msgstr "Вибрати підміню"
+
+# addons set
+
+msgctxt "#89200"
+msgid "Select Add-On Set"
+msgstr "Вибрати набір ярликів"
+
+# witget set
+
+msgctxt "#89300"
+msgid "Select Widget Set"
+msgstr "Вибрати віджет"
+
+msgctxt "#89301"
+msgid "Big"
+msgstr "Великий"
+
+msgctxt "#89302"
+msgid "Next Aired Episodes"
+msgstr "Наступний епізод в ефірі"
+
+# swap item
+
+msgctxt "#89400"
+msgid "Select Item to Swap"
+msgstr "Вибрати елемент для обміну"
+
+# submenu sets
+
+msgctxt "#89500"
+msgid "Submenu"
+msgstr "Пункт"
+
+# submenu select item
+
+msgctxt "#89600"
+msgid "Select Menu Item"
+msgstr "Вибрати пункт меню"
+
+# addon select
+
+msgctxt "#89700"
+msgid "Select Addon"
+msgstr "Вибрати доповнення"
+
+msgctxt "#89701"
+msgid "Selected"
+msgstr "Вибрати"
+
+#msgctxt "#89702"
+#msgid "Favourites Window"
+#msgstr "Вікно обране"
+
+msgctxt "#89703"
+msgid "No Recommended Media"
+msgstr "Нема рекомендованого медіа"
+
+msgctxt "#89704"
+msgid "Reset Skin Values to Initial Install Defaults"
+msgstr "Скинути обкладинку до первісного стану за замовчуванням"
