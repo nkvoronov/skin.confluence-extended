@@ -48,6 +48,7 @@
 			<include>BackgroundDimensions</include>
 			<texture>special://skin/backgrounds/media-overlay.jpg</texture>
 			<visible>[Player.HasVideo + !Skin.HasSetting(ShowBackgroundVideo)] + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
+            <visible>Skin.HasSetting(ActivateSlideShowArt) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtworkReady))</visible>
 			<include>VisibleFadeEffect</include>
 		</control>
 		<control type="visualisation">

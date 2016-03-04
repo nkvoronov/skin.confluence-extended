@@ -878,6 +878,18 @@ msgctxt "#88126"
 msgid "User Data"
 msgstr ""
 
+msgctxt "#88127"
+msgid "Addons"
+msgstr ""
+
+msgctxt "#88128"
+msgid "Configure - ScriptPlaylist"
+msgstr ""
+
+msgctxt "#88129"
+msgid "Playlist widget should [B]Randomize[/B] the playlist sort order"
+msgstr ""
+
 # home menu
 
 msgctxt "#89001"

@@ -4,6 +4,7 @@
 	<menucontrol>9000</menucontrol>
 	<views>50,51,500,550,551,560,501,508,504,503,515,505,511,5033</views>
 	<onload condition="!Skin.HasSetting(FirstTimeRun)">ActivateWindow(1112)</onload>
+    <onload condition="Skin.HasSetting(ActivateTVNextAired)">RunScript(script.tv.show.next.aired,backend=True,silent=True)</onload>
 	<controls>
         <include>CommonCustomBackground</include>
 		<include>CommonBackground</include>
@@ -47,6 +48,7 @@
 		<include>MainWindowMouseButtons</include>
 		<include>BehindDialogFadeOut</include>
 		<include>ScrollOffsetLabel</include>
+        <include condition="Skin.HasSetting(ActivateTVNextAired)">NextAired</include>
 		<include name="CommonWindowHeader">
 			<param name="Icon" value="icon_video" />
 			<param name="Label" value="$LOCALIZE[3]" />

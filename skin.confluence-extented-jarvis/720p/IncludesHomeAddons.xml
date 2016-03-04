@@ -2080,8 +2080,8 @@
     <include name="HomeAddonUpDown">
         <onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
 		<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
-		<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateSearch)">608</ondown>
-		<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateSearch)">603</ondown>
+		<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateGlobalSearch)">608</ondown>
+		<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateGlobalSearch)">603</ondown>
 		<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
     </include>
     <include name="ResetAddonSet01">

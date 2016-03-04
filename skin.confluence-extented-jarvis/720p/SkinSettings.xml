@@ -385,6 +385,169 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Skin.HasSetting(Use_Startup_Playlist)</enable>
 					</control>
+                    <control type="label" id="112">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
+						<label>88127</label>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="radiobutton" id="113">
+                        <description>Activate Artist Slideshow</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[24000] Artist Slideshow</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(ActivateSlideShowArt)</onclick>
+						<selected>Skin.HasSetting(ActivateSlideShowArt)</selected>
+						<enable>System.HasAddon(script.artistslideshow)</enable>
+					</control>
+					<control type="button" id="114">
+                        <description>Settigs Artist Slideshow</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>- $LOCALIZE[24020]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus colordiffuse="$VAR[MainColorOne]">MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Addon.OpenSettings(script.artistslideshow)</onclick>
+						<enable>Skin.HasSetting(ActivateSlideShowArt)</enable>
+						<visible>System.HasAddon(script.artistslideshow)</visible>
+					</control>
+					<control type="radiobutton" id="115">
+                        <description>Activate Global Search</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[24000] Global Search</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(ActivateGlobalSearch)</onclick>
+						<selected>Skin.HasSetting(ActivateGlobalSearch)</selected>
+						<enable>System.HasAddon(script.globalsearch)</enable>
+					</control>
+					<control type="button" id="116">
+                        <description>Settings Global Search</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>- $LOCALIZE[24020]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Addon.OpenSettings(script.globalsearch)</onclick>
+						<enable>Skin.HasSetting(ActivateGlobalSearch)</enable>
+						<visible>System.HasAddon(script.globalsearch)</visible>
+					</control>
+					<control type="radiobutton" id="117">
+                        <description>Activate TV Show - Next Aired</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[24000] TV Show - Next Aired</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(ActivateTVNextAired)</onclick>
+						<selected>Skin.HasSetting(ActivateTVNextAired)</selected>
+						<enable>System.HasAddon(script.tv.show.next.aired)</enable>
+					</control>
+					<control type="button" id="118">
+                        <description>Settings TV Show - Next Aired</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>- $LOCALIZE[24020]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Addon.OpenSettings(script.tv.show.next.aired)</onclick>
+						<enable>Skin.HasSetting(ActivateTVNextAired)</enable>
+						<visible>System.HasAddon(script.tv.show.next.aired)</visible>
+					</control>
+					<control type="radiobutton" id="119">
+                        <description>Activate SimplePlaylists</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[24000] SimplePlaylists</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(ActivateWatchitLater)</onclick>
+						<selected>Skin.HasSetting(ActivateWatchitLater)</selected>
+						<enable>System.HasAddon(script.simpleplaylists)</enable>
+					</control>
+					<control type="button" id="120">
+                        <description>Settings SimplePlaylists</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>- $LOCALIZE[24020]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Addon.OpenSettings(script.simpleplaylists)</onclick>
+						<enable>Skin.HasSetting(ActivateWatchitLater)</enable>
+						<visible>System.HasAddon(script.simpleplaylists)</visible>
+					</control>
+					<control type="radiobutton" id="121">
+                        <description>Activate ScriptPlaylist</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[24000] ScriptPlaylist</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(ActivateScriptPlaylist)</onclick>
+						<selected>Skin.HasSetting(ActivateScriptPlaylist)</selected>
+						<enable>System.HasAddon(script.randomandlastitems)</enable>
+					</control>
+					<control type="button" id="122">
+                        <description>Settings ScriptPlaylist</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>- $LOCALIZE[24020]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>ActivateWindow(2127)</onclick>
+						<enable>Skin.HasSetting(ActivateScriptPlaylist)</enable>
+						<visible>System.HasAddon(script.randomandlastitems)</visible>
+					</control>
+                    <control type="button" id="123">
+                        <description>Settings Service Skin Widgets</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[24020] - Skin Widgets</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus colordiffuse="$VAR[MainColorOne]">MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Addon.OpenSettings(service.skin.widgets)</onclick>
+						<enable>System.HasAddon(service.skin.widgets)</enable>
+					</control>
 				</control>
 				<control type="scrollbar" id="60">
 					<left>1060</left>
@@ -604,19 +767,6 @@
 						<label>$LOCALIZE[88076]</label>
 						<onclick>Skin.ToggleSetting(NoFloorAll)</onclick>
 						<selected>Skin.HasSetting(NoFloorAll)</selected>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-					</control>
-					<control type="radiobutton" id="215">
-						<description>Hide Search Button</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31111] - $LOCALIZE[137]</label>
-						<onclick>Skin.ToggleSetting(ActivateSearch)</onclick>
-						<selected>!Skin.HasSetting(ActivateSearch)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>

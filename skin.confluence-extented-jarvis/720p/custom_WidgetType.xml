@@ -170,7 +170,7 @@
 						<onclick>Dialog.Close(2118)</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,UnWatchedMovies)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-						<visible>!Skin.HasSetting(DisableScriptPlaylist)</visible>
+						<visible>Skin.HasSetting(ActivateScriptPlaylist)</visible>
 						<visible>Library.HasContent(Movies)</visible>
 					</item>
 					<item>
@@ -276,7 +276,7 @@
 						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,NextAired)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(TVShows)</visible>
-                        <visible>System.HasAddon(script.tv.show.next.aired)</visible>
+                        <visible>Skin.HasSetting(ActivateTVNextAired)</visible>
 					</item>
 				</content>
 			</control>
