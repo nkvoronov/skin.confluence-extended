@@ -10,6 +10,7 @@ plugin.program.advanced.launcher
 script.extendedinfo
 script.tvtunes
 script.artwork.downloader
+script.artistslideshow
 #OS
 service.openelec.settings
 script.raspbmc.settings
