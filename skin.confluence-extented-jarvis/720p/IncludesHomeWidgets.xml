@@ -11,7 +11,7 @@
             <!-- Weather 8000 -->
 			<control type="group">
 				<left>140</left>
-				<top>53</top>
+				<top>55</top>
                 <visible>!IsEmpty(Weather.Plugin) + Weather.IsFetched</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),Weather)</visible>
 				<include>VisibleFadeEffect</include>
@@ -561,7 +561,7 @@
             <!-- RecentMovies 8001 -->
  			<control type="group">
 				<left>190</left>
-				<top>53</top>
+				<top>55</top>
 				<visible>Library.HasContent(Movies)</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies)</visible>
 				<include>VisibleFadeEffect</include>
@@ -716,7 +716,7 @@
             <!-- RandomMovies 8002 -->
  			<control type="group">
 				<left>190</left>
-				<top>53</top>
+				<top>55</top>
 				<visible>Library.HasContent(Movies)</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies)</visible>
 				<include>VisibleFadeEffect</include>
@@ -871,7 +871,7 @@
             <!-- RecommendedMovies 8003 -->
  			<control type="group">
 				<left>190</left>
-				<top>53</top>
+				<top>55</top>
 				<visible>Library.HasContent(Movies)</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecommendedMovies)</visible>
 				<include>VisibleFadeEffect</include>
@@ -1026,7 +1026,7 @@
             <!-- RecentEpisodes 8004 -->
 			<control type="group">
 				<left>160</left>
-				<top>53</top>
+				<top>55</top>
 				<visible>Library.HasContent(TVShows)</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes)</visible>
 				<include>VisibleFadeEffect</include>
@@ -1206,7 +1206,7 @@
             <!-- RandomEpisodes 8005 -->
 			<control type="group">
 				<left>160</left>
-				<top>53</top>
+				<top>55</top>
 				<visible>Library.HasContent(TVShows)</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes)</visible>
 				<include>VisibleFadeEffect</include>
@@ -1386,7 +1386,7 @@
             <!-- RecommendedEpisodes 8006 -->
 			<control type="group">
 				<left>160</left>
-				<top>53</top>
+				<top>55</top>
 				<visible>Library.HasContent(TVShows)</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecommendedEpisodes)</visible>
 				<include>VisibleFadeEffect</include>
@@ -1566,7 +1566,7 @@
             <!-- RecentMusicVideo 8007 -->
 			<control type="group">
 				<left>240</left>
-				<top>53</top>
+				<top>55</top>
 				<visible>Library.HasContent(MusicVideos)</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMusicVideo)</visible>
 				<include>VisibleFadeEffect</include>
@@ -1745,7 +1745,7 @@
             <!-- RandomMusicVideo 8008 -->
 			<control type="group">
 				<left>240</left>
-				<top>53</top>
+				<top>55</top>
 				<visible>Library.HasContent(MusicVideos)</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMusicVideo)</visible>
 				<include>VisibleFadeEffect</include>
@@ -1924,7 +1924,7 @@
             <!-- RecommendedMusicVideo 8009 -->
 			<control type="group">
 				<left>240</left>
-				<top>53</top>
+				<top>55</top>
 				<visible>Library.HasContent(MusicVideos)</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecommendedMusicVideo)</visible>
 				<include>VisibleFadeEffect</include>
@@ -2103,7 +2103,7 @@
             <!-- UnWatchedMovies 8010 -->
  			<control type="group">
 				<left>190</left>
-				<top>53</top>
+				<top>55</top>
 				<visible>Library.HasContent(Movies)</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies)</visible>
 				<include>VisibleFadeEffect</include>
@@ -2258,7 +2258,7 @@
             <!-- RecentAlbums 8011 -->
 			<control type="group">
 				<left>240</left>
-				<top>53</top>
+				<top>55</top>
 				<visible>Library.HasContent(Music)</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentAlbums)</visible>
 				<include>VisibleFadeEffect</include>
@@ -2438,7 +2438,7 @@
             <!-- RandomAlbums 8012 -->
 			<control type="group">
 				<left>240</left>
-				<top>53</top>
+				<top>55</top>
 				<visible>Library.HasContent(Music)</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomAlbums)</visible>
 				<include>VisibleFadeEffect</include>
@@ -2618,7 +2618,7 @@
             <!-- RecommendedAlbums 8013 -->
 			<control type="group">
 				<left>240</left>
-				<top>53</top>
+				<top>55</top>
 				<visible>Library.HasContent(Music)</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecommendedAlbums)</visible>
 				<include>VisibleFadeEffect</include>
@@ -2798,7 +2798,7 @@
             <!-- NextAired 8014 -->
 			<control type="group">
 				<left>240</left>
-				<top>53</top>
+				<top>55</top>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),NextAired) + Skin.HasSetting(ActivateTVNextAired)</visible>
 				<include>VisibleFadeEffect</include>
 				<control type="label">
@@ -2977,7 +2977,7 @@
             <!-- Movies Playlist 8015 -->
  			<control type="group">
 				<left>190</left>
-				<top>53</top>
+				<top>55</top>
                 <visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList) + Skin.HasSetting(ActivateScriptPlayList)</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(PlayListType),Movie)</visible>
 				<include>VisibleFadeEffect</include>
@@ -3122,7 +3122,7 @@
 			<!-- Episodes Playlist 8016 -->
 			<control type="group">
 				<left>160</left>
-				<top>53</top>
+				<top>55</top>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList) + Skin.HasSetting(ActivateScriptPlayList)</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(PlayListType),Episode)</visible>
 				<include>VisibleFadeEffect</include>
@@ -3267,7 +3267,7 @@
             <!-- VideoNode 8017 -->
  			<control type="group">
 				<left>190</left>
-				<top>53</top>
+				<top>55</top>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoNode)</visible>
 				<include>VisibleFadeEffect</include>
 				<control type="label">
@@ -3421,7 +3421,7 @@
             <!-- MusicPlayList 8018 -->
  			<control type="group">
 				<left>190</left>
-				<top>53</top>
+				<top>55</top>
                 <visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),MusicPlayList) + Skin.HasSetting(ActivateScriptPlayList)</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(PlayListType),Music)</visible>
 				<include>VisibleFadeEffect</include>
@@ -3566,7 +3566,7 @@
             <!-- Favourites 8019 -->
              <control type="group">
 				<left>140</left>
-				<top>53</top>
+				<top>55</top>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),Favourites)</visible>
 				<include>VisibleFadeEffect</include>
 				<control type="label">
