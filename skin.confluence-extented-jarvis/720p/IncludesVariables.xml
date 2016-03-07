@@ -50,6 +50,29 @@
 		<value condition="!substring(System.CPUTemperature,?)">[B][COLOR=$INFO[Skin.String(menuColor)]]IP: [/COLOR][/B]$INFO[Network.IPAddress]  [B][COLOR=$INFO[Skin.String(menuColor)]]CPU: [/COLOR][/B]$INFO[System.CPUTemperature]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[155]: [/COLOR][/B]$INFO[System.UsedSpacePercent]</value>
 		<value>[COLOR=$INFO[Skin.String(menuColor)]][B]IP: [/B][/COLOR]$INFO[Network.IPAddress]  [COLOR=$INFO[Skin.String(menuColor)]][B]RAM: [/B][/COLOR]$INFO[system.memory(used.percent)]  [COLOR=$INFO[Skin.String(menuColor)]][B]$LOCALIZE[155]: [/B][/COLOR]$INFO[System.UsedSpacePercent]</value>
 	</variable>
+    <!-- Widget Label -->
+    <variable name="CustomWidgetLabel" type="text">
+		<value condition="StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.1)">$INFO[Skin.String(HomeItem.1.Label)]</value>
+		<value condition="StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.2)">$INFO[Skin.String(HomeItem.2.Label)]</value>
+		<value condition="StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.3)">$INFO[Skin.String(HomeItem.3.Label)]</value>
+		<value condition="StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.4)">$INFO[Skin.String(HomeItem.4.Label)]</value>
+		<value condition="StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.5)">$INFO[Skin.String(HomeItem.5.Label)]</value>
+		<value condition="StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.6)">$INFO[Skin.String(HomeItem.6.Label)]</value>
+		<value condition="StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.7)">$INFO[Skin.String(HomeItem.7.Label)]</value>
+		<value condition="StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.8)">$INFO[Skin.String(HomeItem.8.Label)]</value>
+		<value condition="StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.9)">$INFO[Skin.String(HomeItem.9.Label)]</value>
+		<value condition="StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.10)">$INFO[Skin.String(HomeItem.10.Label)]</value>
+		<value condition="StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.11)">$INFO[Skin.String(HomeItem.11.Label)]</value>
+		<value condition="StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.12)">$INFO[Skin.String(HomeItem.12.Label)]</value>
+        <value condition="StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.13)">$INFO[Skin.String(HomeItem.13.Label)]</value>
+		<value condition="StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.14)">$INFO[Skin.String(HomeItem.14.Label)]</value>
+		<value condition="StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.15)">$INFO[Skin.String(HomeItem.15.Label)]</value>
+		<value condition="StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.16)">$INFO[Skin.String(HomeItem.16.Label)]</value>
+		<value condition="StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.17)">$INFO[Skin.String(HomeItem.17.Label)]</value>
+		<value condition="StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.18)">$INFO[Skin.String(HomeItem.18.Label)]</value>
+		<value condition="StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.19)">$INFO[Skin.String(HomeItem.19.Label)]</value>
+		<value condition="StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.20)">$INFO[Skin.String(HomeItem.20.Label)]</value>
+	</variable>
     <!-- User Vars Home -->
 	<variable name="UsersHomeMenu01Name" type="text">
         <value condition="stringcompare(Skin.String(HomeItem.1.Label),WEATHER)">$LOCALIZE[31950]</value>
