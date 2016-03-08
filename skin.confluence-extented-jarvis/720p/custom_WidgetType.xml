@@ -229,7 +229,7 @@
 					</item>
 					<item>
 						<description>UnWatched Movies</description>
-						<label>$LOCALIZE[16101] $LOCALIZE[342]</label>
+						<label>$LOCALIZE[88131]</label>
 						<onclick>Dialog.Close(2118)</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,UnWatchedMovies)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>

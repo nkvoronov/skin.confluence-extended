@@ -776,7 +776,27 @@ msgstr "За замовчуванням"
 
 msgctxt "#88126"
 msgid "User Data"
-msgstr "данні користовача"
+msgstr "пользовательских данных"
+
+msgctxt "#88127"
+msgid "Addons"
+msgstr "Доповнення"
+
+msgctxt "#88128"
+msgid "Configure - ScriptPlaylist"
+msgstr "Налаштування - ScriptPlaylist"
+
+msgctxt "#88129"
+msgid "Playlist widget should [B]Randomize[/B] the playlist sort order"
+msgstr "Віджет плейлиста матиме [B]Випадковий[/B] порядок сортування"
+
+msgctxt "#88130"
+msgid "Enable Widgets Title"
+msgstr "Дозволити заголовки віджетів"
+
+msgctxt "#88131"
+msgid "Unwatched movies"
+msgstr "Не переглянуті фільми"
 
 # home menu
 

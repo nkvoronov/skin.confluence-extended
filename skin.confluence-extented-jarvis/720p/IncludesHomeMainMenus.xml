@@ -840,7 +840,8 @@
         <!-- MainMenu -->
         <include>DefaultMainMenu</include>
         <!-- Other -->
-		<onload>Skin.SetBool(SingleGlobalBackground)</onload>
+		<onload>Skin.SetBool(EnableWidgetsTitle)</onload>
+        <onload>Skin.SetBool(SingleGlobalBackground)</onload>
 		<onload condition="!System.HasAddon(script.randomandlastitems)">Skin.Setbool(ActivateScriptPlaylist)</onload>
 		<onload>Skin.SetBool(InitialSetUpRun)</onload>
 	</include>

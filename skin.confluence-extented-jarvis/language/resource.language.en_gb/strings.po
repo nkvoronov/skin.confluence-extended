@@ -890,6 +890,14 @@ msgctxt "#88129"
 msgid "Playlist widget should [B]Randomize[/B] the playlist sort order"
 msgstr ""
 
+msgctxt "#88130"
+msgid "Enable Widgets Title"
+msgstr ""
+
+msgctxt "#88131"
+msgid "Unwatched movies"
+msgstr ""
+
 # home menu
 
 msgctxt "#89001"

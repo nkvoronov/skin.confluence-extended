@@ -58,7 +58,7 @@ msgstr "страница"
 
 msgctxt "#31025"
 msgid "Items"
-msgstr "в списке"
+msgstr "В списке"
 
 msgctxt "#31026"
 msgid "Misc options"
@@ -789,6 +789,14 @@ msgstr "Настройки - ScriptPlaylist"
 msgctxt "#88129"
 msgid "Playlist widget should [B]Randomize[/B] the playlist sort order"
 msgstr "Виджет плейлиста будет иметь [B]Случайный[/B] порядок сортировки"
+
+msgctxt "#88130"
+msgid "Enable Widgets Title"
+msgstr "Разрешить заголовки виджетов"
+
+msgctxt "#88131"
+msgid "Unwatched movies"
+msgstr "Не просмотренные фильмы"
 
 # home menu
 
