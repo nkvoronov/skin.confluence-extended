@@ -181,7 +181,7 @@ msgid "Miscellaneous options"
 msgstr "Различные параметры"
 
 msgctxt "#31107"
-msgid "Hide flagging read from video filenames [COLOR=grey3](Blu-ray, HD-DVD)[/COLOR]"
+msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
 msgstr "Скрыть флаги, полученные из имени видео файла [COLOR=grey3](BluRray, HD-DVD)[/COLOR]"
 
 msgctxt "#31108"
@@ -205,8 +205,8 @@ msgid "Options"
 msgstr "Параметры"
 
 msgctxt "#31113"
-msgid "logo"
-msgstr "логотип"
+msgid "Show KODI logo"
+msgstr "Показывать KODI логотип"
 
 msgctxt "#31114"
 msgid "Show Recently added Episode"
@@ -627,48 +627,44 @@ msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add an
 msgstr "[B]НАСТРОЙКА ПАРАМЕТРОВ ОБЛОЖКИ[/B][CR][CR]Настройка обложки • Добавление и удаление пунктов главного меню[CR]Изменение фона обложки"
 
 msgctxt "#88071"
-msgid "Enable Stats Bar"
-msgstr "Включить панель статистики"
+msgid "Stats Bar"
+msgstr "Панель статистики"
 
 msgctxt "#88072"
-msgid "Disable automatic opening submenu"
-msgstr "Отключить автоматическое раскрытие подменю"
+msgid "Automatic opening submenu"
+msgstr "Автоматическое раскрытие подменю"
 
 msgctxt "#88073"
-msgid "Disable automatic opening add-on submenu"
-msgstr "Отключить автоматическое раскрытие панели дополнений"
+msgid "Automatic opening add-on submenu"
+msgstr "Автоматическое раскрытие панели дополнений"
 
 msgctxt "#88074"
-msgid "Hide - Title of add-on"
-msgstr "Скрыть - Названия дополнений"
+msgid "Title of add-on"
+msgstr "Названия дополнений"
 
 msgctxt "#88075"
-msgid "Hide - Bottom line in home page"
-msgstr "Скрыть - Нижнюю линию в главном экране"
+msgid "Bottom line in home page"
+msgstr "Нижнюю линию в главном экране"
 
 msgctxt "#88076"
-msgid "Hide - Bottom line everywhere except the home page"
-msgstr "Скрыть - Нижнюю линию везде, кроме главного экрана"
+msgid "Bottom line everywhere except the home page"
+msgstr "Нижнюю линию везде, кроме главного экрана"
 
 msgctxt "#88077"
-msgid "Hide - Player control panel"
-msgstr "Скрыть - Панель управления проигрывателем"
+msgid "Player control panel"
+msgstr "Панель управления проигрывателем"
 
 msgctxt "#88078"
-msgid "Hide - Power button"
-msgstr "Скрыть - Кнопку выключения"
+msgid "Power button"
+msgstr "Кнопку выключения"
 
 msgctxt "#88079"
-msgid "Hide - Favorites button"
-msgstr "Скрыть - Кнопку избранного"
-
-msgctxt "#88080"
-msgid "Select"
-msgstr "Выбрать"
+msgid "Favorites button"
+msgstr "Кнопку избранного"
 
 msgctxt "#88081"
-msgid "backlight color for main menu"
-msgstr "цвет подсветки для главного меню"
+msgid "backlight color"
+msgstr "цвет подсветки"
 
 msgctxt "#88082"
 msgid "After startup KODI, move focus main menu to:"
@@ -687,12 +683,12 @@ msgid "Manually"
 msgstr "Вручную"
 
 msgctxt "#88086"
-msgid "Enable Wrap Around Menu"
-msgstr "Разрешить бесконечное меню"
+msgid "Wrap Around Menu"
+msgstr "Бесконечное меню"
 
 msgctxt "#88087"
-msgid "Enable Return to Start Menu Scroll"
-msgstr "Разрешить прокрутку меню"
+msgid "Return to Start Menu Scroll"
+msgstr "Прокрутка меню"
 
 msgctxt "#88900"
 msgid "Skin Jarvis"
@@ -791,12 +787,16 @@ msgid "Playlist widget should [B]Randomize[/B] the playlist sort order"
 msgstr "Виджет плейлиста будет иметь [B]Случайный[/B] порядок сортировки"
 
 msgctxt "#88130"
-msgid "Enable Widgets Title"
-msgstr "Разрешить заголовки виджетов"
+msgid "Widgets - Title"
+msgstr "Виджеты - Заголовок"
 
 msgctxt "#88131"
 msgid "Unwatched movies"
 msgstr "Не просмотренные фильмы"
+
+msgctxt "#88132"
+msgid "Background options"
+msgstr "Параметры фона"
 
 # home menu
 

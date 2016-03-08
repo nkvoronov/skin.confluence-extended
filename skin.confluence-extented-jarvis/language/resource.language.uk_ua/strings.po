@@ -166,7 +166,7 @@ msgstr "Налаштування головного екрану"
 
 msgctxt "#31102"
 msgid "Background"
-msgstr "Тло"
+msgstr "Фон"
 
 msgctxt "#31103"
 msgid "Show \"Paused\" in picture slideshow"
@@ -182,7 +182,7 @@ msgstr "Різні параметри"
 
 msgctxt "#31107"
 msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
-msgstr "Приховати маркування, отримані з імен файлів [COLOR = grey3] (наприклад, Blu-Ray, HD-DVD) [/COLOR]"
+msgstr "Приховати маркування, отримані з імен файлів [COLOR = grey3] (Blu-Ray, HD-DVD) [/COLOR]"
 
 msgctxt "#31108"
 msgid "Hide main menu buttons"
@@ -205,8 +205,8 @@ msgid "Options"
 msgstr "Параметри"
 
 msgctxt "#31113"
-msgid "logo"
-msgstr "логотип"
+msgid "Show KODI logo"
+msgstr "Показувати KODI логотип"
 
 msgctxt "#31114"
 msgid "Show Recently added Episode"
@@ -446,11 +446,11 @@ msgstr "[B]НАЛАШТУВАННЯ ЗОВНІШНЬОГО ВИГЛЯДУ[/B][CR
 
 msgctxt "#31401"
 msgid "[B]CONFIGURE VIDEO SETTINGS[/B][CR][CR]Manage your video library · Set video playback options · Change video listing options[CR]Set subtitle fonts"
-msgstr "[B]НАСТРОЙКА ПАРАМЕТРІВ ВІДЕО[/B][CR][CR]Управління медіатекою відео • Параметри відтворення відео[CR]Налаштування списку відео • Налаштування шрифту субтитрів"
+msgstr "[B]НАЛАШТУВАННЯ ПАРАМЕТРІВ ВІДЕО[/B][CR][CR]Управління медіатекою відео • Параметри відтворення відео[CR]Налаштування списку відео • Налаштування шрифту субтитрів"
 
 msgctxt "#31402"
 msgid "[B]CONFIGURE MUSIC SETTINGS[/B][CR][CR]Manage your music library · Set music playback options · Change music listing options[CR]Setup song submission"
-msgstr "[B]НАСТРОЙКА ПАРАМЕТРІВ МУЗИКИ[/B][CR][CR]Управління медіатекою аудіо • Параметри відтворення аудіо[CR]Налаштування списку аудіо • Налаштування додавання пісень"
+msgstr "[B]НАЛАШТУВАННЯ ПАРАМЕТРІВ МУЗИКИ[/B][CR][CR]Управління медіатекою аудіо • Параметри відтворення аудіо[CR]Налаштування списку аудіо • Налаштування додавання пісень"
 
 msgctxt "#31403"
 msgid "[B]CONFIGURE PICTURE SETTINGS[/B][CR][CR]Set picture listing options · Configure slideshow"
@@ -624,51 +624,47 @@ msgstr "МУЗ. КЛІПИ"
 
 msgctxt "#88070"
 msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add and remove home menu items[CR]Change skin backgrounds"
-msgstr "[B]НАСТРОЙКА ПАРАМЕТРІВ ОБКЛАДИНКИ[/B][CR][CR]Налаштування обкладинки • Додавання і видалення пунктів головного меню[CR]Зміна фону обкладинки"
+msgstr "[B]НАЛАШТУВАННЯ ПАРАМЕТРІВ ОБКЛАДИНКИ[/B][CR][CR]Налаштування обкладинки • Додавання і видалення пунктів головного меню[CR]Зміна фону обкладинки"
 
 msgctxt "#88071"
-msgid "Enable Stats Bar"
-msgstr "Включити панель статистики"
+msgid "Stats Bar"
+msgstr "Панель статистики"
 
 msgctxt "#88072"
-msgid "Disable automatic opening submenu"
-msgstr "Відключити автоматичне розкриття підміню"
+msgid "Automatic opening submenu"
+msgstr "Автоматичне розкриття підміню"
 
 msgctxt "#88073"
-msgid "Disable automatic opening add-on submenu"
-msgstr "Відключити автоматичне приховування панелі доповнень"
+msgid "Automatic opening add-on submenu"
+msgstr "Автоматичне приховування панелі доповнень"
 
 msgctxt "#88074"
-msgid "Hide - Title of add-on"
-msgstr "Приховати - Назви доповнень"
+msgid "Title of add-on"
+msgstr "Назви доповнень"
 
 msgctxt "#88075"
-msgid "Hide - Bottom line in home page"
-msgstr "Приховати - Нижню лінію в головному екрані"
+msgid "Bottom line in home page"
+msgstr "Нижню лінію в головному екрані"
 
 msgctxt "#88076"
-msgid "Hide - Bottom line everywhere except the home page"
-msgstr "Приховати - Нижню лінію всюди, крім головного екрану"
+msgid "Bottom line everywhere except the home page"
+msgstr "Нижню лінію всюди, крім головного екрану"
 
 msgctxt "#88077"
-msgid "Hide - Player control panel"
-msgstr "Приховати - Панель управління програвачем"
+msgid "Player control panel"
+msgstr "Панель управління програвачем"
 
 msgctxt "#88078"
-msgid "Hide - Power button"
-msgstr "Приховати - Кнопку виключення"
+msgid "Power button"
+msgstr "Кнопку виключення"
 
 msgctxt "#88079"
-msgid "Hide - Favorites button"
-msgstr "Приховати - Кнопку обраного"
-
-msgctxt "#88080"
-msgid "Select"
-msgstr "Вибрати"
+msgid "Favorites button"
+msgstr "Кнопку обраного"
 
 msgctxt "#88081"
-msgid "backlight color for main menu"
-msgstr "колір підсвічування для головного меню"
+msgid "backlight color"
+msgstr "колір підсвічування"
 
 msgctxt "#88082"
 msgid "After startup KODI, move focus main menu to:"
@@ -687,12 +683,12 @@ msgid "Manually"
 msgstr "Вручну"
 
 msgctxt "#88086"
-msgid "Enable Wrap Around Menu"
-msgstr "Дозволити нескінченне меню"
+msgid "Wrap Around Menu"
+msgstr "Нескінченне меню"
 
 msgctxt "#88087"
-msgid "Enable Return to Start Menu Scroll"
-msgstr "Дозволити прокрутку меню"
+msgid "Return to Start Menu Scroll"
+msgstr "Прокрутка меню"
 
 msgctxt "#88900"
 msgid "Skin Jarvis"
@@ -791,12 +787,16 @@ msgid "Playlist widget should [B]Randomize[/B] the playlist sort order"
 msgstr "Віджет плейлиста матиме [B]Випадковий[/B] порядок сортування"
 
 msgctxt "#88130"
-msgid "Enable Widgets Title"
-msgstr "Дозволити заголовки віджетів"
+msgid "Widgets - Title"
+msgstr "Виджеты - Заголовок"
 
 msgctxt "#88131"
 msgid "Unwatched movies"
 msgstr "Не переглянуті фільми"
+
+msgctxt "#88132"
+msgid "Background options"
+msgstr "Параметри фону"
 
 # home menu
 

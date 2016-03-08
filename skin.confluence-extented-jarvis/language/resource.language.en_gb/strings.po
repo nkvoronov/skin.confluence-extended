@@ -215,7 +215,7 @@ msgid "Miscellaneous options"
 msgstr ""
 
 msgctxt "#31107"
-msgid "Hide flagging read from video filenames [COLOR=grey3](Blu-ray, HD-DVD)[/COLOR]"
+msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
 msgstr ""
 
 msgctxt "#31108"
@@ -239,7 +239,7 @@ msgid "Options"
 msgstr ""
 
 msgctxt "#31113"
-msgid "logo"
+msgid "Show KODI logo"
 msgstr ""
 
 msgctxt "#31114"
@@ -727,47 +727,43 @@ msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add an
 msgstr ""
 
 msgctxt "#88071"
-msgid "Enable Stats Bar"
+msgid "Stats Bar"
 msgstr ""
 
 msgctxt "#88072"
-msgid "Disable automatic opening submenu"
+msgid "Automatic opening submenu"
 msgstr ""
 
 msgctxt "#88073"
-msgid "Disable automatic opening add-on submenu"
+msgid "Automatic opening add-on submenu"
 msgstr ""
 
 msgctxt "#88074"
-msgid "Hide - Title of add-on"
+msgid "Title of add-on"
 msgstr ""
 
 msgctxt "#88075"
-msgid "Hide - Bottom line in home page"
+msgid "Bottom line in home page"
 msgstr ""
 
 msgctxt "#88076"
-msgid "Hide - Bottom line everywhere except the home page"
+msgid "Bottom line everywhere except the home page"
 msgstr ""
 
 msgctxt "#88077"
-msgid "Hide - Player control panel"
+msgid "Player control panel"
 msgstr ""
 
 msgctxt "#88078"
-msgid "Hide - Power button"
+msgid "Power button"
 msgstr ""
 
 msgctxt "#88079"
-msgid "Hide - Favorites button"
-msgstr ""
-
-msgctxt "#88080"
-msgid "Select"
+msgid "Favorites button"
 msgstr ""
 
 msgctxt "#88081"
-msgid "backlight color for main menu"
+msgid "backlight color"
 msgstr ""
 
 msgctxt "#88082"
@@ -787,11 +783,11 @@ msgid "Manually"
 msgstr ""
 
 msgctxt "#88086"
-msgid "Enable Wrap Around Menu"
+msgid "Wrap Around Menu"
 msgstr ""
 
 msgctxt "#88087"
-msgid "Enable Return to Start Menu Scroll"
+msgid "Return to Start Menu Scroll"
 msgstr ""
 
 msgctxt "#88900"
@@ -891,11 +887,15 @@ msgid "Playlist widget should [B]Randomize[/B] the playlist sort order"
 msgstr ""
 
 msgctxt "#88130"
-msgid "Enable Widgets Title"
+msgid "Widgets - Title"
 msgstr ""
 
 msgctxt "#88131"
 msgid "Unwatched movies"
+msgstr ""
+
+msgctxt "#88132"
+msgid "Background options"
 msgstr ""
 
 # home menu
