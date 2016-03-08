@@ -618,7 +618,7 @@ msgstr "РАДІО"
 
 msgctxt "#31961"
 msgid "MUSIC VIDEOS"
-msgstr "МУЗ. КЛІПИ"
+msgstr "МУЗ. ВІДЕО"
 
 # extented added value
 
