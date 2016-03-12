@@ -101,508 +101,115 @@
 	</include>
 	<include name="HomeMainMenuContent">
 		<content>
-			<item id="1">
-				<description>Home Menu Item 01</description>
-				<label>$INFO[Skin.String(HomeItem.1.Label)]</label>
-				<onclick>SetProperty(MenuItemActive,Item01,Home)</onclick>
-				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.1.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$VAR[Background01],Home)</onclick>
-				<onclick>$INFO[Skin.String(HomeItem.1.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.1.DBackground)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.1.CBackground)]</thumb>
-				<property name="SubMenu">$INFO[Skin.String(HomeItem.1.Sub)]</property>
-				<property name="TypeItem">$INFO[Skin.String(HomeItem.1.Type)]</property>
-				<property name="AddOnSet">$INFO[Skin.String(HomeItem.1.Addon)]</property>
-				<property name="WidgetSet">$INFO[Skin.String(HomeItem.1.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist01.Type)]</property>
-				<property name="Background">$VAR[Background01]</property>
-                <visible>!IsEmpty(Skin.String(HomeItem.1.Path))</visible>
-                <include condition="StringCompare(Skin.String(HomeItem.1.Type),Weather)">VisibleWeather</include>
-                <include condition="StringCompare(Skin.String(HomeItem.1.Type),Radio)">VisibleRadio</include>
-                <include condition="StringCompare(Skin.String(HomeItem.1.Type),LiveTV)">VisibleLiveTV</include>
-                <include condition="StringCompare(Skin.String(HomeItem.1.Type),Movies)">VisibleMovies</include>
-                <include condition="StringCompare(Skin.String(HomeItem.1.Type),TVShows)">VisibleTVShows</include>
-                <include condition="StringCompare(Skin.String(HomeItem.1.Type),MusicVideo)">VisibleMusicVideo</include>
-                <include condition="StringCompare(Skin.String(HomeItem.1.Type),Music)">VisibleMusic</include>
-                <include condition="StringCompare(Skin.String(HomeItem.1.Type),PlayDisc)">VisiblePlayDisc</include>
-			</item>            
-			<item id="2">
-				<description>Home Menu Item 02</description>
-				<label>$INFO[Skin.String(HomeItem.2.Label)]</label>
-				<onclick>SetProperty(MenuItemActive,Item02,Home)</onclick>
-				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.2.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$VAR[Background02],Home)</onclick>
-				<onclick>$INFO[Skin.String(HomeItem.2.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.2.DBackground)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.2.CBackground)]</thumb>
-				<property name="SubMenu">$INFO[Skin.String(HomeItem.2.Sub)]</property>
-				<property name="TypeItem">$INFO[Skin.String(HomeItem.2.Type)]</property>
-				<property name="AddOnSet">$INFO[Skin.String(HomeItem.2.Addon)]</property>
-				<property name="WidgetSet">$INFO[Skin.String(HomeItem.2.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist02.Type)]</property>
-				<property name="Background">$VAR[Background02]</property>
-                <visible>!IsEmpty(Skin.String(HomeItem.2.Path))</visible>
-                <include condition="StringCompare(Skin.String(HomeItem.2.Type),Weather)">VisibleWeather</include>
-                <include condition="StringCompare(Skin.String(HomeItem.2.Type),Radio)">VisibleRadio</include>
-                <include condition="StringCompare(Skin.String(HomeItem.2.Type),LiveTV)">VisibleLiveTV</include>
-                <include condition="StringCompare(Skin.String(HomeItem.2.Type),Movies)">VisibleMovies</include>
-                <include condition="StringCompare(Skin.String(HomeItem.2.Type),TVShows)">VisibleTVShows</include>
-                <include condition="StringCompare(Skin.String(HomeItem.2.Type),MusicVideo)">VisibleMusicVideo</include>
-                <include condition="StringCompare(Skin.String(HomeItem.2.Type),Music)">VisibleMusic</include>
-                <include condition="StringCompare(Skin.String(HomeItem.2.Type),PlayDisc)">VisiblePlayDisc</include>                
-			</item>
-			<item id="3">
-				<description>Home Menu Item 03</description>
-				<label>$INFO[Skin.String(HomeItem.3.Label)]</label>
-				<onclick>SetProperty(MenuItemActive,Item03,Home)</onclick>
-				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.3.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$VAR[Background03],Home)</onclick>
-				<onclick>$INFO[Skin.String(HomeItem.3.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.3.DBackground)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.3.CBackground)]</thumb>
-				<property name="SubMenu">$INFO[Skin.String(HomeItem.3.Sub)]</property>
-				<property name="TypeItem">$INFO[Skin.String(HomeItem.3.Type)]</property>
-				<property name="AddOnSet">$INFO[Skin.String(HomeItem.3.Addon)]</property>
-				<property name="WidgetSet">$INFO[Skin.String(HomeItem.3.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist03.Type)]</property>
-				<property name="Background">$VAR[Background03]</property>
-                <visible>!IsEmpty(Skin.String(HomeItem.3.Path))</visible>
-                <include condition="StringCompare(Skin.String(HomeItem.3.Type),Weather)">VisibleWeather</include>
-                <include condition="StringCompare(Skin.String(HomeItem.3.Type),Radio)">VisibleRadio</include>
-                <include condition="StringCompare(Skin.String(HomeItem.3.Type),LiveTV)">VisibleLiveTV</include>
-                <include condition="StringCompare(Skin.String(HomeItem.3.Type),Movies)">VisibleMovies</include>
-                <include condition="StringCompare(Skin.String(HomeItem.3.Type),TVShows)">VisibleTVShows</include>
-                <include condition="StringCompare(Skin.String(HomeItem.3.Type),MusicVideo)">VisibleMusicVideo</include>
-                <include condition="StringCompare(Skin.String(HomeItem.3.Type),Music)">VisibleMusic</include>
-                <include condition="StringCompare(Skin.String(HomeItem.3.Type),PlayDisc)">VisiblePlayDisc</include>                 
-			</item>
-			<item id="4">
-				<description>Home Menu Item 04</description>
-				<label>$INFO[Skin.String(HomeItem.4.Label)]</label>
-				<onclick>SetProperty(MenuItemActive,Item04,Home)</onclick>
-				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.4.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$VAR[Background04],Home)</onclick>
-				<onclick>$INFO[Skin.String(HomeItem.4.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.4.DBackground)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.4.CBackground)]</thumb>
-				<property name="SubMenu">$INFO[Skin.String(HomeItem.4.Sub)]</property>
-				<property name="TypeItem">$INFO[Skin.String(HomeItem.4.Type)]</property>
-				<property name="AddOnSet">$INFO[Skin.String(HomeItem.4.Addon)]</property>
-				<property name="WidgetSet">$INFO[Skin.String(HomeItem.4.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist04.Type)]</property>
-				<property name="Background">$VAR[Background04]</property>
-				<visible>!IsEmpty(Skin.String(HomeItem.4.Path))</visible>
-                <include condition="StringCompare(Skin.String(HomeItem.4.Type),Weather)">VisibleWeather</include>
-                <include condition="StringCompare(Skin.String(HomeItem.4.Type),Radio)">VisibleRadio</include>
-                <include condition="StringCompare(Skin.String(HomeItem.4.Type),LiveTV)">VisibleLiveTV</include>
-                <include condition="StringCompare(Skin.String(HomeItem.4.Type),Movies)">VisibleMovies</include>
-                <include condition="StringCompare(Skin.String(HomeItem.4.Type),TVShows)">VisibleTVShows</include>
-                <include condition="StringCompare(Skin.String(HomeItem.4.Type),MusicVideo)">VisibleMusicVideo</include>
-                <include condition="StringCompare(Skin.String(HomeItem.4.Type),Music)">VisibleMusic</include>
-                <include condition="StringCompare(Skin.String(HomeItem.4.Type),PlayDisc)">VisiblePlayDisc</include> 
-			</item>
-			<item id="5">
-				<description>Home Menu Item 05</description>
-				<label>$INFO[Skin.String(HomeItem.5.Label)]</label>
-				<onclick>SetProperty(MenuItemActive,Item05,Home)</onclick>
-				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.5.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$VAR[Background05],Home)</onclick>
-				<onclick>$INFO[Skin.String(HomeItem.5.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.5.DBackground)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.5.CBackground)]</thumb>
-				<property name="SubMenu">$INFO[Skin.String(HomeItem.5.Sub)]</property>
-				<property name="TypeItem">$INFO[Skin.String(HomeItem.5.Type)]</property>
-				<property name="AddOnSet">$INFO[Skin.String(HomeItem.5.Addon)]</property>
-				<property name="WidgetSet">$INFO[Skin.String(HomeItem.5.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist05.Type)]</property>
-				<property name="Background">$VAR[Background05]</property>
-				<visible>!IsEmpty(Skin.String(HomeItem.5.Path))</visible>
-                <include condition="StringCompare(Skin.String(HomeItem.5.Type),Weather)">VisibleWeather</include>
-                <include condition="StringCompare(Skin.String(HomeItem.5.Type),Radio)">VisibleRadio</include>
-                <include condition="StringCompare(Skin.String(HomeItem.5.Type),LiveTV)">VisibleLiveTV</include>
-                <include condition="StringCompare(Skin.String(HomeItem.5.Type),Movies)">VisibleMovies</include>
-                <include condition="StringCompare(Skin.String(HomeItem.5.Type),TVShows)">VisibleTVShows</include>
-                <include condition="StringCompare(Skin.String(HomeItem.5.Type),MusicVideo)">VisibleMusicVideo</include>
-                <include condition="StringCompare(Skin.String(HomeItem.5.Type),Music)">VisibleMusic</include>
-                <include condition="StringCompare(Skin.String(HomeItem.5.Type),PlayDisc)">VisiblePlayDisc</include> 
-			</item>
-			<item id="6">
-				<description>Home Menu Item 06</description>
-				<label>$INFO[Skin.String(HomeItem.6.Label)]</label>
-				<onclick>SetProperty(MenuItemActive,Item06,Home)</onclick>
-				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.6.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$VAR[Background06],Home)</onclick>
-				<onclick>$INFO[Skin.String(HomeItem.6.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.6.DBackground)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.6.CBackground)]</thumb>
-				<property name="SubMenu">$INFO[Skin.String(HomeItem.6.Sub)]</property>
-				<property name="TypeItem">$INFO[Skin.String(HomeItem.6.Type)]</property>
-				<property name="AddOnSet">$INFO[Skin.String(HomeItem.6.Addon)]</property>
-				<property name="WidgetSet">$INFO[Skin.String(HomeItem.6.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist06.Type)]</property>
-				<property name="Background">$VAR[Background06]</property>
-				<visible>!IsEmpty(Skin.String(HomeItem.6.Path))</visible>
-                <include condition="StringCompare(Skin.String(HomeItem.6.Type),Weather)">VisibleWeather</include>
-                <include condition="StringCompare(Skin.String(HomeItem.6.Type),Radio)">VisibleRadio</include>
-                <include condition="StringCompare(Skin.String(HomeItem.6.Type),LiveTV)">VisibleLiveTV</include>
-                <include condition="StringCompare(Skin.String(HomeItem.6.Type),Movies)">VisibleMovies</include>
-                <include condition="StringCompare(Skin.String(HomeItem.6.Type),TVShows)">VisibleTVShows</include>
-                <include condition="StringCompare(Skin.String(HomeItem.6.Type),MusicVideo)">VisibleMusicVideo</include>
-                <include condition="StringCompare(Skin.String(HomeItem.6.Type),Music)">VisibleMusic</include>
-                <include condition="StringCompare(Skin.String(HomeItem.6.Type),PlayDisc)">VisiblePlayDisc</include> 
-			</item>
-			<item id="7">
-				<description>Home Menu Item 07</description>
-				<label>$INFO[Skin.String(HomeItem.7.Label)]</label>
-				<onclick>SetProperty(MenuItemActive,Item07,Home)</onclick>
-				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.7.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$VAR[Background07],Home)</onclick>
-				<onclick>$INFO[Skin.String(HomeItem.7.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.7.DBackground)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.7.CBackground)]</thumb>
-				<property name="SubMenu">$INFO[Skin.String(HomeItem.7.Sub)]</property>
-				<property name="TypeItem">$INFO[Skin.String(HomeItem.7.Type)]</property>
-				<property name="AddOnSet">$INFO[Skin.String(HomeItem.7.Addon)]</property>
-				<property name="WidgetSet">$INFO[Skin.String(HomeItem.7.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist07.Type)]</property>
-				<property name="Background">$VAR[Background07]</property>
-				<visible>!IsEmpty(Skin.String(HomeItem.7.Path))</visible>
-                <include condition="StringCompare(Skin.String(HomeItem.7.Type),Weather)">VisibleWeather</include>
-                <include condition="StringCompare(Skin.String(HomeItem.7.Type),Radio)">VisibleRadio</include>
-                <include condition="StringCompare(Skin.String(HomeItem.7.Type),LiveTV)">VisibleLiveTV</include>
-                <include condition="StringCompare(Skin.String(HomeItem.7.Type),Movies)">VisibleMovies</include>
-                <include condition="StringCompare(Skin.String(HomeItem.7.Type),TVShows)">VisibleTVShows</include>
-                <include condition="StringCompare(Skin.String(HomeItem.7.Type),MusicVideo)">VisibleMusicVideo</include>
-                <include condition="StringCompare(Skin.String(HomeItem.7.Type),Music)">VisibleMusic</include>
-                <include condition="StringCompare(Skin.String(HomeItem.7.Type),PlayDisc)">VisiblePlayDisc</include> 
-			</item>
-			<item id="8">
-				<description>Home Menu Item 08</description>
-				<label>$INFO[Skin.String(HomeItem.8.Label)]</label>
-				<onclick>SetProperty(MenuItemActive,Item08,Home)</onclick>
-				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.8.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$VAR[Background08],Home)</onclick>
-				<onclick>$INFO[Skin.String(HomeItem.8.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.8.DBackground)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.8.CBackground)]</thumb>
-				<property name="SubMenu">$INFO[Skin.String(HomeItem.8.Sub)]</property>
-				<property name="TypeItem">$INFO[Skin.String(HomeItem.8.Type)]</property>
-				<property name="AddOnSet">$INFO[Skin.String(HomeItem.8.Addon)]</property>
-				<property name="WidgetSet">$INFO[Skin.String(HomeItem.8.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist08.Type)]</property>
-				<property name="Background">$VAR[Background08]</property>
-				<visible>!IsEmpty(Skin.String(HomeItem.8.Path))</visible>
-                <include condition="StringCompare(Skin.String(HomeItem.8.Type),Weather)">VisibleWeather</include>
-                <include condition="StringCompare(Skin.String(HomeItem.8.Type),Radio)">VisibleRadio</include>
-                <include condition="StringCompare(Skin.String(HomeItem.8.Type),LiveTV)">VisibleLiveTV</include>
-                <include condition="StringCompare(Skin.String(HomeItem.8.Type),Movies)">VisibleMovies</include>
-                <include condition="StringCompare(Skin.String(HomeItem.8.Type),TVShows)">VisibleTVShows</include>
-                <include condition="StringCompare(Skin.String(HomeItem.8.Type),MusicVideo)">VisibleMusicVideo</include>
-                <include condition="StringCompare(Skin.String(HomeItem.8.Type),Music)">VisibleMusic</include>
-                <include condition="StringCompare(Skin.String(HomeItem.8.Type),PlayDisc)">VisiblePlayDisc</include> 
-			</item>
-			<item id="9">
-				<description>Home Menu Item 09</description>
-				<label>$INFO[Skin.String(HomeItem.9.Label)]</label>
-				<onclick>SetProperty(MenuItemActive,Item09,Home)</onclick>
-				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.9.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$VAR[Background09],Home)</onclick>
-				<onclick>$INFO[Skin.String(HomeItem.9.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.9.DBackground)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.9.CBackground)]</thumb>
-				<property name="SubMenu">$INFO[Skin.String(HomeItem.9.Sub)]</property>
-				<property name="TypeItem">$INFO[Skin.String(HomeItem.9.Type)]</property>
-				<property name="AddOnSet">$INFO[Skin.String(HomeItem.9.Addon)]</property>
-				<property name="WidgetSet">$INFO[Skin.String(HomeItem.9.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist09.Type)]</property>
-				<property name="Background">$VAR[Background09]</property>
-				<visible>!IsEmpty(Skin.String(HomeItem.9.Path))</visible>
-                <include condition="StringCompare(Skin.String(HomeItem.9.Type),Weather)">VisibleWeather</include>
-                <include condition="StringCompare(Skin.String(HomeItem.9.Type),Radio)">VisibleRadio</include>
-                <include condition="StringCompare(Skin.String(HomeItem.9.Type),LiveTV)">VisibleLiveTV</include>
-                <include condition="StringCompare(Skin.String(HomeItem.9.Type),Movies)">VisibleMovies</include>
-                <include condition="StringCompare(Skin.String(HomeItem.9.Type),TVShows)">VisibleTVShows</include>
-                <include condition="StringCompare(Skin.String(HomeItem.9.Type),MusicVideo)">VisibleMusicVideo</include>
-                <include condition="StringCompare(Skin.String(HomeItem.9.Type),Music)">VisibleMusic</include>
-                <include condition="StringCompare(Skin.String(HomeItem.9.Type),PlayDisc)">VisiblePlayDisc</include> 
-			</item>
-			<item id="10">
-				<description>Home Menu Item 10</description>
-				<label>$INFO[Skin.String(HomeItem.10.Label)]</label>
-				<onclick>SetProperty(MenuItemActive,Item10,Home)</onclick>
-				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.10.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$VAR[Background10],Home)</onclick>
-				<onclick>$INFO[Skin.String(HomeItem.10.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.10.DBackground)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.10.CBackground)]</thumb>
-				<property name="SubMenu">$INFO[Skin.String(HomeItem.10.Sub)]</property>
-				<property name="TypeItem">$INFO[Skin.String(HomeItem.10.Type)]</property>
-				<property name="AddOnSet">$INFO[Skin.String(HomeItem.10.Addon)]</property>
-				<property name="WidgetSet">$INFO[Skin.String(HomeItem.10.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist10.Type)]</property>
-				<property name="Background">$VAR[Background10]</property>
-				<visible>!IsEmpty(Skin.String(HomeItem.10.Path))</visible>
-                <include condition="StringCompare(Skin.String(HomeItem.10.Type),Weather)">VisibleWeather</include>
-                <include condition="StringCompare(Skin.String(HomeItem.10.Type),Radio)">VisibleRadio</include>
-                <include condition="StringCompare(Skin.String(HomeItem.10.Type),LiveTV)">VisibleLiveTV</include>
-                <include condition="StringCompare(Skin.String(HomeItem.10.Type),Movies)">VisibleMovies</include>
-                <include condition="StringCompare(Skin.String(HomeItem.10.Type),TVShows)">VisibleTVShows</include>
-                <include condition="StringCompare(Skin.String(HomeItem.10.Type),MusicVideo)">VisibleMusicVideo</include>
-                <include condition="StringCompare(Skin.String(HomeItem.10.Type),Music)">VisibleMusic</include>
-                <include condition="StringCompare(Skin.String(HomeItem.10.Type),PlayDisc)">VisiblePlayDisc</include> 
-			</item>
-			<item id="11">
-				<description>Home Menu Item 11</description>
-				<label>$INFO[Skin.String(HomeItem.11.Label)]</label>
-				<onclick>SetProperty(MenuItemActive,Item11,Home)</onclick>
-				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.11.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$VAR[Background11],Home)</onclick>
-				<onclick>$INFO[Skin.String(HomeItem.11.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.11.DBackground)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.11.CBackground)]</thumb>
-				<property name="SubMenu">$INFO[Skin.String(HomeItem.11.Sub)]</property>
-				<property name="TypeItem">$INFO[Skin.String(HomeItem.11.Type)]</property>
-				<property name="AddOnSet">$INFO[Skin.String(HomeItem.11.Addon)]</property>
-				<property name="WidgetSet">$INFO[Skin.String(HomeItem.11.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist11.Type)]</property>
-				<property name="Background">$VAR[Background11]</property>
-                <visible>!IsEmpty(Skin.String(HomeItem.11.Path))</visible>
-                <include condition="StringCompare(Skin.String(HomeItem.11.Type),Weather)">VisibleWeather</include>
-                <include condition="StringCompare(Skin.String(HomeItem.11.Type),Radio)">VisibleRadio</include>
-                <include condition="StringCompare(Skin.String(HomeItem.11.Type),LiveTV)">VisibleLiveTV</include>
-                <include condition="StringCompare(Skin.String(HomeItem.11.Type),Movies)">VisibleMovies</include>
-                <include condition="StringCompare(Skin.String(HomeItem.11.Type),TVShows)">VisibleTVShows</include>
-                <include condition="StringCompare(Skin.String(HomeItem.11.Type),MusicVideo)">VisibleMusicVideo</include>
-                <include condition="StringCompare(Skin.String(HomeItem.11.Type),Music)">VisibleMusic</include>
-                <include condition="StringCompare(Skin.String(HomeItem.11.Type),PlayDisc)">VisiblePlayDisc</include>
-			</item>
-			<item id="12">
-				<description>Home Menu Item 12</description>
-				<label>$INFO[Skin.String(HomeItem.12.Label)]</label>
-				<onclick>SetProperty(MenuItemActive,Item12,Home)</onclick>
-				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.12.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$VAR[Background12],Home)</onclick>
-				<onclick>$INFO[Skin.String(HomeItem.12.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.12.DBackground)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.12.CBackground)]</thumb>
-				<property name="SubMenu">$INFO[Skin.String(HomeItem.12.Sub)]</property>
-				<property name="TypeItem">$INFO[Skin.String(HomeItem.12.Type)]</property>
-				<property name="AddOnSet">$INFO[Skin.String(HomeItem.12.Addon)]</property>
-				<property name="WidgetSet">$INFO[Skin.String(HomeItem.12.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist12.Type)]</property>
-				<property name="Background">$VAR[Background12]</property>
-				<visible>!IsEmpty(Skin.String(HomeItem.12.Path))</visible>
-                <include condition="StringCompare(Skin.String(HomeItem.12.Type),Weather)">VisibleWeather</include>
-                <include condition="StringCompare(Skin.String(HomeItem.12.Type),Radio)">VisibleRadio</include>
-                <include condition="StringCompare(Skin.String(HomeItem.12.Type),LiveTV)">VisibleLiveTV</include>
-                <include condition="StringCompare(Skin.String(HomeItem.12.Type),Movies)">VisibleMovies</include>
-                <include condition="StringCompare(Skin.String(HomeItem.12.Type),TVShows)">VisibleTVShows</include>
-                <include condition="StringCompare(Skin.String(HomeItem.12.Type),MusicVideo)">VisibleMusicVideo</include>
-                <include condition="StringCompare(Skin.String(HomeItem.12.Type),Music)">VisibleMusic</include>
-                <include condition="StringCompare(Skin.String(HomeItem.12.Type),PlayDisc)">VisiblePlayDisc</include>
-			</item>
-			<item id="13">
-				<description>Home Menu Item 13</description>
-				<label>$INFO[Skin.String(HomeItem.13.Label)]</label>
-				<onclick>SetProperty(MenuItemActive,Item13,Home)</onclick>
-				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.13.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$VAR[Background13],Home)</onclick>
-				<onclick>$INFO[Skin.String(HomeItem.13.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.13.DBackground)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.13.CBackground)]</thumb>
-				<property name="SubMenu">$INFO[Skin.String(HomeItem.13.Sub)]</property>
-				<property name="TypeItem">$INFO[Skin.String(HomeItem.13.Type)]</property>
-				<property name="AddOnSet">$INFO[Skin.String(HomeItem.13.Addon)]</property>
-				<property name="WidgetSet">$INFO[Skin.String(HomeItem.13.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist13.Type)]</property>
-				<property name="Background">$VAR[Background13]</property>
-				<visible>!IsEmpty(Skin.String(HomeItem.13.Path))</visible>
-                <include condition="StringCompare(Skin.String(HomeItem.13.Type),Weather)">VisibleWeather</include>
-                <include condition="StringCompare(Skin.String(HomeItem.13.Type),Radio)">VisibleRadio</include>
-                <include condition="StringCompare(Skin.String(HomeItem.13.Type),LiveTV)">VisibleLiveTV</include>
-                <include condition="StringCompare(Skin.String(HomeItem.13.Type),Movies)">VisibleMovies</include>
-                <include condition="StringCompare(Skin.String(HomeItem.13.Type),TVShows)">VisibleTVShows</include>
-                <include condition="StringCompare(Skin.String(HomeItem.13.Type),MusicVideo)">VisibleMusicVideo</include>
-                <include condition="StringCompare(Skin.String(HomeItem.13.Type),Music)">VisibleMusic</include>
-                <include condition="StringCompare(Skin.String(HomeItem.13.Type),PlayDisc)">VisiblePlayDisc</include>
-			</item>
-			<item id="14">
-				<description>Home Menu Item 14</description>
-				<label>$INFO[Skin.String(HomeItem.14.Label)]</label>
-				<onclick>SetProperty(MenuItemActive,Item14,Home)</onclick>
-				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.14.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$VAR[Background14],Home)</onclick>
-				<onclick>$INFO[Skin.String(HomeItem.14.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.14.DBackground)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.14.CBackground)]</thumb>
-				<property name="SubMenu">$INFO[Skin.String(HomeItem.14.Sub)]</property>
-				<property name="TypeItem">$INFO[Skin.String(HomeItem.14.Type)]</property>
-				<property name="AddOnSet">$INFO[Skin.String(HomeItem.14.Addon)]</property>
-				<property name="WidgetSet">$INFO[Skin.String(HomeItem.14.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist14.Type)]</property>
-				<property name="Background">$VAR[Background14]</property>
-				<visible>!IsEmpty(Skin.String(HomeItem.14.Path))</visible>
-                <include condition="StringCompare(Skin.String(HomeItem.14.Type),Weather)">VisibleWeather</include>
-                <include condition="StringCompare(Skin.String(HomeItem.14.Type),Radio)">VisibleRadio</include>
-                <include condition="StringCompare(Skin.String(HomeItem.14.Type),LiveTV)">VisibleLiveTV</include>
-                <include condition="StringCompare(Skin.String(HomeItem.14.Type),Movies)">VisibleMovies</include>
-                <include condition="StringCompare(Skin.String(HomeItem.14.Type),TVShows)">VisibleTVShows</include>
-                <include condition="StringCompare(Skin.String(HomeItem.14.Type),MusicVideo)">VisibleMusicVideo</include>
-                <include condition="StringCompare(Skin.String(HomeItem.14.Type),Music)">VisibleMusic</include>
-                <include condition="StringCompare(Skin.String(HomeItem.14.Type),PlayDisc)">VisiblePlayDisc</include>
-			</item>
-			<item id="15">
-				<description>Home Menu Item 15</description>
-				<label>$INFO[Skin.String(HomeItem.15.Label)]</label>
-				<onclick>SetProperty(MenuItemActive,Item15,Home)</onclick>
-				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.15.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$VAR[Background15],Home)</onclick>
-				<onclick>$INFO[Skin.String(HomeItem.15.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.15.DBackground)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.15.CBackground)]</thumb>
-				<property name="SubMenu">$INFO[Skin.String(HomeItem.15.Sub)]</property>
-				<property name="TypeItem">$INFO[Skin.String(HomeItem.15.Type)]</property>
-				<property name="AddOnSet">$INFO[Skin.String(HomeItem.15.Addon)]</property>
-				<property name="WidgetSet">$INFO[Skin.String(HomeItem.15.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist15.Type)]</property>
-				<property name="Background">$VAR[Background15]</property>
-				<visible>!IsEmpty(Skin.String(HomeItem.15.Path))</visible>
-                <include condition="StringCompare(Skin.String(HomeItem.15.Type),Weather)">VisibleWeather</include>
-                <include condition="StringCompare(Skin.String(HomeItem.15.Type),Radio)">VisibleRadio</include>
-                <include condition="StringCompare(Skin.String(HomeItem.15.Type),LiveTV)">VisibleLiveTV</include>
-                <include condition="StringCompare(Skin.String(HomeItem.15.Type),Movies)">VisibleMovies</include>
-                <include condition="StringCompare(Skin.String(HomeItem.15.Type),TVShows)">VisibleTVShows</include>
-                <include condition="StringCompare(Skin.String(HomeItem.15.Type),MusicVideo)">VisibleMusicVideo</include>
-                <include condition="StringCompare(Skin.String(HomeItem.15.Type),Music)">VisibleMusic</include>
-                <include condition="StringCompare(Skin.String(HomeItem.15.Type),PlayDisc)">VisiblePlayDisc</include>
-			</item>
-			<item id="16">
-				<description>Home Menu Item 16</description>
-				<label>$INFO[Skin.String(HomeItem.16.Label)]</label>
-				<onclick>SetProperty(MenuItemActive,Item16,Home)</onclick>
-				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.16.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$VAR[Background16],Home)</onclick>
-				<onclick>$INFO[Skin.String(HomeItem.16.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.16.DBackground)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.16.CBackground)]</thumb>
-				<property name="SubMenu">$INFO[Skin.String(HomeItem.16.Sub)]</property>
-				<property name="TypeItem">$INFO[Skin.String(HomeItem.16.Type)]</property>
-				<property name="AddOnSet">$INFO[Skin.String(HomeItem.16.Addon)]</property>
-				<property name="WidgetSet">$INFO[Skin.String(HomeItem.16.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist16.Type)]</property>
-				<property name="Background">$VAR[Background16]</property>
-				<visible>!IsEmpty(Skin.String(HomeItem.16.Path))</visible>
-                <include condition="StringCompare(Skin.String(HomeItem.16.Type),Weather)">VisibleWeather</include>
-                <include condition="StringCompare(Skin.String(HomeItem.16.Type),Radio)">VisibleRadio</include>
-                <include condition="StringCompare(Skin.String(HomeItem.16.Type),LiveTV)">VisibleLiveTV</include>
-                <include condition="StringCompare(Skin.String(HomeItem.16.Type),Movies)">VisibleMovies</include>
-                <include condition="StringCompare(Skin.String(HomeItem.16.Type),TVShows)">VisibleTVShows</include>
-                <include condition="StringCompare(Skin.String(HomeItem.16.Type),MusicVideo)">VisibleMusicVideo</include>
-                <include condition="StringCompare(Skin.String(HomeItem.16.Type),Music)">VisibleMusic</include>
-                <include condition="StringCompare(Skin.String(HomeItem.16.Type),PlayDisc)">VisiblePlayDisc</include>
-			</item>
-			<item id="17">
-				<description>Home Menu Item 17</description>
-				<label>$INFO[Skin.String(HomeItem.17.Label)]</label>
-				<onclick>SetProperty(MenuItemActive,Item17,Home)</onclick>
-				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.17.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$VAR[Background17],Home)</onclick>
-				<onclick>$INFO[Skin.String(HomeItem.17.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.17.DBackground)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.17.CBackground)]</thumb>
-				<property name="SubMenu">$INFO[Skin.String(HomeItem.17.Sub)]</property>
-				<property name="TypeItem">$INFO[Skin.String(HomeItem.17.Type)]</property>
-				<property name="AddOnSet">$INFO[Skin.String(HomeItem.17.Addon)]</property>
-				<property name="WidgetSet">$INFO[Skin.String(HomeItem.17.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist17.Type)]</property>
-				<property name="Background">$VAR[Background17]</property>
-				<visible>!IsEmpty(Skin.String(HomeItem.17.Path))</visible>
-                <include condition="StringCompare(Skin.String(HomeItem.17.Type),Weather)">VisibleWeather</include>
-                <include condition="StringCompare(Skin.String(HomeItem.17.Type),Radio)">VisibleRadio</include>
-                <include condition="StringCompare(Skin.String(HomeItem.17.Type),LiveTV)">VisibleLiveTV</include>
-                <include condition="StringCompare(Skin.String(HomeItem.17.Type),Movies)">VisibleMovies</include>
-                <include condition="StringCompare(Skin.String(HomeItem.17.Type),TVShows)">VisibleTVShows</include>
-                <include condition="StringCompare(Skin.String(HomeItem.17.Type),MusicVideo)">VisibleMusicVideo</include>
-                <include condition="StringCompare(Skin.String(HomeItem.17.Type),Music)">VisibleMusic</include>
-                <include condition="StringCompare(Skin.String(HomeItem.17.Type),PlayDisc)">VisiblePlayDisc</include>
-			</item>
-			<item id="18">
-				<description>Home Menu Item 18</description>
-				<label>$INFO[Skin.String(HomeItem.18.Label)]</label>
-				<onclick>SetProperty(MenuItemActive,Item18,Home)</onclick>
-				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.18.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$VAR[Background18],Home)</onclick>
-				<onclick>$INFO[Skin.String(HomeItem.18.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.18.DBackground)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.18.CBackground)]</thumb>
-				<property name="SubMenu">$INFO[Skin.String(HomeItem.18.Sub)]</property>
-				<property name="TypeItem">$INFO[Skin.String(HomeItem.18.Type)]</property>
-				<property name="AddOnSet">$INFO[Skin.String(HomeItem.18.Addon)]</property>
-				<property name="WidgetSet">$INFO[Skin.String(HomeItem.18.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist18.Type)]</property>
-				<property name="Background">$VAR[Background18]</property>
-				<visible>!IsEmpty(Skin.String(HomeItem.18.Path))</visible>
-                <include condition="StringCompare(Skin.String(HomeItem.18.Type),Weather)">VisibleWeather</include>
-                <include condition="StringCompare(Skin.String(HomeItem.18.Type),Radio)">VisibleRadio</include>
-                <include condition="StringCompare(Skin.String(HomeItem.18.Type),LiveTV)">VisibleLiveTV</include>
-                <include condition="StringCompare(Skin.String(HomeItem.18.Type),Movies)">VisibleMovies</include>
-                <include condition="StringCompare(Skin.String(HomeItem.18.Type),TVShows)">VisibleTVShows</include>
-                <include condition="StringCompare(Skin.String(HomeItem.18.Type),MusicVideo)">VisibleMusicVideo</include>
-                <include condition="StringCompare(Skin.String(HomeItem.18.Type),Music)">VisibleMusic</include>
-                <include condition="StringCompare(Skin.String(HomeItem.18.Type),PlayDisc)">VisiblePlayDisc</include>
-			</item>
-			<item id="19">
-				<description>Home Menu Item 19</description>
-				<label>$INFO[Skin.String(HomeItem.19.Label)]</label>
-				<onclick>SetProperty(MenuItemActive,Item19,Home)</onclick>
-				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.19.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$VAR[Background19],Home)</onclick>
-				<onclick>$INFO[Skin.String(HomeItem.19.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.19.DBackground)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.19.CBackground)]</thumb>
-				<property name="SubMenu">$INFO[Skin.String(HomeItem.19.Sub)]</property>
-				<property name="TypeItem">$INFO[Skin.String(HomeItem.19.Type)]</property>
-				<property name="AddOnSet">$INFO[Skin.String(HomeItem.19.Addon)]</property>
-				<property name="WidgetSet">$INFO[Skin.String(HomeItem.19.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist19.Type)]</property>
-				<property name="Background">$VAR[Background19]</property>
-				<visible>!IsEmpty(Skin.String(HomeItem.19.Path))</visible>
-                <include condition="StringCompare(Skin.String(HomeItem.19.Type),Weather)">VisibleWeather</include>
-                <include condition="StringCompare(Skin.String(HomeItem.19.Type),Radio)">VisibleRadio</include>
-                <include condition="StringCompare(Skin.String(HomeItem.19.Type),LiveTV)">VisibleLiveTV</include>
-                <include condition="StringCompare(Skin.String(HomeItem.19.Type),Movies)">VisibleMovies</include>
-                <include condition="StringCompare(Skin.String(HomeItem.19.Type),TVShows)">VisibleTVShows</include>
-                <include condition="StringCompare(Skin.String(HomeItem.19.Type),MusicVideo)">VisibleMusicVideo</include>
-                <include condition="StringCompare(Skin.String(HomeItem.19.Type),Music)">VisibleMusic</include>
-                <include condition="StringCompare(Skin.String(HomeItem.19.Type),PlayDisc)">VisiblePlayDisc</include>
-			</item>
-			<item id="20">
-				<description>Home Menu Item 20</description>
-				<label>$INFO[Skin.String(HomeItem.20.Label)]</label>
-				<onclick>SetProperty(MenuItemActive,Item20,Home)</onclick>
-				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.20.Type)],Home)</onclick>
-				<onclick>SetProperty(MenuBackground,$VAR[Background20],Home)</onclick>
-				<onclick>$INFO[Skin.String(HomeItem.20.Path)]</onclick>
-				<icon>$INFO[Skin.String(HomeItem.20.DBackground)]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.20.CBackground)]</thumb>
-				<property name="SubMenu">$INFO[Skin.String(HomeItem.20.Sub)]</property>
-				<property name="TypeItem">$INFO[Skin.String(HomeItem.20.Type)]</property>
-				<property name="AddOnSet">$INFO[Skin.String(HomeItem.20.Addon)]</property>
-				<property name="WidgetSet">$INFO[Skin.String(HomeItem.20.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist20.Type)]</property>
-				<property name="Background">$VAR[Background20]</property>
-				<visible>!IsEmpty(Skin.String(HomeItem.20.Path))</visible>
-                <include condition="StringCompare(Skin.String(HomeItem.20.Type),Weather)">VisibleWeather</include>
-                <include condition="StringCompare(Skin.String(HomeItem.20.Type),Radio)">VisibleRadio</include>
-                <include condition="StringCompare(Skin.String(HomeItem.20.Type),LiveTV)">VisibleLiveTV</include>
-                <include condition="StringCompare(Skin.String(HomeItem.20.Type),Movies)">VisibleMovies</include>
-                <include condition="StringCompare(Skin.String(HomeItem.20.Type),TVShows)">VisibleTVShows</include>
-                <include condition="StringCompare(Skin.String(HomeItem.20.Type),MusicVideo)">VisibleMusicVideo</include>
-                <include condition="StringCompare(Skin.String(HomeItem.20.Type),Music)">VisibleMusic</include>
-                <include condition="StringCompare(Skin.String(HomeItem.20.Type),PlayDisc)">VisiblePlayDisc</include>
-			</item>
+            <include name="HomeMainMenuContentItem">
+                <param name="id" value="1" />
+                <param name="id2" value="01" />
+            </include>
+            <include name="HomeMainMenuContentItem">
+                <param name="id" value="2" />
+                <param name="id2" value="02" />
+            </include>            
+            <include name="HomeMainMenuContentItem">
+                <param name="id" value="3" />
+                <param name="id2" value="03" />
+            </include>
+            <include name="HomeMainMenuContentItem">
+                <param name="id" value="4" />
+                <param name="id2" value="04" />
+            </include>            
+            <include name="HomeMainMenuContentItem">
+                <param name="id" value="5" />
+                <param name="id2" value="05" />
+            </include>
+            <include name="HomeMainMenuContentItem">
+                <param name="id" value="6" />
+                <param name="id2" value="06" />
+            </include>
+            <include name="HomeMainMenuContentItem">
+                <param name="id" value="7" />
+                <param name="id2" value="07" />
+            </include>            
+            <include name="HomeMainMenuContentItem">
+                <param name="id" value="8" />
+                <param name="id2" value="08" />
+            </include>
+            <include name="HomeMainMenuContentItem">
+                <param name="id" value="9" />
+                <param name="id2" value="09" />
+            </include>            
+            <include name="HomeMainMenuContentItem">
+                <param name="id" value="10" />
+                <param name="id2" value="10" />
+            </include>  
+            <include name="HomeMainMenuContentItem">
+                <param name="id" value="11" />
+                <param name="id2" value="11" />
+            </include>
+            <include name="HomeMainMenuContentItem">
+                <param name="id" value="12" />
+                <param name="id2" value="12" />
+            </include>            
+            <include name="HomeMainMenuContentItem">
+                <param name="id" value="13" />
+                <param name="id2" value="13" />
+            </include>
+            <include name="HomeMainMenuContentItem">
+                <param name="id" value="14" />
+                <param name="id2" value="14" />
+            </include>            
+            <include name="HomeMainMenuContentItem">
+                <param name="id" value="15" />
+                <param name="id2" value="15" />
+            </include>
+            <include name="HomeMainMenuContentItem">
+                <param name="id" value="16" />
+                <param name="id2" value="16" />
+            </include>
+            <include name="HomeMainMenuContentItem">
+                <param name="id" value="17" />
+                <param name="id2" value="17" />
+            </include>            
+            <include name="HomeMainMenuContentItem">
+                <param name="id" value="18" />
+                <param name="id2" value="18" />
+            </include>
+            <include name="HomeMainMenuContentItem">
+                <param name="id" value="19" />
+                <param name="id2" value="19" />
+            </include>            
+            <include name="HomeMainMenuContentItem">
+                <param name="id" value="20" />
+                <param name="id2" value="20" />
+            </include>
 		</content>
 	</include>
+    <include name="HomeMainMenuContentItem">
+        <item id="$PARAM[id]">
+            <description>Home Menu Item</description>
+            <label>$INFO[Skin.String(HomeItem.$PARAM[id].Label)]</label>
+            <onclick>SetProperty(MenuItemActive,Item$PARAM[id2],Home)</onclick>
+            <onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.$PARAM[id].Type)],Home)</onclick>
+            <onclick>SetProperty(MenuBackground,$VAR[Background$PARAM[id2]],Home)</onclick>
+            <onclick>$INFO[Skin.String(HomeItem.$PARAM[id].Path)]</onclick>
+            <icon>$INFO[Skin.String(HomeItem.$PARAM[id].DBackground)]</icon>
+            <thumb>$INFO[Skin.String(HomeItem.$PARAM[id].CBackground)]</thumb>
+            <property name="SubMenu">$INFO[Skin.String(HomeItem.$PARAM[id].Sub)]</property>
+            <property name="TypeItem">$INFO[Skin.String(HomeItem.$PARAM[id].Type)]</property>
+            <property name="AddOnSet">$INFO[Skin.String(HomeItem.$PARAM[id].Addon)]</property>
+            <property name="WidgetSet">$INFO[Skin.String(HomeItem.$PARAM[id].Widget)]</property>
+            <property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist$PARAM[id2].Type)]</property>
+            <property name="Background">$VAR[Background$PARAM[id2]]</property>
+            <visible>!IsEmpty(Skin.String(HomeItem.$PARAM[id].Path))</visible>
+            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),Weather)">VisibleWeather</include>
+            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),Radio)">VisibleRadio</include>
+            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),LiveTV)">VisibleLiveTV</include>
+            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),Movies)">VisibleMovies</include>
+            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),TVShows)">VisibleTVShows</include>
+            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),MusicVideo)">VisibleMusicVideo</include>
+            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),Music)">VisibleMusic</include>
+            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),PlayDisc)">VisiblePlayDisc</include>
+        </item>
+    </include>
     <include name="VisibleWeather">
         <visible>!IsEmpty(Weather.Plugin)</visible>
     </include>
@@ -844,5 +451,88 @@
         <onload>Skin.SetBool(SingleGlobalBackground)</onload>
 		<onload condition="!System.HasAddon(script.randomandlastitems)">Skin.Setbool(ActivateScriptPlaylist)</onload>
 		<onload>Skin.SetBool(InitialSetUpRun)</onload>
-	</include>
+	</include>   
+    <include name="HomeMainMenuSettingsItem">
+        <control type="button" id="$PARAM[group_id1]">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label>[B]$LOCALIZE[89001] - $PARAM[id2][/B]</label>
+            <label2>[COLOR=selected]$VAR[UsersHomeMenu$PARAM[id2]Name][/COLOR]</label2>
+            <textcolor>blue</textcolor>
+            <focusedcolor>blue</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+            <onclick>SetProperty(UsrSelectBtn,HomeItem.$PARAM[id],Home)</onclick>
+            <onclick condition="Skin.String(HomeItem.$PARAM[id].Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
+            <onclick condition="Skin.String(HomeItem.$PARAM[id].Path) + !Skin.String(HomeItem.$PARAM[id].Playlist)">SetProperty(UsrSelectPath,InUse,Home)</onclick>
+            <onclick condition="Skin.String(HomeItem.$PARAM[id].Path) + Skin.String(HomeItem.$PARAM[id].Playlist)">SetProperty(UsrSelectPath,PlaylistInUse,Home)</onclick>
+            <onclick>ActivateWindow(2114)</onclick>
+        </control>
+        <control type="button" id="$PARAM[group_id2]">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label> - $LOCALIZE[89002]</label>
+            <label2>[COLOR=grey2]$VAR[UsrDefSubMenuLabel$PARAM[id2]][/COLOR]</label2>
+            <textcolor>grey2</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+            <onclick>SetProperty(UsrSelectBtn,HomeItem.$PARAM[id],Home)</onclick>
+            <onclick>ActivateWindow(2116)</onclick>
+            <visible>!IsEmpty(Skin.String(HomeItem.$PARAM[id].Label))</visible>
+        </control>
+        <control type="button" id="$PARAM[group_id3]">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label> - $LOCALIZE[89003]</label>
+            <label2>[COLOR=grey2]$VAR[UsrDefItemAddOnLabel$PARAM[id2]][/COLOR]</label2>
+            <textcolor>grey2</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+            <onclick>SetProperty(UsrSelectBtn,HomeItem.$PARAM[id],Home)</onclick>
+            <onclick>ActivateWindow(2117)</onclick>
+            <visible>!IsEmpty(Skin.String(HomeItem.$PARAM[id].Label))</visible>
+        </control>
+        <control type="button" id="$PARAM[group_id4]">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label> - $LOCALIZE[89004]</label>
+            <label2>[COLOR=grey2]$VAR[UsrDefItemWidgetLabel$PARAM[id2]][/COLOR]</label2>
+            <textcolor>grey2</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+            <onclick>SetProperty(UsrSelectBtn,HomeItem.$PARAM[id],Home)</onclick>
+            <onclick>ActivateWindow(2118)</onclick>
+            <visible>!IsEmpty(Skin.String(HomeItem.$PARAM[id].Label))</visible>
+        </control>
+        <control type="button" id="$PARAM[group_id5]">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <align>left</align>
+            <label> - $LOCALIZE[89005]</label>
+            <textcolor>grey2</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+            <onclick>SetProperty(UsrSelectBtn,HomeItem.$PARAM[id],Home)</onclick>
+            <onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(HomeItem.$PARAM[id].Label)],Home)</onclick>
+            <onclick>SetProperty(SwapItemPath,$INFO[Skin.String(HomeItem.$PARAM[id].Path)],Home)</onclick>
+            <onclick>SetProperty(SwapItemSub,$INFO[Skin.String(HomeItem.$PARAM[id].Sub)],Home)</onclick>
+            <onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.$PARAM[id].Addon)],Home)</onclick>
+            <onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.$PARAM[id].Widget)],Home)</onclick>
+            <onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.$PARAM[id].Type)],Home)</onclick>
+            <onclick>SetProperty(SwapItemDBackground,$INFO[Skin.String(HomeItem.$PARAM[id].DBackground)],Home)</onclick>
+            <onclick>SetProperty(SwapItemCBackground,$INFO[Skin.String(HomeItem.$PARAM[id].CBackground)],Home)</onclick>
+            <onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.$PARAM[id].Playlist)],Home)</onclick>
+            <onclick>ActivateWindow(2128)</onclick>
+            <visible>!IsEmpty(Skin.String(HomeItem.$PARAM[id].Label))</visible>
+        </control>
+    </include>
 </includes>

@@ -4,6 +4,52 @@
 		<value condition="Skin.HasSetting(EnableRandomPlaylist)">Random</value>
 		<value>Last</value>
 	</variable>
+    <variable name="VideoPlaylistTitle" type="text">
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),VideoPlayList) + Container(9000).Hasfocus(1)">$INFO[Window(Home).Property(HomePlayList01.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),VideoPlayList) + Container(9000).Hasfocus(2)">$INFO[Window(Home).Property(HomePlayList02.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),VideoPlayList) + Container(9000).Hasfocus(3)">$INFO[Window(Home).Property(HomePlayList03.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),VideoPlayList) + Container(9000).Hasfocus(4)">$INFO[Window(Home).Property(HomePlayList04.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),VideoPlayList) + Container(9000).Hasfocus(5)">$INFO[Window(Home).Property(HomePlayList05.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),VideoPlayList) + Container(9000).Hasfocus(6)">$INFO[Window(Home).Property(HomePlayList06.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),VideoPlayList) + Container(9000).Hasfocus(7)">$INFO[Window(Home).Property(HomePlayList07.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),VideoPlayList) + Container(9000).Hasfocus(8)">$INFO[Window(Home).Property(HomePlayList08.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),VideoPlayList) + Container(9000).Hasfocus(9)">$INFO[Window(Home).Property(HomePlayList09.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),VideoPlayList) + Container(9000).Hasfocus(10)">$INFO[Window(Home).Property(HomePlayList10.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),VideoPlayList) + Container(9000).Hasfocus(11)">$INFO[Window(Home).Property(HomePlayList11.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),VideoPlayList) + Container(9000).Hasfocus(12)">$INFO[Window(Home).Property(HomePlayList12.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),VideoPlayList) + Container(9000).Hasfocus(13)">$INFO[Window(Home).Property(HomePlayList13.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),VideoPlayList) + Container(9000).Hasfocus(14)">$INFO[Window(Home).Property(HomePlayList14.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),VideoPlayList) + Container(9000).Hasfocus(15)">$INFO[Window(Home).Property(HomePlayList15.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),VideoPlayList) + Container(9000).Hasfocus(16)">$INFO[Window(Home).Property(HomePlayList16.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),VideoPlayList) + Container(9000).Hasfocus(17)">$INFO[Window(Home).Property(HomePlayList17.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),VideoPlayList) + Container(9000).Hasfocus(18)">$INFO[Window(Home).Property(HomePlayList18.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),VideoPlayList) + Container(9000).Hasfocus(19)">$INFO[Window(Home).Property(HomePlayList19.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),VideoPlayList) + Container(9000).Hasfocus(20)">$INFO[Window(Home).Property(HomePlayList20.Name)]</value>
+        <value></value>
+    </variable>
+    <variable name="MusicPlaylistTitle" type="text">
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),MusicPlayList) + Container(9000).Hasfocus(1)">$INFO[Window(Home).Property(HomePlayList01.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),MusicPlayList) + Container(9000).Hasfocus(2)">$INFO[Window(Home).Property(HomePlayList02.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),MusicPlayList) + Container(9000).Hasfocus(3)">$INFO[Window(Home).Property(HomePlayList03.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),MusicPlayList) + Container(9000).Hasfocus(4)">$INFO[Window(Home).Property(HomePlayList04.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),MusicPlayList) + Container(9000).Hasfocus(5)">$INFO[Window(Home).Property(HomePlayList05.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),MusicPlayList) + Container(9000).Hasfocus(6)">$INFO[Window(Home).Property(HomePlayList06.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),MusicPlayList) + Container(9000).Hasfocus(7)">$INFO[Window(Home).Property(HomePlayList07.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),MusicPlayList) + Container(9000).Hasfocus(8)">$INFO[Window(Home).Property(HomePlayList08.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),MusicPlayList) + Container(9000).Hasfocus(9)">$INFO[Window(Home).Property(HomePlayList09.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),MusicPlayList) + Container(9000).Hasfocus(10)">$INFO[Window(Home).Property(HomePlayList10.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),MusicPlayList) + Container(9000).Hasfocus(11)">$INFO[Window(Home).Property(HomePlayList11.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),MusicPlayList) + Container(9000).Hasfocus(12)">$INFO[Window(Home).Property(HomePlayList12.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),MusicPlayList) + Container(9000).Hasfocus(13)">$INFO[Window(Home).Property(HomePlayList13.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),MusicPlayList) + Container(9000).Hasfocus(14)">$INFO[Window(Home).Property(HomePlayList14.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),MusicPlayList) + Container(9000).Hasfocus(15)">$INFO[Window(Home).Property(HomePlayList15.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),MusicPlayList) + Container(9000).Hasfocus(16)">$INFO[Window(Home).Property(HomePlayList16.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),MusicPlayList) + Container(9000).Hasfocus(17)">$INFO[Window(Home).Property(HomePlayList17.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),MusicPlayList) + Container(9000).Hasfocus(18)">$INFO[Window(Home).Property(HomePlayList18.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),MusicPlayList) + Container(9000).Hasfocus(19)">$INFO[Window(Home).Property(HomePlayList19.Name)]</value>
+        <value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(TypeItem),MusicPlayList) + Container(9000).Hasfocus(20)">$INFO[Window(Home).Property(HomePlayList20.Name)]</value>
+        <value></value>
+    </variable>
     <!-- Stats bar -->
 	<variable name="InfoBarStats" type="text">
         <!-- VideoNode -->
@@ -698,7 +744,7 @@
 		<value condition="stringcompare(Skin.String(HomeItem.1.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.1.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.1.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
-        <value condition="stringcompare(Skin.String(HomeItem.1.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>         
+        <value condition="stringcompare(Skin.String(HomeItem.1.Sub),SubMenu21)">$LOCALIZE[1036]</value>         
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel02" type="text">
@@ -722,7 +768,7 @@
 		<value condition="stringcompare(Skin.String(HomeItem.2.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.2.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.2.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
-        <value condition="stringcompare(Skin.String(HomeItem.2.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>
+        <value condition="stringcompare(Skin.String(HomeItem.2.Sub),SubMenu21)">$LOCALIZE[1036]</value>
     	<value>$LOCALIZE[89006]</value>
 	</variable> 
     <variable name="UsrDefSubMenuLabel03" type="text">
@@ -746,7 +792,7 @@
 		<value condition="stringcompare(Skin.String(HomeItem.3.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.3.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.3.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
-        <value condition="stringcompare(Skin.String(HomeItem.3.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>
+        <value condition="stringcompare(Skin.String(HomeItem.3.Sub),SubMenu21)">$LOCALIZE[1036]</value>
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel04" type="text">
@@ -770,7 +816,7 @@
 		<value condition="stringcompare(Skin.String(HomeItem.4.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.4.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.4.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
-        <value condition="stringcompare(Skin.String(HomeItem.4.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
+        <value condition="stringcompare(Skin.String(HomeItem.4.Sub),SubMenu21)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel05" type="text">
@@ -794,7 +840,7 @@
 		<value condition="stringcompare(Skin.String(HomeItem.5.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.5.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.5.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
-        <value condition="stringcompare(Skin.String(HomeItem.5.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
+        <value condition="stringcompare(Skin.String(HomeItem.5.Sub),SubMenu21)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel06" type="text">
@@ -818,7 +864,7 @@
 		<value condition="stringcompare(Skin.String(HomeItem.6.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.6.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.6.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
-        <value condition="stringcompare(Skin.String(HomeItem.6.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
+        <value condition="stringcompare(Skin.String(HomeItem.6.Sub),SubMenu21)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable> 
     <variable name="UsrDefSubMenuLabel07" type="text">
@@ -842,7 +888,7 @@
 		<value condition="stringcompare(Skin.String(HomeItem.7.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.7.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.7.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
-        <value condition="stringcompare(Skin.String(HomeItem.7.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
+        <value condition="stringcompare(Skin.String(HomeItem.7.Sub),SubMenu21)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel08" type="text">
@@ -866,7 +912,7 @@
 		<value condition="stringcompare(Skin.String(HomeItem.8.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.8.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.8.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
-        <value condition="stringcompare(Skin.String(HomeItem.8.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
+        <value condition="stringcompare(Skin.String(HomeItem.8.Sub),SubMenu21)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel09" type="text">
@@ -890,7 +936,7 @@
 		<value condition="stringcompare(Skin.String(HomeItem.9.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.9.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.9.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
-        <value condition="stringcompare(Skin.String(HomeItem.9.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
+        <value condition="stringcompare(Skin.String(HomeItem.9.Sub),SubMenu21)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel10" type="text">
@@ -914,7 +960,7 @@
 		<value condition="stringcompare(Skin.String(HomeItem.10.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.10.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.10.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
-        <value condition="stringcompare(Skin.String(HomeItem.10.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
+        <value condition="stringcompare(Skin.String(HomeItem.10.Sub),SubMenu21)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable> 
     <variable name="UsrDefSubMenuLabel11" type="text">
@@ -938,7 +984,7 @@
 		<value condition="stringcompare(Skin.String(HomeItem.11.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.11.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.11.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
-        <value condition="stringcompare(Skin.String(HomeItem.11.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
+        <value condition="stringcompare(Skin.String(HomeItem.11.Sub),SubMenu21)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel12" type="text">
@@ -962,7 +1008,7 @@
 		<value condition="stringcompare(Skin.String(HomeItem.12.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.12.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.12.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
-        <value condition="stringcompare(Skin.String(HomeItem.12.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
+        <value condition="stringcompare(Skin.String(HomeItem.12.Sub),SubMenu21)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel13" type="text">
@@ -986,7 +1032,7 @@
 		<value condition="stringcompare(Skin.String(HomeItem.13.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.13.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.13.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
-        <value condition="stringcompare(Skin.String(HomeItem.13.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
+        <value condition="stringcompare(Skin.String(HomeItem.13.Sub),SubMenu21)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel14" type="text">
@@ -1010,7 +1056,7 @@
 		<value condition="stringcompare(Skin.String(HomeItem.14.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.14.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.14.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
-        <value condition="stringcompare(Skin.String(HomeItem.14.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
+        <value condition="stringcompare(Skin.String(HomeItem.14.Sub),SubMenu21)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable> 
     <variable name="UsrDefSubMenuLabel15" type="text">
@@ -1034,7 +1080,7 @@
 		<value condition="stringcompare(Skin.String(HomeItem.15.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.15.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.15.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
-        <value condition="stringcompare(Skin.String(HomeItem.15.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
+        <value condition="stringcompare(Skin.String(HomeItem.15.Sub),SubMenu21)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel16" type="text">
@@ -1058,7 +1104,7 @@
 		<value condition="stringcompare(Skin.String(HomeItem.16.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.16.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.16.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
-        <value condition="stringcompare(Skin.String(HomeItem.16.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
+        <value condition="stringcompare(Skin.String(HomeItem.16.Sub),SubMenu21)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel17" type="text">
@@ -1082,7 +1128,7 @@
 		<value condition="stringcompare(Skin.String(HomeItem.17.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.17.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.17.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
-        <value condition="stringcompare(Skin.String(HomeItem.17.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
+        <value condition="stringcompare(Skin.String(HomeItem.17.Sub),SubMenu21)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel18" type="text">
@@ -1106,7 +1152,7 @@
 		<value condition="stringcompare(Skin.String(HomeItem.18.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.18.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.18.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
-        <value condition="stringcompare(Skin.String(HomeItem.18.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
+        <value condition="stringcompare(Skin.String(HomeItem.18.Sub),SubMenu21)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel19" type="text">
@@ -1130,7 +1176,7 @@
 		<value condition="stringcompare(Skin.String(HomeItem.19.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.19.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.19.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
-        <value condition="stringcompare(Skin.String(HomeItem.19.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
+        <value condition="stringcompare(Skin.String(HomeItem.19.Sub),SubMenu21)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <variable name="UsrDefSubMenuLabel20" type="text">
@@ -1154,7 +1200,7 @@
 		<value condition="stringcompare(Skin.String(HomeItem.20.Sub),SubMenu18) + !IsEmpty(Skin.String(SubMenu18.Label))">$VAR[UsersSubMenu18Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.20.Sub),SubMenu19) + !IsEmpty(Skin.String(SubMenu19.Label))">$VAR[UsersSubMenu19Name]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.20.Sub),SubMenu20) + !IsEmpty(Skin.String(SubMenu20.Label))">$VAR[UsersSubMenu20Name]</value>
-        <value condition="stringcompare(Skin.String(HomeItem.20.Sub),SubMenuFavourites)">$LOCALIZE[1036]</value>        
+        <value condition="stringcompare(Skin.String(HomeItem.20.Sub),SubMenu21)">$LOCALIZE[1036]</value>        
     	<value>$LOCALIZE[89006]</value>
 	</variable>
     <!-- Addons sets -->
