@@ -891,11 +891,6 @@
 					<onup>9003</onup>
 					<ondown>9003</ondown>
                     <!-- Home menu 01 -->
-<!--                     <include name="HomeMainMenuSettingsItem">
-                        <param name="group_id" value="1000" />
-                        <param name="id" value="1" />
-                        <param name="id2" value="01" />
-                    </include> -->
                     <control type="button" id="1000">
 						<width>750</width>
 						<height>40</height>

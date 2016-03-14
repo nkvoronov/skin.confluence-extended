@@ -231,7 +231,7 @@
             <animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
             <animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
             <animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
-            <visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet20)</visible>
+            <visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet$PARAM[id2])</visible>
             <visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + ![Skin.HasSetting(HomePageVideoInfo) | Skin.HasSetting(HomePageMusicInfo)]</visible>
             <onleft>$PARAM[list_id]</onleft>
             <onright>$PARAM[list_id]</onright>
