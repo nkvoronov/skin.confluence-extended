@@ -363,11 +363,23 @@
                 <posy>0</posy>
                 <width>1280</width>
                 <height>720</height>
-                <imagepath background="true">$VAR[SubMenuItemBackground]</imagepath>
+                <imagepath background="true">$INFO[Window(Home).Property(MenuBackground)]</imagepath>
                 <timeperimage>10000</timeperimage>
                 <randomize>true</randomize>
                 <fadetime>1000</fadetime>
                 <visible>IsEmpty(Window(Home).Property(MenuItemActive))</visible>
+            </control>
+            <control type="multiimage">
+                <description>User Separate Background Image 03</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1280</width>
+                <height>720</height>
+                <imagepath background="true">$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</imagepath>
+                <timeperimage>10000</timeperimage>
+                <randomize>true</randomize>
+                <fadetime>1000</fadetime>
+                <visible>IsEmpty(Window(Home).Property(MenuItemActive))+IsEmpty(Window(Home).Property(MenuBackground))</visible>
             </control>
         </control>
     </include>
