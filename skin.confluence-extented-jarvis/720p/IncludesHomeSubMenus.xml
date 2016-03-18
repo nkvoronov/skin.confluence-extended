@@ -496,4 +496,171 @@
         <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + stringcompare(Skin.String(HomeItem.19.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.19.Sub)</onclick>
         <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + stringcompare(Skin.String(HomeItem.20.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.20.Sub)</onclick>
     </include>
+    <include name="HomeMainSubMenusItemSettings">
+        <control type="button" id="2$PARAM[id2]00">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label>[B]$LOCALIZE[89002] - $PARAM[id2][/B]</label>
+            <label2>[COLOR=selected]$VAR[UsersSubMenu$PARAM[id2]Name][/COLOR]</label2>
+            <textcolor>blue</textcolor>
+            <focusedcolor>blue</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+            <onclick>Skin.SetString(SubMenu$PARAM[id2].Label)</onclick>
+            <include>ResetSubMenu$PARAM[id2]</include>
+            <include name="ResetSubMenuItem">
+                <param name="id2" value="$PARAM[id2]" />
+            </include>
+        </control>
+        <control type="button" id="2$PARAM[id2]01">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label>- $LOCALIZE[89500] [B]1[/B]</label>
+            <label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].1.Label)][/COLOR]</label2>
+            <textcolor>grey</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].1,Home)</onclick>
+            <onclick>ActivateWindow(2115)</onclick>
+            <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
+        </control>
+        <control type="button" id="2$PARAM[id2]02">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label>- $LOCALIZE[89500] [B]2[/B]</label>
+            <label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].2.Label)][/COLOR]</label2>
+            <textcolor>grey</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].2,Home)</onclick>
+            <onclick>ActivateWindow(2115)</onclick>
+            <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
+            <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].1.Label))</visible>
+        </control>
+        <control type="button" id="2$PARAM[id2]03">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label>- $LOCALIZE[89500] [B]3[/B]</label>
+            <label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].3.Label)][/COLOR]</label2>
+            <textcolor>grey</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].3,Home)</onclick>
+            <onclick>ActivateWindow(2115)</onclick>
+            <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
+            <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].2.Label))</visible>
+        </control>
+        <control type="button" id="2$PARAM[id2]04">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label>- $LOCALIZE[89500] [B]4[/B]</label>
+            <label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].4.Label)][/COLOR]</label2>
+            <textcolor>grey</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].4,Home)</onclick>
+            <onclick>ActivateWindow(2115)</onclick>
+            <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
+            <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].3.Label))</visible>
+        </control>
+        <control type="button" id="2$PARAM[id2]05">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label>- $LOCALIZE[89500] [B]5[/B]</label>
+            <label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].5.Label)][/COLOR]</label2>
+            <textcolor>grey</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].5,Home)</onclick>
+            <onclick>ActivateWindow(2115)</onclick>
+            <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
+            <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].4.Label))</visible>
+        </control>
+        <control type="button" id="2$PARAM[id2]06">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label>- $LOCALIZE[89500] [B]6[/B]</label>
+            <label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].6.Label)][/COLOR]</label2>
+            <textcolor>grey</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].6,Home)</onclick>
+            <onclick>ActivateWindow(2115)</onclick>
+            <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
+            <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].5.Label))</visible>
+        </control>
+        <control type="button" id="2$PARAM[id2]07">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label>- $LOCALIZE[89500] [B]7[/B]</label>
+            <label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].7.Label)][/COLOR]</label2>
+            <textcolor>grey</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].7,Home)</onclick>
+            <onclick>ActivateWindow(2115)</onclick>
+            <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
+            <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].6.Label))</visible>
+        </control>
+        <control type="button" id="2$PARAM[id2]08">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label>- $LOCALIZE[89500] [B]8[/B]</label>
+            <label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].8.Label)][/COLOR]</label2>
+            <textcolor>grey</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].8,Home)</onclick>
+            <onclick>ActivateWindow(2115)</onclick>
+            <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
+            <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].7.Label))</visible>
+        </control>
+        <control type="button" id="2$PARAM[id2]09">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label>- $LOCALIZE[89500] [B]9[/B]</label>
+            <label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].9.Label)][/COLOR]</label2>
+            <textcolor>grey</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].9,Home)</onclick>
+            <onclick>ActivateWindow(2115)</onclick>
+            <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
+            <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].8.Label))</visible>
+        </control>
+        <control type="button" id="2$PARAM[id2]10">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label>- $LOCALIZE[89500] [B]10[/B]</label>
+            <label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].10.Label)][/COLOR]</label2>
+            <textcolor>grey</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].10,Home)</onclick>
+            <onclick>ActivateWindow(2115)</onclick>
+            <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
+            <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].9.Label))</visible>
+        </control>
+    </include>
 </includes>

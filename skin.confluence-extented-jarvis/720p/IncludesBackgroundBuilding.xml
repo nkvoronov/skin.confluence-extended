@@ -363,7 +363,7 @@
                 <posy>0</posy>
                 <width>1280</width>
                 <height>720</height>
-                <imagepath background="true">$INFO[Window(Home).Property(MenuBackground)]</imagepath>
+                <imagepath background="true">$VAR[SubMenuItemBackground]</imagepath>
                 <timeperimage>10000</timeperimage>
                 <randomize>true</randomize>
                 <fadetime>1000</fadetime>
