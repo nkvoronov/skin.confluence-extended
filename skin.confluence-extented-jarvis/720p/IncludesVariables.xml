@@ -2272,6 +2272,29 @@
         <value condition="Container(9000).Hasfocus(20)">$VAR[Background20]</value>
         <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</value>
 	</variable>
+    <variable name="BackgroundSettings" type="text">
+		<value condition="StringCompare(Skin.String(HomeItem.1.Type),Settings)">$VAR[Background01]</value>
+		<value condition="StringCompare(Skin.String(HomeItem.2.Type),Settings)">$VAR[Background02]</value>
+		<value condition="StringCompare(Skin.String(HomeItem.3.Type),Settings)">$VAR[Background03]</value>
+		<value condition="StringCompare(Skin.String(HomeItem.4.Type),Settings)">$VAR[Background04]</value>
+		<value condition="StringCompare(Skin.String(HomeItem.5.Type),Settings)">$VAR[Background05]</value>
+		<value condition="StringCompare(Skin.String(HomeItem.6.Type),Settings)">$VAR[Background06]</value>
+		<value condition="StringCompare(Skin.String(HomeItem.7.Type),Settings)">$VAR[Background07]</value>
+		<value condition="StringCompare(Skin.String(HomeItem.8.Type),Settings)">$VAR[Background08]</value>
+		<value condition="StringCompare(Skin.String(HomeItem.9.Type),Settings)">$VAR[Background09]</value>
+		<value condition="StringCompare(Skin.String(HomeItem.10.Type),Settings)">$VAR[Background10]</value>
+		<value condition="StringCompare(Skin.String(HomeItem.11.Type),Settings)">$VAR[Background11]</value>
+		<value condition="StringCompare(Skin.String(HomeItem.12.Type),Settings)">$VAR[Background12]</value>
+		<value condition="StringCompare(Skin.String(HomeItem.13.Type),Settings)">$VAR[Background13]</value>
+		<value condition="StringCompare(Skin.String(HomeItem.14.Type),Settings)">$VAR[Background14]</value>
+		<value condition="StringCompare(Skin.String(HomeItem.15.Type),Settings)">$VAR[Background15]</value>
+		<value condition="StringCompare(Skin.String(HomeItem.16.Type),Settings)">$VAR[Background16]</value>
+		<value condition="StringCompare(Skin.String(HomeItem.17.Type),Settings)">$VAR[Background17]</value>
+		<value condition="StringCompare(Skin.String(HomeItem.18.Type),Settings)">$VAR[Background18]</value>
+		<value condition="StringCompare(Skin.String(HomeItem.19.Type),Settings)">$VAR[Background19]</value>
+		<value condition="StringCompare(Skin.String(HomeItem.20.Type),Settings)">$VAR[Background20]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</value>
+    </variable>
     <!-- -->
     <variable name="VideoNodeContent" type="text">
 		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(1)">$INFO[Skin.String(HomeItem.1.Playlist)]</value>

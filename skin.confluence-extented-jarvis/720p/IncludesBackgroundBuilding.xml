@@ -369,18 +369,21 @@
                 <fadetime>1000</fadetime>
                 <visible>IsEmpty(Window(Home).Property(MenuItemActive))</visible>
             </control>
+        </control>
+    </include>
+    <include name="CommonCustomBackgroundSettings">
+        <control type="group">
             <control type="multiimage">
-                <description>User Separate Background Image 03</description>
+                <description>User Separate Background Image Settings</description>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>1280</width>
                 <height>720</height>
-                <imagepath background="true">$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</imagepath>
+                <imagepath background="true">$VAR[BackgroundSettings]</imagepath>
                 <timeperimage>10000</timeperimage>
                 <randomize>true</randomize>
                 <fadetime>1000</fadetime>
-                <visible>IsEmpty(Window(Home).Property(MenuItemActive))+IsEmpty(Window(Home).Property(MenuBackground))</visible>
-            </control>
+            </control>        
         </control>
     </include>
     <include name="PreviewPVRBackground">
