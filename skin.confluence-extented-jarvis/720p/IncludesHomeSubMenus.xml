@@ -393,16 +393,16 @@
 				<visible>!IsEmpty(Window(0).Property(favourite.2.path))</visible>
 			</item>
 			<item id="3">
-				<label>$INFO[Window(0).Property(favourite.3.name)]</label>
-				<onclick>$INFO[Window(0).Property(favourite.3.path)]</onclick>
+				<label>$INFO[Window(0).Property(favourite.3.name)]</label>				
 				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+                <onclick>$INFO[Window(0).Property(favourite.3.path)]</onclick>
 				<visible>!IsEmpty(Window(0).Property(favourite.3.name))</visible>
 				<visible>!IsEmpty(Window(0).Property(favourite.3.path))</visible>
 			</item>
 			<item id="4">
-				<label>$INFO[Window(0).Property(favourite.4.name)]</label>
-				<onclick>$INFO[Window(0).Property(favourite.4.path)]</onclick>
+				<label>$INFO[Window(0).Property(favourite.4.name)]</label>				
 				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+                <onclick>$INFO[Window(0).Property(favourite.4.path)]</onclick>
 				<visible>!IsEmpty(Window(0).Property(favourite.4.name))</visible>
 				<visible>!IsEmpty(Window(0).Property(favourite.4.path))</visible>
 			</item>
