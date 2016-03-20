@@ -7,7 +7,6 @@
 				<label>[COLOR=selected]$LOCALIZE[89012][/COLOR]</label>
 				<onclick>SetProperty(MenuItemType,MainMenu)</onclick>
 				<visible>!StringCompare(Window.Property(MenuItemType),MainMenu)</visible>
-				<visible>!StringCompare(Window.Property(MenuItemType),EditMenu)</visible>
 			</item>
 			<item>
 				<description>Clear Setting 2114</description>
@@ -29,6 +28,7 @@
 				<onclick>Skin.Reset(UsrSelectAddon)</onclick>
 				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
                 <visible>Window.IsVisible(2115)</visible>
+                <visible>StringCompare(Window(Home).Property(UsrSelectBtnClear),Clear)</visible>
 				<visible>StringCompare(Window.Property(MenuItemType),MainMenu)</visible>
 			</item>
 			<item>
@@ -1523,124 +1523,6 @@
                 <visible>system.getbool(eventlog.enabled)</visible>
 				<visible>StringCompare(Window.Property(MenuItemType),SystemMenu)</visible>
 			</item>
-			<!-- Edit Menu -->
-            <!--
-			<item>
-				<description>Edit Videos</description>
-				<label>$LOCALIZE[3]</label>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,Videos)</onclick>
-				<include>CloseMenuChoice</include>
-				<visible>StringCompare(Window.Property(MenuItemType),EditMenu)</visible>
-			</item>
-			<item>
-				<description>Edit Movies</description>
-				<label>$LOCALIZE[342]</label>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,Movies)</onclick>
-				<include>CloseMenuChoice</include>
-				<visible>StringCompare(Window.Property(MenuItemType),EditMenu)</visible>
-			</item>
-			<item>
-				<description>Edit TVShows</description>
-				<label>$LOCALIZE[89016]</label>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,TVShows)</onclick>
-				<include>CloseMenuChoice</include>
-				<visible>StringCompare(Window.Property(MenuItemType),EditMenu)</visible>
-			</item>
-			<item>
-				<description>Edit Music</description>
-				<label>$LOCALIZE[2]</label>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,Music)</onclick>
-				<include>CloseMenuChoice</include>
-				<visible>StringCompare(Window.Property(MenuItemType),EditMenu)</visible>
-			</item>
-			<item>
-				<description>Edit MusicVideo</description>
-				<label>$LOCALIZE[89017]</label>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,MusicVideo)</onclick>
-				<include>CloseMenuChoice</include>
-				<visible>StringCompare(Window.Property(MenuItemType),EditMenu)</visible>
-			</item>
-			<item>
-				<description>Edit Live TV</description>
-				<label>$LOCALIZE[31502]</label>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,LiveTV)</onclick>
-				<include>CloseMenuChoice</include>
-				<visible>StringCompare(Window.Property(MenuItemType),EditMenu)</visible>
-			</item>
-			<item>
-				<description>Edit Radio</description>
-				<label>$LOCALIZE[89018]</label>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,Radio)</onclick>
-				<include>CloseMenuChoice</include>
-				<visible>StringCompare(Window.Property(MenuItemType),EditMenu)</visible>
-			</item>
-			<item>
-				<description>Edit Playlist Videos</description>
-				<label>$LOCALIZE[444] $LOCALIZE[559]</label>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path)</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Playlist)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,VideoPlayList)</onclick>
-				<include>CloseMenuChoice</include>
-				<visible>StringCompare(Window(Home).Property(UsrSelectPath),PlaylistInUse)</visible>
-				<visible>StringCompare(Window.Property(MenuItemType),EditMenu)</visible>
-			</item>
-			<item>
-				<description>Edit Playlist Music</description>
-				<label>$LOCALIZE[2] $LOCALIZE[559]</label>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path)</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Playlist)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,MusicPlayList)</onclick>
-				<include>CloseMenuChoice</include>
-				<visible>StringCompare(Window(Home).Property(UsrSelectPath),PlaylistInUse)</visible>
-				<visible>StringCompare(Window.Property(MenuItemType),EditMenu)</visible>
-			</item>
-			<item>
-				<description>Edit Weather</description>
-				<label>$LOCALIZE[8]</label>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,Weather)</onclick>
-				<include>CloseMenuChoice</include>
-				<visible>StringCompare(Window.Property(MenuItemType),EditMenu)</visible>
-			</item>
-			<item>
-				<description>Edit Pictures</description>
-				<label>$LOCALIZE[1]</label>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,Pictures)</onclick>
-				<include>CloseMenuChoice</include>
-				<visible>StringCompare(Window.Property(MenuItemType),EditMenu)</visible>
-			</item>
-			<item>
-				<description>Edit Programs</description>
-				<label>$LOCALIZE[0]</label>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,Programs)</onclick>
-				<include>CloseMenuChoice</include>
-				<visible>StringCompare(Window.Property(MenuItemType),EditMenu)</visible>
-			</item>
-			<item>
-				<description>Edit System Settings</description>
-				<label>$LOCALIZE[5]</label>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,Settings)</onclick>
-				<include>CloseMenuChoice</include>
-				<visible>StringCompare(Window.Property(MenuItemType),EditMenu)</visible>
-			</item>
-			<item>
-				<description>Edit ShutDown Menu</description>
-				<label>$LOCALIZE[13005]</label>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,Shutdown)</onclick>
-				<include>CloseMenuChoice</include>
-				<visible>StringCompare(Window.Property(MenuItemType),EditMenu)</visible>
-			</item> -->
 		</content>
 	</include>
     <include name="ClearButtonChoice">

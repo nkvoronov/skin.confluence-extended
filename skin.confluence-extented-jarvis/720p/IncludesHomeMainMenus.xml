@@ -482,6 +482,7 @@
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
             <onclick>SetProperty(UsrSelectBtn,HomeItem.$PARAM[id],Home)</onclick>
+            <onclick condition="!stringcompare(Skin.String(HomeItem.$PARAM[id].Sub),None)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
             <onclick>ActivateWindow(2116)</onclick>
             <visible>!IsEmpty(Skin.String(HomeItem.$PARAM[id].Label))</visible>
         </control>
@@ -497,6 +498,7 @@
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
             <onclick>SetProperty(UsrSelectBtn,HomeItem.$PARAM[id],Home)</onclick>
+            <onclick condition="!stringcompare(Skin.String(HomeItem.$PARAM[id].Addon),None)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
             <onclick>ActivateWindow(2117)</onclick>
             <visible>!IsEmpty(Skin.String(HomeItem.$PARAM[id].Label))</visible>
         </control>
@@ -512,6 +514,7 @@
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
             <onclick>SetProperty(UsrSelectBtn,HomeItem.$PARAM[id],Home)</onclick>
+            <onclick condition="!stringcompare(Skin.String(HomeItem.$PARAM[id].Widget),None)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
             <onclick>ActivateWindow(2118)</onclick>
             <visible>!IsEmpty(Skin.String(HomeItem.$PARAM[id].Label))</visible>
         </control>

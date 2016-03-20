@@ -6,6 +6,7 @@
 		<left>0</left>
 		<top>0</top>
 	</coordinates>
+    <onunload>ClearProperty(UsrSelectBtnClear,Home)</onunload>
 	<controls>
 		<control type="group">
 			<depth>DepthSideBlade</depth>
@@ -114,6 +115,7 @@
 						<onclick>Dialog.Close(2117)</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>StringCompare(Window(Home).Property(UsrSelectBtnClear),Clear)</visible>
 					</item>
 					<item>
 						<description>User Addon Set 01</description>

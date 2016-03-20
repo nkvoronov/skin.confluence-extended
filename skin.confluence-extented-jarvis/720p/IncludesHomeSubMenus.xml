@@ -524,6 +524,7 @@
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
             <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].1,Home)</onclick>
+            <onclick condition="Skin.String(SubMenu$PARAM[id2].1.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
             <onclick>ActivateWindow(2115)</onclick>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
         </control>
@@ -538,6 +539,7 @@
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
             <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].2,Home)</onclick>
+            <onclick condition="Skin.String(SubMenu$PARAM[id2].2.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
             <onclick>ActivateWindow(2115)</onclick>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].1.Label))</visible>
@@ -553,6 +555,7 @@
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
             <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].3,Home)</onclick>
+            <onclick condition="Skin.String(SubMenu$PARAM[id2].3.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
             <onclick>ActivateWindow(2115)</onclick>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].2.Label))</visible>
@@ -568,6 +571,7 @@
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
             <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].4,Home)</onclick>
+            <onclick condition="Skin.String(SubMenu$PARAM[id2].4.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
             <onclick>ActivateWindow(2115)</onclick>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].3.Label))</visible>
@@ -583,6 +587,7 @@
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
             <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].5,Home)</onclick>
+            <onclick condition="Skin.String(SubMenu$PARAM[id2].5.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
             <onclick>ActivateWindow(2115)</onclick>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].4.Label))</visible>
@@ -598,6 +603,7 @@
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
             <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].6,Home)</onclick>
+            <onclick condition="Skin.String(SubMenu$PARAM[id2].6.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
             <onclick>ActivateWindow(2115)</onclick>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].5.Label))</visible>
@@ -613,6 +619,7 @@
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
             <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].7,Home)</onclick>
+            <onclick condition="Skin.String(SubMenu$PARAM[id2].7.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
             <onclick>ActivateWindow(2115)</onclick>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].6.Label))</visible>
@@ -628,6 +635,7 @@
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
             <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].8,Home)</onclick>
+            <onclick condition="Skin.String(SubMenu$PARAM[id2].8.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
             <onclick>ActivateWindow(2115)</onclick>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].7.Label))</visible>
@@ -643,6 +651,7 @@
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
             <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].9,Home)</onclick>
+            <onclick condition="Skin.String(SubMenu$PARAM[id2].9.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
             <onclick>ActivateWindow(2115)</onclick>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].8.Label))</visible>
@@ -658,6 +667,7 @@
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
             <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].10,Home)</onclick>
+            <onclick condition="Skin.String(SubMenu$PARAM[id2].10.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
             <onclick>ActivateWindow(2115)</onclick>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].9.Label))</visible>
