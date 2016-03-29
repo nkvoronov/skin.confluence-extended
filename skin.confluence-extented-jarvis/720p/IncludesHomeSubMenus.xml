@@ -508,7 +508,6 @@
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
             <onclick>Skin.SetString(SubMenu$PARAM[id2].Label)</onclick>
-            <include>ResetSubMenu$PARAM[id2]</include>
             <include name="ResetSubMenuItem">
                 <param name="id2" value="$PARAM[id2]" />
             </include>
