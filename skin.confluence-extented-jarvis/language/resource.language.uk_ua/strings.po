@@ -620,7 +620,31 @@ msgctxt "#31961"
 msgid "MUSIC VIDEOS"
 msgstr "МУЗ. ВІДЕО"
 
-# extented added value
+# extended added value
+
+msgctxt "#32000"
+msgid "SEARCH"
+msgstr "ПОШУК"
+
+msgctxt "#32001"
+msgid "PLAYLIST"
+msgstr "ПЛЕЙЛИСТ"
+
+msgctxt "#32002"
+msgid "FAVOURITES"
+msgstr "ВИБРАНЕ"
+
+msgctxt "#32003"
+msgid "PROFILE"
+msgstr "ПРОФІЛЬ"
+
+msgctxt "#32004"
+msgid "SHUTDOWN"
+msgstr "ВИКЛЮЧЕННЯ"
+
+msgctxt "#32005"
+msgid "Disc"
+msgstr "Диск"
 
 msgctxt "#88070"
 msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add and remove home menu items[CR]Change skin backgrounds"
@@ -772,7 +796,7 @@ msgstr "За замовчуванням"
 
 msgctxt "#88126"
 msgid "User Data"
-msgstr "пользовательских данных"
+msgstr "даних користувача"
 
 msgctxt "#88127"
 msgid "Addons"
@@ -788,7 +812,7 @@ msgstr "Віджет плейлиста матиме [B]Випадковий[/B]
 
 msgctxt "#88130"
 msgid "Widgets - Title"
-msgstr "Виджеты - Заголовок"
+msgstr "Віджети - Заголовок"
 
 msgctxt "#88131"
 msgid "Unwatched movies"
@@ -942,6 +966,14 @@ msgctxt "#89038"
 msgid "Random Music Video"
 msgstr "Випадкове музичне відео"
 
+msgctxt "#89039"
+msgid "OpenELEC"
+msgstr ""
+
+msgctxt "#89040"
+msgid "Raspberry"
+msgstr ""
+
 # submenu set
 
 msgctxt "#89100"
@@ -963,10 +995,6 @@ msgstr "Вибрати віджет"
 msgctxt "#89301"
 msgid "Big"
 msgstr "Великий"
-
-msgctxt "#89302"
-msgid "Next Aired Episodes"
-msgstr "Наступний епізод в ефірі"
 
 # swap item
 
@@ -1002,8 +1030,28 @@ msgstr "Вибрати"
 
 msgctxt "#89703"
 msgid "No Recommended Media"
-msgstr "Нема рекомендованого медіа"
+msgstr "Нема рекумендуемого медіа"
 
 msgctxt "#89704"
+msgid "Last Video Played"
+msgstr "Останнє програне відео"
+
+msgctxt "#89705"
+msgid "Automatic Suggestion"
+msgstr "Автоматична пропозиція"
+
+msgctxt "#89706"
+msgid "Eject or Load Disc"
+msgstr "Витягти або завантажити диск"
+
+msgctxt "#89707"
+msgid "Shutdown Menu"
+msgstr "Меню вимикання"
+
+msgctxt "#89708"
+msgid "Command"
+msgstr "Команда"
+
+msgctxt "#89714"
 msgid "Reset Skin Values to Initial Install Defaults"
 msgstr "Скинути обкладинку до первісного стану за замовчуванням"

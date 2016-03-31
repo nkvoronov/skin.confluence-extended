@@ -5,8 +5,6 @@ script.randomandlastitems
 #RECOMMENDED
 script.globalsearch
 script.simpleplaylists
-script.tv.show.next.aired
-script.artistslideshow
 plugin.program.advanced.launcher
 script.extendedinfo
 script.tvtunes

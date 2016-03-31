@@ -720,7 +720,31 @@ msgctxt "#31961"
 msgid "MUSIC VIDEOS"
 msgstr ""
 
-# plood added value
+# extended added value
+
+msgctxt "#32000"
+msgid "SEARCH"
+msgstr ""
+
+msgctxt "#32001"
+msgid "PLAYLIST"
+msgstr ""
+
+msgctxt "#32002"
+msgid "FAVOURITES"
+msgstr ""
+
+msgctxt "#32003"
+msgid "PROFILE"
+msgstr ""
+
+msgctxt "#32004"
+msgid "SHUTDOWN"
+msgstr ""
+
+msgctxt "#32005"
+msgid "Disc"
+msgstr ""
 
 msgctxt "#88070"
 msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add and remove home menu items[CR]Change skin backgrounds"
@@ -1043,11 +1067,11 @@ msgid "Random Music Video"
 msgstr ""
 
 msgctxt "#89039"
-msgid "OpenELEC OS"
+msgid "OpenELEC"
 msgstr ""
 
 msgctxt "#89040"
-msgid "Raspberry OS"
+msgid "Raspberry"
 msgstr ""
 
 # submenu set
@@ -1072,10 +1096,6 @@ msgctxt "#89301"
 msgid "Big"
 msgstr ""
 
-msgctxt "#89302"
-msgid "Next Aired Episodes"
-msgstr ""
-
 # swap item
 
 msgctxt "#89400"
@@ -1097,21 +1117,41 @@ msgstr ""
 # addon select
 
 msgctxt "#89700"
-msgid "Select Addon"
+msgid "Select"
 msgstr ""
 
 msgctxt "#89701"
 msgid "Selected"
 msgstr ""
 
-#msgctxt "#89702"
-#msgid "Favourites Window"
-#msgstr ""
+msgctxt "#89702"
+msgid "Favourites Window"
+msgstr ""
 
 msgctxt "#89703"
 msgid "No Recommended Media"
 msgstr ""
 
 msgctxt "#89704"
+msgid "Last Video Played"
+msgstr ""
+
+msgctxt "#89705"
+msgid "Automatic Suggestion"
+msgstr ""
+
+msgctxt "#89706"
+msgid "Eject or Load Disc"
+msgstr ""
+
+msgctxt "#89707"
+msgid "Shutdown Menu"
+msgstr ""
+
+msgctxt "#89708"
+msgid "Command"
+msgstr ""
+
+msgctxt "#89714"
 msgid "Reset Skin Values to Initial Install Defaults"
 msgstr ""

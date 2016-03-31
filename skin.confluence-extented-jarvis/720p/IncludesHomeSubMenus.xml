@@ -672,4 +672,183 @@
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].9.Label))</visible>
         </control>
     </include>
+    <include name="SubMenuTypeChoices">
+        <content>
+            <item>
+                <description>Clear Setting</description>
+                <label>$LOCALIZE[89013]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>StringCompare(Window(Home).Property(UsrSelectBtnClear),Clear)</visible>
+            </item>
+            <item>
+                <description>Submenu set 01</description>
+                <label>$VAR[UsersSubMenu01Name]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu01)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!IsEmpty(Skin.String(SubMenu01.Label))</visible>
+            </item>
+            <item>
+                <description>Submenu set 02</description>
+                <label>$VAR[UsersSubMenu02Name]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu02)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!IsEmpty(Skin.String(SubMenu02.Label))</visible>
+            </item>
+            <item>
+                <description>Submenu set 03</description>
+                <label>$VAR[UsersSubMenu03Name]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu03)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!IsEmpty(Skin.String(SubMenu03.Label))</visible>
+            </item>
+            <item>
+                <description>Submenu set 04</description>
+                <label>$VAR[UsersSubMenu04Name]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu04)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!IsEmpty(Skin.String(SubMenu04.Label))</visible>
+            </item>
+            <item>
+                <description>Submenu set 05</description>
+                <label>$VAR[UsersSubMenu05Name]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu05)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!IsEmpty(Skin.String(SubMenu05.Label))</visible>
+            </item>
+            <item>
+                <description>Submenu set 06</description>
+                <label>$VAR[UsersSubMenu06Name]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu06)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!IsEmpty(Skin.String(SubMenu06.Label))</visible>
+            </item>
+            <item>
+                <description>Submenu set 07</description>
+                <label>$VAR[UsersSubMenu07Name]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu07)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!IsEmpty(Skin.String(SubMenu07.Label))</visible>
+            </item>
+            <item>
+                <description>Submenu set 08</description>
+                <label>$VAR[UsersSubMenu08Name]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu08)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!IsEmpty(Skin.String(SubMenu08.Label))</visible>
+            </item>
+            <item>
+                <description>Submenu set 09</description>
+                <label>$VAR[UsersSubMenu09Name]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu09)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!IsEmpty(Skin.String(SubMenu09.Label))</visible>
+            </item>
+            <item>
+                <description>Submenu set 10</description>
+                <label>$VAR[UsersSubMenu10Name]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu10)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!IsEmpty(Skin.String(SubMenu10.Label))</visible>
+            </item>
+            <item>
+                <description>Submenu set 11</description>
+                <label>$VAR[UsersSubMenu11Name]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu11)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!IsEmpty(Skin.String(SubMenu11.Label))</visible>
+            </item>
+            <item>
+                <description>Submenu set 12</description>
+                <label>$VAR[UsersSubMenu12Name]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu12)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!IsEmpty(Skin.String(SubMenu12.Label))</visible>
+            </item>
+            <item>
+                <description>Submenu set 13</description>
+                <label>$VAR[UsersSubMenu13Name]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu13)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!IsEmpty(Skin.String(SubMenu13.Label))</visible>
+            </item>
+            <item>
+                <description>Submenu set 14</description>
+                <label>$VAR[UsersSubMenu14Name]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu14)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!IsEmpty(Skin.String(SubMenu14.Label))</visible>
+            </item>
+            <item>
+                <description>Submenu set 15</description>
+                <label>$VAR[UsersSubMenu15Name]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu15)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!IsEmpty(Skin.String(SubMenu16.Label))</visible>
+            </item>
+            <item>
+                <description>Submenu set 16</description>
+                <label>$VAR[UsersSubMenu16Name]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu16)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!IsEmpty(Skin.String(SubMenu16.Label))</visible>
+            </item>
+            <item>
+                <description>Submenu set 17</description>
+                <label>$VAR[UsersSubMenu17Name]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu17)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!IsEmpty(Skin.String(SubMenu17.Label))</visible>
+            </item>
+            <item>
+                <description>Submenu set 18</description>
+                <label>$VAR[UsersSubMenu18Name]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu18)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!IsEmpty(Skin.String(SubMenu18.Label))</visible>
+            </item>
+            <item>
+                <description>Submenu set 19</description>
+                <label>$VAR[UsersSubMenu19Name]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu19)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!IsEmpty(Skin.String(SubMenu19.Label))</visible>
+            </item>
+            <item>
+                <description>Submenu set 20</description>
+                <label>$VAR[UsersSubMenu20Name]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu20)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!IsEmpty(Skin.String(SubMenu20.Label))</visible>
+            </item>
+            <item>
+                <description>Submenu Favourites</description>
+                <label>$LOCALIZE[1036]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu21)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+            </item>
+        </content>
+    </include>    
 </includes>

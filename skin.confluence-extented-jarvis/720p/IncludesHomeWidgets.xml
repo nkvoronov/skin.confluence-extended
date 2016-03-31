@@ -784,71 +784,62 @@
                 <param name="visible_title" value="!IsEmpty(Window(Home).Property(RecommendedEpisode.1.TVshowTitle)) + Skin.HasSetting(EnableWidgetsTitle)" />
                 <param name="list_id" value="8009" />
                 <param name="contents_name_include" value="RecommendedEpisodesContents" />
-            </include>
-            <!-- NextAired 8010 -->
-            <include name="EpisodesCommonWidgetControls">
-                <param name="visible_widget1" value="Skin.HasSetting(ActivateTVNextAired)" />
-                <param name="visible_widget2" value="stringcompare(Container(9000).ListItem.Property(WidgetSet),NextAired)" />
-                <param name="label_title" value="$LOCALIZE[89302]" />
-                <param name="visible_title" value="!IsEmpty(Window(home).Property(NextAired.1.NextDay)) + Skin.HasSetting(EnableWidgetsTitle)" />
-                <param name="list_id" value="8010" />
-                <param name="contents_name_include" value="NextAiredContents" />
             </include>            
-            <!-- RecentMusicVideo 8011 -->
+            <!-- RecentMusicVideo 8010 -->
             <include name="AlbumsCommonWidgetControls">
                 <param name="visible_widget1" value="Library.HasContent(MusicVideos)" />
                 <param name="visible_widget2" value="stringcompare(Container(9000).ListItem.Property(WidgetSet),RecentMusicVideo)" />
                 <param name="label_title" value="$LOCALIZE[89036]" />
                 <param name="visible_title" value="[[!IsEmpty(Window.Property(RecentMusicVideo.1.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)] | [!IsEmpty(Window.Property(LatestMusicVideo.1.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)]] + Skin.HasSetting(EnableWidgetsTitle)" />
-                <param name="list_id" value="8011" />
+                <param name="list_id" value="8010" />
                 <param name="contents_name_include" value="RecentMusicVideosContents" />
             </include>            
-            <!-- RandomMusicVideo 8012 -->
+            <!-- RandomMusicVideo 8011 -->
             <include name="AlbumsCommonWidgetControls">
                 <param name="visible_widget1" value="Library.HasContent(MusicVideos)" />
                 <param name="visible_widget2" value="stringcompare(Container(9000).ListItem.Property(WidgetSet),RandomMusicVideo)" />
                 <param name="label_title" value="$LOCALIZE[89038]" />
                 <param name="visible_title" value="!IsEmpty(Window(Home).Property(RandomMusicVideo.1.Title)) + Skin.HasSetting(EnableWidgetsTitle)" />
-                <param name="list_id" value="8012" />
+                <param name="list_id" value="8011" />
                 <param name="contents_name_include" value="RandomMusicVideosContents" />
             </include>
-            <!-- RecommendedMusicVideo 8013 -->
+            <!-- RecommendedMusicVideo 8012 -->
             <include name="AlbumsCommonWidgetControls">
                 <param name="visible_widget1" value="Library.HasContent(MusicVideos)" />
                 <param name="visible_widget2" value="stringcompare(Container(9000).ListItem.Property(WidgetSet),RecommendedMusicVideo)" />
                 <param name="label_title" value="$LOCALIZE[89037]" />
                 <param name="visible_title" value="!IsEmpty(Window(Home).Property(RecommendedMusicVideo.1.Title)) + Skin.HasSetting(EnableWidgetsTitle)" />
-                <param name="list_id" value="8013" />
+                <param name="list_id" value="8012" />
                 <param name="contents_name_include" value="RecommendedMusicVideosContents" />
             </include>
-            <!-- RecentAlbums 8014 -->
+            <!-- RecentAlbums 8013 -->
             <include name="AlbumsCommonWidgetControls">
                 <param name="visible_widget1" value="Library.HasContent(Music)" />
                 <param name="visible_widget2" value="stringcompare(Container(9000).ListItem.Property(WidgetSet),RecentAlbums)" />
                 <param name="label_title" value="$LOCALIZE[89025]" />
                 <param name="visible_title" value="[[!IsEmpty(Window(Home).Property(RecentAlbum.1.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)] | [!IsEmpty(Window.Property(LatestAlbum.1.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)]] + Skin.HasSetting(EnableWidgetsTitle)" />
-                <param name="list_id" value="8014" />
+                <param name="list_id" value="8013" />
                 <param name="contents_name_include" value="RecentAlbumsContents" />
             </include>            
-            <!-- RandomAlbums 8015 -->
+            <!-- RandomAlbums 8014 -->
             <include name="AlbumsCommonWidgetControls">
                 <param name="visible_widget1" value="Library.HasContent(Music)" />
                 <param name="visible_widget2" value="stringcompare(Container(9000).ListItem.Property(WidgetSet),RandomAlbums)" />
                 <param name="label_title" value="$LOCALIZE[89027]" />
                 <param name="visible_title" value="!IsEmpty(Window(Home).Property(RandomAlbum.1.Title)) + Skin.HasSetting(EnableWidgetsTitle)" />
-                <param name="list_id" value="8015" />
+                <param name="list_id" value="8014" />
                 <param name="contents_name_include" value="RandomAlbumsContents" />
             </include>
-            <!-- RecommendedAlbums 8016 -->
+            <!-- RecommendedAlbums 8015 -->
             <include name="AlbumsCommonWidgetControls">
                 <param name="visible_widget1" value="Library.HasContent(Music)" />
                 <param name="visible_widget2" value="stringcompare(Container(9000).ListItem.Property(WidgetSet),RecommendedAlbums)" />
                 <param name="label_title" value="$LOCALIZE[89026]" />
                 <param name="visible_title" value="!IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title)) + Skin.HasSetting(EnableWidgetsTitle)" />
-                <param name="list_id" value="8016" />
+                <param name="list_id" value="8015" />
                 <param name="contents_name_include" value="RecommendedAlbumsContents" />
             </include>
-            <!-- Movies Playlist 8017 -->
+            <!-- Movies Playlist 8016 -->
             <include name="PlayListCommonWidgetControls">
                 <param name="left_widget" value="190" />
                 <param name="visible_widget1" value="stringcompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList) + Skin.HasSetting(ActivateScriptPlayList)" />
@@ -856,12 +847,12 @@
                 <param name="width_title" value="900" />
                 <param name="label_title" value="$VAR[VideoPlaylistTitle]" />
                 <param name="visible_title" value="Skin.HasSetting(EnableWidgetsTitle)" />
-                <param name="list_id" value="8017" />
+                <param name="list_id" value="8016" />
                 <param name="layout_name_include" value="PlayListMoviesWidgetLayout" />
                 <param name="contents_name_include" value="PlayListMoviesContents" />
                 <param name="left_ra" value="910" />
             </include>                  
-			<!-- Episodes Playlist 8018 -->
+			<!-- Episodes Playlist 8017 -->
             <include name="PlayListCommonWidgetControls">
                 <param name="left_widget" value="160" />
                 <param name="visible_widget1" value="stringcompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList) + Skin.HasSetting(ActivateScriptPlayList)" />
@@ -869,12 +860,12 @@
                 <param name="width_title" value="960" />
                 <param name="label_title" value="$VAR[VideoPlaylistTitle]" />
                 <param name="visible_title" value="Skin.HasSetting(EnableWidgetsTitle)" />
-                <param name="list_id" value="8018" />
+                <param name="list_id" value="8017" />
                 <param name="layout_name_include" value="PlayListEpisodesWidgetLayout" />
                 <param name="contents_name_include" value="PlayListEpisodesContents" />
                 <param name="left_ra" value="970" />
             </include>                        
-            <!-- Albums PlayList 8019 -->
+            <!-- Albums PlayList 8018 -->
             <include name="PlayListCommonWidgetControls">
                 <param name="left_widget" value="240" />
                 <param name="visible_widget1" value="stringcompare(Container(9000).ListItem.Property(WidgetSet),MusicPlayList) + Skin.HasSetting(ActivateScriptPlayList)" />
@@ -882,12 +873,12 @@
                 <param name="width_title" value="800" />
                 <param name="label_title" value="$VAR[MusicPlaylistTitle]" />
                 <param name="visible_title" value="Skin.HasSetting(EnableWidgetsTitle)" />
-                <param name="list_id" value="8019" />
+                <param name="list_id" value="8018" />
                 <param name="layout_name_include" value="PlayListAlbumsWidgetLayout" />
                 <param name="contents_name_include" value="PlayListAlbumsContents" />
                 <param name="left_ra" value="810" />
             </include>                                    
-            <!-- MusicVideos Playlist 8020 -->
+            <!-- MusicVideos Playlist 8019 -->
             <include name="PlayListCommonWidgetControls">
                 <param name="left_widget" value="240" />
                 <param name="visible_widget1" value="stringcompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList) + Skin.HasSetting(ActivateScriptPlayList)" />
@@ -895,7 +886,7 @@
                 <param name="width_title" value="800" />
                 <param name="label_title" value="$VAR[VideoPlaylistTitle]" />
                 <param name="visible_title" value="Skin.HasSetting(EnableWidgetsTitle)" />
-                <param name="list_id" value="8020" />
+                <param name="list_id" value="8019" />
                 <param name="layout_name_include" value="PlayListMusicVideoWidgetLayout" />
                 <param name="contents_name_include" value="PlayListMusicVideoContents" />
                 <param name="left_ra" value="810" />
@@ -2584,100 +2575,6 @@
 			</item>
 		</content>
 	</include>
-    <include name="NextAiredContents">
-		<content>
-			<item id="1">
-				<label>$INFO[Window(home).Property(NextAired.1.Label)] $INFO[Window(home).Property(NextAired.1.NextNumber)]</label>
-				<label2>$INFO[Window(home).Property(NextAired.1.NextDay)] $INFO[Window(home).Property(NextAired.1.ShortTime)]</label2>
-                <icon>-</icon>
-				<thumb>$INFO[Window(home).Property(NextAired.1.Art(fanart))]</thumb>
-				<property name="Logo">$INFO[Window(home).Property(NextAired.1.Art(clearlogo))]</property>
-				<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.1.Library)],return)</onclick>
-				<visible>!IsEmpty(Window(home).Property(NextAired.1.NextDay))</visible>
-			</item>
-			<item id="2">
-				<label>$INFO[Window(home).Property(NextAired.2.Label)] $INFO[Window(home).Property(NextAired.2.NextNumber)]</label>
-				<label2>$INFO[Window(home).Property(NextAired.2.NextDay)] $INFO[Window(home).Property(NextAired.2.ShortTime)]</label2>
-				<icon>-</icon>
-				<thumb>$INFO[Window(home).Property(NextAired.2.Art(fanart))]</thumb>
-				<property name="Logo">$INFO[Window(home).Property(NextAired.2.Art(clearlogo))]</property>
-				<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.2.Library)],return)</onclick>
-				<visible>!IsEmpty(Window(home).Property(NextAired.2.NextDay))</visible>
-			</item>
-			<item id="3">
-				<label>$INFO[Window(home).Property(NextAired.3.Label)] $INFO[Window(home).Property(NextAired.3.NextNumber)]</label>
-				<label2>$INFO[Window(home).Property(NextAired.3.NextDay)] $INFO[Window(home).Property(NextAired.3.ShortTime)]</label2>
-				<icon>-</icon>
-				<thumb>$INFO[Window(home).Property(NextAired.3.Art(fanart))]</thumb>
-				<property name="Logo">$INFO[Window(home).Property(NextAired.3.Art(clearlogo))]</property>
-				<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.3.Library)],return)</onclick>
-				<visible>!IsEmpty(Window(home).Property(NextAired.3.NextDay))</visible>
-			</item>
-			<item id="4">
-				<label>$INFO[Window(home).Property(NextAired.4.Label)] $INFO[Window(home).Property(NextAired.4.NextNumber)]</label>
-				<label2>$INFO[Window(home).Property(NextAired.4.NextDay)] $INFO[Window(home).Property(NextAired.4.ShortTime)]</label2>
-				<icon>-</icon>
-				<thumb>$INFO[Window(home).Property(NextAired.4.Art(fanart))]</thumb>
-				<property name="Logo">$INFO[Window(home).Property(NextAired.4.Art(clearlogo))]</property>
-				<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.4.Library)],return)</onclick>
-				<visible>!IsEmpty(Window(home).Property(NextAired.4.NextDay))</visible>
-			</item>
-			<item id="5">
-				<label>$INFO[Window(home).Property(NextAired.5.Label)] $INFO[Window(home).Property(NextAired.5.NextNumber)]</label>
-				<label2>$INFO[Window(home).Property(NextAired.5.NextDay)] $INFO[Window(home).Property(NextAired.5.ShortTime)]</label2>
-				<icon>-</icon>
-				<thumb>$INFO[Window(home).Property(NextAired.5.Art(fanart))]</thumb>
-				<property name="Logo">$INFO[Window(home).Property(NextAired.5.Art(clearlogo))]</property>
-				<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.5.Library)],return)</onclick>
-				<visible>!IsEmpty(Window(home).Property(NextAired.5.NextDay))</visible>
-			</item>
-			<item id="6">
-				<label>$INFO[Window(home).Property(NextAired.6.Label)] $INFO[Window(home).Property(NextAired.6.NextNumber)]</label>
-				<label2>$INFO[Window(home).Property(NextAired.6.NextDay)] $INFO[Window(home).Property(NextAired.6.ShortTime)]</label2>
-				<icon>-</icon>
-				<thumb>$INFO[Window(home).Property(NextAired.6.Art(fanart))]</thumb>
-				<property name="Logo">$INFO[Window(home).Property(NextAired.6.Art(clearlogo))]</property>
-				<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.6.Library)],return)</onclick>
-				<visible>!IsEmpty(Window(home).Property(NextAired.6.NextDay))</visible>
-			</item>
-			<item id="7">
-				<label>$INFO[Window(home).Property(NextAired.7.Label)] $INFO[Window(home).Property(NextAired.7.NextNumber)]</label>
-				<label2>$INFO[Window(home).Property(NextAired.7.NextDay)] $INFO[Window(home).Property(NextAired.7.ShortTime)]</label2>
-				<icon>-</icon>
-				<thumb>$INFO[Window(home).Property(NextAired.7.Art(fanart))]</thumb>
-				<property name="Logo">$INFO[Window(home).Property(NextAired.7.Art(clearlogo))]</property>
-				<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.7.Library)],return)</onclick>
-				<visible>!IsEmpty(Window(home).Property(NextAired.7.NextDay))</visible>
-			</item>
-			<item id="8">
-				<label>$INFO[Window(home).Property(NextAired.8.Label)] $INFO[Window(home).Property(NextAired.8.NextNumber)]</label>
-				<label2>$INFO[Window(home).Property(NextAired.8.NextDay)] $INFO[Window(home).Property(NextAired.8.ShortTime)]</label2>
-				<icon>-</icon>
-				<thumb>$INFO[Window(home).Property(NextAired.8.Art(fanart))]</thumb>
-				<property name="Logo">$INFO[Window(home).Property(NextAired.8.Art(clearlogo))]</property>
-				<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.8.Library)],return)</onclick>
-				<visible>!IsEmpty(Window(home).Property(NextAired.8.NextDay))</visible>
-			</item>
-			<item id="9">
-				<label>$INFO[Window(home).Property(NextAired.9.Label)] $INFO[Window(home).Property(NextAired.9.NextNumber)]</label>
-				<label2>$INFO[Window(home).Property(NextAired.9.NextDay)] $INFO[Window(home).Property(NextAired.9.ShortTime)]</label2>
-				<icon>-</icon>
-				<thumb>$INFO[Window(home).Property(NextAired.9.Art(fanart))]</thumb>
-				<property name="Logo">$INFO[Window(home).Property(NextAired.9.Art(clearlogo))]</property>
-				<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.9.Library)],return)</onclick>
-				<visible>!IsEmpty(Window(home).Property(NextAired.9.NextDay))</visible>
-			</item>
-			<item id="10">
-				<label>$INFO[Window(home).Property(NextAired.10.Label)] $INFO[Window(home).Property(NextAired.10.NextNumber)]</label>
-				<label2>$INFO[Window(home).Property(NextAired.10.NextDay)] $INFO[Window(home).Property(NextAired.10.ShortTime)]</label2>
-				<icon>-</icon>
-				<thumb>$INFO[Window(home).Property(NextAired.10.Art(fanart))]</thumb>
-				<property name="Logo">$INFO[Window(home).Property(NextAired.10.Art(clearlogo))]</property>
-				<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.10.Library)],return)</onclick>
-				<visible>!IsEmpty(Window(home).Property(NextAired.10.NextDay))</visible>
-			</item>
-		</content>
-    </include>
     <include name="AlbumsCommonWidgetControls">
         <control type="group">
             <left>240</left>
@@ -4839,5 +4736,234 @@
         <onup>20</onup>
         <ondown condition="System.HasAddon(script.globalsearch)+Skin.HasSetting(ActivateGlobalSearch)">608</ondown>
         <ondown condition="!System.HasAddon(script.globalsearch)">603</ondown>
-    </include>       
+    </include>
+    <include name="WidgetTypeChoices">
+        <content>
+            <item>
+                <description>Clear Setting</description>
+                <label>$LOCALIZE[89013]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>StringCompare(Window(Home).Property(UsrSelectBtnClear),Clear)</visible>
+            </item>
+            <item>
+                <description>Video Nodes</description>
+                <label>[COLOR=selected]$VAR[CustomWidgetLabel][/COLOR] - $LOCALIZE[157] $LOCALIZE[89029]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Widget,VideoNode)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>
+                    !IsEmpty(Skin.String(HomeItem.1.Playlist)) + Skin.String(HomeItem.1.Type,VideoNode) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.1) |
+                    !IsEmpty(Skin.String(HomeItem.2.Playlist)) + Skin.String(HomeItem.2.Type,VideoNode) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.2) |
+                    !IsEmpty(Skin.String(HomeItem.3.Playlist)) + Skin.String(HomeItem.3.Type,VideoNode) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.3) |
+                    !IsEmpty(Skin.String(HomeItem.4.Playlist)) + Skin.String(HomeItem.4.Type,VideoNode) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.4) |
+                    !IsEmpty(Skin.String(HomeItem.5.Playlist)) + Skin.String(HomeItem.5.Type,VideoNode) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.5) |
+                    !IsEmpty(Skin.String(HomeItem.6.Playlist)) + Skin.String(HomeItem.6.Type,VideoNode) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.6) |
+                    !IsEmpty(Skin.String(HomeItem.7.Playlist)) + Skin.String(HomeItem.7.Type,VideoNode) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.7) |
+                    !IsEmpty(Skin.String(HomeItem.8.Playlist)) + Skin.String(HomeItem.8.Type,VideoNode) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.8) |
+                    !IsEmpty(Skin.String(HomeItem.9.Playlist)) + Skin.String(HomeItem.9.Type,VideoNode) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.9) |
+                    !IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.10.Type,VideoNode) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.10) |
+                    !IsEmpty(Skin.String(HomeItem.11.Playlist)) + Skin.String(HomeItem.11.Type,VideoNode) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.11) |
+                    !IsEmpty(Skin.String(HomeItem.12.Playlist)) + Skin.String(HomeItem.12.Type,VideoNode) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.12) |
+                    !IsEmpty(Skin.String(HomeItem.13.Playlist)) + Skin.String(HomeItem.13.Type,VideoNode) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.13) |
+                    !IsEmpty(Skin.String(HomeItem.14.Playlist)) + Skin.String(HomeItem.14.Type,VideoNode) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.14) |
+                    !IsEmpty(Skin.String(HomeItem.15.Playlist)) + Skin.String(HomeItem.15.Type,VideoNode) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.15) |
+                    !IsEmpty(Skin.String(HomeItem.16.Playlist)) + Skin.String(HomeItem.16.Type,VideoNode) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.16) |
+                    !IsEmpty(Skin.String(HomeItem.17.Playlist)) + Skin.String(HomeItem.17.Type,VideoNode) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.17) |
+                    !IsEmpty(Skin.String(HomeItem.18.Playlist)) + Skin.String(HomeItem.18.Type,VideoNode) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.18) |
+                    !IsEmpty(Skin.String(HomeItem.19.Playlist)) + Skin.String(HomeItem.19.Type,VideoNode) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.19) |
+                    !IsEmpty(Skin.String(HomeItem.20.Playlist)) + Skin.String(HomeItem.20.Type,VideoNode) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.20)
+                </visible>
+            </item>
+            <item>
+                <description>Playlist Movies</description>
+                <label>[COLOR=selected]$VAR[CustomWidgetLabel][/COLOR] - $LOCALIZE[157] $LOCALIZE[136]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,VideoPlayList)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>
+                    !IsEmpty(Skin.String(HomeItem.1.Playlist)) + Skin.String(HomeItem.1.Type,VideoPlayList) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.1) |
+                    !IsEmpty(Skin.String(HomeItem.2.Playlist)) + Skin.String(HomeItem.2.Type,VideoPlayList) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.2) |
+                    !IsEmpty(Skin.String(HomeItem.3.Playlist)) + Skin.String(HomeItem.3.Type,VideoPlayList) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.3) |
+                    !IsEmpty(Skin.String(HomeItem.4.Playlist)) + Skin.String(HomeItem.4.Type,VideoPlayList) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.4) |
+                    !IsEmpty(Skin.String(HomeItem.5.Playlist)) + Skin.String(HomeItem.5.Type,VideoPlayList) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.5) |
+                    !IsEmpty(Skin.String(HomeItem.6.Playlist)) + Skin.String(HomeItem.6.Type,VideoPlayList) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.6) |
+                    !IsEmpty(Skin.String(HomeItem.7.Playlist)) + Skin.String(HomeItem.7.Type,VideoPlayList) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.7) |
+                    !IsEmpty(Skin.String(HomeItem.8.Playlist)) + Skin.String(HomeItem.8.Type,VideoPlayList) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.8) |
+                    !IsEmpty(Skin.String(HomeItem.9.Playlist)) + Skin.String(HomeItem.9.Type,VideoPlayList) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.9) |
+                    !IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.10.Type,VideoPlayList) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.10) |
+                    !IsEmpty(Skin.String(HomeItem.11.Playlist)) + Skin.String(HomeItem.11.Type,VideoPlayList) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.11) |
+                    !IsEmpty(Skin.String(HomeItem.12.Playlist)) + Skin.String(HomeItem.12.Type,VideoPlayList) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.12) |
+                    !IsEmpty(Skin.String(HomeItem.13.Playlist)) + Skin.String(HomeItem.13.Type,VideoPlayList) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.13) |
+                    !IsEmpty(Skin.String(HomeItem.14.Playlist)) + Skin.String(HomeItem.14.Type,VideoPlayList) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.14) |
+                    !IsEmpty(Skin.String(HomeItem.15.Playlist)) + Skin.String(HomeItem.15.Type,VideoPlayList) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.15) |
+                    !IsEmpty(Skin.String(HomeItem.16.Playlist)) + Skin.String(HomeItem.16.Type,VideoPlayList) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.16) |
+                    !IsEmpty(Skin.String(HomeItem.17.Playlist)) + Skin.String(HomeItem.17.Type,VideoPlayList) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.17) |
+                    !IsEmpty(Skin.String(HomeItem.18.Playlist)) + Skin.String(HomeItem.18.Type,VideoPlayList) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.18) |
+                    !IsEmpty(Skin.String(HomeItem.19.Playlist)) + Skin.String(HomeItem.19.Type,VideoPlayList) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.19) |
+                    !IsEmpty(Skin.String(HomeItem.20.Playlist)) + Skin.String(HomeItem.20.Type,VideoPlayList) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.20)
+                </visible>
+            </item>
+            <item>
+                <description>Playlist Music</description>
+                <label>[COLOR=selected]$VAR[CustomWidgetLabel][/COLOR] - $LOCALIZE[249] $LOCALIZE[136]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,MusicPlayList)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>
+                    !IsEmpty(Skin.String(HomeItem.1.Playlist)) + Skin.String(HomeItem.1.Type,MusicPlaylist) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.1) |
+                    !IsEmpty(Skin.String(HomeItem.2.Playlist)) + Skin.String(HomeItem.2.Type,MusicPlaylist) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.2) |
+                    !IsEmpty(Skin.String(HomeItem.3.Playlist)) + Skin.String(HomeItem.3.Type,MusicPlaylist) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.3) |
+                    !IsEmpty(Skin.String(HomeItem.4.Playlist)) + Skin.String(HomeItem.4.Type,MusicPlaylist) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.4) |
+                    !IsEmpty(Skin.String(HomeItem.5.Playlist)) + Skin.String(HomeItem.5.Type,MusicPlaylist) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.5) |
+                    !IsEmpty(Skin.String(HomeItem.6.Playlist)) + Skin.String(HomeItem.6.Type,MusicPlaylist) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.6) |
+                    !IsEmpty(Skin.String(HomeItem.7.Playlist)) + Skin.String(HomeItem.7.Type,MusicPlaylist) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.7) |
+                    !IsEmpty(Skin.String(HomeItem.8.Playlist)) + Skin.String(HomeItem.8.Type,MusicPlaylist) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.8) |
+                    !IsEmpty(Skin.String(HomeItem.9.Playlist)) + Skin.String(HomeItem.9.Type,MusicPlaylist) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.9) |
+                    !IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.10.Type,MusicPlaylist) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.10) |
+                    !IsEmpty(Skin.String(HomeItem.11.Playlist)) + Skin.String(HomeItem.11.Type,MusicPlaylist) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.11) |
+                    !IsEmpty(Skin.String(HomeItem.12.Playlist)) + Skin.String(HomeItem.12.Type,MusicPlaylist) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.12) |
+                    !IsEmpty(Skin.String(HomeItem.13.Playlist)) + Skin.String(HomeItem.13.Type,MusicPlaylist) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.13) |
+                    !IsEmpty(Skin.String(HomeItem.14.Playlist)) + Skin.String(HomeItem.14.Type,MusicPlaylist) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.14) |
+                    !IsEmpty(Skin.String(HomeItem.15.Playlist)) + Skin.String(HomeItem.15.Type,MusicPlaylist) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.15) |
+                    !IsEmpty(Skin.String(HomeItem.16.Playlist)) + Skin.String(HomeItem.16.Type,MusicPlaylist) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.16) |
+                    !IsEmpty(Skin.String(HomeItem.17.Playlist)) + Skin.String(HomeItem.17.Type,MusicPlaylist) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.17) |
+                    !IsEmpty(Skin.String(HomeItem.18.Playlist)) + Skin.String(HomeItem.18.Type,MusicPlaylist) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.18) |
+                    !IsEmpty(Skin.String(HomeItem.19.Playlist)) + Skin.String(HomeItem.19.Type,MusicPlaylist) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.19) |
+                    !IsEmpty(Skin.String(HomeItem.20.Playlist)) + Skin.String(HomeItem.20.Type,MusicPlaylist) + StringCompare(Window(Home).Property(UsrSelectBtn),HomeItem.20)
+                </visible>
+            </item>
+            <item>
+                <description>Weather</description>
+                <label>$LOCALIZE[8]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,Weather)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!IsEmpty(Weather.Plugin)</visible>
+            </item>
+            <item>
+                <description>Weather Big</description>
+                <label>$LOCALIZE[8] $LOCALIZE[89301]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,WeatherBig)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!IsEmpty(Weather.Plugin)</visible>
+                <visible>Skin.HasSetting(LowerMenu)</visible>
+            </item>
+            <item>
+                <description>Favourites</description>
+                <label>$LOCALIZE[1036]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,Favourites)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>System.HasAddon(script.favourites)</visible>
+            </item>
+            <item>
+                <description>UnWatched Movies</description>
+                <label>$LOCALIZE[88131]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,UnWatchedMovies)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>Skin.HasSetting(ActivateScriptPlaylist)</visible>
+                <visible>Library.HasContent(Movies)</visible>
+            </item>
+            <item>
+                <description>Recent Movies</description>
+                <label>$LOCALIZE[89031]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMovies)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>Library.HasContent(Movies)</visible>
+            </item>
+            <item>
+                <description>Random Movies</description>
+                <label>$LOCALIZE[89032]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RandomMovies)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>Library.HasContent(Movies)</visible>
+            </item>
+            <item>
+                <description>Recommended Movies</description>
+                <label>$LOCALIZE[89030]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecommendedMovies)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>Library.HasContent(Movies)</visible>
+            </item>                   
+            <item>
+                <description>Recent Episodes</description>
+                <label>$LOCALIZE[89033]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentEpisodes)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>Library.HasContent(TVShows)</visible>
+            </item>
+            <item>
+                <description>Random Episodes</description>
+                <label>$LOCALIZE[89035]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RandomEpisodes)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>Library.HasContent(TVShows)</visible>
+            </item>
+            <item>
+                <description>Recommended Episodes</description>
+                <label>$LOCALIZE[89034]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecommendedEpisodes)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>Library.HasContent(TVShows)</visible>
+            </item>
+            <item>
+                <description>Recent Music Video</description>
+                <label>$LOCALIZE[89036]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMusicVideo)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>Library.HasContent(MusicVideos)</visible>
+            </item>
+            <item>
+                <description>Random Music Video</description>
+                <label>$LOCALIZE[89038]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RandomMusicVideo)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>Library.HasContent(MusicVideos)</visible>
+            </item>
+            <item>
+                <description>Recommended Music Video</description>
+                <label>$LOCALIZE[89037]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecommendedMusicVideo)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>Library.HasContent(MusicVideos)</visible>
+            </item>
+            <item>
+                <description>Recent Albums</description>
+                <label>$LOCALIZE[89025]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentAlbums)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>Library.HasContent(Music)</visible>
+            </item>
+            <item>
+                <description>Random Albums</description>
+                <label>$LOCALIZE[89027]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RandomAlbums)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>Library.HasContent(Music)</visible>
+            </item>
+            <item>
+                <description>Recommended Albums</description>
+                <label>$LOCALIZE[89026]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecommendedAlbums)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>Library.HasContent(Music)</visible>
+            </item>
+        </content>
+    </include>    
 </includes>

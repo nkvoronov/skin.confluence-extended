@@ -68,7 +68,7 @@
 			<height>30</height>
 			<align>center</align>
 			<aligny>center</aligny>
-			<label>$LOCALIZE[89704]</label>
+			<label>$LOCALIZE[89714]</label>
 			<font>font13</font>
 		</control>
 		<control type="button" id="11">

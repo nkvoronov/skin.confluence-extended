@@ -8,8 +8,6 @@
 	<onload condition="!IsEmpty(Window(Home).Property(MenuBackground))">ClearProperty(MenuBackground,Home)</onload>
     <onload condition="System.HasAddon(script.favourites)">XBMC.RunScript(script.favourites)</onload>
     <!-- -->
-    <onload condition="Skin.HasSetting(ActivateSlideShowArt) + IsEmpty(Window.Property(ArtistSlideshowRunning))">RunScript(script.artistslideshow, daemon=True)</onload>
-    <!-- -->
     <onload condition="Skin.HasSetting(ActivateScriptPlaylist) + Library.HasContent(Movies)">XBMC.RunScript(script.randomandlastitems,type=Movie,limit=12,method=Random,playlist=special://skin/extras/Playlists/UnwatchedMovies.xsp,menu=UnWatched)</onload>
 	<onload condition="Skin.HasSetting(ActivateScriptPlaylist) + [Skin.String(HomeItem.1.Type,VideoPlayList) | Skin.String(HomeItem.1.Type,MusicPlayList)]">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.1.Playlist)],method=$VAR[PlaylistSortOrder],limit=12,unwatched=False,resume=False,property=HomePlaylist01)</onload>
 	<onload condition="Skin.HasSetting(ActivateScriptPlaylist) + [Skin.String(HomeItem.2.Type,VideoPlayList) | Skin.String(HomeItem.2.Type,MusicPlayList)]">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.2.Playlist)],method=$VAR[PlaylistSortOrder],limit=12,unwatched=False,resume=False,property=HomePlaylist02)</onload>
@@ -919,14 +917,14 @@
 			<top>55r</top>
 			<include>Window_OpenClose_Animation</include>
 			<control type="button" id="20">
-				<description>Power Push Button</description>
+				<description>Power Push Button Pos1</description>
 				<left>55</left>
 				<top>0</top>
 				<width>45</width>
 				<height>45</height>
 				<label>31003</label>
 				<font>-</font>
-				<onclick>ActivateWindow(ShutdownMenu)</onclick>
+				<onclick>$VAR[PowerButtonCommand]</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
 				<onleft>21</onleft>
@@ -938,7 +936,7 @@
                 <visible>!Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)</visible>
 			</control>
 			<control type="image">
-				<description>Power Icon</description>
+				<description>Power Icon Pos1</description>
 				<left>60</left>
 				<top>5</top>
 				<width>35</width>
@@ -955,7 +953,7 @@
 				<height>45</height>
 				<label>1036</label>
 				<font>-</font>
-				<onclick>ActivateWindow(Favourites)</onclick>
+				<onclick>$VAR[FavoritesButtonCommand]</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
 				<onleft condition="!Skin.HasSetting(HidePowerButton)">20</onleft>
@@ -977,14 +975,14 @@
                 <visible>!Skin.HasSetting(HideFavoritesButton)</visible>
 			</control>
 			<control type="button" id="20">
-				<description>Power Push Button Pos1</description>
+				<description>Power Push Button Pos2</description>
 				<left>0</left>
 				<top>0</top>
 				<width>45</width>
 				<height>45</height>
 				<label>1036</label>
 				<font>-</font>
-				<onclick>ActivateWindow(ShutdownMenu)</onclick>
+				<onclick>$VAR[PowerButtonCommand]</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
 				<onleft>noop</onleft>
@@ -996,7 +994,7 @@
                 <visible>!Skin.HasSetting(HidePowerButton) + Skin.HasSetting(HideFavoritesButton)</visible>
 			</control>
 			<control type="image">
-				<description>Power Icon Pos1</description>
+				<description>Power Icon Pos2</description>
 				<left>5</left>
 				<top>5</top>
 				<width>35</width>

@@ -620,7 +620,31 @@ msgctxt "#31961"
 msgid "MUSIC VIDEOS"
 msgstr "МУЗ. ВИДЕО"
 
-# extented added value
+# extended added value
+
+msgctxt "#32000"
+msgid "SEARCH"
+msgstr "ПОИСК"
+
+msgctxt "#32001"
+msgid "PLAYLIST"
+msgstr "ПЛЕЙЛИСТ"
+
+msgctxt "#32002"
+msgid "FAVOURITES"
+msgstr "ИЗБРАННОЕ"
+
+msgctxt "#32003"
+msgid "PROFILE"
+msgstr "ПРОФИЛЬ"
+
+msgctxt "#32004"
+msgid "SHUTDOWN"
+msgstr "ВЫКЛЮЧЕНИЕ"
+
+msgctxt "#32005"
+msgid "Disc"
+msgstr "Диск"
 
 msgctxt "#88070"
 msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add and remove home menu items[CR]Change skin backgrounds"
@@ -942,6 +966,14 @@ msgctxt "#89038"
 msgid "Random Music Video"
 msgstr "Случайное музыкальное видео"
 
+msgctxt "#89039"
+msgid "OpenELEC"
+msgstr ""
+
+msgctxt "#89040"
+msgid "Raspberry"
+msgstr ""
+
 # submenu set
 
 msgctxt "#89100"
@@ -964,10 +996,6 @@ msgctxt "#89301"
 msgid "Big"
 msgstr "Большой"
 
-msgctxt "#89302"
-msgid "Next Aired Episodes"
-msgstr "Следующий эпизод в эфире"
-
 # swap item
 
 msgctxt "#89400"
@@ -989,21 +1017,41 @@ msgstr "Выбрать пунк меню"
 # addon select
 
 msgctxt "#89700"
-msgid "Select Addon"
-msgstr "Выбрать дополнение"
+msgid "Select"
+msgstr "Выбрать"
 
 msgctxt "#89701"
 msgid "Selected"
 msgstr "Выбрать"
 
-#msgctxt "#89702"
-#msgid "Favourites Window"
-#msgstr "Окно избранное"
+msgctxt "#89702"
+msgid "Favourites Window"
+msgstr "Окно избранное"
 
 msgctxt "#89703"
 msgid "No Recommended Media"
 msgstr "Нет рекумендуемого медиа"
 
 msgctxt "#89704"
+msgid "Last Video Played"
+msgstr "Последнее проигранное видео"
+
+msgctxt "#89705"
+msgid "Automatic Suggestion"
+msgstr "Автоматическое предложение"
+
+msgctxt "#89706"
+msgid "Eject or Load Disc"
+msgstr "Извлечь или загрузить диск"
+
+msgctxt "#89707"
+msgid "Shutdown Menu"
+msgstr "Меню выключения"
+
+msgctxt "#89708"
+msgid "Command"
+msgstr "Команда"
+
+msgctxt "#89714"
 msgid "Reset Skin Values to Initial Install Defaults"
 msgstr "Сбросить обложку к первоначальному состоянию по умолчанию"

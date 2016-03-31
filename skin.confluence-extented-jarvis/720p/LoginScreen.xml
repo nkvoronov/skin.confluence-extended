@@ -18,6 +18,7 @@
 				<texture>floor.png</texture>
 				<animation effect="slide" start="0,10" end="0,0" time="150" condition="Window.Previous(Home)">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="0,10" time="150" condition="Window.Next(Home)">WindowClose</animation>
+                <visible>!Skin.HasSetting(NoFloorAll)</visible>
 			</control>
 			<control type="image">
 				<description>LOGO</description>
