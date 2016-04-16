@@ -6,7 +6,7 @@
 		<top>0</top>
 	</coordinates>
 	<controls>
-        <include>CommonCustomBackground</include>
+        <include>CommonCustomBackgroundSettings</include>
 		<include>CommonBackground</include>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
