@@ -10,13 +10,13 @@
 		<value>$LOCALIZE[1036]</value>
 	</variable>
     <variable name="FavoritesButtonCommand">
-		<value condition="IsEmpty(Skin.String(UsrFavBtnCmd.Path))">ActivateWindow(Favourites),return</value>
+		<value condition="IsEmpty(Skin.String(UsrFavBtnCmd.Path))">ActivateWindow(Favourites)</value>
 		<value condition="Skin.String(UsrFavBtnCmd.Path,LastVideo) + Skin.String(LastVideoPlayed)">$INFO[Skin.String(LastVideoPlayed)]</value>
 		<value condition="Skin.String(UsrFavBtnCmd.Path,AutoSuggest) + StringCompare(Container(9000).ListItem.Property(TypeItem),Movies)">ActivateWindow(2125)</value>
 		<value condition="Skin.String(UsrFavBtnCmd.Path,AutoSuggest) + StringCompare(Container(9000).ListItem.Property(TypeItem),TVShows)">ActivateWindow(2124)</value>
 		<value condition="Skin.String(UsrFavBtnCmd.Path,AutoSuggest) + StringCompare(Container(9000).ListItem.Property(TypeItem),Music)">ActivateWindow(2123)</value>
 		<value condition="Skin.String(UsrFavBtnCmd.Path,AutoSuggest) + StringCompare(Container(9000).ListItem.Property(TypeItem),MusicVideo)">ActivateWindow(2126)</value>
-		<value condition="Skin.String(UsrFavBtnCmd.Path,AutoSuggest)">ActivateWindow(Favourites),return</value>
+		<value condition="Skin.String(UsrFavBtnCmd.Path,AutoSuggest)">ActivateWindow(Favourites)</value>
 		<value>$INFO[Skin.String(UsrFavBtnCmd.Path)]</value>
 	</variable>
     <variable name="PowerButtonLabel">

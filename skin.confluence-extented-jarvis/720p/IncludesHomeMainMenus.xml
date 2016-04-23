@@ -332,15 +332,27 @@
         <!-- Sub Settings -->
         <onload>Skin.SetString(SubMenu10.Label,$LOCALIZE[31959])</onload>
         <onload>Skin.SetString(SubMenu10.1.Label,$LOCALIZE[5])</onload>
-        <onload>Skin.SetString(SubMenu10.1.Path,ActivateWindow(Settings))</onload>
-        <onload>Skin.SetString(SubMenu10.2.Label,$LOCALIZE[7])</onload>
-        <onload>Skin.SetString(SubMenu10.2.Path,ActivateWindow(FileManager))</onload>
-        <onload>Skin.SetString(SubMenu10.3.Label,$LOCALIZE[13200])</onload>
-        <onload>Skin.SetString(SubMenu10.3.Path,ActivateWindow(Profiles))</onload>        
-        <onload>Skin.SetString(SubMenu10.4.Label,$LOCALIZE[130])</onload>
-        <onload>Skin.SetString(SubMenu10.4.Path,ActivateWindow(SystemInfo))</onload>
-        <onload>Skin.SetString(SubMenu10.5.Label,$LOCALIZE[88118])</onload>
-        <onload>Skin.SetString(SubMenu10.5.Path,ActivateWindow(EventLog,events://,return))</onload>
+        <onload>Skin.SetString(SubMenu10.1.Path,ActivateWindow(Settings))</onload>        
+        <!-- OpenELEC -->
+        <onload condition="System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.2.Label,OpenELEC)</onload>
+        <onload condition="System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.2.Path,RunAddon(service.openelec.settings))</onload>
+        <onload condition="System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.3.Label,$LOCALIZE[7])</onload>
+        <onload condition="System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.3.Path,ActivateWindow(FileManager))</onload>
+        <onload condition="System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.4.Label,$LOCALIZE[13200])</onload>
+        <onload condition="System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.4.Path,ActivateWindow(Profiles))</onload>   
+        <onload condition="System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.5.Label,$LOCALIZE[130])</onload>
+        <onload condition="System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.5.Path,ActivateWindow(SystemInfo))</onload>  
+        <onload condition="System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.6.Label,$LOCALIZE[88118])</onload>
+        <onload condition="System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.6.Path,ActivateWindow(EventLog,events://,return))</onload>
+        <!-- No OpenELEC -->
+        <onload condition="!System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.2.Label,$LOCALIZE[7])</onload>
+        <onload condition="!System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.2.Path,ActivateWindow(FileManager))</onload>                
+        <onload condition="!System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.3.Label,$LOCALIZE[13200])</onload>
+        <onload condition="!System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.3.Path,ActivateWindow(Profiles))</onload>             
+        <onload condition="!System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.4.Label,$LOCALIZE[130])</onload>
+        <onload condition="!System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.4.Path,ActivateWindow(SystemInfo))</onload>              
+        <onload condition="!System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.5.Label,$LOCALIZE[88118])</onload>
+        <onload condition="!System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.5.Path,ActivateWindow(EventLog,events://,return))</onload>        
     </include>
     <include name="DefaultMainMenu">
         <!-- Weather -->
@@ -449,6 +461,8 @@
         <!-- Other -->
 		<onload>Skin.SetBool(EnableWidgetsTitle)</onload>
         <onload>Skin.SetBool(SingleGlobalBackground)</onload>
+        <onload>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(Favourites))</onload>
+        <onload>Skin.SetString(UsrPwrBtnCmd.Path,ActivateWindow(ShutdownMenu))</onload>
 		<onload condition="!System.HasAddon(script.randomandlastitems)">Skin.Setbool(ActivateScriptPlaylist)</onload>
 		<onload>Skin.SetBool(InitialSetUpRun)</onload>
 	</include>
