@@ -1201,7 +1201,7 @@
 				<description>Radio Channels</description>
 				<label>$LOCALIZE[89018] - $LOCALIZE[19019]</label>
 				<include>ClearButtonChoice</include>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(TVChannels))</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(RadioChannels))</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31960])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[19019])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
