@@ -298,7 +298,7 @@ msgstr ""
 #empty strings from id 31130 to 31131
 
 msgctxt "#31131"
-msgid "Choose home fanart pack"
+msgid "Choose home backgrounds pack"
 msgstr ""
 
 msgctxt "#31132"

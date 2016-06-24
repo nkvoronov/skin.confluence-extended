@@ -1283,20 +1283,7 @@
 						<onclick>Skin.ToggleSetting(HideVisualizationFanart)</onclick>
 						<selected>Skin.HasSetting(HideVisualizationFanart)</selected>
 					</control>
-                    <control type="button" id="703">
-                        <width>750</width>
-						<height>40</height>
-						<font>font13</font>
-                        <label>$LOCALIZE[31131]</label>
-                        <label2>$INFO[Skin.String(HomeFanart.name)]</label2>
-                        <textcolor>grey2</textcolor>
-                        <focusedcolor>white</focusedcolor>
-                        <texturefocus>MenuItemFO.png</texturefocus>
-                        <texturenofocus>MenuItemNF.png</texturenofocus>
-                        <onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=HomeFanart&amp;type=resource.images.skinbackgrounds)</onclick>
-                        <enable>!Skin.HasSetting(HideBackGroundFanart)</enable>
-                    </control>
-					<control type="radiobutton" id="704">
+					<control type="radiobutton" id="703">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1308,7 +1295,7 @@
 						<onclick>Skin.ToggleSetting(ShowBackgroundVideo)</onclick>
 						<selected>!Skin.HasSetting(ShowBackgroundVideo)</selected>
 					</control>
-					<control type="radiobutton" id="705">
+					<control type="radiobutton" id="704">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1320,7 +1307,7 @@
 						<onclick>Skin.ToggleSetting(ShowBackgroundVis)</onclick>
 						<selected>!Skin.HasSetting(ShowBackgroundVis)</selected>
 					</control>
-					<control type="label" id="706">
+					<control type="label" id="705">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -1330,7 +1317,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="707">
+					<control type="radiobutton" id="706">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1343,7 +1330,7 @@
 						<selected>Skin.HasSetting(SeparateBackground)</selected>
 						<enable>!Skin.HasSetting(UseCustomBackground)</enable>
 					</control>
-					<control type="radiobutton" id="708">
+					<control type="radiobutton" id="707">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1356,7 +1343,7 @@
 						<selected>Skin.HasSetting(UseCustomBackground)</selected>
 						<enable>!Skin.HasSetting(SeparateBackground)</enable>
 					</control>
-					<control type="button" id="709">
+					<control type="button" id="708">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1403,48 +1390,66 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="800">
+                    <control type="button" id="800">
+                        <left>0</left>
+						<top>45</top>
+                        <width>750</width>
+						<height>40</height>
+						<font>font13</font>
+                        <label>$LOCALIZE[31131]</label>
+                        <label2>$INFO[Skin.String(HomeFanart.name)]</label2>
+                        <textcolor>grey2</textcolor>
+                        <focusedcolor>white</focusedcolor>
+                        <texturefocus>MenuItemFO.png</texturefocus>
+                        <texturenofocus>MenuItemNF.png</texturenofocus>
+                        <onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=HomeFanart&amp;type=resource.images.skinbackgrounds)</onclick>
+                        <onleft>9000</onleft>
+						<onright>801</onright>
+						<onup>804</onup>
+						<ondown>801</ondown>
+                    </control>
+					<control type="button" id="801">
 						<description>Menu Item Next Button</description>
 						<left>670</left>
-						<top>53</top>
+						<top>93</top>
 						<width>33</width>
 						<height>22</height>
 						<label>-</label>
 						<font>-</font>
 						<texturenofocus>scroll-down-2.png</texturenofocus>
 						<texturefocus>scroll-down-focus-2.png</texturefocus>
-						<onclick>Control.Move(802,1)</onclick>
+						<onclick>Control.Move(803,1)</onclick>
 						<onleft>9000</onleft>
-						<onright>801</onright>
-						<onup>803</onup>
-						<ondown>803</ondown>
+						<onright>802</onright>
+						<onup>800</onup>
+						<ondown>804</ondown>
 					</control>
-					<control type="button" id="801">
+					<control type="button" id="802">
 						<description>Menu Item Prev Button</description>
 						<left>703</left>
-						<top>53</top>
+						<top>93</top>
 						<width>33</width>
 						<height>22</height>
 						<label>-</label>
 						<font>-</font>
 						<texturenofocus>scroll-up-2.png</texturenofocus>
 						<texturefocus>scroll-up-focus-2.png</texturefocus>
-						<onclick>Control.Move(802,-1)</onclick>
-						<onleft>800</onleft>
+						<onclick>Control.Move(803,-1)</onclick>
+						<onleft>801</onleft>
 						<onright>9000</onright>
-						<onup>803</onup>
-						<ondown>803</ondown>
+						<onup>800</onup>
+						<ondown>804</ondown>
 					</control>
-					<control type="list" id="802">
+					<control type="list" id="803">
 						<hitrect x="0" y="0" w="0" h="0" />
 						<left>0</left>
-						<top>45</top>
+						<top>85</top>
 						<width>750</width>
 						<height>40</height>
 						<onleft>9000</onleft>
-						<onright>803</onright>
-						<onup>801</onup>
-						<ondown>801</ondown>
+						<onright>804</onright>
+						<onup>802</onup>
+						<ondown>800</ondown>
 						<pagecontrol>-</pagecontrol>
 						<scrolltime>0</scrolltime>
 						<itemlayout height="1" width="750">
@@ -1456,7 +1461,7 @@
 								<width>750</width>
 								<height>40</height>
 								<texture>MenuItemNF.png</texture>
-								<visible>![Control.HasFocus(800) | Control.HasFocus(801)]</visible>
+								<visible>![Control.HasFocus(801) | Control.HasFocus(802)]</visible>
 							</control>
 							<control type="image">
 								<left>0</left>
@@ -1464,7 +1469,7 @@
 								<width>750</width>
 								<height>40</height>
 								<texture>MenuItemFO.png</texture>
-								<visible>[Control.HasFocus(800) | Control.HasFocus(801)]</visible>
+								<visible>[Control.HasFocus(801) | Control.HasFocus(802)]</visible>
 							</control>
 							<control type="label">
 								<left>10</left>
@@ -1476,7 +1481,7 @@
 								<align>left</align>
 								<aligny>center</aligny>
 								<label>$LOCALIZE[31110]</label>
-								<visible>![Control.HasFocus(800) | Control.HasFocus(801)]</visible>
+								<visible>![Control.HasFocus(801) | Control.HasFocus(802)]</visible>
 							</control>
 							<control type="label">
 								<left>10</left>
@@ -1488,7 +1493,7 @@
 								<align>left</align>
 								<aligny>center</aligny>
 								<label>$LOCALIZE[31110]</label>
-								<visible>[Control.HasFocus(800) | Control.HasFocus(801)]</visible>
+								<visible>[Control.HasFocus(801) | Control.HasFocus(802)]</visible>
 							</control>
 							<control type="label">
 								<left>20</left>
@@ -1500,7 +1505,7 @@
 								<align>right</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.Label]</label>
-								<visible>![Control.HasFocus(800) | Control.HasFocus(801)]</visible>
+								<visible>![Control.HasFocus(801) | Control.HasFocus(802)]</visible>
 							</control>
 							<control type="label">
 								<left>20</left>
@@ -1512,7 +1517,7 @@
 								<align>right</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.Label]</label>
-								<visible>[Control.HasFocus(800) | Control.HasFocus(801)]</visible>
+								<visible>[Control.HasFocus(801) | Control.HasFocus(802)]</visible>
 							</control>
 						</focusedlayout>
 						<content>
@@ -1522,6 +1527,7 @@
 								<onclick>-</onclick>
 								<icon>$INFO[Skin.String(HomeItem.1.DBackground)]</icon>
 								<thumb>$INFO[Skin.String(HomeItem.1.CBackground)]</thumb>
+                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.1.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
                                 <visible>!IsEmpty(Skin.String(HomeItem.1.Path))</visible>
 							</item>
 							<item id="2">
@@ -1530,6 +1536,7 @@
 								<onclick>-</onclick>
 								<icon>$INFO[Skin.String(HomeItem.2.DBackground)]</icon>
 								<thumb>$INFO[Skin.String(HomeItem.2.CBackground)]</thumb>
+                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.2.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
                                 <visible>!IsEmpty(Skin.String(HomeItem.2.Path))</visible>
 							</item>                            
 							<item id="3">
@@ -1538,6 +1545,7 @@
 								<onclick>-</onclick>
 								<icon>$INFO[Skin.String(HomeItem.3.DBackground)]</icon>
 								<thumb>$INFO[Skin.String(HomeItem.3.CBackground)]</thumb>
+                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.3.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
                                 <visible>!IsEmpty(Skin.String(HomeItem.3.Path))</visible>
 							</item>
 							<item id="4">
@@ -1546,6 +1554,7 @@
 								<onclick>-</onclick>
 								<icon>$INFO[Skin.String(HomeItem.4.DBackground)]</icon>
 								<thumb>$INFO[Skin.String(HomeItem.4.CBackground)]</thumb>
+                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.4.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
                                 <visible>!IsEmpty(Skin.String(HomeItem.4.Path))</visible>
 							</item>
 							<item id="5">
@@ -1554,6 +1563,7 @@
 								<onclick>-</onclick>
 								<icon>$INFO[Skin.String(HomeItem.5.DBackground)]</icon>
 								<thumb>$INFO[Skin.String(HomeItem.5.CBackground)]</thumb>
+                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.5.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
                                 <visible>!IsEmpty(Skin.String(HomeItem.5.Path))</visible>
 							</item>
 							<item id="6">
@@ -1562,6 +1572,7 @@
 								<onclick>-</onclick>
 								<icon>$INFO[Skin.String(HomeItem.6.DBackground)]</icon>
 								<thumb>$INFO[Skin.String(HomeItem.6.CBackground)]</thumb>
+                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.6.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
                                 <visible>!IsEmpty(Skin.String(HomeItem.6.Path))</visible>
 							</item>                            
 							<item id="7">
@@ -1570,6 +1581,7 @@
 								<onclick>-</onclick>
 								<icon>$INFO[Skin.String(HomeItem.7.DBackground)]</icon>
 								<thumb>$INFO[Skin.String(HomeItem.7.CBackground)]</thumb>
+                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.7.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
                                 <visible>!IsEmpty(Skin.String(HomeItem.7.Path))</visible>
 							</item>
 							<item id="8">
@@ -1578,6 +1590,7 @@
 								<onclick>-</onclick>
 								<icon>$INFO[Skin.String(HomeItem.8.DBackground)]</icon>
 								<thumb>$INFO[Skin.String(HomeItem.8.CBackground)]</thumb>
+                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.8.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
                                 <visible>!IsEmpty(Skin.String(HomeItem.8.Path))</visible>
 							</item>
 							<item id="9">
@@ -1586,6 +1599,7 @@
 								<onclick>-</onclick>
 								<icon>$INFO[Skin.String(HomeItem.9.DBackground)]</icon>
 								<thumb>$INFO[Skin.String(HomeItem.9.CBackground)]</thumb>
+                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.9.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
                                 <visible>!IsEmpty(Skin.String(HomeItem.9.Path))</visible>
 							</item>
 							<item id="10">
@@ -1594,6 +1608,7 @@
 								<onclick>-</onclick>
 								<icon>$INFO[Skin.String(HomeItem.10.DBackground)]</icon>
 								<thumb>$INFO[Skin.String(HomeItem.10.CBackground)]</thumb>
+                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.10.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
                                 <visible>!IsEmpty(Skin.String(HomeItem.10.Path))</visible>
 							</item>                            
 							<item id="11">
@@ -1602,6 +1617,7 @@
 								<onclick>-</onclick>
 								<icon>$INFO[Skin.String(HomeItem.11.DBackground)]</icon>
 								<thumb>$INFO[Skin.String(HomeItem.11.CBackground)]</thumb>
+                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.11.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
                                 <visible>!IsEmpty(Skin.String(HomeItem.11.Path))</visible>
 							</item>
 							<item id="12">
@@ -1610,6 +1626,7 @@
 								<onclick>-</onclick>
 								<icon>$INFO[Skin.String(HomeItem.12.DBackground)]</icon>
 								<thumb>$INFO[Skin.String(HomeItem.12.CBackground)]</thumb>
+                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.12.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
                                 <visible>!IsEmpty(Skin.String(HomeItem.12.Path))</visible>
 							</item>
 							<item id="13">
@@ -1618,6 +1635,7 @@
 								<onclick>-</onclick>
 								<icon>$INFO[Skin.String(HomeItem.13.DBackground)]</icon>
 								<thumb>$INFO[Skin.String(HomeItem.13.CBackground)]</thumb>
+                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.13.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
                                 <visible>!IsEmpty(Skin.String(HomeItem.13.Path))</visible>
 							</item>
 							<item id="14">
@@ -1626,6 +1644,7 @@
 								<onclick>-</onclick>
 								<icon>$INFO[Skin.String(HomeItem.14.DBackground)]</icon>
 								<thumb>$INFO[Skin.String(HomeItem.14.CBackground)]</thumb>
+                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.14.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
                                 <visible>!IsEmpty(Skin.String(HomeItem.14.Path))</visible>
 							</item>                            
 							<item id="15">
@@ -1634,6 +1653,7 @@
 								<onclick>-</onclick>
 								<icon>$INFO[Skin.String(HomeItem.15.DBackground)]</icon>
 								<thumb>$INFO[Skin.String(HomeItem.15.CBackground)]</thumb>
+                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.15.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
                                 <visible>!IsEmpty(Skin.String(HomeItem.15.Path))</visible>
 							</item>
 							<item id="16">
@@ -1642,6 +1662,7 @@
 								<onclick>-</onclick>
 								<icon>$INFO[Skin.String(HomeItem.16.DBackground)]</icon>
 								<thumb>$INFO[Skin.String(HomeItem.16.CBackground)]</thumb>
+                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.16.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
                                 <visible>!IsEmpty(Skin.String(HomeItem.16.Path))</visible>
 							</item>
 							<item id="17">
@@ -1650,6 +1671,7 @@
 								<onclick>-</onclick>
 								<icon>$INFO[Skin.String(HomeItem.17.DBackground)]</icon>
 								<thumb>$INFO[Skin.String(HomeItem.17.CBackground)]</thumb>
+                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.17.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
                                 <visible>!IsEmpty(Skin.String(HomeItem.17.Path))</visible>
 							</item>
 							<item id="18">
@@ -1658,6 +1680,7 @@
 								<onclick>-</onclick>
 								<icon>$INFO[Skin.String(HomeItem.18.DBackground)]</icon>
 								<thumb>$INFO[Skin.String(HomeItem.18.CBackground)]</thumb>
+                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.18.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
                                 <visible>!IsEmpty(Skin.String(HomeItem.18.Path))</visible>
 							</item>                            
 							<item id="19">
@@ -1666,6 +1689,7 @@
 								<onclick>-</onclick>
 								<icon>$INFO[Skin.String(HomeItem.19.DBackground)]</icon>
 								<thumb>$INFO[Skin.String(HomeItem.19.CBackground)]</thumb>
+                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.19.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
                                 <visible>!IsEmpty(Skin.String(HomeItem.19.Path))</visible>
 							</item>
 							<item id="20">
@@ -1674,25 +1698,26 @@
 								<onclick>-</onclick>
 								<icon>$INFO[Skin.String(HomeItem.20.DBackground)]</icon>
 								<thumb>$INFO[Skin.String(HomeItem.20.CBackground)]</thumb>
+                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.20.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
                                 <visible>!IsEmpty(Skin.String(HomeItem.20.Path))</visible>
 							</item>
 						</content>
 					</control>
 					<control type="image">
-						<left>85</left>
-						<top>100</top>
-						<width>580</width>
-						<height>435</height>
+						<left>65</left>
+						<top>140</top>
+						<width>610</width>
+						<height>395</height>
 						<texture>black-back.png</texture>
 					</control>
 					<control type="group">
-						<left>95</left>
-						<top>110</top>
-						<control type="button" id="803">
+						<left>75</left>
+						<top>150</top>
+						<control type="button" id="804">
 							<description>Single Image button</description>
 							<left>5</left>
 							<top>0</top>
-							<width>180</width>
+							<width>190</width>
 							<height>40</height>
 							<label>1033</label>
 							<font>font12_title</font>
@@ -1701,17 +1726,18 @@
 							<align>center</align>
 							<texturenofocus border="5">button-nofocus.png</texturenofocus>
 							<texturefocus border="5">button-focus.png</texturefocus>
-							<onclick>Skin.SetImage($INFO[Container(802).ListItem.Label2])</onclick>
-							<onleft>805</onleft>
-							<onright>804</onright>
-							<onup>800</onup>
-							<ondown>800</ondown>
+							<onclick>Skin.SetImage($INFO[Container(803).ListItem.Label2])</onclick>
+							<onleft>806</onleft>
+							<onright>805</onright>
+							<onup>801</onup>
+							<ondown>801</ondown>
+                            <enable>IsEmpty(Skin.String(HomeFanart.path))</enable>
 						</control>
-						<control type="button" id="804">
+						<control type="button" id="805">
 							<description>Multi Image button</description>
-							<left>190</left>
+							<left>200</left>
 							<top>0</top>
-							<width>180</width>
+							<width>190</width>
 							<height>40</height>
 							<label>657</label>
 							<font>font12_title</font>
@@ -1720,17 +1746,18 @@
 							<align>center</align>
 							<texturenofocus border="5">button-nofocus.png</texturenofocus>
 							<texturefocus border="5">button-focus.png</texturefocus>
-							<onclick>Skin.SetPath($INFO[Container(802).ListItem.Label2])</onclick>
-							<onleft>803</onleft>
-							<onright>805</onright>
-							<onup>800</onup>
-							<ondown>800</ondown>
+							<onclick>Skin.SetPath($INFO[Container(803).ListItem.Label2])</onclick>
+							<onleft>804</onleft>
+							<onright>806</onright>
+							<onup>801</onup>
+							<ondown>801</ondown>
+                            <enable>IsEmpty(Skin.String(HomeFanart.path))</enable>
 						</control>
-						<control type="button" id="805">
+						<control type="button" id="806">
 							<description>Default Image button</description>
-							<left>375</left>
+							<left>395</left>
 							<top>0</top>
-							<width>180</width>
+							<width>190</width>
 							<height>40</height>
 							<label>571</label>
 							<font>font12_title</font>
@@ -1739,33 +1766,47 @@
 							<align>center</align>
 							<texturenofocus border="5">button-nofocus.png</texturenofocus>
 							<texturefocus border="5">button-focus.png</texturefocus>
-							<onclick>Skin.Reset($INFO[Container(802).ListItem.Label2])</onclick>
-							<onleft>804</onleft>
-							<onright>803</onright>
-							<onup>800</onup>
-							<ondown>800</ondown>
+							<onclick>Skin.Reset($INFO[Container(803).ListItem.Label2])</onclick>
+							<onleft>805</onleft>
+							<onright>804</onright>
+							<onup>801</onup>
+							<ondown>801</ondown>
+                            <enable>IsEmpty(Skin.String(HomeFanart.path))</enable>
 						</control>
-						<control type="multiimage">
+						<control type="multiimage" id="850">
 							<left>0</left>
 							<top>50</top>
-							<width>560</width>
-							<height>335</height>
-							<imagepath background="true">$INFO[Container(802).ListItem.Icon]</imagepath>
+							<width>590</width>
+							<height>295</height>
+							<imagepath background="true">$INFO[Container(803).ListItem.Icon]</imagepath>
 							<timeperimage>6000</timeperimage>
 							<randomize>true</randomize>
 							<fadetime>500</fadetime>
+                            <visible>IsEmpty(Skin.String(HomeFanart.path)) | IsEmpty(Control.GetLabel(851))</visible>
+						</control>
+						<control type="multiimage" id="851">
+							<left>0</left>
+							<top>50</top>
+							<width>590</width>
+							<height>295</height>
+							<imagepath background="true">$INFO[Container(803).ListItem.Property(BackgroundsSetImage)]</imagepath>
+							<timeperimage>6000</timeperimage>
+							<randomize>true</randomize>
+							<fadetime>500</fadetime>
+                            <visible>!IsEmpty(Skin.String(HomeFanart.path))</visible>
 						</control>
 						<control type="label">
 							<left>0</left>
-							<top>390</top>
-							<width>560</width>
+							<top>350</top>
+							<width>580</width>
 							<height>20</height>
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font11</font>
 							<haspath>yes</haspath>
-							<label fallback="571">$INFO[Container(802).ListItem.Thumb]</label>
+							<label fallback="571">$INFO[Container(803).ListItem.Thumb]</label>
 							<textcolor>white</textcolor>
+                            <visible>IsEmpty(Skin.String(HomeFanart.path))</visible>
 						</control>
 					</control>
 				</control>

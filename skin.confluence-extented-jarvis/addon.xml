@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.confluence-extented-jarvis"
-  version="2.8.8.046"
+  version="2.8.8.047"
   name="Confluence-extented-jarvis"
   provider-name="Jezz_X, Team Kodi, YLLOW_DRAGON, plood">
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>
 	<import addon="script.favourites" version="6.0.3"/>
-    <import addon="script.pvr.favourites" version="1.0.5"/>
+    <import addon="script.pvr.favourites" version="1.0.6"/>
     <import addon="service.skin.widgets" version="0.0.32"/>
     <import addon="script.randomandlastitems" version="2.2.2"/>    
   </requires>

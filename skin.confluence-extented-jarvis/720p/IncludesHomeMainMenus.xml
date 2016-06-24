@@ -186,10 +186,10 @@
     <include name="HomeMainMenuContentItem">
         <item id="$PARAM[id]">
             <description>Home Menu Item</description>
-            <label>$INFO[Skin.String(HomeItem.$PARAM[id].Label)]</label>
+            <label>$INFO[Skin.String(HomeItem.$PARAM[id].Label)]</label>            
             <onclick>SetProperty(MenuItemActive,Item$PARAM[id2],Home)</onclick>
-            <onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.$PARAM[id].Type)],Home)</onclick>
-            <onclick>SetProperty(MenuBackground,$VAR[Background$PARAM[id2]],Home)</onclick>
+            <onclick>SetProperty(MenuBackground,$VAR[Background$PARAM[id2]],Home)</onclick>            
+            <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[BackgroundHomeFanart$PARAM[id2]],Home)</onclick>            
             <onclick>$INFO[Skin.String(HomeItem.$PARAM[id].Path)]</onclick>
             <icon>$INFO[Skin.String(HomeItem.$PARAM[id].DBackground)]</icon>
             <thumb>$INFO[Skin.String(HomeItem.$PARAM[id].CBackground)]</thumb>
@@ -200,14 +200,14 @@
             <property name="PlayListType">$INFO[Window(Home).Property(HomePlaylist$PARAM[id2].Type)]</property>
             <property name="Background">$VAR[Background$PARAM[id2]]</property>
             <visible>!IsEmpty(Skin.String(HomeItem.$PARAM[id].Path))</visible>
-            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),Weather)">VisibleWeather</include>
-            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),Radio)">VisibleRadio</include>
-            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),LiveTV)">VisibleLiveTV</include>
-            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),Movies)">VisibleMovies</include>
-            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),TVShows)">VisibleTVShows</include>
-            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),MusicVideos)">VisibleMusicVideo</include>
-            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),Music)">VisibleMusic</include>
-            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),DVD)">VisiblePlayDisc</include>
+            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),weather)">VisibleWeather</include>
+            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),radio)">VisibleRadio</include>
+            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),livetv)">VisibleLiveTV</include>
+            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),movies)">VisibleMovies</include>
+            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),tvshows)">VisibleTVShows</include>
+            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),musicvideos)">VisibleMusicVideo</include>
+            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),music)">VisibleMusic</include>
+            <include condition="stringcompare(Skin.String(HomeItem.$PARAM[id].Type),dvd)">VisiblePlayDisc</include>
         </item>
     </include>
     <include name="VisibleWeather">
@@ -361,7 +361,7 @@
 		<onload>Skin.SetString(HomeItem.1.Sub,None)</onload>
 		<onload>Skin.SetString(HomeItem.1.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.1.Widget,Weather)</onload>
-		<onload>Skin.SetString(HomeItem.1.Type,Weather)</onload>
+		<onload>Skin.SetString(HomeItem.1.Type,weather)</onload>
 		<onload>Skin.SetString(HomeItem.1.DBackground,special://skin/backgrounds/default/weather.jpg)</onload>
         <!-- Pictures -->        
 		<onload>Skin.SetString(HomeItem.2.Label,$LOCALIZE[31951])</onload>
@@ -369,7 +369,7 @@
 		<onload>Skin.SetString(HomeItem.2.Sub,SubMenu01)</onload>
 		<onload>Skin.SetString(HomeItem.2.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.2.Widget,None)</onload>
-		<onload>Skin.SetString(HomeItem.2.Type,Pictures)</onload>
+		<onload>Skin.SetString(HomeItem.2.Type,pictures)</onload>
 		<onload>Skin.SetString(HomeItem.2.DBackground,special://skin/backgrounds/default/pictures.jpg)</onload>
         <!-- Radio -->        
 		<onload>Skin.SetString(HomeItem.3.Label,$LOCALIZE[31960])</onload>
@@ -377,7 +377,7 @@
 		<onload>Skin.SetString(HomeItem.3.Sub,SubMenu02)</onload>
 		<onload>Skin.SetString(HomeItem.3.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.3.Widget,None)</onload>
-		<onload>Skin.SetString(HomeItem.3.Type,Radio)</onload>
+		<onload>Skin.SetString(HomeItem.3.Type,radio)</onload>
 		<onload>Skin.SetString(HomeItem.3.DBackground,special://skin/backgrounds/default/radio.jpg)</onload>
         <!-- TV -->
 		<onload>Skin.SetString(HomeItem.4.Label,$LOCALIZE[31952])</onload>
@@ -385,7 +385,7 @@
 		<onload>Skin.SetString(HomeItem.4.Sub,SubMenu03)</onload>
 		<onload>Skin.SetString(HomeItem.4.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.4.Widget,None)</onload>
-		<onload>Skin.SetString(HomeItem.4.Type,LiveTV)</onload>
+		<onload>Skin.SetString(HomeItem.4.Type,livetv)</onload>
 		<onload>Skin.SetString(HomeItem.4.DBackground,special://skin/backgrounds/default/livetv.jpg)</onload>
         <!-- Videos -->
 		<onload>Skin.SetString(HomeItem.5.Label,$LOCALIZE[31953])</onload>
@@ -393,7 +393,7 @@
 		<onload>Skin.SetString(HomeItem.5.Sub,SubMenu04)</onload>
 		<onload>Skin.SetString(HomeItem.5.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.5.Widget,None)</onload>
-		<onload>Skin.SetString(HomeItem.5.Type,Video)</onload>
+		<onload>Skin.SetString(HomeItem.5.Type,video)</onload>
 		<onload>Skin.SetString(HomeItem.5.DBackground,special://skin/backgrounds/default/video.jpg)</onload>
         <!-- Movies -->
 		<onload>Skin.SetString(HomeItem.6.Label,$LOCALIZE[31954])</onload>
@@ -401,7 +401,7 @@
 		<onload>Skin.SetString(HomeItem.6.Sub,SubMenu05)</onload>
 		<onload>Skin.SetString(HomeItem.6.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.6.Widget,RecentMovies)</onload>
-		<onload>Skin.SetString(HomeItem.6.Type,Movies)</onload>
+		<onload>Skin.SetString(HomeItem.6.Type,movies)</onload>
 		<onload>Skin.SetString(HomeItem.6.DBackground,special://skin/backgrounds/default/movies.jpg)</onload>
         <!-- TVShows -->
 		<onload>Skin.SetString(HomeItem.7.Label,$LOCALIZE[31955])</onload>
@@ -409,7 +409,7 @@
 		<onload>Skin.SetString(HomeItem.7.Sub,SubMenu06)</onload>
 		<onload>Skin.SetString(HomeItem.7.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.7.Widget,RecentEpisodes)</onload>
-		<onload>Skin.SetString(HomeItem.7.Type,TVShows)</onload>
+		<onload>Skin.SetString(HomeItem.7.Type,tvshows)</onload>
 		<onload>Skin.SetString(HomeItem.7.DBackground,special://skin/backgrounds/default/tvshows.jpg)</onload>       
         <!-- MusicVideo -->
 		<onload>Skin.SetString(HomeItem.8.Label,$LOCALIZE[31961])</onload>
@@ -417,7 +417,7 @@
 		<onload>Skin.SetString(HomeItem.8.Sub,SubMenu07)</onload>
 		<onload>Skin.SetString(HomeItem.8.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.8.Widget,RecentMusicVideo)</onload>
-		<onload>Skin.SetString(HomeItem.8.Type,MusicVideos)</onload>
+		<onload>Skin.SetString(HomeItem.8.Type,musicvideos)</onload>
 		<onload>Skin.SetString(HomeItem.8.DBackground,special://skin/backgrounds/default/musicvideos.jpg)</onload>                
         <!-- Musics -->
 		<onload>Skin.SetString(HomeItem.9.Label,$LOCALIZE[31956])</onload>
@@ -425,7 +425,7 @@
 		<onload>Skin.SetString(HomeItem.9.Sub,SubMenu08)</onload>
 		<onload>Skin.SetString(HomeItem.9.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.9.Widget,RecentAlbums)</onload>
-		<onload>Skin.SetString(HomeItem.9.Type,Music)</onload>
+		<onload>Skin.SetString(HomeItem.9.Type,music)</onload>
 		<onload>Skin.SetString(HomeItem.9.DBackground,special://skin/backgrounds/default/music.jpg)</onload>
         <!-- Programs -->
 		<onload>Skin.SetString(HomeItem.10.Label,$LOCALIZE[31957])</onload>
@@ -434,7 +434,7 @@
 		<onload>Skin.SetString(HomeItem.10.Sub,None)</onload>
 		<onload>Skin.SetString(HomeItem.10.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.10.Widget,None)</onload>
-		<onload>Skin.SetString(HomeItem.10.Type,Addons)</onload>
+		<onload>Skin.SetString(HomeItem.10.Type,addons)</onload>
 		<onload>Skin.SetString(HomeItem.10.DBackground,special://skin/backgrounds/default/addons.jpg)</onload>
         <!-- PlayDisc -->
 		<onload>Skin.SetString(HomeItem.11.Label,$LOCALIZE[31958])</onload>
@@ -442,7 +442,7 @@
 		<onload>Skin.SetString(HomeItem.11.Sub,SubMenu09)</onload>
 		<onload>Skin.SetString(HomeItem.11.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.11.Widget,None)</onload>
-		<onload>Skin.SetString(HomeItem.11.Type,DVD)</onload>
+		<onload>Skin.SetString(HomeItem.11.Type,dvd)</onload>
 		<onload>Skin.SetString(HomeItem.11.DBackground,special://skin/backgrounds/default/dvd.jpg)</onload>
         <!-- Settings -->
 		<onload>Skin.SetString(HomeItem.12.Label,$LOCALIZE[31959])</onload>
@@ -450,7 +450,7 @@
 		<onload>Skin.SetString(HomeItem.12.Sub,SubMenu10)</onload>
 		<onload>Skin.SetString(HomeItem.12.Addon,None)</onload>
 		<onload>Skin.SetString(HomeItem.12.Widget,None)</onload>
-		<onload>Skin.SetString(HomeItem.12.Type,Settings)</onload>
+		<onload>Skin.SetString(HomeItem.12.Type,settings)</onload>
 		<onload>Skin.SetString(HomeItem.12.DBackground,special://skin/backgrounds/default/settings.jpg)</onload>
     </include>
 	<include name="DefaultInitialSetup">

@@ -253,8 +253,8 @@ msgid "Hide fanart in full screen visualisation"
 msgstr "Скрывать фанарт в полноэкранной визуализации"
 
 msgctxt "#31131"
-msgid "Choose home fanart pack"
-msgstr "Выбрать фанарт пакет"
+msgid "Choose home backgrounds pack"
+msgstr "Выбрать пакет фонов"
 
 msgctxt "#31132"
 msgid "Lyrics add-on"

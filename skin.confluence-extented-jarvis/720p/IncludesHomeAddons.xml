@@ -478,6 +478,7 @@
             <item id="1">
                 <label>$INFO[Skin.String(AddonSet$PARAM[id2].1.Label)]</label>
                 <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
                 <onclick>$INFO[Skin.String(AddonSet$PARAM[id2].1.Path)]</onclick>
                 <icon>$INFO[Skin.String(AddonSet$PARAM[id2].1.Icon)]</icon>
                 <thumb>-</thumb>
@@ -486,6 +487,7 @@
             <item id="2">
                 <label>$INFO[Skin.String(AddonSet$PARAM[id2].2.Label)]</label>
                 <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
                 <onclick>$INFO[Skin.String(AddonSet$PARAM[id2].2.Path)]</onclick>
                 <icon>$INFO[Skin.String(AddonSet$PARAM[id2].2.Icon)]</icon>
                 <thumb>-</thumb>
@@ -494,6 +496,7 @@
             <item id="3">
                 <label>$INFO[Skin.String(AddonSet$PARAM[id2].3.Label)]</label>
                 <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
                 <onclick>$INFO[Skin.String(AddonSet$PARAM[id2].3.Path)]</onclick>
                 <icon>$INFO[Skin.String(AddonSet$PARAM[id2].3.Icon)]</icon>
                 <thumb>-</thumb>
@@ -502,6 +505,7 @@
             <item id="4">
                 <label>$INFO[Skin.String(AddonSet$PARAM[id2].4.Label)]</label>
                 <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
                 <onclick>$INFO[Skin.String(AddonSet$PARAM[id2].4.Path)]</onclick>
                 <icon>$INFO[Skin.String(AddonSet$PARAM[id2].4.Icon)]</icon>
                 <thumb>-</thumb>
@@ -510,6 +514,7 @@
             <item id="5">
                 <label>$INFO[Skin.String(AddonSet$PARAM[id2].5.Label)]</label>
                 <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
                 <onclick>$INFO[Skin.String(AddonSet$PARAM[id2].5.Path)]</onclick>
                 <icon>$INFO[Skin.String(AddonSet$PARAM[id2].5.Icon)]</icon>
                 <thumb>-</thumb>
@@ -518,6 +523,7 @@
             <item id="6">
                 <label>$INFO[Skin.String(AddonSet$PARAM[id2].6.Label)]</label>
                 <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
                 <onclick>$INFO[Skin.String(AddonSet$PARAM[id2].6.Path)]</onclick>
                 <icon>$INFO[Skin.String(AddonSet$PARAM[id2].6.Icon)]</icon>
                 <thumb>-</thumb>
@@ -526,6 +532,7 @@
             <item id="7">
                 <label>$INFO[Skin.String(AddonSet$PARAM[id2].7.Label)]</label>
                 <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
                 <onclick>$INFO[Skin.String(AddonSet$PARAM[id2].7.Path)]</onclick>
                 <icon>$INFO[Skin.String(AddonSet$PARAM[id2].7.Icon)]</icon>
                 <thumb>-</thumb>
