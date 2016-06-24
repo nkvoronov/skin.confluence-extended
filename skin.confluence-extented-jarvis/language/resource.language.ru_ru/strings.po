@@ -252,6 +252,10 @@ msgctxt "#31129"
 msgid "Hide fanart in full screen visualisation"
 msgstr "Скрывать фанарт в полноэкранной визуализации"
 
+msgctxt "#31131"
+msgid "Choose home fanart pack"
+msgstr "Выбрать фанарт пакет"
+
 msgctxt "#31132"
 msgid "Lyrics add-on"
 msgstr "Дополнение текстов песен"
@@ -822,6 +826,14 @@ msgctxt "#88132"
 msgid "Background options"
 msgstr "Параметры фона"
 
+msgctxt "#88133"
+msgid "Favorites TV Channels"
+msgstr "Избранные ТВ каналы"
+
+msgctxt "#88134"
+msgid "Favorites Radio Channels"
+msgstr "Избранные Радио каналы"
+
 # home menu
 
 msgctxt "#89001"
@@ -847,6 +859,14 @@ msgstr "Переместить меню"
 msgctxt "#89006"
 msgid "None"
 msgstr "Нет"
+
+msgctxt "#89007"
+msgid "Widgets"
+msgstr "Виджеты"
+
+msgctxt "#89008"
+msgid "Channel"
+msgstr "Канал"
 
 # add menu item
 

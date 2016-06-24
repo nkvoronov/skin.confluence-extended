@@ -6,7 +6,7 @@
 			<description>Normal Default Background Image</description>
 			<include>BackgroundDimensions</include>
 			<aspectratio>scale</aspectratio>
-			<texture fallback="special://skin/backgrounds/SKINDEFAULT.jpg">$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</texture>
+			<texture fallback="special://skin/backgrounds/SKINDEFAULT.jpg">$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</texture>
 			<visible>![Skin.HasSetting(UseCustomBackground) + !IsEmpty(Skin.String(CustomBackgroundPath))]</visible>
 			<include>VisibleFadeEffect</include>
 			<visible>!Skin.HasSetting(SeparateBackground)</visible>
@@ -31,7 +31,19 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-            <visible>Window.IsVisible(Home) + Skin.HasSetting(SeparateBackground)</visible>
+            <visible>Window.IsVisible(Home) + Skin.HasSetting(SeparateBackground) + IsEmpty(Skin.String(HomeFanart.path))</visible>
+		</control>
+        <control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<imagepath background="true">$INFO[Skin.String(HomeFanart.path)]$INFO[Container(9000).ListItem.Property(TypeItem)]$INFO[Skin.String(HomeFanart.ext)]</imagepath>
+			<timeperimage>10000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+            <visible>Window.IsVisible(Home) + Skin.HasSetting(SeparateBackground) + !IsEmpty(Skin.String(HomeFanart.path))</visible>
 		</control>
 		<control type="image">
 			<depth>DepthBackground</depth>

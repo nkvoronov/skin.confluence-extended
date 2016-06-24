@@ -297,6 +297,10 @@ msgstr ""
 
 #empty strings from id 31130 to 31131
 
+msgctxt "#31131"
+msgid "Choose home fanart pack"
+msgstr ""
+
 msgctxt "#31132"
 msgid "Lyrics add-on"
 msgstr ""
@@ -922,6 +926,14 @@ msgctxt "#88132"
 msgid "Background options"
 msgstr ""
 
+msgctxt "#88133"
+msgid "Favorites TV Channels"
+msgstr ""
+
+msgctxt "#88134"
+msgid "Favorites Radio Channels"
+msgstr ""
+
 # home menu
 
 msgctxt "#89001"
@@ -946,6 +958,14 @@ msgstr ""
 
 msgctxt "#89006"
 msgid "None"
+msgstr ""
+
+msgctxt "#89007"
+msgid "Widgets"
+msgstr ""
+
+msgctxt "#89008"
+msgid "Channel"
 msgstr ""
 
 # add menu item

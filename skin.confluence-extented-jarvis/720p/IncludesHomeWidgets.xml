@@ -890,7 +890,25 @@
                 <param name="layout_name_include" value="PlayListMusicVideoWidgetLayout" />
                 <param name="contents_name_include" value="PlayListMusicVideoContents" />
                 <param name="left_ra" value="810" />
-            </include>            
+            </include>
+            <!-- Favorites TV Channels 8020 -->
+            <include name="FavoritesPVRChannelsCommonWidgetControls">
+                <param name="visible_widget1" value="PVR.HasTVChannels" />
+                <param name="visible_widget2" value="stringcompare(Container(9000).ListItem.Property(WidgetSet),FavTVChannels)" />
+                <param name="label_title" value="$LOCALIZE[88133]" />
+                <param name="visible_title" value="!IsEmpty(Skin.String(ChannelTV.1.Path)) + Skin.HasSetting(EnableWidgetsTitle)" />
+                <param name="list_id" value="8020" />
+                <param name="setchannelstype" value="TV" />
+            </include>
+            <!-- Favorites Radio Channels 8021 -->
+            <include name="FavoritesPVRChannelsCommonWidgetControls">
+                <param name="visible_widget1" value="PVR.HasRadioChannels" />
+                <param name="visible_widget2" value="stringcompare(Container(9000).ListItem.Property(WidgetSet),FavRadioChannels)" />
+                <param name="label_title" value="$LOCALIZE[88134]" />
+                <param name="visible_title" value="!IsEmpty(Skin.String(ChannelRadio.1.Path)) + Skin.HasSetting(EnableWidgetsTitle)" />
+                <param name="list_id" value="8021" />
+                <param name="setchannelstype" value="Radio" />
+            </include>
         </control>            
 	</include>        
 	<include name="WeatherContents">   
@@ -4731,7 +4749,304 @@
                 <visible>!IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].10.Title))</visible>
 			</item>
         </content>
-    </include>   
+    </include>
+    <include name="FavoritesPVRChannelsCommonWidgetControls">
+        <control type="group">
+            <left>240</left>
+            <top>55</top>
+            <visible>$PARAM[visible_widget1]</visible>
+            <visible>$PARAM[visible_widget2]</visible>
+            <include>VisibleFadeEffect</include>
+            <control type="label">
+                <description>Title label</description>
+                <left>0</left>
+                <top>220</top>
+                <height>20</height>
+                <width>800</width>
+                <label>$PARAM[label_title]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>font12_title</font>
+                <textcolor>white</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <visible>$PARAM[visible_title]</visible>
+            </control>
+            <control type="list" id="$PARAM[list_id]">
+                <animation effect="slide" start="0,0" end="100,0" time="0" condition="stringcompare(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
+                <animation effect="slide" start="0,0" end="200,0" time="0" condition="stringcompare(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
+                <animation effect="slide" start="0,0" end="300,0" time="0" condition="stringcompare(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
+                <left>0</left>
+                <top>0</top>
+                <width>800</width>
+                <height>240</height>
+                <onleft>$PARAM[list_id]</onleft>
+                <onright>$PARAM[list_id]</onright>
+                <include>WidgetUpDown</include>
+                <viewtype label="535">list</viewtype>
+                <pagecontrol>-</pagecontrol>
+                <scrolltime>200</scrolltime>
+                <orientation>Horizontal</orientation>
+                <itemlayout height="220" width="200">
+                    <control type="image">
+                        <description>Background</description>
+                        <left>0</left>
+                        <top>0</top>
+                        <width>200</width>
+                        <height>220</height>
+                        <texture border="15">RecentAddedBack.png</texture>
+                    </control>
+                    <control type="image">
+                        <left>10</left>
+                        <top>10</top>
+                        <width>180</width>
+                        <height>155</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture background="true">$INFO[ListItem.Icon]</texture>
+                        <bordertexture border="5">button-nofocus.png</bordertexture>
+                        <bordersize>5</bordersize>
+                    </control>
+                    <control type="label">
+                        <left>10</left>
+                        <top>170</top>
+                        <width>180</width>
+                        <height>20</height>
+                        <font>font10</font>
+                        <textcolor>grey2</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <selectedcolor>selected</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Property(StartTime)] - $INFO[ListItem.Property(EndTime)] $INFO[ListItem.Property(Title)]</label>
+                    </control>
+                    <control type="label">
+                        <left>10</left>
+                        <top>190</top>
+                        <width>180</width>
+                        <height>20</height>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <selectedcolor>selected</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="220" width="200">
+                    <control type="image">
+                        <description>Background</description>
+                        <left>0</left>
+                        <top>0</top>
+                        <width>200</width>
+                        <height>220</height>
+                        <texture border="15">RecentAddedBack.png</texture>
+                    </control>
+                    <control type="image">
+                        <left>10</left>
+                        <top>10</top>
+                        <width>180</width>
+                        <height>155</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture background="true">$INFO[ListItem.Icon]</texture>
+                        <bordertexture border="5">folder-focus.png</bordertexture>
+                        <bordersize>5</bordersize>
+                        <visible>Control.HasFocus($PARAM[list_id])</visible>
+                    </control>
+                    <control type="image">
+                        <left>10</left>
+                        <top>10</top>
+                        <width>180</width>
+                        <height>155</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture background="true">$INFO[ListItem.Icon]</texture>
+                        <bordertexture border="5">button-nofocus.png</bordertexture>
+                        <bordersize>5</bordersize>
+                        <visible>!Control.HasFocus($PARAM[list_id])</visible>
+                    </control>
+                    <control type="label">
+                        <left>10</left>
+                        <top>170</top>
+                        <width>180</width>
+                        <height>20</height>
+                        <font>font10</font>
+                        <textcolor>grey2</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <selectedcolor>selected</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Property(StartTime)] - $INFO[ListItem.Property(EndTime)] $INFO[ListItem.Property(Title)]</label>
+                    </control>
+                    <control type="label">
+                        <left>10</left>
+                        <top>190</top>
+                        <width>180</width>
+                        <height>20</height>
+                        <font>font12</font>
+                        <textcolor>white</textcolor>
+                        <shadowcolor>black</shadowcolor>
+                        <selectedcolor>selected</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="label">
+                        <left>10</left>
+                        <top>190</top>
+                        <width>180</width>
+                        <height>20</height>
+                        <font>font12</font>
+                        <textcolor>blue</textcolor>
+                        <selectedcolor>selected</selectedcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>Control.HasFocus($PARAM[list_id])</visible>
+                    </control>
+                </focusedlayout>
+                <include name="FavoritesPVRChannelsContents">
+                    <param name="id2" value="$PARAM[setchannelstype]" />
+                </include>
+            </control>
+            <control type="button">
+                <description>Left Arrow</description>
+                <left>-40</left>
+                <top>90</top>
+                <width>30</width>
+                <height>40</height>
+                <texturefocus>arrow-big-left.png</texturefocus>
+                <texturenofocus>arrow-big-left.png</texturenofocus>
+                <onclick>Control.Move($PARAM[list_id],-1)</onclick>
+                <visible>Control.HasFocus($PARAM[list_id]) + Container($PARAM[list_id]).HasPrevious</visible>
+                <include>VisibleFadeEffect</include>
+            </control>
+            <control type="button">
+                <description>Right Arrow</description>
+                <left>810</left>
+                <top>90</top>
+                <width>30</width>
+                <height>40</height>
+                <texturefocus>arrow-big-right.png</texturefocus>
+                <texturenofocus>arrow-big-right.png</texturenofocus>
+                <onclick>Control.Move($PARAM[list_id],1)</onclick>
+                <visible>Control.HasFocus($PARAM[list_id]) + Container($PARAM[list_id]).HasNext</visible>
+                <include>VisibleFadeEffect</include>
+            </control>
+        </control>    
+    </include>
+	<include name="FavoritesPVRChannelsContents">
+        <content>
+            <item id="1">
+                <label>$INFO[Skin.String(Channel$PARAM[id2].1.Label)]</label>
+                <onclick>PlayMedia("$INFO[Skin.String(Channel$PARAM[id2].1.Path)]")</onclick>
+                <icon>$INFO[Skin.String(Channel$PARAM[id2].1.Icon)]</icon>
+                <thumb>-</thumb>
+                <property name="ChannelNumber">$INFO[Skin.String(Channel$PARAM[id2].1.Number)]</property>
+                <property name="StartTime">$INFO[Window(home).Property(Channel$PARAM[id2].1.StartTime)]</property>
+                <property name="EndTime">$INFO[Window(home).Property(Channel$PARAM[id2].1.EndTime)]</property>
+                <property name="Title">$INFO[Window(home).Property(Channel$PARAM[id2].1.Title)]</property>
+                <visible>!IsEmpty(Skin.String(Channel$PARAM[id2].1.Path))</visible>
+            </item>
+            <item id="2">
+                <label>$INFO[Skin.String(Channel$PARAM[id2].2.Label)]</label>
+                <onclick>PlayMedia("$INFO[Skin.String(Channel$PARAM[id2].2.Path)]")</onclick>
+                <icon>$INFO[Skin.String(Channel$PARAM[id2].2.Icon)]</icon>
+                <thumb>-</thumb>
+                <property name="ChannelNumber">$INFO[Skin.String(Channel$PARAM[id2].2.Number)]</property>
+                <property name="StartTime">$INFO[Window(home).Property(Channel$PARAM[id2].2.StartTime)]</property>
+                <property name="EndTime">$INFO[Window(home).Property(Channel$PARAM[id2].2.EndTime)]</property>
+                <property name="Title">$INFO[Window(home).Property(Channel$PARAM[id2].2.Title)]</property>
+                <visible>!IsEmpty(Skin.String(Channel$PARAM[id2].2.Path))</visible>
+            </item>
+            <item id="3">
+                <label>$INFO[Skin.String(Channel$PARAM[id2].3.Label)]</label>
+                <onclick>PlayMedia("$INFO[Skin.String(Channel$PARAM[id2].3.Path)]")</onclick>
+                <icon>$INFO[Skin.String(Channel$PARAM[id2].3.Icon)]</icon>
+                <thumb>-</thumb>
+                <property name="ChannelNumber">$INFO[Skin.String(Channel$PARAM[id2].3.Number)]</property>
+                <property name="StartTime">$INFO[Window(home).Property(Channel$PARAM[id2].3.StartTime)]</property>
+                <property name="EndTime">$INFO[Window(home).Property(Channel$PARAM[id2].3.EndTime)]</property>
+                <property name="Title">$INFO[Window(home).Property(Channel$PARAM[id2].3.Title)]</property>
+                <visible>!IsEmpty(Skin.String(Channel$PARAM[id2].3.Path))</visible>
+            </item>
+            <item id="4">
+                <label>$INFO[Skin.String(Channel$PARAM[id2].4.Label)]</label>
+                <onclick>PlayMedia("$INFO[Skin.String(Channel$PARAM[id2].4.Path)]")</onclick>
+                <icon>$INFO[Skin.String(Channel$PARAM[id2].4.Icon)]</icon>
+                <thumb>-</thumb>
+                <property name="ChannelNumber">$INFO[Skin.String(Channel$PARAM[id2].4.Number)]</property>
+                <property name="StartTime">$INFO[Window(home).Property(Channel$PARAM[id2].4.StartTime)]</property>
+                <property name="EndTime">$INFO[Window(home).Property(Channel$PARAM[id2].4.EndTime)]</property>
+                <property name="Title">$INFO[Window(home).Property(Channel$PARAM[id2].4.Title)]</property>
+                <visible>!IsEmpty(Skin.String(Channel$PARAM[id2].4.Path))</visible>
+            </item>
+            <item id="5">
+                <label>$INFO[Skin.String(Channel$PARAM[id2].5.Label)]</label>
+                <onclick>PlayMedia("$INFO[Skin.String(Channel$PARAM[id2].5.Path)]")</onclick>
+                <icon>$INFO[Skin.String(Channel$PARAM[id2].5.Icon)]</icon>
+                <thumb>-</thumb>
+                <property name="ChannelNumber">$INFO[Skin.String(Channel$PARAM[id2].5.Number)]</property>
+                <property name="StartTime">$INFO[Window(home).Property(Channel$PARAM[id2].5.StartTime)]</property>
+                <property name="EndTime">$INFO[Window(home).Property(Channel$PARAM[id2].5.EndTime)]</property>
+                <property name="Title">$INFO[Window(home).Property(Channel$PARAM[id2].5.Title)]</property>
+                <visible>!IsEmpty(Skin.String(Channel$PARAM[id2].5.Path))</visible>
+            </item>
+            <item id="6">
+                <label>$INFO[Skin.String(Channel$PARAM[id2].6.Label)]</label>
+                <onclick>PlayMedia("$INFO[Skin.String(Channel$PARAM[id2].6.Path)]")</onclick>
+                <icon>$INFO[Skin.String(Channel$PARAM[id2].6.Icon)]</icon>
+                <thumb>-</thumb>
+                <property name="ChannelNumber">$INFO[Skin.String(Channel$PARAM[id2].6.Number)]</property>
+                <property name="StartTime">$INFO[Window(home).Property(Channel$PARAM[id2].6.StartTime)]</property>
+                <property name="EndTime">$INFO[Window(home).Property(Channel$PARAM[id2].6.EndTime)]</property>
+                <property name="Title">$INFO[Window(home).Property(Channel$PARAM[id2].6.Title)]</property>
+                <visible>!IsEmpty(Skin.String(Channel$PARAM[id2].6.Path))</visible>
+            </item>
+            <item id="7">
+                <label>$INFO[Skin.String(Channel$PARAM[id2].7.Label)]</label>
+                <onclick>PlayMedia("$INFO[Skin.String(Channel$PARAM[id2].7.Path)]")</onclick>
+                <icon>$INFO[Skin.String(Channel$PARAM[id2].7.Icon)]</icon>
+                <thumb>-</thumb>
+                <property name="ChannelNumber">$INFO[Skin.String(Channel$PARAM[id2].7.Number)]</property>
+                <property name="StartTime">$INFO[Window(home).Property(Channel$PARAM[id2].7.StartTime)]</property>
+                <property name="EndTime">$INFO[Window(home).Property(Channel$PARAM[id2].7.EndTime)]</property>
+                <property name="Title">$INFO[Window(home).Property(Channel$PARAM[id2].7.Title)]</property>
+                <visible>!IsEmpty(Skin.String(Channel$PARAM[id2].7.Path))</visible>
+            </item>
+            <item id="8">
+                <label>$INFO[Skin.String(Channel$PARAM[id2].8.Label)]</label>
+                <onclick>PlayMedia("$INFO[Skin.String(Channel$PARAM[id2].8.Path)]")</onclick>
+                <icon>$INFO[Skin.String(Channel$PARAM[id2].8.Icon)]</icon>
+                <thumb>-</thumb>
+                <property name="ChannelNumber">$INFO[Skin.String(Channel$PARAM[id2].8.Number)]</property>
+                <property name="StartTime">$INFO[Window(home).Property(Channel$PARAM[id2].8.StartTime)]</property>
+                <property name="EndTime">$INFO[Window(home).Property(Channel$PARAM[id2].8.EndTime)]</property>
+                <property name="Title">$INFO[Window(home).Property(Channel$PARAM[id2].8.Title)]</property>
+                <visible>!IsEmpty(Skin.String(Channel$PARAM[id2].8.Path))</visible>
+            </item>
+            <item id="9">
+                <label>$INFO[Skin.String(Channel$PARAM[id2].9.Label)]</label>
+                <onclick>PlayMedia("$INFO[Skin.String(Channel$PARAM[id2].9.Path)]")</onclick>
+                <icon>$INFO[Skin.String(Channel$PARAM[id2].9.Icon)]</icon>
+                <thumb>-</thumb>
+                <property name="ChannelNumber">$INFO[Skin.String(Channel$PARAM[id2].9.Number)]</property>
+                <property name="StartTime">$INFO[Window(home).Property(Channel$PARAM[id2].9.StartTime)]</property>
+                <property name="EndTime">$INFO[Window(home).Property(Channel$PARAM[id2].9.EndTime)]</property>
+                <property name="Title">$INFO[Window(home).Property(Channel$PARAM[id2].9.Title)]</property>
+                <visible>!IsEmpty(Skin.String(Channel$PARAM[id2].9.Path))</visible>
+            </item>
+            <item id="10">
+                <label>$INFO[Skin.String(Channel$PARAM[id2].10.Label)]</label>
+                <onclick>PlayMedia("$INFO[Skin.String(Channel$PARAM[id2].10.Path)]")</onclick>
+                <icon>$INFO[Skin.String(Channel$PARAM[id2].10.Icon)]</icon>
+                <thumb>-</thumb>
+                <property name="ChannelNumber">$INFO[Skin.String(Channel$PARAM[id2].10.Number)]</property>
+                <property name="StartTime">$INFO[Window(home).Property(Channel$PARAM[id2].10.StartTime)]</property>
+                <property name="EndTime">$INFO[Window(home).Property(Channel$PARAM[id2].10.EndTime)]</property>
+                <property name="Title">$INFO[Window(home).Property(Channel$PARAM[id2].10.Title)]</property>
+                <visible>!IsEmpty(Skin.String(Channel$PARAM[id2].10.Path))</visible>
+            </item>
+        </content>
+	</include>    
     <include name="WidgetUpDown">
         <onup>20</onup>
         <ondown condition="System.HasAddon(script.globalsearch)+Skin.HasSetting(ActivateGlobalSearch)">608</ondown>
@@ -4860,6 +5175,24 @@
                 <visible>System.HasAddon(script.favourites)</visible>
             </item>
             <item>
+                <description>Favourites TV channels</description>
+                <label>$LOCALIZE[88133]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,FavTVChannels)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>PVR.HasTVChannels</visible>
+                <visible>System.HasAddon(script.pvr.favourites)</visible>
+            </item>
+            <item>
+                <description>Favourites Radio channels</description>
+                <label>$LOCALIZE[88134]</label>
+                <onclick>Dialog.Close($PARAM[id_win])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,FavRadioChannels)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>PVR.HasRadioChannels</visible>
+                <visible>System.HasAddon(script.pvr.favourites)</visible>
+            </item>                        
+            <item>
                 <description>UnWatched Movies</description>
                 <label>$LOCALIZE[88131]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
@@ -4965,5 +5298,146 @@
                 <visible>Library.HasContent(Music)</visible>
             </item>
         </content>
+    </include>
+    <include name="HomeMainWidgetsItemSettings">
+        <control type="label" id="$PARAM[id1]00">
+            <width>750</width>
+            <height>45</height>
+            <font>font13_title</font>
+            <label>$PARAM[title]</label>
+            <textcolor>blue</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <align>left</align>
+            <aligny>center</aligny>
+        </control>
+        <control type="button" id="$PARAM[id1]01">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label>- $LOCALIZE[89008] [B]1[/B]</label>
+            <label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].1.Label)][/COLOR]</label2>
+            <textcolor>grey2</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+			<onclick>RunScript(script.pvr.favourites,isradio=$PARAM[type]&amp;property=Channel$PARAM[setchannelstype].1)</onclick>
+        </control>
+        <control type="button" id="$PARAM[id1]02">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label>- $LOCALIZE[89008] [B]2[/B]</label>
+            <label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].2.Label)][/COLOR]</label2>
+            <textcolor>grey2</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+			<onclick>RunScript(script.pvr.favourites,isradio=$PARAM[type]&amp;property=Channel$PARAM[setchannelstype].2)</onclick>
+            <visible>!IsEmpty(Skin.String(Channel$PARAM[setchannelstype].1.Label))</visible>
+        </control>
+        <control type="button" id="$PARAM[id1]03">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label>- $LOCALIZE[89008] [B]3[/B]</label>
+            <label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].3.Label)][/COLOR]</label2>
+            <textcolor>grey2</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+			<onclick>RunScript(script.pvr.favourites,isradio=$PARAM[type]&amp;property=Channel$PARAM[setchannelstype].3)</onclick>
+            <visible>!IsEmpty(Skin.String(Channel$PARAM[setchannelstype].2.Label))</visible>
+        </control>
+        <control type="button" id="$PARAM[id1]04">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label>- $LOCALIZE[89008] [B]4[/B]</label>
+            <label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].4.Label)][/COLOR]</label2>
+            <textcolor>grey2</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+			<onclick>RunScript(script.pvr.favourites,isradio=$PARAM[type]&amp;property=Channel$PARAM[setchannelstype].4)</onclick>
+            <visible>!IsEmpty(Skin.String(Channel$PARAM[setchannelstype].3.Label))</visible>
+        </control>
+        <control type="button" id="$PARAM[id1]05">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label>- $LOCALIZE[89008] [B]5[/B]</label>
+            <label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].5.Label)][/COLOR]</label2>
+            <textcolor>grey2</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+			<onclick>RunScript(script.pvr.favourites,isradio=$PARAM[type]&amp;property=Channel$PARAM[setchannelstype].5)</onclick>
+            <visible>!IsEmpty(Skin.String(Channel$PARAM[setchannelstype].4.Label))</visible>
+        </control>
+        <control type="button" id="$PARAM[id1]06">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label>- $LOCALIZE[89008] [B]6[/B]</label>
+            <label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].6.Label)][/COLOR]</label2>
+            <textcolor>grey2</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+			<onclick>RunScript(script.pvr.favourites,isradio=$PARAM[type]&amp;property=Channel$PARAM[setchannelstype].6)</onclick>
+            <visible>!IsEmpty(Skin.String(Channel$PARAM[setchannelstype].5.Label))</visible>
+        </control>
+        <control type="button" id="$PARAM[id1]07">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label>- $LOCALIZE[89008] [B]7[/B]</label>
+            <label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].7.Label)][/COLOR]</label2>
+            <textcolor>grey2</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+			<onclick>RunScript(script.pvr.favourites,isradio=$PARAM[type]&amp;property=Channel$PARAM[setchannelstype].7)</onclick>
+            <visible>!IsEmpty(Skin.String(Channel$PARAM[setchannelstype].6.Label))</visible>
+        </control>
+        <control type="button" id="$PARAM[id1]08">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label>- $LOCALIZE[89008] [B]8[/B]</label>
+            <label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].8.Label)][/COLOR]</label2>
+            <textcolor>grey2</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+			<onclick>RunScript(script.pvr.favourites,isradio=$PARAM[type]&amp;property=Channel$PARAM[setchannelstype].8)</onclick>
+            <visible>!IsEmpty(Skin.String(Channel$PARAM[setchannelstype].7.Label))</visible>
+        </control>
+        <control type="button" id="$PARAM[id1]09">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label>- $LOCALIZE[89008] [B]9[/B]</label>
+            <label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].9.Label)][/COLOR]</label2>
+            <textcolor>grey2</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+			<onclick>RunScript(script.pvr.favourites,isradio=$PARAM[type]&amp;property=Channel$PARAM[setchannelstype].9)</onclick>
+            <visible>!IsEmpty(Skin.String(Channel$PARAM[setchannelstype].8.Label))</visible>
+        </control>
+        <control type="button" id="$PARAM[id1]10">
+            <width>750</width>
+            <height>40</height>
+            <font>font13</font>
+            <label>- $LOCALIZE[89008] [B]10[/B]</label>
+            <label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].10.Label)][/COLOR]</label2>
+            <textcolor>grey2</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <texturefocus>MenuItemFO.png</texturefocus>
+            <texturenofocus>MenuItemNF.png</texturenofocus>
+			<onclick>RunScript(script.pvr.favourites,isradio=$PARAM[type]&amp;property=Channel$PARAM[setchannelstype].10)</onclick>
+            <visible>!IsEmpty(Skin.String(Channel$PARAM[setchannelstype].9.Label))</visible>
+        </control>
     </include>    
 </includes>

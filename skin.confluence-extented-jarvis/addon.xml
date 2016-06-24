@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.confluence-extented-jarvis"
-  version="2.8.8.045"
+  version="2.8.8.046"
   name="Confluence-extented-jarvis"
   provider-name="Jezz_X, Team Kodi, YLLOW_DRAGON, plood">
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>
 	<import addon="script.favourites" version="6.0.3"/>
+    <import addon="script.pvr.favourites" version="1.0.5"/>
     <import addon="service.skin.widgets" version="0.0.32"/>
     <import addon="script.randomandlastitems" version="2.2.2"/>    
   </requires>
@@ -194,5 +195,7 @@
     <disclaimer lang="zh_CN">Confluence extented 是 Kodi 的默认皮肤，删除它可能导致故障。</disclaimer>
     <disclaimer lang="zh_TW">Confluence extented 是 Kodi 預設的佈景主題，移除它可能會造成問題</disclaimer>
     <platform>all</platform>
+    <email>nkvoronov@gmail.com</email>
+	<source>https://github.com/nkvoronov/skin.confluence-extented.git</source>
   </extension>
 </addon>
