@@ -3,7 +3,7 @@
 	<include name="HomeWidgetDisplay">
 		<control type="group" id="9003">
             <depth>DepthMenu</depth>
-            <include>WidgetUpDown</include>
+            <include>HomeWidgetUpDown</include>
 			<visible>![Window.IsVisible(2123) | Window.IsVisible(2124) | Window.IsVisible(2125) | Window.IsVisible(2126) | Window.IsVisible(Favourites)]</visible>
 			<include>VisibleFadeEffect</include>
 			<animation effect="fade" time="300" delay="1000">WindowOpen</animation>
@@ -40,7 +40,7 @@
 					<height>220</height>
 					<onleft>8000</onleft>
 					<onright>8000</onright>
-					<include>WidgetUpDown</include>
+					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>-</pagecontrol>
 					<scrolltime>200</scrolltime>
@@ -590,7 +590,7 @@
 					<height>220</height>
 					<onleft>8001</onleft>
 					<onright>8001</onright>
-					<include>WidgetUpDown</include>
+					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
 					<pagecontrol>-</pagecontrol>
 					<scrolltime>200</scrolltime>
@@ -1104,7 +1104,7 @@
                 <height>220</height>
                 <onleft>$PARAM[list_id]</onleft>
                 <onright>$PARAM[list_id]</onright>
-                <include>WidgetUpDown</include>
+                <include>HomeWidgetUpDown</include>
                 <viewtype label="535">list</viewtype>
                 <pagecontrol>-</pagecontrol>
                 <scrolltime>200</scrolltime>
@@ -1889,7 +1889,7 @@
                 <height>240</height>
                 <onleft>$PARAM[list_id]</onleft>
                 <onright>$PARAM[list_id]</onright>
-                <include>WidgetUpDown</include>
+                <include>HomeWidgetUpDown</include>
                 <viewtype label="535">list</viewtype>
                 <pagecontrol>-</pagecontrol>
                 <scrolltime>200</scrolltime>
@@ -2624,7 +2624,7 @@
                 <height>240</height>
                 <onleft>$PARAM[list_id]</onleft>
                 <onright>$PARAM[list_id]</onright>
-                <include>WidgetUpDown</include>
+                <include>HomeWidgetUpDown</include>
                 <viewtype label="535">list</viewtype>
                 <pagecontrol>-</pagecontrol>
                 <scrolltime>200</scrolltime>
@@ -3876,7 +3876,7 @@
         <height>220</height>
         <onleft>$PARAM[list_id]</onleft>
         <onright>$PARAM[list_id]</onright>
-        <include>WidgetUpDown</include>
+        <include>HomeWidgetUpDown</include>
         <viewtype label="535">list</viewtype>
         <pagecontrol>-</pagecontrol>
         <scrolltime>200</scrolltime>
@@ -4078,7 +4078,7 @@
         <height>240</height>
         <onleft>$PARAM[list_id]</onleft>
         <onright>$PARAM[list_id]</onright>
-        <include>WidgetUpDown</include>
+        <include>HomeWidgetUpDown</include>
         <viewtype label="535">list</viewtype>
         <pagecontrol>-</pagecontrol>
         <scrolltime>200</scrolltime>
@@ -4306,7 +4306,7 @@
         <height>240</height>
         <onleft>$PARAM[list_id]</onleft>
         <onright>$PARAM[list_id]</onright>
-        <include>WidgetUpDown</include>
+        <include>HomeWidgetUpDown</include>
         <viewtype label="535">list</viewtype>
         <pagecontrol>-</pagecontrol>
         <scrolltime>200</scrolltime>
@@ -4533,7 +4533,7 @@
         <height>240</height>
         <onleft>$PARAM[list_id]</onleft>
         <onright>$PARAM[list_id]</onright>
-        <include>WidgetUpDown</include>
+        <include>HomeWidgetUpDown</include>
         <viewtype label="535">list</viewtype>
         <pagecontrol>-</pagecontrol>
         <scrolltime>200</scrolltime>
@@ -4781,7 +4781,7 @@
                 <height>240</height>
                 <onleft>$PARAM[list_id]</onleft>
                 <onright>$PARAM[list_id]</onright>
-                <include>WidgetUpDown</include>
+                <include>HomeWidgetUpDown</include>
                 <viewtype label="535">list</viewtype>
                 <pagecontrol>-</pagecontrol>
                 <scrolltime>200</scrolltime>
@@ -5047,10 +5047,13 @@
             </item>
         </content>
 	</include>    
-    <include name="WidgetUpDown">
+    <include name="HomeWidgetUpDown">
+        <onup condition="!Skin.HasSetting(HidePowerButton) + Skin.HasSetting(HideFavoritesButton)">22</onup>
+        <onup condition="Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)">21</onup>
         <onup>20</onup>
-        <ondown condition="System.HasAddon(script.globalsearch)+Skin.HasSetting(ActivateGlobalSearch)">608</ondown>
-        <ondown condition="!System.HasAddon(script.globalsearch)">603</ondown>
+        <ondown condition="!Skin.HasSetting(LowerMenu) + System.HasAddon(script.globalsearch) + Skin.HasSetting(ActivateGlobalSearch)">608</ondown>
+        <ondown condition="!Skin.HasSetting(LowerMenu) + [!System.HasAddon(script.globalsearch) | !Skin.HasSetting(ActivateGlobalSearch)]">603</ondown>
+		<ondown condition="Skin.HasSetting(LowerMenu)">9002</ondown>
     </include>
     <include name="WidgetTypeChoices">
         <content>

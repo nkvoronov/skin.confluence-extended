@@ -4,11 +4,8 @@
 		<control type="group" id="9001">
         	<depth>DepthMenu-</depth>
 			<left>0</left>
-			<top>70</top>
-			<onup>9000</onup>
-			<ondown condition="!Skin.HasSetting(LowerMenu)">9002</ondown>
-			<ondown condition="Skin.HasSetting(LowerMenu)">20</ondown>            
-			<include>HomeSubMenuDown</include>
+			<top>70</top>            
+			<include>HomeSubMenuUpDown</include>
             <!-- SubMenu01 -->
             <include name="HomeSubMenuCommonControls">
                 <param name="list_id" value="9010" />
@@ -181,8 +178,7 @@
                 <texturenofocus border="0,0,0,3">arrow-big-left.png</texturenofocus>
                 <onleft>$PARAM[list_id]</onleft>
                 <onright>$PARAM[list_id]</onright>
-                <onup>9000</onup>
-                <include>HomeSubMenuDown</include>
+                <include>HomeSubMenuUpDown</include>
                 <onclick>Control.Move($PARAM[list_id],-1)</onclick>
                 <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,6) + Container($PARAM[list_id]).HasPrevious</visible>
             </control>
@@ -217,8 +213,7 @@
                 <texturenofocus border="0,0,0,3">arrow-big-right.png</texturenofocus>
                 <onleft>$PARAM[list_id]</onleft>
                 <onright>$PARAM[list_id]</onright>
-                <onup>9000</onup>
-                <include>HomeSubMenuDown</include>
+                <include>HomeSubMenuUpDown</include>
                 <onclick>Control.Move($PARAM[list_id],1)</onclick>
                 <animation effect="slide" start="0,0" end="-205,0" time="0" condition="stringcompare(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
                 <animation effect="slide" start="0,0" end="-410,0" time="0" condition="stringcompare(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
@@ -238,9 +233,7 @@
 		<pagecontrol>-</pagecontrol>
 		<scrolltime>200</scrolltime>
 		<orientation>Horizontal</orientation>
-		<onup>9000</onup>
-		<ondown condition="!Skin.HasSetting(HideFavoritesButton)">21</ondown>
-        <ondown condition="Skin.HasSetting(HideFavoritesButton) + !Skin.HasSetting(HidePowerButton)">20</ondown>
+		<include>HomeSubMenuUpDown</include>
 	</include>
 	<include name="HomeSubMenuCommonAnimation">
         <animation effect="slide" start="0,-40" end="0,0" delay="200" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(NoSlide)">Visible</animation>
@@ -460,9 +453,12 @@
 			</item>
 		</content>
 	</include>
-    <include name="HomeSubMenuDown">
-        <ondown condition="!Skin.HasSetting(HideFavoritesButton)">21</ondown>
-		<ondown condition="Skin.HasSetting(HideFavoritesButton) + !Skin.HasSetting(HidePowerButton)">20</ondown>
+    <include name="HomeSubMenuUpDown">
+        <onup>9000</onup>
+		<ondown condition="!Skin.HasSetting(LowerMenu)">9002</ondown>
+        <ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(HidePowerButton) + Skin.HasSetting(HideFavoritesButton)">22</ondown>
+        <ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)">21</ondown>
+		<ondown condition="Skin.HasSetting(LowerMenu)">20</ondown>
     </include>
     <include name="ResetSubMenuItem">
         <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].1.Label)</onclick>

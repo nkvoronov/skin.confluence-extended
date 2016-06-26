@@ -543,9 +543,11 @@
     <include name="HomeAddonUpDown">
         <onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
 		<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
-		<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(ActivateGlobalSearch)">608</ondown>
-		<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(ActivateGlobalSearch)">603</ondown>
-		<ondown condition="!Skin.HasSetting(LowerMenu)">21</ondown>
+		<ondown condition="Skin.HasSetting(LowerMenu) + System.HasAddon(script.globalsearch) + Skin.HasSetting(ActivateGlobalSearch)">608</ondown>
+		<ondown condition="Skin.HasSetting(LowerMenu) + [!System.HasAddon(script.globalsearch) | !Skin.HasSetting(ActivateGlobalSearch)]">603</ondown>
+        <ondown condition="!Skin.HasSetting(LowerMenu) + !Skin.HasSetting(HidePowerButton) + Skin.HasSetting(HideFavoritesButton)">22</ondown>
+        <ondown condition="!Skin.HasSetting(LowerMenu) + Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)">21</ondown>
+		<ondown condition="!Skin.HasSetting(LowerMenu)">20</ondown>
     </include>    
     <include name="ResetAddonSetItem">
         <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].1.Label)</onclick>

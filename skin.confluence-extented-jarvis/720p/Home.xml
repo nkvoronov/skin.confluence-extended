@@ -3,7 +3,6 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
     <!-- -->
     <include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
-
     <onload condition="!IsEmpty(Window(Home).Property(MenuItemActive))">ClearProperty(MenuItemActive,Home)</onload>
     <onload condition="!IsEmpty(Window(Home).Property(MenuBackground))">ClearProperty(MenuBackground,Home)</onload>    
     <onload condition="!IsEmpty(Window(Home).Property(MenuBackgroundHomeFanart))">ClearProperty(MenuBackgroundHomeFanart,Home)</onload>    
@@ -929,12 +928,11 @@
 				<onclick>$VAR[PowerButtonCommand]</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
-				<onleft>21</onleft>
+				<onleft>22</onleft>
 				<onright>21</onright>
 				<onup condition="!Skin.HasSetting(LowerMenu)">9002</onup>
 				<onup condition="Skin.HasSetting(LowerMenu)">9001</onup>
-				<ondown condition="!Skin.HasSetting(LowerMenu)">9003</ondown>
-				<ondown condition="Skin.HasSetting(LowerMenu)">9002</ondown>
+                <ondown>9003</ondown>
                 <visible>!Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)</visible>
 			</control>
 			<control type="image">
@@ -958,12 +956,11 @@
 				<onclick>$VAR[FavoritesButtonCommand]</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
-				<onleft condition="!Skin.HasSetting(HidePowerButton)">20</onleft>
-				<onright condition="!Skin.HasSetting(HidePowerButton)">20</onright>
+				<onleft>20</onleft>
+				<onright>22</onright>
 				<onup condition="!Skin.HasSetting(LowerMenu)">9002</onup>
 				<onup condition="Skin.HasSetting(LowerMenu)">9001</onup>
-				<ondown condition="!Skin.HasSetting(LowerMenu)">9003</ondown>
-				<ondown condition="Skin.HasSetting(LowerMenu)">9002</ondown>
+                <ondown>9003</ondown>
                 <visible>!Skin.HasSetting(HideFavoritesButton)</visible>
 			</control>
 			<control type="image">
@@ -976,7 +973,7 @@
 				<texture>icon_favourites.png</texture>
                 <visible>!Skin.HasSetting(HideFavoritesButton)</visible>
 			</control>
-			<control type="button" id="20">
+			<control type="button" id="22">
 				<description>Power Push Button Pos2</description>
 				<left>0</left>
 				<top>0</top>
@@ -987,12 +984,11 @@
 				<onclick>$VAR[PowerButtonCommand]</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
-				<onleft>noop</onleft>
-				<onright>noop</onright>
+				<onleft>21</onleft>
+				<onright>20</onright>
 				<onup condition="!Skin.HasSetting(LowerMenu)">9002</onup>
 				<onup condition="Skin.HasSetting(LowerMenu)">9001</onup>
-				<ondown condition="!Skin.HasSetting(LowerMenu)">9003</ondown>
-				<ondown condition="Skin.HasSetting(LowerMenu)">9002</ondown>
+                <ondown>9003</ondown>
                 <visible>!Skin.HasSetting(HidePowerButton) + Skin.HasSetting(HideFavoritesButton)</visible>
 			</control>
 			<control type="image">
