@@ -1307,7 +1307,19 @@
 						<onclick>Skin.ToggleSetting(ShowBackgroundVis)</onclick>
 						<selected>!Skin.HasSetting(ShowBackgroundVis)</selected>
 					</control>
-					<control type="label" id="705">
+                    <control type="button" id="705">
+                        <width>750</width>
+						<height>40</height>
+						<font>font13</font>
+                        <label>$LOCALIZE[31130]</label>
+                        <label2>$INFO[Skin.String(WeatherFanart.name)]</label2>
+                        <textcolor>grey2</textcolor>
+                        <focusedcolor>white</focusedcolor>
+                        <texturefocus>MenuItemFO.png</texturefocus>
+                        <texturenofocus>MenuItemNF.png</texturenofocus>
+                        <onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=WeatherFanart&amp;type=resource.images.weatherfanart)</onclick>
+                    </control>
+					<control type="label" id="706">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -1317,7 +1329,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="706">
+					<control type="radiobutton" id="707">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1330,7 +1342,7 @@
 						<selected>Skin.HasSetting(SeparateBackground)</selected>
 						<enable>!Skin.HasSetting(UseCustomBackground)</enable>
 					</control>
-					<control type="radiobutton" id="707">
+					<control type="radiobutton" id="708">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1343,7 +1355,7 @@
 						<selected>Skin.HasSetting(UseCustomBackground)</selected>
 						<enable>!Skin.HasSetting(SeparateBackground)</enable>
 					</control>
-					<control type="button" id="708">
+					<control type="button" id="709">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1731,7 +1743,7 @@
 							<onright>805</onright>
 							<onup>801</onup>
 							<ondown>801</ondown>
-                            <enable>IsEmpty(Skin.String(HomeFanart.path))</enable>
+                            <enable>IsEmpty(Skin.String(HomeFanart.path)) | IsEmpty(Control.GetLabel(851))</enable>
 						</control>
 						<control type="button" id="805">
 							<description>Multi Image button</description>
@@ -1751,7 +1763,7 @@
 							<onright>806</onright>
 							<onup>801</onup>
 							<ondown>801</ondown>
-                            <enable>IsEmpty(Skin.String(HomeFanart.path))</enable>
+                            <enable>IsEmpty(Skin.String(HomeFanart.path)) | IsEmpty(Control.GetLabel(851))</enable>
 						</control>
 						<control type="button" id="806">
 							<description>Default Image button</description>
@@ -1771,7 +1783,7 @@
 							<onright>804</onright>
 							<onup>801</onup>
 							<ondown>801</ondown>
-                            <enable>IsEmpty(Skin.String(HomeFanart.path))</enable>
+                            <enable>IsEmpty(Skin.String(HomeFanart.path)) | IsEmpty(Control.GetLabel(851))</enable>
 						</control>
 						<control type="multiimage" id="850">
 							<left>0</left>
@@ -1806,7 +1818,7 @@
 							<haspath>yes</haspath>
 							<label fallback="571">$INFO[Container(803).ListItem.Thumb]</label>
 							<textcolor>white</textcolor>
-                            <visible>IsEmpty(Skin.String(HomeFanart.path))</visible>
+                            <visible>IsEmpty(Skin.String(HomeFanart.path)) | IsEmpty(Control.GetLabel(851))</visible>
 						</control>
 					</control>
 				</control>

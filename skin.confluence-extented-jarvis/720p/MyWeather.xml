@@ -10,14 +10,28 @@
 			<depth>DepthBackground</depth>
 			<include>BackgroundDimensions</include>
 			<aspectratio>scale</aspectratio>
-			<imagepath background="true">resource://resource.images.weatherfanart.multi/$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
+			<imagepath background="true">$INFO[Skin.String(WeatherFanart.path)]$INFO[Window(weather).Property(Current.FanartCode)]</imagepath>
 			<timeperimage>10000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>System.HasAddon(resource.images.weatherfanart.multi)</visible>
+			<visible>!IsEmpty(Skin.String(WeatherFanart.path)) + !IsEmpty(Window(weather).Property(Current.FanartCode)) + Skin.HasSetting(WeatherFanart.multi)</visible>
+            <visible>!Player.HasMedia</visible>
 			<animation effect="fade" time="150">WindowClose</animation>
 		</control>
+		<control type="multiimage">
+			<depth>DepthBackground</depth>
+			<include>BackgroundDimensions</include>
+			<aspectratio>scale</aspectratio>
+			<imagepath background="true">$INFO[Skin.String(WeatherFanart.path)]$INFO[Window(weather).Property(Day0.FanartCode)]$INFO[Skin.String(WeatherFanart.ext)]</imagepath>
+			<timeperimage>10000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+			<visible>!IsEmpty(Skin.String(WeatherFanart.path)) + !IsEmpty(Window(weather).Property(Day0.FanartCode)) + !Skin.HasSetting(WeatherFanart.multi)</visible>
+            <visible>!Player.HasMedia</visible>
+			<animation effect="fade" time="150">WindowClose</animation>
+		</control>        
 		<include name="CommonWindowHeader">
 			<param name="Icon" value="icon_weather" />
 			<param name="Label" value="$LOCALIZE[8]" />

@@ -295,7 +295,9 @@ msgctxt "#31129"
 msgid "Hide fanart in full screen visualisation"
 msgstr ""
 
-#empty strings from id 31130 to 31131
+msgctxt "#31130"
+msgid "Choose weather fanart pack"
+msgstr ""
 
 msgctxt "#31131"
 msgid "Choose home backgrounds pack"

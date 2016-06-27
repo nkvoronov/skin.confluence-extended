@@ -252,6 +252,10 @@ msgctxt "#31129"
 msgid "Hide fanart in full screen visualisation"
 msgstr "Скрывать фанарт в полноэкранной визуализации"
 
+msgctxt "#31130"
+msgid "Choose weather fanart pack"
+msgstr "Выбрать фанарт пакет для погоды"
+
 msgctxt "#31131"
 msgid "Choose home backgrounds pack"
 msgstr "Выбрать пакет фонов"
