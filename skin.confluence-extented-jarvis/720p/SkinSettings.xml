@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
+    <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=mainmenu|pictures|radio|livetv|video|movies|tvshows|musicvideos|music|dvd|settings|powermenu)</onunload>
     <include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
 	<controls>
         <include>CommonCustomBackgroundSettings</include>
@@ -14,37 +15,6 @@
 			<include>VisibleFadeEffect</include>
 			<visible>!Skin.HasSetting(NoFloorAll)</visible>
 		</control>
-		<control type="image">
-			<description>Section header image</description>
-			<left>20</left>
-			<top>3</top>
-			<width>35</width>
-			<height>35</height>
-			<aspectratio>keep</aspectratio>
-			<texture>icon_system.png</texture>
-		</control>
-		<control type="grouplist">
-			<left>65</left>
-			<top>5</top>
-			<width>1000</width>
-			<height>30</height>
-			<orientation>horizontal</orientation>
-			<align>left</align>
-			<itemgap>5</itemgap>
-			<control type="label">
-				<include>WindowTitleCommons</include>
-				<label>$LOCALIZE[20077]</label>
-			</control>
-			<control type="label">
-				<include>WindowTitleCommons</include>
-				<label>[COLOR=blue] - [/COLOR]$INFO[Container.FolderName]</label>
-				<visible>!IsEmpty(Container.FolderName)</visible>
-			</control>
-		</control>
-		<include name="CommonWindowHeader">
-			<param name="Icon" value="icon_system" />
-			<param name="Label" value="$LOCALIZE[20077]" />
-		</include>
 		<control type="group">
 			<left>90</left>
 			<top>30</top>
@@ -856,107 +826,147 @@
 					<onleft>9000</onleft>
 					<onright>63</onright>
 					<onup>9003</onup>
-					<ondown>9003</ondown>
+					<ondown>9003</ondown>                    
+                    <control type="button" id="300">
+                        <width>750</width>
+						<height>40</height>
+						<font>font13</font>
+                        <label>$ADDON[script.skinshortcuts 32071]</label>
+                        <textcolor>grey2</textcolor>
+                        <focusedcolor>white</focusedcolor>
+                        <texturefocus>MenuItemFO.png</texturefocus>
+                        <texturenofocus>MenuItemNF.png</texturenofocus>
+                        <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
+                    </control>
+                    <control type="button" id="301">
+                        <width>750</width>
+						<height>40</height>
+						<font>font13</font>
+                        <label>90000</label>
+                        <textcolor>grey2</textcolor>
+                        <focusedcolor>white</focusedcolor>
+                        <texturefocus>MenuItemFO.png</texturefocus>
+                        <texturenofocus>MenuItemNF.png</texturenofocus>
+                        <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=powermenu)</onclick>
+                    </control>
+                    <control type="image" id="310">
+                        <description>separator image</description>
+                        <width>750</width>
+                        <height>2</height>
+                        <texture>separator2.png</texture>
+                    </control>
+                    <control type="button" id="311">
+                        <width>750</width>
+						<height>40</height>
+						<font>font13</font>
+                        <label>$ADDON[script.skinshortcuts 32037]</label>
+                        <textcolor>grey2</textcolor>
+                        <focusedcolor>white</focusedcolor>
+                        <texturefocus>MenuItemFO.png</texturefocus>
+                        <texturenofocus>MenuItemNF.png</texturenofocus>
+                        <onclick>RunScript(script.skinshortcuts,type=resetall)</onclick>
+                    </control>
+                    
                     <!-- Home menu 01 -->
-                    <include name="HomeMainMenuItemSettings">
+                    <!-- <include name="HomeMainMenuItemSettings">
                         <param name="id" value="1" />
                         <param name="id2" value="01" />
-                    </include>
+                    </include> -->
                     <!-- Home menu 02 -->
-                    <include name="HomeMainMenuItemSettings">
+                    <!-- <include name="HomeMainMenuItemSettings">
                         <param name="id" value="2" />
                         <param name="id2" value="02" />
-                    </include>
+                    </include> -->
                     <!-- Home menu 03 -->
-                    <include name="HomeMainMenuItemSettings">
+                    <!-- <include name="HomeMainMenuItemSettings">
                         <param name="id" value="3" />
                         <param name="id2" value="03" />
-                    </include>
+                    </include> -->
                     <!-- Home menu 04 -->
-                    <include name="HomeMainMenuItemSettings">
+                    <!-- <include name="HomeMainMenuItemSettings">
                         <param name="id" value="4" />
                         <param name="id2" value="04" />
-                    </include>
+                    </include> -->
                     <!-- Home menu 05 -->
-                    <include name="HomeMainMenuItemSettings">
+                    <!-- <include name="HomeMainMenuItemSettings">
                         <param name="id" value="5" />
                         <param name="id2" value="05" />
-                    </include>
+                    </include> -->
                     <!-- Home menu 06 -->
-                    <include name="HomeMainMenuItemSettings">
+                    <!-- <include name="HomeMainMenuItemSettings">
                         <param name="id" value="6" />
                         <param name="id2" value="06" />
-                    </include>
+                    </include> -->
                     <!-- Home menu 07 -->
-                    <include name="HomeMainMenuItemSettings">
+                    <!-- <include name="HomeMainMenuItemSettings">
                         <param name="id" value="7" />
                         <param name="id2" value="07" />
-                    </include>
+                    </include> -->
                     <!-- Home menu 08 -->
-                    <include name="HomeMainMenuItemSettings">
+                    <!-- <include name="HomeMainMenuItemSettings">
                         <param name="id" value="8" />
                         <param name="id2" value="08" />
-                    </include>
+                    </include> -->
                     <!-- Home menu 09 -->
-                    <include name="HomeMainMenuItemSettings">
+                    <!-- <include name="HomeMainMenuItemSettings">
                         <param name="id" value="9" />
                         <param name="id2" value="09" />
-                    </include>
+                    </include> -->
                     <!-- Home menu 10 -->
-                    <include name="HomeMainMenuItemSettings">
+                    <!-- <include name="HomeMainMenuItemSettings">
                         <param name="id" value="10" />
                         <param name="id2" value="10" />
-                    </include>
+                    </include> -->
                     <!-- Home menu 11 -->
-                    <include name="HomeMainMenuItemSettings">
+                    <!-- <include name="HomeMainMenuItemSettings">
                         <param name="id" value="11" />
                         <param name="id2" value="11" />
-                    </include>
+                    </include> -->
                     <!-- Home menu 12 -->
-                    <include name="HomeMainMenuItemSettings">
+                    <!-- <include name="HomeMainMenuItemSettings">
                         <param name="id" value="12" />
                         <param name="id2" value="12" />
-                    </include>
+                    </include> -->
                     <!-- Home menu 13 -->
-                    <include name="HomeMainMenuItemSettings">
+                    <!-- <include name="HomeMainMenuItemSettings">
                         <param name="id" value="13" />
                         <param name="id2" value="13" />
-                    </include>
+                    </include> -->
                     <!-- Home menu 14 -->
-                    <include name="HomeMainMenuItemSettings">
+                    <!-- <include name="HomeMainMenuItemSettings">
                         <param name="id" value="14" />
                         <param name="id2" value="14" />
-                    </include>
+                    </include> -->
                     <!-- Home menu 15 -->
-                    <include name="HomeMainMenuItemSettings">
+                    <!-- <include name="HomeMainMenuItemSettings">
                         <param name="id" value="15" />
                         <param name="id2" value="15" />
-                    </include>
+                    </include> -->
                     <!-- Home menu 16 -->
-                    <include name="HomeMainMenuItemSettings">
+                    <!-- <include name="HomeMainMenuItemSettings">
                         <param name="id" value="16" />
                         <param name="id2" value="16" />
-                    </include>
+                    </include> -->
                     <!-- Home menu 17 -->
-                    <include name="HomeMainMenuItemSettings">
+                    <!-- <include name="HomeMainMenuItemSettings">
                         <param name="id" value="17" />
                         <param name="id2" value="17" />
-                    </include>
+                    </include> -->
                     <!-- Home menu 18 -->
-                    <include name="HomeMainMenuItemSettings">
+                    <!-- <include name="HomeMainMenuItemSettings">
                         <param name="id" value="18" />
                         <param name="id2" value="18" />
-                    </include>
+                    </include> -->
                     <!-- Home menu 19 -->
-                    <include name="HomeMainMenuItemSettings">
+                    <!-- <include name="HomeMainMenuItemSettings">
                         <param name="id" value="19" />
                         <param name="id2" value="19" />
-                    </include>
+                    </include> -->
                     <!-- Home menu 20 -->
-                     <include name="HomeMainMenuItemSettings">
+                    <!-- <include name="HomeMainMenuItemSettings">
                         <param name="id" value="20" />
                         <param name="id2" value="20" />
-                    </include>
+                    </include> -->
                 </control>
 				<control type="scrollbar" id="63">
 					<left>1060</left>
@@ -1319,7 +1329,31 @@
                         <texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=WeatherFanart&amp;type=resource.images.weatherfanart)</onclick>
                     </control>
-					<control type="label" id="706">
+                    <!-- <control type="button" id="706">
+                        <width>750</width>
+						<height>40</height>
+						<font>font13</font>
+                        <label>STUDIOS</label>
+                        <label2>$INFO[Skin.String(StudiosImages.name)]</label2>
+                        <textcolor>grey2</textcolor>
+                        <focusedcolor>white</focusedcolor>
+                        <texturefocus>MenuItemFO.png</texturefocus>
+                        <texturenofocus>MenuItemNF.png</texturenofocus>
+                        <onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=StudiosImages&amp;type=resource.images.studios)</onclick>
+                    </control>
+                    <control type="button" id="707">
+                        <width>750</width>
+						<height>40</height>
+						<font>font13</font>
+                        <label>LANGUAGEFLAGS</label>
+                        <label2>$INFO[Skin.String(LanguageFlags.name)]</label2>
+                        <textcolor>grey2</textcolor>
+                        <focusedcolor>white</focusedcolor>
+                        <texturefocus>MenuItemFO.png</texturefocus>
+                        <texturenofocus>MenuItemNF.png</texturenofocus>
+                        <onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=LanguageFlags&amp;type=resource.images.languageflags)</onclick>
+                    </control> -->
+					<control type="label" id="710">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -1329,7 +1363,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="707">
+					<control type="radiobutton" id="711">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1342,7 +1376,7 @@
 						<selected>Skin.HasSetting(SeparateBackground)</selected>
 						<enable>!Skin.HasSetting(UseCustomBackground)</enable>
 					</control>
-					<control type="radiobutton" id="708">
+					<control type="radiobutton" id="712">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1355,7 +1389,7 @@
 						<selected>Skin.HasSetting(UseCustomBackground)</selected>
 						<enable>!Skin.HasSetting(SeparateBackground)</enable>
 					</control>
-					<control type="button" id="709">
+					<control type="button" id="713">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1859,8 +1893,14 @@
 				</control>
             </control>
 		</control>
-		<include>CommonNowPlaying</include>
+		<control type="group">
+			<depth>DepthFooter</depth>
+			<include>CommonNowPlaying</include>
+		</control>
 		<include>MainWindowMouseButtons</include>
-		<include>BehindDialogFadeOut</include>
+		<include name="CommonWindowHeader">
+			<param name="Icon" value="icon_system" />
+			<param name="Label" value="$LOCALIZE[5][COLOR=blue] - [/COLOR]$LOCALIZE[20077]" />
+		</include>
 	</controls>
 </window>

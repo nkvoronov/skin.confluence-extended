@@ -6,7 +6,7 @@
 			<description>Normal Default Background Image</description>
 			<include>BackgroundDimensions</include>
 			<aspectratio>scale</aspectratio>
-			<texture fallback="special://skin/backgrounds/SKINDEFAULT.jpg">$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</texture>
+			<texture fallback="special://skin/extras/default/SKINDEFAULT.jpg">$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</texture>
 			<visible>![Skin.HasSetting(UseCustomBackground) + !IsEmpty(Skin.String(CustomBackgroundPath))]</visible>
 			<include>VisibleFadeEffect</include>
 			<visible>!Skin.HasSetting(SeparateBackground)</visible>
@@ -58,7 +58,7 @@
 		</control>
 		<control type="image">
 			<include>BackgroundDimensions</include>
-			<texture>special://skin/backgrounds/media-overlay.jpg</texture>
+			<texture>special://skin/extras/default/media-overlay.jpg</texture>
 			<visible>[Player.HasVideo + !Skin.HasSetting(ShowBackgroundVideo)] + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
 			<include>VisibleFadeEffect</include>
 		</control>
@@ -444,7 +444,7 @@
                     <top>5</top>
                     <width>680</width>
                     <height>390</height>
-                    <texture fallback="special://skin/backgrounds/SKINDEFAULT.jpg">$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</texture>
+                    <texture fallback="special://skin/extras/default/SKINDEFAULT.jpg">$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</texture>
                     <include>VisibleFadeEffect</include>
                     <visible>![Skin.HasSetting(UseCustomBackground) + !IsEmpty(Skin.String(CustomBackgroundPath))]</visible>
                 </control>

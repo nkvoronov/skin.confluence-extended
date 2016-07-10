@@ -1079,3 +1079,7 @@ msgstr "Команда"
 msgctxt "#89714"
 msgid "Reset Skin Values to Initial Install Defaults"
 msgstr "Сбросить обложку к первоначальному состоянию по умолчанию"
+
+msgctxt "#90000"
+msgid "Customize Power Menu"
+msgstr "Настрить меню выключения"

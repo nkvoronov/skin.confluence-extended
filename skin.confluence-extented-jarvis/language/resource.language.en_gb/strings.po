@@ -1177,3 +1177,7 @@ msgstr ""
 msgctxt "#89714"
 msgid "Reset Skin Values to Initial Install Defaults"
 msgstr ""
+
+msgctxt "#90000"
+msgid "Customize Power Menu"
+msgstr ""

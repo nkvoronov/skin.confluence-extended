@@ -2173,183 +2173,183 @@
     <variable name="Background01" type="text">
         <value condition="!IsEmpty(Skin.String(HomeItem.1.DBackground)) + IsEmpty(Skin.String(HomeItem.1.CBackground))">$INFO[Skin.String(HomeItem.1.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.1.CBackground))">$INFO[Skin.String(HomeItem.1.CBackground)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="Background02" type="text">
         <value condition="!IsEmpty(Skin.String(HomeItem.2.DBackground)) + IsEmpty(Skin.String(HomeItem.2.CBackground))">$INFO[Skin.String(HomeItem.2.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.2.CBackground))">$INFO[Skin.String(HomeItem.2.CBackground)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>    
     <variable name="Background03" type="text">
         <value condition="!IsEmpty(Skin.String(HomeItem.3.DBackground)) + IsEmpty(Skin.String(HomeItem.3.CBackground))">$INFO[Skin.String(HomeItem.3.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.3.CBackground))">$INFO[Skin.String(HomeItem.3.CBackground)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="Background04" type="text">
         <value condition="!IsEmpty(Skin.String(HomeItem.4.DBackground)) + IsEmpty(Skin.String(HomeItem.4.CBackground))">$INFO[Skin.String(HomeItem.4.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.4.CBackground))">$INFO[Skin.String(HomeItem.4.CBackground)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>     
     <variable name="Background05" type="text">
         <value condition="!IsEmpty(Skin.String(HomeItem.5.DBackground)) + IsEmpty(Skin.String(HomeItem.5.CBackground))">$INFO[Skin.String(HomeItem.5.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.5.CBackground))">$INFO[Skin.String(HomeItem.5.CBackground)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="Background06" type="text">
         <value condition="!IsEmpty(Skin.String(HomeItem.6.DBackground)) + IsEmpty(Skin.String(HomeItem.6.CBackground))">$INFO[Skin.String(HomeItem.6.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.6.CBackground))">$INFO[Skin.String(HomeItem.6.CBackground)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>    
     <variable name="Background07" type="text">
         <value condition="!IsEmpty(Skin.String(HomeItem.7.DBackground)) + IsEmpty(Skin.String(HomeItem.7.CBackground))">$INFO[Skin.String(HomeItem.7.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.7.CBackground))">$INFO[Skin.String(HomeItem.7.CBackground)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="Background08" type="text">
         <value condition="!IsEmpty(Skin.String(HomeItem.8.DBackground)) + IsEmpty(Skin.String(HomeItem.8.CBackground))">$INFO[Skin.String(HomeItem.8.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.8.CBackground))">$INFO[Skin.String(HomeItem.8.CBackground)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="Background09" type="text">
         <value condition="!IsEmpty(Skin.String(HomeItem.9.DBackground)) + IsEmpty(Skin.String(HomeItem.9.CBackground))">$INFO[Skin.String(HomeItem.9.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.9.CBackground))">$INFO[Skin.String(HomeItem.9.CBackground)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="Background10" type="text">
         <value condition="!IsEmpty(Skin.String(HomeItem.10.DBackground)) + IsEmpty(Skin.String(HomeItem.10.CBackground))">$INFO[Skin.String(HomeItem.10.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.10.CBackground))">$INFO[Skin.String(HomeItem.10.CBackground)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>    
     <variable name="Background11" type="text">
         <value condition="!IsEmpty(Skin.String(HomeItem.11.DBackground)) + IsEmpty(Skin.String(HomeItem.11.CBackground))">$INFO[Skin.String(HomeItem.11.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.11.CBackground))">$INFO[Skin.String(HomeItem.11.CBackground)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="Background12" type="text">
         <value condition="!IsEmpty(Skin.String(HomeItem.12.DBackground)) + IsEmpty(Skin.String(HomeItem.12.CBackground))">$INFO[Skin.String(HomeItem.12.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.12.CBackground))">$INFO[Skin.String(HomeItem.12.CBackground)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>     
     <variable name="Background13" type="text">
         <value condition="!IsEmpty(Skin.String(HomeItem.13.DBackground)) + IsEmpty(Skin.String(HomeItem.13.CBackground))">$INFO[Skin.String(HomeItem.13.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.13.CBackground))">$INFO[Skin.String(HomeItem.13.CBackground)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="Background14" type="text">
         <value condition="!IsEmpty(Skin.String(HomeItem.14.DBackground)) + IsEmpty(Skin.String(HomeItem.14.CBackground))">$INFO[Skin.String(HomeItem.14.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.14.CBackground))">$INFO[Skin.String(HomeItem.14.CBackground)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>    
     <variable name="Background15" type="text">
         <value condition="!IsEmpty(Skin.String(HomeItem.15.DBackground)) + IsEmpty(Skin.String(HomeItem.15.CBackground))">$INFO[Skin.String(HomeItem.15.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.15.CBackground))">$INFO[Skin.String(HomeItem.15.CBackground)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="Background16" type="text">
         <value condition="!IsEmpty(Skin.String(HomeItem.16.DBackground)) + IsEmpty(Skin.String(HomeItem.16.CBackground))">$INFO[Skin.String(HomeItem.16.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.16.CBackground))">$INFO[Skin.String(HomeItem.16.CBackground)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="Background17" type="text">
         <value condition="!IsEmpty(Skin.String(HomeItem.17.DBackground)) + IsEmpty(Skin.String(HomeItem.17.CBackground))">$INFO[Skin.String(HomeItem.17.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.17.CBackground))">$INFO[Skin.String(HomeItem.17.CBackground)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="Background18" type="text">
         <value condition="!IsEmpty(Skin.String(HomeItem.18.DBackground)) + IsEmpty(Skin.String(HomeItem.18.CBackground))">$INFO[Skin.String(HomeItem.18.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.18.CBackground))">$INFO[Skin.String(HomeItem.18.CBackground)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>    
     <variable name="Background19" type="text">
         <value condition="!IsEmpty(Skin.String(HomeItem.19.DBackground)) + IsEmpty(Skin.String(HomeItem.19.CBackground))">$INFO[Skin.String(HomeItem.19.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.19.CBackground))">$INFO[Skin.String(HomeItem.19.CBackground)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="Background20" type="text">
         <value condition="!IsEmpty(Skin.String(HomeItem.20.DBackground)) + IsEmpty(Skin.String(HomeItem.20.CBackground))">$INFO[Skin.String(HomeItem.20.DBackground)]</value>
         <value condition="!IsEmpty(Skin.String(HomeItem.20.CBackground))">$INFO[Skin.String(HomeItem.20.CBackground)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <!-- BackgroundsHomeFanart -->
     <variable name="BackgroundHomeFanart01" type="text">
         <value condition="!IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.1.Type)]$INFO[Skin.String(HomeFanart.ext)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="BackgroundHomeFanart02" type="text">
         <value condition="!IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.2.Type)]$INFO[Skin.String(HomeFanart.ext)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>    
     <variable name="BackgroundHomeFanart03" type="text">
         <value condition="!IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.3.Type)]$INFO[Skin.String(HomeFanart.ext)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="BackgroundHomeFanart04" type="text">
         <value condition="!IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.4.Type)]$INFO[Skin.String(HomeFanart.ext)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>     
     <variable name="BackgroundHomeFanart05" type="text">
         <value condition="!IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.5.Type)]$INFO[Skin.String(HomeFanart.ext)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="BackgroundHomeFanart06" type="text">
         <value condition="!IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.6.Type)]$INFO[Skin.String(HomeFanart.ext)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>    
     <variable name="BackgroundHomeFanart07" type="text">
         <value condition="!IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.7.Type)]$INFO[Skin.String(HomeFanart.ext)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="BackgroundHomeFanart08" type="text">
         <value condition="!IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.8.Type)]$INFO[Skin.String(HomeFanart.ext)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="BackgroundHomeFanart09" type="text">
         <value condition="!IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.9.Type)]$INFO[Skin.String(HomeFanart.ext)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="BackgroundHomeFanart10" type="text">
         <value condition="!IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.10.Type)]$INFO[Skin.String(HomeFanart.ext)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>    
     <variable name="BackgroundHomeFanart11" type="text">
         <value condition="!IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.11.Type)]$INFO[Skin.String(HomeFanart.ext)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="BackgroundHomeFanart12" type="text">
         <value condition="!IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.12.Type)]$INFO[Skin.String(HomeFanart.ext)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>     
     <variable name="BackgroundHomeFanart13" type="text">
         <value condition="!IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.13.Type)]$INFO[Skin.String(HomeFanart.ext)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="BackgroundHomeFanart14" type="text">
         <value condition="!IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.14.Type)]$INFO[Skin.String(HomeFanart.ext)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>    
     <variable name="BackgroundHomeFanart15" type="text">
         <value condition="!IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.15.Type)]$INFO[Skin.String(HomeFanart.ext)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="BackgroundHomeFanart16" type="text">
         <value condition="!IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.16.Type)]$INFO[Skin.String(HomeFanart.ext)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="BackgroundHomeFanart17" type="text">
         <value condition="!IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.17.Type)]$INFO[Skin.String(HomeFanart.ext)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="BackgroundHomeFanart18" type="text">
         <value condition="!IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.18.Type)]$INFO[Skin.String(HomeFanart.ext)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>    
     <variable name="BackgroundHomeFanart19" type="text">
         <value condition="!IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.19.Type)]$INFO[Skin.String(HomeFanart.ext)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="BackgroundHomeFanart20" type="text">
         <value condition="!IsEmpty(Skin.String(HomeFanart.path))">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.20.Type)]$INFO[Skin.String(HomeFanart.ext)]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
 	<variable name="CommonMenuItemBackground" type="text">
 		<value condition="StringCompare(Window(Home).Property(MenuItemActive),Item01)">$VAR[Background01]</value>
@@ -2372,7 +2372,7 @@
 		<value condition="StringCompare(Window(Home).Property(MenuItemActive),Item18)">$VAR[Background18]</value>
 		<value condition="StringCompare(Window(Home).Property(MenuItemActive),Item19)">$VAR[Background19]</value>
 		<value condition="StringCompare(Window(Home).Property(MenuItemActive),Item20)">$VAR[Background20]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
 	</variable>
     <variable name="CommonMenuItemBackgroundHomeFanart" type="text">
 		<value condition="StringCompare(Window(Home).Property(MenuItemActive),Item01)">$VAR[BackgroundHomeFanart01]</value>
@@ -2395,7 +2395,7 @@
 		<value condition="StringCompare(Window(Home).Property(MenuItemActive),Item18)">$VAR[BackgroundHomeFanart18]</value>
 		<value condition="StringCompare(Window(Home).Property(MenuItemActive),Item19)">$VAR[BackgroundHomeFanart19]</value>
 		<value condition="StringCompare(Window(Home).Property(MenuItemActive),Item20)">$VAR[BackgroundHomeFanart20]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
 	</variable>
 	<variable name="SubMenuItemBackground" type="text">
     	<value condition="Container(9000).Hasfocus(1)">$VAR[Background01]</value>
@@ -2418,7 +2418,7 @@
         <value condition="Container(9000).Hasfocus(18)">$VAR[Background18]</value>
     	<value condition="Container(9000).Hasfocus(19)">$VAR[Background19]</value>
         <value condition="Container(9000).Hasfocus(20)">$VAR[Background20]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
 	</variable>
 	<variable name="SubMenuItemBackgroundHomeFanart" type="text">
     	<value condition="Container(9000).Hasfocus(1)">$VAR[BackgroundHomeFanart01]</value>
@@ -2441,7 +2441,7 @@
         <value condition="Container(9000).Hasfocus(18)">$VAR[BackgroundHomeFanart18]</value>
     	<value condition="Container(9000).Hasfocus(19)">$VAR[BackgroundHomeFanart19]</value>
         <value condition="Container(9000).Hasfocus(20)">$VAR[BackgroundHomeFanart20]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
 	</variable>
     <variable name="BackgroundSettings" type="text">
 		<value condition="StringCompare(Skin.String(HomeItem.1.Type),settings)">$VAR[Background01]</value>
@@ -2464,7 +2464,7 @@
 		<value condition="StringCompare(Skin.String(HomeItem.18.Type),settings)">$VAR[Background18]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.19.Type),settings)">$VAR[Background19]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.20.Type),settings)">$VAR[Background20]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <variable name="BackgroundSettingsHomeFanart" type="text">
 		<value condition="StringCompare(Skin.String(HomeItem.1.Type),settings)">$VAR[BackgroundHomeFanart01]</value>
@@ -2487,7 +2487,7 @@
 		<value condition="StringCompare(Skin.String(HomeItem.18.Type),settings)">$VAR[BackgroundHomeFanart18]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.19.Type),settings)">$VAR[BackgroundHomeFanart19]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.20.Type),settings)">$VAR[BackgroundHomeFanart20]</value>
-        <value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/themes/,.jpg]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <!-- -->
     <variable name="VideoNodeContent" type="text">
@@ -2512,4 +2512,10 @@
 		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(19)">$INFO[Skin.String(HomeItem.19.Playlist)]</value>
 		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(20)">$INFO[Skin.String(HomeItem.20.Playlist)]</value>
 	</variable>
+    
+    <variable name="script_SkinShortcutsTitle">
+        <value condition="StringCompare(Window.Property(groupname),mainmenu)">$ADDON[script.skinshortcuts 32071]</value>
+        <value condition="StringCompare(Window.Property(groupname),powermenu)">$LOCALIZE[90000]</value>
+		<value condition="!StringCompare(Window.Property(groupname),mainmenu) + !StringCompare(Window.Property(groupname),powermenu)">$ADDON[script.skinshortcuts 32072]</value>
+    </variable>
 </includes>

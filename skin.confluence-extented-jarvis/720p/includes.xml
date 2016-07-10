@@ -19,6 +19,7 @@
 	<include file="IncludesBackgroundBuilding.xml" />
 	<include file="DharmaView.xml" />
 	<include file="IncludesVariables.xml" />
+    <include file="script-skinshortcuts-includes.xml"/>
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
 	<constant name="DepthDialog">0.50</constant>
@@ -1296,61 +1297,61 @@
                 <label>480</label>
                 <label2>31400</label2>
                 <onclick>ActivateWindow(AppearanceSettings)</onclick>
-                <icon>special://skin/backgrounds/settings-default.jpg</icon>
+                <icon>special://skin/extras/default/settings-default.jpg</icon>
             </item>
             <item id="2">
                 <label>157</label>
                 <label2>31401</label2>
                 <onclick>ActivateWindow(VideosSettings)</onclick>
-                <icon>special://skin/backgrounds/settings-default.jpg</icon>
+                <icon>special://skin/extras/default/settings-default.jpg</icon>
             </item>
             <item id="3">
                 <label>31502</label>
                 <label2>31409</label2>
                 <onclick>ActivateWindow(PVRSettings)</onclick>
-                <icon>special://skin/backgrounds/settings-default.jpg</icon>
+                <icon>special://skin/extras/default/settings-default.jpg</icon>
             </item>
             <item id="4">
                 <label>2</label>
                 <label2>31402</label2>
                 <onclick>ActivateWindow(MusicSettings)</onclick>
-                <icon>special://skin/backgrounds/settings-default.jpg</icon>
+                <icon>special://skin/extras/default/settings-default.jpg</icon>
             </item>
             <item id="5">
                 <label>1</label>
                 <label2>31403</label2>
                 <onclick>ActivateWindow(PicturesSettings)</onclick>
-                <icon>special://skin/backgrounds/settings-default.jpg</icon>
+                <icon>special://skin/extras/default/settings-default.jpg</icon>
             </item>
             <item id="6">
                 <label>8</label>
                 <label2>31404</label2>
                 <onclick>ActivateWindow(WeatherSettings)</onclick>
-                <icon>special://skin/backgrounds/settings-default.jpg</icon>
+                <icon>special://skin/extras/default/settings-default.jpg</icon>
             </item>
             <item id="7">
                 <label>24001</label>
                 <label2>31408</label2>
                 <onclick>ActivateWindow(AddonBrowser)</onclick>
-                <icon>special://skin/backgrounds/settings-default.jpg</icon>
+                <icon>special://skin/extras/default/settings-default.jpg</icon>
             </item>
             <item id="8">
                 <label>14036</label>
                 <label2>31410</label2>
                 <onclick>ActivateWindow(ServiceSettings)</onclick>
-                <icon>special://skin/backgrounds/settings-default.jpg</icon>
+                <icon>special://skin/extras/default/settings-default.jpg</icon>
             </item>
             <item id="9">
                 <label>13000</label>
                 <label2>31406</label2>
                 <onclick>ActivateWindow(SystemSettings)</onclick>
-                <icon>special://skin/backgrounds/settings-default.jpg</icon>
+                <icon>special://skin/extras/default/settings-default.jpg</icon>
             </item>
             <item id="10">
                 <label>166</label>
                 <label2>88070</label2>
                 <onclick>ActivateWindow(SkinSettings)</onclick>
-                <icon>special://skin/backgrounds/settings-default.jpg</icon>
+                <icon>special://skin/extras/default/settings-default.jpg</icon>
             </item>
         </content>    
     </include>
@@ -1360,61 +1361,61 @@
                 <label>480</label>
                 <label2>31400</label2>
                 <onclick>ActivateWindow(AppearanceSettings)</onclick>
-                <icon>special://skin/backgrounds/default/settings/appearance.jpg</icon>
+                <icon>special://skin/extras/settings/appearance.jpg</icon>
             </item>
             <item id="2">
                 <label>157</label>
                 <label2>31401</label2>
                 <onclick>ActivateWindow(VideosSettings)</onclick>
-                <icon>special://skin/backgrounds/default/settings/video.jpg</icon>
+                <icon>special://skin/extras/settings/video.jpg</icon>
             </item>
             <item id="3">
                 <label>31502</label>
                 <label2>31409</label2>
                 <onclick>ActivateWindow(PVRSettings)</onclick>
-                <icon>special://skin/backgrounds/default/settings/livetv.jpg</icon>
+                <icon>special://skin/extras/settings/livetv.jpg</icon>
             </item>
             <item id="4">
                 <label>2</label>
                 <label2>31402</label2>
                 <onclick>ActivateWindow(MusicSettings)</onclick>
-                <icon>special://skin/backgrounds/default/settings/music.jpg</icon>
+                <icon>special://skin/extras/settings/music.jpg</icon>
             </item>
             <item id="5">
                 <label>1</label>
                 <label2>31403</label2>
                 <onclick>ActivateWindow(PicturesSettings)</onclick>
-                <icon>special://skin/backgrounds/default/settings/pictures.jpg</icon>
+                <icon>special://skin/extras/settings/pictures.jpg</icon>
             </item>
             <item id="6">
                 <label>8</label>
                 <label2>31404</label2>
                 <onclick>ActivateWindow(WeatherSettings)</onclick>
-                <icon>special://skin/backgrounds/default/settings/weather.jpg</icon>
+                <icon>special://skin/extras/settings/weather.jpg</icon>
             </item>
             <item id="7">
                 <label>24001</label>
                 <label2>31408</label2>
                 <onclick>ActivateWindow(AddonBrowser)</onclick>
-                <icon>special://skin/backgrounds/default/settings/addons.jpg</icon>
+                <icon>special://skin/extras/settings/addons.jpg</icon>
             </item>
             <item id="8">
                 <label>14036</label>
                 <label2>31410</label2>
                 <onclick>ActivateWindow(ServiceSettings)</onclick>
-                <icon>special://skin/backgrounds/default/settings/network.jpg</icon>
+                <icon>special://skin/extras/settings/network.jpg</icon>
             </item>
             <item id="9">
                 <label>13000</label>
                 <label2>31406</label2>
                 <onclick>ActivateWindow(SystemSettings)</onclick>
-                <icon>special://skin/backgrounds/default/settings/system.jpg</icon>
+                <icon>special://skin/extras/settings/system.jpg</icon>
             </item>
             <item id="10">
                 <label>166</label>
                 <label2>88070</label2>
                 <onclick>ActivateWindow(SkinSettings)</onclick>
-                <icon>special://skin/backgrounds/default/settings/skinsetting.jpg</icon>
+                <icon>special://skin/extras/settings/skinsetting.jpg</icon>
             </item>
         </content>
     </include>
