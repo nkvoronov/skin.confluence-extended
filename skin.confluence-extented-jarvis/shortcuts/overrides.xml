@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<overrides>
+    <!-- Icons Directory -->
+    <thumbnailBrowseDefault>special://skin/extras/icons/</thumbnailBrowseDefault>
+    <!-- Background -->
+	<background label="smartshortcuts">||BROWSE||plugin://script.skin.helper.service/?action=backgrounds</background>
+	<background label="smartshortcuts">||BROWSE||special://skin/extras/backgrounds</background>
+	<backgroundBrowse default="protocol://">True</backgroundBrowse>    
+    <!-- Icons overrides -->
+    <icon image="DefaultShortcut.png">DefaultFolder.png</icon>
+    <icon image="DefaultAudio.png">DefaultFolder.png</icon>
+    <icon image="DefaultPlaylist.png">DefaultFolder.png</icon>
+    <icon labelID="radio">DefaultTVShows.png</icon>
+    <icon labelID="livetv">DefaultTVShows.png</icon>
+    <icon labelID="videos">DefaultFolder.png</icon>
+    <icon labelID="pictures">DefaultFolder.png</icon>
+    <icon labelID="programs">DefaultFolder.png</icon>
+    <icon labelID="dvd">DefaultFolder.png</icon>
+    <icon labelID="32033">DefaultFolder.png</icon>
+    <!-- Default Backgrounds -->
+    <backgrounddefault labelID="video">special://skin/extras/backgrounds/video.jpg</backgrounddefault>
+    <backgrounddefault labelID="movies">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
+    <backgrounddefault labelID="tvshows">special://skin/extras/backgrounds/tvshows.jpg</backgrounddefault>
+    <backgrounddefault labelID="musicvideos">special://skin/extras/backgrounds/musicvideos.jpg</backgrounddefault>
+    <backgrounddefault labelID="music">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
+    <backgrounddefault labelID="radio">special://skin/extras/backgrounds/radio.jpg</backgrounddefault>
+    <backgrounddefault labelID="livetv">special://skin/extras/backgrounds/livetv.jpg</backgrounddefault>
+    <backgrounddefault labelID="pictures">special://skin/extras/backgrounds/pictures.jpg</backgrounddefault>
+    <backgrounddefault labelID="addons">special://skin/extras/backgrounds/addons.jpg</backgrounddefault>
+    <backgrounddefault labelID="weather">special://skin/extras/backgrounds/weather.jpg</backgrounddefault>
+    <backgrounddefault labelID="dvd">special://skin/extras/backgrounds/dvd.jpg</backgrounddefault>
+    <backgrounddefault labelID="settings">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
+    <!-- Groupings -->
+    <groupings>
+        <node label="32029">
+            <content>common</content>
+            <shortcut label="$ADDON[script.skin.helper.service 32062]" type="32010" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=smartshortcuts</shortcut>
+        </node>
+        <node label="32030">
+            <content>video</content>
+            <node label="32040">
+                <content>playlist-video</content>
+            </node>
+            <node label="32010">
+                <shortcut label="1037" type="32014" icon="DefaultAddonVideo.png">ActivateWindow(Videos,Addons,return)</shortcut>
+                <content>addon-video</content>
+            </node>
+            <node label="32075">
+                <content>videosources</content>
+                <content>upnp-video</content>
+            </node>
+        </node>
+        <node label="32031">
+            <content>music</content>
+            <node label="32040">
+                <content>playlist-audio</content>
+            </node>
+            <node label="32011">
+                <shortcut label="1038" type="32019" icon="DefaultAddonMusic.png">ActivateWindow(MusicLibrary,Addons,return)</shortcut>
+                <content>addon-audio</content>
+            </node>
+            <node label="32075">
+                <content>musicsources</content>
+                <content>upnp-music</content>
+            </node>
+        </node>
+        <node label="32017" condition="System.GetBool(pvrmanager.enabled)" version="13">
+            <content>pvr</content>
+            <node label="19023">
+                <content>pvr-tv</content>
+            </node>
+            <node label="19024">
+                <content>pvr-radio</content>
+            </node>
+        </node>
+        <node label="32017" condition="PVR.HasTVChannels">
+            <content>pvr</content>
+            <node label="19023">
+                <content>pvr-tv</content>
+            </node>
+        </node>
+        <node label="32087" condition="PVR.HasRadioChannels">
+            <content>radio</content>
+            <node label="19024">
+                <content>pvr-radio</content>
+            </node>
+        </node>
+        <node label="32020">
+            <content>picturesources</content>
+        </node>
+        <node label="32007">
+            <node label="32009">
+                <shortcut label="10001" type="32021" icon="DefaultAddonProgram.png">ActivateWindow(Programs,Addons,return)</shortcut>
+                <shortcut label="20244" type="32021" icon="DefaultAddonProgram.png" condition="System.Platform.Android">ActivateWindow(Programs,androidapp://sources/apps,return)</shortcut>
+                <content>addon-program</content>
+            </node>
+            <node label="32010">
+                <shortcut label="1037" type="32014" icon="DefaultAddonVideo.png">ActivateWindow(Videos,Addons,return)</shortcut>
+                <content>addon-video</content>
+            </node>
+            <node label="32011">
+                <shortcut label="1038" type="32019" icon="DefaultAddonMusic.png">ActivateWindow(MusicLibrary,Addons,return)</shortcut>
+                <content>addon-audio</content>
+            </node>
+            <node label="32012">
+                <shortcut label="1039" type="32020" icon="DefaultAddonPicture.png">ActivateWindow(Pictures,Addons,return)</shortcut>
+                <content>addon-image</content>
+            </node>
+        </node>
+        <node label="32006">
+            <content>favourite</content>
+        </node>
+        <node label="10004">
+            <content>settings</content>
+        </node>
+        <node label="32054">
+            <shortcut label="20183" type="32054" icon="DefaultFolder.png">ReloadSkin()</shortcut>
+            <content>commands</content>
+        </node>
+    </groupings>
+</overrides>

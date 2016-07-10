@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shortcuts>
+	<shortcut>
+		<label>133</label>
+		<label2>2</label2>
+		<icon>DefaultMusicArtists.png</icon>
+		<action>ActivateWindow(music,musicdb://artists/,return)</action>
+	</shortcut>
+	<shortcut>
+		<label>132</label>
+		<label2>2</label2>
+		<icon>DefaultMusicAlbums.png</icon>
+		<action>ActivateWindow(music,musicdb://albums/,return)</action>
+		<version>13</version>
+	</shortcut>
+	<shortcut>
+		<label>134</label>
+		<label2>2</label2>
+		<icon>DefaultMusicSongs.png</icon>
+		<action>ActivateWindow(music,musicdb://songs/,return)</action>
+	</shortcut>
+	<shortcut>
+		<label>744</label>
+		<label2>2</label2>
+		<icon>DefaultFolder.png</icon>
+		<action>ActivateWindow(music,sources://music/,return)</action>
+	</shortcut>
+	<shortcut>
+		<label>14022</label>
+		<label2>2</label2>
+		<icon>DefaultFolder.png</icon>
+		<action>ActivateWindow(music,musicdb://,return)</action>
+	</shortcut>
+	<shortcut>
+		<label>24001</label>
+		<label2>2</label2>
+		<icon>DefaultAddonMusic.png</icon>
+		<action>ActivateWindow(music,addons://sources/audio/,return)</action>
+	</shortcut>
+</shortcuts>

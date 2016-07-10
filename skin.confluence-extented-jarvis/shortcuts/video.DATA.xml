@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shortcuts>
+	<shortcut>
+		<label>744</label>
+		<label2>3</label2>
+		<icon>DefaultFolder.png</icon>
+		<action>ActivateWindow(videos,sources://video/,return)</action>
+	</shortcut>
+	<shortcut>
+		<label>14022</label>
+		<label2>3</label2>
+		<icon>DefaultFolder.png</icon>
+		<action>ActivateWindow(videos,library://video/,return)</action>
+	</shortcut>
+	<shortcut>
+		<label>1037</label>
+		<label2>3</label2>
+		<icon>DefaultAddonVideo.png</icon>
+		<action>ActivateWindow(videos,addons://sources/video/,return)</action>
+	</shortcut>
+</shortcuts>
