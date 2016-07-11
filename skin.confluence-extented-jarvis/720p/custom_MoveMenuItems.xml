@@ -6,19 +6,19 @@
 		<left>0</left>
 		<top>0</top>
 	</coordinates>
-	<onunload>ClearProperty(SwapItemLabel,Home)</onunload>
-	<onunload>ClearProperty(SwapItemPath,Home)</onunload>
-	<onunload>ClearProperty(SwapItemSub,Home)</onunload>
-	<onunload>ClearProperty(SwapItemAddOn,Home)</onunload>
-	<onunload>ClearProperty(SwapItemWidget,Home)</onunload>
-	<onunload>ClearProperty(SwapItemType,Home)</onunload>
-	<onunload>ClearProperty(SwapItemDBackground,Home)</onunload>
-	<onunload>ClearProperty(SwapItemCBackground,Home)</onunload>
-	<onunload>ClearProperty(SwapItemPlaylist,Home)</onunload>
-	<onunload>ClearProperty(UsrSelectBtn,Home)</onunload>
+	<onunload>ClearProperty(SwapItemLabel,home)</onunload>
+	<onunload>ClearProperty(SwapItemPath,home)</onunload>
+	<onunload>ClearProperty(SwapItemSub,home)</onunload>
+	<onunload>ClearProperty(SwapItemAddOn,home)</onunload>
+	<onunload>ClearProperty(SwapItemWidget,home)</onunload>
+	<onunload>ClearProperty(SwapItemType,home)</onunload>
+	<onunload>ClearProperty(SwapItemDBackground,home)</onunload>
+	<onunload>ClearProperty(SwapItemCBackground,home)</onunload>
+	<onunload>ClearProperty(SwapItemPlaylist,home)</onunload>
+	<onunload>ClearProperty(UsrSelectBtn,home)</onunload>
 	<controls>
         <include name="CustomSlideDialog">
-            <param name="dlg_title" value="$LOCALIZE[89400]" />
+            <param name="dlg_title" value="$LOCALIZE[89700] $LOCALIZE[89400]" />
             <param name="id_win" value="2128" />
             <param name="include_name" value="MoveMenuItemChoices" />
         </include>

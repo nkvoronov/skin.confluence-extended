@@ -6,10 +6,10 @@
 		<left>0</left>
 		<top>0</top>
 	</coordinates>
-    <onunload>ClearProperty(UsrSelectBtnClear,Home)</onunload>
+    <onunload>ClearProperty(UsrSelectBtnClear,home)</onunload>
 	<controls>
         <include name="CustomSlideDialog">
-            <param name="dlg_title" value="$LOCALIZE[89200]" />
+            <param name="dlg_title" value="$LOCALIZE[89700] $LOCALIZE[89003]" />
             <param name="id_win" value="2117" />
             <param name="include_name" value="AddonTypeChoices" />
         </include>

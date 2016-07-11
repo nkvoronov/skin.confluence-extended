@@ -253,7 +253,7 @@
 								<label>$LOCALIZE[20376]:</label>
 								<label2>$INFO[ListItem.OriginalTitle]</label2>
 								<onclick>noop</onclick>
-								<visible>!IsEmpty(ListItem.OriginalTitle) + !stringcompare(ListItem.OriginalTitle,Listitem.Title)</visible>
+								<visible>!IsEmpty(ListItem.OriginalTitle) + !StringCompare(ListItem.OriginalTitle,Listitem.Title)</visible>
 							</item>
 							<item>
 								<label>$LOCALIZE[20339]:</label>
@@ -1018,9 +1018,9 @@
 						<description>Get Artwork</description>
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label>Artwork</label>
-						<onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
-						<onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
-						<onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=musicvideo, dbid=$INFO[ListItem.DBID])</onclick>
+						<onclick condition="Container.Content(tvshows)">RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
+						<onclick condition="Container.Content(movies)">RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
+						<onclick condition="Container.Content(musicvideos)">RunScript(script.artwork.downloader, mode=gui, mediatype=musicvideo, dbid=$INFO[ListItem.DBID])</onclick>
 						<visible>Container.Content(tvshows)|Container.Content(movies)|Container.Content(musicvideos)</visible>
 						<visible>System.HasAddon(script.artwork.downloader)</visible>
 					</control>
@@ -1028,7 +1028,7 @@
 						<description>Fetch TvTunes stuff</description>
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label>TvTunes</label>
-						<onclick>XBMC.RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
+						<onclick>RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
 						<visible>System.HasAddon(script.tvtunes) + IsEmpty(Window(movieinformation).Property("TvTunes_HideVideoInfoButton")) + [Container.Content(TVShows) | Container.Content(Movies)]</visible>
 					</control>
 					<control type="button" id="102">
@@ -1036,9 +1036,9 @@
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label>ExtendedInfo</label>
 						<onclick>PreviousMenu</onclick>
-						<onclick condition="Container.Content(Movies)">XBMC.RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.ID])</onclick>
-						<onclick condition="Container.Content(TVShows)">XBMC.RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.ID])</onclick>
-						<onclick condition="Container.Content(Seasons)">XBMC.RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[ListItem.TVShowTitle],season=$INFO[ListItem.Season])</onclick>
+						<onclick condition="Container.Content(Movies)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.ID])</onclick>
+						<onclick condition="Container.Content(TVShows)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.ID])</onclick>
+						<onclick condition="Container.Content(Seasons)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[ListItem.TVShowTitle],season=$INFO[ListItem.Season])</onclick>
 						<visible>System.HasAddon(script.extendedinfo) + [Container.Content(TVShows) | Container.Content(Movies) | Container.Content(Seasons)]</visible>
 					</control>
 				</control>

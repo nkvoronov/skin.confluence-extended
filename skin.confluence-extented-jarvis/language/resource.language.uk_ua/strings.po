@@ -16,9 +16,19 @@ msgstr ""
 "Language: uk_UA\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
+#[Consistency] Make terms, settings names, brands and other minutiae, consistent throughout file.
+#[Capitalization] Avoid capitalizing every second word. See http://grammarist.com/capitalization/
+#For example, prefer wording as "This new string" instead of "This New String".
+#[Referencing] If a suitable string already exists, reuse it, making a note of where it's used!
+#[Description / location] For example, "#. Description of some setting" used on "#: xbmc/addons/guidialogaddoninfo.cpp"
+#When writing a description or setting, refer to a setting name in quotes. See existing entries for guidance.
+#For example, "Press \"OK\" for \"All seasons\"" instead of "Press OK for All seasons" after first word.
+
 msgctxt "#31000"
 msgid "Change your"
 msgstr "Змініть"
+
+#empty strings from id 31001 to 31002
 
 msgctxt "#31003"
 msgid "Power options"
@@ -36,6 +46,8 @@ msgctxt "#31006"
 msgid "View options"
 msgstr "Налаштування перегляду"
 
+#empty string with id 31007
+
 msgctxt "#31008"
 msgid "Full screen"
 msgstr "Повний екран"
@@ -43,6 +55,8 @@ msgstr "Повний екран"
 msgctxt "#31009"
 msgid "Total duration"
 msgstr "Загальна тривалість"
+
+#empty strings from id 31010 to 31021
 
 msgctxt "#31022"
 msgid "Music - Files"
@@ -68,13 +82,17 @@ msgctxt "#31027"
 msgid "Location"
 msgstr "Розташування"
 
+#View Type labels
+
 msgctxt "#31028"
 msgid "Poster wrap"
 msgstr "Карусель постерів"
 
 msgctxt "#31029"
 msgid "Fanart"
-msgstr "Фанарт"
+msgstr "фанарт"
+
+#empty string with id 31030
 
 msgctxt "#31031"
 msgid "Pic thumbs"
@@ -88,13 +106,19 @@ msgctxt "#31033"
 msgid "Info"
 msgstr "Інформація"
 
+#empty strings from id 31034 to 31038
+
 msgctxt "#31039"
 msgid "Actions"
 msgstr "Дії"
 
+#Extra labels
+
 msgctxt "#31040"
 msgid "Now playing"
-msgstr "Відтворюється"
+msgstr "Відтворюється:"
+
+#empty string with id 31041
 
 msgctxt "#31042"
 msgid "PLAYING"
@@ -116,6 +140,8 @@ msgctxt "#31046"
 msgid "SEEKING"
 msgstr "ПОШУК"
 
+#empty string with id 31047
+
 msgctxt "#31048"
 msgid "Visualisation presets"
 msgstr "Налаштування візуалізації"
@@ -131,6 +157,9 @@ msgstr "Висхідний"
 msgctxt "#31051"
 msgid "Sort: Descending"
 msgstr "Низхідний"
+
+#empty strings from id 31052 to 31054
+#Playlist Editor labels
 
 msgctxt "#31055"
 msgid "Open playlist"
@@ -160,6 +189,9 @@ msgctxt "#31061"
 msgid "Current selected"
 msgstr "Поточне виділення"
 
+#empty strings from id 31062 to 31100
+#Skin Settings labels
+
 msgctxt "#31101"
 msgid "Home screen options"
 msgstr "Налаштування головного екрану"
@@ -175,6 +207,8 @@ msgstr "Показувати \"Пауза\" в режими слайдшоу"
 msgctxt "#31104"
 msgid "Play trailers in a window [COLOR=grey3](Video information dialogue only)[/COLOR]"
 msgstr "Відтворювати трейлери у вікні [COLOR=grey3](лише для вікна відомостей)[/COLOR]"
+
+#empty string with id 31105
 
 msgctxt "#31106"
 msgid "Miscellaneous options"
@@ -224,6 +258,7 @@ msgctxt "#31117"
 msgid "Show recently added videos"
 msgstr "Показати останні додані альбоми"
 
+#. In main language strings its used as submenu
 msgctxt "#31118"
 msgid "Home page programs submenu"
 msgstr "Субменю сторінки програм"
@@ -232,9 +267,15 @@ msgctxt "#31119"
 msgid "Hide background fanart"
 msgstr "Приховати фоновий фанарт"
 
+#empty strings from id 31120 to 31121
+
+#. Boolean settings value
+#: system/settings/settings.xml
 msgctxt "#31122"
 msgid "Hide EPG if RDS is present on channel window"
 msgstr "Приховати EPG, якщо RDS присутній у вікні каналу"
+
+#empty string with id 31123
 
 msgctxt "#31124"
 msgid "Show background \"Now playing\" video"
@@ -243,6 +284,8 @@ msgstr "Відтворення відео в якості фону"
 msgctxt "#31125"
 msgid "Show background \"Now playing\" visualisation"
 msgstr "Музична візуалізація в якості фону"
+
+#empty strings from id 31126 to 31127
 
 msgctxt "#31128"
 msgid "Lyrics"
@@ -264,6 +307,11 @@ msgctxt "#31132"
 msgid "Lyrics add-on"
 msgstr "Додавання текстів пісень"
 
+msgctxt "#31133"
+msgid "Choose weather icon pack"
+msgstr "Вибрати картинки для погоди"
+
+#. In main language strings its used as submenu
 msgctxt "#31134"
 msgid "Home page \"Videos\" submenu"
 msgstr "Субменю сторінки \"Відео\""
@@ -275,6 +323,8 @@ msgstr "Субменю сторінки \"Музика\""
 msgctxt "#31136"
 msgid "Home page \"Pictures\" submenu"
 msgstr "Субменю сторінки \"Фото\""
+
+#empty strings from id 31137 to 31139
 
 msgctxt "#31140"
 msgid "Music OSD"
@@ -288,13 +338,20 @@ msgctxt "#31142"
 msgid "Settings level"
 msgstr "Рівень налаштувань"
 
+#empty strings from id 31143 to 31199
+#Script labels
+
 msgctxt "#31200"
 msgid "Shortcuts"
 msgstr "Ярлики"
 
+#empty strings from id 31201 to 31202
+
 msgctxt "#31203"
 msgid "Choose your song"
 msgstr "Виберіть пісню"
+
+#empty string with id 31204
 
 msgctxt "#31205"
 msgid "Lyrics source"
@@ -312,6 +369,9 @@ msgctxt "#31208"
 msgid "Upcoming episodes"
 msgstr "Наступні серії"
 
+#empty strings from id 31209 to 31299
+#Extra labels
+
 msgctxt "#31300"
 msgid "Current temperature"
 msgstr "Поточна температура"
@@ -320,9 +380,13 @@ msgctxt "#31301"
 msgid "Last updated"
 msgstr "Останнє оновлення"
 
+#empty string with id 31302
+
 msgctxt "#31303"
 msgid "Data provider"
 msgstr "Джерело даних"
+
+#empty strings from id 31304 to 31306
 
 msgctxt "#31307"
 msgid "Hide fanart"
@@ -356,9 +420,13 @@ msgctxt "#31314"
 msgid "Content scanning options"
 msgstr "Параметри сканування вмісту"
 
+#empty strings from id 31315 to 31316
+
 msgctxt "#31317"
 msgid "Set fanart path"
 msgstr "Вибрати розташування фанарту"
+
+#empty string with id 31318
 
 msgctxt "#31319"
 msgid "Selected profile"
@@ -368,9 +436,13 @@ msgctxt "#31320"
 msgid "Last logged in"
 msgstr "Останній вхід"
 
+#empty string with id 31321
+
 msgctxt "#31322"
 msgid "Aired"
 msgstr "Прем'єра"
+
+#empty strings from id 31323 to 31324
 
 msgctxt "#31325"
 msgid "Playlist options"
@@ -400,6 +472,9 @@ msgctxt "#31331"
 msgid "Album details"
 msgstr "Відомості про альбом"
 
+#empty strings from id 31332 to 31350
+#Video and Music OSD Labels
+
 msgctxt "#31351"
 msgid "Pause"
 msgstr "Пауза"
@@ -424,6 +499,9 @@ msgctxt "#31356"
 msgid "Download subtitles"
 msgstr "Завантажити субтитри"
 
+#empty strings from id 31357 to 31359
+
+# Stereoscopic labels
 msgctxt "#31360"
 msgid "Watch as 2D"
 msgstr "Переглядати як 2D"
@@ -436,6 +514,8 @@ msgctxt "#31362"
 msgid "Enabled"
 msgstr "Увімкнено"
 
+#empty strings from id 31363 to 31389
+
 msgctxt "#31390"
 msgid "Skin default"
 msgstr "Стандартні"
@@ -447,6 +527,9 @@ msgstr "Стандартні без ВЕЛИКИХ"
 msgctxt "#31392"
 msgid "Arial based"
 msgstr "Стиль Arial"
+
+#empty strings from id 31393 to 31399
+#Description Labels
 
 msgctxt "#31400"
 msgid "[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR]Change the skin · Set language and region · Change file listing options[CR]Set up a screensaver"
@@ -468,9 +551,13 @@ msgctxt "#31404"
 msgid "[B]CONFIGURE WEATHER SETTINGS[/B][CR][CR]Set various cities to collect weather information"
 msgstr "[B]НАЛАШТУВАННЯ ПАРАМЕТРІВ ПОГОДИ[/ B] [CR] [CR]Встановлення різних міст для збору інформації про погоду"
 
+#empty string with id 31405
+
 msgctxt "#31406"
 msgid "[B]CONFIGURE SYSTEM SETTINGS[/B][CR][CR]Setup and calibrate displays · Configure audio output · Setup remote controls[CR]Set power saving options · Enable debugging · Setup master lock"
 msgstr "[B]НАЛАШТУВАННЯ ПАРАМЕТРІВ СИСТЕМИ[/B][CR][CR]Налаштування та калібрування дисплеїв • Налаштування виведення аудіо[CR]Налаштування дистанційного керування • Налаштування параметрів енергозбереження[CR]Увімкнення налагодження • Налаштування блокування"
+
+#empty string with id 31407
 
 msgctxt "#31408"
 msgid "[B]CONFIGURE ADD-ONS[/B][CR][CR]Manage your installed add-ons · Browse for and install add-ons from kodi.tv[CR]Modify add-on settings"
@@ -496,6 +583,8 @@ msgctxt "#31413"
 msgid "Local subtitle available"
 msgstr "Доступні локальні субтитри"
 
+#empty strings from id 31414 to 31419
+
 msgctxt "#31420"
 msgid "Login"
 msgstr "Вхід"
@@ -511,6 +600,8 @@ msgstr "Показати або приховати екран входу при 
 msgctxt "#31423"
 msgid "Select the profile that will be used at startup when the login screen is disabled."
 msgstr "Вибрати профіль, що буде використовуватися при запуску, коли екран входу вимкнено."
+
+#empty strings from id 31424 to 31500
 
 msgctxt "#31501"
 msgid "Scheduled time"
@@ -536,6 +627,8 @@ msgctxt "#31506"
 msgid "Available[CR]Groups"
 msgstr "Доступні[CR]групи"
 
+#empty strings from id 31507 to 31508
+
 msgctxt "#31509"
 msgid "Channel group"
 msgstr "Група каналів"
@@ -547,6 +640,9 @@ msgstr "Таймер встановлено"
 msgctxt "#31511"
 msgid "Channel options"
 msgstr "Параметри канала"
+
+#empty strings from id 31512 to 31900
+#Weather plugin
 
 msgctxt "#31901"
 msgid "36-hour forecast"
@@ -568,6 +664,8 @@ msgctxt "#31905"
 msgid "Forecast"
 msgstr "Прогноз"
 
+#empty strings from id 31906 to 31907
+
 msgctxt "#31908"
 msgid "Chance of precipitation"
 msgstr "Можливі опади"
@@ -579,6 +677,8 @@ msgstr "Отримання прогнозу…"
 msgctxt "#31910"
 msgid "Maps"
 msgstr "Карти"
+
+#empty strings from id 31911 to 31949
 
 msgctxt "#31950"
 msgid "WEATHER"
@@ -649,10 +749,6 @@ msgstr "ПРОФІЛЬ"
 msgctxt "#32004"
 msgid "SHUTDOWN"
 msgstr "ВИКЛЮЧЕННЯ"
-
-msgctxt "#32005"
-msgid "Disc"
-msgstr "Диск"
 
 msgctxt "#88070"
 msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add and remove home menu items[CR]Change skin backgrounds"
@@ -778,25 +874,9 @@ msgctxt "#88117"
 msgid "Select color"
 msgstr "Виберіть колір"
 
-msgctxt "#88118"
-msgid "Events"
-msgstr "Події"
-
-msgctxt "#88121"
-msgid "Outlook"
-msgstr "Поточний стан"
-
-msgctxt "#88122"
-msgid "No Disc Media Detected"
-msgstr "Немає"
-
 msgctxt "#88123"
 msgid "Submenus"
 msgstr "Підміню"
-
-msgctxt "#88124"
-msgid "Reset"
-msgstr "Скидання"
 
 msgctxt "#88125"
 msgid "Initial defaults"
@@ -810,17 +890,13 @@ msgctxt "#88127"
 msgid "Addons"
 msgstr "Доповнення"
 
-msgctxt "#88128"
-msgid "Configure - ScriptPlaylist"
-msgstr "Налаштування - ScriptPlaylist"
-
 msgctxt "#88129"
 msgid "Playlist widget should [B]Randomize[/B] the playlist sort order"
 msgstr "Віджет плейлиста матиме [B]Випадковий[/B] порядок сортування"
 
 msgctxt "#88130"
-msgid "Widgets - Title"
-msgstr "Віджети - Заголовок"
+msgid "Widgets"
+msgstr "Віджети"
 
 msgctxt "#88131"
 msgid "Unwatched movies"
@@ -837,8 +913,6 @@ msgstr "Вибрані ТВ канали"
 msgctxt "#88134"
 msgid "Favorites Radio Channels"
 msgstr "Вибрані Радіо канали"
-
-# home menu
 
 msgctxt "#89001"
 msgid "Menu item"
@@ -860,28 +934,6 @@ msgctxt "#89005"
 msgid "Move menu item"
 msgstr "Перемістити меню"
 
-msgctxt "#89006"
-msgid "None"
-msgstr "Нема"
-
-msgctxt "#89007"
-msgid "Widgets"
-msgstr "Віджети"
-
-msgctxt "#89008"
-msgid "Channel"
-msgstr "Канал"
-
-# add menu item
-
-msgctxt "#89010"
-msgid "Select Menu Item"
-msgstr "Вибрати елемент меню"
-
-msgctxt "#89011"
-msgid "Select Menu Item"
-msgstr "Вибрати елемент меню"
-
 msgctxt "#89012"
 msgid "Up One Level"
 msgstr "Вгору не один рівень"
@@ -889,34 +941,6 @@ msgstr "Вгору не один рівень"
 msgctxt "#89013"
 msgid "Clear item"
 msgstr "Очистити елемент"
-
-msgctxt "#89014"
-msgid "Default"
-msgstr "За замовчуванням"
-
-msgctxt "#89015"
-msgid "Hide Item"
-msgstr "Приховати елемент"
-
-msgctxt "#89016"
-msgid "TVShows"
-msgstr "Серіали"
-
-msgctxt "#89017"
-msgid "Music Video"
-msgstr "Музичне відео"
-
-msgctxt "#89018"
-msgid "Radio"
-msgstr "Радіо"
-
-msgctxt "#89019"
-msgid "Select"
-msgstr "Вибрати"
-
-msgctxt "#89020"
-msgid "Global Search"
-msgstr "Глобальний пошук"
 
 msgctxt "#89021"
 msgid "Launcher"
@@ -929,10 +953,6 @@ msgstr "Команда Kodi"
 msgctxt "#89023"
 msgid "Watch it Later"
 msgstr "Переглянути пізніше"
-
-msgctxt "#89024"
-msgid "Recently Played Albums"
-msgstr "Останні програні альбоми"
 
 msgctxt "#89025"
 msgid "Recent Albums"
@@ -996,61 +1016,39 @@ msgstr ""
 
 msgctxt "#89040"
 msgid "Raspberry"
-msgstr ""
-
-# submenu set
-
-msgctxt "#89100"
-msgid "Select SubMenu Set"
-msgstr "Вибрати підміню"
-
-# addons set
-
-msgctxt "#89200"
-msgid "Select Add-On Set"
-msgstr "Вибрати набір ярликів"
-
-# witget set
-
-msgctxt "#89300"
-msgid "Select Widget Set"
-msgstr "Вибрати віджет"
+msgstr "Raspberry"
 
 msgctxt "#89301"
 msgid "Big"
 msgstr "Великий"
 
-# swap item
+msgctxt "#89302"
+msgid "Daily"
+msgstr "Щоденна"
+
+msgctxt "#89303"
+msgid "Hourly"
+msgstr "Погодинна"
 
 msgctxt "#89400"
-msgid "Select Item to Swap"
-msgstr "Вибрати елемент для обміну"
-
-# submenu sets
+msgid "Item to Swap"
+msgstr "елемент для обміну"
 
 msgctxt "#89500"
 msgid "Submenu"
 msgstr "Пункт"
 
-# submenu select item
-
-msgctxt "#89600"
-msgid "Select Menu Item"
-msgstr "Вибрати пункт меню"
-
-# addon select
-
 msgctxt "#89700"
-msgid "Select Addon"
-msgstr "Вибрати доповнення"
+msgid "Select"
+msgstr "Вибрати"
 
 msgctxt "#89701"
 msgid "Selected"
 msgstr "Вибрати"
 
-#msgctxt "#89702"
-#msgid "Favourites Window"
-#msgstr "Вікно обране"
+msgctxt "#89702"
+msgid "Favourites Window"
+msgstr "Вікно обране"
 
 msgctxt "#89703"
 msgid "No Recommended Media"

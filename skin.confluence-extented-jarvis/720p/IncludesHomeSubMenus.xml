@@ -138,11 +138,11 @@
         <control type="group">
             <visible>StringCompare(Container(9000).ListItem.Property(SubMenu),SubMenu$PARAM[id2])</visible>
             <include>HomeSubMenuCommonAnimation</include>
-            <animation effect="slide" start="0,0" end="95,0" time="0" condition="stringcompare(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
-            <animation effect="slide" start="0,0" end="190,0" time="0" condition="stringcompare(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
-            <animation effect="slide" start="0,0" end="285,0" time="0" condition="stringcompare(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
-            <animation effect="slide" start="0,0" end="380,0" time="0" condition="stringcompare(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
-            <animation effect="slide" start="0,0" end="475,0" time="0" condition="stringcompare(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
+            <animation effect="slide" start="0,0" end="95,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
+            <animation effect="slide" start="0,0" end="190,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
+            <animation effect="slide" start="0,0" end="285,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
+            <animation effect="slide" start="0,0" end="380,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
+            <animation effect="slide" start="0,0" end="475,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
             <control type="list" id="$PARAM[list_id]">
                 <include>HomeSubMenuCommonValues</include>
                 <onleft>$PARAM[list_id]</onleft>
@@ -189,11 +189,11 @@
                 <height>35</height>
                 <texture border="0,0,0,3">HomeSubEnd.png</texture>
                 <animation effect="slide" start="0,0" end="-30,0" time="0" condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,6) |  !Container($PARAM[list_id]).HasNext">conditional</animation>
-                <animation effect="slide" start="0,0" end="-190,0" time="0" condition="stringcompare(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-380,0" time="0" condition="stringcompare(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-570,0" time="0" condition="stringcompare(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-760,0" time="0" condition="stringcompare(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-950,0" time="0" condition="stringcompare(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
+                <animation effect="slide" start="0,0" end="-190,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
+                <animation effect="slide" start="0,0" end="-380,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
+                <animation effect="slide" start="0,0" end="-570,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
+                <animation effect="slide" start="0,0" end="-760,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
+                <animation effect="slide" start="0,0" end="-950,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
                 <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)</visible>
             </control>
             <control type="image">
@@ -215,11 +215,11 @@
                 <onright>$PARAM[list_id]</onright>
                 <include>HomeSubMenuUpDown</include>
                 <onclick>Control.Move($PARAM[list_id],1)</onclick>
-                <animation effect="slide" start="0,0" end="-205,0" time="0" condition="stringcompare(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-410,0" time="0" condition="stringcompare(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-615,0" time="0" condition="stringcompare(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-820,0" time="0" condition="stringcompare(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-1025,0" time="0" condition="stringcompare(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
+                <animation effect="slide" start="0,0" end="-205,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
+                <animation effect="slide" start="0,0" end="-410,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
+                <animation effect="slide" start="0,0" end="-615,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
+                <animation effect="slide" start="0,0" end="-820,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
+                <animation effect="slide" start="0,0" end="-1025,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
                 <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,6) + Container($PARAM[list_id]).HasNext</visible>
             </control>
         </control>
@@ -309,71 +309,71 @@
         <content>
             <item id="1">
                 <label>$INFO[Skin.String(SubMenu$PARAM[id2].1.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
+                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
+                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],home)</onclick>
                 <onclick condition="!IsEmpty(Skin.String(SubMenu$PARAM[id2].1.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].1.Path)]</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].1.Path))</visible>
             </item>
             <item id="2">
                 <label>$INFO[Skin.String(SubMenu$PARAM[id2].2.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
+                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
+                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],home)</onclick>
                 <onclick condition="!IsEmpty(Skin.String(SubMenu$PARAM[id2].2.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].2.Path)]</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].2.Path))</visible>
             </item>
             <item id="3">
                 <label>$INFO[Skin.String(SubMenu$PARAM[id2].3.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
+                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
+                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],home)</onclick>
                 <onclick condition="!IsEmpty(Skin.String(SubMenu$PARAM[id2].3.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].3.Path)]</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].3.Path))</visible>
             </item>
             <item id="4">
                 <label>$INFO[Skin.String(SubMenu$PARAM[id2].4.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
+                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
+                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],home)</onclick>
                 <onclick condition="!IsEmpty(Skin.String(SubMenu$PARAM[id2].4.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].4.Path)]</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].4.Path))</visible>
             </item>
             <item id="5">
                 <label>$INFO[Skin.String(SubMenu$PARAM[id2].5.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
+                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
+                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],home)</onclick>
                 <onclick condition="!IsEmpty(Skin.String(SubMenu$PARAM[id2].5.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].5.Path)]</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].5.Path))</visible>
             </item>
             <item id="6">
                 <label>$INFO[Skin.String(SubMenu$PARAM[id2].6.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
+                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
+                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],home)</onclick>
                 <onclick condition="!IsEmpty(Skin.String(SubMenu$PARAM[id2].6.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].6.Path)]</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].6.Path))</visible>
             </item>
             <item id="7">
                 <label>$INFO[Skin.String(SubMenu$PARAM[id2].7.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
+                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
+                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],home)</onclick>
                 <onclick condition="!IsEmpty(Skin.String(SubMenu$PARAM[id2].7.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].7.Path)]</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].7.Path))</visible>
             </item>
             <item id="8">
                 <label>$INFO[Skin.String(SubMenu$PARAM[id2].8.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
+                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
+                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],home)</onclick>
                 <onclick condition="!IsEmpty(Skin.String(SubMenu$PARAM[id2].8.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].8.Path)]</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].8.Path))</visible>
             </item>
             <item id="9">
                 <label>$INFO[Skin.String(SubMenu$PARAM[id2].9.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
+                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
+                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],home)</onclick>
                 <onclick condition="!IsEmpty(Skin.String(SubMenu$PARAM[id2].9.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].9.Path)]</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].9.Path))</visible>
             </item>
             <item id="10">
                 <label>$INFO[Skin.String(SubMenu$PARAM[id2].10.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
+                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
+                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],home)</onclick>
                 <onclick condition="!IsEmpty(Skin.String(SubMenu$PARAM[id2].10.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].10.Path)]</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].10.Path))</visible>
             </item>
@@ -383,70 +383,70 @@
 		<content>
 			<item id="1">
 				<label>$INFO[Window(0).Property(favourite.1.name)]</label>
-				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
 				<onclick>$INFO[Window(0).Property(favourite.1.path)]</onclick>
 				<visible>!IsEmpty(Window(0).Property(favourite.1.name))</visible>
 				<visible>!IsEmpty(Window(0).Property(favourite.1.path))</visible>
 			</item>
 			<item id="2">
 				<label>$INFO[Window(0).Property(favourite.2.name)]</label>
-				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
 				<onclick>$INFO[Window(0).Property(favourite.2.path)]</onclick>
 				<visible>!IsEmpty(Window(0).Property(favourite.2.name))</visible>
 				<visible>!IsEmpty(Window(0).Property(favourite.2.path))</visible>
 			</item>
 			<item id="3">
 				<label>$INFO[Window(0).Property(favourite.3.name)]</label>				
-				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
                 <onclick>$INFO[Window(0).Property(favourite.3.path)]</onclick>
 				<visible>!IsEmpty(Window(0).Property(favourite.3.name))</visible>
 				<visible>!IsEmpty(Window(0).Property(favourite.3.path))</visible>
 			</item>
 			<item id="4">
 				<label>$INFO[Window(0).Property(favourite.4.name)]</label>				
-				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
                 <onclick>$INFO[Window(0).Property(favourite.4.path)]</onclick>
 				<visible>!IsEmpty(Window(0).Property(favourite.4.name))</visible>
 				<visible>!IsEmpty(Window(0).Property(favourite.4.path))</visible>
 			</item>
 			<item id="5">
 				<label>$INFO[Window(0).Property(favourite.5.name)]</label>
-				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
 				<onclick>$INFO[Window(0).Property(favourite.5.path)]</onclick>
 				<visible>!IsEmpty(Window(0).Property(favourite.5.name))</visible>
 				<visible>!IsEmpty(Window(0).Property(favourite.5.path))</visible>
 			</item>
 			<item id="6">
 				<label>$INFO[Window(0).Property(favourite.6.name)]</label>
-				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
 				<onclick>$INFO[Window(0).Property(favourite.6.path)]</onclick>
 				<visible>!IsEmpty(Window(0).Property(favourite.6.name))</visible>
 				<visible>!IsEmpty(Window(0).Property(favourite.6.path))</visible>
 			</item>
 			<item id="7">
 				<label>$INFO[Window(0).Property(favourite.7.name)]</label>
-				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
 				<onclick>$INFO[Window(0).Property(favourite.7.path)]</onclick>
 				<visible>!IsEmpty(Window(0).Property(favourite.7.name))</visible>
 				<visible>!IsEmpty(Window(0).Property(favourite.7.path))</visible>
 			</item>
 			<item id="8">
 				<label>$INFO[Window(0).Property(favourite.8.name)]</label>
-				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
 				<onclick>$INFO[Window(0).Property(favourite.8.path)]</onclick>
 				<visible>!IsEmpty(Window(0).Property(favourite.8.name))</visible>
 				<visible>!IsEmpty(Window(0).Property(favourite.8.path))</visible>
 			</item>
 			<item id="9">
 				<label>$INFO[Window(0).Property(favourite.9.name)]</label>
-				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
 				<onclick>$INFO[Window(0).Property(favourite.9.path)]</onclick>
 				<visible>!IsEmpty(Window(0).Property(favourite.9.name))</visible>
 				<visible>!IsEmpty(Window(0).Property(favourite.9.path))</visible>
 			</item>
 			<item id="10">
 				<label>$INFO[Window(0).Property(favourite.10.name)]</label>
-				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
 				<onclick>$INFO[Window(0).Property(favourite.10.path)]</onclick>
 				<visible>!IsEmpty(Window(0).Property(favourite.10.name))</visible>
 				<visible>!IsEmpty(Window(0).Property(favourite.10.path))</visible>
@@ -481,26 +481,26 @@
         <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].9.Path)</onclick>
         <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].10.Label)</onclick>
         <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].10.Path)</onclick>        
-        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + stringcompare(Skin.String(HomeItem.1.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.1.Sub)</onclick>
-        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + stringcompare(Skin.String(HomeItem.2.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.2.Sub)</onclick>
-        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + stringcompare(Skin.String(HomeItem.3.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.3.Sub)</onclick>
-        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + stringcompare(Skin.String(HomeItem.4.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.4.Sub)</onclick>
-        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + stringcompare(Skin.String(HomeItem.5.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.5.Sub)</onclick>
-        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + stringcompare(Skin.String(HomeItem.6.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.6.Sub)</onclick>
-        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + stringcompare(Skin.String(HomeItem.7.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.7.Sub)</onclick>
-        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + stringcompare(Skin.String(HomeItem.8.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.8.Sub)</onclick>
-        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + stringcompare(Skin.String(HomeItem.9.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.9.Sub)</onclick>
-        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + stringcompare(Skin.String(HomeItem.10.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.10.Sub)</onclick>
-        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + stringcompare(Skin.String(HomeItem.11.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.11.Sub)</onclick>
-        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + stringcompare(Skin.String(HomeItem.12.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.12.Sub)</onclick>
-        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + stringcompare(Skin.String(HomeItem.13.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.13.Sub)</onclick>
-        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + stringcompare(Skin.String(HomeItem.14.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.14.Sub)</onclick>
-        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + stringcompare(Skin.String(HomeItem.15.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.15.Sub)</onclick>
-        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + stringcompare(Skin.String(HomeItem.16.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.16.Sub)</onclick>
-        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + stringcompare(Skin.String(HomeItem.17.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.17.Sub)</onclick>
-        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + stringcompare(Skin.String(HomeItem.18.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.18.Sub)</onclick>
-        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + stringcompare(Skin.String(HomeItem.19.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.19.Sub)</onclick>
-        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + stringcompare(Skin.String(HomeItem.20.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.20.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.1.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.1.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.2.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.2.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.3.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.3.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.4.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.4.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.5.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.5.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.6.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.6.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.7.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.7.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.8.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.8.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.9.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.9.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.10.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.10.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.11.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.11.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.12.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.12.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.13.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.13.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.14.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.14.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.15.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.15.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.16.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.16.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.17.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.17.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.18.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.18.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.19.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.19.Sub)</onclick>
+        <onclick condition="IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.20.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.20.Sub)</onclick>
     </include>
     <include name="HomeMainSubMenusItemSettings">
         <control type="button" id="2$PARAM[id2]00">
@@ -528,8 +528,8 @@
             <focusedcolor>white</focusedcolor>
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].1,Home)</onclick>
-            <onclick condition="Skin.String(SubMenu$PARAM[id2].1.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
+            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].1,home)</onclick>
+            <onclick condition="Skin.String(SubMenu$PARAM[id2].1.Label)">SetProperty(UsrSelectBtnClear,Clear,home)</onclick>
             <onclick>ActivateWindow(2115)</onclick>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
         </control>
@@ -543,8 +543,8 @@
             <focusedcolor>white</focusedcolor>
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].2,Home)</onclick>
-            <onclick condition="Skin.String(SubMenu$PARAM[id2].2.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
+            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].2,home)</onclick>
+            <onclick condition="Skin.String(SubMenu$PARAM[id2].2.Label)">SetProperty(UsrSelectBtnClear,Clear,home)</onclick>
             <onclick>ActivateWindow(2115)</onclick>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].1.Label))</visible>
@@ -559,8 +559,8 @@
             <focusedcolor>white</focusedcolor>
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].3,Home)</onclick>
-            <onclick condition="Skin.String(SubMenu$PARAM[id2].3.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
+            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].3,home)</onclick>
+            <onclick condition="Skin.String(SubMenu$PARAM[id2].3.Label)">SetProperty(UsrSelectBtnClear,Clear,home)</onclick>
             <onclick>ActivateWindow(2115)</onclick>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].2.Label))</visible>
@@ -575,8 +575,8 @@
             <focusedcolor>white</focusedcolor>
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].4,Home)</onclick>
-            <onclick condition="Skin.String(SubMenu$PARAM[id2].4.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
+            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].4,home)</onclick>
+            <onclick condition="Skin.String(SubMenu$PARAM[id2].4.Label)">SetProperty(UsrSelectBtnClear,Clear,home)</onclick>
             <onclick>ActivateWindow(2115)</onclick>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].3.Label))</visible>
@@ -591,8 +591,8 @@
             <focusedcolor>white</focusedcolor>
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].5,Home)</onclick>
-            <onclick condition="Skin.String(SubMenu$PARAM[id2].5.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
+            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].5,home)</onclick>
+            <onclick condition="Skin.String(SubMenu$PARAM[id2].5.Label)">SetProperty(UsrSelectBtnClear,Clear,home)</onclick>
             <onclick>ActivateWindow(2115)</onclick>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].4.Label))</visible>
@@ -607,8 +607,8 @@
             <focusedcolor>white</focusedcolor>
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].6,Home)</onclick>
-            <onclick condition="Skin.String(SubMenu$PARAM[id2].6.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
+            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].6,home)</onclick>
+            <onclick condition="Skin.String(SubMenu$PARAM[id2].6.Label)">SetProperty(UsrSelectBtnClear,Clear,home)</onclick>
             <onclick>ActivateWindow(2115)</onclick>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].5.Label))</visible>
@@ -623,8 +623,8 @@
             <focusedcolor>white</focusedcolor>
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].7,Home)</onclick>
-            <onclick condition="Skin.String(SubMenu$PARAM[id2].7.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
+            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].7,home)</onclick>
+            <onclick condition="Skin.String(SubMenu$PARAM[id2].7.Label)">SetProperty(UsrSelectBtnClear,Clear,home)</onclick>
             <onclick>ActivateWindow(2115)</onclick>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].6.Label))</visible>
@@ -639,8 +639,8 @@
             <focusedcolor>white</focusedcolor>
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].8,Home)</onclick>
-            <onclick condition="Skin.String(SubMenu$PARAM[id2].8.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
+            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].8,home)</onclick>
+            <onclick condition="Skin.String(SubMenu$PARAM[id2].8.Label)">SetProperty(UsrSelectBtnClear,Clear,home)</onclick>
             <onclick>ActivateWindow(2115)</onclick>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].7.Label))</visible>
@@ -655,8 +655,8 @@
             <focusedcolor>white</focusedcolor>
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].9,Home)</onclick>
-            <onclick condition="Skin.String(SubMenu$PARAM[id2].9.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
+            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].9,home)</onclick>
+            <onclick condition="Skin.String(SubMenu$PARAM[id2].9.Label)">SetProperty(UsrSelectBtnClear,Clear,home)</onclick>
             <onclick>ActivateWindow(2115)</onclick>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].8.Label))</visible>
@@ -671,8 +671,8 @@
             <focusedcolor>white</focusedcolor>
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].10,Home)</onclick>
-            <onclick condition="Skin.String(SubMenu$PARAM[id2].10.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
+            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].10,home)</onclick>
+            <onclick condition="Skin.String(SubMenu$PARAM[id2].10.Label)">SetProperty(UsrSelectBtnClear,Clear,home)</onclick>
             <onclick>ActivateWindow(2115)</onclick>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
             <visible>!IsEmpty(Skin.String(SubMenu$PARAM[id2].9.Label))</visible>
@@ -684,176 +684,176 @@
                 <description>Clear Setting</description>
                 <label>$LOCALIZE[89013]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>StringCompare(Window(Home).Property(UsrSelectBtnClear),Clear)</visible>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,None)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
+                <visible>StringCompare(Window(home).Property(UsrSelectBtnClear),Clear)</visible>
             </item>
             <item>
                 <description>Submenu set 01</description>
                 <label>$VAR[UsersSubMenu01Name]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu01)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,SubMenu01)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu01.Label))</visible>
             </item>
             <item>
                 <description>Submenu set 02</description>
                 <label>$VAR[UsersSubMenu02Name]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu02)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,SubMenu02)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu02.Label))</visible>
             </item>
             <item>
                 <description>Submenu set 03</description>
                 <label>$VAR[UsersSubMenu03Name]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu03)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,SubMenu03)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu03.Label))</visible>
             </item>
             <item>
                 <description>Submenu set 04</description>
                 <label>$VAR[UsersSubMenu04Name]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu04)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,SubMenu04)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu04.Label))</visible>
             </item>
             <item>
                 <description>Submenu set 05</description>
                 <label>$VAR[UsersSubMenu05Name]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu05)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,SubMenu05)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu05.Label))</visible>
             </item>
             <item>
                 <description>Submenu set 06</description>
                 <label>$VAR[UsersSubMenu06Name]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu06)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,SubMenu06)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu06.Label))</visible>
             </item>
             <item>
                 <description>Submenu set 07</description>
                 <label>$VAR[UsersSubMenu07Name]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu07)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,SubMenu07)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu07.Label))</visible>
             </item>
             <item>
                 <description>Submenu set 08</description>
                 <label>$VAR[UsersSubMenu08Name]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu08)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,SubMenu08)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu08.Label))</visible>
             </item>
             <item>
                 <description>Submenu set 09</description>
                 <label>$VAR[UsersSubMenu09Name]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu09)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,SubMenu09)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu09.Label))</visible>
             </item>
             <item>
                 <description>Submenu set 10</description>
                 <label>$VAR[UsersSubMenu10Name]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu10)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,SubMenu10)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu10.Label))</visible>
             </item>
             <item>
                 <description>Submenu set 11</description>
                 <label>$VAR[UsersSubMenu11Name]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu11)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,SubMenu11)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu11.Label))</visible>
             </item>
             <item>
                 <description>Submenu set 12</description>
                 <label>$VAR[UsersSubMenu12Name]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu12)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,SubMenu12)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu12.Label))</visible>
             </item>
             <item>
                 <description>Submenu set 13</description>
                 <label>$VAR[UsersSubMenu13Name]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu13)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,SubMenu13)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu13.Label))</visible>
             </item>
             <item>
                 <description>Submenu set 14</description>
                 <label>$VAR[UsersSubMenu14Name]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu14)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,SubMenu14)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu14.Label))</visible>
             </item>
             <item>
                 <description>Submenu set 15</description>
                 <label>$VAR[UsersSubMenu15Name]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu15)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,SubMenu15)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu16.Label))</visible>
             </item>
             <item>
                 <description>Submenu set 16</description>
                 <label>$VAR[UsersSubMenu16Name]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu16)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,SubMenu16)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu16.Label))</visible>
             </item>
             <item>
                 <description>Submenu set 17</description>
                 <label>$VAR[UsersSubMenu17Name]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu17)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,SubMenu17)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu17.Label))</visible>
             </item>
             <item>
                 <description>Submenu set 18</description>
                 <label>$VAR[UsersSubMenu18Name]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu18)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,SubMenu18)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu18.Label))</visible>
             </item>
             <item>
                 <description>Submenu set 19</description>
                 <label>$VAR[UsersSubMenu19Name]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu19)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,SubMenu19)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu19.Label))</visible>
             </item>
             <item>
                 <description>Submenu set 20</description>
                 <label>$VAR[UsersSubMenu20Name]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu20)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,SubMenu20)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>!IsEmpty(Skin.String(SubMenu20.Label))</visible>
             </item>
             <item>
                 <description>Submenu Favourites</description>
                 <label>$LOCALIZE[1036]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu21)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,SubMenu21)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
             </item>
         </content>
     </include>    
