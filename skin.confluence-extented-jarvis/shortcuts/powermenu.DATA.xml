@@ -10,28 +10,28 @@
     <shortcut>
         <label>13016</label>
         <label2>84220</label2>        
-        <action>Powerdown()</action>
+        <action>Powerdown</action>
         <icon>DefaultFolder.png</icon> 
         <visible>System.CanPowerDown</visible>        
     </shortcut>
     <shortcut>        
         <label>13011</label>
         <label2>84220</label2>
-        <action>Suspend()</action>
+        <action>Suspend</action>
         <icon>DefaultFolder.png</icon> 
         <visible>System.CanSuspend</visible>       
     </shortcut>
     <shortcut>       
         <label>13010</label>
         <label2>84220</label2>
-        <action>Hibernate()</action>
+        <action>Hibernate</action>
         <icon>DefaultFolder.png</icon> 
         <visible>System.CanHibernate</visible>        
     </shortcut>
     <shortcut>        
         <label>13013</label>
         <label2>84220</label2>
-        <action>Reset()</action>
+        <action>Reset</action>
         <icon>DefaultFolder.png</icon> 
         <visible>System.CanReboot</visible>        
     </shortcut>
@@ -70,7 +70,7 @@
     <shortcut>        
         <label>20150</label>
         <label2>84220</label2>
-        <action>AlarmClock(shutdowntimer,Shutdown())</action>
+        <action>AlarmClock(shutdowntimer,Shutdown)</action>
         <icon>DefaultFolder.png</icon> 
         <visible>!System.HasAlarm(shutdowntimer)</visible>
         <visible>System.CanPowerDown | System.CanSuspend | System.CanHibernate</visible>       
@@ -85,7 +85,7 @@
     <shortcut>        
         <label>20183</label>
         <label2>84220</label2>
-        <action>ReloadSkin()</action>
+        <action>ReloadSkin</action>
         <icon>DefaultFolder.png</icon>        
     </shortcut>
 </shortcuts>

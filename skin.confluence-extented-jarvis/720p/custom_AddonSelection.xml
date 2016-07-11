@@ -6,7 +6,7 @@
 		<left>0</left>
 		<top>0</top>
 	</coordinates>
-    <onunload>ClearProperty(UsrSelectBtnClear,Home)</onunload>
+    <onunload>ClearProperty(UsrSelectBtnClear,home)</onunload>
 	<controls>
         <include name="CustomSlideDialog">
             <param name="dlg_title" value="$LOCALIZE[89700]" />

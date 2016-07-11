@@ -307,7 +307,9 @@ msgctxt "#31132"
 msgid "Lyrics add-on"
 msgstr ""
 
-#empty string with id 31133
+msgctxt "#31133"
+msgid "Choose weather icon pack"
+msgstr ""
 
 #. In main language strings its used as submenu
 msgctxt "#31134"
@@ -530,19 +532,19 @@ msgstr ""
 #Description Labels
 
 msgctxt "#31400"
-msgid "[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR]Change the skin Â· Set language and region Â· Change file listing options[CR]Set up a screensaver"
+msgid "[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR]Change the skin · Set language and region · Change file listing options[CR]Set up a screensaver"
 msgstr ""
 
 msgctxt "#31401"
-msgid "[B]CONFIGURE VIDEO SETTINGS[/B][CR][CR]Manage your video library Â· Set video playback options Â· Change video listing options[CR]Set subtitle fonts"
+msgid "[B]CONFIGURE VIDEO SETTINGS[/B][CR][CR]Manage your video library · Set video playback options · Change video listing options[CR]Set subtitle fonts"
 msgstr ""
 
 msgctxt "#31402"
-msgid "[B]CONFIGURE MUSIC SETTINGS[/B][CR][CR]Manage your music library Â· Set music playback options Â· Change music listing options[CR]Setup song submission"
+msgid "[B]CONFIGURE MUSIC SETTINGS[/B][CR][CR]Manage your music library · Set music playback options · Change music listing options[CR]Setup song submission"
 msgstr ""
 
 msgctxt "#31403"
-msgid "[B]CONFIGURE PICTURE SETTINGS[/B][CR][CR]Set picture listing options Â· Configure slideshow"
+msgid "[B]CONFIGURE PICTURE SETTINGS[/B][CR][CR]Set picture listing options · Configure slideshow"
 msgstr ""
 
 msgctxt "#31404"
@@ -558,15 +560,15 @@ msgstr ""
 #empty string with id 31407
 
 msgctxt "#31408"
-msgid "[B]CONFIGURE ADD-ONS[/B][CR][CR]Manage your installed add-ons Â· Browse for and install add-ons from kodi.tv[CR]Modify add-on settings"
+msgid "[B]CONFIGURE ADD-ONS[/B][CR][CR]Manage your installed add-ons · Browse for and install add-ons from kodi.tv[CR]Modify add-on settings"
 msgstr ""
 
 msgctxt "#31409"
-msgid "[B]CONFIGURE TV SETTINGS[/B][CR][CR]Change full screen info Â· Manage EPG data settings"
+msgid "[B]CONFIGURE TV SETTINGS[/B][CR][CR]Change full screen info · Manage EPG data settings"
 msgstr ""
 
 msgctxt "#31410"
-msgid "[B]CONFIGURE SERVICE SETTINGS[/B][CR][CR]Setup control of Kodi via UPnP and HTTP Â· Configure file sharing[CR]Enable Zeroconf Â· Configure AirPlay"
+msgid "[B]CONFIGURE SERVICE SETTINGS[/B][CR][CR]Setup control of Kodi via UPnP and HTTP · Configure file sharing[CR]Enable Zeroconf · Configure AirPlay"
 msgstr ""
 
 msgctxt "#31411"
@@ -726,7 +728,7 @@ msgctxt "#31961"
 msgid "MUSIC VIDEOS"
 msgstr ""
 
-# extended added value
+# Extended Added Value
 
 msgctxt "#32000"
 msgid "SEARCH"
@@ -748,12 +750,8 @@ msgctxt "#32004"
 msgid "SHUTDOWN"
 msgstr ""
 
-msgctxt "#32005"
-msgid "Disc"
-msgstr ""
-
 msgctxt "#88070"
-msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin Â· Add and remove home menu items[CR]Change skin backgrounds"
+msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add and remove home menu items[CR]Change skin backgrounds"
 msgstr ""
 
 msgctxt "#88071"
@@ -876,24 +874,8 @@ msgctxt "#88117"
 msgid "Select color"
 msgstr ""
 
-msgctxt "#88118"
-msgid "Events"
-msgstr ""
-
-msgctxt "#88121"
-msgid "Outlook"
-msgstr ""
-
-msgctxt "#88122"
-msgid "No Disc Media Detected"
-msgstr ""
-
 msgctxt "#88123"
 msgid "Submenus"
-msgstr ""
-
-msgctxt "#88124"
-msgid "Reset"
 msgstr ""
 
 msgctxt "#88125"
@@ -908,16 +890,12 @@ msgctxt "#88127"
 msgid "Addons"
 msgstr ""
 
-msgctxt "#88128"
-msgid "Configure - ScriptPlaylist"
-msgstr ""
-
 msgctxt "#88129"
 msgid "Playlist widget should [B]Randomize[/B] the playlist sort order"
 msgstr ""
 
 msgctxt "#88130"
-msgid "Widgets - Title"
+msgid "Widgets"
 msgstr ""
 
 msgctxt "#88131"
@@ -935,8 +913,6 @@ msgstr ""
 msgctxt "#88134"
 msgid "Favorites Radio Channels"
 msgstr ""
-
-# home menu
 
 msgctxt "#89001"
 msgid "Menu item"
@@ -958,62 +934,12 @@ msgctxt "#89005"
 msgid "Move menu item"
 msgstr ""
 
-msgctxt "#89006"
-msgid "None"
-msgstr ""
-
-msgctxt "#89007"
-msgid "Widgets"
-msgstr ""
-
-msgctxt "#89008"
-msgid "Channel"
-msgstr ""
-
-# add menu item
-
-msgctxt "#89010"
-msgid "Select Menu Item"
-msgstr ""
-
-msgctxt "#89011"
-msgid "Select Menu Item"
-msgstr ""
-
 msgctxt "#89012"
 msgid "Up One Level"
 msgstr ""
 
 msgctxt "#89013"
 msgid "Clear item"
-msgstr ""
-
-msgctxt "#89014"
-msgid "Default"
-msgstr ""
-
-msgctxt "#89015"
-msgid "Hide Item"
-msgstr ""
-
-msgctxt "#89016"
-msgid "TVShows"
-msgstr ""
-
-msgctxt "#89017"
-msgid "Music Video"
-msgstr ""
-
-msgctxt "#89018"
-msgid "Radio"
-msgstr ""
-
-msgctxt "#89019"
-msgid "Select"
-msgstr ""
-
-msgctxt "#89020"
-msgid "Global Search"
 msgstr ""
 
 msgctxt "#89021"
@@ -1026,10 +952,6 @@ msgstr ""
 
 msgctxt "#89023"
 msgid "Watch it Later"
-msgstr ""
-
-msgctxt "#89024"
-msgid "Recently Played Albums"
 msgstr ""
 
 msgctxt "#89025"
@@ -1096,47 +1018,25 @@ msgctxt "#89040"
 msgid "Raspberry"
 msgstr ""
 
-# submenu set
-
-msgctxt "#89100"
-msgid "Select SubMenu Set"
-msgstr ""
-
-# addons set
-
-msgctxt "#89200"
-msgid "Select Add-On Set"
-msgstr ""
-
-# witget set
-
-msgctxt "#89300"
-msgid "Select Widget Set"
-msgstr ""
-
 msgctxt "#89301"
 msgid "Big"
 msgstr ""
 
-# swap item
-
-msgctxt "#89400"
-msgid "Select Item to Swap"
+msgctxt "#89302"
+msgid "Daily"
 msgstr ""
 
-# submenu sets
+msgctxt "#89303"
+msgid "Hourly"
+msgstr ""
+
+msgctxt "#89400"
+msgid "Item to Swap"
+msgstr ""
 
 msgctxt "#89500"
 msgid "Submenu"
 msgstr ""
-
-# submenu select item
-
-msgctxt "#89600"
-msgid "Select Menu Item"
-msgstr ""
-
-# addon select
 
 msgctxt "#89700"
 msgid "Select"

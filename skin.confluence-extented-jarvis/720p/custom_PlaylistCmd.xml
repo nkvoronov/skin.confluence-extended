@@ -31,7 +31,7 @@
 			<width>530</width>
 			<height>30</height>
 			<font>font13_title</font>
-			<label>$LOCALIZE[88128]</label>
+			<label>$LOCALIZE[24020] - ScriptPlaylist</label>
 			<align>center</align>
 			<aligny>center</aligny>
 			<textcolor>selected</textcolor>
