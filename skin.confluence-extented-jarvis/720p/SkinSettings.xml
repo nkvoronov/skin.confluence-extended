@@ -78,12 +78,12 @@
 				<ondown>9000</ondown>
 				<pagecontrol>-</pagecontrol>
 				<scrolltime>300</scrolltime>
-				<itemlayout height="49" width="260">
+				<itemlayout height="50" width="260">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>260</width>
-						<height>50</height>
+						<height>51</height>
 						<texture border="5">MenuItemNF.png</texture>
 					</control>
 					<control type="label">
@@ -98,12 +98,12 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="49" width="260">
+				<focusedlayout height="50" width="260">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>260</width>
-						<height>50</height>
+						<height>51</height>
 						<texture border="5">MenuItemFO.png</texture>
 						<animation effect="fade" start="100" end="30" time="75" condition="!Control.HasFocus(9000)">Conditional</animation>
 					</control>
@@ -131,31 +131,27 @@
                     <item id="3">
 						<label>513</label>
 						<onclick>noop</onclick>
-					</item>  
-                    <item id="4">
-						<label>88123</label>
-						<onclick>noop</onclick>
-					</item>  
-                    <item id="5">
+					</item>
+                    <!-- <item id="4">
 						<label>31200</label>
 						<onclick>noop</onclick>
 					</item>
-                    <item id="6">
+                    <item id="5">
 						<label>88130</label>
 						<onclick>noop</onclick>
                         <visible>PVR.HasTVChannels | PVR.HasRadioChannels</visible>
                         <visible>System.HasAddon(script.pvr.favourites)</visible>
-					</item>                    
-					<item id="7">
+					</item> -->                    
+					<item id="6">
 						<label>31102</label>
 						<onclick>noop</onclick>
 					</item>
-					<item id="8">
+					<item id="7">
 						<label>$LOCALIZE[88132]</label>
 						<onclick>noop</onclick>
 						<visible>Skin.HasSetting(SeparateBackground)</visible>
 					</item>
-                    <item id="9">
+                    <item id="8">
 						<label>10035</label>
 						<onclick>noop</onclick>
 					</item>
@@ -881,107 +877,6 @@
                         <texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>RunScript(script.skinshortcuts,type=resetall)</onclick>
                     </control>
-                    
-                    <!-- Home menu 01 -->
-                    <!-- <include name="HomeMainMenuItemSettings">
-                        <param name="id" value="1" />
-                        <param name="id2" value="01" />
-                    </include> -->
-                    <!-- Home menu 02 -->
-                    <!-- <include name="HomeMainMenuItemSettings">
-                        <param name="id" value="2" />
-                        <param name="id2" value="02" />
-                    </include> -->
-                    <!-- Home menu 03 -->
-                    <!-- <include name="HomeMainMenuItemSettings">
-                        <param name="id" value="3" />
-                        <param name="id2" value="03" />
-                    </include> -->
-                    <!-- Home menu 04 -->
-                    <!-- <include name="HomeMainMenuItemSettings">
-                        <param name="id" value="4" />
-                        <param name="id2" value="04" />
-                    </include> -->
-                    <!-- Home menu 05 -->
-                    <!-- <include name="HomeMainMenuItemSettings">
-                        <param name="id" value="5" />
-                        <param name="id2" value="05" />
-                    </include> -->
-                    <!-- Home menu 06 -->
-                    <!-- <include name="HomeMainMenuItemSettings">
-                        <param name="id" value="6" />
-                        <param name="id2" value="06" />
-                    </include> -->
-                    <!-- Home menu 07 -->
-                    <!-- <include name="HomeMainMenuItemSettings">
-                        <param name="id" value="7" />
-                        <param name="id2" value="07" />
-                    </include> -->
-                    <!-- Home menu 08 -->
-                    <!-- <include name="HomeMainMenuItemSettings">
-                        <param name="id" value="8" />
-                        <param name="id2" value="08" />
-                    </include> -->
-                    <!-- Home menu 09 -->
-                    <!-- <include name="HomeMainMenuItemSettings">
-                        <param name="id" value="9" />
-                        <param name="id2" value="09" />
-                    </include> -->
-                    <!-- Home menu 10 -->
-                    <!-- <include name="HomeMainMenuItemSettings">
-                        <param name="id" value="10" />
-                        <param name="id2" value="10" />
-                    </include> -->
-                    <!-- Home menu 11 -->
-                    <!-- <include name="HomeMainMenuItemSettings">
-                        <param name="id" value="11" />
-                        <param name="id2" value="11" />
-                    </include> -->
-                    <!-- Home menu 12 -->
-                    <!-- <include name="HomeMainMenuItemSettings">
-                        <param name="id" value="12" />
-                        <param name="id2" value="12" />
-                    </include> -->
-                    <!-- Home menu 13 -->
-                    <!-- <include name="HomeMainMenuItemSettings">
-                        <param name="id" value="13" />
-                        <param name="id2" value="13" />
-                    </include> -->
-                    <!-- Home menu 14 -->
-                    <!-- <include name="HomeMainMenuItemSettings">
-                        <param name="id" value="14" />
-                        <param name="id2" value="14" />
-                    </include> -->
-                    <!-- Home menu 15 -->
-                    <!-- <include name="HomeMainMenuItemSettings">
-                        <param name="id" value="15" />
-                        <param name="id2" value="15" />
-                    </include> -->
-                    <!-- Home menu 16 -->
-                    <!-- <include name="HomeMainMenuItemSettings">
-                        <param name="id" value="16" />
-                        <param name="id2" value="16" />
-                    </include> -->
-                    <!-- Home menu 17 -->
-                    <!-- <include name="HomeMainMenuItemSettings">
-                        <param name="id" value="17" />
-                        <param name="id2" value="17" />
-                    </include> -->
-                    <!-- Home menu 18 -->
-                    <!-- <include name="HomeMainMenuItemSettings">
-                        <param name="id" value="18" />
-                        <param name="id2" value="18" />
-                    </include> -->
-                    <!-- Home menu 19 -->
-                    <!-- <include name="HomeMainMenuItemSettings">
-                        <param name="id" value="19" />
-                        <param name="id2" value="19" />
-                    </include> -->
-                    <!-- Home menu 20 -->
-                    <!-- <include name="HomeMainMenuItemSettings">
-                        <param name="id" value="20" />
-                        <param name="id2" value="20" />
-                    </include> -->
                 </control>
 				<control type="scrollbar" id="63">
 					<left>1060</left>
@@ -999,7 +894,7 @@
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(3)</visible>
 				</control>
-                <!-- Submenu sets -->                
+                <!-- Addons sets -->
                 <control type="grouplist" id="9004">
 					<visible>Container(9000).Hasfocus(4)</visible>
 					<left>290</left>
@@ -1012,116 +907,6 @@
 					<onright>64</onright>
 					<onup>9004</onup>
 					<ondown>9004</ondown>
-                    <!-- Submenu set 01 -->
-                    <include name="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="01" />
-                    </include>                                      
-                    <!-- Submenu set 02 -->
-                   <include name="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="02" />
-                    </include>
-                    <!-- Submenu set 03 -->
-                   <include name="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="03" />
-                    </include>                   
-                    <!-- Submenu set 04 -->
-                   <include name="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="04" />
-                    </include>
-                    <!-- Submenu set 05 -->
-                   <include name="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="05" />
-                    </include>                   
-                    <!-- Submenu set 06 -->
-                   <include name="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="06" />
-                    </include>
-                    <!-- Submenu set 07 -->
-                   <include name="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="07" />
-                    </include>                   
-                    <!-- Submenu set 08 -->
-                   <include name="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="08" />
-                    </include>
-                    <!-- Submenu set 09 -->
-                   <include name="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="09" />
-                    </include>                   
-                    <!-- Submenu set 10 -->
-                   <include name="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="10" />
-                    </include>
-                    <!-- Submenu set 11 -->
-                   <include name="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="11" />
-                    </include>                   
-                    <!-- Submenu set 12 -->
-                   <include name="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="12" />
-                    </include>
-                    <!-- Submenu set 13 -->
-                   <include name="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="13" />
-                    </include>                   
-                    <!-- Submenu set 14 -->
-                   <include name="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="14" />
-                    </include>
-                    <!-- Submenu set 15 -->
-                   <include name="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="15" />
-                    </include>                   
-                    <!-- Submenu set 16 -->
-                   <include name="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="16" />
-                    </include>
-                    <!-- Submenu set 17 -->
-                   <include name="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="17" />
-                    </include>
-                    <!-- Submenu set 18 -->
-                   <include name="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="18" />
-                    </include>
-                    <!-- Submenu set 19 -->
-                   <include name="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="19" />
-                    </include>                   
-                    <!-- Submenu set 20 -->
-                   <include name="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="20" />
-                    </include>                    
-                </control>
-				<control type="scrollbar" id="64">
-					<left>1060</left>
-					<top>60</top>
-					<width>25</width>
-					<height>530</height>
-					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-					<textureslidernib>ScrollBarNib.png</textureslidernib>
-					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-					<onleft>9004</onleft>
-					<onright>9000</onright>
-					<showonepage>false</showonepage>
-					<orientation>vertical</orientation>
-					<visible>Container(9000).Hasfocus(4)</visible>
-				</control>
-                <!-- Addons sets -->
-                <control type="grouplist" id="9005">
-					<visible>Container(9000).Hasfocus(5)</visible>
-					<left>290</left>
-					<top>60</top>
-					<width>750</width>
-					<height>530</height>
-					<itemgap>-1</itemgap>
-					<pagecontrol>65</pagecontrol>
-					<onleft>9000</onleft>
-					<onright>65</onright>
-					<onup>9005</onup>
-					<ondown>9005</ondown>
                     <!-- Addon set 01 -->
                     <include name="HomeMainAddonSetsItemSettings">
                         <param name="id2" value="01" />
@@ -1203,6 +988,48 @@
                         <param name="id2" value="20" />
                     </include>
                 </control>
+				<control type="scrollbar" id="64">
+					<left>1060</left>
+					<top>60</top>
+					<width>25</width>
+					<height>530</height>
+					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+					<textureslidernib>ScrollBarNib.png</textureslidernib>
+					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+					<onleft>9004</onleft>
+					<onright>9000</onright>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+					<visible>Container(9000).Hasfocus(4)</visible>
+				</control>
+                <!-- Widgets -->
+                <control type="grouplist" id="9005">
+					<visible>Container(9000).Hasfocus(5)</visible>
+					<left>290</left>
+					<top>60</top>
+					<width>750</width>
+					<height>530</height>
+					<itemgap>-1</itemgap>
+					<pagecontrol>65</pagecontrol>
+					<onleft>9000</onleft>
+					<onright>65</onright>
+					<onup>9005</onup>
+					<ondown>9005</ondown>
+                    <include name="HomeMainWidgetsItemSettings">
+                        <param name="id1" value="61" />
+                        <param name="title" value="$LOCALIZE[88133]" />
+                        <param name="setchannelstype" value="TV" />
+                        <param name="type" value="0" />
+                    </include>
+                    <include name="HomeMainWidgetsItemSettings">
+                        <param name="id1" value="62" />
+                        <param name="title" value="$LOCALIZE[88134]" />
+                        <param name="setchannelstype" value="Radio" />
+                        <param name="type" value="1" />
+                    </include>                    
+                </control>    
 				<control type="scrollbar" id="65">
 					<left>1060</left>
 					<top>60</top>
@@ -1219,8 +1046,8 @@
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(5)</visible>
 				</control>
-                <!-- Widgets -->
-                <control type="grouplist" id="9006">
+                <!-- Background -->
+				<control type="grouplist" id="9006">
 					<visible>Container(9000).Hasfocus(6)</visible>
 					<left>290</left>
 					<top>60</top>
@@ -1232,48 +1059,6 @@
 					<onright>66</onright>
 					<onup>9006</onup>
 					<ondown>9006</ondown>
-                    <include name="HomeMainWidgetsItemSettings">
-                        <param name="id1" value="61" />
-                        <param name="title" value="$LOCALIZE[88133]" />
-                        <param name="setchannelstype" value="TV" />
-                        <param name="type" value="0" />
-                    </include>
-                    <include name="HomeMainWidgetsItemSettings">
-                        <param name="id1" value="62" />
-                        <param name="title" value="$LOCALIZE[88134]" />
-                        <param name="setchannelstype" value="Radio" />
-                        <param name="type" value="1" />
-                    </include>                    
-                </control>    
-				<control type="scrollbar" id="66">
-					<left>1060</left>
-					<top>60</top>
-					<width>25</width>
-					<height>530</height>
-					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-					<textureslidernib>ScrollBarNib.png</textureslidernib>
-					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-					<onleft>9006</onleft>
-					<onright>9000</onright>
-					<showonepage>false</showonepage>
-					<orientation>vertical</orientation>
-					<visible>Container(9000).Hasfocus(6)</visible>
-				</control>
-                <!-- Background -->
-				<control type="grouplist" id="9007">
-					<visible>Container(9000).Hasfocus(7)</visible>
-					<left>290</left>
-					<top>60</top>
-					<width>750</width>
-					<height>530</height>
-					<itemgap>-1</itemgap>
-					<pagecontrol>67</pagecontrol>
-					<onleft>9000</onleft>
-					<onright>67</onright>
-					<onup>9007</onup>
-					<ondown>9007</ondown>
 					<control type="label" id="700">
 						<width>750</width>
 						<height>45</height>
@@ -1395,7 +1180,7 @@
 						<enable>Skin.HasSetting(UseCustomBackground)</enable>
 					</control>
 				</control>
-				<control type="scrollbar" id="67">
+				<control type="scrollbar" id="66">
 					<left>1060</left>
 					<top>60</top>
 					<width>25</width>
@@ -1405,17 +1190,17 @@
 					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
 					<textureslidernib>ScrollBarNib.png</textureslidernib>
 					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-					<onleft>9007</onleft>
+					<onleft>9006</onleft>
 					<onright>9000</onright>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
-					<visible>Container(9000).Hasfocus(7)</visible>
+					<visible>Container(9000).Hasfocus(6)</visible>
 				</control>
                 <!-- Background Adv -->                
 				<control type="group">
 					<left>290</left>
 					<top>60</top>
-					<visible>Container(9000).Hasfocus(8)</visible>
+					<visible>Container(9000).Hasfocus(7)</visible>
 					<control type="label">
 						<left>0</left>
 						<top>0</top>
@@ -1851,7 +1636,7 @@
 				</control>
                 <!-- Reset -->
      			<control type="grouplist" id="9008">
-					<visible>Container(9000).Hasfocus(9)</visible>
+					<visible>Container(9000).Hasfocus(8)</visible>
 					<left>290</left>
 					<top>180</top>
 					<width>750</width>

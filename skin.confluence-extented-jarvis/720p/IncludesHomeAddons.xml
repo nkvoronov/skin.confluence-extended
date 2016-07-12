@@ -963,7 +963,7 @@
             </item>
             <item>
                 <description>Playlist Music</description>
-                <label>$LOCALIZE[559] ([COLOR=selected]$LOCALIZE[2][/COLOR])</label>
+                <label>$LOCALIZE[559] ($LOCALIZE[2])</label>
                 <onclick>Skin.Reset(UsrSelectAddon)</onclick>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetFile(UsrSelectAddon,.m3u|.xsp|.pls,special://musicplaylists/)</onclick>
@@ -976,7 +976,7 @@
             </item>
             <item>
                 <description>Playlist Video</description>
-                <label>$LOCALIZE[559] ([COLOR=selected]$LOCALIZE[3][/COLOR])</label>
+                <label>$LOCALIZE[559] ($LOCALIZE[3])</label>
                 <onclick>Skin.Reset(UsrSelectAddon)</onclick>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetFile(UsrSelectAddon,.xsp,special://videoplaylists/)</onclick>
@@ -989,7 +989,7 @@
             </item>
             <item>
                 <description>Watch it Later Playlist</description>
-                <label>$LOCALIZE[559] ([COLOR=selected]$LOCALIZE[89023][/COLOR])</label>
+                <label>$LOCALIZE[559] ($LOCALIZE[89023])</label>
                 <onclick>Skin.Reset(UsrSelectAddon)</onclick>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$LOCALIZE[89023])</onclick>

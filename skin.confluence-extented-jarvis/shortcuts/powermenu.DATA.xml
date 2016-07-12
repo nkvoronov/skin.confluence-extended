@@ -3,7 +3,7 @@
     <shortcut>        
         <label>13012</label>
         <label2>84220</label2>
-        <action>Quit()</action>
+        <action>Quit</action>
         <icon>DefaultFolder.png</icon> 
         <visible>System.ShowExitButton</visible>       
     </shortcut>

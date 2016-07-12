@@ -1635,11 +1635,11 @@
 			</item>
 			<item>
 				<description>Shutdown</description>
-				<label>$LOCALIZE[13005] - $LOCALIZE[13005]</label>
+				<label>$LOCALIZE[13005] - $LOCALIZE[13016]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Path,Shutdown)</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$LOCALIZE[32004])</onclick>
-				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$LOCALIZE[13005])</onclick>
+				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$LOCALIZE[13016])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Widget,None)</onclick>
