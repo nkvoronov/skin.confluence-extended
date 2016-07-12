@@ -360,7 +360,7 @@
 		<onload>Skin.SetString(HomeItem.1.Path,ActivateWindow(weather))</onload>
 		<onload>Skin.SetString(HomeItem.1.Sub,None)</onload>
 		<onload>Skin.SetString(HomeItem.1.Addon,None)</onload>
-		<onload>Skin.SetString(HomeItem.1.Widget,Weather)</onload>
+		<onload>Skin.SetString(HomeItem.1.Widget,WeatherDaily)</onload>
 		<onload>Skin.SetString(HomeItem.1.Type,weather)</onload>
 		<onload>Skin.SetString(HomeItem.1.DBackground,special://skin/extras/backgrounds/weather.jpg)</onload>
         <!-- Pictures -->        

@@ -77,12 +77,12 @@
 				<ondown>9000</ondown>
 				<pagecontrol>-</pagecontrol>
 				<scrolltime>300</scrolltime>
-				<itemlayout height="49" width="260">
+				<itemlayout height="50" width="260">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>260</width>
-						<height>50</height>
+						<height>51</height>
 						<texture border="5">MenuItemNF.png</texture>
 					</control>
 					<control type="label">
@@ -97,12 +97,12 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="49" width="260">
+				<focusedlayout height="50" width="260">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>260</width>
-						<height>50</height>
+						<height>51</height>
 						<texture border="5">MenuItemFO.png</texture>
 						<animation effect="fade" start="100" end="30" time="75" condition="!Control.HasFocus(9000)">Conditional</animation>
 					</control>
@@ -1809,7 +1809,7 @@
 					</control>
 				</control>
                 <!-- Reset -->
-     			<control type="grouplist" id="9008">
+     			<control type="grouplist" id="9009">
 					<visible>Container(9000).Hasfocus(9)</visible>
 					<left>290</left>
 					<top>180</top>
