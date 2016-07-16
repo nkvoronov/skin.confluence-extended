@@ -2600,8 +2600,17 @@
     </variable>
     <!-- -->
     <variable name="SkinShortcutsTitle">
-        <value condition="StringCompare(Window.Property(groupname),mainmenu)">$ADDON[script.skinshortcuts 32071]</value>
-        <value condition="StringCompare(Window.Property(groupname),powermenu)">$LOCALIZE[90000]</value>
-		<value condition="!StringCompare(Window.Property(groupname),mainmenu) + !StringCompare(Window.Property(groupname),powermenu)">$ADDON[script.skinshortcuts 32072]</value>
+        <value condition="!IsEmpty(Window.Property(groupname)) + StringCompare(Window.Property(groupname),mainmenu)">[COLOR=blue] - [/COLOR]$ADDON[script.skinshortcuts 32071]</value>
+        <value condition="!IsEmpty(Window.Property(groupname)) + StringCompare(Window.Property(groupname),powermenu)">[COLOR=blue] - [/COLOR]$LOCALIZE[90000]</value>
+		<value condition="!IsEmpty(Window.Property(groupname)) + !StringCompare(Window.Property(groupname),mainmenu) + !StringCompare(Window.Property(groupname),powermenu) + StringCompare(Window(home).Property(submenutype),submenus)">[COLOR=blue] - [/COLOR]$ADDON[script.skinshortcuts 32072]</value>
+        <value condition="!IsEmpty(Window.Property(groupname)) + !StringCompare(Window.Property(groupname),mainmenu) + !StringCompare(Window.Property(groupname),powermenu) + StringCompare(Window(home).Property(submenutype),subaddons)">[COLOR=blue] - [/COLOR]$LOCALIZE[24020] $LOCALIZE[89003]</value>
+        <value condition="!IsEmpty(Window.Property(groupname)) + !StringCompare(Window.Property(groupname),mainmenu) + !StringCompare(Window.Property(groupname),powermenu) + StringCompare(Window(home).Property(submenutype),subwidgets)">[COLOR=blue] - [/COLOR]$LOCALIZE[24020] $LOCALIZE[89004]</value>
+    </variable>
+    <variable name="SkinShortcutsTitleDlg">
+        <value condition="!IsEmpty(Window.Property(groupname)) + StringCompare(Window.Property(groupname),mainmenu)">$LOCALIZE[513]</value>
+        <value condition="!IsEmpty(Window.Property(groupname)) + StringCompare(Window.Property(groupname),powermenu)">$LOCALIZE[89707]</value>
+		<value condition="!IsEmpty(Window.Property(groupname)) + !StringCompare(Window.Property(groupname),mainmenu) + !StringCompare(Window.Property(groupname),powermenu) + StringCompare(Window(home).Property(submenutype),submenus)">$LOCALIZE[1034] ($INFO[Window.Property(groupDisplayName)])</value>
+        <value condition="!IsEmpty(Window.Property(groupname)) + !StringCompare(Window.Property(groupname),mainmenu) + !StringCompare(Window.Property(groupname),powermenu) + StringCompare(Window(home).Property(submenutype),subaddons)">$LOCALIZE[89003] ($INFO[Window.Property(groupDisplayName)])</value>
+        <value condition="!IsEmpty(Window.Property(groupname)) + !StringCompare(Window.Property(groupname),mainmenu) + !StringCompare(Window.Property(groupname),powermenu) + StringCompare(Window(home).Property(submenutype),subwidgets)">$LOCALIZE[89004] ($INFO[Window.Property(groupDisplayName)])</value>
     </variable>    
 </includes>

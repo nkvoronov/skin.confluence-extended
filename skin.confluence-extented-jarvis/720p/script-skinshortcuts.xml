@@ -151,14 +151,14 @@
 				<height>52</height>
 				<texture>dialogheader.png</texture>
 			</control>
-			<control type="label">
-				<description>header label</description>
+			<control type="label" id="501">
+				<description>header label powermenu</description>
 				<left>300</left>
 				<top>20</top>
 				<width>726</width>
 				<height>30</height>
 				<font>font16</font>
-				<label>$VAR[SkinShortcutsTitle] - $INFO[Container(211).ListItem.Label]</label>
+                <label>$VAR[SkinShortcutsTitleDlg] - $INFO[Container(211).ListItem.Label]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>white</textcolor>
@@ -223,7 +223,7 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-                        <visible>!StringCompare(Window.Property(groupname),powermenu)</visible>
+                        <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
                     </control>
                     <control type="button" id="405">
                         <description>Edit submenu</description>
@@ -235,8 +235,50 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
+                        <onclick>SetProperty(submenutype,submenus,home)</onclick>
+                        <onclick>SendClick(405)</onclick>
+                        <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>                       
+                    </control>
+                    <control type="button" id="406">
+                        <description>Edit subaddons</description>
+                        <width>750</width>
+						<height>40</height>
+						<font>font13</font>
+                        <label>$LOCALIZE[24020] $LOCALIZE[89003]</label>
+                        <textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+                        <onclick>SetProperty(submenutype,subaddons,home)</onclick>
+                        <onclick>SendClick(406)</onclick>
+                        <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>                       
+                    </control>
+                    <control type="button" id="312">
+                        <description>Edit widget name</description>
+                        <width>750</width>
+						<height>40</height>
+						<font>font13</font>
+                        <label>$ADDON[script.skinshortcuts 32099]</label>
+                        <label2>$INFO[Container(211).ListItem.Property(widgetName)]</label2>
+                        <textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
-                        <!-- <visible>!StringCompare(Container(211).ListItem.Property(widget),WeatherWidget) + ![StringCompare(Container(211).ListItem.Property(HideBannerWidget)) + StringCompare(Container(211).ListItem.Property(widget),PictureWidget)]</visible> -->
+                    </control>
+                    <control type="button" id="407">
+                        <description>Edit subwidgets</description>
+                        <width>750</width>
+						<height>40</height>
+						<font>font13</font>
+                        <label>$LOCALIZE[24020] $LOCALIZE[89004]</label>
+                        <textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+                        <onclick>SetProperty(submenutype,subwidgets,home)</onclick>
+                        <onclick>SendClick(407)</onclick>
+                        <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>                       
                     </control>
                     <control type="button" id="303">
                         <description>Move up</description>
@@ -281,6 +323,23 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                     </control>
+                    <control type="image" id="600">
+                        <description>separator image</description>
+                        <width>750</width>
+                        <height>2</height>
+                        <texture>separator2.png</texture>
+                    </control>
+                    <control type="button" id="308">
+                        <description>Add shortcut</description>
+                        <width>750</width>
+						<height>40</height>
+						<font>font13</font>
+                        <label>$ADDON[script.skinshortcuts 32028]</label>
+                        <textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+                    </control>
                 </control>
                 <control type="scrollbar" id="60">
 					<left>1060</left>
@@ -306,7 +365,7 @@
 		<include>MainWindowMouseButtons</include>
 		<include name="CommonWindowHeader">
 			<param name="Icon" value="icon_system" />
-			<param name="Label" value="$LOCALIZE[5][COLOR=blue] - [/COLOR]$LOCALIZE[20077][COLOR=blue] - [/COLOR]$VAR[SkinShortcutsTitle]" />
+			<param name="Label" value="$LOCALIZE[5][COLOR=blue] - [/COLOR]$LOCALIZE[20077]$VAR[SkinShortcutsTitle]" />
 		</include>
 	</controls>
 </window>

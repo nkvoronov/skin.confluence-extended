@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <other include="submenu" container="9001">
+        <property name="id" tag="mainmenuid" />
+        <property name="id_label" tag="property" attribute="name|labelID"/>
+        <controls>
+            <control type="group">
+                <skinshortcuts>visibility</skinshortcuts>
+                <include name="HomeSubMenuCommonAnimation">
+                    <param name="list_id" value="$PYTHON[9100+int($SKINSHORTCUTS[id])]" />
+                </include>
+                <control type="list" id="$PYTHON[9100+int($SKINSHORTCUTS[id])]">
+                    <include>HomeSubMenuCommonValues</include>
+                    <onleft>$PYTHON[9100+int($SKINSHORTCUTS[id])]</onleft>
+                    <onright>$PYTHON[9100+int($SKINSHORTCUTS[id])]</onright>
+                    <include>HomeSubMenuCommonLayout</include>
+                    <content>
+                        <include>skinshortcuts-group-num-$SKINSHORTCUTS[id_label]</include>
+                    </content>
+                </control>
+                <include name="HomeSubMenuCommonControls">
+                    <param name="list_id" value="$PYTHON[9100+int($SKINSHORTCUTS[id])]" />
+                </include>
+            </control>
+        </controls>
+    </other>
+</template>

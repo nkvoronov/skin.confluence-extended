@@ -4,6 +4,6 @@
 		<label>24001</label>
 		<label2>1</label2>
 		<icon>DefaultAddonPicture.png</icon>
-		<action>ActivateWindow(pictures,addons://sources/pictires/,return)</action>
+		<action>ActivateWindow(pictures,addons://sources/image/,return)</action>
 	</shortcut>
 </shortcuts>

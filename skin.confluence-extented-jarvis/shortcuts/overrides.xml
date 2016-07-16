@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <overrides>
+    <doNotShareMenu />
+    <alwaysRestore>True</alwaysRestore>
     <!-- Icons Directory -->
     <thumbnailBrowseDefault>special://skin/extras/icons/</thumbnailBrowseDefault>
     <!-- Background -->
@@ -24,6 +26,7 @@
     <backgrounddefault labelID="weather">special://skin/extras/backgrounds/weather.jpg</backgrounddefault>
     <backgrounddefault labelID="dvd">special://skin/extras/backgrounds/dvd.jpg</backgrounddefault>
     <backgrounddefault labelID="settings">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
+    <backgrounddefault labelID="136">special://skin/extras/backgrounds/playlist.jpg</backgrounddefault>
     <!-- Groupings -->
     <groupings>
         <!-- Weather -->

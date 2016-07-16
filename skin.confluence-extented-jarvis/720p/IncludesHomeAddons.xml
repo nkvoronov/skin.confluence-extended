@@ -462,7 +462,7 @@
 		    <effect type="zoom" start="100" end="70" center="auto" easing="in" tween="quadratic" time="300" />
 		    <effect type="fade" start="100" end="0" time="300" />
 		</animation>
-		<animation effect="fade" start="100" end="0" time="200" condition="!ControlGroup(9002).HasFocus + Skin.HasSetting(NoSlideAddon)">conditional</animation>
+		<animation effect="fade" start="100" end="0" time="200" condition="!ControlGroup(9002).HasFocus + Skin.HasSetting(NoSlideAddon)">Conditional</animation>
 		<animation type="conditional" condition="ControlGroup(9002).HasFocus + Skin.HasSetting(NoSlideAddon)">
 		    <effect type="slide" start="0,30" end="0,0" delay="200" easing="out" tween="quadratic" time="200" />
 		    <effect type="fade" start="0" end="100" delay="200" time="200" />
