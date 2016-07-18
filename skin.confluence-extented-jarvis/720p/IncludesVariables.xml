@@ -135,7 +135,7 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(TypeItem),dvd) + System.HasMediaDVD">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[427]: [/COLOR][/B]$INFO[System.DVDLabel]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(TypeItem),dvd) + !System.HasMediaDVD">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[427]: [/COLOR][/B]$LOCALIZE[164]</value>
         <!-- Weather -->
-		<value condition="StringCompare(Container(9000).ListItem.Property(TypeItem),weather)">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[143][/COLOR][/B] $INFO[Window(weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[33030]: [/COLOR][/B]$INFO[Window(weather).Property(Daily.1.Outlook)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(TypeItem),weather)">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[143][/COLOR][/B] $INFO[Window(weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[33030]: [/COLOR][/B]$INFO[Window(weather).Property(Current.Condition)]</value>
         <!-- PVR -->
         <value condition="StringCompare(Container(9000).ListItem.Property(TypeItem),livetv) | StringCompare(Container(9000).ListItem.Property(TypeItem),radio)">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[19019]: [/COLOR][/B] $INFO[Pvr.BackendChannels]</value>
         <!-- Other -->
