@@ -133,25 +133,21 @@
 						<onclick>noop</onclick>
 					</item>
                     <!-- <item id="4">
-						<label>31200</label>
-						<onclick>noop</onclick>
-					</item>
-                    <item id="5">
 						<label>88130</label>
 						<onclick>noop</onclick>
                         <visible>PVR.HasTVChannels | PVR.HasRadioChannels</visible>
                         <visible>System.HasAddon(script.pvr.favourites)</visible>
 					</item> -->                    
-					<item id="6">
+					<item id="5">
 						<label>31102</label>
 						<onclick>noop</onclick>
 					</item>
-					<item id="7">
+					<item id="6">
 						<label>$LOCALIZE[88132]</label>
 						<onclick>noop</onclick>
 						<visible>Skin.HasSetting(SeparateBackground)</visible>
 					</item>
-                    <item id="8">
+                    <item id="7">
 						<label>10035</label>
 						<onclick>noop</onclick>
 					</item>
@@ -894,7 +890,7 @@
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(3)</visible>
 				</control>
-                <!-- Addons sets -->
+                <!-- Widgets -->
                 <control type="grouplist" id="9004">
 					<visible>Container(9000).Hasfocus(4)</visible>
 					<left>290</left>
@@ -907,87 +903,19 @@
 					<onright>64</onright>
 					<onup>9004</onup>
 					<ondown>9004</ondown>
-                    <!-- Addon set 01 -->
-                    <include name="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="01" />
+                    <include name="HomeMainWidgetsItemSettings">
+                        <param name="id1" value="61" />
+                        <param name="title" value="$LOCALIZE[88133]" />
+                        <param name="setchannelstype" value="TV" />
+                        <param name="type" value="0" />
                     </include>
-                    <!-- Addon set 02 -->
-                    <include name="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="02" />
-                    </include>
-                    <!-- Addon set 03 -->
-                    <include name="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="03" />
-                    </include>
-                    <!-- Addon set 04 -->
-                    <include name="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="04" />
-                    </include>
-                    <!-- Addon set 05 -->
-                    <include name="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="05" />
-                    </include>
-                    <!-- Addon set 06 -->
-                    <include name="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="06" />
-                    </include>
-                    <!-- Addon set 07 -->
-                    <include name="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="07" />
-                    </include>
-                    <!-- Addon set 08 -->
-                    <include name="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="08" />
-                    </include>
-                    <!-- Addon set 09 -->
-                    <include name="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="09" />
-                    </include>
-                    <!-- Addon set 10 -->
-                    <include name="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="10" />
-                    </include>
-                    <!-- Addon set 11 -->
-                    <include name="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="11" />
-                    </include>
-                    <!-- Addon set 12 -->
-                    <include name="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="12" />
-                    </include>
-                    <!-- Addon set 13 -->
-                    <include name="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="13" />
-                    </include>
-                    <!-- Addon set 14 -->
-                    <include name="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="14" />
-                    </include>
-                    <!-- Addon set 15 -->
-                    <include name="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="15" />
-                    </include>
-                    <!-- Addon set 16 -->
-                    <include name="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="16" />
-                    </include>
-                    <!-- Addon set 17 -->
-                    <include name="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="17" />
-                    </include>
-                    <!-- Addon set 18 -->
-                    <include name="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="18" />
-                    </include>
-                    <!-- Addon set 19 -->
-                    <include name="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="19" />
-                    </include>
-                    <!-- Addon set 20 -->
-                    <include name="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="20" />
-                    </include>
-                </control>
+                    <include name="HomeMainWidgetsItemSettings">
+                        <param name="id1" value="62" />
+                        <param name="title" value="$LOCALIZE[88134]" />
+                        <param name="setchannelstype" value="Radio" />
+                        <param name="type" value="1" />
+                    </include>                    
+                </control>    
 				<control type="scrollbar" id="64">
 					<left>1060</left>
 					<top>60</top>
@@ -1004,8 +932,8 @@
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(4)</visible>
 				</control>
-                <!-- Widgets -->
-                <control type="grouplist" id="9005">
+                <!-- Background -->
+				<control type="grouplist" id="9005">
 					<visible>Container(9000).Hasfocus(5)</visible>
 					<left>290</left>
 					<top>60</top>
@@ -1017,48 +945,6 @@
 					<onright>65</onright>
 					<onup>9005</onup>
 					<ondown>9005</ondown>
-                    <include name="HomeMainWidgetsItemSettings">
-                        <param name="id1" value="61" />
-                        <param name="title" value="$LOCALIZE[88133]" />
-                        <param name="setchannelstype" value="TV" />
-                        <param name="type" value="0" />
-                    </include>
-                    <include name="HomeMainWidgetsItemSettings">
-                        <param name="id1" value="62" />
-                        <param name="title" value="$LOCALIZE[88134]" />
-                        <param name="setchannelstype" value="Radio" />
-                        <param name="type" value="1" />
-                    </include>                    
-                </control>    
-				<control type="scrollbar" id="65">
-					<left>1060</left>
-					<top>60</top>
-					<width>25</width>
-					<height>530</height>
-					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-					<textureslidernib>ScrollBarNib.png</textureslidernib>
-					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-					<onleft>9005</onleft>
-					<onright>9000</onright>
-					<showonepage>false</showonepage>
-					<orientation>vertical</orientation>
-					<visible>Container(9000).Hasfocus(5)</visible>
-				</control>
-                <!-- Background -->
-				<control type="grouplist" id="9006">
-					<visible>Container(9000).Hasfocus(6)</visible>
-					<left>290</left>
-					<top>60</top>
-					<width>750</width>
-					<height>530</height>
-					<itemgap>-1</itemgap>
-					<pagecontrol>66</pagecontrol>
-					<onleft>9000</onleft>
-					<onright>66</onright>
-					<onup>9006</onup>
-					<ondown>9006</ondown>
 					<control type="label" id="700">
 						<width>750</width>
 						<height>45</height>
@@ -1180,7 +1066,7 @@
 						<enable>Skin.HasSetting(UseCustomBackground)</enable>
 					</control>
 				</control>
-				<control type="scrollbar" id="66">
+				<control type="scrollbar" id="65">
 					<left>1060</left>
 					<top>60</top>
 					<width>25</width>
@@ -1190,17 +1076,17 @@
 					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
 					<textureslidernib>ScrollBarNib.png</textureslidernib>
 					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-					<onleft>9006</onleft>
+					<onleft>9005</onleft>
 					<onright>9000</onright>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
-					<visible>Container(9000).Hasfocus(6)</visible>
+					<visible>Container(9000).Hasfocus(5)</visible>
 				</control>
                 <!-- Background Adv -->                
 				<control type="group">
 					<left>290</left>
 					<top>60</top>
-					<visible>Container(9000).Hasfocus(7)</visible>
+					<visible>Container(9000).Hasfocus(6)</visible>
 					<control type="label">
 						<left>0</left>
 						<top>0</top>
@@ -1635,8 +1521,8 @@
 					</control>
 				</control>
                 <!-- Reset -->
-     			<control type="grouplist" id="9008">
-					<visible>Container(9000).Hasfocus(8)</visible>
+     			<control type="grouplist" id="9007">
+					<visible>Container(9000).Hasfocus(7)</visible>
 					<left>290</left>
 					<top>180</top>
 					<width>750</width>

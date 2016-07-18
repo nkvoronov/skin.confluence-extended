@@ -4,242 +4,48 @@
 		<control type="group" id="9002">
             <depth>DepthMenu</depth>
             <include>HomeAddonUpDown</include>
-            <!-- AddonSet01 -->
-            <include name="HomeAddonsCommonControls">
-                <param name="list_id" value="700" />
-                <param name="id2" value="01" />
-            </include>
-            <!-- AddonSet01p -->
-            <include name="HomeAddonsCommonControlsMediaPlaying">
-                <param name="list_id" value="700" />
-                <param name="id2" value="01" />
-            </include>
-            <!-- AddonSet02 -->
-			<include name="HomeAddonsCommonControls">
-                <param name="list_id" value="701" />
-                <param name="id2" value="02" />
-            </include>
-            <!-- AddonSet02p -->
-			<include name="HomeAddonsCommonControlsMediaPlaying">
-                <param name="list_id" value="701" />
-                <param name="id2" value="02" />
-            </include>
-            <!-- AddonSet03 -->
-			<include name="HomeAddonsCommonControls">
-                <param name="list_id" value="702" />
-                <param name="id2" value="03" />
-            </include>
-            <!-- AddonSet03p -->
-			<include name="HomeAddonsCommonControlsMediaPlaying">
-                <param name="list_id" value="702" />
-                <param name="id2" value="03" />
-            </include>
-            <!-- AddonSet04 -->
-			<include name="HomeAddonsCommonControls">
-                <param name="list_id" value="703" />
-                <param name="id2" value="04" />
-            </include>
-            <!-- AddonSet04p -->
-			<include name="HomeAddonsCommonControlsMediaPlaying">
-                <param name="list_id" value="703" />
-                <param name="id2" value="04" />
-            </include>
-            <!-- AddonSet05 -->
-			<include name="HomeAddonsCommonControls">
-                <param name="list_id" value="704" />
-                <param name="id2" value="05" />
-            </include>
-            <!-- AddonSet05p -->
-			<include name="HomeAddonsCommonControlsMediaPlaying">
-                <param name="list_id" value="704" />
-                <param name="id2" value="05" />
-            </include>
-            <!-- AddonSet06 -->
-            <include name="HomeAddonsCommonControls">
-                <param name="list_id" value="705" />
-                <param name="id2" value="06" />
-            </include>
-            <!-- AddonSet06p -->
-            <include name="HomeAddonsCommonControlsMediaPlaying">
-                <param name="list_id" value="705" />
-                <param name="id2" value="06" />
-            </include>
-            <!-- AddonSet07 -->
-			<include name="HomeAddonsCommonControls">
-                <param name="list_id" value="706" />
-                <param name="id2" value="07" />
-            </include>
-            <!-- AddonSet07p -->
-			<include name="HomeAddonsCommonControlsMediaPlaying">
-                <param name="list_id" value="706" />
-                <param name="id2" value="07" />
-            </include>
-            <!-- AddonSet08 -->
-			<include name="HomeAddonsCommonControls">
-                <param name="list_id" value="707" />
-                <param name="id2" value="08" />
-            </include>
-            <!-- AddonSet08p -->
-			<include name="HomeAddonsCommonControlsMediaPlaying">
-                <param name="list_id" value="707" />
-                <param name="id2" value="08" />
-            </include>
-            <!-- AddonSet09 -->
-			<include name="HomeAddonsCommonControls">
-                <param name="list_id" value="708" />
-                <param name="id2" value="09" />
-            </include>
-            <!-- AddonSet09p -->
-			<include name="HomeAddonsCommonControlsMediaPlaying">
-                <param name="list_id" value="708" />
-                <param name="id2" value="09" />
-            </include>
-            <!-- AddonSet10 -->
-			<include name="HomeAddonsCommonControls">
-                <param name="list_id" value="709" />
-                <param name="id2" value="10" />
-            </include>
-            <!-- AddonSet10p -->
-			<include name="HomeAddonsCommonControlsMediaPlaying">
-                <param name="list_id" value="709" />
-                <param name="id2" value="10" />
-            </include>
-            <!-- AddonSet11 -->
-            <include name="HomeAddonsCommonControls">
-                <param name="list_id" value="710" />
-                <param name="id2" value="11" />
-            </include>
-            <!-- AddonSet11p -->
-            <include name="HomeAddonsCommonControlsMediaPlaying">
-                <param name="list_id" value="710" />
-                <param name="id2" value="11" />
-            </include>
-            <!-- AddonSet12 -->
-			<include name="HomeAddonsCommonControls">
-                <param name="list_id" value="711" />
-                <param name="id2" value="12" />
-            </include>
-            <!-- AddonSet12p -->
-			<include name="HomeAddonsCommonControlsMediaPlaying">
-                <param name="list_id" value="711" />
-                <param name="id2" value="12" />
-            </include>
-            <!-- AddonSet13 -->
-			<include name="HomeAddonsCommonControls">
-                <param name="list_id" value="712" />
-                <param name="id2" value="13" />
-            </include>
-            <!-- AddonSet13p -->
-			<include name="HomeAddonsCommonControlsMediaPlaying">
-                <param name="list_id" value="712" />
-                <param name="id2" value="13" />
-            </include>
-            <!-- AddonSet14 -->
-			<include name="HomeAddonsCommonControls">
-                <param name="list_id" value="713" />
-                <param name="id2" value="14" />
-            </include>
-            <!-- AddonSet14p -->
-			<include name="HomeAddonsCommonControlsMediaPlaying">
-                <param name="list_id" value="713" />
-                <param name="id2" value="14" />
-            </include>
-            <!-- AddonSet15 -->
-			<include name="HomeAddonsCommonControls">
-                <param name="list_id" value="714" />
-                <param name="id2" value="15" />
-            </include>
-            <!-- AddonSet15p -->
-			<include name="HomeAddonsCommonControlsMediaPlaying">
-                <param name="list_id" value="714" />
-                <param name="id2" value="15" />
-            </include>
-            <!-- AddonSet16 -->
-            <include name="HomeAddonsCommonControls">
-                <param name="list_id" value="715" />
-                <param name="id2" value="16" />
-            </include>
-            <!-- AddonSet16p -->
-            <include name="HomeAddonsCommonControlsMediaPlaying">
-                <param name="list_id" value="715" />
-                <param name="id2" value="16" />
-            </include>
-            <!-- AddonSet17 -->
-			<include name="HomeAddonsCommonControls">
-                <param name="list_id" value="716" />
-                <param name="id2" value="17" />
-            </include>
-            <!-- AddonSet07p -->
-			<include name="HomeAddonsCommonControlsMediaPlaying">
-                <param name="list_id" value="716" />
-                <param name="id2" value="17" />
-            </include>
-            <!-- AddonSet18 -->
-			<include name="HomeAddonsCommonControls">
-                <param name="list_id" value="717" />
-                <param name="id2" value="18" />
-            </include>
-            <!-- AddonSet18p -->
-			<include name="HomeAddonsCommonControlsMediaPlaying">
-                <param name="list_id" value="717" />
-                <param name="id2" value="18" />
-            </include>
-            <!-- AddonSet19 -->
-			<include name="HomeAddonsCommonControls">
-                <param name="list_id" value="718" />
-                <param name="id2" value="19" />
-            </include>
-            <!-- AddonSet19p -->
-			<include name="HomeAddonsCommonControlsMediaPlaying">
-                <param name="list_id" value="718" />
-                <param name="id2" value="19" />
-            </include>
-            <!-- AddonSet20 -->
-			<include name="HomeAddonsCommonControls">
-                <param name="list_id" value="719" />
-                <param name="id2" value="20" />
-            </include>
-            <!-- AddonSet20p -->
-			<include name="HomeAddonsCommonControlsMediaPlaying">
-                <param name="list_id" value="719" />
-                <param name="id2" value="20" />
-            </include>
+            <include>skinshortcuts-template-subaddons</include>
         </control>
     </include>
+    <include name="HomeAddonUpDown">
+        <onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
+		<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
+		<ondown condition="Skin.HasSetting(LowerMenu) + System.HasAddon(script.globalsearch) + Skin.HasSetting(ActivateGlobalSearch)">608</ondown>
+		<ondown condition="Skin.HasSetting(LowerMenu) + [!System.HasAddon(script.globalsearch) | !Skin.HasSetting(ActivateGlobalSearch)]">603</ondown>
+        <ondown condition="!Skin.HasSetting(LowerMenu) + !Skin.HasSetting(HidePowerButton) + Skin.HasSetting(HideFavoritesButton)">22</ondown>
+        <ondown condition="!Skin.HasSetting(LowerMenu) + Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)">21</ondown>
+		<ondown condition="!Skin.HasSetting(LowerMenu)">20</ondown>
+    </include>    
 	<include name="HomeAddonsCommonControls">
         <control type="list" id="$PARAM[list_id]">
-            <animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,6)">conditional</animation>
-            <animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
-            <animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
-            <animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
-            <animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
-            <animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
+            <include name="HomeAddonsCommonAnimation">
+                <param name="list_id" value="$PARAM[list_id]" />
+            </include>
             <visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet$PARAM[id2])</visible>
             <visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HomePageVideoInfo) | Skin.HasSetting(HomePageMusicInfo)</visible>
             <onleft>$PARAM[list_id]</onleft>
             <onright>$PARAM[list_id]</onright>
             <include>HomeAddonUpDown</include>
             <include>HomeAddonsCommonLayout</include>
-            <include name="HomeAddonSetItems">
-                <param name="id2" value="$PARAM[id2]" />
-            </include>
+            <content>
+                <include>skinshortcuts-group-num-$SKINSHORTCUTS[id_label]</include>
+            </content>
         </control>    
     </include>    
     <include name="HomeAddonsCommonControlsMediaPlaying">
         <control type="list" id="$PARAM[list_id]">
-            <animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
-            <animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
-            <animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
-            <animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
+            <include name="HomeAddonsCommonAnimationMediaPlaying">
+                <param name="list_id" value="$PARAM[list_id]" />
+            </include>
             <visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet$PARAM[id2])</visible>
             <visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + ![Skin.HasSetting(HomePageVideoInfo) | Skin.HasSetting(HomePageMusicInfo)]</visible>
             <onleft>$PARAM[list_id]</onleft>
             <onright>$PARAM[list_id]</onright>
             <include>HomeAddonUpDown</include>
-            <include>AddonsMediaPlayingLayout</include>
-            <include name="HomeAddonSetItems">
-                <param name="id2" value="$PARAM[id2]" />
-            </include>
+            <include>HomeAddonsCommonMediaPlayingLayout</include>
+            <content>
+                <include>skinshortcuts-group-num-$SKINSHORTCUTS[id_label]</include>
+            </content>
         </control>    
     </include>    
 	<include name="HomeAddonsCommonLayout">
@@ -347,7 +153,7 @@
 			</control>
 		</focusedlayout>
 	</include>
-	<include name="AddonsMediaPlayingLayout">
+	<include name="HomeAddonsCommonLayoutMediaPlaying">
 		<include>Window_OpenClose_Animation</include>
 		<include>HomeAddonsAnimation</include>
 		<left>230</left>
@@ -452,6 +258,20 @@
 			</control>
 		</focusedlayout>
 	</include>
+    <include name="HomeAddonsCommonAnimation">
+        <animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,6)">conditional</animation>
+        <animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
+        <animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
+        <animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
+        <animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
+        <animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
+    </include>
+    <include name="HomeAddonsCommonAnimationMediaPlaying">
+        <animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
+        <animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
+        <animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
+        <animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,1)">conditional</animation>    
+    </include>
     <include name="HomeAddonsAnimation">
 		<animation effect="slide" start="0,0" end="0,-205" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 		<animation type="Visible" condition="!Skin.HasSetting(NoSlideAddon)">
@@ -459,7 +279,7 @@
 		    <effect type="fade" start="0" end="100" delay="200" time="200"/>
 		</animation>
 		<animation type="Hidden" condition="!Skin.HasSetting(NoSlideAddon)">
-		    <effect type="zoom" start="100" end="70" center="auto" easing="in" tween="quadratic" time="300" />
+		    <effect type="zoom" start="100" end="50" center="auto" easing="in" tween="quadratic" time="300" />
 		    <effect type="fade" start="100" end="0" time="300" />
 		</animation>
 		<animation effect="fade" start="100" end="0" time="200" condition="!ControlGroup(9002).HasFocus + Skin.HasSetting(NoSlideAddon)">Conditional</animation>
@@ -472,254 +292,7 @@
 		    <effect type="fade" start="100" end="0" time="300"/>
 		</animation>
 		<hitrect x="0" y="530" w="1280" h="120"/>
-    </include>
-	<include name="HomeAddonSetItems">
-        <content>
-            <item id="1">
-                <label>$INFO[Skin.String(AddonSet$PARAM[id2].1.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],home)</onclick>
-                <onclick>$INFO[Skin.String(AddonSet$PARAM[id2].1.Path)]</onclick>
-                <icon>$INFO[Skin.String(AddonSet$PARAM[id2].1.Icon)]</icon>
-                <thumb>-</thumb>
-                <visible>!IsEmpty(Skin.String(AddonSet$PARAM[id2].1.Path))</visible>
-            </item>
-            <item id="2">
-                <label>$INFO[Skin.String(AddonSet$PARAM[id2].2.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],home)</onclick>
-                <onclick>$INFO[Skin.String(AddonSet$PARAM[id2].2.Path)]</onclick>
-                <icon>$INFO[Skin.String(AddonSet$PARAM[id2].2.Icon)]</icon>
-                <thumb>-</thumb>
-                <visible>!IsEmpty(Skin.String(AddonSet$PARAM[id2].2.Path))</visible>
-            </item>
-            <item id="3">
-                <label>$INFO[Skin.String(AddonSet$PARAM[id2].3.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],home)</onclick>
-                <onclick>$INFO[Skin.String(AddonSet$PARAM[id2].3.Path)]</onclick>
-                <icon>$INFO[Skin.String(AddonSet$PARAM[id2].3.Icon)]</icon>
-                <thumb>-</thumb>
-                <visible>!IsEmpty(Skin.String(AddonSet$PARAM[id2].3.Path))</visible>
-            </item>
-            <item id="4">
-                <label>$INFO[Skin.String(AddonSet$PARAM[id2].4.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],home)</onclick>
-                <onclick>$INFO[Skin.String(AddonSet$PARAM[id2].4.Path)]</onclick>
-                <icon>$INFO[Skin.String(AddonSet$PARAM[id2].4.Icon)]</icon>
-                <thumb>-</thumb>
-                <visible>!IsEmpty(Skin.String(AddonSet$PARAM[id2].4.Path))</visible>
-            </item>
-            <item id="5">
-                <label>$INFO[Skin.String(AddonSet$PARAM[id2].5.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],home)</onclick>
-                <onclick>$INFO[Skin.String(AddonSet$PARAM[id2].5.Path)]</onclick>
-                <icon>$INFO[Skin.String(AddonSet$PARAM[id2].5.Icon)]</icon>
-                <thumb>-</thumb>
-                <visible>!IsEmpty(Skin.String(AddonSet$PARAM[id2].5.Path))</visible>
-            </item>
-            <item id="6">
-                <label>$INFO[Skin.String(AddonSet$PARAM[id2].6.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],home)</onclick>
-                <onclick>$INFO[Skin.String(AddonSet$PARAM[id2].6.Path)]</onclick>
-                <icon>$INFO[Skin.String(AddonSet$PARAM[id2].6.Icon)]</icon>
-                <thumb>-</thumb>
-                <visible>!IsEmpty(Skin.String(AddonSet$PARAM[id2].6.Path))</visible>
-            </item>
-            <item id="7">
-                <label>$INFO[Skin.String(AddonSet$PARAM[id2].7.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],home)</onclick>
-                <onclick>$INFO[Skin.String(AddonSet$PARAM[id2].7.Path)]</onclick>
-                <icon>$INFO[Skin.String(AddonSet$PARAM[id2].7.Icon)]</icon>
-                <thumb>-</thumb>
-                <visible>!IsEmpty(Skin.String(AddonSet$PARAM[id2].7.Path))</visible>
-            </item>
-        </content>
-	</include>
-    <include name="HomeAddonUpDown">
-        <onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
-		<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
-		<ondown condition="Skin.HasSetting(LowerMenu) + System.HasAddon(script.globalsearch) + Skin.HasSetting(ActivateGlobalSearch)">608</ondown>
-		<ondown condition="Skin.HasSetting(LowerMenu) + [!System.HasAddon(script.globalsearch) | !Skin.HasSetting(ActivateGlobalSearch)]">603</ondown>
-        <ondown condition="!Skin.HasSetting(LowerMenu) + !Skin.HasSetting(HidePowerButton) + Skin.HasSetting(HideFavoritesButton)">22</ondown>
-        <ondown condition="!Skin.HasSetting(LowerMenu) + Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)">21</ondown>
-		<ondown condition="!Skin.HasSetting(LowerMenu)">20</ondown>
     </include>    
-    <include name="ResetAddonSetItem">
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].1.Label)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].1.Path)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].1.Icon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].2.Label)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].2.Path)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].2.Icon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].3.Label)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].3.Path)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].3.Icon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].4.Label)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].4.Path)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].4.Icon)</onclick>        
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].5.Label)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].5.Path)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].5.Icon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].6.Label)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].6.Path)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].6.Icon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].7.Label)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].7.Path)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].7.Icon)</onclick>        
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.1.Addon),AddonSet$PARAM[id2])">Skin.Reset(HomeItem.1.Addon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.2.Addon),AddonSet$PARAM[id2])">Skin.Reset(HomeItem.2.Addon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.3.Addon),AddonSet$PARAM[id2])">Skin.Reset(HomeItem.3.Addon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.4.Addon),AddonSet$PARAM[id2])">Skin.Reset(HomeItem.4.Addon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.5.Addon),AddonSet$PARAM[id2])">Skin.Reset(HomeItem.5.Addon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.6.Addon),AddonSet$PARAM[id2])">Skin.Reset(HomeItem.6.Addon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.7.Addon),AddonSet$PARAM[id2])">Skin.Reset(HomeItem.7.Addon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.8.Addon),AddonSet$PARAM[id2])">Skin.Reset(HomeItem.8.Addon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.9.Addon),AddonSet$PARAM[id2])">Skin.Reset(HomeItem.9.Addon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.10.Addon),AddonSet$PARAM[id2])">Skin.Reset(HomeItem.10.Addon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.11.Addon),AddonSet$PARAM[id2])">Skin.Reset(HomeItem.11.Addon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.12.Addon),AddonSet$PARAM[id2])">Skin.Reset(HomeItem.12.Addon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.13.Addon),AddonSet$PARAM[id2])">Skin.Reset(HomeItem.13.Addon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.14.Addon),AddonSet$PARAM[id2])">Skin.Reset(HomeItem.14.Addon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.15.Addon),AddonSet$PARAM[id2])">Skin.Reset(HomeItem.15.Addon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.16.Addon),AddonSet$PARAM[id2])">Skin.Reset(HomeItem.16.Addon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.17.Addon),AddonSet$PARAM[id2])">Skin.Reset(HomeItem.17.Addon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.18.Addon),AddonSet$PARAM[id2])">Skin.Reset(HomeItem.18.Addon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.19.Addon),AddonSet$PARAM[id2])">Skin.Reset(HomeItem.19.Addon)</onclick>
-        <onclick condition="IsEmpty(Skin.String(AddonSet$PARAM[id2].Label)) + StringCompare(Skin.String(HomeItem.20.Addon),AddonSet$PARAM[id2])">Skin.Reset(HomeItem.20.Addon)</onclick>
-    </include>
-    <include name="HomeMainAddonSetsItemSettings">
-        <control type="button" id="3$PARAM[id2]00">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>[B]$LOCALIZE[89003] - $PARAM[id2][/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(AddonSet$PARAM[id2].Label)][/COLOR]</label2>
-            <textcolor>blue</textcolor>
-            <focusedcolor>blue</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>Skin.SetString(AddonSet$PARAM[id2].Label)</onclick>
-            <include name="ResetAddonSetItem">
-                <param name="id2" value="$PARAM[id2]" />
-            </include>
-        </control>
-        <control type="button" id="3$PARAM[id2]01">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[24000] [B]1[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(AddonSet$PARAM[id2].1.Label)][/COLOR]</label2>
-            <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,AddonSet$PARAM[id2].1,home)</onclick>
-            <onclick condition="Skin.String(AddonSet$PARAM[id2].1.Label)">SetProperty(UsrSelectBtnClear,Clear,home)</onclick>
-            <onclick>ActivateWindow(2119)</onclick>
-            <visible>!IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))</visible>
-        </control>
-        <control type="button" id="3$PARAM[id2]02">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[24000] [B]2[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(AddonSet$PARAM[id2].2.Label)][/COLOR]</label2>
-            <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,AddonSet$PARAM[id2].2,home)</onclick>
-            <onclick condition="Skin.String(AddonSet$PARAM[id2].2.Label)">SetProperty(UsrSelectBtnClear,Clear,home)</onclick>
-            <onclick>ActivateWindow(2119)</onclick>
-            <visible>!IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))</visible>
-            <visible>!IsEmpty(Skin.String(AddonSet$PARAM[id2].1.Label))</visible>
-        </control>
-        <control type="button" id="3$PARAM[id2]03">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[24000] [B]3[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(AddonSet$PARAM[id2].3.Label)][/COLOR]</label2>
-            <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,AddonSet$PARAM[id2].3,home)</onclick>
-            <onclick condition="Skin.String(AddonSet$PARAM[id2].3.Label)">SetProperty(UsrSelectBtnClear,Clear,home)</onclick>
-            <onclick>ActivateWindow(2119)</onclick>
-            <visible>!IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))</visible>
-            <visible>!IsEmpty(Skin.String(AddonSet$PARAM[id2].2.Label))</visible>
-        </control>
-        <control type="button" id="3$PARAM[id2]04">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[24000] [B]4[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(AddonSet$PARAM[id2].4.Label)][/COLOR]</label2>
-            <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,AddonSet$PARAM[id2].4,home)</onclick>
-            <onclick condition="Skin.String(AddonSet$PARAM[id2].4.Label)">SetProperty(UsrSelectBtnClear,Clear,home)</onclick>
-            <onclick>ActivateWindow(2119)</onclick>
-            <visible>!IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))</visible>
-            <visible>!IsEmpty(Skin.String(AddonSet$PARAM[id2].3.Label))</visible>
-        </control>
-        <control type="button" id="3$PARAM[id2]05">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[24000] [B]5[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(AddonSet$PARAM[id2].5.Label)][/COLOR]</label2>
-            <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,AddonSet$PARAM[id2].5,home)</onclick>
-            <onclick condition="Skin.String(AddonSet$PARAM[id2].5.Label)">SetProperty(UsrSelectBtnClear,Clear,home)</onclick>
-            <onclick>ActivateWindow(2119)</onclick>
-            <visible>!IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))</visible>
-            <visible>!IsEmpty(Skin.String(AddonSet$PARAM[id2].4.Label))</visible>
-        </control>
-        <control type="button" id="3$PARAM[id2]06">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[24000] [B]6[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(AddonSet$PARAM[id2].6.Label)][/COLOR]</label2>
-            <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,AddonSet$PARAM[id2].6,home)</onclick>
-            <onclick condition="Skin.String(AddonSet$PARAM[id2].6.Label)">SetProperty(UsrSelectBtnClear,Clear,home)</onclick>
-            <onclick>ActivateWindow(2119)</onclick>
-            <visible>!IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))</visible>
-            <visible>!IsEmpty(Skin.String(AddonSet$PARAM[id2].5.Label))</visible>
-        </control>
-        <control type="button" id="3$PARAM[id2]07">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[24000] [B]7[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(AddonSet$PARAM[id2].7.Label)][/COLOR]</label2>
-            <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,AddonSet$PARAM[id2].7,home)</onclick>
-            <onclick condition="Skin.String(AddonSet$PARAM[id2].7.Label)">SetProperty(UsrSelectBtnClear,Clear,home)</onclick>
-            <onclick>ActivateWindow(2119)</onclick>
-            <visible>!IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))</visible>
-            <visible>!IsEmpty(Skin.String(AddonSet$PARAM[id2].6.Label))</visible>
-        </control>
-    </include>
     <include name="AddonItemChoices">
         <content>
             <item>
@@ -999,178 +572,6 @@
                 <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>System.HasAddon(script.simpleplaylists)</visible>
                 <visible>!StringCompare(Window(home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
-            </item>
-        </content>
-    </include>
-    <include name="AddonTypeChoices">
-        <content>
-            <item>
-                <description>Clear Setting</description>
-                <label>$LOCALIZE[89013]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,None)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>StringCompare(Window(home).Property(UsrSelectBtnClear),Clear)</visible>
-            </item>
-            <item>
-                <description>User Addon Set 01</description>
-                <label>$INFO[Skin.String(AddonSet01.Label)]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,AddonSet01)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!IsEmpty(Skin.String(AddonSet01.Label))</visible>
-            </item>
-            <item>
-                <description>User Addon Set 02</description>
-                <label>$INFO[Skin.String(AddonSet02.Label)]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,AddonSet02)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!IsEmpty(Skin.String(AddonSet02.Label))</visible>
-            </item>
-            <item>
-                <description>User Addon Set 03</description>
-                <label>$INFO[Skin.String(AddonSet03.Label)]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,AddonSet03)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!IsEmpty(Skin.String(AddonSet03.Label))</visible>
-            </item>
-            <item>
-                <description>User Addon Set 04</description>
-                <label>$INFO[Skin.String(AddonSet04.Label)]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,AddonSet04)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!IsEmpty(Skin.String(AddonSet04.Label))</visible>
-            </item>
-            <item>
-                <description>User Addon Set 05</description>
-                <label>$INFO[Skin.String(AddonSet05.Label)]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,AddonSet05)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!IsEmpty(Skin.String(AddonSet05.Label))</visible>
-            </item>
-            <item>
-                <description>User Addon Set 06</description>
-                <label>$INFO[Skin.String(AddonSet06.Label)]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,AddonSet06)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!IsEmpty(Skin.String(AddonSet06.Label))</visible>
-            </item>
-            <item>
-                <description>User Addon Set 07</description>
-                <label>$INFO[Skin.String(AddonSet07.Label)]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,AddonSet07)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!IsEmpty(Skin.String(AddonSet07.Label))</visible>
-            </item>
-            <item>
-                <description>User Addon Set 08</description>
-                <label>$INFO[Skin.String(AddonSet08.Label)]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,AddonSet08)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!IsEmpty(Skin.String(AddonSet08.Label))</visible>
-            </item>
-            <item>
-                <description>User Addon Set 09</description>
-                <label>$INFO[Skin.String(AddonSet09.Label)]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,AddonSet09)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!IsEmpty(Skin.String(AddonSet09.Label))</visible>
-            </item>
-            <item>
-                <description>User Addon Set 10</description>
-                <label>$INFO[Skin.String(AddonSet10.Label)]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,AddonSet10)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!IsEmpty(Skin.String(AddonSet10.Label))</visible>
-            </item>
-            <item>
-                <description>User Addon Set 11</description>
-                <label>$INFO[Skin.String(AddonSet11.Label)]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,AddonSet11)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!IsEmpty(Skin.String(AddonSet11.Label))</visible>
-            </item>
-            <item>
-                <description>User Addon Set 12</description>
-                <label>$INFO[Skin.String(AddonSet12.Label)]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,AddonSet12)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!IsEmpty(Skin.String(AddonSet12.Label))</visible>
-            </item>
-            <item>
-                <description>User Addon Set 13</description>
-                <label>$INFO[Skin.String(AddonSet13.Label)]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,AddonSet13)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!IsEmpty(Skin.String(AddonSet13.Label))</visible>
-            </item>
-            <item>
-                <description>User Addon Set 14</description>
-                <label>$INFO[Skin.String(AddonSet14.Label)]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,AddonSet14)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!IsEmpty(Skin.String(AddonSet14.Label))</visible>
-            </item>
-            <item>
-                <description>User Addon Set 15</description>
-                <label>$INFO[Skin.String(AddonSet15.Label)]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,AddonSet15)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!IsEmpty(Skin.String(AddonSet15.Label))</visible>
-            </item>
-            <item>
-                <description>User Addon Set 16</description>
-                <label>$INFO[Skin.String(AddonSet16.Label)]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,AddonSet16)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!IsEmpty(Skin.String(AddonSet16.Label))</visible>
-            </item>
-            <item>
-                <description>User Addon Set 17</description>
-                <label>$INFO[Skin.String(AddonSet17.Label)]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,AddonSet17)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!IsEmpty(Skin.String(AddonSet17.Label))</visible>
-            </item>
-            <item>
-                <description>User Addon Set 18</description>
-                <label>$INFO[Skin.String(AddonSet18.Label)]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,AddonSet18)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!IsEmpty(Skin.String(AddonSet18.Label))</visible>
-            </item>
-            <item>
-                <description>User Addon Set 19</description>
-                <label>$INFO[Skin.String(AddonSet19.Label)]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,AddonSet19)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!IsEmpty(Skin.String(AddonSet19.Label))</visible>
-            </item>
-            <item>
-                <description>User Addon Set 20</description>
-                <label>$INFO[Skin.String(AddonSet20.Label)]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,AddonSet20)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!IsEmpty(Skin.String(AddonSet20.Label))</visible>
             </item>
         </content>
     </include>

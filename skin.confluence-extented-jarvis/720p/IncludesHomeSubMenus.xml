@@ -6,7 +6,7 @@
 			<left>0</left>
 			<top>70</top>            
 			<include>HomeSubMenuUpDown</include>
-            <include>skinshortcuts-template-submenu</include>
+            <include>skinshortcuts-template-submenus</include>
         </control>
 	</include>
     <include name="HomeSubMenuUpDown">

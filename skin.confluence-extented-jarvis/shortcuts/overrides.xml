@@ -27,8 +27,8 @@
     <backgrounddefault labelID="dvd">special://skin/extras/backgrounds/dvd.jpg</backgrounddefault>
     <backgrounddefault labelID="settings">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
     <backgrounddefault labelID="136">special://skin/extras/backgrounds/playlist.jpg</backgrounddefault>
-    <!-- Groupings -->
-    <groupings>
+    <!-- Menus Groupings -->
+    <menus-groupings>
         <!-- Weather -->
         <node label="8">
             <shortcut label="8" type="8" icon="DefaultFolder.png">ActivateWindow(Weather)</shortcut>
@@ -176,25 +176,25 @@
         <!-- DVD -->
         <node label="446">
             <shortcut label="341" type="446" icon="DefaultFolder.png">PlayDVD</shortcut>
-            <shortcut label="13391" type="446" icon="DefaultFolder.png">EjectTray</shortcut>
+            <shortcut label="13391" type="446" icon="DefaultFolder.png">EjectTray()</shortcut>
         </node>
         <!-- Addons -->
         <node label="24001">
             <shortcut label="10040" type="10004" icon="DefaultFolder.png">ActivateWindow(addonbrowser)</shortcut>
-            <node label="32009">
+            <node label="1043">
                 <shortcut label="10001" type="24001" icon="DefaultAddonProgram.png">ActivateWindow(programs,addons://sources/executable/,return)</shortcut>
                 <shortcut label="20244" type="24001" icon="DefaultAddonProgram.png" condition="System.Platform.Android">ActivateWindow(programs,androidapp://sources/apps,return)</shortcut>
                 <content>addon-program</content>
             </node>
-            <node label="32010">
+            <node label="1037">
                 <shortcut label="1037" type="3" icon="DefaultAddonVideo.png">ActivateWindow(videos,addons://sources/video/,return)</shortcut>
                 <content>addon-video</content>
             </node>
-            <node label="32011">
+            <node label="1038">
                 <shortcut label="1038" type="2" icon="DefaultAddonMusic.png">ActivateWindow(music,addons://sources/audio/,return)</shortcut>
                 <content>addon-audio</content>
             </node>
-            <node label="32012">
+            <node label="1039">
                 <shortcut label="1039" type="1" icon="DefaultAddonImages.png">ActivateWindow(pictures,addons://sources/image/,return)</shortcut>
                 <content>addon-image</content>
             </node>
@@ -225,11 +225,11 @@
         <!-- Power -->
         <node label="13005">
             <shortcut label="13005" type="13005" icon="DefaultFolder.png">ActivateWindow(shutdownmenu)</shortcut>
-            <shortcut label="13012" type="13005" icon="DefaultFolder.png">Quit</shortcut>
-            <shortcut label="13016" type="13005" icon="DefaultFolder.png">Shutdown</shortcut>
-            <shortcut label="13011" type="13005" icon="DefaultFolder.png">Suspend</shortcut>
-            <shortcut label="13010" type="13005" icon="DefaultFolder.png">Hibernate</shortcut>
-            <shortcut label="13013" type="13005" icon="DefaultFolder.png">Reboot</shortcut>
+            <shortcut label="13012" type="13005" icon="DefaultFolder.png">Quit()</shortcut>
+            <shortcut label="13016" type="13005" icon="DefaultFolder.png">Shutdown()</shortcut>
+            <shortcut label="13011" type="13005" icon="DefaultFolder.png">Suspend()</shortcut>
+            <shortcut label="13010" type="13005" icon="DefaultFolder.png">Hibernate()</shortcut>
+            <shortcut label="13013" type="13005" icon="DefaultFolder.png">Reboot()</shortcut>
         </node>
         <!-- Favourites -->
         <node label="1036">
@@ -239,9 +239,24 @@
             </node>
         </node>
         <node label="32054">
-            <shortcut label="20183" type="32054" icon="DefaultFolder.png">ReloadSkin</shortcut>
+            <shortcut label="$ADDON[script.skin.helper.service 32062]" type="32054" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=smartshortcuts</shortcut>
+            <shortcut label="20183" type="32054" icon="DefaultFolder.png">ReloadSkin()</shortcut>
             <content>commands</content>
+        </node>        
+    </menus-groupings>
+    <!-- Addons Groupings -->
+    <addons-groupings>
+        <node label="1043">
+            <content>addon-program</content>
         </node>
-        <shortcut label="$ADDON[script.skin.helper.service 32062]" type="32010" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=smartshortcuts</shortcut>
-    </groupings>
+        <node label="1037">
+            <content>addon-video</content>
+        </node>
+        <node label="1038">
+            <content>addon-audio</content>
+        </node>
+        <node label="1039">
+            <content>addon-image</content>
+        </node>
+    </addons-groupings>
 </overrides>

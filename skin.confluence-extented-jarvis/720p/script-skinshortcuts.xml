@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>90010</defaultcontrol>
+    <onload>SetProperty(custom-grouping,$VAR[SkinShortcutsGrouping])</onload>
     <controls>
         <include>CommonCustomBackgroundSettings</include>
 		<include>CommonBackground</include>
@@ -187,6 +188,7 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
+                        <onclick>SetProperty(custom-grouping,$VAR[SkinShortcutsGrouping])</onclick>
                     </control>
                     <control type="button" id="307">
                         <description>Change action</description>
@@ -199,6 +201,7 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
+                        <onclick>SetProperty(custom-grouping,$VAR[SkinShortcutsGrouping])</onclick>
                     </control>
                     <control type="button" id="305">
                         <description>Change label</description>
@@ -235,8 +238,6 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-                        <onclick>SetProperty(submenutype,submenus,home)</onclick>
-                        <onclick>SendClick(405)</onclick>
                         <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>                       
                     </control>
                     <control type="button" id="406">
@@ -249,8 +250,6 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-                        <onclick>SetProperty(submenutype,subaddons,home)</onclick>
-                        <onclick>SendClick(406)</onclick>
                         <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>                       
                     </control>
                     <control type="button" id="312">
@@ -276,9 +275,13 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-                        <onclick>SetProperty(submenutype,subwidgets,home)</onclick>
-                        <onclick>SendClick(407)</onclick>
                         <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>                       
+                    </control>
+                    <control type="image" id="600">
+                        <description>separator image</description>
+                        <width>750</width>
+                        <height>2</height>
+                        <texture>separator2.png</texture>
                     </control>
                     <control type="button" id="303">
                         <description>Move up</description>
@@ -323,7 +326,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                     </control>
-                    <control type="image" id="600">
+                    <control type="image" id="601">
                         <description>separator image</description>
                         <width>750</width>
                         <height>2</height>

@@ -22,9 +22,6 @@ IncludesHomeSubMenus.xml
 IncludesHomeWidgets.xml
 тут собираются виджеты
 
-IncludesMenuItemChoices.xml
-тут все вставляемые пункты меню и подменю
-
 IncludesVariables.xml
 тут все переменные используемые в Kodi
 
