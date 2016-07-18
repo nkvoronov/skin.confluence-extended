@@ -4,14 +4,12 @@
 		<control type="wraplist" id="9000">
 			<include>HomeMainMenuSys</include>
 			<include>HomeMainMenuContent</include>
-			<visible>Skin.HasSetting(WrapAroundHomeMenu)</visible>
 		</control>
 	</include>
 	<include name="FixedHomeMainMenuDisplay">
 		<control type="fixedlist" id="9000">
 			<include>HomeMainMenuSys</include>
 			<include>HomeMainMenuContent</include>
-			<visible>!Skin.HasSetting(WrapAroundHomeMenu)</visible>
 		</control>
 	</include>
 	<include name="HomeMainMenuSys">

@@ -236,7 +236,7 @@
             <onleft>$PARAM[list_id]</onleft>
             <onright>$PARAM[list_id]</onright>
             <include>HomeAddonUpDown</include>
-            <include>AddonsMediaPlayingLayout</include>
+            <include>HomeAddonsCommonMediaPlayingLayout</include>
             <include name="HomeAddonSetItems">
                 <param name="id2" value="$PARAM[id2]" />
             </include>
@@ -347,7 +347,7 @@
 			</control>
 		</focusedlayout>
 	</include>
-	<include name="AddonsMediaPlayingLayout">
+	<include name="HomeAddonsCommonMediaPlayingLayout">
 		<include>Window_OpenClose_Animation</include>
 		<include>HomeAddonsAnimation</include>
 		<left>230</left>
