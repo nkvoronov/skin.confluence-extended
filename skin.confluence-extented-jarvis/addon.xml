@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <addon
-  id="skin.confluence-extented-jarvis"
-  version="2.9.0.057"
-  name="Confluence-extented-jarvis"
+  id="skin.confluence-extented-jarvis.skinshortcuts"
+  version="2.9.0.058"
+  name="Confluence-extented-jarvis-skinshortcuts"
   provider-name="Jezz_X, Team Kodi, YLLOW_DRAGON, plood">
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>

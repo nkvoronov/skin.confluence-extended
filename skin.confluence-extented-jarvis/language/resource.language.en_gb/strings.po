@@ -1018,10 +1018,6 @@ msgctxt "#89040"
 msgid "Raspberry"
 msgstr ""
 
-msgctxt "#89301"
-msgid "Big"
-msgstr ""
-
 msgctxt "#89302"
 msgid "Daily"
 msgstr ""

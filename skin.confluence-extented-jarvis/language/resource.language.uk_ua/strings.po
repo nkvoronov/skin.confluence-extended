@@ -1018,10 +1018,6 @@ msgctxt "#89040"
 msgid "Raspberry"
 msgstr "Raspberry"
 
-msgctxt "#89301"
-msgid "Big"
-msgstr "Великий"
-
 msgctxt "#89302"
 msgid "Daily"
 msgstr "Щоденна"
