@@ -1697,7 +1697,7 @@
 		<value condition="StringCompare(Skin.String(HomeItem.1.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.1.Widget),WeatherDaily)">$LOCALIZE[89302] $LOCALIZE[8]</value>
         <value condition="StringCompare(Skin.String(HomeItem.1.Widget),WeatherHourly)">$LOCALIZE[89303] $LOCALIZE[8]</value>
-        <value condition="StringCompare(Skin.String(HomeItem.1.Widget),WeatherBig)">$LOCALIZE[8] $LOCALIZE[89301]</value>
+        <value condition="StringCompare(Skin.String(HomeItem.1.Widget),WeatherH36)">$LOCALIZE[8] $LOCALIZE[33034]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.1.Widget),Favourites)">$LOCALIZE[1036]</value>        
         <value condition="StringCompare(Skin.String(HomeItem.1.Widget),FavTVChannels)">$LOCALIZE[88133]</value>
         <value condition="StringCompare(Skin.String(HomeItem.1.Widget),FavRadioChannels)">$LOCALIZE[88134]</value>        
@@ -1722,7 +1722,7 @@
 		<value condition="StringCompare(Skin.String(HomeItem.2.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.2.Widget),WeatherDaily)">$LOCALIZE[89302] $LOCALIZE[8]</value>
         <value condition="StringCompare(Skin.String(HomeItem.2.Widget),WeatherHourly)">$LOCALIZE[89303] $LOCALIZE[8]</value>
-        <value condition="StringCompare(Skin.String(HomeItem.2.Widget),WeatherBig)">$LOCALIZE[8] $LOCALIZE[89301]</value>
+        <value condition="StringCompare(Skin.String(HomeItem.2.Widget),WeatherH36)">$LOCALIZE[8] $LOCALIZE[33034]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.2.Widget),Favourites)">$LOCALIZE[1036]</value>
         <value condition="StringCompare(Skin.String(HomeItem.2.Widget),FavTVChannels)">$LOCALIZE[88133]</value>
         <value condition="StringCompare(Skin.String(HomeItem.2.Widget),FavRadioChannels)">$LOCALIZE[88134]</value>        
@@ -1747,7 +1747,7 @@
 		<value condition="StringCompare(Skin.String(HomeItem.3.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.3.Widget),WeatherDaily)">$LOCALIZE[89302] $LOCALIZE[8]</value>
         <value condition="StringCompare(Skin.String(HomeItem.3.Widget),WeatherHourly)">$LOCALIZE[89303] $LOCALIZE[8]</value>
-        <value condition="StringCompare(Skin.String(HomeItem.3.Widget),WeatherBig)">$LOCALIZE[8] $LOCALIZE[89301]</value>
+        <value condition="StringCompare(Skin.String(HomeItem.3.Widget),WeatherH36)">$LOCALIZE[8] $LOCALIZE[33034]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.3.Widget),Favourites)">$LOCALIZE[1036]</value>  
         <value condition="StringCompare(Skin.String(HomeItem.3.Widget),FavTVChannels)">$LOCALIZE[88133]</value>
         <value condition="StringCompare(Skin.String(HomeItem.3.Widget),FavRadioChannels)">$LOCALIZE[88134]</value>        
@@ -1772,7 +1772,7 @@
 		<value condition="StringCompare(Skin.String(HomeItem.4.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.4.Widget),WeatherDaily)">$LOCALIZE[89302] $LOCALIZE[8]</value>
         <value condition="StringCompare(Skin.String(HomeItem.4.Widget),WeatherHourly)">$LOCALIZE[89303] $LOCALIZE[8]</value>
-        <value condition="StringCompare(Skin.String(HomeItem.4.Widget),WeatherBig)">$LOCALIZE[8] $LOCALIZE[89301]</value>
+        <value condition="StringCompare(Skin.String(HomeItem.4.Widget),WeatherH36)">$LOCALIZE[8] $LOCALIZE[33034]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.4.Widget),Favourites)">$LOCALIZE[1036]</value> 
         <value condition="StringCompare(Skin.String(HomeItem.4.Widget),FavTVChannels)">$LOCALIZE[88133]</value>
         <value condition="StringCompare(Skin.String(HomeItem.4.Widget),FavRadioChannels)">$LOCALIZE[88134]</value>        
@@ -1797,7 +1797,7 @@
 		<value condition="StringCompare(Skin.String(HomeItem.5.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.5.Widget),WeatherDaily)">$LOCALIZE[89302] $LOCALIZE[8]</value>
         <value condition="StringCompare(Skin.String(HomeItem.5.Widget),WeatherHourly)">$LOCALIZE[89303] $LOCALIZE[8]</value>
-        <value condition="StringCompare(Skin.String(HomeItem.5.Widget),WeatherBig)">$LOCALIZE[8] $LOCALIZE[89301]</value>
+        <value condition="StringCompare(Skin.String(HomeItem.5.Widget),WeatherH36)">$LOCALIZE[8] $LOCALIZE[33034]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.5.Widget),Favourites)">$LOCALIZE[1036]</value> 
         <value condition="StringCompare(Skin.String(HomeItem.5.Widget),FavTVChannels)">$LOCALIZE[88133]</value>
         <value condition="StringCompare(Skin.String(HomeItem.5.Widget),FavRadioChannels)">$LOCALIZE[88134]</value>        
@@ -1822,7 +1822,7 @@
 		<value condition="StringCompare(Skin.String(HomeItem.6.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.6.Widget),WeatherDaily)">$LOCALIZE[89302] $LOCALIZE[8]</value>
         <value condition="StringCompare(Skin.String(HomeItem.6.Widget),WeatherHourly)">$LOCALIZE[89303] $LOCALIZE[8]</value>
-        <value condition="StringCompare(Skin.String(HomeItem.6.Widget),WeatherBig)">$LOCALIZE[8] $LOCALIZE[89301]</value>
+        <value condition="StringCompare(Skin.String(HomeItem.6.Widget),WeatherH36)">$LOCALIZE[8] $LOCALIZE[33034]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.6.Widget),Favourites)">$LOCALIZE[1036]</value>
         <value condition="StringCompare(Skin.String(HomeItem.6.Widget),FavTVChannels)">$LOCALIZE[88133]</value>
         <value condition="StringCompare(Skin.String(HomeItem.6.Widget),FavRadioChannels)">$LOCALIZE[88134]</value>        
@@ -1847,7 +1847,7 @@
 		<value condition="StringCompare(Skin.String(HomeItem.7.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.7.Widget),WeatherDaily)">$LOCALIZE[89302] $LOCALIZE[8]</value>
         <value condition="StringCompare(Skin.String(HomeItem.7.Widget),WeatherHourly)">$LOCALIZE[89303] $LOCALIZE[8]</value>
-        <value condition="StringCompare(Skin.String(HomeItem.7.Widget),WeatherBig)">$LOCALIZE[8] $LOCALIZE[89301]</value>
+        <value condition="StringCompare(Skin.String(HomeItem.7.Widget),WeatherH36)">$LOCALIZE[8] $LOCALIZE[33034]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.7.Widget),Favourites)">$LOCALIZE[1036]</value> 
         <value condition="StringCompare(Skin.String(HomeItem.7.Widget),FavTVChannels)">$LOCALIZE[88133]</value>
         <value condition="StringCompare(Skin.String(HomeItem.7.Widget),FavRadioChannels)">$LOCALIZE[88134]</value>        
@@ -1872,7 +1872,7 @@
 		<value condition="StringCompare(Skin.String(HomeItem.8.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.8.Widget),WeatherDaily)">$LOCALIZE[89302] $LOCALIZE[8]</value>
         <value condition="StringCompare(Skin.String(HomeItem.8.Widget),WeatherHourly)">$LOCALIZE[89303] $LOCALIZE[8]</value>
-        <value condition="StringCompare(Skin.String(HomeItem.8.Widget),WeatherBig)">$LOCALIZE[8] $LOCALIZE[89301]</value>
+        <value condition="StringCompare(Skin.String(HomeItem.8.Widget),WeatherH36)">$LOCALIZE[8] $LOCALIZE[33034]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.8.Widget),Favourites)">$LOCALIZE[1036]</value>   
         <value condition="StringCompare(Skin.String(HomeItem.8.Widget),FavTVChannels)">$LOCALIZE[88133]</value>
         <value condition="StringCompare(Skin.String(HomeItem.8.Widget),FavRadioChannels)">$LOCALIZE[88134]</value>        
@@ -1897,7 +1897,7 @@
 		<value condition="StringCompare(Skin.String(HomeItem.9.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.9.Widget),WeatherDaily)">$LOCALIZE[89302] $LOCALIZE[8]</value>
         <value condition="StringCompare(Skin.String(HomeItem.9.Widget),WeatherHourly)">$LOCALIZE[89303] $LOCALIZE[8]</value>
-        <value condition="StringCompare(Skin.String(HomeItem.9.Widget),WeatherBig)">$LOCALIZE[8] $LOCALIZE[89301]</value>
+        <value condition="StringCompare(Skin.String(HomeItem.9.Widget),WeatherH36)">$LOCALIZE[8] $LOCALIZE[33034]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.9.Widget),Favourites)">$LOCALIZE[1036]</value> 
         <value condition="StringCompare(Skin.String(HomeItem.9.Widget),FavTVChannels)">$LOCALIZE[88133]</value>
         <value condition="StringCompare(Skin.String(HomeItem.9.Widget),FavRadioChannels)">$LOCALIZE[88134]</value>        
@@ -1922,7 +1922,7 @@
 		<value condition="StringCompare(Skin.String(HomeItem.10.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.10.Widget),WeatherDaily)">$LOCALIZE[89302] $LOCALIZE[8]</value>
         <value condition="StringCompare(Skin.String(HomeItem.10.Widget),WeatherHourly)">$LOCALIZE[89303] $LOCALIZE[8]</value>
-        <value condition="StringCompare(Skin.String(HomeItem.10.Widget),WeatherBig)">$LOCALIZE[8] $LOCALIZE[89301]</value>
+        <value condition="StringCompare(Skin.String(HomeItem.10.Widget),WeatherH36)">$LOCALIZE[8] $LOCALIZE[33034]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.10.Widget),Favourites)">$LOCALIZE[1036]</value>
         <value condition="StringCompare(Skin.String(HomeItem.10.Widget),FavTVChannels)">$LOCALIZE[88133]</value>
         <value condition="StringCompare(Skin.String(HomeItem.10.Widget),FavRadioChannels)">$LOCALIZE[88134]</value>        
@@ -1947,7 +1947,7 @@
 		<value condition="StringCompare(Skin.String(HomeItem.11.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.11.Widget),WeatherDaily)">$LOCALIZE[89302] $LOCALIZE[8]</value>
         <value condition="StringCompare(Skin.String(HomeItem.11.Widget),WeatherHourly)">$LOCALIZE[89303] $LOCALIZE[8]</value>
-        <value condition="StringCompare(Skin.String(HomeItem.11.Widget),WeatherBig)">$LOCALIZE[8] $LOCALIZE[89301]</value>
+        <value condition="StringCompare(Skin.String(HomeItem.11.Widget),WeatherH36)">$LOCALIZE[8] $LOCALIZE[33034]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.11.Widget),Favourites)">$LOCALIZE[1036]</value>  
         <value condition="StringCompare(Skin.String(HomeItem.11.Widget),FavTVChannels)">$LOCALIZE[88133]</value>
         <value condition="StringCompare(Skin.String(HomeItem.11.Widget),FavRadioChannels)">$LOCALIZE[88134]</value>        
@@ -1972,7 +1972,7 @@
 		<value condition="StringCompare(Skin.String(HomeItem.12.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.12.Widget),WeatherDaily)">$LOCALIZE[89302] $LOCALIZE[8]</value>
         <value condition="StringCompare(Skin.String(HomeItem.12.Widget),WeatherHourly)">$LOCALIZE[89303] $LOCALIZE[8]</value>
-        <value condition="StringCompare(Skin.String(HomeItem.12.Widget),WeatherBig)">$LOCALIZE[8] $LOCALIZE[89301]</value>
+        <value condition="StringCompare(Skin.String(HomeItem.12.Widget),WeatherH36)">$LOCALIZE[8] $LOCALIZE[33034]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.12.Widget),Favourites)">$LOCALIZE[1036]</value>
         <value condition="StringCompare(Skin.String(HomeItem.12.Widget),FavTVChannels)">$LOCALIZE[88133]</value>
         <value condition="StringCompare(Skin.String(HomeItem.12.Widget),FavRadioChannels)">$LOCALIZE[88134]</value>        
@@ -1997,7 +1997,7 @@
 		<value condition="StringCompare(Skin.String(HomeItem.13.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.13.Widget),WeatherDaily)">$LOCALIZE[89302] $LOCALIZE[8]</value>
         <value condition="StringCompare(Skin.String(HomeItem.13.Widget),WeatherHourly)">$LOCALIZE[89303] $LOCALIZE[8]</value>
-        <value condition="StringCompare(Skin.String(HomeItem.13.Widget),WeatherBig)">$LOCALIZE[8] $LOCALIZE[89301]</value>
+        <value condition="StringCompare(Skin.String(HomeItem.13.Widget),WeatherH36)">$LOCALIZE[8] $LOCALIZE[33034]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.13.Widget),Favourites)">$LOCALIZE[1036]</value>   
         <value condition="StringCompare(Skin.String(HomeItem.13.Widget),FavTVChannels)">$LOCALIZE[88133]</value>
         <value condition="StringCompare(Skin.String(HomeItem.13.Widget),FavRadioChannels)">$LOCALIZE[88134]</value>        
@@ -2022,7 +2022,7 @@
 		<value condition="StringCompare(Skin.String(HomeItem.14.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.14.Widget),WeatherDaily)">$LOCALIZE[89302] $LOCALIZE[8]</value>
         <value condition="StringCompare(Skin.String(HomeItem.14.Widget),WeatherHourly)">$LOCALIZE[89303] $LOCALIZE[8]</value>
-        <value condition="StringCompare(Skin.String(HomeItem.14.Widget),WeatherBig)">$LOCALIZE[8] $LOCALIZE[89301]</value>
+        <value condition="StringCompare(Skin.String(HomeItem.14.Widget),WeatherH36)">$LOCALIZE[8] $LOCALIZE[33034]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.14.Widget),Favourites)">$LOCALIZE[1036]</value>  
         <value condition="StringCompare(Skin.String(HomeItem.14.Widget),FavTVChannels)">$LOCALIZE[88133]</value>
         <value condition="StringCompare(Skin.String(HomeItem.14.Widget),FavRadioChannels)">$LOCALIZE[88134]</value>        
@@ -2047,7 +2047,7 @@
 		<value condition="StringCompare(Skin.String(HomeItem.15.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.15.Widget),WeatherDaily)">$LOCALIZE[89302] $LOCALIZE[8]</value>
         <value condition="StringCompare(Skin.String(HomeItem.15.Widget),WeatherHourly)">$LOCALIZE[89303] $LOCALIZE[8]</value>
-        <value condition="StringCompare(Skin.String(HomeItem.15.Widget),WeatherBig)">$LOCALIZE[8] $LOCALIZE[89301]</value>
+        <value condition="StringCompare(Skin.String(HomeItem.15.Widget),WeatherH36)">$LOCALIZE[8] $LOCALIZE[33034]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.15.Widget),Favourites)">$LOCALIZE[1036]</value>
         <value condition="StringCompare(Skin.String(HomeItem.15.Widget),FavTVChannels)">$LOCALIZE[88133]</value>
         <value condition="StringCompare(Skin.String(HomeItem.15.Widget),FavRadioChannels)">$LOCALIZE[88134]</value>        
@@ -2072,7 +2072,7 @@
 		<value condition="StringCompare(Skin.String(HomeItem.16.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.16.Widget),WeatherDaily)">$LOCALIZE[89302] $LOCALIZE[8]</value>
         <value condition="StringCompare(Skin.String(HomeItem.16.Widget),WeatherHourly)">$LOCALIZE[89303] $LOCALIZE[8]</value>
-        <value condition="StringCompare(Skin.String(HomeItem.16.Widget),WeatherBig)">$LOCALIZE[8] $LOCALIZE[89301]</value>
+        <value condition="StringCompare(Skin.String(HomeItem.16.Widget),WeatherH36)">$LOCALIZE[8] $LOCALIZE[33034]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.16.Widget),Favourites)">$LOCALIZE[1036]</value> 
         <value condition="StringCompare(Skin.String(HomeItem.16.Widget),FavTVChannels)">$LOCALIZE[88133]</value>
         <value condition="StringCompare(Skin.String(HomeItem.16.Widget),FavRadioChannels)">$LOCALIZE[88134]</value>        
@@ -2097,7 +2097,7 @@
 		<value condition="StringCompare(Skin.String(HomeItem.17.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.17.Widget),WeatherDaily)">$LOCALIZE[89302] $LOCALIZE[8]</value>
         <value condition="StringCompare(Skin.String(HomeItem.17.Widget),WeatherHourly)">$LOCALIZE[89303] $LOCALIZE[8]</value>
-        <value condition="StringCompare(Skin.String(HomeItem.17.Widget),WeatherBig)">$LOCALIZE[8] $LOCALIZE[89301]</value>
+        <value condition="StringCompare(Skin.String(HomeItem.17.Widget),WeatherH36)">$LOCALIZE[8] $LOCALIZE[33034]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.17.Widget),Favourites)">$LOCALIZE[1036]</value> 
         <value condition="StringCompare(Skin.String(HomeItem.17.Widget),FavTVChannels)">$LOCALIZE[88133]</value>
         <value condition="StringCompare(Skin.String(HomeItem.17.Widget),FavRadioChannels)">$LOCALIZE[88134]</value>        
@@ -2122,7 +2122,7 @@
 		<value condition="StringCompare(Skin.String(HomeItem.18.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.18.Widget),WeatherDaily)">$LOCALIZE[89302] $LOCALIZE[8]</value>
         <value condition="StringCompare(Skin.String(HomeItem.18.Widget),WeatherHourly)">$LOCALIZE[89303] $LOCALIZE[8]</value>
-        <value condition="StringCompare(Skin.String(HomeItem.18.Widget),WeatherBig)">$LOCALIZE[8] $LOCALIZE[89301]</value>
+        <value condition="StringCompare(Skin.String(HomeItem.18.Widget),WeatherH36)">$LOCALIZE[8] $LOCALIZE[33034]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.18.Widget),Favourites)">$LOCALIZE[1036]</value>  
         <value condition="StringCompare(Skin.String(HomeItem.18.Widget),FavTVChannels)">$LOCALIZE[88133]</value>
         <value condition="StringCompare(Skin.String(HomeItem.18.Widget),FavRadioChannels)">$LOCALIZE[88134]</value>        
@@ -2147,7 +2147,7 @@
 		<value condition="StringCompare(Skin.String(HomeItem.19.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.19.Widget),WeatherDaily)">$LOCALIZE[89302] $LOCALIZE[8]</value>
         <value condition="StringCompare(Skin.String(HomeItem.19.Widget),WeatherHourly)">$LOCALIZE[89303] $LOCALIZE[8]</value>
-        <value condition="StringCompare(Skin.String(HomeItem.19.Widget),WeatherBig)">$LOCALIZE[8] $LOCALIZE[89301]</value>
+        <value condition="StringCompare(Skin.String(HomeItem.19.Widget),WeatherH36)">$LOCALIZE[8] $LOCALIZE[33034]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.19.Widget),Favourites)">$LOCALIZE[1036]</value>
         <value condition="StringCompare(Skin.String(HomeItem.19.Widget),FavTVChannels)">$LOCALIZE[88133]</value>
         <value condition="StringCompare(Skin.String(HomeItem.19.Widget),FavRadioChannels)">$LOCALIZE[88134]</value>        
@@ -2172,7 +2172,7 @@
 		<value condition="StringCompare(Skin.String(HomeItem.20.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.20.Widget),WeatherDaily)">$LOCALIZE[89302] $LOCALIZE[8]</value>
         <value condition="StringCompare(Skin.String(HomeItem.20.Widget),WeatherHourly)">$LOCALIZE[89303] $LOCALIZE[8]</value>
-        <value condition="StringCompare(Skin.String(HomeItem.20.Widget),WeatherBig)">$LOCALIZE[8] $LOCALIZE[89301]</value>
+        <value condition="StringCompare(Skin.String(HomeItem.20.Widget),WeatherH36)">$LOCALIZE[8] $LOCALIZE[33034]</value>
 		<value condition="StringCompare(Skin.String(HomeItem.20.Widget),Favourites)">$LOCALIZE[1036]</value> 
         <value condition="StringCompare(Skin.String(HomeItem.20.Widget),FavTVChannels)">$LOCALIZE[88133]</value>
         <value condition="StringCompare(Skin.String(HomeItem.20.Widget),FavRadioChannels)">$LOCALIZE[88134]</value>        
