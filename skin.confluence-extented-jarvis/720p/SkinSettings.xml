@@ -131,23 +131,17 @@
                     <item id="3">
 						<label>513</label>
 						<onclick>noop</onclick>
-					</item>
-                    <!-- <item id="4">
-						<label>88130</label>
-						<onclick>noop</onclick>
-                        <visible>PVR.HasTVChannels | PVR.HasRadioChannels</visible>
-                        <visible>System.HasAddon(script.pvr.favourites)</visible>
-					</item> -->                    
-					<item id="5">
+					</item>                  
+					<item id="4">
 						<label>31102</label>
 						<onclick>noop</onclick>
 					</item>
-					<item id="6">
+					<item id="5">
 						<label>$LOCALIZE[88132]</label>
 						<onclick>noop</onclick>
 						<visible>Skin.HasSetting(SeparateBackground)</visible>
 					</item>
-                    <item id="7">
+                    <item id="6">
 						<label>10035</label>
 						<onclick>noop</onclick>
 					</item>
@@ -890,8 +884,8 @@
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(3)</visible>
 				</control>
-                <!-- Widgets -->
-                <control type="grouplist" id="9004">
+                <!-- Background -->
+				<control type="grouplist" id="9004">
 					<visible>Container(9000).Hasfocus(4)</visible>
 					<left>290</left>
 					<top>60</top>
@@ -903,48 +897,6 @@
 					<onright>64</onright>
 					<onup>9004</onup>
 					<ondown>9004</ondown>
-                    <include name="HomeMainWidgetsItemSettings">
-                        <param name="id1" value="61" />
-                        <param name="title" value="$LOCALIZE[88133]" />
-                        <param name="setchannelstype" value="TV" />
-                        <param name="type" value="0" />
-                    </include>
-                    <include name="HomeMainWidgetsItemSettings">
-                        <param name="id1" value="62" />
-                        <param name="title" value="$LOCALIZE[88134]" />
-                        <param name="setchannelstype" value="Radio" />
-                        <param name="type" value="1" />
-                    </include>                    
-                </control>    
-				<control type="scrollbar" id="64">
-					<left>1060</left>
-					<top>60</top>
-					<width>25</width>
-					<height>530</height>
-					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-					<textureslidernib>ScrollBarNib.png</textureslidernib>
-					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-					<onleft>9004</onleft>
-					<onright>9000</onright>
-					<showonepage>false</showonepage>
-					<orientation>vertical</orientation>
-					<visible>Container(9000).Hasfocus(4)</visible>
-				</control>
-                <!-- Background -->
-				<control type="grouplist" id="9005">
-					<visible>Container(9000).Hasfocus(5)</visible>
-					<left>290</left>
-					<top>60</top>
-					<width>750</width>
-					<height>530</height>
-					<itemgap>-1</itemgap>
-					<pagecontrol>65</pagecontrol>
-					<onleft>9000</onleft>
-					<onright>65</onright>
-					<onup>9005</onup>
-					<ondown>9005</ondown>
 					<control type="label" id="700">
 						<width>750</width>
 						<height>45</height>
@@ -1066,7 +1018,7 @@
 						<enable>Skin.HasSetting(UseCustomBackground)</enable>
 					</control>
 				</control>
-				<control type="scrollbar" id="65">
+				<control type="scrollbar" id="64">
 					<left>1060</left>
 					<top>60</top>
 					<width>25</width>
@@ -1076,17 +1028,17 @@
 					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
 					<textureslidernib>ScrollBarNib.png</textureslidernib>
 					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-					<onleft>9005</onleft>
+					<onleft>9004</onleft>
 					<onright>9000</onright>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
-					<visible>Container(9000).Hasfocus(5)</visible>
+					<visible>Container(9000).Hasfocus(4)</visible>
 				</control>
                 <!-- Background Adv -->                
 				<control type="group">
 					<left>290</left>
 					<top>60</top>
-					<visible>Container(9000).Hasfocus(6)</visible>
+					<visible>Container(9000).Hasfocus(5)</visible>
 					<control type="label">
 						<left>0</left>
 						<top>0</top>
@@ -1521,8 +1473,8 @@
 					</control>
 				</control>
                 <!-- Reset -->
-     			<control type="grouplist" id="9007">
-					<visible>Container(9000).Hasfocus(7)</visible>
+     			<control type="grouplist" id="9006">
+					<visible>Container(9000).Hasfocus(6)</visible>
 					<left>290</left>
 					<top>180</top>
 					<width>750</width>
@@ -1530,8 +1482,8 @@
 					<itemgap>-1</itemgap>
 					<onleft>9000</onleft>
 					<onright>902</onright>
-					<onup>9000</onup>
-					<ondown>9000</ondown>
+					<onup>9006</onup>
+					<ondown>9006</ondown>
 					<control type="image" id="901">
 						<width>750</width>
 						<height>140</height>

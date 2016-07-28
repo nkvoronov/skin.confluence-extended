@@ -14,19 +14,31 @@
     <icon image="DefaultPlaylist.png">DefaultVideoPlaylists.png</icon>
     <icon image="DefaultAudio.png" grouping="pvr-radio">DefaultTVShows.png</icon>
     <!-- Default Backgrounds -->
+    <backgrounddefault labelID="weather">special://skin/extras/backgrounds/weather.jpg</backgrounddefault>
+    <backgrounddefault labelID="pictures">special://skin/extras/backgrounds/pictures.jpg</backgrounddefault>
+    <backgrounddefault labelID="radio">special://skin/extras/backgrounds/radio.jpg</backgrounddefault>
+    <backgrounddefault labelID="livetv">special://skin/extras/backgrounds/livetv.jpg</backgrounddefault>
     <backgrounddefault labelID="video">special://skin/extras/backgrounds/video.jpg</backgrounddefault>
     <backgrounddefault labelID="movies">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
     <backgrounddefault labelID="tvshows">special://skin/extras/backgrounds/tvshows.jpg</backgrounddefault>
     <backgrounddefault labelID="musicvideos">special://skin/extras/backgrounds/musicvideos.jpg</backgrounddefault>
-    <backgrounddefault labelID="music">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
-    <backgrounddefault labelID="radio">special://skin/extras/backgrounds/radio.jpg</backgrounddefault>
-    <backgrounddefault labelID="livetv">special://skin/extras/backgrounds/livetv.jpg</backgrounddefault>
-    <backgrounddefault labelID="pictures">special://skin/extras/backgrounds/pictures.jpg</backgrounddefault>
-    <backgrounddefault labelID="addons">special://skin/extras/backgrounds/addons.jpg</backgrounddefault>
-    <backgrounddefault labelID="weather">special://skin/extras/backgrounds/weather.jpg</backgrounddefault>
+    <backgrounddefault labelID="music">special://skin/extras/backgrounds/music.jpg</backgrounddefault>    
+    <backgrounddefault labelID="addons">special://skin/extras/backgrounds/addons.jpg</backgrounddefault>    
     <backgrounddefault labelID="dvd">special://skin/extras/backgrounds/dvd.jpg</backgrounddefault>
-    <backgrounddefault labelID="settings">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
     <backgrounddefault labelID="136">special://skin/extras/backgrounds/playlist.jpg</backgrounddefault>
+    <backgrounddefault labelID="settings">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>    
+    <!-- Additionnal Widgets -->
+    <widget label="$LOCALIZE[89302] $LOCALIZE[8]" icon="DefaultFolder.png" type="weather" path="weather_daily" target="list">WeatherDaily</widget>
+    <widget label="$LOCALIZE[89031]" icon="DefaultRecentlyAddedMovies.png" type="movies" path="recent_movies" target="list">RecentMovies</widget>
+    <widget label="$LOCALIZE[89033]" icon="DefaultRecentlyAddedEpisodes.png" type="episodes" path="recent_episodes" target="list">RecentEpisodes</widget>
+    <widget label="$LOCALIZE[89036]" icon="DefaultRecentlyAddedMusicVideos.png" type="albums" path="recent_musicvideo" target="list">RecentMusicVideo</widget>
+    <widget label="$LOCALIZE[89025]" icon="DefaultMusicRecentlyAdded.png" type="albums" path="recent_albums" target="list">RecentAlbums</widget>   
+    <!-- Default Widgets -->
+    <widgetdefault labelID="weather">WeatherDaily</widgetdefault>
+    <widgetdefault labelID="movies">RecentMovies</widgetdefault>
+    <widgetdefault labelID="tvshows">RecentEpisodes</widgetdefault>
+    <widgetdefault labelID="musicvideos">RecentMusicVideo</widgetdefault>
+    <widgetdefault labelID="music">RecentAlbums</widgetdefault>
     <!-- Menus Groupings -->
     <menus-groupings>
         <!-- Weather -->
@@ -259,4 +271,67 @@
             <content>addon-image</content>
         </node>
     </addons-groupings>
+    <!-- TV Groupings -->
+    <tv-groupings>
+        <content>pvr-tv</content>
+    </tv-groupings>
+    <!-- Radio Groupings -->
+    <radio-groupings>
+        <content>pvr-radio</content>
+    </radio-groupings>
+    <widget-groupings>
+        <!-- Weather -->
+        <node label="8">
+            <shortcut label="89302" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[89302] $LOCALIZE[8]" widget="WeatherDaily" widgetType="weather" widgetTarget="list">weather_daily</shortcut>
+            <shortcut label="89303" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[89303] $LOCALIZE[8]" widget="WeatherHourly" widgetType="weather" widgetTarget="list">weather_hourly</shortcut>
+            <shortcut label="33034" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[8] $LOCALIZE[33034]" widget="WeatherH36" widgetType="weatherbig" widgetTarget="list" condition="Skin.HasSetting(LowerMenu)">weather_h36</shortcut>
+        </node>
+        <!-- Pictures -->
+        <!-- <node label="1">
+            <content>picturesources</content>
+        </node> -->
+        <!-- LiveTV -->
+        <node label="19020" condition="PVR.HasTVChannels">
+            <shortcut label="88133" type="19020" icon="DefaultTVShows.png" widgetName="$LOCALIZE[88133]" widget="TVFavouritesChannels" widgetType="pvr" widgetTarget="submenus">tv_favourites_channels</shortcut>
+        </node>
+        <!-- Radio -->
+        <node label="19021" condition="PVR.HasRadioChannels">
+            <shortcut label="88134" type="19021" icon="DefaultTVShows.png" widgetName="$LOCALIZE[88134]" widget="RadioFavouritesChannels" widgetType="pvr" widgetTarget="submenus">radio_favourites_channels</shortcut>
+        </node>
+        <!-- Video -->
+        <!-- <node label="3">
+        <value condition="StringCompare(Skin.String(HomeItem.1.Widget),VideoNode)">$LOCALIZE[157] $LOCALIZE[89029]</value>
+		<value condition="StringCompare(Skin.String(HomeItem.1.Widget),VideoPlayList)">$LOCALIZE[157] $LOCALIZE[136]</value>
+		<value condition="StringCompare(Skin.String(HomeItem.1.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
+        </node> -->
+        <!-- Movies -->
+        <node label="342">
+            <shortcut label="88131" type="342" icon="DefaultFolder.png" widgetName="$LOCALIZE[88131]" widget="UnWatchedMovies" widgetType="movies" widgetTarget="list">unwatched_movies</shortcut>
+            <shortcut label="89031" type="342" icon="DefaultRecentlyAddedMovies.png" widgetName="$LOCALIZE[89031]" widget="RecentMovies" widgetType="movies" widgetTarget="list">recent_movies</shortcut>
+            <shortcut label="89032" type="342" icon="DefaultFolder.png" widgetName="$LOCALIZE[89032]" widget="RandomMovies" widgetType="movies" widgetTarget="list">random_movies</shortcut>
+            <shortcut label="89030" type="342" icon="DefaultFolder.png" widgetName="$LOCALIZE[89030]" widget="RecommendedMovies" widgetType="movies" widgetTarget="list">recommended_movies</shortcut>
+        </node>
+        <!-- TVShows -->
+        <node label="20343">
+            <shortcut label="89033" type="20343" icon="DefaultRecentlyAddedEpisodes.png" widgetName="$LOCALIZE[89033]" widget="RecentEpisodes" widgetType="episodes" widgetTarget="list">recent_episodes</shortcut>
+            <shortcut label="89035" type="20343" icon="DefaultFolder.png" widgetName="$LOCALIZE[89035]" widget="RandomEpisodes" widgetType="episodes" widgetTarget="list">random_episodes</shortcut>
+            <shortcut label="89034" type="20343" icon="DefaultFolder.png" widgetName="$LOCALIZE[89034]" widget="RecommendedEpisodes" widgetType="episodes" widgetTarget="list">recommended_episodes</shortcut>
+        </node>
+        <!-- MusicVideos -->
+        <node label="20389">
+            <shortcut label="89036" type="20389" icon="DefaultRecentlyAddedMusicVideos.png" widgetName="$LOCALIZE[89036]" widget="RecentMusicVideo" widgetType="albums" widgetTarget="list">recent_musicvideo</shortcut>
+            <shortcut label="89038" type="20389" icon="DefaultFolder.png" widgetName="$LOCALIZE[89038]" widget="RandomMusicVideo" widgetType="albums" widgetTarget="list">random_musicvideo</shortcut>
+            <shortcut label="89037" type="20389" icon="DefaultFolder.png" widgetName="$LOCALIZE[89037]" widget="RecommendedMusicVideo" widgetType="albums" widgetTarget="list">recommended_musicvideo</shortcut>
+        </node>
+        <!-- Music -->
+        <node label="2">
+            <shortcut label="89025" type="2" icon="DefaultMusicRecentlyAdded.png" widgetName="$LOCALIZE[89025]" widget="RecentAlbums" widgetType="albums" widgetTarget="list">recent_albums</shortcut>
+            <shortcut label="89027" type="2" icon="DefaultFolder.png" widgetName="$LOCALIZE[89027]" widget="RandomAlbums" widgetType="albums" widgetTarget="list">random_albums</shortcut>
+            <shortcut label="89026" type="2" icon="DefaultFolder.png" widgetName="$LOCALIZE[89026]" widget="RecommendedAlbums" widgetType="albums" widgetTarget="list">recommended_albums</shortcut>
+        </node>
+        <!-- Favourites -->
+        <node label="1036">
+            <shortcut label="1036" type="1036" icon="DefaultFolder.png" widgetName="$LOCALIZE[1036]" widget="Favourites" widgetType="favourites" widgetTarget="list">favourites</shortcut>
+        </node>
+    </widget-groupings>
 </overrides>

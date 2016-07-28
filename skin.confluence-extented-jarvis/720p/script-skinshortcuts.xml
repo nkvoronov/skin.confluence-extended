@@ -275,7 +275,8 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-                        <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>                       
+                        <onclick>SetProperty(current_widget,$INFO[Container(211).ListItem.Property(widget)],home)</onclick>
+                        <visible>StringCompare(Window.Property(groupname),mainmenu) + StringCompare(Container(211).ListItem.Property(widgetTarget),submenus)</visible>                       
                     </control>
                     <control type="image" id="600">
                         <description>separator image</description>

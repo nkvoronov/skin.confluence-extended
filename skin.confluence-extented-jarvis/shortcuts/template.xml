@@ -58,4 +58,23 @@
             </control>
         </controls>        
     </other>
+    <other include="custom-widgets">
+        <property name="id" tag="mainmenuid" />
+        <property name="id_label" tag="property" attribute="name|labelID"/>
+        <controls>
+            <include name="CommonWidgetInclude">
+                <param name="left_widget" value="140" />
+                <param name="visible_widget" value="true" />
+                <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-$SKINSHORTCUTS[id_label])" />
+                <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+                <param name="list_id" value="$PYTHON[8100+int($SKINSHORTCUTS[id])]" />
+                <param name="animation_name_include" value="AnimationWidgetCommon" />
+                <param name="item_layout_name_include" value="FavouritesWidgetItemsLayout" />
+                <param name="width_widget" value="1000" />
+                <param name="width_widget_item" value="200" />
+                <param name="left_widget_ra" value="1010" />                
+                <param name="contents_name_include" value="skinshortcuts-group-num-$SKINSHORTCUTS[id_label]-2" />
+            </include>
+        </controls>
+    </other>
 </template>
