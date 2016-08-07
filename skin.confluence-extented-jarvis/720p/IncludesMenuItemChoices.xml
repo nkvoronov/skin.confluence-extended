@@ -1753,6 +1753,23 @@
 				<visible>System.HasAddon(service.openelec.settings)</visible>
 			</item>
 			<item>
+				<description>service.libreelec.settings</description>
+				<label>$LOCALIZE[13000] - $LOCALIZE[89041]</label>
+				<include>ClearButtonChoice</include>
+				<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Path,RunAddon(service.libreelec.settings),return)</onclick>
+                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$LOCALIZE[31959])</onclick>
+				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$LOCALIZE[89041])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,None)</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,None)</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Widget,None)</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Type,settings)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/settings.jpg)</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label)</onclick>
+				<include>CloseMenuChoice</include>
+				<visible>StringCompare(Window.Property(MenuItemType),SystemMenu)</visible>
+				<visible>System.HasAddon(service.libreelec.settings)</visible>
+			</item>
+			<item>
 				<description>script.raspbmc.settings</description>
 				<label>$LOCALIZE[13000] - $LOCALIZE[89040]</label>
 				<include>ClearButtonChoice</include>

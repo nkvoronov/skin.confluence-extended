@@ -1018,6 +1018,10 @@ msgctxt "#89040"
 msgid "Raspberry"
 msgstr ""
 
+msgctxt "#89041"
+msgid "LibreELEC"
+msgstr ""
+
 msgctxt "#89302"
 msgid "Daily"
 msgstr ""

@@ -564,7 +564,7 @@
                         <texturefocus>MenuItemFO.png</texturefocus>
                         <texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>RunScript(script.image.resource.select,property=WeatherIcons&amp;type=resource.images.weathericons)</onclick>
-                        <visible>System.HasAddon(script.image.resource.select)</visible>
+                        <enable>System.HasAddon(script.image.resource.select)</enable>
                     </control>					
 					<control type="label" id="210">
 						<width>750</width>
@@ -1302,7 +1302,7 @@
                         <texturefocus>MenuItemFO.png</texturefocus>
                         <texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>RunScript(script.image.resource.select,property=WeatherFanart&amp;type=resource.images.weatherfanart)</onclick>
-                        <visible>System.HasAddon(script.image.resource.select)</visible>
+                        <enable>System.HasAddon(script.image.resource.select)</enable>
                     </control>
 					<control type="label" id="706">
 						<width>750</width>
@@ -1404,7 +1404,7 @@
 						<onright>801</onright>
 						<onup>804</onup>
 						<ondown>801</ondown>
-                        <visible>System.HasAddon(script.image.resource.select)</visible>
+                        <enable>System.HasAddon(script.image.resource.select)</enable>
                     </control>
 					<control type="button" id="801">
 						<description>Menu Item Next Button</description>

@@ -77,7 +77,7 @@
                 <width>220</width>
                 <height>80</height>
                 <aspectratio>keep</aspectratio>
-                <texture>$INFO[Container(5533).Property(DIST_MEDIA)]/Logo.png</texture>
+                <texture>os/openelec/Logo.png</texture>
             </control>
             <control type="image">
                 <left>268</left>
@@ -248,7 +248,7 @@
                         <top>10</top>
                         <width>200</width>
                         <height>200</height>
-                        <texture border="1">default/logo_big.png</texture>
+                        <texture border="1">os/openelec/logo_big.png</texture>
                     </control>	
                     <control type="label">
                         <left>20</left>
@@ -339,7 +339,7 @@
                         <top>100</top>
                         <width>535</width>
                         <height>2</height>
-                        <texture>default/blue_line.png</texture>
+                        <texture>os/openelec/blue_line.png</texture>
                     </control>
                     <control type="textbox">
                         <left>20</left>
@@ -443,7 +443,7 @@
                                 <width>22</width>
                                 <height>22</height>
                                 <aspectratio>keep</aspectratio>
-                                <texture border="5">icons/do.png</texture>
+                                <texture border="5">os/openelec/icons/do.png</texture>
                             </control>
                         </control>
                     </itemlayout>
@@ -546,7 +546,7 @@
                                 <width>22</width>
                                 <height>22</height>
                                 <aspectratio>keep</aspectratio>
-                                <texture border="5">icons/do.png</texture>
+                                <texture border="5">os/openelec/icons/do.png</texture>
                             </control>
                         </control>
                     </focusedlayout>
@@ -580,7 +580,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(netType), ethernet)</visible> 
-                            <texture>icons/eth.png</texture>
+                            <texture>os/openelec/icons/eth.png</texture>
                         </control>
                         <!-- Icon wifi -->
                         <control type="image">
@@ -590,7 +590,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(netType), wifi)</visible> 
-                            <texture>icons/wlan.png</texture>
+                            <texture>os/openelec/icons/wlan.png</texture>
                         </control>
                         <!-- Connection Name -->
                         <control type="label">
@@ -674,7 +674,7 @@
                             <height>36</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(State), online)</visible> 
-                            <texture>icons/connected.png</texture>
+                            <texture>os/openelec/icons/connected.png</texture>
                         </control>
                         <!-- Favorite Symbol (bottom right) -->
                         <control type="image">
@@ -684,7 +684,7 @@
                             <height>20</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Favorite), 1)</visible> 
-                            <texture>icons/Favorite.png</texture>
+                            <texture>os/openelec/icons/Favorite.png</texture>
                         </control>
                         <!-- Secure Symbol (bottom right) -->
                         <control type="image">
@@ -694,7 +694,7 @@
                             <height>20</height>
                             <aspectratio>keep</aspectratio>
                             <visible>IntegerGreaterThan(ListItem.Property(Security), 0)</visible> 
-                            <texture>icons/Key.png</texture>
+                            <texture>os/openelec/icons/Key.png</texture>
                         </control>
                     </itemlayout>
                     <focusedlayout height="100">
@@ -726,7 +726,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(netType), ethernet)</visible> 
-                            <texture>icons/eth.png</texture>
+                            <texture>os/openelec/icons/eth.png</texture>
                         </control>
                         <!-- Icon wifi -->
                         <control type="image">
@@ -736,7 +736,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(netType), wifi)</visible> 
-                            <texture>icons/wlan.png</texture>
+                            <texture>os/openelec/icons/wlan.png</texture>
                         </control>
                         <!-- Connection Name -->
                         <control type="label">
@@ -820,7 +820,7 @@
                             <height>36</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(State), online)</visible> 
-                            <texture>icons/connected.png</texture>
+                            <texture>os/openelec/icons/connected.png</texture>
                         </control>
                         <!-- Favorite Symbol (bottom right) -->
                         <control type="image">
@@ -830,7 +830,7 @@
                             <height>20</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Favorite), 1)</visible> 
-                            <texture>icons/Favorite.png</texture>
+                            <texture>os/openelec/icons/Favorite.png</texture>
                         </control>
                         <!-- Secure Symbol (bottom right) -->
                         <control type="image">
@@ -840,7 +840,7 @@
                             <height>20</height>
                             <aspectratio>keep</aspectratio>
                             <visible>IntegerGreaterThan(ListItem.Property(Security), 0)</visible> 
-                            <texture>icons/Key.png</texture>
+                            <texture>os/openelec/icons/Key.png</texture>
                         </control>
                     </focusedlayout>
                 </control>
@@ -883,7 +883,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), default)</visible> 
-                            <texture>icons/bt.png</texture>
+                            <texture>os/openelec/icons/bt.png</texture>
                         </control>
                         <!-- modem -->
                         <control type="image">
@@ -893,7 +893,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), modem)</visible> 
-                            <texture>icons/bt-modem.png</texture>
+                            <texture>os/openelec/icons/bt-modem.png</texture>
                         </control>
                         <!-- audio -->
                         <control type="image">
@@ -903,7 +903,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), audio-card)</visible> 
-                            <texture>icons/bt-audio-card.png</texture>
+                            <texture>os/openelec/icons/bt-audio-card.png</texture>
                         </control>
                         <!-- Camera Photo -->
                         <control type="image">
@@ -913,7 +913,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), camera-photo)</visible> 
-                            <texture>icons/bt-camera-photo.png</texture>
+                            <texture>os/openelec/icons/bt-camera-photo.png</texture>
                         </control>
                         <!-- Icon phone -->
                         <control type="image">
@@ -923,7 +923,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), phone)</visible> 
-                            <texture>icons/bt-phone.png</texture>
+                            <texture>os/openelec/icons/bt-phone.png</texture>
                         </control>
                         <!-- camera-video -->
                         <control type="image">
@@ -933,7 +933,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), camera-video)</visible> 
-                            <texture>icons/bt-camera-video.png</texture>
+                            <texture>os/openelec/icons/bt-camera-video.png</texture>
                         </control>
                         <!-- input-mouse -->
                         <control type="image">
@@ -943,7 +943,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), input-mouse)</visible> 
-                            <texture>icons/bt-input-mouse.png</texture>
+                            <texture>os/openelec/icons/bt-input-mouse.png</texture>
                         </control>
                         <!-- input-gaming -->
                         <control type="image">
@@ -953,7 +953,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), input-gaming)</visible> 
-                            <texture>icons/bt-input-gaming.png</texture>
+                            <texture>os/openelec/icons/bt-input-gaming.png</texture>
                         </control>
                         <!-- input-keyboard -->
                         <control type="image">
@@ -963,7 +963,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), input-keyboard)</visible> 
-                            <texture>icons/bt-input-keyboard.png</texture>
+                            <texture>os/openelec/icons/bt-input-keyboard.png</texture>
                         </control>	
                         <!-- input-tablet -->
                         <control type="image">
@@ -973,7 +973,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), input-tablet)</visible> 
-                            <texture>icons/bt-input-tablet.png</texture>
+                            <texture>os/openelec/icons/bt-input-tablet.png</texture>
                         </control>	
                         <!-- Printer -->
                         <control type="image">
@@ -983,7 +983,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), printer)</visible> 
-                            <texture>icons/bt-printer.png</texture>
+                            <texture>os/openelec/icons/bt-printer.png</texture>
                         </control>
                         <!-- Computer -->
                         <control type="image">
@@ -993,7 +993,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), computer)</visible> 
-                            <texture>icons/bt-computer.png</texture>
+                            <texture>os/openelec/icons/bt-computer.png</texture>
                         </control>
                         <!-- Connection Name -->
                         <control type="label">
@@ -1034,7 +1034,7 @@
                             <height>20</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Paired), 1)</visible> 
-                            <texture>icons/Favorite.png</texture>
+                            <texture>os/openelec/icons/Favorite.png</texture>
                         </control>
                         <!-- Trusted Symbol (bottom right) -->
                         <control type="image">
@@ -1044,7 +1044,7 @@
                             <height>20</height>
                             <aspectratio>keep</aspectratio>
                             <visible>IntegerGreaterThan(ListItem.Property(Trusted), 0)</visible> 
-                            <texture>icons/Key.png</texture>
+                            <texture>os/openelec/icons/Key.png</texture>
                         </control>
                     </itemlayout>
                     <focusedlayout height="70">
@@ -1076,7 +1076,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), default)</visible> 
-                            <texture>icons/bt.png</texture>
+                            <texture>os/openelec/icons/bt.png</texture>
                         </control>
                         <!-- modem -->
                         <control type="image">
@@ -1086,7 +1086,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), modem)</visible> 
-                            <texture>icons/bt-modem.png</texture>
+                            <texture>os/openelec/icons/bt-modem.png</texture>
                         </control>
                         <!-- audio -->
                         <control type="image">
@@ -1096,7 +1096,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), audio-card)</visible> 
-                            <texture>icons/bt-audio-card.png</texture>
+                            <texture>os/openelec/icons/bt-audio-card.png</texture>
                         </control>
                         <!-- Camera Photo -->
                         <control type="image">
@@ -1106,7 +1106,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), camera-photo)</visible> 
-                            <texture>icons/bt-camera-photo.png</texture>
+                            <texture>os/openelec/icons/bt-camera-photo.png</texture>
                         </control>
                         <!-- Icon phone -->
                         <control type="image">
@@ -1116,7 +1116,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), phone)</visible> 
-                            <texture>icons/bt-phone.png</texture>
+                            <texture>os/openelec/icons/bt-phone.png</texture>
                         </control>
                         <!-- camera-video -->
                         <control type="image">
@@ -1126,7 +1126,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), camera-video)</visible> 
-                            <texture>icons/bt-camera-video.png</texture>
+                            <texture>os/openelec/icons/bt-camera-video.png</texture>
                         </control>
                         <!-- input-mouse -->
                         <control type="image">
@@ -1136,7 +1136,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), input-mouse)</visible> 
-                            <texture>icons/bt-input-mouse.png</texture>
+                            <texture>os/openelec/icons/bt-input-mouse.png</texture>
                         </control>
                         <!-- input-gaming -->
                         <control type="image">
@@ -1146,7 +1146,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), input-gaming)</visible> 
-                            <texture>icons/bt-input-gaming.png</texture>
+                            <texture>os/openelec/icons/bt-input-gaming.png</texture>
                         </control>
                         <!-- input-keyboard -->
                         <control type="image">
@@ -1156,7 +1156,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), input-keyboard)</visible> 
-                            <texture>icons/bt-input-keyboard.png</texture>
+                            <texture>os/openelec/icons/bt-input-keyboard.png</texture>
                         </control>
                         <!-- input-tablet -->
                         <control type="image">
@@ -1166,7 +1166,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), input-tablet)</visible> 
-                            <texture>icons/bt-input-tablet.png</texture>
+                            <texture>os/openelec/icons/bt-input-tablet.png</texture>
                         </control>
                         <!-- Printer -->
                         <control type="image">
@@ -1176,7 +1176,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), printer)</visible> 
-                            <texture>icons/bt-printer.png</texture>
+                            <texture>os/openelec/icons/bt-printer.png</texture>
                         </control>
                         <!-- Computer -->
                         <control type="image">
@@ -1186,7 +1186,7 @@
                             <height>48</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Icon), computer)</visible> 
-                            <texture>icons/bt-computer.png</texture>
+                            <texture>os/openelec/icons/bt-computer.png</texture>
                         </control>
                         <!-- Connection Name -->
                         <control type="label">
@@ -1227,7 +1227,7 @@
                             <height>20</height>
                             <aspectratio>keep</aspectratio>
                             <visible>StringCompare(ListItem.Property(Paired), 1)</visible> 
-                            <texture>icons/Favorite.png</texture>
+                            <texture>os/openelec/icons/Favorite.png</texture>
                         </control>
                         <!-- Trusted Symbol (bottom right) -->
                         <control type="image">
@@ -1237,7 +1237,7 @@
                             <height>20</height>
                             <aspectratio>keep</aspectratio>
                             <visible>IntegerGreaterThan(ListItem.Property(Trusted), 0)</visible> 
-                            <texture>icons/Key.png</texture>
+                            <texture>os/openelec/icons/Key.png</texture>
                         </control>
                     </focusedlayout> 
                 </control>
