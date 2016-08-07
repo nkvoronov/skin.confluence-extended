@@ -43,7 +43,7 @@
                 <top>10</top>
                 <width>260</width>
                 <height>621</height>
-                <texture>default/wizard.png</texture>
+                <texture>os/openelec/wizard.png</texture>
             </control>
             <control type="image">
                 <left>5</left>
@@ -283,7 +283,7 @@
                                 <height>32</height>
                                 <aspectratio>keep</aspectratio>
                                 <visible>StringCompare(ListItem.Property(netType), ethernet)</visible> 
-                                <texture>icons/eth.png</texture>
+                                <texture>os/openelec/icons/eth.png</texture>
                             </control>
                             <!-- Icon wifi -->
                             <control type="image">
@@ -293,7 +293,7 @@
                                 <height>32</height>
                                 <aspectratio>keep</aspectratio>
                                 <visible>StringCompare(ListItem.Property(netType), wifi)</visible> 
-                                <texture>icons/wlan.png</texture>
+                                <texture>os/openelec/icons/wlan.png</texture>
                             </control>
                             <!-- Connection Name -->
                             <control type="label">
@@ -344,7 +344,7 @@
                                 <height>20</height>
                                 <aspectratio>keep</aspectratio>
                                 <visible>IntegerGreaterThan(ListItem.Property(Security), 0)</visible> 
-                                <texture>icons/Key.png</texture>
+                                <texture>os/openelec/icons/Key.png</texture>
                             </control>
                         </itemlayout>
                         <focusedlayout height="50">
@@ -376,7 +376,7 @@
                                 <height>32</height>
                                 <aspectratio>keep</aspectratio>
                                 <visible>StringCompare(ListItem.Property(netType), ethernet)</visible> 
-                                <texture>icons/eth.png</texture>
+                                <texture>os/openelec/icons/eth.png</texture>
                             </control>
                             <!-- Icon wifi -->
                             <control type="image">
@@ -386,7 +386,7 @@
                                 <height>32</height>
                                 <aspectratio>keep</aspectratio>
                                 <visible>StringCompare(ListItem.Property(netType), wifi)</visible> 
-                                <texture>icons/wlan.png</texture>
+                                <texture>os/openelec/icons/wlan.png</texture>
                             </control>
                             <!-- Connection Name -->
                             <control type="label">
@@ -437,7 +437,7 @@
                                 <height>20</height>
                                 <aspectratio>keep</aspectratio>
                                 <visible>IntegerGreaterThan(ListItem.Property(Security), 0)</visible> 
-                                <texture>icons/Key.png</texture>
+                                <texture>os/openelec/icons/Key.png</texture>
                             </control>
                         </focusedlayout>
                     </control>
