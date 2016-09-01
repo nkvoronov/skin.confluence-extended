@@ -7,8 +7,6 @@
     <include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
     <onload condition="!IsEmpty(Window(home).Property(MenuItemActive))">ClearProperty(MenuItemActive,home)</onload>
     <onload condition="!IsEmpty(Window(home).Property(MenuBackground))">ClearProperty(MenuBackground,home)</onload>
-    
-    <onload condition="!IsEmpty(Window(home).Property(MenuBackgroundHomeFanart))">ClearProperty(MenuBackgroundHomeFanart,home)</onload>    
     <onload condition="System.HasAddon(script.favourites)">RunScript(script.favourites)</onload>
     <onload condition="System.HasAddon(script.pvr.favourites)+[PVR.HasTVChannels | PVR.HasRadioChannels]">RunScript(script.pvr.favourites)</onload>
     <!-- ScriptPlaylist -->

@@ -39,6 +39,10 @@
     <widgetdefault labelID="tvshows">RecentEpisodes</widgetdefault>
     <widgetdefault labelID="musicvideos">RecentMusicVideo</widgetdefault>
     <widgetdefault labelID="music">RecentAlbums</widgetdefault>
+    <!-- -->
+    <groupoverride group="powermenu" disable_groups="" condition="Window.IsActive(DialogButtonMenu.xml)">Close</groupoverride>
+    <groupoverride group="*" disable_groups="powermenu" condition="">SetProperty(MenuItemActive,$INFO[Container(9000).ListItem.Property(defaultID)],home)</groupoverride>
+    <groupoverride group="*" disable_groups="powermenu" condition="">SetProperty(MenuBackground,$INFO[Container(9000).ListItem.Property(background)],home)</groupoverride>
     <!-- Menus Groupings -->
     <menus-groupings>
         <!-- Weather -->
@@ -100,7 +104,7 @@
                 <content>playlist-video</content>
             </node>
             <node label="32010">
-                <shortcut label="1037" type="32014" icon="DefaultAddonVideo.png">ActivateWindow(videos,addons://sources/video/,return)</shortcut>
+                <shortcut label="1037" type="3" icon="DefaultAddonVideo.png">ActivateWindow(videos,addons://sources/video/,return)</shortcut>
                 <content>addon-video</content>
             </node>
             <node label="32075">

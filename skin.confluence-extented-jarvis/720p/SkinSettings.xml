@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
+    <onload condition="IsEmpty(Window(home).Property(MenuItemActive))">SetProperty(MenuItemActive,settings,home)</onload>
+    <onload condition="IsEmpty(Window(home).Property(MenuBackground))">SetProperty(MenuBackground,special://skin/extras/backgrounds/settings.jpg,home)</onload>
     <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=mainmenu|powermenu&amp;levels=2)</onunload>
     <include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
 	<controls>
-        <include>CommonCustomBackgroundSettings</include>
+        <include>CommonCustomBackground</include>
 		<include>CommonBackground</include>
 		<control type="image">
 			<left>0</left>
@@ -136,15 +138,10 @@
 						<label>31102</label>
 						<onclick>noop</onclick>
 					</item>
-					<item id="5">
-						<label>$LOCALIZE[88132]</label>
-						<onclick>noop</onclick>
-						<visible>Skin.HasSetting(SeparateBackground)</visible>
-					</item>
-                    <item id="6">
+                    <!-- <item id="5">
 						<label>10035</label>
 						<onclick>noop</onclick>
-					</item>
+					</item> -->
 				</content>
 			</control>
 			<control type="image">
@@ -991,7 +988,20 @@
 						<selected>Skin.HasSetting(SeparateBackground)</selected>
 						<enable>!Skin.HasSetting(UseCustomBackground)</enable>
 					</control>
-					<control type="radiobutton" id="708">
+                    <control type="button" id="708">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+                        <label>$LOCALIZE[31131]</label>
+                        <label2>$VAR[HomeFanartName]</label2>
+                        <textcolor>grey2</textcolor>
+                        <focusedcolor>white</focusedcolor>
+                        <texturefocus>MenuItemFO.png</texturefocus>
+                        <texturenofocus>MenuItemNF.png</texturenofocus>
+                        <onclick>RunScript(script.image.resource.select,property=HomeFanart&amp;type=resource.images.skinbackgrounds)</onclick>
+                        <enable>System.HasAddon(script.image.resource.select)+Skin.HasSetting(SeparateBackground)</enable>
+                    </control>
+					<control type="radiobutton" id="709">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1004,7 +1014,7 @@
 						<selected>Skin.HasSetting(UseCustomBackground)</selected>
 						<enable>!Skin.HasSetting(SeparateBackground)</enable>
 					</control>
-					<control type="button" id="709">
+					<control type="button" id="710">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1034,447 +1044,9 @@
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(4)</visible>
 				</control>
-                <!-- Background Adv -->                
-				<control type="group">
-					<left>290</left>
-					<top>60</top>
-					<visible>Container(9000).Hasfocus(5)</visible>
-					<control type="label">
-						<left>0</left>
-						<top>0</top>
-						<width>680</width>
-						<height>45</height>
-						<font>font13_title</font>
-						<label>31109</label>
-						<textcolor>blue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-					</control>
-                    <control type="button" id="800">
-                        <left>0</left>
-						<top>45</top>
-                        <width>750</width>
-						<height>40</height>
-						<font>font13</font>
-                        <label>$LOCALIZE[31131]</label>
-                        <label2>$VAR[HomeFanartName]</label2>
-                        <textcolor>grey2</textcolor>
-                        <focusedcolor>white</focusedcolor>
-                        <texturefocus>MenuItemFO.png</texturefocus>
-                        <texturenofocus>MenuItemNF.png</texturenofocus>
-                        <onclick>RunScript(script.image.resource.select,property=HomeFanart&amp;type=resource.images.skinbackgrounds)</onclick>
-                        <onleft>9000</onleft>
-						<onright>801</onright>
-						<onup>804</onup>
-						<ondown>801</ondown>
-                        <enable>System.HasAddon(script.image.resource.select)</enable>
-                    </control>
-					<control type="button" id="801">
-						<description>Menu Item Next Button</description>
-						<left>670</left>
-						<top>93</top>
-						<width>33</width>
-						<height>22</height>
-						<label>-</label>
-						<font>-</font>
-						<texturenofocus>scroll-down-2.png</texturenofocus>
-						<texturefocus>scroll-down-focus-2.png</texturefocus>
-						<onclick>Control.Move(803,1)</onclick>
-						<onleft>9000</onleft>
-						<onright>802</onright>
-						<onup>800</onup>
-						<ondown>804</ondown>
-					</control>
-					<control type="button" id="802">
-						<description>Menu Item Prev Button</description>
-						<left>703</left>
-						<top>93</top>
-						<width>33</width>
-						<height>22</height>
-						<label>-</label>
-						<font>-</font>
-						<texturenofocus>scroll-up-2.png</texturenofocus>
-						<texturefocus>scroll-up-focus-2.png</texturefocus>
-						<onclick>Control.Move(803,-1)</onclick>
-						<onleft>801</onleft>
-						<onright>9000</onright>
-						<onup>800</onup>
-						<ondown>804</ondown>
-					</control>
-					<control type="list" id="803">
-						<hitrect x="0" y="0" w="0" h="0" />
-						<left>0</left>
-						<top>85</top>
-						<width>750</width>
-						<height>40</height>
-						<onleft>9000</onleft>
-						<onright>804</onright>
-						<onup>802</onup>
-						<ondown>800</ondown>
-						<pagecontrol>-</pagecontrol>
-						<scrolltime>0</scrolltime>
-						<itemlayout height="1" width="750">
-						</itemlayout>
-						<focusedlayout height="40" width="750">
-							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<width>750</width>
-								<height>40</height>
-								<texture>MenuItemNF.png</texture>
-								<visible>![Control.HasFocus(801) | Control.HasFocus(802)]</visible>
-							</control>
-							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<width>750</width>
-								<height>40</height>
-								<texture>MenuItemFO.png</texture>
-								<visible>[Control.HasFocus(801) | Control.HasFocus(802)]</visible>
-							</control>
-							<control type="label">
-								<left>10</left>
-								<top>0</top>
-								<width>600</width>
-								<height>40</height>
-								<font>font13</font>
-								<textcolor>grey2</textcolor>
-								<align>left</align>
-								<aligny>center</aligny>
-								<label>$LOCALIZE[31110]</label>
-								<visible>![Control.HasFocus(801) | Control.HasFocus(802)]</visible>
-							</control>
-							<control type="label">
-								<left>10</left>
-								<top>0</top>
-								<width>600</width>
-								<height>40</height>
-								<font>font13</font>
-								<textcolor>white</textcolor>
-								<align>left</align>
-								<aligny>center</aligny>
-								<label>$LOCALIZE[31110]</label>
-								<visible>[Control.HasFocus(801) | Control.HasFocus(802)]</visible>
-							</control>
-							<control type="label">
-								<left>20</left>
-								<top>0</top>
-								<width>640</width>
-								<height>40</height>
-								<font>font13</font>
-								<textcolor>grey2</textcolor>
-								<align>right</align>
-								<aligny>center</aligny>
-								<label>$INFO[ListItem.Label]</label>
-								<visible>![Control.HasFocus(801) | Control.HasFocus(802)]</visible>
-							</control>
-							<control type="label">
-								<left>20</left>
-								<top>0</top>
-								<width>640</width>
-								<height>40</height>
-								<font>font13</font>
-								<textcolor>white</textcolor>
-								<align>right</align>
-								<aligny>center</aligny>
-								<label>$INFO[ListItem.Label]</label>
-								<visible>[Control.HasFocus(801) | Control.HasFocus(802)]</visible>
-							</control>
-						</focusedlayout>
-						<content>
-							<item id="1">
-								<label>$INFO[Skin.String(HomeItem.1.Label)]</label>
-								<label2>HomeItem.1.CBackground</label2>
-								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.1.DBackground)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.1.CBackground)]</thumb>
-                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.1.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
-                                <visible>!IsEmpty(Skin.String(HomeItem.1.Path))</visible>
-							</item>
-							<item id="2">
-								<label>$INFO[Skin.String(HomeItem.2.Label)]</label>
-								<label2>HomeItem.2.CBackground</label2>
-								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.2.DBackground)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.2.CBackground)]</thumb>
-                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.2.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
-                                <visible>!IsEmpty(Skin.String(HomeItem.2.Path))</visible>
-							</item>                            
-							<item id="3">
-								<label>$INFO[Skin.String(HomeItem.3.Label)]</label>
-								<label2>HomeItem.3.CBackground</label2>
-								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.3.DBackground)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.3.CBackground)]</thumb>
-                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.3.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
-                                <visible>!IsEmpty(Skin.String(HomeItem.3.Path))</visible>
-							</item>
-							<item id="4">
-								<label>$INFO[Skin.String(HomeItem.4.Label)]</label>
-								<label2>HomeItem.4.CBackground</label2>
-								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.4.DBackground)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.4.CBackground)]</thumb>
-                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.4.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
-                                <visible>!IsEmpty(Skin.String(HomeItem.4.Path))</visible>
-							</item>
-							<item id="5">
-								<label>$INFO[Skin.String(HomeItem.5.Label)]</label>
-								<label2>HomeItem.5.CBackground</label2>
-								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.5.DBackground)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.5.CBackground)]</thumb>
-                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.5.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
-                                <visible>!IsEmpty(Skin.String(HomeItem.5.Path))</visible>
-							</item>
-							<item id="6">
-								<label>$INFO[Skin.String(HomeItem.6.Label)]</label>
-								<label2>HomeItem.6.CBackground</label2>
-								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.6.DBackground)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.6.CBackground)]</thumb>
-                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.6.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
-                                <visible>!IsEmpty(Skin.String(HomeItem.6.Path))</visible>
-							</item>                            
-							<item id="7">
-								<label>$INFO[Skin.String(HomeItem.7.Label)]</label>
-								<label2>HomeItem.7.CBackground</label2>
-								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.7.DBackground)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.7.CBackground)]</thumb>
-                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.7.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
-                                <visible>!IsEmpty(Skin.String(HomeItem.7.Path))</visible>
-							</item>
-							<item id="8">
-								<label>$INFO[Skin.String(HomeItem.8.Label)]</label>
-								<label2>HomeItem.8.CBackground</label2>
-								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.8.DBackground)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.8.CBackground)]</thumb>
-                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.8.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
-                                <visible>!IsEmpty(Skin.String(HomeItem.8.Path))</visible>
-							</item>
-							<item id="9">
-								<label>$INFO[Skin.String(HomeItem.9.Label)]</label>
-								<label2>HomeItem.9.CBackground</label2>
-								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.9.DBackground)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.9.CBackground)]</thumb>
-                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.9.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
-                                <visible>!IsEmpty(Skin.String(HomeItem.9.Path))</visible>
-							</item>
-							<item id="10">
-								<label>$INFO[Skin.String(HomeItem.10.Label)]</label>
-								<label2>HomeItem.10.CBackground</label2>
-								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.10.DBackground)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.10.CBackground)]</thumb>
-                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.10.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
-                                <visible>!IsEmpty(Skin.String(HomeItem.10.Path))</visible>
-							</item>                            
-							<item id="11">
-								<label>$INFO[Skin.String(HomeItem.11.Label)]</label>
-								<label2>HomeItem.11.CBackground</label2>
-								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.11.DBackground)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.11.CBackground)]</thumb>
-                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.11.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
-                                <visible>!IsEmpty(Skin.String(HomeItem.11.Path))</visible>
-							</item>
-							<item id="12">
-								<label>$INFO[Skin.String(HomeItem.12.Label)]</label>
-								<label2>HomeItem.12.CBackground</label2>
-								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.12.DBackground)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.12.CBackground)]</thumb>
-                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.12.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
-                                <visible>!IsEmpty(Skin.String(HomeItem.12.Path))</visible>
-							</item>
-							<item id="13">
-								<label>$INFO[Skin.String(HomeItem.13.Label)]</label>
-								<label2>HomeItem.13.CBackground</label2>
-								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.13.DBackground)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.13.CBackground)]</thumb>
-                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.13.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
-                                <visible>!IsEmpty(Skin.String(HomeItem.13.Path))</visible>
-							</item>
-							<item id="14">
-								<label>$INFO[Skin.String(HomeItem.14.Label)]</label>
-								<label2>HomeItem.14.CBackground</label2>
-								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.14.DBackground)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.14.CBackground)]</thumb>
-                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.14.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
-                                <visible>!IsEmpty(Skin.String(HomeItem.14.Path))</visible>
-							</item>                            
-							<item id="15">
-								<label>$INFO[Skin.String(HomeItem.15.Label)]</label>
-								<label2>HomeItem.15.CBackground</label2>
-								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.15.DBackground)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.15.CBackground)]</thumb>
-                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.15.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
-                                <visible>!IsEmpty(Skin.String(HomeItem.15.Path))</visible>
-							</item>
-							<item id="16">
-								<label>$INFO[Skin.String(HomeItem.16.Label)]</label>
-								<label2>HomeItem.16.CBackground</label2>
-								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.16.DBackground)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.16.CBackground)]</thumb>
-                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.16.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
-                                <visible>!IsEmpty(Skin.String(HomeItem.16.Path))</visible>
-							</item>
-							<item id="17">
-								<label>$INFO[Skin.String(HomeItem.17.Label)]</label>
-								<label2>HomeItem.17.CBackground</label2>
-								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.17.DBackground)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.17.CBackground)]</thumb>
-                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.17.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
-                                <visible>!IsEmpty(Skin.String(HomeItem.17.Path))</visible>
-							</item>
-							<item id="18">
-								<label>$INFO[Skin.String(HomeItem.18.Label)]</label>
-								<label2>HomeItem.18.CBackground</label2>
-								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.18.DBackground)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.18.CBackground)]</thumb>
-                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.18.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
-                                <visible>!IsEmpty(Skin.String(HomeItem.18.Path))</visible>
-							</item>                            
-							<item id="19">
-								<label>$INFO[Skin.String(HomeItem.19.Label)]</label>
-								<label2>HomeItem.19.CBackground</label2>
-								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.19.DBackground)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.19.CBackground)]</thumb>
-                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.19.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
-                                <visible>!IsEmpty(Skin.String(HomeItem.19.Path))</visible>
-							</item>
-							<item id="20">
-								<label>$INFO[Skin.String(HomeItem.20.Label)]</label>
-								<label2>HomeItem.20.CBackground</label2>
-								<onclick>-</onclick>
-								<icon>$INFO[Skin.String(HomeItem.20.DBackground)]</icon>
-								<thumb>$INFO[Skin.String(HomeItem.20.CBackground)]</thumb>
-                                <property name="BackgroundsSetImage">$INFO[Skin.String(HomeFanart.path)]$INFO[Skin.String(HomeItem.20.Type)]$INFO[Skin.String(HomeFanart.ext)]</property>
-                                <visible>!IsEmpty(Skin.String(HomeItem.20.Path))</visible>
-							</item>
-						</content>
-					</control>
-					<control type="image">
-						<left>65</left>
-						<top>140</top>
-						<width>610</width>
-						<height>395</height>
-						<texture>black-back.png</texture>
-					</control>
-					<control type="group">
-						<left>75</left>
-						<top>150</top>
-						<control type="button" id="804">
-							<description>Single Image button</description>
-							<left>5</left>
-							<top>0</top>
-							<width>190</width>
-							<height>40</height>
-							<label>1033</label>
-							<font>font12_title</font>
-							<textcolor>grey2</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<align>center</align>
-							<texturenofocus border="5">button-nofocus.png</texturenofocus>
-							<texturefocus border="5">button-focus.png</texturefocus>
-							<onclick>Skin.SetImage($INFO[Container(803).ListItem.Label2])</onclick>
-							<onleft>806</onleft>
-							<onright>805</onright>
-							<onup>801</onup>
-							<ondown>801</ondown>
-                            <enable>IsEmpty(Skin.String(HomeFanart.path)) | IsEmpty(Control.GetLabel(851))</enable>
-						</control>
-						<control type="button" id="805">
-							<description>Multi Image button</description>
-							<left>200</left>
-							<top>0</top>
-							<width>190</width>
-							<height>40</height>
-							<label>657</label>
-							<font>font12_title</font>
-							<textcolor>grey2</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<align>center</align>
-							<texturenofocus border="5">button-nofocus.png</texturenofocus>
-							<texturefocus border="5">button-focus.png</texturefocus>
-							<onclick>Skin.SetPath($INFO[Container(803).ListItem.Label2])</onclick>
-							<onleft>804</onleft>
-							<onright>806</onright>
-							<onup>801</onup>
-							<ondown>801</ondown>
-                            <enable>IsEmpty(Skin.String(HomeFanart.path)) | IsEmpty(Control.GetLabel(851))</enable>
-						</control>
-						<control type="button" id="806">
-							<description>Default Image button</description>
-							<left>395</left>
-							<top>0</top>
-							<width>190</width>
-							<height>40</height>
-							<label>571</label>
-							<font>font12_title</font>
-							<textcolor>grey2</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<align>center</align>
-							<texturenofocus border="5">button-nofocus.png</texturenofocus>
-							<texturefocus border="5">button-focus.png</texturefocus>
-							<onclick>Skin.Reset($INFO[Container(803).ListItem.Label2])</onclick>
-							<onleft>805</onleft>
-							<onright>804</onright>
-							<onup>801</onup>
-							<ondown>801</ondown>
-                            <enable>IsEmpty(Skin.String(HomeFanart.path)) | IsEmpty(Control.GetLabel(851))</enable>
-						</control>
-						<control type="multiimage" id="850">
-							<left>0</left>
-							<top>50</top>
-							<width>590</width>
-							<height>295</height>
-							<imagepath background="true">$INFO[Container(803).ListItem.Icon]</imagepath>
-							<timeperimage>6000</timeperimage>
-							<randomize>true</randomize>
-							<fadetime>500</fadetime>
-                            <visible>IsEmpty(Skin.String(HomeFanart.path)) | IsEmpty(Control.GetLabel(851))</visible>
-						</control>
-						<control type="multiimage" id="851">
-							<left>0</left>
-							<top>50</top>
-							<width>590</width>
-							<height>295</height>
-							<imagepath background="true">$INFO[Container(803).ListItem.Property(BackgroundsSetImage)]</imagepath>
-							<timeperimage>6000</timeperimage>
-							<randomize>true</randomize>
-							<fadetime>500</fadetime>
-                            <visible>!IsEmpty(Skin.String(HomeFanart.path))</visible>
-						</control>
-						<control type="label">
-							<left>0</left>
-							<top>350</top>
-							<width>580</width>
-							<height>20</height>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font11</font>
-							<haspath>yes</haspath>
-							<label fallback="571">$INFO[Container(803).ListItem.Thumb]</label>
-							<textcolor>white</textcolor>
-                            <visible>IsEmpty(Skin.String(HomeFanart.path)) | IsEmpty(Control.GetLabel(851))</visible>
-						</control>
-					</control>
-				</control>
                 <!-- Reset -->
-     			<control type="grouplist" id="9006">
-					<visible>Container(9000).Hasfocus(6)</visible>
+     			<control type="grouplist" id="9005">
+					<visible>Container(9000).Hasfocus(5)</visible>
 					<left>290</left>
 					<top>180</top>
 					<width>750</width>
@@ -1482,8 +1054,8 @@
 					<itemgap>-1</itemgap>
 					<onleft>9000</onleft>
 					<onright>902</onright>
-					<onup>9006</onup>
-					<ondown>9006</ondown>
+					<onup>9005</onup>
+					<ondown>9005</ondown>
 					<control type="image" id="901">
 						<width>750</width>
 						<height>140</height>

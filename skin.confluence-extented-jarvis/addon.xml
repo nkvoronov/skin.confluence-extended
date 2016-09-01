@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
-  id="skin.confluence-extented-jarvis"
-  version="2.9.0.061"
-  name="Confluence-extented-jarvis"
+  id="skin.confluence-extented-jarvis.skinshortcuts"
+  version="2.9.0.058"
+  name="Confluence-extented-jarvis-skinshortcuts"
   provider-name="Jezz_X, Team Kodi, YLLOW_DRAGON, plood">
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>
@@ -10,7 +10,7 @@
     <import addon="script.pvr.favourites" version="1.0.7"/>
     <import addon="service.skin.widgets" version="0.0.32"/>
     <import addon="script.randomandlastitems" version="2.2.2"/>
-    <import addon="script.skinshortcuts" version="1.0.8"/>
+    <import addon="script.skinshortcuts" version="1.0.10"/>
 	<import addon="script.skin.helper.service" version="1.0.90"/>
   </requires>
   <extension
