@@ -15,7 +15,7 @@
     <icon image="DefaultAudio.png" grouping="pvr-radio">DefaultTVShows.png</icon>
     <!-- Default Backgrounds -->
     <backgrounddefault labelID="weather">special://skin/extras/backgrounds/weather.jpg</backgrounddefault>
-    <backgrounddefault labelID="pictures">special://skin/extras/backgrounds/pictures.jpg</backgrounddefault>
+    <backgrounddefault labelID="pictures">special://skin/extras/backgrounds/pictures.jpg</backgrounddefault>        
     <backgrounddefault labelID="radio">special://skin/extras/backgrounds/radio.jpg</backgrounddefault>
     <backgrounddefault labelID="livetv">special://skin/extras/backgrounds/livetv.jpg</backgrounddefault>
     <backgrounddefault labelID="video">special://skin/extras/backgrounds/video.jpg</backgrounddefault>
@@ -25,8 +25,96 @@
     <backgrounddefault labelID="music">special://skin/extras/backgrounds/music.jpg</backgrounddefault>    
     <backgrounddefault labelID="addons">special://skin/extras/backgrounds/addons.jpg</backgrounddefault>    
     <backgrounddefault labelID="dvd">special://skin/extras/backgrounds/dvd.jpg</backgrounddefault>
-    <backgrounddefault labelID="136">special://skin/extras/backgrounds/playlist.jpg</backgrounddefault>
-    <backgrounddefault labelID="settings">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>    
+    <backgrounddefault labelID="settings">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
+    <!-- Default Weather -->
+    <backgrounddefault defaultID="8">special://skin/extras/backgrounds/weather.jpg</backgrounddefault>
+    <backgrounddefault defaultID="184">special://skin/extras/backgrounds/weather.jpg</backgrounddefault>
+    <backgrounddefault defaultID="35500">special://skin/extras/backgrounds/weather.jpg</backgrounddefault>
+    <!-- Default Pictures -->
+    <backgrounddefault defaultID="1">special://skin/extras/backgrounds/pictures.jpg</backgrounddefault>
+    <backgrounddefault defaultID="1039">special://skin/extras/backgrounds/pictures.jpg</backgrounddefault>
+    <!-- Default PVR -->
+    <backgrounddefault defaultID="137">special://skin/extras/backgrounds/search.jpg</backgrounddefault>
+    <backgrounddefault defaultID="32066">special://skin/extras/backgrounds/livetv.jpg</backgrounddefault>
+    <backgrounddefault defaultID="32068">special://skin/extras/backgrounds/livetv.jpg</backgrounddefault>
+    <backgrounddefault defaultID="19020">special://skin/extras/backgrounds/livetv.jpg</backgrounddefault>
+    <backgrounddefault defaultID="19019">special://skin/extras/backgrounds/livetv.jpg</backgrounddefault>
+    <backgrounddefault defaultID="19069">special://skin/extras/backgrounds/livetv.jpg</backgrounddefault>
+    <backgrounddefault defaultID="19017">special://skin/extras/backgrounds/livetv.jpg</backgrounddefault>
+    <backgrounddefault defaultID="19040">special://skin/extras/backgrounds/livetv.jpg</backgrounddefault>
+    <backgrounddefault defaultID="19021">special://skin/extras/backgrounds/radio.jpg</backgrounddefault>
+    <!-- Default Videos -->
+    <backgrounddefault defaultID="3">special://skin/extras/backgrounds/video.jpg</backgrounddefault>
+    <backgrounddefault defaultID="744">special://skin/extras/backgrounds/video.jpg</backgrounddefault>
+    <backgrounddefault defaultID="1037">special://skin/extras/backgrounds/video.jpg</backgrounddefault>
+    <backgrounddefault defaultID="589">special://skin/extras/backgrounds/video.jpg</backgrounddefault>
+    <backgrounddefault defaultID="653">special://skin/extras/backgrounds/video.jpg</backgrounddefault>
+    <backgrounddefault defaultID="32055">special://skin/extras/backgrounds/video.jpg</backgrounddefault>
+    <!-- Default Movies -->
+    <backgrounddefault defaultID="342">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
+    <backgrounddefault defaultID="20386">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
+    <backgrounddefault defaultID="135">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
+    <backgrounddefault defaultID="369">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
+    <backgrounddefault defaultID="562">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
+    <backgrounddefault defaultID="344">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
+    <backgrounddefault defaultID="20348">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
+    <backgrounddefault defaultID="20388">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
+    <backgrounddefault defaultID="20434">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
+    <backgrounddefault defaultID="20451">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
+    <backgrounddefault defaultID="20459">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
+    <backgrounddefault defaultID="20314">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
+    <!-- Default TVShows -->
+    <backgrounddefault defaultID="20343">special://skin/extras/backgrounds/tvshows.jpg</backgrounddefault>
+    <backgrounddefault defaultID="20387">special://skin/extras/backgrounds/tvshows.jpg</backgrounddefault>
+    <backgrounddefault defaultID="626">special://skin/extras/backgrounds/tvshows.jpg</backgrounddefault>
+    <!-- Default MusicVideos -->
+    <backgrounddefault defaultID="20389">special://skin/extras/backgrounds/musicvideos.jpg</backgrounddefault>
+    <backgrounddefault defaultID="20390">special://skin/extras/backgrounds/musicvideos.jpg</backgrounddefault>
+    <!-- Default Music -->
+    <backgrounddefault defaultID="2">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
+    <backgrounddefault defaultID="359">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
+    <backgrounddefault defaultID="517">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
+    <backgrounddefault defaultID="133">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
+    <backgrounddefault defaultID="132">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
+    <backgrounddefault defaultID="134">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
+    <backgrounddefault defaultID="271">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
+    <backgrounddefault defaultID="10504">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
+    <backgrounddefault defaultID="10505">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
+    <backgrounddefault defaultID="521">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
+    <backgrounddefault defaultID="1050">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
+    <backgrounddefault defaultID="10516">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
+    <backgrounddefault defaultID="1038">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
+    <!-- Default DVD -->
+    <backgrounddefault defaultID="341">special://skin/extras/backgrounds/dvd.jpg</backgrounddefault>
+    <backgrounddefault defaultID="13391">special://skin/extras/backgrounds/dvd.jpg</backgrounddefault>
+    <!-- Default Addons -->
+    <backgrounddefault defaultID="10040">special://skin/extras/backgrounds/addons.jpg</backgrounddefault>
+    <backgrounddefault defaultID="10001">special://skin/extras/backgrounds/addons.jpg</backgrounddefault>
+    <backgrounddefault defaultID="20244">special://skin/extras/backgrounds/addons.jpg</backgrounddefault>
+    <!-- Default Settings -->
+    <backgrounddefault defaultID="10004">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
+    <backgrounddefault defaultID="7">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
+    <backgrounddefault defaultID="130">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
+    <backgrounddefault defaultID="14111">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
+    <backgrounddefault defaultID="166">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
+    <backgrounddefault defaultID="13000">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
+    <backgrounddefault defaultID="14036">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
+    <backgrounddefault defaultID="480">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
+    <!-- Default Profiles -->
+    <backgrounddefault defaultID="13200">special://skin/extras/backgrounds/profile.jpg</backgrounddefault>
+    <backgrounddefault defaultID="10029">special://skin/extras/backgrounds/profile.jpg</backgrounddefault>
+    <backgrounddefault defaultID="20126">special://skin/extras/backgrounds/profile.jpg</backgrounddefault>
+    <!-- Default Power -->
+    <backgrounddefault defaultID="13005">special://skin/extras/backgrounds/power.jpg</backgrounddefault>
+    <backgrounddefault defaultID="13012">special://skin/extras/backgrounds/power.jpg</backgrounddefault>
+    <backgrounddefault defaultID="13016">special://skin/extras/backgrounds/power.jpg</backgrounddefault>
+    <backgrounddefault defaultID="13011">special://skin/extras/backgrounds/power.jpg</backgrounddefault>
+    <backgrounddefault defaultID="13010">special://skin/extras/backgrounds/power.jpg</backgrounddefault>
+    <backgrounddefault defaultID="13013">special://skin/extras/backgrounds/power.jpg</backgrounddefault>
+    <!-- Default Favourites -->
+    <backgrounddefault defaultID="1036">special://skin/extras/backgrounds/favourites.jpg</backgrounddefault>
+    <!-- Default Playlists -->
+    <backgrounddefault defaultID="136">special://skin/extras/backgrounds/playlist.jpg</backgrounddefault>
     <!-- Additionnal Widgets -->
     <widget label="$LOCALIZE[89302] $LOCALIZE[8]" icon="DefaultFolder.png" type="weather" path="weather_daily" target="list">WeatherDaily</widget>
     <widget label="$LOCALIZE[89031]" icon="DefaultRecentlyAddedMovies.png" type="movies" path="recent_movies" target="list">RecentMovies</widget>
@@ -42,7 +130,7 @@
     <!-- -->
     <groupoverride group="powermenu" disable_groups="" condition="Window.IsActive(DialogButtonMenu.xml)">Close</groupoverride>
     <groupoverride group="*" disable_groups="powermenu" condition="">SetProperty(MenuItemActive,$INFO[Container(9000).ListItem.Property(defaultID)],home)</groupoverride>
-    <groupoverride group="*" disable_groups="powermenu" condition="">SetProperty(MenuBackground,$INFO[Container(9000).ListItem.Property(background)],home)</groupoverride>
+    <groupoverride group="*" disable_groups="powermenu" condition="">SetProperty(MenuBackground,$VAR[HomeBackground],home)</groupoverride>
     <!-- Menus Groupings -->
     <menus-groupings>
         <!-- Weather -->
@@ -181,7 +269,7 @@
                 <content>playlist-audio</content>
             </node>
             <node label="32011">
-                <shortcut label="1038" type="2" icon="DefaultAddonMusic.png">ActivateWindow(music,addons://sources/audio/,return)</shortcut>
+                <shortcut label="1038" type="2" grouping="music" icon="DefaultAddonMusic.png">ActivateWindow(music,addons://sources/audio/,return)</shortcut>
                 <content>addon-audio</content>
             </node>
             <node label="32075">
@@ -283,6 +371,7 @@
     <radio-groupings>
         <content>pvr-radio</content>
     </radio-groupings>
+    <widgetRename>False</widgetRename>
     <widget-groupings>
         <!-- Weather -->
         <node label="8">
@@ -290,10 +379,6 @@
             <shortcut label="89303" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[89303] $LOCALIZE[8]" widget="WeatherHourly" widgetType="weather" widgetTarget="list">weather_hourly</shortcut>
             <shortcut label="33034" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[8] $LOCALIZE[33034]" widget="WeatherH36" widgetType="weatherbig" widgetTarget="list" condition="Skin.HasSetting(LowerMenu)">weather_h36</shortcut>
         </node>
-        <!-- Pictures -->
-        <!-- <node label="1">
-            <content>picturesources</content>
-        </node> -->
         <!-- LiveTV -->
         <node label="19020" condition="PVR.HasTVChannels">
             <shortcut label="88133" type="19020" icon="DefaultTVShows.png" widgetName="$LOCALIZE[88133]" widget="TVFavouritesChannels" widgetType="pvr" widgetTarget="submenus">tv_favourites_channels</shortcut>
@@ -302,12 +387,6 @@
         <node label="19021" condition="PVR.HasRadioChannels">
             <shortcut label="88134" type="19021" icon="DefaultTVShows.png" widgetName="$LOCALIZE[88134]" widget="RadioFavouritesChannels" widgetType="pvr" widgetTarget="submenus">radio_favourites_channels</shortcut>
         </node>
-        <!-- Video -->
-        <!-- <node label="3">
-        <value condition="StringCompare(Skin.String(HomeItem.1.Widget),VideoNode)">$LOCALIZE[157] $LOCALIZE[89029]</value>
-		<value condition="StringCompare(Skin.String(HomeItem.1.Widget),VideoPlayList)">$LOCALIZE[157] $LOCALIZE[136]</value>
-		<value condition="StringCompare(Skin.String(HomeItem.1.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
-        </node> -->
         <!-- Movies -->
         <node label="342">
             <shortcut label="88131" type="342" icon="DefaultFolder.png" widgetName="$LOCALIZE[88131]" widget="UnWatchedMovies" widgetType="movies" widgetTarget="list">unwatched_movies</shortcut>
@@ -336,6 +415,12 @@
         <!-- Favourites -->
         <node label="1036">
             <shortcut label="1036" type="1036" icon="DefaultFolder.png" widgetName="$LOCALIZE[1036]" widget="Favourites" widgetType="favourites" widgetTarget="list">favourites</shortcut>
+        </node>
+        <!-- Playlists -->
+        <node label="136">
+            <!-- <value condition="StringCompare(Skin.String(HomeItem.1.Widget),VideoNode)">$LOCALIZE[157] $LOCALIZE[89029]</value>
+            <value condition="StringCompare(Skin.String(HomeItem.1.Widget),VideoPlayList)">$LOCALIZE[157] $LOCALIZE[136]</value>
+            <value condition="StringCompare(Skin.String(HomeItem.1.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value> -->
         </node>
     </widget-groupings>
 </overrides>

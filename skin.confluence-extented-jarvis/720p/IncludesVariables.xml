@@ -122,50 +122,77 @@
 		<value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(defaultID),musicplaylist) + Container(9000).Hasfocus(19)">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[132]: [/COLOR][/B]$INFO[Window(home).Property(HomePlayList19.Albums)]   [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[133]: [/COLOR][/B]$INFO[Window(home).Property(HomePlayList19.Artists)]    [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[134]: [/COLOR][/B]$INFO[Window(home).Property(HomePlayList19.Songs)]</value>
 		<value condition="Skin.HasSetting(ActivateScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(defaultID),musicplaylist) + Container(9000).Hasfocus(20)">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[132]: [/COLOR][/B]$INFO[Window(home).Property(HomePlayList20.Albums)]   [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[133]: [/COLOR][/B]$INFO[Window(home).Property(HomePlayList20.Artists)]    [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[134]: [/COLOR][/B]$INFO[Window(home).Property(HomePlayList20.Songs)]</value>        
         <!-- Videos -->
-		<value condition="StringCompare(Container(9000).ListItem.Property(defaultID),video)">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[20342]: [/COLOR][/B]$INFO[Window.Property(Movies.Count)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[20343]: [/COLOR][/B]$INFO[Window.Property(TVShows.Count)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[20389]: [/COLOR][/B]$INFO[Window.Property(MusicVideos.Count)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(defaultID),video) | StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[3])">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[20342]: [/COLOR][/B]$INFO[Window.Property(Movies.Count)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[20343]: [/COLOR][/B]$INFO[Window.Property(TVShows.Count)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[20389]: [/COLOR][/B]$INFO[Window.Property(MusicVideos.Count)]</value>
         <!-- Movies -->
-		<value condition="StringCompare(Container(9000).ListItem.Property(defaultID),movies)">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[20342]: [/COLOR][/B]$INFO[Window.Property(Movies.Count)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[16102]: [/COLOR][/B]$INFO[Window.Property(Movies.Watched)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[16101]: [/COLOR][/B]$INFO[Window.Property(Movies.UnWatched)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(defaultID),movies) | StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[342])">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[20342]: [/COLOR][/B]$INFO[Window.Property(Movies.Count)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[16102]: [/COLOR][/B]$INFO[Window.Property(Movies.Watched)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[16101]: [/COLOR][/B]$INFO[Window.Property(Movies.UnWatched)]</value>
         <!-- TVShows -->
-		<value condition="StringCompare(Container(9000).ListItem.Property(defaultID),tvshows)">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[20343]: [/COLOR][/B]$INFO[Window.Property(TVShows.Count)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[20360]: [/COLOR][/B]$INFO[Window.Property(Episodes.Count)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[16101]: [/COLOR][/B]$INFO[Window.Property(Episodes.UnWatched)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(defaultID),tvshows) | StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[20343])">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[20343]: [/COLOR][/B]$INFO[Window.Property(TVShows.Count)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[20360]: [/COLOR][/B]$INFO[Window.Property(Episodes.Count)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[16101]: [/COLOR][/B]$INFO[Window.Property(Episodes.UnWatched)]</value>
         <!-- MusicVideos -->
-		<value condition="StringCompare(Container(9000).ListItem.Property(defaultID),musicvideos)">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[20389]: [/COLOR][/B]$INFO[Window.Property(MusicVideos.Count)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[16102]: [/COLOR][/B]$INFO[Window.Property(MusicVideos.Watched)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[16101]: [/COLOR][/B]$INFO[Window.Property(MusicVideos.UnWatched)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(defaultID),musicvideos) | StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[20389])">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[20389]: [/COLOR][/B]$INFO[Window.Property(MusicVideos.Count)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[16102]: [/COLOR][/B]$INFO[Window.Property(MusicVideos.Watched)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[16101]: [/COLOR][/B]$INFO[Window.Property(MusicVideos.UnWatched)]</value>
         <!-- Music -->
-		<value condition="StringCompare(Container(9000).ListItem.Property(defaultID),music)">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[132]: [/COLOR][/B]$INFO[Window.Property(Music.AlbumsCount)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[133]: [/COLOR][/B]$INFO[Window.Property(Music.ArtistsCount)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[134]: [/COLOR][/B]$INFO[Window.Property(Music.SongsCount)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(defaultID),music) | StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[2])">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[132]: [/COLOR][/B]$INFO[Window.Property(Music.AlbumsCount)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[133]: [/COLOR][/B]$INFO[Window.Property(Music.ArtistsCount)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[134]: [/COLOR][/B]$INFO[Window.Property(Music.SongsCount)]</value>
         <!-- PlayDisc -->
-		<value condition="StringCompare(Container(9000).ListItem.Property(defaultID),dvd) + System.HasMediaDVD">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[427]: [/COLOR][/B]$INFO[System.DVDLabel]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(defaultID),dvd) + !System.HasMediaDVD">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[427]: [/COLOR][/B]$LOCALIZE[164]</value>
+		<value condition="[StringCompare(Container(9000).ListItem.Property(defaultID),dvd) | StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[341])] + System.HasMediaDVD">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[427]: [/COLOR][/B]$INFO[System.DVDLabel]</value>
+		<value condition="[StringCompare(Container(9000).ListItem.Property(defaultID),dvd) | StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[341])] + !System.HasMediaDVD">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[427]: [/COLOR][/B]$LOCALIZE[164]</value>
         <!-- Weather -->
-		<value condition="StringCompare(Container(9000).ListItem.Property(defaultID),weather)">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[143][/COLOR][/B] $INFO[Window(weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[33030]: [/COLOR][/B]$INFO[Window(weather).Property(Current.Condition)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(defaultID),weather) | StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[8])">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[143][/COLOR][/B] $INFO[Window(weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[33030]: [/COLOR][/B]$INFO[Window(weather).Property(Current.Condition)]</value>
         <!-- PVR -->
-        <value condition="StringCompare(Container(9000).ListItem.Property(defaultID),livetv) | StringCompare(Container(9000).ListItem.Property(defaultID),radio)">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[19019]: [/COLOR][/B] $INFO[Pvr.BackendChannels]</value>
+        <value condition="StringCompare(Container(9000).ListItem.Property(defaultID),livetv) | StringCompare(Container(9000).ListItem.Property(defaultID),radio) | StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[19020]) | StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[19021])">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[19019]: [/COLOR][/B] $INFO[Pvr.BackendChannels]</value>
         <!-- Other -->
 		<value condition="!SubString(System.CPUTemperature,?) + !SubString(System.GPUTemperature,?)">[B][COLOR=$INFO[Skin.String(menuColor)]]IP: [/COLOR][/B]$INFO[Network.IPAddress]  [B][COLOR=$INFO[Skin.String(menuColor)]]CPU: [/COLOR][/B]$INFO[System.CPUTemperature]  [B][COLOR=$INFO[Skin.String(menuColor)]]GPU: [/COLOR][/B]$INFO[System.GPUTemperature]</value>
 		<value condition="!SubString(System.CPUTemperature,?)">[B][COLOR=$INFO[Skin.String(menuColor)]]IP: [/COLOR][/B]$INFO[Network.IPAddress]  [B][COLOR=$INFO[Skin.String(menuColor)]]CPU: [/COLOR][/B]$INFO[System.CPUTemperature]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[155]: [/COLOR][/B]$INFO[System.UsedSpacePercent]</value>
 		<value>[COLOR=$INFO[Skin.String(menuColor)]][B]IP: [/B][/COLOR]$INFO[Network.IPAddress]  [COLOR=$INFO[Skin.String(menuColor)]][B]RAM: [/B][/COLOR]$INFO[system.memory(used.percent)]  [COLOR=$INFO[Skin.String(menuColor)]][B]$LOCALIZE[155]: [/B][/COLOR]$INFO[System.UsedSpacePercent]</value>
 	</variable>
-    <!-- -->
-    <variable name="VideoNodeContent">
-		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(1)">$INFO[Skin.String(HomeItem.1.Playlist)]</value>
-		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(2)">$INFO[Skin.String(HomeItem.2.Playlist)]</value>
-		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(3)">$INFO[Skin.String(HomeItem.3.Playlist)]</value>
-		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(4)">$INFO[Skin.String(HomeItem.4.Playlist)]</value>
-		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(5)">$INFO[Skin.String(HomeItem.5.Playlist)]</value>
-		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(6)">$INFO[Skin.String(HomeItem.6.Playlist)]</value>
-		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(7)">$INFO[Skin.String(HomeItem.7.Playlist)]</value>
-		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(8)">$INFO[Skin.String(HomeItem.8.Playlist)]</value>
-		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(9)">$INFO[Skin.String(HomeItem.9.Playlist)]</value>
-		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(10)">$INFO[Skin.String(HomeItem.10.Playlist)]</value>
-		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(11)">$INFO[Skin.String(HomeItem.11.Playlist)]</value>
-		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(12)">$INFO[Skin.String(HomeItem.12.Playlist)]</value>
-		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(13)">$INFO[Skin.String(HomeItem.13.Playlist)]</value>
-		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(14)">$INFO[Skin.String(HomeItem.14.Playlist)]</value>
-		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(15)">$INFO[Skin.String(HomeItem.15.Playlist)]</value>
-		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(16)">$INFO[Skin.String(HomeItem.16.Playlist)]</value>
-		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(17)">$INFO[Skin.String(HomeItem.17.Playlist)]</value>
-		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(18)">$INFO[Skin.String(HomeItem.18.Playlist)]</value>
-		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(19)">$INFO[Skin.String(HomeItem.19.Playlist)]</value>
-		<value condition="!Window.IsVisible(1195) + Container(9000).HasFocus(20)">$INFO[Skin.String(HomeItem.20.Playlist)]</value>
-	</variable>    
+    <!-- HomeBackground -->
+    <variable name="HomeBackground">
+        <value condition="!IsEmpty(Container(9000).ListItem.Property(background))">$INFO[Container(9000).ListItem.Property(background)]</value>
+        <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
+    </variable>
+    <!-- HomeFanartBackgroundType1 -->
+    <variable name="HomeFanartBackgroundType1">
+        <value condition="StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[8])">weather</value>
+        <value condition="StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[1])">pictures</value>
+        <value condition="StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[19020])">livetv</value>
+        <value condition="StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[19021])">radio</value>
+        <value condition="StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[3])">video</value>
+        <value condition="StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[342])">movies</value>
+        <value condition="StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[20343])">tvshows</value>
+        <value condition="StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[20389])">musicvideos</value>
+        <value condition="StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[2])">music</value>
+        <value condition="StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[10001])">addons</value>
+        <value condition="StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[341])">dvd</value>
+        <value condition="StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[10004])">settings</value>
+        <value condition="StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[13005])">power</value>
+        <value condition="StringCompare(Container(9000).ListItem.Property(defaultID),$LOCALIZE[1036])">favourites</value>        
+        <value>$INFO[Container(9000).ListItem.Property(defaultID)]</value>
+    </variable>
+    <!-- HomeFanartBackgroundType2 -->
+    <variable name="HomeFanartBackgroundType2">
+        <value condition="StringCompare(Window(home).Property(MenuItemActive),$LOCALIZE[8])">weather</value>
+        <value condition="StringCompare(Window(home).Property(MenuItemActive),$LOCALIZE[1])">pictures</value>
+        <value condition="StringCompare(Window(home).Property(MenuItemActive),$LOCALIZE[19020])">livetv</value>
+        <value condition="StringCompare(Window(home).Property(MenuItemActive),$LOCALIZE[19021])">radio</value>
+        <value condition="StringCompare(Window(home).Property(MenuItemActive),$LOCALIZE[3])">video</value>
+        <value condition="StringCompare(Window(home).Property(MenuItemActive),$LOCALIZE[342])">movies</value>
+        <value condition="StringCompare(Window(home).Property(MenuItemActive),$LOCALIZE[20343])">tvshows</value>
+        <value condition="StringCompare(Window(home).Property(MenuItemActive),$LOCALIZE[20389])">musicvideos</value>
+        <value condition="StringCompare(Window(home).Property(MenuItemActive),$LOCALIZE[2])">music</value>
+        <value condition="StringCompare(Window(home).Property(MenuItemActive),$LOCALIZE[10001])">addons</value>
+        <value condition="StringCompare(Window(home).Property(MenuItemActive),$LOCALIZE[341])">dvd</value>
+        <value condition="StringCompare(Window(home).Property(MenuItemActive),$LOCALIZE[10004])">settings</value>
+        <value condition="StringCompare(Window(home).Property(MenuItemActive),$LOCALIZE[13005])">power</value>
+        <value condition="StringCompare(Window(home).Property(MenuItemActive),$LOCALIZE[1036])">favourites</value>        
+        <value>$INFO[Window(home).Property(MenuItemActive)]</value>
+    </variable>
+    <!-- HomeFanartBackgroundType -->
+    <variable name="HomeFanartBackgroundType">
+        <value condition="Window.IsVisible(home)">$VAR[HomeFanartBackgroundType1]</value>
+        <value>$VAR[HomeFanartBackgroundType2]</value>
+    </variable>
+    <!-- HomeFanartBackground -->
+    <variable name="HomeFanartBackground">
+        <value>$INFO[Skin.String(HomeFanart.path)]$VAR[HomeFanartBackgroundType]$INFO[Skin.String(HomeFanart.ext)]</value>
+    </variable>
     <!-- -->
     <variable name="HomeFanartName">
         <value condition="!IsEmpty(Skin.String(HomeFanart.name))">$INFO[Skin.String(HomeFanart.name)]</value>

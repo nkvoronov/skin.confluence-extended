@@ -527,52 +527,8 @@
             <control type="group">
                 <visible>StringCompare(Container(9000).ListItem.Property(widgetTarget),submenus)</visible>
                 <include>skinshortcuts-template-custom-widgets</include>
-                <!-- Favorites TV Channels 8022 -->
-                <!-- <include name="CommonWidgetInclude">
-                    <param name="left_widget" value="240" />
-                    <param name="visible_widget" value="PVR.HasTVChannels" />
-                    <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widget),TVFavouritesChannels)" />
-                    <param name="label_title" value="$LOCALIZE[88133]" />
-                    <param name="list_id" value="8022" />
-                    <param name="animation_name_include" value="AnimationWidgetCommon4" />
-                    <param name="item_layout_name_include" value="PVRWidgetItemsLayout" />
-                    <param name="width_widget" value="800" />
-                    <param name="width_widget_item" value="200" />
-                    <param name="left_widget_ra" value="810" />                
-                    <param name="contents_name_include" value="FavoritesPVRChannelsContents" />
-                    <param name="contents_type" value="tv" />
-                </include> -->            
-                <!-- Favorites Radio Channels 8023 -->
-                <!-- <include name="CommonWidgetInclude">
-                    <param name="left_widget" value="240" />
-                    <param name="visible_widget" value="PVR.HasRadioChannels" />
-                    <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widget),RadioFavouritesChannels)" />
-                    <param name="label_title" value="$LOCALIZE[88134]" />
-                    <param name="list_id" value="8023" />
-                    <param name="animation_name_include" value="AnimationWidgetCommon4" />
-                    <param name="item_layout_name_include" value="PVRWidgetItemsLayout" />
-                    <param name="width_widget" value="800" />
-                    <param name="width_widget_item" value="200" />
-                    <param name="left_widget_ra" value="810" />                
-                    <param name="contents_name_include" value="FavoritesPVRChannelsContents" />
-                    <param name="contents_type" value="radio" />
-                </include> -->
             </control>
-            
-            <!-- VideoNode 8030 -->
-            <!-- <include name="CommonWidgetInclude">
-                <param name="left_widget" value="190" />
-                <param name="visible_widget" value="Library.HasContent(Movies)" />
-                <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widget),VideoNode)" />
-                <param name="label_title" value="" />
-                <param name="list_id" value="8030" />
-                <param name="animation_name_include" value="AnimationWidgetCommon2" />
-                <param name="item_layout_name_include" value="MoviesWidgetItemsLayout" />
-                <param name="width_widget" value="900" />
-                <param name="width_widget_item" value="180" />
-                <param name="left_widget_ra" value="910" />
-                <param name="contents_name_include" value="VideoNodeContents" />
-            </include> -->            
+                 
             <!-- Movies Playlist 8018 -->
             <!-- <include name="CommonWidgetPlayListInclude">
                 <param name="left_widget" value="190" />
@@ -3681,10 +3637,6 @@
         <ondown condition="!Skin.HasSetting(LowerMenu) + System.HasAddon(script.globalsearch) + Skin.HasSetting(ActivateGlobalSearch)">608</ondown>
         <ondown condition="!Skin.HasSetting(LowerMenu) + [!System.HasAddon(script.globalsearch) | !Skin.HasSetting(ActivateGlobalSearch)]">603</ondown>
 		<ondown condition="Skin.HasSetting(LowerMenu)">9002</ondown>
-    </include>
-
-    <include name="VideoNodeContents">
-        <content target="video" limit="10">$VAR[VideoNodeContent]</content>
     </include>
     <include name="CommonWidgetPlayListInclude">
         <param name="height_widget_item" default="220" />

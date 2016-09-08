@@ -26,7 +26,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath background="true">$INFO[Container(9000).ListItem.Property(background)]</imagepath>
+			<imagepath background="true">$VAR[HomeBackground]</imagepath>
 			<timeperimage>10000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
@@ -38,7 +38,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<imagepath background="true">$INFO[Skin.String(HomeFanart.path)]$INFO[Container(9000).ListItem.Property(defaultID)]$INFO[Skin.String(HomeFanart.ext)]</imagepath>
+			<imagepath background="true">$VAR[HomeFanartBackground]</imagepath>
 			<timeperimage>10000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
@@ -374,7 +374,7 @@
                 <posy>0</posy>
                 <width>1280</width>
                 <height>720</height>
-                <imagepath background="true">$INFO[Skin.String(HomeFanart.path)]$INFO[Window(home).Property(MenuItemActive)]$INFO[Skin.String(HomeFanart.ext)]</imagepath>
+                <imagepath background="true">$VAR[HomeFanartBackground]</imagepath>
                 <timeperimage>10000</timeperimage>
                 <randomize>true</randomize>
                 <fadetime>1000</fadetime>
@@ -422,7 +422,7 @@
                     <top>5</top>
                     <width>680</width>
                     <height>390</height>
-                    <texture>$INFO[Skin.String(HomeFanart.path)]$INFO[Window(home).Property(MenuItemActive)]$INFO[Skin.String(HomeFanart.ext)]</texture>
+                    <texture>$VAR[HomeFanartBackground]</texture>
                     <include>VisibleFadeEffect</include>
                     <visible>!IsEmpty(Skin.String(HomeFanart.path))</visible>
                 </control>
