@@ -103,7 +103,6 @@
         <onload>Skin.SetBool(SingleGlobalBackground)</onload>
         <onload>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(Favourites))</onload>
         <onload>Skin.SetString(UsrPwrBtnCmd.Path,ActivateWindow(ShutdownMenu))</onload>
-		<onload condition="!System.HasAddon(script.randomandlastitems)">Skin.Setbool(ActivateScriptPlaylist)</onload>
 		<onload>Skin.SetBool(InitialSetUpRun)</onload>
 	</include>
 </includes>

@@ -523,68 +523,71 @@
                     <param name="left_widget_ra" value="810" />
                     <param name="contents_name_include" value="RecommendedAlbumsContents" />
                 </include>
+                <!-- Movies Playlist 8018 -->
+                <include name="CommonWidgetPlayListInclude">
+                    <param name="left_widget" value="190" />
+                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist)" />
+                    <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widgetType),movies)" />
+                    <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+                    <param name="list_id" value="8018" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon2" />
+                    <param name="item_layout_name_include" value="PlayListMoviesWidgetItemsLayout" />
+                    <param name="width_widget" value="900" />
+                    <param name="width_widget_item" value="180" />
+                    <param name="left_widget_ra" value="910" />
+                    <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
+                    <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
+                </include>          
+                <!-- Episodes Playlist 8019 -->
+                <include name="CommonWidgetPlayListInclude">
+                    <param name="left_widget" value="160" />
+                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist)" />
+                    <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widgetType),episodes)" />
+                    <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+                    <param name="list_id" value="8019" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon3" />
+                    <param name="item_layout_name_include" value="PlayListEpisodesWidgetItemsLayout" />
+                    <param name="width_widget" value="960" />
+                    <param name="width_widget_item" value="240" />
+                    <param name="left_widget_ra" value="970" />
+                    <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
+                    <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
+                </include>                 
+                <!-- MusicVideos Playlist 8020 -->
+                <include name="CommonWidgetPlayListInclude">
+                    <param name="left_widget" value="240" />
+                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist)" />
+                    <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widgetType),musicvideos)" />
+                    <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+                    <param name="list_id" value="8020" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon4" />
+                    <param name="item_layout_name_include" value="PlayListAlbumsWidgetItemsLayout" />
+                    <param name="width_widget" value="800" />
+                    <param name="width_widget_item" value="200" />
+                    <param name="left_widget_ra" value="810" />
+                    <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
+                    <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
+                </include>
+                <!-- Albums PlayList 8021 -->
+                <include name="CommonWidgetPlayListInclude">
+                    <param name="left_widget" value="240" />
+                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist)" />
+                    <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widgetType),albums)" />
+                    <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+                    <param name="list_id" value="8021" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon4" />
+                    <param name="item_layout_name_include" value="PlayListAlbumsWidgetItemsLayout" />
+                    <param name="width_widget" value="800" />
+                    <param name="width_widget_item" value="200" />
+                    <param name="left_widget_ra" value="810" />
+                    <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
+                    <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
+                </include>
             </control>
             <control type="group">
                 <visible>StringCompare(Container(9000).ListItem.Property(widgetTarget),submenus)</visible>
                 <include>skinshortcuts-template-custom-widgets</include>
             </control>
-                 
-            <!-- Movies Playlist 8018 -->
-            <!-- <include name="CommonWidgetPlayListInclude">
-                <param name="left_widget" value="190" />
-                <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),VideoPlayList) + Skin.HasSetting(ActivateScriptPlayList)" />
-                <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(PlayListType),Movie)" />
-                <param name="label_title" value="$VAR[VideoPlaylistTitle]" />
-                <param name="list_id" value="8018" />
-                <param name="animation_name_include" value="AnimationWidgetCommon2" />
-                <param name="item_layout_name_include" value="PlayListMoviesWidgetItemsLayout" />
-                <param name="width_widget" value="900" />
-                <param name="width_widget_item" value="180" />
-                <param name="left_widget_ra" value="910" />
-                <param name="contents_name_include" value="PlayListMoviesContents" />
-            </include> -->          
-			<!-- Episodes Playlist 8019 -->
-            <!-- <include name="CommonWidgetPlayListInclude">
-                <param name="left_widget" value="160" />
-                <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),VideoPlayList) + Skin.HasSetting(ActivateScriptPlayList)" />
-                <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(PlayListType),Episode)" />
-                <param name="label_title" value="$VAR[VideoPlaylistTitle]" />
-                <param name="list_id" value="8019" />
-                <param name="animation_name_include" value="AnimationWidgetCommon3" />
-                <param name="item_layout_name_include" value="PlayListEpisodesWidgetItemsLayout" />
-                <param name="width_widget" value="960" />
-                <param name="width_widget_item" value="240" />
-                <param name="left_widget_ra" value="970" />
-                <param name="contents_name_include" value="PlayListEpisodesContents" />
-            </include> -->                 
-            <!-- MusicVideos Playlist 8020 -->
-            <!-- <include name="CommonWidgetPlayListInclude">
-                <param name="left_widget" value="240" />
-                <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),VideoPlayList) + Skin.HasSetting(ActivateScriptPlayList)" />
-                <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(PlayListType),MusicVideo)" />
-                <param name="label_title" value="$VAR[VideoPlaylistTitle]" />
-                <param name="list_id" value="8020" />
-                <param name="animation_name_include" value="AnimationWidgetCommon4" />
-                <param name="item_layout_name_include" value="PlayListAlbumsWidgetItemsLayout" />
-                <param name="width_widget" value="800" />
-                <param name="width_widget_item" value="200" />
-                <param name="left_widget_ra" value="810" />
-                <param name="contents_name_include" value="PlayListMusicVideoContents" />
-            </include> -->
-            <!-- Albums PlayList 8021 -->
-            <!-- <include name="CommonWidgetPlayListInclude">
-                <param name="left_widget" value="240" />
-                <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),MusicPlayList) + Skin.HasSetting(ActivateScriptPlayList)" />
-                <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(PlayListType),Music)" />
-                <param name="label_title" value="$VAR[MusicPlaylistTitle]" />
-                <param name="list_id" value="8021" />
-                <param name="animation_name_include" value="AnimationWidgetCommon4" />
-                <param name="item_layout_name_include" value="PlayListAlbumsWidgetItemsLayout" />
-                <param name="width_widget" value="800" />
-                <param name="width_widget_item" value="200" />
-                <param name="left_widget_ra" value="810" />
-                <param name="contents_name_include" value="PlayListAlbumsContents" />
-            </include> -->
         </control>            
 	</include>
     <include name="AnimationWidgetCommon">
@@ -3641,7 +3644,6 @@
     <include name="CommonWidgetPlayListInclude">
         <param name="height_widget_item" default="220" />
         <param name="left_widget_la" default="-40" />
-        <param name="contents_type" default="" />
         <definition>
             <control type="group">
                 <left>$PARAM[left_widget]</left>
@@ -3664,7 +3666,6 @@
                     <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0) + Skin.HasSetting(EnableWidgetsTitle)</visible>
                 </control>
                 <control type="list" id="$PARAM[list_id]">
-                    <visible>Container(9000).HasFocus(1)</visible>
                     <include name="$PARAM[animation_name_include]">
                         <param name="list_id" value="$PARAM[list_id]" />
                     </include>
@@ -3684,524 +3685,7 @@
                         <param name="height_widget_item" value="$PARAM[height_widget_item]" />
                         <param name="width_widget_item" value="$PARAM[width_widget_item]" />
                     </include>
-                    <content>
-                        <include name="$PARAM[contents_name_include]">
-                            <param name="id2" value="01" />
-                        </include>
-                    </content>
-                </control>
-                <control type="list" id="$PARAM[list_id]">
-                    <visible>Container(9000).HasFocus(2)</visible>                    
-                    <include name="$PARAM[animation_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                    </include>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <onleft>$PARAM[list_id]</onleft>
-                    <onright>$PARAM[list_id]</onright>
-                    <include>HomeWidgetUpDown</include>
-                    <viewtype label="535">list</viewtype>
-                    <pagecontrol>-</pagecontrol>
-                    <scrolltime>200</scrolltime>
-                    <orientation>Horizontal</orientation>
-                    <include name="$PARAM[item_layout_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                        <param name="height_widget_item" value="$PARAM[height_widget_item]" />
-                        <param name="width_widget_item" value="$PARAM[width_widget_item]" />
-                    </include>
-                    <content>
-                        <include name="$PARAM[contents_name_include]">
-                            <param name="id2" value="02" />
-                        </include>
-                    </content>
-                </control>
-                <control type="list" id="$PARAM[list_id]">
-                    <visible>Container(9000).HasFocus(3)</visible>                    
-                    <include name="$PARAM[animation_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                    </include>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <onleft>$PARAM[list_id]</onleft>
-                    <onright>$PARAM[list_id]</onright>
-                    <include>HomeWidgetUpDown</include>
-                    <viewtype label="535">list</viewtype>
-                    <pagecontrol>-</pagecontrol>
-                    <scrolltime>200</scrolltime>
-                    <orientation>Horizontal</orientation>
-                    <include name="$PARAM[item_layout_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                        <param name="height_widget_item" value="$PARAM[height_widget_item]" />
-                        <param name="width_widget_item" value="$PARAM[width_widget_item]" />
-                    </include>
-                    <content>
-                        <include name="$PARAM[contents_name_include]">
-                            <param name="id2" value="03" />
-                        </include>
-                    </content>
-                </control>
-                <control type="list" id="$PARAM[list_id]">
-                    <visible>Container(9000).HasFocus(4)</visible>                    
-                    <include name="$PARAM[animation_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                    </include>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <onleft>$PARAM[list_id]</onleft>
-                    <onright>$PARAM[list_id]</onright>
-                    <include>HomeWidgetUpDown</include>
-                    <viewtype label="535">list</viewtype>
-                    <pagecontrol>-</pagecontrol>
-                    <scrolltime>200</scrolltime>
-                    <orientation>Horizontal</orientation>
-                    <include name="$PARAM[item_layout_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                        <param name="height_widget_item" value="$PARAM[height_widget_item]" />
-                        <param name="width_widget_item" value="$PARAM[width_widget_item]" />
-                    </include>
-                    <content>
-                        <include name="$PARAM[contents_name_include]">
-                            <param name="id2" value="04" />
-                        </include>
-                    </content>
-                </control>
-                <control type="list" id="$PARAM[list_id]">
-                    <visible>Container(9000).HasFocus(5)</visible>                    
-                    <include name="$PARAM[animation_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                    </include>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <onleft>$PARAM[list_id]</onleft>
-                    <onright>$PARAM[list_id]</onright>
-                    <include>HomeWidgetUpDown</include>
-                    <viewtype label="535">list</viewtype>
-                    <pagecontrol>-</pagecontrol>
-                    <scrolltime>200</scrolltime>
-                    <orientation>Horizontal</orientation>
-                    <include name="$PARAM[item_layout_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                        <param name="height_widget_item" value="$PARAM[height_widget_item]" />
-                        <param name="width_widget_item" value="$PARAM[width_widget_item]" />
-                    </include>
-                    <content>
-                        <include name="$PARAM[contents_name_include]">
-                            <param name="id2" value="05" />
-                        </include>
-                    </content>
-                </control>
-                <control type="list" id="$PARAM[list_id]">
-                    <visible>Container(9000).HasFocus(6)</visible>                    
-                    <include name="$PARAM[animation_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                    </include>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <onleft>$PARAM[list_id]</onleft>
-                    <onright>$PARAM[list_id]</onright>
-                    <include>HomeWidgetUpDown</include>
-                    <viewtype label="535">list</viewtype>
-                    <pagecontrol>-</pagecontrol>
-                    <scrolltime>200</scrolltime>
-                    <orientation>Horizontal</orientation>
-                    <include name="$PARAM[item_layout_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                        <param name="height_widget_item" value="$PARAM[height_widget_item]" />
-                        <param name="width_widget_item" value="$PARAM[width_widget_item]" />
-                    </include>
-                    <content>
-                        <include name="$PARAM[contents_name_include]">
-                            <param name="id2" value="06" />
-                        </include>
-                    </content>
-                </control>
-                <control type="list" id="$PARAM[list_id]">
-                    <visible>Container(9000).HasFocus(7)</visible>                    
-                    <include name="$PARAM[animation_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                    </include>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <onleft>$PARAM[list_id]</onleft>
-                    <onright>$PARAM[list_id]</onright>
-                    <include>HomeWidgetUpDown</include>
-                    <viewtype label="535">list</viewtype>
-                    <pagecontrol>-</pagecontrol>
-                    <scrolltime>200</scrolltime>
-                    <orientation>Horizontal</orientation>
-                    <include name="$PARAM[item_layout_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                        <param name="height_widget_item" value="$PARAM[height_widget_item]" />
-                        <param name="width_widget_item" value="$PARAM[width_widget_item]" />
-                    </include>
-                    <content>
-                        <include name="$PARAM[contents_name_include]">
-                            <param name="id2" value="07" />
-                        </include>
-                    </content>
-                </control>
-                <control type="list" id="$PARAM[list_id]">
-                    <visible>Container(9000).HasFocus(8)</visible>                    
-                    <include name="$PARAM[animation_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                    </include>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <onleft>$PARAM[list_id]</onleft>
-                    <onright>$PARAM[list_id]</onright>
-                    <include>HomeWidgetUpDown</include>
-                    <viewtype label="535">list</viewtype>
-                    <pagecontrol>-</pagecontrol>
-                    <scrolltime>200</scrolltime>
-                    <orientation>Horizontal</orientation>
-                    <include name="$PARAM[item_layout_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                        <param name="height_widget_item" value="$PARAM[height_widget_item]" />
-                        <param name="width_widget_item" value="$PARAM[width_widget_item]" />
-                    </include>
-                    <content>
-                        <include name="$PARAM[contents_name_include]">
-                            <param name="id2" value="08" />
-                        </include>
-                    </content>
-                </control>
-                <control type="list" id="$PARAM[list_id]">
-                    <visible>Container(9000).HasFocus(9)</visible>                    
-                    <include name="$PARAM[animation_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                    </include>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <onleft>$PARAM[list_id]</onleft>
-                    <onright>$PARAM[list_id]</onright>
-                    <include>HomeWidgetUpDown</include>
-                    <viewtype label="535">list</viewtype>
-                    <pagecontrol>-</pagecontrol>
-                    <scrolltime>200</scrolltime>
-                    <orientation>Horizontal</orientation>
-                    <include name="$PARAM[item_layout_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                        <param name="height_widget_item" value="$PARAM[height_widget_item]" />
-                        <param name="width_widget_item" value="$PARAM[width_widget_item]" />
-                    </include>
-                    <content>
-                        <include name="$PARAM[contents_name_include]">
-                            <param name="id2" value="09" />
-                        </include>
-                    </content>
-                </control>
-                <control type="list" id="$PARAM[list_id]">
-                    <visible>Container(9000).HasFocus(10)</visible>                    
-                    <include name="$PARAM[animation_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                    </include>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <onleft>$PARAM[list_id]</onleft>
-                    <onright>$PARAM[list_id]</onright>
-                    <include>HomeWidgetUpDown</include>
-                    <viewtype label="535">list</viewtype>
-                    <pagecontrol>-</pagecontrol>
-                    <scrolltime>200</scrolltime>
-                    <orientation>Horizontal</orientation>
-                    <include name="$PARAM[item_layout_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                        <param name="height_widget_item" value="$PARAM[height_widget_item]" />
-                        <param name="width_widget_item" value="$PARAM[width_widget_item]" />
-                    </include>
-                    <content>
-                        <include name="$PARAM[contents_name_include]">
-                            <param name="id2" value="10" />
-                        </include>
-                    </content>
-                </control>
-                <control type="list" id="$PARAM[list_id]">
-                    <visible>Container(9000).HasFocus(11)</visible>                    
-                    <include name="$PARAM[animation_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                    </include>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <onleft>$PARAM[list_id]</onleft>
-                    <onright>$PARAM[list_id]</onright>
-                    <include>HomeWidgetUpDown</include>
-                    <viewtype label="535">list</viewtype>
-                    <pagecontrol>-</pagecontrol>
-                    <scrolltime>200</scrolltime>
-                    <orientation>Horizontal</orientation>
-                    <include name="$PARAM[item_layout_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                        <param name="height_widget_item" value="$PARAM[height_widget_item]" />
-                        <param name="width_widget_item" value="$PARAM[width_widget_item]" />
-                    </include>
-                    <content>
-                        <include name="$PARAM[contents_name_include]">
-                            <param name="id2" value="11" />
-                        </include>
-                    </content>
-                </control>
-                <control type="list" id="$PARAM[list_id]">
-                    <visible>Container(9000).HasFocus(12)</visible>                    
-                    <include name="$PARAM[animation_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                    </include>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <onleft>$PARAM[list_id]</onleft>
-                    <onright>$PARAM[list_id]</onright>
-                    <include>HomeWidgetUpDown</include>
-                    <viewtype label="535">list</viewtype>
-                    <pagecontrol>-</pagecontrol>
-                    <scrolltime>200</scrolltime>
-                    <orientation>Horizontal</orientation>
-                    <include name="$PARAM[item_layout_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                        <param name="height_widget_item" value="$PARAM[height_widget_item]" />
-                        <param name="width_widget_item" value="$PARAM[width_widget_item]" />
-                    </include>
-                    <content>
-                        <include name="$PARAM[contents_name_include]">
-                            <param name="id2" value="12" />
-                        </include>
-                    </content>
-                </control>
-                <control type="list" id="$PARAM[list_id]">
-                    <visible>Container(9000).HasFocus(13)</visible>                    
-                    <include name="$PARAM[animation_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                    </include>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <onleft>$PARAM[list_id]</onleft>
-                    <onright>$PARAM[list_id]</onright>
-                    <include>HomeWidgetUpDown</include>
-                    <viewtype label="535">list</viewtype>
-                    <pagecontrol>-</pagecontrol>
-                    <scrolltime>200</scrolltime>
-                    <orientation>Horizontal</orientation>
-                    <include name="$PARAM[item_layout_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                        <param name="height_widget_item" value="$PARAM[height_widget_item]" />
-                        <param name="width_widget_item" value="$PARAM[width_widget_item]" />
-                    </include>
-                    <content>
-                        <include name="$PARAM[contents_name_include]">
-                            <param name="id2" value="13" />
-                        </include>
-                    </content>
-                </control>
-                <control type="list" id="$PARAM[list_id]">
-                    <visible>Container(9000).HasFocus(14)</visible>                    
-                    <include name="$PARAM[animation_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                    </include>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <onleft>$PARAM[list_id]</onleft>
-                    <onright>$PARAM[list_id]</onright>
-                    <include>HomeWidgetUpDown</include>
-                    <viewtype label="535">list</viewtype>
-                    <pagecontrol>-</pagecontrol>
-                    <scrolltime>200</scrolltime>
-                    <orientation>Horizontal</orientation>
-                    <include name="$PARAM[item_layout_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                        <param name="height_widget_item" value="$PARAM[height_widget_item]" />
-                        <param name="width_widget_item" value="$PARAM[width_widget_item]" />
-                    </include>
-                    <content>
-                        <include name="$PARAM[contents_name_include]">
-                            <param name="id2" value="14" />
-                        </include>
-                    </content>
-                </control>
-                <control type="list" id="$PARAM[list_id]">
-                    <visible>Container(9000).HasFocus(15)</visible>                    
-                    <include name="$PARAM[animation_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                    </include>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <onleft>$PARAM[list_id]</onleft>
-                    <onright>$PARAM[list_id]</onright>
-                    <include>HomeWidgetUpDown</include>
-                    <viewtype label="535">list</viewtype>
-                    <pagecontrol>-</pagecontrol>
-                    <scrolltime>200</scrolltime>
-                    <orientation>Horizontal</orientation>
-                    <include name="$PARAM[item_layout_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                        <param name="height_widget_item" value="$PARAM[height_widget_item]" />
-                        <param name="width_widget_item" value="$PARAM[width_widget_item]" />
-                    </include>
-                    <content>
-                        <include name="$PARAM[contents_name_include]">
-                            <param name="id2" value="15" />
-                        </include>
-                    </content>
-                </control>
-                <control type="list" id="$PARAM[list_id]">
-                    <visible>Container(9000).HasFocus(16)</visible>                    
-                    <include name="$PARAM[animation_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                    </include>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <onleft>$PARAM[list_id]</onleft>
-                    <onright>$PARAM[list_id]</onright>
-                    <include>HomeWidgetUpDown</include>
-                    <viewtype label="535">list</viewtype>
-                    <pagecontrol>-</pagecontrol>
-                    <scrolltime>200</scrolltime>
-                    <orientation>Horizontal</orientation>
-                    <include name="$PARAM[item_layout_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                        <param name="height_widget_item" value="$PARAM[height_widget_item]" />
-                        <param name="width_widget_item" value="$PARAM[width_widget_item]" />
-                    </include>
-                    <content>
-                        <include name="$PARAM[contents_name_include]">
-                            <param name="id2" value="16" />
-                        </include>
-                    </content>
-                </control>
-                <control type="list" id="$PARAM[list_id]">
-                    <visible>Container(9000).HasFocus(17)</visible>                    
-                    <include name="$PARAM[animation_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                    </include>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <onleft>$PARAM[list_id]</onleft>
-                    <onright>$PARAM[list_id]</onright>
-                    <include>HomeWidgetUpDown</include>
-                    <viewtype label="535">list</viewtype>
-                    <pagecontrol>-</pagecontrol>
-                    <scrolltime>200</scrolltime>
-                    <orientation>Horizontal</orientation>
-                    <include name="$PARAM[item_layout_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                        <param name="height_widget_item" value="$PARAM[height_widget_item]" />
-                        <param name="width_widget_item" value="$PARAM[width_widget_item]" />
-                    </include>
-                    <content>
-                        <include name="$PARAM[contents_name_include]">
-                            <param name="id2" value="17" />
-                        </include>
-                    </content>
-                </control>
-                <control type="list" id="$PARAM[list_id]">
-                    <visible>Container(9000).HasFocus(18)</visible>                    
-                    <include name="$PARAM[animation_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                    </include>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <onleft>$PARAM[list_id]</onleft>
-                    <onright>$PARAM[list_id]</onright>
-                    <include>HomeWidgetUpDown</include>
-                    <viewtype label="535">list</viewtype>
-                    <pagecontrol>-</pagecontrol>
-                    <scrolltime>200</scrolltime>
-                    <orientation>Horizontal</orientation>
-                    <include name="$PARAM[item_layout_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                        <param name="height_widget_item" value="$PARAM[height_widget_item]" />
-                        <param name="width_widget_item" value="$PARAM[width_widget_item]" />
-                    </include>
-                    <content>
-                        <include name="$PARAM[contents_name_include]">
-                            <param name="id2" value="18" />
-                        </include>
-                    </content>
-                </control>
-                <control type="list" id="$PARAM[list_id]">
-                    <visible>Container(9000).HasFocus(19)</visible>                    
-                    <include name="$PARAM[animation_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                    </include>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <onleft>$PARAM[list_id]</onleft>
-                    <onright>$PARAM[list_id]</onright>
-                    <include>HomeWidgetUpDown</include>
-                    <viewtype label="535">list</viewtype>
-                    <pagecontrol>-</pagecontrol>
-                    <scrolltime>200</scrolltime>
-                    <orientation>Horizontal</orientation>
-                    <include name="$PARAM[item_layout_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                        <param name="height_widget_item" value="$PARAM[height_widget_item]" />
-                        <param name="width_widget_item" value="$PARAM[width_widget_item]" />
-                    </include>
-                    <content>
-                        <include name="$PARAM[contents_name_include]">
-                            <param name="id2" value="19" />
-                        </include>
-                    </content>
-                </control>
-                <control type="list" id="$PARAM[list_id]">
-                    <visible>Container(9000).HasFocus(20)</visible>                    
-                    <include name="$PARAM[animation_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                    </include>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <onleft>$PARAM[list_id]</onleft>
-                    <onright>$PARAM[list_id]</onright>
-                    <include>HomeWidgetUpDown</include>
-                    <viewtype label="535">list</viewtype>
-                    <pagecontrol>-</pagecontrol>
-                    <scrolltime>200</scrolltime>
-                    <orientation>Horizontal</orientation>
-                    <include name="$PARAM[item_layout_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                        <param name="height_widget_item" value="$PARAM[height_widget_item]" />
-                        <param name="width_widget_item" value="$PARAM[width_widget_item]" />
-                    </include>
-                    <content>
-                        <include name="$PARAM[contents_name_include]">
-                            <param name="id2" value="20" />
-                        </include>
-                    </content>
+                    <content target="$PARAM[content_target]">$PARAM[content_path]</content>
                 </control>
                 <control type="button">
                     <description>Left Arrow</description>
@@ -4327,99 +3811,7 @@
                 </control>
             </focusedlayout>
         </definition>
-    </include>    
-	<include name="PlayListMoviesContents">
-        <item id="1">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].1.Title)]</label>
-            <label2 />
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].1.Play)]</onclick>
-            <icon>$INFO[Window(home).Property(HomePlayList$PARAM[id2].1.Art(poster))]</icon>
-            <thumb>-</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].1.Title))</visible>
-        </item>
-        <item id="2">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].2.Title)]</label>
-            <label2 />
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].2.Play)]</onclick>
-            <icon>$INFO[Window(home).Property(HomePlayList$PARAM[id2].2.Art(poster))]</icon>
-            <thumb>-</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].2.Title))</visible>
-        </item>
-        <item id="3">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].3.Title)]</label>
-            <label2 />
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].3.Play)]</onclick>
-            <icon>$INFO[Window(home).Property(HomePlayList$PARAM[id2].3.Art(poster))]</icon>
-            <thumb>-</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].3.Title))</visible>
-        </item>
-        <item id="4">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].4.Title)]</label>
-            <label2 />
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].4.Play)]</onclick>
-            <icon>$INFO[Window(home).Property(HomePlayList$PARAM[id2].4.Art(poster))]</icon>
-            <thumb>-</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].4.Title))</visible>
-        </item>
-        <item id="5">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].5.Title)]</label>
-            <label2 />
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].5.Play)]</onclick>
-            <icon>$INFO[Window(home).Property(HomePlayList$PARAM[id2].5.Art(poster))]</icon>
-            <thumb>-</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].5.Title))</visible>
-        </item>
-        <item id="6">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].6.Title)]</label>
-            <label2 />
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].6.Play)]</onclick>
-            <icon>$INFO[Window(home).Property(HomePlayList$PARAM[id2].6.Art(poster))]</icon>
-            <thumb>-</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].6.Title))</visible>
-        </item>
-        <item id="7">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].7.Title)]</label>
-            <label2 />
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].7.Play)]</onclick>
-            <icon>$INFO[Window(home).Property(HomePlayList$PARAM[id2].7.Art(poster))]</icon>
-            <thumb>-</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].7.Title))</visible>
-        </item>
-        <item id="8">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].8.Title)]</label>
-            <label2 />
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].8.Play)]</onclick>
-            <icon>$INFO[Window(home).Property(HomePlayList$PARAM[id2].8.Art(poster))]</icon>
-            <thumb>-</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].8.Title))</visible>
-        </item>
-        <item id="9">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].9.Title)]</label>
-            <label2 />
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].9.Play)]</onclick>
-            <icon>$INFO[Window(home).Property(HomePlayList$PARAM[id2].9.Art(poster))]</icon>
-            <thumb>-</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].9.Title))</visible>
-        </item>
-        <item id="10">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].10.Title)]</label>
-            <label2 />
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].10.Play)]</onclick>
-            <icon>$INFO[Window(home).Property(HomePlayList$PARAM[id2].10.Art(poster))]</icon>
-            <thumb>-</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].10.Title))</visible>
-        </item>
-	</include>
+    </include>
     <include name="PlayListEpisodesWidgetItemsLayout">
         <param name="height_widget_item" default="220" />
         <param name="width_widget_item" default="240" />
@@ -4544,98 +3936,6 @@
             </focusedlayout>
         </definition>
     </include>    
-	<include name="PlayListEpisodesContents">
-        <item id="1">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].1.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].1.EpisodeNo)] - $INFO[Window(home).Property(HomePlayList$PARAM[id2].1.TVshowTitle)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].1.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].1.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].1.Title))</visible>
-        </item>
-        <item id="2">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].2.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].2.EpisodeNo)] - $INFO[Window(home).Property(HomePlayList$PARAM[id2].2.TVshowTitle)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].2.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].2.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].2.Title))</visible>
-        </item>
-        <item id="3">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].3.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].3.EpisodeNo)] - $INFO[Window(home).Property(HomePlayList$PARAM[id2].3.TVshowTitle)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].3.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].3.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].3.Title))</visible>
-        </item>
-        <item id="4">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].4.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].4.EpisodeNo)] - $INFO[Window(home).Property(HomePlayList$PARAM[id2].4.TVshowTitle)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].4.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].4.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].4.Title))</visible>
-        </item>
-        <item id="5">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].5.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].5.EpisodeNo)] - $INFO[Window(home).Property(HomePlayList$PARAM[id2].5.TVshowTitle)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].5.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].5.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].5.Title))</visible>
-        </item>
-        <item id="6">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].6.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].6.EpisodeNo)] - $INFO[Window(home).Property(HomePlayList$PARAM[id2].6.TVshowTitle)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].6.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].6.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].6.Title))</visible>
-        </item>
-        <item id="7">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].7.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].7.EpisodeNo)] - $INFO[Window(home).Property(HomePlayList$PARAM[id2].7.TVshowTitle)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].7.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].7.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].7.Title))</visible>
-        </item>
-        <item id="8">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].8.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].8.EpisodeNo)] - $INFO[Window(home).Property(HomePlayList$PARAM[id2].8.TVshowTitle)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].8.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].8.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].8.Title))</visible>
-        </item>
-        <item id="9">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].9.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].9.EpisodeNo)] - $INFO[Window(home).Property(HomePlayList$PARAM[id2].9.TVshowTitle)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].9.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].9.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].9.Title))</visible>
-        </item>
-        <item id="10">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].10.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].10.EpisodeNo)] - $INFO[Window(home).Property(HomePlayList$PARAM[id2].10.TVshowTitle)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].10.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].10.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].10.Title))</visible>
-        </item>     
-	</include>    
     <include name="PlayListAlbumsWidgetItemsLayout">
         <param name="height_widget_item" default="220" />
         <param name="width_widget_item" default="200" />
@@ -4758,189 +4058,5 @@
                 </control>
             </focusedlayout>
         </definition>    
-    </include>    
-    <include name="PlayListAlbumsContents">
-        <item id="1">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].1.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].1.Artist)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].1.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].1.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].1.Title))</visible>
-        </item>
-        <item id="2">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].2.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].2.Artist)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].2.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].2.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].2.Title))</visible>
-        </item>
-        <item id="3">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].3.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].3.Artist)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].3.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].3.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].3.Title))</visible>
-        </item>
-        <item id="4">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].4.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].4.Artist)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].4.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].4.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].4.Title))</visible>
-        </item>
-        <item id="5">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].5.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].5.Artist)]]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].5.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].5.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].5.Title))</visible>
-        </item>
-        <item id="6">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].6.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].6.Artist)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].6.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].6.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].6.Title))</visible>
-        </item>
-        <item id="7">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].7.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].7.Artist)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].7.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].7.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].7.Title))</visible>
-        </item>
-        <item id="8">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].8.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].8.Artist)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].8.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].8.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].8.Title))</visible>
-        </item>
-        <item id="9">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].9.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].9.Artist)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].9.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].9.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].9.Title))</visible>
-        </item>
-        <item id="10">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].10.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].10.Artist)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].10.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].10.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].10.Title))</visible>
-        </item>
-    </include>
-    <include name="PlayListMusicVideoContents">
-        <item id="1">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].1.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].1.Artist)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].1.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].1.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].1.Title))</visible>
-        </item>
-        <item id="2">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].2.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].2.Artist)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].2.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].2.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].2.Title))</visible>
-        </item>
-        <item id="3">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].3.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].3.Artist)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].3.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].3.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].3.Title))</visible>
-        </item>
-        <item id="4">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].4.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].4.Artist)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].4.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].4.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].4.Title))</visible>
-        </item>
-        <item id="5">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].5.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].5.Artist)]]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].5.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].5.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].5.Title))</visible>
-        </item>
-        <item id="6">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].6.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].6.Artist)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].6.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].6.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].6.Title))</visible>
-        </item>
-        <item id="7">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].7.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].7.Artist)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].7.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].7.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].7.Title))</visible>
-        </item>
-        <item id="8">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].8.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].8.Artist)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].8.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].8.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].8.Title))</visible>
-        </item>
-        <item id="9">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].9.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].9.Artist)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].9.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].9.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].9.Title))</visible>
-        </item>
-        <item id="10">
-            <label>$INFO[Window(home).Property(HomePlayList$PARAM[id2].10.Title)]</label>
-            <label2>$INFO[Window(home).Property(HomePlayList$PARAM[id2].10.Artist)]</label2>
-            <onclick>PlayList.Clear</onclick>
-            <onclick>$INFO[Window(home).Property(HomePlayList$PARAM[id2].10.Play)]</onclick>
-            <icon>-</icon>
-            <thumb>$INFO[Window(home).Property(HomePlayList$PARAM[id2].10.Art(thumb))]</thumb>
-            <visible>!IsEmpty(Window(home).Property(HomePlayList$PARAM[id2].10.Title))</visible>
-        </item>
     </include>    
 </includes>

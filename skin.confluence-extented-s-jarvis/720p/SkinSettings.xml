@@ -399,35 +399,7 @@
 						<enable>Skin.HasSetting(ActivateWatchitLater)</enable>
 						<visible>System.HasAddon(script.simpleplaylists)</visible>
 					</control>
-					<control type="radiobutton" id="117">
-                        <description>Activate ScriptPlaylist</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>$LOCALIZE[24000] ScriptPlaylist</label>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(ActivateScriptPlaylist)</onclick>
-						<selected>Skin.HasSetting(ActivateScriptPlaylist)</selected>
-						<enable>System.HasAddon(script.randomandlastitems)</enable>
-					</control>
-					<control type="button" id="118">
-                        <description>Settings ScriptPlaylist</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>- $LOCALIZE[24020]</label>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>ActivateWindow(2127)</onclick>
-						<enable>Skin.HasSetting(ActivateScriptPlaylist)</enable>
-						<visible>System.HasAddon(script.randomandlastitems)</visible>
-					</control>
-                    <control type="button" id="119">
+                    <control type="button" id="117">
                         <description>Settings Service Skin Widgets</description>
 						<width>750</width>
 						<height>40</height>

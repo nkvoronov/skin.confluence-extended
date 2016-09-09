@@ -412,15 +412,18 @@
             <shortcut label="89027" type="2" icon="DefaultFolder.png" widgetName="$LOCALIZE[89027]" widget="RandomAlbums" widgetType="albums" widgetTarget="list">random_albums</shortcut>
             <shortcut label="89026" type="2" icon="DefaultFolder.png" widgetName="$LOCALIZE[89026]" widget="RecommendedAlbums" widgetType="albums" widgetTarget="list">recommended_albums</shortcut>
         </node>
+        <!-- Playlists -->
+        <node label="136">
+            <node label="3">
+                <content>playlist-video</content>
+            </node>
+            <node label="2">
+                <content>playlist-audio</content>
+            </node>
+        </node>        
         <!-- Favourites -->
         <node label="1036">
             <shortcut label="1036" type="1036" icon="DefaultFolder.png" widgetName="$LOCALIZE[1036]" widget="Favourites" widgetType="favourites" widgetTarget="list">favourites</shortcut>
-        </node>
-        <!-- Playlists -->
-        <node label="136">
-            <!-- <value condition="StringCompare(Skin.String(HomeItem.1.Widget),VideoNode)">$LOCALIZE[157] $LOCALIZE[89029]</value>
-            <value condition="StringCompare(Skin.String(HomeItem.1.Widget),VideoPlayList)">$LOCALIZE[157] $LOCALIZE[136]</value>
-            <value condition="StringCompare(Skin.String(HomeItem.1.Widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value> -->
         </node>
     </widget-groupings>
 </overrides>

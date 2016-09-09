@@ -4,7 +4,7 @@
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<label>$LOCALIZE[31950]</label>
-			<label2>$LOCALIZE[8]</label2>
+			<label2>Погода</label2>
 			<icon>DefaultFolder.png</icon>
 			<thumb />
 			<property name="labelID">31950</property>
@@ -29,7 +29,7 @@
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
 			<label>$LOCALIZE[31951]</label>
-			<label2>$LOCALIZE[1]</label2>
+			<label2>Фото</label2>
 			<icon>DefaultFolder.png</icon>
 			<thumb />
 			<property name="labelID">31951</property>
@@ -48,7 +48,7 @@
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
 			<label>$LOCALIZE[31960]</label>
-			<label2>$LOCALIZE[19021]</label2>
+			<label2>Радио</label2>
 			<icon>DefaultTVShows.png</icon>
 			<thumb />
 			<property name="labelID">31960</property>
@@ -68,7 +68,7 @@
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
 			<label>$LOCALIZE[31952]</label>
-			<label2>$LOCALIZE[19020]</label2>
+			<label2>ТВ</label2>
 			<icon>DefaultTVShows.png</icon>
 			<thumb />
 			<property name="labelID">31952</property>
@@ -88,7 +88,7 @@
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
 			<label>$LOCALIZE[31953]</label>
-			<label2>$LOCALIZE[3]</label2>
+			<label2>Видео</label2>
 			<icon>DefaultFolder.png</icon>
 			<thumb />
 			<property name="labelID">31953</property>
@@ -107,7 +107,7 @@
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
 			<label>$LOCALIZE[31954]</label>
-			<label2>$LOCALIZE[342]</label2>
+			<label2>Фильмы</label2>
 			<icon>DefaultMovies.png</icon>
 			<thumb />
 			<property name="labelID">31954</property>
@@ -132,7 +132,7 @@
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
 			<label>$LOCALIZE[31955]</label>
-			<label2>$LOCALIZE[20343]</label2>
+			<label2>Сериалы</label2>
 			<icon>DefaultTVShows.png</icon>
 			<thumb />
 			<property name="labelID">31955</property>
@@ -157,7 +157,7 @@
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
 			<label>$LOCALIZE[31961]</label>
-			<label2>$LOCALIZE[20389]</label2>
+			<label2>Муз. видео</label2>
 			<icon>DefaultMusicVideos.png</icon>
 			<thumb />
 			<property name="labelID">31961</property>
@@ -182,7 +182,7 @@
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
 			<label>$LOCALIZE[31956]</label>
-			<label2>$LOCALIZE[2]</label2>
+			<label2>Музыка</label2>
 			<icon>DefaultMusicAlbums.png</icon>
 			<thumb />
 			<property name="labelID">31956</property>
@@ -206,7 +206,7 @@
 		<item id="10">
 			<property name="id">$NUMBER[10]</property>
 			<label>$LOCALIZE[31957]</label>
-			<label2>$LOCALIZE[24001]</label2>
+			<label2>Дополнения</label2>
 			<icon>DefaultFolder.png</icon>
 			<thumb />
 			<property name="labelID">31957</property>
@@ -225,7 +225,7 @@
 		<item id="11">
 			<property name="id">$NUMBER[11]</property>
 			<label>$LOCALIZE[31958]</label>
-			<label2>$LOCALIZE[446]</label2>
+			<label2>DVD</label2>
 			<icon>DefaultFolder.png</icon>
 			<thumb />
 			<property name="labelID">31958</property>
@@ -245,7 +245,7 @@
 		<item id="12">
 			<property name="id">$NUMBER[12]</property>
 			<label>$LOCALIZE[31959]</label>
-			<label2>$LOCALIZE[10004]</label2>
+			<label2>Настройки</label2>
 			<icon>DefaultFolder.png</icon>
 			<thumb />
 			<property name="labelID">31959</property>
@@ -260,6 +260,110 @@
 			<property name="submenuVisibility">num-31959</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
+		</item>
+		<item id="13">
+			<property name="id">$NUMBER[13]</property>
+			<label>Фильмы</label>
+			<label2>Видео плейлист</label2>
+			<icon>DefaultVideoPlaylists.png</icon>
+			<thumb />
+			<property name="labelID">filmy</property>
+			<property name="defaultID">filmy</property>
+			<property name="translatedPath">::PLAYLIST&gt;Videos::</property>
+			<property name="background">special://skin/extras/backgrounds/playlist.jpg</property>
+			<property name="backgroundName">playlist</property>
+			<property name="widget">Playlist</property>
+			<property name="widgetName">Фильмы</property>
+			<property name="widgetType">movies</property>
+			<property name="widgetTarget">videos</property>
+			<property name="widgetPath">special://profile/playlists/video/Movies1.xsp</property>
+			<onclick>SetProperty(MenuItemActive,$INFO[Container(9000).ListItem.Property(defaultID)],home)</onclick>
+			<onclick>SetProperty(MenuBackground,$VAR[HomeBackground],home)</onclick>
+			<onclick>ActivateWindow(Videos,special://profile/playlists/video/Movies1.xsp,return)</onclick>
+			<property name="path">ActivateWindow(Videos,special://profile/playlists/video/Movies1.xsp,return)</property>
+			<property name="list">special://profile/playlists/video/Movies1.xsp</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">filmy</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">False</property>
+		</item>
+		<item id="14">
+			<property name="id">$NUMBER[14]</property>
+			<label>Эпизоды</label>
+			<label2>Видео плейлист</label2>
+			<icon>DefaultVideoPlaylists.png</icon>
+			<thumb />
+			<property name="labelID">epizody</property>
+			<property name="defaultID">epizody</property>
+			<property name="translatedPath">::PLAYLIST&gt;Videos::</property>
+			<property name="widget">Playlist</property>
+			<property name="widgetName">Эпизоды</property>
+			<property name="widgetType">episodes</property>
+			<property name="widgetTarget">videos</property>
+			<property name="widgetPath">special://profile/playlists/video/Episodes1.xsp</property>
+			<property name="background">special://skin/extras/backgrounds/playlist.jpg</property>
+			<property name="backgroundName">playlist</property>
+			<onclick>SetProperty(MenuItemActive,$INFO[Container(9000).ListItem.Property(defaultID)],home)</onclick>
+			<onclick>SetProperty(MenuBackground,$VAR[HomeBackground],home)</onclick>
+			<onclick>ActivateWindow(Videos,special://profile/playlists/video/Episodes1.xsp,return)</onclick>
+			<property name="path">ActivateWindow(Videos,special://profile/playlists/video/Episodes1.xsp,return)</property>
+			<property name="list">special://profile/playlists/video/Episodes1.xsp</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">epizody</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">False</property>
+		</item>
+		<item id="15">
+			<property name="id">$NUMBER[15]</property>
+			<label>Клипы</label>
+			<label2>Видео плейлист</label2>
+			<icon>DefaultVideoPlaylists.png</icon>
+			<thumb />
+			<property name="labelID">klipy</property>
+			<property name="defaultID">klipy</property>
+			<property name="translatedPath">::PLAYLIST&gt;Videos::</property>
+			<property name="background">special://skin/extras/backgrounds/playlist.jpg</property>
+			<property name="backgroundName">playlist</property>
+			<property name="widget">Playlist</property>
+			<property name="widgetName">Клипы</property>
+			<property name="widgetType">musicvideos</property>
+			<property name="widgetTarget">videos</property>
+			<property name="widgetPath">special://profile/playlists/video/musicvideo1.xsp</property>
+			<onclick>SetProperty(MenuItemActive,$INFO[Container(9000).ListItem.Property(defaultID)],home)</onclick>
+			<onclick>SetProperty(MenuBackground,$VAR[HomeBackground],home)</onclick>
+			<onclick>ActivateWindow(Videos,special://profile/playlists/video/musicvideo1.xsp,return)</onclick>
+			<property name="path">ActivateWindow(Videos,special://profile/playlists/video/musicvideo1.xsp,return)</property>
+			<property name="list">special://profile/playlists/video/musicvideo1.xsp</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">klipy</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">False</property>
+		</item>
+		<item id="16">
+			<property name="id">$NUMBER[16]</property>
+			<label>Music1</label>
+			<label2>Музыкальный плейлист</label2>
+			<icon>DefaultVideoPlaylists.png</icon>
+			<thumb />
+			<property name="labelID">music1</property>
+			<property name="defaultID">music1</property>
+			<property name="translatedPath">::PLAYLIST&gt;Music::</property>
+			<property name="widget">Playlist</property>
+			<property name="widgetName">Music1</property>
+			<property name="widgetType">albums</property>
+			<property name="widgetTarget">music</property>
+			<property name="widgetPath">special://profile/playlists/music/Music1.xsp</property>
+			<property name="background">special://skin/extras/backgrounds/playlist.jpg</property>
+			<property name="backgroundName">playlist</property>
+			<onclick>SetProperty(MenuItemActive,$INFO[Container(9000).ListItem.Property(defaultID)],home)</onclick>
+			<onclick>SetProperty(MenuBackground,$VAR[HomeBackground],home)</onclick>
+			<onclick>ActivateWindow(Music,special://profile/playlists/music/Music1.xsp,return)</onclick>
+			<property name="path">ActivateWindow(Music,special://profile/playlists/music/Music1.xsp,return)</property>
+			<property name="list">special://profile/playlists/music/Music1.xsp</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">music1</property>
+			<property name="group">mainmenu</property>
+			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
@@ -5865,6 +5969,78 @@
 		<description>No items</description>
 		<description>No items</description>
 	</include>
+	<include name="skinshortcuts-group-filmy">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-alt-filmy">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-filmy-1">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-alt-filmy-1">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-filmy-2">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-alt-filmy-2">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-epizody">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-alt-epizody">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-epizody-1">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-alt-epizody-1">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-epizody-2">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-alt-epizody-2">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-klipy">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-alt-klipy">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-klipy-1">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-alt-klipy-1">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-klipy-2">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-alt-klipy-2">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-music1">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-alt-music1">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-music1-1">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-alt-music1-1">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-music1-2">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-alt-music1-2">
+		<description>No items</description>
+	</include>
 	<include name="skinshortcuts-group-powermenu">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
@@ -6922,6 +7098,78 @@
 				<param name="list_id" value="9112" />
 			</include>
 		</control>
+		<control type="group">
+			<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),filmy)</visible>
+			<include name="HomeSubMenuCommonAnimation">
+				<param name="list_id" value="9113" />
+			</include>
+			<control id="9113" type="list">
+				<include>HomeSubMenuCommonValues</include>
+				<onleft>9113</onleft>
+				<onright>9113</onright>
+				<include>HomeSubMenuCommonLayout</include>
+				<content>
+					<include>skinshortcuts-group-num-filmy</include>
+				</content>
+			</control>
+			<include name="HomeSubMenuCommonControls">
+				<param name="list_id" value="9113" />
+			</include>
+		</control>
+		<control type="group">
+			<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),epizody)</visible>
+			<include name="HomeSubMenuCommonAnimation">
+				<param name="list_id" value="9114" />
+			</include>
+			<control id="9114" type="list">
+				<include>HomeSubMenuCommonValues</include>
+				<onleft>9114</onleft>
+				<onright>9114</onright>
+				<include>HomeSubMenuCommonLayout</include>
+				<content>
+					<include>skinshortcuts-group-num-epizody</include>
+				</content>
+			</control>
+			<include name="HomeSubMenuCommonControls">
+				<param name="list_id" value="9114" />
+			</include>
+		</control>
+		<control type="group">
+			<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),klipy)</visible>
+			<include name="HomeSubMenuCommonAnimation">
+				<param name="list_id" value="9115" />
+			</include>
+			<control id="9115" type="list">
+				<include>HomeSubMenuCommonValues</include>
+				<onleft>9115</onleft>
+				<onright>9115</onright>
+				<include>HomeSubMenuCommonLayout</include>
+				<content>
+					<include>skinshortcuts-group-num-klipy</include>
+				</content>
+			</control>
+			<include name="HomeSubMenuCommonControls">
+				<param name="list_id" value="9115" />
+			</include>
+		</control>
+		<control type="group">
+			<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),music1)</visible>
+			<include name="HomeSubMenuCommonAnimation">
+				<param name="list_id" value="9116" />
+			</include>
+			<control id="9116" type="list">
+				<include>HomeSubMenuCommonValues</include>
+				<onleft>9116</onleft>
+				<onright>9116</onright>
+				<include>HomeSubMenuCommonLayout</include>
+				<content>
+					<include>skinshortcuts-group-num-music1</include>
+				</content>
+			</control>
+			<include name="HomeSubMenuCommonControls">
+				<param name="list_id" value="9116" />
+			</include>
+		</control>
 	</include>
 	<include name="skinshortcuts-template-submenus-test">
 		<control type="group">
@@ -7482,6 +7730,118 @@
 				<include>skinshortcuts-group-num-31959-1</include>
 			</content>
 		</control>
+		<control id="713" type="list">
+			<include name="HomeAddonsCommonAnimation">
+				<param name="list_id" value="713" />
+			</include>
+			<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),filmy)</visible>
+			<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HomePageVideoInfo) | Skin.HasSetting(HomePageMusicInfo)</visible>
+			<onleft>713</onleft>
+			<onright>713</onright>
+			<include>HomeAddonUpDown</include>
+			<include>HomeAddonsCommonLayout</include>
+			<content>
+				<include>skinshortcuts-group-num-filmy-1</include>
+			</content>
+		</control>
+		<control id="713" type="list">
+			<include name="HomeAddonsCommonAnimationMediaPlaying">
+				<param name="list_id" value="713" />
+			</include>
+			<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),filmy)</visible>
+			<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + ![Skin.HasSetting(HomePageVideoInfo) | Skin.HasSetting(HomePageMusicInfo)]</visible>
+			<onleft>713</onleft>
+			<onright>713</onright>
+			<include>HomeAddonUpDown</include>
+			<include>HomeAddonsCommonLayoutMediaPlaying</include>
+			<content>
+				<include>skinshortcuts-group-num-filmy-1</include>
+			</content>
+		</control>
+		<control id="714" type="list">
+			<include name="HomeAddonsCommonAnimation">
+				<param name="list_id" value="714" />
+			</include>
+			<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),epizody)</visible>
+			<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HomePageVideoInfo) | Skin.HasSetting(HomePageMusicInfo)</visible>
+			<onleft>714</onleft>
+			<onright>714</onright>
+			<include>HomeAddonUpDown</include>
+			<include>HomeAddonsCommonLayout</include>
+			<content>
+				<include>skinshortcuts-group-num-epizody-1</include>
+			</content>
+		</control>
+		<control id="714" type="list">
+			<include name="HomeAddonsCommonAnimationMediaPlaying">
+				<param name="list_id" value="714" />
+			</include>
+			<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),epizody)</visible>
+			<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + ![Skin.HasSetting(HomePageVideoInfo) | Skin.HasSetting(HomePageMusicInfo)]</visible>
+			<onleft>714</onleft>
+			<onright>714</onright>
+			<include>HomeAddonUpDown</include>
+			<include>HomeAddonsCommonLayoutMediaPlaying</include>
+			<content>
+				<include>skinshortcuts-group-num-epizody-1</include>
+			</content>
+		</control>
+		<control id="715" type="list">
+			<include name="HomeAddonsCommonAnimation">
+				<param name="list_id" value="715" />
+			</include>
+			<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),klipy)</visible>
+			<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HomePageVideoInfo) | Skin.HasSetting(HomePageMusicInfo)</visible>
+			<onleft>715</onleft>
+			<onright>715</onright>
+			<include>HomeAddonUpDown</include>
+			<include>HomeAddonsCommonLayout</include>
+			<content>
+				<include>skinshortcuts-group-num-klipy-1</include>
+			</content>
+		</control>
+		<control id="715" type="list">
+			<include name="HomeAddonsCommonAnimationMediaPlaying">
+				<param name="list_id" value="715" />
+			</include>
+			<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),klipy)</visible>
+			<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + ![Skin.HasSetting(HomePageVideoInfo) | Skin.HasSetting(HomePageMusicInfo)]</visible>
+			<onleft>715</onleft>
+			<onright>715</onright>
+			<include>HomeAddonUpDown</include>
+			<include>HomeAddonsCommonLayoutMediaPlaying</include>
+			<content>
+				<include>skinshortcuts-group-num-klipy-1</include>
+			</content>
+		</control>
+		<control id="716" type="list">
+			<include name="HomeAddonsCommonAnimation">
+				<param name="list_id" value="716" />
+			</include>
+			<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),music1)</visible>
+			<visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HomePageVideoInfo) | Skin.HasSetting(HomePageMusicInfo)</visible>
+			<onleft>716</onleft>
+			<onright>716</onright>
+			<include>HomeAddonUpDown</include>
+			<include>HomeAddonsCommonLayout</include>
+			<content>
+				<include>skinshortcuts-group-num-music1-1</include>
+			</content>
+		</control>
+		<control id="716" type="list">
+			<include name="HomeAddonsCommonAnimationMediaPlaying">
+				<param name="list_id" value="716" />
+			</include>
+			<visible>StringCompare(Container(9000).ListItem.Property(submenuVisibility),music1)</visible>
+			<visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + ![Skin.HasSetting(HomePageVideoInfo) | Skin.HasSetting(HomePageMusicInfo)]</visible>
+			<onleft>716</onleft>
+			<onright>716</onright>
+			<include>HomeAddonUpDown</include>
+			<include>HomeAddonsCommonLayoutMediaPlaying</include>
+			<content>
+				<include>skinshortcuts-group-num-music1-1</include>
+			</content>
+		</control>
 	</include>
 	<include name="skinshortcuts-template-subaddons-test">
 		<control id="701" type="list">
@@ -7981,6 +8341,58 @@
 			<param name="width_widget_item" value="200" />
 			<param name="left_widget_ra" value="1010" />
 			<param name="contents_name_include" value="skinshortcuts-group-num-31959-2" />
+		</include>
+		<include name="CommonWidgetInclude">
+			<param name="left_widget" value="140" />
+			<param name="visible_widget" value="true" />
+			<param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-filmy)" />
+			<param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+			<param name="list_id" value="8113" />
+			<param name="animation_name_include" value="AnimationWidgetCommon" />
+			<param name="item_layout_name_include" value="FavouritesWidgetItemsLayout" />
+			<param name="width_widget" value="1000" />
+			<param name="width_widget_item" value="200" />
+			<param name="left_widget_ra" value="1010" />
+			<param name="contents_name_include" value="skinshortcuts-group-num-filmy-2" />
+		</include>
+		<include name="CommonWidgetInclude">
+			<param name="left_widget" value="140" />
+			<param name="visible_widget" value="true" />
+			<param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-epizody)" />
+			<param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+			<param name="list_id" value="8114" />
+			<param name="animation_name_include" value="AnimationWidgetCommon" />
+			<param name="item_layout_name_include" value="FavouritesWidgetItemsLayout" />
+			<param name="width_widget" value="1000" />
+			<param name="width_widget_item" value="200" />
+			<param name="left_widget_ra" value="1010" />
+			<param name="contents_name_include" value="skinshortcuts-group-num-epizody-2" />
+		</include>
+		<include name="CommonWidgetInclude">
+			<param name="left_widget" value="140" />
+			<param name="visible_widget" value="true" />
+			<param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-klipy)" />
+			<param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+			<param name="list_id" value="8115" />
+			<param name="animation_name_include" value="AnimationWidgetCommon" />
+			<param name="item_layout_name_include" value="FavouritesWidgetItemsLayout" />
+			<param name="width_widget" value="1000" />
+			<param name="width_widget_item" value="200" />
+			<param name="left_widget_ra" value="1010" />
+			<param name="contents_name_include" value="skinshortcuts-group-num-klipy-2" />
+		</include>
+		<include name="CommonWidgetInclude">
+			<param name="left_widget" value="140" />
+			<param name="visible_widget" value="true" />
+			<param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-music1)" />
+			<param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+			<param name="list_id" value="8116" />
+			<param name="animation_name_include" value="AnimationWidgetCommon" />
+			<param name="item_layout_name_include" value="FavouritesWidgetItemsLayout" />
+			<param name="width_widget" value="1000" />
+			<param name="width_widget_item" value="200" />
+			<param name="left_widget_ra" value="1010" />
+			<param name="contents_name_include" value="skinshortcuts-group-num-music1-2" />
 		</include>
 	</include>
 	<include name="skinshortcuts-template-custom-widgets-test">

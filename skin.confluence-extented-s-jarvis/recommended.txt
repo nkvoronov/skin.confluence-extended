@@ -1,8 +1,5 @@
 ﻿#IMPORT
-script.favourites
-script.pvr.favourites
 service.skin.widgets
-script.randomandlastitems
 script.skinshortcuts
 script.skin.helper.service
 #RECOMMENDED
