@@ -314,7 +314,7 @@
 						<description>Cancel button</description>
 						<width>200</width>
 						<height>40</height>
-						<label>-</label>
+						<label>222</label>
 						<font>font12_title</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>
