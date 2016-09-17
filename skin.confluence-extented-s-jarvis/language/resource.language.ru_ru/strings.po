@@ -750,6 +750,10 @@ msgctxt "#32004"
 msgid "SHUTDOWN"
 msgstr "ВЫКЛЮЧЕНИЕ"
 
+msgctxt "#88002"
+msgid "Move focus main menu"
+msgstr "Переместить фокус главного меню"
+
 msgctxt "#88070"
 msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add and remove home menu items[CR]Change skin backgrounds"
 msgstr "[B]НАСТРОЙКА ПАРАМЕТРОВ ОБЛОЖКИ[/B][CR][CR]Настройка обложки • Добавление и удаление пунктов главного меню[CR]Изменение фона обложки"
@@ -772,7 +776,7 @@ msgstr "Названия дополнений"
 
 msgctxt "#88075"
 msgid "Bottom line in home page"
-msgstr "Нижнюю линию в главном экране"
+msgstr "Нижнюю линию на главном экране"
 
 msgctxt "#88076"
 msgid "Bottom line everywhere except the home page"
@@ -791,12 +795,12 @@ msgid "Favorites button"
 msgstr "Кнопку избранного"
 
 msgctxt "#88081"
-msgid "backlight color"
-msgstr "цвет подсветки"
+msgid "Backlight color"
+msgstr "Цвет подсветки"
 
 msgctxt "#88082"
-msgid "After startup KODI, move focus main menu to:"
-msgstr "После запуска KODI, переместить фокус главного меню на:"
+msgid "After startup KODI, move focus main menu:"
+msgstr "После запуска KODI, переместить фокус главного меню:"
 
 msgctxt "#88083"
 msgid "To the left"
@@ -817,6 +821,14 @@ msgstr "Бесконечное меню"
 msgctxt "#88087"
 msgid "Return to Start Menu Scroll"
 msgstr "Прокрутка меню"
+
+msgctxt "#88089"
+msgid "Buttons"
+msgstr "Кнопки"
+
+msgctxt "#88090"
+msgid "Title of widget"
+msgstr "Названия виджетов"
 
 msgctxt "#88900"
 msgid "Skin Jarvis"
@@ -1000,15 +1012,15 @@ msgstr "Случайные эпизоды"
 
 msgctxt "#89036"
 msgid "Recent Music Video"
-msgstr "Последнее музыкальное видео"
+msgstr "Последнее муз. видео"
 
 msgctxt "#89037"
 msgid "Recommended Music Video"
-msgstr "Рекомендуемое музыкальное видео"
+msgstr "Рекомендуемое муз. видео"
 
 msgctxt "#89038"
 msgid "Random Music Video"
-msgstr "Случайное музыкальное видео"
+msgstr "Случайное муз. видео"
 
 msgctxt "#89039"
 msgid "OpenELEC"

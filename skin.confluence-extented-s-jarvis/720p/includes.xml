@@ -13,12 +13,13 @@
     <include file="IncludesHomeMainMenus.xml" />
     <include file="IncludesHomeSubMenus.xml" />
     <include file="IncludesHomeWidgets.xml" />
+    <include file="script-skinshortcuts-includes.xml"/>
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="IncludesPVR.xml" />
 	<include file="IncludesBackgroundBuilding.xml" />
 	<include file="DharmaView.xml" />
-	<include file="IncludesVariables.xml" />
-    <include file="script-skinshortcuts-includes.xml"/>
+	<include file="IncludesVariables.xml" />    
+    <!-- CONSTANTS -->
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
 	<constant name="DepthDialog">0.50</constant>
@@ -2611,6 +2612,133 @@
                 <icon>-</icon>
                 <thumb>-</thumb>
                 <visible>IsEmpty(Window(home).Property(RecommendedMusicVideo.1.Title))</visible>
+            </item>
+        </content>
+	</include>
+    <include name="ItemMenuColors">
+        <content>
+            <item id="1">
+                <description>MenuColor0</description>
+                <label>[COLOR=FF0084FF]$LOCALIZE[88107][/COLOR]</label>
+                <onclick>Skin.SetString(MenuColor,FF0084FF,)</onclick>
+                <onclick>Skin.SetString(MenuColorName,$LOCALIZE[88107],)</onclick>
+                <onclick>PreviousMenu</onclick>
+            </item>
+            <item id="2">
+                <description>MenuColor1</description>
+                <label>[COLOR=FF03D6D9]$LOCALIZE[88108][/COLOR]</label>
+                <onclick>Skin.SetString(MenuColor,FF03D6D9,)</onclick>
+                <onclick>Skin.SetString(MenuColorName,$LOCALIZE[88108],)</onclick>
+                <onclick>PreviousMenu</onclick>
+            </item>
+            <item id="3">
+                <description>MenuColor2</description>
+                <label>[COLOR=FFFFFFFF]$LOCALIZE[88109][/COLOR]</label>
+                <onclick>Skin.SetString(MenuColor,FFFFFFFF,)</onclick>
+                <onclick>Skin.SetString(MenuColorName,$LOCALIZE[88109],)</onclick>
+                <onclick>PreviousMenu</onclick>
+            </item>
+            <item id="4">
+                <description>MenuColor3</description>
+                <label>[COLOR=FF999999]$LOCALIZE[88110][/COLOR]</label>
+                <onclick>Skin.SetString(MenuColor,FF999999,)</onclick>
+                <onclick>Skin.SetString(MenuColorName,$LOCALIZE[88110],)</onclick>
+                <onclick>PreviousMenu</onclick>
+            </item>
+            <item id="5">
+                <description>MenuColor4</description>
+                <label>[COLOR=FFEC0000]$LOCALIZE[88111][/COLOR]</label>
+                <onclick>Skin.SetString(MenuColor,FFEC0000,)</onclick>
+                <onclick>Skin.SetString(MenuColorName,$LOCALIZE[88111],)</onclick>
+                <onclick>PreviousMenu</onclick>
+            </item>
+            <item id="6">
+                <description>MenuColor5</description>
+                <label>[COLOR=84FF00FF]$LOCALIZE[88112][/COLOR]</label>
+                <onclick>Skin.SetString(MenuColor,84FF00FF,)</onclick>
+                <onclick>Skin.SetString(MenuColorName,$LOCALIZE[88112],)</onclick>
+                <onclick>PreviousMenu</onclick>
+            </item>
+            <item id="7">
+                <description>MenuColor6</description>
+                <label>[COLOR=FF7F2BAA]$LOCALIZE[88113][/COLOR]</label>
+                <onclick>Skin.SetString(MenuColor,FF7F2BAA,)</onclick>
+                <onclick>Skin.SetString(MenuColorName,$LOCALIZE[88113],)</onclick>
+                <onclick>PreviousMenu</onclick>
+            </item>
+            <item id="8">
+                <description>MenuColor7</description>
+                <label>[COLOR=FFFF8C00]$LOCALIZE[88114][/COLOR]</label>
+                <onclick>Skin.SetString(MenuColor,FFFF8C00,)</onclick>
+                <onclick>Skin.SetString(MenuColorName,$LOCALIZE[88114],)</onclick>
+                <onclick>PreviousMenu</onclick>
+            </item>
+            <item id="9">
+                <description>MenuColor8</description>
+                <label>[COLOR=FFFFFF00]$LOCALIZE[88115][/COLOR]</label>
+                <onclick>Skin.SetString(MenuColor,FFFFFF00,)</onclick>
+                <onclick>Skin.SetString(MenuColorName,$LOCALIZE[88115],)</onclick>
+                <onclick>PreviousMenu</onclick>
+            </item>
+            <item id="10">
+                <description>MenuColor9</description>
+                <label>[COLOR=FF6DF300]$LOCALIZE[88116][/COLOR]</label>
+                <onclick>Skin.SetString(MenuColor,FF6DF300,)</onclick>
+                <onclick>Skin.SetString(MenuColorName,$LOCALIZE[88116],)</onclick>
+                <onclick>PreviousMenu</onclick>
+            </item>
+            <item id="11">
+                <description>MenuColor Default</description>
+                <label>[COLOR=blue]$LOCALIZE[571][/COLOR]</label>
+                <onclick>Skin.SetString(MenuColor,blue,)</onclick>
+                <onclick>Skin.Reset(MenuColorName)</onclick>
+                <onclick>PreviousMenu</onclick>
+            </item>
+        </content>
+	</include>
+    <include name="ItemMenuFocus">
+        <content>
+            <item id="1">
+                <description>Focus -2</description>
+                <label>$LOCALIZE[88083] 2</label>
+                <onclick>Skin.SetString(CustomFocus,-2,)</onclick>
+                <onclick>Skin.SetString(CustomFocusName,$LOCALIZE[88083] 2,)</onclick>
+                <onclick>PreviousMenu</onclick>
+            </item>
+            <item id="2">
+                <description>Focus -1</description>
+                <label>$LOCALIZE[88083] 1</label>
+                <onclick>Skin.SetString(CustomFocus,-1,)</onclick>
+                <onclick>Skin.SetString(CustomFocusName,$LOCALIZE[88083] 1,)</onclick>
+                <onclick>PreviousMenu</onclick>
+            </item>
+            <item id="3">
+                <description>Focus 0</description>
+                <label>$LOCALIZE[571]</label>
+                <onclick>Skin.Reset(CustomFocus)</onclick>
+                <onclick>Skin.Reset(CustomFocusName)</onclick>
+                <onclick>PreviousMenu</onclick>
+            </item>
+            <item id="4">
+                <description>Focus 1</description>
+                <label>$LOCALIZE[88084] 1</label>
+                <onclick>Skin.SetString(CustomFocus,1,)</onclick>
+                <onclick>Skin.SetString(CustomFocusName,$LOCALIZE[88084] 1,)</onclick>
+                <onclick>PreviousMenu</onclick>
+            </item>
+            <item id="5">
+                <description>Focus 2</description>
+                <label>$LOCALIZE[88084] 2</label>
+                <onclick>Skin.SetString(CustomFocus,2,)</onclick>
+                <onclick>Skin.SetString(CustomFocusName,$LOCALIZE[88084] 2,)</onclick>
+                <onclick>PreviousMenu</onclick>
+            </item>
+            <item id="6">
+                <description>Focus Manual</description>
+                <label>$LOCALIZE[88085]</label>
+                <onclick>Skin.SetNumeric(CustomFocus)</onclick>
+                <onclick>Skin.SetString(CustomFocusName,$LOCALIZE[88085],)</onclick>
+                <onclick>PreviousMenu</onclick>
             </item>
         </content>
     </include>

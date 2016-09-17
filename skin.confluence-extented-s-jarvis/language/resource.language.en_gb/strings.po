@@ -750,6 +750,10 @@ msgctxt "#32004"
 msgid "SHUTDOWN"
 msgstr ""
 
+msgctxt "#88002"
+msgid "Move focus main menu"
+msgstr ""
+
 msgctxt "#88070"
 msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add and remove home menu items[CR]Change skin backgrounds"
 msgstr ""
@@ -791,11 +795,11 @@ msgid "Favorites button"
 msgstr ""
 
 msgctxt "#88081"
-msgid "backlight color"
+msgid "Backlight color"
 msgstr ""
 
 msgctxt "#88082"
-msgid "After startup KODI, move focus main menu to:"
+msgid "After startup KODI, move focus main menu:"
 msgstr ""
 
 msgctxt "#88083"
@@ -816,6 +820,14 @@ msgstr ""
 
 msgctxt "#88087"
 msgid "Return to Start Menu Scroll"
+msgstr ""
+
+msgctxt "#88089"
+msgid "Buttons"
+msgstr ""
+
+msgctxt "#88090"
+msgid "Title of widget"
 msgstr ""
 
 msgctxt "#88900"
@@ -1016,6 +1028,10 @@ msgstr ""
 
 msgctxt "#89040"
 msgid "Raspberry"
+msgstr ""
+
+msgctxt "#89041"
+msgid "LibreELEC"
 msgstr ""
 
 msgctxt "#89302"

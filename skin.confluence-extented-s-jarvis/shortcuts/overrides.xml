@@ -26,95 +26,6 @@
     <backgrounddefault labelID="addons">special://skin/extras/backgrounds/addons.jpg</backgrounddefault>    
     <backgrounddefault labelID="dvd">special://skin/extras/backgrounds/dvd.jpg</backgrounddefault>
     <backgrounddefault labelID="settings">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
-    <!-- Default Weather -->
-    <backgrounddefault defaultID="8">special://skin/extras/backgrounds/weather.jpg</backgrounddefault>
-    <backgrounddefault defaultID="184">special://skin/extras/backgrounds/weather.jpg</backgrounddefault>
-    <backgrounddefault defaultID="35500">special://skin/extras/backgrounds/weather.jpg</backgrounddefault>
-    <!-- Default Pictures -->
-    <backgrounddefault defaultID="1">special://skin/extras/backgrounds/pictures.jpg</backgrounddefault>
-    <backgrounddefault defaultID="1039">special://skin/extras/backgrounds/pictures.jpg</backgrounddefault>
-    <!-- Default PVR -->
-    <backgrounddefault defaultID="137">special://skin/extras/backgrounds/search.jpg</backgrounddefault>
-    <backgrounddefault defaultID="32066">special://skin/extras/backgrounds/livetv.jpg</backgrounddefault>
-    <backgrounddefault defaultID="32068">special://skin/extras/backgrounds/livetv.jpg</backgrounddefault>
-    <backgrounddefault defaultID="19020">special://skin/extras/backgrounds/livetv.jpg</backgrounddefault>
-    <backgrounddefault defaultID="19019">special://skin/extras/backgrounds/livetv.jpg</backgrounddefault>
-    <backgrounddefault defaultID="19069">special://skin/extras/backgrounds/livetv.jpg</backgrounddefault>
-    <backgrounddefault defaultID="19017">special://skin/extras/backgrounds/livetv.jpg</backgrounddefault>
-    <backgrounddefault defaultID="19040">special://skin/extras/backgrounds/livetv.jpg</backgrounddefault>
-    <backgrounddefault defaultID="19021">special://skin/extras/backgrounds/radio.jpg</backgrounddefault>
-    <!-- Default Videos -->
-    <backgrounddefault defaultID="3">special://skin/extras/backgrounds/video.jpg</backgrounddefault>
-    <backgrounddefault defaultID="744">special://skin/extras/backgrounds/video.jpg</backgrounddefault>
-    <backgrounddefault defaultID="1037">special://skin/extras/backgrounds/video.jpg</backgrounddefault>
-    <backgrounddefault defaultID="589">special://skin/extras/backgrounds/video.jpg</backgrounddefault>
-    <backgrounddefault defaultID="653">special://skin/extras/backgrounds/video.jpg</backgrounddefault>
-    <backgrounddefault defaultID="32055">special://skin/extras/backgrounds/video.jpg</backgrounddefault>
-    <!-- Default Movies -->
-    <backgrounddefault defaultID="342">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
-    <backgrounddefault defaultID="20386">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
-    <backgrounddefault defaultID="135">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
-    <backgrounddefault defaultID="369">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
-    <backgrounddefault defaultID="562">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
-    <backgrounddefault defaultID="344">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
-    <backgrounddefault defaultID="20348">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
-    <backgrounddefault defaultID="20388">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
-    <backgrounddefault defaultID="20434">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
-    <backgrounddefault defaultID="20451">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
-    <backgrounddefault defaultID="20459">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
-    <backgrounddefault defaultID="20314">special://skin/extras/backgrounds/movies.jpg</backgrounddefault>
-    <!-- Default TVShows -->
-    <backgrounddefault defaultID="20343">special://skin/extras/backgrounds/tvshows.jpg</backgrounddefault>
-    <backgrounddefault defaultID="20387">special://skin/extras/backgrounds/tvshows.jpg</backgrounddefault>
-    <backgrounddefault defaultID="626">special://skin/extras/backgrounds/tvshows.jpg</backgrounddefault>
-    <!-- Default MusicVideos -->
-    <backgrounddefault defaultID="20389">special://skin/extras/backgrounds/musicvideos.jpg</backgrounddefault>
-    <backgrounddefault defaultID="20390">special://skin/extras/backgrounds/musicvideos.jpg</backgrounddefault>
-    <!-- Default Music -->
-    <backgrounddefault defaultID="2">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
-    <backgrounddefault defaultID="359">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
-    <backgrounddefault defaultID="517">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
-    <backgrounddefault defaultID="133">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
-    <backgrounddefault defaultID="132">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
-    <backgrounddefault defaultID="134">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
-    <backgrounddefault defaultID="271">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
-    <backgrounddefault defaultID="10504">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
-    <backgrounddefault defaultID="10505">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
-    <backgrounddefault defaultID="521">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
-    <backgrounddefault defaultID="1050">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
-    <backgrounddefault defaultID="10516">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
-    <backgrounddefault defaultID="1038">special://skin/extras/backgrounds/music.jpg</backgrounddefault>
-    <!-- Default DVD -->
-    <backgrounddefault defaultID="341">special://skin/extras/backgrounds/dvd.jpg</backgrounddefault>
-    <backgrounddefault defaultID="13391">special://skin/extras/backgrounds/dvd.jpg</backgrounddefault>
-    <!-- Default Addons -->
-    <backgrounddefault defaultID="10040">special://skin/extras/backgrounds/addons.jpg</backgrounddefault>
-    <backgrounddefault defaultID="10001">special://skin/extras/backgrounds/addons.jpg</backgrounddefault>
-    <backgrounddefault defaultID="20244">special://skin/extras/backgrounds/addons.jpg</backgrounddefault>
-    <!-- Default Settings -->
-    <backgrounddefault defaultID="10004">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
-    <backgrounddefault defaultID="7">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
-    <backgrounddefault defaultID="130">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
-    <backgrounddefault defaultID="14111">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
-    <backgrounddefault defaultID="166">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
-    <backgrounddefault defaultID="13000">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
-    <backgrounddefault defaultID="14036">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
-    <backgrounddefault defaultID="480">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
-    <!-- Default Profiles -->
-    <backgrounddefault defaultID="13200">special://skin/extras/backgrounds/profile.jpg</backgrounddefault>
-    <backgrounddefault defaultID="10029">special://skin/extras/backgrounds/profile.jpg</backgrounddefault>
-    <backgrounddefault defaultID="20126">special://skin/extras/backgrounds/profile.jpg</backgrounddefault>
-    <!-- Default Power -->
-    <backgrounddefault defaultID="13005">special://skin/extras/backgrounds/power.jpg</backgrounddefault>
-    <backgrounddefault defaultID="13012">special://skin/extras/backgrounds/power.jpg</backgrounddefault>
-    <backgrounddefault defaultID="13016">special://skin/extras/backgrounds/power.jpg</backgrounddefault>
-    <backgrounddefault defaultID="13011">special://skin/extras/backgrounds/power.jpg</backgrounddefault>
-    <backgrounddefault defaultID="13010">special://skin/extras/backgrounds/power.jpg</backgrounddefault>
-    <backgrounddefault defaultID="13013">special://skin/extras/backgrounds/power.jpg</backgrounddefault>
-    <!-- Default Favourites -->
-    <backgrounddefault defaultID="1036">special://skin/extras/backgrounds/favourites.jpg</backgrounddefault>
-    <!-- Default Playlists -->
-    <backgrounddefault defaultID="136">special://skin/extras/backgrounds/playlist.jpg</backgrounddefault>
     <!-- Additionnal Widgets -->
     <widget label="$LOCALIZE[89302] $LOCALIZE[8]" icon="DefaultFolder.png" type="weather" path="weather_daily" target="list">WeatherDaily</widget>
     <widget label="$LOCALIZE[89031]" icon="DefaultRecentlyAddedMovies.png" type="movies" path="recent_movies" target="list">RecentMovies</widget>
@@ -129,7 +40,7 @@
     <widgetdefault labelID="music">RecentAlbums</widgetdefault>
     <!-- -->
     <groupoverride group="powermenu" disable_groups="" condition="Window.IsActive(DialogButtonMenu.xml)">Close</groupoverride>
-    <groupoverride group="*" disable_groups="powermenu" condition="">SetProperty(MenuItemActive,$INFO[Container(9000).ListItem.Property(defaultID)],home)</groupoverride>
+    <groupoverride group="*" disable_groups="powermenu" condition="">SetProperty(MenuItemActive,$VAR[HomeMenuType],home)</groupoverride>
     <groupoverride group="*" disable_groups="powermenu" condition="">SetProperty(MenuBackground,$VAR[HomeBackground],home)</groupoverride>
     <!-- Menus Groupings -->
     <menus-groupings>
@@ -172,7 +83,7 @@
             <shortcut label="19040" type="19021" icon="DefaultTVShows.png">ActivateWindow(radiotimers)</shortcut>
             <shortcut label="137" type="19021" icon="DefaultTVShows.png">ActivateWindow(radiosearch)</shortcut>
             <shortcut label="32066" type="19021" icon="DefaultTVShows.png">PlayPvrRadio</shortcut>
-            <shortcut label="32068" type="19021" icon="DefaultTVShows.png">PlayPvr</shortcut>
+            <shortcut label="32068" type="19020" icon="DefaultTVShows.png">PlayPvr</shortcut>
             <shortcut label="19020" type="10004" icon="DefaultFolder.png">ActivateWindow(pvrsettings)</shortcut>
             <node label="19024">
                 <content>pvr-radio</content>
