@@ -2547,6 +2547,15 @@
         <value condition="!IsEmpty(Skin.String(WeatherIcons.name))">$INFO[Skin.String(WeatherIcons.name)]</value>
         <value>$LOCALIZE[231]</value>
     </variable>
+    <variable name="MenuColorName">
+        <value condition="!IsEmpty(Skin.String(MenuColorName))">[COLOR=$INFO[Skin.String(menuColor)]]$INFO[Skin.String(MenuColorName)][/COLOR]</value>
+        <value>[COLOR=selected]$LOCALIZE[571][/COLOR]</value>
+    </variable>
+    <variable name="MenuFocusName">
+        <value condition="!IsEmpty(Skin.String(CustomFocusName)) + StringCompare(Skin.String(CustomFocusName),$LOCALIZE[88085])">[COLOR=selected]$INFO[Skin.String(CustomFocus)][/COLOR]</value>
+        <value condition="!IsEmpty(Skin.String(CustomFocusName))">[COLOR=selected]$INFO[Skin.String(CustomFocusName)][/COLOR]</value>
+        <value>[COLOR=selected]$LOCALIZE[571][/COLOR]</value>
+    </variable>
     <!-- Current Weather Icon -->
     <variable name="CurrentWeatherIcon">
         <value condition="!IsEmpty(Skin.String(WeatherIcons.name)) + StringCompare(Weather.Conditions,resource://resource.images.weathericons.default/na.png)">$INFO[Skin.String(WeatherIcons.path)]na.png</value>
