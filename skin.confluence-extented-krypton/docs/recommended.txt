@@ -1,0 +1,15 @@
+﻿#IMPORT
+script.favourites
+script.pvr.favourites
+service.skin.widgets
+script.randomandlastitems
+#RECOMMENDED
+script.globalsearch
+script.simpleplaylists
+plugin.program.advanced.launcher
+script.extendedinfo
+script.tvtunes
+script.artwork.downloader
+#OS
+service.openelec.settings
+script.raspbmc.settings

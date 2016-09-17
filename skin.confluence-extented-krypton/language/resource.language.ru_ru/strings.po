@@ -1,0 +1,982 @@
+# Kodi Media Center language file
+# Addon Name: Confluence
+# Addon id: skin.confluence
+# Addon Provider: Jezz_X, Team Kodi
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Main\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: Russian (Russia) (http://www.transifex.com/projects/p/kodi-main/language/ru_RU/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#[Consistency] Make terms, settings names, brands and other minutiae, consistent throughout file.
+#[Capitalization] Avoid capitalizing every second word. See http://grammarist.com/capitalization/
+#For example, prefer wording as "This new string" instead of "This New String".
+#[Referencing] If a suitable string already exists, reuse it, making a note of where it's used!
+#[Description / location] For example, "#. Description of some setting" used on "#: xbmc/addons/guidialogaddoninfo.cpp"
+#When writing a description or setting, refer to a setting name in quotes. See existing entries for guidance.
+#For example, "Press \"OK\" for \"All seasons\"" instead of "Press OK for All seasons" after first word.
+
+msgctxt "#31000"
+msgid "Change your"
+msgstr "Измените"
+
+msgctxt "#31003"
+msgid "Power options"
+msgstr "Настройки питания"
+
+msgctxt "#31004"
+msgid "Working..."
+msgstr "Подождите…"
+
+msgctxt "#31005"
+msgid "Hide information"
+msgstr "Без сведений"
+
+msgctxt "#31006"
+msgid "View options"
+msgstr "Настройки просмотра"
+
+msgctxt "#31008"
+msgid "Full screen"
+msgstr "Полный экран"
+
+msgctxt "#31009"
+msgid "Total duration"
+msgstr "Общая длительность"
+
+msgctxt "#31010"
+msgid "Hardware decoding"
+msgstr "Аппаратное декодирование"
+
+msgctxt "#31012"
+msgid "Decoder"
+msgstr "Декодер"
+
+msgctxt "#31014"
+msgid "Memory used"
+msgstr "Использовано памяти"
+
+msgctxt "#31023"
+msgid "Playing"
+msgstr "Воспроизведение"
+
+msgctxt "#31024"
+msgid "Page"
+msgstr "страница"
+
+msgctxt "#31025"
+msgid "Items"
+msgstr "в списке"
+
+msgctxt "#31026"
+msgid "Misc options"
+msgstr "Другие параметры"
+
+msgctxt "#31027"
+msgid "Location"
+msgstr "Расположение"
+
+msgctxt "#31028"
+msgid "Poster wrap"
+msgstr "карусель постеров"
+
+msgctxt "#31029"
+msgid "Fanart"
+msgstr "фанарт"
+
+msgctxt "#31031"
+msgid "Pic thumbs"
+msgstr "эскизы фото"
+
+msgctxt "#31032"
+msgid "Image wrap"
+msgstr "карусель изображений"
+
+msgctxt "#31033"
+msgid "Info"
+msgstr "Информация"
+
+msgctxt "#31039"
+msgid "Actions"
+msgstr "Действия"
+
+msgctxt "#31040"
+msgid "Now playing"
+msgstr "Сейчас воспроизводится:"
+
+msgctxt "#31042"
+msgid "PLAYING"
+msgstr "ВОСПРОИЗВЕДЕНИЕ"
+
+msgctxt "#31043"
+msgid "PAUSED"
+msgstr "ПАУЗА"
+
+msgctxt "#31044"
+msgid "FAST FORWARD"
+msgstr "ПЕРЕМОТКА ВПЕРЕД"
+
+msgctxt "#31045"
+msgid "REWIND"
+msgstr "ПЕРЕМОТКА НАЗАД"
+
+msgctxt "#31046"
+msgid "SEEKING"
+msgstr "ПОИСК"
+
+msgctxt "#31048"
+msgid "Visualisation presets"
+msgstr "Настройки визуализации"
+
+msgctxt "#31049"
+msgid "End time"
+msgstr "Время окончания"
+
+msgctxt "#31050"
+msgid "Sort: Ascending"
+msgstr "По возрастанию"
+
+msgctxt "#31051"
+msgid "Sort: Descending"
+msgstr "По убыванию"
+
+msgctxt "#31055"
+msgid "Open playlist"
+msgstr "Открыть плейлист"
+
+msgctxt "#31056"
+msgid "Save playlist"
+msgstr "Сохранить плейлист"
+
+msgctxt "#31057"
+msgid "Close playlist"
+msgstr "Закрыть плейлист"
+
+msgctxt "#31058"
+msgid "System music files"
+msgstr "Системные аудиофайлы"
+
+msgctxt "#31059"
+msgid "Current playlist"
+msgstr "Текущий плейлист"
+
+msgctxt "#31061"
+msgid "Current selected"
+msgstr "Текущее выделение"
+
+msgctxt "#31101"
+msgid "Home screen options"
+msgstr "Настройки главного экрана"
+
+msgctxt "#31102"
+msgid "Background"
+msgstr "Фон"
+
+msgctxt "#31103"
+msgid "Show \"Paused\" in picture slideshow"
+msgstr "Показывать \"Пауза\" в режиме слайд-шоу"
+
+msgctxt "#31104"
+msgid "Play trailers in a window [COLOR=grey3](Video information dialogue only)[/COLOR]"
+msgstr "Воспроизводить трейлеры в окне [COLOR=grey3](только для окна сведений)[/COLOR]"
+
+msgctxt "#31106"
+msgid "Miscellaneous options"
+msgstr "Различные параметры"
+
+msgctxt "#31107"
+msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
+msgstr "Скрыть флаги, полученные из имени видео файла [COLOR=grey3](BluRray, HD-DVD)[/COLOR]"
+
+msgctxt "#31108"
+msgid "Hide main menu buttons"
+msgstr "Скрыть кнопки главного меню"
+
+msgctxt "#31109"
+msgid "Enable custom background"
+msgstr "Использовать собственный фон"
+
+msgctxt "#31110"
+msgid "Background path:"
+msgstr "Путь к фоновой картинке:"
+
+msgctxt "#31111"
+msgid "Hide"
+msgstr "Скрыть"
+
+msgctxt "#31112"
+msgid "Options"
+msgstr "Параметры"
+
+msgctxt "#31113"
+msgid "Show KODI logo"
+msgstr "Показывать KODI логотип"
+
+msgctxt "#31114"
+msgid "Show Recently added Episode"
+msgstr "Показывать последние добавленные епизоды"
+
+msgctxt "#31115"
+msgid "Show Recently added MusicVideo"
+msgstr "Показывать последнее добавленное музыкальное видео"
+
+msgctxt "#31116"
+msgid "Show recently added albums"
+msgstr "Показывать последние добавленные альбомы"
+
+msgctxt "#31117"
+msgid "Show recently added videos"
+msgstr "Показывать последнее добавленное видео"
+
+msgctxt "#31118"
+msgid "Home page programs submenu"
+msgstr "Подменю программ главного экрана"
+
+msgctxt "#31119"
+msgid "Hide background fanart"
+msgstr "Скрыть фоновый фанарт"
+
+msgctxt "#31122"
+msgid "Hide EPG if RDS is present on channel window"
+msgstr "Скрыть EPG если на каналe присутствует RDS"
+
+msgctxt "#31124"
+msgid "Show background \"Now playing\" video"
+msgstr "Воспроизводимое видео в качестве фона"
+
+msgctxt "#31125"
+msgid "Show background \"Now playing\" visualisation"
+msgstr "Музыкальная визуализация в качестве фона"
+
+msgctxt "#31128"
+msgid "Lyrics"
+msgstr "Тексты"
+
+msgctxt "#31129"
+msgid "Hide fanart in full screen visualisation"
+msgstr "Скрывать фанарт в полноэкранной визуализации"
+
+msgctxt "#31130"
+msgid "Choose weather fanart pack"
+msgstr "Выбрать фанарт пакет для погоды"
+
+msgctxt "#31131"
+msgid "Choose home backgrounds pack"
+msgstr "Выбрать пакет фонов"
+
+msgctxt "#31132"
+msgid "Lyrics add-on"
+msgstr "Дополнение текстов песен"
+
+msgctxt "#31133"
+msgid "Choose weather icon pack"
+msgstr "Выбрать картинки для погоды"
+
+#. In main language strings its used as submenu
+msgctxt "#31134"
+msgid "Home page \"Videos\" submenu"
+msgstr "Подменю \"Видео\" главного экрана"
+
+msgctxt "#31135"
+msgid "Home page \"Music\" submenu"
+msgstr "Подменю \"Музыка\" главного экрана"
+
+msgctxt "#31136"
+msgid "Home page \"Pictures\" submenu"
+msgstr "Подменю \"Изображения\" главного экрана"
+
+msgctxt "#31140"
+msgid "Music OSD"
+msgstr "Экранное меню музыки"
+
+msgctxt "#31142"
+msgid "Settings level"
+msgstr "Уровень настроек"
+
+msgctxt "#31200"
+msgid "Shortcuts"
+msgstr "Ярлыки"
+
+msgctxt "#31203"
+msgid "Choose your song"
+msgstr "Выберите композицию"
+
+msgctxt "#31205"
+msgid "Lyrics source"
+msgstr "Источник текстов песен"
+
+msgctxt "#31206"
+msgid "Found"
+msgstr "Найдено"
+
+msgctxt "#31207"
+msgid "Find more items"
+msgstr "Найти ещё"
+
+msgctxt "#31208"
+msgid "Upcoming episodes"
+msgstr "Следующие серии"
+
+msgctxt "#31300"
+msgid "Current temperature"
+msgstr "Текущая температура"
+
+msgctxt "#31301"
+msgid "Last updated"
+msgstr "Последнее обновление"
+
+msgctxt "#31303"
+msgid "Data provider"
+msgstr "Источник данных"
+
+msgctxt "#31308"
+msgid "Movie details"
+msgstr "Сведения о фильме"
+
+msgctxt "#31309"
+msgid "Memory used:"
+msgstr "Использовано памяти:"
+
+msgctxt "#31310"
+msgid "Track number"
+msgstr "Номер композиции"
+
+msgctxt "#31319"
+msgid "Selected profile"
+msgstr "Выбранный профиль"
+
+msgctxt "#31320"
+msgid "Last logged in"
+msgstr "Последний вход"
+
+msgctxt "#31322"
+msgid "Aired"
+msgstr "Премьера"
+
+msgctxt "#31325"
+msgid "Playlist options"
+msgstr "Параметры плейлиста"
+
+msgctxt "#31326"
+msgid "Created"
+msgstr "Создан"
+
+msgctxt "#31327"
+msgid "Resolution"
+msgstr "Размеры"
+
+msgctxt "#31328"
+msgid "Recently added"
+msgstr "Последние"
+
+msgctxt "#31329"
+msgid "[B]Timer set![/B] [COLOR=grey2] - System auto shutdown in[/COLOR]"
+msgstr "[B]Установлен таймер![/B] [COLOR=grey2] Выключение через[/COLOR]"
+
+msgctxt "#31330"
+msgid "Click button to play[CR][CR]movie trailer"
+msgstr "Нажмите кнопку,[CR][CR]чтобы воспроизвести трейлер к фильму"
+
+msgctxt "#31331"
+msgid "Album details"
+msgstr "Сведения об альбоме"
+
+msgctxt "#31351"
+msgid "Pause"
+msgstr "Пауза"
+
+msgctxt "#31352"
+msgid "Stop"
+msgstr "Стоп"
+
+msgctxt "#31353"
+msgid "Fast forward"
+msgstr "Перемотка вперед"
+
+msgctxt "#31354"
+msgid "Rewind"
+msgstr "Перемотка назад"
+
+msgctxt "#31355"
+msgid "Movie menu"
+msgstr "Меню фильма"
+
+msgctxt "#31356"
+msgid "Download subtitles"
+msgstr "Загрузить субтитры"
+
+msgctxt "#31360"
+msgid "Watch as 2D"
+msgstr "Смотреть в 2D"
+
+msgctxt "#31361"
+msgid "Change mode"
+msgstr "Изменить режим"
+
+msgctxt "#31362"
+msgid "Enabled"
+msgstr "Вкл."
+
+msgctxt "#31390"
+msgid "Skin default"
+msgstr "Стандартные"
+
+msgctxt "#31391"
+msgid "Skin default with no caps"
+msgstr "Стандартные без прописных"
+
+msgctxt "#31392"
+msgid "Arial based"
+msgstr "На основе Arial"
+
+msgctxt "#31411"
+msgid "First run help..."
+msgstr "Сведения при первом запуске..."
+
+msgctxt "#31412"
+msgid "This tab signifies that there is a menu off to the side of this window that contains extra options for this section. To access the menu, navigate to the left with your remote control or keyboard or place your mouse pointer over the tab. [CR][CR]Click \"OK\" to close this dialogue. It will not appear again."
+msgstr "Эта вкладка означает, что сбоку окна есть меню с дополнительными настройками.  Чтобы получить доступ к меню, перейдите влево при помощи пульта ДУ или клавиатуры либо поместите курсор мыши над вкладкой. [CR][CR]Нажмите \"ОК\", чтобы закрыть этот диалог. Он больше не будет отображаться."
+
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Доступны локальные субтитры"
+
+msgctxt "#31420"
+msgid "Login"
+msgstr "Вход"
+
+msgctxt "#31421"
+msgid "Select your Kodi user profile[CR]to login and continue"
+msgstr "Выберите профиль пользователя Kodi,[CR]чтобы войти и продолжить"
+
+msgctxt "#31422"
+msgid "Show or hide the login screen at startup."
+msgstr "Показать или скрыть экран входа при запуске."
+
+msgctxt "#31423"
+msgid "Select the profile that will be used at startup when the login screen is disabled."
+msgstr "Выбрать профиль, используемый при запуске, если экран входа отключен."
+
+#empty strings from id 31424 to 31429
+
+msgctxt "#31430"
+msgid "[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during playback · Configure how media content is played"
+msgstr "[B]НАСТРОЙКА ПРОИГРОВАТЕЛЯ[/B][CR][CR]Настройка действий используемых во время воспроизведения • Настройка воспроизведения медиа-контента"
+
+msgctxt "#31431"
+msgid "[B]LIBRARY SETTINGS[/B][CR][CR]Configure how the library/file views display media content ·  Configure how library lists/views are navigated · Configure the media database options"
+msgstr "[B]НАСТРОЙКА БИБЛИОТЕКИ[/B][CR][CR]Настройка вида библиотеки медиа-контента • Настройка навигации по библиотеке • Настройка параметров базы данных медиатеки"
+
+msgctxt "#31432"
+msgid "[B]PVR SETTINGS[/B][CR][CR]Configure how the channels & guide are managed  · Configure how Live TV and recordings are managed"
+msgstr "[B]НАСТРОЙКА PVR[/B][CR][CR]Настройка управления каналами и программой • Настройка записи Live TV"
+
+msgctxt "#31433"
+msgid "[B]ADD-ONS SETTINGS[/B][CR][CR]Configure your installed add-ons · Browse for and install add-ons from kodi.tv"
+msgstr "[B]НАСТРОЙКА ДОПОЛНЕНИЙ[/B][CR][CR]Настройка установленных дополнений • Обзор и установка дополнений из kodi.tv"
+
+msgctxt "#31434"
+msgid "[B]SERVICES SETTINGS[/B][CR][CR]Configure & manage media sharing services · Configure web server · Configure & manage the weather service"
+msgstr "[B]НАСТРОЙКА СЛУЖБ[/B][CR][CR]Настройка и управление службами общего доступа к мультимедиа • Настройка веб сервера • Настройка и управление службой погоды"
+
+msgctxt "#31435"
+msgid "[B]SYSTEM SETTINGS[/B][CR][CR]Configure display · Configure audio · Configure internet access · Configure power saving· Configure logging"
+msgstr "[B]НАСТРОЙКИ СИСТЕМЫ[/B][CR][CR]Настройка экрана В· Настройка аудио В· Настройка интернета • Настройка питания • Настройка отладки"
+
+msgctxt "#31436"
+msgid "[B]INTERFACE SETTINGS[/B][CR][CR]Configure skin · Configure region · Configure control · Configure screensaver · Configure master lock"
+msgstr "[B]НАСТРОЙКА ИНТЕРФЕЙСА[/B][CR][CR]Настройка обложки • Настройка региона • Настройка управления • Настройка заставки • Настройка блокировки"
+
+msgctxt "#31501"
+msgid "Scheduled time"
+msgstr "Запланированное время"
+
+msgctxt "#31502"
+msgid "TV"
+msgstr "ТВ"
+
+msgctxt "#31503"
+msgid "Add group"
+msgstr "Добавить группу"
+
+msgctxt "#31504"
+msgid "Rename group"
+msgstr "Переименовать группу"
+
+msgctxt "#31505"
+msgid "Delete group"
+msgstr "Удалить группу"
+
+msgctxt "#31506"
+msgid "Available[CR]Groups"
+msgstr "Доступные[CR]группы"
+
+msgctxt "#31509"
+msgid "Channel group"
+msgstr "Группа каналов"
+
+msgctxt "#31510"
+msgid "Timer set"
+msgstr "Таймер настроен"
+
+msgctxt "#31511"
+msgid "Channel options"
+msgstr "Настройки канала"
+
+msgctxt "#31901"
+msgid "36-hour forecast"
+msgstr "36 часовой прогноз"
+
+msgctxt "#31902"
+msgid "Hourly forecast"
+msgstr "Ежечасный прогноз"
+
+msgctxt "#31903"
+msgid "Weekend forecast"
+msgstr "Прогноз на выходные"
+
+msgctxt "#31904"
+msgid "Daily forecast"
+msgstr "Ежедневный прогноз"
+
+msgctxt "#31905"
+msgid "Forecast"
+msgstr "Прогноз"
+
+msgctxt "#31909"
+msgid "Fetching forecast info..."
+msgstr "Получение прогноза…"
+
+msgctxt "#31910"
+msgid "Maps"
+msgstr "Карты"
+
+msgctxt "#31950"
+msgid "WEATHER"
+msgstr "ПОГОДА"
+
+msgctxt "#31951"
+msgid "PICTURES"
+msgstr "ФОТО"
+
+msgctxt "#31952"
+msgid "TV"
+msgstr "ТВ"
+
+msgctxt "#31953"
+msgid "VIDEOS"
+msgstr "ВИДЕО"
+
+msgctxt "#31954"
+msgid "MOVIES"
+msgstr "ФИЛЬМЫ"
+
+msgctxt "#31955"
+msgid "TV SHOWS"
+msgstr "СЕРИАЛЫ"
+
+msgctxt "#31956"
+msgid "MUSIC"
+msgstr "МУЗЫКА"
+
+msgctxt "#31957"
+msgid "PROGRAMS"
+msgstr "ПРОГРАММЫ"
+
+msgctxt "#31958"
+msgid "PLAY DISC"
+msgstr "ИГРАТЬ ДИСК"
+
+msgctxt "#31959"
+msgid "SYSTEM"
+msgstr "СИСТЕМА"
+
+msgctxt "#31960"
+msgid "RADIO"
+msgstr "РАДИО"
+
+msgctxt "#31961"
+msgid "MUSIC VIDEOS"
+msgstr "МУЗ. ВИДЕО"
+
+# Extended Added Value
+
+msgctxt "#32000"
+msgid "SEARCH"
+msgstr "ПОИСК"
+
+msgctxt "#32001"
+msgid "PLAYLIST"
+msgstr "ПЛЕЙЛИСТ"
+
+msgctxt "#32002"
+msgid "FAVOURITES"
+msgstr "ИЗБРАННОЕ"
+
+msgctxt "#32003"
+msgid "PROFILE"
+msgstr "ПРОФИЛЬ"
+
+msgctxt "#32004"
+msgid "SHUTDOWN"
+msgstr "ВЫКЛЮЧЕНИЕ"
+
+msgctxt "#88000"
+msgid "Enable playlist at startup"
+msgstr "Проигрывать плейлист при запуске"
+
+msgctxt "#88001"
+msgid "Path:"
+msgstr "Путь:"
+
+msgctxt "#88002"
+msgid "Move focus main menu"
+msgstr "Переместить фокус главного меню"
+
+msgctxt "#88070"
+msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add and remove home menu items[CR]Change skin backgrounds"
+msgstr "[B]НАСТРОЙКА ПАРАМЕТРОВ ОБЛОЖКИ[/B][CR][CR]Настройка обложки • Добавление и удаление пунктов главного меню[CR]Изменение фона обложки"
+
+msgctxt "#88071"
+msgid "Stats Bar"
+msgstr "Панель статистики"
+
+msgctxt "#88072"
+msgid "Automatic opening submenu"
+msgstr "Автоматическое раскрытие подменю"
+
+msgctxt "#88073"
+msgid "Automatic opening add-on submenu"
+msgstr "Автоматическое раскрытие панели дополнений"
+
+msgctxt "#88074"
+msgid "Title of add-on"
+msgstr "Названия дополнений"
+
+msgctxt "#88075"
+msgid "Bottom line in home page"
+msgstr "Нижнюю линию на главном экране"
+
+msgctxt "#88076"
+msgid "Bottom line everywhere except the home page"
+msgstr "Нижнюю линию везде, кроме главного экрана"
+
+msgctxt "#88077"
+msgid "Player control panel"
+msgstr "Панель управления проигрывателем"
+
+msgctxt "#88078"
+msgid "Power button"
+msgstr "Кнопку выключения"
+
+msgctxt "#88079"
+msgid "Favorites button"
+msgstr "Кнопку избранного"
+
+msgctxt "#88080"
+msgid "Reload skin button"
+msgstr "Кнопку перегрузки обложки"
+
+msgctxt "#88081"
+msgid "Backlight color"
+msgstr "Цвет подсветки"
+
+msgctxt "#88082"
+msgid "After startup KODI, move focus main menu:"
+msgstr "После запуска KODI, переместить фокус главного меню:"
+
+msgctxt "#88083"
+msgid "To the left"
+msgstr "Влево на"
+
+msgctxt "#88084"
+msgid "To the right"
+msgstr "Вправо на"
+
+msgctxt "#88085"
+msgid "Manually"
+msgstr "Вручную"
+
+msgctxt "#88086"
+msgid "Wrap Around Menu"
+msgstr "Бесконечное меню"
+
+msgctxt "#88087"
+msgid "Return to Start Menu Scroll"
+msgstr "Прокрутка меню"
+
+msgctxt "#88088"
+msgid "Reload skin"
+msgstr "Перегрузить обложку"
+
+msgctxt "#88089"
+msgid "Buttons"
+msgstr "Кнопки"
+
+msgctxt "#88090"
+msgid "Title of widget"
+msgstr "Названия виджетов"
+
+msgctxt "#88900"
+msgid "Skin Krypton"
+msgstr "Krypton"
+
+msgctxt "#88910"
+msgid "Skin Krypton Massive"
+msgstr "Krypton Крупный шрифт"
+
+msgctxt "#88920"
+msgid "Skin Krypton with no Caps"
+msgstr "Krypton без ПРОПИСНЫХ"
+
+msgctxt "#88107"
+msgid "Blue"
+msgstr "Синий"
+
+msgctxt "#88108"
+msgid "Azure"
+msgstr "Голубой"
+
+msgctxt "#88109"
+msgid "White"
+msgstr "Белый"
+
+msgctxt "#88110"
+msgid "Gray"
+msgstr "Серый"
+
+msgctxt "#88111"
+msgid "Red"
+msgstr "Красный"
+
+msgctxt "#88112"
+msgid "Pink"
+msgstr "Розовый"
+
+msgctxt "#88113"
+msgid "Purple"
+msgstr "Фиолетовый"
+
+msgctxt "#88114"
+msgid "Orange"
+msgstr "Оранжевый"
+
+msgctxt "#88115"
+msgid "Yellow"
+msgstr "Жёлтый"
+
+msgctxt "#88116"
+msgid "Green"
+msgstr "Зелёный"
+
+msgctxt "#88117"
+msgid "Select color"
+msgstr "Выберите цвет"
+
+msgctxt "#88123"
+msgid "Submenus"
+msgstr "Подменю"
+
+msgctxt "#88125"
+msgid "Initial defaults"
+msgstr "По умолчанию"
+
+msgctxt "#88126"
+msgid "User Data"
+msgstr "пользовательских данных"
+
+msgctxt "#88127"
+msgid "Addons"
+msgstr "Дополнения"
+
+msgctxt "#88129"
+msgid "Playlist widget should [B]Randomize[/B] the playlist sort order"
+msgstr "Виджет плейлиста будет иметь [B]Случайный[/B] порядок сортировки"
+
+msgctxt "#88130"
+msgid "Widgets"
+msgstr "Виджеты"
+
+msgctxt "#88131"
+msgid "Unwatched movies"
+msgstr "Не просмотренные фильмы"
+
+msgctxt "#88132"
+msgid "Background options"
+msgstr "Параметры фона"
+
+msgctxt "#88133"
+msgid "Favorites TV Channels"
+msgstr "Избранные ТВ каналы"
+
+msgctxt "#88134"
+msgid "Favorites Radio Channels"
+msgstr "Избранные Радио каналы"
+
+msgctxt "#89001"
+msgid "Menu item"
+msgstr "Меню"
+
+msgctxt "#89002"
+msgid "Submenu set"
+msgstr "Подменю"
+
+msgctxt "#89003"
+msgid "Addon set"
+msgstr "Набор ярлыков"
+
+msgctxt "#89004"
+msgid "Widget set"
+msgstr "Виджет"
+
+msgctxt "#89005"
+msgid "Move menu item"
+msgstr "Переместить меню"
+
+msgctxt "#89012"
+msgid "Up One Level"
+msgstr "Вверх не один уровень"
+
+msgctxt "#89013"
+msgid "Clear item"
+msgstr "Очистить элемент"
+
+msgctxt "#89021"
+msgid "Launcher"
+msgstr "Запуск"
+
+msgctxt "#89022"
+msgid "Kodi Command"
+msgstr "Команда Kodi"
+
+msgctxt "#89023"
+msgid "Watch it Later"
+msgstr "Посмотреть позже"
+
+msgctxt "#89025"
+msgid "Recent Albums"
+msgstr "Последние альбомы"
+
+msgctxt "#89026"
+msgid "Recommended Albums"
+msgstr "Рекомендуемые альбомы"
+
+msgctxt "#89027"
+msgid "Random Albums"
+msgstr "Случайные альбомы"
+
+msgctxt "#89028"
+msgid "Clean Library"
+msgstr "Очистить медиатеку"
+
+msgctxt "#89029"
+msgid "Nodes"
+msgstr "Узелы"
+
+msgctxt "#89030"
+msgid "Recommended Movies"
+msgstr "Рекомендуемые фильмы"
+
+msgctxt "#89031"
+msgid "Recent Movies"
+msgstr "Последние фильмы"
+
+msgctxt "#89032"
+msgid "Random Movies"
+msgstr "Случайные фильмы"
+
+msgctxt "#89033"
+msgid "Recent Episodes"
+msgstr "Последние эпизоды"
+
+msgctxt "#89034"
+msgid "Recommended Episodes"
+msgstr "Рекомендуемые эпизоды"
+
+msgctxt "#89035"
+msgid "Random Episodes"
+msgstr "Случайные эпизоды"
+
+msgctxt "#89036"
+msgid "Recent Music Video"
+msgstr "Последнее муз. видео"
+
+msgctxt "#89037"
+msgid "Recommended Music Video"
+msgstr "Рекомендуемое муз. видео"
+
+msgctxt "#89038"
+msgid "Random Music Video"
+msgstr "Случайное муз. видео"
+
+msgctxt "#89039"
+msgid "OpenELEC"
+msgstr "OpenELEC"
+
+msgctxt "#89040"
+msgid "Raspberry"
+msgstr "Raspberry"
+
+msgctxt "#89302"
+msgid "Daily"
+msgstr "Ежедневная"
+
+msgctxt "#89303"
+msgid "Hourly"
+msgstr "Почасовая"
+
+msgctxt "#89400"
+msgid "Item to Swap"
+msgstr "элемент для обмена"
+
+msgctxt "#89500"
+msgid "Submenu"
+msgstr "Пункт"
+
+msgctxt "#89700"
+msgid "Select"
+msgstr "Выбрать"
+
+msgctxt "#89701"
+msgid "Selected"
+msgstr "Выбрать"
+
+msgctxt "#89702"
+msgid "Favourites Window"
+msgstr "Окно избранное"
+
+msgctxt "#89703"
+msgid "No Recommended Media"
+msgstr "Нет рекумендуемого медиа"
+
+msgctxt "#89704"
+msgid "Last Video Played"
+msgstr "Последнее проигранное видео"
+
+msgctxt "#89705"
+msgid "Automatic Suggestion"
+msgstr "Автоматическое предложение"
+
+msgctxt "#89706"
+msgid "Eject or Load Disc"
+msgstr "Извлечь или загрузить диск"
+
+msgctxt "#89707"
+msgid "Shutdown Menu"
+msgstr "Меню выключения"
+
+msgctxt "#89708"
+msgid "Command"
+msgstr "Команда"
+
+msgctxt "#89714"
+msgid "Reset Skin Values to Initial Install Defaults"
+msgstr "Сбросить обложку к первоначальному состоянию по умолчанию"

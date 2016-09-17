@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="2210" type="dialog">
+	<defaultcontrol always="true">450</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<left>0</left>
+		<top>0</top>
+	</coordinates>
+	<controls>
+        <include content="CustomSlideDialog">
+            <param name="dlg_title" value="$LOCALIZE[88117]" />
+            <param name="id_win" value="2210" />
+            <param name="include_name" value="ItemMenuColors" />
+        </include>
+	</controls>
+</window>
