@@ -220,22 +220,7 @@ msgctxt "#31113"
 msgid "Show KODI logo"
 msgstr "Показывать KODI логотип"
 
-msgctxt "#31114"
-msgid "Show Recently added Episode"
-msgstr "Показывать последние добавленные епизоды"
-
-msgctxt "#31115"
-msgid "Show Recently added MusicVideo"
-msgstr "Показывать последнее добавленное музыкальное видео"
-
-msgctxt "#31116"
-msgid "Show recently added albums"
-msgstr "Показывать последние добавленные альбомы"
-
-msgctxt "#31117"
-msgid "Show recently added videos"
-msgstr "Показывать последнее добавленное видео"
-
+#. In main language strings its used as submenu
 msgctxt "#31118"
 msgid "Home page programs submenu"
 msgstr "Подменю программ главного экрана"
@@ -646,52 +631,52 @@ msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add an
 msgstr "[B]НАСТРОЙКА ПАРАМЕТРОВ ОБЛОЖКИ[/B][CR][CR]Настройка обложки • Добавление и удаление пунктов главного меню[CR]Изменение фона обложки"
 
 msgctxt "#88071"
-msgid "Stats Bar"
-msgstr "Панель статистики"
+msgid "Show stats panel"
+msgstr "Показывать панель статистики"
 
 msgctxt "#88072"
 msgid "Automatic opening submenu"
 msgstr "Автоматическое раскрытие подменю"
 
 msgctxt "#88073"
-msgid "Automatic opening add-on submenu"
-msgstr "Автоматическое раскрытие панели дополнений"
+msgid "Automatic opening shortcuts submenu"
+msgstr "Автоматическое раскрытие панели ярлыков"
 
 msgctxt "#88074"
-msgid "Title of add-on"
-msgstr "Названия дополнений"
+msgid "title of shortcuts"
+msgstr "названия ярлыков"
 
 msgctxt "#88075"
-msgid "Bottom line in home page"
-msgstr "Нижнюю линию на главном экране"
+msgid "bottom line in home page"
+msgstr "нижнюю линию на главном экране"
 
 msgctxt "#88076"
-msgid "Bottom line everywhere except the home page"
-msgstr "Нижнюю линию везде, кроме главного экрана"
+msgid "bottom line everywhere except the home page"
+msgstr "нижнюю линию везде, кроме главного экрана"
 
 msgctxt "#88077"
-msgid "Player control panel"
-msgstr "Панель управления проигрывателем"
+msgid "Show player control panel"
+msgstr "Показывать панель управления проигрывателем"
 
 msgctxt "#88078"
-msgid "Power button"
-msgstr "Кнопку выключения"
+msgid "power button"
+msgstr "кнопку выключения"
 
 msgctxt "#88079"
-msgid "Favorites button"
-msgstr "Кнопку избранного"
+msgid "favorites button"
+msgstr "кнопку избранного"
 
 msgctxt "#88080"
-msgid "Reload skin button"
-msgstr "Кнопку перегрузки обложки"
+msgid "reload skin button"
+msgstr "кнопку обновления обложки"
 
 msgctxt "#88081"
 msgid "Backlight color"
 msgstr "Цвет подсветки"
 
 msgctxt "#88082"
-msgid "After startup KODI, move focus main menu:"
-msgstr "После запуска KODI, переместить фокус главного меню:"
+msgid "After startup KODI, move focus main menu"
+msgstr "После запуска KODI, переместить фокус главного меню"
 
 msgctxt "#88083"
 msgid "To the left"
@@ -713,17 +698,13 @@ msgctxt "#88087"
 msgid "Return to Start Menu Scroll"
 msgstr "Прокрутка меню"
 
-msgctxt "#88088"
-msgid "Reload skin"
-msgstr "Перегрузить обложку"
-
 msgctxt "#88089"
 msgid "Buttons"
 msgstr "Кнопки"
 
 msgctxt "#88090"
-msgid "Title of widget"
-msgstr "Названия виджетов"
+msgid "title of widget"
+msgstr "названия виджетов"
 
 msgctxt "#88900"
 msgid "Skin Krypton"
@@ -785,17 +766,9 @@ msgctxt "#88123"
 msgid "Submenus"
 msgstr "Подменю"
 
-msgctxt "#88125"
-msgid "Initial defaults"
-msgstr "По умолчанию"
-
 msgctxt "#88126"
 msgid "User Data"
 msgstr "пользовательских данных"
-
-msgctxt "#88127"
-msgid "Addons"
-msgstr "Дополнения"
 
 msgctxt "#88129"
 msgid "Playlist widget should [B]Randomize[/B] the playlist sort order"
@@ -830,7 +803,7 @@ msgid "Submenu set"
 msgstr "Подменю"
 
 msgctxt "#89003"
-msgid "Addon set"
+msgid "Shortcuts set"
 msgstr "Набор ярлыков"
 
 msgctxt "#89004"
@@ -840,6 +813,10 @@ msgstr "Виджет"
 msgctxt "#89005"
 msgid "Move menu item"
 msgstr "Переместить меню"
+
+msgctxt "#89006"
+msgid "Shortcut"
+msgstr "Ярлык"
 
 msgctxt "#89012"
 msgid "Up One Level"
@@ -938,15 +915,11 @@ msgid "Item to Swap"
 msgstr "элемент для обмена"
 
 msgctxt "#89500"
-msgid "Submenu"
+msgid "Submenu item"
 msgstr "Пункт"
 
 msgctxt "#89700"
 msgid "Select"
-msgstr "Выбрать"
-
-msgctxt "#89701"
-msgid "Selected"
 msgstr "Выбрать"
 
 msgctxt "#89702"

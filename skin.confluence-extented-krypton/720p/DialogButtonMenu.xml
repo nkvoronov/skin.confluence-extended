@@ -291,7 +291,7 @@
 				<onclick>XBMC.ReloadSkin()</onclick>
 				<pulseonselect>no</pulseonselect>
 				<font>font13</font>
-				<label>88088</label>
+				<label>20183</label>
                 <visible>Skin.HasSetting(HideReloadSkinButton)</visible>
 			</control>
 			<control type="image" id="15">

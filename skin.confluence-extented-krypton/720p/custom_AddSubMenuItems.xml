@@ -12,7 +12,7 @@
     <onunload>ClearProperty(UsrSelectBtnClear,home)</onunload>
 	<controls>
         <include content="CustomSlideDialog">
-            <param name="dlg_title" value="$LOCALIZE[89700] $LOCALIZE[89001]" />
+            <param name="dlg_title" value="$LOCALIZE[89700] $LOCALIZE[89002]" />
             <param name="id_win" value="2115" />
             <param name="include_name" value="MenuItemChoices" />
         </include>
