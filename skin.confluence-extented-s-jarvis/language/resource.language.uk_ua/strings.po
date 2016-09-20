@@ -242,22 +242,6 @@ msgctxt "#31113"
 msgid "Show KODI logo"
 msgstr "Показувати KODI логотип"
 
-msgctxt "#31114"
-msgid "Show Recently added Episode"
-msgstr "Показувати останні додані епізоди"
-
-msgctxt "#31115"
-msgid "Show Recently added MusicVideo"
-msgstr "Показувати останнє доданий музичне відео"
-
-msgctxt "#31116"
-msgid "Show recently added albums"
-msgstr "Показати останні додані альбоми"
-
-msgctxt "#31117"
-msgid "Show recently added videos"
-msgstr "Показати останні додані альбоми"
-
 #. In main language strings its used as submenu
 msgctxt "#31118"
 msgid "Home page programs submenu"
@@ -759,48 +743,48 @@ msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add an
 msgstr "[B]НАЛАШТУВАННЯ ПАРАМЕТРІВ ОБКЛАДИНКИ[/B][CR][CR]Налаштування обкладинки • Додавання і видалення пунктів головного меню[CR]Зміна фону обкладинки"
 
 msgctxt "#88071"
-msgid "Stats Bar"
-msgstr "Панель статистики"
+msgid "Show stats panel"
+msgstr "Показувати панель статистики"
 
 msgctxt "#88072"
 msgid "Automatic opening submenu"
 msgstr "Автоматичне розкриття підміню"
 
 msgctxt "#88073"
-msgid "Automatic opening add-on submenu"
-msgstr "Автоматичне приховування панелі доповнень"
+msgid "Automatic opening shortcuts submenu"
+msgstr "Автоматичне приховування панелі ярликів"
 
 msgctxt "#88074"
-msgid "Title of add-on"
-msgstr "Назви доповнень"
+msgid "title of shortcuts"
+msgstr "назви ярликів"
 
 msgctxt "#88075"
-msgid "Bottom line in home page"
-msgstr "Нижню лінію на головному екрані"
+msgid "bottom line in home page"
+msgstr "нижню лінію на головному екрані"
 
 msgctxt "#88076"
-msgid "Bottom line everywhere except the home page"
-msgstr "Нижню лінію всюди, крім головного екрану"
+msgid "bottom line everywhere except the home page"
+msgstr "нижню лінію всюди, крім головного екрану"
 
 msgctxt "#88077"
-msgid "Player control panel"
-msgstr "Панель управління програвачем"
+msgid "Show player control panel"
+msgstr "Паказувати панель управління програвачем"
 
 msgctxt "#88078"
-msgid "Power button"
-msgstr "Кнопку виключення"
+msgid "power button"
+msgstr "кнопку вимикання"
 
 msgctxt "#88079"
-msgid "Favorites button"
-msgstr "Кнопку обраного"
+msgid "favorites button"
+msgstr "кнопку обраного"
 
 msgctxt "#88081"
 msgid "Backlight color"
 msgstr "Колір підсвічування"
 
 msgctxt "#88082"
-msgid "After startup KODI, move focus main menu:"
-msgstr "Після запуску Коди, перемістити фокус головного меню:"
+msgid "After startup KODI, move focus main menu"
+msgstr "Після запуску Коди, перемістити фокус головного меню"
 
 msgctxt "#88083"
 msgid "To the left"
@@ -827,8 +811,8 @@ msgid "Buttons"
 msgstr "Кнопки"
 
 msgctxt "#88090"
-msgid "Title of widget"
-msgstr "Назву віджетів"
+msgid "title of widget"
+msgstr "назву віджетів"
 
 msgctxt "#88900"
 msgid "Skin Jarvis"
@@ -886,26 +870,6 @@ msgctxt "#88117"
 msgid "Select color"
 msgstr "Виберіть колір"
 
-msgctxt "#88123"
-msgid "Submenus"
-msgstr "Підміню"
-
-msgctxt "#88125"
-msgid "Initial defaults"
-msgstr "За замовчуванням"
-
-msgctxt "#88126"
-msgid "User Data"
-msgstr "даних користувача"
-
-msgctxt "#88127"
-msgid "Addons"
-msgstr "Доповнення"
-
-msgctxt "#88129"
-msgid "Playlist widget should [B]Randomize[/B] the playlist sort order"
-msgstr "Віджет плейлиста матиме [B]Випадковий[/B] порядок сортування"
-
 msgctxt "#88130"
 msgid "Widgets"
 msgstr "Віджети"
@@ -913,10 +877,6 @@ msgstr "Віджети"
 msgctxt "#88131"
 msgid "Unwatched movies"
 msgstr "Не переглянуті фільми"
-
-msgctxt "#88132"
-msgid "Background options"
-msgstr "Параметри фону"
 
 msgctxt "#88133"
 msgid "Favorites TV Channels"
@@ -926,41 +886,17 @@ msgctxt "#88134"
 msgid "Favorites Radio Channels"
 msgstr "Вибрані Радіо канали"
 
-msgctxt "#89001"
-msgid "Menu item"
-msgstr "Меню"
-
-msgctxt "#89002"
-msgid "Submenu set"
-msgstr "Підміню"
-
 msgctxt "#89003"
-msgid "Addon set"
+msgid "Shortcuts set"
 msgstr "Набір ярликів"
 
 msgctxt "#89004"
 msgid "Widget set"
 msgstr "Віджет"
 
-msgctxt "#89005"
-msgid "Move menu item"
-msgstr "Перемістити меню"
-
-msgctxt "#89012"
-msgid "Up One Level"
-msgstr "Вгору не один рівень"
-
 msgctxt "#89013"
 msgid "Clear item"
 msgstr "Очистити елемент"
-
-msgctxt "#89021"
-msgid "Launcher"
-msgstr "Запуск"
-
-msgctxt "#89022"
-msgid "Kodi Command"
-msgstr "Команда Kodi"
 
 msgctxt "#89023"
 msgid "Watch it Later"
@@ -977,14 +913,6 @@ msgstr "Рекомендовані альбоми"
 msgctxt "#89027"
 msgid "Random Albums"
 msgstr "Випадкові альбоми"
-
-msgctxt "#89028"
-msgid "Clean Library"
-msgstr "Очистити медіатеку"
-
-msgctxt "#89029"
-msgid "Nodes"
-msgstr "Вузли"
 
 msgctxt "#89030"
 msgid "Recommended Movies"
@@ -1022,14 +950,6 @@ msgctxt "#89038"
 msgid "Random Music Video"
 msgstr "Випадкове муз. відео"
 
-msgctxt "#89039"
-msgid "OpenELEC"
-msgstr ""
-
-msgctxt "#89040"
-msgid "Raspberry"
-msgstr "Raspberry"
-
 msgctxt "#89302"
 msgid "Daily"
 msgstr "Щоденна"
@@ -1038,20 +958,8 @@ msgctxt "#89303"
 msgid "Hourly"
 msgstr "Погодинна"
 
-msgctxt "#89400"
-msgid "Item to Swap"
-msgstr "елемент для обміну"
-
-msgctxt "#89500"
-msgid "Submenu"
-msgstr "Пункт"
-
 msgctxt "#89700"
 msgid "Select"
-msgstr "Вибрати"
-
-msgctxt "#89701"
-msgid "Selected"
 msgstr "Вибрати"
 
 msgctxt "#89702"
@@ -1081,10 +989,6 @@ msgstr "Меню вимикання"
 msgctxt "#89708"
 msgid "Command"
 msgstr "Команда"
-
-msgctxt "#89714"
-msgid "Reset Skin Values to Initial Install Defaults"
-msgstr "Скинути обкладинку до первісного стану за замовчуванням"
 
 msgctxt "#90000"
 msgid "Customize Power Menu"

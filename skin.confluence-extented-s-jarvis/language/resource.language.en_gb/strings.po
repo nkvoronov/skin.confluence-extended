@@ -242,22 +242,6 @@ msgctxt "#31113"
 msgid "Show KODI logo"
 msgstr ""
 
-msgctxt "#31114"
-msgid "Show Recently added Episode"
-msgstr ""
-
-msgctxt "#31115"
-msgid "Show Recently added MusicVideo"
-msgstr ""
-
-msgctxt "#31116"
-msgid "Show recently added albums"
-msgstr ""
-
-msgctxt "#31117"
-msgid "Show recently added videos"
-msgstr ""
-
 #. In main language strings its used as submenu
 msgctxt "#31118"
 msgid "Home page programs submenu"
@@ -759,7 +743,7 @@ msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add an
 msgstr ""
 
 msgctxt "#88071"
-msgid "Stats Bar"
+msgid "Show stats panel"
 msgstr ""
 
 msgctxt "#88072"
@@ -767,31 +751,31 @@ msgid "Automatic opening submenu"
 msgstr ""
 
 msgctxt "#88073"
-msgid "Automatic opening add-on submenu"
+msgid "Automatic opening shortcuts submenu"
 msgstr ""
 
 msgctxt "#88074"
-msgid "Title of add-on"
+msgid "title of shortcuts"
 msgstr ""
 
 msgctxt "#88075"
-msgid "Bottom line in home page"
+msgid "bottom line in home page"
 msgstr ""
 
 msgctxt "#88076"
-msgid "Bottom line everywhere except the home page"
+msgid "bottom line everywhere except the home page"
 msgstr ""
 
 msgctxt "#88077"
-msgid "Player control panel"
+msgid "Show player control panel"
 msgstr ""
 
 msgctxt "#88078"
-msgid "Power button"
+msgid "power button"
 msgstr ""
 
 msgctxt "#88079"
-msgid "Favorites button"
+msgid "favorites button"
 msgstr ""
 
 msgctxt "#88081"
@@ -799,7 +783,7 @@ msgid "Backlight color"
 msgstr ""
 
 msgctxt "#88082"
-msgid "After startup KODI, move focus main menu:"
+msgid "After startup KODI, move focus main menu"
 msgstr ""
 
 msgctxt "#88083"
@@ -827,7 +811,7 @@ msgid "Buttons"
 msgstr ""
 
 msgctxt "#88090"
-msgid "Title of widget"
+msgid "title of widget"
 msgstr ""
 
 msgctxt "#88900"
@@ -886,36 +870,12 @@ msgctxt "#88117"
 msgid "Select color"
 msgstr ""
 
-msgctxt "#88123"
-msgid "Submenus"
-msgstr ""
-
-msgctxt "#88125"
-msgid "Initial defaults"
-msgstr ""
-
-msgctxt "#88126"
-msgid "User Data"
-msgstr ""
-
-msgctxt "#88127"
-msgid "Addons"
-msgstr ""
-
-msgctxt "#88129"
-msgid "Playlist widget should [B]Randomize[/B] the playlist sort order"
-msgstr ""
-
 msgctxt "#88130"
 msgid "Widgets"
 msgstr ""
 
 msgctxt "#88131"
 msgid "Unwatched movies"
-msgstr ""
-
-msgctxt "#88132"
-msgid "Background options"
 msgstr ""
 
 msgctxt "#88133"
@@ -926,40 +886,16 @@ msgctxt "#88134"
 msgid "Favorites Radio Channels"
 msgstr ""
 
-msgctxt "#89001"
-msgid "Menu item"
-msgstr ""
-
-msgctxt "#89002"
-msgid "Submenu set"
-msgstr ""
-
 msgctxt "#89003"
-msgid "Addon set"
+msgid "Shortcuts set"
 msgstr ""
 
 msgctxt "#89004"
 msgid "Widget set"
 msgstr ""
 
-msgctxt "#89005"
-msgid "Move menu item"
-msgstr ""
-
-msgctxt "#89012"
-msgid "Up One Level"
-msgstr ""
-
 msgctxt "#89013"
 msgid "Clear item"
-msgstr ""
-
-msgctxt "#89021"
-msgid "Launcher"
-msgstr ""
-
-msgctxt "#89022"
-msgid "Kodi Command"
 msgstr ""
 
 msgctxt "#89023"
@@ -976,14 +912,6 @@ msgstr ""
 
 msgctxt "#89027"
 msgid "Random Albums"
-msgstr ""
-
-msgctxt "#89028"
-msgid "Clean Library"
-msgstr ""
-
-msgctxt "#89029"
-msgid "Nodes"
 msgstr ""
 
 msgctxt "#89030"
@@ -1022,18 +950,6 @@ msgctxt "#89038"
 msgid "Random Music Video"
 msgstr ""
 
-msgctxt "#89039"
-msgid "OpenELEC"
-msgstr ""
-
-msgctxt "#89040"
-msgid "Raspberry"
-msgstr ""
-
-msgctxt "#89041"
-msgid "LibreELEC"
-msgstr ""
-
 msgctxt "#89302"
 msgid "Daily"
 msgstr ""
@@ -1042,20 +958,8 @@ msgctxt "#89303"
 msgid "Hourly"
 msgstr ""
 
-msgctxt "#89400"
-msgid "Item to Swap"
-msgstr ""
-
-msgctxt "#89500"
-msgid "Submenu"
-msgstr ""
-
 msgctxt "#89700"
 msgid "Select"
-msgstr ""
-
-msgctxt "#89701"
-msgid "Selected"
 msgstr ""
 
 msgctxt "#89702"
@@ -1084,10 +988,6 @@ msgstr ""
 
 msgctxt "#89708"
 msgid "Command"
-msgstr ""
-
-msgctxt "#89714"
-msgid "Reset Skin Values to Initial Install Defaults"
 msgstr ""
 
 msgctxt "#90000"

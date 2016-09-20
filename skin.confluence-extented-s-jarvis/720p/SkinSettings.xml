@@ -138,10 +138,6 @@
 						<label>31102</label>
 						<onclick>noop</onclick>
 					</item>
-                    <!-- <item id="5">
-						<label>10035</label>
-						<onclick>noop</onclick>
-					</item> -->
 				</content>
 			</control>
 			<control type="image">
@@ -337,7 +333,7 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>88127</label>
+						<label>24001</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -668,7 +664,7 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>88127</label>
+						<label>31200</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -1035,41 +1031,6 @@
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(4)</visible>
-				</control>
-                <!-- Reset -->
-     			<control type="grouplist" id="9005">
-					<visible>Container(9000).Hasfocus(5)</visible>
-					<left>290</left>
-					<top>180</top>
-					<width>750</width>
-					<height>530</height>
-					<itemgap>-1</itemgap>
-					<onleft>9000</onleft>
-					<onright>902</onright>
-					<onup>9005</onup>
-					<ondown>9005</ondown>
-					<control type="image" id="901">
-						<width>750</width>
-						<height>140</height>
-						<aspectratio aligny="center" align="center">keep</aspectratio>
-						<texture>DefaultIconWarning.png</texture>
-					</control>
-					<control type="button" id="902">
-						<description>Reset Skin Values</description>
-						<width>750</width>
-						<height>45</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<align>center</align>
-						<textoffsetx>20</textoffsetx>
-						<textwidth>730</textwidth>
-						<label>$LOCALIZE[89714]</label>
-						<onclick>ActivateWindow(2121)</onclick>
-						<texturefocus border="5">button-focus.png</texturefocus>
-						<texturenofocus border="5">button-nofocus.png</texturenofocus>
-						<pulseonselect>false</pulseonselect>
-					</control>
 				</control>
             </control>
 		</control>
