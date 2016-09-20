@@ -34,50 +34,7 @@
     <onload condition="Window.Previous(Startup)">Control.Move(9000,$INFO[Skin.String(CustomFocus)])</onload>
 	<onload condition="String.IsEmpty(Skin.String(MenuColor))">Skin.SetString(MenuColor,blue,)</onload>
 	<onload condition="!String.IsEmpty(Weather.Plugin) + !Weather.IsFetched">Weather.Refresh</onload>
-	<onunload condition="Container(9000).Hasfocus(10) | Container(9000).Hasfocus(11) | ControlGroup(9010).HasFocus | ControlGroup(9016).HasFocus | ControlGroup(9017).HasFocus">SetProperty(VideosDirectLink,True)</onunload>
-	<onunload condition="ControlGroup(9011).HasFocus">SetProperty(MusicDirectLink,True)</onunload>
-	<onunload condition="Control.HasFocus(9000) + Container(9000).Hasfocus(2)">ClearProperty(VideosDirectLink)</onunload>
-	<onunload condition="Control.HasFocus(9000) + Container(9000).Hasfocus(3)">ClearProperty(MusicDirectLink)</onunload>
 	<controls>
-		<control type="list" id="90160">
-			<left>-10</left>
-			<top>-10</top>
-			<width>1</width>
-			<height>1</height>
-			<viewtype label="535">list</viewtype>
-			<itemlayout height="1" width="1">
-			</itemlayout>
-			<focusedlayout height="1" width="1">
-			</focusedlayout>
-			<content target="video" limit="6">library://video/movies/</content>
-			<visible>Library.HasContent(Movies)</visible>
-		</control>
-		<control type="list" id="90170">
-			<left>-10</left>
-			<top>-10</top>
-			<width>1</width>
-			<height>1</height>
-			<viewtype label="535">list</viewtype>
-			<itemlayout height="1" width="1">
-			</itemlayout>
-			<focusedlayout height="1" width="1">
-			</focusedlayout>
-			<content target="video" limit="6">library://video/tvshows/</content>
-			<visible>Library.HasContent(TVShows)</visible>
-		</control>
-		<control type="list" id="90110">
-			<left>-10</left>
-			<top>-10</top>
-			<width>1</width>
-			<height>1</height>
-			<viewtype label="535">list</viewtype>
-			<itemlayout height="1" width="1">
-			</itemlayout>
-			<focusedlayout height="1" width="1">
-			</focusedlayout>
-			<content target="music" limit="6">library://music/</content>
-			<visible>Library.HasContent(Music)</visible>
-		</control>
 		<!-- Backgrounds -->
         <include>CommonBackground</include>
 		<control type="image">
@@ -98,7 +55,7 @@
 			<depth>DepthMenu</depth>
 			<left>0</left>
 			<top>60</top>
-			<visible>Player.HasAudio + !Skin.HasSetting(homepageMusicinfo) + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
+			<visible>Player.HasAudio + !Skin.HasSetting(HomePageMusicInfo) + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
             <animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
