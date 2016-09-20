@@ -242,22 +242,6 @@ msgctxt "#31113"
 msgid "Show KODI logo"
 msgstr "Показувати KODI логотип"
 
-msgctxt "#31114"
-msgid "Show Recently added Episode"
-msgstr "Показувати останні додані епізоди"
-
-msgctxt "#31115"
-msgid "Show Recently added MusicVideo"
-msgstr "Показувати останнє доданий музичне відео"
-
-msgctxt "#31116"
-msgid "Show recently added albums"
-msgstr "Показати останні додані альбоми"
-
-msgctxt "#31117"
-msgid "Show recently added videos"
-msgstr "Показати останні додані альбоми"
-
 #. In main language strings its used as submenu
 msgctxt "#31118"
 msgid "Home page programs submenu"
@@ -759,52 +743,52 @@ msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add an
 msgstr "[B]НАЛАШТУВАННЯ ПАРАМЕТРІВ ОБКЛАДИНКИ[/B][CR][CR]Налаштування обкладинки • Додавання і видалення пунктів головного меню[CR]Зміна фону обкладинки"
 
 msgctxt "#88071"
-msgid "Stats Bar"
-msgstr "Панель статистики"
+msgid "Show stats panel"
+msgstr "Показувати панель статистики"
 
 msgctxt "#88072"
 msgid "Automatic opening submenu"
 msgstr "Автоматичне розкриття підміню"
 
 msgctxt "#88073"
-msgid "Automatic opening add-on submenu"
-msgstr "Автоматичне приховування панелі доповнень"
+msgid "Automatic opening shortcuts submenu"
+msgstr "Автоматичне приховування панелі ярликів"
 
 msgctxt "#88074"
-msgid "Title of add-on"
-msgstr "Назви доповнень"
+msgid "title of shortcuts"
+msgstr "назви ярликів"
 
 msgctxt "#88075"
-msgid "Bottom line in home page"
-msgstr "Нижню лінію на головному екрані"
+msgid "bottom line in home page"
+msgstr "нижню лінію на головному екрані"
 
 msgctxt "#88076"
-msgid "Bottom line everywhere except the home page"
-msgstr "Нижню лінію всюди, крім головного екрану"
+msgid "bottom line everywhere except the home page"
+msgstr "нижню лінію всюди, крім головного екрану"
 
 msgctxt "#88077"
-msgid "Player control panel"
-msgstr "Панель управління програвачем"
+msgid "Show player control panel"
+msgstr "Паказувати панель управління програвачем"
 
 msgctxt "#88078"
-msgid "Power button"
-msgstr "Кнопку виключення"
+msgid "power button"
+msgstr "кнопку вимикання"
 
 msgctxt "#88079"
-msgid "Favorites button"
-msgstr "Кнопку обраного"
+msgid "favorites button"
+msgstr "кнопку обраного"
 
 msgctxt "#88080"
-msgid "Reload skin button"
-msgstr "Кнопку перезавантаження обкладинки"
+msgid "reload skin button"
+msgstr "кнопку оновлення обкладинки"
 
 msgctxt "#88081"
 msgid "Backlight color"
 msgstr "Колір підсвічування"
 
 msgctxt "#88082"
-msgid "After startup KODI, move focus main menu:"
-msgstr "Після запуску Коди, перемістити фокус головного меню:"
+msgid "After startup KODI, move focus main menu"
+msgstr "Після запуску Коди, перемістити фокус головного меню"
 
 msgctxt "#88083"
 msgid "To the left"
@@ -826,17 +810,13 @@ msgctxt "#88087"
 msgid "Return to Start Menu Scroll"
 msgstr "Прокрутка меню"
 
-msgctxt "#88088"
-msgid "Reload skin"
-msgstr "Перевантажити обкладинку"
-
 msgctxt "#88089"
 msgid "Buttons"
 msgstr "Кнопки"
 
 msgctxt "#88090"
-msgid "Title of widget"
-msgstr "Назву віджетів"
+msgid "title of widget"
+msgstr "назву віджетів"
 
 msgctxt "#88900"
 msgid "Skin Jarvis"
@@ -898,17 +878,9 @@ msgctxt "#88123"
 msgid "Submenus"
 msgstr "Підміню"
 
-msgctxt "#88125"
-msgid "Initial defaults"
-msgstr "За замовчуванням"
-
 msgctxt "#88126"
 msgid "User Data"
 msgstr "даних користувача"
-
-msgctxt "#88127"
-msgid "Addons"
-msgstr "Доповнення"
 
 msgctxt "#88129"
 msgid "Playlist widget should [B]Randomize[/B] the playlist sort order"
@@ -943,7 +915,7 @@ msgid "Submenu set"
 msgstr "Підміню"
 
 msgctxt "#89003"
-msgid "Addon set"
+msgid "Shortcuts set"
 msgstr "Набір ярликів"
 
 msgctxt "#89004"
@@ -953,6 +925,10 @@ msgstr "Віджет"
 msgctxt "#89005"
 msgid "Move menu item"
 msgstr "Перемістити меню"
+
+msgctxt "#89006"
+msgid "Shortcut"
+msgstr "Ярлик"
 
 msgctxt "#89012"
 msgid "Up One Level"
@@ -1051,15 +1027,11 @@ msgid "Item to Swap"
 msgstr "елемент для обміну"
 
 msgctxt "#89500"
-msgid "Submenu"
+msgid "Submenu item"
 msgstr "Пункт"
 
 msgctxt "#89700"
 msgid "Select"
-msgstr "Вибрати"
-
-msgctxt "#89701"
-msgid "Selected"
 msgstr "Вибрати"
 
 msgctxt "#89702"

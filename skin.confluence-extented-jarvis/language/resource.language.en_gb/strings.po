@@ -242,22 +242,6 @@ msgctxt "#31113"
 msgid "Show KODI logo"
 msgstr ""
 
-msgctxt "#31114"
-msgid "Show Recently added Episode"
-msgstr ""
-
-msgctxt "#31115"
-msgid "Show Recently added MusicVideo"
-msgstr ""
-
-msgctxt "#31116"
-msgid "Show recently added albums"
-msgstr ""
-
-msgctxt "#31117"
-msgid "Show recently added videos"
-msgstr ""
-
 #. In main language strings its used as submenu
 msgctxt "#31118"
 msgid "Home page programs submenu"
@@ -759,7 +743,7 @@ msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin В· Add an
 msgstr ""
 
 msgctxt "#88071"
-msgid "Stats Bar"
+msgid "Show stats panel"
 msgstr ""
 
 msgctxt "#88072"
@@ -767,35 +751,35 @@ msgid "Automatic opening submenu"
 msgstr ""
 
 msgctxt "#88073"
-msgid "Automatic opening add-on submenu"
+msgid "Automatic opening shortcuts submenu"
 msgstr ""
 
 msgctxt "#88074"
-msgid "Title of add-on"
+msgid "title of shortcuts"
 msgstr ""
 
 msgctxt "#88075"
-msgid "Bottom line in home page"
+msgid "bottom line in home page"
 msgstr ""
 
 msgctxt "#88076"
-msgid "Bottom line everywhere except the home page"
+msgid "bottom line everywhere except the home page"
 msgstr ""
 
 msgctxt "#88077"
-msgid "Player control panel"
+msgid "Show player control panel"
 msgstr ""
 
 msgctxt "#88078"
-msgid "Power button"
+msgid "power button"
 msgstr ""
 
 msgctxt "#88079"
-msgid "Favorites button"
+msgid "favorites button"
 msgstr ""
 
 msgctxt "#88080"
-msgid "Reload skin button"
+msgid "reload skin button"
 msgstr ""
 
 msgctxt "#88081"
@@ -803,7 +787,7 @@ msgid "Backlight color"
 msgstr ""
 
 msgctxt "#88082"
-msgid "After startup KODI, move focus main menu:"
+msgid "After startup KODI, move focus main menu"
 msgstr ""
 
 msgctxt "#88083"
@@ -826,16 +810,12 @@ msgctxt "#88087"
 msgid "Return to Start Menu Scroll"
 msgstr ""
 
-msgctxt "#88088"
-msgid "Reload skin"
-msgstr "Перегрузить обложку"
-
 msgctxt "#88089"
 msgid "Buttons"
 msgstr ""
 
 msgctxt "#88090"
-msgid "Title of widget"
+msgid "title of widget"
 msgstr ""
 
 msgctxt "#88900"
@@ -898,16 +878,8 @@ msgctxt "#88123"
 msgid "Submenus"
 msgstr ""
 
-msgctxt "#88125"
-msgid "Initial defaults"
-msgstr ""
-
 msgctxt "#88126"
 msgid "User Data"
-msgstr ""
-
-msgctxt "#88127"
-msgid "Addons"
 msgstr ""
 
 msgctxt "#88129"
@@ -943,7 +915,7 @@ msgid "Submenu set"
 msgstr ""
 
 msgctxt "#89003"
-msgid "Addon set"
+msgid "Shortcuts set"
 msgstr ""
 
 msgctxt "#89004"
@@ -952,6 +924,10 @@ msgstr ""
 
 msgctxt "#89005"
 msgid "Move menu item"
+msgstr ""
+
+msgctxt "#89006"
+msgid "Shortcut"
 msgstr ""
 
 msgctxt "#89012"
@@ -1055,15 +1031,11 @@ msgid "Item to Swap"
 msgstr ""
 
 msgctxt "#89500"
-msgid "Submenu"
+msgid Submenu item"
 msgstr ""
 
 msgctxt "#89700"
 msgid "Select"
-msgstr ""
-
-msgctxt "#89701"
-msgid "Selected"
 msgstr ""
 
 msgctxt "#89702"

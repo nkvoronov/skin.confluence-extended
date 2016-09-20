@@ -612,7 +612,7 @@
             <width>750</width>
             <height>40</height>
             <font>font13</font>
-            <label>- $LOCALIZE[24000] [B]1[/B]</label>
+            <label>- $LOCALIZE[89006] [B]1[/B]</label>
             <label2>[COLOR=selected]$INFO[Skin.String(AddonSet$PARAM[id2].1.Label)][/COLOR]</label2>
             <textcolor>grey2</textcolor>
             <focusedcolor>white</focusedcolor>
@@ -627,7 +627,7 @@
             <width>750</width>
             <height>40</height>
             <font>font13</font>
-            <label>- $LOCALIZE[24000] [B]2[/B]</label>
+            <label>- $LOCALIZE[89006] [B]2[/B]</label>
             <label2>[COLOR=selected]$INFO[Skin.String(AddonSet$PARAM[id2].2.Label)][/COLOR]</label2>
             <textcolor>grey2</textcolor>
             <focusedcolor>white</focusedcolor>
@@ -643,7 +643,7 @@
             <width>750</width>
             <height>40</height>
             <font>font13</font>
-            <label>- $LOCALIZE[24000] [B]3[/B]</label>
+            <label>- $LOCALIZE[89006] [B]3[/B]</label>
             <label2>[COLOR=selected]$INFO[Skin.String(AddonSet$PARAM[id2].3.Label)][/COLOR]</label2>
             <textcolor>grey2</textcolor>
             <focusedcolor>white</focusedcolor>
@@ -659,7 +659,7 @@
             <width>750</width>
             <height>40</height>
             <font>font13</font>
-            <label>- $LOCALIZE[24000] [B]4[/B]</label>
+            <label>- $LOCALIZE[89006] [B]4[/B]</label>
             <label2>[COLOR=selected]$INFO[Skin.String(AddonSet$PARAM[id2].4.Label)][/COLOR]</label2>
             <textcolor>grey2</textcolor>
             <focusedcolor>white</focusedcolor>
@@ -675,7 +675,7 @@
             <width>750</width>
             <height>40</height>
             <font>font13</font>
-            <label>- $LOCALIZE[24000] [B]5[/B]</label>
+            <label>- $LOCALIZE[89006] [B]5[/B]</label>
             <label2>[COLOR=selected]$INFO[Skin.String(AddonSet$PARAM[id2].5.Label)][/COLOR]</label2>
             <textcolor>grey2</textcolor>
             <focusedcolor>white</focusedcolor>
@@ -691,7 +691,7 @@
             <width>750</width>
             <height>40</height>
             <font>font13</font>
-            <label>- $LOCALIZE[24000] [B]6[/B]</label>
+            <label>- $LOCALIZE[89006] [B]6[/B]</label>
             <label2>[COLOR=selected]$INFO[Skin.String(AddonSet$PARAM[id2].6.Label)][/COLOR]</label2>
             <textcolor>grey2</textcolor>
             <focusedcolor>white</focusedcolor>
@@ -707,7 +707,7 @@
             <width>750</width>
             <height>40</height>
             <font>font13</font>
-            <label>- $LOCALIZE[24000] [B]7[/B]</label>
+            <label>- $LOCALIZE[89006] [B]7[/B]</label>
             <label2>[COLOR=selected]$INFO[Skin.String(AddonSet$PARAM[id2].7.Label)][/COLOR]</label2>
             <textcolor>grey2</textcolor>
             <focusedcolor>white</focusedcolor>
@@ -745,7 +745,7 @@
             </item>
             <item>
                 <description>Favourites</description>
-                <label>$LOCALIZE[89701] $LOCALIZE[1036]</label>
+                <label>$LOCALIZE[1036]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>RunScript(script.favourites,changetitle=true&amp;property=$INFO[Window(home).Property(UsrSelectBtn)])</onclick>
                 <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
