@@ -34,10 +34,6 @@
     <onload condition="Window.Previous(Startup)">Control.Move(9000,$INFO[Skin.String(CustomFocus)])</onload>
 	<onload condition="IsEmpty(Skin.String(MenuColor))">Skin.SetString(MenuColor,blue,)</onload>
 	<onload condition="!IsEmpty(Weather.Plugin) + !Weather.IsFetched">Weather.Refresh</onload>
-	<onunload condition="Container(9000).Hasfocus(10) | Container(9000).Hasfocus(11) | ControlGroup(9010).HasFocus | ControlGroup(9016).HasFocus | ControlGroup(9017).HasFocus">SetProperty(VideosDirectLink,True)</onunload>
-	<onunload condition="ControlGroup(9011).HasFocus">SetProperty(MusicDirectLink,True)</onunload>
-	<onunload condition="Control.HasFocus(9000) + Container(9000).Hasfocus(2)">ClearProperty(VideosDirectLink)</onunload>
-	<onunload condition="Control.HasFocus(9000) + Container(9000).Hasfocus(3)">ClearProperty(MusicDirectLink)</onunload>
 	<controls>
         <!-- Backgrounds -->
 		<include>CommonBackground</include>
