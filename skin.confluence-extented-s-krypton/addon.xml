@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
     id="skin.confluence-extented-s-krypton"
-    version="3.0.36.072"
+    version="3.0.36.073"
     name="Confluence-extented-s-krypton"
     provider-name="Jezz_X, Team Kodi, YLLOW_DRAGON, plood">
     <requires>
@@ -202,6 +202,5 @@
             <icon>resources/icon.png</icon>
             <fanart>resources/fanart.jpg</fanart>
         </assets>
-        <news>Customisable home submenus using the Library Node Editor addon</news>
     </extension>
 </addon>
