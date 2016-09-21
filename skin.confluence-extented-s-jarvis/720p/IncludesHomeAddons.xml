@@ -279,10 +279,10 @@
 		    <effect type="fade" start="0" end="100" delay="200" time="200"/>
 		</animation>
 		<animation type="Hidden" condition="!Skin.HasSetting(NoSlideAddon)">
-		    <effect type="zoom" start="100" end="50" center="auto" easing="in" tween="quadratic" time="300" />
+		    <effect type="zoom" start="100" end="70" center="auto" easing="in" tween="quadratic" time="300" />
 		    <effect type="fade" start="100" end="0" time="300" />
 		</animation>
-		<animation effect="fade" start="100" end="0" time="200" condition="!ControlGroup(9002).HasFocus + Skin.HasSetting(NoSlideAddon)">Conditional</animation>
+		<animation effect="fade" start="100" end="0" time="200" condition="!ControlGroup(9002).HasFocus + Skin.HasSetting(NoSlideAddon)">conditional</animation>
 		<animation type="conditional" condition="ControlGroup(9002).HasFocus + Skin.HasSetting(NoSlideAddon)">
 		    <effect type="slide" start="0,30" end="0,0" delay="200" easing="out" tween="quadratic" time="200" />
 		    <effect type="fade" start="0" end="100" delay="200" time="200" />
@@ -318,7 +318,7 @@
             </item>
             <item>
                 <description>Favourites</description>
-                <label>$LOCALIZE[89701] $LOCALIZE[1036]</label>
+                <label>$LOCALIZE[1036]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>RunScript(script.favourites,changetitle=true&amp;property=$INFO[Window(home).Property(UsrSelectBtn)])</onclick>
                 <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
