@@ -591,26 +591,26 @@
         </control>            
 	</include>
     <include name="AnimationWidgetCommon">
-        <animation effect="slide" start="0,0" end="100,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
-        <animation effect="slide" start="0,0" end="200,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
-        <animation effect="slide" start="0,0" end="300,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
-        <animation effect="slide" start="0,0" end="400,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
+        <animation effect="slide" start="0,0" end="100,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
+        <animation effect="slide" start="0,0" end="200,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
+        <animation effect="slide" start="0,0" end="300,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
+        <animation effect="slide" start="0,0" end="400,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
     </include>
     <include name="AnimationWidgetCommon2">
-        <animation effect="slide" start="0,0" end="90,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
-        <animation effect="slide" start="0,0" end="180,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
-        <animation effect="slide" start="0,0" end="270,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
-        <animation effect="slide" start="0,0" end="360,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
+        <animation effect="slide" start="0,0" end="90,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
+        <animation effect="slide" start="0,0" end="180,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
+        <animation effect="slide" start="0,0" end="270,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
+        <animation effect="slide" start="0,0" end="360,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
     </include>    
     <include name="AnimationWidgetCommon3">
-        <animation effect="slide" start="0,0" end="120,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
-        <animation effect="slide" start="0,0" end="240,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
-        <animation effect="slide" start="0,0" end="360,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
+        <animation effect="slide" start="0,0" end="120,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
+        <animation effect="slide" start="0,0" end="240,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
+        <animation effect="slide" start="0,0" end="360,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
     </include>    
     <include name="AnimationWidgetCommon4">
-        <animation effect="slide" start="0,0" end="100,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
-        <animation effect="slide" start="0,0" end="200,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
-        <animation effect="slide" start="0,0" end="300,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
+        <animation effect="slide" start="0,0" end="100,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
+        <animation effect="slide" start="0,0" end="200,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
+        <animation effect="slide" start="0,0" end="300,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
     </include>    
     <include name="CommonWidgetInclude">
         <param name="height_widget_item" default="220" />

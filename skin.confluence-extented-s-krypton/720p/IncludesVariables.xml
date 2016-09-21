@@ -48,8 +48,8 @@
         <!-- PVR -->
         <value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),livetv) | String.IsEqual(Container(9000).ListItem.Property(defaultID),radio) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[19020]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[19021])">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[19019]: [/COLOR][/B] $INFO[Pvr.BackendChannels]</value>
         <!-- Other -->
-		<value condition="!SubString(System.CPUTemperature,?) + !SubString(System.GPUTemperature,?)">[B][COLOR=$INFO[Skin.String(menuColor)]]IP: [/COLOR][/B]$INFO[Network.IPAddress]  [B][COLOR=$INFO[Skin.String(menuColor)]]CPU: [/COLOR][/B]$INFO[System.CPUTemperature]  [B][COLOR=$INFO[Skin.String(menuColor)]]GPU: [/COLOR][/B]$INFO[System.GPUTemperature]</value>
-		<value condition="!SubString(System.CPUTemperature,?)">[B][COLOR=$INFO[Skin.String(menuColor)]]IP: [/COLOR][/B]$INFO[Network.IPAddress]  [B][COLOR=$INFO[Skin.String(menuColor)]]CPU: [/COLOR][/B]$INFO[System.CPUTemperature]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[155]: [/COLOR][/B]$INFO[System.UsedSpacePercent]</value>
+		<value condition="!String.Contains(System.CPUTemperature,?) + !String.Contains(System.GPUTemperature,?)">[B][COLOR=$INFO[Skin.String(menuColor)]]IP: [/COLOR][/B]$INFO[Network.IPAddress]  [B][COLOR=$INFO[Skin.String(menuColor)]]CPU: [/COLOR][/B]$INFO[System.CPUTemperature]  [B][COLOR=$INFO[Skin.String(menuColor)]]GPU: [/COLOR][/B]$INFO[System.GPUTemperature]</value>
+		<value condition="!String.Contains(System.CPUTemperature,?)">[B][COLOR=$INFO[Skin.String(menuColor)]]IP: [/COLOR][/B]$INFO[Network.IPAddress]  [B][COLOR=$INFO[Skin.String(menuColor)]]CPU: [/COLOR][/B]$INFO[System.CPUTemperature]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[155]: [/COLOR][/B]$INFO[System.UsedSpacePercent]</value>
 		<value>[COLOR=$INFO[Skin.String(menuColor)]][B]IP: [/B][/COLOR]$INFO[Network.IPAddress]  [COLOR=$INFO[Skin.String(menuColor)]][B]RAM: [/B][/COLOR]$INFO[system.memory(used.percent)]  [COLOR=$INFO[Skin.String(menuColor)]][B]$LOCALIZE[155]: [/B][/COLOR]$INFO[System.UsedSpacePercent]</value>
 	</variable>
     <!-- HomeBackground -->
@@ -178,10 +178,10 @@
         <value condition="!IsEmpty(Window.Property(groupname)) + !String.IsEqual(Window.Property(groupname),mainmenu) + !String.IsEqual(Window.Property(groupname),powermenu) + String.EndsWith(Window.Property(groupname),.2)">$LOCALIZE[89004] ($INFO[Window.Property(groupDisplayName)])</value>
     </variable>
     <variable name="SkinShortcutsGrouping">
-        <value condition="!SubString(Window.Property(groupname),.)">menus</value>
-        <value condition="SubString(Window.Property(groupname),.1,Right)">addons</value>
-        <value condition="SubString(Window.Property(groupname),.2,Right) + String.IsEqual(Window(home).Property(current_widget),TVFavouritesChannels)">tv</value>
-        <value condition="SubString(Window.Property(groupname),.2,Right) + String.IsEqual(Window(home).Property(current_widget),RadioFavouritesChannels)">radio</value>
+        <value condition="!String.Contains(Window.Property(groupname),.)">menus</value>
+        <value condition="String.EndsWith(Window.Property(groupname),.1)">addons</value>
+        <value condition="String.EndsWith(Window.Property(groupname),.2) + String.IsEqual(Window(home).Property(current_widget),TVFavouritesChannels)">tv</value>
+        <value condition="String.EndsWith(Window.Property(groupname),.2) + String.IsEqual(Window(home).Property(current_widget),RadioFavouritesChannels)">radio</value>
     </variable>
     <variable name="Submenu_Visibility">
         <value>$INFO[Container(9000).ListItem.Property(submenuVisibility)]</value>

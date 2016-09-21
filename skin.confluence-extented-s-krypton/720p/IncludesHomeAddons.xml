@@ -227,18 +227,18 @@
 		</focusedlayout>
 	</include>
     <include name="HomeAddonsCommonAnimation">
-        <animation effect="slide" start="0,0" end="82,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,6)">conditional</animation>
-        <animation effect="slide" start="0,0" end="164,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
-        <animation effect="slide" start="0,0" end="246,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
-        <animation effect="slide" start="0,0" end="328,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
-        <animation effect="slide" start="0,0" end="410,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
-        <animation effect="slide" start="0,0" end="492,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
+        <animation effect="slide" start="0,0" end="82,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,6)">conditional</animation>
+        <animation effect="slide" start="0,0" end="164,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
+        <animation effect="slide" start="0,0" end="246,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
+        <animation effect="slide" start="0,0" end="328,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
+        <animation effect="slide" start="0,0" end="410,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
+        <animation effect="slide" start="0,0" end="492,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
     </include>
     <include name="HomeAddonsCommonAnimationMediaPlaying">
-        <animation effect="slide" start="0,0" end="82,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
-        <animation effect="slide" start="0,0" end="164,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
-        <animation effect="slide" start="0,0" end="246,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
-        <animation effect="slide" start="0,0" end="328,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>    
+        <animation effect="slide" start="0,0" end="82,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
+        <animation effect="slide" start="0,0" end="164,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
+        <animation effect="slide" start="0,0" end="246,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
+        <animation effect="slide" start="0,0" end="328,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>    
     </include>
     <include name="HomeAddonsAnimation">
 		<animation effect="slide" start="0,0" end="0,-205" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
