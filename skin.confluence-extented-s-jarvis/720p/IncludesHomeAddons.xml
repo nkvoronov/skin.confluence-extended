@@ -42,7 +42,7 @@
             <onleft>$PARAM[list_id]</onleft>
             <onright>$PARAM[list_id]</onright>
             <include>HomeAddonUpDown</include>
-            <include>HomeAddonsCommonMediaPlayingLayout</include>
+            <include>HomeAddonsCommonLayoutMediaPlaying</include>
             <content>
                 <include>skinshortcuts-group-num-$SKINSHORTCUTS[id_label]</include>
             </content>
