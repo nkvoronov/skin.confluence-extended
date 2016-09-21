@@ -765,10 +765,6 @@ msgctxt "#88131"
 msgid "Unwatched movies"
 msgstr "Не переглянуті фільми"
 
-msgctxt "#88132"
-msgid "Background options"
-msgstr "Параметри фону"
-
 msgctxt "#88133"
 msgid "Favorites TV Channels"
 msgstr "Вибрані ТВ канали"
@@ -932,6 +928,10 @@ msgstr "Меню вимикання"
 msgctxt "#89708"
 msgid "Command"
 msgstr "Команда"
+
+msgctxt "#89709"
+msgid "Separate backgrounds"
+msgstr "Окремі фони"
 
 msgctxt "#89714"
 msgid "Reset Skin Values to Initial Install Defaults"

@@ -245,10 +245,12 @@
         <onload>Skin.SetString(SubMenu02.2.Path,ActivateWindow(radioguide))</onload>
         <onload>Skin.SetString(SubMenu02.3.Label,$LOCALIZE[19017])</onload>
         <onload>Skin.SetString(SubMenu02.3.Path,ActivateWindow(radiorecordings))</onload>
-        <onload>Skin.SetString(SubMenu02.4.Label,$LOCALIZE[19040])</onload>
-        <onload>Skin.SetString(SubMenu02.4.Path,ActivateWindow(radiotimers))</onload>
-        <onload>Skin.SetString(SubMenu02.5.Label,$LOCALIZE[137])</onload>
-        <onload>Skin.SetString(SubMenu02.5.Path,ActivateWindow(radiosearch))</onload>
+        <onload>Skin.SetString(SubMenu02.4.Label,$LOCALIZE[19138])</onload>
+        <onload>Skin.SetString(SubMenu02.4.Path,ActivateWindow(radiotimerrules))</onload>
+        <onload>Skin.SetString(SubMenu02.5.Label,$LOCALIZE[19040])</onload>
+        <onload>Skin.SetString(SubMenu02.5.Path,ActivateWindow(radiotimers))</onload>
+        <onload>Skin.SetString(SubMenu02.6.Label,$LOCALIZE[137])</onload>
+        <onload>Skin.SetString(SubMenu02.6.Path,ActivateWindow(radiosearch))</onload>
         <!-- Sub TV -->
         <onload>Skin.SetString(SubMenu03.Label,$LOCALIZE[31952])</onload>
         <onload>Skin.SetString(SubMenu03.1.Label,$LOCALIZE[19019])</onload>
@@ -257,10 +259,12 @@
         <onload>Skin.SetString(SubMenu03.2.Path,ActivateWindow(tvguide))</onload>
         <onload>Skin.SetString(SubMenu03.3.Label,$LOCALIZE[19017])</onload>
         <onload>Skin.SetString(SubMenu03.3.Path,ActivateWindow(tvrecordings))</onload>
-        <onload>Skin.SetString(SubMenu03.4.Label,$LOCALIZE[19040])</onload>
-        <onload>Skin.SetString(SubMenu03.4.Path,ActivateWindow(tvtimers))</onload>
-        <onload>Skin.SetString(SubMenu03.5.Label,$LOCALIZE[137])</onload>
-        <onload>Skin.SetString(SubMenu03.5.Path,ActivateWindow(tvsearch))</onload>
+        <onload>Skin.SetString(SubMenu03.4.Label,$LOCALIZE[19138])</onload>
+        <onload>Skin.SetString(SubMenu03.4.Path,ActivateWindow(tvtimerrules))</onload>
+        <onload>Skin.SetString(SubMenu03.5.Label,$LOCALIZE[19040])</onload>
+        <onload>Skin.SetString(SubMenu03.5.Path,ActivateWindow(tvtimers))</onload>
+        <onload>Skin.SetString(SubMenu03.6.Label,$LOCALIZE[137])</onload>
+        <onload>Skin.SetString(SubMenu03.6.Path,ActivateWindow(tvsearch))</onload>
         <!-- Sub Videos -->
         <onload>Skin.SetString(SubMenu04.Label,$LOCALIZE[31953])</onload>
         <onload>Skin.SetString(SubMenu04.1.Label,$LOCALIZE[744])</onload>
@@ -271,7 +275,7 @@
         <onload>Skin.SetString(SubMenu04.3.Path,ActivateWindow(videos,addons://sources/video/,return))</onload>
         <!-- Sub Movies -->
         <onload>Skin.SetString(SubMenu05.Label,$LOCALIZE[31954])</onload>
-        <onload>Skin.SetString(SubMenu05.1.Label,$LOCALIZE[20386])</onload>
+        <onload>Skin.SetString(SubMenu05.1.Label,$LOCALIZE[31328])</onload>
         <onload>Skin.SetString(SubMenu05.1.Path,ActivateWindow(videos,videodb://recentlyaddedmovies/,return))</onload>
         <onload>Skin.SetString(SubMenu05.2.Label,$LOCALIZE[20434])</onload>
         <onload>Skin.SetString(SubMenu05.2.Path,ActivateWindow(videos,videodb://movies/sets/,return))</onload>
@@ -285,7 +289,7 @@
         <onload>Skin.SetString(SubMenu05.6.Path,ActivateWindow(videos,videodb://movies/actors/,return))</onload>
         <!-- Sub TVShows -->
         <onload>Skin.SetString(SubMenu06.Label,$LOCALIZE[31955])</onload>
-        <onload>Skin.SetString(SubMenu06.1.Label,$LOCALIZE[20387])</onload>
+        <onload>Skin.SetString(SubMenu06.1.Label,$LOCALIZE[31328])</onload>
         <onload>Skin.SetString(SubMenu06.1.Path,ActivateWindow(videos,videodb://recentlyaddedepisodes/,return))</onload>
         <onload>Skin.SetString(SubMenu06.2.Label,$LOCALIZE[369])</onload>
         <onload>Skin.SetString(SubMenu06.2.Path,ActivateWindow(videos,videodb://tvshows/titles/,return))</onload>
@@ -297,7 +301,7 @@
         <onload>Skin.SetString(SubMenu06.5.Path,ActivateWindow(videos,videodb://tvshows/actors/,return))</onload>
         <!-- Sub MusicVideo -->
         <onload>Skin.SetString(SubMenu07.Label,$LOCALIZE[31961])</onload>
-        <onload>Skin.SetString(SubMenu07.1.Label,$LOCALIZE[20390])</onload>
+        <onload>Skin.SetString(SubMenu07.1.Label,$LOCALIZE[31328])</onload>
         <onload>Skin.SetString(SubMenu07.1.Path,ActivateWindow(videos,videodb://recentlyaddedmusicvideos/,return))</onload>
         <onload>Skin.SetString(SubMenu07.2.Label,$LOCALIZE[369])</onload>
         <onload>Skin.SetString(SubMenu07.2.Path,ActivateWindow(videos,videodb://musicvideos/titles/,return))</onload>
