@@ -894,10 +894,6 @@ msgctxt "#88131"
 msgid "Unwatched movies"
 msgstr ""
 
-msgctxt "#88132"
-msgid "Background options"
-msgstr ""
-
 msgctxt "#88133"
 msgid "Favorites TV Channels"
 msgstr ""
@@ -1064,6 +1060,10 @@ msgstr ""
 
 msgctxt "#89708"
 msgid "Command"
+msgstr ""
+
+msgctxt "#89709"
+msgid "Separate backgrounds"
 msgstr ""
 
 msgctxt "#89714"

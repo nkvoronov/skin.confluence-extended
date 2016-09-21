@@ -58,14 +58,14 @@
 				<label>$LOCALIZE[19021] ></label>
 				<onclick>SetProperty(MenuItemType,RadioMenu)</onclick>
 				<visible>StringCompare(Window.Property(MenuItemType),MainMenu)</visible>
-				<visible>System.GetBool(pvrmanager.enabled)</visible>
+				<visible>PVR.HasRadioChannels</visible>
 			</item>
 			<item>
 				<description>Live TV</description>
 				<label>$LOCALIZE[19020] ></label>
 				<onclick>SetProperty(MenuItemType,LiveTVMenu)</onclick>
 				<visible>StringCompare(Window.Property(MenuItemType),MainMenu)</visible>
-				<visible>System.GetBool(pvrmanager.enabled)</visible>
+				<visible>PVR.HasTVChannels</visible>
 			</item>
 			<item>
 				<description>Video</description>
@@ -826,11 +826,11 @@
 			</item>
 			<item>
 				<description>RecentlyAddedMovies</description>
-				<label>$LOCALIZE[342] - $LOCALIZE[20386]</label>
+				<label>$LOCALIZE[342] - $LOCALIZE[31328]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://recentlyaddedmovies/,return))</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
-				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$LOCALIZE[20386])</onclick>
+				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$LOCALIZE[31328])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Widget,RecentMovies)</onclick>
@@ -1021,11 +1021,11 @@
 			</item>
 			<item>
 				<description>Recently Added TVShows</description>
-				<label>$LOCALIZE[20343] - $LOCALIZE[20387]</label>
+				<label>$LOCALIZE[20343] - $LOCALIZE[31328]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://recentlyaddedepisodes/,return))</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$LOCALIZE[31955])</onclick>
-				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$LOCALIZE[20387])</onclick>
+				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$LOCALIZE[31328])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Widget,RecentEpisodes)</onclick>
@@ -1182,11 +1182,11 @@
 			</item>
 			<item>
 				<description>RecentlyAddedMusicVideo</description>
-				<label>$LOCALIZE[20391] - $LOCALIZE[20390]</label>
+				<label>$LOCALIZE[20391] - $LOCALIZE[31328]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Path,ActivateWindow(Videos,RecentlyAddedMusicVideos,return))</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
-				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$LOCALIZE[20390])</onclick>
+				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$LOCALIZE[31328])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Widget,RecentMusicVideo)</onclick>

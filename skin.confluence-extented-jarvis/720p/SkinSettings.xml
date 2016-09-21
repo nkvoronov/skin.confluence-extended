@@ -150,7 +150,7 @@
 						<onclick>noop</onclick>
 					</item>
 					<item id="8">
-						<label>$LOCALIZE[88132]</label>
+						<label>$LOCALIZE[89709]</label>
 						<onclick>noop</onclick>
 						<visible>Skin.HasSetting(SeparateBackground)</visible>
 					</item>
@@ -1351,7 +1351,7 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>$LOCALIZE[31102] - $LOCALIZE[31026]</label>
+						<label>$LOCALIZE[89709]</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
