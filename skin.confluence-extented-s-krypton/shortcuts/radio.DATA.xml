@@ -19,6 +19,12 @@
 		<action>ActivateWindow(radiorecordings)</action>
 	</shortcut>
 	<shortcut>
+		<label>19138</label>
+		<label2>19021</label2>
+		<icon>DefaultTVShows.png</icon>
+		<action>ActivateWindow(radiotimerrules)</action>
+	</shortcut>
+	<shortcut>
 		<label>19040</label>
 		<label2>19021</label2>
 		<icon>DefaultTVShows.png</icon>

@@ -861,6 +861,10 @@ msgctxt "#89708"
 msgid "Command"
 msgstr "Команда"
 
+msgctxt "#89709"
+msgid "Separate backgrounds"
+msgstr "Окремі фони"
+
 msgctxt "#90000"
 msgid "Customize Power Menu"
 msgstr "Налаштувати меню вимикання"

@@ -19,6 +19,12 @@
 		<action>ActivateWindow(tvrecordings)</action>
 	</shortcut>
 	<shortcut>
+		<label>19138</label>
+		<label2>19020</label2>
+		<icon>DefaultTVShows.png</icon>
+		<action>ActivateWindow(tvtimerrules)</action>
+	</shortcut>
+	<shortcut>
 		<label>19040</label>
 		<label2>19020</label2>
 		<icon>DefaultTVShows.png</icon>

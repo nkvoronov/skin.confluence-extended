@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
+	<variable name="PlaylistSortOrder">
+		<value condition="Skin.HasSetting(EnableRandomPlaylist)">Random</value>
+		<value>Last</value>
+	</variable>
     <variable name="FavoritesButtonLabel">
 		<value condition="String.IsEmpty(Skin.String(UsrFavBtnCmd.Label))">$LOCALIZE[1036]</value>
 		<value condition="!String.IsEmpty(Skin.String(UsrFavBtnCmd.Label))">$INFO[Skin.String(UsrFavBtnCmd.Label)]</value>
