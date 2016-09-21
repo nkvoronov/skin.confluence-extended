@@ -745,7 +745,7 @@
             </item>
             <item>
                 <description>Favourites</description>
-                <label>$LOCALIZE[89701] $LOCALIZE[1036]</label>
+                <label>$LOCALIZE[1036]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>RunScript(script.favourites,changetitle=true&amp;property=$INFO[Window(home).Property(UsrSelectBtn)])</onclick>
                 <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
