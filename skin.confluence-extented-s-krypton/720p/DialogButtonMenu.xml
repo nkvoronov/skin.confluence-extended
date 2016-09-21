@@ -25,13 +25,13 @@
 			<ondown>9000</ondown>
 			<itemgap>0</itemgap>
 			<align>center</align>
-            <animation effect="slide" start="0,0" end="0,20" time="0" condition="!IntegerGreaterThan(Container(9002).NumItems,1)">Conditional</animation>            
-            <animation effect="slide" start="0,0" end="0,20" time="0" condition="!IntegerGreaterThan(Container(9002).NumItems,2)">Conditional</animation>            
-            <animation effect="slide" start="0,0" end="0,20" time="0" condition="!IntegerGreaterThan(Container(9002).NumItems,3)">Conditional</animation>            
-            <animation effect="slide" start="0,0" end="0,20" time="0" condition="!IntegerGreaterThan(Container(9002).NumItems,4)">Conditional</animation>            
-            <animation effect="slide" start="0,0" end="0,20" time="0" condition="!IntegerGreaterThan(Container(9002).NumItems,5)">Conditional</animation>            
-			<animation effect="slide" start="0,0" end="0,20" time="0" condition="!IntegerGreaterThan(Container(9002).NumItems,6)">Conditional</animation>            
-            <animation effect="slide" start="0,0" end="0,20" time="0" condition="!IntegerGreaterThan(Container(9002).NumItems,7)">Conditional</animation>
+            <animation effect="slide" start="0,0" end="0,20" time="0" condition="!Integer.IsGreater(Container(9002).NumItems,1)">Conditional</animation>            
+            <animation effect="slide" start="0,0" end="0,20" time="0" condition="!Integer.IsGreater(Container(9002).NumItems,2)">Conditional</animation>            
+            <animation effect="slide" start="0,0" end="0,20" time="0" condition="!Integer.IsGreater(Container(9002).NumItems,3)">Conditional</animation>            
+            <animation effect="slide" start="0,0" end="0,20" time="0" condition="!Integer.IsGreater(Container(9002).NumItems,4)">Conditional</animation>            
+            <animation effect="slide" start="0,0" end="0,20" time="0" condition="!Integer.IsGreater(Container(9002).NumItems,5)">Conditional</animation>            
+			<animation effect="slide" start="0,0" end="0,20" time="0" condition="!Integer.IsGreater(Container(9002).NumItems,6)">Conditional</animation>            
+            <animation effect="slide" start="0,0" end="0,20" time="0" condition="!Integer.IsGreater(Container(9002).NumItems,7)">Conditional</animation>
 			<control type="group" id="1">
                 <top>0</top>
 				<width>340</width>
@@ -141,7 +141,7 @@
 				<width>340</width>
 				<height>25</height>
 				<texture border="20,0,19,20">DialogContextBottom.png</texture>
-                <visible>IntegerGreaterThan(Container(9002).NumItems,0) + !IntegerGreaterThan(Container(9002).NumItems,1)</visible>
+                <visible>Integer.IsGreater(Container(9002).NumItems,0) + !Integer.IsGreater(Container(9002).NumItems,1)</visible>
 			</control>
 			<control type="image">
 				<description>background bottom image</description>
@@ -149,7 +149,7 @@
 				<width>340</width>
 				<height>25</height>
 				<texture border="20,0,19,20">DialogContextBottom.png</texture>
-                <visible>IntegerGreaterThan(Container(9002).NumItems,1) + !IntegerGreaterThan(Container(9002).NumItems,2)</visible>
+                <visible>Integer.IsGreater(Container(9002).NumItems,1) + !Integer.IsGreater(Container(9002).NumItems,2)</visible>
 			</control>
 			<control type="image">
 				<description>background bottom image</description>
@@ -157,7 +157,7 @@
 				<width>340</width>
 				<height>25</height>
 				<texture border="20,0,19,20">DialogContextBottom.png</texture>
-                <visible>IntegerGreaterThan(Container(9002).NumItems,2) + !IntegerGreaterThan(Container(9002).NumItems,3)</visible>
+                <visible>Integer.IsGreater(Container(9002).NumItems,2) + !Integer.IsGreater(Container(9002).NumItems,3)</visible>
 			</control>
 			<control type="image">
 				<description>background bottom image</description>
@@ -165,7 +165,7 @@
 				<width>340</width>
 				<height>25</height>
 				<texture border="20,0,19,20">DialogContextBottom.png</texture>
-                <visible>IntegerGreaterThan(Container(9002).NumItems,3) + !IntegerGreaterThan(Container(9002).NumItems,4)</visible>
+                <visible>Integer.IsGreater(Container(9002).NumItems,3) + !Integer.IsGreater(Container(9002).NumItems,4)</visible>
 			</control>            
 			<control type="image">
 				<description>background bottom image</description>
@@ -173,7 +173,7 @@
 				<width>340</width>
 				<height>25</height>
 				<texture border="20,0,19,20">DialogContextBottom.png</texture>
-                <visible>IntegerGreaterThan(Container(9002).NumItems,4) + !IntegerGreaterThan(Container(9002).NumItems,5)</visible>
+                <visible>Integer.IsGreater(Container(9002).NumItems,4) + !Integer.IsGreater(Container(9002).NumItems,5)</visible>
 			</control>            
 			<control type="image">
 				<description>background bottom image</description>
@@ -181,7 +181,7 @@
 				<width>340</width>
 				<height>25</height>
 				<texture border="20,0,19,20">DialogContextBottom.png</texture>
-                <visible>IntegerGreaterThan(Container(9002).NumItems,5) + !IntegerGreaterThan(Container(9002).NumItems,6)</visible>
+                <visible>Integer.IsGreater(Container(9002).NumItems,5) + !Integer.IsGreater(Container(9002).NumItems,6)</visible>
 			</control>            
 			<control type="image">
 				<description>background bottom image</description>
@@ -189,7 +189,7 @@
 				<width>340</width>
 				<height>25</height>
 				<texture border="20,0,19,20">DialogContextBottom.png</texture>
-                <visible>IntegerGreaterThan(Container(9002).NumItems,6) + !IntegerGreaterThan(Container(9002).NumItems,7)</visible>
+                <visible>Integer.IsGreater(Container(9002).NumItems,6) + !Integer.IsGreater(Container(9002).NumItems,7)</visible>
 			</control> 
 			<control type="image">
 				<description>background bottom image</description>
@@ -197,7 +197,7 @@
 				<width>340</width>
 				<height>25</height>
 				<texture border="20,0,19,20">DialogContextBottom.png</texture>
-                <visible>IntegerGreaterThan(Container(9002).NumItems,7)</visible>
+                <visible>Integer.IsGreater(Container(9002).NumItems,7)</visible>
 			</control>            
 		</control>
 	</controls>

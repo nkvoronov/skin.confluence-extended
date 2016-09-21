@@ -15,10 +15,10 @@
 		<top>5</top>
 		<width>1500</width>
 		<height>60</height>
-		<onleft condition="!Skin.HasSetting(FixedEndingMenu)">9000</onleft>        
+		<onleft condition="!Skin.HasSetting(FixedEndingMenu)">9000</onleft>
         <onleft condition="Skin.HasSetting(FixedEndingMenu)">noop</onleft>
 		<onright condition="!Skin.HasSetting(FixedEndingMenu)">9000</onright>
-		<onright condition="Skin.HasSetting(FixedEndingMenu)">noop</onright>		
+		<onright condition="Skin.HasSetting(FixedEndingMenu)">noop</onright>
         <onup condition="System.HasAddon(script.globalsearch) + Skin.HasSetting(ActivateGlobalSearch)">608</onup>
 		<onup condition="!System.HasAddon(script.globalsearch) | !Skin.HasSetting(ActivateGlobalSearch)">603</onup>
 		<ondown>9001</ondown>
@@ -94,9 +94,9 @@
                 <include>VisibleFadeEffect</include>
             </control>
         </focusedlayout>
-        <content>
+		<content>
             <include>skinshortcuts-mainmenu</include>
-        </content>
+		</content>
 	</include>
 	<include name="DefaultInitialSetup">
 		<onload>Skin.SetBool(EnableWidgetsTitle)</onload>

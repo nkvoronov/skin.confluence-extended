@@ -71,7 +71,7 @@
                 <onup>211</onup>
                 <ondown>211</ondown>
                 <onclick>Control.Move(211,-1)</onclick>
-                <visible>IntegerGreaterThan(Container(211).NumItems,5) + Container(211).HasPrevious</visible>
+                <visible>Integer.IsGreater(Container(211).NumItems,5) + Container(211).HasPrevious</visible>
             </control>
             <control type="button" id="801">
                 <left>130</left>
@@ -85,7 +85,7 @@
                 <onup>211</onup>
                 <ondown>211</ondown>
                 <onclick>Control.Move(211,1)</onclick>
-                <visible>IntegerGreaterThan(Container(211).NumItems,5) + Container(211).HasNext</visible>
+                <visible>Integer.IsGreater(Container(211).NumItems,5) + Container(211).HasNext</visible>
             </control>
 			<control type="list" id="211">
 				<left>10</left>
@@ -228,7 +228,7 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-                        <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                     </control>
                     <control type="button" id="405">
                         <description>Edit submenu</description>
@@ -240,7 +240,7 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-                        <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>                       
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>                       
                     </control>
                     <control type="button" id="406">
                         <description>Edit subaddons</description>
@@ -252,7 +252,7 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-                        <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>                       
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>                       
                     </control>
                     <control type="button" id="312">
                         <description>Edit widget name</description>
@@ -265,7 +265,7 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-                        <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                     </control>
                     <control type="button" id="407">
                         <description>Edit subwidgets</description>
@@ -278,7 +278,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>SetProperty(current_widget,$INFO[Container(211).ListItem.Property(widget)],home)</onclick>
-                        <visible>StringCompare(Window.Property(groupname),mainmenu) + StringCompare(Container(211).ListItem.Property(widgetTarget),submenus)</visible>                       
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu) + String.IsEqual(Container(211).ListItem.Property(widgetTarget),submenus)</visible>                       
                     </control>
                     <control type="image" id="600">
                         <description>separator image</description>
@@ -369,7 +369,7 @@
 			<include>CommonNowPlaying</include>
 		</control>
 		<include>MainWindowMouseButtons</include>
-		<include name="CommonWindowHeader">
+		<include content="CommonWindowHeader">
 			<param name="Icon" value="icon_system" />
 			<param name="Label" value="$LOCALIZE[5][COLOR=blue] - [/COLOR]$LOCALIZE[20077]$VAR[SkinShortcutsTitle]" />
 		</include>

@@ -66,7 +66,7 @@
 				<height>460</height>
 				<onup>3</onup>
 				<ondown>3</ondown>
-				<onleft>99</onleft>
+				<onleft>7</onleft>
 				<onright>61</onright>
 				<pagecontrol>61</pagecontrol>
 				<scrolltime>200</scrolltime>
@@ -131,7 +131,7 @@
 				<height>460</height>
 				<onup>6</onup>
 				<ondown>6</ondown>
-				<onleft>99</onleft>
+				<onleft>7</onleft>
 				<onright>61</onright>
 				<pagecontrol>61</pagecontrol>
 				<scrolltime>200</scrolltime>
@@ -175,19 +175,6 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Label2]</label>
-                        <visible>!IsEmpy(ListItem.Label2) + IsEmpy(ListItem.Property(Addon.Summary))</visible>
-					</control>
-					<control type="textbox">
-						<left>90</left>
-						<top>34</top>
-						<width>450</width>
-						<height>48</height>
-						<font>font12</font>
-						<textcolor>grey</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>left</align>
-						<label>$INFO[ListItem.Property(Addon.Summary)]</label>
-                        <visible>!IsEmpy(ListItem.Property(Addon.Summary))</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout height="92" width="550">
@@ -241,19 +228,6 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<label>$INFO[ListItem.Label2]</label>
-                        <visible>!IsEmpy(ListItem.Label2) + IsEmpy(ListItem.Property(Addon.Summary))</visible>
-					</control>
-					<control type="textbox">
-						<left>90</left>
-						<top>34</top>
-						<width>450</width>
-						<height>48</height>
-						<font>font12</font>
-						<textcolor>grey</textcolor>
-						<selectedcolor>selected</selectedcolor>
-						<align>left</align>
-						<label>$INFO[ListItem.Property(Addon.Summary)]</label>
-                        <visible>!IsEmpy(ListItem.Property(Addon.Summary))</visible>
 					</control>
 				</focusedlayout>
 			</control>
@@ -302,7 +276,7 @@
 						<focusedcolor>white</focusedcolor>
 						<align>center</align>
 					</control>
-					<control type="button" id="99">
+					<control type="button" id="7">
 						<description>Cancel button</description>
 						<width>200</width>
 						<height>40</height>

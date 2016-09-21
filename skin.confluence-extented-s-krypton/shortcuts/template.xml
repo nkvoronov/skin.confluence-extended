@@ -6,7 +6,7 @@
         <controls>
             <control type="group">
                 <skinshortcuts>visibility</skinshortcuts>
-                <include name="HomeSubMenuCommonAnimation">
+                <include content="HomeSubMenuCommonAnimation">
                     <param name="list_id" value="$PYTHON[9100+int($SKINSHORTCUTS[id])]" />
                 </include>
                 <control type="list" id="$PYTHON[9100+int($SKINSHORTCUTS[id])]">
@@ -18,7 +18,7 @@
                         <include>skinshortcuts-group-num-$SKINSHORTCUTS[id_label]</include>
                     </content>
                 </control>
-                <include name="HomeSubMenuCommonControls">
+                <include content="HomeSubMenuCommonControls">
                     <param name="list_id" value="$PYTHON[9100+int($SKINSHORTCUTS[id])]" />
                 </include>
             </control>
@@ -29,7 +29,7 @@
         <property name="id_label" tag="property" attribute="name|labelID"/>
         <controls>
             <control type="list" id="$PYTHON[700+int($SKINSHORTCUTS[id])]">
-                <include name="HomeAddonsCommonAnimation">
+                <include content="HomeAddonsCommonAnimation">
                     <param name="list_id" value="$PYTHON[700+int($SKINSHORTCUTS[id])]" />
                 </include>
                 <skinshortcuts>visibility</skinshortcuts>
@@ -43,7 +43,7 @@
                 </content>
             </control>
             <control type="list" id="$PYTHON[700+int($SKINSHORTCUTS[id])]">
-                <include name="HomeAddonsCommonAnimationMediaPlaying">
+                <include content="HomeAddonsCommonAnimationMediaPlaying">
                     <param name="list_id" value="$PYTHON[700+int($SKINSHORTCUTS[id])]" />
                 </include>
                 <skinshortcuts>visibility</skinshortcuts>
@@ -62,10 +62,10 @@
         <property name="id" tag="mainmenuid" />
         <property name="id_label" tag="property" attribute="name|labelID"/>
         <controls>
-            <include name="CommonWidgetInclude">
+            <include content="CommonWidgetInclude">
                 <param name="left_widget" value="140" />
-                <param name="visible_widget" value="true" />
-                <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(submenuVisibility),num-$SKINSHORTCUTS[id_label])" />
+                <param name="visible_widget" value="String.IsEqual(Container(9000).ListItem.Property(widgetTarget),submenus)" />
+                <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-$SKINSHORTCUTS[id_label])" />
                 <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
                 <param name="list_id" value="$PYTHON[8100+int($SKINSHORTCUTS[id])]" />
                 <param name="animation_name_include" value="AnimationWidgetCommon" />

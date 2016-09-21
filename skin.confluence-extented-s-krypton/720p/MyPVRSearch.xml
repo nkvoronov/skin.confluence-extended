@@ -137,7 +137,7 @@
 							<texture border="5">MenuItemNF.png</texture>
 						</control>
 						<control type="group">
-							<visible>IsEmpty(ListItem.Date)</visible>
+							<visible>String.IsEmpty(ListItem.Date)</visible>
 							<control type="label">
 								<left>50</left>
 								<top>0</top>
@@ -151,7 +151,7 @@
 							</control>
 						</control>
 						<control type="group">
-							<visible>!IsEmpty(ListItem.Date)</visible>
+							<visible>!String.IsEmpty(ListItem.Date)</visible>
 							<control type="image">
 								<left>0</left>
 								<top>5</top>
@@ -159,7 +159,7 @@
 								<height>30</height>
 								<texture border="1">$INFO[ListItem.Icon]</texture>
 								<aspectratio>keep</aspectratio>
-								<visible>!IsEmpty(ListItem.Icon)</visible>
+								<visible>!String.IsEmpty(ListItem.Icon)</visible>
 							</control>
 							<control type="label">
 								<left>50</left>
@@ -171,7 +171,7 @@
 								<textcolor>grey2</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.ChannelName</info>
-								<visible>!IsEmpty(ListItem.Icon)</visible>
+								<visible>!String.IsEmpty(ListItem.Icon)</visible>
 							</control>
 							<control type="label">
 								<left>0</left>
@@ -183,7 +183,7 @@
 								<textcolor>grey2</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.ChannelName</info>
-								<visible>IsEmpty(ListItem.Icon)</visible>
+								<visible>String.IsEmpty(ListItem.Icon)</visible>
 							</control>
 							<control type="label">
 								<left>240</left>
@@ -207,42 +207,6 @@
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.Date</info>
 							</control>
-							<control type="image">
-								<left>980</left>
-								<top>10</top>
-								<width>30</width>
-								<height>20</height>
-								<texture>PVR-IsRecording.png</texture>
-								<visible>ListItem.IsRecording</visible>
-							</control>
-							<control type="label">
-								<left>1015</left>
-								<top>0</top>
-								<width>80</width>
-								<height>40</height>
-								<font>font10</font>
-								<aligny>center</aligny>
-								<textcolor>grey2</textcolor>
-								<selectedcolor>selected</selectedcolor>
-								<label>19043</label>
-								<visible>ListItem.IsRecording</visible>
-							</control>
-							<control type="image">
-								<left>980</left>
-								<top>10</top>
-								<width>20</width>
-								<height>20</height>
-								<texture>PVR-HasTimer.png</texture>
-								<visible>ListItem.HasTimer + !ListItem.IsRecording + !ListItem.HasTimerSchedule</visible>
-							</control>
-							<control type="image">
-								<left>980</left>
-								<top>10</top>
-								<width>20</width>
-								<height>20</height>
-								<texture>PVR-HasTimerSchedule.png</texture>
-								<visible>ListItem.HasTimerSchedule + !ListItem.IsRecording</visible>
-							</control>
 							<control type="label">
 								<left>1010</left>
 								<top>0</top>
@@ -252,16 +216,14 @@
 								<aligny>center</aligny>
 								<textcolor>grey2</textcolor>
 								<selectedcolor>selected</selectedcolor>
-								<label>31510</label>
-								<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+								<label>$VAR[PVRTimerLabel]</label>
 							</control>
 							<control type="image">
 								<left>980</left>
 								<top>10</top>
 								<width>20</width>
 								<height>20</height>
-								<texture>PVR-HasRecording.png</texture>
-								<visible>ListItem.HasRecording + !ListItem.IsRecording + !ListItem.HasTimer</visible>
+								<texture>$VAR[PVRTimerIcon]</texture>
 							</control>
 						</control>
 					</itemlayout>
@@ -282,7 +244,7 @@
 							<visible>Control.HasFocus(50)</visible>
 						</control>
 						<control type="group">
-							<visible>IsEmpty(ListItem.Date)</visible>
+							<visible>String.IsEmpty(ListItem.Date)</visible>
 							<control type="label">
 								<left>50</left>
 								<top>0</top>
@@ -296,7 +258,7 @@
 							</control>
 						</control>
 						<control type="group">
-							<visible>!IsEmpty(ListItem.Date)</visible>
+							<visible>!String.IsEmpty(ListItem.Date)</visible>
 							<control type="image">
 								<left>0</left>
 								<top>5</top>
@@ -304,7 +266,7 @@
 								<height>30</height>
 								<texture border="1">$INFO[ListItem.Icon]</texture>
 								<aspectratio>keep</aspectratio>
-								<visible>!IsEmpty(ListItem.Icon)</visible>
+								<visible>!String.IsEmpty(ListItem.Icon)</visible>
 							</control>
 							<control type="label">
 								<left>50</left>
@@ -316,7 +278,7 @@
 								<textcolor>grey2</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.ChannelName</info>
-								<visible>!IsEmpty(ListItem.Icon)</visible>
+								<visible>!String.IsEmpty(ListItem.Icon)</visible>
 							</control>
 							<control type="label">
 								<left>0</left>
@@ -328,7 +290,7 @@
 								<textcolor>grey2</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.ChannelName</info>
-								<visible>IsEmpty(ListItem.Icon)</visible>
+								<visible>String.IsEmpty(ListItem.Icon)</visible>
 							</control>
 							<control type="label">
 								<left>240</left>
@@ -352,42 +314,6 @@
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.Date</info>
 							</control>
-							<control type="image">
-								<left>980</left>
-								<top>10</top>
-								<width>30</width>
-								<height>20</height>
-								<texture>PVR-IsRecording.png</texture>
-								<visible>ListItem.IsRecording</visible>
-							</control>
-							<control type="label">
-								<left>1015</left>
-								<top>0</top>
-								<width>80</width>
-								<height>40</height>
-								<font>font10</font>
-								<aligny>center</aligny>
-								<textcolor>grey2</textcolor>
-								<selectedcolor>selected</selectedcolor>
-								<label>19043</label>
-								<visible>ListItem.IsRecording</visible>
-							</control>
-							<control type="image">
-								<left>980</left>
-								<top>10</top>
-								<width>20</width>
-								<height>20</height>
-								<texture>PVR-HasTimer.png</texture>
-								<visible>ListItem.HasTimer + !ListItem.IsRecording + !ListItem.HasTimerSchedule</visible>
-							</control>
-							<control type="image">
-								<left>980</left>
-								<top>10</top>
-								<width>20</width>
-								<height>20</height>
-								<texture>PVR-HasTimerSchedule.png</texture>
-								<visible>ListItem.HasTimerSchedule + !ListItem.IsRecording</visible>
-							</control>
 							<control type="label">
 								<left>1010</left>
 								<top>0</top>
@@ -397,16 +323,14 @@
 								<aligny>center</aligny>
 								<textcolor>grey2</textcolor>
 								<selectedcolor>selected</selectedcolor>
-								<label>31510</label>
-								<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+								<label>$VAR[PVRTimerLabel]</label>
 							</control>
 							<control type="image">
 								<left>980</left>
 								<top>10</top>
 								<width>20</width>
 								<height>20</height>
-								<texture>PVR-HasRecording.png</texture>
-								<visible>ListItem.HasRecording + !ListItem.IsRecording + !ListItem.HasTimer</visible>
+								<texture>$VAR[PVRTimerIcon]</texture>
 							</control>
 						</control>
 					</focusedlayout>

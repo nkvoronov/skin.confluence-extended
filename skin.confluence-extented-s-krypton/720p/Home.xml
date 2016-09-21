@@ -5,19 +5,15 @@
     <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=mainmenu|powermenu&amp;levels=2)</onload>
     <!-- -->
     <include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
-    <onload condition="!IsEmpty(Window(home).Property(MenuItemActive))">ClearProperty(MenuItemActive,home)</onload>
-    <onload condition="!IsEmpty(Window(home).Property(MenuBackground))">ClearProperty(MenuBackground,home)</onload>
+    <onload condition="!String.IsEmpty(Window(home).Property(MenuItemActive))">ClearProperty(MenuItemActive,home)</onload>
+    <onload condition="!String.IsEmpty(Window(home).Property(MenuBackground))">ClearProperty(MenuBackground,home)</onload>
     <!-- -->
     <onload condition="Window.Previous(Startup)">Control.Move(9000,$INFO[Skin.String(CustomFocus)])</onload>
-	<onload condition="IsEmpty(Skin.String(MenuColor))">Skin.SetString(MenuColor,blue,)</onload>
-	<onload condition="!IsEmpty(Weather.Plugin) + !Weather.IsFetched">Weather.Refresh</onload>
-	<onunload condition="Container(9000).Hasfocus(10) | Container(9000).Hasfocus(11) | ControlGroup(9010).HasFocus | ControlGroup(9016).HasFocus | ControlGroup(9017).HasFocus">SetProperty(VideosDirectLink,True)</onunload>
-	<onunload condition="ControlGroup(9011).HasFocus">SetProperty(MusicDirectLink,True)</onunload>
-	<onunload condition="Control.HasFocus(9000) + Container(9000).Hasfocus(2)">ClearProperty(VideosDirectLink)</onunload>
-	<onunload condition="Control.HasFocus(9000) + Container(9000).Hasfocus(3)">ClearProperty(MusicDirectLink)</onunload>
+	<onload condition="String.IsEmpty(Skin.String(MenuColor))">Skin.SetString(MenuColor,blue,)</onload>
+	<onload condition="!String.IsEmpty(Weather.Plugin) + !Weather.IsFetched">Weather.Refresh</onload>
 	<controls>
-        <!-- Backgrounds -->
-		<include>CommonBackground</include>
+		<!-- Backgrounds -->
+        <include>CommonBackground</include>
 		<control type="image">
 			<depth>DepthFloor</depth>
 			<left>-20</left>
@@ -36,8 +32,8 @@
 			<depth>DepthMenu</depth>
 			<left>0</left>
 			<top>60</top>
-			<visible>Player.HasAudio + !Skin.HasSetting(HomePageMusicInfo) + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
-			<animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
+			<visible>Player.HasAudio + !Skin.HasSetting(HomePageMusicInfo) + String.IsEmpty(Window(videos).Property(PlayingBackgroundMedia))</visible>
+            <animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
 			<control type="image">
@@ -142,7 +138,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>Next Recording DateTime</description>
+					<description>NextRecordingDateTime</description>
 					<left>-10</left>
 					<top>30</top>
 					<height>25</height>
@@ -155,7 +151,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>Next Recording Title Channel</description>
+					<description>NextRecordingTitle Channel</description>
 					<left>-410</left>
 					<top>50</top>
 					<height>25</height>
@@ -209,7 +205,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>Next Recording DateTime</description>
+					<description>NextRecordingDateTime</description>
 					<left>-10</left>
 					<top>30</top>
 					<height>25</height>
@@ -222,7 +218,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>Next Recording Title Channel</description>
+					<description>NextRecordingTitle Channel</description>
 					<left>-410</left>
 					<top>50</top>
 					<height>30</height>
@@ -241,8 +237,8 @@
 			<depth>DepthMenu</depth>
 			<left>0</left>
 			<top>50</top>
-			<animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
-			<visible>Player.HasVideo + !Skin.HasSetting(HomePageVideoInfo) + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
+            <animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
+			<visible>Player.HasVideo + !Skin.HasSetting(HomePageVideoInfo) + String.IsEmpty(Window(videos).Property(PlayingBackgroundMedia))</visible>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
 			<control type="group">
@@ -475,14 +471,14 @@
 			<animation effect="slide" start="0,0" end="365,0" time="300" condition="!Player.HasMedia + !Skin.HasSetting(EnableHomeStats)">conditional</animation>
         		<animation effect="slide" start="0,0" end="365,0" time="300" condition="Player.HasMedia + Skin.HasSetting(HidePlayerPanel)">conditional</animation>
 			<animation type="WindowOpen" reversible="false">
-			<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="225" />
-			<effect type="fade" start="0" end="100" time="225" />
+				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="225" />
+				<effect type="fade" start="0" end="100" time="225" />
 			</animation>
 			<animation type="WindowClose" reversible="false">
-			<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="225" />
-			<effect type="fade" start="100" end="0" time="225" />
+				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="225" />
+				<effect type="fade" start="100" end="0" time="225" />
 			</animation>
-			<visible>IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
+			<visible>String.IsEmpty(Window(videos).Property(PlayingBackgroundMedia))</visible>
 			<control type="image">
 				<description>Background End Image</description>
 				<left>0</left>
@@ -909,7 +905,7 @@
 				<onright>21</onright>
 				<onup condition="!Skin.HasSetting(LowerMenu)">9002</onup>
 				<onup condition="Skin.HasSetting(LowerMenu)">9001</onup>
-                <ondown>9003</ondown>
+				<ondown>9003</ondown>
                 <visible>!Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)</visible>
 			</control>
 			<control type="image">
@@ -937,7 +933,7 @@
 				<onright>22</onright>
 				<onup condition="!Skin.HasSetting(LowerMenu)">9002</onup>
 				<onup condition="Skin.HasSetting(LowerMenu)">9001</onup>
-                <ondown>9003</ondown>
+				<ondown>9003</ondown>
                 <visible>!Skin.HasSetting(HideFavoritesButton)</visible>
 			</control>
 			<control type="image">
@@ -996,7 +992,7 @@
 			<control type="group">
 				<left>20</left>
 				<top>0</top>
-				<visible>Skin.HasSetting(HomePageWeatherInfo) + !IsEmpty(Weather.Plugin)</visible>
+				<visible>Skin.HasSetting(HomePageWeatherInfo) + !String.IsEmpty(Weather.Plugin)</visible>
 				<include>Window_OpenClose_Animation</include>
                 <!-- Current Weather Icon -->
 				<control type="image">
@@ -1049,7 +1045,7 @@
 						<label>$INFO[System.TemperatureUnits]</label>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<visible>!IsEmpty(Window(weather).Property(Current.Temperature))</visible>
+						<visible>!String.IsEmpty(Window(weather).Property(Current.Temperature))</visible>
 					</control>
 					<control type="label">
 						<description>Conditions Label</description>
@@ -1077,7 +1073,7 @@
 				<shadowcolor>black</shadowcolor>
 				<label>$INFO[System.Date]</label>
 				<include>Window_OpenClose_Animation</include>
-				<animation effect="slide" start="0,0" end="-40,0" time="75" condition="Window.IsVisible(Mutebug)">conditional</animation>
+				<animation effect="slide" start="0,0" end="-40,0" time="75" condition="Player.Muted">conditional</animation>
 			</control>
 		</control>
 	</controls>

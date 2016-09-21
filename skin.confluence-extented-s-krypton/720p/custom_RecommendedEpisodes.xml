@@ -7,7 +7,7 @@
 		<top>0</top>
 	</coordinates>
 	<controls>
-        <include name="CustomRecommendedDialog">
+        <include content="CustomRecommendedDialog">
             <param name="dlg_title" value="$LOCALIZE[89034]" />
             <param name="id_win" value="2124" />
             <param name="fallback_pic" value="DefaultTVShows.png" />

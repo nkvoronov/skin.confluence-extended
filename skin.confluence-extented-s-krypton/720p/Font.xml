@@ -345,7 +345,7 @@
 			<style>bold</style>
 		</font>
 	</fontset>
-	<fontset id="DefaultJarvis" idloc="88900" unicode="true"> 
+	<fontset id="DefaultKrypton" idloc="88900" unicode="true"> 
 	<!-- Normal Fonts -->
 		<font>
 			<name>font10</name>
@@ -429,7 +429,7 @@
 			<size>80</size>
 		</font>
 	</fontset>
-	<fontset id="MassiveJarvis" idloc="88910" unicode="true">
+	<fontset id="MassiveKrypton" idloc="88910" unicode="true">
 		<!-- Normal Fonts -->
 		<font>
 			<name>font10</name>
@@ -513,7 +513,7 @@
 			<size>80</size>
 		</font>
 	</fontset>
-	<fontset id="DefaultNoCapsJarvis" idloc="88920" unicode="true">
+	<fontset id="DefaultNoCapsKrypton" idloc="88920" unicode="true">
 		<!-- Normal Fonts -->
 		<font>
 			<name>font10</name>

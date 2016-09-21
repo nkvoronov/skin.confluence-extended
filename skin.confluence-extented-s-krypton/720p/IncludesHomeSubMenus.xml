@@ -7,7 +7,7 @@
 			<top>70</top>            
 			<include>HomeSubMenuUpDown</include>
             <include>skinshortcuts-template-submenus</include>
-        </control>
+		</control>
 	</include>
     <include name="HomeSubMenuUpDown">
         <onup>9000</onup>
@@ -15,7 +15,7 @@
         <ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(HidePowerButton) + Skin.HasSetting(HideFavoritesButton)">22</ondown>
         <ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)">21</ondown>
 		<ondown condition="Skin.HasSetting(LowerMenu)">20</ondown>
-    </include>    
+    </include>
 	<include name="HomeSubMenuCommonValues">
 		<left>70</left>
 		<top>0</top>
@@ -33,7 +33,7 @@
         
 		<animation effect="fade" start="100" end="0" time="300" condition="!ControlGroup(9001).HasFocus + Skin.HasSetting(NoSlide)">conditional</animation>
 		<animation effect="slide" start="0,-40" end="0,0" delay="200" time="200" tween="quadratic" easing="out"  condition="ControlGroup(9001).HasFocus + Skin.HasSetting(NoSlide)">conditional</animation>
-		<animation effect="slide" start="0,0" end="0,-40" time="200" tween="quadratic" easing="out" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(NoSlide)">Hidden</animation>
+		<animation effect="slide" start="0,0" end="0,-40" time="200" tween="quadratic" easing="out" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(NoSlide)">Hidden</animation>       
         
 		<animation effect="fade" start="100" end="65" time="200" condition="Window.IsVisible(2123) | Window.IsVisible(2124) | Window.IsVisible(2125) | Window.IsVisible(2126) | Window.IsVisible(Favourites)">conditional</animation>
         
@@ -104,7 +104,7 @@
 				<visible>ControlGroup(9001).HasFocus</visible>
 			</control>
 		</focusedlayout>
-	</include>
+	</include>    
     <include name="HomeSubMenuCommonControls">
         <control type="image">
             <left>5</left>
@@ -112,8 +112,8 @@
             <width>35</width>
             <height>35</height>
             <texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
-            <animation effect="slide" start="0,0" end="30,0" time="0" condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,6) | !Container($PARAM[list_id]).HasPrevious">conditional</animation>
-            <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)</visible>
+            <animation effect="slide" start="0,0" end="30,0" time="0" condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,6) | !Container($PARAM[list_id]).HasPrevious">conditional</animation>
+            <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)</visible>
         </control>
         <control type="image">
             <left>40</left>
@@ -121,7 +121,7 @@
             <width>35</width>
             <height>35</height>
             <texture border="5">HomeSubNF.png</texture>
-            <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,6) + Container($PARAM[list_id]).HasPrevious</visible>
+            <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,6) + Container($PARAM[list_id]).HasPrevious</visible>
         </control>
         <control type="button" id="800">
             <left>45</left>
@@ -134,7 +134,7 @@
             <onright>$PARAM[list_id]</onright>
             <include>HomeSubMenuUpDown</include>
             <onclick>Control.Move($PARAM[list_id],-1)</onclick>
-            <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,6) + Container($PARAM[list_id]).HasPrevious</visible>
+            <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,6) + Container($PARAM[list_id]).HasPrevious</visible>
         </control>
         <control type="image">
             <left>1240</left>
@@ -142,13 +142,13 @@
             <width>35</width>
             <height>35</height>
             <texture border="0,0,0,3">HomeSubEnd.png</texture>
-            <animation effect="slide" start="0,0" end="-30,0" time="0" condition="!IntegerGreaterThan(Container($PARAM[list_id]).NumItems,6) |  !Container($PARAM[list_id]).HasNext">conditional</animation>
-            <animation effect="slide" start="0,0" end="-190,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
-            <animation effect="slide" start="0,0" end="-380,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
-            <animation effect="slide" start="0,0" end="-570,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
-            <animation effect="slide" start="0,0" end="-760,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
-            <animation effect="slide" start="0,0" end="-950,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
-            <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,0)</visible>
+            <animation effect="slide" start="0,0" end="-30,0" time="0" condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,6) |  !Container($PARAM[list_id]).HasNext">conditional</animation>
+            <animation effect="slide" start="0,0" end="-190,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
+            <animation effect="slide" start="0,0" end="-380,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
+            <animation effect="slide" start="0,0" end="-570,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
+            <animation effect="slide" start="0,0" end="-760,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
+            <animation effect="slide" start="0,0" end="-950,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
+            <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)</visible>
         </control>
         <control type="image">
             <left>1205</left>
@@ -156,7 +156,7 @@
             <width>35</width>
             <height>35</height>
             <texture border="5">HomeSubNF.png</texture>
-            <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,6) + Container($PARAM[list_id]).HasNext</visible>
+            <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,6) + Container($PARAM[list_id]).HasNext</visible>
         </control>
         <control type="button" id="801">
             <left>1210</left>
@@ -169,12 +169,12 @@
             <onright>$PARAM[list_id]</onright>
             <include>HomeSubMenuUpDown</include>
             <onclick>Control.Move($PARAM[list_id],1)</onclick>
-            <animation effect="slide" start="0,0" end="-205,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
-            <animation effect="slide" start="0,0" end="-410,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
-            <animation effect="slide" start="0,0" end="-615,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
-            <animation effect="slide" start="0,0" end="-820,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
-            <animation effect="slide" start="0,0" end="-1025,0" time="0" condition="StringCompare(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
-            <visible>IntegerGreaterThan(Container($PARAM[list_id]).NumItems,6) + Container($PARAM[list_id]).HasNext</visible>
-        </control>    
-    </include> 
+            <animation effect="slide" start="0,0" end="-205,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
+            <animation effect="slide" start="0,0" end="-410,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
+            <animation effect="slide" start="0,0" end="-615,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
+            <animation effect="slide" start="0,0" end="-820,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
+            <animation effect="slide" start="0,0" end="-1025,0" time="0" condition="String.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
+            <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,6) + Container($PARAM[list_id]).HasNext</visible>
+        </control>
+    </include>
 </includes>
