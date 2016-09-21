@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <shortcuts>
 	<shortcut>
-		<label>20390</label>
+		<label>31328</label>
 		<label2>20389</label2>
 		<icon>DefaultRecentlyAddedMusicVideos.png</icon>
 		<action>ActivateWindow(videos,videodb://recentlyaddedmusicvideos/,return)</action>

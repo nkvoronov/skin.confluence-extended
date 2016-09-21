@@ -27,11 +27,11 @@
     <backgrounddefault labelID="dvd">special://skin/extras/backgrounds/dvd.jpg</backgrounddefault>
     <backgrounddefault labelID="settings">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
     <!-- Additionnal Widgets -->
-    <widget label="$LOCALIZE[89302] $LOCALIZE[8]" icon="DefaultFolder.png" type="weather" path="weather_daily" target="list">WeatherDaily</widget>
-    <widget label="$LOCALIZE[89031]" icon="DefaultRecentlyAddedMovies.png" type="movies" path="recent_movies" target="list">RecentMovies</widget>
-    <widget label="$LOCALIZE[89033]" icon="DefaultRecentlyAddedEpisodes.png" type="episodes" path="recent_episodes" target="list">RecentEpisodes</widget>
-    <widget label="$LOCALIZE[89036]" icon="DefaultRecentlyAddedMusicVideos.png" type="albums" path="recent_musicvideo" target="list">RecentMusicVideo</widget>
-    <widget label="$LOCALIZE[89025]" icon="DefaultMusicRecentlyAdded.png" type="albums" path="recent_albums" target="list">RecentAlbums</widget>   
+    <widget label="$LOCALIZE[89302] $LOCALIZE[8]" icon="DefaultFolder.png" type="weathers" path="pdailyweather" target="list">DailyWeather</widget>
+    <widget label="$LOCALIZE[89031]" icon="DefaultRecentlyAddedMovies.png" type="movies" path="precentmovies" target="list">RecentMovies</widget>
+    <widget label="$LOCALIZE[89033]" icon="DefaultRecentlyAddedEpisodes.png" type="episodes" path="precentepisodes" target="list">RecentEpisodes</widget>
+    <widget label="$LOCALIZE[89036]" icon="DefaultRecentlyAddedMusicVideos.png" type="albums" path="precentmusicvideo" target="list">RecentMusicVideo</widget>
+    <widget label="$LOCALIZE[89025]" icon="DefaultMusicRecentlyAdded.png" type="albums" path="precentalbums" target="list">RecentAlbums</widget>   
     <!-- Default Widgets -->
     <widgetdefault labelID="weather">WeatherDaily</widgetdefault>
     <widgetdefault labelID="movies">RecentMovies</widgetdefault>
@@ -114,7 +114,7 @@
         <!-- Movies -->
         <node label="342">
             <shortcut label="342" type="342" icon="DefaultFolder.png">ActivateWindow(videos,videodb://movies/titles/,return)</shortcut>
-            <shortcut label="20386" type="342" icon="DefaultRecentlyAddedMovies.png">ActivateWindow(videos,videodb://recentlyaddedmovies/,return)</shortcut>
+            <shortcut label="31328" type="342" icon="DefaultRecentlyAddedMovies.png">ActivateWindow(videos,videodb://recentlyaddedmovies/,return)</shortcut>
             <shortcut label="135" type="342" icon="DefaultFolder.png">ActivateWindow(videos,videodb://movies/genres/,return)</shortcut>
             <shortcut label="369" type="342" icon="DefaultFolder.png">ActivateWindow(videos,videodb://movies/titles/,return)</shortcut>
             <shortcut label="562" type="342" icon="DefaultFolder.png">ActivateWindow(videos,videodb://movies/years/,return)</shortcut>
@@ -129,7 +129,7 @@
         <!-- TVShows -->
         <node label="20343">
             <shortcut label="20343" type="20343" icon="DefaultFolder.png">ActivateWindow(videos,videodb://movies/titles/,return)</shortcut>
-            <shortcut label="20387" type="20343" icon="DefaultRecentlyAddedEpisodes.png">ActivateWindow(videos,videodb://recentlyaddedepisodes/,return)</shortcut>
+            <shortcut label="31328" type="20343" icon="DefaultRecentlyAddedEpisodes.png">ActivateWindow(videos,videodb://recentlyaddedepisodes/,return)</shortcut>
             <shortcut label="626" type="20343" icon="DefaultInProgressShows.png">ActivateWindow(videos,library://video/inprogressshows.xml/,return)</shortcut>
             <shortcut label="135" type="20343" icon="DefaultFolder.png">ActivateWindow(videos,videodb://tvshows/genres/,return)</shortcut>
             <shortcut label="369" type="20343" icon="DefaultFolder.png">ActivateWindow(videos,videodb://tvshows/titles/,return)</shortcut>
@@ -142,7 +142,7 @@
         <!-- MusicVideos -->
         <node label="20389">
             <shortcut label="20389" type="20389" icon="DefaultFolder.png">ActivateWindow(videos,videodb://musicvideos/,return)</shortcut>
-            <shortcut label="20390" type="20389" icon="DefaultRecentlyAddedMusicVideos.png">ActivateWindow(videos,videodb://recentlyaddedmusicvideos/,return)</shortcut>
+            <shortcut label="31328" type="20389" icon="DefaultRecentlyAddedMusicVideos.png">ActivateWindow(videos,videodb://recentlyaddedmusicvideos/,return)</shortcut>
             <shortcut label="135" type="20389" icon="DefaultMusicGenres.png">ActivateWindow(videos,videodb://musicvideos/genres/,return)</shortcut>
             <shortcut label="369" type="20389" icon="DefaultFolder.png">ActivateWindow(videos,videodb://musicvideos/titles/,return)</shortcut>
             <shortcut label="562" type="20389" icon="DefaultMusicYears.png">ActivateWindow(videos,videodb://musicvideos/years/,return)</shortcut>
@@ -286,42 +286,42 @@
     <widget-groupings>
         <!-- Weather -->
         <node label="8">
-            <shortcut label="89302" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[89302] $LOCALIZE[8]" widget="WeatherDaily" widgetType="weather" widgetTarget="list">weather_daily</shortcut>
-            <shortcut label="89303" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[89303] $LOCALIZE[8]" widget="WeatherHourly" widgetType="weather" widgetTarget="list">weather_hourly</shortcut>
-            <shortcut label="33034" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[8] $LOCALIZE[33034]" widget="WeatherH36" widgetType="weatherbig" widgetTarget="list" condition="Skin.HasSetting(LowerMenu)">weather_h36</shortcut>
+            <shortcut label="89302" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[89302]" widget="DailyWeather" widgetType="weathers" widgetTarget="list">pdailyweather</shortcut>
+            <shortcut label="89303" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[89303]" widget="HourlyWeather" widgetType="weathers" widgetTarget="list">phourlyweather</shortcut>
+            <shortcut label="33034" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[33034]" widget="H36Weather" widgetType="weatherbig" widgetTarget="list" condition="Skin.HasSetting(LowerMenu)">ph36weather</shortcut>
         </node>
         <!-- LiveTV -->
         <node label="19020" condition="PVR.HasTVChannels">
-            <shortcut label="88133" type="19020" icon="DefaultTVShows.png" widgetName="$LOCALIZE[88133]" widget="TVFavouritesChannels" widgetType="pvr" widgetTarget="submenus">tv_favourites_channels</shortcut>
+            <shortcut label="88133" type="19020" icon="DefaultTVShows.png" widgetName="$LOCALIZE[88133]" widget="TVFavouritesChannels" widgetType="pvr" widgetTarget="submenus">ptvfavouriteschannels</shortcut>
         </node>
         <!-- Radio -->
         <node label="19021" condition="PVR.HasRadioChannels">
-            <shortcut label="88134" type="19021" icon="DefaultTVShows.png" widgetName="$LOCALIZE[88134]" widget="RadioFavouritesChannels" widgetType="pvr" widgetTarget="submenus">radio_favourites_channels</shortcut>
+            <shortcut label="88134" type="19021" icon="DefaultTVShows.png" widgetName="$LOCALIZE[88134]" widget="RadioFavouritesChannels" widgetType="pvr" widgetTarget="submenus">pradiofavouriteschannels</shortcut>
         </node>
         <!-- Movies -->
         <node label="342">
-            <shortcut label="88131" type="342" icon="DefaultFolder.png" widgetName="$LOCALIZE[88131]" widget="UnWatchedMovies" widgetType="movies" widgetTarget="list">unwatched_movies</shortcut>
-            <shortcut label="89031" type="342" icon="DefaultRecentlyAddedMovies.png" widgetName="$LOCALIZE[89031]" widget="RecentMovies" widgetType="movies" widgetTarget="list">recent_movies</shortcut>
-            <shortcut label="89032" type="342" icon="DefaultFolder.png" widgetName="$LOCALIZE[89032]" widget="RandomMovies" widgetType="movies" widgetTarget="list">random_movies</shortcut>
-            <shortcut label="89030" type="342" icon="DefaultFolder.png" widgetName="$LOCALIZE[89030]" widget="RecommendedMovies" widgetType="movies" widgetTarget="list">recommended_movies</shortcut>
+            <shortcut label="88131" type="342" icon="DefaultFolder.png" widgetName="$LOCALIZE[88131]" widget="UnWatchedMovies" widgetType="movies" widgetTarget="list">punwatchedmovies</shortcut>
+            <shortcut label="89031" type="342" icon="DefaultRecentlyAddedMovies.png" widgetName="$LOCALIZE[89031]" widget="RecentMovies" widgetType="movies" widgetTarget="list">precentmovies</shortcut>
+            <shortcut label="89032" type="342" icon="DefaultFolder.png" widgetName="$LOCALIZE[89032]" widget="RandomMovies" widgetType="movies" widgetTarget="list">prandom_movies</shortcut>
+            <shortcut label="89030" type="342" icon="DefaultFolder.png" widgetName="$LOCALIZE[89030]" widget="RecommendedMovies" widgetType="movies" widgetTarget="list">precommendedmovies</shortcut>
         </node>
         <!-- TVShows -->
         <node label="20343">
-            <shortcut label="89033" type="20343" icon="DefaultRecentlyAddedEpisodes.png" widgetName="$LOCALIZE[89033]" widget="RecentEpisodes" widgetType="episodes" widgetTarget="list">recent_episodes</shortcut>
-            <shortcut label="89035" type="20343" icon="DefaultFolder.png" widgetName="$LOCALIZE[89035]" widget="RandomEpisodes" widgetType="episodes" widgetTarget="list">random_episodes</shortcut>
-            <shortcut label="89034" type="20343" icon="DefaultFolder.png" widgetName="$LOCALIZE[89034]" widget="RecommendedEpisodes" widgetType="episodes" widgetTarget="list">recommended_episodes</shortcut>
+            <shortcut label="89033" type="20343" icon="DefaultRecentlyAddedEpisodes.png" widgetName="$LOCALIZE[89033]" widget="RecentEpisodes" widgetType="episodes" widgetTarget="list">precentepisodes</shortcut>
+            <shortcut label="89035" type="20343" icon="DefaultFolder.png" widgetName="$LOCALIZE[89035]" widget="RandomEpisodes" widgetType="episodes" widgetTarget="list">prandomepisodes</shortcut>
+            <shortcut label="89034" type="20343" icon="DefaultFolder.png" widgetName="$LOCALIZE[89034]" widget="RecommendedEpisodes" widgetType="episodes" widgetTarget="list">precommendedepisodes</shortcut>
         </node>
         <!-- MusicVideos -->
         <node label="20389">
-            <shortcut label="89036" type="20389" icon="DefaultRecentlyAddedMusicVideos.png" widgetName="$LOCALIZE[89036]" widget="RecentMusicVideo" widgetType="albums" widgetTarget="list">recent_musicvideo</shortcut>
-            <shortcut label="89038" type="20389" icon="DefaultFolder.png" widgetName="$LOCALIZE[89038]" widget="RandomMusicVideo" widgetType="albums" widgetTarget="list">random_musicvideo</shortcut>
-            <shortcut label="89037" type="20389" icon="DefaultFolder.png" widgetName="$LOCALIZE[89037]" widget="RecommendedMusicVideo" widgetType="albums" widgetTarget="list">recommended_musicvideo</shortcut>
+            <shortcut label="89036" type="20389" icon="DefaultRecentlyAddedMusicVideos.png" widgetName="$LOCALIZE[89036]" widget="RecentMusicVideo" widgetType="albums" widgetTarget="list">precentmusicvideo</shortcut>
+            <shortcut label="89038" type="20389" icon="DefaultFolder.png" widgetName="$LOCALIZE[89038]" widget="RandomMusicVideo" widgetType="albums" widgetTarget="list">prandommusicvideo</shortcut>
+            <shortcut label="89037" type="20389" icon="DefaultFolder.png" widgetName="$LOCALIZE[89037]" widget="RecommendedMusicVideo" widgetType="albums" widgetTarget="list">precommendedmusicvideo</shortcut>
         </node>
         <!-- Music -->
         <node label="2">
-            <shortcut label="89025" type="2" icon="DefaultMusicRecentlyAdded.png" widgetName="$LOCALIZE[89025]" widget="RecentAlbums" widgetType="albums" widgetTarget="list">recent_albums</shortcut>
-            <shortcut label="89027" type="2" icon="DefaultFolder.png" widgetName="$LOCALIZE[89027]" widget="RandomAlbums" widgetType="albums" widgetTarget="list">random_albums</shortcut>
-            <shortcut label="89026" type="2" icon="DefaultFolder.png" widgetName="$LOCALIZE[89026]" widget="RecommendedAlbums" widgetType="albums" widgetTarget="list">recommended_albums</shortcut>
+            <shortcut label="89025" type="2" icon="DefaultMusicRecentlyAdded.png" widgetName="$LOCALIZE[89025]" widget="RecentAlbums" widgetType="albums" widgetTarget="list">precentalbums</shortcut>
+            <shortcut label="89027" type="2" icon="DefaultFolder.png" widgetName="$LOCALIZE[89027]" widget="RandomAlbums" widgetType="albums" widgetTarget="list">prandomalbums</shortcut>
+            <shortcut label="89026" type="2" icon="DefaultFolder.png" widgetName="$LOCALIZE[89026]" widget="RecommendedAlbums" widgetType="albums" widgetTarget="list">precommendedalbums</shortcut>
         </node>
         <!-- Playlists -->
         <node label="136">
@@ -334,7 +334,7 @@
         </node>        
         <!-- Favourites -->
         <node label="1036">
-            <shortcut label="1036" type="1036" icon="DefaultFolder.png" widgetName="$LOCALIZE[1036]" widget="Favourites" widgetType="favourites" widgetTarget="list">favourites</shortcut>
+            <shortcut label="1036" type="1036" icon="DefaultFolder.png" widgetName="$LOCALIZE[1036]" widget="Favourites" widgetType="favourites" widgetTarget="list" condition="System.HasAddon(script.favourites)">pfavourites</shortcut>
         </node>
     </widget-groupings>
 </overrides>

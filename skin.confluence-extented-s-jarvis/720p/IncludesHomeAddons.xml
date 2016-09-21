@@ -16,38 +16,6 @@
         <ondown condition="!Skin.HasSetting(LowerMenu) + Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)">21</ondown>
 		<ondown condition="!Skin.HasSetting(LowerMenu)">20</ondown>
     </include>    
-	<include name="HomeAddonsCommonControls">
-        <control type="list" id="$PARAM[list_id]">
-            <include name="HomeAddonsCommonAnimation">
-                <param name="list_id" value="$PARAM[list_id]" />
-            </include>
-            <visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet$PARAM[id2])</visible>
-            <visible>!Skin.HasSetting(LowerMenu) | !Player.HasMedia | Skin.HasSetting(HomePageVideoInfo) | Skin.HasSetting(HomePageMusicInfo)</visible>
-            <onleft>$PARAM[list_id]</onleft>
-            <onright>$PARAM[list_id]</onright>
-            <include>HomeAddonUpDown</include>
-            <include>HomeAddonsCommonLayout</include>
-            <content>
-                <include>skinshortcuts-group-num-$SKINSHORTCUTS[id_label]</include>
-            </content>
-        </control>    
-    </include>    
-    <include name="HomeAddonsCommonControlsMediaPlaying">
-        <control type="list" id="$PARAM[list_id]">
-            <include name="HomeAddonsCommonAnimationMediaPlaying">
-                <param name="list_id" value="$PARAM[list_id]" />
-            </include>
-            <visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSet$PARAM[id2])</visible>
-            <visible>Skin.HasSetting(LowerMenu) + Player.HasMedia + ![Skin.HasSetting(HomePageVideoInfo) | Skin.HasSetting(HomePageMusicInfo)]</visible>
-            <onleft>$PARAM[list_id]</onleft>
-            <onright>$PARAM[list_id]</onright>
-            <include>HomeAddonUpDown</include>
-            <include>HomeAddonsCommonLayoutMediaPlaying</include>
-            <content>
-                <include>skinshortcuts-group-num-$SKINSHORTCUTS[id_label]</include>
-            </content>
-        </control>    
-    </include>    
 	<include name="HomeAddonsCommonLayout">
 		<include>Window_OpenClose_Animation</include>
         <include>HomeAddonsAnimation</include>

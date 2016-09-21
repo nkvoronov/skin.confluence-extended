@@ -990,6 +990,10 @@ msgctxt "#89708"
 msgid "Command"
 msgstr ""
 
+msgctxt "#89709"
+msgid "Separate backgrounds"
+msgstr ""
+
 msgctxt "#90000"
 msgid "Customize Power Menu"
 msgstr ""

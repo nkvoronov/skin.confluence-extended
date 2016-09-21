@@ -14,7 +14,7 @@
                 <include name="CommonWidgetInclude">
                     <param name="left_widget" value="140" />
                     <param name="visible_widget" value="!IsEmpty(Weather.Plugin) + Weather.IsFetched" />
-                    <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widget),WeatherDaily)" />
+                    <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widget),DailyWeather)" />
                     <param name="label_title" value="$LOCALIZE[31904] $INFO[Window(weather).Property(Location)]" />
                     <param name="list_id" value="8000" />
                     <param name="animation_name_include" value="AnimationWidgetCommon" />
@@ -28,7 +28,7 @@
                 <include name="CommonWidgetInclude">
                     <param name="left_widget" value="140" />
                     <param name="visible_widget" value="!IsEmpty(Weather.Plugin) + Weather.IsFetched" />
-                    <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widget),WeatherHourly)" />
+                    <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widget),HourlyWeather)" />
                     <param name="label_title" value="$LOCALIZE[31902] $INFO[Window(weather).Property(Location)]" />
                     <param name="list_id" value="8001" />
                     <param name="animation_name_include" value="AnimationWidgetCommon" />
@@ -53,7 +53,7 @@
                         <effect type="fade" start="100" end="0" time="600" />
                     </animation>
                     <visible>!IsEmpty(Weather.Plugin) + Weather.IsFetched</visible>
-                    <visible>StringCompare(Container(9000).ListItem.Property(widget),WeatherH36) + Skin.HasSetting(LowerMenu)</visible>
+                    <visible>StringCompare(Container(9000).ListItem.Property(widget),H36Weather) + Skin.HasSetting(LowerMenu)</visible>
                     <left>400</left>
                     <top>40</top>
                     <control type="image">
@@ -513,7 +513,7 @@
                 <include name="CommonWidgetInclude">
                     <param name="left_widget" value="240" />
                     <param name="visible_widget" value="Library.HasContent(Music)" />
-                    <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widget),RandomAlbums)" />
+                    <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widget),RecommendedAlbums)" />
                     <param name="label_title" value="$LOCALIZE[89026]" />
                     <param name="list_id" value="8016" />
                     <param name="animation_name_include" value="AnimationWidgetCommon4" />
