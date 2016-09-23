@@ -388,11 +388,11 @@
 						<visible>System.HasAddon(script.globalsearch)</visible>
 					</control>
 					<control type="radiobutton" id="115">
-                        <description>Activate SimplePlaylists</description>
+                        <description>Activate Simple Playlists</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>$LOCALIZE[24000] SimplePlaylists</label>
+						<label>$LOCALIZE[24000] Simple Playlists</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -402,7 +402,7 @@
 						<enable>System.HasAddon(script.simpleplaylists)</enable>
 					</control>
 					<control type="button" id="116">
-                        <description>Settings SimplePlaylists</description>
+                        <description>Settings Simple Playlists</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -416,11 +416,11 @@
 						<visible>System.HasAddon(script.simpleplaylists)</visible>
 					</control>
 					<control type="radiobutton" id="117">
-                        <description>Activate ScriptPlaylist</description>
+                        <description>Activate Script Playlists</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>$LOCALIZE[24000] ScriptPlaylist</label>
+						<label>$LOCALIZE[24000] Script Playlists</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -430,7 +430,7 @@
 						<enable>System.HasAddon(script.randomandlastitems)</enable>
 					</control>
 					<control type="button" id="118">
-                        <description>Settings ScriptPlaylist</description>
+                        <description>Settings Script Playlists</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1414,7 +1414,7 @@
 						<width>680</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>31109</label>
+						<label>89710</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>

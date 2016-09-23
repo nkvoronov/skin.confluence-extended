@@ -1066,6 +1066,10 @@ msgctxt "#89709"
 msgid "Separate backgrounds"
 msgstr ""
 
+msgctxt "#89710"
+msgid "Used separate backgrounds"
+msgstr ""
+
 msgctxt "#89714"
 msgid "Reset Skin Values to Initial Install Defaults"
 msgstr ""

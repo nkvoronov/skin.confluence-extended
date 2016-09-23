@@ -5,11 +5,12 @@
     <include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
     <onload condition="!IsEmpty(Window(home).Property(MenuItemActive))">ClearProperty(MenuItemActive,home)</onload>
     <onload condition="!IsEmpty(Window(home).Property(MenuBackground))">ClearProperty(MenuBackground,home)</onload>    
-    <onload condition="!IsEmpty(Window(home).Property(MenuBackgroundHomeFanart))">ClearProperty(MenuBackgroundHomeFanart,home)</onload>    
+    <onload condition="!IsEmpty(Window(home).Property(MenuBackgroundHomeFanart))">ClearProperty(MenuBackgroundHomeFanart,home)</onload>
+    <!-- ScriptFavourites -->
     <onload condition="System.HasAddon(script.favourites)">RunScript(script.favourites)</onload>
     <onload condition="System.HasAddon(script.pvr.favourites)+[PVR.HasTVChannels | PVR.HasRadioChannels]">RunScript(script.pvr.favourites)</onload>
     <!-- ScriptPlaylist -->
-    <onload condition="Skin.HasSetting(ActivateScriptPlaylist) + Library.HasContent(Movies)">RunScript(script.randomandlastitems,type=Movie,limit=12,method=Random,playlist=special://skin/extras/playlists/UnwatchedMovies.xsp,menu=UnWatched)</onload>
+    <onload condition="Skin.HasSetting(ActivateScriptPlaylist) + Library.HasContent(Movies)">RunScript(script.randomandlastitems,type=Movie,limit=12,method=Random,playlist=special://skin/extras/playlists/unwatched_movies.xsp,menu=UnWatched)</onload>
 	<onload condition="Skin.HasSetting(ActivateScriptPlaylist) + [Skin.String(HomeItem.1.Type,videoplaylist) | Skin.String(HomeItem.1.Type,musicplaylist)]">RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.1.Playlist)],method=$VAR[PlaylistSortOrder],limit=12,unwatched=False,resume=False,property=HomePlaylist01)</onload>
 	<onload condition="Skin.HasSetting(ActivateScriptPlaylist) + [Skin.String(HomeItem.2.Type,videoplaylist) | Skin.String(HomeItem.2.Type,musicplaylist)]">RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.2.Playlist)],method=$VAR[PlaylistSortOrder],limit=12,unwatched=False,resume=False,property=HomePlaylist02)</onload>
 	<onload condition="Skin.HasSetting(ActivateScriptPlaylist) + [Skin.String(HomeItem.3.Type,videoplaylist) | Skin.String(HomeItem.3.Type,musicplaylist)]">RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.3.Playlist)],method=$VAR[PlaylistSortOrder],limit=12,unwatched=False,resume=False,property=HomePlaylist03)</onload>

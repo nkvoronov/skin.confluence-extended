@@ -1062,6 +1062,10 @@ msgctxt "#89709"
 msgid "Separate backgrounds"
 msgstr "Окремі фони"
 
+msgctxt "#89710"
+msgid "Used separate backgrounds"
+msgstr "Використовувати окремі фони"
+
 msgctxt "#89714"
 msgid "Reset Skin Values to Initial Install Defaults"
 msgstr "Скинути обкладинку до первісного стану за замовчуванням"

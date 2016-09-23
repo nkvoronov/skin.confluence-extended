@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<smartplaylist type="episodes">
-    <name>Unwatched Episodes</name>
+<smartplaylist type="albums">
+    <name>Unplayed albums</name>
     <match>all</match>
+    <limit>10</limit>
     <rule field="playcount" operator="is">
         <value>0</value>
     </rule>
-    <rule field="inprogress" operator="false" />
-    <order direction="ascending">sorttitle</order>
+    <order direction="ascending">random</order>
 </smartplaylist>
