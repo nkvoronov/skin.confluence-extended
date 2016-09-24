@@ -368,11 +368,11 @@
 						<visible>System.HasAddon(script.globalsearch)</visible>
 					</control>
 					<control type="radiobutton" id="115">
-                        <description>Activate SimplePlaylists</description>
+                        <description>Activate Simple Playlists</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>$LOCALIZE[24000] SimplePlaylists</label>
+						<label>$LOCALIZE[24000] Simple Playlists</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -382,7 +382,7 @@
 						<enable>System.HasAddon(script.simpleplaylists)</enable>
 					</control>
 					<control type="button" id="116">
-                        <description>Settings SimplePlaylists</description>
+                        <description>Settings Simple Playlists</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -395,22 +395,18 @@
 						<enable>Skin.HasSetting(ActivateWatchitLater)</enable>
 						<visible>System.HasAddon(script.simpleplaylists)</visible>
 					</control>
-					<control type="radiobutton" id="117">
-                        <description>Activate ScriptPlaylist</description>
+                    <control type="label" id="117">
 						<width>750</width>
-						<height>40</height>
+						<height>45</height>
 						<font>font13</font>
-						<label>$LOCALIZE[24000] ScriptPlaylist</label>
+						<label>$LOCALIZE[24000] Skin Shortcuts</label>
 						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(ActivateScriptPlaylist)</onclick>
-						<selected>Skin.HasSetting(ActivateScriptPlaylist)</selected>
-						<enable>System.HasAddon(script.randomandlastitems)</enable>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
 					</control>
-					<control type="button" id="118">
-                        <description>Settings ScriptPlaylist</description>
+                    <control type="button" id="118">
+                        <description>Settings Skin Shortcuts</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -419,22 +415,73 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>ActivateWindow(2127)</onclick>
-						<enable>Skin.HasSetting(ActivateScriptPlaylist)</enable>
-						<visible>System.HasAddon(script.randomandlastitems)</visible>
+						<onclick>Addon.OpenSettings(script.skinshortcuts)</onclick>
+						<enable>System.HasAddon(script.skinshortcuts)</enable>
 					</control>
-                    <control type="button" id="119">
-                        <description>Settings Service Skin Widgets</description>
+                    <control type="label" id="119">
+						<width>750</width>
+						<height>45</height>
+						<font>font13</font>
+						<label>$LOCALIZE[24000] Skin Helper Service</label>
+						<textcolor>grey2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+                    <control type="button" id="120">
+                        <description>Settings Skin Helper Service</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>$LOCALIZE[24020] - Skin Widgets</label>
+						<label>- $LOCALIZE[24020]</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<texturefocus colordiffuse="$VAR[MainColorOne]">MenuItemFO.png</texturefocus>
+						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Addon.OpenSettings(service.skin.widgets)</onclick>
-						<enable>System.HasAddon(service.skin.widgets)</enable>
+						<onclick>Addon.OpenSettings(script.skin.helper.service)</onclick>
+						<enable>System.HasAddon(script.skin.helper.service)</enable>
+					</control>
+                    <control type="radiobutton" id="121">
+                        <description>Enable SmartShortcuts.playlists</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>- $LOCALIZE[90010]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(ActivateSmartShortcutsPlaylists)</onclick>
+						<selected>Skin.HasSetting(ActivateSmartShortcutsPlaylists)</selected>
+						<enable>System.HasAddon(script.skin.helper.service)</enable>
+					</control>
+                    <control type="radiobutton" id="122">
+                        <description>Enable SmartShortcuts.favorites</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>- $LOCALIZE[90011]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(ActivateSmartShortcutsFavorites)</onclick>
+						<selected>Skin.HasSetting(ActivateSmartShortcutsFavorites)</selected>
+						<enable>System.HasAddon(script.skin.helper.service)</enable>
+					</control>
+                    <control type="radiobutton" id="123">
+                        <description>Enable Animated Posters</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>- $LOCALIZE[90012]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(ActivateAnimatedPosters)</onclick>
+						<selected>Skin.HasSetting(ActivateAnimatedPosters)</selected>
+						<enable>System.HasAddon(script.skin.helper.service)</enable>
 					</control>
 				</control>
 				<control type="scrollbar" id="61">
@@ -734,7 +781,21 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="231">
+					<control type="button" id="231">
+						<description>Widget Limit Items</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>90009</label>
+                        <label2>[COLOR=selected]$VAR[WidgetLimitItemsName][/COLOR]</label2>
+                        <onclick condition="IsEmpty(Skin.String(WidgetLimitItems))">Skin.SetString(WidgetLimitItems,10,)</onclick>
+						<onclick>Skin.SetNumeric(WidgetLimitItems)</onclick>                        
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="232">
 						<description>No Widget Title</description>
 						<width>750</width>
 						<height>40</height>

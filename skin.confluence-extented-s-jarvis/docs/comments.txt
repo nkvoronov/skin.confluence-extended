@@ -4,15 +4,6 @@
 includes.xml
 тут собираются все include
 
-IncludesHomeAddons.xml
-тут собираются ярлыки дополнений
-- <include name="HomeAddonsCommonLayout">
-- <include name="AddonsMediaPlayingLayout">
-общие настройки для адонов в зависимости от состояния плейера
-- <include name="HomeAddonsAnimation">
-анимация для адонов
-- <animation effect="slide" start="0,0" end="0,-205" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
-
 IncludesHomeMainMenus.xml
 тут собирается главное меню
 
@@ -27,5 +18,5 @@ IncludesVariables.xml
 
 Виджеты плейлистов
 Плайлисты только *.xsp (смарт)
-типы для видео - Фильмы, Эпизоды и Музыкальное видео
-типы для музыки - Альбомы
+типы для видео - Фильмы, Сериалы, Эпизоды и Музыкальное видео
+типы для музыки - Альбомы, Исполнители, Песни

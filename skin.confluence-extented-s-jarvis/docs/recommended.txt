@@ -1,5 +1,4 @@
 ﻿#IMPORT
-service.skin.widgets
 script.skinshortcuts
 script.skin.helper.service
 #RECOMMENDED
@@ -10,5 +9,6 @@ script.extendedinfo
 script.tvtunes
 script.artwork.downloader
 #OS
+service.libreelec.settings
 service.openelec.settings
 script.raspbmc.settings

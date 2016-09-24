@@ -357,7 +357,7 @@
         <control type="group">
             <visible>!Window.IsVisible(home) + Skin.HasSetting(SeparateBackground)</visible>
             <control type="multiimage" id="90002">
-                <description>User Separate Background Image 01</description>
+                <description>User Separate Background Image</description>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>1280</width>
@@ -369,7 +369,7 @@
                 <visible>IsEmpty(Skin.String(HomeFanart.path)) | IsEmpty(Control.GetLabel(90003))</visible>
             </control>
             <control type="multiimage" id="90003">
-                <description>User Separate Background Image 01 HomeFanart</description>
+                <description>User Separate Background Image HomeFanart</description>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>1280</width>
