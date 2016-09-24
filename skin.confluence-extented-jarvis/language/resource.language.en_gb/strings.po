@@ -891,7 +891,7 @@ msgid "Widgets"
 msgstr ""
 
 msgctxt "#88131"
-msgid "Unwatched movies"
+msgid "Unwatched Movies"
 msgstr ""
 
 msgctxt "#88133"
@@ -1063,7 +1063,7 @@ msgid "Command"
 msgstr ""
 
 msgctxt "#89709"
-msgid "Separate backgrounds"
+msgid "Separate Backgrounds"
 msgstr ""
 
 msgctxt "#89710"

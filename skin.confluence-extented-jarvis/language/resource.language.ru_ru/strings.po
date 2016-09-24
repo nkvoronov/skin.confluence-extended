@@ -891,8 +891,8 @@ msgid "Widgets"
 msgstr "Виджеты"
 
 msgctxt "#88131"
-msgid "Unwatched movies"
-msgstr "Не просмотренные фильмы"
+msgid "Unwatched Movies"
+msgstr "Непросмотренные фильмы"
 
 msgctxt "#88133"
 msgid "Favorites TV Channels"
@@ -1010,6 +1010,10 @@ msgctxt "#89040"
 msgid "Raspberry"
 msgstr "Raspberry"
 
+msgctxt "#89041"
+msgid "LibreELEC"
+msgstr "LibreELEC"
+
 msgctxt "#89302"
 msgid "Daily"
 msgstr "Ежедневная"
@@ -1059,7 +1063,7 @@ msgid "Command"
 msgstr "Команда"
 
 msgctxt "#89709"
-msgid "Separate backgrounds"
+msgid "Separate Backgrounds"
 msgstr "Отдельные фоны"
 
 msgctxt "#89710"

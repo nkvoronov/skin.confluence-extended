@@ -1491,38 +1491,80 @@
 			</include>
         </content>
 	</include>
-	<include name="WeatherHourlyContents">   
-        <content>
+	<include name="WeatherHourlyContents">
+        <content>    
             <include name="WeatherHourlyWidgetItem">
-				<param name="item_id" value="1" />
-			</include>
+                <param name="item_id" value="1" />
+            </include>
             <include name="WeatherHourlyWidgetItem">
-				<param name="item_id" value="2" />
-			</include>
+                <param name="item_id" value="2" />
+            </include>
             <include name="WeatherHourlyWidgetItem">
-				<param name="item_id" value="3" />
-			</include>
+                <param name="item_id" value="3" />
+            </include>
             <include name="WeatherHourlyWidgetItem">
-				<param name="item_id" value="4" />
-			</include>
+                <param name="item_id" value="4" />
+            </include>
             <include name="WeatherHourlyWidgetItem">
-				<param name="item_id" value="5" />
-			</include>
+                <param name="item_id" value="5" />
+            </include>
             <include name="WeatherHourlyWidgetItem">
-				<param name="item_id" value="6" />
-			</include>
+                <param name="item_id" value="6" />
+            </include>
             <include name="WeatherHourlyWidgetItem">
-				<param name="item_id" value="7" />
-			</include>
+                <param name="item_id" value="7" />
+            </include>
             <include name="WeatherHourlyWidgetItem">
-				<param name="item_id" value="8" />
-			</include>
+                <param name="item_id" value="8" />
+            </include>
             <include name="WeatherHourlyWidgetItem">
-				<param name="item_id" value="9" />
-			</include>
+                <param name="item_id" value="9" />
+            </include>
             <include name="WeatherHourlyWidgetItem">
-				<param name="item_id" value="10" />
-			</include>
+                <param name="item_id" value="10" />
+            </include>
+            <include name="WeatherHourlyWidgetItem">
+                <param name="item_id" value="11" />
+            </include>
+            <include name="WeatherHourlyWidgetItem">
+                <param name="item_id" value="12" />
+            </include>
+            <include name="WeatherHourlyWidgetItem">
+                <param name="item_id" value="13" />
+            </include>
+            <include name="WeatherHourlyWidgetItem">
+                <param name="item_id" value="14" />
+            </include>
+            <include name="WeatherHourlyWidgetItem">
+                <param name="item_id" value="15" />
+            </include>
+            <include name="WeatherHourlyWidgetItem">
+                <param name="item_id" value="16" />
+            </include>
+            <include name="WeatherHourlyWidgetItem">
+                <param name="item_id" value="17" />
+            </include>
+            <include name="WeatherHourlyWidgetItem">
+                <param name="item_id" value="18" />
+            </include>
+            <include name="WeatherHourlyWidgetItem">
+                <param name="item_id" value="19" />
+            </include>
+            <include name="WeatherHourlyWidgetItem">
+                <param name="item_id" value="20" />
+            </include>
+            <include name="WeatherHourlyWidgetItem">
+                <param name="item_id" value="21" />
+            </include>
+            <include name="WeatherHourlyWidgetItem">
+                <param name="item_id" value="22" />
+            </include>
+            <include name="WeatherHourlyWidgetItem">
+                <param name="item_id" value="23" />
+            </include>
+            <include name="WeatherHourlyWidgetItem">
+                <param name="item_id" value="24" />
+            </include>
         </content>
 	</include>
 	<include name="WeatherDailyWidgetItem">
