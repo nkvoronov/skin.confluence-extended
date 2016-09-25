@@ -7,7 +7,7 @@
 		<top>0</top>
 	</coordinates>
 	<controls>
-        <include name="CustomRandomDialog">
+        <include content="CustomRandomDialog">
             <param name="dlg_title" value="$LOCALIZE[89032]" />
             <param name="id_win" value="2125" />
             <param name="fallback_pic" value="DefaultMovies.png" />

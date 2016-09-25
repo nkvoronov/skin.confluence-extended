@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
-    <onload condition="IsEmpty(Window(home).Property(MenuItemActive))">SetProperty(MenuItemActive,settings,home)</onload>
-    <onload condition="IsEmpty(Window(home).Property(MenuBackground))">SetProperty(MenuBackground,special://skin/extras/backgrounds/settings.jpg,home)</onload>
+    <onload condition="String.IsEmpty(Window(home).Property(MenuItemActive))">SetProperty(MenuItemActive,settings,home)</onload>
+    <onload condition="String.IsEmpty(Window(home).Property(MenuBackground))">SetProperty(MenuBackground,special://skin/extras/backgrounds/settings.jpg,home)</onload>
     <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=mainmenu|powermenu&amp;levels=2)</onunload>
     <include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
 	<controls>
@@ -790,7 +790,7 @@
 						<focusedcolor>white</focusedcolor>
 						<label>90009</label>
                         <label2>[COLOR=selected]$VAR[WidgetLimitItemsName][/COLOR]</label2>
-                        <onclick condition="IsEmpty(Skin.String(WidgetLimitItems))">Skin.SetString(WidgetLimitItems,10,)</onclick>
+                        <onclick condition="String.IsEmpty(Skin.String(WidgetLimitItems))">Skin.SetString(WidgetLimitItems,10,)</onclick>
 						<onclick>Skin.SetNumeric(WidgetLimitItems)</onclick>                        
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>

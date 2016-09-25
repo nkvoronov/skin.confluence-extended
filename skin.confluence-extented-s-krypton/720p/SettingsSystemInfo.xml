@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">95</defaultcontrol>
-    <onload condition="IsEmpty(Window(home).Property(MenuItemActive))">SetProperty(MenuItemActive,settings,home)</onload>
-    <onload condition="IsEmpty(Window(home).Property(MenuBackground))">SetProperty(MenuBackground,special://skin/extras/backgrounds/settings.jpg,home)</onload>
+    <onload condition="String.IsEmpty(Window(home).Property(MenuItemActive))">SetProperty(MenuItemActive,settings,home)</onload>
+    <onload condition="String.IsEmpty(Window(home).Property(MenuBackground))">SetProperty(MenuBackground,special://skin/extras/backgrounds/settings.jpg,home)</onload>
 	<controls>
         <include>CommonCustomBackground</include>
 		<include>CommonBackground</include>

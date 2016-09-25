@@ -72,7 +72,7 @@
         <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[13200])">profile</value>      
         <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[13005])">power</value>        
         <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[1036])">favourites</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.Property(backgroundName),playlist)">playlist</value>        
+        <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90001]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90002])">playlist</value>        
         <value>$INFO[Container(9000).ListItem.Property(defaultID)]</value>
     </variable>
     <!-- HomeFanartBackgroundType -->
