@@ -7,13 +7,13 @@
 		<top>0</top>
 	</coordinates>
 	<controls>
-        <include content="CustomRecommendedDialog">
-            <param name="dlg_title" value="$LOCALIZE[89037]" />
+        <include name="CustomRandomDialog">
+            <param name="dlg_title" value="$LOCALIZE[89038]" />
             <param name="id_win" value="2126" />
             <param name="fallback_pic" value="DefaultMusicVideos.png" />
-            <param name="list_pic" value="Thumb" />
-            <param name="list_label" value="Label" />
-            <param name="include_name" value="RecommendedMusicVideoContent" />
+            <param name="list_pic" value="$INFO[Container(450).ListItem.Thumb]" />
+            <param name="list_label" value="$INFO[ListItem.Artist] - $INFO[ListItem.Label]" />
+            <param name="include_name" value="RandomMusicVideoContent" />
         </include>
 	</controls>
 </window>

@@ -261,20 +261,8 @@
 		</animation>
 		<hitrect x="0" y="530" w="1280" h="120"/>
     </include>
-    <include name="AddonItemChoices">
+    <include name="SelectItemChoices">
         <content>
-            <item>
-                <description>Clear Setting</description>
-                <label>$LOCALIZE[89013]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Label)</onclick>
-                <onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Path)</onclick>
-                <onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Icon)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!String.IsEqual(Window(home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
-                <visible>!String.IsEqual(Window(home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
-                <visible>String.IsEqual(Window(home).Property(UsrSelectBtnClear),Clear)</visible>
-            </item>
             <item>
                 <description>Favourites Window</description>
                 <label>$LOCALIZE[89702]</label>
@@ -285,65 +273,47 @@
                 <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
             </item>
             <item>
-                <description>Favourites</description>
-                <label>$LOCALIZE[1036]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>RunScript(script.favourites,changetitle=true&amp;property=$INFO[Window(home).Property(UsrSelectBtn)])</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>System.HasAddon(script.favourites)</visible>
-                <visible>!String.IsEqual(Window(home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
-            </item>
-            <item>
-                <description>Last Video Played</description>
-                <label>$LOCALIZE[89704]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString(UsrFavBtnCmd.Path,LastVideo)</onclick>
-                <onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[89704])</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
-            </item>
-            <item>
-                <description>Recommended Movies</description>
-                <label>$LOCALIZE[89030]</label>
+                <description>Random Movies</description>
+                <label>$LOCALIZE[89032]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(2125))</onclick>
-                <onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[89030])</onclick>
+                <onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[89032])</onclick>
                 <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
                 <visible>Library.HasContent(Movies)</visible>
             </item>
             <item>
-                <description>Recommended Episodes</description>
-                <label>$LOCALIZE[89034]</label>
+                <description>Random Episodes</description>
+                <label>$LOCALIZE[89035]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(2124))</onclick>
-                <onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[89034])</onclick>
+                <onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[89035])</onclick>
                 <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
                 <visible>Library.HasContent(TVShows)</visible>
             </item>
             <item>
-                <description>Recommended Albums</description>
-                <label>$LOCALIZE[89026]</label>
+                <description>Random Albums</description>
+                <label>$LOCALIZE[89027]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(2123))</onclick>
-                <onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[89026])</onclick>
+                <onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[89027])</onclick>
                 <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
                 <visible>Library.HasContent(Music)</visible>
             </item>
             <item>
-                <description>Recommended Music Video</description>
-                <label>$LOCALIZE[89037]</label>
+                <description>Random Music Video</description>
+                <label>$LOCALIZE[89038]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(2126))</onclick>
-                <onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[89037])</onclick>
+                <onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[89038])</onclick>
                 <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
                 <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
                 <visible>Library.HasContent(MusicVideos)</visible>
             </item>
             <item>
-                <description>Auto Recommended Media</description>
+                <description>Auto Random Media</description>
                 <label>$LOCALIZE[89705]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Path,AutoSuggest)</onclick>

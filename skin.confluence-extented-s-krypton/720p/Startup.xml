@@ -2,7 +2,6 @@
 <window>
 	<defaultcontrol always="true">10</defaultcontrol>
     <include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
-	<onload condition="Skin.HasSetting(ActivateScriptPlaylist) + System.HasAddon(script.randomandlastitems)">Skin.Setbool(ActivateScriptPlaylist)</onload>
 	<onload condition="Skin.HasSetting(ActivateGlobalSearch) + System.HasAddon(script.globalsearch)">Skin.Setbool(ActivateGlobalSearch)</onload>
 	<onload condition="Skin.HasSetting(ActivateWatchItLater) + System.HasAddon(script.simpleplaylists)">Skin.Setbool(ActivateWatchItLater)</onload>
 	<controls>

@@ -746,8 +746,8 @@ msgid "Widgets"
 msgstr "Віджети"
 
 msgctxt "#88131"
-msgid "Unwatched movies"
-msgstr "Не переглянуті фільми"
+msgid "Unwatched Movies"
+msgstr "Непереглянуті фільми"
 
 msgctxt "#88133"
 msgid "Favorites TV Channels"
@@ -785,10 +785,6 @@ msgctxt "#89027"
 msgid "Random Albums"
 msgstr "Випадкові альбоми"
 
-msgctxt "#89030"
-msgid "Recommended Movies"
-msgstr "Рекомендовані фільми"
-
 msgctxt "#89031"
 msgid "Recent Movies"
 msgstr "Останні фільми"
@@ -801,10 +797,6 @@ msgctxt "#89033"
 msgid "Recent Episodes"
 msgstr "Останні епізоди"
 
-msgctxt "#89034"
-msgid "Recommended Episodes"
-msgstr "Рекомендовані епізоди"
-
 msgctxt "#89035"
 msgid "Random Episodes"
 msgstr "Випадкові епізоди"
@@ -812,10 +804,6 @@ msgstr "Випадкові епізоди"
 msgctxt "#89036"
 msgid "Recent Music Video"
 msgstr "Останнє муз. відео"
-
-msgctxt "#89037"
-msgid "Recommended Music Video"
-msgstr "Рекомендоване муз. відео"
 
 msgctxt "#89038"
 msgid "Random Music Video"
@@ -838,12 +826,8 @@ msgid "Favourites Window"
 msgstr "Вікно обране"
 
 msgctxt "#89703"
-msgid "No Recommended Media"
-msgstr "Нема рекумендуемого медіа"
-
-msgctxt "#89704"
-msgid "Last Video Played"
-msgstr "Останнє програне відео"
+msgid "No Media"
+msgstr "Нема медіа"
 
 msgctxt "#89705"
 msgid "Automatic Suggestion"
@@ -862,9 +846,57 @@ msgid "Command"
 msgstr "Команда"
 
 msgctxt "#89709"
-msgid "Separate backgrounds"
+msgid "Separate Backgrounds"
 msgstr "Окремі фони"
 
 msgctxt "#90000"
 msgid "Customize Power Menu"
 msgstr "Налаштувати меню вимикання"
+
+msgctxt "#90001"
+msgid "Video Playlist"
+msgstr "Відео плейлист"
+
+msgctxt "#90002"
+msgid "Music Playlist"
+msgstr "Музичний плейлист"
+
+msgctxt "#90003"
+msgid "In-progress Movies"
+msgstr "Незавершені фільми"
+
+msgctxt "#90004"
+msgid "In-progress TVShows"
+msgstr "Незавершені серіали"
+
+msgctxt "#90005"
+msgid "Unwatched TVShows"
+msgstr "Непереглянуті серіали"
+
+msgctxt "#90006"
+msgid "Random Artists"
+msgstr "Випадкові виконавці"
+
+msgctxt "#90007"
+msgid "Unplayed Albums"
+msgstr "Непрослушані альбоми"
+
+msgctxt "#90008"
+msgid "Most Played Albums"
+msgstr "Найпопулярніші альбоми"
+
+msgctxt "#90009"
+msgid "Widget Limit Items"
+msgstr "Ліміт елементів"
+
+msgctxt "#90010"
+msgid "Enable SmartShortcuts Playlists"
+msgstr "Дозволити SmartShortcuts-плейлисти"
+
+msgctxt "#90011"
+msgid "Enable SmartShortcuts Favorites"
+msgstr "Дозволити SmartShortcuts-обране"
+
+msgctxt "#90012"
+msgid "Enable Animated Posters"
+msgstr "Дозволити анімовані постери"

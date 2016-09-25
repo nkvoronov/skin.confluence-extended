@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
     id="skin.confluence-extented-s-krypton"
-    version="3.0.36.074"
+    version="3.0.36.075"
     name="Confluence-extented-s-krypton"
     provider-name="Jezz_X, Team Kodi, YLLOW_DRAGON, plood">
     <requires>
         <import addon="xbmc.gui" version="5.12.0"/>
-        <import addon="script.favourites" version="6.0.3"/>
-        <import addon="script.randomandlastitems" version="2.2.2"/>
-        <import addon="service.skin.widgets" version="0.0.32"/>
         <import addon="script.skinshortcuts" version="1.0.10"/>
         <import addon="script.skin.helper.service" version="1.0.90"/>
     </requires>
