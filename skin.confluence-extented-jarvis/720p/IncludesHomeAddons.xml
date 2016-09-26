@@ -753,15 +753,6 @@
                 <visible>!StringCompare(Window(home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
             </item>
             <item>
-                <description>Last Video Played</description>
-                <label>$LOCALIZE[89704]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString(UsrFavBtnCmd.Path,LastVideo)</onclick>
-                <onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[89704])</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>StringCompare(Window(home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
-            </item>
-            <item>
                 <description>Recommended Movies</description>
                 <label>$LOCALIZE[89030]</label>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>

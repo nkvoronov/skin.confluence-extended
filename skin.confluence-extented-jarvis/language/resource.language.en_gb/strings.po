@@ -1042,10 +1042,6 @@ msgctxt "#89703"
 msgid "No Recommended Media"
 msgstr ""
 
-msgctxt "#89704"
-msgid "Last Video Played"
-msgstr ""
-
 msgctxt "#89705"
 msgid "Automatic Suggestion"
 msgstr ""
