@@ -11,8 +11,8 @@
             <param name="dlg_title" value="$LOCALIZE[89030]" />
             <param name="id_win" value="2125" />
             <param name="fallback_pic" value="DefaultMovies.png" />
-            <param name="list_pic" value="Icon" />
-            <param name="list_label" value="Label" />
+            <param name="list_pic" value="$INFO[Container(450).ListItem.Icon]" />
+            <param name="list_label" value="$INFO[ListItem.Label]" />
             <param name="include_name" value="RecommendedMoviesContent" />
         </include>
 	</controls>

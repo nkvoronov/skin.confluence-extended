@@ -10,7 +10,6 @@
 		<value>$LOCALIZE[1036]</value>
 	</variable>
     <variable name="FavoritesButtonCommand">
-		<value condition="Skin.String(UsrFavBtnCmd.Path,LastVideo) + Skin.String(LastVideoPlayed)">$INFO[Skin.String(LastVideoPlayed)]</value>
 		<value condition="Skin.String(UsrFavBtnCmd.Path,AutoSuggest) + String.IsEqual(Container(9000).ListItem.Property(TypeItem),movies)">ActivateWindow(2125)</value>
 		<value condition="Skin.String(UsrFavBtnCmd.Path,AutoSuggest) + String.IsEqual(Container(9000).ListItem.Property(TypeItem),tvshows)">ActivateWindow(2124)</value>
 		<value condition="Skin.String(UsrFavBtnCmd.Path,AutoSuggest) + String.IsEqual(Container(9000).ListItem.Property(TypeItem),music)">ActivateWindow(2123)</value>
