@@ -425,7 +425,7 @@
                     <top>5</top>
                     <width>680</width>
                     <height>390</height>
-                    <texture>$VAR[HomeFanartBackground]</texture>
+                    <texture>$INFO[Skin.String(HomeFanart.path)]$INFO[Window(home).Property(MenuItemActive)]$INFO[Skin.String(HomeFanart.ext)]</texture>
                     <include>VisibleFadeEffect</include>
                     <visible>!IsEmpty(Skin.String(HomeFanart.path))</visible>
                 </control>
