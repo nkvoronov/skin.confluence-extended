@@ -30,6 +30,19 @@
 			<animation effect="slide" time="200" condition="Window.Next(home)">WindowClose</animation>
 			<visible>!Skin.HasSetting(NoFloor)</visible>
 		</control>
+        <!-- <control type="label">
+            <description>Test Label</description>
+            <left>0</left>
+            <top>20</top>
+            <height>30</height>
+            <width>1280</width>
+            <label>$VAR[HomeMenuType]</label>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font13_title</font>
+            <textcolor>red</textcolor>
+            <shadowcolor>black</shadowcolor>
+        </control> -->
 		<!-- Music Info -->
 		<control type="group">
 			<depth>DepthMenu</depth>
