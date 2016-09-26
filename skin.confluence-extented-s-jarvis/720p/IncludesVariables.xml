@@ -50,9 +50,9 @@
 		<value>[COLOR=$INFO[Skin.String(menuColor)]][B]IP: [/B][/COLOR]$INFO[Network.IPAddress]  [COLOR=$INFO[Skin.String(menuColor)]][B]RAM: [/B][/COLOR]$INFO[system.memory(used.percent)]  [COLOR=$INFO[Skin.String(menuColor)]][B]$LOCALIZE[155]: [/B][/COLOR]$INFO[System.UsedSpacePercent]</value>
 	</variable>
     <!-- HomeBackground -->
-    <variable name="HomeBackground">
+    <variable name="HomeBackground">        
         <value condition="!IsEmpty(Container(9000).ListItem.Property(background))">$INFO[Container(9000).ListItem.Property(background)]</value>
-        <value>special://skin/extras/backgrounds/$VAR[HomeMenuType].jpg</value>
+        <value condition="IsEmpty(Container(9000).ListItem.Property(background))">special://skin/extras/backgrounds/$VAR[HomeMenuType].jpg</value>
         <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <!-- HomeMenuType -->
@@ -72,17 +72,8 @@
         <value condition="StringCompare(Container(9000).ListItem.label2,$LOCALIZE[13200])">profile</value>      
         <value condition="StringCompare(Container(9000).ListItem.label2,$LOCALIZE[13005])">power</value>        
         <value condition="StringCompare(Container(9000).ListItem.label2,$LOCALIZE[1036])">favourites</value>
-        <value condition="StringCompare(Container(9000).ListItem.label2,$LOCALIZE[90001]) | StringCompare(Container(9000).ListItem.label2,$LOCALIZE[90002])">playlist</value>        
+        <value condition="StringCompare(Container(9000).ListItem.label2,$LOCALIZE[90001]) | StringCompare(Container(9000).ListItem.label2,$LOCALIZE[90002])">playlists</value>        
         <value>$INFO[Container(9000).ListItem.Property(defaultID)]</value>
-    </variable>
-    <!-- HomeFanartBackgroundType -->
-    <variable name="HomeFanartBackgroundType">
-        <value condition="Window.IsVisible(home)">$VAR[HomeMenuType]</value>
-        <value>$INFO[Window(home).Property(MenuItemActive)]</value>
-    </variable>
-    <!-- HomeFanartBackground -->
-    <variable name="HomeFanartBackground">
-        <value>$INFO[Skin.String(HomeFanart.path)]$VAR[HomeFanartBackgroundType]$INFO[Skin.String(HomeFanart.ext)]</value>
     </variable>
     <!-- -->
     <variable name="HomeFanartName">

@@ -30,6 +30,19 @@
 			<animation effect="slide" time="200" condition="Window.Next(home)">WindowClose</animation>
 			<visible>!Skin.HasSetting(NoFloor)</visible>
 		</control>
+        <!-- <control type="label">
+            <description>Test Label</description>
+            <left>0</left>
+            <top>20</top>
+            <height>30</height>
+            <width>1280</width>
+            <label>$VAR[HomeMenuType]</label>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font13_title</font>
+            <textcolor>red</textcolor>
+            <shadowcolor>black</shadowcolor>
+        </control> -->
 		<!-- Music Info -->
 		<control type="group">
 			<depth>DepthMenu</depth>
@@ -900,8 +913,8 @@
 				<width>45</width>
 				<height>45</height>
 				<label>31003</label>
-				<font>-</font>
-				<onclick>$VAR[PowerButtonCommand]</onclick>
+				<font>-</font>				
+                <onclick>$VAR[PowerButtonCommand]</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
 				<onleft>22</onleft>
@@ -928,8 +941,8 @@
 				<width>45</width>
 				<height>45</height>
 				<label>1036</label>
-				<font>-</font>
-				<onclick>$VAR[FavoritesButtonCommand]</onclick>
+				<font>-</font>				
+                <onclick>$VAR[FavoritesButtonCommand]</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
 				<onleft>20</onleft>
@@ -957,7 +970,7 @@
 				<height>45</height>
 				<label>1036</label>
 				<font>-</font>
-				<onclick>$VAR[PowerButtonCommand]</onclick>
+                <onclick>$VAR[PowerButtonCommand]</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
 				<onleft>21</onleft>
