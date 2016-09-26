@@ -23,8 +23,8 @@
                 <param name="width_widget" value="1000" />
                 <param name="width_widget_item" value="200" />
                 <param name="left_widget_ra" value="1010" />
-                    <param name="content_name" value="CommonIncludeContents" />
-                    <param name="content_path" value="WeatherDailyContents" />
+                <param name="content_name" value="CommonIncludeContents" />
+                <param name="content_path" value="WeatherDailyContents" />
             </include>
             <!-- Weather Hourly 8001 -->
             <include content="CommonWidgetInclude">
@@ -38,8 +38,8 @@
                 <param name="width_widget" value="1000" />
                 <param name="width_widget_item" value="200" />
                 <param name="left_widget_ra" value="1010" />
-                    <param name="content_name" value="CommonIncludeContents" />
-                    <param name="content_path" value="WeatherHourlyContents" />
+                <param name="content_name" value="CommonIncludeContents" />
+                <param name="content_path" value="WeatherHourlyContents" />
             </include>            
             <!-- Weather 36h 8002 -->            
             <control type="group">
@@ -846,7 +846,7 @@
                     <top>10</top>
                     <width>180</width>
                     <height>170</height>
-                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                    <texture background="true">$VAR[PosterThumb]</texture>
                     <aspectratio>keep</aspectratio>
                     <bordertexture border="5">button-nofocus.png</bordertexture>
                     <bordersize>5</bordersize>
@@ -879,7 +879,7 @@
                     <top>10</top>
                     <width>180</width>
                     <height>170</height>
-                    <texture background="true">$INFO[ListItem.Icon]</texture>
+                    <texture background="true">$VAR[PosterThumb]</texture>
                     <aspectratio>keep</aspectratio>
                     <bordertexture border="5">folder-focus.png</bordertexture>
                     <bordersize>5</bordersize>
