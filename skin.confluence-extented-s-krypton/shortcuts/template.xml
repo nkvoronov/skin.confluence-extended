@@ -73,7 +73,8 @@
                 <param name="width_widget" value="1000" />
                 <param name="width_widget_item" value="200" />
                 <param name="left_widget_ra" value="1010" />                
-                <param name="contents_name_include" value="skinshortcuts-group-num-$SKINSHORTCUTS[id_label]-2" />
+                <param name="content_name" value="CommonIncludeContents" />
+                <param name="content_path" value="skinshortcuts-group-num-$SKINSHORTCUTS[id_label]-2" />
             </include>
         </controls>
     </other>
