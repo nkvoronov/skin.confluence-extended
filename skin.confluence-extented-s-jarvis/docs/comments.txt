@@ -4,6 +4,9 @@
 includes.xml
 тут собираются все include
 
+IncludesHomeAddons.xml
+тут собираются ярлыки дополнений
+
 IncludesHomeMainMenus.xml
 тут собирается главное меню
 
