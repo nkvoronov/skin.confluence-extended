@@ -1931,8 +1931,8 @@
                 <visible>IsEmpty(Window(home).Property(RecommendedAlbum.1.Title)) + !IsEmpty(Window(home).Property(RecentAlbum.1.Title))</visible>
             </item>
             <item id="22">
-                <label>89703</label>
-                <label2>89703</label2>
+                <label></label>
+                <label2>- $LOCALIZE[89703]</label2>
                 <onclick>PreviousMenu</onclick>
                 <icon>-</icon>
                 <thumb>-</thumb>
@@ -2182,8 +2182,8 @@
                 <visible>!IsEmpty(Window(home).Property(RecommendedEpisode.20.TVshowTitle))</visible>
             </item>
             <item id="21">
-                <label>89703</label>
-                <label2>89703</label2>
+                <label>- $LOCALIZE[89703]</label>
+                <label2></label2>
                 <onclick>PreviousMenu</onclick>
                 <icon>-</icon>
                 <thumb>-</thumb>
@@ -2414,8 +2414,8 @@
                 <visible>!IsEmpty(Window(home).Property(RecommendedMovie.20.Title))</visible>
             </item>
             <item id="21">
-                <label>89703</label>
-                <label2>89703</label2>
+                <label>- $LOCALIZE[89703] - </label>
+                <label2></label2>
                 <onclick>PreviousMenu</onclick>
                 <icon>-</icon>
                 <thumb>-</thumb>
@@ -2626,8 +2626,8 @@
                 <visible>!IsEmpty(Window(home).Property(RecommendedMusicVideo.20.Title))</visible>
             </item>
             <item id="21">
-                <label>89703</label>
-                <label2>89703</label2>
+                <label></label>
+                <label2>- $LOCALIZE[89703]</label2>
                 <onclick>PreviousMenu</onclick>
                 <icon>-</icon>
                 <thumb>-</thumb>
