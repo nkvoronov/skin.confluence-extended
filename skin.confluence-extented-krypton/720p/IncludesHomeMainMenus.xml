@@ -106,7 +106,7 @@
             <include content="HomeMainMenuContentItem">
                 <param name="id" value="2" />
                 <param name="id2" value="02" />
-            </include>            
+            </include>
             <include content="HomeMainMenuContentItem">
                 <param name="id" value="3" />
                 <param name="id2" value="03" />
@@ -114,7 +114,7 @@
             <include content="HomeMainMenuContentItem">
                 <param name="id" value="4" />
                 <param name="id2" value="04" />
-            </include>            
+            </include>
             <include content="HomeMainMenuContentItem">
                 <param name="id" value="5" />
                 <param name="id2" value="05" />
@@ -126,7 +126,7 @@
             <include content="HomeMainMenuContentItem">
                 <param name="id" value="7" />
                 <param name="id2" value="07" />
-            </include>            
+            </include>
             <include content="HomeMainMenuContentItem">
                 <param name="id" value="8" />
                 <param name="id2" value="08" />
@@ -134,11 +134,11 @@
             <include content="HomeMainMenuContentItem">
                 <param name="id" value="9" />
                 <param name="id2" value="09" />
-            </include>            
+            </include>
             <include content="HomeMainMenuContentItem">
                 <param name="id" value="10" />
                 <param name="id2" value="10" />
-            </include>  
+            </include>
             <include content="HomeMainMenuContentItem">
                 <param name="id" value="11" />
                 <param name="id2" value="11" />
@@ -146,7 +146,7 @@
             <include content="HomeMainMenuContentItem">
                 <param name="id" value="12" />
                 <param name="id2" value="12" />
-            </include>            
+            </include>
             <include content="HomeMainMenuContentItem">
                 <param name="id" value="13" />
                 <param name="id2" value="13" />
@@ -154,7 +154,7 @@
             <include content="HomeMainMenuContentItem">
                 <param name="id" value="14" />
                 <param name="id2" value="14" />
-            </include>            
+            </include>
             <include content="HomeMainMenuContentItem">
                 <param name="id" value="15" />
                 <param name="id2" value="15" />
@@ -166,7 +166,7 @@
             <include content="HomeMainMenuContentItem">
                 <param name="id" value="17" />
                 <param name="id2" value="17" />
-            </include>            
+            </include>
             <include content="HomeMainMenuContentItem">
                 <param name="id" value="18" />
                 <param name="id2" value="18" />
@@ -174,7 +174,7 @@
             <include content="HomeMainMenuContentItem">
                 <param name="id" value="19" />
                 <param name="id2" value="19" />
-            </include>            
+            </include>
             <include content="HomeMainMenuContentItem">
                 <param name="id" value="20" />
                 <param name="id2" value="20" />
@@ -184,10 +184,10 @@
     <include name="HomeMainMenuContentItem">
         <item id="$PARAM[id]">
             <description>Home Menu Item</description>
-            <label>$INFO[Skin.String(HomeItem.$PARAM[id].Label)]</label>            
+            <label>$INFO[Skin.String(HomeItem.$PARAM[id].Label)]</label>
             <onclick>SetProperty(MenuItemActive,Item$PARAM[id2],home)</onclick>
-            <onclick>SetProperty(MenuBackground,$VAR[Background$PARAM[id2]],home)</onclick>            
-            <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[BackgroundHomeFanart$PARAM[id2]],home)</onclick>            
+            <onclick>SetProperty(MenuBackground,$VAR[Background$PARAM[id2]],home)</onclick>
+            <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[BackgroundHomeFanart$PARAM[id2]],home)</onclick>
             <onclick>$INFO[Skin.String(HomeItem.$PARAM[id].Path)]</onclick>
             <icon>$INFO[Skin.String(HomeItem.$PARAM[id].DBackground)]</icon>
             <thumb>$INFO[Skin.String(HomeItem.$PARAM[id].CBackground)]</thumb>
@@ -231,7 +231,7 @@
     </include>
     <include name="VisiblePlayDisc">
         <visible>System.HasMediaDVD</visible>
-    </include>  
+    </include>
     <include name="DefaultMainSubMenu">
         <!-- Sub Pictures -->
         <onload>Skin.SetString(SubMenu01.Label,$LOCALIZE[31951])</onload>
@@ -280,7 +280,7 @@
         <onload>Skin.SetString(SubMenu05.2.Label,$LOCALIZE[20434])</onload>
         <onload>Skin.SetString(SubMenu05.2.Path,ActivateWindow(videos,videodb://movies/sets/,return))</onload>
         <onload>Skin.SetString(SubMenu05.3.Label,$LOCALIZE[369])</onload>
-        <onload>Skin.SetString(SubMenu05.3.Path,ActivateWindow(videos,videodb://movies/titles/,return))</onload>        
+        <onload>Skin.SetString(SubMenu05.3.Path,ActivateWindow(videos,videodb://movies/titles/,return))</onload>
         <onload>Skin.SetString(SubMenu05.4.Label,$LOCALIZE[135])</onload>
         <onload>Skin.SetString(SubMenu05.4.Path,ActivateWindow(videos,videodb://movies/genres/,return))</onload>
         <onload>Skin.SetString(SubMenu05.5.Label,$LOCALIZE[652])</onload>
@@ -294,7 +294,7 @@
         <onload>Skin.SetString(SubMenu06.2.Label,$LOCALIZE[369])</onload>
         <onload>Skin.SetString(SubMenu06.2.Path,ActivateWindow(videos,videodb://tvshows/titles/,return))</onload>
         <onload>Skin.SetString(SubMenu06.3.Label,$LOCALIZE[135])</onload>
-        <onload>Skin.SetString(SubMenu06.3.Path,ActivateWindow(videos,videodb://tvshows/genres/,return))</onload>        
+        <onload>Skin.SetString(SubMenu06.3.Path,ActivateWindow(videos,videodb://tvshows/genres/,return))</onload>
         <onload>Skin.SetString(SubMenu06.4.Label,$LOCALIZE[652])</onload>
         <onload>Skin.SetString(SubMenu06.4.Path,ActivateWindow(videos,videodb://tvshows/years/,return))</onload>
         <onload>Skin.SetString(SubMenu06.5.Label,$LOCALIZE[344])</onload>
@@ -306,7 +306,7 @@
         <onload>Skin.SetString(SubMenu07.2.Label,$LOCALIZE[369])</onload>
         <onload>Skin.SetString(SubMenu07.2.Path,ActivateWindow(videos,videodb://musicvideos/titles/,return))</onload>
         <onload>Skin.SetString(SubMenu07.3.Label,$LOCALIZE[135])</onload>
-        <onload>Skin.SetString(SubMenu07.3.Path,ActivateWindow(videos,videodb://musicvideos/genres/,return))</onload>        
+        <onload>Skin.SetString(SubMenu07.3.Path,ActivateWindow(videos,videodb://musicvideos/genres/,return))</onload>
         <onload>Skin.SetString(SubMenu07.4.Label,$LOCALIZE[652])</onload>
         <onload>Skin.SetString(SubMenu07.4.Path,ActivateWindow(videos,videodb://musicvideos/years/,return))</onload>
         <onload>Skin.SetString(SubMenu07.5.Label,$LOCALIZE[133])</onload>
@@ -320,7 +320,7 @@
         <onload>Skin.SetString(SubMenu08.2.Label,$LOCALIZE[132])</onload>
         <onload>Skin.SetString(SubMenu08.2.Path,ActivateWindow(music,musicdb://albums/,return))</onload>
         <onload>Skin.SetString(SubMenu08.3.Label,$LOCALIZE[134])</onload>
-        <onload>Skin.SetString(SubMenu08.3.Path,ActivateWindow(music,musicdb://songs/,return))</onload>        
+        <onload>Skin.SetString(SubMenu08.3.Path,ActivateWindow(music,musicdb://songs/,return))</onload>
         <onload>Skin.SetString(SubMenu08.4.Label,$LOCALIZE[744])</onload>
         <onload>Skin.SetString(SubMenu08.4.Path,ActivateWindow(music,sources://music/,return))</onload>
         <onload>Skin.SetString(SubMenu08.5.Label,$LOCALIZE[14022])</onload>
@@ -334,137 +334,114 @@
         <!-- Sub Settings -->
         <onload>Skin.SetString(SubMenu10.Label,$LOCALIZE[31959])</onload>
         <onload>Skin.SetString(SubMenu10.1.Label,$LOCALIZE[5])</onload>
-        <onload>Skin.SetString(SubMenu10.1.Path,ActivateWindow(settings))</onload>        
-        <!-- OpenELEC -->
-        <onload condition="System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.2.Label,OpenELEC)</onload>
-        <onload condition="System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.2.Path,RunAddon(service.openelec.settings))</onload>
-        <onload condition="System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.3.Label,$LOCALIZE[7])</onload>
-        <onload condition="System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.3.Path,ActivateWindow(filemanager))</onload>
-        <onload condition="System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.4.Label,$LOCALIZE[13200])</onload>
-        <onload condition="System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.4.Path,ActivateWindow(profiles))</onload>   
-        <onload condition="System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.5.Label,$LOCALIZE[130])</onload>
-        <onload condition="System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.5.Path,ActivateWindow(systeminfo))</onload>  
-        <onload condition="System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.6.Label,$LOCALIZE[14111])</onload>
-        <onload condition="System.HasAddon(service.openelec.settings)">Skin.SetString(SubMenu10.6.Path,ActivateWindow(eventlog,events://,return))</onload>
-        <!-- LibreELEC -->
-        <onload condition="System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.2.Label,OpenELEC)</onload>
-        <onload condition="System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.2.Path,RunAddon(service.libreelec.settings))</onload>
-        <onload condition="System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.3.Label,$LOCALIZE[7])</onload>
-        <onload condition="System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.3.Path,ActivateWindow(filemanager))</onload>
-        <onload condition="System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.4.Label,$LOCALIZE[13200])</onload>
-        <onload condition="System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.4.Path,ActivateWindow(profiles))</onload>   
-        <onload condition="System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.5.Label,$LOCALIZE[130])</onload>
-        <onload condition="System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.5.Path,ActivateWindow(systeminfo))</onload>  
-        <onload condition="System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.6.Label,$LOCALIZE[14111])</onload>
-        <onload condition="System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.6.Path,ActivateWindow(eventlog,events://,return))</onload>
-        <!-- Other -->
-        <onload condition="!System.HasAddon(service.openelec.settings) | !System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.2.Label,$LOCALIZE[7])</onload>
-        <onload condition="!System.HasAddon(service.openelec.settings) | !System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.2.Path,ActivateWindow(filemanager))</onload>                
-        <onload condition="!System.HasAddon(service.openelec.settings) | !System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.3.Label,$LOCALIZE[13200])</onload>
-        <onload condition="!System.HasAddon(service.openelec.settings) | !System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.3.Path,ActivateWindow(profiles))</onload>             
-        <onload condition="!System.HasAddon(service.openelec.settings) | !System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.4.Label,$LOCALIZE[130])</onload>
-        <onload condition="!System.HasAddon(service.openelec.settings) | !System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.4.Path,ActivateWindow(systeminfo))</onload>              
-        <onload condition="!System.HasAddon(service.openelec.settings) | !System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.5.Label,$LOCALIZE[14111])</onload>
-        <onload condition="!System.HasAddon(service.openelec.settings) | !System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.5.Path,ActivateWindow(eventlog,events://,return))</onload>        
+        <onload>Skin.SetString(SubMenu10.1.Path,ActivateWindow(settings))</onload>
+        <onload>Skin.SetString(SubMenu10.2.Label,$LOCALIZE[7])</onload>
+        <onload>Skin.SetString(SubMenu10.2.Path,ActivateWindow(filemanager))</onload>
+        <onload>Skin.SetString(SubMenu10.3.Label,$LOCALIZE[13200])</onload>
+        <onload>Skin.SetString(SubMenu10.3.Path,ActivateWindow(profiles))</onload>
+        <onload>Skin.SetString(SubMenu10.4.Label,$LOCALIZE[130])</onload>
+        <onload>Skin.SetString(SubMenu10.4.Path,ActivateWindow(systeminfo))</onload>
+        <onload>Skin.SetString(SubMenu10.5.Label,$LOCALIZE[14111])</onload>
+        <onload>Skin.SetString(SubMenu10.5.Path,ActivateWindow(eventlog,events://,return))</onload>
     </include>
     <include name="DefaultMainMenu">
         <!-- Weather -->
-		<onload>Skin.SetString(HomeItem.1.Label,$LOCALIZE[31950])</onload>
-		<onload>Skin.SetString(HomeItem.1.Path,ActivateWindow(weather))</onload>
-		<onload>Skin.SetString(HomeItem.1.Sub,None)</onload>
-		<onload>Skin.SetString(HomeItem.1.Addon,None)</onload>
-		<onload>Skin.SetString(HomeItem.1.Widget,WeatherDaily)</onload>
-		<onload>Skin.SetString(HomeItem.1.Type,weather)</onload>
-		<onload>Skin.SetString(HomeItem.1.DBackground,special://skin/extras/backgrounds/weather.jpg)</onload>
-        <!-- Pictures -->        
-		<onload>Skin.SetString(HomeItem.2.Label,$LOCALIZE[31951])</onload>
-		<onload>Skin.SetString(HomeItem.2.Path,ActivateWindow(pictures))</onload>
-		<onload>Skin.SetString(HomeItem.2.Sub,SubMenu01)</onload>
-		<onload>Skin.SetString(HomeItem.2.Addon,None)</onload>
-		<onload>Skin.SetString(HomeItem.2.Widget,None)</onload>
-		<onload>Skin.SetString(HomeItem.2.Type,pictures)</onload>
-		<onload>Skin.SetString(HomeItem.2.DBackground,special://skin/extras/backgrounds/pictures.jpg)</onload>
-        <!-- Radio -->        
-		<onload>Skin.SetString(HomeItem.3.Label,$LOCALIZE[31960])</onload>
-		<onload>Skin.SetString(HomeItem.3.Path,ActivateWindow(radiochannels))</onload>
-		<onload>Skin.SetString(HomeItem.3.Sub,SubMenu02)</onload>
-		<onload>Skin.SetString(HomeItem.3.Addon,None)</onload>
-		<onload>Skin.SetString(HomeItem.3.Widget,None)</onload>
-		<onload>Skin.SetString(HomeItem.3.Type,radio)</onload>
-		<onload>Skin.SetString(HomeItem.3.DBackground,special://skin/extras/backgrounds/radio.jpg)</onload>
+	<onload>Skin.SetString(HomeItem.1.Label,$LOCALIZE[31950])</onload>
+	<onload>Skin.SetString(HomeItem.1.Path,ActivateWindow(weather))</onload>
+	<onload>Skin.SetString(HomeItem.1.Sub,None)</onload>
+	<onload>Skin.SetString(HomeItem.1.Addon,None)</onload>
+	<onload>Skin.SetString(HomeItem.1.Widget,WeatherDaily)</onload>
+	<onload>Skin.SetString(HomeItem.1.Type,weather)</onload>
+	<onload>Skin.SetString(HomeItem.1.DBackground,special://skin/extras/backgrounds/weather.jpg)</onload>
+        <!-- Pictures -->
+	<onload>Skin.SetString(HomeItem.2.Label,$LOCALIZE[31951])</onload>
+	<onload>Skin.SetString(HomeItem.2.Path,ActivateWindow(pictures))</onload>
+	<onload>Skin.SetString(HomeItem.2.Sub,SubMenu01)</onload>
+	<onload>Skin.SetString(HomeItem.2.Addon,None)</onload>
+	<onload>Skin.SetString(HomeItem.2.Widget,None)</onload>
+	<onload>Skin.SetString(HomeItem.2.Type,pictures)</onload>
+	<onload>Skin.SetString(HomeItem.2.DBackground,special://skin/extras/backgrounds/pictures.jpg)</onload>
+        <!-- Radio -->
+	<onload>Skin.SetString(HomeItem.3.Label,$LOCALIZE[31960])</onload>
+	<onload>Skin.SetString(HomeItem.3.Path,ActivateWindow(radiochannels))</onload>
+	<onload>Skin.SetString(HomeItem.3.Sub,SubMenu02)</onload>
+	<onload>Skin.SetString(HomeItem.3.Addon,None)</onload>
+	<onload>Skin.SetString(HomeItem.3.Widget,None)</onload>
+	<onload>Skin.SetString(HomeItem.3.Type,radio)</onload>
+	<onload>Skin.SetString(HomeItem.3.DBackground,special://skin/extras/backgrounds/radio.jpg)</onload>
         <!-- TV -->
-		<onload>Skin.SetString(HomeItem.4.Label,$LOCALIZE[31952])</onload>
-		<onload>Skin.SetString(HomeItem.4.Path,ActivateWindow(tvchannels))</onload>
-		<onload>Skin.SetString(HomeItem.4.Sub,SubMenu03)</onload>
-		<onload>Skin.SetString(HomeItem.4.Addon,None)</onload>
-		<onload>Skin.SetString(HomeItem.4.Widget,None)</onload>
-		<onload>Skin.SetString(HomeItem.4.Type,livetv)</onload>
-		<onload>Skin.SetString(HomeItem.4.DBackground,special://skin/extras/backgrounds/livetv.jpg)</onload>
+	<onload>Skin.SetString(HomeItem.4.Label,$LOCALIZE[31952])</onload>
+	<onload>Skin.SetString(HomeItem.4.Path,ActivateWindow(tvchannels))</onload>
+	<onload>Skin.SetString(HomeItem.4.Sub,SubMenu03)</onload>
+	<onload>Skin.SetString(HomeItem.4.Addon,None)</onload>
+	<onload>Skin.SetString(HomeItem.4.Widget,None)</onload>
+	<onload>Skin.SetString(HomeItem.4.Type,livetv)</onload>
+	<onload>Skin.SetString(HomeItem.4.DBackground,special://skin/extras/backgrounds/livetv.jpg)</onload>
         <!-- Videos -->
-		<onload>Skin.SetString(HomeItem.5.Label,$LOCALIZE[31953])</onload>
-		<onload>Skin.SetString(HomeItem.5.Path,ActivateWindow(videos,library://video/,return))</onload>
-		<onload>Skin.SetString(HomeItem.5.Sub,SubMenu04)</onload>
-		<onload>Skin.SetString(HomeItem.5.Addon,None)</onload>
-		<onload>Skin.SetString(HomeItem.5.Widget,None)</onload>
-		<onload>Skin.SetString(HomeItem.5.Type,video)</onload>
-		<onload>Skin.SetString(HomeItem.5.DBackground,special://skin/extras/backgrounds/video.jpg)</onload>
+	<onload>Skin.SetString(HomeItem.5.Label,$LOCALIZE[31953])</onload>
+	<onload>Skin.SetString(HomeItem.5.Path,ActivateWindow(videos,library://video/,return))</onload>
+	<onload>Skin.SetString(HomeItem.5.Sub,SubMenu04)</onload>
+	<onload>Skin.SetString(HomeItem.5.Addon,None)</onload>
+	<onload>Skin.SetString(HomeItem.5.Widget,None)</onload>
+	<onload>Skin.SetString(HomeItem.5.Type,video)</onload>
+	<onload>Skin.SetString(HomeItem.5.DBackground,special://skin/extras/backgrounds/video.jpg)</onload>
         <!-- Movies -->
-		<onload>Skin.SetString(HomeItem.6.Label,$LOCALIZE[31954])</onload>
-		<onload>Skin.SetString(HomeItem.6.Path,ActivateWindow(videos,videodb://movies/titles/,return))</onload>
-		<onload>Skin.SetString(HomeItem.6.Sub,SubMenu05)</onload>
-		<onload>Skin.SetString(HomeItem.6.Addon,None)</onload>
-		<onload>Skin.SetString(HomeItem.6.Widget,RecentMovies)</onload>
-		<onload>Skin.SetString(HomeItem.6.Type,movies)</onload>
-		<onload>Skin.SetString(HomeItem.6.DBackground,special://skin/extras/backgrounds/movies.jpg)</onload>
+	<onload>Skin.SetString(HomeItem.6.Label,$LOCALIZE[31954])</onload>
+	<onload>Skin.SetString(HomeItem.6.Path,ActivateWindow(videos,videodb://movies/titles/,return))</onload>
+	<onload>Skin.SetString(HomeItem.6.Sub,SubMenu05)</onload>
+	<onload>Skin.SetString(HomeItem.6.Addon,None)</onload>
+	<onload>Skin.SetString(HomeItem.6.Widget,RecentMovies)</onload>
+	<onload>Skin.SetString(HomeItem.6.Type,movies)</onload>
+	<onload>Skin.SetString(HomeItem.6.DBackground,special://skin/extras/backgrounds/movies.jpg)</onload>
         <!-- TVShows -->
-		<onload>Skin.SetString(HomeItem.7.Label,$LOCALIZE[31955])</onload>
-		<onload>Skin.SetString(HomeItem.7.Path,ActivateWindow(videos,videodb://tvshows/titles/,return))</onload>
-		<onload>Skin.SetString(HomeItem.7.Sub,SubMenu06)</onload>
-		<onload>Skin.SetString(HomeItem.7.Addon,None)</onload>
-		<onload>Skin.SetString(HomeItem.7.Widget,RecentEpisodes)</onload>
-		<onload>Skin.SetString(HomeItem.7.Type,tvshows)</onload>
-		<onload>Skin.SetString(HomeItem.7.DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onload>       
+	<onload>Skin.SetString(HomeItem.7.Label,$LOCALIZE[31955])</onload>
+	<onload>Skin.SetString(HomeItem.7.Path,ActivateWindow(videos,videodb://tvshows/titles/,return))</onload>
+	<onload>Skin.SetString(HomeItem.7.Sub,SubMenu06)</onload>
+	<onload>Skin.SetString(HomeItem.7.Addon,None)</onload>
+	<onload>Skin.SetString(HomeItem.7.Widget,RecentEpisodes)</onload>
+	<onload>Skin.SetString(HomeItem.7.Type,tvshows)</onload>
+	<onload>Skin.SetString(HomeItem.7.DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onload>
         <!-- MusicVideo -->
-		<onload>Skin.SetString(HomeItem.8.Label,$LOCALIZE[31961])</onload>
-		<onload>Skin.SetString(HomeItem.8.Path,ActivateWindow(videos,videodb://musicvideos/,return))</onload>
-		<onload>Skin.SetString(HomeItem.8.Sub,SubMenu07)</onload>
-		<onload>Skin.SetString(HomeItem.8.Addon,None)</onload>
-		<onload>Skin.SetString(HomeItem.8.Widget,RecentMusicVideo)</onload>
-		<onload>Skin.SetString(HomeItem.8.Type,musicvideos)</onload>
-		<onload>Skin.SetString(HomeItem.8.DBackground,special://skin/extras/backgrounds/musicvideos.jpg)</onload>                
+	<onload>Skin.SetString(HomeItem.8.Label,$LOCALIZE[31961])</onload>
+	<onload>Skin.SetString(HomeItem.8.Path,ActivateWindow(videos,videodb://musicvideos/,return))</onload>
+	<onload>Skin.SetString(HomeItem.8.Sub,SubMenu07)</onload>
+	<onload>Skin.SetString(HomeItem.8.Addon,None)</onload>
+	<onload>Skin.SetString(HomeItem.8.Widget,RecentMusicVideo)</onload>
+	<onload>Skin.SetString(HomeItem.8.Type,musicvideos)</onload>
+	<onload>Skin.SetString(HomeItem.8.DBackground,special://skin/extras/backgrounds/musicvideos.jpg)</onload>
         <!-- Musics -->
-		<onload>Skin.SetString(HomeItem.9.Label,$LOCALIZE[31956])</onload>
-		<onload>Skin.SetString(HomeItem.9.Path,ActivateWindow(music))</onload>
-		<onload>Skin.SetString(HomeItem.9.Sub,SubMenu08)</onload>
-		<onload>Skin.SetString(HomeItem.9.Addon,None)</onload>
-		<onload>Skin.SetString(HomeItem.9.Widget,RecentAlbums)</onload>
-		<onload>Skin.SetString(HomeItem.9.Type,music)</onload>
-		<onload>Skin.SetString(HomeItem.9.DBackground,special://skin/extras/backgrounds/music.jpg)</onload>
+	<onload>Skin.SetString(HomeItem.9.Label,$LOCALIZE[31956])</onload>
+	<onload>Skin.SetString(HomeItem.9.Path,ActivateWindow(music))</onload>
+	<onload>Skin.SetString(HomeItem.9.Sub,SubMenu08)</onload>
+	<onload>Skin.SetString(HomeItem.9.Addon,None)</onload>
+	<onload>Skin.SetString(HomeItem.9.Widget,RecentAlbums)</onload>
+	<onload>Skin.SetString(HomeItem.9.Type,music)</onload>
+	<onload>Skin.SetString(HomeItem.9.DBackground,special://skin/extras/backgrounds/music.jpg)</onload>
         <!-- Programs -->
-		<onload>Skin.SetString(HomeItem.10.Label,$LOCALIZE[31957])</onload>
-		<onload condition="!System.Platform.Android">Skin.SetString(HomeItem.10.Path,ActivateWindow(programs,addons://sources/executable/,return))</onload>
-		<onload condition="System.Platform.Android">Skin.SetString(HomeItem.10.Path,ActivateWindow(programs,androidapp://sources/apps/,return))</onload>
-		<onload>Skin.SetString(HomeItem.10.Sub,None)</onload>
-		<onload>Skin.SetString(HomeItem.10.Addon,None)</onload>
-		<onload>Skin.SetString(HomeItem.10.Widget,None)</onload>
-		<onload>Skin.SetString(HomeItem.10.Type,addons)</onload>
-		<onload>Skin.SetString(HomeItem.10.DBackground,special://skin/extras/backgrounds/addons.jpg)</onload>
+	<onload>Skin.SetString(HomeItem.10.Label,$LOCALIZE[31957])</onload>
+	<onload condition="!System.Platform.Android">Skin.SetString(HomeItem.10.Path,ActivateWindow(programs,addons://sources/executable/,return))</onload>
+	<onload condition="System.Platform.Android">Skin.SetString(HomeItem.10.Path,ActivateWindow(programs,androidapp://sources/apps/,return))</onload>
+	<onload>Skin.SetString(HomeItem.10.Sub,None)</onload>
+	<onload>Skin.SetString(HomeItem.10.Addon,None)</onload>
+	<onload>Skin.SetString(HomeItem.10.Widget,None)</onload>
+	<onload>Skin.SetString(HomeItem.10.Type,addons)</onload>
+	<onload>Skin.SetString(HomeItem.10.DBackground,special://skin/extras/backgrounds/addons.jpg)</onload>
         <!-- PlayDisc -->
-		<onload>Skin.SetString(HomeItem.11.Label,$LOCALIZE[31958])</onload>
-		<onload>Skin.SetString(HomeItem.11.Path,PlayDVD)</onload>
-		<onload>Skin.SetString(HomeItem.11.Sub,SubMenu09)</onload>
-		<onload>Skin.SetString(HomeItem.11.Addon,None)</onload>
-		<onload>Skin.SetString(HomeItem.11.Widget,None)</onload>
-		<onload>Skin.SetString(HomeItem.11.Type,dvd)</onload>
-		<onload>Skin.SetString(HomeItem.11.DBackground,special://skin/extras/backgrounds/dvd.jpg)</onload>
+	<onload>Skin.SetString(HomeItem.11.Label,$LOCALIZE[31958])</onload>
+	<onload>Skin.SetString(HomeItem.11.Path,PlayDVD)</onload>
+	<onload>Skin.SetString(HomeItem.11.Sub,SubMenu09)</onload>
+	<onload>Skin.SetString(HomeItem.11.Addon,None)</onload>
+	<onload>Skin.SetString(HomeItem.11.Widget,None)</onload>
+	<onload>Skin.SetString(HomeItem.11.Type,dvd)</onload>
+	<onload>Skin.SetString(HomeItem.11.DBackground,special://skin/extras/backgrounds/dvd.jpg)</onload>
         <!-- Settings -->
-		<onload>Skin.SetString(HomeItem.12.Label,$LOCALIZE[31959])</onload>
-		<onload>Skin.SetString(HomeItem.12.Path,ActivateWindow(settings))</onload>
-		<onload>Skin.SetString(HomeItem.12.Sub,SubMenu10)</onload>
-		<onload>Skin.SetString(HomeItem.12.Addon,None)</onload>
-		<onload>Skin.SetString(HomeItem.12.Widget,None)</onload>
-		<onload>Skin.SetString(HomeItem.12.Type,settings)</onload>
-		<onload>Skin.SetString(HomeItem.12.DBackground,special://skin/extras/backgrounds/settings.jpg)</onload>
+	<onload>Skin.SetString(HomeItem.12.Label,$LOCALIZE[31959])</onload>
+	<onload>Skin.SetString(HomeItem.12.Path,ActivateWindow(settings))</onload>
+	<onload>Skin.SetString(HomeItem.12.Sub,SubMenu10)</onload>
+	<onload>Skin.SetString(HomeItem.12.Addon,None)</onload>
+	<onload>Skin.SetString(HomeItem.12.Widget,None)</onload>
+	<onload>Skin.SetString(HomeItem.12.Type,settings)</onload>
+	<onload>Skin.SetString(HomeItem.12.DBackground,special://skin/extras/backgrounds/settings.jpg)</onload>
     </include>
 	<include name="DefaultInitialSetup">
         <!-- SubMenu -->
@@ -472,12 +449,12 @@
         <!-- MainMenu -->
         <include>DefaultMainMenu</include>
         <!-- Other -->
-		<onload>Skin.SetBool(EnableWidgetsTitle)</onload>
+	<onload>Skin.SetBool(EnableWidgetsTitle)</onload>
         <onload>Skin.SetBool(SingleGlobalBackground)</onload>
         <onload>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(Favourites))</onload>
         <onload>Skin.SetString(UsrPwrBtnCmd.Path,ActivateWindow(ShutdownMenu))</onload>
-		<onload condition="!System.HasAddon(script.randomandlastitems)">Skin.Setbool(ActivateScriptPlaylist)</onload>
-		<onload>Skin.SetBool(InitialSetUpRun)</onload>
+	<onload condition="!System.HasAddon(script.randomandlastitems)">Skin.Setbool(ActivateScriptPlaylist)</onload>
+	<onload>Skin.SetBool(InitialSetUpRun)</onload>
 	</include>
     <include name="HomeMainMenuItemSettings">
         <control type="button" id="1$PARAM[id2]01">
