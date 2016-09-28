@@ -7,20 +7,6 @@
 		<action>ActivateWindow(settings)</action>
 	</shortcut>
 	<shortcut>
-		<label>OpenELEC</label>
-		<label2>10004</label2>
-		<icon>DefaultFolder.png</icon>
-		<action>RunAddon(service.openelec.settings)</action>
-        <visible>System.HasAddon(service.openelec.settings)</visible>
-	</shortcut>
-	<shortcut>
-		<label>LibreELEC</label>
-		<label2>10004</label2>
-		<icon>DefaultFolder.png</icon>
-		<action>RunAddon(service.libreelec.settings)</action>
-        <visible>System.HasAddon(service.libreelec.settings)</visible>
-	</shortcut>
-	<shortcut>
 		<label>7</label>
 		<label2>10004</label2>
 		<icon>DefaultFolder.png</icon>
