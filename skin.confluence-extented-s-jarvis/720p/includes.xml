@@ -469,12 +469,26 @@
 				<top>53r</top>
 				<width>700</width>
 				<height>20</height>
-				<label>$INFO[Player.Title] - ([COLOR=blue]$INFO[Player.Time] / $INFO[Player.Duration,][/COLOR])</label>
+				<label>$INFO[VideoPlayer.Title] - ([COLOR=blue]$INFO[Player.Time] / $INFO[Player.Duration,][/COLOR])</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
 				<textcolor>grey</textcolor>
 				<shadowcolor>black</shadowcolor>
+                <visible>Player.HasVideo</visible>
+			</control>
+			<control type="label">
+				<left>85</left>
+				<top>53r</top>
+				<width>700</width>
+				<height>20</height>
+				<label>$INFO[MusicPlayer.Title] - ([COLOR=blue]$INFO[Player.Time] / $INFO[Player.Duration,][/COLOR])</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>grey</textcolor>
+				<shadowcolor>black</shadowcolor>
+                <visible>Player.HasAudio</visible>
 			</control>
 			<control type="label">
 				<left>85</left>
@@ -539,7 +553,7 @@
 				<font>font12</font>
 				<textcolor>grey</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Player.HasVideo + VideoPlayer.Content(LiveTV)</visible>
+				<visible>Player.HasMedia + VideoPlayer.Content(LiveTV)</visible>
 			</control>
 		</control>
 	</include>

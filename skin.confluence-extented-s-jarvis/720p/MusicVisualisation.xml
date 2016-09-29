@@ -110,7 +110,7 @@
 					<label>$LOCALIZE[31040]</label>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<animation effect="slide" start="0,0" end="0,25" time="0" condition="IsEmpty(MusicPlayer.Artist) + IsEmpty(MusicPlayer.Album)">conditional</animation>
+					<animation effect="slide" start="0,0" end="0,25" time="0" condition="IsEmpty(MusicPlayer.Artist) + IsEmpty(MusicPlayer.Album) + IsEmpty(MusicPlayer.Title)">conditional</animation>
 				</control>
 				<control type="label" id="1">
 					<description>Artist label</description>
@@ -123,6 +123,20 @@
 					<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, - ]</label>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
+                    <visible>!VideoPlayer.Content(LiveTV)</visible>
+				</control>
+                <control type="label" id="1">
+					<description>LiveTV Info label</description>
+					<left>20</left>
+					<top>30</top>
+					<width>910</width>
+					<height>25</height>
+					<align>left</align>
+					<font>font12</font>
+					<label>$INFO[VideoPlayer.ChannelNumberLabel,([COLOR=blue],[/COLOR]) ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.EpisodeName, (,)]</label>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="grouplist">
 					<left>20</left>
@@ -138,7 +152,7 @@
 						<font>font30</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[Player.Title]</label>
+						<label>$INFO[MusicPlayer.Title]</label>
 						<textcolor>orange</textcolor>
 						<scroll>true</scroll>
 					</control>
