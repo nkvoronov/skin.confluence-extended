@@ -51,12 +51,12 @@
 			<animation effect="slide" time="200" condition="Window.Next(home)">WindowClose</animation>
 			<visible>!Skin.HasSetting(NoFloor)</visible>
 		</control>
-		<!-- Music Info -->
+		<!-- LiveTV Info -->
 		<control type="group">
 			<depth>DepthMenu</depth>
 			<left>0</left>
-			<top>60</top>
-			<visible>Player.HasAudio + !Skin.HasSetting(HomePageMusicInfo) + String.IsEmpty(Window(videos).Property(PlayingBackgroundMedia))</visible>
+			<top>50</top>
+			<visible>Player.HasMedia + VideoPlayer.Content(LiveTV) + !Skin.HasSetting(HomePageVideoInfo) + String.IsEmpty(Window(videos).Property(PlayingBackgroundMedia))</visible>
             <animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
@@ -64,20 +64,20 @@
 				<description>Cover Image</description>
 				<left>20</left>
 				<top>45</top>
-				<width>130</width>
-				<height>295</height>
+                <width>120</width>
+                <height>300</height>
 				<aspectratio aligny="bottom">keep</aspectratio>
-				<texture fallback="DefaultAlbumCover.png">$INFO[Player.Art(thumb)]</texture>
+                <texture fallback="DefaultVideoCover.png">$INFO[Player.Art(thumb)]</texture>
 				<bordertexture border="8">ThumbBorder.png</bordertexture>
 				<bordersize>5</bordersize>
 			</control>
 			<control type="label">
-				<description>Album Label</description>
-				<left>170</left>
+                <description>Channel Label</description>
+                <left>160</left>
 				<top>265</top>
 				<height>25</height>
-				<width>1000</width>
-				<label>$INFO[MusicPlayer.Artist,, - ]$INFO[MusicPlayer.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
+                <width>660</width>
+                <label>$INFO[VideoPlayer.ChannelName]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
@@ -86,11 +86,11 @@
 			</control>
 			<control type="label">
 				<description>Title Label</description>
-				<left>170</left>
+                <left>160</left>
 				<top>285</top>
 				<height>30</height>
 				<width>1000</width>
-				<label>$INFO[Player.Title]</label>
+                <label>$VAR[PlayerTitle]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13_title</font>
@@ -99,7 +99,7 @@
 			</control>
 			<control type="label">
 				<description>Time Label</description>
-				<left>170</left>
+                <left>160</left>
 				<top>310</top>
 				<height>30</height>
 				<width>300</width>
@@ -111,12 +111,12 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 		</control>
-		<!-- LiveTV Info -->
+		<!-- LiveTV Recording -->
 		<control type="group">
 			<depth>DepthMenu</depth>
 			<left>490r</left>
 			<top>70</top>
-			<visible>Container(9000).HasFocus(12) + [PVR.IsRecording | PVR.HasNonRecordingTimer]</visible>
+			<visible>[String.IsEqual(Container(9000).ListItem.Property(TypeItem),livetv) | String.IsEqual(Container(9000).ListItem.Property(TypeItem),radio)] + [PVR.IsRecording | PVR.HasNonRecordingTimer]</visible>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
 			<animation effect="fade" start="100" end="0" time="150" condition="Window.IsActive(Favourites)">conditional</animation>
@@ -256,17 +256,78 @@
 				</control>
 			</control>
 		</control>
+		<!-- Music Info -->
+		<control type="group">
+			<depth>DepthMenu</depth>
+			<left>0</left>
+			<top>60</top>
+			<visible>Player.HasAudio + !VideoPlayer.Content(LiveTV) + !Skin.HasSetting(HomePageMusicInfo) + String.IsEmpty(Window(videos).Property(PlayingBackgroundMedia))</visible>
+			<animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
+			<include>VisibleFadeEffect</include>
+			<include>Window_OpenClose_Animation</include>
+			<control type="image">
+				<description>Cover Image</description>
+				<left>20</left>
+				<top>45</top>
+				<width>130</width>
+				<height>295</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture fallback="DefaultAlbumCover.png">$INFO[Player.Art(thumb)]</texture>
+				<bordertexture border="8">ThumbBorder.png</bordertexture>
+				<bordersize>5</bordersize>
+			</control>
+			<control type="label">
+				<description>Album Label</description>
+				<left>170</left>
+				<top>265</top>
+				<height>25</height>
+				<width>1000</width>
+				<label>$INFO[MusicPlayer.Artist,, - ]$INFO[MusicPlayer.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Title Label</description>
+				<left>170</left>
+				<top>285</top>
+				<height>30</height>
+				<width>1000</width>
+				<label>$INFO[MusicPlayer.Title]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font13_title</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Time Label</description>
+				<left>170</left>
+				<top>310</top>
+				<height>30</height>
+				<width>300</width>
+				<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=blue] / [/COLOR]]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+		</control>
 		<!-- Video Info -->
 		<control type="group">
 			<depth>DepthMenu</depth>
 			<left>0</left>
 			<top>50</top>
             <animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
-			<visible>Player.HasVideo + !Skin.HasSetting(HomePageVideoInfo) + String.IsEmpty(Window(videos).Property(PlayingBackgroundMedia))</visible>
+			<visible>Player.HasVideo + !VideoPlayer.Content(LiveTV) + !Skin.HasSetting(HomePageVideoInfo) + String.IsEmpty(Window(videos).Property(PlayingBackgroundMedia))</visible>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
+            <!-- Other Videos -->
 			<control type="group">
-				<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(LiveTV)</visible>
+				<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos)</visible>
 				<control type="image">
 					<description>Cover Image</description>
 					<left>20</left>
@@ -284,7 +345,7 @@
 					<top>285</top>
 					<height>30</height>
 					<width>1000</width>
-					<label>$INFO[Player.Title]</label>
+					<label>$INFO[VideoPlayer.Title]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
@@ -305,13 +366,14 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 			</control>
+            <!-- MusicVideos -->
 			<control type="group">
-				<visible>VideoPlayer.Content(LiveTV)</visible>
+				<visible>VideoPlayer.Content(MusicVideos)</visible>
 				<control type="image">
 					<description>Cover Image</description>
 					<left>20</left>
 					<top>45</top>
-					<width>120</width>
+					<width>150</width>
 					<height>300</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
 					<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(thumb)]</texture>
@@ -319,12 +381,12 @@
 					<bordersize>5</bordersize>
 				</control>
 				<control type="label">
-					<description>Channel Label</description>
-					<left>160</left>
+					<description>Artist Label</description>
+					<left>190</left>
 					<top>265</top>
 					<height>25</height>
-					<width>660</width>
-					<label>$INFO[VideoPlayer.ChannelName]</label>
+					<width>1000</width>
+					<label>$INFO[VideoPlayer.Artist]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font12</font>
@@ -333,11 +395,11 @@
 				</control>
 				<control type="label">
 					<description>Title Label</description>
-					<left>160</left>
+					<left>190</left>
 					<top>285</top>
 					<height>30</height>
 					<width>1000</width>
-					<label>$INFO[Player.Title]</label>
+					<label>$INFO[VideoPlayer.Title]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
@@ -346,7 +408,7 @@
 				</control>
 				<control type="label">
 					<description>Time Label</description>
-					<left>160</left>
+					<left>190</left>
 					<top>310</top>
 					<height>30</height>
 					<width>300</width>
@@ -358,6 +420,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 			</control>
+            <!-- Movies -->
 			<control type="group">
 				<visible>VideoPlayer.Content(Movies)</visible>
 				<control type="image">
@@ -411,6 +474,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 			</control>
+            <!-- Episodes -->
 			<control type="group">
 				<visible>VideoPlayer.Content(Episodes)</visible>
 				<control type="image">
