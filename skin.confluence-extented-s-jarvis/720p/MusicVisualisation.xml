@@ -152,7 +152,7 @@
 						<font>font30</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[MusicPlayer.Title]</label>
+						<label>$VAR[PlayerTitle]</label>
 						<textcolor>orange</textcolor>
 						<scroll>true</scroll>
 					</control>
