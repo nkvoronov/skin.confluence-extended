@@ -202,7 +202,7 @@
 						<font>font30</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[Player.Title]</label>
+						<label>$VAR[PlayerTitle]</label>
 						<textcolor>orange</textcolor>
 						<scroll>true</scroll>
 					</control>
