@@ -99,6 +99,11 @@
 		<value condition="![Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)]">DialogBack.png</value>
 		<value>DialogBack2.png</value>
 	</variable>
+    <variable name="PlayerTitle">
+    		<value condition="Player.HasVideo">$INFO[VideoPlayer.Title]</value>
+		<value condition="Player.HasAudio + !String.EndsWith(MusicPlayer.Title,.pvr)">$INFO[MusicPlayer.Title]</value>
+		<value>$INFO[Player.Title]</value>
+	</variable>
 	<variable name="typehackflagging">
 		<value condition="[String.Contains(ListItem.FilenameAndPath,bluray) | String.Contains(ListItem.FilenameAndPath,bdrip) | String.Contains(ListItem.FilenameAndPath,brrip) | String.Contains(ListItem.FilenameAndPath,bd25) | String.Contains(ListItem.FilenameAndPath,bd50)]">bluray</value>
 		<value condition="String.Contains(ListItem.FilenameAndPath,hddvd)">hddvd</value>
@@ -509,7 +514,7 @@
 				<top>53r</top>
 				<width>700</width>
 				<height>20</height>
-				<label>$INFO[Player.Title] - ([COLOR=blue]$INFO[Player.Time] / $INFO[Player.Duration,][/COLOR])</label>
+				<label>$VAR[PlayerTitle] - ([COLOR=blue]$INFO[Player.Time] / $INFO[Player.Duration,][/COLOR])</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
@@ -518,7 +523,7 @@
 			</control>
 			<control type="label">
 				<left>85</left>
-				<top>32r</top>
+				<top>30r</top>
 				<width>700</width>
 				<height>20</height>
 				<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, - ]</label>
@@ -527,7 +532,7 @@
 				<font>font12</font>
 				<textcolor>grey</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Player.HasAudio</visible>
+				<visible>Player.HasAudio + !VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="label">
 				<left>85</left>
@@ -579,7 +584,7 @@
 				<font>font12</font>
 				<textcolor>grey</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Player.HasVideo + VideoPlayer.Content(LiveTV)</visible>
+				<visible>VideoPlayer.Content(LiveTV)</visible>
 			</control>
 		</control>
 	</include>
