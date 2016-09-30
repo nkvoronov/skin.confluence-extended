@@ -354,14 +354,14 @@
         <onload condition="System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.6.Label,$LOCALIZE[14111])</onload>
         <onload condition="System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.6.Path,ActivateWindow(eventlog,events://,return))</onload>
         <!-- Other -->
-        <onload condition="!System.HasAddon(service.openelec.settings) + !System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.2.Label,$LOCALIZE[7])</onload>
-        <onload condition="!System.HasAddon(service.openelec.settings) + !System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.2.Path,ActivateWindow(filemanager))</onload>                
-        <onload condition="!System.HasAddon(service.openelec.settings) + !System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.3.Label,$LOCALIZE[13200])</onload>
-        <onload condition="!System.HasAddon(service.openelec.settings) + !System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.3.Path,ActivateWindow(profiles))</onload>             
-        <onload condition="!System.HasAddon(service.openelec.settings) + !System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.4.Label,$LOCALIZE[130])</onload>
-        <onload condition="!System.HasAddon(service.openelec.settings) + !System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.4.Path,ActivateWindow(systeminfo))</onload>              
-        <onload condition="!System.HasAddon(service.openelec.settings) + !System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.5.Label,$LOCALIZE[14111])</onload>
-        <onload condition="!System.HasAddon(service.openelec.settings) + !System.HasAddon(service.libreelec.settings)">Skin.SetString(SubMenu10.5.Path,ActivateWindow(eventlog,events://,return))</onload>        
+        <onload condition="![System.HasAddon(service.openelec.settings) | System.HasAddon(service.libreelec.settings)]">Skin.SetString(SubMenu10.2.Label,$LOCALIZE[7])</onload>
+        <onload condition="![System.HasAddon(service.openelec.settings) | System.HasAddon(service.libreelec.settings)]">Skin.SetString(SubMenu10.2.Path,ActivateWindow(filemanager))</onload>                
+        <onload condition="![System.HasAddon(service.openelec.settings) | System.HasAddon(service.libreelec.settings)]">Skin.SetString(SubMenu10.3.Label,$LOCALIZE[13200])</onload>
+        <onload condition="![System.HasAddon(service.openelec.settings) | System.HasAddon(service.libreelec.settings)]">Skin.SetString(SubMenu10.3.Path,ActivateWindow(profiles))</onload>             
+        <onload condition="![System.HasAddon(service.openelec.settings) | System.HasAddon(service.libreelec.settings)]">Skin.SetString(SubMenu10.4.Label,$LOCALIZE[130])</onload>
+        <onload condition="![System.HasAddon(service.openelec.settings) | System.HasAddon(service.libreelec.settings)]">Skin.SetString(SubMenu10.4.Path,ActivateWindow(systeminfo))</onload>              
+        <onload condition="![System.HasAddon(service.openelec.settings) | System.HasAddon(service.libreelec.settings)]">Skin.SetString(SubMenu10.5.Label,$LOCALIZE[14111])</onload>
+        <onload condition="![System.HasAddon(service.openelec.settings) | System.HasAddon(service.libreelec.settings)]">Skin.SetString(SubMenu10.5.Path,ActivateWindow(eventlog,events://,return))</onload>        
     </include>
     <include name="DefaultMainMenu">
         <!-- Weather -->
