@@ -942,6 +942,14 @@ msgctxt "#89303"
 msgid "Hourly"
 msgstr ""
 
+msgctxt "#89501"
+msgid "Enable FullScreen Clock"
+msgstr ""
+
+msgctxt "#89502"
+msgid "Enable SlideShow Info"
+msgstr ""
+
 msgctxt "#89700"
 msgid "Select"
 msgstr ""
