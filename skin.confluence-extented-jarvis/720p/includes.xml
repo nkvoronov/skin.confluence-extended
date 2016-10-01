@@ -607,7 +607,7 @@
 			<top>43</top>
 			<height>30</height>
 			<width>325</width>
-			<label>$INFO[Player.Title]</label>
+			<label>$VAR[PlayerTitle]</label>
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font13_title</font>
@@ -628,6 +628,21 @@
 			<font>font12</font>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
+            <visible>!VideoPlayer.Content(LiveTV)</visible>
+		</control>
+		<control type="label">
+			<description>Album Label</description>
+			<left>160</left>
+			<top>70</top>
+			<height>30</height>
+			<width>325</width>
+			<label>$INFO[VideoPlayer.ChannelNumberLabel,([COLOR=blue],[/COLOR]) ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.EpisodeName, (,)]</label>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font12</font>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+            <visible>VideoPlayer.Content(LiveTV)</visible>
 		</control>
 		<control type="label">
 			<description>Time Label</description>

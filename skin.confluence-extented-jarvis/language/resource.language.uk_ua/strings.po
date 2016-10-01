@@ -1030,6 +1030,14 @@ msgctxt "#89500"
 msgid "Submenu item"
 msgstr "Пункт"
 
+msgctxt "#89501"
+msgid Enable FullScreen Clock"
+msgstr "Показувати годинник в повноекранному режимі"
+
+msgctxt "#89502"
+msgid Enable SlideShow Info"
+msgstr "Показувати інформацію в слайдшоу"
+
 msgctxt "#89700"
 msgid "Select"
 msgstr "Вибрати"

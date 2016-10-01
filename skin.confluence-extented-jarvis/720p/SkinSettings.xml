@@ -523,6 +523,32 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="203">
+						<description>Enable FullScreen Clock</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>89501</label>
+						<onclick>Skin.ToggleSetting(FullScreenClock)</onclick>
+						<selected>Skin.HasSetting(FullScreenClock)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="204">
+						<description>Enable SlideShow Info</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>89502</label>
+						<onclick>Skin.ToggleSetting(SlideShowInfo)</onclick>
+						<selected>Skin.HasSetting(SlideShowInfo)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="205">
 						<description>Enable Weather Info</description>
 						<width>750</width>
 						<height>40</height>
@@ -537,7 +563,7 @@
 						<visible>!IsEmpty(Weather.Plugin)</visible>
                         <enable>Skin.HasSetting(NoLogo)</enable>
 					</control>
-					<control type="radiobutton" id="204">
+					<control type="radiobutton" id="206">
 						<description>Hide KODI logo in Home</description>
 						<width>750</width>
 						<height>40</height>
@@ -551,7 +577,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <enable>!Skin.HasSetting(HomePageWeatherInfo)</enable>
 					</control>
-					<control type="radiobutton" id="205">
+					<control type="radiobutton" id="207">
 						<description>No Player panel</description>
 						<width>750</width>
 						<height>40</height>
@@ -564,7 +590,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="206">
+					<control type="radiobutton" id="208">
 						<description>Enable Stats Bar</description>
 						<width>750</width>
 						<height>40</height>
@@ -577,7 +603,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="207">
+					<control type="radiobutton" id="209">
 						<description>No Floor Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -590,7 +616,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="208">
+					<control type="radiobutton" id="210">
 						<description>No Floor Everywhere Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -603,7 +629,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-                    <control type="button" id="209">
+                    <control type="button" id="211">
                         <left>0</left>
 						<top>45</top>
                         <width>750</width>
@@ -618,7 +644,7 @@
                         <onclick>RunScript(script.image.resource.select,property=WeatherIcons&amp;type=resource.images.weathericons)</onclick>
                         <enable>System.HasAddon(script.image.resource.select)</enable>
                     </control>					
-					<control type="label" id="210">
+					<control type="label" id="212">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -628,7 +654,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>                    
-					<control type="radiobutton" id="211">
+					<control type="radiobutton" id="213">
 						<description>Lower Menu Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -641,7 +667,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="212">
+					<control type="radiobutton" id="214">
 						<description>Enable Wrap Around Menu</description>
 						<width>750</width>
 						<height>40</height>
@@ -655,7 +681,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="213">
+					<control type="radiobutton" id="215">
 						<description>Enable Fixed Ends Menu</description>
 						<width>750</width>
 						<height>40</height>
@@ -669,7 +695,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>						
 					</control>					
-					<control type="radiobutton" id="214">
+					<control type="radiobutton" id="216">
 						<description>No Slide SubMenu</description>
 						<width>750</width>
 						<height>40</height>
@@ -682,7 +708,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="button" id="215">
+					<control type="button" id="217">
 						<description>MenuColor</description>
 						<width>750</width>
 						<height>40</height>
@@ -695,7 +721,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="button" id="216">
+					<control type="button" id="218">
 						<description>Startup Focus Control</description>
 						<width>750</width>
 						<height>40</height>

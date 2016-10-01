@@ -2,6 +2,22 @@
 <window>
 	<defaultcontrol>-</defaultcontrol>
 	<controls>
+        <control type="label" id="1">
+            <description>Clock label</description>
+            <left>450</left>
+            <top>5</top>
+            <width>800</width>
+            <height>25</height>
+            <align>right</align>
+            <aligny>center</aligny>
+            <font>font13</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>black</shadowcolor>
+            <label>$INFO[System.Time]</label>
+            <animation effect="slide" start="0,0" end="-30,0" time="0" condition="Window.IsVisible(Mutebug)">conditional</animation>
+            <animation effect="slide" start="0,0" end="-70,0" time="0" condition="Window.IsVisible(VideoOSD)">conditional</animation>
+            <visible>Skin.HasSetting(FullScreenClock) + ![Player.ShowInfo | Window.IsActive(VideoOSD)]</visible>
+        </control>    
 		<!-- media infos -->
 		<control type="group" id="1">
 			<depth>DepthOSD</depth>
