@@ -1014,6 +1014,14 @@ msgctxt "#89041"
 msgid "LibreELEC"
 msgstr "LibreELEC"
 
+msgctxt "#89050"
+msgid "[B]CONFIGURE OPENELEC[/B][CR][CR]Setup OpenELEC"
+msgstr "[B]НАЛАШТУВАННЯ OPENELEC[/B][CR][CR]Установки OpenELEC"
+
+msgctxt "#89051"
+msgid "[B]CONFIGURE LIBREELEC[/B][CR][CR]Setup LibreELEC"
+msgstr "[B]НАЛАШТУВАННЯ LIBREELEC[/B][CR][CR]Установки LibreELEC"
+
 msgctxt "#89302"
 msgid "Daily"
 msgstr "Щоденна"
