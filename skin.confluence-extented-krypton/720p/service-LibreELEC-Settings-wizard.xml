@@ -10,7 +10,7 @@
             <texture>floor.png</texture>
             <animation effect="fade" time="300">Visible</animation>
             <animation effect="fade" time="300">Hidden</animation>
-            <visible>!Skin.HasSetting(NoFloor)</visible>
+            <visible>!Skin.HasSetting(NoFloorAll)</visible>
         </control>
         <control type="group">
             <left>90</left>
