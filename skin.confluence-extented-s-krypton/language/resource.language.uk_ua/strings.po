@@ -825,7 +825,6 @@ msgctxt "#89051"
 msgid "[B]CONFIGURE LIBREELEC[/B][CR][CR]Setup LibreELEC"
 msgstr "[B]НАЛАШТУВАННЯ LIBREELEC[/B][CR][CR]Установки LibreELEC"
 
-
 msgctxt "#89302"
 msgid "Daily"
 msgstr "Щоденна"
@@ -833,6 +832,14 @@ msgstr "Щоденна"
 msgctxt "#89303"
 msgid "Hourly"
 msgstr "Погодинна"
+
+msgctxt "#89501"
+msgid "Enable FullScreen Clock"
+msgstr "Показувати годинник в повноекранному режимі"
+
+msgctxt "#89502"
+msgid "Enable SlideShow Info"
+msgstr "Показувати інформацію в слайдшоу"
 
 msgctxt "#89700"
 msgid "Select"
