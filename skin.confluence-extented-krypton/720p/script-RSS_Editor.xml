@@ -16,7 +16,7 @@
 			<param name="CloseButtonLeft" value="710" />
 			<param name="CloseButtonNav" value="10" />
 		</include>
-		<control type="label" id="3">
+		<control type="label" id="4">
 			<description>List label</description>
 			<left>20</left>
 			<top>65</top>
