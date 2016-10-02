@@ -934,6 +934,22 @@ msgctxt "#89038"
 msgid "Random Music Video"
 msgstr ""
 
+msgctxt "#89039"
+msgid "OpenELEC"
+msgstr ""
+
+msgctxt "#89041"
+msgid "LibreELEC"
+msgstr ""
+
+msgctxt "#89050"
+msgid "[B]CONFIGURE OPENELEC[/B][CR][CR]Setup OpenELEC"
+msgstr ""
+
+msgctxt "#89051"
+msgid "[B]CONFIGURE LIBREELEC[/B][CR][CR]Setup LibreELEC"
+msgstr ""
+
 msgctxt "#89302"
 msgid "Daily"
 msgstr ""

@@ -1379,6 +1379,20 @@
                 <icon>special://skin/extras/default/settings-default.jpg</icon>
             </item>
             <item id="10">
+                <label>89039</label>
+                <label2>89050</label2>
+                <onclick>RunAddon(service.openelec.settings)</onclick>
+                <icon>special://skin/extras/default/settings-default.jpg</icon>
+                <visible>System.HasAddon(service.openelec.settings)</visible>
+            </item>
+            <item id="11">
+                <label>89041</label>
+                <label2>89051</label2>
+                <onclick>RunAddon(service.libreelec.settings)</onclick>
+                <icon>special://skin/extras/default/settings-default.jpg</icon>
+                <visible>System.HasAddon(service.libreelec.settings)</visible>
+            </item>
+            <item id="12">
                 <label>166</label>
                 <label2>88070</label2>
                 <onclick>ActivateWindow(SkinSettings)</onclick>
@@ -1443,6 +1457,20 @@
                 <icon>special://skin/extras/settings/system.jpg</icon>
             </item>
             <item id="10">
+                <label>89039</label>
+                <label2>89050</label2>
+                <onclick>RunAddon(service.openelec.settings)</onclick>
+                <icon>special://skin/extras/settings/openelec.jpg</icon>
+                <visible>System.HasAddon(service.openelec.settings)</visible>
+            </item>
+            <item id="11">
+                <label>89041</label>
+                <label2>89051</label2>
+                <onclick>RunAddon(service.libreelec.settings)</onclick>
+                <icon>special://skin/extras/settings/libreelec.jpg</icon>
+                <visible>System.HasAddon(service.libreelec.settings)</visible>
+            </item>
+            <item id="12">
                 <label>166</label>
                 <label2>88070</label2>
                 <onclick>ActivateWindow(SkinSettings)</onclick>

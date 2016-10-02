@@ -8,7 +8,6 @@
             <width>1280</width>
             <height>100</height>
             <texture>floor.png</texture>
-            <visible>false</visible>
             <animation effect="fade" time="300">Visible</animation>
             <animation effect="fade" time="300">Hidden</animation>
             <visible>!Skin.HasSetting(NoFloor)</visible>
