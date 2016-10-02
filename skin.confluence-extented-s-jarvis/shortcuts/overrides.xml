@@ -33,7 +33,7 @@
     <widget label="$LOCALIZE[89036]" icon="DefaultRecentlyAddedMusicVideos.png" type="albums" path="videodb://recentlyaddedmusicvideos/" target="videos">RecentMusicVideo</widget>
     <widget label="$LOCALIZE[89025]" icon="DefaultMusicRecentlyAdded.png" type="albums" path="musicdb://recentlyaddedalbums/" target="music">RecentAlbums</widget>   
     <!-- Default Widgets -->
-    <widgetdefault labelID="weather">WeatherDaily</widgetdefault>
+    <widgetdefault labelID="weather">DailyWeather</widgetdefault>
     <widgetdefault labelID="movies">RecentMovies</widgetdefault>
     <widgetdefault labelID="tvshows">RecentEpisodes</widgetdefault>
     <widgetdefault labelID="musicvideos">RecentMusicVideo</widgetdefault>
