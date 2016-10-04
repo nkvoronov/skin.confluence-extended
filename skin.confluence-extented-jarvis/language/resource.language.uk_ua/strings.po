@@ -1000,7 +1000,7 @@ msgstr "Випадкове муз. відео"
 
 msgctxt "#89039"
 msgid "OpenELEC"
-msgstr ""
+msgstr "OpenELEC"
 
 msgctxt "#89040"
 msgid "Raspberry"
