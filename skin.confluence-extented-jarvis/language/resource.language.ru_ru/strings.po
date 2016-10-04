@@ -878,10 +878,6 @@ msgctxt "#88123"
 msgid "Submenus"
 msgstr "Подменю"
 
-msgctxt "#88126"
-msgid "User Data"
-msgstr "пользовательских данных"
-
 msgctxt "#88129"
 msgid "Playlist widget should [B]Randomize[/B] the playlist sort order"
 msgstr "Виджет плейлиста будет иметь [B]Случайный[/B] порядок сортировки"
@@ -1081,7 +1077,3 @@ msgstr "Отдельные фоны"
 msgctxt "#89710"
 msgid "Used separate backgrounds"
 msgstr "Использовать отдельные фоны"
-
-msgctxt "#89714"
-msgid "Reset Skin Values to Initial Install Defaults"
-msgstr "Сбросить обложку к первоначальному состоянию по умолчанию"

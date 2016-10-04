@@ -59,7 +59,7 @@
 			<height>60</height>
 			<align>center</align>
 			<aligny>center</aligny>
-			<label>$LOCALIZE[88129]</label>
+			<label>88129</label>
 			<wrapmultiline>true</wrapmultiline>
 			<scroll>false</scroll>
 			<font>font13</font>
