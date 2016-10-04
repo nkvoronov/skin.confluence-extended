@@ -3,21 +3,21 @@
 	<defaultcontrol always="true">10</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<left>335</left>
+		<left>310</left>
 		<top>230</top>
 	</coordinates>
-	<include>DialogEffect</include>
+	<include>dialogeffect</include>
 	<controls>
 		<control type="image">
 			<left>0</left>
 			<top>0</top>
-			<width>610</width>
+			<width>660</width>
 			<height>240</height>
 			<texture border="40">DialogBack.png</texture>
 		</control>
 		<control type="image">
 			<description>Dialog Header image</description>
-			<left>40</left>
+			<left>65</left>
 			<top>16</top>
 			<width>530</width>
 			<height>40</height>
@@ -25,12 +25,12 @@
 		</control>
 		<control type="label">
 			<description>header label</description>
-			<left>40</left>
+			<left>65</left>
 			<top>20</top>
 			<width>530</width>
 			<height>30</height>
 			<font>font13_title</font>
-			<label>$LOCALIZE[10035] $LOCALIZE[88126]</label>
+			<label>10035</label>
 			<align>center</align>
 			<aligny>center</aligny>
 			<textcolor>selected</textcolor>
@@ -38,7 +38,7 @@
 		</control>
 		<control type="button">
 			<description>Close Window button</description>
-			<left>520</left>
+			<left>570</left>
 			<top>15</top>
 			<width>64</width>
 			<height>32</height>
@@ -54,26 +54,26 @@
 		<control type="label">
 			<left>0</left>
 			<top>90</top>
-			<width>550</width>
+			<width>660</width>
 			<height>65</height>
 			<align>center</align>
 			<aligny>center</aligny>
-			<label>$LOCALIZE[19194]</label>
+			<label>19194</label>
 			<font>font24_title</font>
 		</control>
 		<control type="label">
-			<left>30</left>
+			<left>0</left>
 			<top>60</top>
-			<width>550</width>
+			<width>660</width>
 			<height>30</height>
 			<align>center</align>
 			<aligny>center</aligny>
-			<label>$LOCALIZE[89714]</label>
+			<label>10045</label>
 			<font>font13</font>
 		</control>
 		<control type="button" id="11">
 			<description>Yes button</description>
-			<left>95</left>
+			<left>125</left>
 			<top>175</top>
 			<width>200</width>
 			<height>40</height>
@@ -93,7 +93,7 @@
 		</control>
 		<control type="button" id="10">
 			<description>No button</description>
-			<left>305</left>
+			<left>335</left>
 			<top>175</top>
 			<width>200</width>
 			<height>40</height>

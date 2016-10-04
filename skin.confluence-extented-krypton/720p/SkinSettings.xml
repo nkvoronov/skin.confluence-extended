@@ -181,7 +181,7 @@
 				<width>726</width>
 				<height>30</height>
 				<font>font16</font>
-				<label>$LOCALIZE[20077] - $INFO[Container(9000).ListItem.Label]</label>
+				<label>$LOCALIZE[166] - $INFO[Container(9000).ListItem.Label]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>white</textcolor>
@@ -1871,35 +1871,35 @@
      			<control type="grouplist" id="9009">
 					<visible>Container(9000).Hasfocus(9)</visible>
 					<left>290</left>
-					<top>180</top>
+					<top>60</top>
 					<width>750</width>
 					<height>530</height>
 					<itemgap>-1</itemgap>
+                    <pagecontrol>-</pagecontrol>
 					<onleft>9000</onleft>
-					<onright>902</onright>
-					<onup>9000</onup>
-					<ondown>9000</ondown>
-					<control type="image" id="901">
-						<width>750</width>
-						<height>140</height>
-						<aspectratio aligny="center" align="center">keep</aspectratio>
-						<texture>DefaultIconWarning.png</texture>
-					</control>
-					<control type="button" id="902">
-						<description>Reset Skin Values</description>
+					<onright>9000</onright>
+					<onup>9009</onup>
+					<ondown>9009</ondown>                    
+                    <control type="label" id="900">
 						<width>750</width>
 						<height>45</height>
+						<font>font13_title</font>
+						<label>10035</label>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+                    <control type="button" id="901">
+                        <width>750</width>
+						<height>40</height>
 						<font>font13</font>
+                        <label>10045</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<align>center</align>
-						<textoffsetx>20</textoffsetx>
-						<textwidth>730</textwidth>
-						<label>$LOCALIZE[89714]</label>
+                        <texturefocus>MenuItemFO.png</texturefocus>
+                        <texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>ActivateWindow(2121)</onclick>
-						<texturefocus border="5">button-focus.png</texturefocus>
-						<texturenofocus border="5">button-nofocus.png</texturenofocus>
-						<pulseonselect>false</pulseonselect>
 					</control>
 				</control>
 			</control>
@@ -1912,7 +1912,7 @@
 		<include>BehindDialogFadeOut</include>
 		<include content="CommonWindowHeader">
 			<param name="Icon" value="icon_system" />
-			<param name="Label" value="$LOCALIZE[5][COLOR=blue] - [/COLOR]$LOCALIZE[20077]" />
+			<param name="Label" value="$LOCALIZE[5][COLOR=blue] - [/COLOR]$LOCALIZE[166]" />
 		</include>
 	</controls>
 </window>

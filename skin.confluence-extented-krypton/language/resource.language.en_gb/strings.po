@@ -859,10 +859,6 @@ msgctxt "#88123"
 msgid "Submenus"
 msgstr ""
 
-msgctxt "#88126"
-msgid "User Data"
-msgstr ""
-
 msgctxt "#88129"
 msgid "Playlist widget should [B]Randomize[/B] the playlist sort order"
 msgstr ""
@@ -1061,8 +1057,4 @@ msgstr ""
 
 msgctxt "#89710"
 msgid "Used separate backgrounds"
-msgstr ""
-
-msgctxt "#89714"
-msgid "Reset Skin Values to Initial Install Defaults"
 msgstr ""
