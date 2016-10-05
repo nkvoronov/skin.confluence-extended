@@ -73,7 +73,7 @@
     <!-- HomeMenuType -->
     <variable name="HomeMenuType">
         <value condition="StringCompare(Container(9000).ListItem.label2,$LOCALIZE[8])">weather</value>
-        <value condition="StringCompare(Container(9000).ListItem.label2,$LOCALIZE[1] | StringCompare(Container(9000).ListItem.label2,$LOCALIZE[90014]))">pictures</value>
+        <value condition="StringCompare(Container(9000).ListItem.label2,$LOCALIZE[1]) | StringCompare(Container(9000).ListItem.label2,$LOCALIZE[90014])">pictures</value>
         <value condition="StringCompare(Container(9000).ListItem.label2,$LOCALIZE[19020]) | StringCompare(Container(9000).ListItem.label2,$LOCALIZE[90015])">livetv</value>
         <value condition="StringCompare(Container(9000).ListItem.label2,$LOCALIZE[19021]) | StringCompare(Container(9000).ListItem.label2,$LOCALIZE[90016])">radio</value>
         <value condition="StringCompare(Container(9000).ListItem.label2,$LOCALIZE[3]) | StringCompare(Container(9000).ListItem.label2,$LOCALIZE[90018]) | StringCompare(Container(9000).ListItem.label2,$LOCALIZE[90019])">video</value>   
