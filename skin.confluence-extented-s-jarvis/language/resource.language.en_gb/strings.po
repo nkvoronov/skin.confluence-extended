@@ -1049,3 +1049,51 @@ msgstr ""
 msgctxt "#90012"
 msgid "Enable Animated Posters"
 msgstr ""
+
+msgctxt "#90014"
+msgid "Picture Add-On"
+msgstr ""
+
+msgctxt "#90015"
+msgid "TV Channel"
+msgstr ""
+
+msgctxt "#90016"
+msgid "Radio Channel"
+msgstr ""
+
+msgctxt "#90017"
+msgid "Program"
+msgstr ""
+
+msgctxt "#90018"
+msgid "Video Add-On"
+msgstr ""
+
+msgctxt "#90019"
+msgid "Video Source"
+msgstr ""
+
+msgctxt "#90020"
+msgid "Backup Skin Settings"
+msgstr ""
+
+msgctxt "#90021"
+msgid "Create"
+msgstr ""
+
+msgctxt "#90022"
+msgid "Restory"
+msgstr ""
+
+msgctxt "#90030"
+msgid "Music Source"
+msgstr ""
+
+msgctxt "#90031"
+msgid "Music Add-On"
+msgstr ""
+
+msgctxt "#90040"
+msgid "Enable splash screen (photo, video or music)"
+msgstr ""

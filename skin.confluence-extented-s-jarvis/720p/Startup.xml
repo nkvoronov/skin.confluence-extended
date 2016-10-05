@@ -4,22 +4,20 @@
     <include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
 	<onload condition="Skin.HasSetting(ActivateGlobalSearch) + System.HasAddon(script.globalsearch)">Skin.Setbool(ActivateGlobalSearch)</onload>
 	<onload condition="Skin.HasSetting(ActivateWatchItLater) + System.HasAddon(script.simpleplaylists)">Skin.Setbool(ActivateWatchItLater)</onload>
+    <onload condition="Skin.String(SplashScreen)">RunScript(script.skin.helper.service,action=splashscreen,file=$INFO[Skin.String(SplashScreen)],duration=5)</onload>
+    <onload condition="!Skin.String(SplashScreen)">ReplaceWindow($INFO[System.StartupWindow])</onload>
 	<controls>
-		<control type="button" id="10">
-			<description>trigger</description>
-			<onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<visible>!Skin.HasSetting(Use_Startup_Playlist)</visible>
-		</control>
-		<control type="button" id="10">
-			<description>trigger with startup Playlist</description>
-			<onfocus>PlayMedia($INFO[Skin.String(Startup_Playlist_Path)])</onfocus>
-			<onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<visible>Skin.HasSetting(Use_Startup_Playlist)</visible>
-		</control>
-		<include>CommonBackground</include>
+        <!-- video control for splash -->
+        <control type="videowindow">
+            <width>100%</width>
+            <height>100%</height>
+        </control>
+        <!-- image control for splash -->
+        <control type="image">
+            <width>100%</width>
+            <height>100%</height>
+            <aspectratio>keep</aspectratio>
+            <texture background="true">$INFO[Window(Home).Property(SkinHelper.SplashScreen)]</texture>
+        </control>
 	</controls>
 </window>

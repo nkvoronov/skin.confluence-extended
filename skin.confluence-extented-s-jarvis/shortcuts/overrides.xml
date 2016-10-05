@@ -175,6 +175,7 @@
             <shortcut label="589" type="2" icon="DefaultFolder.png">PlayerControl(PartyMode(music))</shortcut>            
             <shortcut label="653" type="2" icon="DefaultFolder.png">UpdateLibrary(music)</shortcut>
             <shortcut label="32055" type="2" icon="DefaultFolder.png">CleanLibrary(music)</shortcut>
+            <shortcut label="600" type="2" icon="DefaultFolder.png">RipCD()</shortcut>
             <shortcut label="2" type="10004" icon="DefaultFolder.png">ActivateWindow(musicsettings)</shortcut>
             <node label="32040">
                 <content>playlist-audio</content>
@@ -230,22 +231,29 @@
             <shortcut label="13000" type="10004" icon="DefaultFolder.png">ActivateWindow(systemsettings)</shortcut>
             <shortcut label="14036" type="10004" icon="DefaultFolder.png">ActivateWindow(servicesettings)</shortcut>
             <shortcut label="480" type="10004" icon="DefaultFolder.png">ActivateWindow(appearancesettings)</shortcut>
-            <shortcut label="20183" type="10004" icon="DefaultFolder.png">ReloadSkin()</shortcut>            
+            <shortcut label="20183" type="10004" icon="DefaultFolder.png">ReloadSkin()</shortcut>
+            <shortcut label="360" type="10004" icon="DefaultFolder.png">ActivateScreensaver()</shortcut>            
         </node>
         <!-- Profiles -->
         <node label="13200">
             <shortcut label="13200" type="13200" icon="DefaultFolder.png">ActivateWindow(profiles)</shortcut>
             <shortcut label="10029" type="13200" icon="DefaultFolder.png">ActivateWindow(loginscreen)</shortcut>
-            <shortcut label="20126" type="13200" icon="DefaultFolder.png">System.LogOff()</shortcut>
+            <shortcut label="20126" type="13200" icon="DefaultFolder.png" condition="System.HasLoginScreen">System.LogOff()</shortcut>
+            <shortcut label="20045" type="13200" icon="DefaultFolder.png">Mastermode()</shortcut>
         </node>
         <!-- Power -->
         <node label="13005">
-            <shortcut label="13005" type="13005" icon="DefaultFolder.png">ActivateWindow(shutdownmenu)</shortcut>
-            <shortcut label="13012" type="13005" icon="DefaultFolder.png">Quit()</shortcut>
-            <shortcut label="13016" type="13005" icon="DefaultFolder.png">Shutdown()</shortcut>
-            <shortcut label="13011" type="13005" icon="DefaultFolder.png">Suspend()</shortcut>
-            <shortcut label="13010" type="13005" icon="DefaultFolder.png">Hibernate()</shortcut>
-            <shortcut label="13013" type="13005" icon="DefaultFolder.png">Reboot()</shortcut>
+            <shortcut label="89707" type="13005" icon="DefaultFolder.png">ActivateWindow(shutdownmenu)</shortcut>
+            <shortcut label="13012" type="13005" icon="DefaultFolder.png" condition="System.ShowExitButton">Quit()</shortcut>
+            <shortcut label="13005" type="13005" icon="DefaultFolder.png" condition="System.HasShutdown">Shutdown()</shortcut>
+            <shortcut label="13016" type="13005" icon="DefaultFolder.png" condition="System.CanPowerDown">Powerdown()</shortcut>
+            <shortcut label="13313" type="13005" icon="DefaultFolder.png" condition="!System.Platform.Linux.RaspberryPi + [ System.Platform.Windows | System.Platform.Linux.RaspberryPi ]">RestartApp()</shortcut>
+            <shortcut label="13011" type="13005" icon="DefaultFolder.png" condition="System.CanSuspend">Suspend()</shortcut>
+            <shortcut label="13010" type="13005" icon="DefaultFolder.png" condition="System.CanHibernate">Hibernate()</shortcut>
+            <shortcut label="13013" type="13005" icon="DefaultFolder.png" condition="System.CanReboot">Reboot</shortcut>
+            <shortcut label="19026" type="13005" icon="DefaultFolder.png">AlarmClock(shutdowntimer,Shutdown())</shortcut>
+            <shortcut label="20151" type="13005" icon="DefaultFolder.png">CancelAlarm(shutdowntimer)</shortcut>
+            <shortcut label="13014" type="13005" icon="DefaultFolder.png">Minimize()</shortcut>
         </node>
         <!-- Favourites -->
         <node label="1036">
@@ -254,10 +262,7 @@
                 <content>favourite</content>
             </node>
         </node>
-        <shortcut label="$ADDON[script.skin.helper.service 32062]" type="32054" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=smartshortcuts</shortcut>
-        <!-- <node label="32054">            
-            <content>commands</content>
-        </node> -->        
+        <shortcut label="$ADDON[script.skin.helper.service 32062]" type="" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=smartshortcuts</shortcut>        
     </menus-groupings>
     <!-- Addons Groupings -->
     <addons-groupings>
@@ -339,5 +344,6 @@
         <node label="1036">
             <shortcut label="1036" type="1036" icon="DefaultFolder.png" widgetName="$LOCALIZE[1036]" widget="Favourites" widgetType="favourites" widgetTarget="list">skin</shortcut>
         </node>
+        <shortcut label="$ADDON[script.skin.helper.service 32062]" type="" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=skinplaylists,librarydataprovider,scriptwidgets,extendedinfo,smartshortcuts,pvr,smartishwidgets</shortcut>
     </widget-groupings>
 </overrides>
