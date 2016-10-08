@@ -101,6 +101,7 @@
 	<include name="DefaultInitialSetup">
 		<onload>Skin.SetBool(EnableWidgetsTitle)</onload>
         <onload>Skin.SetString(WidgetLimitItems,10,)</onload>
+        <onload>Skin.SetString(DurationSplashScreen,5,)</onload>
         <onload>Skin.SetBool(SingleGlobalBackground)</onload>
         <onload>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(Favourites))</onload>
         <onload>Skin.SetString(UsrPwrBtnCmd.Path,ActivateWindow(ShutdownMenu))</onload>

@@ -53,36 +53,36 @@
     <variable name="HomeBackground">
         <value condition="!String.IsEmpty(Container(9000).ListItem.Property(background))">$INFO[Container(9000).ListItem.Property(background)]</value>
         <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[8])">special://skin/extras/backgrounds/weather.jpg</value>
-        <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[1])">special://skin/extras/backgrounds/pictures.jpg</value>
-        <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[19020])">special://skin/extras/backgrounds/livetv.jpg</value>
-        <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[19021])">special://skin/extras/backgrounds/radio.jpg</value>
-        <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[3])">special://skin/extras/backgrounds/video.jpg</value>   
+        <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + [String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[1]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90014])]">special://skin/extras/backgrounds/pictures.jpg</value>
+        <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + [String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[19020]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90015])]">special://skin/extras/backgrounds/livetv.jpg</value>
+        <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + [String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[19021]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90016])]">special://skin/extras/backgrounds/radio.jpg</value>
+        <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + [String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[3]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90018]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90018])]">special://skin/extras/backgrounds/video.jpg</value>   
         <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[342])">special://skin/extras/backgrounds/movies.jpg</value>
         <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[20343])">special://skin/extras/backgrounds/tvshows.jpg</value>     
         <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[20389])">special://skin/extras/backgrounds/musicvideos.jpg</value>
-        <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[2])">special://skin/extras/backgrounds/music.jpg</value>                
+        <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + [String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[2]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90030]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90031])]">special://skin/extras/backgrounds/music.jpg</value>                
         <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[446])">special://skin/extras/backgrounds/dvd.jpg</value>
-        <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[24001])">special://skin/extras/backgrounds/addons.jpg</value>        
-        <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + StringCompare(Container(9000).ListItem.label2,$LOCALIZE[10004])">special://skin/extras/backgrounds/settings.jpg</value>
+        <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + [String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[24001]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90017])]">special://skin/extras/backgrounds/addons.jpg</value>        
+        <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[10004])">special://skin/extras/backgrounds/settings.jpg</value>
         <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[13200])">special://skin/extras/backgrounds/profile.jpg</value>      
         <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[13005])">special://skin/extras/backgrounds/power.jpg</value>        
         <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[1036])">special://skin/extras/backgrounds/favourites.jpg</value>
-        <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90001]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90002])">special://skin/extras/backgrounds/playlists.jpg</value>
+        <value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + [String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90001]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90002])]">special://skin/extras/backgrounds/playlists.jpg</value>
         <value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
     </variable>
     <!-- HomeMenuType -->
     <variable name="HomeMenuType">
         <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[8])">weather</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[1])">pictures</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[19020])">livetv</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[19021])">radio</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[3])">video</value>   
+        <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[1]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90014])">pictures</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[19020]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90015])">livetv</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[19021]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90016])">radio</value>
+        <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[3]) | String.IsEmpty(Container(9000).ListItem.label2,$LOCALIZE[90018]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90019])">video</value>   
         <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[342])">movies</value>
         <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[20343])">tvshows</value>     
         <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[20389])">musicvideos</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[2])">music</value>                
+        <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[2]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90030]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90031])">music</value>                
         <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[446])">dvd</value>
-        <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[24001])">addons</value>        
+        <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[24001]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90017])">addons</value>        
         <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[10004])">settings</value>
         <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[13200])">profile</value>      
         <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[13005])">power</value>        
@@ -115,6 +115,10 @@
     <variable name="WidgetLimitItemsName">
         <value condition="!String.IsEmpty(Skin.String(WidgetLimitItems))">$INFO[Skin.String(WidgetLimitItems)]</value>
         <value>10</value>
+    </variable>
+    <variable name="DurationSplashScreenName">
+        <value condition="!String.IsEmpty(Skin.String(DurationSplashScreen))">$INFO[Skin.String(DurationSplashScreen)]</value>
+        <value>5</value>
     </variable>
     <!-- Current Weather Icon -->
     <variable name="CurrentWeatherIcon">

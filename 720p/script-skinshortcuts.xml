@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>90010</defaultcontrol>
-    <onload condition="IsEmpty(Window(home).Property(MenuItemActive))">SetProperty(MenuItemActive,settings,home)</onload>
-    <onload condition="IsEmpty(Window(home).Property(MenuBackground))">SetProperty(MenuBackground,special://skin/extras/backgrounds/settings.jpg,home)</onload>
+    <onload condition="String.IsEmpty(Window(home).Property(MenuItemActive))">SetProperty(MenuItemActive,settings,home)</onload>
+    <onload condition="String.IsEmpty(Window(home).Property(MenuBackground))">SetProperty(MenuBackground,special://skin/extras/backgrounds/settings.jpg,home)</onload>
     <onload>SetProperty(custom-grouping,$VAR[SkinShortcutsGrouping])</onload>
     <controls>
         <include>CommonCustomBackground</include>
@@ -371,7 +371,7 @@
 		<include>MainWindowMouseButtons</include>
 		<include content="CommonWindowHeader">
 			<param name="Icon" value="icon_system" />
-			<param name="Label" value="$LOCALIZE[5][COLOR=blue] - [/COLOR]$LOCALIZE[20077]$VAR[SkinShortcutsTitle]" />
+			<param name="Label" value="$LOCALIZE[5][COLOR=blue] - [/COLOR]$LOCALIZE[166]$VAR[SkinShortcutsTitle]" />
 		</include>
 	</controls>
 </window>

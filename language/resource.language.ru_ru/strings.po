@@ -614,14 +614,6 @@ msgctxt "#32004"
 msgid "SHUTDOWN"
 msgstr "ВЫКЛЮЧЕНИЕ"
 
-msgctxt "#88000"
-msgid "Enable playlist at startup"
-msgstr "Проигрывать плейлист при запуске"
-
-msgctxt "#88001"
-msgid "Path:"
-msgstr "Путь:"
-
 msgctxt "#88002"
 msgid "Move focus main menu"
 msgstr "Переместить фокус главного меню"
@@ -941,3 +933,59 @@ msgstr "Разрешить SmartShortcuts-избранное"
 msgctxt "#90012"
 msgid "Enable Animated Posters"
 msgstr "Разрешить анимированные постеры"
+
+msgctxt "#90014"
+msgid "Picture Add-On"
+msgstr "Фото дополнение"
+
+msgctxt "#90015"
+msgid "TV Channel"
+msgstr "ТВ каналы"
+
+msgctxt "#90016"
+msgid "Radio Channel"
+msgstr "Радио каналы"
+
+msgctxt "#90017"
+msgid "Program"
+msgstr "Программа"
+
+msgctxt "#90018"
+msgid "Video Add-On"
+msgstr "Видео дополнение"
+
+msgctxt "#90019"
+msgid "Video Source"
+msgstr "Видео источник"
+
+msgctxt "#90020"
+msgid "Backup Skin Settings"
+msgstr "Резервная копия настроек обложки"
+
+msgctxt "#90021"
+msgid "Create"
+msgstr "Создать"
+
+msgctxt "#90022"
+msgid "Restory"
+msgstr "Восстановить"
+
+msgctxt "#90030"
+msgid "Music Source"
+msgstr "Музыкальный источник"
+
+msgctxt "#90031"
+msgid "Music Add-On"
+msgstr "Дополнение музыки"
+
+msgctxt "#90040"
+msgid "Enable splash screen (photo, video or music)"
+msgstr "Разрешить заставку (фото, видео или музыка)"
+
+msgctxt "#90041"
+msgid "Path:"
+msgstr "Путь:"
+
+msgctxt "#90042"
+msgid "Duration (sec)"
+msgstr "Длительность (сек)"

@@ -50,13 +50,13 @@
             <shortcut label="184" type="8" icon="DefaultFolder.png">Weather.Refresh</shortcut>
             <shortcut label="35500" type="8" icon="DefaultFolder.png">Weather.LocationPrevious</shortcut>
             <shortcut label="35500" type="8" icon="DefaultFolder.png">Weather.LocationNext</shortcut>
-            <shortcut label="8" type="10004" icon="DefaultFolder.png">ActivateWindow(weathersettings)</shortcut>
+            <shortcut label="8" type="10004" icon="DefaultFolder.png">ActivateWindow(servicesettings,weather)</shortcut>
         </node>
         <!-- Pictures -->
         <node label="1">
             <shortcut label="1" type="1" icon="DefaultFolder.png">ActivateWindow(pictures)</shortcut>
             <shortcut label="1039" type="1" icon="DefaultAddonImages.png">ActivateWindow(pictures,addons://sources/image/,return)</shortcut>
-            <shortcut label="1" type="10004" icon="DefaultFolder.png">ActivateWindow(picturessettings)</shortcut>
+            <shortcut label="1" type="10004" icon="DefaultFolder.png">ActivateWindow(playersettings,pictures)</shortcut>
             <content>picturesources</content>
         </node>
         <!-- LiveTV -->
@@ -100,7 +100,7 @@
             <shortcut label="589" type="3" icon="DefaultFolder.png">PlayerControl(PartyMode(video))</shortcut>
             <shortcut label="653" type="3" icon="DefaultFolder.png">UpdateLibrary(video)</shortcut>
             <shortcut label="32055" type="3" icon="DefaultFolder.png">CleanLibrary(video)</shortcut>
-            <shortcut label="3" type="10004" icon="DefaultFolder.png">ActivateWindow(videossettings)</shortcut>
+            <shortcut label="3" type="10004" icon="DefaultFolder.png">ActivateWindow(playersettings,videos)</shortcut>
             <node label="32040">
                 <content>playlist-video</content>
             </node>
@@ -177,7 +177,8 @@
             <shortcut label="589" type="2" icon="DefaultFolder.png">PlayerControl(PartyMode(music))</shortcut>            
             <shortcut label="653" type="2" icon="DefaultFolder.png">UpdateLibrary(music)</shortcut>
             <shortcut label="32055" type="2" icon="DefaultFolder.png">CleanLibrary(music)</shortcut>
-            <shortcut label="2" type="10004" icon="DefaultFolder.png">ActivateWindow(musicsettings)</shortcut>
+            <shortcut label="600" type="2" icon="DefaultFolder.png">RipCD()</shortcut>
+            <shortcut label="2" type="10004" icon="DefaultFolder.png">ActivateWindow(playersettings,music)</shortcut>
             <node label="32040">
                 <content>playlist-audio</content>
             </node>
@@ -224,30 +225,37 @@
             <shortcut label="130" type="10004" icon="DefaultFolder.png">ActivateWindow(systeminfo)</shortcut>
             <shortcut label="14111" type="10004" icon="DefaultFolder.png">ActivateWindow(eventlog,events://,return)</shortcut>
             <shortcut label="166" type="10004" icon="DefaultFolder.png">ActivateWindow(skinsettings)</shortcut>           
-            <!-- <shortcut label="8" type="10004" icon="DefaultFolder.png">ActivateWindow(weathersettings)</shortcut>
-            <shortcut label="1" type="10004" icon="DefaultFolder.png">ActivateWindow(picturessettings)</shortcut>
+            <shortcut label="8" type="10004" icon="DefaultFolder.png">ActivateWindow(servicesettings,weather)</shortcut>
+            <shortcut label="1" type="10004" icon="DefaultFolder.png">ActivateWindow(playersettings,pictures)</shortcut>
             <shortcut label="19020" type="10004" icon="DefaultFolder.png">ActivateWindow(pvrsettings)</shortcut>
-            <shortcut label="3" type="10004" icon="DefaultFolder.png">ActivateWindow(videossettings)</shortcut>
-            <shortcut label="2" type="10004" icon="DefaultFolder.png">ActivateWindow(musicsettings)</shortcut>      
+            <shortcut label="3" type="10004" icon="DefaultFolder.png">ActivateWindow(playersettings,videos)</shortcut>
+            <shortcut label="2" type="10004" icon="DefaultFolder.png">ActivateWindow(playersettings,music)</shortcut>      
             <shortcut label="13000" type="10004" icon="DefaultFolder.png">ActivateWindow(systemsettings)</shortcut>
             <shortcut label="14036" type="10004" icon="DefaultFolder.png">ActivateWindow(servicesettings)</shortcut>
-            <shortcut label="480" type="10004" icon="DefaultFolder.png">ActivateWindow(appearancesettings)</shortcut> -->
+            <shortcut label="14206" type="10004" icon="DefaultFolder.png">ActivateWindow(interfacesettings)</shortcut>
             <shortcut label="20183" type="10004" icon="DefaultFolder.png">ReloadSkin()</shortcut>            
+            <shortcut label="360" type="10004" icon="DefaultFolder.png">ActivateScreensaver()</shortcut>            
         </node>
         <!-- Profiles -->
         <node label="13200">
             <shortcut label="13200" type="13200" icon="DefaultFolder.png">ActivateWindow(profiles)</shortcut>
             <shortcut label="10029" type="13200" icon="DefaultFolder.png">ActivateWindow(loginscreen)</shortcut>
-            <shortcut label="20126" type="13200" icon="DefaultFolder.png">System.LogOff()</shortcut>
+            <shortcut label="20126" type="13200" icon="DefaultFolder.png" condition="System.HasLoginScreen">System.LogOff()</shortcut>
+            <shortcut label="20045" type="13200" icon="DefaultFolder.png">Mastermode()</shortcut>
         </node>
         <!-- Power -->
         <node label="13005">
-            <shortcut label="13005" type="13005" icon="DefaultFolder.png">ActivateWindow(shutdownmenu)</shortcut>
-            <shortcut label="13012" type="13005" icon="DefaultFolder.png">Quit()</shortcut>
-            <shortcut label="13016" type="13005" icon="DefaultFolder.png">Shutdown()</shortcut>
-            <shortcut label="13011" type="13005" icon="DefaultFolder.png">Suspend()</shortcut>
-            <shortcut label="13010" type="13005" icon="DefaultFolder.png">Hibernate()</shortcut>
-            <shortcut label="13013" type="13005" icon="DefaultFolder.png">Reboot()</shortcut>
+            <shortcut label="89707" type="13005" icon="DefaultFolder.png">ActivateWindow(shutdownmenu)</shortcut>
+            <shortcut label="13012" type="13005" icon="DefaultFolder.png" condition="System.ShowExitButton">Quit()</shortcut>
+            <shortcut label="13005" type="13005" icon="DefaultFolder.png" condition="System.HasShutdown">Shutdown()</shortcut>
+            <shortcut label="13016" type="13005" icon="DefaultFolder.png" condition="System.CanPowerDown">Powerdown()</shortcut>
+            <shortcut label="13313" type="13005" icon="DefaultFolder.png" condition="!System.Platform.Linux.RaspberryPi + [ System.Platform.Windows | System.Platform.Linux.RaspberryPi ]">RestartApp()</shortcut>
+            <shortcut label="13011" type="13005" icon="DefaultFolder.png" condition="System.CanSuspend">Suspend()</shortcut>
+            <shortcut label="13010" type="13005" icon="DefaultFolder.png" condition="System.CanHibernate">Hibernate()</shortcut>
+            <shortcut label="13013" type="13005" icon="DefaultFolder.png" condition="System.CanReboot">Reboot</shortcut>
+            <shortcut label="19026" type="13005" icon="DefaultFolder.png">AlarmClock(shutdowntimer,Shutdown())</shortcut>
+            <shortcut label="20151" type="13005" icon="DefaultFolder.png">CancelAlarm(shutdowntimer)</shortcut>
+            <shortcut label="13014" type="13005" icon="DefaultFolder.png">Minimize()</shortcut>
         </node>
         <!-- Favourites -->
         <node label="1036">
@@ -256,10 +264,7 @@
                 <content>favourite</content>
             </node>
         </node>
-            <shortcut label="$ADDON[script.skin.helper.service 32062]" type="32054" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=smartshortcuts</shortcut>
-        <!-- <node label="32054">            
-            <content>commands</content>
-        </node> -->        
+        <shortcut label="$ADDON[script.skin.helper.service 32062]" type="" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=smartshortcuts</shortcut>        
     </menus-groupings>
     <!-- Addons Groupings -->
     <addons-groupings>
@@ -341,5 +346,6 @@
         <node label="1036">
             <shortcut label="1036" type="1036" icon="DefaultFolder.png" widgetName="$LOCALIZE[1036]" widget="Favourites" widgetType="favourites" widgetTarget="list">skin</shortcut>
         </node>
+        <shortcut label="$ADDON[script.skin.helper.service 32062]" type="" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=skinplaylists,librarydataprovider,scriptwidgets,extendedinfo,smartshortcuts,pvr,smartishwidgets</shortcut>
     </widget-groupings>
 </overrides>
