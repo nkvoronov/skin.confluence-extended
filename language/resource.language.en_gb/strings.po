@@ -1097,3 +1097,11 @@ msgstr ""
 msgctxt "#90040"
 msgid "Enable splash screen (photo, video or music)"
 msgstr ""
+
+msgctxt "#90041"
+msgid "Path:"
+msgstr ""
+
+msgctxt "#90042"
+msgid "Duration (sec)"
+msgstr ""

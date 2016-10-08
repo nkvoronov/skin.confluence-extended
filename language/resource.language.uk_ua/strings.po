@@ -1101,3 +1101,11 @@ msgstr "Доповнення музики"
 msgctxt "#90040"
 msgid "Enable splash screen (photo, video or music)"
 msgstr "Дозволити заставку (фото, відео або музика)"
+
+msgctxt "#90041"
+msgid "Path:"
+msgstr "Шлях:"
+
+msgctxt "#90042"
+msgid "Duration (sec)"
+msgstr "Тривалість (сек)"

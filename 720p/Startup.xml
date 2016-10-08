@@ -4,8 +4,8 @@
     <include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
 	<onload condition="Skin.HasSetting(ActivateGlobalSearch) + System.HasAddon(script.globalsearch)">Skin.Setbool(ActivateGlobalSearch)</onload>
 	<onload condition="Skin.HasSetting(ActivateWatchItLater) + System.HasAddon(script.simpleplaylists)">Skin.Setbool(ActivateWatchItLater)</onload>
-    <onload condition="Skin.String(SplashScreen)">RunScript(script.skin.helper.service,action=splashscreen,file=$INFO[Skin.String(SplashScreen)],duration=5)</onload>
-    <onload condition="!Skin.String(SplashScreen)">ReplaceWindow($INFO[System.StartupWindow])</onload>
+    <onload condition="Skin.HasSetting(EnableSplashScreen)">RunScript(script.skin.helper.service,action=splashscreen,file=$INFO[Skin.String(SplashScreenPath)],duration=$INFO[Skin.String(DurationSplashScreen)])</onload>
+    <onload condition="!Skin.HasSetting(EnableSplashScreen)">ReplaceWindow($INFO[System.StartupWindow])</onload>
 	<controls>
         <!-- video control for splash -->
         <control type="videowindow">

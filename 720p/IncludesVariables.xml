@@ -116,6 +116,10 @@
         <value condition="!IsEmpty(Skin.String(WidgetLimitItems))">$INFO[Skin.String(WidgetLimitItems)]</value>
         <value>10</value>
     </variable>
+    <variable name="DurationSplashScreenName">
+        <value condition="!IsEmpty(Skin.String(DurationSplashScreen))">$INFO[Skin.String(DurationSplashScreen)]</value>
+        <value>5</value>
+    </variable>
     <!-- Current Weather Icon -->
     <variable name="CurrentWeatherIcon">
         <value condition="!IsEmpty(Skin.String(WeatherIcons.name)) + StringCompare(Weather.Conditions,resource://resource.images.weathericons.default/na.png)">$INFO[Skin.String(WeatherIcons.path)]na.png</value>

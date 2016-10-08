@@ -312,25 +312,40 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-                        <onclick condition="!Skin.String(SplashScreen)">Skin.SetFile(SplashScreen)</onclick>
-                        <onclick condition="Skin.String(SplashScreen)">Skin.Reset(SplashScreen)</onclick>
-                        <selected>Skin.String(SplashScreen)</selected>
+                        <onclick>Skin.ToggleSetting(EnableSplashScreen)</onclick>
+						<selected>Skin.HasSetting(EnableSplashScreen)</selected>
                     </control>
 					<control type="button" id="116">
-						<description>Startup Playlist Path</description>
+						<description>Startup SplashScreen Path</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>15311</label>
-						<label2>$INFO[Skin.String(SplashScreen)]</label2>
+						<label>90041</label>
+						<label2>$INFO[Skin.String(SplashScreenPath)]</label2>
+                        <onclick>Skin.SetFile(SplashScreenPath)</onclick>
 						<onclick></onclick>
 						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<enable>False</enable>
+						<texturenofocus>MenuItemNF.png</texturenofocus>                        
+						<enable>Skin.HasSetting(EnableSplashScreen)</enable>
 					</control>
-                    <control type="label" id="117">
+					<control type="button" id="117">
+						<description>Duration SplashScreen</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>90042</label>
+                        <label2>[COLOR=selected]$VAR[DurationSplashScreenName][/COLOR]</label2>
+                        <onclick condition="IsEmpty(Skin.String(DurationSplashScreen))">Skin.SetString(DurationSplashScreen,5,)</onclick>
+						<onclick>Skin.SetNumeric(DurationSplashScreen)</onclick>                        
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+                        <enable>Skin.HasSetting(EnableSplashScreen)</enable>
+					</control>
+                    <control type="label" id="118">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -340,7 +355,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="118">
+					<control type="radiobutton" id="119">
                         <description>Activate Global Search</description>
 						<width>750</width>
 						<height>40</height>
@@ -354,7 +369,7 @@
 						<selected>Skin.HasSetting(ActivateGlobalSearch)</selected>
 						<enable>System.HasAddon(script.globalsearch)</enable>
 					</control>
-					<control type="button" id="119">
+					<control type="button" id="120">
                         <description>Settings Global Search</description>
 						<width>750</width>
 						<height>40</height>
@@ -368,7 +383,7 @@
 						<enable>Skin.HasSetting(ActivateGlobalSearch)</enable>
 						<visible>System.HasAddon(script.globalsearch)</visible>
 					</control>
-					<control type="radiobutton" id="120">
+					<control type="radiobutton" id="121">
                         <description>Activate Simple Playlists</description>
 						<width>750</width>
 						<height>40</height>
@@ -382,7 +397,7 @@
 						<selected>Skin.HasSetting(ActivateWatchitLater)</selected>
 						<enable>System.HasAddon(script.simpleplaylists)</enable>
 					</control>
-					<control type="button" id="121">
+					<control type="button" id="122">
                         <description>Settings Simple Playlists</description>
 						<width>750</width>
 						<height>40</height>
@@ -396,7 +411,7 @@
 						<enable>Skin.HasSetting(ActivateWatchitLater)</enable>
 						<visible>System.HasAddon(script.simpleplaylists)</visible>
 					</control>
-                    <control type="label" id="122">
+                    <control type="label" id="123">
 						<width>750</width>
 						<height>45</height>
 						<font>font13</font>
@@ -406,7 +421,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-                    <control type="button" id="123">
+                    <control type="button" id="124">
                         <description>Settings Skin Shortcuts</description>
 						<width>750</width>
 						<height>40</height>
@@ -419,7 +434,7 @@
 						<onclick>Addon.OpenSettings(script.skinshortcuts)</onclick>
 						<enable>System.HasAddon(script.skinshortcuts)</enable>
 					</control>
-                    <control type="label" id="124">
+                    <control type="label" id="125">
 						<width>750</width>
 						<height>45</height>
 						<font>font13</font>
@@ -429,7 +444,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-                    <control type="button" id="125">
+                    <control type="button" id="126">
                         <description>Settings Skin Helper Service</description>
 						<width>750</width>
 						<height>40</height>
@@ -442,7 +457,7 @@
 						<onclick>Addon.OpenSettings(script.skin.helper.service)</onclick>
 						<enable>System.HasAddon(script.skin.helper.service)</enable>
 					</control>
-                    <control type="radiobutton" id="126">
+                    <control type="radiobutton" id="127">
                         <description>Enable SmartShortcuts.playlists</description>
 						<width>750</width>
 						<height>40</height>
@@ -456,7 +471,7 @@
 						<selected>Skin.HasSetting(ActivateSmartShortcutsPlaylists)</selected>
 						<enable>System.HasAddon(script.skin.helper.service)</enable>
 					</control>
-                    <control type="radiobutton" id="127">
+                    <control type="radiobutton" id="128">
                         <description>Enable SmartShortcuts.favorites</description>
 						<width>750</width>
 						<height>40</height>
@@ -470,7 +485,7 @@
 						<selected>Skin.HasSetting(ActivateSmartShortcutsFavorites)</selected>
 						<enable>System.HasAddon(script.skin.helper.service)</enable>
 					</control>
-                    <control type="radiobutton" id="128">
+                    <control type="radiobutton" id="129">
                         <description>Enable Animated Posters</description>
 						<width>750</width>
 						<height>40</height>
