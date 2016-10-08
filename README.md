@@ -1,1 +1,1 @@
-# Confluence extented is the modernized skin for KODI.
+# Confluence Extented is the modernized skin for KODI.
