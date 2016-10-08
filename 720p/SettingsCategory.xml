@@ -264,10 +264,10 @@
 			<top>0</top>
 			<height>30</height>
 			<label>-</label>
-			<align>center</align>
-			<aligny>bottom</aligny>
+			<align>left</align>
+			<aligny>center</aligny>
 			<font>font13_title</font>
-			<textcolor>grey</textcolor>
+			<textcolor>blue</textcolor>
 			<shadowcolor>black</shadowcolor>
 		</control>
 		<control type="label" id="2">
