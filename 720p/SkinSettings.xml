@@ -125,12 +125,12 @@
 					<item id="1">
 						<label>128</label>
 						<onclick>noop</onclick>
-					</item>
+					</item>  
 					<item id="2">
 						<label>31112</label>
 						<onclick>noop</onclick>
-					</item>                     
-                    <item id="3">
+					</item>                                       
+					<item id="3">
 						<label>31102</label>
 						<onclick>noop</onclick>
 					</item>
@@ -265,7 +265,7 @@
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-					</control>
+					</control>                    
 					<control type="button" id="107">
                         <description>LyricScript Path</description>
 						<width>750</width>
@@ -291,7 +291,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>!String.IsEmpty(Skin.String(LyricScript_Path))</enable>
 						<onclick>Addon.OpenSettings($INFO[Skin.String(LyricScript_Path)])</onclick>
-					</control>
+					</control>					
 					<control type="label" id="109">
 						<width>750</width>
 						<height>45</height>
@@ -302,19 +302,19 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="110">
+                    <control type="radiobutton" id="110">
                         <description>Enable splash screen (photo, video or music)</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
                         <label>90040</label>
-						<textcolor>grey2</textcolor>
+                        <textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.ToggleSetting(EnableSplashScreen)</onclick>
 						<selected>Skin.HasSetting(EnableSplashScreen)</selected>
-					</control>
+                    </control>
 					<control type="button" id="116">
 						<description>Startup SplashScreen Path</description>
 						<width>750</width>
@@ -327,7 +327,7 @@
                         <onclick>Skin.SetFile(SplashScreenPath)</onclick>
 						<onclick></onclick>
 						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>                        
 						<enable>Skin.HasSetting(EnableSplashScreen)</enable>
 					</control>
 					<control type="button" id="117">
@@ -384,11 +384,11 @@
 						<visible>System.HasAddon(script.globalsearch)</visible>
 					</control>
 					<control type="radiobutton" id="121">
-                        <description>Activate SimplePlaylists</description>
+                        <description>Activate Simple Playlists</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>$LOCALIZE[24000] SimplePlaylists</label>
+						<label>$LOCALIZE[24000] Simple Playlists</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -398,7 +398,7 @@
 						<enable>System.HasAddon(script.simpleplaylists)</enable>
 					</control>
 					<control type="button" id="122">
-                        <description>Settings SimplePlaylists</description>
+                        <description>Settings Simple Playlists</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -486,6 +486,20 @@
 						<enable>System.HasAddon(script.skin.helper.service)</enable>
 					</control>
                     <control type="radiobutton" id="129">
+                        <description>Enable PVR Thumbs</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>- $LOCALIZE[90043]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(SkinHelper.EnablePVRThumbs)</onclick>
+						<selected>Skin.HasSetting(SkinHelper.EnablePVRThumbs)</selected>
+						<enable>System.HasAddon(script.skin.helper.service)</enable>
+					</control>
+                    <control type="radiobutton" id="130">
                         <description>Enable Animated Posters</description>
 						<width>750</width>
 						<height>40</height>
@@ -619,7 +633,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <enable>!Skin.HasSetting(HomePageWeatherInfo)</enable>
-					</control>
+					</control>					
 					<control type="radiobutton" id="207">
 						<description>No Player panel</description>
 						<width>750</width>
@@ -675,18 +689,18 @@
                     <control type="button" id="211">
                         <left>0</left>
 						<top>45</top>
-						<width>750</width>
+                        <width>750</width>
 						<height>40</height>
 						<font>font13</font>
                         <label>31133</label>
                         <label2>$VAR[WeatherIconsName]</label2>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
+                        <textcolor>grey2</textcolor>
+                        <focusedcolor>white</focusedcolor>
+                        <texturefocus>MenuItemFO.png</texturefocus>
+                        <texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>RunScript(script.image.resource.select,property=WeatherIcons&amp;type=resource.images.weathericons)</onclick>
                         <enable>System.HasAddon(script.image.resource.select)</enable>
-					</control>
+                    </control>					
 					<control type="label" id="212">
 						<width>750</width>
 						<height>45</height>
@@ -748,7 +762,7 @@
                         <enable>!Skin.HasSetting(WrapAroundHomeMenu)</enable>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>						
-						</control>
+					</control>					
 					<control type="radiobutton" id="217">
 						<description>No Slide SubMenu</description>
 						<width>750</width>
@@ -776,11 +790,11 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="button" id="219">
-                        <description>Startup Focus Control</description>
+						<description>Startup Focus Control</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-                        <textcolor>grey2</textcolor>
+						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label>88082</label>
 						<label2>$VAR[MenuFocusName]</label2>
@@ -954,7 +968,7 @@
 					<visible>Container(9000).Hasfocus(2)</visible>
 				</control>
                 <!-- Background -->
-                <control type="grouplist" id="9003">
+				<control type="grouplist" id="9003">
 					<visible>Container(9000).Hasfocus(3)</visible>
 					<left>290</left>
 					<top>60</top>
@@ -1025,18 +1039,18 @@
 						<selected>!Skin.HasSetting(ShowBackgroundVis)</selected>
 					</control>
                     <control type="button" id="305">
-						<width>750</width>
+                        <width>750</width>
 						<height>40</height>
 						<font>font13</font>
                         <label>31130</label>
                         <label2>$VAR[WeatherFanartName]</label2>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
+                        <textcolor>grey2</textcolor>
+                        <focusedcolor>white</focusedcolor>
+                        <texturefocus>MenuItemFO.png</texturefocus>
+                        <texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>RunScript(script.image.resource.select,property=WeatherFanart&amp;type=resource.images.weatherfanart)</onclick>
                         <enable>System.HasAddon(script.image.resource.select)</enable>
-					</control>
+                    </control>
 					<control type="label" id="306">
 						<width>750</width>
 						<height>45</height>
@@ -1193,12 +1207,12 @@
                         <texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>RunScript(script.skin.helper.service,action=restore)</onclick>
                     </control>
-				</control>
+                </control>
 			</control>
 		</control>
 		<control type="group">
 			<depth>DepthFooter</depth>
-		    <include>CommonNowPlaying</include>
+			<include>CommonNowPlaying</include>
 		</control>
 		<include>MainWindowMouseButtons</include>
 		<include>BehindDialogFadeOut</include>

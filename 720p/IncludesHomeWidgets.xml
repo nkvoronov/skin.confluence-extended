@@ -4,556 +4,588 @@
 	<include name="HomeWidgetDisplay">
 		<control type="group" id="9003">
             <depth>DepthMenu</depth>
-            <include>HomeWidgetUpDown</include>
+            <include>HomeWidgetUpDown</include>            
 			<visible>![Window.IsVisible(2123) | Window.IsVisible(2124) | Window.IsVisible(2125) | Window.IsVisible(2126) | Window.IsVisible(Favourites)]</visible>
 			<include>VisibleFadeEffect</include>
 			<animation effect="fade" time="300" delay="1000">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
             <control type="group">
-            <visible>!String.IsEqual(Container(9000).ListItem.Property(widgetTarget),submenus)</visible>
-            <!-- Weather Daily 8000 -->
-            <include content="CommonWidgetInclude">
-                <param name="left_widget" value="140" />
-                <param name="visible_widget" value="!String.IsEmpty(Weather.Plugin) + Weather.IsFetched" />
-                <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widget),DailyWeather)" />
-                <param name="label_title" value="$LOCALIZE[31904] $INFO[Window(weather).Property(Location)]" />
-                <param name="list_id" value="8000" />
-                <param name="animation_name_include" value="AnimationWidgetCommon" />
-                <param name="item_layout_name_include" value="WeatherWidgetItemsLayout" />
-                <param name="width_widget" value="1000" />
-                <param name="width_widget_item" value="200" />
-                <param name="left_widget_ra" value="1010" />
-                <param name="content_name" value="CommonIncludeContents" />
-                <param name="content_path" value="WeatherDailyContents" />
-            </include>
-            <!-- Weather Hourly 8001 -->
-            <include content="CommonWidgetInclude">
-                <param name="left_widget" value="140" />
-                <param name="visible_widget" value="!String.IsEmpty(Weather.Plugin) + Weather.IsFetched" />
-                <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widget),HourlyWeather)" />
-                <param name="label_title" value="$LOCALIZE[31902] $INFO[Window(weather).Property(Location)]" />
-                <param name="list_id" value="8001" />
-                <param name="animation_name_include" value="AnimationWidgetCommon" />
-                <param name="item_layout_name_include" value="WeatherWidgetItemsLayout" />
-                <param name="width_widget" value="1000" />
-                <param name="width_widget_item" value="200" />
-                <param name="left_widget_ra" value="1010" />
-                <param name="content_name" value="CommonIncludeContents" />
-                <param name="content_path" value="WeatherHourlyContents" />
-            </include>            
-            <!-- Weather 36h 8002 -->            
-            <control type="group">
-                <animation type="Visible">
-                    <effect type="slide" start="0,-600" end="0,0" time="600" tween="cubic" easing="out" />
-                    <effect type="fade" start="0" end="100" time="600" />
-                </animation>
-                <animation type="Hidden">
-                    <effect type="slide" start="0,0" end="0,-600" time="600" tween="cubic" easing="out"/>
-                    <effect type="fade" start="100" end="0" time="600" />
-                </animation>
-                <animation type="WindowClose">
-                    <effect type="slide" start="0,0" end="0,-600" time="600" tween="cubic" easing="out"/>
-                    <effect type="fade" start="100" end="0" time="600" />
-                </animation>
-                <visible>!String.IsEmpty(Weather.Plugin) + Weather.IsFetched</visible>
-				<visible>String.IsEqual(Container(9000).ListItem.Property(widget),H36Weather) + Skin.HasSetting(LowerMenu)</visible>
-                <left>400</left>
-                <top>40</top>
-                <control type="image">
-                    <left>0</left>
-                    <top>0</top>
-                    <width>500</width>
-                    <height>460</height>
-                    <texture border="20">ContentPanel.png</texture>
-                </control>
-                <control type="image">
-                    <left>20</left>
-                    <top>5</top>
-                    <width>460</width>
-                    <height>90</height>
-                    <aspectratio>stretch</aspectratio>
-                    <texture>GlassTitleBar.png</texture>
-                </control>
-                <control type="label">
-                    <description>Header Label</description>
-                    <left>20</left>
-                    <top>13</top>
-                    <width>460</width>
-                    <height>30</height>
-                    <font>font13_title</font>
-                    <label>31901</label>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                </control>
+                <visible>!String.IsEqual(Container(9000).ListItem.Property(widgetTarget),submenus)</visible>
+                <!-- Weather Daily 8000 -->
+                <include content="CommonWidgetInclude">
+                    <param name="left_widget" value="140" />
+                    <param name="visible_widget" value="!String.IsEmpty(Weather.Plugin) + Weather.IsFetched" />
+                    <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widget),DailyWeather)" />
+                    <param name="label_title" value="$LOCALIZE[31904] $INFO[Window(weather).Property(Location)]" />
+                    <param name="list_id" value="8000" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon" />
+                    <param name="item_layout_name_include" value="WeatherWidgetItemsLayout" />
+                    <param name="width_widget" value="1000" />
+                    <param name="width_widget_item" value="200" />
+                    <param name="left_widget_ra" value="1010" />
+                    <param name="content_name" value="CommonIncludeContents" />
+                    <param name="content_path" value="WeatherDailyContents" />
+                </include>
+                <!-- Weather Hourly 8001 -->
+                <include content="CommonWidgetInclude">
+                    <param name="left_widget" value="140" />
+                    <param name="visible_widget" value="!String.IsEmpty(Weather.Plugin) + Weather.IsFetched" />
+                    <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widget),HourlyWeather)" />
+                    <param name="label_title" value="$LOCALIZE[31902] $INFO[Window(weather).Property(Location)]" />
+                    <param name="list_id" value="8001" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon" />
+                    <param name="item_layout_name_include" value="WeatherWidgetItemsLayout" />
+                    <param name="width_widget" value="1000" />
+                    <param name="width_widget_item" value="200" />
+                    <param name="left_widget_ra" value="1010" />
+                    <param name="content_name" value="CommonIncludeContents" />
+                    <param name="content_path" value="WeatherHourlyContents" />
+                </include>            
+                <!-- Weather 36h 8002 -->            
                 <control type="group">
-                    <description>36-hour 1</description>
-                    <left>20</left>
-                    <top>60</top>
-                    <control type="label">
-                        <description>Day label</description>
+                    <animation type="Visible">
+                        <effect type="slide" start="0,-600" end="0,0" time="600" tween="cubic" easing="out" />
+                        <effect type="fade" start="0" end="100" time="600" />
+                    </animation>
+                    <animation type="Hidden">
+                        <effect type="slide" start="0,0" end="0,-600" time="600" tween="cubic" easing="out"/>
+                        <effect type="fade" start="100" end="0" time="600" />
+                    </animation>
+                    <animation type="WindowClose">
+                        <effect type="slide" start="0,0" end="0,-600" time="600" tween="cubic" easing="out"/>
+                        <effect type="fade" start="100" end="0" time="600" />
+                    </animation>
+                    <visible>!String.IsEmpty(Weather.Plugin) + Weather.IsFetched</visible>
+                    <visible>String.IsEqual(Container(9000).ListItem.Property(widget),H36Weather) + Skin.HasSetting(LowerMenu)</visible>
+                    <left>400</left>
+                    <top>40</top>
+                    <control type="image">
                         <left>0</left>
                         <top>0</top>
-                        <width>460</width>
-                        <height>35</height>
-                        <font>font13_title</font>
-                        <label>$INFO[Window(weather).Property(36Hour.1.Heading)]</label>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <textcolor>blue</textcolor>
-                    </control>
-                    <control type="image">
-                        <description>Day Icon</description>
-                        <left>370</left>
-                        <top>40</top>
-                        <height>80</height>
-                        <width>80</width>
-                        <texture>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(36Hour.1.OutlookIcon)]</texture>
-                        <aspectratio align="right">keep</aspectratio>
-                        <visible>String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
-                    </control>
-                    <control type="image">
-                        <description>Day Icon</description>
-                        <left>370</left>
-                        <top>40</top>
-                        <height>80</height>
-                        <width>80</width>
-                        <texture>$INFO[Skin.String(WeatherIcons.path),,/]$INFO[Window(weather).Property(36Hour.1.OutlookIcon)]</texture>
-                        <aspectratio align="right">keep</aspectratio>
-                        <visible>!String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
-                    </control>
-                    <control type="label">
-                        <description>Temperature</description>
-                        <left>40</left>
-                        <top>50</top>
-                        <height>20</height>
-                        <font>font13</font>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>[COLOR=grey2]$INFO[Window(weather).Property(36Hour.1.TemperatureHeading)][/COLOR] $INFO[Window(weather).Property(36Hour.1.Temperature)]</label>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>black</shadowcolor>
-                        <visible>Weather.IsFetched</visible>
-                    </control>
-                    <control type="label">
-                        <description>Feels Like</description>
-                        <left>190</left>
-                        <top>50</top>
-                        <height>20</height>
-                        <font>font13</font>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>[COLOR=grey2]$LOCALIZE[402] :[/COLOR] $INFO[Window(weather).Property(36Hour.1.FeelsLike)]</label>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>black</shadowcolor>
-                        <visible>Weather.IsFetched</visible>
-                    </control>
-                    <control type="label">
-                        <description>Conditions Label</description>
-                        <left>70</left>
-                        <top>80</top>
-                        <width>320</width>
-                        <height>20</height>
-                        <label>[COLOR=grey2]$LOCALIZE[31905]: [/COLOR] $INFO[Window(weather).Property(36Hour.1.Outlook)]</label>
-                        <font>font13</font>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>black</shadowcolor>
+                        <width>500</width>
+                        <height>460</height>
+                        <texture border="20">ContentPanel.png</texture>
                     </control>
                     <control type="image">
                         <left>20</left>
-                        <top>120</top>
+                        <top>5</top>
                         <width>460</width>
-                        <height>4</height>
-                        <texture>separator.png</texture>
-                    </control>
-                </control>
-                <control type="group">
-                    <description>36-hour 2</description>
-                    <left>20</left>
-                    <top>190</top>
-                    <control type="label">
-                        <description>Day label</description>
-                        <left>0</left>
-                        <top>0</top>
-                        <width>460</width>
-                        <height>35</height>
-                        <font>font13_title</font>
-                        <label>$INFO[Window(weather).Property(36Hour.2.Heading)]</label>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <textcolor>blue</textcolor>
-                    </control>
-                    <control type="image">
-                        <description>Day Icon</description>
-                        <left>370</left>
-                        <top>40</top>
-                        <height>80</height>
-                        <width>80</width>
-                        <texture>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(36Hour.2.OutlookIcon)]</texture>
-                        <aspectratio align="right">keep</aspectratio>
-                        <visible>String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
-                    </control>
-                    <control type="image">
-                        <description>Day Icon</description>
-                        <left>370</left>
-                        <top>40</top>
-                        <height>80</height>
-                        <width>80</width>
-                        <texture>$INFO[Skin.String(WeatherIcons.path),,/]$INFO[Window(weather).Property(36Hour.2.OutlookIcon)]</texture>
-                        <aspectratio align="right">keep</aspectratio>
-                        <visible>!String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
+                        <height>90</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture>GlassTitleBar.png</texture>
                     </control>
                     <control type="label">
-                        <description>Temperature</description>
-                        <left>40</left>
-                        <top>50</top>
-                        <height>20</height>
-                        <font>font13</font>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>[COLOR=grey2]$INFO[Window(weather).Property(36Hour.2.TemperatureHeading)][/COLOR] $INFO[Window(weather).Property(36Hour.2.Temperature)]</label>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>black</shadowcolor>
-                        <visible>Weather.IsFetched</visible>
-                    </control>
-                    <control type="label">
-                        <description>Feels Like</description>
-                        <left>190</left>
-                        <top>50</top>
-                        <height>20</height>
-                        <font>font13</font>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>[COLOR=grey2]$LOCALIZE[402] :[/COLOR] $INFO[Window(weather).Property(36Hour.2.FeelsLike)]</label>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>black</shadowcolor>
-                        <visible>Weather.IsFetched</visible>
-                    </control>
-                    <control type="label">
-                        <description>Conditions Label</description>
-                        <left>70</left>
-                        <top>80</top>
-                        <width>320</width>
-                        <height>20</height>
-                        <label>[COLOR=grey2]$LOCALIZE[31905]: [/COLOR] $INFO[Window(weather).Property(36Hour.2.Outlook)]</label>
-                        <font>font13</font>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>black</shadowcolor>
-                    </control>
-                    <control type="image">
+                        <description>Header Label</description>
                         <left>20</left>
-                        <top>120</top>
+                        <top>13</top>
                         <width>460</width>
-                        <height>4</height>
-                        <texture>separator.png</texture>
-                    </control>
-                </control>
-                <control type="group">
-                    <description>36-hour 3</description>
-                    <left>20</left>
-                    <top>320</top>
-                    <control type="label">
-                        <description>Day label</description>
-                        <left>0</left>
-                        <top>0</top>
-                        <width>460</width>
-                        <height>35</height>
+                        <height>30</height>
                         <font>font13_title</font>
-                        <label>$INFO[Window(weather).Property(36Hour.3.Heading)]</label>
+                        <label>31901</label>
                         <align>center</align>
                         <aligny>center</aligny>
-                        <textcolor>blue</textcolor>
-                    </control>
-                    <control type="image">
-                        <description>Day Icon</description>
-                        <left>370</left>
-                        <top>40</top>
-                        <height>80</height>
-                        <width>80</width>
-                        <texture>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(36Hour.3.OutlookIcon)]</texture>
-                        <aspectratio align="right">keep</aspectratio>
-                        <visible>String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
-                    </control>
-                    <control type="image">
-                        <description>Day Icon</description>
-                        <left>370</left>
-                        <top>40</top>
-                        <height>80</height>
-                        <width>80</width>
-                        <texture>$INFO[Skin.String(WeatherIcons.path),,/]$INFO[Window(weather).Property(36Hour.3.OutlookIcon)]</texture>
-                        <aspectratio align="right">keep</aspectratio>
-                        <visible>!String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
-                    </control>
-                    <control type="label">
-                        <description>Temperature</description>
-                        <left>40</left>
-                        <top>50</top>
-                        <height>20</height>
-                        <font>font13</font>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>[COLOR=grey2]$INFO[Window(weather).Property(36Hour.3.TemperatureHeading)][/COLOR] $INFO[Window(weather).Property(36Hour.3.Temperature)]</label>
                         <textcolor>white</textcolor>
                         <shadowcolor>black</shadowcolor>
-                        <visible>Weather.IsFetched</visible>
                     </control>
-                    <control type="label">
-                        <description>Feels Like</description>
-                        <left>190</left>
-                        <top>50</top>
-                        <height>20</height>
-                        <font>font13</font>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>[COLOR=grey2]$LOCALIZE[402] :[/COLOR] $INFO[Window(weather).Property(36Hour.3.FeelsLike)]</label>
-                        <textcolor>white</textcolor>
-                        <shadowcolor>black</shadowcolor>
-                        <visible>Weather.IsFetched</visible>
+                    <control type="group">
+                        <description>36-hour 1</description>
+                        <left>20</left>
+                        <top>60</top>
+                        <control type="label">
+                            <description>Day label</description>
+                            <left>0</left>
+                            <top>0</top>
+                            <width>460</width>
+                            <height>35</height>
+                            <font>font13_title</font>
+                            <label>$INFO[Window(weather).Property(36Hour.1.Heading)]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <textcolor>blue</textcolor>
+                        </control>
+                        <control type="image">
+                            <description>Day Icon</description>
+                            <left>370</left>
+                            <top>40</top>
+                            <height>80</height>
+                            <width>80</width>
+                            <texture>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(36Hour.1.OutlookIcon)]</texture>
+                            <aspectratio align="right">keep</aspectratio>
+                            <visible>String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
+                        </control>
+                        <control type="image">
+                            <description>Day Icon</description>
+                            <left>370</left>
+                            <top>40</top>
+                            <height>80</height>
+                            <width>80</width>
+                            <texture>$INFO[Skin.String(WeatherIcons.path),,/]$INFO[Window(weather).Property(36Hour.1.OutlookIcon)]</texture>
+                            <aspectratio align="right">keep</aspectratio>
+                            <visible>!String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
+                        </control>
+                        <control type="label">
+                            <description>Temperature</description>
+                            <left>40</left>
+                            <top>50</top>
+                            <height>20</height>
+                            <font>font13</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <label>[COLOR=grey2]$INFO[Window(weather).Property(36Hour.1.TemperatureHeading)][/COLOR] $INFO[Window(weather).Property(36Hour.1.Temperature)]</label>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <visible>Weather.IsFetched</visible>
+                        </control>
+                        <control type="label">
+                            <description>Feels Like</description>
+                            <left>190</left>
+                            <top>50</top>
+                            <height>20</height>
+                            <font>font13</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <label>[COLOR=grey2]$LOCALIZE[402] :[/COLOR] $INFO[Window(weather).Property(36Hour.1.FeelsLike)]</label>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <visible>Weather.IsFetched</visible>
+                        </control>
+                        <control type="label">
+                            <description>Conditions Label</description>
+                            <left>70</left>
+                            <top>80</top>
+                            <width>320</width>
+                            <height>20</height>
+                            <label>[COLOR=grey2]$LOCALIZE[31905]: [/COLOR] $INFO[Window(weather).Property(36Hour.1.Outlook)]</label>
+                            <font>font13</font>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                        </control>
+                        <control type="image">
+                            <left>20</left>
+                            <top>120</top>
+                            <width>460</width>
+                            <height>4</height>
+                            <texture>separator.png</texture>
+                        </control>
                     </control>
-                    <control type="label">
-                        <description>Conditions Label</description>
-                        <left>70</left>
-                        <top>80</top>
-                        <width>320</width>
-                        <height>20</height>
-                        <label>[COLOR=grey2]$LOCALIZE[31905]: [/COLOR] $INFO[Window(weather).Property(36Hour.3.Outlook)]</label>
-                        <font>font13</font>
-                        <align>center</align>
-                        <aligny>center</aligny>
-                        <shadowcolor>black</shadowcolor>
-                        <textcolor>white</textcolor>
+                    <control type="group">
+                        <description>36-hour 2</description>
+                        <left>20</left>
+                        <top>190</top>
+                        <control type="label">
+                            <description>Day label</description>
+                            <left>0</left>
+                            <top>0</top>
+                            <width>460</width>
+                            <height>35</height>
+                            <font>font13_title</font>
+                            <label>$INFO[Window(weather).Property(36Hour.2.Heading)]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <textcolor>blue</textcolor>
+                        </control>
+                        <control type="image">
+                            <description>Day Icon</description>
+                            <left>370</left>
+                            <top>40</top>
+                            <height>80</height>
+                            <width>80</width>
+                            <texture>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(36Hour.2.OutlookIcon)]</texture>
+                            <aspectratio align="right">keep</aspectratio>
+                            <visible>String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
+                        </control>
+                        <control type="image">
+                            <description>Day Icon</description>
+                            <left>370</left>
+                            <top>40</top>
+                            <height>80</height>
+                            <width>80</width>
+                            <texture>$INFO[Skin.String(WeatherIcons.path),,/]$INFO[Window(weather).Property(36Hour.2.OutlookIcon)]</texture>
+                            <aspectratio align="right">keep</aspectratio>
+                            <visible>!String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
+                        </control>
+                        <control type="label">
+                            <description>Temperature</description>
+                            <left>40</left>
+                            <top>50</top>
+                            <height>20</height>
+                            <font>font13</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <label>[COLOR=grey2]$INFO[Window(weather).Property(36Hour.2.TemperatureHeading)][/COLOR] $INFO[Window(weather).Property(36Hour.2.Temperature)]</label>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <visible>Weather.IsFetched</visible>
+                        </control>
+                        <control type="label">
+                            <description>Feels Like</description>
+                            <left>190</left>
+                            <top>50</top>
+                            <height>20</height>
+                            <font>font13</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <label>[COLOR=grey2]$LOCALIZE[402] :[/COLOR] $INFO[Window(weather).Property(36Hour.2.FeelsLike)]</label>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <visible>Weather.IsFetched</visible>
+                        </control>
+                        <control type="label">
+                            <description>Conditions Label</description>
+                            <left>70</left>
+                            <top>80</top>
+                            <width>320</width>
+                            <height>20</height>
+                            <label>[COLOR=grey2]$LOCALIZE[31905]: [/COLOR] $INFO[Window(weather).Property(36Hour.2.Outlook)]</label>
+                            <font>font13</font>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                        </control>
+                        <control type="image">
+                            <left>20</left>
+                            <top>120</top>
+                            <width>460</width>
+                            <height>4</height>
+                            <texture>separator.png</texture>
+                        </control>
                     </control>
-                </control>	
-            </control>
-            <!-- Favourites 8003 -->
-            <include content="CommonWidgetInclude">
-                <param name="left_widget" value="140" />
-                <param name="visible_widget" value="true" />
-                <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widget),Favourites)" />
-                <param name="label_title" value="$LOCALIZE[1036]" />
-                <param name="list_id" value="8003" />
-                <param name="animation_name_include" value="AnimationWidgetCommon" />
-                <param name="item_layout_name_include" value="FavouritesWidgetItemsLayout" />
-                <param name="width_widget" value="1000" />
-                <param name="width_widget_item" value="200" />
-                <param name="left_widget_ra" value="1010" />
-                <param name="content_name" value="CommonIncludeContents2" />
-                <param name="content_path" value="plugin://script.skin.helper.service/?action=favourites&amp;limit=$VAR[WidgetLimitItemsName]&amp;reload=$INFO[Window(Home).Property(widgetreload2)]" />
-            </include>    
-            <!-- Movies 8004 -->
-            <include content="CommonWidgetInclude">
-                <param name="left_widget" value="190" />
-                <param name="visible_widget" value="Library.HasContent(Movies)" />
-                <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widget),RecentMovies) | String.IsEqual(Container(9000).ListItem.Property(widget),UnwatchedMovies) | String.IsEqual(Container(9000).ListItem.Property(widget),RandomMovies)" />
-                <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
-                <param name="list_id" value="8004" />
-                <param name="animation_name_include" value="AnimationWidgetCommon2" />
-                <param name="item_layout_name_include" value="MoviesWidgetItemsLayout" />
-                <param name="width_widget" value="900" />
-                <param name="width_widget_item" value="180" />
-                <param name="left_widget_ra" value="910" />
-                <param name="content_name" value="CommonIncludeContents3" />
-                <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
-                <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
-            </include>            
-            <!-- Inprogress Movies 8005 -->
-            <include content="CommonWidgetInclude">
-                <param name="left_widget" value="190" />
-                <param name="visible_widget" value="Library.HasContent(Movies)" />
-                <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widget),InprogressMovies)" />
-                <param name="label_title" value="$LOCALIZE[90003]" />
-                <param name="list_id" value="8005" />
-                <param name="animation_name_include" value="AnimationWidgetCommon2" />
-                <param name="item_layout_name_include" value="MoviesWidgetItemsLayout" />
-                <param name="width_widget" value="900" />
-                <param name="width_widget_item" value="180" />
-                <param name="left_widget_ra" value="910" />
-                <param name="content_name" value="CommonIncludeContents3" />
-                <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
-                <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
-            </include>                  
-            <!-- Movies Playlist 8006 -->
-            <include content="CommonWidgetInclude">
-                <param name="left_widget" value="190" />
-                <param name="visible_widget" value="String.IsEqual(Container(9000).ListItem.Property(widget),Playlist)" />
-                <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widgetType),movies)" />
-                <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
-                <param name="list_id" value="8006" />
-                <param name="animation_name_include" value="AnimationWidgetCommon2" />
-                <param name="item_layout_name_include" value="MoviesWidgetItemsLayout" />
-                <param name="width_widget" value="900" />
-                <param name="width_widget_item" value="180" />
-                <param name="left_widget_ra" value="910" />
-                <param name="content_name" value="CommonIncludeContents3" />
-                <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
-                <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
-            </include>                   
-            <!-- Episodes 8007 -->
-            <include content="CommonWidgetInclude">
-                <param name="left_widget" value="160" />
-                <param name="visible_widget" value="Library.HasContent(TVShows)" />
-                <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widget),RecentEpisodes) | String.IsEqual(Container(9000).ListItem.Property(widget),RandomEpisodes)" />
-                <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
-                <param name="list_id" value="8007" />
-                <param name="animation_name_include" value="AnimationWidgetCommon3" />
-                <param name="item_layout_name_include" value="EpisodesWidgetItemsLayout" />
-                <param name="width_widget" value="960" />
-                <param name="width_widget_item" value="240" />
-                <param name="left_widget_ra" value="970" />
-                <param name="content_name" value="CommonIncludeContents3" />
-                <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
-                <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />                    
-            </include>         
-            <!-- Episodes Playlist 8008 -->
-            <include content="CommonWidgetInclude">
-                <param name="left_widget" value="160" />
-                <param name="visible_widget" value="String.IsEqual(Container(9000).ListItem.Property(widget),Playlist)" />
-                <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widgetType),episodes)" />
-                <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
-                <param name="list_id" value="8008" />
-                <param name="animation_name_include" value="AnimationWidgetCommon3" />
-                <param name="item_layout_name_include" value="EpisodesWidgetItemsLayout" />
-                <param name="width_widget" value="960" />
-                <param name="width_widget_item" value="240" />
-                <param name="left_widget_ra" value="970" />
-                <param name="content_name" value="CommonIncludeContents3" />
-                <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
-                <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
-            </include>                
-            <!-- TVShows 8009 -->
-            <include content="CommonWidgetInclude">
-                <param name="left_widget" value="190" />
-                <param name="visible_widget" value="Library.HasContent(Movies)" />
-                <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widget),InprogressTvShows) | String.IsEqual(Container(9000).ListItem.Property(widget),UnwatchedTvShows)" />
-                <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
-                <param name="list_id" value="8009" />
-                <param name="animation_name_include" value="AnimationWidgetCommon2" />
-                <param name="item_layout_name_include" value="TVShowsWidgetItemsLayout" />
-                <param name="width_widget" value="900" />
-                <param name="width_widget_item" value="180" />
-                <param name="left_widget_ra" value="910" />
-                <param name="content_name" value="CommonIncludeContents3" />
-                <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
-                <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
-            </include>         
-            <!-- TVShows Playlist 8010 -->
-            <include content="CommonWidgetInclude">
-                <param name="left_widget" value="190" />
-                <param name="visible_widget" value="String.IsEqual(Container(9000).ListItem.Property(widget),Playlist)" />
-                <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widgetType),tvshows)" />
-                <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
-                <param name="list_id" value="8010" />
-                <param name="animation_name_include" value="AnimationWidgetCommon2" />
-                <param name="item_layout_name_include" value="TVShowsWidgetItemsLayout" />
-                <param name="width_widget" value="900" />
-                <param name="width_widget_item" value="180" />
-                <param name="left_widget_ra" value="910" />
-                <param name="content_name" value="CommonIncludeContents3" />
-                <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
-                <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
-            </include>                        
-            <!-- MusicVideo 8011 -->
-            <include content="CommonWidgetInclude">
-                <param name="left_widget" value="240" />
-                <param name="visible_widget" value="Library.HasContent(MusicVideos)" />
-                <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widget),RecentMusicVideo) | String.IsEqual(Container(9000).ListItem.Property(widget),RandomMusicVideo)" />
-                <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
-                <param name="list_id" value="8011" />
-                <param name="animation_name_include" value="AnimationWidgetCommon4" />
-                <param name="item_layout_name_include" value="AlbumsWidgetItemsLayout" />
-                <param name="width_widget" value="800" />
-                <param name="width_widget_item" value="200" />
-                <param name="left_widget_ra" value="810" />
-                <param name="content_name" value="CommonIncludeContents3" />
-                <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
-                <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
-            </include>       
+                    <control type="group">
+                        <description>36-hour 3</description>
+                        <left>20</left>
+                        <top>320</top>
+                        <control type="label">
+                            <description>Day label</description>
+                            <left>0</left>
+                            <top>0</top>
+                            <width>460</width>
+                            <height>35</height>
+                            <font>font13_title</font>
+                            <label>$INFO[Window(weather).Property(36Hour.3.Heading)]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <textcolor>blue</textcolor>
+                        </control>
+                        <control type="image">
+                            <description>Day Icon</description>
+                            <left>370</left>
+                            <top>40</top>
+                            <height>80</height>
+                            <width>80</width>
+                            <texture>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(36Hour.3.OutlookIcon)]</texture>
+                            <aspectratio align="right">keep</aspectratio>
+                            <visible>String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
+                        </control>
+                        <control type="image">
+                            <description>Day Icon</description>
+                            <left>370</left>
+                            <top>40</top>
+                            <height>80</height>
+                            <width>80</width>
+                            <texture>$INFO[Skin.String(WeatherIcons.path),,/]$INFO[Window(weather).Property(36Hour.3.OutlookIcon)]</texture>
+                            <aspectratio align="right">keep</aspectratio>
+                            <visible>!String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
+                        </control>
+                        <control type="label">
+                            <description>Temperature</description>
+                            <left>40</left>
+                            <top>50</top>
+                            <height>20</height>
+                            <font>font13</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <label>[COLOR=grey2]$INFO[Window(weather).Property(36Hour.3.TemperatureHeading)][/COLOR] $INFO[Window(weather).Property(36Hour.3.Temperature)]</label>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <visible>Weather.IsFetched</visible>
+                        </control>
+                        <control type="label">
+                            <description>Feels Like</description>
+                            <left>190</left>
+                            <top>50</top>
+                            <height>20</height>
+                            <font>font13</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <label>[COLOR=grey2]$LOCALIZE[402] :[/COLOR] $INFO[Window(weather).Property(36Hour.3.FeelsLike)]</label>
+                            <textcolor>white</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <visible>Weather.IsFetched</visible>
+                        </control>
+                        <control type="label">
+                            <description>Conditions Label</description>
+                            <left>70</left>
+                            <top>80</top>
+                            <width>320</width>
+                            <height>20</height>
+                            <label>[COLOR=grey2]$LOCALIZE[31905]: [/COLOR] $INFO[Window(weather).Property(36Hour.3.Outlook)]</label>
+                            <font>font13</font>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <shadowcolor>black</shadowcolor>
+                            <textcolor>white</textcolor>
+                        </control>
+                    </control>	
+                </control>
+                <!-- Favourites 8003 -->
+                <include content="CommonWidgetInclude">
+                    <param name="left_widget" value="140" />
+                    <param name="visible_widget" value="true" />
+                    <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widget),Favourites)" />
+                    <param name="label_title" value="$LOCALIZE[1036]" />
+                    <param name="list_id" value="8003" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon" />
+                    <param name="item_layout_name_include" value="FavouritesWidgetItemsLayout" />
+                    <param name="width_widget" value="1000" />
+                    <param name="width_widget_item" value="200" />
+                    <param name="left_widget_ra" value="1010" />
+                    <param name="content_name" value="CommonIncludeContents2" />
+                    <param name="content_path" value="plugin://script.skin.helper.service/?action=favourites&amp;limit=$VAR[WidgetLimitItemsName]&amp;reload=$INFO[Window(Home).Property(widgetreload2)]" />
+                </include>    
+                <!-- Movies 8004 -->
+                <include content="CommonWidgetInclude">
+                    <param name="left_widget" value="190" />
+                    <param name="visible_widget" value="Library.HasContent(Movies)" />
+                    <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widget),RecentMovies) | String.IsEqual(Container(9000).ListItem.Property(widget),UnwatchedMovies) | String.IsEqual(Container(9000).ListItem.Property(widget),RandomMovies)" />
+                    <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+                    <param name="list_id" value="8004" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon2" />
+                    <param name="item_layout_name_include" value="MoviesWidgetItemsLayout" />
+                    <param name="width_widget" value="900" />
+                    <param name="width_widget_item" value="180" />
+                    <param name="left_widget_ra" value="910" />
+                    <param name="content_name" value="CommonIncludeContents3" />
+                    <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
+                    <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
+                </include>
+                <!-- Inprogress Movies 8005 -->
+                <include content="CommonWidgetInclude">
+                    <param name="left_widget" value="190" />
+                    <param name="visible_widget" value="Library.HasContent(Movies)" />
+                    <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widget),InprogressMovies)" />
+                    <param name="label_title" value="$LOCALIZE[90003]" />
+                    <param name="list_id" value="8005" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon2" />
+                    <param name="item_layout_name_include" value="MoviesWidgetItemsLayout" />
+                    <param name="width_widget" value="900" />
+                    <param name="width_widget_item" value="180" />
+                    <param name="left_widget_ra" value="910" />
+                    <param name="content_name" value="CommonIncludeContents3" />
+                    <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
+                    <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
+                </include>
+                <!-- Movies Playlist 8006 -->
+                <include content="CommonWidgetInclude">
+                    <param name="left_widget" value="190" />
+                    <param name="visible_widget" value="String.IsEqual(Container(9000).ListItem.Property(widget),Playlist) | String.IsEqual(Container(9000).ListItem.Property(widget),skinplaylists) | String.IsEqual(Container(9000).ListItem.Property(widget),librarydataprovider) | String.IsEqual(Container(9000).ListItem.Property(widget),scriptwidgets) | String.IsEqual(Container(9000).ListItem.Property(widget),extendedinfo)" />
+                    <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widgetType),movies)" />
+                    <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+                    <param name="list_id" value="8006" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon2" />
+                    <param name="item_layout_name_include" value="MoviesWidgetItemsLayout" />
+                    <param name="width_widget" value="900" />
+                    <param name="width_widget_item" value="180" />
+                    <param name="left_widget_ra" value="910" />
+                    <param name="content_name" value="CommonIncludeContents3" />
+                    <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
+                    <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
+                </include>                
+                <!-- Episodes 8007 -->
+                <include content="CommonWidgetInclude">
+                    <param name="left_widget" value="160" />
+                    <param name="visible_widget" value="Library.HasContent(TVShows)" />
+                    <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widget),RecentEpisodes) | String.IsEqual(Container(9000).ListItem.Property(widget),RandomEpisodes)" />
+                    <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+                    <param name="list_id" value="8007" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon3" />
+                    <param name="item_layout_name_include" value="EpisodesWidgetItemsLayout" />
+                    <param name="width_widget" value="960" />
+                    <param name="width_widget_item" value="240" />
+                    <param name="left_widget_ra" value="970" />
+                    <param name="content_name" value="CommonIncludeContents3" />
+                    <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
+                    <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />                    
+                </include>
+                <!-- Episodes Playlist 8008 -->
+                <include content="CommonWidgetInclude">
+                    <param name="left_widget" value="160" />
+                    <param name="visible_widget" value="String.IsEqual(Container(9000).ListItem.Property(widget),Playlist) | String.IsEqual(Container(9000).ListItem.Property(widget),skinplaylists) | String.IsEqual(Container(9000).ListItem.Property(widget),librarydataprovider) | String.IsEqual(Container(9000).ListItem.Property(widget),scriptwidgets) | String.IsEqual(Container(9000).ListItem.Property(widget),extendedinfo)" />
+                    <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widgetType),episodes)" />
+                    <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+                    <param name="list_id" value="8008" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon3" />
+                    <param name="item_layout_name_include" value="EpisodesWidgetItemsLayout" />
+                    <param name="width_widget" value="960" />
+                    <param name="width_widget_item" value="240" />
+                    <param name="left_widget_ra" value="970" />
+                    <param name="content_name" value="CommonIncludeContents3" />
+                    <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
+                    <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
+                </include>                
+                <!-- TVShows 8009 -->
+                <include content="CommonWidgetInclude">
+                    <param name="left_widget" value="190" />
+                    <param name="visible_widget" value="Library.HasContent(Movies)" />
+                    <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widget),InprogressTvShows) | String.IsEqual(Container(9000).ListItem.Property(widget),UnwatchedTvShows)" />
+                    <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+                    <param name="list_id" value="8009" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon2" />
+                    <param name="item_layout_name_include" value="TVShowsWidgetItemsLayout" />
+                    <param name="width_widget" value="900" />
+                    <param name="width_widget_item" value="180" />
+                    <param name="left_widget_ra" value="910" />
+                    <param name="content_name" value="CommonIncludeContents3" />
+                    <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
+                    <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
+                </include>             
+                <!-- TVShows Playlist 8010 -->
+                <include content="CommonWidgetInclude">
+                    <param name="left_widget" value="190" />
+                    <param name="visible_widget" value="String.IsEqual(Container(9000).ListItem.Property(widget),Playlist) | String.IsEqual(Container(9000).ListItem.Property(widget),skinplaylists) | String.IsEqual(Container(9000).ListItem.Property(widget),librarydataprovider) | String.IsEqual(Container(9000).ListItem.Property(widget),scriptwidgets) | String.IsEqual(Container(9000).ListItem.Property(widget),extendedinfo)" />
+                    <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widgetType),tvshows)" />
+                    <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+                    <param name="list_id" value="8010" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon2" />
+                    <param name="item_layout_name_include" value="TVShowsWidgetItemsLayout" />
+                    <param name="width_widget" value="900" />
+                    <param name="width_widget_item" value="180" />
+                    <param name="left_widget_ra" value="910" />
+                    <param name="content_name" value="CommonIncludeContents3" />
+                    <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
+                    <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
+                </include>                        
+                <!-- MusicVideo 8011 -->
+                <include content="CommonWidgetInclude">
+                    <param name="left_widget" value="240" />
+                    <param name="visible_widget" value="Library.HasContent(MusicVideos)" />
+                    <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widget),RecentMusicVideo) | String.IsEqual(Container(9000).ListItem.Property(widget),RandomMusicVideo)" />
+                    <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+                    <param name="list_id" value="8011" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon4" />
+                    <param name="item_layout_name_include" value="AlbumsWidgetItemsLayout" />
+                    <param name="width_widget" value="800" />
+                    <param name="width_widget_item" value="200" />
+                    <param name="left_widget_ra" value="810" />
+                    <param name="content_name" value="CommonIncludeContents3" />
+                    <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
+                    <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
+                </include>       
                 <!-- MusicVideos Playlist 8012 -->
                 <include content="CommonWidgetInclude">
-                <param name="left_widget" value="240" />
-                <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist)" />
-                <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widgetType),musicvideos)" />
-                <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
-                <param name="list_id" value="8012" />
-                <param name="animation_name_include" value="AnimationWidgetCommon4" />
-                <param name="item_layout_name_include" value="AlbumsWidgetItemsLayout" />
-                <param name="width_widget" value="800" />
-                <param name="width_widget_item" value="200" />
-                <param name="left_widget_ra" value="810" />
-                <param name="content_name" value="CommonIncludeContents3" />
-                <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
-                <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
-            </include>
+                    <param name="left_widget" value="240" />
+                    <param name="visible_widget" value="String.IsEqual(Container(9000).ListItem.Property(widget),Playlist) | String.IsEqual(Container(9000).ListItem.Property(widget),skinplaylists) | String.IsEqual(Container(9000).ListItem.Property(widget),librarydataprovider) | String.IsEqual(Container(9000).ListItem.Property(widget),scriptwidgets) | String.IsEqual(Container(9000).ListItem.Property(widget),extendedinfo)" />
+                    <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widgetType),musicvideos)" />
+                    <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+                    <param name="list_id" value="8012" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon4" />
+                    <param name="item_layout_name_include" value="AlbumsWidgetItemsLayout" />
+                    <param name="width_widget" value="800" />
+                    <param name="width_widget_item" value="200" />
+                    <param name="left_widget_ra" value="810" />
+                    <param name="content_name" value="CommonIncludeContents3" />
+                    <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
+                    <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
+                </include>                
                 <!-- Albums 8013 -->
                 <include content="CommonWidgetInclude">
-                <param name="left_widget" value="240" />
-                <param name="visible_widget" value="Library.HasContent(Music)" />
-                <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widget),RecentAlbums) | String.IsEqual(Container(9000).ListItem.Property(widget),RecentPlayedAlbums) | String.IsEqual(Container(9000).ListItem.Property(widget),RandomAlbums) | String.IsEqual(Container(9000).ListItem.Property(widget),MostplayedAlbums) | String.IsEqual(Container(9000).ListItem.Property(widget),UnplayedAlbums)" />
-                <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
-                <param name="list_id" value="8013" />
-                <param name="animation_name_include" value="AnimationWidgetCommon4" />
-                <param name="item_layout_name_include" value="AlbumsWidgetItemsLayout" />
-                <param name="width_widget" value="800" />
-                <param name="width_widget_item" value="200" />
-                <param name="left_widget_ra" value="810" />
-                <param name="content_name" value="CommonIncludeContents3" />
-                <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
-                <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
-            </include>
+                    <param name="left_widget" value="240" />
+                    <param name="visible_widget" value="Library.HasContent(Music)" />
+                    <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widget),RecentAlbums) | String.IsEqual(Container(9000).ListItem.Property(widget),RecentPlayedAlbums) | String.IsEqual(Container(9000).ListItem.Property(widget),RandomAlbums) | String.IsEqual(Container(9000).ListItem.Property(widget),MostplayedAlbums) | String.IsEqual(Container(9000).ListItem.Property(widget),UnplayedAlbums)" />
+                    <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+                    <param name="list_id" value="8013" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon4" />
+                    <param name="item_layout_name_include" value="AlbumsWidgetItemsLayout" />
+                    <param name="width_widget" value="800" />
+                    <param name="width_widget_item" value="200" />
+                    <param name="left_widget_ra" value="810" />
+                    <param name="content_name" value="CommonIncludeContents3" />
+                    <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
+                    <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
+                </include>
                 <!-- Albums and Songs PlayList 8014 -->
                 <include content="CommonWidgetInclude">
-                <param name="left_widget" value="240" />
-                <param name="visible_widget" value="String.IsEqual(Container(9000).ListItem.Property(widget),Playlist)" />
-                <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widgetType),albums) | String.IsEqual(Container(9000).ListItem.Property(widgetType),songs)" />
-                <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
-                <param name="list_id" value="8014" />
-                <param name="animation_name_include" value="AnimationWidgetCommon4" />
-                <param name="item_layout_name_include" value="AlbumsWidgetItemsLayout" />
-                <param name="width_widget" value="800" />
-                <param name="width_widget_item" value="200" />
-                <param name="left_widget_ra" value="810" />
-                <param name="content_name" value="CommonIncludeContents3" />
-                <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
-                <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
-            </include>        
-            <!-- Artist 8015 -->
-            <include content="CommonWidgetInclude">
-                <param name="left_widget" value="190" />
-                <param name="visible_widget" value="Library.HasContent(Movies)" />
-                <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widget),RandomArtists)" />
-                <param name="label_title" value="$LOCALIZE[90006]" />
-                <param name="list_id" value="8015" />
-                <param name="animation_name_include" value="AnimationWidgetCommon2" />
-                <param name="item_layout_name_include" value="MoviesWidgetItemsLayout" />
-                <param name="width_widget" value="900" />
-                <param name="width_widget_item" value="180" />
-                <param name="left_widget_ra" value="910" />
-                <param name="content_name" value="CommonIncludeContents3" />
-                <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
-                <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
-            </include>          
-            <!-- Artist PlayList 8016 -->
-            <include content="CommonWidgetInclude">
-                <param name="left_widget" value="190" />
-                <param name="visible_widget" value="String.IsEqual(Container(9000).ListItem.Property(widget),Playlist)" />
-                <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widgetType),artists)" />
-                <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
-                <param name="list_id" value="8016" />
-                <param name="animation_name_include" value="AnimationWidgetCommon2" />
-                <param name="item_layout_name_include" value="MoviesWidgetItemsLayout" />
-                <param name="width_widget" value="900" />
-                <param name="width_widget_item" value="180" />
-                <param name="left_widget_ra" value="910" />
-                <param name="content_name" value="CommonIncludeContents3" />
-                <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
-                <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
-            </include>
-        </control>            
+                    <param name="left_widget" value="240" />
+                    <param name="visible_widget" value="String.IsEqual(Container(9000).ListItem.Property(widget),Playlist) | String.IsEqual(Container(9000).ListItem.Property(widget),skinplaylists) | String.IsEqual(Container(9000).ListItem.Property(widget),librarydataprovider) | String.IsEqual(Container(9000).ListItem.Property(widget),scriptwidgets) | String.IsEqual(Container(9000).ListItem.Property(widget),extendedinfo)" />
+                    <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widgetType),albums) | String.IsEqual(Container(9000).ListItem.Property(widgetType),songs)" />
+                    <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+                    <param name="list_id" value="8014" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon4" />
+                    <param name="item_layout_name_include" value="AlbumsWidgetItemsLayout" />
+                    <param name="width_widget" value="800" />
+                    <param name="width_widget_item" value="200" />
+                    <param name="left_widget_ra" value="810" />
+                    <param name="content_name" value="CommonIncludeContents3" />
+                    <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
+                    <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
+                </include>
+                <!-- Artist 8015 -->
+                <include content="CommonWidgetInclude">
+                    <param name="left_widget" value="190" />
+                    <param name="visible_widget" value="Library.HasContent(Movies)" />
+                    <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widget),RandomArtists)" />
+                    <param name="label_title" value="$LOCALIZE[90006]" />
+                    <param name="list_id" value="8015" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon2" />
+                    <param name="item_layout_name_include" value="MoviesWidgetItemsLayout" />
+                    <param name="width_widget" value="900" />
+                    <param name="width_widget_item" value="180" />
+                    <param name="left_widget_ra" value="910" />
+                    <param name="content_name" value="CommonIncludeContents3" />
+                    <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
+                    <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
+                </include>
+                <!-- Artist PlayList 8016 -->
+                <include content="CommonWidgetInclude">
+                    <param name="left_widget" value="190" />
+                    <param name="visible_widget" value="String.IsEqual(Container(9000).ListItem.Property(widget),Playlist) | String.IsEqual(Container(9000).ListItem.Property(widget),skinplaylists) | String.IsEqual(Container(9000).ListItem.Property(widget),librarydataprovider) | String.IsEqual(Container(9000).ListItem.Property(widget),scriptwidgets) | String.IsEqual(Container(9000).ListItem.Property(widget),extendedinfo)" />
+                    <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widgetType),artists)" />
+                    <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+                    <param name="list_id" value="8016" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon2" />
+                    <param name="item_layout_name_include" value="MoviesWidgetItemsLayout" />
+                    <param name="width_widget" value="900" />
+                    <param name="width_widget_item" value="180" />
+                    <param name="left_widget_ra" value="910" />
+                    <param name="content_name" value="CommonIncludeContents3" />
+                    <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
+                    <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
+                </include>
+                <!-- PVR 8017 -->
+                <include content="CommonWidgetInclude">
+                    <param name="left_widget" value="140" />
+                    <param name="visible_widget" value="String.IsEqual(Container(9000).ListItem.Property(widget),pvr)" />
+                    <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widgetType),pvr)" />
+                    <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+                    <param name="list_id" value="8017" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon" />
+                    <param name="item_layout_name_include" value="FavouritesWidgetItemsLayout" />
+                    <param name="width_widget" value="1000" />
+                    <param name="width_widget_item" value="200" />
+                    <param name="left_widget_ra" value="1010" />
+                    <param name="content_name" value="CommonIncludeContents3" />
+                    <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
+                    <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
+                </include>
+                <!-- PVR 8018 -->
+                <include content="CommonWidgetInclude">
+                    <param name="left_widget" value="140" />
+                    <param name="visible_widget" value="String.IsEqual(Container(9000).ListItem.Property(widget),scriptwidgets)" />
+                    <param name="visible_widget2" value="String.IsEmpty(Container(9000).ListItem.Property(widgetType)" />
+                    <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+                    <param name="list_id" value="8018" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon" />
+                    <param name="item_layout_name_include" value="PVRWidgetItemsLayout" />
+                    <param name="width_widget" value="1000" />
+                    <param name="width_widget_item" value="200" />
+                    <param name="left_widget_ra" value="1010" />
+                    <param name="content_name" value="CommonIncludeContents3" />
+                    <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
+                    <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
+                </include>                
+            </control>
             <control type="group">
                 <visible>String.IsEqual(Container(9000).ListItem.Property(widgetTarget),submenus)</visible>
                 <include>skinshortcuts-template-custom-widgets</include>
@@ -609,7 +641,7 @@
                         <param name="list_id" value="$PARAM[list_id]" />
                         <param name="height_widget_item" value="$PARAM[height_widget_item]" />
                         <param name="width_widget_item" value="$PARAM[width_widget_item]" />
-                    </include>                    
+                    </include>
                     <include content="$PARAM[content_name]">
                         <param name="content_target" value="$PARAM[content_target]" />
                         <param name="content_path" value="$PARAM[content_path]" />
@@ -890,7 +922,7 @@
                     <top>10</top>
                     <width>180</width>
                     <height>170</height>
-                    <texture>$INFO[ListItem.Icon]</texture>
+                    <texture>$VAR[PosterThumb3]</texture>
                     <aspectratio>keep</aspectratio>
                     <bordertexture border="5">button-nofocus.png</bordertexture>
                     <bordersize>5</bordersize>
@@ -967,7 +999,7 @@
                     <width>150</width>
                     <height>5</height>
                     <info>ListItem.PercentPlayed</info>
-                    <visible>!Stringcompare(ListItem.PercentPlayed,0)</visible>
+                    <visible>!String.IsEqual(ListItem.PercentPlayed,0)</visible>
                 </control>
             </itemlayout>
             <focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
@@ -995,7 +1027,7 @@
                     <top>10</top>
                     <width>160</width>
                     <height>170</height>
-                    <texture>$INFO[ListItem.Icon]</texture>
+                    <texture>$VAR[PosterThumb]</texture>
                     <aspectratio>keep</aspectratio>
                     <bordertexture border="5">button-nofocus.png</bordertexture>
                     <bordersize>5</bordersize>
@@ -1034,9 +1066,9 @@
                     <width>150</width>
                     <height>5</height>
                     <info>ListItem.PercentPlayed</info>
-                    <visible>!Stringcompare(ListItem.PercentPlayed,0)</visible>
+                    <visible>!String.IsEqual(ListItem.PercentPlayed,0)</visible>
                 </control>
-            </focusedlayout>
+            </focusedlayout>        
         </definition>
     </include>
     <include name="EpisodesWidgetItemsLayout">
@@ -1162,7 +1194,7 @@
                 </control>
             </focusedlayout>        
         </definition>
-    </include>    
+    </include>
     <include name="TVShowsWidgetItemsLayout">
         <param name="height_widget_item" default="220" />
         <param name="width_widget_item" default="180" />
@@ -1238,7 +1270,7 @@
                     <top>10</top>
                     <width>160</width>
                     <height>170</height>
-                    <texture>$INFO[ListItem.Icon]</texture>
+                    <texture>$VAR[PosterThumb]</texture>
                     <aspectratio>keep</aspectratio>
                     <bordertexture border="5">button-nofocus.png</bordertexture>
                     <bordersize>5</bordersize>
@@ -1286,7 +1318,7 @@
                 </control>
             </focusedlayout>        
         </definition>
-	</include>
+    </include>
     <include name="AlbumsWidgetItemsLayout">
         <param name="height_widget_item" default="220" />
         <param name="width_widget_item" default="200" />
@@ -1409,7 +1441,7 @@
                 </control>
             </focusedlayout>        
         </definition>
-    </include>    
+    </include>
     <include name="PVRWidgetItemsLayout">
         <param name="height_widget_item" default="220" />
         <param name="width_widget_item" default="200" />
@@ -1532,7 +1564,7 @@
                 </control>
             </focusedlayout>        
         </definition>
-    </include>    
+    </include>
     <!-- Widget Contents -->
 	<include name="WeatherDailyContents">          
         <include content="WeatherDailyWidgetItem">
