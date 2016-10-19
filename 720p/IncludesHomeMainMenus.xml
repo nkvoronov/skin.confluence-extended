@@ -204,7 +204,6 @@
             <include condition="StringCompare(Skin.String(HomeItem.$PARAM[id].Type),movies)">VisibleMovies</include>
             <include condition="StringCompare(Skin.String(HomeItem.$PARAM[id].Type),tvshows)">VisibleTVShows</include>
             <include condition="StringCompare(Skin.String(HomeItem.$PARAM[id].Type),musicvideos)">VisibleMusicVideo</include>
-            <include condition="StringCompare(Skin.String(HomeItem.$PARAM[id].Type),music)">VisibleMusic</include>
             <include condition="StringCompare(Skin.String(HomeItem.$PARAM[id].Type),dvd)">VisiblePlayDisc</include>
         </item>
     </include>
@@ -225,9 +224,6 @@
     </include>
     <include name="VisibleMusicVideo">
         <visible>Library.HasContent(MusicVideos)</visible>
-    </include>
-    <include name="VisibleMusic">
-        <visible>Library.HasContent(Music)</visible>
     </include>
     <include name="VisiblePlayDisc">
         <visible>System.HasMediaDVD</visible>
