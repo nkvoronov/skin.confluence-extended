@@ -486,6 +486,20 @@
 						<enable>System.HasAddon(script.skin.helper.service)</enable>
 					</control>
                     <control type="radiobutton" id="129">
+                        <description>Enable PVR Thumbs</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>- $LOCALIZE[90043]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(SkinHelper.EnablePVRThumbs)</onclick>
+						<selected>Skin.HasSetting(SkinHelper.EnablePVRThumbs)</selected>
+						<enable>System.HasAddon(script.skin.helper.service)</enable>
+					</control>
+                    <control type="radiobutton" id="130">
                         <description>Enable Animated Posters</description>
 						<width>750</width>
 						<height>40</height>

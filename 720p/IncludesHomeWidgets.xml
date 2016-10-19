@@ -380,7 +380,7 @@
                 <!-- Movies Playlist 8006 -->
                 <include name="CommonWidgetInclude">
                     <param name="left_widget" value="190" />
-                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist)" />
+                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist) | StringCompare(Container(9000).ListItem.Property(widget),skinplaylists) | StringCompare(Container(9000).ListItem.Property(widget),librarydataprovider) | StringCompare(Container(9000).ListItem.Property(widget),scriptwidgets) | StringCompare(Container(9000).ListItem.Property(widget),extendedinfo)" />
                     <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widgetType),movies)" />
                     <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
                     <param name="list_id" value="8006" />
@@ -412,7 +412,7 @@
                 <!-- Episodes Playlist 8008 -->
                 <include name="CommonWidgetInclude">
                     <param name="left_widget" value="160" />
-                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist)" />
+                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist) | StringCompare(Container(9000).ListItem.Property(widget),skinplaylists) | StringCompare(Container(9000).ListItem.Property(widget),librarydataprovider) | StringCompare(Container(9000).ListItem.Property(widget),scriptwidgets) | StringCompare(Container(9000).ListItem.Property(widget),extendedinfo)" />
                     <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widgetType),episodes)" />
                     <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
                     <param name="list_id" value="8008" />
@@ -444,7 +444,7 @@
                 <!-- TVShows Playlist 8010 -->
                 <include name="CommonWidgetInclude">
                     <param name="left_widget" value="190" />
-                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist)" />
+                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist) | StringCompare(Container(9000).ListItem.Property(widget),skinplaylists) | StringCompare(Container(9000).ListItem.Property(widget),librarydataprovider) | StringCompare(Container(9000).ListItem.Property(widget),scriptwidgets) | StringCompare(Container(9000).ListItem.Property(widget),extendedinfo)" />
                     <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widgetType),tvshows)" />
                     <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
                     <param name="list_id" value="8010" />
@@ -476,7 +476,7 @@
                 <!-- MusicVideos Playlist 8012 -->
                 <include name="CommonWidgetInclude">
                     <param name="left_widget" value="240" />
-                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist)" />
+                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist) | StringCompare(Container(9000).ListItem.Property(widget),skinplaylists) | StringCompare(Container(9000).ListItem.Property(widget),librarydataprovider) | StringCompare(Container(9000).ListItem.Property(widget),scriptwidgets) | StringCompare(Container(9000).ListItem.Property(widget),extendedinfo)" />
                     <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widgetType),musicvideos)" />
                     <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
                     <param name="list_id" value="8012" />
@@ -508,7 +508,7 @@
                 <!-- Albums and Songs PlayList 8014 -->
                 <include name="CommonWidgetInclude">
                     <param name="left_widget" value="240" />
-                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist)" />
+                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist) | StringCompare(Container(9000).ListItem.Property(widget),skinplaylists) | StringCompare(Container(9000).ListItem.Property(widget),librarydataprovider) | StringCompare(Container(9000).ListItem.Property(widget),scriptwidgets) | StringCompare(Container(9000).ListItem.Property(widget),extendedinfo)" />
                     <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widgetType),albums) | StringCompare(Container(9000).ListItem.Property(widgetType),songs)" />
                     <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
                     <param name="list_id" value="8014" />
@@ -540,7 +540,7 @@
                 <!-- Artist PlayList 8016 -->
                 <include name="CommonWidgetInclude">
                     <param name="left_widget" value="190" />
-                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist)" />
+                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist) | StringCompare(Container(9000).ListItem.Property(widget),skinplaylists) | StringCompare(Container(9000).ListItem.Property(widget),librarydataprovider) | StringCompare(Container(9000).ListItem.Property(widget),scriptwidgets) | StringCompare(Container(9000).ListItem.Property(widget),extendedinfo)" />
                     <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widgetType),artists)" />
                     <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
                     <param name="list_id" value="8016" />
@@ -549,6 +549,38 @@
                     <param name="width_widget" value="900" />
                     <param name="width_widget_item" value="180" />
                     <param name="left_widget_ra" value="910" />
+                    <param name="content_name" value="CommonIncludeContents3" />
+                    <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
+                    <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
+                </include>
+                <!-- PVR 8017 -->
+                <include name="CommonWidgetInclude">
+                    <param name="left_widget" value="140" />
+                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),pvr)" />
+                    <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widgetType),pvr)" />
+                    <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+                    <param name="list_id" value="8017" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon" />
+                    <param name="item_layout_name_include" value="FavouritesWidgetItemsLayout" />
+                    <param name="width_widget" value="1000" />
+                    <param name="width_widget_item" value="200" />
+                    <param name="left_widget_ra" value="1010" />
+                    <param name="content_name" value="CommonIncludeContents3" />
+                    <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
+                    <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
+                </include>
+                <!-- PVR 8018 -->
+                <include name="CommonWidgetInclude">
+                    <param name="left_widget" value="140" />
+                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),scriptwidgets)" />
+                    <param name="visible_widget2" value="IsEmpty(Container(9000).ListItem.Property(widgetType)" />
+                    <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+                    <param name="list_id" value="8018" />
+                    <param name="animation_name_include" value="AnimationWidgetCommon" />
+                    <param name="item_layout_name_include" value="PVRWidgetItemsLayout" />
+                    <param name="width_widget" value="1000" />
+                    <param name="width_widget_item" value="200" />
+                    <param name="left_widget_ra" value="1010" />
                     <param name="content_name" value="CommonIncludeContents3" />
                     <param name="content_target" value="$INFO[Container(9000).ListItem.Property(widgetTarget)]" />
                     <param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath)]" />
@@ -890,7 +922,7 @@
                     <top>10</top>
                     <width>180</width>
                     <height>170</height>
-                    <texture>$INFO[ListItem.Icon]</texture>
+                    <texture>$VAR[PosterThumb3]</texture>
                     <aspectratio>keep</aspectratio>
                     <bordertexture border="5">button-nofocus.png</bordertexture>
                     <bordersize>5</bordersize>
@@ -995,7 +1027,7 @@
                     <top>10</top>
                     <width>160</width>
                     <height>170</height>
-                    <texture>$INFO[ListItem.Icon]</texture>
+                    <texture>$VAR[PosterThumb]</texture>
                     <aspectratio>keep</aspectratio>
                     <bordertexture border="5">button-nofocus.png</bordertexture>
                     <bordersize>5</bordersize>
@@ -1238,7 +1270,7 @@
                     <top>10</top>
                     <width>160</width>
                     <height>170</height>
-                    <texture>$INFO[ListItem.Icon]</texture>
+                    <texture>$VAR[PosterThumb]</texture>
                     <aspectratio>keep</aspectratio>
                     <bordertexture border="5">button-nofocus.png</bordertexture>
                     <bordersize>5</bordersize>

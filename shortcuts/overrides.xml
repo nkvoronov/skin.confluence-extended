@@ -44,6 +44,7 @@
     <groupoverride group="*" disable_groups="powermenu" condition="">SetProperty(MenuBackground,$VAR[HomeBackground],home)</groupoverride>
     <!-- Menus Groupings -->
     <menus-groupings>
+        <shortcut label="$ADDON[script.skin.helper.service 32062]" type="" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=smartshortcuts</shortcut>        
         <!-- Weather -->
         <node label="8">
             <shortcut label="8" type="8" icon="DefaultFolder.png">ActivateWindow(Weather)</shortcut>
@@ -261,8 +262,7 @@
             <node label="1036">
                 <content>favourite</content>
             </node>
-        </node>
-        <shortcut label="$ADDON[script.skin.helper.service 32062]" type="" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=smartshortcuts</shortcut>        
+        </node>        
     </menus-groupings>
     <!-- Addons Groupings -->
     <addons-groupings>
@@ -287,8 +287,9 @@
     <radio-groupings>
         <content>pvr-radio</content>
     </radio-groupings>
-    <widgetRename>False</widgetRename>
+    <widgetRename>True</widgetRename>
     <widget-groupings>
+        <shortcut label="$ADDON[script.skin.helper.service 32062]" type="" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=skinplaylists,librarydataprovider,scriptwidgets,extendedinfo,pvr</shortcut>
         <!-- Weather -->
         <node label="8">
             <shortcut label="89302" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[89302]" widget="DailyWeather" widgetType="weathers" widgetTarget="list">skin</shortcut>
@@ -343,7 +344,6 @@
         <!-- Favourites -->
         <node label="1036">
             <shortcut label="1036" type="1036" icon="DefaultFolder.png" widgetName="$LOCALIZE[1036]" widget="Favourites" widgetType="favourites" widgetTarget="list">skin</shortcut>
-        </node>
-        <shortcut label="$ADDON[script.skin.helper.service 32062]" type="" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=skinplaylists,librarydataprovider,scriptwidgets,extendedinfo,smartshortcuts,pvr,smartishwidgets</shortcut>
+        </node>        
     </widget-groupings>
 </overrides>

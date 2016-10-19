@@ -1044,11 +1044,11 @@ msgstr "Ліміт елементів"
 
 msgctxt "#90010"
 msgid "Enable SmartShortcuts Playlists"
-msgstr "Дозволити SmartShortcuts-плейлисти"
+msgstr "Дозволити Смарт ярлики для плейлистів"
 
 msgctxt "#90011"
 msgid "Enable SmartShortcuts Favorites"
-msgstr "Дозволити SmartShortcuts-обране"
+msgstr "Дозволити Смарт ярлики для обраного"
 
 msgctxt "#90012"
 msgid "Enable Animated Posters"
@@ -1109,3 +1109,7 @@ msgstr "Шлях:"
 msgctxt "#90042"
 msgid "Duration (sec)"
 msgstr "Тривалість (сек)"
+
+msgctxt "#90043"
+msgid "Enable PVR Thumbs"
+msgstr "Дозволити PVR ілюстрації"
