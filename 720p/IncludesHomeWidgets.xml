@@ -559,7 +559,7 @@
                 <!-- Episodes librarydataprovider 8017 -->
                 <include name="CommonWidgetInclude">
                     <param name="left_widget" value="160" />
-                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),librarydataprovider) | StringCompare(Container(9000).ListItem.Property(widget),scriptwidgets) | StringCompare(Container(9000).ListItem.Property(widget),extendedinfo)" />
+                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),librarydataprovider)" />
                     <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widgetType),episodes)" />
                     <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
                     <param name="list_id" value="8017" />
@@ -722,7 +722,7 @@
                 <include name="CommonWidgetInclude">
                     <param name="left_widget" value="240" />
                     <param name="visible_widget" value="Library.HasContent(MusicVideos)" />
-                    <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widget),RecentMusicVideo) | StringCompare(Container(9000).ListItem.Property(widget),RandomMusicVideo)" />
+                    <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widget),RecentMusicVideo)" />
                     <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
                     <param name="list_id" value="8027" />
                     <param name="animation_name_include" value="AnimationWidgetCommon4" />
@@ -753,7 +753,7 @@
                 <!-- MusicVideos Playlist 8029 -->
                 <include name="CommonWidgetInclude">
                     <param name="left_widget" value="240" />
-                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist) | StringCompare(Container(9000).ListItem.Property(widget),skinplaylists) | StringCompare(Container(9000).ListItem.Property(widget),librarydataprovider) | StringCompare(Container(9000).ListItem.Property(widget),scriptwidgets) | StringCompare(Container(9000).ListItem.Property(widget),extendedinfo)" />
+                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist)" />
                     <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widgetType),musicvideos)" />
                     <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
                     <param name="list_id" value="8029" />
@@ -914,8 +914,8 @@
                 <!-- Albums PlayList 8039 -->
                 <include name="CommonWidgetInclude">
                     <param name="left_widget" value="240" />
-                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist) | StringCompare(Container(9000).ListItem.Property(widget),skinplaylists) | StringCompare(Container(9000).ListItem.Property(widget),librarydataprovider) | StringCompare(Container(9000).ListItem.Property(widget),scriptwidgets) | StringCompare(Container(9000).ListItem.Property(widget),extendedinfo)" />
-                    <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widgetType),albums) | StringCompare(Container(9000).ListItem.Property(widgetType),songs)" />
+                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist)" />
+                    <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widgetType),albums)" />
                     <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
                     <param name="list_id" value="8039" />
                     <param name="animation_name_include" value="AnimationWidgetCommon4" />
@@ -930,7 +930,7 @@
                 <!-- Albums skinplaylists 8040 -->
                 <include name="CommonWidgetInclude">
                     <param name="left_widget" value="240" />
-                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),skinplaylists) | StringCompare(Container(9000).ListItem.Property(widget),librarydataprovider) | StringCompare(Container(9000).ListItem.Property(widget),scriptwidgets) | StringCompare(Container(9000).ListItem.Property(widget),extendedinfo)" />
+                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),skinplaylists)" />
                     <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widgetType),albums)" />
                     <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
                     <param name="list_id" value="8040" />
@@ -946,7 +946,7 @@
                 <!-- Albums librarydataprovider 8041 -->
                 <include name="CommonWidgetInclude">
                     <param name="left_widget" value="240" />
-                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),librarydataprovider) | StringCompare(Container(9000).ListItem.Property(widget),scriptwidgets) | StringCompare(Container(9000).ListItem.Property(widget),extendedinfo)" />
+                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),librarydataprovider)" />
                     <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widgetType),albums)" />
                     <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
                     <param name="list_id" value="8041" />
@@ -962,7 +962,7 @@
                 <!-- Albums scriptwidgets 8042 -->
                 <include name="CommonWidgetInclude">
                     <param name="left_widget" value="240" />
-                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),scriptwidgets) | StringCompare(Container(9000).ListItem.Property(widget),extendedinfo)" />
+                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),scriptwidgets)" />
                     <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widgetType),albums)" />
                     <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
                     <param name="list_id" value="8042" />
@@ -995,7 +995,7 @@
                 <!-- Songs PlayList 8044 -->
                 <include name="CommonWidgetInclude">
                     <param name="left_widget" value="240" />
-                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist) | StringCompare(Container(9000).ListItem.Property(widget),skinplaylists) | StringCompare(Container(9000).ListItem.Property(widget),librarydataprovider) | StringCompare(Container(9000).ListItem.Property(widget),scriptwidgets) | StringCompare(Container(9000).ListItem.Property(widget),extendedinfo)" />
+                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),Playlist)" />
                     <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widgetType),songs)" />
                     <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
                     <param name="list_id" value="8044" />
@@ -1011,7 +1011,7 @@
                 <!-- Songs skinplaylists 8045 -->
                 <include name="CommonWidgetInclude">
                     <param name="left_widget" value="240" />
-                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),skinplaylists) | StringCompare(Container(9000).ListItem.Property(widget),librarydataprovider) | StringCompare(Container(9000).ListItem.Property(widget),scriptwidgets) | StringCompare(Container(9000).ListItem.Property(widget),extendedinfo)" />
+                    <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),skinplaylists)" />
                     <param name="visible_widget2" value="StringCompare(Container(9000).ListItem.Property(widgetType),songs)" />
                     <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
                     <param name="list_id" value="8045" />
