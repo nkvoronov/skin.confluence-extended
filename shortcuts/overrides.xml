@@ -30,7 +30,7 @@
     <widget label="$LOCALIZE[89302]" icon="DefaultFolder.png" type="weathers" path="skin" target="list">DailyWeather</widget>
     <widget label="$LOCALIZE[89031]" icon="DefaultRecentlyAddedMovies.png" type="movies" path="videodb://recentlyaddedmovies/" target="videos">RecentMovies</widget>
     <widget label="$LOCALIZE[89033]" icon="DefaultRecentlyAddedEpisodes.png" type="episodes" path="videodb://recentlyaddedepisodes/" target="videos">RecentEpisodes</widget>
-    <widget label="$LOCALIZE[89036]" icon="DefaultRecentlyAddedMusicVideos.png" type="albums" path="videodb://recentlyaddedmusicvideos/" target="videos">RecentMusicVideo</widget>
+    <widget label="$LOCALIZE[89036]" icon="DefaultRecentlyAddedMusicVideos.png" type="musicvideos" path="videodb://recentlyaddedmusicvideos/" target="videos">RecentMusicVideo</widget>
     <widget label="$LOCALIZE[89025]" icon="DefaultMusicRecentlyAdded.png" type="albums" path="musicdb://recentlyaddedalbums/" target="music">RecentAlbums</widget>   
     <!-- Default Widgets -->
     <widgetdefault labelID="weather">DailyWeather</widgetdefault>
@@ -294,7 +294,7 @@
         <node label="8">
             <shortcut label="89302" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[89302]" widget="DailyWeather" widgetType="weathers" widgetTarget="list">skin</shortcut>
             <shortcut label="89303" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[89303]" widget="HourlyWeather" widgetType="weathers" widgetTarget="list">skin</shortcut>
-            <shortcut label="33034" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[33034]" widget="H36Weather" widgetType="weatherbig" widgetTarget="list" condition="Skin.HasSetting(LowerMenu)">skin</shortcut>
+            <shortcut label="33034" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[33034]" widget="H36Weather" widgetType="weathers" widgetTarget="list" condition="Skin.HasSetting(LowerMenu)">skin</shortcut>
         </node>
         <!-- LiveTV -->
         <node label="19020" condition="PVR.HasTVChannels">
@@ -320,8 +320,8 @@
         </node>
         <!-- MusicVideos -->
         <node label="20389">
-            <shortcut label="89036" type="20389" icon="DefaultRecentlyAddedMusicVideos.png" widgetName="$LOCALIZE[89036]" widget="RecentMusicVideo" widgetType="albums" widgetTarget="videos">videodb://recentlyaddedmusicvideos/</shortcut>
-            <shortcut label="89038" type="20389" icon="DefaultFolder.png" widgetName="$LOCALIZE[89038]" widget="RandomMusicVideo" widgetType="albums" widgetTarget="videos">special://skin/extras/playlists/random_musicvideos.xsp</shortcut>
+            <shortcut label="89036" type="20389" icon="DefaultRecentlyAddedMusicVideos.png" widgetName="$LOCALIZE[89036]" widget="RecentMusicVideo" widgetType="musicvideos" widgetTarget="videos">videodb://recentlyaddedmusicvideos/</shortcut>
+            <shortcut label="89038" type="20389" icon="DefaultFolder.png" widgetName="$LOCALIZE[89038]" widget="RandomMusicVideo" widgetType="musicvideos" widgetTarget="videos">special://skin/extras/playlists/random_musicvideos.xsp</shortcut>
         </node>
         <!-- Music -->
         <node label="2">
