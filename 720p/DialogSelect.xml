@@ -264,8 +264,10 @@
 				<control type="grouplist" id="90">
 					<left>612</left>
 					<top>100</top>
-					<onleft>3</onleft>
-					<onright>3</onright>
+					<onleft condition="Control.IsVisible(3)">3</onleft>
+					<onleft condition="Control.IsVisible(6)">6</onleft>
+					<onright condition="Control.IsVisible(3)">3</onright>
+					<onright condition="Control.IsVisible(6)">6</onright>
 					<control type="button" id="5">
 						<description>Manual button</description>
 						<width>200</width>
