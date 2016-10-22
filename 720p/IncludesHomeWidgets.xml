@@ -1190,7 +1190,7 @@
                 <include content="CommonWidgetInclude">
                     <param name="left_widget" value="140" />
                     <param name="visible_widget" value="String.IsEqual(Container(9000).ListItem.Property(widget),scriptwidgets)" />
-                    <param name="visible_widget2" value="String.IsEmpty(Container(9000).ListItem.Property(widgetType)" />
+                    <param name="visible_widget2" value="String.IsEmpty(Container(9000).ListItem.Property(widgetType))" />
                     <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
                     <param name="list_id" value="8056" />
                     <param name="animation_name_include" value="AnimationWidgetCommon" />
@@ -1254,7 +1254,7 @@
                     <scrolltime>200</scrolltime>
                     <orientation>Horizontal</orientation>
                     <preloaditems>1</preloaditems>
-                    <include name="$PARAM[item_layout_name_include]">
+                    <include content="$PARAM[item_layout_name_include]">
                         <param name="list_id" value="$PARAM[list_id]" />
                         <param name="height_widget_item" value="$PARAM[height_widget_item]" />
                         <param name="width_widget_item" value="$PARAM[width_widget_item]" />
