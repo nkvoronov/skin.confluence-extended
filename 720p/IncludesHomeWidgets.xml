@@ -1190,7 +1190,7 @@
                 <include name="CommonWidgetInclude">
                     <param name="left_widget" value="140" />
                     <param name="visible_widget" value="StringCompare(Container(9000).ListItem.Property(widget),scriptwidgets)" />
-                    <param name="visible_widget2" value="IsEmpty(Container(9000).ListItem.Property(widgetType)" />
+                    <param name="visible_widget2" value="IsEmpty(Container(9000).ListItem.Property(widgetType))" />
                     <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
                     <param name="list_id" value="8056" />
                     <param name="animation_name_include" value="AnimationWidgetCommon" />
