@@ -3,9 +3,9 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
     <!-- -->
     <include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
-    <onload condition="!String.IsEmpty(Window(home).Property(MenuItemActive))">ClearProperty(MenuItemActive,home)</onload>
-    <onload condition="!String.IsEmpty(Window(home).Property(MenuBackground))">ClearProperty(MenuBackground,home)</onload>    
-    <onload condition="!String.IsEmpty(Window(home).Property(MenuBackgroundHomeFanart))">ClearProperty(MenuBackgroundHomeFanart,home)</onload>
+    <onload condition="!String.IsEmpty(Window(Home).Property(MenuItemActive))">ClearProperty(MenuItemActive,Home)</onload>
+    <onload condition="!String.IsEmpty(Window(Home).Property(MenuBackground))">ClearProperty(MenuBackground,Home)</onload>    
+    <onload condition="!String.IsEmpty(Window(Home).Property(MenuBackgroundHomeFanart))">ClearProperty(MenuBackgroundHomeFanart,Home)</onload>
     <!-- ScriptFavourites -->
     <onload condition="System.HasAddon(script.favourites)">RunScript(script.favourites)</onload>
     <onload condition="System.HasAddon(script.pvr.favourites)+[PVR.HasTVChannels | PVR.HasRadioChannels]">RunScript(script.pvr.favourites)</onload>
@@ -47,8 +47,8 @@
 			<height>90</height>
 			<texture>floor.png</texture>
 			<animation effect="rotatex" end="45" time="0" center="620,0" condition="true">Conditional</animation>
-			<animation effect="slide" time="200" condition="Window.Previous(home)">WindowOpen</animation>
-			<animation effect="slide" time="200" condition="Window.Next(home)">WindowClose</animation>
+			<animation effect="slide" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="slide" time="200" condition="Window.Next(Home)">WindowClose</animation>
 			<visible>!Skin.HasSetting(NoFloor)</visible>
 		</control>
 		<!-- LiveTV Info -->
@@ -56,7 +56,7 @@
 			<depth>DepthMenu</depth>
 			<left>0</left>
 			<top>50</top>
-			<visible>Player.HasMedia + VideoPlayer.Content(LiveTV) + !Skin.HasSetting(HomePageVideoInfo) + String.IsEmpty(Window(videos).Property(PlayingBackgroundMedia))</visible>
+			<visible>Player.HasMedia + VideoPlayer.Content(LiveTV) + !Skin.HasSetting(HomePageVideoInfo) + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
             <animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
@@ -1075,12 +1075,12 @@
 				<texture>kodi-logo.png</texture>
 				<include>VisibleFadeEffect</include>
 				<include>Window_OpenClose_Animation</include>
-				<visible>!Skin.HasSetting(HomePageWeatherInfo) + !Skin.HasSetting(NoLogo)</visible>
+				<visible>!Skin.HasSetting(homepageWeatherinfo) + !Skin.HasSetting(NoLogo)</visible>
 			</control>
 			<control type="group">
 				<left>20</left>
 				<top>0</top>
-				<visible>Skin.HasSetting(HomePageWeatherInfo) + !String.IsEmpty(Weather.Plugin)</visible>
+				<visible>Skin.HasSetting(homepageWeatherinfo) + !String.IsEmpty(Weather.Plugin)</visible>
 				<include>Window_OpenClose_Animation</include>
                 <!-- Current Weather Icon -->
 				<control type="image">
@@ -1093,7 +1093,7 @@
                     <texture>$VAR[CurrentWeatherIcon]</texture>
 				</control>
 				<control type="label">
-					<description>Location Label</description>
+					<description>Location label</description>
 					<left>65</left>
 					<top>5</top>
 					<width>500</width>
@@ -1103,7 +1103,7 @@
 					<font>font10</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>$INFO[Window(weather).Property(Location)]</label>
+					<label>$INFO[Window(Weather).Property(Location)]</label>
 				</control>
 				<control type="grouplist">
 					<left>65</left>
@@ -1122,7 +1122,7 @@
 						<font>font28_title</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window(weather).Property(Current.Temperature)][/B]</label>
+						<label>[B]$INFO[Window(Weather).Property(Current.Temperature)][/B]</label>
 					</control>
 					<control type="label">
 						<description>Temp Units</description>
@@ -1133,7 +1133,7 @@
 						<label>$INFO[System.TemperatureUnits]</label>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<visible>!String.IsEmpty(Window(weather).Property(Current.Temperature))</visible>
+						<visible>!String.IsEmpty(Window(Weather).Property(Current.Temperature))</visible>
 					</control>
 					<control type="label">
 						<description>Conditions Label</description>
@@ -1141,7 +1141,7 @@
 						<height>22</height>
 						<font>font10</font>
 						<aligny>center</aligny>
-						<label>$INFO[Window(weather).Property(Current.Condition),  ]</label>
+						<label>$INFO[Window(Weather).Property(Current.Condition),  ]</label>
 						<textcolor>grey2</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -1149,7 +1149,7 @@
 			</control>
 			<include>Clock</include>
 			<control type="label">
-				<description>Date Label</description>
+				<description>Date label</description>
 				<right>20</right>
 				<top>35</top>
 				<width>300</width>
