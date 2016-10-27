@@ -16,14 +16,6 @@ msgstr ""
 "Language: uk_UA\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#[Consistency] Make terms, settings names, brands and other minutiae, consistent throughout file.
-#[Capitalization] Avoid capitalizing every second word. See http://grammarist.com/capitalization/
-#For example, prefer wording as "This new string" instead of "This New String".
-#[Referencing] If a suitable string already exists, reuse it, making a note of where it's used!
-#[Description / location] For example, "#. Description of some setting" used on "#: xbmc/addons/guidialogaddoninfo.cpp"
-#When writing a description or setting, refer to a setting name in quotes. See existing entries for guidance.
-#For example, "Press \"OK\" for \"All seasons\"" instead of "Press OK for All seasons" after first word.
-
 msgctxt "#31000"
 msgid "Change your"
 msgstr "Змініть"
@@ -208,7 +200,6 @@ msgctxt "#31113"
 msgid "Show KODI logo"
 msgstr "Показувати KODI логотип"
 
-#. In main language strings its used as submenu
 msgctxt "#31118"
 msgid "Home page programs submenu"
 msgstr "Субменю сторінки програм"
@@ -432,8 +423,6 @@ msgstr "Показати або приховати екран входу при 
 msgctxt "#31423"
 msgid "Select the profile that will be used at startup when the login screen is disabled."
 msgstr "Вибрати профіль, що буде використовуватися при запуску, коли екран входу вимкнено."
-
-#empty strings from id 31424 to 31429
 
 msgctxt "#31430"
 msgid "[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during playback · Configure how media content is played"

@@ -269,8 +269,8 @@
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(Favourites),return)</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[89702])</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
             </item>
             <item>
                 <description>Random Movies</description>
@@ -278,8 +278,8 @@
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(2125))</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[89032])</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
                 <visible>Library.HasContent(Movies)</visible>
             </item>
             <item>
@@ -288,8 +288,8 @@
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(2124))</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[89035])</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
                 <visible>Library.HasContent(TVShows)</visible>
             </item>
             <item>
@@ -298,8 +298,8 @@
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(2123))</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[89027])</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
                 <visible>Library.HasContent(Music)</visible>
             </item>
             <item>
@@ -308,8 +308,8 @@
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(2126))</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[89038])</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
                 <visible>Library.HasContent(MusicVideos)</visible>
             </item>
             <item>
@@ -318,8 +318,8 @@
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Path,AutoSuggest)</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[89705])</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
             </item>
             <item>
                 <description>Eject DISC</description>
@@ -327,8 +327,8 @@
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Path,EjectTray())</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[89706])</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
             </item>
             <item>
                 <description>Skin Settings</description>
@@ -336,8 +336,8 @@
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(SkinSettings),return)</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[166])</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
             </item>
             <item>
                 <description>Shutdown Menu</description>
@@ -345,8 +345,8 @@
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(ShutdownMenu))</onclick>
                 <onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[89707])</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
             </item>
             <item>
                 <description>Shutdown Menu</description>
@@ -354,8 +354,8 @@
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString(UsrPwrBtnCmd.Path,ActivateWindow(ShutdownMenu))</onclick>
                 <onclick>Skin.SetString(UsrPwrBtnCmd.Label,$LOCALIZE[89707])</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
             </item>
             <item>
                 <description>Skin Settings</description>
@@ -363,8 +363,8 @@
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString(UsrPwrBtnCmd.Path,ActivateWindow(SkinSettings))</onclick>
                 <onclick>Skin.SetString(UsrPwrBtnCmd.Label,$LOCALIZE[166])</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
             </item> 
             <item>
                 <description>Exit</description>
@@ -372,8 +372,8 @@
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString(UsrPwrBtnCmd.Path,Quit)</onclick>
                 <onclick>Skin.SetString(UsrPwrBtnCmd.Label,$LOCALIZE[13012])</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
             </item>
             <item>
                 <description>Shutdown</description>
@@ -381,8 +381,8 @@
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString(UsrPwrBtnCmd.Path,Shutdown)</onclick>
                 <onclick>Skin.SetString(UsrPwrBtnCmd.Label,$LOCALIZE[13005])</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
             </item>
             <item>
                 <description>Suspend</description>
@@ -390,8 +390,8 @@
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString(UsrPwrBtnCmd.Path,Suspend)</onclick>
                 <onclick>Skin.SetString(UsrPwrBtnCmd.Label,$LOCALIZE[13011])</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
             </item>
             <item>
                 <description>Hibernate</description>
@@ -399,8 +399,8 @@
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString(UsrPwrBtnCmd.Path,Hibernate)</onclick>
                 <onclick>Skin.SetString(UsrPwrBtnCmd.Label,$LOCALIZE[13010])</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
             </item> 
             <item>
                 <description>Reboot</description>
@@ -408,8 +408,8 @@
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString(UsrPwrBtnCmd.Path,Reboot)</onclick>
                 <onclick>Skin.SetString(UsrPwrBtnCmd.Label,$LOCALIZE[13013])</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
             </item>
             <item>
                 <description>Log Off</description>
@@ -417,8 +417,8 @@
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetString(UsrPwrBtnCmd.Path,System.LogOff)</onclick>
                 <onclick>Skin.SetString(UsrPwrBtnCmd.Label,$LOCALIZE[13200] $LOCALIZE[20126])</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>String.IsEqual(Window(home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
             </item>      
             <item>
                 <description>Video addons</description>
@@ -426,12 +426,12 @@
                 <onclick>Skin.Reset(UsrSelectAddon)</onclick>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetAddon(UsrSelectAddon,xbmc.addon.video)</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$INFO[system.addontitle(Skin.String(UsrSelectAddon))])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Path,RunAddon($INFO[Skin.String(UsrSelectAddon)]))</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Icon,$INFO[system.addonicon(Skin.String(UsrSelectAddon))])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!String.IsEqual(Window(home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$INFO[system.addontitle(Skin.String(UsrSelectAddon))])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,RunAddon($INFO[Skin.String(UsrSelectAddon)]))</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,$INFO[system.addonicon(Skin.String(UsrSelectAddon))])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
             </item>
             <item>
                 <description>Music addons</description>
@@ -439,12 +439,12 @@
                 <onclick>Skin.Reset(UsrSelectAddon)</onclick>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetAddon(UsrSelectAddon,xbmc.addon.audio)</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$INFO[system.addontitle(Skin.String(UsrSelectAddon))])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Path,RunAddon($INFO[Skin.String(UsrSelectAddon)]))</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Icon,$INFO[system.addonicon(Skin.String(UsrSelectAddon))])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!String.IsEqual(Window(home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$INFO[system.addontitle(Skin.String(UsrSelectAddon))])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,RunAddon($INFO[Skin.String(UsrSelectAddon)]))</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,$INFO[system.addonicon(Skin.String(UsrSelectAddon))])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
             </item>
             <item>
                 <description>Picture addons</description>
@@ -452,12 +452,12 @@
                 <onclick>Skin.Reset(UsrSelectAddon)</onclick>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetAddon(UsrSelectAddon,xbmc.addon.image)</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$INFO[system.addontitle(Skin.String(UsrSelectAddon))])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Path,RunAddon($INFO[Skin.String(UsrSelectAddon)]))</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Icon,$INFO[system.addonicon(Skin.String(UsrSelectAddon))])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!String.IsEqual(Window(home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$INFO[system.addontitle(Skin.String(UsrSelectAddon))])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,RunAddon($INFO[Skin.String(UsrSelectAddon)]))</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,$INFO[system.addonicon(Skin.String(UsrSelectAddon))])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
             </item>
             <item>
                 <description>Programme addons</description>
@@ -465,12 +465,12 @@
                 <onclick>Skin.Reset(UsrSelectAddon)</onclick>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetAddon(UsrSelectAddon,xbmc.addon.executable)</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$INFO[system.addontitle(Skin.String(UsrSelectAddon))])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Path,RunAddon($INFO[Skin.String(UsrSelectAddon)]))</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Icon,$INFO[system.addonicon(Skin.String(UsrSelectAddon))])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!String.IsEqual(Window(home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$INFO[system.addontitle(Skin.String(UsrSelectAddon))])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,RunAddon($INFO[Skin.String(UsrSelectAddon)]))</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,$INFO[system.addonicon(Skin.String(UsrSelectAddon))])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
             </item>
             <item>
                 <description>Playlist Music</description>
@@ -478,12 +478,12 @@
                 <onclick>Skin.Reset(UsrSelectAddon)</onclick>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetFile(UsrSelectAddon,.m3u|.xsp|.pls,special://musicplaylists/)</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$LOCALIZE[559])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Path,PlayMedia("$INFO[Skin.String(UsrSelectAddon)]"))</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Icon,DefaultMusicPlaylists.png)</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!String.IsEqual(Window(home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[559])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,PlayMedia("$INFO[Skin.String(UsrSelectAddon)]"))</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,DefaultMusicPlaylists.png)</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
             </item>
             <item>
                 <description>Playlist Video</description>
@@ -491,25 +491,25 @@
                 <onclick>Skin.Reset(UsrSelectAddon)</onclick>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
                 <onclick>Skin.SetFile(UsrSelectAddon,.xsp,special://videoplaylists/)</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$LOCALIZE[559])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,"$INFO[Skin.String(UsrSelectAddon)]",return))</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Icon,DefaultVideoPlaylists.png)</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
-                <visible>!String.IsEqual(Window(home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[559])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,"$INFO[Skin.String(UsrSelectAddon)]",return))</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,DefaultVideoPlaylists.png)</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                <visible>!String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
             </item>
             <item>
                 <description>Watch it Later Playlist</description>
                 <label>$LOCALIZE[559] ($LOCALIZE[89023])</label>
                 <onclick>Skin.Reset(UsrSelectAddon)</onclick>
                 <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$LOCALIZE[89023])</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Path,RunAddon(script.simpleplaylists))</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Icon,DefaultVideoPlaylists.png)</onclick>
-                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,home)</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[89023])</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,RunAddon(script.simpleplaylists))</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,DefaultVideoPlaylists.png)</onclick>
+                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
+                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
                 <visible>System.HasAddon(script.simpleplaylists)</visible>
-                <visible>!String.IsEqual(Window(home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
+                <visible>!String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
             </item>
         </content>
     </include>

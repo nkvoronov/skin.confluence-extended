@@ -1,7 +1,7 @@
 <window id="5533">
     <defaultcontrol always="true">1000</defaultcontrol>
-    <onload condition="String.IsEmpty(Window(home).Property(MenuItemActive))">SetProperty(MenuItemActive,settings,home)</onload>
-    <onload condition="String.IsEmpty(Window(home).Property(MenuBackground))">SetProperty(MenuBackground,special://skin/extras/backgrounds/settings.jpg,home)</onload>
+    <onload condition="String.IsEmpty(Window(Home).Property(MenuItemActive))">SetProperty(MenuItemActive,settings,Home)</onload>
+    <onload condition="String.IsEmpty(Window(Home).Property(MenuBackground))">SetProperty(MenuBackground,special://skin/extras/backgrounds/settings.jpg,Home)</onload>
     <allowoverlay>no</allowoverlay>
     <controls>
         <include>CommonCustomBackground</include>

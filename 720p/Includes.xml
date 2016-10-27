@@ -92,7 +92,7 @@
 		<value>$INFO[ListItem.TrackNumber,([COLOR=selected][B],[/B][/COLOR]) - ]$INFO[ListItem.Label]</value>
 	</variable>
 	<variable name="PlayList">
-		<value condition="Window.IsActive(videos) + !String.IsEqual(Playlist.Length(video),0)">ActivateWindow(videoplaylist)</value>
+		<value condition="Window.IsActive(Videos) + !String.IsEqual(Playlist.Length(video),0)">ActivateWindow(videoplaylist)</value>
 		<value>ActivateWindow(musicplaylist)</value>
 	</variable>
 	<variable name="SelectBack">
@@ -100,7 +100,7 @@
 		<value>DialogBack2.png</value>
 	</variable>
     <variable name="PlayerTitle">
-    		<value condition="Player.HasVideo">$INFO[VideoPlayer.Title]</value>
+        <value condition="Player.HasVideo">$INFO[VideoPlayer.Title]</value>
 		<value condition="Player.HasAudio + !String.EndsWith(MusicPlayer.Title,.pvr)">$INFO[MusicPlayer.Title]</value>
 		<value>$INFO[Player.Title]</value>
 	</variable>
@@ -423,8 +423,8 @@
 		<control type="group">
 			<left>120r</left>
 			<top>55r</top>
-			<animation effect="fade" time="200" condition="Window.Previous(home)">WindowOpen</animation>
-			<animation effect="fade" time="200" condition="Window.Next(home)">WindowClose</animation>
+			<animation effect="fade" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="fade" time="200" condition="Window.Next(Home)">WindowClose</animation>
 			<visible>system.getbool(input.enablemouse)</visible>
 			<control type="button">
 				<description>Back push button</description>
@@ -459,7 +459,7 @@
 				<height>45</height>
 				<label>31003</label>
 				<font>-</font>
-				<onclick>ActivateWindow(home)</onclick>
+				<onclick>ActivateWindow(Home)</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
 				<onleft>50</onleft>
@@ -480,10 +480,10 @@
 	</include>
 	<include name="CommonNowPlaying">
 		<control type="group">
-			<visible>Player.HasMedia + String.IsEmpty(Window(videos).Property(PlayingBackgroundMedia))</visible>
+			<visible>Player.HasMedia + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
 			<include>VisibleFadeEffect</include>
-			<animation effect="fade" time="200" condition="Window.Previous(home)">WindowOpen</animation>
-			<animation effect="fade" time="200" condition="Window.Next(home)">WindowClose</animation>
+			<animation effect="fade" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="fade" time="200" condition="Window.Next(Home)">WindowClose</animation>
 			<control type="button">
 				<description>push button</description>
 				<left>30</left>
@@ -1072,7 +1072,7 @@
 			<include>ButtonCommonValues</include>
 			<label>13350</label>
 			<onclick>$VAR[PlayList]</onclick>
-			<visible>[Window.IsActive(videos) + !String.IsEqual(Playlist.Length(video),0)] | [Window.IsActive(music) + !String.IsEqual(Playlist.Length(music),0)]</visible>
+			<visible>[Window.IsActive(Videos) + !String.IsEqual(Playlist.Length(video),0)] | [Window.IsActive(Music) + !String.IsEqual(Playlist.Length(music),0)]</visible>
 		</control>
 	</include>
 	<include name="ScrollOffsetLabel">
@@ -1219,7 +1219,7 @@
 				<height>55</height>
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[ListItem.Property(Art(poster))]</texture>
-				<visible>String.IsEqual(Window(home).Property(TVGuide.ThumbType),0)</visible>
+				<visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
 			</control>
 			<control type="image">
 				<description>Banner</description>
@@ -1229,7 +1229,7 @@
 				<height>55</height>
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[ListItem.Property(Art(banner))]</texture>
-				<visible>String.IsEqual(Window(home).Property(TVGuide.ThumbType),1)</visible>
+				<visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
 			</control>
 			<control type="image">
 				<description>Logo</description>
@@ -1239,7 +1239,7 @@
 				<height>55</height>
 				<aspectratio>keep</aspectratio>
 				<texture background="true">$INFO[ListItem.Property(Path),,logo.png]</texture>
-				<visible>String.IsEqual(Window(home).Property(TVGuide.ThumbType),2)</visible>
+				<visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
 			</control>
 			<control type="label">
 				<description>Episode Number</description>
