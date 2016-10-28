@@ -14,6 +14,10 @@
 			<include>VisibleFadeEffect</include>
 			<visible>!Skin.HasSetting(NoFloorAll)</visible>
 		</control>
+		<include name="CommonWindowHeader">
+			<param name="Icon" value="icon_system" />
+			<param name="Label" value="$LOCALIZE[5][COLOR=blue] - [/COLOR]$LOCALIZE[166]" />
+		</include>
 		<control type="group">
 			<left>90</left>
 			<top>30</top>
@@ -839,7 +843,7 @@
 						<label2>[COLOR=selected]$VAR[PowerButtonLabel][/COLOR]</label2>						
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>SetProperty(UsrSelectBtn,UsrPwrBtnCmd,home)</onclick>
+						<onclick>SetProperty(UsrSelectBtn,UsrPwrBtnCmd,Home)</onclick>
 						<onclick>ActivateWindow(2119)</onclick>
                         <enable>!Skin.HasSetting(HidePowerButton)</enable>
 					</control>
@@ -866,7 +870,7 @@
 						<label2>[COLOR=selected]$VAR[FavoritesButtonLabel][/COLOR]</label2>						
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>SetProperty(UsrSelectBtn,UsrFavBtnCmd,home)</onclick>
+						<onclick>SetProperty(UsrSelectBtn,UsrFavBtnCmd,Home)</onclick>
 						<onclick>ActivateWindow(2119)</onclick>
                         <enable>!Skin.HasSetting(HideFavoritesButton)</enable>
 					</control>
@@ -1902,16 +1906,10 @@
                         <onclick>ActivateWindow(2121)</onclick>
                     </control>
 				</control>
-            </control>
+			</control>
 		</control>
-		<control type="group">
-			<depth>DepthFooter</depth>
-		    <include>CommonNowPlaying</include>
-		</control>
+		<include>CommonNowPlaying</include>
 		<include>MainWindowMouseButtons</include>
-		<include name="CommonWindowHeader">
-			<param name="Icon" value="icon_system" />
-			<param name="Label" value="$LOCALIZE[5][COLOR=blue] - [/COLOR]$LOCALIZE[166]" />
-		</include>
+		<include>BehindDialogFadeOut</include>
 	</controls>
 </window>

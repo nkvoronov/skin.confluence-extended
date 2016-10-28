@@ -10,8 +10,8 @@
 			<width>1280</width>
 			<height>100</height>
 			<texture>floor.png</texture>
-			<animation effect="slide" start="0,10" end="0,0" time="150" condition="Window.Previous(home)">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="0,10" time="150" condition="Window.Next(home)">WindowClose</animation>
+			<animation effect="slide" start="0,10" end="0,0" time="150" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="0,10" time="150" condition="Window.Next(Home)">WindowClose</animation>
 			<visible>!Skin.HasSetting(NoFloorAll)</visible>
 		</control>
 		<control type="group">
@@ -430,7 +430,7 @@
 				<height>45</height>
 				<label>31003</label>
 				<font>-</font>
-				<onclick>ActivateWindow(home)</onclick>
+				<onclick>ActivateWindow(Home)</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
 				<onleft>50</onleft>

@@ -25,10 +25,10 @@
 			<onright>1000</onright>
 			<onup>100</onup>
 			<ondown>100</ondown>
+			<animation effect="slide" start="0,0" end="-30,0" time="0" condition="Window.IsVisible(Mutebug)">conditional</animation>
 			<animation effect="fade" time="150">VisibleChange</animation>
-			<animation effect="slide" start="0,0" end="-30,0" time="0" condition="Window.IsVisible(Mutebug)">conditional</animation>			
-			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks)]</visible>
-            <visible>system.getbool(input.enablemouse)</visible>
+			<animation effect="slide" start="0,0" end="-30,0" time="0" condition="Window.IsVisible(Mutebug)">conditional</animation>
+			<visible>system.getbool(input.enablemouse) + ![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 		</control>
 		<control type="slider" id="87">
 			<depth>DepthOSD+</depth>

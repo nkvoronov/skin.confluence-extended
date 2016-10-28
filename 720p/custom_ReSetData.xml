@@ -89,7 +89,7 @@
 			<onclick>Skin.ResetSettings</onclick>
 			<onclick>ReloadSkin()</onclick>
 			<onclick>Dialog.Close(2121)</onclick>
-			<onclick>ActivateWindow(home)</onclick>
+			<onclick>ActivateWindow(Home)</onclick>
 		</control>
 		<control type="button" id="10">
 			<description>No button</description>
