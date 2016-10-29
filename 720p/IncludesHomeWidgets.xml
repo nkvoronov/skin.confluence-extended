@@ -4,11 +4,11 @@
 	<include name="HomeWidgetDisplay">
 		<control type="group" id="9003">
             <depth>DepthMenu</depth>
-            <include>HomeWidgetUpDown</include>            
+            <include>HomeWidgetUpDown</include>
 			<visible>![Window.IsVisible(2123) | Window.IsVisible(2124) | Window.IsVisible(2125) | Window.IsVisible(2126) | Window.IsVisible(Favourites)]</visible>
 			<include>VisibleFadeEffect</include>
-			<animation effect="fade" time="225" delay="750">WindowOpen</animation>
-			<animation effect="fade" time="150">WindowClose</animation>
+			<animation effect="fade" time="300" delay="1000">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
             <control type="group">
                 <visible>!StringCompare(Container(9000).ListItem.Property(widgetTarget),submenus)</visible>
                 <!-- WEATHER -->

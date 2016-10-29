@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<onload>ClearProperty(TVGuide.MondayList,home)</onload>
-	<onload>ClearProperty(TVGuide.TuesdayList,home)</onload>
-	<onload>ClearProperty(TVGuide.WednesdayList,home)</onload>
-	<onload>ClearProperty(TVGuide.ThursdayList,home)</onload>
-	<onload>ClearProperty(TVGuide.FridayList,home)</onload>
-	<onload>ClearProperty(TVGuide.SaturdayList,home)</onload>
-	<onload>ClearProperty(TVGuide.SundayList,home)</onload>
+	<onload>ClearProperty(TVGuide.MondayList,Home)</onload>
+	<onload>ClearProperty(TVGuide.TuesdayList,Home)</onload>
+	<onload>ClearProperty(TVGuide.WednesdayList,Home)</onload>
+	<onload>ClearProperty(TVGuide.ThursdayList,Home)</onload>
+	<onload>ClearProperty(TVGuide.FridayList,Home)</onload>
+	<onload>ClearProperty(TVGuide.SaturdayList,Home)</onload>
+	<onload>ClearProperty(TVGuide.SundayList,Home)</onload>
 	<controls>
 		<include>CommonBackground</include>
 		<control type="group">
-			<visible>!IsEmpty(Window(home).Property(TVGuide.BackgroundFanart))</visible>
+			<visible>!IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart))</visible>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
@@ -103,8 +103,8 @@
 			<height>100</height>
 			<texture>floor.png</texture>
 			<aspectratio>stretch</aspectratio>
-			<animation effect="slide" start="0,10" end="0,0" time="150" condition="Window.Previous(home)">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="0,10" time="150" condition="Window.Next(home)">WindowClose</animation>
+			<animation effect="slide" start="0,10" end="0,0" time="150" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="0,10" time="150" condition="Window.Next(Home)">WindowClose</animation>
 			<visible>!Skin.HasSetting(NoFloorAll)</visible>
 		</control>
 		<control type="image">

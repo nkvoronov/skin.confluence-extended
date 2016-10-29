@@ -9,8 +9,8 @@
     <onload condition="Skin.HasSetting(ActivateAnimatedPosters)">Skin.SetBool(SkinHelper.EnableAnimatedPosters)</onload>
     <!-- -->
     <include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
-    <onload condition="!IsEmpty(Window(home).Property(MenuItemActive))">ClearProperty(MenuItemActive,home)</onload>
-    <onload condition="!IsEmpty(Window(home).Property(MenuBackground))">ClearProperty(MenuBackground,home)</onload>
+    <onload condition="!IsEmpty(Window(Home).Property(MenuItemActive))">ClearProperty(MenuItemActive,Home)</onload>
+    <onload condition="!IsEmpty(Window(Home).Property(MenuBackground))">ClearProperty(MenuBackground,Home)</onload>
     <onload condition="Window.Previous(Startup)">Control.Move(9000,$INFO[Skin.String(CustomFocus)])</onload>
 	<onload condition="IsEmpty(Skin.String(MenuColor))">Skin.SetString(MenuColor,blue,)</onload>
 	<onload condition="!IsEmpty(Weather.Plugin) + !Weather.IsFetched">Weather.Refresh</onload>
@@ -26,12 +26,12 @@
 			<height>90</height>
 			<texture>floor.png</texture>
 			<animation effect="rotatex" end="45" time="0" center="620,0" condition="true">Conditional</animation>
-			<animation effect="slide" time="200" condition="Window.Previous(home)">WindowOpen</animation>
-			<animation effect="slide" time="200" condition="Window.Next(home)">WindowClose</animation>
+			<animation effect="slide" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="slide" time="200" condition="Window.Next(Home)">WindowClose</animation>
 			<visible>!Skin.HasSetting(NoFloor)</visible>
 		</control>
 		<!-- LiveTV Info -->
-		<control type="group">
+        <control type="group">
 			<depth>DepthMenu</depth>
 			<left>0</left>
 			<top>50</top>
@@ -128,7 +128,7 @@
 					<texture>PVR-HasTimer.png</texture>
 				</control>
 				<control type="label">
-					<description>Next Timer Header Label</description>
+					<description>Next Timer Header label</description>
 					<left>-45</left>
 					<top>5</top>
 					<height>25</height>
@@ -141,7 +141,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>Next Recording DateTime</description>
+					<description>NextRecordingDateTime</description>
 					<left>-10</left>
 					<top>30</top>
 					<height>25</height>
@@ -154,7 +154,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>Next Recording Title Channel</description>
+					<description>NextRecordingTitle Channel</description>
 					<left>-410</left>
 					<top>50</top>
 					<height>25</height>
@@ -195,7 +195,7 @@
 					<texture>PVR-IsRecording.png</texture>
 				</control>
 				<control type="label">
-					<description>Is Recording Header Label</description>
+					<description>Is Recording Header label</description>
 					<left>-50</left>
 					<top>5</top>
 					<height>25</height>
@@ -208,7 +208,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>Next Recording DateTime</description>
+					<description>NextRecordingDateTime</description>
 					<left>-10</left>
 					<top>30</top>
 					<height>25</height>
@@ -221,7 +221,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>Next Recording Title Channel</description>
+					<description>NextRecordingTitle Channel</description>
 					<left>-410</left>
 					<top>50</top>
 					<height>30</height>
@@ -308,7 +308,7 @@
 			<control type="group">
 				<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos)</visible>
 				<control type="image">
-					<description>Cover Image</description>
+					<description>Cover image</description>
 					<left>20</left>
 					<top>45</top>
 					<width>150</width>
@@ -319,7 +319,7 @@
 					<bordersize>5</bordersize>
 				</control>
 				<control type="label">
-					<description>Title Label</description>
+					<description>Title label</description>
 					<left>190</left>
 					<top>285</top>
 					<height>30</height>
@@ -349,7 +349,7 @@
 			<control type="group">
 				<visible>VideoPlayer.Content(MusicVideos)</visible>
 				<control type="image">
-					<description>Cover Image</description>
+					<description>Cover image</description>
 					<left>20</left>
 					<top>45</top>
 					<width>150</width>
@@ -359,7 +359,7 @@
 					<bordertexture border="8">ThumbBorder.png</bordertexture>
 					<bordersize>5</bordersize>
 				</control>
-				<control type="label">
+                <control type="label">
 					<description>Artist Label</description>
 					<left>190</left>
 					<top>265</top>
@@ -403,7 +403,7 @@
 			<control type="group">
 				<visible>VideoPlayer.Content(Movies)</visible>
 				<control type="image">
-					<description>Cover Image</description>
+					<description>Cover image</description>
 					<left>20</left>
 					<top>45</top>
 					<width>120</width>
@@ -414,7 +414,7 @@
 					<bordersize>5</bordersize>
 				</control>
 				<control type="label">
-					<description>Studio Label</description>
+					<description>Studio label</description>
 					<left>160</left>
 					<top>265</top>
 					<height>25</height>
@@ -427,7 +427,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>Title Label</description>
+					<description>Title label</description>
 					<left>160</left>
 					<top>285</top>
 					<height>30</height>
@@ -457,7 +457,7 @@
 			<control type="group">
 				<visible>VideoPlayer.Content(Episodes)</visible>
 				<control type="image">
-					<description>Cover Image</description>
+					<description>Cover image</description>
 					<left>20</left>
 					<top>225</top>
 					<width>180</width>
@@ -481,7 +481,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>Title Label</description>
+					<description>Title label</description>
 					<left>210</left>
 					<top>285</top>
 					<height>30</height>
@@ -512,7 +512,7 @@
 		<include>HomeWidgetDisplay</include>
         <!-- Players Controls -->
 		<control type="button" id="9003">
-			<description>Hidden Button To Pass Through Navigation When Recently Added Is Disabled</description>
+			<description>Hidden Button to pass through navigation when recently added is disabled</description>
 			<left>-20</left>
 			<top>-20</top>
 			<width>1</width>
@@ -529,7 +529,7 @@
 		</control>
 		<control type="group">
 			<depth>DepthMenu-</depth>
-			<description>Controls For Currently Playing Media</description>
+			<description>Controls for currently playing media</description>
 			<left>545r</left>
 			<top>370</top>
 			<animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
@@ -805,7 +805,7 @@
 			<control type="radiobutton" id="607">
 				<animation effect="slide" end="0,35" time="300" condition="!Player.HasMedia">conditional</animation>
 				<colordiffuse>CCFFFFFF</colordiffuse>
-				<description>Go To Fullscreen Playback</description>
+				<description>Go to fullscreen Playback</description>
 				<left>385</left>
 				<top>0</top>
 				<height>35</height>
@@ -964,8 +964,8 @@
 				<width>45</width>
 				<height>45</height>
 				<label>31003</label>
-				<font>-</font>				
-                <onclick>$VAR[PowerButtonCommand]</onclick>
+				<font>-</font>
+				<onclick>$VAR[PowerButtonCommand]</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
 				<onleft>22</onleft>
@@ -992,8 +992,8 @@
 				<width>45</width>
 				<height>45</height>
 				<label>1036</label>
-				<font>-</font>				
-                <onclick>$VAR[FavoritesButtonCommand]</onclick>
+				<font>-</font>
+				<onclick>$VAR[FavoritesButtonCommand]</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
 				<onleft>20</onleft>
@@ -1021,7 +1021,7 @@
 				<height>45</height>
 				<label>1036</label>
 				<font>-</font>
-                <onclick>$VAR[PowerButtonCommand]</onclick>
+				<onclick>$VAR[PowerButtonCommand]</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
 				<onleft>21</onleft>
@@ -1059,7 +1059,7 @@
 			<control type="group">
 				<left>20</left>
 				<top>0</top>
-				<visible>Skin.HasSetting(HomePageWeatherInfo) + !IsEmpty(Weather.Plugin)</visible>
+				<visible>Skin.HasSetting(homepageWeatherinfo) + !IsEmpty(Weather.Plugin)</visible>
 				<include>Window_OpenClose_Animation</include>
                 <!-- Current Weather Icon -->
 				<control type="image">
@@ -1072,7 +1072,7 @@
                     <texture>$VAR[CurrentWeatherIcon]</texture>
 				</control>
 				<control type="label">
-					<description>Location Label</description>
+					<description>Location label</description>
 					<left>65</left>
 					<top>5</top>
 					<width>500</width>
@@ -1082,7 +1082,7 @@
 					<font>font10</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<label>$INFO[Window(weather).Property(Location)]</label>
+					<label>$INFO[Window(Weather).Property(Location)]</label>
 				</control>
 				<control type="grouplist">
 					<left>65</left>
@@ -1101,7 +1101,7 @@
 						<font>font28_title</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<label>[B]$INFO[Window(weather).Property(Current.Temperature)][/B]</label>
+						<label>[B]$INFO[Window(Weather).Property(Current.Temperature)][/B]</label>
 					</control>
 					<control type="label">
 						<description>Temp Units</description>
@@ -1112,7 +1112,7 @@
 						<label>$INFO[System.TemperatureUnits]</label>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
-						<visible>!IsEmpty(Window(weather).Property(Current.Temperature))</visible>
+						<visible>!IsEmpty(Window(Weather).Property(Current.Temperature))</visible>
 					</control>
 					<control type="label">
 						<description>Conditions Label</description>
@@ -1120,7 +1120,7 @@
 						<height>22</height>
 						<font>font10</font>
 						<aligny>center</aligny>
-						<label>$INFO[Window(weather).Property(Current.Condition),  ]</label>
+						<label>$INFO[Window(Weather).Property(Current.Condition),  ]</label>
 						<textcolor>grey2</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -1128,7 +1128,7 @@
 			</control>
 			<include>Clock</include>
 			<control type="label">
-				<description>Date Label</description>
+				<description>Date label</description>
 				<right>20</right>
 				<top>35</top>
 				<width>300</width>

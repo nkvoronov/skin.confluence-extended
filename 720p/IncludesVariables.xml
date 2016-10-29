@@ -191,8 +191,8 @@
     <variable name="SkinShortcutsGrouping">
         <value condition="!SubString(Window.Property(groupname),.)">menus</value>
         <value condition="SubString(Window.Property(groupname),.1,Right)">addons</value>
-        <value condition="SubString(Window.Property(groupname),.2,Right) + StringCompare(Window(home).Property(current_widget),TVFavouritesChannels)">tv</value>
-        <value condition="SubString(Window.Property(groupname),.2,Right) + StringCompare(Window(home).Property(current_widget),RadioFavouritesChannels)">radio</value>
+        <value condition="SubString(Window.Property(groupname),.2,Right) + StringCompare(Window(Home).Property(current_widget),TVFavouritesChannels)">tv</value>
+        <value condition="SubString(Window.Property(groupname),.2,Right) + StringCompare(Window(Home).Property(current_widget),RadioFavouritesChannels)">radio</value>
     </variable>
     <variable name="Submenu_Visibility">
         <value>$INFO[Container(9000).ListItem.Property(submenuVisibility)]</value>

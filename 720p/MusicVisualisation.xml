@@ -21,7 +21,7 @@
 			<colordiffuse>AAFFFFFF</colordiffuse>
 			<visible>!IsEmpty(Player.Art(fanart)) + !Skin.HasSetting(HideVisualizationFanart)</visible>
 			<fadetime>600</fadetime>
-		</control>      
+		</control>
         <control type="label">
             <description>Clock label</description>
             <left>450</left>

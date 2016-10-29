@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>90010</defaultcontrol>
-    <onload condition="IsEmpty(Window(home).Property(MenuItemActive))">SetProperty(MenuItemActive,settings,home)</onload>
-    <onload condition="IsEmpty(Window(home).Property(MenuBackground))">SetProperty(MenuBackground,special://skin/extras/backgrounds/settings.jpg,home)</onload>
+    <onload condition="IsEmpty(Window(Home).Property(MenuItemActive))">SetProperty(MenuItemActive,settings,Home)</onload>
+    <onload condition="IsEmpty(Window(Home).Property(MenuBackground))">SetProperty(MenuBackground,special://skin/extras/backgrounds/settings.jpg,Home)</onload>
     <onload>SetProperty(custom-grouping,$VAR[SkinShortcutsGrouping])</onload>
     <controls>
         <include>CommonCustomBackground</include>
@@ -277,7 +277,7 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-                        <onclick>SetProperty(current_widget,$INFO[Container(211).ListItem.Property(widget)],home)</onclick>
+                        <onclick>SetProperty(current_widget,$INFO[Container(211).ListItem.Property(widget)],Home)</onclick>
                         <visible>StringCompare(Window.Property(groupname),mainmenu) + StringCompare(Container(211).ListItem.Property(widgetTarget),submenus)</visible>                       
                     </control>
                     <control type="image" id="600">
