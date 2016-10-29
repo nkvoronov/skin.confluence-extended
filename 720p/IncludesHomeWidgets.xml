@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
+    <!-- Home Widget -->
 	<include name="HomeWidgetDisplay">
 		<control type="group" id="9003">
             <depth>DepthMenu</depth>
