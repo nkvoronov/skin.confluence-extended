@@ -2607,5 +2607,5 @@
         <value condition="!IsEmpty(Skin.String(WeatherIcons.name)) + StringCompare(Weather.Conditions,resource://resource.images.weathericons.default/46.png)">$INFO[Skin.String(WeatherIcons.path)]46.png</value>
         <value condition="!IsEmpty(Skin.String(WeatherIcons.name)) + StringCompare(Weather.Conditions,resource://resource.images.weathericons.default/47.png)">$INFO[Skin.String(WeatherIcons.path)]47.png</value>
         <value>$INFO[Weather.Conditions]</value>
-    </variable>    
+    </variable>
 </includes>
