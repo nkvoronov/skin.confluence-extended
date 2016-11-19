@@ -85,7 +85,7 @@
             <shortcut label="19138" type="19021" icon="DefaultTVShows.png">ActivateWindow(radiotimerrules)</shortcut>
             <shortcut label="19040" type="19021" icon="DefaultTVShows.png">ActivateWindow(radiotimers)</shortcut>
             <shortcut label="137" type="19021" icon="DefaultTVShows.png">ActivateWindow(radiosearch)</shortcut>
-            <shortcut label="32066" type="19021" icon="DefaultTVShows.png">PlayPvrRadio</shortcut>
+            <shortcut label="32067" type="19021" icon="DefaultTVShows.png">PlayPvrRadio</shortcut>
             <shortcut label="32068" type="19020" icon="DefaultTVShows.png">PlayPvr</shortcut>
             <shortcut label="19020" type="10004" icon="DefaultFolder.png">ActivateWindow(pvrsettings)</shortcut>
             <node label="19024">
