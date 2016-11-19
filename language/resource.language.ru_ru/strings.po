@@ -968,7 +968,7 @@ msgstr "Показывать часы в полноэкранном режиме
 
 msgctxt "#89502"
 msgid "Enable SlideShow Info"
-msgstr "Показывать инормацию в слайдшоу"
+msgstr "Показывать информацию в слайдшоу"
 
 msgctxt "#89700"
 msgid "Select"
