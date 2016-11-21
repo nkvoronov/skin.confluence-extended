@@ -14,7 +14,7 @@
                 <!-- WEATHER -->
                 <!-- Weather Daily 8000 -->
                 <include content="CommonWidgetInclude">
-                    <param content="left_widget" value="140" />
+                    <param name="left_widget" value="140" />
                     <param name="visible_widget" value="!String.IsEmpty(Weather.Plugin) + Weather.IsFetched" />
                     <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(widget),DailyWeather)" />
                     <param name="label_title" value="$LOCALIZE[31904] $INFO[Window(weather).Property(Location)]" />
