@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.confluence-extented" version="3.0.38.104" name="Confluence Extented" provider-name="Jezz_X, Team Kodi, YLLOW_DRAGON, plood">
+<addon id="skin.confluence-extented" version="3.0.39.105" name="Confluence Extented" provider-name="Jezz_X, Team Kodi, YLLOW_DRAGON, plood">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="script.favourites" version="6.0.3"/>
@@ -149,6 +149,6 @@
 			<screenshot>resources/screenshot-08.jpg</screenshot>
 			<screenshot>resources/screenshot-09.jpg</screenshot>
 		</assets>
-		<news>Added screenshots</news>
+		<news>Fixed home Weather item / Added 'Privacy Policy' to system info / Updated background video conditions</news>
 	</extension>
 </addon>
