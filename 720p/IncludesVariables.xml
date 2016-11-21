@@ -172,7 +172,7 @@
         <value condition="!String.IsEmpty(Skin.String(WeatherIcons.name)) + String.IsEqual(Weather.Conditions,resource://resource.images.weathericons.default/46.png)">$INFO[Skin.String(WeatherIcons.path)]46.png</value>
         <value condition="!String.IsEmpty(Skin.String(WeatherIcons.name)) + String.IsEqual(Weather.Conditions,resource://resource.images.weathericons.default/47.png)">$INFO[Skin.String(WeatherIcons.path)]47.png</value>
         <value>$INFO[Weather.Conditions]</value>
-    </variable>    
+    </variable>
     <!-- -->
     <variable name="SkinShortcutsTitle">
         <value condition="!IsEmpty(Window.Property(groupname)) + String.IsEqual(Window.Property(groupname),mainmenu)">[COLOR=blue] - [/COLOR]$ADDON[script.skinshortcuts 32071]</value>
@@ -193,8 +193,5 @@
         <value condition="String.EndsWith(Window.Property(groupname),.1)">addons</value>
         <value condition="String.EndsWith(Window.Property(groupname),.2) + String.IsEqual(Window(Home).Property(current_widget),TVFavouritesChannels)">tv</value>
         <value condition="String.EndsWith(Window.Property(groupname),.2) + String.IsEqual(Window(Home).Property(current_widget),RadioFavouritesChannels)">radio</value>
-    </variable>
-    <variable name="Submenu_Visibility">
-        <value>$INFO[Container(9000).ListItem.Property(submenuVisibility)]</value>
     </variable>
 </includes>

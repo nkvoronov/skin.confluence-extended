@@ -286,6 +286,34 @@
                         <height>2</height>
                         <texture>separator2.png</texture>
                     </control>
+                    <control type="label" id="599">
+                        <description>Disable menu item label</description>
+                        <width>750</width>
+						<height>40</height>
+						<font>font13</font>
+                        <label>Is$INFO[Container(211).ListItem.Property(skinshortcuts-disabled)]</label>
+                        <textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<visible>False</visible>
+                    </control>                    
+                    <control type="radiobutton" id="313">
+                        <description>Disable menu item</description>
+                        <width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[90044]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<selected>String.IsEqual(Control.GetLabel(599),IsTrue)</selected>
+                    </control>
+                    <control type="image" id="601">
+                        <description>separator image</description>
+                        <width>750</width>
+                        <height>2</height>
+                        <texture>separator2.png</texture>
+                    </control>
                     <control type="button" id="303">
                         <description>Move up</description>
                         <width>750</width>
@@ -308,15 +336,11 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                     </control>
-                    <control type="button" id="302">
-                        <description>Delete shortcut</description>
+                    <control type="image" id="602">
+                        <description>separator image</description>
                         <width>750</width>
-						<height>40</height>
-						<font>font13</font>
-                        <textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
+                        <height>2</height>
+                        <texture>separator2.png</texture>
                     </control>
                     <control type="button" id="301">
                         <description>Add shortcut</description>
@@ -328,15 +352,26 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
+                    </control>                    
+                    <control type="button" id="302">
+                        <description>Delete shortcut</description>
+                        <width>750</width>
+						<height>40</height>
+						<font>font13</font>
+                        <label>$ADDON[script.skinshortcuts 32001]</label>
+                        <textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
                     </control>
-                    <control type="image" id="601">
+                    <control type="image" id="603">
                         <description>separator image</description>
                         <width>750</width>
                         <height>2</height>
                         <texture>separator2.png</texture>
                     </control>
                     <control type="button" id="308">
-                        <description>Add shortcut</description>
+                        <description>Restore shortcuts</description>
                         <width>750</width>
 						<height>40</height>
 						<font>font13</font>
