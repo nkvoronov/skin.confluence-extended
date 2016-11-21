@@ -1082,3 +1082,7 @@ msgstr ""
 msgctxt "#90043"
 msgid "Enable PVR Thumbs"
 msgstr ""
+
+msgctxt "#90044"
+msgid "Disable"
+msgstr ""
