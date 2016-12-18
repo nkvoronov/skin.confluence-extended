@@ -1212,7 +1212,7 @@
 				<viewtype label="$LOCALIZE[544]">list</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<visible>Container.Content(TVShows) | Container.Content(Movies) | Container.Content(Episodes)</visible>
+				<visible>Container.Content(TVShows) | Container.Content(Movies) | Container.Content(Episodes) | Container.Content(Videos)</visible>
 				<itemlayout height="40" width="580">
 					<control type="image">
 						<left>0</left>
@@ -1372,7 +1372,7 @@
 			<control type="group">
 				<left>710</left>
 				<top>70</top>
-				<visible>Control.IsVisible(504) + [Container.Content(Movies) | Container.Content(TVShows)]</visible>
+				<visible>Control.IsVisible(504) + [Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Videos)]</visible>
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -1393,7 +1393,7 @@
 					<aspectratio>scale</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture background="true" fallback="Fanart_Fallback_Small.jpg">$INFO[ListItem.Art(fanart)]</texture>
-					<visible>Container.Content(TVShows)</visible>
+					<visible>Container.Content(TVShows) | Container.Content(Videos)</visible>
 					<bordertexture background="true" border="8">ThumbShadow.png</bordertexture>
 					<bordersize>8</bordersize>
 				</control>

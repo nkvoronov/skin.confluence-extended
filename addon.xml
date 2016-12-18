@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.confluence-extented" version="3.0.39.105" name="Confluence Extented" provider-name="Jezz_X, Team Kodi, YLLOW_DRAGON, plood">
+<addon id="skin.confluence-extented" version="3.0.41.106" name="Confluence Extented" provider-name="Jezz_X, Team Kodi, YLLOW_DRAGON, plood">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="script.favourites" version="6.0.3"/>
@@ -35,7 +35,7 @@
 		<summary lang="fo_FO">Confluence Extented útsjónd av Jezz_X, Team XBMC, YLLOW_DRAGON, plood. (Kodi's vanliga útsjónd)</summary>
 		<summary lang="fr_CA">Habillage Confluence Extented par Jezz_X, Team XBMC, YLLOW_DRAGON, plood.</summary>
 		<summary lang="fr_FR">Confluence Extented par Jezz_X, Team XBMC, YLLOW_DRAGON, plood. (Habillage d'origine de Kodi)</summary>
-		<summary lang="gl_ES">Pel Confluence Extented por Jezz_Z. (Pel predefinida do Kodi)</summary>
+		<summary lang="gl_ES">Pel Confluence Extented por Jezz_Z, Team XBMC, YLLOW_DRAGON, plood. (Pel predefinida do Kodi)</summary>
 		<summary lang="he_IL">המעטפת Confluence Extented של Jezz_X, Team XBMC, YLLOW_DRAGON, plood. (ברירת המחדל של Kodi)</summary>
 		<summary lang="hr_HR">Confluence Extented presvlaka autora Jezz_X, Team XBMC, YLLOW_DRAGON, plood. (uobičajena Kodi presvlaka)</summary>
 		<summary lang="hu_HU">Confluence Extented felszín. Készítő: Jezz_X, Team XBMC, YLLOW_DRAGON, plood (Kodi alapértelmezett felszín)</summary>
