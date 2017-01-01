@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.confluence-extended" version="3.0.42.109" name="Confluence Extended" provider-name="Jezz_X, Team Kodi, YLLOW_DRAGON, plood">
+<addon id="skin.confluence-extended" version="3.0.42.110" name="Confluence Extended" provider-name="Jezz_X, Team Kodi, YLLOW_DRAGON, plood">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="script.favourites" version="6.0.3"/>
-		<import addon="script.pvr.favourites" version="2.0.7"/>
+		<import addon="script.pvr.favourites" version="2.0.0"/>
 		<import addon="service.skin.widgets" version="0.0.32"/>
 		<import addon="script.randomandlastitems" version="2.2.2"/>
 	</requires>
