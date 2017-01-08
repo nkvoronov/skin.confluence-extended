@@ -8,102 +8,6 @@
 	<controls>
 		<control type="group" id="100">
 			<include>VisibleFadeEffect</include>
-			<!-- control type="image">
-				<left>0</left>
-				<top>0</top>
-				<width>1280</width>
-				<height>720</height>
-				<texture background="true">$INFO[Container(111).ListItem.Property(Fanart_Image)]</texture>
-				<aspectratio>scale</aspectratio>
-				<fadetime>200</fadetime>
-				<animation effect="fade" time="200">Visible</animation>
-				<animation effect="fade" time="200">Hidden</animation>
-				<visible>Control.HasFocus(111)</visible>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<width>1280</width>
-				<height>720</height>
-				<texture background="true">$INFO[Container(121).ListItem.Property(Fanart_Image)]</texture>
-				<aspectratio>scale</aspectratio>
-				<fadetime>200</fadetime>
-				<animation effect="fade" time="200">Visible</animation>
-				<animation effect="fade" time="200">Hidden</animation>
-				<visible>Control.HasFocus(121)</visible>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<width>1280</width>
-				<height>720</height>
-				<texture background="true">$INFO[Container(131).ListItem.Property(Fanart_Image)]</texture>
-				<aspectratio>scale</aspectratio>
-				<fadetime>200</fadetime>
-				<animation effect="fade" time="200">Visible</animation>
-				<animation effect="fade" time="200">Hidden</animation>
-				<visible>Control.HasFocus(131)</visible>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<width>1280</width>
-				<height>720</height>
-				<texture background="true">$INFO[Container(141).ListItem.Property(Fanart_Image)]</texture>
-				<aspectratio>scale</aspectratio>
-				<fadetime>200</fadetime>
-				<animation effect="fade" time="200">Visible</animation>
-				<animation effect="fade" time="200">Hidden</animation>
-				<visible>Control.HasFocus(141)</visible>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<width>1280</width>
-				<height>720</height>
-				<texture background="true">$INFO[Container(151).ListItem.Property(Fanart_Image)]</texture>
-				<aspectratio>scale</aspectratio>
-				<fadetime>200</fadetime>
-				<animation effect="fade" time="200">Visible</animation>
-				<animation effect="fade" time="200">Hidden</animation>
-				<visible>Control.HasFocus(151)</visible>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<width>1280</width>
-				<height>720</height>
-				<texture background="true">$INFO[Container(161).ListItem.Property(Fanart_Image)]</texture>
-				<aspectratio>scale</aspectratio>
-				<fadetime>200</fadetime>
-				<animation effect="fade" time="200">Visible</animation>
-				<animation effect="fade" time="200">Hidden</animation>
-				<visible>Control.HasFocus(161)</visible>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<width>1280</width>
-				<height>720</height>
-				<texture background="true">$INFO[Container(171).ListItem.Property(Fanart_Image)]</texture>
-				<aspectratio>scale</aspectratio>
-				<fadetime>200</fadetime>
-				<animation effect="fade" time="200">Visible</animation>
-				<animation effect="fade" time="200">Hidden</animation>
-				<visible>Control.HasFocus(171)</visible>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<width>1280</width>
-				<height>720</height>
-				<texture background="true">$INFO[Container(181).ListItem.Property(Fanart_Image)]</texture>
-				<aspectratio>scale</aspectratio>
-				<fadetime>200</fadetime>
-				<animation effect="fade" time="200">Visible</animation>
-				<animation effect="fade" time="200">Hidden</animation>
-				<visible>Control.HasFocus(181)</visible>
-			</control -->
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
@@ -435,12 +339,12 @@
 							<width>750</width>
 							<height>530</height>
 							<onleft>9000</onleft>
-							<onright>178</onright>
+							<onright>228</onright>
 							<onup>221</onup>
 							<ondown>221</ondown>
 							<viewtype label="535">list</viewtype>
 							<preloaditems>2</preloaditems>
-							<pagecontrol>178</pagecontrol>
+							<pagecontrol>228</pagecontrol>
 							<itemlayout width="750" height="106">
 								<control type="image">
 									<left>0</left>
@@ -826,7 +730,7 @@
 							<ondown>211</ondown>
 							<viewtype label="535">panel</viewtype>
 							<preloaditems>2</preloaditems>
-							<pagecontrol>118</pagecontrol>
+							<pagecontrol>218</pagecontrol>
 							<itemlayout width="375" height="130">
 								<control type="image">
 									<left>0</left>
