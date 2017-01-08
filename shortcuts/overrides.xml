@@ -49,8 +49,8 @@
         <node label="8">
             <shortcut label="8" type="8" icon="DefaultFolder.png">ActivateWindow(Weather)</shortcut>
             <shortcut label="184" type="8" icon="DefaultFolder.png">Weather.Refresh</shortcut>
-            <shortcut label="35500" type="8" icon="DefaultFolder.png">Weather.LocationPrevious</shortcut>
-            <shortcut label="35500" type="8" icon="DefaultFolder.png">Weather.LocationNext</shortcut>
+            <shortcut label="89900" type="8" icon="DefaultFolder.png">Weather.LocationPrevious</shortcut>
+            <shortcut label="89901" type="8" icon="DefaultFolder.png">Weather.LocationNext</shortcut>
             <shortcut label="8" type="10004" icon="DefaultFolder.png">ActivateWindow(servicesettings,weather)</shortcut>
         </node>
         <!-- Pictures -->

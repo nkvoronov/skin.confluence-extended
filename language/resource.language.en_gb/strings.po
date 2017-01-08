@@ -971,6 +971,14 @@ msgctxt "#89709"
 msgid "Separate Backgrounds"
 msgstr ""
 
+msgctxt "#89900"
+msgid "Previous location"
+msgstr ""
+
+msgctxt "#89901"
+msgid "Next location"
+msgstr ""
+
 msgctxt "#90000"
 msgid "Customize Power Menu"
 msgstr ""

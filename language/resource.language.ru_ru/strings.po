@@ -20,6 +20,8 @@ msgctxt "#31000"
 msgid "Change your"
 msgstr "Измените"
 
+#empty strings from id 31001 to 31002
+
 msgctxt "#31003"
 msgid "Power options"
 msgstr "Настройки питания"
@@ -36,6 +38,10 @@ msgctxt "#31006"
 msgid "View options"
 msgstr "Настройки просмотра"
 
+msgctxt "#31007"
+msgid "Video process information"
+msgstr "Информация о видео"
+
 msgctxt "#31008"
 msgid "Full screen"
 msgstr "Полный экран"
@@ -48,13 +54,23 @@ msgctxt "#31010"
 msgid "Hardware decoding"
 msgstr "Аппаратное декодирование"
 
+msgctxt "#31011"
+msgid "Inactive"
+msgstr "Неактивный"
+
 msgctxt "#31012"
 msgid "Decoder"
 msgstr "Декодер"
 
+msgctxt "#31013"
+msgid "Audio process information"
+msgstr "Информация о аудио"
+
 msgctxt "#31014"
 msgid "Memory used"
 msgstr "Использовано памяти"
+
+#empty strings from id 31015 to 31022
 
 msgctxt "#31023"
 msgid "Playing"
@@ -76,6 +92,8 @@ msgctxt "#31027"
 msgid "Location"
 msgstr "Расположение"
 
+#View Type labels
+
 msgctxt "#31028"
 msgid "Poster wrap"
 msgstr "карусель постеров"
@@ -83,6 +101,8 @@ msgstr "карусель постеров"
 msgctxt "#31029"
 msgid "Fanart"
 msgstr "фанарт"
+
+#empty string with id 31030
 
 msgctxt "#31031"
 msgid "Pic thumbs"
@@ -96,13 +116,19 @@ msgctxt "#31033"
 msgid "Info"
 msgstr "Информация"
 
+#empty strings from id 31034 to 31038
+
 msgctxt "#31039"
 msgid "Actions"
 msgstr "Действия"
 
+#Extra labels
+
 msgctxt "#31040"
 msgid "Now playing"
 msgstr "Сейчас воспроизводится:"
+
+#empty string with id 31041
 
 msgctxt "#31042"
 msgid "PLAYING"
@@ -124,6 +150,8 @@ msgctxt "#31046"
 msgid "SEEKING"
 msgstr "ПОИСК"
 
+#empty string with id 31047
+
 msgctxt "#31048"
 msgid "Visualisation presets"
 msgstr "Настройки визуализации"
@@ -139,6 +167,9 @@ msgstr "По возрастанию"
 msgctxt "#31051"
 msgid "Sort: Descending"
 msgstr "По убыванию"
+
+#empty strings from id 31052 to 31054
+#Playlist Editor labels
 
 msgctxt "#31055"
 msgid "Open playlist"
@@ -160,9 +191,14 @@ msgctxt "#31059"
 msgid "Current playlist"
 msgstr "Текущий плейлист"
 
+#empty string with id 31060
+
 msgctxt "#31061"
 msgid "Current selected"
 msgstr "Текущее выделение"
+
+#empty strings from id 31062 to 31100
+#Skin Settings labels
 
 msgctxt "#31101"
 msgid "Home screen options"
@@ -179,6 +215,8 @@ msgstr "Показывать \"Пауза\" в режиме слайд-шоу"
 msgctxt "#31104"
 msgid "Play trailers in a window [COLOR=grey3](Video information dialogue only)[/COLOR]"
 msgstr "Воспроизводить трейлеры в окне [COLOR=grey3](только для окна сведений)[/COLOR]"
+
+#empty string with id 31105
 
 msgctxt "#31106"
 msgid "Miscellaneous options"
@@ -212,6 +250,7 @@ msgctxt "#31113"
 msgid "Show KODI logo"
 msgstr "Показывать KODI логотип"
 
+#. In main language strings its used as submenu
 msgctxt "#31118"
 msgid "Home page programs submenu"
 msgstr "Подменю программ главного экрана"
@@ -220,9 +259,15 @@ msgctxt "#31119"
 msgid "Hide background fanart"
 msgstr "Скрыть фоновый фанарт"
 
+#empty strings from id 31120 to 31121
+
+#. Boolean settings value
+#: system/settings/settings.xml
 msgctxt "#31122"
 msgid "Hide EPG if RDS is present on channel window"
 msgstr "Скрыть EPG если на каналe присутствует RDS"
+
+#empty string with id 31123
 
 msgctxt "#31124"
 msgid "Show background \"Now playing\" video"
@@ -231,6 +276,8 @@ msgstr "Воспроизводимое видео в качестве фона"
 msgctxt "#31125"
 msgid "Show background \"Now playing\" visualisation"
 msgstr "Музыкальная визуализация в качестве фона"
+
+#empty strings from id 31126 to 31127
 
 msgctxt "#31128"
 msgid "Lyrics"
@@ -256,6 +303,7 @@ msgctxt "#31133"
 msgid "Choose weather icon pack"
 msgstr "Выбрать картинки для погоды"
 
+#. In main language strings its used as submenu
 msgctxt "#31134"
 msgid "Home page \"Videos\" submenu"
 msgstr "Подменю \"Видео\" главного экрана"
@@ -268,21 +316,32 @@ msgctxt "#31136"
 msgid "Home page \"Pictures\" submenu"
 msgstr "Подменю \"Изображения\" главного экрана"
 
+#empty strings from id 31137 to 31139
+
 msgctxt "#31140"
 msgid "Music OSD"
 msgstr "Экранное меню музыки"
+
+#empty string with id 31141
 
 msgctxt "#31142"
 msgid "Settings level"
 msgstr "Уровень настроек"
 
+#empty strings from id 31143 to 31199
+#Script labels
+
 msgctxt "#31200"
 msgid "Shortcuts"
 msgstr "Ярлыки"
 
+#empty strings from id 31201 to 31202
+
 msgctxt "#31203"
 msgid "Choose your song"
 msgstr "Выберите композицию"
+
+#empty string with id 31204
 
 msgctxt "#31205"
 msgid "Lyrics source"
@@ -300,6 +359,9 @@ msgctxt "#31208"
 msgid "Upcoming episodes"
 msgstr "Следующие серии"
 
+#empty strings from id 31209 to 31299
+#Extra labels
+
 msgctxt "#31300"
 msgid "Current temperature"
 msgstr "Текущая температура"
@@ -308,9 +370,13 @@ msgctxt "#31301"
 msgid "Last updated"
 msgstr "Последнее обновление"
 
+#empty string with id 31302
+
 msgctxt "#31303"
 msgid "Data provider"
 msgstr "Источник данных"
+
+#empty strings from id 31304 to 31307
 
 msgctxt "#31308"
 msgid "Movie details"
@@ -324,6 +390,8 @@ msgctxt "#31310"
 msgid "Track number"
 msgstr "Номер композиции"
 
+#empty strings from id 31311 to 31318
+
 msgctxt "#31319"
 msgid "Selected profile"
 msgstr "Выбранный профиль"
@@ -332,9 +400,13 @@ msgctxt "#31320"
 msgid "Last logged in"
 msgstr "Последний вход"
 
+#empty string with id 31321
+
 msgctxt "#31322"
 msgid "Aired"
 msgstr "Премьера"
+
+#empty strings from id 31323 to 31324
 
 msgctxt "#31325"
 msgid "Playlist options"
@@ -364,6 +436,9 @@ msgctxt "#31331"
 msgid "Album details"
 msgstr "Сведения об альбоме"
 
+#empty strings from id 31332 to 31350
+#Video and Music OSD Labels
+
 msgctxt "#31351"
 msgid "Pause"
 msgstr "Пауза"
@@ -388,6 +463,9 @@ msgctxt "#31356"
 msgid "Download subtitles"
 msgstr "Загрузить субтитры"
 
+#empty strings from id 31357 to 31359
+
+# Stereoscopic labels
 msgctxt "#31360"
 msgid "Watch as 2D"
 msgstr "Смотреть в 2D"
@@ -399,6 +477,8 @@ msgstr "Изменить режим"
 msgctxt "#31362"
 msgid "Enabled"
 msgstr "Вкл."
+
+#empty strings from id 31363 to 31389
 
 msgctxt "#31390"
 msgid "Skin default"
@@ -412,6 +492,8 @@ msgctxt "#31392"
 msgid "Arial based"
 msgstr "На основе Arial"
 
+#empty strings from id 31393 to 31410
+
 msgctxt "#31411"
 msgid "First run help..."
 msgstr "Сведения при первом запуске..."
@@ -423,6 +505,8 @@ msgstr "Эта вкладка означает, что сбоку окна ес�
 msgctxt "#31413"
 msgid "Local subtitle available"
 msgstr "Доступны локальные субтитры"
+
+#empty strings from id 31414 to 31419
 
 msgctxt "#31420"
 msgid "Login"
@@ -439,6 +523,8 @@ msgstr "Показать или скрыть экран входа при зап
 msgctxt "#31423"
 msgid "Select the profile that will be used at startup when the login screen is disabled."
 msgstr "Выбрать профиль, используемый при запуске, если экран входа отключен."
+
+#empty strings from id 31424 to 31429
 
 msgctxt "#31430"
 msgid "[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during playback · Configure how media content is played"
@@ -462,11 +548,13 @@ msgstr "[B]НАСТРОЙКА СЛУЖБ[/B][CR][CR]Настройка и упр
 
 msgctxt "#31435"
 msgid "[B]SYSTEM SETTINGS[/B][CR][CR]Configure display · Configure audio · Configure internet access · Configure power saving· Configure logging"
-msgstr "[B]НАСТРОЙКИ СИСТЕМЫ[/B][CR][CR]Настройка экрана В· Настройка аудио В· Настройка интернета • Настройка питания • Настройка отладки"
+msgstr "[B]НАСТРОЙКИ СИСТЕМЫ[/B][CR][CR]Настройка экрана • Настройка аудио • Настройка интернета • Настройка питания • Настройка отладки"
 
 msgctxt "#31436"
 msgid "[B]INTERFACE SETTINGS[/B][CR][CR]Configure skin · Configure region · Configure control · Configure screensaver · Configure master lock"
 msgstr "[B]НАСТРОЙКА ИНТЕРФЕЙСА[/B][CR][CR]Настройка обложки • Настройка региона • Настройка управления • Настройка заставки • Настройка блокировки"
+
+#empty strings from id 31437 to 31500
 
 msgctxt "#31501"
 msgid "Scheduled time"
@@ -492,6 +580,8 @@ msgctxt "#31506"
 msgid "Available[CR]Groups"
 msgstr "Доступные[CR]группы"
 
+#empty strings from id 31507 to 31508
+
 msgctxt "#31509"
 msgid "Channel group"
 msgstr "Группа каналов"
@@ -503,6 +593,9 @@ msgstr "Таймер настроен"
 msgctxt "#31511"
 msgid "Channel options"
 msgstr "Настройки канала"
+
+#empty strings from id 31512 to 31900
+#Weather plugin
 
 msgctxt "#31901"
 msgid "36-hour forecast"
@@ -524,6 +617,8 @@ msgctxt "#31905"
 msgid "Forecast"
 msgstr "Прогноз"
 
+#empty strings from id 31906 to 31908
+
 msgctxt "#31909"
 msgid "Fetching forecast info..."
 msgstr "Получение прогноза…"
@@ -531,6 +626,8 @@ msgstr "Получение прогноза…"
 msgctxt "#31910"
 msgid "Maps"
 msgstr "Карты"
+
+#empty strings from id 31911 to 31949
 
 msgctxt "#31950"
 msgid "WEATHER"
@@ -774,10 +871,6 @@ msgctxt "#89025"
 msgid "Recent Albums"
 msgstr "Последние альбомы"
 
-msgctxt "#89026"
-msgid "Recommended Albums"
-msgstr "Рекомендуемые альбомы"
-
 msgctxt "#89027"
 msgid "Random Albums"
 msgstr "Случайные альбомы"
@@ -869,6 +962,14 @@ msgstr "Команда"
 msgctxt "#89709"
 msgid "Separate Backgrounds"
 msgstr "Отдельные фоны"
+
+msgctxt "#89900"
+msgid "Previous location"
+msgstr "Предидущее расположение"
+
+msgctxt "#89901"
+msgid "Next location"
+msgstr "Следующее расположение"
 
 msgctxt "#90000"
 msgid "Customize Power Menu"
