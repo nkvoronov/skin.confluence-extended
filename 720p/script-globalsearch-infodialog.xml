@@ -6,14 +6,14 @@
 	</coordinates>
 	<depth>DepthDialog</depth>
 	<controls>
-        <control type="list" id="100">
-            <left>-1000</left>
-            <top>-1000</top>
-            <width>1</width>
-            <height>1</height>
-            <itemlayout width="1" height="1"/>
-            <focusedlayout width="1" height="1"/>
-        </control>     
+		<control type="list" id="100">
+			<left>-1920</left>
+			<top>-1080</top>
+			<width>1</width>
+			<height>1</height>
+			<itemlayout width="1" height="1"/>
+			<focusedlayout width="1" height="1"/>
+		</control>
 		<control type="group">
             <left>90</left>
             <top>10</top>
@@ -75,8 +75,8 @@
 				<height>350</height>
 				<aspectratio>keep</aspectratio>
 				<texture>$INFO[Container(100).ListItem.Icon]</texture>
-			</control>       
-			<control type="group">
+			</control>
+   			<control type="group">
 				<visible>Control.IsVisible(110) | Control.IsVisible(140) | Control.IsVisible(150)</visible>
 				<control type="image">
 					<left>60</left>
@@ -118,7 +118,7 @@
 					<aspectratio>keep</aspectratio>
                     <texture>$INFO[Container(100).ListItem.Property(AudioChannels),flagging/audio/,.png]</texture>
 				</control>
-			</control>            
+			</control>         
 			<control type="group" id="101">
 				<control type="list" id="200">
 					<left>410</left>
@@ -345,6 +345,12 @@
 							<visible>!String.IsEmpty(Container(100).ListItem.Property(Rating))</visible>
 						</item>
 						<item>
+							<label>$LOCALIZE[38018]:</label>
+							<label2>$INFO[Container(100).ListItem.Property(UserRating)]</label2>
+							<onclick>noop</onclick>
+							<visible>!String.IsEmpty(Container(100).ListItem.Property(UserRating))</visible>
+						</item>
+						<item>
 							<label>$LOCALIZE[202]:</label>
 							<label2>$INFO[Container(100).ListItem.Property(TagLine)]</label2>
 							<onclick>noop</onclick>
@@ -483,6 +489,12 @@
 							<label2>$INFO[Container(100).ListItem.Property(Rating)]</label2>
 							<onclick>noop</onclick>
 							<visible>!String.IsEmpty(Container(100).ListItem.Property(Rating))</visible>
+						</item>
+						<item>
+							<label>$LOCALIZE[38018]:</label>
+							<label2>$INFO[Container(100).ListItem.Property(UserRating)]</label2>
+							<onclick>noop</onclick>
+							<visible>!String.IsEmpty(Container(100).ListItem.Property(UserRating))</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[20074]:</label>
@@ -723,6 +735,12 @@
 							<visible>!String.IsEmpty(Container(100).ListItem.Property(Rating))</visible>
 						</item>
 						<item>
+							<label>$LOCALIZE[38018]:</label>
+							<label2>$INFO[Container(100).ListItem.Property(UserRating)]</label2>
+							<onclick>noop</onclick>
+							<visible>!String.IsEmpty(Container(100).ListItem.Property(UserRating))</visible>
+						</item>
+						<item>
 							<label>$LOCALIZE[567]:</label>
 							<label2>$INFO[Container(100).ListItem.Property(Playcount)]</label2>
 							<onclick>noop</onclick>
@@ -849,6 +867,18 @@
 							<label2>$INFO[Container(100).ListItem.Property(Duration)]</label2>
 							<onclick>noop</onclick>
 							<visible>!String.IsEmpty(Container(100).ListItem.Property(Duration))</visible>
+						</item>
+						<item>
+							<label>$LOCALIZE[563]:</label>
+							<label2>$INFO[Container(100).ListItem.Property(Rating)]</label2>
+							<onclick>noop</onclick>
+							<visible>!String.IsEmpty(Container(100).ListItem.Property(Rating))</visible>
+						</item>
+						<item>
+							<label>$LOCALIZE[38018]:</label>
+							<label2>$INFO[Container(100).ListItem.Property(UserRating)]</label2>
+							<onclick>noop</onclick>
+							<visible>!String.IsEmpty(Container(100).ListItem.Property(UserRating))</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[567]:</label>
@@ -1083,6 +1113,12 @@
 							<visible>!String.IsEmpty(Container(100).ListItem.Property(Album_Rating))</visible>
 						</item>
 						<item>
+							<label>$LOCALIZE[38018]:</label>
+							<label2>$INFO[Container(100).ListItem.Property(UserRating)]</label2>
+							<onclick>noop</onclick>
+							<visible>!String.IsEmpty(Container(100).ListItem.Property(UserRating))</visible>
+						</item>
+						<item>
 							<label>$LOCALIZE[175]:</label>
 							<label2>$INFO[Container(100).ListItem.Property(Album_Mood)]</label2>
 							<onclick>noop</onclick>
@@ -1233,6 +1269,12 @@
 							<label2>$INFO[Container(100).ListItem.Property(Rating)]</label2>
 							<onclick>noop</onclick>
 							<visible>!String.IsEmpty(Container(100).ListItem.Property(Rating))</visible>
+						</item>
+						<item>
+							<label>$LOCALIZE[38018]:</label>
+							<label2>$INFO[Container(100).ListItem.Property(UserRating)]</label2>
+							<onclick>noop</onclick>
+							<visible>!String.IsEmpty(Container(100).ListItem.Property(UserRating))</visible>
 						</item>
 						<item>
 							<label>$LOCALIZE[515]:</label>
