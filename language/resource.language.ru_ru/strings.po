@@ -1002,6 +1002,14 @@ msgctxt "#89709"
 msgid "Separate Backgrounds"
 msgstr "Отдельные фоны"
 
+msgctxt "#89900"
+msgid "Previous location"
+msgstr "Предидущее расположение"
+
+msgctxt "#89901"
+msgid "Next location"
+msgstr "Следующее расположение"
+
 msgctxt "#90000"
 msgid "Customize Power Menu"
 msgstr "Настрить меню выключения"

@@ -1002,6 +1002,14 @@ msgctxt "#89709"
 msgid "Separate Backgrounds"
 msgstr "Окремі фони"
 
+msgctxt "#89900"
+msgid "Previous location"
+msgstr "Попереднє розташування"
+
+msgctxt "#89901"
+msgid "Next location"
+msgstr "Наступне розташування"
+
 msgctxt "#90000"
 msgid "Customize Power Menu"
 msgstr "Налаштувати меню вимикання"
