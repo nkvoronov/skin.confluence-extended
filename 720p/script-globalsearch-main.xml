@@ -914,6 +914,8 @@
 							<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
 							<textureslidernib>ScrollBarNib.png</textureslidernib>
 							<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+							<onup>218</onup>
+							<ondown>218</ondown>
 							<onleft>211</onleft>
 							<onright>9000</onright>
 							<showonepage>false</showonepage>
@@ -1284,7 +1286,6 @@
 									<top>5</top>
 									<width>150</width>
 									<height>90</height>
-									<aspectratio>scale</aspectratio>
 									<texture background="true">$INFO[ListItem.Icon]</texture>
 									<aspectratio>keep</aspectratio>
 								</control>
@@ -1339,7 +1340,6 @@
 									<top>5</top>
 									<width>150</width>
 									<height>90</height>
-									<aspectratio>scale</aspectratio>
 									<texture background="true">$INFO[ListItem.Icon]</texture>
 									<aspectratio>keep</aspectratio>
 								</control>
