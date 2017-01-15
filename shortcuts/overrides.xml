@@ -2,8 +2,6 @@
 <overrides>
     <doNotShareMenu />
     <alwaysRestore>True</alwaysRestore>
-    <!-- Icons Directory -->
-    <thumbnailBrowseDefault>special://skin/extras/icons/</thumbnailBrowseDefault>
     <!-- Background -->
 	<background label="smartshortcuts">||BROWSE||plugin://script.skin.helper.service/?action=backgrounds</background>
 	<background label="smartshortcuts">||BROWSE||special://skin/extras/backgrounds</background>
@@ -44,7 +42,7 @@
     <groupoverride group="*" disable_groups="powermenu" condition="">SetProperty(MenuBackground,$VAR[HomeBackground],home)</groupoverride>
     <!-- Menus Groupings -->
     <menus-groupings>
-        <shortcut label="$ADDON[script.skin.helper.service 32062]" type="" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=smartshortcuts</shortcut>        
+        <shortcut label="90050" type="" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=smartshortcuts</shortcut>        
         <!-- Weather -->
         <node label="8">
             <shortcut label="8" type="8" icon="DefaultFolder.png">ActivateWindow(Weather)</shortcut>
@@ -289,7 +287,7 @@
     </radio-groupings>
     <widgetRename>True</widgetRename>
     <widget-groupings>
-        <shortcut label="$ADDON[script.skin.helper.service 32062]" type="" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=skinplaylists,librarydataprovider,scriptwidgets,extendedinfo,pvr</shortcut>
+        <shortcut label="90051" type="" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=skinplaylists,librarydataprovider,scriptwidgets,extendedinfo,pvr</shortcut>
         <!-- Weather -->
         <node label="8">
             <shortcut label="89302" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[89302]" widget="DailyWeather" widgetType="weathers" widgetTarget="list">skin</shortcut>

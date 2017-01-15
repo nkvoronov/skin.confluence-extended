@@ -1051,12 +1051,12 @@ msgid "Widget Limit Items"
 msgstr "Ліміт елементів"
 
 msgctxt "#90010"
-msgid "Enable SmartShortcuts Playlists"
-msgstr "Дозволити Смарт ярлики для плейлистів"
+msgid "Enable Smart Shortcuts Playlists"
+msgstr "Дозволити Смарт Ярлики для плейлистів"
 
 msgctxt "#90011"
-msgid "Enable SmartShortcuts Favorites"
-msgstr "Дозволити Смарт ярлики для обраного"
+msgid "Enable Smart Shortcuts Favorites"
+msgstr "Дозволити Смарт Ярлики для обраного"
 
 msgctxt "#90012"
 msgid "Enable Animated Posters"
@@ -1118,10 +1118,14 @@ msgctxt "#90042"
 msgid "Duration (sec)"
 msgstr "Тривалість (сек)"
 
-msgctxt "#90043"
-msgid "Enable PVR Thumbs"
-msgstr "Дозволити PVR ілюстрації"
-
 msgctxt "#90044"
 msgid "Disable"
 msgstr "Заборонити"
+
+msgctxt "#90050"
+msgid "Smart Shortcuts"
+msgstr "Cмарт Ярлики"
+
+msgctxt "#90051"
+msgid "Smart Widgets"
+msgstr "Смарт Віджети"
