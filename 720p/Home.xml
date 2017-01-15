@@ -5,8 +5,15 @@
     <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=mainmenu|powermenu&amp;levels=2)</onload>
     <!-- SkinHelper -->
     <onload condition="Skin.HasSetting(ActivateSmartShortcutsPlaylists)">Skin.SetBool(SmartShortcuts.playlists)</onload>
+    <onload condition="!Skin.HasSetting(ActivateSmartShortcutsPlaylists)">Skin.Reset(SmartShortcuts.playlists)</onload>
     <onload condition="Skin.HasSetting(ActivateSmartShortcutsFavorites)">Skin.SetBool(SmartShortcuts.favorites)</onload>
+    <onload condition="!Skin.HasSetting(ActivateSmartShortcutsFavorites)">Skin.Reset(SmartShortcuts.favorites)</onload>
     <onload condition="Skin.HasSetting(ActivateAnimatedPosters)">Skin.SetBool(SkinHelper.EnableAnimatedPosters)</onload>
+    <onload condition="!Skin.HasSetting(ActivateAnimatedPosters)">Skin.Reset(SkinHelper.EnableAnimatedPosters)</onload>
+    <onload>Skin.SetBool(SkinHelper.EnableExtendedArt)</onload>
+    <onload>Skin.SetBool(SkinHelper.EnableMusicArt)</onload>
+    <onload>Skin.SetBool(SkinHelper.EnablePVRThumbs)</onload>
+    <onload>Skin.SetBool(SkinHelper.EnableAddonsLookups)</onload>
     <!-- -->
     <include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
     <onload condition="!String.IsEmpty(Window(Home).Property(MenuItemActive))">ClearProperty(MenuItemActive,Home)</onload>

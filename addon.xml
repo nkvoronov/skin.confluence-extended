@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.confluence-extended-s" version="3.0.43.108" name="Confluence Extended Shortcuts" provider-name="Jezz_X, Team Kodi, YLLOW_DRAGON, plood">
+<addon 
+    id="skin.confluence-extended-s" 
+    version="3.0.45.109" 
+    name="Confluence Extended Shortcuts" 
+    provider-name="Jezz_X, Team Kodi, YLLOW_DRAGON, plood">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
+        <import addon="script.image.resource.select" version="1.1.0"/>
 		<import addon="script.skinshortcuts" version="1.0.10"/>
-		<import addon="script.skin.helper.service" version="1.0.10"/>
+        <import addon="script.skin.helper.service" version="1.0.10"/>
+        <import addon="script.skin.helper.skinbackup" version="1.0.10"/>
+        <import addon="script.skin.helper.widgets" version="1.0.10"/>
+        <import addon="script.skin.helper.backgrounds" version="1.0.10"/>
+        <import addon="script.skin.helper.colorpicker" version="1.0.0"/>
 	</requires>
-	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" debugging="false" effectslowdown="1.0">
+	<extension 
+        point="xbmc.gui.skin" 
+        defaultthemename="Textures.xbt" 
+        debugging="false" 
+        effectslowdown="1.0">
 		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -13,7 +26,7 @@
 		<summary lang="ar_SA">جلد "كونفليونس" من صنع Jezz_X, Team XBMC, YLLOW_DRAGON, plood. (الجلد المبدأى لبرنامج إكس بى إم سى)</summary>
 		<summary lang="be_BY">Confluence Extended Shortcuts skin by Jezz_X, Team XBMC, YLLOW_DRAGON, plood. (Kodi's default skin)</summary>
 		<summary lang="bg_BG">Confluence Extended Shortcuts облик от Jezz_X, Team XBMC, YLLOW_DRAGON, plood. (стандартния облик за Kodi)</summary>
-		<summary lang="ca_ES">Pell Confluence Extended Shortcuts, per Jezz_X, Team XBMC, YLLOW_DRAGON, plood. (Pell per defecte del Kodi)</summary>
+		<summary lang="ca_ES">Aparença Confluence Extended Shortcuts, per Jezz_X, Team XBMC, YLLOW_DRAGON, plood. (Pell per defecte del Kodi)</summary>
 		<summary lang="cs_CZ">Vzhled Confluence Extended Shortcuts od Jezz_X, Team XBMC, YLLOW_DRAGON, plood. (výchozí vzhled Kodi)</summary>
 		<summary lang="cy_GB">Croen Confluence Extended Shortcuts gan Jezz_X, Team XBMC, YLLOW_DRAGON, plood. (Croen rhagosodedig Kodi)</summary>
 		<summary lang="da_DK">Confluence Extended Shortcuts-tema af Jezz_X, Team XBMC, YLLOW_DRAGON, plood. (Kodis standardtema)</summary>

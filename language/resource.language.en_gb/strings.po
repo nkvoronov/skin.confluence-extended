@@ -1020,11 +1020,11 @@ msgid "Widget Limit Items"
 msgstr ""
 
 msgctxt "#90010"
-msgid "Enable SmartShortcuts Playlists"
+msgid "Enable Smart Shortcuts Playlists"
 msgstr ""
 
 msgctxt "#90011"
-msgid "Enable SmartShortcuts Favorites"
+msgid "Enable Smart Shortcuts Favorites"
 msgstr ""
 
 msgctxt "#90012"
@@ -1087,10 +1087,14 @@ msgctxt "#90042"
 msgid "Duration (sec)"
 msgstr ""
 
-msgctxt "#90043"
-msgid "Enable PVR Thumbs"
-msgstr ""
-
 msgctxt "#90044"
 msgid "Disable"
+msgstr ""
+
+msgctxt "#90050"
+msgid "Smart Shortcuts"
+msgstr ""
+
+msgctxt "#90051"
+msgid "Smart Widgets"
 msgstr ""

@@ -329,7 +329,6 @@
 						<label>90041</label>
 						<label2>$INFO[Skin.String(SplashScreenPath)]</label2>
                         <onclick>Skin.SetFile(SplashScreenPath)</onclick>
-						<onclick></onclick>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>                        
 						<enable>Skin.HasSetting(EnableSplashScreen)</enable>
@@ -449,19 +448,58 @@
 						<aligny>center</aligny>
 					</control>
                     <control type="button" id="126">
-                        <description>Settings Skin Helper Service</description>
+                        <description>Settings Skin Helper Service Art Utils</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>- $LOCALIZE[24020]</label>
+						<label>- $LOCALIZE[24020] Skin Helper Artwork</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Addon.OpenSettings(script.skin.helper.service)</onclick>
-						<enable>System.HasAddon(script.skin.helper.service)</enable>
+						<onclick>Addon.OpenSettings(script.module.skin.helper.artutils)</onclick>
+						<visible>System.HasAddon(script.module.skin.helper.artutils)</visible>
 					</control>
-                    <control type="radiobutton" id="127">
+                    <control type="button" id="127">
+                        <description>Settings Skin Helper Service Backgrounds</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>- $LOCALIZE[24020] Skin Helper Service Backgrounds</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Addon.OpenSettings(script.skin.helper.backgrounds)</onclick>
+						<visible>System.HasAddon(script.skin.helper.backgrounds)</visible>
+					</control>
+                    <control type="button" id="128">
+                        <description>Settings Skin Helper Service Widgets</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>- $LOCALIZE[24020] Skin Helper Service Widgets</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Addon.OpenSettings(script.skin.helper.widgets)</onclick>
+						<visible>System.HasAddon(script.skin.helper.widgets)</visible>
+					</control>
+                    <control type="button" id="129">
+                        <description>Settings Skin Helper Service Skin Backup</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>- $LOCALIZE[24020] Skin Helper Service Skin Backup</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Addon.OpenSettings(script.skin.helper.skinbackup)</onclick>
+						<visible>System.HasAddon(script.skin.helper.skinbackup)</visible>
+					</control>                   
+                    <control type="radiobutton" id="130">
                         <description>Enable SmartShortcuts.playlists</description>
 						<width>750</width>
 						<height>40</height>
@@ -475,7 +513,7 @@
 						<selected>Skin.HasSetting(ActivateSmartShortcutsPlaylists)</selected>
 						<enable>System.HasAddon(script.skin.helper.service)</enable>
 					</control>
-                    <control type="radiobutton" id="128">
+                    <control type="radiobutton" id="131">
                         <description>Enable SmartShortcuts.favorites</description>
 						<width>750</width>
 						<height>40</height>
@@ -489,21 +527,7 @@
 						<selected>Skin.HasSetting(ActivateSmartShortcutsFavorites)</selected>
 						<enable>System.HasAddon(script.skin.helper.service)</enable>
 					</control>
-                    <control type="radiobutton" id="129">
-                        <description>Enable PVR Thumbs</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>- $LOCALIZE[90043]</label>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(SkinHelper.EnablePVRThumbs)</onclick>
-						<selected>Skin.HasSetting(SkinHelper.EnablePVRThumbs)</selected>
-						<enable>System.HasAddon(script.skin.helper.service)</enable>
-					</control>
-                    <control type="radiobutton" id="130">
+                    <control type="radiobutton" id="132">
                         <description>Enable Animated Posters</description>
 						<width>750</width>
 						<height>40</height>
