@@ -2,7 +2,7 @@
 <window>
 	<defaultcontrol always="true">10</defaultcontrol>
     <include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
-    <onload condition="Skin.HasSetting(EnableSplashScreen)">RunScript(script.skin.helper.service,action=splashscreen,file=$INFO[Skin.String(SplashScreenPath)],duration=$INFO[Skin.String(DurationSplashScreen)])</onload>
+    <onload condition="Skin.HasSetting(EnableSplashScreen)">RunScript(script.skin.helper.service,action=splashscreen,file=$INFO[Skin.String(SplashScreenPath)],duration=$VAR[DurationSplashScreenName])</onload>
     <onload condition="!Skin.HasSetting(EnableSplashScreen)">ReplaceWindow($INFO[System.StartupWindow])</onload>
 	<controls>
         <!-- video control for splash -->

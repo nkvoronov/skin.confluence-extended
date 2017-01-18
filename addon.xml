@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon 
-    id="skin.confluence-extended-s" 
-    version="3.0.45.109" 
-    name="Confluence Extended Shortcuts" 
+<addon
+    id="skin.confluence-extended-s"
+    version="3.0.45.110"
+    name="Confluence Extended Shortcuts"
     provider-name="Jezz_X, Team Kodi, YLLOW_DRAGON, plood">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
