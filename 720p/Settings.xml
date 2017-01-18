@@ -5,7 +5,7 @@
     <onload condition="IsEmpty(Window(Home).Property(MenuBackground))">SetProperty(MenuBackground,special://skin/extras/backgrounds/settings.jpg,Home)</onload>
 	<controls>
         <include>CommonCustomBackground</include>
-		<include>CommonBackground</include>        
+		<include>CommonBackground</include>
 		<control type="image">
 			<left>0</left>
 			<top>100r</top>
