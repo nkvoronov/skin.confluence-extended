@@ -1847,6 +1847,14 @@
                 <onclick>Skin.Reset(MenuColorName)</onclick>
                 <onclick>PreviousMenu</onclick>
             </item>
+            <item id="12">
+                <description>MenuColor Manual</description>
+                <label>[COLOR=$VAR[MenuColorVar]]$LOCALIZE[88085][/COLOR]</label>
+                <onclick>RunScript(script.skin.helper.colorpicker,skinstring=MenuColor,header=$ADDON[script.skin.helper.colorpicker 32011])</onclick>
+                <onclick>Skin.SetString(MenuColorName,$LOCALIZE[88085],)</onclick>
+                <onclick>PreviousMenu</onclick>
+                <visible>System.HasAddon(script.skin.helper.colorpicker)</visible>
+            </item>
         </content>
 	</include>
     <include name="ItemMenuFocus">
