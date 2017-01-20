@@ -6,14 +6,14 @@
 	</coordinates>
 	<depth>DepthDialog</depth>
 	<controls>
-        <control type="list" id="100">
-            <left>-1000</left>
-            <top>-1000</top>
-            <width>1</width>
-            <height>1</height>
-            <itemlayout width="1" height="1"/>
-            <focusedlayout width="1" height="1"/>
-        </control>     
+		<control type="list" id="100">
+			<left>-1920</left>
+			<top>-1080</top>
+			<width>1</width>
+			<height>1</height>
+			<itemlayout width="1" height="1"/>
+			<focusedlayout width="1" height="1"/>
+		</control>
 		<control type="group">
             <left>90</left>
             <top>10</top>
@@ -75,7 +75,7 @@
 				<height>350</height>
 				<aspectratio>keep</aspectratio>
 				<texture>$INFO[Container(100).ListItem.Icon]</texture>
-			</control>       
+			</control>
 			<control type="group">
 				<visible>Control.IsVisible(110) | Control.IsVisible(140) | Control.IsVisible(150)</visible>
 				<control type="image">
@@ -118,7 +118,7 @@
 					<aspectratio>keep</aspectratio>
                     <texture>$INFO[Container(100).ListItem.Property(AudioChannels),flagging/audio/,.png]</texture>
 				</control>
-			</control>            
+			</control>
 			<control type="group" id="101">
 				<control type="list" id="200">
 					<left>410</left>
