@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<defaultcontrol always="true">3110</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<left>140</left>
+		<top>155</top>
+	</coordinates>
+    <include>dialogeffect</include>
+	<controls>
+		<control type="image">
+			<left>0</left>
+			<top>0</top>
+			<width>1000</width>
+			<height>410</height>
+			<texture border="40">DialogBack.png</texture>
+		</control>
+		<control type="image">
+			<description>Dialog Header image</description>
+			<left>25</left>
+			<top>16</top>
+			<width>950</width>
+			<height>40</height>
+			<texture>dialogheader.png</texture>
+		</control>
+		<control type="label" id="1">
+			<description>header label</description>
+			<left>25</left>
+			<top>20</top>
+			<width>950</width>
+			<height>30</height>
+			<font>font13_title</font>
+			<label>$ADDON[script.skin.helper.colorpicker 32011]</label>
+			<align>center</align>
+			<aligny>center</aligny>
+			<textcolor>selected</textcolor>
+			<shadowcolor>black</shadowcolor>
+		</control>
+		<control type="button">
+			<description>Close Window button</description>
+			<left>900</left>
+			<top>15</top>
+			<width>64</width>
+			<height>32</height>
+			<onclick>PreviousMenu</onclick>
+			<texturefocus>DialogCloseButton-focus.png</texturefocus>
+			<texturenofocus>DialogCloseButton.png</texturenofocus>
+			<onleft>10</onleft>
+			<onright>10</onright>
+			<onup>10</onup>
+			<ondown>10</ondown>
+			<visible>system.getbool(input.enablemouse)</visible>
+		</control>        
+        <!-- Color picker panel -->
+		<control type="panel" id="3110">
+			<left>20</left>
+			<top>65</top>
+			<width>700</width>
+			<height>315</height>
+			<orientation>vertical</orientation>
+			<onleft>3110</onleft>
+			<onright>60</onright>
+			<onup>3030</onup>
+			<ondown>3010</ondown>
+			<preloaditems>4</preloaditems>
+			<pagecontrol>60</pagecontrol>
+            <itemlayout height="45" width="58">
+                <control type="image">
+                    <left>2</left>
+                    <top>2</top>
+                    <width>54</width>
+                    <height>41</height>
+                    <texture>$INFO[ListItem.Icon]</texture>
+                </control>
+            </itemlayout>
+            <focusedlayout height="45" width="58">
+                <control type="group">
+                    <animation effect="zoom" time="300" tween="sine" easing="inout" start="100" end="130" center="auto">Focus</animation>
+                    <control type="image">
+                        <left>-1</left>
+                        <top>-1</top>
+                        <width>60</width>
+                        <height>47</height>
+                        <texture border="5">folder-focus.png</texture>
+                    </control>
+                    <control type="image">
+                        <left>2</left>
+                        <top>2</top>
+                        <width>54</width>
+                        <height>41</height>
+                        <texture>$INFO[ListItem.Icon]</texture>
+                    </control>
+                </control>
+            </focusedlayout>
+        </control>        
+        <control type="scrollbar" id="60">
+            <left>720</left>
+            <top>65</top>
+            <width>25</width>
+            <height>315</height>
+            <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+            <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+            <texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+            <textureslidernib>ScrollBarNib.png</textureslidernib>
+            <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+            <onleft>3110</onleft>
+            <onright>9000</onright>
+            <showonepage>false</showonepage>
+            <orientation>vertical</orientation>
+        </control>
+        <control type="grouplist" id="9000">
+            <orientation>vertical</orientation>
+            <left>750</left>
+            <top>65</top>
+            <height>315</height>
+            <onleft>60</onleft>
+            <onright>3110</onright>
+            <control type="button" id="3030">
+                <width>225</width>
+                <height>60</height>
+                <align>center</align>
+                <font>font12_title</font>
+                <textcolor>white</textcolor>
+                <focusedcolor>white</focusedcolor>
+                <wrapmultiline>false</wrapmultiline>
+                <label>$ADDON[script.skin.helper.colorpicker 32141][CR][UPPERCASE]$INFO[Window.Property(palettename)][/UPPERCASE]</label>
+                <visible>!String.IsEmpty(Window.Property(palettename))</visible>
+            </control>
+            <!-- edit manual -->
+            <control type="button" id="3010">
+                <width>225</width>
+                <height>40</height>
+                <align>center</align>
+                <font>font12_title</font>
+                <textcolor>white</textcolor>
+                <focusedcolor>white</focusedcolor>
+                <label>[COLOR=$INFO[Window.Property(colorstring)]]$ADDON[script.skin.helper.colorpicker 32012][/COLOR] $INFO[Window.Property(colorstring)]</label>
+                <visible>!String.IsEmpty(Window.Property(palettename))</visible>
+            </control>
+            <control type="slider" id="3015">
+				<visible>false</visible>
+			</control>
+            <!-- Save button -->
+            <control type="button" id="3012">
+               <width>225</width>
+                <height>40</height>
+                <align>center</align>
+                <font>font12_title</font>
+                <textcolor>white</textcolor>
+                <focusedcolor>white</focusedcolor>
+                <label>190</label>
+                <visible>!String.IsEmpty(Window.Property(palettename))</visible>
+            </control>
+            <!-- Cancel -->
+            <control type="button" id="3090">
+               <width>225</width>
+                <height>40</height>
+                <align>center</align>
+                <font>font12_title</font>
+                <textcolor>white</textcolor>
+                <focusedcolor>white</focusedcolor>
+                <label>222</label>
+                <onclick>Dialog.Close(all)</onclick>
+                <visible>!String.IsEmpty(Window.Property(palettename))</visible>
+            </control>
+        </control>
+	</controls>
+</window>

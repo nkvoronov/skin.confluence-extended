@@ -107,6 +107,10 @@
         <value condition="!String.IsEmpty(Skin.String(MenuColorName))">[COLOR=$INFO[Skin.String(menuColor)]]$INFO[Skin.String(MenuColorName)][/COLOR]</value>
         <value>[COLOR=selected]$LOCALIZE[571][/COLOR]</value>
     </variable>
+    <variable name="MenuColorVar">
+        <value condition="!String.IsEmpty(Skin.String(MenuColor))">$INFO[Skin.String(menuColor)]</value>
+        <value>blue</value>
+    </variable>
     <variable name="MenuFocusName">
         <value condition="!String.IsEmpty(Skin.String(CustomFocusName)) + String.IsEqual(Skin.String(CustomFocusName),$LOCALIZE[88085])">[COLOR=selected]$INFO[Skin.String(CustomFocus)][/COLOR]</value>
         <value condition="!String.IsEmpty(Skin.String(CustomFocusName))">[COLOR=selected]$INFO[Skin.String(CustomFocusName)][/COLOR]</value>

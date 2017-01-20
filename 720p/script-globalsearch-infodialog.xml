@@ -76,7 +76,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture>$INFO[Container(100).ListItem.Icon]</texture>
 			</control>
-   			<control type="group">
+			<control type="group">
 				<visible>Control.IsVisible(110) | Control.IsVisible(140) | Control.IsVisible(150)</visible>
 				<control type="image">
 					<left>60</left>
@@ -118,7 +118,7 @@
 					<aspectratio>keep</aspectratio>
                     <texture>$INFO[Container(100).ListItem.Property(AudioChannels),flagging/audio/,.png]</texture>
 				</control>
-			</control>         
+			</control>
 			<control type="group" id="101">
 				<control type="list" id="200">
 					<left>410</left>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
     id="skin.confluence-extended-s"
-    version="3.0.45.110"
+    version="3.0.45.111"
     name="Confluence Extended Shortcuts"
     provider-name="Jezz_X, Team Kodi, YLLOW_DRAGON, plood">
 	<requires>
@@ -14,10 +14,10 @@
         <import addon="script.skin.helper.backgrounds" version="1.0.10"/>
         <import addon="script.skin.helper.colorpicker" version="1.0.0"/>
 	</requires>
-	<extension 
-        point="xbmc.gui.skin" 
-        defaultthemename="Textures.xbt" 
-        debugging="false" 
+	<extension
+        point="xbmc.gui.skin"
+        defaultthemename="Textures.xbt"
+        debugging="false"
         effectslowdown="1.0">
 		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
 	</extension>
