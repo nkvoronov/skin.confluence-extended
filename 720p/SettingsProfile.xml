@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
-    <onload condition="IsEmpty(Window(Home).Property(MenuItemActive))">SetProperty(MenuItemActive,settings,Home)</onload>
-    <onload condition="IsEmpty(Window(Home).Property(MenuBackground))">SetProperty(MenuBackground,special://skin/extras/backgrounds/settings.jpg,Home)</onload>
 	<controls>
-        <include>CommonCustomBackground</include>
 		<include>CommonBackground</include>
 		<control type="image">
 			<left>0</left>
@@ -14,7 +11,6 @@
 			<texture>floor.png</texture>
 			<animation effect="slide" start="0,10" end="0,0" time="150" condition="Window.Previous(Home)">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="0,10" time="150" condition="Window.Next(Home)">WindowClose</animation>
-			<visible>!Skin.HasSetting(NoFloorAll)</visible>
 		</control>
 		<control type="group">
 			<left>90</left>
@@ -40,7 +36,6 @@
 				<width>1090</width>
 				<height>64</height>
 				<texture border="15">ContentPanelMirror.png</texture>
-				<visible>!Skin.HasSetting(NoFloorAll)</visible>
 			</control>
 			<control type="button">
 				<description>Close Window button</description>
@@ -145,7 +140,7 @@
 					<aspectratio>keep</aspectratio>
 					<bordertexture border="12">ThumbBorder.png</bordertexture>
 					<bordersize>10</bordersize>
-					<texture fallback="unknown-user.png">$INFO[Container(2).Listitem.Icon]</texture>
+					<texture fallback="DefaultUser.png">$INFO[Container(2).Listitem.Icon]</texture>
 				</control>
 				<control type="label">
 					<left>0</left>
@@ -320,7 +315,7 @@
 							<height>145</height>
 							<bordertexture border="5">button-nofocus.png</bordertexture>
 							<bordersize>5</bordersize>
-							<texture fallback="unknown-user.png">$INFO[Listitem.Icon]</texture>
+							<texture fallback="DefaultUser.png">$INFO[Listitem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
@@ -344,7 +339,7 @@
 							<height>145</height>
 							<bordertexture border="5">folder-focus.png</bordertexture>
 							<bordersize>5</bordersize>
-							<texture fallback="unknown-user.png">$INFO[Listitem.Icon]</texture>
+							<texture fallback="DefaultUser.png">$INFO[Listitem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
@@ -384,7 +379,7 @@
 		</control>
 		<include>MainWindowMouseButtons</include>
 		<include>BehindDialogFadeOut</include>
-		<include name="CommonWindowHeader">
+		<include content="CommonWindowHeader">
 			<param name="Icon" value="icon_system" />
 			<param name="Label" value="$LOCALIZE[13200]" />
 		</include>

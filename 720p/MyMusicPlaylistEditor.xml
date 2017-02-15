@@ -3,7 +3,6 @@
 	<defaultcontrol always="true">6</defaultcontrol>
 	<menucontrol>9000</menucontrol>
 	<controls>
-        <include>CommonCustomBackground</include>
 		<include>CommonBackground</include>
 		<control type="group">
 			<top>10</top>
@@ -397,7 +396,7 @@
 				</focusedlayout>
 			</control>
 		</control>
-		<include name="CommonWindowHeader">
+		<include content="CommonWindowHeader">
 			<param name="Icon" value="icon_music" />
 			<param name="Label" value="$LOCALIZE[10503]" />
 		</include>

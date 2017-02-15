@@ -4,7 +4,6 @@
 	<menucontrol>9000</menucontrol>
 	<views>10,11,12,13</views>
 	<controls>
-        <include>CommonCustomBackground</include>
 		<include>CommonBackground</include>
 		<control type="image">
 			<left>0</left>
@@ -14,7 +13,6 @@
 			<texture>floor.png</texture>
 			<animation effect="fade" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
 			<animation effect="fade" time="200" condition="Window.Next(Home)">WindowClose</animation>
-			<visible>!Skin.HasSetting(NoFloorAll)</visible>
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
@@ -26,7 +24,6 @@
 				<texture>floor.png</texture>
 				<animation effect="fade" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
 				<animation effect="fade" time="200" condition="Window.Next(Home)">WindowClose</animation>
-				<visible>!Skin.HasSetting(NoFloorAll)</visible>
 			</control>
 			<control type="group">
 				<include>Window_OpenClose_Animation</include>
@@ -45,7 +42,6 @@
 						<width>1170</width>
 						<height>64</height>
 						<texture border="15">ContentPanelMirror.png</texture>
-						<visible>!Skin.HasSetting(NoFloorAll)</visible>
 					</control>
 				</control>
 			</control>

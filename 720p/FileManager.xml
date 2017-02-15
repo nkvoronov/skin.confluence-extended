@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>20</defaultcontrol>
-    <onload condition="IsEmpty(Window(Home).Property(MenuItemActive))">SetProperty(MenuItemActive,settings,Home)</onload>
-    <onload condition="IsEmpty(Window(Home).Property(MenuBackground))">SetProperty(MenuBackground,special://skin/extras/backgrounds/settings.jpg,Home)</onload>
 	<controls>
-        <include>CommonCustomBackground</include>
 		<include>CommonBackground</include>
 		<control type="image">
 			<left>0</left>
@@ -14,7 +11,6 @@
 			<texture>floor.png</texture>
 			<animation effect="slide" start="0,10" end="0,0" time="150" condition="Window.Previous(Home)">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="0,10" time="150" condition="Window.Next(Home)">WindowClose</animation>
-			<visible>!Skin.HasSetting(NoFloorAll)</visible>
 		</control>
 		<control type="group">
 			<left>30</left>
@@ -40,7 +36,6 @@
 				<width>610</width>
 				<height>64</height>
 				<texture border="10">ContentPanelMirror.png</texture>
-				<visible>!Skin.HasSetting(NoFloorAll)</visible>
 			</control>
 			<control type="image">
 				<left>510</left>
@@ -162,7 +157,7 @@
 						<width>200</width>
 						<height>31</height>
 						<texture border="0,0,14,0">MediaItemDetailBG.png</texture>
-						<visible>Control.HasFocus(20) + !IsEmpty(ListItem.Label2)</visible>
+						<visible>Control.HasFocus(20) + !String.IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
 						<left>0</left>
@@ -215,7 +210,6 @@
 				<width>610</width>
 				<height>64</height>
 				<texture border="10">ContentPanelMirror.png</texture>
-				<visible>!Skin.HasSetting(NoFloorAll)</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -337,7 +331,7 @@
 						<width>200</width>
 						<height>31</height>
 						<texture border="0,0,14,0">MediaItemDetailBG.png</texture>
-						<visible>Control.HasFocus(21) + !IsEmpty(ListItem.Label2)</visible>
+						<visible>Control.HasFocus(21) + !String.IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
 						<left>0</left>
@@ -432,7 +426,7 @@
 				<height>45</height>
 				<label>31003</label>
 				<font>-</font>
-				<onclick>ActivateWindow(Home)</onclick>
+				<onclick>ActivateWindow(home)</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
 				<onleft>50</onleft>
@@ -450,7 +444,7 @@
 				<texture>icon_home.png</texture>
 			</control>
 		</control>
-		<include name="CommonWindowHeader">
+		<include content="CommonWindowHeader">
 			<param name="Icon" value="icon_system" />
 			<param name="Label" value="$LOCALIZE[7]" />
 		</include>

@@ -6,10 +6,9 @@
 			<description>Normal Default Background Image</description>
 			<include>BackgroundDimensions</include>
 			<aspectratio>scale</aspectratio>
-			<texture fallback="special://skin/extras/default/SKINDEFAULT.jpg">$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</texture>
-			<visible>![Skin.HasSetting(UseCustomBackground) + !IsEmpty(Skin.String(CustomBackgroundPath))]</visible>
+			<texture fallback="special://skin/backgrounds/SKINDEFAULT.jpg">$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</texture>
+			<visible>![Skin.HasSetting(UseCustomBackground) + !String.IsEmpty(Skin.String(CustomBackgroundPath))]</visible>
 			<include>VisibleFadeEffect</include>
-			<visible>!Skin.HasSetting(SeparateBackground)</visible>
 		</control>
 		<control type="image">
 			<depth>DepthBackground</depth>
@@ -17,37 +16,9 @@
 			<include>BackgroundDimensions</include>
 			<aspectratio>scale</aspectratio>
 			<texture>$INFO[Skin.String(CustomBackgroundPath)]</texture>
-			<visible>Skin.HasSetting(UseCustomBackground) + !IsEmpty(Skin.String(CustomBackgroundPath))</visible>
+			<visible>Skin.HasSetting(UseCustomBackground) + !String.IsEmpty(Skin.String(CustomBackgroundPath))</visible>
 			<include>VisibleFadeEffect</include>
-			<visible>!Skin.HasSetting(SeparateBackground)</visible>
 		</control>
-        <control type="group">
-            <visible>Window.IsVisible(Home) + Skin.HasSetting(SeparateBackground)</visible>
-            <control type="multiimage" id="90000">
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>1280</width>
-                <height>720</height>
-                <imagepath background="true">$VAR[HomeBackground]</imagepath>
-                <timeperimage>10000</timeperimage>
-                <randomize>true</randomize>
-                <fadetime>1000</fadetime>
-                <include>VisibleFadeEffect</include>
-                <visible>IsEmpty(Skin.String(HomeFanart.path)) | IsEmpty(Control.GetLabel(90001))</visible>
-            </control>
-            <control type="multiimage" id="90001">
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>1280</width>
-                <height>720</height>
-                <imagepath background="true">$INFO[Skin.String(HomeFanart.path)]$VAR[HomeMenuType]$INFO[Skin.String(HomeFanart.ext)]</imagepath>
-                <timeperimage>10000</timeperimage>
-                <randomize>true</randomize>
-                <fadetime>1000</fadetime>
-                <include>VisibleFadeEffect</include>
-                <visible>!IsEmpty(Skin.String(HomeFanart.path))</visible>
-            </control>
-        </control>
 		<control type="image">
 			<depth>DepthBackground</depth>
 			<include>BackgroundDimensions</include>
@@ -55,14 +26,14 @@
 			<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 			<include>backgroundfade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
-			<visible>!Skin.HasSetting(HideBackGroundFanart) + !IsEmpty(ListItem.Property(Fanart_Image))</visible>
+			<visible>!Skin.HasSetting(HideBackGroundFanart) + !String.IsEmpty(ListItem.Property(Fanart_Image))</visible>
 			<include>Window_OpenClose_Animation</include>
-			<visible>![Player.HasVideo + !Skin.HasSetting(ShowBackgroundVideo)]</visible>
+			<visible>![Player.HasVideo + !Skin.HasSetting(ShowBackgroundVideo)] | [Player.HasVideo + Window.IsActive(movieinformation)]</visible>
 		</control>
 		<control type="image">
 			<include>BackgroundDimensions</include>
-			<texture>special://skin/extras/default/media-overlay.jpg</texture>
-			<visible>[Player.HasVideo + !Skin.HasSetting(ShowBackgroundVideo)] + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
+			<texture>special://skin/backgrounds/media-overlay.jpg</texture>
+			<visible>[Player.HasVideo + !Slideshow.IsActive + !Window.IsActive(movieinformation) + !Skin.HasSetting(ShowBackgroundVideo)] + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
 			<include>VisibleFadeEffect</include>
 		</control>
 		<control type="visualisation">
@@ -71,7 +42,7 @@
 			<width>1280</width>
 			<height>720</height>
 			<visible>Player.HasAudio + !Skin.HasSetting(ShowBackgroundVis)</visible>
-			<visible>IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
+			<visible>String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
 		</control>
 		<control type="videowindow">
 			<depth>DepthBackground</depth>
@@ -79,7 +50,7 @@
 			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
-			<visible>Player.HasVideo + !Skin.HasSetting(ShowBackgroundVideo) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
+			<visible>Player.HasVideo + !Slideshow.IsActive + !Window.IsActive(movieinformation) + !Skin.HasSetting(ShowBackgroundVideo) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
 		</control>
 		<control type="image">
 			<depth>DepthBackground</depth>
@@ -88,7 +59,7 @@
 			<width>1320</width>
 			<height>120</height>
 			<texture flipy="true" border="1">HomeNowPlayingBack.png</texture>
-			<visible>[Player.HasVideo + !Skin.HasSetting(ShowBackgroundVideo)] | [Player.HasAudio + ![Skin.HasSetting(ShowBackgroundVis) | !IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))]] | [!Skin.HasSetting(HideBackGroundFanart) + !IsEmpty(ListItem.Property(Fanart_Image))]</visible>
+			<visible>[Player.HasVideo + !Slideshow.IsActive + !Window.IsActive(movieinformation) + !Skin.HasSetting(ShowBackgroundVideo)] | [Player.HasAudio + ![Skin.HasSetting(ShowBackgroundVis) | !String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]] | [!Skin.HasSetting(HideBackGroundFanart) + !String.IsEmpty(ListItem.Property(Fanart_Image))]</visible>
 			<include>VisibleFadeEffect</include>
 		</control>
 	</include>
@@ -104,7 +75,6 @@
 			<animation effect="rotatex" end="45" time="0" center="620,0" condition="true">Conditional</animation>
 			<animation effect="slide" start="0,10" end="0,0" time="150" condition="Window.Previous(Home)">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="0,10" time="150" condition="Window.Next(Home)">WindowClose</animation>
-			<visible>!Skin.HasSetting(NoFloorAll)</visible>
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
@@ -124,7 +94,6 @@
 					<width>750</width>
 					<height>64</height>
 					<texture border="15">ContentPanelMirror.png</texture>
-					<visible>!Skin.HasSetting(NoFloorAll)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -143,7 +112,6 @@
 					<width>640</width>
 					<height>64</height>
 					<texture border="15">ContentPanelMirror.png</texture>
-					<visible>!Skin.HasSetting(NoFloorAll)</visible>
 				</control>
 				<control type="image">
 					<left>700</left>
@@ -158,7 +126,6 @@
 					<width>530</width>
 					<height>64</height>
 					<texture border="15">ContentPanelMirror.png</texture>
-					<visible>!Skin.HasSetting(NoFloorAll)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -177,7 +144,6 @@
 					<width>840</width>
 					<height>64</height>
 					<texture border="15">ContentPanelMirror.png</texture>
-					<visible>!Skin.HasSetting(NoFloorAll)</visible>
 				</control>
 				<control type="image">
 					<left>900</left>
@@ -192,7 +158,6 @@
 					<width>330</width>
 					<height>64</height>
 					<texture border="15">ContentPanelMirror.png</texture>
-					<visible>!Skin.HasSetting(NoFloorAll)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -211,7 +176,6 @@
 					<width>1180</width>
 					<height>64</height>
 					<texture border="15">ContentPanelMirror.png</texture>
-					<visible>!Skin.HasSetting(NoFloorAll)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -230,7 +194,6 @@
 					<width>640</width>
 					<height>64</height>
 					<texture border="15">ContentPanelMirror.png</texture>
-					<visible>!Skin.HasSetting(NoFloorAll)</visible>
 				</control>
 				<control type="image">
 					<left>700</left>
@@ -245,7 +208,6 @@
 					<width>550</width>
 					<height>64</height>
 					<texture border="15">ContentPanelMirror.png</texture>
-					<visible>!Skin.HasSetting(NoFloorAll)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -264,7 +226,6 @@
 					<width>1130</width>
 					<height>64</height>
 					<texture border="15">ContentPanelMirror.png</texture>
-					<visible>!Skin.HasSetting(NoFloorAll)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -283,7 +244,6 @@
 					<width>490</width>
 					<height>64</height>
 					<texture border="15">ContentPanelMirror.png</texture>
-					<visible>!Skin.HasSetting(NoFloorAll)</visible>
 				</control>
 				<control type="image">
 					<left>550</left>
@@ -298,7 +258,6 @@
 					<width>680</width>
 					<height>64</height>
 					<texture border="15">ContentPanelMirror.png</texture>
-					<visible>!Skin.HasSetting(NoFloorAll)</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -317,7 +276,6 @@
 					<width>400</width>
 					<height>64</height>
 					<texture border="15">ContentPanelMirror.png</texture>
-					<visible>!Skin.HasSetting(NoFloorAll)</visible>
 				</control>
 				<control type="image">
 					<left>460</left>
@@ -332,104 +290,8 @@
 					<width>770</width>
 					<height>64</height>
 					<texture border="15">ContentPanelMirror.png</texture>
-					<visible>!Skin.HasSetting(NoFloorAll)</visible>
-				</control>
-			</control>
-            <control type="group">
-				<include>VisibleFadeEffect</include>
-				<visible>Control.IsVisible(5033)</visible>
-				<control type="image">
-					<posx>30</posx>
-					<posy>230</posy>
-					<width>1230</width>
-					<height>430</height>
-					<texture border="15">ContentPanel.png</texture>
-				</control>
-				<control type="image">
-					<posx>30</posx>
-					<posy>652</posy>
-					<width>1230</width>
-					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture> 
-					<visible>!Skin.HasSetting(NoFloorAll)</visible>
 				</control>
 			</control>
 		</control>
 	</include>
-    <include name="CommonCustomBackground">
-        <control type="group">
-            <visible>!Window.IsVisible(Home) + Skin.HasSetting(SeparateBackground)</visible>
-            <control type="multiimage" id="90002">
-                <description>User Separate Background Image</description>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>1280</width>
-                <height>720</height>
-                <imagepath background="true">$INFO[Window(Home).Property(MenuBackground)]</imagepath>
-                <timeperimage>10000</timeperimage>
-                <randomize>true</randomize>
-                <fadetime>1000</fadetime>
-                <visible>IsEmpty(Skin.String(HomeFanart.path)) | IsEmpty(Control.GetLabel(90003))</visible>
-            </control>
-            <control type="multiimage" id="90003">
-                <description>User Separate Background Image HomeFanart</description>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>1280</width>
-                <height>720</height>
-                <imagepath background="true">$INFO[Skin.String(HomeFanart.path)]$INFO[Window(Home).Property(MenuItemActive)]$INFO[Skin.String(HomeFanart.ext)]</imagepath>
-                <timeperimage>10000</timeperimage>
-                <randomize>true</randomize>
-                <fadetime>1000</fadetime>
-                <visible>!IsEmpty(Skin.String(HomeFanart.path))</visible>
-            </control>            
-        </control>
-    </include>
-    <include name="PreviewPVRBackground">
-        <control type="group">
-			<visible>!Player.HasVideo</visible>
-            <control type="group">
-                <visible>!Skin.HasSetting(SeparateBackground)</visible>
-                <control type="image">
-                    <left>5</left>
-                    <top>5</top>
-                    <width>680</width>
-                    <height>390</height>
-                    <texture fallback="special://skin/extras/default/SKINDEFAULT.jpg">$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</texture>
-                    <include>VisibleFadeEffect</include>
-                    <visible>![Skin.HasSetting(UseCustomBackground) + !IsEmpty(Skin.String(CustomBackgroundPath))]</visible>
-                </control>
-                <control type="image">
-                    <left>5</left>
-                    <top>5</top>
-                    <width>680</width>
-                    <height>390</height>
-                    <texture>$INFO[Skin.String(CustomBackgroundPath)]</texture>
-                    <include>VisibleFadeEffect</include>
-                    <visible>Skin.HasSetting(UseCustomBackground) + !IsEmpty(Skin.String(CustomBackgroundPath))</visible>
-                </control>
-            </control>
-            <control type="group">
-                <visible>Skin.HasSetting(SeparateBackground)</visible>
-                <control type="image">
-                    <left>5</left>
-                    <top>5</top>
-                    <width>680</width>
-                    <height>390</height>
-                    <texture>$INFO[Window(Home).Property(MenuBackground)]</texture>
-                    <include>VisibleFadeEffect</include>
-                    <visible>IsEmpty(Skin.String(HomeFanart.path))</visible>
-                </control>
-                <control type="image">
-                    <left>5</left>
-                    <top>5</top>
-                    <width>680</width>
-                    <height>390</height>
-                    <texture>$INFO[Skin.String(HomeFanart.path)]$INFO[Window(Home).Property(MenuItemActive)]$INFO[Skin.String(HomeFanart.ext)]</texture>
-                    <include>VisibleFadeEffect</include>
-                    <visible>!IsEmpty(Skin.String(HomeFanart.path))</visible>
-                </control>
-            </control>
-        </control>
-    </include>
 </includes>
