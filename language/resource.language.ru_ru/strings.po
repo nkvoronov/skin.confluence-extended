@@ -847,6 +847,14 @@ msgctxt "#88117"
 msgid "Select color"
 msgstr "Выберите цвет"
 
+msgctxt "#88118"
+msgid "Debug"
+msgstr "Отладка"
+
+msgctxt "#88119"
+msgid "Debug infos"
+msgstr "Отладочная иформация"
+
 msgctxt "#88123"
 msgid "Submenus"
 msgstr "Подменю"
