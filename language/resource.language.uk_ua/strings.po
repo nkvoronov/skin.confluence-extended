@@ -870,6 +870,14 @@ msgctxt "#88117"
 msgid "Select color"
 msgstr "Виберіть колір"
 
+msgctxt "#88118"
+msgid "Debug"
+msgstr "Отладка"
+
+msgctxt "#88119"
+msgid "Debug infos"
+msgstr "Отладочная інформація"
+
 msgctxt "#88130"
 msgid "Widgets"
 msgstr "Віджети"

@@ -243,7 +243,7 @@
                         <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>                       
                     </control>
                     <control type="button" id="406">
-                        <description>Edit subaddons</description>
+                        <description>Edit addons</description>
                         <width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -278,7 +278,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>SetProperty(current_widget,$INFO[Container(211).ListItem.Property(widget)],Home)</onclick>
-                        <visible>StringCompare(Window.Property(groupname),mainmenu) + StringCompare(Container(211).ListItem.Property(widgetTarget),submenus)</visible>                       
+                        <visible>StringCompare(Window.Property(groupname),mainmenu) + StringCompare(Container(211).ListItem.Property(widgetType),submenu)</visible>                       
                     </control>
                     <control type="image" id="600">
                         <description>separator image</description>

@@ -870,6 +870,14 @@ msgctxt "#88117"
 msgid "Select color"
 msgstr ""
 
+msgctxt "#88118"
+msgid "Debug"
+msgstr ""
+
+msgctxt "#88119"
+msgid "Debug infos"
+msgstr ""
+
 msgctxt "#88130"
 msgid "Widgets"
 msgstr ""

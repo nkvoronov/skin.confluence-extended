@@ -4,7 +4,7 @@
 		<control type="group" id="9002">
             <depth>DepthMenu</depth>
             <include>HomeAddonUpDown</include>
-            <include>skinshortcuts-template-subaddons</include>
+            <include>skinshortcuts-template-addons</include>
         </control>
     </include>
     <include name="HomeAddonUpDown">

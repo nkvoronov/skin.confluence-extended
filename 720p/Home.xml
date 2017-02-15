@@ -21,6 +21,8 @@
     <onload condition="Window.Previous(Startup)">Control.Move(9000,$INFO[Skin.String(CustomFocus)])</onload>
 	<onload condition="IsEmpty(Skin.String(MenuColor))">Skin.SetString(MenuColor,blue,)</onload>
 	<onload condition="!IsEmpty(Weather.Plugin) + !Weather.IsFetched">Weather.Refresh</onload>
+    <!-- -->
+    <onunload>ClearProperty(SkinHelper.WidgetContainer)</onunload>
 	<controls>
         <!-- Backgrounds -->
 		<include>CommonBackground</include>

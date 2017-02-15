@@ -661,7 +661,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <enable>!Skin.HasSetting(HomePageWeatherInfo)</enable>
-					</control>					
+					</control>
 					<control type="radiobutton" id="207">
 						<description>No Player panel</description>
 						<width>750</width>
@@ -669,7 +669,7 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>88077</label>
+						<label>$LOCALIZE[88077]</label>
 						<onclick>Skin.ToggleSetting(HidePlayerPanel)</onclick>
 						<selected>!Skin.HasSetting(HidePlayerPanel)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -682,7 +682,7 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>88071</label>
+						<label>$LOCALIZE[88071]</label>
 						<onclick>Skin.ToggleSetting(EnableHomeStats)</onclick>
 						<selected>Skin.HasSetting(EnableHomeStats)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -720,7 +720,7 @@
                         <width>750</width>
 						<height>40</height>
 						<font>font13</font>
-                        <label>31133</label>
+                        <label>$LOCALIZE[31133]</label>
                         <label2>$VAR[WeatherIconsName]</label2>
                         <textcolor>grey2</textcolor>
                         <focusedcolor>white</focusedcolor>
@@ -870,7 +870,7 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>88130</label>
+						<label>$LOCALIZE[88130]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -883,7 +883,7 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>90009</label>
+						<label>$LOCALIZE[90009]</label>
                         <label2>[COLOR=selected]$VAR[WidgetLimitItemsName][/COLOR]</label2>
                         <onclick condition="IsEmpty(Skin.String(WidgetLimitItems))">Skin.SetString(WidgetLimitItems,10,)</onclick>
 						<onclick>Skin.SetNumeric(WidgetLimitItems)</onclick>                        
@@ -907,7 +907,7 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>88089</label>
+						<label>$LOCALIZE[88089]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -917,7 +917,7 @@
                         <width>750</width>
 						<height>40</height>
 						<font>font13</font>
-                        <label>90000</label>
+                        <label>$LOCALIZE[90000]</label>
                         <textcolor>grey2</textcolor>
                         <focusedcolor>white</focusedcolor>
                         <texturefocus>MenuItemFO.png</texturefocus>
@@ -977,6 +977,30 @@
 						<onclick>SetProperty(UsrSelectBtn,UsrFavBtnCmd,Home)</onclick>
 						<onclick>ActivateWindow(2119)</onclick>
                         <enable>!Skin.HasSetting(HideFavoritesButton)</enable>
+					</control>
+                    <control type="label" id="246">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
+						<label>$LOCALIZE[88118]</label>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+                    <control type="radiobutton" id="247">
+						<description>Hide Favorites Button</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[88119]</label>
+						<onclick>Skin.ToggleSetting(EnableSkinDebug)</onclick>
+						<selected>Skin.HasSetting(EnableSkinDebug)</selected>
+                        <onclick>Skin.ToggleDebug</onclick>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 				</control>
 				<control type="scrollbar" id="62">
