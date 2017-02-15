@@ -25,7 +25,7 @@
     <backgrounddefault labelID="dvd">special://skin/extras/backgrounds/dvd.jpg</backgrounddefault>
     <backgrounddefault labelID="settings">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
     <!-- Additionnal Widgets -->
-    <widget label="$LOCALIZE[89302]" icon="DefaultFolder.png" type="weathers" path="skin" target="list">DailyWeather</widget>
+    <widget label="$LOCALIZE[89302]" icon="DefaultFolder.png" type="weathers" path="weatherdaily" target="list">DailyWeather</widget>
     <widget label="$LOCALIZE[89031]" icon="DefaultRecentlyAddedMovies.png" type="movies" path="videodb://recentlyaddedmovies/" target="videos">RecentMovies</widget>
     <widget label="$LOCALIZE[89033]" icon="DefaultRecentlyAddedEpisodes.png" type="episodes" path="videodb://recentlyaddedepisodes/" target="videos">RecentEpisodes</widget>
     <widget label="$LOCALIZE[89036]" icon="DefaultRecentlyAddedMusicVideos.png" type="musicvideos" path="videodb://recentlyaddedmusicvideos/" target="videos">RecentMusicVideo</widget>
@@ -223,7 +223,7 @@
             <shortcut label="10040" type="10004" icon="DefaultFolder.png">ActivateWindow(addonbrowser)</shortcut>
             <shortcut label="130" type="10004" icon="DefaultFolder.png">ActivateWindow(systeminfo)</shortcut>
             <shortcut label="14111" type="10004" icon="DefaultFolder.png">ActivateWindow(eventlog,events://,return)</shortcut>
-            <shortcut label="166" type="10004" icon="DefaultFolder.png">ActivateWindow(skinsettings)</shortcut>           
+            <shortcut label="166" type="10004" icon="DefaultFolder.png">ActivateWindow(skinsettings)</shortcut>
             <shortcut label="8" type="10004" icon="DefaultFolder.png">ActivateWindow(servicesettings,weather)</shortcut>
             <shortcut label="1" type="10004" icon="DefaultFolder.png">ActivateWindow(playersettings,pictures)</shortcut>
             <shortcut label="19020" type="10004" icon="DefaultFolder.png">ActivateWindow(pvrsettings)</shortcut>
@@ -232,7 +232,7 @@
             <shortcut label="13000" type="10004" icon="DefaultFolder.png">ActivateWindow(systemsettings)</shortcut>
             <shortcut label="14036" type="10004" icon="DefaultFolder.png">ActivateWindow(servicesettings)</shortcut>
             <shortcut label="14206" type="10004" icon="DefaultFolder.png">ActivateWindow(interfacesettings)</shortcut>
-            <shortcut label="20183" type="10004" icon="DefaultFolder.png">ReloadSkin()</shortcut>            
+            <shortcut label="20183" type="10004" icon="DefaultFolder.png">ReloadSkin()</shortcut>
             <shortcut label="360" type="10004" icon="DefaultFolder.png">ActivateScreensaver()</shortcut>            
         </node>
         <!-- Profiles -->
@@ -292,17 +292,17 @@
         <shortcut label="90051" type="" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=skinplaylists,librarydataprovider,scriptwidgets,extendedinfo,pvr</shortcut>
         <!-- Weather -->
         <node label="8">
-            <shortcut label="89302" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[89302]" widget="DailyWeather" widgetType="weathers" widgetTarget="list">skin</shortcut>
-            <shortcut label="89303" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[89303]" widget="HourlyWeather" widgetType="weathers" widgetTarget="list">skin</shortcut>
-            <shortcut label="33034" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[33034]" widget="H36Weather" widgetType="weathers" widgetTarget="list" condition="Skin.HasSetting(LowerMenu)">skin</shortcut>
+            <shortcut label="89302" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[89302]" widget="DailyWeather" widgetType="weather" widgetTarget="list">weatherdaily</shortcut>
+            <shortcut label="89303" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[89303]" widget="HourlyWeather" widgetType="weather" widgetTarget="list">weatherhourly</shortcut>
+            <shortcut label="33034" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[33034]" widget="H36Weather" widgetType="weatherh36" widgetTarget="list" condition="Skin.HasSetting(LowerMenu)">weatherh36</shortcut>
         </node>
         <!-- LiveTV -->
         <node label="19020" condition="PVR.HasTVChannels">
-            <shortcut label="88133" type="19020" icon="DefaultTVShows.png" widgetName="$LOCALIZE[88133]" widget="TVFavouritesChannels" widgetType="pvr" widgetTarget="submenus">skin</shortcut>
+            <shortcut label="88133" type="19020" icon="DefaultTVShows.png" widgetName="$LOCALIZE[88133]" widget="TVFavouritesChannels" widgetType="submenu" widgetTarget="pvr">skin</shortcut>
         </node>
         <!-- Radio -->
         <node label="19021" condition="PVR.HasRadioChannels">
-            <shortcut label="88134" type="19021" icon="DefaultTVShows.png" widgetName="$LOCALIZE[88134]" widget="RadioFavouritesChannels" widgetType="pvr" widgetTarget="submenus">skin</shortcut>
+            <shortcut label="88134" type="19021" icon="DefaultTVShows.png" widgetName="$LOCALIZE[88134]" widget="RadioFavouritesChannels" widgetType="submenu" widgetTarget="pvr">skin</shortcut>
         </node>
         <!-- Movies -->
         <node label="342">            
@@ -343,7 +343,7 @@
         </node>        
         <!-- Favourites -->
         <node label="1036">
-            <shortcut label="1036" type="1036" icon="DefaultFolder.png" widgetName="$LOCALIZE[1036]" widget="Favourites" widgetType="favourites" widgetTarget="list">skin</shortcut>
+            <shortcut label="1036" type="1036" icon="DefaultFolder.png" widgetName="$LOCALIZE[1036]" widget="Favourites" widgetType="favourites" widgetTarget="list">favourites</shortcut>
         </node>        
     </widget-groupings>
 </overrides>

@@ -278,7 +278,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>SetProperty(current_widget,$INFO[Container(211).ListItem.Property(widget)],Home)</onclick>
-                        <visible>String.IsEqual(Window.Property(groupname),mainmenu) + String.IsEqual(Container(211).ListItem.Property(widgetTarget),submenus)</visible>                       
+                        <visible>String.IsEqual(Window.Property(groupname),mainmenu) + String.IsEqual(Container(211).ListItem.Property(widgetType),submenu)</visible>                       
                     </control>
                     <control type="image" id="600">
                         <description>separator image</description>

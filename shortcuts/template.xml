@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <template>
+    <!-- Submenu -->
     <other include="submenus">
+        <!-- property menu item -->
         <property name="id" tag="mainmenuid" />
-        <property name="submenu_name" tag="property" attribute="name|submenuVisibility"/>
+        <property name="submenu" tag="property" attribute="name|submenuVisibility"/>
         <controls>
             <control type="group">
                 <skinshortcuts>visibility</skinshortcuts>
@@ -15,7 +17,7 @@
                     <onright>$PYTHON[9100+int($SKINSHORTCUTS[id])]</onright>
                     <include>HomeSubMenuCommonLayout</include>
                     <content>
-                        <include>skinshortcuts-group-$SKINSHORTCUTS[submenu_name]</include>
+                        <include>skinshortcuts-group-$SKINSHORTCUTS[submenu]</include>
                     </content>
                 </control>
                 <include content="HomeSubMenuCommonControls">
@@ -24,9 +26,11 @@
             </control>
         </controls>
     </other>
-    <other include="subaddons">
+    <!-- Addons -->
+    <other include="addons">
+        <!-- property menu item -->
         <property name="id" tag="mainmenuid" />
-        <property name="submenu_name" tag="property" attribute="name|submenuVisibility"/>
+        <property name="submenu" tag="property" attribute="name|submenuVisibility"/>
         <controls>
             <control type="list" id="$PYTHON[700+int($SKINSHORTCUTS[id])]">
                 <include content="HomeAddonsCommonAnimation">
@@ -39,7 +43,7 @@
                 <include>HomeAddonUpDown</include>
                 <include>HomeAddonsCommonLayout</include>
                 <content>
-                    <include>skinshortcuts-group-$SKINSHORTCUTS[submenu_name]-1</include>
+                    <include>skinshortcuts-group-$SKINSHORTCUTS[submenu]-1</include>
                 </content>
             </control>
             <control type="list" id="$PYTHON[700+int($SKINSHORTCUTS[id])]">
@@ -53,28 +57,44 @@
                 <include>HomeAddonUpDown</include>
                 <include>HomeAddonsCommonLayoutMediaPlaying</include>
                 <content>
-                    <include>skinshortcuts-group-$SKINSHORTCUTS[submenu_name]-1</include>
+                    <include>skinshortcuts-group-$SKINSHORTCUTS[submenu]-1</include>
                 </content>
             </control>
         </controls>        
     </other>
-    <other include="custom-widgets">
+    <!-- Widgets -->
+    <other include="widgets">
+        <!-- property menu item -->
         <property name="id" tag="mainmenuid" />
-        <property name="submenu_name" tag="property" attribute="name|submenuVisibility"/>
+        <property name="submenu" tag="property" attribute="name|submenuVisibility"/>
+        <!-- property menu item widget -->
+        <property name="widget" tag="property" attribute="name|widget" />
+        <property name="widget">None</property>
+        <property name="widget_name" tag="property" attribute="name|widgetName" />
+        <property name="widget_patch" tag="property" attribute="name|widgetPath" />
+        <property name="widget_target" tag="property" attribute="name|widgetTarget" />
+        <!-- widget type 1 -->
+        <property name="widget_type" tag="property" attribute="name|widgetType" value="weather">Weather</property>
+        <property name="widget_type" tag="property" attribute="name|widgetType" value="weatherh36">WeatherH36</property>
+        <property name="widget_type" tag="property" attribute="name|widgetType" value="favourites">Favourites</property>
+        <property name="widget_type" tag="property" attribute="name|widgetType" value="movies">Movies</property>
+        <property name="widget_type" tag="property" attribute="name|widgetType" value="tvshows">TVShows</property>
+        <property name="widget_type" tag="property" attribute="name|widgetType" value="episodes">Episodes</property>
+        <property name="widget_type" tag="property" attribute="name|widgetType" value="musicvideos">MusicVideos</property>
+        <property name="widget_type" tag="property" attribute="name|widgetType" value="albums">Albums</property>
+        <property name="widget_type" tag="property" attribute="name|widgetType" value="artists">Artists</property>
+        <property name="widget_type" tag="property" attribute="name|widgetType" value="songs">Songs</property>
+        <property name="widget_type" tag="property" attribute="name|widgetType" value="submenu">Submenu</property>
+        <property name="widget_type">Other</property>
         <controls>
-            <include content="CommonWidgetInclude">
-                <param name="left_widget" value="140" />
-                <param name="visible_widget" value="String.IsEqual(Container(9000).ListItem.Property(widgetTarget),submenus)" />
-                <param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),$SKINSHORTCUTS[submenu_name])" />
-                <param name="label_title" value="$INFO[Container(9000).ListItem.Property(widgetName)]" />
+            <include content="include-Widgets-$SKINSHORTCUTS[widget_type]">
+                <param name="submenu" value="$SKINSHORTCUTS[submenu]" />
+                <param name="visible" value="String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),$SKINSHORTCUTS[submenu])" />
                 <param name="list_id" value="$PYTHON[8100+int($SKINSHORTCUTS[id])]" />
-                <param name="animation_name_include" value="AnimationWidgetCommon" />
-                <param name="item_layout_name_include" value="FavouritesWidgetItemsLayout" />
-                <param name="width_widget" value="1000" />
-                <param name="width_widget_item" value="200" />
-                <param name="left_widget_ra" value="1010" />                
-                <param name="content_name" value="CommonIncludeContents" />
-                <param name="content_path" value="skinshortcuts-group-$SKINSHORTCUTS[submenu_name]-2" />
+                <param name="widget" value="$SKINSHORTCUTS[widget]" />
+                <param name="widget_name" value="$SKINSHORTCUTS[widget_name]" />
+                <param name="widget_target" value="$SKINSHORTCUTS[widget_target]" />
+                <param name="widget_patch" value="$SKINSHORTCUTS[widget_patch]" />                
             </include>
         </controls>
     </other>

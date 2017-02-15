@@ -94,9 +94,9 @@
                 <include>VisibleFadeEffect</include>
             </control>
         </focusedlayout>
-		<content>
+        <content>
             <include>skinshortcuts-mainmenu</include>
-		</content>
+        </content>
 	</include>
 	<include name="DefaultInitialSetup">
 		<onload>Skin.SetBool(EnableWidgetsTitle)</onload>

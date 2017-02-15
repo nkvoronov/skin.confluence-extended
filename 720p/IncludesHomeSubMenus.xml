@@ -7,7 +7,7 @@
 			<top>70</top>            
 			<include>HomeSubMenuUpDown</include>
             <include>skinshortcuts-template-submenus</include>
-		</control>
+        </control>
 	</include>
     <include name="HomeSubMenuUpDown">
         <onup>9000</onup>
@@ -33,7 +33,7 @@
         
 		<animation effect="fade" start="100" end="0" time="300" condition="!ControlGroup(9001).HasFocus + Skin.HasSetting(NoSlide)">conditional</animation>
 		<animation effect="slide" start="0,-40" end="0,0" delay="200" time="200" tween="quadratic" easing="out"  condition="ControlGroup(9001).HasFocus + Skin.HasSetting(NoSlide)">conditional</animation>
-		<animation effect="slide" start="0,0" end="0,-40" time="200" tween="quadratic" easing="out" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(NoSlide)">Hidden</animation>       
+		<animation effect="slide" start="0,0" end="0,-40" time="200" tween="quadratic" easing="out" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(NoSlide)">Hidden</animation>
         
 		<animation effect="fade" start="100" end="65" time="200" condition="Window.IsVisible(2123) | Window.IsVisible(2124) | Window.IsVisible(2125) | Window.IsVisible(2126) | Window.IsVisible(Favourites)">conditional</animation>
         
@@ -104,7 +104,7 @@
 				<visible>ControlGroup(9001).HasFocus</visible>
 			</control>
 		</focusedlayout>
-	</include>    
+	</include>
     <include name="HomeSubMenuCommonControls">
         <control type="image">
             <left>5</left>

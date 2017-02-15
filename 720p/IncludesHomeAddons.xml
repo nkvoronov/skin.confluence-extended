@@ -4,7 +4,7 @@
 		<control type="group" id="9002">
             <depth>DepthMenu</depth>
             <include>HomeAddonUpDown</include>
-            <include>skinshortcuts-template-subaddons</include>
+            <include>skinshortcuts-template-addons</include>
         </control>
     </include>
     <include name="HomeAddonUpDown">
@@ -15,7 +15,7 @@
         <ondown condition="!Skin.HasSetting(LowerMenu) + !Skin.HasSetting(HidePowerButton) + Skin.HasSetting(HideFavoritesButton)">22</ondown>
         <ondown condition="!Skin.HasSetting(LowerMenu) + Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)">21</ondown>
 		<ondown condition="!Skin.HasSetting(LowerMenu)">20</ondown>
-    </include>
+    </include>    
 	<include name="HomeAddonsCommonLayout">
 		<include>Window_OpenClose_Animation</include>
         <include>HomeAddonsAnimation</include>
