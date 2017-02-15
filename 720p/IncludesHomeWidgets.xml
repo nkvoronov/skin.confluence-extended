@@ -898,7 +898,7 @@
                     <width>150</width>
                     <height>5</height>
                     <info>ListItem.PercentPlayed</info>
-                    <visible>!Stringcompare(ListItem.PercentPlayed,0)</visible>
+                    <visible>!StringCompare(ListItem.PercentPlayed,0)</visible>
                 </control>
             </itemlayout>
             <focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
@@ -970,7 +970,7 @@
                     <width>150</width>
                     <height>5</height>
                     <info>ListItem.PercentPlayed</info>
-                    <visible>!Stringcompare(ListItem.PercentPlayed,0)</visible>
+                    <visible>!StringCompare(ListItem.PercentPlayed,0)</visible>
                 </control>
             </focusedlayout>        
         </definition>

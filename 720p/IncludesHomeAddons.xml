@@ -260,7 +260,7 @@
 		    <effect type="fade" start="100" end="0" time="300"/>
 		</animation>
 		<hitrect x="0" y="530" w="1280" h="120"/>
-    </include>    
+    </include>
     <include name="SelectItemChoices">
         <content>
             <item>
