@@ -125,7 +125,7 @@
 					<label>$LOCALIZE[31040]</label>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<animation effect="slide" start="0,0" end="0,25" time="0" condition="String.IsEmpty(MusicPlayer.Artist) + String.IsEmpty(MusicPlayer.Album) + String.IsEmpty(MusicPlayer.Title)">conditional</animation>
+					<animation effect="slide" start="0,0" end="0,25" time="0" condition="String.IsEmpty(MusicPlayer.Artist) + String.IsEmpty(MusicPlayer.Album) + String.IsEmpty(VideoPlayer.ChannelNumberLabel) + String.IsEmpty(VideoPlayer.ChannelName) + String.IsEmpty(VideoPlayer.EpisodeName)">conditional</animation>
 				</control>
 				<control type="label" id="1">
 					<description>Artist label</description>
