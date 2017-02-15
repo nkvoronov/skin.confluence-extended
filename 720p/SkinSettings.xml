@@ -657,7 +657,7 @@
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-					</control>                    
+					</control>
 					<control type="radiobutton" id="213">
 						<description>Lower Menu Button</description>
 						<width>750</width>
@@ -778,7 +778,7 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>88130</label>
+						<label>$LOCALIZE[88130]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -801,7 +801,7 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>88089</label>
+						<label>$LOCALIZE[88089]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -812,7 +812,7 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-                        <textcolor>grey</textcolor>
+                        <textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label>$LOCALIZE[31111] $LOCALIZE[88080]</label>
 						<onclick>Skin.ToggleSetting(HideReloadSkinButton)</onclick>
@@ -873,6 +873,30 @@
 						<onclick>SetProperty(UsrSelectBtn,UsrFavBtnCmd,Home)</onclick>
 						<onclick>ActivateWindow(2119)</onclick>
                         <enable>!Skin.HasSetting(HideFavoritesButton)</enable>
+					</control>
+                    <control type="label" id="246">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
+						<label>$LOCALIZE[88118]</label>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+                    <control type="radiobutton" id="247">
+						<description>Hide Favorites Button</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[88119]</label>
+						<onclick>Skin.ToggleSetting(EnableSkinDebug)</onclick>
+						<selected>Skin.HasSetting(EnableSkinDebug)</selected>
+                        <onclick>Skin.ToggleDebug</onclick>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 				</control>
 				<control type="scrollbar" id="62">
