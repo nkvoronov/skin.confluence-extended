@@ -296,6 +296,10 @@
             <shortcut label="89303" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[89303]" widget="HourlyWeather" widgetType="weather" widgetTarget="list">weatherhourly</shortcut>
             <shortcut label="33034" type="8" icon="DefaultFolder.png" widgetName="$LOCALIZE[33034]" widget="H36Weather" widgetType="weatherh36" widgetTarget="list" condition="Skin.HasSetting(LowerMenu)">weatherh36</shortcut>
         </node>
+        <!-- Pictures -->
+        <node label="1">
+            <content>picturesources</content>
+        </node>
         <!-- LiveTV -->
         <node label="19020" condition="PVR.HasTVChannels">
             <shortcut label="88133" type="19020" icon="DefaultTVShows.png" widgetName="$LOCALIZE[88133]" widget="TVFavouritesChannels" widgetType="submenu" widgetTarget="pvr">skin</shortcut>
@@ -303,6 +307,18 @@
         <!-- Radio -->
         <node label="19021" condition="PVR.HasRadioChannels">
             <shortcut label="88134" type="19021" icon="DefaultTVShows.png" widgetName="$LOCALIZE[88134]" widget="RadioFavouritesChannels" widgetType="submenu" widgetTarget="pvr">skin</shortcut>
+        </node>
+        <!-- Video -->
+        <node label="3">
+            <node label="32040">
+                <content>playlist-video</content>
+            </node>
+            <node label="32010">
+                <content>addon-video</content>
+            </node>
+            <node label="32075">
+                <content>videosources</content>
+            </node>
         </node>
         <!-- Movies -->
         <node label="342">            
@@ -331,6 +347,28 @@
             <shortcut label="90008" type="2" icon="DefaultFolder.png" widgetName="$LOCALIZE[90008]" widget="MostplayedAlbums" widgetType="albums" widgetTarget="music">special://skin/extras/playlists/mostplayed_albums.xsp</shortcut>
             <shortcut label="90007" type="2" icon="DefaultFolder.png" widgetName="$LOCALIZE[90007]" widget="UnplayedAlbums" widgetType="albums" widgetTarget="music">special://skin/extras/playlists/unplayed_albums.xsp</shortcut>
             <shortcut label="90006" type="2" icon="DefaultFolder.png" widgetName="$LOCALIZE[90006]" widget="RandomArtists" widgetType="artists" widgetTarget="music">special://skin/extras/playlists/random_artists.xsp</shortcut>
+            <node label="32040">
+                <content>playlist-audio</content>
+            </node>
+            <node label="32011">
+                <shortcut label="1038" type="2" grouping="music" icon="DefaultAddonMusic.png">ActivateWindow(music,addons://sources/audio/,return)</shortcut>
+                <content>addon-audio</content>
+            </node>
+            <node label="32075">
+                <content>musicsources</content>
+            </node>
+        </node>
+        <!-- Addons -->
+        <node label="24001">
+            <node label="1037">
+                <content>addon-video</content>
+            </node>
+            <node label="1038">
+                <content>addon-audio</content>
+            </node>
+            <node label="1039">
+                <content>addon-image</content>
+            </node>
         </node>
         <!-- Playlists -->
         <node label="136">
