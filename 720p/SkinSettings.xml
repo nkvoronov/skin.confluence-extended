@@ -457,8 +457,8 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Addon.OpenSettings(script.module.skin.helper.artutils)</onclick>
-						<visible>System.HasAddon(script.module.skin.helper.artutils)</visible>
+						<onclick>Addon.OpenSettings(script.module.metadatautils)</onclick>
+						<visible>System.HasAddon(script.module.metadatautils)</visible>
 					</control>
                     <control type="button" id="127">
                         <description>Settings Skin Helper Service Backgrounds</description>
