@@ -528,7 +528,7 @@ msgstr "Выбрать профиль, используемый при запу�
 
 msgctxt "#31430"
 msgid "[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during playback · Configure how media content is played"
-msgstr "[B]НАСТРОЙКА ПРОИГРОВАТЕЛЯ[/B][CR][CR]Настройка действий используемых во время воспроизведения • Настройка воспроизведения медиа-контента"
+msgstr "[B]НАСТРОЙКА ПРОИГРЫВАТЕЛЯ[/B][CR][CR]Настройка действий используемых во время воспроизведения • Настройка воспроизведения медиа-контента"
 
 msgctxt "#31431"
 msgid "[B]LIBRARY SETTINGS[/B][CR][CR]Configure how the library/file views display media content ·  Configure how library lists/views are navigated · Configure the media database options"
