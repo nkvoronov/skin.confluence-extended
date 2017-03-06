@@ -1091,6 +1091,19 @@
 					<height>60</height>
 					<aspectratio>keep</aspectratio>
                     <texture>$VAR[CurrentWeatherIcon]</texture>
+                    <visible>!Skin.HasSetting(WeatherIcons.multi)</visible>
+				</control>
+				<control type="multiimage">
+					<description>Weather image</description>
+					<left>0</left>
+					<top>0</top>
+					<width>60</width>
+					<height>60</height>
+					<aspectratio>keep</aspectratio>
+                    <imagepath>$VAR[CurrentWeatherIcon]</imagepath>
+                    <timeperimage>100</timeperimage>
+                    <randomize>false</randomize>
+                    <visible>Skin.HasSetting(WeatherIcons.multi)</visible>
 				</control>
 				<control type="label">
 					<description>Location label</description>
