@@ -117,9 +117,21 @@
                         <top>40</top>
                         <height>80</height>
                         <width>80</width>
-                        <texture>$INFO[Skin.String(WeatherIcons.path),,/]$INFO[Window(weather).Property(36Hour.1.OutlookIcon)]</texture>
+                        <texture>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window.Property(36Hour.1.FanartCode),,.png]</texture>
                         <aspectratio align="right">keep</aspectratio>
-                        <visible>!IsEmpty(Skin.String(WeatherIcons.name))</visible>
+                        <visible>!IsEmpty(Skin.String(WeatherIcons.name)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
+                    </control>
+                    <control type="multiimage">
+                        <description>Day Icon</description>
+                        <left>370</left>
+                        <top>40</top>
+                        <height>80</height>
+                        <width>80</width>
+                        <imagepath>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window.Property(36Hour.1.FanartCode),,/]</imagepath>
+                        <aspectratio align="right">keep</aspectratio>
+                        <timeperimage>100</timeperimage>
+                        <randomize>false</randomize>
+                        <visible>!IsEmpty(Skin.String(WeatherIcons.name)) + Skin.HasSetting(WeatherIcons.multi)</visible>
                     </control>
                     <control type="label">
                         <description>Temperature</description>
@@ -200,9 +212,21 @@
                         <top>40</top>
                         <height>80</height>
                         <width>80</width>
-                        <texture>$INFO[Skin.String(WeatherIcons.path),,/]$INFO[Window(weather).Property(36Hour.2.OutlookIcon)]</texture>
+                        <texture>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window.Property(36Hour.2.FanartCode),,.png]</texture>
                         <aspectratio align="right">keep</aspectratio>
-                        <visible>!IsEmpty(Skin.String(WeatherIcons.name))</visible>
+                        <visible>!IsEmpty(Skin.String(WeatherIcons.name)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
+                    </control>
+                    <control type="multiimage">
+                        <description>Day Icon</description>
+                        <left>370</left>
+                        <top>40</top>
+                        <height>80</height>
+                        <width>80</width>
+                        <imagepath>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window.Property(36Hour.2.FanartCode),,/]</imagepath>
+                        <aspectratio align="right">keep</aspectratio>
+                        <timeperimage>100</timeperimage>
+                        <randomize>false</randomize>
+                        <visible>!IsEmpty(Skin.String(WeatherIcons.name)) + Skin.HasSetting(WeatherIcons.multi)</visible>
                     </control>
                     <control type="label">
                         <description>Temperature</description>
@@ -283,9 +307,21 @@
                         <top>40</top>
                         <height>80</height>
                         <width>80</width>
-                        <texture>$INFO[Skin.String(WeatherIcons.path),,/]$INFO[Window(weather).Property(36Hour.3.OutlookIcon)]</texture>
+                        <texture>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window.Property(36Hour.3.FanartCode),,.png]</texture>
                         <aspectratio align="right">keep</aspectratio>
-                        <visible>!IsEmpty(Skin.String(WeatherIcons.name))</visible>
+                        <visible>!IsEmpty(Skin.String(WeatherIcons.name)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
+                    </control>
+                    <control type="multiimage">
+                        <description>Day Icon</description>
+                        <left>370</left>
+                        <top>40</top>
+                        <height>80</height>
+                        <width>80</width>
+                        <imagepath>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window.Property(36Hour.3.FanartCode),,/]</imagepath>
+                        <aspectratio align="right">keep</aspectratio>
+                        <timeperimage>100</timeperimage>
+                        <randomize>false</randomize>
+                        <visible>!IsEmpty(Skin.String(WeatherIcons.name)) + Skin.HasSetting(WeatherIcons.multi)</visible>
                     </control>
                     <control type="label">
                         <description>Temperature</description>
@@ -1319,6 +1355,20 @@
                     <aspectratio>keep</aspectratio>
                     <bordertexture border="5">button-nofocus.png</bordertexture>
                     <bordersize>5</bordersize>
+                    <visible>!Skin.HasSetting(WeatherIcons.multi)</visible>
+                </control>
+                <control type="multiimage">
+                    <left>10</left>
+                    <top>10</top>
+                    <width>180</width>
+                    <height>150</height>                    
+                    <imagepath>$INFO[ListItem.Icon]</imagepath>
+                    <timeperimage>100</timeperimage>
+					<randomize>false</randomize>
+                    <aspectratio>keep</aspectratio>
+                    <bordertexture border="5">button-nofocus.png</bordertexture>
+                    <bordersize>5</bordersize>
+                    <visible>Skin.HasSetting(WeatherIcons.multi)</visible>
                 </control>
                 <control type="label">
                     <left>10</left>
@@ -1378,6 +1428,21 @@
                     <aspectratio>keep</aspectratio>
                     <bordertexture border="5">folder-focus.png</bordertexture>
                     <bordersize>5</bordersize>
+                    <visible>!Skin.HasSetting(WeatherIcons.multi)</visible>
+                    <visible>Control.HasFocus($PARAM[list_id])</visible>
+                </control>
+                <control type="multiimage">
+                    <left>10</left>
+                    <top>10</top>
+                    <width>180</width>
+                    <height>150</height>                                        
+                    <imagepath>$INFO[ListItem.Icon]</imagepath>
+                    <timeperimage>100</timeperimage>
+					<randomize>false</randomize>
+                    <aspectratio>keep</aspectratio>
+                    <bordertexture border="5">folder-focus.png</bordertexture>
+                    <bordersize>5</bordersize>
+                    <visible>Skin.HasSetting(WeatherIcons.multi)</visible>
                     <visible>Control.HasFocus($PARAM[list_id])</visible>
                 </control>
                 <control type="image">
@@ -1493,7 +1558,7 @@
         </content>
 	</include>
 	<include name="WeatherHourlyContents">
-        <content>    
+        <content>
             <include name="WeatherHourlyWidgetItem">
                 <param name="item_id" value="1" />
             </include>
@@ -1573,8 +1638,8 @@
             <label>$INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDay)] $INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDate)]</label>
             <label2>$INFO[Window(weather).Property(Daily.$PARAM[item_id].Outlook)]</label2>
             <onclick>Weather.Refresh</onclick>
-            <icon>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(Daily.$PARAM[item_id].OutlookIcon)]</icon>
-            <thumb>-</thumb>
+            <thumb>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(Daily.$PARAM[item_id].OutlookIcon)]</thumb>
+            <icon>-</icon>
             <property name="Infos">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].HighTemperature)]  [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].LowTemperature)]</property>
             <visible>!IsEmpty(Window(weather).Property(Daily.$PARAM[item_id].Outlook))</visible>
             <visible>IsEmpty(Skin.String(WeatherIcons.name))</visible>
@@ -1583,11 +1648,21 @@
             <label>$INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDay)] $INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDate)]</label>
             <label2>$INFO[Window(weather).Property(Daily.$PARAM[item_id].Outlook)]</label2>
             <onclick>Weather.Refresh</onclick>
-            <icon>$INFO[Skin.String(WeatherIcons.path),,/]$INFO[Window(weather).Property(Daily.$PARAM[item_id].OutlookIcon)]</icon>
-            <thumb>-</thumb>
+            <thumb>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Daily.$PARAM[item_id].FanartCode),,.png]</thumb>
+            <icon>-</icon>            
             <property name="Infos">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].HighTemperature)]  [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].LowTemperature)]</property>            
             <visible>!IsEmpty(Window(weather).Property(Daily.$PARAM[item_id].Outlook))</visible>
-            <visible>!IsEmpty(Skin.String(WeatherIcons.name))</visible>
+            <visible>!IsEmpty(Skin.String(WeatherIcons.name)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
+		</item>
+		<item>
+            <label>$INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDay)] $INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDate)]</label>
+            <label2>$INFO[Window(weather).Property(Daily.$PARAM[item_id].Outlook)]</label2>
+            <onclick>Weather.Refresh</onclick>
+            <thumb>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Daily.$PARAM[item_id].FanartCode),,/]</thumb>
+            <icon>-</icon>            
+            <property name="Infos">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].HighTemperature)]  [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].LowTemperature)]</property>            
+            <visible>!IsEmpty(Window(weather).Property(Daily.$PARAM[item_id].Outlook))</visible>
+            <visible>!IsEmpty(Skin.String(WeatherIcons.name)) + Skin.HasSetting(WeatherIcons.multi)</visible>
 		</item>
 	</include>
 	<include name="WeatherHourlyWidgetItem">
@@ -1595,8 +1670,8 @@
             <label>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Time)] $INFO[Window(weather).Property(Hourly.$PARAM[item_id].ShortDate)]</label>
             <label2>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Outlook)]</label2>
             <onclick>Weather.Refresh</onclick>
-            <icon>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(Hourly.$PARAM[item_id].OutlookIcon)]</icon>
-            <thumb>-</thumb>
+            <thumb>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(Hourly.$PARAM[item_id].OutlookIcon)]</thumb>
+            <icon>-</icon>            
             <property name="Infos">[COLOR=grey2]$LOCALIZE[401] : [/COLOR]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Temperature)]  ($INFO[Window(weather).Property(Hourly.$PARAM[item_id].FeelsLike)])</property>
             <visible>!IsEmpty(Window(weather).Property(Hourly.$PARAM[item_id].Outlook))</visible>
             <visible>IsEmpty(Skin.String(WeatherIcons.name))</visible>
@@ -1605,11 +1680,21 @@
             <label>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Time)] $INFO[Window(weather).Property(Hourly.$PARAM[item_id].ShortDate)]</label>
             <label2>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Outlook)]</label2>
             <onclick>Weather.Refresh</onclick>
-            <icon>$INFO[Skin.String(WeatherIcons.path),,/]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].OutlookIcon)]</icon>
-            <thumb>-</thumb>
+            <thumb>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].FanartCode),,.png]</thumb>
+            <icon>-</icon>            
             <property name="Infos">[COLOR=grey2]$LOCALIZE[401] : [/COLOR]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Temperature)]  ($INFO[Window(weather).Property(Hourly.$PARAM[item_id].FeelsLike)])</property>            
             <visible>!IsEmpty(Window(weather).Property(Hourly.$PARAM[item_id].Outlook))</visible>
-            <visible>!IsEmpty(Skin.String(WeatherIcons.name))</visible>
+            <visible>!IsEmpty(Skin.String(WeatherIcons.name)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
+		</item>
+		<item>
+            <label>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Time)] $INFO[Window(weather).Property(Hourly.$PARAM[item_id].ShortDate)]</label>
+            <label2>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Outlook)]</label2>
+            <onclick>Weather.Refresh</onclick>
+            <thumb>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].FanartCode),,/]</thumb>
+            <icon>-</icon>           
+            <property name="Infos">[COLOR=grey2]$LOCALIZE[401] : [/COLOR]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Temperature)]  ($INFO[Window(weather).Property(Hourly.$PARAM[item_id].FeelsLike)])</property>            
+            <visible>!IsEmpty(Window(weather).Property(Hourly.$PARAM[item_id].Outlook))</visible>
+            <visible>!IsEmpty(Skin.String(WeatherIcons.name)) + Skin.HasSetting(WeatherIcons.multi)</visible>
 		</item>
 	</include>
     <include name="FavouritesWidgetItemsLayout">
