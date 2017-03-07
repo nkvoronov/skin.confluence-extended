@@ -9,11 +9,11 @@
 	<include file="ViewsLiveTV.xml" />
 	<include file="ViewsPVRGuide.xml" />
 	<include file="ViewsWeather.xml" />
-        <include file="IncludesHomeAddons.xml" />
-        <include file="IncludesHomeMainMenus.xml" />
-        <include file="IncludesHomeSubMenus.xml" />
-        <include file="IncludesHomeWidgets.xml" />    
-        <include file="IncludesMenuItemChoices.xml" />
+    <include file="IncludesHomeAddons.xml" />
+    <include file="IncludesHomeMainMenus.xml" />
+    <include file="IncludesHomeSubMenus.xml" />
+    <include file="IncludesHomeWidgets.xml" />    
+    <include file="IncludesMenuItemChoices.xml" />
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="IncludesPVR.xml" />
 	<include file="IncludesBackgroundBuilding.xml" />
