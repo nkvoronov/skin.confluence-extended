@@ -173,15 +173,14 @@
 							<shadowcolor>black</shadowcolor>
 						</control>
                         <!-- Current Weather Icon -->
-						<control type="image">
-							<description>current weather icon</description>
-							<left>260</left>
-							<top>145</top>
-							<width>200</width>
-							<height>200</height>
-							<texture>$VAR[CurrentWeatherIcon]</texture>
-							<aspectratio>keep</aspectratio>
-						</control>
+						<include name="WeatherIcons">
+							<param name="left" value="260" />
+							<param name="top" value="145" />
+							<param name="width" value="200" />
+							<param name="height" value="200" />
+							<param name="image_1" value="$VAR[CurrentWeatherIcon]" />
+							<param name="image_multi" value="$VAR[CurrentWeatherIcon]" />
+						</include>
 					</control>
 					<control type="label">
 						<description>current condition label</description>

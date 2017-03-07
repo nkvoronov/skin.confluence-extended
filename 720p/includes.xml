@@ -1902,5 +1902,132 @@
                 <onclick>PreviousMenu</onclick>
             </item>
         </content>
-    </include>
+	</include>
+	<include name="WeatherIcons">		
+		<param name="left">0</param>
+		<param name="top">0</param>
+		<param name="width">60</param>
+		<param name="height">60</param>
+		<param name="image_1">$VAR[CurrentWeatherIcon]</param>
+		<param name="image_multi">$VAR[CurrentWeatherIcon]</param>
+		<definition>
+			<control type="image">
+				<description>Weather icon 1</description>
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<texture>$PARAM[image_1]</texture>
+				<aspectratio>keep</aspectratio>				
+				<visible>!Skin.HasSetting(WeatherIcons.multi)</visible>
+			</control>
+			<control type="multiimage">
+				<description>Weather multiimage</description>
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<imagepath>$PARAM[image_multi]</imagepath>
+				<aspectratio>keep</aspectratio>				
+				<timeperimage>100</timeperimage>
+				<randomize>false</randomize>
+				<fadetime>300</fadetime>
+				<pauseatend>1000</pauseatend>
+				<include>VisibleFadeEffect</include>
+				<animation effect="fade" time="150">WindowClose</animation>
+				<visible>Skin.HasSetting(WeatherIcons.multi)</visible>
+			</control>
+		</definition>
+	</include>
+	<include name="WeatherIconsWidgets">		
+		<param name="left">10</param>
+		<param name="top">10</param>
+		<param name="width">180</param>
+		<param name="height">150</param>
+		<param name="image_1">$INFO[ListItem.Thumb]</param>
+		<param name="image_multi">$INFO[ListItem.Thumb]</param>
+		<param name="image_border">$INFO[ListItem.Thumb]</param>
+		<definition>
+			<control type="image">
+				<description>Weather icon 1</description>
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<texture>$PARAM[image_1]</texture>
+				<aspectratio>keep</aspectratio>
+				<bordertexture border="5">$PARAM[image_border]</bordertexture>
+                <bordersize>5</bordersize>				
+				<visible>!Skin.HasSetting(WeatherIcons.multi)</visible>
+			</control>
+			<control type="image">
+				<description>Weather icon 2</description>
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<texture>$PARAM[image_border]</texture>			
+				<visible>Skin.HasSetting(WeatherIcons.multi)</visible>
+			</control>
+			<control type="multiimage">
+				<description>Weather multiimage</description>
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<imagepath>$PARAM[image_multi]</imagepath>
+				<aspectratio>keep</aspectratio>		
+				<timeperimage>100</timeperimage>
+				<randomize>false</randomize>
+				<fadetime>300</fadetime>
+				<pauseatend>1000</pauseatend>
+				<include>VisibleFadeEffect</include>
+				<animation effect="fade" time="150">WindowClose</animation>
+				<visible>Skin.HasSetting(WeatherIcons.multi)</visible>
+			</control>
+		</definition>
+	</include>
+	<include name="WeatherIconsWidgets2">		
+		<param name="left">0</param>
+		<param name="top">10</param>
+		<param name="width">120</param>
+		<param name="height">110</param>
+		<param name="type">36Hour</param>
+		<param name="index">1</param>
+		<definition>
+			<control type="image">
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<aspectratio>keep</aspectratio>
+				<texture>resource://resource.images.weathericons.default/$INFO[Window(weather).Property($PARAM[type].$PARAM[index].FanartCode),,.png]</texture>
+				<visible>String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
+			</control>
+			<control type="image">
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<aspectratio>keep</aspectratio>
+				<texture>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property($PARAM[type].$PARAM[index].FanartCode),,.png]</texture>
+				<visible>!String.IsEmpty(Skin.String(WeatherIcons.name)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
+			</control>
+			<control type="multiimage">
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<aspectratio>keep</aspectratio>
+				<imagepath>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property($PARAM[type].$PARAM[index].FanartCode),,/]</imagepath>
+				<timeperimage>100</timeperimage>
+				<randomize>false</randomize>
+				<fadetime>300</fadetime>
+				<pauseatend>1000</pauseatend>
+				<include>VisibleFadeEffect</include>
+				<animation effect="fade" time="150">WindowClose</animation>				
+				<visible>!String.IsEmpty(Skin.String(WeatherIcons.name)) + Skin.HasSetting(WeatherIcons.multi)</visible>
+			</control>
+		</definition>
+	</include>
 </includes>
