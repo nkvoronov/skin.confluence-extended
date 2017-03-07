@@ -1083,28 +1083,14 @@
 				<visible>Skin.HasSetting(homepageWeatherinfo) + !String.IsEmpty(Weather.Plugin)</visible>
 				<include>Window_OpenClose_Animation</include>
                 <!-- Current Weather Icon -->
-				<control type="image">
-					<description>Weather image</description>
-					<left>0</left>
-					<top>0</top>
-					<width>60</width>
-					<height>60</height>
-					<aspectratio>keep</aspectratio>
-                    <texture>$VAR[CurrentWeatherIcon]</texture>
-                    <visible>!Skin.HasSetting(WeatherIcons.multi)</visible>
-				</control>
-				<control type="multiimage">
-					<description>Weather image</description>
-					<left>0</left>
-					<top>0</top>
-					<width>60</width>
-					<height>60</height>
-					<aspectratio>keep</aspectratio>
-                    <imagepath>$VAR[CurrentWeatherIcon]</imagepath>
-                    <timeperimage>100</timeperimage>
-                    <randomize>false</randomize>
-                    <visible>Skin.HasSetting(WeatherIcons.multi)</visible>
-				</control>
+				<include content="WeatherIcons">
+					<param name="left" value="0" />
+					<param name="top" value="0" />
+					<param name="width" value="60" />
+					<param name="height" value="60" />
+					<param name="image_1" value="$VAR[CurrentWeatherIcon]" />
+					<param name="image_multi" value="$VAR[CurrentWeatherIcon]" />
+				</include>
 				<control type="label">
 					<description>Location label</description>
 					<left>65</left>

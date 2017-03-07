@@ -173,28 +173,14 @@
 							<shadowcolor>black</shadowcolor>
 						</control>
                         <!-- Current Weather Icon -->
-						<control type="image">
-							<description>current weather icon</description>
-							<left>260</left>
-							<top>145</top>
-							<width>200</width>
-							<height>200</height>
-                            <aspectratio>keep</aspectratio>
-							<texture>$VAR[CurrentWeatherIcon]</texture>							
-                            <visible>!Skin.HasSetting(WeatherIcons.multi)</visible>
-						</control>
-						<control type="image">
-							<description>current weather icon</description>
-							<left>260</left>
-							<top>145</top>
-							<width>200</width>
-							<height>200</height>
-                            <aspectratio>keep</aspectratio>
-							<imagepath>$VAR[CurrentWeatherIcon]</imagepath>
-                            <timeperimage>100</timeperimage>
-                            <randomize>false</randomize>						
-                            <visible>Skin.HasSetting(WeatherIcons.multi)</visible>
-						</control>
+						<include content="WeatherIcons">
+							<param name="left" value="260" />
+							<param name="top" value="145" />
+							<param name="width" value="200" />
+							<param name="height" value="200" />
+							<param name="image_1" value="$VAR[CurrentWeatherIcon]" />
+							<param name="image_multi" value="$VAR[CurrentWeatherIcon]" />
+						</include>
 					</control>
 					<control type="label">
 						<description>current condition label</description>
