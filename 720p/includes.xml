@@ -2003,7 +2003,7 @@
 				<height>$PARAM[height]</height>
 				<aspectratio>keep</aspectratio>
 				<texture>resource://resource.images.weathericons.default/$INFO[Window(weather).Property($PARAM[type].$PARAM[index].FanartCode),,.png]</texture>
-				<visible>String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
+				<visible>String.IsEmpty(Skin.String(WeatherIcons.path))</visible>
 			</control>
 			<control type="image">
 				<left>$PARAM[left]</left>
@@ -2012,7 +2012,7 @@
 				<height>$PARAM[height]</height>
 				<aspectratio>keep</aspectratio>
 				<texture>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property($PARAM[type].$PARAM[index].FanartCode),,.png]</texture>
-				<visible>!String.IsEmpty(Skin.String(WeatherIcons.name)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
+				<visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
 			</control>
 			<control type="multiimage">
 				<left>$PARAM[left]</left>
@@ -2027,7 +2027,7 @@
 				<pauseatend>1000</pauseatend>
 				<include>VisibleFadeEffect</include>
 				<animation effect="fade" time="150">WindowClose</animation>				
-				<visible>!String.IsEmpty(Skin.String(WeatherIcons.name)) + Skin.HasSetting(WeatherIcons.multi)</visible>
+				<visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + Skin.HasSetting(WeatherIcons.multi)</visible>
 			</control>
 		</definition>
 	</include>
