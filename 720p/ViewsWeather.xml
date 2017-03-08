@@ -400,7 +400,7 @@
 			<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
 			<onclick>noop</onclick>
 			<visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Day$PARAM[item_id].Outlook)) + String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
-            <visible>String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
+            <visible>String.IsEmpty(Skin.String(WeatherIcons.path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Window.Property(Day$PARAM[item_id].Title)]</label>
@@ -411,7 +411,7 @@
 			<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
 			<onclick>noop</onclick>
 			<visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Day$PARAM[item_id].Outlook)) + String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
-            <visible>!String.IsEmpty(Skin.String(WeatherIcons.name)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
+            <visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
 		</item>
 		<item>
 			<label>$INFO[Window.Property(Day$PARAM[item_id].Title)]</label>
@@ -422,7 +422,7 @@
 			<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
 			<onclick>noop</onclick>
 			<visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Day$PARAM[item_id].Outlook)) + String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
-            <visible>!String.IsEmpty(Skin.String(WeatherIcons.name)) + Skin.HasSetting(WeatherIcons.multi)</visible>
+            <visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + Skin.HasSetting(WeatherIcons.multi)</visible>
 		</item>
 	</include>
 	<include name="WeatherDailyItem">
@@ -433,7 +433,7 @@
 			<icon>$INFO[Window.Property(Daily.$PARAM[item_id].Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.$PARAM[item_id].WindSpeed)] $INFO[Window.Property(Daily.$PARAM[item_id].WindDirection)]</icon>
 			<onclick>noop</onclick>
 			<visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Daily.$PARAM[item_id].Outlook)) + !String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
-            <visible>String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
+            <visible>String.IsEmpty(Skin.String(WeatherIcons.path))</visible>
 		</item>
 		<item>
 			<label>[B]$INFO[Window.Property(Daily.$PARAM[item_id].ShortDay)][/B][CR][COLOR=grey2]$INFO[Window.Property(Daily.$PARAM[item_id].ShortDate)][/COLOR]</label>
@@ -442,7 +442,7 @@
 			<icon>$INFO[Window.Property(Daily.$PARAM[item_id].Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.$PARAM[item_id].WindSpeed)] $INFO[Window.Property(Daily.$PARAM[item_id].WindDirection)]</icon>
 			<onclick>noop</onclick>
 			<visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Daily.$PARAM[item_id].Outlook)) + !String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
-            <visible>!String.IsEmpty(Skin.String(WeatherIcons.name)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
+            <visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
 		</item>
 		<item>
 			<label>[B]$INFO[Window.Property(Daily.$PARAM[item_id].ShortDay)][/B][CR][COLOR=grey2]$INFO[Window.Property(Daily.$PARAM[item_id].ShortDate)][/COLOR]</label>
@@ -451,7 +451,7 @@
 			<icon>$INFO[Window.Property(Daily.$PARAM[item_id].Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.$PARAM[item_id].WindSpeed)] $INFO[Window.Property(Daily.$PARAM[item_id].WindDirection)]</icon>
 			<onclick>noop</onclick>
 			<visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Daily.$PARAM[item_id].Outlook)) + !String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
-            <visible>!String.IsEmpty(Skin.String(WeatherIcons.name)) + Skin.HasSetting(WeatherIcons.multi)</visible>
+            <visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + Skin.HasSetting(WeatherIcons.multi)</visible>
 		</item>
 	</include>
 	<include name="WeatherHourlyItem">
@@ -462,7 +462,7 @@
 			<icon>$INFO[Window.Property(Hourly.$PARAM[item_id].Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.$PARAM[item_id].WindSpeed)] $INFO[Window.Property(Hourly.$PARAM[item_id].WindDirection)]</icon>
 			<onclick>noop</onclick>
 			<visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.$PARAM[item_id].Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
-            <visible>String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
+            <visible>String.IsEmpty(Skin.String(WeatherIcons.path))</visible>
 		</item>
 		<item>
 			<label>[B]$INFO[Window.Property(Hourly.$PARAM[item_id].Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Hourly.$PARAM[item_id].ShortDate)][/COLOR]</label>
@@ -471,7 +471,7 @@
 			<icon>$INFO[Window.Property(Hourly.$PARAM[item_id].Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.$PARAM[item_id].WindSpeed)] $INFO[Window.Property(Hourly.$PARAM[item_id].WindDirection)]</icon>
 			<onclick>noop</onclick>
 			<visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.$PARAM[item_id].Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
-            <visible>!String.IsEmpty(Skin.String(WeatherIcons.name)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
+            <visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
 		</item>
 		<item>
 			<label>[B]$INFO[Window.Property(Hourly.$PARAM[item_id].Time)][/B][CR][COLOR=grey2]$INFO[Window.Property(Hourly.$PARAM[item_id].ShortDate)][/COLOR]</label>
@@ -480,7 +480,7 @@
 			<icon>$INFO[Window.Property(Hourly.$PARAM[item_id].Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.$PARAM[item_id].WindSpeed)] $INFO[Window.Property(Hourly.$PARAM[item_id].WindDirection)]</icon>
 			<onclick>noop</onclick>
 			<visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.$PARAM[item_id].Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
-            <visible>!String.IsEmpty(Skin.String(WeatherIcons.name)) + Skin.HasSetting(WeatherIcons.multi)</visible>
+            <visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + Skin.HasSetting(WeatherIcons.multi)</visible>
 		</item>
 	</include>
 	<include name="WeatherMapItem">

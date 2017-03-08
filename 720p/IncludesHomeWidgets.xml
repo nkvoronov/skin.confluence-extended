@@ -1568,7 +1568,7 @@
             <icon>-</icon>
             <property name="Infos">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].HighTemperature)]  [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].LowTemperature)]</property>
             <visible>!String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_id].Outlook))</visible>
-            <visible>String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
+            <visible>String.IsEmpty(Skin.String(WeatherIcons.path))</visible>
 		</item>
 		<item>
             <label>$INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDay)] $INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDate)]</label>
@@ -1578,7 +1578,7 @@
             <icon>-</icon>            
             <property name="Infos">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].HighTemperature)]  [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].LowTemperature)]</property>            
             <visible>!String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_id].Outlook))</visible>
-            <visible>!String.IsEmpty(Skin.String(WeatherIcons.name)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
+            <visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
 		</item>
 		<item>
             <label>$INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDay)] $INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDate)]</label>
@@ -1588,7 +1588,7 @@
             <icon>-</icon>            
             <property name="Infos">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].HighTemperature)]  [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].LowTemperature)]</property>            
             <visible>!String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_id].Outlook))</visible>
-            <visible>!String.IsEmpty(Skin.String(WeatherIcons.name)) + Skin.HasSetting(WeatherIcons.multi)</visible>
+            <visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + Skin.HasSetting(WeatherIcons.multi)</visible>
 		</item>
 	</include>
 	<include name="WeatherHourlyWidgetItem">
@@ -1600,7 +1600,7 @@
             <icon>-</icon>            
             <property name="Infos">[COLOR=grey2]$LOCALIZE[401] : [/COLOR]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Temperature)]  ($INFO[Window(weather).Property(Hourly.$PARAM[item_id].FeelsLike)])</property>
             <visible>!String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_id].Outlook))</visible>
-            <visible>String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
+            <visible>String.IsEmpty(Skin.String(WeatherIcons.path))</visible>
 		</item>
 		<item>
             <label>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Time)] $INFO[Window(weather).Property(Hourly.$PARAM[item_id].ShortDate)]</label>
@@ -1610,7 +1610,7 @@
             <icon>-</icon>            
             <property name="Infos">[COLOR=grey2]$LOCALIZE[401] : [/COLOR]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Temperature)]  ($INFO[Window(weather).Property(Hourly.$PARAM[item_id].FeelsLike)])</property>            
             <visible>!String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_id].Outlook))</visible>
-            <visible>!String.IsEmpty(Skin.String(WeatherIcons.name)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
+            <visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
 		</item>
 		<item>
             <label>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Time)] $INFO[Window(weather).Property(Hourly.$PARAM[item_id].ShortDate)]</label>
@@ -1620,7 +1620,7 @@
             <icon>-</icon>           
             <property name="Infos">[COLOR=grey2]$LOCALIZE[401] : [/COLOR]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Temperature)]  ($INFO[Window(weather).Property(Hourly.$PARAM[item_id].FeelsLike)])</property>            
             <visible>!String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_id].Outlook))</visible>
-            <visible>!String.IsEmpty(Skin.String(WeatherIcons.name)) + Skin.HasSetting(WeatherIcons.multi)</visible>
+            <visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + Skin.HasSetting(WeatherIcons.multi)</visible>
 		</item>
 	</include>
     <!-- Other -->    
