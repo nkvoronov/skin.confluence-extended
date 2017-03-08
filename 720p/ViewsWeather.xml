@@ -399,7 +399,7 @@
 			<property name="Outlook">$INFO[Window.Property(Day$PARAM[item_id].Outlook)]</property>
 			<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
 			<onclick>noop</onclick>
-			<visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Day$PARAM[item_id].Outlook)) + IsEmpty(Window.Property(Daily.IsFetched))</visible>
+			<visible>Weather.IsFetched + !IsEmpty(Window.Property(Day$PARAM[item_id].Outlook)) + IsEmpty(Window.Property(Daily.IsFetched))</visible>
             <visible>IsEmpty(Skin.String(WeatherIcons.name))</visible>
 		</item>
 		<item>
@@ -410,7 +410,7 @@
 			<property name="Outlook">$INFO[Window.Property(Day$PARAM[item_id].Outlook)]</property>
 			<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
 			<onclick>noop</onclick>
-			<visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Day$PARAM[item_id].Outlook)) + IsEmpty(Window.Property(Daily.IsFetched))</visible>
+			<visible>Weather.IsFetched + !IsEmpty(Window.Property(Day$PARAM[item_id].Outlook)) + IsEmpty(Window.Property(Daily.IsFetched))</visible>
             <visible>!IsEmpty(Skin.String(WeatherIcons.name)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
 		</item>
 		<item>
@@ -421,7 +421,7 @@
 			<property name="Outlook">$INFO[Window.Property(Day$PARAM[item_id].Outlook)]</property>
 			<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
 			<onclick>noop</onclick>
-			<visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Day$PARAM[item_id].Outlook)) + IsEmpty(Window.Property(Daily.IsFetched))</visible>
+			<visible>Weather.IsFetched + !IsEmpty(Window.Property(Day$PARAM[item_id].Outlook)) + IsEmpty(Window.Property(Daily.IsFetched))</visible>
             <visible>!IsEmpty(Skin.String(WeatherIcons.name)) + Skin.HasSetting(WeatherIcons.multi)</visible>
 		</item>
 	</include>
