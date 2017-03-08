@@ -309,6 +309,7 @@
 		<font>font12</font>
 		<textcolor>grey2</textcolor>
 		<focusedcolor>white</focusedcolor>
+		<scroll>true</scroll>
 		<texturefocus border="5">HomeSubFO.png</texturefocus>
 		<texturenofocus border="5">HomeSubNF.png</texturenofocus>
 		<pulseonselect>false</pulseonselect>
@@ -1387,7 +1388,7 @@
                 <onclick>ActivateWindow(SkinSettings)</onclick>
                 <icon>special://skin/extras/default/settings-default.jpg</icon>
             </item>
-        </content>    
+        </content>
     </include>
     <include name="SettingsContentCustom">
         <content>
