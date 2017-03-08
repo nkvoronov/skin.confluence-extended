@@ -1068,7 +1068,7 @@
 			<control type="group">
 				<left>20</left>
 				<top>0</top>
-				<visible>Skin.HasSetting(homepageWeatherinfo) + !IsEmpty(Weather.Plugin)</visible>
+				<visible>Skin.HasSetting(HomePageWeatherInfo) + !IsEmpty(Weather.Plugin)</visible>
 				<include>Window_OpenClose_Animation</include>
                 <!-- Current Weather Icon -->
 				<include name="WeatherIcons">
