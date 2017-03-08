@@ -91,7 +91,7 @@
                     <aligny>center</aligny>
                     <textcolor>blue</textcolor>
                 </control>
-                <include content="WeatherIconsWidgets2">
+                <include name="WeatherIconsWidgets2">
 					<param name="left" value="370" />
 					<param name="top" value="40" />
 					<param name="width" value="80" />
@@ -162,7 +162,7 @@
                     <aligny>center</aligny>
                     <textcolor>blue</textcolor>
                 </control>
-                <include content="WeatherIconsWidgets2">
+                <include name="WeatherIconsWidgets2">
 					<param name="left" value="370" />
 					<param name="top" value="40" />
 					<param name="width" value="80" />
@@ -233,7 +233,7 @@
                     <aligny>center</aligny>
                     <textcolor>blue</textcolor>
                 </control>
-                <include content="WeatherIconsWidgets2">
+                <include name="WeatherIconsWidgets2">
 					<param name="left" value="370" />
 					<param name="top" value="40" />
 					<param name="width" value="80" />
@@ -582,7 +582,7 @@
                     <height>$PARAM[height_widget_item]</height>
                     <texture border="15">RecentAddedBack.png</texture>
                 </control>
-                <include content="WeatherIconsWidgets">
+                <include name="WeatherIconsWidgets">
 					<param name="left" value="10" />
 					<param name="top" value="10" />
 					<param name="width" value="180" />
@@ -640,7 +640,7 @@
                     <height>$PARAM[height_widget_item]</height>
                     <texture border="15">RecentAddedBack.png</texture>
                 </control>
-				<include content="WeatherIconsWidgets">
+				<include name="WeatherIconsWidgets">
 					<param name="left" value="10" />
 					<param name="top" value="10" />
 					<param name="width" value="180" />
