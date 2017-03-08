@@ -12,7 +12,7 @@
     <include file="IncludesHomeAddons.xml" />
     <include file="IncludesHomeMainMenus.xml" />
     <include file="IncludesHomeSubMenus.xml" />
-    <include file="IncludesHomeWidgets.xml" />    
+    <include file="IncludesHomeWidgets.xml" />
     <include file="IncludesMenuItemChoices.xml" />
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="IncludesPVR.xml" />
