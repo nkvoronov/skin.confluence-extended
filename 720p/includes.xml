@@ -2836,7 +2836,7 @@
 				<height>$PARAM[height]</height>
 				<imagepath>$PARAM[image_multi]</imagepath>
 				<aspectratio>keep</aspectratio>				
-				<timeperimage>200</timeperimage>
+				<timeperimage>100</timeperimage>
 				<randomize>false</randomize>
 				<fadetime>300</fadetime>
 				<pauseatend>1000</pauseatend>
@@ -2884,7 +2884,7 @@
 				<height>$PARAM[height]</height>
 				<imagepath>$PARAM[image_multi]</imagepath>
 				<aspectratio>keep</aspectratio>		
-				<timeperimage>200</timeperimage>
+				<timeperimage>100</timeperimage>
 				<randomize>false</randomize>
 				<fadetime>300</fadetime>
 				<pauseatend>1000</pauseatend>
@@ -2927,7 +2927,7 @@
 				<height>$PARAM[height]</height>
 				<aspectratio>keep</aspectratio>
 				<imagepath>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property($PARAM[type].$PARAM[index].FanartCode),,/]</imagepath>
-				<timeperimage>200</timeperimage>
+				<timeperimage>100</timeperimage>
 				<randomize>false</randomize>
 				<fadetime>300</fadetime>
 				<pauseatend>1000</pauseatend>

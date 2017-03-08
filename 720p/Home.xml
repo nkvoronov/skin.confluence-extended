@@ -1083,7 +1083,7 @@
 				<visible>Skin.HasSetting(homepageWeatherinfo) + !IsEmpty(Weather.Plugin)</visible>
 				<include>Window_OpenClose_Animation</include>
                 <!-- Current Weather Icon -->
-				<include content="WeatherIcons">
+				<include name="WeatherIcons">
 					<param name="left" value="0" />
 					<param name="top" value="0" />
 					<param name="width" value="60" />
