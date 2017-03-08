@@ -91,7 +91,7 @@
                     <aligny>center</aligny>
                     <textcolor>blue</textcolor>
                 </control>
-				<include content="WeatherIconsWidgets2">
+                <include content="WeatherIconsWidgets2">
 					<param name="left" value="370" />
 					<param name="top" value="40" />
 					<param name="width" value="80" />
@@ -162,7 +162,7 @@
                     <aligny>center</aligny>
                     <textcolor>blue</textcolor>
                 </control>
-				<include content="WeatherIconsWidgets2">
+                <include content="WeatherIconsWidgets2">
 					<param name="left" value="370" />
 					<param name="top" value="40" />
 					<param name="width" value="80" />
@@ -233,13 +233,13 @@
                     <aligny>center</aligny>
                     <textcolor>blue</textcolor>
                 </control>
-				<include content="WeatherIconsWidgets2">
+                <include content="WeatherIconsWidgets2">
 					<param name="left" value="370" />
 					<param name="top" value="40" />
 					<param name="width" value="80" />
 					<param name="height" value="80" />
 					<param name="type" value="36Hour" />
-					<param name="index" value="1" />
+					<param name="index" value="3" />
 				</include>
                 <control type="label">
                     <description>Temperature</description>
@@ -582,7 +582,7 @@
                     <height>$PARAM[height_widget_item]</height>
                     <texture border="15">RecentAddedBack.png</texture>
                 </control>
-				<include content="WeatherIconsWidgets">
+                <include content="WeatherIconsWidgets">
 					<param name="left" value="10" />
 					<param name="top" value="10" />
 					<param name="width" value="180" />
@@ -647,7 +647,7 @@
 					<param name="height" value="150" />
 					<param name="image_1" value="$INFO[ListItem.Thumb]" />
 					<param name="image_multi" value="$INFO[ListItem.Thumb]" />
-					<param name="image_border" value="button-nofocus.png" />
+					<param name="image_border" value="folder-focus.png" />
 				</include>
                 <control type="label">
                     <left>10</left>

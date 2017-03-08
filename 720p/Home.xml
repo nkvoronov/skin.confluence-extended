@@ -543,14 +543,14 @@
 			<animation effect="slide" start="0,0" end="-140,0" time="300" condition="!Player.HasMedia + Skin.HasSetting(EnableHomeStats)">conditional</animation>
             <animation effect="fade" start="100" end="65" time="200" condition="Window.IsVisible(2123) | Window.IsVisible(2124) | Window.IsVisible(2125) | Window.IsVisible(2126) | Window.IsVisible(Favourites)">conditional</animation>
 			<animation effect="slide" start="0,0" end="365,0" time="300" condition="!Player.HasMedia + !Skin.HasSetting(EnableHomeStats)">conditional</animation>
-        		<animation effect="slide" start="0,0" end="365,0" time="300" condition="Player.HasMedia + Skin.HasSetting(HidePlayerPanel)">conditional</animation>
+        	<animation effect="slide" start="0,0" end="365,0" time="300" condition="Player.HasMedia + Skin.HasSetting(HidePlayerPanel)">conditional</animation>
 			<animation type="WindowOpen" reversible="false">
-				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="225" />
-				<effect type="fade" start="0" end="100" time="225" />
+			<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="225" />
+			<effect type="fade" start="0" end="100" time="225" />
 			</animation>
 			<animation type="WindowClose" reversible="false">
-				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="225" />
-				<effect type="fade" start="100" end="0" time="225" />
+			<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="225" />
+			<effect type="fade" start="100" end="0" time="225" />
 			</animation>
 			<visible>String.IsEmpty(Window(videos).Property(PlayingBackgroundMedia))</visible>
 			<control type="image">
@@ -1061,12 +1061,12 @@
 				<texture>kodi-logo.png</texture>
 				<include>VisibleFadeEffect</include>
 				<include>Window_OpenClose_Animation</include>
-				<visible>!Skin.HasSetting(homepageWeatherinfo) + !Skin.HasSetting(NoLogo)</visible>
+				<visible>!Skin.HasSetting(HomePageWeatherInfo) + !Skin.HasSetting(NoLogo)</visible>
 			</control>
 			<control type="group">
 				<left>20</left>
 				<top>0</top>
-				<visible>Skin.HasSetting(homepageWeatherinfo) + !String.IsEmpty(Weather.Plugin)</visible>
+				<visible>Skin.HasSetting(HomePageWeatherInfo) + !String.IsEmpty(Weather.Plugin)</visible>
 				<include>Window_OpenClose_Animation</include>
                 <!-- Current Weather Icon -->
 				<include content="WeatherIcons">
