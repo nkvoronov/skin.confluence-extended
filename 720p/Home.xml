@@ -24,8 +24,8 @@
     <!-- -->
     <onunload>ClearProperty(SkinHelper.WidgetContainer)</onunload>
 	<controls>
-        <!-- Backgrounds -->
-		<include>CommonBackground</include>
+		<!-- Backgrounds -->
+        <include>CommonBackground</include>
 		<control type="image">
 			<depth>DepthFloor</depth>
 			<left>-20</left>
@@ -40,12 +40,12 @@
 			<visible>!Skin.HasSetting(NoFloor)</visible>
 		</control>
 		<!-- LiveTV Info -->
-        <control type="group">
+		<control type="group">
 			<depth>DepthMenu</depth>
 			<left>0</left>
 			<top>50</top>
 			<visible>Player.HasMedia + VideoPlayer.Content(LiveTV) + !Skin.HasSetting(HomePageVideoInfo) + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
-			<animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
+            <animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
 			<control type="image">
@@ -66,22 +66,22 @@
 				<height>25</height>
                 <width>660</width>
                 <label>$INFO[VideoPlayer.ChannelName]</label>
-                <align>left</align>
-                <aligny>center</aligny>
-                <font>font12</font>
-                <textcolor>white</textcolor>
-                <shadowcolor>black</shadowcolor>
-            </control>
-            <control type="label">
-                <description>Title Label</description>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Title Label</description>
                 <left>160</left>
-                <top>285</top>
-                <height>30</height>
+				<top>285</top>
+				<height>30</height>
 				<width>1000</width>
                 <label>$VAR[PlayerTitle]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-                <font>font13_title</font>
+				<font>font13_title</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
@@ -137,7 +137,7 @@
 					<texture>PVR-HasTimer.png</texture>
 				</control>
 				<control type="label">
-					<description>Next Timer Header label</description>
+					<description>Next Timer Header Label</description>
 					<left>-45</left>
 					<top>5</top>
 					<height>25</height>
@@ -204,7 +204,7 @@
 					<texture>PVR-IsRecording.png</texture>
 				</control>
 				<control type="label">
-					<description>Is Recording Header label</description>
+					<description>Is Recording Header Label</description>
 					<left>-50</left>
 					<top>5</top>
 					<height>25</height>
@@ -309,7 +309,7 @@
 			<depth>DepthMenu</depth>
 			<left>0</left>
 			<top>50</top>
-			<animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
+            <animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 			<visible>Player.HasVideo + !VideoPlayer.Content(LiveTV) + !Skin.HasSetting(HomePageVideoInfo) + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))</visible>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
@@ -317,7 +317,7 @@
 			<control type="group">
 				<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos)</visible>
 				<control type="image">
-					<description>Cover image</description>
+					<description>Cover Image</description>
 					<left>20</left>
 					<top>45</top>
 					<width>150</width>
@@ -328,7 +328,7 @@
 					<bordersize>5</bordersize>
 				</control>
 				<control type="label">
-					<description>Title label</description>
+					<description>Title Label</description>
 					<left>190</left>
 					<top>285</top>
 					<height>30</height>
@@ -358,7 +358,7 @@
 			<control type="group">
 				<visible>VideoPlayer.Content(MusicVideos)</visible>
 				<control type="image">
-					<description>Cover image</description>
+					<description>Cover Image</description>
 					<left>20</left>
 					<top>45</top>
 					<width>150</width>
@@ -368,7 +368,7 @@
 					<bordertexture border="8">ThumbBorder.png</bordertexture>
 					<bordersize>5</bordersize>
 				</control>
-                <control type="label">
+				<control type="label">
 					<description>Artist Label</description>
 					<left>190</left>
 					<top>265</top>
@@ -412,7 +412,7 @@
 			<control type="group">
 				<visible>VideoPlayer.Content(Movies)</visible>
 				<control type="image">
-					<description>Cover image</description>
+					<description>Cover Image</description>
 					<left>20</left>
 					<top>45</top>
 					<width>120</width>
@@ -423,7 +423,7 @@
 					<bordersize>5</bordersize>
 				</control>
 				<control type="label">
-					<description>Studio label</description>
+					<description>Studio Label</description>
 					<left>160</left>
 					<top>265</top>
 					<height>25</height>
@@ -436,7 +436,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>Title label</description>
+					<description>Title Label</description>
 					<left>160</left>
 					<top>285</top>
 					<height>30</height>
@@ -466,7 +466,7 @@
 			<control type="group">
 				<visible>VideoPlayer.Content(Episodes)</visible>
 				<control type="image">
-					<description>Cover image</description>
+					<description>Cover Image</description>
 					<left>20</left>
 					<top>225</top>
 					<width>180</width>
@@ -490,7 +490,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>Title label</description>
+					<description>Title Label</description>
 					<left>210</left>
 					<top>285</top>
 					<height>30</height>
@@ -521,7 +521,7 @@
 		<include>HomeWidgetDisplay</include>
         <!-- Players Controls -->
 		<control type="button" id="9003">
-			<description>Hidden Button to pass through navigation when recently added is disabled</description>
+			<description>Hidden Button To Pass Through Navigation When Recently Added Is Disabled</description>
 			<left>-20</left>
 			<top>-20</top>
 			<width>1</width>
@@ -538,14 +538,14 @@
 		</control>
 		<control type="group">
 			<depth>DepthMenu-</depth>
-			<description>Controls for currently playing media</description>
+			<description>Controls For Currently Playing Media</description>
 			<left>545r</left>
 			<top>370</top>
 			<animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="-140,0" time="300" condition="!Player.HasMedia + Skin.HasSetting(EnableHomeStats)">conditional</animation>
             <animation effect="fade" start="100" end="65" time="200" condition="Window.IsVisible(2123) | Window.IsVisible(2124) | Window.IsVisible(2125) | Window.IsVisible(2126) | Window.IsVisible(Favourites)">conditional</animation>
 			<animation effect="slide" start="0,0" end="365,0" time="300" condition="!Player.HasMedia + !Skin.HasSetting(EnableHomeStats)">conditional</animation>
-        		<animation effect="slide" start="0,0" end="365,0" time="300" condition="Player.HasMedia + Skin.HasSetting(HidePlayerPanel)">conditional</animation>
+        	<animation effect="slide" start="0,0" end="365,0" time="300" condition="Player.HasMedia + Skin.HasSetting(HidePlayerPanel)">conditional</animation>
 			<animation type="WindowOpen" reversible="false">
 			<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="225" />
 			<effect type="fade" start="0" end="100" time="225" />
@@ -814,7 +814,7 @@
 			<control type="radiobutton" id="607">
 				<animation effect="slide" end="0,35" time="300" condition="!Player.HasMedia">conditional</animation>
 				<colordiffuse>CCFFFFFF</colordiffuse>
-				<description>Go to fullscreen Playback</description>
+				<description>Go To Fullscreen Playback</description>
 				<left>385</left>
 				<top>0</top>
 				<height>35</height>
@@ -981,7 +981,7 @@
 				<onright>21</onright>
 				<onup condition="!Skin.HasSetting(LowerMenu)">9002</onup>
 				<onup condition="Skin.HasSetting(LowerMenu)">9001</onup>
-                <ondown>9003</ondown>
+				<ondown>9003</ondown>
                 <visible>!Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)</visible>
 			</control>
 			<control type="image">
@@ -1009,7 +1009,7 @@
 				<onright>22</onright>
 				<onup condition="!Skin.HasSetting(LowerMenu)">9002</onup>
 				<onup condition="Skin.HasSetting(LowerMenu)">9001</onup>
-                <ondown>9003</ondown>
+				<ondown>9003</ondown>
                 <visible>!Skin.HasSetting(HideFavoritesButton)</visible>
 			</control>
 			<control type="image">
@@ -1071,15 +1071,14 @@
 				<visible>Skin.HasSetting(homepageWeatherinfo) + !IsEmpty(Weather.Plugin)</visible>
 				<include>Window_OpenClose_Animation</include>
                 <!-- Current Weather Icon -->
-				<control type="image">
-					<description>Weather image</description>
-					<left>0</left>
-					<top>0</top>
-					<width>60</width>
-					<height>60</height>
-					<aspectratio>keep</aspectratio>
-                    <texture>$VAR[CurrentWeatherIcon]</texture>
-				</control>
+				<include content="WeatherIcons">
+					<param name="left" value="0" />
+					<param name="top" value="0" />
+					<param name="width" value="60" />
+					<param name="height" value="60" />
+					<param name="image_1" value="$VAR[CurrentWeatherIcon]" />
+					<param name="image_multi" value="$VAR[CurrentWeatherIcon]" />
+				</include>
 				<control type="label">
 					<description>Location label</description>
 					<left>65</left>
