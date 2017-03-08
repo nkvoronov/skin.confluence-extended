@@ -12,7 +12,7 @@
     <include file="IncludesHomeAddons.xml" />
     <include file="IncludesHomeMainMenus.xml" />
     <include file="IncludesHomeSubMenus.xml" />
-    <include file="IncludesHomeWidgets.xml" />    
+    <include file="IncludesHomeWidgets.xml" />
     <include file="IncludesMenuItemChoices.xml" />
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="IncludesPVR.xml" />
@@ -1988,7 +1988,7 @@
 				<label>([COLOR=blue]$INFO[Container(450).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=blue]$INFO[Container(450).CurrentPage]/$INFO[Container(450).NumPages][/COLOR])</label>
 			</control>
 		</control>
-	</include>
+    </include>
     <include name="RecommendedAlbumContent">
         <content>
             <item id="1">
@@ -2712,7 +2712,7 @@
                 <icon>-</icon>
                 <thumb>-</thumb>
                 <visible>String.IsEmpty(Window(Home).Property(RecommendedMovie.1.Title))</visible>
-		</item>
+            </item>
         </content>
     </include>
     <include name="RecommendedMusicVideoContent">

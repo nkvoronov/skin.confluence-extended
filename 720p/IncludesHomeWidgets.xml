@@ -1442,38 +1442,38 @@
 			</include>
         </content>
 	</include>
-	<include name="WeatherHourlyContents">   
+	<include name="WeatherHourlyContents">
         <content>
             <include content="WeatherHourlyWidgetItem">
-				<param name="item_id" value="1" />
-			</include>
+                <param name="item_id" value="1" />
+            </include>
             <include content="WeatherHourlyWidgetItem">
-				<param name="item_id" value="2" />
-			</include>
+                <param name="item_id" value="2" />
+            </include>
             <include content="WeatherHourlyWidgetItem">
-				<param name="item_id" value="3" />
-			</include>
+                <param name="item_id" value="3" />
+            </include>
             <include content="WeatherHourlyWidgetItem">
-				<param name="item_id" value="4" />
-			</include>
+                <param name="item_id" value="4" />
+            </include>
             <include content="WeatherHourlyWidgetItem">
-				<param name="item_id" value="5" />
-			</include>
+                <param name="item_id" value="5" />
+            </include>
             <include content="WeatherHourlyWidgetItem">
-				<param name="item_id" value="6" />
-			</include>
+                <param name="item_id" value="6" />
+            </include>
             <include content="WeatherHourlyWidgetItem">
-				<param name="item_id" value="7" />
-			</include>
+                <param name="item_id" value="7" />
+            </include>
             <include content="WeatherHourlyWidgetItem">
-				<param name="item_id" value="8" />
-			</include>
+                <param name="item_id" value="8" />
+            </include>
             <include content="WeatherHourlyWidgetItem">
-				<param name="item_id" value="9" />
-			</include>
+                <param name="item_id" value="9" />
+            </include>
             <include content="WeatherHourlyWidgetItem">
-				<param name="item_id" value="10" />
-			</include>
+                <param name="item_id" value="10" />
+            </include>
             <include content="WeatherHourlyWidgetItem">
                 <param name="item_id" value="11" />
             </include>
@@ -1522,7 +1522,7 @@
 		<item>
             <label>$INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDay)] $INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDate)]</label>
             <label2>$INFO[Window(weather).Property(Daily.$PARAM[item_id].Outlook)]</label2>
-            <onclick>Weather.Refresh</onclick>            
+            <onclick>Weather.Refresh</onclick>
             <thumb>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(Daily.$PARAM[item_id].FanartCode),,.png]</thumb>
             <icon>-</icon>
             <property name="Infos">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].HighTemperature)]  [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].LowTemperature)]</property>
