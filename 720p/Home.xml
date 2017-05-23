@@ -47,7 +47,7 @@
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
 			<control type="image">
-				<description>Cover Image</description>
+				<description>Cover image</description>
 				<left>20</left>
 				<top>45</top>
                 <width>120</width>
@@ -58,7 +58,7 @@
 				<bordersize>5</bordersize>
 			</control>
 			<control type="label">
-                <description>Channel Label</description>
+                <description>Channel label</description>
                 <left>160</left>
 				<top>265</top>
 				<height>25</height>
@@ -71,7 +71,7 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
-				<description>Title Label</description>
+				<description>Title label</description>
                 <left>160</left>
 				<top>285</top>
 				<height>30</height>
@@ -97,7 +97,7 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 		</control>
-		<!-- LiveTV Recording -->
+		<!-- LiveTV Info -->
 		<control type="group">
 			<depth>DepthMenu</depth>
 			<left>490r</left>
@@ -135,7 +135,7 @@
 					<texture>PVR-HasTimer.png</texture>
 				</control>
 				<control type="label">
-					<description>Next Timer Header Label</description>
+					<description>Next Timer Header label</description>
 					<left>-45</left>
 					<top>5</top>
 					<height>25</height>
@@ -202,7 +202,7 @@
 					<texture>PVR-IsRecording.png</texture>
 				</control>
 				<control type="label">
-					<description>Is Recording Header Label</description>
+					<description>Is Recording Header label</description>
 					<left>-50</left>
 					<top>5</top>
 					<height>25</height>
@@ -315,7 +315,7 @@
 			<control type="group">
 				<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos)</visible>
 				<control type="image">
-					<description>Cover Image</description>
+					<description>Cover image</description>
 					<left>20</left>
 					<top>45</top>
 					<width>150</width>
@@ -326,7 +326,7 @@
 					<bordersize>5</bordersize>
 				</control>
 				<control type="label">
-					<description>Title Label</description>
+					<description>Title label</description>
 					<left>190</left>
 					<top>285</top>
 					<height>30</height>
@@ -356,7 +356,7 @@
 			<control type="group">
 				<visible>VideoPlayer.Content(MusicVideos)</visible>
 				<control type="image">
-					<description>Cover Image</description>
+					<description>Cover image</description>
 					<left>20</left>
 					<top>45</top>
 					<width>150</width>
@@ -367,7 +367,7 @@
 					<bordersize>5</bordersize>
 				</control>
 				<control type="label">
-					<description>Artist Label</description>
+					<description>Artist label</description>
 					<left>190</left>
 					<top>265</top>
 					<height>25</height>
@@ -380,7 +380,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>Title Label</description>
+					<description>Title label</description>
 					<left>190</left>
 					<top>285</top>
 					<height>30</height>
@@ -410,7 +410,7 @@
 			<control type="group">
 				<visible>VideoPlayer.Content(Movies)</visible>
 				<control type="image">
-					<description>Cover Image</description>
+					<description>Cover image</description>
 					<left>20</left>
 					<top>45</top>
 					<width>120</width>
@@ -421,7 +421,7 @@
 					<bordersize>5</bordersize>
 				</control>
 				<control type="label">
-					<description>Studio Label</description>
+					<description>Studio label</description>
 					<left>160</left>
 					<top>265</top>
 					<height>25</height>
@@ -434,7 +434,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>Title Label</description>
+					<description>Title label</description>
 					<left>160</left>
 					<top>285</top>
 					<height>30</height>
@@ -464,7 +464,7 @@
 			<control type="group">
 				<visible>VideoPlayer.Content(Episodes)</visible>
 				<control type="image">
-					<description>Cover Image</description>
+					<description>Cover image</description>
 					<left>20</left>
 					<top>225</top>
 					<width>180</width>
@@ -488,7 +488,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
-					<description>Title Label</description>
+					<description>Title label</description>
 					<left>210</left>
 					<top>285</top>
 					<height>30</height>
@@ -951,7 +951,7 @@
                 <visible>Skin.HasSetting(HidePowerButton) + Skin.HasSetting(HideFavoritesButton)</visible>
 			</control>
 			<control type="image">
-				<description>RSS Background</description>
+				<description>RSS background</description>
 				<left>1250</left>
 				<top>2</top>
 				<width>24</width>
@@ -993,7 +993,7 @@
                 <visible>!Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)</visible>
 			</control>
 			<control type="button" id="21">
-				<description>Favourites Push Button</description>
+				<description>Favourites push button</description>
 				<left>0</left>
 				<top>0</top>
 				<width>45</width>
@@ -1061,12 +1061,12 @@
 				<texture>kodi-logo.png</texture>
 				<include>VisibleFadeEffect</include>
 				<include>Window_OpenClose_Animation</include>
-				<visible>!Skin.HasSetting(HomePageWeatherInfo) + !Skin.HasSetting(NoLogo)</visible>
+				<visible>!Skin.HasSetting(homepageWeatherinfo) + !Skin.HasSetting(NoLogo)</visible>
 			</control>
 			<control type="group">
 				<left>20</left>
 				<top>0</top>
-				<visible>Skin.HasSetting(HomePageWeatherInfo) + !String.IsEmpty(Weather.Plugin)</visible>
+				<visible>Skin.HasSetting(homepageWeatherinfo) + !String.IsEmpty(Weather.Plugin)</visible>
 				<include>Window_OpenClose_Animation</include>
                 <!-- Current Weather Icon -->
 				<include content="WeatherIcons">

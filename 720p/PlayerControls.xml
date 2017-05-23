@@ -399,7 +399,7 @@
 			<width>500</width>
 			<height>165</height>
 			<colordiffuse>CCFFFFFF</colordiffuse>
-			<visible>Window.IsVisible(Home)</visible>
+			<visible>Window.IsVisible(home)</visible>
 			<texture border="20">OverlayDialogBackground.png</texture>
 		</control>
 		<!-- Music Info -->

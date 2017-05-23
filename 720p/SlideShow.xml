@@ -42,11 +42,11 @@
 				<top>0</top>
 				<width>45</width>
 				<height>45</height>
-                <aspectratio>keep</aspectratio>				
+                <aspectratio>keep</aspectratio>
                 <texture>OSDPause.png</texture>
                 <animation effect="slide" start="0,0" end="-45,0" time="0" condition="Player.Muted">conditional</animation>
 			</control>
-			<!-- <control type="label">
+			<control type="label">
 				<description>paused label</description>
 				<left>10</left>
 				<top>0</top>
@@ -57,7 +57,7 @@
 				<font>font10</font>
 				<textcolor>white</textcolor>
 				<label>31043</label>
-			</control> -->
+			</control>
 		</control>
 		<!-- media infos -->
 		<control type="group">
@@ -68,7 +68,7 @@
 			<include>SmallMusicInfo</include>
 		</control>
 		<control type="button">
-			<visible>SlideShow.IsVideo + [![Player.Playing + Player.HasVideo] | SlideShow.IsPaused]</visible>
+			<visible>SlideShow.IsVideo + [!SlideShow.IsActive | SlideShow.IsPaused]</visible>
 			<description>Video Play Button</description>
 			<left>540</left>
 			<top>260</top>

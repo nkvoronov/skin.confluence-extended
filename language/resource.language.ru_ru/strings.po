@@ -1,7 +1,7 @@
 # Kodi Media Center language file
-# Addon Name: Confluence
-# Addon id: skin.confluence
-# Addon Provider: Jezz_X, Team Kodi
+# Addon Name: Confluence Extended Shortcuts
+# Addon id: skin.confluence-extended-s
+# Addon Provider: Jezz_X, Team Kodi, YLLOW_DRAGON, plood
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Main\n"
@@ -20,7 +20,13 @@ msgctxt "#31000"
 msgid "Change your"
 msgstr "Измените"
 
-#empty strings from id 31001 to 31002
+msgctxt "#31001"
+msgid "GAMES"
+msgstr "ИГРЫ"
+
+msgctxt "#31002"
+msgid "[B]GAME SETTINGS[/B][CR][CR]Configure rewind support & options ·  Configure keyboard use and number of keyboard players"
+msgstr "[B]ИГРОВЫЕ НАСТРОЙКИ[/B][CR][CR]Настройка поддержки и параметров ·  Настройка использования клавиатуры и количества клавиатурных плееров"
 
 msgctxt "#31003"
 msgid "Power options"
@@ -69,6 +75,10 @@ msgstr "Информация о аудио"
 msgctxt "#31014"
 msgid "Memory used"
 msgstr "Использовано памяти"
+
+msgctxt "#31015"
+msgid "Minute"
+msgstr "Минут"
 
 #empty strings from id 31015 to 31022
 
@@ -249,6 +259,16 @@ msgstr "Параметры"
 msgctxt "#31113"
 msgid "Show KODI logo"
 msgstr "Показывать KODI логотип"
+
+#empty strings from id 31114 to 31115
+
+msgctxt "#31116"
+msgid "Show recently added albums"
+msgstr ""
+
+msgctxt "#31117"
+msgid "Show recently added videos"
+msgstr ""
 
 #. In main language strings its used as submenu
 msgctxt "#31118"

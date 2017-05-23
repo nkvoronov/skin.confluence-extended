@@ -10,7 +10,7 @@
 	<controls>
 		<include>CommonBackground</include>
 		<control type="group">
-			<visible>!String.IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart))</visible>
+			<visible>!String.IsEmpty(Window(home).Property(TVGuide.BackgroundFanart))</visible>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
