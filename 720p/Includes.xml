@@ -15,7 +15,7 @@
     <include file="IncludesHomeAddons.xml" />
     <include file="IncludesHomeMainMenus.xml" />
     <include file="IncludesHomeSubMenus.xml" />
-    <include file="IncludesHomeWidgets.xml" />    
+    <include file="IncludesHomeWidgets.xml" />
     <include file="script-skinshortcuts-includes.xml"/>
 	<include file="DharmaView.xml" />
 	<include file="IncludesVariables.xml" />
