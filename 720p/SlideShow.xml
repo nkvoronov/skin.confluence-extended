@@ -46,7 +46,7 @@
                 <texture>OSDPause.png</texture>
                 <animation effect="slide" start="0,0" end="-45,0" time="0" condition="Player.Muted">conditional</animation>
 			</control>
-			<control type="label">
+			<!-- <control type="label">
 				<description>paused label</description>
 				<left>10</left>
 				<top>0</top>
@@ -57,7 +57,7 @@
 				<font>font10</font>
 				<textcolor>white</textcolor>
 				<label>31043</label>
-			</control>
+			</control> -->
 		</control>
 		<!-- media infos -->
 		<control type="group">
