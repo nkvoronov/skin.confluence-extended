@@ -129,7 +129,7 @@
 					<item id="1">
 						<label>128</label>
 						<onclick>noop</onclick>
-					</item>  
+					</item>
 					<item id="2">
 						<label>31112</label>
 						<onclick>noop</onclick>

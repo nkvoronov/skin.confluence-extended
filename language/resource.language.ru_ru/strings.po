@@ -16,6 +16,14 @@ msgstr ""
 "Language: ru_RU\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
+#[Consistency] Make terms, settings names, brands and other minutiae, consistent throughout file.
+#[Capitalization] Avoid capitalizing every second word. See http://grammarist.com/capitalization/
+#For example, prefer wording as "This new string" instead of "This New String".
+#[Referencing] If a suitable string already exists, reuse it, making a note of where it's used!
+#[Description / location] For example, "#. Description of some setting" used on "#: xbmc/addons/guidialogaddoninfo.cpp"
+#When writing a description or setting, refer to a setting name in quotes. See existing entries for guidance.
+#For example, "Press \"OK\" for \"All seasons\"" instead of "Press OK for All seasons" after first word.
+
 msgctxt "#31000"
 msgid "Change your"
 msgstr "Измените"
@@ -26,7 +34,7 @@ msgstr "ИГРЫ"
 
 msgctxt "#31002"
 msgid "[B]GAME SETTINGS[/B][CR][CR]Configure rewind support & options ·  Configure keyboard use and number of keyboard players"
-msgstr "[B]ИГРОВЫЕ НАСТРОЙКИ[/B][CR][CR]Настройка поддержки и параметров ·  Настройка использования клавиатуры и количества клавиатурных плееров"
+msgstr "[B]НАСТРОЙКИ ИГРЫ[/B][CR][CR]Настройка поддержки и параметров ·  Настройка использования клавиатуры и количества игроков"
 
 msgctxt "#31003"
 msgid "Power options"
@@ -80,7 +88,7 @@ msgctxt "#31015"
 msgid "Minute"
 msgstr "Минут"
 
-#empty strings from id 31015 to 31022
+#empty strings from id 31016 to 31022
 
 msgctxt "#31023"
 msgid "Playing"
