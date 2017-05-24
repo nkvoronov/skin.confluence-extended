@@ -453,7 +453,7 @@
 					<top>285</top>
 					<height>30</height>
 					<width>1000</width>
-					<label>$INFO[Player.Title]$INFO[VideoPlayer.Year, [COLOR=blue]([/COLOR][COLOR=grey],[/COLOR][COLOR=blue])[/COLOR]]</label>
+					<label>$INFO[Player.Title]$INFO[VideoPlayer.Year,[COLOR=grey] (,)[/COLOR]]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
