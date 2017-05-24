@@ -33,8 +33,8 @@ msgid "GAMES"
 msgstr "ИГРИ"
 
 msgctxt "#31002"
-msgid "[B]GAME SETTINGS[/B][CR][CR]Configure rewind support & options ·  Configure keyboard use and number of keyboard players"
-msgstr "[B]НАЛАШТУВАННЯ ГРИ[/B][CR][CR]Налаштування підтримки та параметрів ·  Налаштування використання клавіатури та кількості гравців"
+msgid "[B]GAME SETTINGS[/B][CR][CR]Configure rewind support & options · Configure keyboard use and number of keyboard players"
+msgstr "[B]НАЛАШТУВАННЯ ГРИ[/B][CR][CR]Налаштування підтримки та параметрів · Налаштування використання клавіатури та кількості гравців"
 
 msgctxt "#31003"
 msgid "Power options"
@@ -559,11 +559,11 @@ msgid "[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during p
 msgstr "[B]НАСТРОЙКА ПРОГРАВАЧА[/B][CR][CR]Налаштування дій використовуваних під час відтворення • Налаштування відтворення медіа-контенту"
 
 msgctxt "#31431"
-msgid "[B]LIBRARY SETTINGS[/B][CR][CR]Configure how the library/file views display media content ·  Configure how library lists/views are navigated · Configure the media database options"
+msgid "[B]LIBRARY SETTINGS[/B][CR][CR]Configure how the library/file views display media content · Configure how library lists/views are navigated · Configure the media database options"
 msgstr "[B]НАСТРОЙКА БІБЛІОТЕКИ[/B][CR][CR]Налаштування бібліотеки медіа-контенту • Налаштування навігації по бібліотеці • Налаштування параметрів бази даних медіатеки"
 
 msgctxt "#31432"
-msgid "[B]PVR SETTINGS[/B][CR][CR]Configure how the channels & guide are managed  · Configure how Live TV and recordings are managed"
+msgid "[B]PVR SETTINGS[/B][CR][CR]Configure how the channels & guide are managed · Configure how Live TV and recordings are managed"
 msgstr "[B]НАСТРОЙКА PVR[/B][CR][CR]Налаштування управління каналами і програмою • Налаштування запису Live TV"
 
 msgctxt "#31433"
@@ -575,7 +575,7 @@ msgid "[B]SERVICES SETTINGS[/B][CR][CR]Configure & manage media sharing services
 msgstr "[B]НАСТРОЙКА СЛУЖБ[/B][CR][CR]Налаштування та управління службами загального доступу до мультимедіа • Налаштування веб сервера • Налагодження та управління службою погоди"
 
 msgctxt "#31435"
-msgid "[B]SYSTEM SETTINGS[/B][CR][CR]Configure display · Configure audio · Configure internet access · Configure power saving· Configure logging"
+msgid "[B]SYSTEM SETTINGS[/B][CR][CR]Configure display · Configure audio · Configure internet access · Configure power saving · Configure logging"
 msgstr "[B]НАСТРОЙКИ СИСТЕМИ[/B][CR][CR]Налаштування екрану • Налаштування аудіо • Налаштування інтернету • Налаштування живлення • Налаштування відладки"
 
 msgctxt "#31436"
@@ -740,8 +740,8 @@ msgid "Move focus main menu"
 msgstr "Перемістити фокус головного меню"
 
 msgctxt "#88070"
-msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add and remove home menu items[CR]Change skin backgrounds"
-msgstr "[B]НАЛАШТУВАННЯ ПАРАМЕТРІВ ОБКЛАДИНКИ[/B][CR][CR]Налаштування обкладинки • Додавання і видалення пунктів головного меню[CR]Зміна фону обкладинки"
+msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add and remove home menu items · Change skin backgrounds"
+msgstr "[B]НАЛАШТУВАННЯ ПАРАМЕТРІВ ОБКЛАДИНКИ[/B][CR][CR]Налаштування обкладинки • Додавання і видалення пунктів головного меню • Зміна фону обкладинки"
 
 msgctxt "#88071"
 msgid "Show stats panel"
