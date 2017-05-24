@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fonts>
-	<fontset id="Default" idloc="31390" unicode="true"> 
+	<fontset id="Default" idloc="31390">
 		<!-- Normal Fonts -->
 		<font>
 			<name>font10</name>
@@ -84,7 +84,7 @@
 			<size>80</size>
 		</font>
 	</fontset>
-	<fontset id="Massive" idloc="15110" unicode="true">
+	<fontset id="Massive" idloc="15110">
 		<!-- Normal Fonts -->
 		<font>
 			<name>font10</name>
@@ -168,7 +168,7 @@
 			<size>80</size>
 		</font>
 	</fontset>
-	<fontset id="DefaultNoCaps" idloc="31391" unicode="true">
+	<fontset id="DefaultNoCaps" idloc="31391">
 		<!-- Normal Fonts -->
 		<font>
 			<name>font10</name>
@@ -252,7 +252,7 @@
 			<size>80</size>
 		</font>
 	</fontset>
-	<fontset id="Arial" idloc="31392" unicode="true">
+	<fontset id="Arial" idloc="31392">
 		<!-- Arial Font better for non English -->
 		<font>
 			<name>font10</name>
@@ -345,7 +345,7 @@
 			<style>bold</style>
 		</font>
 	</fontset>
-	<fontset id="DefaultKrypton" idloc="88900" unicode="true"> 
+	<fontset id="DefaultKrypton" idloc="88900"> 
 	<!-- Normal Fonts -->
 		<font>
 			<name>font10</name>
@@ -429,7 +429,7 @@
 			<size>80</size>
 		</font>
 	</fontset>
-	<fontset id="MassiveKrypton" idloc="88910" unicode="true">
+	<fontset id="MassiveKrypton" idloc="88910">
 		<!-- Normal Fonts -->
 		<font>
 			<name>font10</name>
@@ -513,7 +513,7 @@
 			<size>80</size>
 		</font>
 	</fontset>
-	<fontset id="DefaultNoCapsKrypton" idloc="88920" unicode="true">
+	<fontset id="DefaultNoCapsKrypton" idloc="88920">
 		<!-- Normal Fonts -->
 		<font>
 			<name>font10</name>

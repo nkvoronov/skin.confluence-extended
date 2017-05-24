@@ -9,14 +9,14 @@
 	<include file="ViewsLiveTV.xml" />
 	<include file="ViewsPVRGuide.xml" />
 	<include file="ViewsWeather.xml" />
+	<include file="IncludesCodecFlagging.xml" />
+	<include file="IncludesPVR.xml" />
+	<include file="IncludesBackgroundBuilding.xml" />
     <include file="IncludesHomeAddons.xml" />
     <include file="IncludesHomeMainMenus.xml" />
     <include file="IncludesHomeSubMenus.xml" />
     <include file="IncludesHomeWidgets.xml" />
     <include file="IncludesMenuItemChoices.xml" />
-	<include file="IncludesCodecFlagging.xml" />
-	<include file="IncludesPVR.xml" />
-	<include file="IncludesBackgroundBuilding.xml" />
 	<include file="DharmaView.xml" />
 	<include file="IncludesVariables.xml" />
 	<!-- CONSTANTS -->
@@ -1577,7 +1577,7 @@
 			<label2>$INFO[ListItem.Property(Role.Mixer)]</label2>
 			<onclick>noop</onclick>
 			<visible>!String.IsEmpty(ListItem.Property(Role.Mixer))</visible>
-        </item>
+		</item>
     </include>
     <include name="SettingsContentDefault">
         <content>

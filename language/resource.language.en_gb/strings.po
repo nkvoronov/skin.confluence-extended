@@ -1,7 +1,7 @@
 # Kodi Media Center language file
-# Addon Name: Confluence
-# Addon id: skin.confluence
-# Addon Provider: Jezz_X, Team Kodi
+# Addon Name: Confluence Extended
+# Addon id: skin.confluence-extended
+# Addon Provider: Jezz_X, Team Kodi, YLLOW_DRAGON, plood
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Main\n"
@@ -28,7 +28,13 @@ msgctxt "#31000"
 msgid "Change your"
 msgstr ""
 
-#empty strings from id 31001 to 31002
+msgctxt "#31001"
+msgid "GAMES"
+msgstr ""
+
+msgctxt "#31002"
+msgid "[B]GAME SETTINGS[/B][CR][CR]Configure rewind support & options ·  Configure keyboard use and number of keyboard players"
+msgstr ""
 
 msgctxt "#31003"
 msgid "Power options"
@@ -78,7 +84,11 @@ msgctxt "#31014"
 msgid "Memory used"
 msgstr ""
 
-#empty strings from id 31015 to 31022
+msgctxt "#31015"
+msgid "Minute"
+msgstr ""
+
+#empty strings from id 31016 to 31022
 
 msgctxt "#31023"
 msgid "Playing"
@@ -256,6 +266,14 @@ msgstr ""
 
 msgctxt "#31113"
 msgid "Show KODI logo"
+msgstr ""
+
+msgctxt "#31116"
+msgid "Show recently added albums"
+msgstr ""
+
+msgctxt "#31117"
+msgid "Show recently added videos"
 msgstr ""
 
 #. In main language strings its used as submenu
@@ -535,31 +553,31 @@ msgstr ""
 #empty strings from id 31424 to 31429
 
 msgctxt "#31430"
-msgid "[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during playback Â· Configure how media content is played"
+msgid "[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during playback · Configure how media content is played"
 msgstr ""
 
 msgctxt "#31431"
-msgid "[B]LIBRARY SETTINGS[/B][CR][CR]Configure how the library/file views display media content Â·  Configure how library lists/views are navigated Â· Configure the media database options"
+msgid "[B]LIBRARY SETTINGS[/B][CR][CR]Configure how the library/file views display media content ·  Configure how library lists/views are navigated · Configure the media database options"
 msgstr ""
 
 msgctxt "#31432"
-msgid "[B]PVR SETTINGS[/B][CR][CR]Configure how the channels & guide are managed  Â· Configure how Live TV and recordings are managed"
+msgid "[B]PVR SETTINGS[/B][CR][CR]Configure how the channels & guide are managed  · Configure how Live TV and recordings are managed"
 msgstr ""
 
 msgctxt "#31433"
-msgid "[B]ADD-ONS SETTINGS[/B][CR][CR]Configure your installed add-ons Â· Browse for and install add-ons from kodi.tv"
+msgid "[B]ADD-ONS SETTINGS[/B][CR][CR]Configure your installed add-ons · Browse for and install add-ons from kodi.tv"
 msgstr ""
 
 msgctxt "#31434"
-msgid "[B]SERVICES SETTINGS[/B][CR][CR]Configure & manage media sharing services Â· Configure web server Â· Configure & manage the weather service"
+msgid "[B]SERVICES SETTINGS[/B][CR][CR]Configure & manage media sharing services · Configure web server · Configure & manage the weather service"
 msgstr ""
 
 msgctxt "#31435"
-msgid "[B]SYSTEM SETTINGS[/B][CR][CR]Configure display Â· Configure audio Â· Configure internet access Â· Configure power savingÂ· Configure logging"
+msgid "[B]SYSTEM SETTINGS[/B][CR][CR]Configure display · Configure audio · Configure internet access · Configure power saving· Configure logging"
 msgstr ""
 
 msgctxt "#31436"
-msgid "[B]INTERFACE SETTINGS[/B][CR][CR]Configure skin Â· Configure region Â· Configure control Â· Configure screensaver Â· Configure master lock"
+msgid "[B]INTERFACE SETTINGS[/B][CR][CR]Configure skin · Configure region · Configure control · Configure screensaver · Configure master lock"
 msgstr ""
 
 #empty strings from id 31437 to 31500

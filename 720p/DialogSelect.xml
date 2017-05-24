@@ -9,6 +9,9 @@
 	<depth>DepthDialog+</depth>
 	<controls>
 		<control type="group">
+			<animation effect="slide" start="0,0" end="0,46" time="0" condition="[Control.IsVisible(3) + !Integer.IsGreater(Container(3).NumItems,4)] | [Control.IsVisible(6) + !Integer.IsGreater(Container(6).NumItems,2)]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,46" time="0" condition="[Control.IsVisible(3) + !Integer.IsGreater(Container(3).NumItems,6)] | [Control.IsVisible(6) + !Integer.IsGreater(Container(6).NumItems,3)]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,46" time="0" condition="[Control.IsVisible(3) + !Integer.IsGreater(Container(3).NumItems,8)] | [Control.IsVisible(6) + !Integer.IsGreater(Container(6).NumItems,4)]">Conditional</animation>
 			<control type="image">
 				<description>background image</description>
 				<left>0</left>
@@ -16,6 +19,34 @@
 				<width>850</width>
 				<height>550</height>
 				<texture border="40">$VAR[SelectBack]</texture>
+				<visible>[Control.IsVisible(3) + Integer.IsGreater(Container(3).NumItems,8)] | [Control.IsVisible(6) + Integer.IsGreater(Container(6).NumItems,4)]</visible>
+			</control>
+			<control type="image">
+				<description>background image</description>
+				<left>0</left>
+				<top>0</top>
+				<width>850</width>
+				<height>458</height>
+				<texture border="40">$VAR[SelectBack]</texture>
+				<visible>[Control.IsVisible(3) + Integer.IsGreater(Container(3).NumItems,6) + !Integer.IsGreater(Container(3).NumItems,8)] | [Control.IsVisible(6) + Integer.IsGreater(Container(6).NumItems,3) + !Integer.IsGreater(Container(6).NumItems,4)]</visible>
+			</control>
+			<control type="image">
+				<description>background image</description>
+				<left>0</left>
+				<top>0</top>
+				<width>850</width>
+				<height>366</height>
+				<texture border="40">$VAR[SelectBack]</texture>
+				<visible>[Control.IsVisible(3) + Integer.IsGreater(Container(3).NumItems,4) + !Integer.IsGreater(Container(3).NumItems,6)] | [Control.IsVisible(6) + Integer.IsGreater(Container(6).NumItems,2) + !Integer.IsGreater(Container(6).NumItems,3)]</visible>
+			</control>
+			<control type="image">
+				<description>background image</description>
+				<left>0</left>
+				<top>0</top>
+				<width>850</width>
+				<height>274</height>
+				<texture border="40">$VAR[SelectBack]</texture>
+				<visible>[Control.IsVisible(3) + !Integer.IsGreater(Container(3).NumItems,4)] | [Control.IsVisible(6) + !Integer.IsGreater(Container(6).NumItems,2)]</visible>
 			</control>
 			<control type="image">
 				<description>Dialog Header image</description>
@@ -261,6 +292,9 @@
 					<aligny>center</aligny>
 					<textcolor>grey</textcolor>
 					<label>$VAR[SelectLabel]</label>
+					<animation effect="slide" start="0,0" end="0,-92" time="0" condition="[Control.IsVisible(3) + !Integer.IsGreater(Container(3).NumItems,4)] | [Control.IsVisible(6) + !Integer.IsGreater(Container(6).NumItems,2)]">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,-92" time="0" condition="[Control.IsVisible(3) + !Integer.IsGreater(Container(3).NumItems,6)] | [Control.IsVisible(6) + !Integer.IsGreater(Container(6).NumItems,3)]">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,-92" time="0" condition="[Control.IsVisible(3) + !Integer.IsGreater(Container(3).NumItems,8)] | [Control.IsVisible(6) + !Integer.IsGreater(Container(6).NumItems,4)]">Conditional</animation>
 				</control>
 				<control type="grouplist" id="90">
 					<left>612</left>
@@ -283,7 +317,7 @@
 						<description>Cancel button</description>
 						<width>200</width>
 						<height>40</height>
-						<label>222</label>
+						<label>-</label>
 						<font>font12_title</font>
 						<textcolor>white</textcolor>
 						<focusedcolor>white</focusedcolor>

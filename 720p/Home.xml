@@ -51,6 +51,66 @@
 			<animation effect="slide" time="200" condition="Window.Next(Home)">WindowClose</animation>
 			<visible>!Skin.HasSetting(NoFloor)</visible>
 		</control>
+		<!-- Music Info -->
+		<control type="group">
+			<depth>DepthMenu</depth>
+			<left>0</left>
+			<top>60</top>
+			<visible>Player.HasAudio + !Skin.HasSetting(homepageMusicinfo) +!VideoPlayer.Content(LiveTV) + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
+			<animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
+			<include>VisibleFadeEffect</include>
+			<include>Window_OpenClose_Animation</include>
+			<control type="image">
+				<description>Cover image</description>
+				<left>20</left>
+				<top>45</top>
+				<width>130</width>
+				<height>295</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture fallback="DefaultAlbumCover.png">$INFO[Player.Art(thumb)]</texture>
+				<bordertexture border="8">ThumbBorder.png</bordertexture>
+				<bordersize>5</bordersize>
+			</control>
+			<control type="label">
+				<description>Album Label</description>
+				<left>170</left>
+				<top>265</top>
+				<height>25</height>
+				<width>1000</width>
+				<label>$INFO[MusicPlayer.Artist,, - ]$INFO[MusicPlayer.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Title label</description>
+				<left>170</left>
+				<top>285</top>
+				<height>30</height>
+				<width>1000</width>
+				<label>$INFO[MusicPlayer.Title]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font13_title</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Time Label</description>
+				<left>170</left>
+				<top>310</top>
+				<height>30</height>
+				<width>300</width>
+				<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=blue] / [/COLOR]]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+		</control>
 		<!-- LiveTV Info -->
 		<control type="group">
 			<depth>DepthMenu</depth>
@@ -256,66 +316,6 @@
 				</control>
 			</control>
 		</control>
-		<!-- Music Info -->
-		<control type="group">
-			<depth>DepthMenu</depth>
-			<left>0</left>
-			<top>60</top>
-			<visible>Player.HasAudio + !VideoPlayer.Content(LiveTV) + !Skin.HasSetting(HomePageMusicInfo) + String.IsEmpty(Window(videos).Property(PlayingBackgroundMedia))</visible>
-			<animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
-			<include>VisibleFadeEffect</include>
-			<include>Window_OpenClose_Animation</include>
-			<control type="image">
-				<description>Cover Image</description>
-				<left>20</left>
-				<top>45</top>
-				<width>130</width>
-				<height>295</height>
-				<aspectratio aligny="bottom">keep</aspectratio>
-				<texture fallback="DefaultAlbumCover.png">$INFO[Player.Art(thumb)]</texture>
-				<bordertexture border="8">ThumbBorder.png</bordertexture>
-				<bordersize>5</bordersize>
-			</control>
-			<control type="label">
-				<description>Album Label</description>
-				<left>170</left>
-				<top>265</top>
-				<height>25</height>
-				<width>1000</width>
-				<label>$INFO[MusicPlayer.Artist,, - ]$INFO[MusicPlayer.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font12</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-			</control>
-			<control type="label">
-				<description>Title Label</description>
-				<left>170</left>
-				<top>285</top>
-				<height>30</height>
-				<width>1000</width>
-				<label>$INFO[MusicPlayer.Title]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font13_title</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-			</control>
-			<control type="label">
-				<description>Time Label</description>
-				<left>170</left>
-				<top>310</top>
-				<height>30</height>
-				<width>300</width>
-				<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=blue] / [/COLOR]]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font12</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-			</control>
-		</control>
 		<!-- Video Info -->
 		<control type="group">
 			<depth>DepthMenu</depth>
@@ -381,7 +381,7 @@
 					<bordersize>5</bordersize>
 				</control>
 				<control type="label">
-					<description>Artist Label</description>
+					<description>Artist label</description>
 					<left>190</left>
 					<top>265</top>
 					<height>25</height>
@@ -550,7 +550,7 @@
 		</control>
 		<control type="group">
 			<depth>DepthMenu-</depth>
-			<description>Controls For Currently Playing Media</description>
+			<description>Controls for currently playing media</description>
 			<left>545r</left>
 			<top>370</top>
 			<animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
@@ -559,16 +559,16 @@
 			<animation effect="slide" start="0,0" end="365,0" time="300" condition="!Player.HasMedia + !Skin.HasSetting(EnableHomeStats)">conditional</animation>
         	<animation effect="slide" start="0,0" end="365,0" time="300" condition="Player.HasMedia + Skin.HasSetting(HidePlayerPanel)">conditional</animation>
 			<animation type="WindowOpen" reversible="false">
-			<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="225" />
-			<effect type="fade" start="0" end="100" time="225" />
+				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="225" />
+				<effect type="fade" start="0" end="100" time="225" />
 			</animation>
 			<animation type="WindowClose" reversible="false">
-			<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="225" />
-			<effect type="fade" start="100" end="0" time="225" />
+				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="225" />
+				<effect type="fade" start="100" end="0" time="225" />
 			</animation>
-			<visible>String.IsEmpty(Window(videos).Property(PlayingBackgroundMedia))</visible>
+			<visible>String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
 			<control type="image">
-				<description>Background End Image</description>
+				<description>Background End image</description>
 				<left>0</left>
 				<top>0</top>
 				<width>35</width>
@@ -826,7 +826,7 @@
 			<control type="radiobutton" id="607">
 				<animation effect="slide" end="0,35" time="300" condition="!Player.HasMedia">conditional</animation>
 				<colordiffuse>CCFFFFFF</colordiffuse>
-				<description>Go To Fullscreen Playback</description>
+				<description>Go to fullscreen Playback</description>
 				<left>385</left>
 				<top>0</top>
 				<height>35</height>
@@ -979,7 +979,7 @@
 			<top>55r</top>
 			<include>Window_OpenClose_Animation</include>
 			<control type="button" id="20">
-				<description>Power Push Button Pos1</description>
+				<description>Power push button Pos1</description>
 				<left>55</left>
 				<top>0</top>
 				<width>45</width>
