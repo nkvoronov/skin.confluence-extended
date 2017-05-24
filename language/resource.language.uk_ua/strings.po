@@ -268,6 +268,8 @@ msgctxt "#31113"
 msgid "Show KODI logo"
 msgstr "Показувати KODI логотип"
 
+#empty strings from id 31114 to 31115
+
 msgctxt "#31116"
 msgid "Show recently added albums"
 msgstr ""

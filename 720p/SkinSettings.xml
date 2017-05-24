@@ -1923,13 +1923,13 @@
 						<height>40</height>
 						<font>font13</font>
                         <label>10045</label>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
+                        <textcolor>grey2</textcolor>
+                        <focusedcolor>white</focusedcolor>
                         <texturefocus>MenuItemFO.png</texturefocus>
                         <texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>ActivateWindow(2121)</onclick>
-					</control>
-				</control>
+                    </control>
+                </control>
 			</control>
 		</control>
 		<include>CommonNowPlaying</include>
