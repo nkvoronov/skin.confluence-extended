@@ -116,6 +116,19 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
+                        <visible>!String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)</visible>
+					</control>
+					<control type="label">
+						<left>10</left>
+						<top>0</top>
+						<width>230</width>
+						<height>50</height>
+						<font>font24_title</font>
+						<textcolor>red</textcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+                        <visible>String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout height="50" width="260">
@@ -133,10 +146,23 @@
 						<width>230</width>
 						<height>50</height>
 						<font>font24_title</font>
+						<textcolor>$VAR[MenuColorVar]</textcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+                        <visible>!String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)</visible>
+					</control>
+					<control type="label">
+						<left>10</left>
+						<top>0</top>
+						<width>230</width>
+						<height>50</height>
+						<font>font24_title</font>
 						<textcolor>white</textcolor>
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
+                        <visible>String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)</visible>
 					</control>
 				</focusedlayout>
             </control>
@@ -155,7 +181,7 @@
 				<texture>dialogheader.png</texture>
 			</control>
 			<control type="label" id="501">
-				<description>header label powermenu</description>
+				<description>Header Label</description>
 				<left>300</left>
 				<top>20</top>
 				<width>726</width>
@@ -172,7 +198,7 @@
 					<left>290</left>
 					<top>60</top>
 					<width>750</width>
-					<height>530</height>
+					<height>435</height>
 					<itemgap>-1</itemgap>
 					<pagecontrol>60</pagecontrol>
 					<onleft>211</onleft>
@@ -180,7 +206,7 @@
 					<onup>90011</onup>
 					<ondown>90011</ondown>
                     <control type="button" id="401">
-                        <description>Choose shortcut</description>
+                        <description>Choose Shortcut</description>
                         <width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -193,7 +219,7 @@
                         <onclick>SetProperty(custom-grouping,$VAR[SkinShortcutsGrouping])</onclick>
                     </control>
                     <control type="button" id="307">
-                        <description>Change action</description>
+                        <description>Change Action</description>
                         <width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -206,7 +232,7 @@
                         <onclick>SetProperty(custom-grouping,$VAR[SkinShortcutsGrouping])</onclick>
                     </control>
                     <control type="button" id="305">
-                        <description>Change label</description>
+                        <description>Change Label</description>
                         <width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -218,7 +244,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                     </control>
                     <control type="button" id="310">
-                        <description>Browse for background</description>
+                        <description>Browse For Background</description>
                         <width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -231,7 +257,7 @@
                         <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                     </control>
                     <control type="button" id="405">
-                        <description>Edit submenu</description>
+                        <description>Edit Submenu</description>
                         <width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -243,7 +269,7 @@
                         <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>                       
                     </control>
                     <control type="button" id="406">
-                        <description>Edit subaddons</description>
+                        <description>Edit Subaddons</description>
                         <width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -255,7 +281,7 @@
                         <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>                       
                     </control>
                     <control type="button" id="312">
-                        <description>Edit widget name</description>
+                        <description>Edit Widget Name</description>
                         <width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -267,27 +293,14 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                     </control>
-                    <control type="button" id="407">
-                        <description>Edit subwidgets</description>
-                        <width>750</width>
-						<height>40</height>
-						<font>font13</font>
-                        <label>$LOCALIZE[24020] $LOCALIZE[89004]</label>
-                        <textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-                        <onclick>SetProperty(current_widget,$INFO[Container(211).ListItem.Property(widget)],Home)</onclick>
-                        <visible>String.IsEqual(Window.Property(groupname),mainmenu) + String.IsEqual(Container(211).ListItem.Property(widgetType),submenu)</visible>                       
-                    </control>
                     <control type="image" id="600">
-                        <description>separator image</description>
+                        <description>Separator Image</description>
                         <width>750</width>
                         <height>2</height>
                         <texture>separator2.png</texture>
                     </control>
                     <control type="label" id="599">
-                        <description>Disable menu item label</description>
+                        <description>Disable Menu Item Label</description>
                         <width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -297,7 +310,7 @@
 						<visible>False</visible>
                     </control>                    
                     <control type="radiobutton" id="313">
-                        <description>Disable menu item</description>
+                        <description>Disable Menu Item</description>
                         <width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -309,13 +322,13 @@
 						<selected>String.IsEqual(Control.GetLabel(599),IsTrue)</selected>
                     </control>
                     <control type="image" id="601">
-                        <description>separator image</description>
+                        <description>Separator Image</description>
                         <width>750</width>
                         <height>2</height>
                         <texture>separator2.png</texture>
                     </control>
                     <control type="button" id="303">
-                        <description>Move up</description>
+                        <description>Move Up</description>
                         <width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -326,7 +339,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                     </control>
                     <control type="button" id="304">
-                        <description>Move down</description>
+                        <description>Move Down</description>
                         <width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -337,13 +350,13 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                     </control>
                     <control type="image" id="602">
-                        <description>separator image</description>
+                        <description>Separator Image</description>
                         <width>750</width>
                         <height>2</height>
                         <texture>separator2.png</texture>
                     </control>
                     <control type="button" id="301">
-                        <description>Add shortcut</description>
+                        <description>Add Shortcut</description>
                         <width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -354,7 +367,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                     </control>                    
                     <control type="button" id="302">
-                        <description>Delete shortcut</description>
+                        <description>Delete Shortcut</description>
                         <width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -371,7 +384,7 @@
                         <texture>separator2.png</texture>
                     </control>
                     <control type="button" id="308">
-                        <description>Restore shortcuts</description>
+                        <description>Restore Shortcuts</description>
                         <width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -386,7 +399,7 @@
 					<left>1060</left>
 					<top>60</top>
 					<width>25</width>
-					<height>530</height>
+					<height>435</height>
 					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -398,6 +411,27 @@
 					<orientation>vertical</orientation>
 				</control>
             </control>
+                <control type="image">
+				<description>separator image</description>
+				<left>290</left>
+				<top>525</top>
+				<width>750</width>
+				<height>2</height>
+				<texture>separator2.png</texture>
+				<colordiffuse>40FFFFFF</colordiffuse>
+			</control>
+			<control type="textbox" id="6">
+				<description>description area</description>
+				<left>297</left>
+				<top>532</top>
+				<width>736</width>
+				<height>83</height>
+				<font>font12</font>
+				<align>justify</align>
+				<textcolor>white</textcolor>
+				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+                <label>$INFO[Container(211).ListItem.Label]</label>
+			</control>
         </control>
 		<control type="group">
 			<depth>DepthFooter</depth>

@@ -939,6 +939,10 @@ msgctxt "#89039"
 msgid "OpenELEC"
 msgstr ""
 
+msgctxt "#89040"
+msgid "Raspberry"
+msgstr ""
+
 msgctxt "#89041"
 msgid "LibreELEC"
 msgstr ""
@@ -1125,4 +1129,36 @@ msgstr ""
 
 msgctxt "#90051"
 msgid "Smart Widgets"
+msgstr ""
+
+msgctxt "#90052"
+msgid "General settings applying to all areas of the skin."
+msgstr ""
+
+msgctxt "#90053"
+msgid "Advanced options"
+msgstr ""
+
+msgctxt "#90054"
+msgid "Main menu-related settings: Configure the home screen to your likings."
+msgstr ""
+
+msgctxt "#90055"
+msgid "User widgets"
+msgstr ""
+
+msgctxt "#90056"
+msgid "Background options"
+msgstr ""
+
+msgctxt "#90057"
+msgid "Reset skin options"
+msgstr ""
+
+msgctxt "#90060"
+msgid "Disable"
+msgstr ""
+
+msgctxt "#90061"
+msgid "Enable"
 msgstr ""

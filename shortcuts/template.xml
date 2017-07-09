@@ -84,7 +84,7 @@
         <property name="widget_type" tag="property" attribute="name|widgetType" value="albums">Albums</property>
         <property name="widget_type" tag="property" attribute="name|widgetType" value="artists">Artists</property>
         <property name="widget_type" tag="property" attribute="name|widgetType" value="songs">Songs</property>
-        <property name="widget_type" tag="property" attribute="name|widgetType" value="submenu">Submenu</property>
+        <!-- <property name="widget_type" tag="property" attribute="name|widgetType" value="submenu">Submenu</property> -->
         <property name="widget_type">Other</property>
         <controls>
             <include content="include-Widgets-$SKINSHORTCUTS[widget_type]">
