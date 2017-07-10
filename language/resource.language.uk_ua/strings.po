@@ -1162,3 +1162,12 @@ msgstr "Заборонити"
 msgctxt "#90061"
 msgid "Enable"
 msgstr "Дозволити"
+
+msgctxt "#90062"
+msgid "Recent recordings"
+msgstr "Hедавні записи"
+
+msgctxt "#90063"
+msgid "Recently played channels"
+msgstr "Нещодавно програні канали"
+

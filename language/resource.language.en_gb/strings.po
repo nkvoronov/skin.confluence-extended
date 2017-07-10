@@ -1162,3 +1162,13 @@ msgstr ""
 msgctxt "#90061"
 msgid "Enable"
 msgstr ""
+
+msgctxt "#90062"
+msgid "Recent recordings"
+msgstr ""
+
+msgctxt "#90063"
+msgid "Recently played channels"
+msgstr ""
+
+

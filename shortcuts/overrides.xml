@@ -314,17 +314,15 @@
         </node>
 		<!-- LiveTV -->
         <node label="19020" condition="PVR.HasTVChannels">
-			<shortcut label="31016" type="19020" icon="DefaultTVShows.png" widget="Library" widgetType="pvrchannel" widgetTarget="pvr">pvr://channels/tv/*?view=lastplayed</shortcut>
-            <shortcut label="31015" type="19020" icon="DefaultTVShows.png" widget="Library" widgetType="pvrrecording" widgetTarget="pvr">pvr://recordings/tv/active?view=flat</shortcut>
-            <shortcut label="19040" type="19020" icon="DefaultTVShows.png" widget="Library" widgetType="tvtimer" widgetTarget="pvr">TVTimers</shortcut>
-			<shortcut label="88133" type="19020" icon="DefaultTVShows.png" widget="Custom" widgetType="custpvrchannel" widgetTarget="TV">CustomChannelsTV</shortcut>
+			<shortcut label="90063" type="19020" icon="DefaultTVShows.png" widget="Library" widgetType="pvrchannel" widgetTarget="pvr">pvr://channels/tv/*?view=lastplayed</shortcut>
+            <shortcut label="90062" type="19020" icon="DefaultTVShows.png" widget="Library" widgetType="pvrrecording" widgetTarget="pvr">pvr://recordings/tv/active?view=flat</shortcut>
+			<shortcut label="88133" type="19020" icon="DefaultTVShows.png" widget="Custom" widgetType="custpvrchannel" widgetTarget="TV">HomeCustomChannelsItems</shortcut>
 		</node>
 		<!-- Radio -->
         <node label="19021" condition="PVR.HasRadioChannels">
-			<shortcut label="31018" type="19021" icon="DefaultTVShows.png" widget="Library" widgetType="pvrchannel" widgetTarget="pvr">pvr://channels/radio/*?view=lastplayed</shortcut>
-            <shortcut label="31015" type="19021" icon="DefaultTVShows.png" widget="Library" widgetType="pvrrecording" widgetTarget="pvr">pvr://recordings/radio/active?view=flat</shortcut>
-            <shortcut label="19040" type="19021" icon="DefaultTVShows.png" widget="Library" widgetType="radiotimer" widgetTarget="pvr">RadioTimers</shortcut>
-			<shortcut label="88134" type="19021" icon="DefaultTVShows.png" widget="Custom" widgetType="custpvrchannel" widgetTarget="Radio">CustomChannelsRadio</shortcut>
+			<shortcut label="90063" type="19021" icon="DefaultTVShows.png" widget="Library" widgetType="pvrchannel" widgetTarget="pvr">pvr://channels/radio/*?view=lastplayed</shortcut>
+            <shortcut label="90062" type="19021" icon="DefaultTVShows.png" widget="Library" widgetType="pvrrecording" widgetTarget="pvr">pvr://recordings/radio/active?view=flat</shortcut>
+			<shortcut label="88134" type="19021" icon="DefaultTVShows.png" widget="Custom" widgetType="custpvrchannel" widgetTarget="Radio">HomeCustomChannelsItems</shortcut>
 		</node>
 		<!-- Video -->
         <node label="3">
@@ -390,11 +388,11 @@
 			<shortcut label="29994" type="2" icon="DefaultMusicRoles.png" widget="Library" widgetType="source" widgetTarget="music">library://music/musicroles/</shortcut>
             <shortcut label="132" type="2" icon="DefaultMusicAlbums.png" widget="Library" widgetType="albums" widgetTarget="music">musicdb://albums/</shortcut>
             <shortcut label="134" type="2" icon="DefaultMusicSongs.png" widget="Library" widgetType="songs" widgetTarget="music">musicdb://songs/</shortcut>
-            <shortcut label="271" type="2" icon="DefaultMusicTop100.png" widget="Library" widgetType="songs" widgetTarget="music">musicdb://top100/</shortcut>
+            <shortcut label="271" type="2" icon="DefaultMusicTop100.png" widget="Library" widgetType="source" widgetTarget="music">musicdb://top100/</shortcut>
             <shortcut label="10504" type="2" icon="DefaultMusicTop100.png" widget="Library" widgetType="songs" widgetTarget="music">musicdb://top100/songs/</shortcut>
             <shortcut label="10505" type="2" icon="DefaultMusicTop100.png" widget="Library" widgetType="albums" widgetTarget="music">musicdb://top100/albums/</shortcut>
             <shortcut label="562" type="2" icon="DefaultMusicYears.png" widget="Library" widgetType="source" widgetTarget="music">musicdb://years/</shortcut>
-            <shortcut label="1050" type="2" icon="DefaultFolder.png" widget="Library" widgetType="albums" widgetTarget="music">musicdb://singles/</shortcut>            
+            <shortcut label="1050" type="2" icon="DefaultFolder.png" widget="Library" widgetType="songs" widgetTarget="music">musicdb://singles/</shortcut>            
             <shortcut label="136" type="2" icon="DefaultMusicPlaylists.png" widget="Library" widgetType="playlist" widgetTarget="music">special://musicplaylists/</shortcut>
             <shortcut label="1038" type="2" icon="DefaultAddonMusic.png" widget="Library" widgetType="music" widgetTarget="music">addons://sources/audio</shortcut>
             <node label="32040">
