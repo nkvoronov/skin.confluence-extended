@@ -12,6 +12,25 @@
             <include>skinshortcuts-template-widgets</include>
         </control>            
 	</include>
+    <!-- ADDONS -->
+    <include name="include-Widgets-Addons">
+        <include content="CommonWidgetInclude">
+            <param name="left_widget" value="140" />
+            <param name="visible" value="$PARAM[visible]" />
+            <param name="label_title" value="$PARAM[widget_name]" />
+            <param name="list_id" value="$PARAM[list_id]" />
+            <param name="animation_name_include" value="AnimationWidgetCommon" />
+            <param name="item_layout_name_include" value="SquareWidgetItemsLayout" />
+            <param name="width_widget" value="1000" />
+            <param name="width_widget_item" value="200" />
+            <param name="left_widget_ra" value="1010" />
+            <param name="content_name" value="CommonIncludeContents3" />
+            <param name="content_target" value="$PARAM[widget_target]" />
+            <param name="content_path" value="$PARAM[widget_patch]" />
+            <param name="sortby" value="lastused"/>
+			<param name="sortorder" value="descending"/>
+        </include>
+    </include>
     <!-- WEATHER -->
     <!-- Weather Daily Or Hourly -->
     <include name="include-Widgets-Weather">
@@ -291,12 +310,14 @@
             <param name="label_title" value="$PARAM[widget_name]" />
             <param name="list_id" value="$PARAM[list_id]" />
             <param name="animation_name_include" value="AnimationWidgetCommon" />
-            <param name="item_layout_name_include" value="FavouritesWidgetItemsLayout" />
+            <param name="item_layout_name_include" value="SquareWidgetItemsLayout" />
             <param name="width_widget" value="1000" />
             <param name="width_widget_item" value="200" />
             <param name="left_widget_ra" value="1010" />
-            <param name="content_name" value="CommonIncludeContents2" />
-            <param name="content_path" value="plugin://script.skin.helper.service/?action=favourites&amp;limit=$VAR[WidgetLimitItemsName]&amp;reload=$INFO[Window(Home).Property(widgetreload2)]" />
+            <param name="content_name" value="CommonIncludeContents3" />
+            <param name="content_target" value="$PARAM[widget_target]" />
+            <param name="content_path" value="$PARAM[widget_patch]" />
+            <param name="favourites" value="true" />
         </include>
     </include>   
     <!-- MOVIES -->
@@ -418,22 +439,6 @@
             <param name="content_path" value="$PARAM[widget_patch]" />
         </include>
     </include>
-    <!-- SUBMENU -->
-    <include name="include-Widgets-Submenu">
-        <include content="CommonWidgetInclude">
-            <param name="left_widget" value="140" />
-            <param name="visible" value="$PARAM[visible]" />
-            <param name="label_title" value="$PARAM[widget_name]" />
-            <param name="list_id" value="$PARAM[list_id]" />
-            <param name="animation_name_include" value="AnimationWidgetCommon" />
-            <param name="item_layout_name_include" value="FavouritesWidgetItemsLayout" />
-            <param name="width_widget" value="1000" />
-            <param name="width_widget_item" value="200" />
-            <param name="left_widget_ra" value="1010" />
-            <param name="content_name" value="CommonIncludeContents" />
-            <param name="content_path" value="skinshortcuts-group-$PARAM[submenu]-2" />
-        </include>    
-    </include>
     <!-- OTHER -->
     <include name="include-Widgets-Other">
         <include content="CommonWidgetInclude">
@@ -442,7 +447,7 @@
             <param name="label_title" value="$PARAM[widget_name]" />
             <param name="list_id" value="$PARAM[list_id]" />
             <param name="animation_name_include" value="AnimationWidgetCommon" />
-            <param name="item_layout_name_include" value="FavouritesWidgetItemsLayout" />
+            <param name="item_layout_name_include" value="SquareWidgetItemsLayout" />
             <param name="width_widget" value="1000" />
             <param name="width_widget_item" value="200" />
             <param name="left_widget_ra" value="1010" />
@@ -458,7 +463,10 @@
         <param name="content_name" default="" />
         <param name="content_target" default="" />
         <param name="content_path" default="" />
-        <param name="content_limit" default="$VAR[WidgetLimitItemsName]" />        
+        <param name="content_limit" default="$VAR[WidgetLimitItemsName]" />
+        <param name="favourites">false</param>
+        <param name="sortby"></param>
+		<param name="sortorder"></param>
         <definition>
             <control type="group">
                 <left>$PARAM[left_widget]</left>
@@ -495,6 +503,7 @@
                     <scrolltime>200</scrolltime>
                     <orientation>Horizontal</orientation>
                     <preloaditems>1</preloaditems>
+                    <onclick condition="$PARAM[favourites]">$INFO[ListItem.FileNameAndPath]</onclick>
                     <include content="$PARAM[item_layout_name_include]">
                         <param name="list_id" value="$PARAM[list_id]" />
                         <param name="height_widget_item" value="$PARAM[height_widget_item]" />
@@ -503,7 +512,9 @@
                     <include content="$PARAM[content_name]">
                         <param name="content_target" value="$PARAM[content_target]" />
                         <param name="content_path" value="$PARAM[content_path]" />
-                        <param name="content_limit" value="$PARAM[content_limit]" />                        
+                        <param name="content_limit" value="$PARAM[content_limit]" />
+                        <param name="sortby" value="$PARAM[sortby]" />
+                        <param name="sortorder" value="$PARAM[sortorder]" />                        
                     </include>
                 </control>
                 <control type="button">
@@ -543,7 +554,7 @@
         <content>$PARAM[content_path]</content>
     </include>
     <include name="CommonIncludeContents3">
-        <content target="$PARAM[content_target]" limit="$PARAM[content_limit]">$PARAM[content_path]</content>
+        <content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[content_target]" limit="$PARAM[content_limit]">$PARAM[content_path]</content>
     </include>
     <!-- Animation Widget -->
     <include name="AnimationWidgetCommon">
@@ -704,7 +715,7 @@
             </focusedlayout>
         </definition>
     </include>
-    <include name="FavouritesWidgetItemsLayout">
+    <include name="SquareWidgetItemsLayout">
         <param name="height_widget_item" default="220" />
         <param name="width_widget_item" default="200" />
         <definition>

@@ -135,7 +135,7 @@
 						<label>$LOCALIZE[31112]</label>
                         <label2>$LOCALIZE[90053]</label2>
 						<onclick>noop</onclick>
-					</item>  
+					</item>
 					<item id="3">
 						<label>$LOCALIZE[513]</label>
                         <label2>$LOCALIZE[90054]</label2>
@@ -147,7 +147,7 @@
 						<onclick>noop</onclick>
                         <visible>PVR.HasTVChannels | PVR.HasRadioChannels</visible>
                         <visible>System.HasAddon(script.pvr.favourites)</visible>
-					</item>                     
+					</item>
 					<item id="5">
 						<label>$LOCALIZE[31102]</label>
                         <label2>$LOCALIZE[90056]</label2>
@@ -202,7 +202,7 @@
 					<onup>9001</onup>
 					<ondown>9001</ondown>
 					<control type="label" id="100">
-                        <description>Other params label</description>
+                        <description>Other Params Label</description>
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -287,7 +287,7 @@
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-					</control>                    
+					</control>
 					<control type="button" id="107">
                         <description>LyricScript Path</description>
 						<width>750</width>
@@ -314,7 +314,7 @@
 						<enable>!String.IsEmpty(Skin.String(LyricScript_Path))</enable>
                         <onclick condition="!System.HasAddon(script.cu.lrclyrics)">InstallAddon(script.cu.lrclyrics)</onclick>
 						<onclick>Addon.OpenSettings($INFO[Skin.String(LyricScript_Path)])</onclick>
-					</control>					
+					</control>
 					<control type="label" id="109">
 						<width>750</width>
 						<height>45</height>
@@ -326,7 +326,7 @@
 						<aligny>center</aligny>
 					</control>
                     <control type="radiobutton" id="110">
-                        <description>Enable splash screen (photo, video or music)</description>
+                        <description>Enable Splash Screen (photo, video or music)</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -702,7 +702,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
                         <enable>!Skin.HasSetting(HomePageWeatherInfo)</enable>
-					</control>					
+					</control>
 					<control type="radiobutton" id="207">
 						<description>No Player panel</description>
 						<width>750</width>
@@ -1224,7 +1224,7 @@
 					<pagecontrol>65</pagecontrol>
 					<onleft>9000</onleft>
 					<onright>65</onright>
-					<onup>9003</onup>
+					<onup>9005</onup>
 					<ondown>9005</ondown>
 					<control type="label" id="500">
                         <description>Options Label</description>

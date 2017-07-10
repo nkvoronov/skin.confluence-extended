@@ -74,6 +74,7 @@
         <property name="widget_patch" tag="property" attribute="name|widgetPath" />
         <property name="widget_target" tag="property" attribute="name|widgetTarget" />
         <!-- widget type 1 -->
+        <property name="widget_type" tag="property" attribute="name|widgetType" value="addon">Addons</property>
         <property name="widget_type" tag="property" attribute="name|widgetType" value="weather">Weather</property>
         <property name="widget_type" tag="property" attribute="name|widgetType" value="weatherh36">WeatherH36</property>
         <property name="widget_type" tag="property" attribute="name|widgetType" value="favourites">Favourites</property>
