@@ -1060,8 +1060,8 @@ msgid "Favourites Window"
 msgstr "Вікно обране"
 
 msgctxt "#89703"
-msgid "No Recommended Media"
-msgstr "Нема рекумендуемого медіа"
+msgid "No Media"
+msgstr "Нема медіа"
 
 msgctxt "#89705"
 msgid "Automatic Suggestion"
@@ -1086,3 +1086,27 @@ msgstr "Окремі фони"
 msgctxt "#89710"
 msgid "Used separate backgrounds"
 msgstr "Використовувати окремі фони"
+
+msgctxt "#90052"
+msgid "General settings applying to all areas of the skin."
+msgstr "Загальні налаштування для всіх розділів обкладинки"
+
+msgctxt "#90053"
+msgid "Advanced options"
+msgstr "Додаткові параметри"
+
+msgctxt "#90054"
+msgid "Main menu-related settings: Configure the home screen to your likings."
+msgstr "Налаштування головного меню: налаштуйте головне меню згідно зі своїми уподобаннями."
+
+msgctxt "#90055"
+msgid "User widgets"
+msgstr "Віджети користувача"
+
+msgctxt "#90056"
+msgid "Background options"
+msgstr "Параметри фону"
+
+msgctxt "#90057"
+msgid "Reset skin options"
+msgstr "Скидання параметрів обкладинки"

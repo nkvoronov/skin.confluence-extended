@@ -124,42 +124,51 @@
 				</focusedlayout>
 				<content>
 					<item id="1">
-						<label>128</label>
+						<label>$LOCALIZE[128]</label>
+                        <label2>$LOCALIZE[90052]</label2>
 						<onclick>noop</onclick>
 					</item>
 					<item id="2">
-						<label>31112</label>
-						<onclick>noop</onclick>
-					</item>                     
-                    <item id="3">
-						<label>513</label>
+						<label>$LOCALIZE[31112]</label>
+                        <label2>$LOCALIZE[90053]</label2>
 						<onclick>noop</onclick>
 					</item>
-                    <item id="4">
-						<label>88123</label>
+					<item id="3">
+						<label>$LOCALIZE[513]</label>
+                        <label2>$LOCALIZE[90054]</label2>
+						<onclick>noop</onclick>
+					</item>
+					<item id="4">
+						<label>$LOCALIZE[88123]</label>
+						<label2></label2>
 						<onclick>noop</onclick>
 					</item>  
                     <item id="5">
-						<label>31200</label>
+						<label>$LOCALIZE[31200]</label>
+                        <label2></label2>
 						<onclick>noop</onclick>
 					</item>
                     <item id="6">
-						<label>88130</label>
+                        <label>$LOCALIZE[88130]</label>
+                        <label2>$LOCALIZE[90055]</label2>
 						<onclick>noop</onclick>
                         <visible>PVR.HasTVChannels | PVR.HasRadioChannels</visible>
                         <visible>System.HasAddon(script.pvr.favourites)</visible>
-					</item>                    
+					</item>
 					<item id="7">
-						<label>31102</label>
+						<label>$LOCALIZE[31102]</label>
+                        <label2>$LOCALIZE[90056]</label2>
 						<onclick>noop</onclick>
 					</item>
-					<item id="8">
+                    <item id="8">
 						<label>$LOCALIZE[89709]</label>
+                        <label2></label2>
 						<onclick>noop</onclick>
 						<visible>Skin.HasSetting(SeparateBackground)</visible>
 					</item>
                     <item id="9">
-						<label>10035</label>
+						<label>$LOCALIZE[10035]</label>
+                        <label2>$LOCALIZE[90057]</label2>
 						<onclick>noop</onclick>
 					</item>
 				</content>
@@ -192,13 +201,13 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="group" id="9010">
-                <!-- Main -->
+                <!-- General -->
 				<control type="grouplist" id="9001">
 					<visible>Container(9000).Hasfocus(1)</visible>
 					<left>290</left>
 					<top>60</top>
 					<width>750</width>
-					<height>530</height>
+					<height>435</height>
 					<itemgap>-1</itemgap>
 					<pagecontrol>61</pagecontrol>
 					<onleft>9000</onleft>
@@ -206,10 +215,11 @@
 					<onup>9001</onup>
 					<ondown>9001</ondown>
 					<control type="label" id="100">
+                        <description>Other Params Label</description>
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>31106</label>
+						<label>$LOCALIZE[31106]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -220,7 +230,7 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>20189</label>
+						<label>$LOCALIZE[20189]</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -233,7 +243,7 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>31103</label>
+						<label>$LOCALIZE[31103]</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -246,7 +256,7 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>31104</label>
+						<label>$LOCALIZE[31104]</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -259,7 +269,7 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>31107</label>
+						<label>$LOCALIZE[31107]</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -268,11 +278,11 @@
 						<selected>Skin.HasSetting(HideFilenameFlagging)</selected>
 					</control>
 					<control type="radiobutton" id="105">
-                        <description>Hide EPG With RDS</description>
+                        <description>Hide EPG with RDS</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>31122</label>
+						<label>$LOCALIZE[31122]</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -281,10 +291,11 @@
 						<selected>Skin.HasSetting(HideEPGwithRDS)</selected>
 					</control>
 					<control type="label" id="106">
+                        <description>Lyric label</description>
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>31140</label>
+						<label>$LOCALIZE[31140]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -314,24 +325,25 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>!String.IsEmpty(Skin.String(LyricScript_Path))</enable>
+                        <onclick condition="!System.HasAddon(script.cu.lrclyrics)">InstallAddon(script.cu.lrclyrics)</onclick>
 						<onclick>Addon.OpenSettings($INFO[Skin.String(LyricScript_Path)])</onclick>
 					</control>
 					<control type="label" id="109">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>512</label>
+						<label>$LOCALIZE[512]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="110">
+                    <control type="radiobutton" id="110">
                         <description>Use Startup Playlist</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>88000</label>
+						<label>$LOCALIZE[88000]</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -346,7 +358,7 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>88001</label>
+						<label>$LOCALIZE[88001]</label>
 						<label2>$INFO[Skin.String(Startup_Playlist_Path)]</label2>
 						<onclick>Skin.SetFile(Startup_Playlist_Path,,special://MusicPlaylists/)</onclick>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -354,10 +366,11 @@
 						<enable>Skin.HasSetting(Use_Startup_Playlist)</enable>
 					</control>
                     <control type="label" id="112">
+                        <description>Addons Label</description>
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>24001</label>
+						<label>$LOCALIZE[24001]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -373,9 +386,9 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
+                        <onclick condition="!System.HasAddon(script.globalsearch)">InstallAddon(script.globalsearch)</onclick>
 						<onclick>Skin.ToggleSetting(ActivateGlobalSearch)</onclick>
 						<selected>Skin.HasSetting(ActivateGlobalSearch)</selected>
-						<enable>System.HasAddon(script.globalsearch)</enable>
 					</control>
 					<control type="button" id="114">
                         <description>Settings Global Search</description>
@@ -389,24 +402,23 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Addon.OpenSettings(script.globalsearch)</onclick>
 						<enable>Skin.HasSetting(ActivateGlobalSearch)</enable>
-						<visible>System.HasAddon(script.globalsearch)</visible>
 					</control>
 					<control type="radiobutton" id="115">
-                        <description>Activate SimplePlaylists</description>
+                        <description>Activate Simple Playlists</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>$LOCALIZE[24000] SimplePlaylists</label>
+						<label>$LOCALIZE[24000] Simple Playlists</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
+                        <onclick condition="!System.HasAddon(script.simpleplaylists)">InstallAddon(script.simpleplaylists)</onclick>
 						<onclick>Skin.ToggleSetting(ActivateWatchitLater)</onclick>
 						<selected>Skin.HasSetting(ActivateWatchitLater)</selected>
-						<enable>System.HasAddon(script.simpleplaylists)</enable>
 					</control>
 					<control type="button" id="116">
-                        <description>Settings SimplePlaylists</description>
+                        <description>Settings Simple Playlists</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -417,9 +429,8 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Addon.OpenSettings(script.simpleplaylists)</onclick>
 						<enable>Skin.HasSetting(ActivateWatchitLater)</enable>
-						<visible>System.HasAddon(script.simpleplaylists)</visible>
 					</control>
-					<control type="radiobutton" id="117">
+                    <control type="radiobutton" id="117">
                         <description>Activate Script Playlists</description>
 						<width>750</width>
 						<height>40</height>
@@ -455,17 +466,34 @@
 						<label>$LOCALIZE[24020] - Skin Widgets</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<texturefocus colordiffuse="$VAR[MainColorOne]">MenuItemFO.png</texturefocus>
+						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Addon.OpenSettings(service.skin.widgets)</onclick>
 						<enable>System.HasAddon(service.skin.widgets)</enable>
 					</control>
+                    <control type="image" id="120">
+                        <description>Separator Image</description>
+                        <height>2</height>
+                        <texture>separator2.png</texture>
+                    </control>
+                    <control type="button" id="121">
+                        <description>Reset Section</description>
+                        <width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[10041]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>                        
+                        <!-- <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(AutoScroll)|Skin.Reset(Show_SlideShow_Paused)|Skin.Reset(WindowedTrailer)|Skin.Reset(HideFilenameFlagging)|Skin.Reset(HideEPGwithRDS)|Skin.Reset(LyricScript_Path)|Skin.Reset(EnableSplashScreen)|Skin.Reset(SplashScreenPath)|Skin.Reset(DurationSplashScreen)|Skin.Reset(ActivateGlobalSearch)|Skin.Reset(ActivateWatchitLater)|Skin.Reset(ActivateSmartShortcutsPlaylists)|Skin.Reset(ActivateSmartShortcutsFavorites)|Skin.Reset(ActivateAnimatedPosters))</onclick> -->
+                    </control>
 				</control>
 				<control type="scrollbar" id="61">
 					<left>1060</left>
 					<top>60</top>
 					<width>25</width>
-					<height>530</height>
+					<height>435</height>
 					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -477,13 +505,13 @@
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(1)</visible>
 				</control>
-                <!-- Params -->
+                <!-- Options -->
 				<control type="grouplist" id="9002">
 					<visible>Container(9000).Hasfocus(2)</visible>
 					<left>290</left>
 					<top>60</top>
 					<width>750</width>
-					<height>530</height>
+					<height>435</height>
 					<itemgap>-1</itemgap>
 					<pagecontrol>62</pagecontrol>
 					<onleft>9000</onleft>
@@ -491,10 +519,11 @@
 					<onup>9002</onup>
 					<ondown>9002</ondown>
 					<control type="label" id="200">
+                        <description>Settings Home Label</description>
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>31101</label>
+						<label>$LOCALIZE[31101]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -507,7 +536,7 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>20176</label>
+						<label>$LOCALIZE[20176]</label>
 						<onclick>Skin.ToggleSetting(HomePageVideoInfo)</onclick>
 						<selected>!Skin.HasSetting(HomePageVideoInfo)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -520,7 +549,7 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>20083</label>
+						<label>$LOCALIZE[20083]</label>
 						<onclick>Skin.ToggleSetting(HomePageMusicInfo)</onclick>
 						<selected>!Skin.HasSetting(HomePageMusicInfo)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -533,7 +562,7 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>89501</label>
+						<label>$LOCALIZE[89501]</label>
 						<onclick>Skin.ToggleSetting(FullScreenClock)</onclick>
 						<selected>Skin.HasSetting(FullScreenClock)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -546,7 +575,7 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>89502</label>
+						<label>$LOCALIZE[89502]</label>
 						<onclick>Skin.ToggleSetting(SlideShowInfo)</onclick>
 						<selected>Skin.HasSetting(SlideShowInfo)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -559,7 +588,7 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>20084</label>
+						<label>$LOCALIZE[20084]</label>
 						<onclick>Skin.ToggleSetting(HomePageWeatherInfo)</onclick>
 						<selected>Skin.HasSetting(HomePageWeatherInfo)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -574,7 +603,7 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>31113</label>
+						<label>$LOCALIZE[31113]</label>
 						<onclick>Skin.ToggleSetting(NoLogo)</onclick>
 						<selected>!Skin.HasSetting(NoLogo)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -634,25 +663,25 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
                     <control type="button" id="211">
-                        <left>0</left>
-						<top>45</top>
-						<width>750</width>
+                        <description>Weather Icons</description>
+                        <width>750</width>
 						<height>40</height>
 						<font>font13</font>
                         <label>$LOCALIZE[31133]</label>
                         <label2>$VAR[WeatherIconsName]</label2>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-                        <onclick>RunScript(script.image.resource.select,property=WeatherIcons&amp;type=resource.images.weathericons)</onclick>
-                        <enable>System.HasAddon(script.image.resource.select)</enable>
-					</control>
+                        <textcolor>grey2</textcolor>
+                        <focusedcolor>white</focusedcolor>
+                        <texturefocus>MenuItemFO.png</texturefocus>
+                        <texturenofocus>MenuItemNF.png</texturenofocus>
+                        <onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
+                        <onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=WeatherIcons&amp;type=resource.images.weathericons)</onclick>                       
+                    </control>
 					<control type="label" id="212">
+                        <description>Main Menu Label</description>
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>513</label>
+						<label>$LOCALIZE[513]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -665,7 +694,7 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>13333</label>
+						<label>$LOCALIZE[13333]</label>
 						<onclick>Skin.ToggleSetting(LowerMenu)</onclick>
 						<selected>Skin.HasSetting(LowerMenu)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -678,7 +707,7 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>88086</label>
+						<label>$LOCALIZE[88086]</label>
 						<onclick>Skin.ToggleSetting(WrapAroundHomeMenu)</onclick>
 						<onclick>Skin.Reset(FixedEndingMenu)</onclick>
 						<selected>Skin.HasSetting(WrapAroundHomeMenu)</selected>
@@ -692,7 +721,7 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>88087</label>
+						<label>$LOCALIZE[88087]</label>
 						<onclick>Skin.ToggleSetting(FixedEndingMenu)</onclick>
 						<selected>!Skin.HasSetting(FixedEndingMenu)</selected>
                         <enable>!Skin.HasSetting(WrapAroundHomeMenu)</enable>
@@ -706,7 +735,7 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>88072</label>
+						<label>$LOCALIZE[88072]</label>
 						<onclick>Skin.ToggleSetting(NoSlide)</onclick>
 						<selected>!Skin.HasSetting(NoSlide)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -719,7 +748,7 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>88081</label>
+						<label>$LOCALIZE[88081]</label>
                         <label2>$VAR[MenuColorName]</label2>
 						<onclick>ActivateWindow(2210)</onclick>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -732,17 +761,18 @@
 						<font>font13</font>
                         <textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>88082</label>
+						<label>$LOCALIZE[88082]</label>
 						<label2>$VAR[MenuFocusName]</label2>
 						<onclick>ActivateWindow(2211)</onclick>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="label" id="220">
+						<description>Addons Label</description>
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>31200</label>
+						<label>$LOCALIZE[31200]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -755,7 +785,7 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>88073</label>
+						<label>$LOCALIZE[88073]</label>
 						<onclick>Skin.ToggleSetting(NoSlideAddon)</onclick>
 						<selected>!Skin.HasSetting(NoSlideAddon)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -778,7 +808,7 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>88130</label>
+						<label>$LOCALIZE[88130]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -798,16 +828,17 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="label" id="240">
+                        <description>Buttons Label</description>
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>88089</label>
+						<label>$LOCALIZE[88089]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-                    <control type="radiobutton" id="241">
+					<control type="radiobutton" id="241">
                         <description>Hide Reload Skin Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -834,6 +865,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
                     <control type="button" id="243">
+                        <description>Power Button Action</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -861,6 +893,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
                     <control type="button" id="245">
+                        <description>Favorites Button Action</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -875,6 +908,7 @@
                         <enable>!Skin.HasSetting(HideFavoritesButton)</enable>
 					</control>
                     <control type="label" id="246">
+                        <description>Debug Label</description>
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -885,7 +919,7 @@
 						<aligny>center</aligny>
 					</control>
                     <control type="radiobutton" id="247">
-						<description>Hide Favorites Button</description>
+						<description>Enable Skin Debug</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -898,12 +932,29 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
+                    <control type="image" id="248">
+                        <description>Separator Image</description>
+                        <height>2</height>
+                        <texture>separator2.png</texture>
+                    </control>
+                    <control type="button" id="249">
+                        <description>Reset Section</description>
+                        <width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[10041]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>                        
+                        <!-- <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(HomePageVideoInfo)|Skin.Reset(HomePageMusicInfo)|Skin.Reset(FullScreenClock)|Skin.Reset(SlideShowInfo)|Skin.Reset(HomePageWeatherInfo)|Skin.Reset(NoLogo)|Skin.Reset(HidePlayerPanel)|Skin.Reset(EnableHomeStats)|Skin.Reset(NoFloor)|Skin.Reset(NoFloorAll)|Skin.Reset(WeatherIcons.name)|Skin.Reset(WeatherIcons.ext)|Skin.Reset(WeatherIcons.path)|Skin.Reset(WeatherIcons.multi)|Skin.Reset(NoSlideAddon)|Skin.Reset(NoLabelAddon)|Skin.Reset(WidgetLimitItems)|Skin.Reset(EnableWidgetsTitle)|Skin.Reset(HidePowerButton)|Skin.Reset(UsrPwrBtnCmd.Label)|Skin.Reset(UsrPwrBtnCmd.Path)|Skin.Reset(HideFavoritesButton)|Skin.Reset(UsrFavBtnCmd.Label)|Skin.Reset(UsrFavBtnCmd.Path)|Skin.Reset(EnableSkinDebug))</onclick> -->
+                    </control>
 				</control>
 				<control type="scrollbar" id="62">
 					<left>1060</left>
 					<top>60</top>
 					<width>25</width>
-					<height>530</height>
+					<height>435</height>
 					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -916,12 +967,12 @@
 					<visible>Container(9000).Hasfocus(2)</visible>
 				</control>
                 <!-- Home menu -->
-                <control type="grouplist" id="9003">
+				<control type="grouplist" id="9003">
 					<visible>Container(9000).Hasfocus(3)</visible>
 					<left>290</left>
 					<top>60</top>
 					<width>750</width>
-					<height>530</height>
+					<height>435</height>
 					<itemgap>-1</itemgap>
 					<pagecontrol>63</pagecontrol>
 					<onleft>9000</onleft>
@@ -1033,7 +1084,7 @@
 					<left>1060</left>
 					<top>60</top>
 					<width>25</width>
-					<height>530</height>
+					<height>435</height>
 					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -1045,13 +1096,13 @@
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(3)</visible>
 				</control>
-                <!-- Submenu sets -->                
-                <control type="grouplist" id="9004">
+                <!-- Submenu sets -->
+				<control type="grouplist" id="9004">
 					<visible>Container(9000).Hasfocus(4)</visible>
 					<left>290</left>
 					<top>60</top>
 					<width>750</width>
-					<height>530</height>
+					<height>435</height>
 					<itemgap>-1</itemgap>
 					<pagecontrol>64</pagecontrol>
 					<onleft>9000</onleft>
@@ -1143,7 +1194,7 @@
 					<left>1060</left>
 					<top>60</top>
 					<width>25</width>
-					<height>530</height>
+					<height>435</height>
 					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -1156,12 +1207,12 @@
 					<visible>Container(9000).Hasfocus(4)</visible>
 				</control>
                 <!-- Addons sets -->
-                <control type="grouplist" id="9005">
+				<control type="grouplist" id="9005">
 					<visible>Container(9000).Hasfocus(5)</visible>
 					<left>290</left>
 					<top>60</top>
 					<width>750</width>
-					<height>530</height>
+					<height>435</height>
 					<itemgap>-1</itemgap>
 					<pagecontrol>65</pagecontrol>
 					<onleft>9000</onleft>
@@ -1253,7 +1304,7 @@
 					<left>1060</left>
 					<top>60</top>
 					<width>25</width>
-					<height>530</height>
+					<height>435</height>
 					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -1271,7 +1322,7 @@
 					<left>290</left>
 					<top>60</top>
 					<width>750</width>
-					<height>530</height>
+					<height>435</height>
 					<itemgap>-1</itemgap>
 					<pagecontrol>66</pagecontrol>
 					<onleft>9000</onleft>
@@ -1295,7 +1346,7 @@
 					<left>1060</left>
 					<top>60</top>
 					<width>25</width>
-					<height>530</height>
+					<height>435</height>
 					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -1313,7 +1364,7 @@
 					<left>290</left>
 					<top>60</top>
 					<width>750</width>
-					<height>530</height>
+					<height>435</height>
 					<itemgap>-1</itemgap>
 					<pagecontrol>67</pagecontrol>
 					<onleft>9000</onleft>
@@ -1324,17 +1375,18 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>31106</label>
+						<label>$LOCALIZE[31106]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
 					<control type="radiobutton" id="701">
+                        <description>Hide Background Fanart</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>31119</label>
+						<label>$LOCALIZE[31119]</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -1343,10 +1395,11 @@
 						<selected>Skin.HasSetting(HideBackGroundFanart)</selected>
 					</control>
 					<control type="radiobutton" id="702">
+                        <description>Hide Visualization Fanart</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>31129</label>
+						<label>$LOCALIZE[31129]</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -1355,10 +1408,11 @@
 						<selected>Skin.HasSetting(HideVisualizationFanart)</selected>
 					</control>
 					<control type="radiobutton" id="703">
+                        <description>Show Background Video</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>31124</label>
+						<label>$LOCALIZE[31124]</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -1367,10 +1421,11 @@
 						<selected>!Skin.HasSetting(ShowBackgroundVideo)</selected>
 					</control>
 					<control type="radiobutton" id="704">
+                        <description>Show Background Visualization</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>31125</label>
+						<label>$LOCALIZE[31125]</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -1379,29 +1434,32 @@
 						<selected>!Skin.HasSetting(ShowBackgroundVis)</selected>
 					</control>
                     <control type="button" id="705">
-						<width>750</width>
+                        <description>Weather Fanart</description>
+                        <width>750</width>
 						<height>40</height>
 						<font>font13</font>
                         <label>$LOCALIZE[31130]</label>
                         <label2>$VAR[WeatherFanartName]</label2>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-                        <onclick>RunScript(script.image.resource.select,property=WeatherFanart&amp;type=resource.images.weatherfanart)</onclick>
-                        <enable>System.HasAddon(script.image.resource.select)</enable>
-					</control>
+                        <textcolor>grey2</textcolor>
+                        <focusedcolor>white</focusedcolor>
+                        <texturefocus>MenuItemFO.png</texturefocus>
+                        <texturenofocus>MenuItemNF.png</texturenofocus>
+                        <onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
+                        <onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=WeatherFanart&amp;type=resource.images.weatherfanart)</onclick>
+                    </control>
 					<control type="label" id="706">
+                        <description>Background Label</description>
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>31102</label>
+						<label>$LOCALIZE[31102]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
 					<control type="radiobutton" id="707">
+                        <description>Separate Backgrounds</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1418,7 +1476,7 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>31109</label>
+						<label>$LOCALIZE[31109]</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -1428,6 +1486,7 @@
 						<enable>!Skin.HasSetting(SeparateBackground)</enable>
 					</control>
 					<control type="button" id="709">
+                        <description>Custom Background Path</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1440,12 +1499,29 @@
 						<onclick>Skin.SetImage(CustomBackgroundPath)</onclick>
 						<enable>Skin.HasSetting(UseCustomBackground)</enable>
 					</control>
+                    <control type="image" id="710">
+                        <description>Separator Image</description>
+                        <height>2</height>
+                        <texture>separator2.png</texture>
+                    </control>
+                    <control type="button" id="711">
+                        <description>Reset Section</description>
+                        <width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[10041]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>                        
+                        <!-- <onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(HideBackGroundFanart)|Skin.Reset(HideVisualizationFanart)|Skin.Reset(ShowBackgroundVideo)|Skin.Reset(WeatherFanart.name)|Skin.Reset(WeatherFanart.ext)|Skin.Reset(WeatherFanart.path)|Skin.Reset(WeatherFanart.multi)|Skin.Reset(SeparateBackground)|Skin.Reset(HomeFanart.name)|Skin.Reset(HomeFanart.path)|Skin.Reset(HomeFanart.ext)|Skin.Reset(UseCustomBackground)|Skin.Reset(CustomBackgroundPath))</onclick> -->
+                    </control>
 				</control>
 				<control type="scrollbar" id="67">
 					<left>1060</left>
 					<top>60</top>
 					<width>25</width>
-					<height>530</height>
+					<height>435</height>
 					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -1457,7 +1533,7 @@
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(7)</visible>
 				</control>
-                <!-- Background Adv -->                
+                <!-- Background Adv -->
 				<control type="group">
 					<left>290</left>
 					<top>60</top>
@@ -1468,7 +1544,7 @@
 						<width>680</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>89710</label>
+						<label>$LOCALIZE[89710]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -1912,17 +1988,18 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>10035</label>
+						<label>$LOCALIZE[10035]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
                     <control type="button" id="901">
+                        <description></description>
                         <width>750</width>
 						<height>40</height>
 						<font>font13</font>
-                        <label>10045</label>
+                        <label>$LOCALIZE[10045]</label>
                         <textcolor>grey2</textcolor>
                         <focusedcolor>white</focusedcolor>
                         <texturefocus>MenuItemFO.png</texturefocus>
@@ -1930,6 +2007,27 @@
 						<onclick>ActivateWindow(2121)</onclick>
                     </control>
                 </control>
+			</control>
+            <control type="image">
+				<description>separator image</description>
+				<left>290</left>
+				<top>525</top>
+				<width>750</width>
+				<height>2</height>
+				<texture>separator2.png</texture>
+				<colordiffuse>40FFFFFF</colordiffuse>
+			</control>
+			<control type="textbox" id="6">
+				<description>description area</description>
+				<left>297</left>
+				<top>532</top>
+				<width>736</width>
+				<height>83</height>
+				<font>font12</font>
+				<align>justify</align>
+				<textcolor>white</textcolor>
+				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+                <label>$INFO[Container(9000).ListItem.Label2]</label>
 			</control>
 		</control>
 		<include>CommonNowPlaying</include>

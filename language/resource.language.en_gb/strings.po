@@ -1060,7 +1060,7 @@ msgid "Favourites Window"
 msgstr ""
 
 msgctxt "#89703"
-msgid "No Recommended Media"
+msgid "No Media"
 msgstr ""
 
 msgctxt "#89705"
@@ -1085,4 +1085,28 @@ msgstr ""
 
 msgctxt "#89710"
 msgid "Used separate backgrounds"
+msgstr ""
+
+msgctxt "#90052"
+msgid "General settings applying to all areas of the skin."
+msgstr ""
+
+msgctxt "#90053"
+msgid "Advanced options"
+msgstr ""
+
+msgctxt "#90054"
+msgid "Main menu-related settings: Configure the home screen to your likings."
+msgstr ""
+
+msgctxt "#90055"
+msgid "User widgets"
+msgstr ""
+
+msgctxt "#90056"
+msgid "Background options"
+msgstr ""
+
+msgctxt "#90057"
+msgid "Reset skin options"
 msgstr ""
