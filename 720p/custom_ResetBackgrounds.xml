@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog" id="2145">
+	<defaultcontrol always="true">10</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<left>310</left>
+		<top>230</top>
+	</coordinates>
+	<include>dialogeffect</include>
+	<controls>
+        <include content="DialogYesNo">
+            <param name="dialogheaderlabel" value="$LOCALIZE[10041]" />
+            <param name="dialogtext" value="$LOCALIZE[10042]" />
+            <param name="dialogincludeyes" value="DialogBackgrounds" />
+        </include>
+	</controls>
+</window>

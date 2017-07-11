@@ -3181,4 +3181,227 @@
 			</control>
 		</definition>
 	</include>
+    <include name="DialogYesNo">
+        <param name="dialogincludeno">DialogClickNo</param>
+        <definition>
+            <include content="DialogBackgroundCommons">
+                <param name="DialogBackgroundWidth" value="650" />
+                <param name="DialogBackgroundHeight" value="260" />
+                <param name="DialogHeaderWidth" value="570" />
+                <param name="DialogHeaderLabel" value="$PARAM[dialogheaderlabel]" />
+                <param name="DialogHeaderId" value="1" />
+                <param name="CloseButtonLeft" value="560" />
+                <param name="CloseButtonNav" value="9000" />
+            </include>
+            <control type="textbox" id="9">
+                <description>text</description>
+                <left>30</left>
+                <top>62</top>
+                <width>590</width>
+                <height>98</height>
+                <align>left</align>
+                <label>$PARAM[dialogtext]</label>
+                <font>font13</font>
+                <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+            </control>
+            <control type="grouplist" id="9000">
+                <left>25</left>
+                <top>195</top>
+                <width>600</width>
+                <height>40</height>
+                <align>center</align>
+                <itemgap>0</itemgap>
+                <orientation>horizontal</orientation>
+                <control type="button" id="11">
+                    <description>OK button</description>
+                    <width>200</width>
+                    <height>40</height>
+                    <label>107</label>
+                    <font>font12_title</font>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>white</focusedcolor>
+                    <align>center</align>
+                    <include>$PARAM[dialogincludeyes]</include>
+                </control>
+                <control type="button" id="10">
+                    <description>Cancel button</description>
+                    <width>200</width>
+                    <height>40</height>
+                    <label>106</label>
+                    <font>font12_title</font>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>white</focusedcolor>
+                    <align>center</align>
+                    <include>$PARAM[dialogincludeno]</include>
+                </control>
+            </control>
+        </definition>
+    </include>
+    <!-- *** Reset *** -->
+    
+    <!-- Reset General -->
+    <include name="DialogResetGeneral">
+        <onclick>Skin.Reset(AutoScroll)</onclick>
+        <onclick>Skin.Reset(Show_SlideShow_Paused)</onclick>
+        <onclick>Skin.Reset(WindowedTrailer)</onclick>
+        <onclick>Skin.Reset(HideFilenameFlagging)</onclick>
+        <onclick>Skin.Reset(HideEPGwithRDS)</onclick>
+        <onclick>Skin.Reset(LyricScript_Path)</onclick>
+        <onclick>Skin.Reset(Use_Startup_Playlist)</onclick>
+        <onclick>Skin.Reset(Startup_Playlist_Path)</onclick>
+        <onclick>Skin.Reset(DurationSplashScreen)</onclick>
+        <onclick>Skin.Reset(ActivateGlobalSearch)</onclick>
+        <onclick>Skin.Reset(ActivateWatchitLater)</onclick>
+        <onclick>Skin.Reset(ActivateScriptPlaylist)</onclick>
+        <include>DialogClickNo</include>
+    </include>
+    <!-- Reset Options -->
+    <include name="DialogResetOptions">
+        <onclick>Skin.Reset(HomePageVideoInfo)</onclick>
+        <onclick>Skin.Reset(HomePageMusicInfo)</onclick>
+        <onclick>Skin.Reset(FullScreenClock)</onclick>
+        <onclick>Skin.Reset(SlideShowInfo)</onclick>
+        <onclick>Skin.Reset(HomePageWeatherInfo)</onclick>
+        <onclick>Skin.Reset(NoLogo)</onclick>
+        <onclick>Skin.Reset(HidePlayerPanel)</onclick>
+        <onclick>Skin.Reset(EnableHomeStats)</onclick>
+        <onclick>Skin.Reset(NoFloor)</onclick>
+        <onclick>Skin.Reset(NoFloorAll)</onclick>
+        <onclick>Skin.Reset(WeatherIcons.name)</onclick>
+        <onclick>Skin.Reset(WeatherIcons.ext)</onclick>
+        <onclick>Skin.Reset(WeatherIcons.path)</onclick>
+        <onclick>Skin.Reset(WeatherIcons.multi)</onclick>
+        <onclick>Skin.Reset(NoSlideAddon)</onclick>
+        <onclick>Skin.Reset(NoLabelAddon)</onclick>
+        <onclick>Skin.Reset(EnableWidgetsTitle)</onclick>
+        <onclick>Skin.Reset(HideReloadSkinButton)</onclick>
+        <onclick>Skin.Reset(HidePowerButton)</onclick>
+        <onclick>Skin.Reset(UsrPwrBtnCmd.Label)</onclick>
+        <onclick>Skin.Reset(UsrPwrBtnCmd.Path)</onclick>
+        <onclick>Skin.Reset(HideFavoritesButton)</onclick>
+        <onclick>Skin.Reset(UsrFavBtnCmd.Label)</onclick>
+        <onclick>Skin.Reset(UsrFavBtnCmd.Path)</onclick>
+        <onclick>Skin.Reset(EnableSkinDebug))</onclick>       
+        <include>DialogClickNo</include>
+    </include>
+    <!-- Reset Main Menu -->
+    <include name="DialogMainMenu">
+        <onclick>Skin.Reset(LowerMenu)</onclick>
+        <onclick>Skin.Reset(WrapAroundHomeMenu)</onclick>
+        <onclick>Skin.Reset(FixedEndingMenu)</onclick>
+        <onclick>Skin.Reset(NoSlide)</onclick>
+        <onclick>Skin.Reset(MenuColorName)</onclick>
+        <onclick>Skin.Reset(MenuColor)</onclick>
+        <onclick>Skin.Reset(MenuColor.name)</onclick>
+        <onclick>Skin.Reset(MenuColor.base)</onclick>
+        <onclick>Skin.Reset(CustomFocusName)</onclick>
+        <onclick>Skin.Reset(CustomFocus)</onclick>
+        <include>DialogClickNo</include>
+    </include>
+    <!-- Reset User Widgets -->
+    <include name="DialogUserWidgets">
+        <onclick>Skin.Reset(ChannelTV.1.Label)</onclick>
+        <onclick>Skin.Reset(ChannelTV.2.Label)</onclick>
+        <onclick>Skin.Reset(ChannelTV.3.Label)</onclick>
+        <onclick>Skin.Reset(ChannelTV.4.Label)</onclick>
+        <onclick>Skin.Reset(ChannelTV.5.Label)</onclick>
+        <onclick>Skin.Reset(ChannelTV.6.Label)</onclick>
+        <onclick>Skin.Reset(ChannelTV.7.Label)</onclick>
+        <onclick>Skin.Reset(ChannelTV.8.Label)</onclick>
+        <onclick>Skin.Reset(ChannelTV.9.Label)</onclick>
+        <onclick>Skin.Reset(ChannelTV.10.Label)</onclick>
+        <onclick>Skin.Reset(ChannelRadio.1.Label)</onclick>
+        <onclick>Skin.Reset(ChannelRadio.2.Label)</onclick>
+        <onclick>Skin.Reset(ChannelRadio.3.Label)</onclick>
+        <onclick>Skin.Reset(ChannelRadio.4.Label)</onclick>
+        <onclick>Skin.Reset(ChannelRadio.5.Label)</onclick>
+        <onclick>Skin.Reset(ChannelRadio.6.Label)</onclick>
+        <onclick>Skin.Reset(ChannelRadio.7.Label)</onclick>
+        <onclick>Skin.Reset(ChannelRadio.8.Label)</onclick>
+        <onclick>Skin.Reset(ChannelRadio.9.Label)</onclick>
+        <onclick>Skin.Reset(ChannelRadio.10.Label)</onclick>
+        <include>DialogClickNo</include>
+    </include>
+    <!-- Reset Backgrounds -->
+    <include name="DialogBackgrounds">
+        <onclick>Skin.Reset(HideBackGroundFanart)</onclick>
+        <onclick>Skin.Reset(HideVisualizationFanart)</onclick>
+        <onclick>Skin.Reset(ShowBackgroundVideo)</onclick>
+        <onclick>Skin.Reset(WeatherFanart.name)</onclick>
+        <onclick>Skin.Reset(WeatherFanart.ext)</onclick>
+        <onclick>Skin.Reset(WeatherFanart.path)</onclick>
+        <onclick>Skin.Reset(WeatherFanart.multi)</onclick>
+        <onclick>Skin.Reset(SeparateBackground)</onclick>
+        <onclick>Skin.Reset(HomeFanart.name)</onclick>
+        <onclick>Skin.Reset(HomeFanart.path)</onclick>
+        <onclick>Skin.Reset(HomeFanart.ext)</onclick>
+        <onclick>Skin.Reset(UseCustomBackground)</onclick>
+        <onclick>Skin.Reset(CustomBackgroundPath)</onclick>
+        <onclick>Skin.Reset(HomeItem.1.DBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.1.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.2.DBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.2.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.3.DBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.3.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.4.DBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.4.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.5.DBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.5.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.6.DBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.6.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.7.DBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.7.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.8.DBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.8.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.9.DBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.9.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.10.DBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.10.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.11.DBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.11.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.12.DBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.12.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.13.DBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.13.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.14.DBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.14.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.15.DBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.15.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.16.DBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.16.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.17.DBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.17.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.18.DBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.18.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.19.DBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.19.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.20.DBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.20.CBackground)</onclick>        
+        <include>DialogClickNo</include>
+    </include>
+    <!-- Random Playlist Yes -->
+    <include name="DialogAllMenu">
+        <include>DialogClickNo</include>
+    </include>
+    <!-- Random Playlist Yes -->
+    <include name="RandomPlaylistYes">
+        <onclick>Skin.SetBool(EnableRandomPlaylist)</onclick>
+        <include>DialogClickNo</include>
+    </include>
+    <!-- Random Playlist No -->
+    <include name="RandomPlaylistNo">
+        <onclick>Skin.Reset(EnableRandomPlaylist)</onclick>
+        <include>DialogClickNo</include>
+    </include>
+    <!-- Reset Skin -->
+    <include name="DialogResetSkin">
+        <onclick>Skin.ResetSettings</onclick>
+        <onclick>ReloadSkin()</onclick>
+        <include>DialogClickNo</include>
+        <onclick>ActivateWindow(Home)</onclick>
+    </include>
+    <!-- Click No -->
+    <include name="DialogClickNo">
+        <onclick>PreviousMenu</onclick>
+    </include>
 </includes>

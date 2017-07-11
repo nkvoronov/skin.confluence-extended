@@ -1110,3 +1110,11 @@ msgstr "Параметры фона"
 msgctxt "#90057"
 msgid "Reset skin options"
 msgstr "Сброс параметров обложки"
+
+msgctxt "#90070"
+msgid "Customize Main Menu"
+msgstr "Настроить главное меню"
+
+msgctxt "#90071"
+msgid "Reset all menu items"
+msgstr "Сбросить все элементы меню"
