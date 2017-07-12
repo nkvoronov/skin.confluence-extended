@@ -245,6 +245,7 @@
 			</focusedlayout>
 		</control>
 	</include>
+    <!-- Dialog Background Common-->
 	<include name="DialogBackgroundCommons">
 		<control type="image">
 			<description>background image</description>
@@ -3181,6 +3182,7 @@
 			</control>
 		</definition>
 	</include>
+    <!-- Dialog YesNo -->
     <include name="DialogYesNo">
         <param name="dialogincludeno">DialogClickNo</param>
         <definition>
@@ -3237,6 +3239,7 @@
             </control>
         </definition>
     </include>
+    
     <!-- *** Reset *** -->
     
     <!-- Reset General -->
@@ -3337,50 +3340,48 @@
         <onclick>Skin.Reset(HomeFanart.ext)</onclick>
         <onclick>Skin.Reset(UseCustomBackground)</onclick>
         <onclick>Skin.Reset(CustomBackgroundPath)</onclick>
-        <onclick>Skin.Reset(HomeItem.1.DBackground)</onclick>
         <onclick>Skin.Reset(HomeItem.1.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.2.DBackground)</onclick>
         <onclick>Skin.Reset(HomeItem.2.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.3.DBackground)</onclick>
         <onclick>Skin.Reset(HomeItem.3.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.4.DBackground)</onclick>
         <onclick>Skin.Reset(HomeItem.4.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.5.DBackground)</onclick>
         <onclick>Skin.Reset(HomeItem.5.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.6.DBackground)</onclick>
         <onclick>Skin.Reset(HomeItem.6.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.7.DBackground)</onclick>
         <onclick>Skin.Reset(HomeItem.7.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.8.DBackground)</onclick>
         <onclick>Skin.Reset(HomeItem.8.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.9.DBackground)</onclick>
         <onclick>Skin.Reset(HomeItem.9.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.10.DBackground)</onclick>
         <onclick>Skin.Reset(HomeItem.10.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.11.DBackground)</onclick>
         <onclick>Skin.Reset(HomeItem.11.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.12.DBackground)</onclick>
         <onclick>Skin.Reset(HomeItem.12.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.13.DBackground)</onclick>
         <onclick>Skin.Reset(HomeItem.13.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.14.DBackground)</onclick>
         <onclick>Skin.Reset(HomeItem.14.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.15.DBackground)</onclick>
         <onclick>Skin.Reset(HomeItem.15.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.16.DBackground)</onclick>
         <onclick>Skin.Reset(HomeItem.16.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.17.DBackground)</onclick>
         <onclick>Skin.Reset(HomeItem.17.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.18.DBackground)</onclick>
         <onclick>Skin.Reset(HomeItem.18.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.19.DBackground)</onclick>
         <onclick>Skin.Reset(HomeItem.19.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.20.DBackground)</onclick>
         <onclick>Skin.Reset(HomeItem.20.CBackground)</onclick>        
         <include>DialogClickNo</include>
     </include>
-    <!-- Random Playlist Yes -->
+    <!-- Reset All Menu -->
     <include name="DialogAllMenu">
+        <include>ResetAddonSetItems</include>
+        <include>ResetSubMenuItems</include>
+        <include>ResetMainMenuItems</include>
+        <include>DialogClickNo</include>
+    </include>
+    <!-- Reset Settings MainMenu -->
+    <include name="DialogSettingsMainMenu">
+        <include>ResetMainMenuItems</include>
+        <include>DialogClickNo</include>
+    </include>
+    <!-- Reset Settings SubMenu -->
+    <include name="DialogSettingsSubMenu">
+        <include>ResetSubMenuItems</include>
+        <include>DialogClickNo</include>
+    </include>
+    <!-- Reset Settings AddonsSet -->
+    <include name="DialogSettingsAddonsSet">
+        <include>ResetAddonSetItems</include>
         <include>DialogClickNo</include>
     </include>
     <!-- Random Playlist Yes -->
@@ -3404,4 +3405,18 @@
     <include name="DialogClickNo">
         <onclick>PreviousMenu</onclick>
     </include>
+    <!-- Default Init Setup -->
+	<include name="DefaultInitialSetup">
+        <!-- SubMenu -->
+        <include>DefaultSubMenu</include>
+        <!-- MainMenu -->
+        <include>DefaultMainMenu</include>
+        <!-- Other -->
+        <onload>Skin.SetBool(EnableWidgetsTitle)</onload>
+        <onload>Skin.SetBool(SingleGlobalBackground)</onload>
+        <onload>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(Favourites))</onload>
+        <onload>Skin.SetString(UsrPwrBtnCmd.Path,ActivateWindow(ShutdownMenu))</onload>
+        <onload condition="!System.HasAddon(script.randomandlastitems)">Skin.Setbool(ActivateScriptPlaylist)</onload>
+        <onload>Skin.SetBool(InitialSetUpRun)</onload>
+	</include>
 </includes>

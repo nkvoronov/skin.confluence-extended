@@ -4919,7 +4919,7 @@
                     <selectedcolor>selected</selectedcolor>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <label>$INFO[ListItem.Property(StartTime)] - $INFO[ListItem.Property(EndTime)] $INFO[ListItem.Property(Title)]</label>
+                    <label>$INFO[ListItem.Property(Title)]</label>
                 </control>
                 <control type="label">
                     <left>10</left>

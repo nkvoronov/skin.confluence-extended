@@ -124,17 +124,17 @@
 				<content>
 					<item id="1">
 						<label>$LOCALIZE[513]</label>
-                        <label2></label2>
+                        <label2>$LOCALIZE[513]</label2>
 						<onclick>noop</onclick>
 					</item>
 					<item id="2">
 						<label>$LOCALIZE[88123]</label>
-						<label2></label2>
+						<label2>$LOCALIZE[88123]</label2>
 						<onclick>noop</onclick>
 					</item>  
                     <item id="3">
 						<label>$LOCALIZE[31200]</label>
-                        <label2></label2>
+                        <label2>$LOCALIZE[31200]</label2>
 						<onclick>noop</onclick>
 					</item>
 				</content>
@@ -280,6 +280,23 @@
                         <param name="id" value="20" />
                         <param name="id2" value="20" />
                     </include>
+                    <control type="image" id="100">
+                        <description>Separator Image</description>
+                        <height>2</height>
+                        <texture>separator2.png</texture>
+                    </control>
+                    <control type="button" id="101">
+                        <description>Reset Section</description>
+                        <width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[10041]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+                        <onclick>ActivateWindow(2151)</onclick>                       
+                    </control>
                 </control>
 				<control type="scrollbar" id="61">
 					<left>1060</left>
@@ -389,7 +406,24 @@
                     <!-- Submenu set 20 -->
                    <include content="HomeMainSubMenusItemSettings">
                         <param name="id2" value="20" />
-                    </include>                    
+                    </include>
+                    <control type="image" id="200">
+                        <description>Separator Image</description>
+                        <height>2</height>
+                        <texture>separator2.png</texture>
+                    </control>
+                    <control type="button" id="201">
+                        <description>Reset Section</description>
+                        <width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[10041]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+                        <onclick>ActivateWindow(2152)</onclick>                       
+                    </control>                    
                 </control>
 				<control type="scrollbar" id="62">
 					<left>1060</left>
@@ -500,6 +534,23 @@
                     <include content="HomeMainAddonSetsItemSettings">
                         <param name="id2" value="20" />
                     </include>
+                    <control type="image" id="300">
+                        <description>Separator Image</description>
+                        <height>2</height>
+                        <texture>separator2.png</texture>
+                    </control>
+                    <control type="button" id="301">
+                        <description>Reset Section</description>
+                        <width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[10041]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+                        <onclick>ActivateWindow(2153)</onclick>                       
+                    </control>
                 </control>
 				<control type="scrollbar" id="63">
 					<left>1060</left>

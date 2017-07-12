@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
+    <!-- Addons Display -->
 	<include name="HomeAddonsDisplay">
 		<control type="group" id="9002">
             <depth>DepthMenu</depth>
@@ -206,6 +207,7 @@
             </include>
         </control>
     </include>
+    <!-- Addons Common Controls -->
 	<include name="HomeAddonsCommonControls">
         <control type="list" id="$PARAM[list_id]">
             <animation effect="slide" start="0,0" end="82,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,6)">conditional</animation>
@@ -224,7 +226,8 @@
                 <param name="id2" value="$PARAM[id2]" />
             </include>
         </control>    
-    </include>    
+    </include>
+    <!-- Addons Common Controls MediaPlaying -->
     <include name="HomeAddonsCommonControlsMediaPlaying">
         <control type="list" id="$PARAM[list_id]">
             <animation effect="slide" start="0,0" end="82,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
@@ -241,7 +244,8 @@
                 <param name="id2" value="$PARAM[id2]" />
             </include>
         </control>    
-    </include>    
+    </include>
+   <!-- Addons Common Layout -->    
 	<include name="HomeAddonsCommonLayout">
 		<include>Window_OpenClose_Animation</include>
         <include>HomeAddonsAnimation</include>
@@ -347,6 +351,7 @@
 			</control>
 		</focusedlayout>
 	</include>
+   <!-- Addons Common Layout MediaPlaying -->
 	<include name="HomeAddonsCommonLayoutMediaPlaying">
 		<include>Window_OpenClose_Animation</include>
 		<include>HomeAddonsAnimation</include>
@@ -452,6 +457,7 @@
 			</control>
 		</focusedlayout>
 	</include>
+    <!-- Addons Animation -->
     <include name="HomeAddonsAnimation">
 		<animation effect="slide" start="0,0" end="0,-205" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 		<animation type="Visible" condition="!Skin.HasSetting(NoSlideAddon)">
@@ -473,6 +479,7 @@
 		</animation>
 		<hitrect x="0" y="530" w="1280" h="120"/>
     </include>
+    <!-- AddonSet Items -->
 	<include name="HomeAddonSetItems">
         <content>
             <item id="1">
@@ -540,6 +547,7 @@
             </item>
         </content>
 	</include>
+    <!-- AddonSet UpDown -->
     <include name="HomeAddonUpDown">
         <onup condition="!Skin.HasSetting(LowerMenu)">9001</onup>
 		<onup condition="Skin.HasSetting(LowerMenu)">9003</onup>
@@ -548,7 +556,8 @@
         <ondown condition="!Skin.HasSetting(LowerMenu) + !Skin.HasSetting(HidePowerButton) + Skin.HasSetting(HideFavoritesButton)">22</ondown>
         <ondown condition="!Skin.HasSetting(LowerMenu) + Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)">21</ondown>
 		<ondown condition="!Skin.HasSetting(LowerMenu)">20</ondown>
-    </include>    
+    </include>
+    <!-- Reset AddonSet Item -->    
     <include name="ResetAddonSetItem">
         <onclick condition="String.IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].1.Label)</onclick>
         <onclick condition="String.IsEmpty(Skin.String(AddonSet$PARAM[id2].Label))">Skin.Reset(AddonSet$PARAM[id2].1.Path)</onclick>
@@ -592,6 +601,7 @@
         <onclick condition="String.IsEmpty(Skin.String(AddonSet$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.19.Addon),AddonSet$PARAM[id2])">Skin.Reset(HomeItem.19.Addon)</onclick>
         <onclick condition="String.IsEmpty(Skin.String(AddonSet$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.20.Addon),AddonSet$PARAM[id2])">Skin.Reset(HomeItem.20.Addon)</onclick>
     </include>
+    <!-- AddonSets Item Settings -->
     <include name="HomeMainAddonSetsItemSettings">
         <control type="button" id="3$PARAM[id2]00">
             <width>750</width>
@@ -604,7 +614,7 @@
             <texturefocus>MenuItemFO.png</texturefocus>
             <texturenofocus>MenuItemNF.png</texturenofocus>
             <onclick>Skin.SetString(AddonSet$PARAM[id2].Label)</onclick>
-            <include name="ResetAddonSetItem">
+            <include content="ResetAddonSetItem">
                 <param name="id2" value="$PARAM[id2]" />
             </include>
         </control>
@@ -720,6 +730,7 @@
             <visible>!String.IsEmpty(Skin.String(AddonSet$PARAM[id2].6.Label))</visible>
         </control>
     </include>
+    <!-- Addon Item Choices -->
     <include name="AddonItemChoices">
         <content>
             <item>
@@ -993,6 +1004,7 @@
             </item>
         </content>
     </include>
+    <!-- Addon Type Choices -->
     <include name="AddonTypeChoices">
         <content>
             <item>
@@ -1164,5 +1176,108 @@
                 <visible>!String.IsEmpty(Skin.String(AddonSet20.Label))</visible>
             </item>
         </content>
+    </include>
+    <!-- Reset AddonSet Items -->
+    <include name="ResetAddonSetItems">
+        <!-- AddonSet 01 -->
+        <onclick>Skin.Reset(AddonSet01.Label)</onclick>
+        <include content="ResetAddonSetItem">
+            <param name="id2" value="01" />
+        </include>
+        <!-- AddonSet 02 -->
+        <onclick>Skin.Reset(AddonSet02.Label)</onclick>
+        <include content="ResetAddonSetItem">
+            <param name="id2" value="02" />
+        </include>
+        <!-- AddonSet 03 -->
+        <onclick>Skin.Reset(AddonSet03.Label)</onclick>
+        <include content="ResetAddonSetItem">
+            <param name="id2" value="03" />
+        </include>
+        <!-- AddonSet 04 -->
+        <onclick>Skin.Reset(AddonSet04.Label)</onclick>
+        <include content="ResetAddonSetItem">
+            <param name="id2" value="04" />
+        </include>
+        <!-- AddonSet 05 -->
+        <onclick>Skin.Reset(AddonSet05.Label)</onclick>
+        <include content="ResetAddonSetItem">
+            <param name="id2" value="05" />
+        </include>
+        <!-- AddonSet 06 -->
+        <onclick>Skin.Reset(AddonSet06.Label)</onclick>
+        <include content="ResetAddonSetItem">
+            <param name="id2" value="06" />
+        </include>
+        <!-- AddonSet 07 -->
+        <onclick>Skin.Reset(AddonSet07.Label)</onclick>
+        <include content="ResetAddonSetItem">
+            <param name="id2" value="07" />
+        </include>
+        <!-- AddonSet 08 -->
+        <onclick>Skin.Reset(AddonSet08.Label)</onclick>
+        <include content="ResetAddonSetItem">
+            <param name="id2" value="08" />
+        </include>
+        <!-- AddonSet 09 -->
+        <onclick>Skin.Reset(AddonSet09.Label)</onclick>
+        <include content="ResetAddonSetItem">
+            <param name="id2" value="09" />
+        </include>
+        <!-- AddonSet 10 -->
+        <onclick>Skin.Reset(AddonSet10.Label)</onclick>
+        <include content="ResetAddonSetItem">
+            <param name="id2" value="10" />
+        </include>
+        <!-- AddonSet 11 -->
+        <onclick>Skin.Reset(AddonSet11.Label)</onclick>
+        <include content="ResetAddonSetItem">
+            <param name="id2" value="11" />
+        </include>
+        <!-- AddonSet 12 -->
+        <onclick>Skin.Reset(AddonSet12.Label)</onclick>
+        <include content="ResetAddonSetItem">
+            <param name="id2" value="12" />
+        </include>
+        <!-- AddonSet 13 -->
+        <onclick>Skin.Reset(AddonSet13.Label)</onclick>
+        <include content="ResetAddonSetItem">
+            <param name="id2" value="13" />
+        </include>
+        <!-- AddonSet 14 -->
+        <onclick>Skin.Reset(AddonSet14.Label)</onclick>
+        <include content="ResetAddonSetItem">
+            <param name="id2" value="14" />
+        </include>
+        <!-- AddonSet 15 -->
+        <onclick>Skin.Reset(AddonSet15.Label)</onclick>
+        <include content="ResetAddonSetItem">
+            <param name="id2" value="15" />
+        </include>
+        <!-- AddonSet 16 -->
+        <onclick>Skin.Reset(AddonSet16.Label)</onclick>
+        <include content="ResetAddonSetItem">
+            <param name="id2" value="16" />
+        </include>
+        <!-- AddonSet 17 -->
+        <onclick>Skin.Reset(AddonSet17.Label)</onclick>
+        <include content="ResetAddonSetItem">
+            <param name="id2" value="17" />
+        </include>
+        <!-- AddonSet 18 -->
+        <onclick>Skin.Reset(AddonSet18.Label)</onclick>
+        <include content="ResetAddonSetItem">
+            <param name="id2" value="18" />
+        </include>
+        <!-- AddonSet 19 -->
+        <onclick>Skin.Reset(AddonSet19.Label)</onclick>
+        <include content="ResetAddonSetItem">
+            <param name="id2" value="19" />
+        </include>
+        <!-- AddonSet 20 -->
+        <onclick>Skin.Reset(AddonSet20.Label)</onclick>
+        <include content="ResetAddonSetItem">
+            <param name="id2" value="20" />
+        </include>
     </include>
 </includes>

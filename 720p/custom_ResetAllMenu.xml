@@ -9,8 +9,8 @@
 	<include>dialogeffect</include>
 	<controls>
         <include content="DialogYesNo">
-            <param name="dialogheaderlabel" value="$LOCALIZE[10041]" />
-            <param name="dialogtext" value="$LOCALIZE[10042]" />
+            <param name="dialogheaderlabel" value="$LOCALIZE[90071]" />
+            <param name="dialogtext" value="$LOCALIZE[90071]" />
             <param name="dialogincludeyes" value="DialogAllMenu" />
         </include>
 	</controls>

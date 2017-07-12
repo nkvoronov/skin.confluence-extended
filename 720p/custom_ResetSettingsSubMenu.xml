@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window type="dialog" id="2143">
+<window type="dialog" id="2152">
 	<defaultcontrol always="true">10</defaultcontrol>
 	<coordinates>
 		<system>1</system>
@@ -11,7 +11,7 @@
         <include content="DialogYesNo">
             <param name="dialogheaderlabel" value="$LOCALIZE[10041]" />
             <param name="dialogtext" value="$LOCALIZE[10042]" />
-            <param name="dialogincludeyes" value="DialogMainMenu" />
+            <param name="dialogincludeyes" value="DialogSettingsSubMenu" />
         </include>
 	</controls>
 </window>

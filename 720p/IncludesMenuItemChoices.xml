@@ -547,9 +547,9 @@
 				<visible>String.IsEqual(Window.Property(MenuItemType),MusicMenu)</visible>
 			</item>
 			<item>
-				<description>Music Compilations</description>
-				<label>$LOCALIZE[2] - $LOCALIZE[521]</label>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(music,musicdb://compilations/,return))</onclick>
+				<description>Music Music Roles</description>
+				<label>$LOCALIZE[2] - $LOCALIZE[29994]</label>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(music,library://music/musicroles/,return))</onclick>
                 <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[521])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
