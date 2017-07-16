@@ -846,6 +846,7 @@
         <onclick>Skin.Reset(HomeItem.$PARAM[id].Type)</onclick>
         <onclick>Skin.Reset(HomeItem.$PARAM[id].DBackground)</onclick>
         <onclick>Skin.Reset(HomeItem.$PARAM[id].CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.$PARAM[id].Playlist)</onclick>
     </include>
     <!-- Default MainMenu -->
     <include name="DefaultMainMenu">
@@ -937,6 +938,7 @@
         <onclick>Skin.SetString(HomeItem.1.Type,weather)</onclick>
         <onclick>Skin.SetString(HomeItem.1.DBackground,special://skin/extras/backgrounds/weather.jpg)</onclick>
         <onclick>Skin.Reset(HomeItem.1.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.1.Playlist)</onclick>
         <!-- Pictures -->
         <onclick>Skin.SetString(HomeItem.2.Label,$LOCALIZE[31951])</onclick>
         <onclick>Skin.SetString(HomeItem.2.Path,ActivateWindow(pictures))</onclick>
@@ -946,6 +948,7 @@
         <onclick>Skin.SetString(HomeItem.2.Type,pictures)</onclick>
         <onclick>Skin.SetString(HomeItem.2.DBackground,special://skin/extras/backgrounds/pictures.jpg)</onclick>
         <onclick>Skin.Reset(HomeItem.2.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.2.Playlist)</onclick>
         <!-- Radio -->
         <onclick>Skin.SetString(HomeItem.3.Label,$LOCALIZE[31960])</onclick>
         <onclick>Skin.SetString(HomeItem.3.Path,ActivateWindow(radiochannels))</onclick>
@@ -955,6 +958,7 @@
         <onclick>Skin.SetString(HomeItem.3.Type,radio)</onclick>
         <onclick>Skin.SetString(HomeItem.3.DBackground,special://skin/extras/backgrounds/radio.jpg)</onclick>
         <onclick>Skin.Reset(HomeItem.3.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.3.Playlist)</onclick>
         <!-- TV -->
         <onclick>Skin.SetString(HomeItem.4.Label,$LOCALIZE[31952])</onclick>
         <onclick>Skin.SetString(HomeItem.4.Path,ActivateWindow(tvchannels))</onclick>
@@ -964,6 +968,7 @@
         <onclick>Skin.SetString(HomeItem.4.Type,livetv)</onclick>
         <onclick>Skin.SetString(HomeItem.4.DBackground,special://skin/extras/backgrounds/livetv.jpg)</onclick>
         <onclick>Skin.Reset(HomeItem.4.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.4.Playlist)</onclick>
         <!-- Videos -->
         <onclick>Skin.SetString(HomeItem.5.Label,$LOCALIZE[31953])</onclick>
         <onclick>Skin.SetString(HomeItem.5.Path,ActivateWindow(videos,library://video/,return))</onclick>
@@ -973,6 +978,7 @@
         <onclick>Skin.SetString(HomeItem.5.Type,video)</onclick>
         <onclick>Skin.SetString(HomeItem.5.DBackground,special://skin/extras/backgrounds/video.jpg)</onclick>
         <onclick>Skin.Reset(HomeItem.5.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.5.Playlist)</onclick>
         <!-- Movies -->
         <onclick>Skin.SetString(HomeItem.6.Label,$LOCALIZE[31954])</onclick>
         <onclick>Skin.SetString(HomeItem.6.Path,ActivateWindow(videos,videodb://movies/titles/,return))</onclick>
@@ -982,6 +988,7 @@
         <onclick>Skin.SetString(HomeItem.6.Type,movies)</onclick>
         <onclick>Skin.SetString(HomeItem.6.DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>
         <onclick>Skin.Reset(HomeItem.6.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.6.Playlist)</onclick>
         <!-- TVShows -->
         <onclick>Skin.SetString(HomeItem.7.Label,$LOCALIZE[31955])</onclick>
         <onclick>Skin.SetString(HomeItem.7.Path,ActivateWindow(videos,videodb://tvshows/titles/,return))</onclick>
@@ -991,6 +998,7 @@
         <onclick>Skin.SetString(HomeItem.7.Type,tvshows)</onclick>
         <onclick>Skin.SetString(HomeItem.7.DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>
         <onclick>Skin.Reset(HomeItem.7.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.7.Playlist)</onclick>
         <!-- MusicVideo -->
         <onclick>Skin.SetString(HomeItem.8.Label,$LOCALIZE[31961])</onclick>
         <onclick>Skin.SetString(HomeItem.8.Path,ActivateWindow(videos,videodb://musicvideos/,return))</onclick>
@@ -1000,6 +1008,7 @@
         <onclick>Skin.SetString(HomeItem.8.Type,musicvideos)</onclick>
         <onclick>Skin.SetString(HomeItem.8.DBackground,special://skin/extras/backgrounds/musicvideos.jpg)</onclick>
         <onclick>Skin.Reset(HomeItem.8.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.8.Playlist)</onclick>
         <!-- Musics -->
         <onclick>Skin.SetString(HomeItem.9.Label,$LOCALIZE[31956])</onclick>
         <onclick>Skin.SetString(HomeItem.9.Path,ActivateWindow(music))</onclick>
@@ -1009,6 +1018,7 @@
         <onclick>Skin.SetString(HomeItem.9.Type,music)</onclick>
         <onclick>Skin.SetString(HomeItem.9.DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>
         <onclick>Skin.Reset(HomeItem.9.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.9.Playlist)</onclick>
         <!-- Programs -->
         <onclick>Skin.SetString(HomeItem.10.Label,$LOCALIZE[31957])</onclick>
         <onclick condition="!System.Platform.Android">Skin.SetString(HomeItem.10.Path,ActivateWindow(programs,addons://sources/executable/,return))</onclick>
@@ -1019,6 +1029,7 @@
         <onclick>Skin.SetString(HomeItem.10.Type,addons)</onclick>
         <onclick>Skin.SetString(HomeItem.10.DBackground,special://skin/extras/backgrounds/addons.jpg)</onclick>
         <onclick>Skin.Reset(HomeItem.10.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.10.Playlist)</onclick>
         <!-- PlayDisc -->
         <onclick>Skin.SetString(HomeItem.11.Label,$LOCALIZE[31958])</onclick>
         <onclick>Skin.SetString(HomeItem.11.Path,PlayDVD)</onclick>
@@ -1028,6 +1039,7 @@
         <onclick>Skin.SetString(HomeItem.11.Type,dvd)</onclick>
         <onclick>Skin.SetString(HomeItem.11.DBackground,special://skin/extras/backgrounds/dvd.jpg)</onclick>
         <onclick>Skin.Reset(HomeItem.11.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.11.Playlist)</onclick>
         <!-- Settings -->
         <onclick>Skin.SetString(HomeItem.12.Label,$LOCALIZE[31959])</onclick>
         <onclick>Skin.SetString(HomeItem.12.Path,ActivateWindow(settings))</onclick>
@@ -1037,6 +1049,7 @@
         <onclick>Skin.SetString(HomeItem.12.Type,settings)</onclick>
         <onclick>Skin.SetString(HomeItem.12.DBackground,special://skin/extras/backgrounds/settings.jpg)</onclick>
         <onclick>Skin.Reset(HomeItem.12.CBackground)</onclick>
+        <onclick>Skin.Reset(HomeItem.12.Playlist)</onclick>
         <!-- Menu 13 -->
         <include content="ResetMainMenuItem">
             <param name="id" value="13" />
