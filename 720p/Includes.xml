@@ -1469,6 +1469,11 @@
 			<onclick>noop</onclick>
 			<visible>!String.IsEmpty(ListItem.Year)</visible>
 		</item>
+		<item>
+			<label>$LOCALIZE[15311]</label>
+			<label2>$INFO[ListItem.FilenameAndPath]</label2>
+			<visible>!String.IsEmpty(ListItem.FilenameAndPath)</visible>
+		</item>
 	</include>
 	<include name="MusicInfoSongInfo">
 		<item>
@@ -1578,6 +1583,11 @@
 			<label2>$INFO[ListItem.Property(Role.Mixer)]</label2>
 			<onclick>noop</onclick>
 			<visible>!String.IsEmpty(ListItem.Property(Role.Mixer))</visible>
+		</item>
+		<item>
+			<label>$LOCALIZE[15311]</label>
+			<label2>$INFO[ListItem.FilenameAndPath]</label2>
+			<visible>!String.IsEmpty(ListItem.FilenameAndPath)</visible>
 		</item>
     </include>
     <include name="SettingsContentDefault">
