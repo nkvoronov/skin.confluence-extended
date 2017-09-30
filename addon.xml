@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon 
     id="skin.confluence-extended-s" 
-    version="3.1.0.135" 
+    version="3.1.43.136" 
     name="Confluence Extended Shortcuts" 
     provider-name="Jezz_X, Team Kodi, YLLOW_DRAGON, plood">
     <requires>
@@ -141,64 +141,6 @@
         <description lang="vi_VN">Confluence Extended Shortcuts là giao diện mặc định cho Kodi 14.0 and các phiên bản trở về trước. Đây là sự kết hợp các khái niệm đến từ các giao diện khác nhau nhằm hướng người dùng đến sự đơn giản và dễ sử dụng.</description>
         <description lang="zh_CN">Confluence Extended Shortcuts 集合了许多流行皮肤的创意，力求把这些优点融合到一个皮肤中，使得首次使用 Kodi 的用户能更容易上手。</description>
         <description lang="zh_TW">Confluence Extended Shortcuts 是從 Kodi 9.11 開始預設的佈景主題。它結合了許多受歡迎的佈景主題的概念，且試圖包含並整合它們的優點，使第一次使用 Kodi 的使用者可以簡單地上手。</description>
-        <disclaimer lang="af_ZA">Confluence Extended Shortcuts is die standaard tema vir Kodi, verwydering mag probleme veroorsaak</disclaimer>
-        <disclaimer lang="ar_SA">"كونفليونس" هو الجلد المبدأى لبرنامج إكس بى إم سى وإزالته قد تسبب مشاكل</disclaimer>
-        <disclaimer lang="be_BY">Confluence Extended Shortcuts is the default skin for Kodi, removing it may cause issues</disclaimer>
-        <disclaimer lang="bg_BG">Confluence Extended Shortcuts е стандартният облик на Kodi. Премахването му може да предизвика проблеми</disclaimer>
-        <disclaimer lang="ca_ES">Confluence Extended Shortcuts és la pell per defecte del Kodi, pot ser que causi problemes eliminar-lo.</disclaimer>
-        <disclaimer lang="cs_CZ">Confluence Extended Shortcuts je výchozím vzhledem Kodi, jeho odstranění může způsobit problémy</disclaimer>
-        <disclaimer lang="cy_GB">Confluence Extended Shortcuts yw croen rhagosodedig Kodi, gall ei dynnu achosi anhawsterau</disclaimer>
-        <disclaimer lang="da_DK">Confluence Extended Shortcuts er standardskin'et til Kodi. Fjernes det, kan der opstå problemer</disclaimer>
-        <disclaimer lang="de_DE">Confluence Extended Shortcuts ist der Standard-Skin für Kodi. Die Deinstallation kann zu unerwünschten Nebeneffekten führen.</disclaimer>
-        <disclaimer lang="el_GR">Το Confluence Extended Shortcuts είναι η προεπιλεγμένη αμφίεση για το Kodi, η αφαίρεσή του μπορεί να δημιουργήσει προβλήματα</disclaimer>
-        <disclaimer lang="en_AU">Confluence Extended Shortcuts is the modernized skin for KODI.</disclaimer>
-        <disclaimer lang="en_GB">Confluence Extended Shortcuts is the modernized skin for KODI.</disclaimer>
-        <disclaimer lang="en_NZ">Confluence Extended Shortcuts is the modernized skin for KODI.</disclaimer>
-        <disclaimer lang="en_US">Confluence Extended Shortcuts is the modernized skin for KODI.</disclaimer>
-        <disclaimer lang="es_AR">Confluence Extended Shortcuts es el skin por defecto de Kodi. Borrarlo puede causar problemas</disclaimer>
-        <disclaimer lang="es_ES">Confluence Extended Shortcuts es la skin por defecto de Kodi. Borrarla puede causar problemas</disclaimer>
-        <disclaimer lang="es_MX">Confluence Extended Shortcuts es el skin por defecto para Kodi, removerlo podría causar problemas</disclaimer>
-        <disclaimer lang="et_EE">Confluence Extended Shortcuts on Kodi vaikerüü. Selle eemaldamine võib põhjustada ootamatusi.</disclaimer>
-        <disclaimer lang="fa_IR">Confluence Extended Shortcuts پوسته پیش فرض برای نرم افزار kodi می باشد و حذف آن موجب مشکلاتی خواهد شد.</disclaimer>
-        <disclaimer lang="fi_FI">Confluence Extended Shortcuts on Kodi:n oletusulkoasu, sen poistaminen saattaa aiheuttaa ongelmia</disclaimer>
-        <disclaimer lang="fo_FO">Confluence Extended Shortcuts er vanliga útsjónding brúkt av Kodi. Strikan kann viðføra brek.</disclaimer>
-        <disclaimer lang="fr_CA">Confluence Extended Shortcuts est l'habillage par défaut de Kodi, le supprimer peut créer des problèmes</disclaimer>
-        <disclaimer lang="fr_FR">Confluence Extended Shortcuts est le thème par défaut de Kodi, le supprimer peut créer des problèmes</disclaimer>
-        <disclaimer lang="gl_ES">Confluence Extended Shortcuts é a pel predefinida para Kodi e eliminala pode causar problemas.</disclaimer>
-        <disclaimer lang="he_IL">המעטפת Confluence Extended Shortcuts היא מעטפת ברירת המחדל של Kodi, הסרתה עלולה לגרום לתקלות</disclaimer>
-        <disclaimer lang="hr_HR">Confluence Extended Shortcuts je uobičajena presvlaka za Kodi, njegovim uklanjanjem može uzrokovati poteškoće.</disclaimer>
-        <disclaimer lang="hu_HU">A Confluence Extended Shortcuts az alapértelmezett Kodi felszín. Eltávolítása problémákat okozhat.</disclaimer>
-        <disclaimer lang="id_ID">Confluence Extended Shortcuts merupakan skin bawaan untuk Kodi, menghapusnya mungkin menyebabkan permasalahan</disclaimer>
-        <disclaimer lang="is_IS">Confluence Extended Shortcuts er sjálfgefið útlit Kodi, það getur orsakað vandamál að fjarlægja það.</disclaimer>
-        <disclaimer lang="it_IT">Confluence Extended Shortcuts è la skin predefinita di Kodi, rimuoverla potrebbe comportare dei problemi</disclaimer>
-        <disclaimer lang="ja_JP">Confluence Extended Shortcuts は Kodi のデフォルトスキンですので、これを削除するとうまく動かなくなる可能性があります</disclaimer>
-        <disclaimer lang="ko_KR">Confluence Extended는 Kodi의 기본스킨으로 제거시 문제가 생길 수 있습니다.</disclaimer>
-        <disclaimer lang="lt_LT">Confluence Extended Shortcuts yra numatytoji Kodi teminė išvaizda, jos pašalinimas gali sukelti problemų</disclaimer>
-        <disclaimer lang="lv_LV">Confluence Extended Shortcuts ir Kodi noklusētais apvalks, dzēšot to, var rasties problēmas</disclaimer>
-        <disclaimer lang="mk_MK">Confluence Extended Shortcuts е основната маска, бришењето може да предизвика проблеми</disclaimer>
-        <disclaimer lang="ms_MY">Penyatuan ialah kulit lalai Kodi, mengubahnya boleh menimbulkan isu.</disclaimer>
-        <disclaimer lang="mt_MT">Confluence Extended Shortcuts hija d-dehra normali ta' Kodi, jekk tneħħiha jaf ikollok il-problemi.</disclaimer>
-        <disclaimer lang="nb_NO">Confluence Extended Shortcuts er standardskallet for Kodi, å fjerne det kan skape problemer</disclaimer>
-        <disclaimer lang="nl_NL">Confluence Extended Shortcuts is de standaard Kodi skin, het verwijderen van Confluence Extended Shortcuts kan leiden tot problemen.</disclaimer>
-        <disclaimer lang="pl_PL">Confluence Extended Shortcuts jest domyślną skórą Kodi. Jej usunięcie może powodować problemy.</disclaimer>
-        <disclaimer lang="pt_BR">Confluence Extended Shortcuts é a skin padrão do Kodi, removê-la pode lhe causar problemas.</disclaimer>
-        <disclaimer lang="pt_PT">O tema "Confluence Extended Shortcuts" é o tema predefinido do Kodi, e removê-lo pode causar problemas.</disclaimer>
-        <disclaimer lang="ro_RO">Confluence Extended Shortcuts este costumul implicit pentru Kodi, dacă îl eliminați pot apărea probleme!</disclaimer>
-        <disclaimer lang="ru_RU">Confluence Extended — это модернизированная обложка KODI.</disclaimer>
-        <disclaimer lang="sk_SK">Confluence Extended Shortcuts je predvolený skin pre Kodi, jeho odstránenie môže spôsobiť problémy</disclaimer>
-        <disclaimer lang="sl_SI">Confluence Extended Shortcuts je privzeta preobleka za Kodi, njena odstranitev lahko povzroči težave</disclaimer>
-        <disclaimer lang="sq_AL">Confluence Extended Shortcuts është maska kryesore së Kodi, fshirja e saj mund të shkaktoj çështje.</disclaimer>
-        <disclaimer lang="sr_RS">Confluence Extended Shortcuts је подразумевана маска за Kodi, њено уклањање може направити проблеме</disclaimer>
-        <disclaimer lang="sr_RS@latin">Confluence Extended Shortcuts je podrazumevana maska za Kodi, njeno uklanjanje može izazvati probleme</disclaimer>
-        <disclaimer lang="sv_SE">Confluence Extended Shortcuts är standardskal för Kodi. Att ta bort detta skal kan skapa problem.</disclaimer>
-        <disclaimer lang="szl">Confluence Extended Shortcuts to je wychodnŏ skōra we Kodi, a wyciepniyńciy jij może sprŏwić niyprzileżytości.</disclaimer>
-        <disclaimer lang="tg_TJ">Пӯсти ҳамҷараёнӣ ҳамчун пӯсти пешфарз барои Kodi истифода шуда истодааст ва агар онро тоза кунед, мӯшкилӣ метавонад ба вуҷуд ояд</disclaimer>
-        <disclaimer lang="th_TH">Confluence Extended Shortcuts เป็นสกินเริ่มต้นสำหรับ Kodi การลบมัน อาจทำให้เกิดปัญหา</disclaimer>
-        <disclaimer lang="tr_TR">Confluence Extended Shortcuts Kodi için varsayılan dış görünümdür, kaldırmak sorunlara yol açabilir</disclaimer>
-        <disclaimer lang="uk_UA">Confluence Extended Shortcuts — це модернізована обкладинка Kodi.</disclaimer>
-        <disclaimer lang="vi_VN">Confluence Extended Shortcuts là giao diện mặc định của Kodi, loại bỏ giao diện này có thể gây ra lỗi cho chương trình</disclaimer>
-        <disclaimer lang="zh_CN">Confluence Extended Shortcuts 是 Kodi 的默认皮肤，删除它可能导致故障。</disclaimer>
-        <disclaimer lang="zh_TW">Confluence Extended Shortcuts 是 Kodi 預設的佈景主題，移除它可能會造成問題</disclaimer>
         <platform>all</platform>
         <license>GNU General Public License version 2</license>
         <forum>http://forum.kodi.tv/forumdisplay.php?fid=125</forum>
@@ -218,6 +160,6 @@
             <screenshot>resources/screenshot-08.jpg</screenshot>
             <screenshot>resources/screenshot-09.jpg</screenshot>
         </assets>
-		<news>Backported some fixes</news>
+		<news>Updated language files</news>
 	</extension>
 </addon>
