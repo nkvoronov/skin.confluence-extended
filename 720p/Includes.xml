@@ -1598,7 +1598,7 @@
 			<label>$LOCALIZE[15311]</label>
 			<label2>$INFO[ListItem.FilenameAndPath]</label2>
 			<visible>!String.IsEmpty(ListItem.FilenameAndPath)</visible>
-		<item>
+		</item>
     </include>
     <include name="SettingsContentDefault">
         <content>
