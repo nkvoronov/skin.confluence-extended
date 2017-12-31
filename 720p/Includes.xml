@@ -3285,6 +3285,7 @@
         <onclick>Skin.Reset(HideFilenameFlagging)</onclick>
         <onclick>Skin.Reset(HideEPGwithRDS)</onclick>
         <onclick>Skin.Reset(LyricScript_Path)</onclick>
+		<onclick>Skin.Reset(LrclyricsAlternativeView)</onclick>
         <onclick>Skin.Reset(Use_Startup_Playlist)</onclick>
         <onclick>Skin.Reset(Startup_Playlist_Path)</onclick>
         <onclick>Skin.Reset(DurationSplashScreen)</onclick>
@@ -3305,6 +3306,18 @@
         <onclick>Skin.Reset(EnableHomeStats)</onclick>
         <onclick>Skin.Reset(NoFloor)</onclick>
         <onclick>Skin.Reset(NoFloorAll)</onclick>
+        <onclick>Skin.Reset(StudiosImages.name)</onclick>
+        <onclick>Skin.Reset(StudiosImages.ext)</onclick>
+        <onclick>Skin.Reset(StudiosImages.path)</onclick>
+        <onclick>Skin.Reset(LanguageFlags.name)</onclick>
+        <onclick>Skin.Reset(LanguageFlags.ext)</onclick>
+        <onclick>Skin.Reset(LanguageFlags.path)</onclick>		
+        <onclick>Skin.Reset(MovieGenreIcons.name)</onclick>
+        <onclick>Skin.Reset(MovieGenreIcons.ext)</onclick>
+        <onclick>Skin.Reset(MovieGenreIcons.path)</onclick>
+        <onclick>Skin.Reset(MusicGenreIcons.name)</onclick>
+        <onclick>Skin.Reset(MusicGenreIcons.ext)</onclick>
+        <onclick>Skin.Reset(MusicGenreIcons.path)</onclick>		
         <onclick>Skin.Reset(WeatherIcons.name)</onclick>
         <onclick>Skin.Reset(WeatherIcons.ext)</onclick>
         <onclick>Skin.Reset(WeatherIcons.path)</onclick>
@@ -3365,14 +3378,17 @@
         <onclick>Skin.Reset(HideBackGroundFanart)</onclick>
         <onclick>Skin.Reset(HideVisualizationFanart)</onclick>
         <onclick>Skin.Reset(ShowBackgroundVideo)</onclick>
+        <onclick>Skin.Reset(HomeFanart.name)</onclick>
+        <onclick>Skin.Reset(HomeFanart.path)</onclick>
+        <onclick>Skin.Reset(HomeFanart.ext)</onclick>
+        <onclick>Skin.Reset(MovieGenreFanart.name)</onclick>
+        <onclick>Skin.Reset(MovieGenreFanart.path)</onclick>
+        <onclick>Skin.Reset(MovieGenreFanart.ext)</onclick>		
         <onclick>Skin.Reset(WeatherFanart.name)</onclick>
         <onclick>Skin.Reset(WeatherFanart.ext)</onclick>
         <onclick>Skin.Reset(WeatherFanart.path)</onclick>
         <onclick>Skin.Reset(WeatherFanart.multi)</onclick>
         <onclick>Skin.Reset(SeparateBackground)</onclick>
-        <onclick>Skin.Reset(HomeFanart.name)</onclick>
-        <onclick>Skin.Reset(HomeFanart.path)</onclick>
-        <onclick>Skin.Reset(HomeFanart.ext)</onclick>
         <onclick>Skin.Reset(UseCustomBackground)</onclick>
         <onclick>Skin.Reset(CustomBackgroundPath)</onclick>
         <onclick>Skin.Reset(HomeItem.1.CBackground)</onclick>
