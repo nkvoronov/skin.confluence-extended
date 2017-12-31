@@ -316,7 +316,7 @@ msgid "Hide fanart in full screen visualisation"
 msgstr ""
 
 msgctxt "#31130"
-msgid "Choose weather fanart pack"
+msgid "Choose weather backgrounds pack"
 msgstr ""
 
 msgctxt "#31131"
@@ -328,7 +328,7 @@ msgid "Lyrics add-on"
 msgstr ""
 
 msgctxt "#31133"
-msgid "Choose weather icon pack"
+msgid "Choose weather icons pack"
 msgstr ""
 
 #. In main language strings its used as submenu
@@ -344,7 +344,9 @@ msgctxt "#31136"
 msgid "Home page \"Pictures\" submenu"
 msgstr ""
 
-#empty strings from id 31137 to 31139
+msgctxt "#31139"
+msgid "Alternative view"
+msgstr ""
 
 msgctxt "#31140"
 msgid "Music OSD"
@@ -354,6 +356,10 @@ msgstr ""
 
 msgctxt "#31142"
 msgid "Settings level"
+msgstr ""
+
+msgctxt "#31149"
+msgid "Choose genre backgrounds pack"
 msgstr ""
 
 #empty strings from id 31143 to 31199
@@ -1105,4 +1111,24 @@ msgstr ""
 
 msgctxt "#90071"
 msgid "Reset all menu items"
+msgstr ""
+
+msgctxt "#90103"
+msgid "Icons"
+msgstr ""
+
+msgctxt "#90104"
+msgid "Choose studios icons pack"
+msgstr ""
+
+msgctxt "#90105"
+msgid "Choose flags country icons pack"
+msgstr ""
+
+msgctxt "#90106"
+msgid "Choose movie genre icons pack"
+msgstr ""
+
+msgctxt "#90107"
+msgid "Choose music genre icons pack"
 msgstr ""

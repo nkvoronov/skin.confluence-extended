@@ -212,7 +212,7 @@
 					<height>540</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<texture background="true">$VAR[PosterThumb]</texture>
+					<texture background="true" fallback="DefaultFolder.png">$VAR[PosterThumb3]</texture>
 					<bordertexture border="8">ThumbShadow.png</bordertexture>
 					<bordersize>8</bordersize>
 				</control>
@@ -223,7 +223,7 @@
 					<height>524</height>
 					<aspectratio aligny="top">keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<texture diffuse="diffuse_mirror3.png" flipy="true" background="true">$VAR[PosterThumb]</texture>
+					<texture diffuse="diffuse_mirror3.png" flipy="true" background="true" fallback="DefaultFolder.png">$VAR[PosterThumb3]</texture>
 					<visible>!Skin.HasSetting(NoFloorAll)</visible>
 				</control>
 			</control>
@@ -254,8 +254,8 @@
 						<height>160</height>
 						<bordertexture border="5">button-nofocus.png</bordertexture>
 						<bordersize>5</bordersize>
-						<texture background="true">$INFO[Listitem.Icon]</texture>
-						<aspectratio>keep</aspectratio>
+						<texture background="true" fallback="DefaultFolder.png">$VAR[IconWallThumb]</texture>
+						<aspectratio>scale</aspectratio>
 						<visible>!Container.Content(Episodes)</visible>
 					</control>
 					<control type="image">
@@ -298,8 +298,8 @@
 						<height>160</height>
 						<bordertexture border="5">folder-focus.png</bordertexture>
 						<bordersize>5</bordersize>
-						<texture background="true">$INFO[Listitem.Icon]</texture>
-						<aspectratio>keep</aspectratio>
+						<texture background="true" fallback="DefaultFolder.png">$VAR[IconWallThumb]</texture>
+						<aspectratio>scale</aspectratio>
 						<visible>!Container.Content(Episodes)</visible>
 					</control>
 					<control type="image">
@@ -523,7 +523,7 @@
 						<top>4</top>
 						<width>40</width>
 						<height>32</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<texture background="true" fallback="DefaultFolder.png">$VAR[IconWallThumb]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
@@ -624,7 +624,7 @@
 						<top>4</top>
 						<width>40</width>
 						<height>32</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<texture background="true" fallback="DefaultFolder.png">$VAR[IconWallThumb]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
