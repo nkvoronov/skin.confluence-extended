@@ -90,15 +90,42 @@
         <value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90001]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90002])">playlists</value>        
         <value>$INFO[Container(9000).ListItem.Property(defaultID)]</value>
     </variable>
-    <!-- -->
+    <!-- HomeFanart Name -->
     <variable name="HomeFanartName">
         <value condition="!String.IsEmpty(Skin.String(HomeFanart.name))">$INFO[Skin.String(HomeFanart.name)]</value>
         <value>$LOCALIZE[231]</value>
     </variable>    
+    <!-- MovieGenreFanart Name -->
+    <variable name="MovieGenreFanartName">
+        <value condition="!String.IsEmpty(Skin.String(MovieGenreFanart.name))">$INFO[Skin.String(MovieGenreFanart.name)]</value>
+        <value>$LOCALIZE[231]</value>
+    </variable>
+    <!-- WeatherFanart Name -->    
     <variable name="WeatherFanartName">
         <value condition="!String.IsEmpty(Skin.String(WeatherFanart.name))">$INFO[Skin.String(WeatherFanart.name)]</value>
         <value>$LOCALIZE[231]</value>
     </variable>
+	<!-- StudiosImages Name -->
+    <variable name="StudiosImagesName">
+        <value condition="!String.IsEmpty(Skin.String(StudiosImages.name))">$INFO[Skin.String(StudiosImages.name)]</value>
+        <value>$LOCALIZE[231]</value>
+    </variable>
+	<!-- LanguageFlags Name -->
+    <variable name="LanguageFlagsName">
+        <value condition="!String.IsEmpty(Skin.String(LanguageFlags.name))">$INFO[Skin.String(LanguageFlags.name)]</value>
+        <value>$LOCALIZE[231]</value>
+    </variable>
+    <!-- MovieGenreIcons Name -->
+    <variable name="MovieGenreIconsName">
+        <value condition="!String.IsEmpty(Skin.String(MovieGenreIcons.name))">$INFO[Skin.String(MovieGenreIcons.name)]</value>
+        <value>$LOCALIZE[231]</value>
+    </variable>
+   <!-- MusicGenreIcons Name -->
+    <variable name="MusicGenreIconsName">
+        <value condition="!String.IsEmpty(Skin.String(MusicGenreIcons.name))">$INFO[Skin.String(MusicGenreIcons.name)]</value>
+        <value>$LOCALIZE[231]</value>
+    </variable>
+	<!-- WeatherIcons Name -->
     <variable name="WeatherIconsName">
         <value condition="!String.IsEmpty(Skin.String(WeatherIcons.name))">$INFO[Skin.String(WeatherIcons.name)]</value>
         <value>$LOCALIZE[231]</value>
@@ -124,12 +151,23 @@
         <value condition="!String.IsEmpty(Skin.String(DurationSplashScreen))">$INFO[Skin.String(DurationSplashScreen)]</value>
         <value>5</value>
     </variable>
+	<!-- Random Fanart Delay -->
+    <variable name="RandomFanartDelayName">
+        <value condition="!String.IsEmpty(Skin.String(RandomFanartDelay))">$INFO[Skin.String(RandomFanartDelay)]</value>
+        <value>30</value>
+    </variable>
     <!-- Current Weather Icon -->
     <variable name="CurrentWeatherIcon">
 		<value condition="!String.IsEmpty(Skin.String(WeatherIcons.path)) + !Skin.HasSetting(WeatherIcons.multi)">$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Current.FanartCode),,.png]</value>
 		<value condition="!String.IsEmpty(Skin.String(WeatherIcons.path)) + Skin.HasSetting(WeatherIcons.multi)">$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Current.FanartCode),,/]</value>
 		<value>$INFO[Weather.Conditions]</value>
     </variable>
+	<!-- Fanart Background -->
+	<variable name="FanartBackground">
+		<value condition="Window.IsActive(videos) + Container.Content(genres) + !String.IsEmpty(Skin.String(MovieGenreFanart.path))">$INFO[Skin.String(MovieGenreFanart.path)]$INFO[ListItem.Label]$INFO[Skin.String(MovieGenreFanart.ext)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(fanart)) + [!String.IsEmpty(ListItem.Art(animatedfanart)) + Skin.HasSetting(ActivateAnimatedFanarts)]">$INFO[ListItem.Art(animatedfanart)]</value>
+		<value>$INFO[ListItem.Art(fanart)]</value>
+	</variable>
     <!-- -->
     <variable name="SkinShortcutsTitle">
         <value condition="!String.IsEmpty(Window.Property(groupname)) + String.IsEqual(Window.Property(groupname),mainmenu)">[COLOR=blue] - [/COLOR]$ADDON[script.skinshortcuts 32071]</value>

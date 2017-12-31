@@ -316,20 +316,20 @@ msgid "Hide fanart in full screen visualisation"
 msgstr "Приховувати фанарт в повноекранної візуалізації"
 
 msgctxt "#31130"
-msgid "Choose weather fanart pack"
-msgstr "Вибрати фанарт пакет для погоди"
+msgid "Choose weather backgrounds pack"
+msgstr "Вибрати пакет фонів для погоди"
 
 msgctxt "#31131"
 msgid "Choose home backgrounds pack"
-msgstr "Вибрати пакет фонів"
+msgstr "Вибрати пакет фонів для головного екрану"
 
 msgctxt "#31132"
 msgid "Lyrics add-on"
 msgstr "Надбудова \"Тексти\""
 
 msgctxt "#31133"
-msgid "Choose weather icon pack"
-msgstr "Вибрати картинки для погоди"
+msgid "Choose weather icons pack"
+msgstr "Вибрати пакет іконок погоди"
 
 #. In main language strings its used as submenu
 msgctxt "#31134"
@@ -344,7 +344,9 @@ msgctxt "#31136"
 msgid "Home page \"Pictures\" submenu"
 msgstr "Субменю сторінки \"Фото\""
 
-#empty strings from id 31137 to 31139
+msgctxt "#31139"
+msgid "Alternative view"
+msgstr "Альтернативний вид"
 
 msgctxt "#31140"
 msgid "Music OSD"
@@ -355,6 +357,10 @@ msgstr "OSD музики"
 msgctxt "#31142"
 msgid "Settings level"
 msgstr "Рівень налаштувань"
+
+msgctxt "#31149"
+msgid "Choose genre backgrounds pack"
+msgstr "Вибрати пакет фонів для жанрів"
 
 #empty strings from id 31143 to 31199
 #Script labels
@@ -1159,3 +1165,34 @@ msgctxt "#90063"
 msgid "Recently played channels"
 msgstr "Нещодавно програні канали"
 
+msgctxt "#90100"
+msgid "Enable Wall Backgrounds"
+msgstr "Дозволити стіну фонів"
+
+msgctxt "#90101"
+msgid "Random Fanart Delay"
+msgstr "Тривалість показу для випадкових фонів (сек)"
+
+msgctxt "#90102"
+msgid "Enable Animated Fanarts"
+msgstr "Дозволити анімовані фони"
+
+msgctxt "#90103"
+msgid "Icons"
+msgstr "Иконки"
+
+msgctxt "#90104"
+msgid "Choose studios icons pack"
+msgstr "Вибрати пакет іконок студій"
+
+msgctxt "#90105"
+msgid "Choose flags country icons pack"
+msgstr "Вибрати пакет іконок прапорів країн"
+
+msgctxt "#90106"
+msgid "Choose movie genre icons pack"
+msgstr "Вибрати пакет іконок жанрів для фільмів"
+
+msgctxt "#90107"
+msgid "Choose music genre icons pack"
+msgstr "Вибрати пакет іконок жанрів для музики"
