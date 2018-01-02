@@ -16,6 +16,7 @@
 				<height>470</height>
 				<colordiffuse>BBFFFFFF</colordiffuse>
 				<texture border="40">DialogBack2.png</texture>
+				<visible>!Skin.HasSetting(LrclyricsAlternativeView)</visible>
 			</control>
 			<control type="image">
 				<description>Dialog Header image</description>
@@ -24,6 +25,7 @@
 				<width>600</width>
 				<height>40</height>
 				<texture>dialogheader.png</texture>
+				<visible>!Skin.HasSetting(LrclyricsAlternativeView)</visible>
 			</control>
 			<control type="button">
 				<description>Close Window button</description>
@@ -37,6 +39,7 @@
 				<texturefocus>DialogCloseButton-focus.png</texturefocus>
 				<texturenofocus>DialogCloseButton.png</texturenofocus>
 				<visible>system.getbool(input.enablemouse)</visible>
+				<visible>!Skin.HasSetting(LrclyricsAlternativeView)</visible>
 			</control>
 			<control type="label">
 				<description>header label</description>
@@ -145,6 +148,7 @@
 				<onup>110</onup>
 				<showonepage>true</showonepage>
 				<visible>Control.IsVisible(110)</visible>
+				<visible>!Skin.HasSetting(LrclyricsAlternativeView)</visible>
 			</control>
 			<!-- ** Required ** Do not change <id> or <type> (Song Chooser if it gets it wrong) -->
 			<control type="list" id="120">
@@ -232,6 +236,7 @@
 				<onup>120</onup>
 				<showonepage>true</showonepage>
 				<visible>Control.IsVisible(120)</visible>
+				<visible>!Skin.HasSetting(LrclyricsAlternativeView)</visible>
 			</control>
 			<control type="label">
 				<description>Scraper label</description>
@@ -244,6 +249,7 @@
 				<aligny>center</aligny>
 				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
+				<visible>!Skin.HasSetting(LrclyricsAlternativeView)</visible>
 			</control>
 			<control type="label" id="200">
 				<description>Scraper label</description>
