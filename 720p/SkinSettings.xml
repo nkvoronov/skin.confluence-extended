@@ -314,7 +314,7 @@
 						<enable>!String.IsEmpty(Skin.String(LyricScript_Path))</enable>
 						<onclick>Addon.OpenSettings($INFO[Skin.String(LyricScript_Path)])</onclick>
 					</control>
-					<!-- <control type="radiobutton" id="109">
+					<control type="radiobutton" id="109">
 						<description>CU LRC Lyrics Alternative View</description>					
 						<width>750</width>
 						<height>40</height>
@@ -327,7 +327,7 @@
 						<onclick>Skin.ToggleSetting(LrclyricsAlternativeView)</onclick>
 						<selected>Skin.HasSetting(LrclyricsAlternativeView)</selected>
 						<enable>System.HasAddon(script.cu.lrclyrics)</enable>
-					</control> -->
+					</control>
 					<control type="label" id="110">
 						<width>750</width>
 						<height>45</height>
