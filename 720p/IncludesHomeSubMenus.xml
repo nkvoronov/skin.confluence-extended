@@ -1,232 +1,232 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
-    <!-- SubMenu Display -->
+	<!-- SubMenu Display -->
 	<include name="HomeSubMenuDisplay">
 		<control type="group" id="9001">
-        	<depth>DepthMenu-</depth>
+			<depth>DepthMenu-</depth>
 			<left>0</left>
-			<top>70</top>            
+			<top>70</top>
 			<include>HomeSubMenuUpDown</include>
-            <!-- SubMenu01 -->
-            <include content="HomeSubMenuCommonControls">
-                <param name="list_id" value="9010" />
-                <param name="id2" value="01" />
-                <param name="include_name" value="HomeSubMenuItems" />
-            </include>
-            <!-- SubMenu02 -->
-            <include content="HomeSubMenuCommonControls">
-                <param name="list_id" value="9011" />
-                <param name="id2" value="02" />
-                <param name="include_name" value="HomeSubMenuItems" />
-            </include>
-            <!-- SubMenu03 -->
-            <include content="HomeSubMenuCommonControls">
-                <param name="list_id" value="9012" />
-                <param name="id2" value="03" />
-                <param name="include_name" value="HomeSubMenuItems" />
-            </include>
-            <!-- SubMenu04 -->
-            <include content="HomeSubMenuCommonControls">
-                <param name="list_id" value="9013" />
-                <param name="id2" value="04" />
-                <param name="include_name" value="HomeSubMenuItems" />
-            </include>
-            <!-- SubMenu05 -->
-            <include content="HomeSubMenuCommonControls">
-                <param name="list_id" value="9014" />
-                <param name="id2" value="05" />
-                <param name="include_name" value="HomeSubMenuItems" />
-            </include>
-            <!-- SubMenu06 -->
-            <include content="HomeSubMenuCommonControls">
-                <param name="list_id" value="9015" />
-                <param name="id2" value="06" />
-                <param name="include_name" value="HomeSubMenuItems" />
-            </include>
-            <!-- SubMenu07 -->
-            <include content="HomeSubMenuCommonControls">
-                <param name="list_id" value="9016" />
-                <param name="id2" value="07" />
-                <param name="include_name" value="HomeSubMenuItems" />
-            </include>
-            <!-- SubMenu08 -->
-            <include content="HomeSubMenuCommonControls">
-                <param name="list_id" value="9017" />
-                <param name="id2" value="08" />
-                <param name="include_name" value="HomeSubMenuItems" />
-            </include>
-            <!-- SubMenu09 -->
-            <include content="HomeSubMenuCommonControls">
-                <param name="list_id" value="9018" />
-                <param name="id2" value="09" />
-                <param name="include_name" value="HomeSubMenuItems" />
-            </include>
-            <!-- SubMenu10 -->
-            <include content="HomeSubMenuCommonControls">
-                <param name="list_id" value="9019" />
-                <param name="id2" value="10" />
-                <param name="include_name" value="HomeSubMenuItems" />
-            </include>
-            <!-- SubMenu11 -->
-            <include content="HomeSubMenuCommonControls">
-                <param name="list_id" value="9020" />
-                <param name="id2" value="11" />
-                <param name="include_name" value="HomeSubMenuItems" />
-            </include>
-            <!-- SubMenu12 -->
-            <include content="HomeSubMenuCommonControls">
-                <param name="list_id" value="9021" />
-                <param name="id2" value="12" />
-                <param name="include_name" value="HomeSubMenuItems" />
-            </include>
-            <!-- SubMenu13 -->
-            <include content="HomeSubMenuCommonControls">
-                <param name="list_id" value="9022" />
-                <param name="id2" value="13" />
-                <param name="include_name" value="HomeSubMenuItems" />
-            </include>
-            <!-- SubMenu14 -->
-            <include content="HomeSubMenuCommonControls">
-                <param name="list_id" value="9023" />
-                <param name="id2" value="14" />
-                <param name="include_name" value="HomeSubMenuItems" />
-            </include>
-            <!-- SubMenu15 -->
-            <include content="HomeSubMenuCommonControls">
-                <param name="list_id" value="9024" />
-                <param name="id2" value="15" />
-                <param name="include_name" value="HomeSubMenuItems" />
-            </include>
-            <!-- SubMenu16 -->
-            <include content="HomeSubMenuCommonControls">
-                <param name="list_id" value="9025" />
-                <param name="id2" value="16" />
-                <param name="include_name" value="HomeSubMenuItems" />
-            </include>            
-            <!-- SubMenu17 -->
-            <include content="HomeSubMenuCommonControls">
-                <param name="list_id" value="9026" />
-                <param name="id2" value="17" />
-                <param name="include_name" value="HomeSubMenuItems" />
-            </include> 
-            <!-- SubMenu18 -->
-            <include content="HomeSubMenuCommonControls">
-                <param name="list_id" value="9027" />
-                <param name="id2" value="18" />
-                <param name="include_name" value="HomeSubMenuItems" />
-            </include> 
-            <!-- SubMenu19 -->
-            <include content="HomeSubMenuCommonControls">
-                <param name="list_id" value="9028" />
-                <param name="id2" value="19" />
-                <param name="include_name" value="HomeSubMenuItems" />
-            </include> 
-            <!-- SubMenu20 -->
-            <include content="HomeSubMenuCommonControls">
-                <param name="list_id" value="9029" />
-                <param name="id2" value="20" />
-                <param name="include_name" value="HomeSubMenuItems" />
-            </include>             
-            <!-- SubMenu21 -->
-            <include content="HomeSubMenuCommonControls">
-                <param name="list_id" value="9030" />
-                <param name="id2" value="21" />
-                <param name="include_name" value="HomeSubMenuItemsFavourites" />
-            </include>  
+			<!-- SubMenu01 -->
+			<include content="HomeSubMenuCommonControls">
+				<param name="list_id" value="9010" />
+				<param name="id2" value="01" />
+				<param name="include_name" value="HomeSubMenuItems" />
+			</include>
+			<!-- SubMenu02 -->
+			<include content="HomeSubMenuCommonControls">
+				<param name="list_id" value="9011" />
+				<param name="id2" value="02" />
+				<param name="include_name" value="HomeSubMenuItems" />
+			</include>
+			<!-- SubMenu03 -->
+			<include content="HomeSubMenuCommonControls">
+				<param name="list_id" value="9012" />
+				<param name="id2" value="03" />
+				<param name="include_name" value="HomeSubMenuItems" />
+			</include>
+			<!-- SubMenu04 -->
+			<include content="HomeSubMenuCommonControls">
+				<param name="list_id" value="9013" />
+				<param name="id2" value="04" />
+				<param name="include_name" value="HomeSubMenuItems" />
+			</include>
+			<!-- SubMenu05 -->
+			<include content="HomeSubMenuCommonControls">
+				<param name="list_id" value="9014" />
+				<param name="id2" value="05" />
+				<param name="include_name" value="HomeSubMenuItems" />
+			</include>
+			<!-- SubMenu06 -->
+			<include content="HomeSubMenuCommonControls">
+				<param name="list_id" value="9015" />
+				<param name="id2" value="06" />
+				<param name="include_name" value="HomeSubMenuItems" />
+			</include>
+			<!-- SubMenu07 -->
+			<include content="HomeSubMenuCommonControls">
+				<param name="list_id" value="9016" />
+				<param name="id2" value="07" />
+				<param name="include_name" value="HomeSubMenuItems" />
+			</include>
+			<!-- SubMenu08 -->
+			<include content="HomeSubMenuCommonControls">
+				<param name="list_id" value="9017" />
+				<param name="id2" value="08" />
+				<param name="include_name" value="HomeSubMenuItems" />
+			</include>
+			<!-- SubMenu09 -->
+			<include content="HomeSubMenuCommonControls">
+				<param name="list_id" value="9018" />
+				<param name="id2" value="09" />
+				<param name="include_name" value="HomeSubMenuItems" />
+			</include>
+			<!-- SubMenu10 -->
+			<include content="HomeSubMenuCommonControls">
+				<param name="list_id" value="9019" />
+				<param name="id2" value="10" />
+				<param name="include_name" value="HomeSubMenuItems" />
+			</include>
+			<!-- SubMenu11 -->
+			<include content="HomeSubMenuCommonControls">
+				<param name="list_id" value="9020" />
+				<param name="id2" value="11" />
+				<param name="include_name" value="HomeSubMenuItems" />
+			</include>
+			<!-- SubMenu12 -->
+			<include content="HomeSubMenuCommonControls">
+				<param name="list_id" value="9021" />
+				<param name="id2" value="12" />
+				<param name="include_name" value="HomeSubMenuItems" />
+			</include>
+			<!-- SubMenu13 -->
+			<include content="HomeSubMenuCommonControls">
+				<param name="list_id" value="9022" />
+				<param name="id2" value="13" />
+				<param name="include_name" value="HomeSubMenuItems" />
+			</include>
+			<!-- SubMenu14 -->
+			<include content="HomeSubMenuCommonControls">
+				<param name="list_id" value="9023" />
+				<param name="id2" value="14" />
+				<param name="include_name" value="HomeSubMenuItems" />
+			</include>
+			<!-- SubMenu15 -->
+			<include content="HomeSubMenuCommonControls">
+				<param name="list_id" value="9024" />
+				<param name="id2" value="15" />
+				<param name="include_name" value="HomeSubMenuItems" />
+			</include>
+			<!-- SubMenu16 -->
+			<include content="HomeSubMenuCommonControls">
+				<param name="list_id" value="9025" />
+				<param name="id2" value="16" />
+				<param name="include_name" value="HomeSubMenuItems" />
+			</include>
+			<!-- SubMenu17 -->
+			<include content="HomeSubMenuCommonControls">
+				<param name="list_id" value="9026" />
+				<param name="id2" value="17" />
+				<param name="include_name" value="HomeSubMenuItems" />
+			</include>
+			<!-- SubMenu18 -->
+			<include content="HomeSubMenuCommonControls">
+				<param name="list_id" value="9027" />
+				<param name="id2" value="18" />
+				<param name="include_name" value="HomeSubMenuItems" />
+			</include>
+			<!-- SubMenu19 -->
+			<include content="HomeSubMenuCommonControls">
+				<param name="list_id" value="9028" />
+				<param name="id2" value="19" />
+				<param name="include_name" value="HomeSubMenuItems" />
+			</include>
+			<!-- SubMenu20 -->
+			<include content="HomeSubMenuCommonControls">
+				<param name="list_id" value="9029" />
+				<param name="id2" value="20" />
+				<param name="include_name" value="HomeSubMenuItems" />
+			</include>
+			<!-- SubMenu21 -->
+			<include content="HomeSubMenuCommonControls">
+				<param name="list_id" value="9030" />
+				<param name="id2" value="21" />
+				<param name="include_name" value="HomeSubMenuItemsFavourites" />
+			</include>
 		</control>
 	</include>
-    <!-- SubMenu Common Controls -->
-    <include name="HomeSubMenuCommonControls">
-        <control type="group">
-            <visible>String.IsEqual(Container(9000).ListItem.Property(SubMenu),SubMenu$PARAM[id2])</visible>
-            <include>HomeSubMenuCommonAnimation</include>
-            <animation effect="slide" start="0,0" end="95,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
-            <animation effect="slide" start="0,0" end="190,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
-            <animation effect="slide" start="0,0" end="285,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
-            <animation effect="slide" start="0,0" end="380,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
-            <animation effect="slide" start="0,0" end="475,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
-            <control type="list" id="$PARAM[list_id]">
-                <include>HomeSubMenuCommonValues</include>
-                <onleft>$PARAM[list_id]</onleft>
-                <onright>$PARAM[list_id]</onright>
-                <include>HomeSubMenuCommonLayout</include>         
-                <include content="$PARAM[include_name]">
-                    <param name="id2" value="$PARAM[id2]" />
-                </include>
-            </control>
-            <control type="image">
-                <left>5</left>
-                <top>0</top>
-                <width>35</width>
-                <height>35</height>
-                <texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
-                <animation effect="slide" start="0,0" end="30,0" time="0" condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,6) | !Container($PARAM[list_id]).HasPrevious">conditional</animation>
-                <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)</visible>
-            </control>
-            <control type="image">
-                <left>40</left>
-                <top>0</top>
-                <width>35</width>
-                <height>35</height>
-                <texture border="5">HomeSubNF.png</texture>
-                <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,6) + Container($PARAM[list_id]).HasPrevious</visible>
-            </control>
-            <control type="button" id="800">
-                <left>45</left>
-                <top>5</top>
-                <width>25</width>
-                <height>25</height>
-                <texturefocus border="0,0,0,3">arrow-big-left.png</texturefocus>
-                <texturenofocus border="0,0,0,3">arrow-big-left.png</texturenofocus>
-                <onleft>$PARAM[list_id]</onleft>
-                <onright>$PARAM[list_id]</onright>
-                <include>HomeSubMenuUpDown</include>
-                <onclick>Control.Move($PARAM[list_id],-1)</onclick>
-                <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,6) + Container($PARAM[list_id]).HasPrevious</visible>
-            </control>
-            <control type="image">
-                <left>1240</left>
-                <top>0</top>
-                <width>35</width>
-                <height>35</height>
-                <texture border="0,0,0,3">HomeSubEnd.png</texture>
-                <animation effect="slide" start="0,0" end="-30,0" time="0" condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,6) |  !Container($PARAM[list_id]).HasNext">conditional</animation>
-                <animation effect="slide" start="0,0" end="-190,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-380,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-570,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-760,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-950,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
-                <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)</visible>
-            </control>
-            <control type="image">
-                <left>1205</left>
-                <top>0</top>
-                <width>35</width>
-                <height>35</height>
-                <texture border="5">HomeSubNF.png</texture>
-                <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,6) + Container($PARAM[list_id]).HasNext</visible>
-            </control>
-            <control type="button" id="801">
-                <left>1210</left>
-                <top>5</top>
-                <width>25</width>
-                <height>25</height>
-                <texturefocus border="0,0,0,3">arrow-big-right.png</texturefocus>
-                <texturenofocus border="0,0,0,3">arrow-big-right.png</texturenofocus>
-                <onleft>$PARAM[list_id]</onleft>
-                <onright>$PARAM[list_id]</onright>
-                <include>HomeSubMenuUpDown</include>
-                <onclick>Control.Move($PARAM[list_id],1)</onclick>
-                <animation effect="slide" start="0,0" end="-205,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-410,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-615,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-820,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
-                <animation effect="slide" start="0,0" end="-1025,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
-                <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,6) + Container($PARAM[list_id]).HasNext</visible>
-            </control>
-        </control>
-    </include>
-    <!-- SubMenu Common Values -->
+	<!-- SubMenu Common Controls -->
+	<include name="HomeSubMenuCommonControls">
+		<control type="group">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(SubMenu),SubMenu$PARAM[id2])</visible>
+			<include>HomeSubMenuCommonAnimation</include>
+			<animation effect="slide" start="0,0" end="95,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
+			<animation effect="slide" start="0,0" end="190,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
+			<animation effect="slide" start="0,0" end="285,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
+			<animation effect="slide" start="0,0" end="380,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
+			<animation effect="slide" start="0,0" end="475,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
+			<control type="list" id="$PARAM[list_id]">
+				<include>HomeSubMenuCommonValues</include>
+				<onleft>$PARAM[list_id]</onleft>
+				<onright>$PARAM[list_id]</onright>
+				<include>HomeSubMenuCommonLayout</include>
+				<include content="$PARAM[include_name]">
+					<param name="id2" value="$PARAM[id2]" />
+				</include>
+			</control>
+			<control type="image">
+				<left>5</left>
+				<top>0</top>
+				<width>35</width>
+				<height>35</height>
+				<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+				<animation effect="slide" start="0,0" end="30,0" time="0" condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,6) | !Container($PARAM[list_id]).HasPrevious">conditional</animation>
+				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)</visible>
+			</control>
+			<control type="image">
+				<left>40</left>
+				<top>0</top>
+				<width>35</width>
+				<height>35</height>
+				<texture border="5">HomeSubNF.png</texture>
+				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,6) + Container($PARAM[list_id]).HasPrevious</visible>
+			</control>
+			<control type="button" id="800">
+				<left>45</left>
+				<top>5</top>
+				<width>25</width>
+				<height>25</height>
+				<texturefocus border="0,0,0,3">arrow-big-left.png</texturefocus>
+				<texturenofocus border="0,0,0,3">arrow-big-left.png</texturenofocus>
+				<onleft>$PARAM[list_id]</onleft>
+				<onright>$PARAM[list_id]</onright>
+				<include>HomeSubMenuUpDown</include>
+				<onclick>Control.Move($PARAM[list_id],-1)</onclick>
+				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,6) + Container($PARAM[list_id]).HasPrevious</visible>
+			</control>
+			<control type="image">
+				<left>1240</left>
+				<top>0</top>
+				<width>35</width>
+				<height>35</height>
+				<texture border="0,0,0,3">HomeSubEnd.png</texture>
+				<animation effect="slide" start="0,0" end="-30,0" time="0" condition="!Integer.IsGreater(Container($PARAM[list_id]).NumItems,6) |  !Container($PARAM[list_id]).HasNext">conditional</animation>
+				<animation effect="slide" start="0,0" end="-190,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="-380,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="-570,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="-760,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="-950,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
+				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0)</visible>
+			</control>
+			<control type="image">
+				<left>1205</left>
+				<top>0</top>
+				<width>35</width>
+				<height>35</height>
+				<texture border="5">HomeSubNF.png</texture>
+				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,6) + Container($PARAM[list_id]).HasNext</visible>
+			</control>
+			<control type="button" id="801">
+				<left>1210</left>
+				<top>5</top>
+				<width>25</width>
+				<height>25</height>
+				<texturefocus border="0,0,0,3">arrow-big-right.png</texturefocus>
+				<texturenofocus border="0,0,0,3">arrow-big-right.png</texturenofocus>
+				<onleft>$PARAM[list_id]</onleft>
+				<onright>$PARAM[list_id]</onright>
+				<include>HomeSubMenuUpDown</include>
+				<onclick>Control.Move($PARAM[list_id],1)</onclick>
+				<animation effect="slide" start="0,0" end="-205,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="-410,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="-615,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="-820,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="-1025,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
+				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,6) + Container($PARAM[list_id]).HasNext</visible>
+			</control>
+		</control>
+	</include>
+	<!-- SubMenu Common Values -->
 	<include name="HomeSubMenuCommonValues">
 		<left>70</left>
 		<top>0</top>
@@ -238,16 +238,16 @@
 		<orientation>Horizontal</orientation>
 		<include>HomeSubMenuUpDown</include>
 	</include>
-    <!-- SubMenu Common Animation -->
+	<!-- SubMenu Common Animation -->
 	<include name="HomeSubMenuCommonAnimation">
-        <animation effect="slide" start="0,-40" end="0,0" delay="200" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(NoSlide)">Visible</animation>
+		<animation effect="slide" start="0,-40" end="0,0" delay="200" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(NoSlide)">Visible</animation>
 		<animation effect="slide" start="0,0" end="0,-40" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(NoSlide)">Hidden</animation>
 		<animation effect="fade" start="100" end="0" time="300" condition="!ControlGroup(9001).HasFocus + Skin.HasSetting(NoSlide)">conditional</animation>
 		<animation effect="slide" start="0,-40" end="0,0" delay="200" time="200" tween="quadratic" easing="out"  condition="ControlGroup(9001).HasFocus + Skin.HasSetting(NoSlide)">conditional</animation>
-		<animation effect="slide" start="0,0" end="0,-40" time="200" tween="quadratic" easing="out" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(NoSlide)">Hidden</animation>       
+		<animation effect="slide" start="0,0" end="0,-40" time="200" tween="quadratic" easing="out" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(NoSlide)">Hidden</animation>
 		<animation effect="fade" start="100" end="65" time="200" condition="Window.IsVisible(2123) | Window.IsVisible(2124) | Window.IsVisible(2125) | Window.IsVisible(2126) | Window.IsVisible(Favourites)">conditional</animation>
 	</include>
-    <!-- SubMenu Common Layout -->
+	<!-- SubMenu Common Layout -->
 	<include name="HomeSubMenuCommonLayout">
 		<itemlayout height="35" width="190">
 			<control type="image">
@@ -310,83 +310,83 @@
 			</control>
 		</focusedlayout>
 	</include>
-    <!-- SubMenu Items -->
+	<!-- SubMenu Items -->
 	<include name="HomeSubMenuItems">
-        <content>
-            <item id="1">
-                <label>$INFO[Skin.String(SubMenu$PARAM[id2].1.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
-                <onclick condition="!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].1.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].1.Path)]</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].1.Path))</visible>
-            </item>
-            <item id="2">
-                <label>$INFO[Skin.String(SubMenu$PARAM[id2].2.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
-                <onclick condition="!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].2.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].2.Path)]</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].2.Path))</visible>
-            </item>
-            <item id="3">
-                <label>$INFO[Skin.String(SubMenu$PARAM[id2].3.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
-                <onclick condition="!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].3.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].3.Path)]</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].3.Path))</visible>
-            </item>
-            <item id="4">
-                <label>$INFO[Skin.String(SubMenu$PARAM[id2].4.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
-                <onclick condition="!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].4.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].4.Path)]</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].4.Path))</visible>
-            </item>
-            <item id="5">
-                <label>$INFO[Skin.String(SubMenu$PARAM[id2].5.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
-                <onclick condition="!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].5.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].5.Path)]</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].5.Path))</visible>
-            </item>
-            <item id="6">
-                <label>$INFO[Skin.String(SubMenu$PARAM[id2].6.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
-                <onclick condition="!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].6.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].6.Path)]</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].6.Path))</visible>
-            </item>
-            <item id="7">
-                <label>$INFO[Skin.String(SubMenu$PARAM[id2].7.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
-                <onclick condition="!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].7.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].7.Path)]</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].7.Path))</visible>
-            </item>
-            <item id="8">
-                <label>$INFO[Skin.String(SubMenu$PARAM[id2].8.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
-                <onclick condition="!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].8.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].8.Path)]</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].8.Path))</visible>
-            </item>
-            <item id="9">
-                <label>$INFO[Skin.String(SubMenu$PARAM[id2].9.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
-                <onclick condition="!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].9.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].9.Path)]</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].9.Path))</visible>
-            </item>
-            <item id="10">
-                <label>$INFO[Skin.String(SubMenu$PARAM[id2].10.Label)]</label>
-                <onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-                <onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
-                <onclick condition="!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].10.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].10.Path)]</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].10.Path))</visible>
-            </item>
-        </content>
-    </include>
-    <!-- SubMenu Items Favourites -->
-    <include name="HomeSubMenuItemsFavourites">
+		<content>
+			<item id="1">
+				<label>$INFO[Skin.String(SubMenu$PARAM[id2].1.Label)]</label>
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
+				<onclick condition="!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].1.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].1.Path)]</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].1.Path))</visible>
+			</item>
+			<item id="2">
+				<label>$INFO[Skin.String(SubMenu$PARAM[id2].2.Label)]</label>
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
+				<onclick condition="!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].2.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].2.Path)]</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].2.Path))</visible>
+			</item>
+			<item id="3">
+				<label>$INFO[Skin.String(SubMenu$PARAM[id2].3.Label)]</label>
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
+				<onclick condition="!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].3.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].3.Path)]</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].3.Path))</visible>
+			</item>
+			<item id="4">
+				<label>$INFO[Skin.String(SubMenu$PARAM[id2].4.Label)]</label>
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
+				<onclick condition="!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].4.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].4.Path)]</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].4.Path))</visible>
+			</item>
+			<item id="5">
+				<label>$INFO[Skin.String(SubMenu$PARAM[id2].5.Label)]</label>
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
+				<onclick condition="!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].5.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].5.Path)]</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].5.Path))</visible>
+			</item>
+			<item id="6">
+				<label>$INFO[Skin.String(SubMenu$PARAM[id2].6.Label)]</label>
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
+				<onclick condition="!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].6.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].6.Path)]</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].6.Path))</visible>
+			</item>
+			<item id="7">
+				<label>$INFO[Skin.String(SubMenu$PARAM[id2].7.Label)]</label>
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
+				<onclick condition="!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].7.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].7.Path)]</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].7.Path))</visible>
+			</item>
+			<item id="8">
+				<label>$INFO[Skin.String(SubMenu$PARAM[id2].8.Label)]</label>
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
+				<onclick condition="!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].8.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].8.Path)]</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].8.Path))</visible>
+			</item>
+			<item id="9">
+				<label>$INFO[Skin.String(SubMenu$PARAM[id2].9.Label)]</label>
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
+				<onclick condition="!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].9.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].9.Path)]</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].9.Path))</visible>
+			</item>
+			<item id="10">
+				<label>$INFO[Skin.String(SubMenu$PARAM[id2].10.Label)]</label>
+				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
+				<onclick>SetProperty(MenuBackgroundHomeFanart,$VAR[SubMenuItemBackgroundHomeFanart],Home)</onclick>
+				<onclick condition="!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].10.Path))">$INFO[Skin.String(SubMenu$PARAM[id2].10.Path)]</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].10.Path))</visible>
+			</item>
+		</content>
+	</include>
+	<!-- SubMenu Items Favourites -->
+	<include name="HomeSubMenuItemsFavourites">
 		<content>
 			<item id="1">
 				<label>$INFO[Window(0).Property(favourite.1.name)]</label>
@@ -403,16 +403,16 @@
 				<visible>!String.IsEmpty(Window(0).Property(favourite.2.path))</visible>
 			</item>
 			<item id="3">
-				<label>$INFO[Window(0).Property(favourite.3.name)]</label>				
+				<label>$INFO[Window(0).Property(favourite.3.name)]</label>
 				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-                <onclick>$INFO[Window(0).Property(favourite.3.path)]</onclick>
+				<onclick>$INFO[Window(0).Property(favourite.3.path)]</onclick>
 				<visible>!String.IsEmpty(Window(0).Property(favourite.3.name))</visible>
 				<visible>!String.IsEmpty(Window(0).Property(favourite.3.path))</visible>
 			</item>
 			<item id="4">
-				<label>$INFO[Window(0).Property(favourite.4.name)]</label>				
+				<label>$INFO[Window(0).Property(favourite.4.name)]</label>
 				<onclick>SetProperty(MenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-                <onclick>$INFO[Window(0).Property(favourite.4.path)]</onclick>
+				<onclick>$INFO[Window(0).Property(favourite.4.path)]</onclick>
 				<visible>!String.IsEmpty(Window(0).Property(favourite.4.name))</visible>
 				<visible>!String.IsEmpty(Window(0).Property(favourite.4.path))</visible>
 			</item>
@@ -460,729 +460,729 @@
 			</item>
 		</content>
 	</include>
-    <!-- SubMenu UpDown -->
-    <include name="HomeSubMenuUpDown">
-        <onup>9000</onup>
+	<!-- SubMenu UpDown -->
+	<include name="HomeSubMenuUpDown">
+		<onup>9000</onup>
 		<ondown condition="!Skin.HasSetting(LowerMenu)">9002</ondown>
-        <ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(HidePowerButton) + Skin.HasSetting(HideFavoritesButton)">22</ondown>
-        <ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)">21</ondown>
+		<ondown condition="Skin.HasSetting(LowerMenu) + !Skin.HasSetting(HidePowerButton) + Skin.HasSetting(HideFavoritesButton)">22</ondown>
+		<ondown condition="Skin.HasSetting(LowerMenu) + Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)">21</ondown>
 		<ondown condition="Skin.HasSetting(LowerMenu)">20</ondown>
-    </include>
-    <!-- Reset SubMenu Item -->
-    <include name="ResetSubMenuItem">
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].1.Label)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].1.Path)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].2.Label)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].2.Path)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].3.Label)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].3.Path)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].4.Label)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].4.Path)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].5.Label)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].5.Path)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].6.Label)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].6.Path)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].7.Label)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].7.Path)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].8.Label)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].8.Path)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].9.Label)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].9.Path)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].10.Label)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].10.Path)</onclick>        
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.1.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.1.Sub)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.2.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.2.Sub)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.3.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.3.Sub)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.4.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.4.Sub)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.5.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.5.Sub)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.6.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.6.Sub)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.7.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.7.Sub)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.8.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.8.Sub)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.9.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.9.Sub)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.10.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.10.Sub)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.11.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.11.Sub)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.12.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.12.Sub)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.13.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.13.Sub)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.14.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.14.Sub)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.15.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.15.Sub)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.16.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.16.Sub)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.17.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.17.Sub)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.18.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.18.Sub)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.19.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.19.Sub)</onclick>
-        <onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.20.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.20.Sub)</onclick>
-    </include>
-    <!-- SubMenus Item Settings -->
-    <include name="HomeMainSubMenusItemSettings">
-        <control type="button" id="2$PARAM[id2]00">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>[B]$LOCALIZE[89002] - $PARAM[id2][/B]</label>
-            <label2>[COLOR=selected]$VAR[UsersSubMenu$PARAM[id2]Name][/COLOR]</label2>
-            <textcolor>blue</textcolor>
-            <focusedcolor>blue</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>Skin.SetString(SubMenu$PARAM[id2].Label)</onclick>
-            <include content="ResetSubMenuItem">
-                <param name="id2" value="$PARAM[id2]" />
-            </include>
-        </control>
-        <control type="button" id="2$PARAM[id2]01">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[89500] [B]1[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].1.Label)][/COLOR]</label2>
-            <textcolor>grey</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].1,Home)</onclick>
-            <onclick condition="Skin.String(SubMenu$PARAM[id2].1.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
-            <onclick>ActivateWindow(2115)</onclick>
-            <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
-        </control>
-        <control type="button" id="2$PARAM[id2]02">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[89500] [B]2[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].2.Label)][/COLOR]</label2>
-            <textcolor>grey</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].2,Home)</onclick>
-            <onclick condition="Skin.String(SubMenu$PARAM[id2].2.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
-            <onclick>ActivateWindow(2115)</onclick>
-            <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
-            <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].1.Label))</visible>
-        </control>
-        <control type="button" id="2$PARAM[id2]03">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[89500] [B]3[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].3.Label)][/COLOR]</label2>
-            <textcolor>grey</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].3,Home)</onclick>
-            <onclick condition="Skin.String(SubMenu$PARAM[id2].3.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
-            <onclick>ActivateWindow(2115)</onclick>
-            <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
-            <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].2.Label))</visible>
-        </control>
-        <control type="button" id="2$PARAM[id2]04">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[89500] [B]4[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].4.Label)][/COLOR]</label2>
-            <textcolor>grey</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].4,Home)</onclick>
-            <onclick condition="Skin.String(SubMenu$PARAM[id2].4.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
-            <onclick>ActivateWindow(2115)</onclick>
-            <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
-            <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].3.Label))</visible>
-        </control>
-        <control type="button" id="2$PARAM[id2]05">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[89500] [B]5[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].5.Label)][/COLOR]</label2>
-            <textcolor>grey</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].5,Home)</onclick>
-            <onclick condition="Skin.String(SubMenu$PARAM[id2].5.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
-            <onclick>ActivateWindow(2115)</onclick>
-            <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
-            <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].4.Label))</visible>
-        </control>
-        <control type="button" id="2$PARAM[id2]06">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[89500] [B]6[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].6.Label)][/COLOR]</label2>
-            <textcolor>grey</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].6,Home)</onclick>
-            <onclick condition="Skin.String(SubMenu$PARAM[id2].6.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
-            <onclick>ActivateWindow(2115)</onclick>
-            <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
-            <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].5.Label))</visible>
-        </control>
-        <control type="button" id="2$PARAM[id2]07">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[89500] [B]7[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].7.Label)][/COLOR]</label2>
-            <textcolor>grey</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].7,Home)</onclick>
-            <onclick condition="Skin.String(SubMenu$PARAM[id2].7.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
-            <onclick>ActivateWindow(2115)</onclick>
-            <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
-            <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].6.Label))</visible>
-        </control>
-        <control type="button" id="2$PARAM[id2]08">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[89500] [B]8[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].8.Label)][/COLOR]</label2>
-            <textcolor>grey</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].8,Home)</onclick>
-            <onclick condition="Skin.String(SubMenu$PARAM[id2].8.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
-            <onclick>ActivateWindow(2115)</onclick>
-            <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
-            <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].7.Label))</visible>
-        </control>
-        <control type="button" id="2$PARAM[id2]09">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[89500] [B]9[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].9.Label)][/COLOR]</label2>
-            <textcolor>grey</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].9,Home)</onclick>
-            <onclick condition="Skin.String(SubMenu$PARAM[id2].9.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
-            <onclick>ActivateWindow(2115)</onclick>
-            <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
-            <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].8.Label))</visible>
-        </control>
-        <control type="button" id="2$PARAM[id2]10">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[89500] [B]10[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].10.Label)][/COLOR]</label2>
-            <textcolor>grey</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
-            <onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].10,Home)</onclick>
-            <onclick condition="Skin.String(SubMenu$PARAM[id2].10.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
-            <onclick>ActivateWindow(2115)</onclick>
-            <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
-            <visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].9.Label))</visible>
-        </control>
-    </include>
-    <!-- SubMenu Type Choices -->
-    <include name="SubMenuTypeChoices">
-        <content>
-            <item>
-                <description>Clear Setting</description>
-                <label>$LOCALIZE[89013]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>String.IsEqual(Window(Home).Property(UsrSelectBtnClear),Clear)</visible>
-            </item>
-            <item>
-                <description>Submenu set 01</description>
-                <label>$VAR[UsersSubMenu01Name]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu01)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu01.Label))</visible>
-            </item>
-            <item>
-                <description>Submenu set 02</description>
-                <label>$VAR[UsersSubMenu02Name]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu02)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu02.Label))</visible>
-            </item>
-            <item>
-                <description>Submenu set 03</description>
-                <label>$VAR[UsersSubMenu03Name]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu03)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu03.Label))</visible>
-            </item>
-            <item>
-                <description>Submenu set 04</description>
-                <label>$VAR[UsersSubMenu04Name]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu04)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu04.Label))</visible>
-            </item>
-            <item>
-                <description>Submenu set 05</description>
-                <label>$VAR[UsersSubMenu05Name]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu05)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu05.Label))</visible>
-            </item>
-            <item>
-                <description>Submenu set 06</description>
-                <label>$VAR[UsersSubMenu06Name]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu06)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu06.Label))</visible>
-            </item>
-            <item>
-                <description>Submenu set 07</description>
-                <label>$VAR[UsersSubMenu07Name]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu07)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu07.Label))</visible>
-            </item>
-            <item>
-                <description>Submenu set 08</description>
-                <label>$VAR[UsersSubMenu08Name]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu08)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu08.Label))</visible>
-            </item>
-            <item>
-                <description>Submenu set 09</description>
-                <label>$VAR[UsersSubMenu09Name]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu09)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu09.Label))</visible>
-            </item>
-            <item>
-                <description>Submenu set 10</description>
-                <label>$VAR[UsersSubMenu10Name]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu10)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu10.Label))</visible>
-            </item>
-            <item>
-                <description>Submenu set 11</description>
-                <label>$VAR[UsersSubMenu11Name]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu11)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu11.Label))</visible>
-            </item>
-            <item>
-                <description>Submenu set 12</description>
-                <label>$VAR[UsersSubMenu12Name]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu12)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu12.Label))</visible>
-            </item>
-            <item>
-                <description>Submenu set 13</description>
-                <label>$VAR[UsersSubMenu13Name]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu13)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu13.Label))</visible>
-            </item>
-            <item>
-                <description>Submenu set 14</description>
-                <label>$VAR[UsersSubMenu14Name]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu14)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu14.Label))</visible>
-            </item>
-            <item>
-                <description>Submenu set 15</description>
-                <label>$VAR[UsersSubMenu15Name]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu15)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu16.Label))</visible>
-            </item>
-            <item>
-                <description>Submenu set 16</description>
-                <label>$VAR[UsersSubMenu16Name]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu16)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu16.Label))</visible>
-            </item>
-            <item>
-                <description>Submenu set 17</description>
-                <label>$VAR[UsersSubMenu17Name]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu17)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu17.Label))</visible>
-            </item>
-            <item>
-                <description>Submenu set 18</description>
-                <label>$VAR[UsersSubMenu18Name]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu18)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu18.Label))</visible>
-            </item>
-            <item>
-                <description>Submenu set 19</description>
-                <label>$VAR[UsersSubMenu19Name]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu19)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu19.Label))</visible>
-            </item>
-            <item>
-                <description>Submenu set 20</description>
-                <label>$VAR[UsersSubMenu20Name]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu20)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>!String.IsEmpty(Skin.String(SubMenu20.Label))</visible>
-            </item>
-            <item>
-                <description>Submenu Favourites</description>
-                <label>$LOCALIZE[1036]</label>
-                <onclick>Dialog.Close($PARAM[id_win])</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu21)</onclick>
-                <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>System.HasAddon(script.favourites)</visible>
-            </item>
-        </content>
-    </include>
-    <!-- Default SubMenu -->
-    <include name="DefaultSubMenu">
-        <!-- Sub Pictures -->
-        <onload>Skin.SetString(SubMenu01.Label,$LOCALIZE[31951])</onload>
-        <onload>Skin.SetString(SubMenu01.1.Label,$LOCALIZE[24001])</onload>
-        <onload>Skin.SetString(SubMenu01.1.Path,ActivateWindow(pictures,addons://sources/image/,return))</onload>
-        <!-- Sub Radio -->
-        <onload>Skin.SetString(SubMenu02.Label,$LOCALIZE[31960])</onload>
-        <onload>Skin.SetString(SubMenu02.1.Label,$LOCALIZE[19019])</onload>
-        <onload>Skin.SetString(SubMenu02.1.Path,ActivateWindow(radiochannels))</onload>
-        <onload>Skin.SetString(SubMenu02.2.Label,$LOCALIZE[19069])</onload>
-        <onload>Skin.SetString(SubMenu02.2.Path,ActivateWindow(radioguide))</onload>
-        <onload>Skin.SetString(SubMenu02.3.Label,$LOCALIZE[19017])</onload>
-        <onload>Skin.SetString(SubMenu02.3.Path,ActivateWindow(radiorecordings))</onload>
-        <onload>Skin.SetString(SubMenu02.4.Label,$LOCALIZE[19138])</onload>
-        <onload>Skin.SetString(SubMenu02.4.Path,ActivateWindow(radiotimerrules))</onload>
-        <onload>Skin.SetString(SubMenu02.5.Label,$LOCALIZE[19040])</onload>
-        <onload>Skin.SetString(SubMenu02.5.Path,ActivateWindow(radiotimers))</onload>
-        <onload>Skin.SetString(SubMenu02.6.Label,$LOCALIZE[137])</onload>
-        <onload>Skin.SetString(SubMenu02.6.Path,ActivateWindow(radiosearch))</onload>
-        <!-- Sub TV -->
-        <onload>Skin.SetString(SubMenu03.Label,$LOCALIZE[31952])</onload>
-        <onload>Skin.SetString(SubMenu03.1.Label,$LOCALIZE[19019])</onload>
-        <onload>Skin.SetString(SubMenu03.1.Path,ActivateWindow(tvchannels))</onload>
-        <onload>Skin.SetString(SubMenu03.2.Label,$LOCALIZE[19069])</onload>
-        <onload>Skin.SetString(SubMenu03.2.Path,ActivateWindow(tvguide))</onload>
-        <onload>Skin.SetString(SubMenu03.3.Label,$LOCALIZE[19017])</onload>
-        <onload>Skin.SetString(SubMenu03.3.Path,ActivateWindow(tvrecordings))</onload>
-        <onload>Skin.SetString(SubMenu03.4.Label,$LOCALIZE[19138])</onload>
-        <onload>Skin.SetString(SubMenu03.4.Path,ActivateWindow(tvtimerrules))</onload>
-        <onload>Skin.SetString(SubMenu03.5.Label,$LOCALIZE[19040])</onload>
-        <onload>Skin.SetString(SubMenu03.5.Path,ActivateWindow(tvtimers))</onload>
-        <onload>Skin.SetString(SubMenu03.6.Label,$LOCALIZE[137])</onload>
-        <onload>Skin.SetString(SubMenu03.6.Path,ActivateWindow(tvsearch))</onload>
-        <!-- Sub Videos -->
-        <onload>Skin.SetString(SubMenu04.Label,$LOCALIZE[31953])</onload>
-        <onload>Skin.SetString(SubMenu04.1.Label,$LOCALIZE[744])</onload>
-        <onload>Skin.SetString(SubMenu04.1.Path,ActivateWindow(videos,sources://video/,return))</onload>
-        <onload>Skin.SetString(SubMenu04.2.Label,$LOCALIZE[14022])</onload>
-        <onload>Skin.SetString(SubMenu04.2.Path,ActivateWindow(videos,library://video/,return))</onload>
-        <onload>Skin.SetString(SubMenu04.3.Label,$LOCALIZE[24001])</onload>
-        <onload>Skin.SetString(SubMenu04.3.Path,ActivateWindow(videos,addons://sources/video/,return))</onload>
-        <!-- Sub Movies -->
-        <onload>Skin.SetString(SubMenu05.Label,$LOCALIZE[31954])</onload>
-        <onload>Skin.SetString(SubMenu05.1.Label,$LOCALIZE[31328])</onload>
-        <onload>Skin.SetString(SubMenu05.1.Path,ActivateWindow(videos,videodb://recentlyaddedmovies/,return))</onload>
-        <onload>Skin.SetString(SubMenu05.2.Label,$LOCALIZE[20434])</onload>
-        <onload>Skin.SetString(SubMenu05.2.Path,ActivateWindow(videos,videodb://movies/sets/,return))</onload>
-        <onload>Skin.SetString(SubMenu05.3.Label,$LOCALIZE[369])</onload>
-        <onload>Skin.SetString(SubMenu05.3.Path,ActivateWindow(videos,videodb://movies/titles/,return))</onload>
-        <onload>Skin.SetString(SubMenu05.4.Label,$LOCALIZE[135])</onload>
-        <onload>Skin.SetString(SubMenu05.4.Path,ActivateWindow(videos,videodb://movies/genres/,return))</onload>
-        <onload>Skin.SetString(SubMenu05.5.Label,$LOCALIZE[652])</onload>
-        <onload>Skin.SetString(SubMenu05.5.Path,ActivateWindow(videos,videodb://movies/years/,return))</onload>
-        <onload>Skin.SetString(SubMenu05.6.Label,$LOCALIZE[344])</onload>
-        <onload>Skin.SetString(SubMenu05.6.Path,ActivateWindow(videos,videodb://movies/actors/,return))</onload>
-        <!-- Sub TVShows -->
-        <onload>Skin.SetString(SubMenu06.Label,$LOCALIZE[31955])</onload>
-        <onload>Skin.SetString(SubMenu06.1.Label,$LOCALIZE[31328])</onload>
-        <onload>Skin.SetString(SubMenu06.1.Path,ActivateWindow(videos,videodb://recentlyaddedepisodes/,return))</onload>
-        <onload>Skin.SetString(SubMenu06.2.Label,$LOCALIZE[369])</onload>
-        <onload>Skin.SetString(SubMenu06.2.Path,ActivateWindow(videos,videodb://tvshows/titles/,return))</onload>
-        <onload>Skin.SetString(SubMenu06.3.Label,$LOCALIZE[135])</onload>
-        <onload>Skin.SetString(SubMenu06.3.Path,ActivateWindow(videos,videodb://tvshows/genres/,return))</onload>
-        <onload>Skin.SetString(SubMenu06.4.Label,$LOCALIZE[652])</onload>
-        <onload>Skin.SetString(SubMenu06.4.Path,ActivateWindow(videos,videodb://tvshows/years/,return))</onload>
-        <onload>Skin.SetString(SubMenu06.5.Label,$LOCALIZE[344])</onload>
-        <onload>Skin.SetString(SubMenu06.5.Path,ActivateWindow(videos,videodb://tvshows/actors/,return))</onload>
-        <!-- Sub MusicVideo -->
-        <onload>Skin.SetString(SubMenu07.Label,$LOCALIZE[31961])</onload>
-        <onload>Skin.SetString(SubMenu07.1.Label,$LOCALIZE[31328])</onload>
-        <onload>Skin.SetString(SubMenu07.1.Path,ActivateWindow(videos,videodb://recentlyaddedmusicvideos/,return))</onload>
-        <onload>Skin.SetString(SubMenu07.2.Label,$LOCALIZE[369])</onload>
-        <onload>Skin.SetString(SubMenu07.2.Path,ActivateWindow(videos,videodb://musicvideos/titles/,return))</onload>
-        <onload>Skin.SetString(SubMenu07.3.Label,$LOCALIZE[135])</onload>
-        <onload>Skin.SetString(SubMenu07.3.Path,ActivateWindow(videos,videodb://musicvideos/genres/,return))</onload>
-        <onload>Skin.SetString(SubMenu07.4.Label,$LOCALIZE[652])</onload>
-        <onload>Skin.SetString(SubMenu07.4.Path,ActivateWindow(videos,videodb://musicvideos/years/,return))</onload>
-        <onload>Skin.SetString(SubMenu07.5.Label,$LOCALIZE[133])</onload>
-        <onload>Skin.SetString(SubMenu07.5.Path,ActivateWindow(videos,videodb://musicvideos/artists/,return))</onload>
-        <onload>Skin.SetString(SubMenu07.6.Label,$LOCALIZE[132])</onload>
-        <onload>Skin.SetString(SubMenu07.6.Path,ActivateWindow(videos,videodb://musicvideos/albums/,return))</onload>
-        <!-- Sub Musics -->
-        <onload>Skin.SetString(SubMenu08.Label,$LOCALIZE[31956])</onload>
-        <onload>Skin.SetString(SubMenu08.1.Label,$LOCALIZE[133])</onload>
-        <onload>Skin.SetString(SubMenu08.1.Path,ActivateWindow(music,musicdb://artists/,return))</onload>
-        <onload>Skin.SetString(SubMenu08.2.Label,$LOCALIZE[132])</onload>
-        <onload>Skin.SetString(SubMenu08.2.Path,ActivateWindow(music,musicdb://albums/,return))</onload>
-        <onload>Skin.SetString(SubMenu08.3.Label,$LOCALIZE[134])</onload>
-        <onload>Skin.SetString(SubMenu08.3.Path,ActivateWindow(music,musicdb://songs/,return))</onload>
-        <onload>Skin.SetString(SubMenu08.4.Label,$LOCALIZE[744])</onload>
-        <onload>Skin.SetString(SubMenu08.4.Path,ActivateWindow(music,sources://music/,return))</onload>
-        <onload>Skin.SetString(SubMenu08.5.Label,$LOCALIZE[14022])</onload>
-        <onload>Skin.SetString(SubMenu08.5.Path,ActivateWindow(music,musicdb://,return))</onload>
-        <onload>Skin.SetString(SubMenu08.6.Label,$LOCALIZE[24001])</onload>
-        <onload>Skin.SetString(SubMenu08.6.Path,ActivateWindow(music,addons://sources/audio/,return))</onload>
-        <!-- Sub PlayDisc -->
-        <onload>Skin.SetString(SubMenu09.Label,$LOCALIZE[31958])</onload>
-        <onload>Skin.SetString(SubMenu09.1.Label,$LOCALIZE[13391])</onload>
-        <onload>Skin.SetString(SubMenu09.1.Path,EjectTray)</onload>
-        <!-- Sub Settings -->
-        <onload>Skin.SetString(SubMenu10.Label,$LOCALIZE[31959])</onload>
-        <onload>Skin.SetString(SubMenu10.1.Label,$LOCALIZE[5])</onload>
-        <onload>Skin.SetString(SubMenu10.1.Path,ActivateWindow(settings))</onload>
-        <onload>Skin.SetString(SubMenu10.2.Label,$LOCALIZE[7])</onload>
-        <onload>Skin.SetString(SubMenu10.2.Path,ActivateWindow(filemanager))</onload>
-        <onload>Skin.SetString(SubMenu10.3.Label,$LOCALIZE[13200])</onload>
-        <onload>Skin.SetString(SubMenu10.3.Path,ActivateWindow(profiles))</onload>
-        <onload>Skin.SetString(SubMenu10.4.Label,$LOCALIZE[130])</onload>
-        <onload>Skin.SetString(SubMenu10.4.Path,ActivateWindow(systeminfo))</onload>
-        <onload>Skin.SetString(SubMenu10.5.Label,$LOCALIZE[14111])</onload>
-        <onload>Skin.SetString(SubMenu10.5.Path,ActivateWindow(eventlog,events://,return))</onload>
-    </include>
-    <!-- Rest SubMenu Items -->
-    <include name="ResetSubMenuItems">
-        <!-- Sub Pictures -->
-        <onclick>Skin.Reset(SubMenu01.Label)</onclick>
-        <include content="ResetSubMenuItem">
-            <param name="id2" value="01" />
-        </include>
-        <onclick>Skin.SetString(SubMenu01.Label,$LOCALIZE[31951])</onclick>
-        <onclick>Skin.SetString(SubMenu01.1.Label,$LOCALIZE[24001])</onclick>
-        <onclick>Skin.SetString(SubMenu01.1.Path,ActivateWindow(pictures,addons://sources/image/,return))</onclick>
-        <!-- Sub Radio -->
-        <onclick>Skin.Reset(SubMenu02.Label)</onclick>
-        <include content="ResetSubMenuItem">
-            <param name="id2" value="02" />
-        </include>
-        <onclick>Skin.SetString(SubMenu02.Label,$LOCALIZE[31960])</onclick>
-        <onclick>Skin.SetString(SubMenu02.1.Label,$LOCALIZE[19019])</onclick>
-        <onclick>Skin.SetString(SubMenu02.1.Path,ActivateWindow(radiochannels))</onclick>
-        <onclick>Skin.SetString(SubMenu02.2.Label,$LOCALIZE[19069])</onclick>
-        <onclick>Skin.SetString(SubMenu02.2.Path,ActivateWindow(radioguide))</onclick>
-        <onclick>Skin.SetString(SubMenu02.3.Label,$LOCALIZE[19017])</onclick>
-        <onclick>Skin.SetString(SubMenu02.3.Path,ActivateWindow(radiorecordings))</onclick>
-        <onclick>Skin.SetString(SubMenu02.4.Label,$LOCALIZE[19138])</onclick>
-        <onclick>Skin.SetString(SubMenu02.4.Path,ActivateWindow(radiotimerrules))</onclick>
-        <onclick>Skin.SetString(SubMenu02.5.Label,$LOCALIZE[19040])</onclick>
-        <onclick>Skin.SetString(SubMenu02.5.Path,ActivateWindow(radiotimers))</onclick>
-        <onclick>Skin.SetString(SubMenu02.6.Label,$LOCALIZE[137])</onclick>
-        <onclick>Skin.SetString(SubMenu02.6.Path,ActivateWindow(radiosearch))</onclick>
-        <!-- Sub TV -->
-        <onclick>Skin.Reset(SubMenu03.Label)</onclick>
-        <include content="ResetSubMenuItem">
-            <param name="id2" value="03" />
-        </include>
-        <onclick>Skin.SetString(SubMenu03.Label,$LOCALIZE[31952])</onclick>
-        <onclick>Skin.SetString(SubMenu03.1.Label,$LOCALIZE[19019])</onclick>
-        <onclick>Skin.SetString(SubMenu03.1.Path,ActivateWindow(tvchannels))</onclick>
-        <onclick>Skin.SetString(SubMenu03.2.Label,$LOCALIZE[19069])</onclick>
-        <onclick>Skin.SetString(SubMenu03.2.Path,ActivateWindow(tvguide))</onclick>
-        <onclick>Skin.SetString(SubMenu03.3.Label,$LOCALIZE[19017])</onclick>
-        <onclick>Skin.SetString(SubMenu03.3.Path,ActivateWindow(tvrecordings))</onclick>
-        <onclick>Skin.SetString(SubMenu03.4.Label,$LOCALIZE[19138])</onclick>
-        <onclick>Skin.SetString(SubMenu03.4.Path,ActivateWindow(tvtimerrules))</onclick>
-        <onclick>Skin.SetString(SubMenu03.5.Label,$LOCALIZE[19040])</onclick>
-        <onclick>Skin.SetString(SubMenu03.5.Path,ActivateWindow(tvtimers))</onclick>
-        <onclick>Skin.SetString(SubMenu03.6.Label,$LOCALIZE[137])</onclick>
-        <onclick>Skin.SetString(SubMenu03.6.Path,ActivateWindow(tvsearch))</onclick>
-        <!-- Sub Videos -->
-        <onclick>Skin.Reset(SubMenu04.Label)</onclick>
-        <include content="ResetSubMenuItem">
-            <param name="id2" value="04" />
-        </include>
-        <onclick>Skin.SetString(SubMenu04.Label,$LOCALIZE[31953])</onclick>
-        <onclick>Skin.SetString(SubMenu04.1.Label,$LOCALIZE[744])</onclick>
-        <onclick>Skin.SetString(SubMenu04.1.Path,ActivateWindow(videos,sources://video/,return))</onclick>
-        <onclick>Skin.SetString(SubMenu04.2.Label,$LOCALIZE[14022])</onclick>
-        <onclick>Skin.SetString(SubMenu04.2.Path,ActivateWindow(videos,library://video/,return))</onclick>
-        <onclick>Skin.SetString(SubMenu04.3.Label,$LOCALIZE[24001])</onclick>
-        <onclick>Skin.SetString(SubMenu04.3.Path,ActivateWindow(videos,addons://sources/video/,return))</onclick>
-        <!-- Sub Movies -->
-        <onclick>Skin.Reset(SubMenu05.Label)</onclick>
-        <include content="ResetSubMenuItem">
-            <param name="id2" value="05" />
-        </include>
-        <onclick>Skin.SetString(SubMenu05.Label,$LOCALIZE[31954])</onclick>
-        <onclick>Skin.SetString(SubMenu05.1.Label,$LOCALIZE[31328])</onclick>
-        <onclick>Skin.SetString(SubMenu05.1.Path,ActivateWindow(videos,videodb://recentlyaddedmovies/,return))</onclick>
-        <onclick>Skin.SetString(SubMenu05.2.Label,$LOCALIZE[20434])</onclick>
-        <onclick>Skin.SetString(SubMenu05.2.Path,ActivateWindow(videos,videodb://movies/sets/,return))</onclick>
-        <onclick>Skin.SetString(SubMenu05.3.Label,$LOCALIZE[369])</onclick>
-        <onclick>Skin.SetString(SubMenu05.3.Path,ActivateWindow(videos,videodb://movies/titles/,return))</onclick>
-        <onclick>Skin.SetString(SubMenu05.4.Label,$LOCALIZE[135])</onclick>
-        <onclick>Skin.SetString(SubMenu05.4.Path,ActivateWindow(videos,videodb://movies/genres/,return))</onclick>
-        <onclick>Skin.SetString(SubMenu05.5.Label,$LOCALIZE[652])</onclick>
-        <onclick>Skin.SetString(SubMenu05.5.Path,ActivateWindow(videos,videodb://movies/years/,return))</onclick>
-        <onclick>Skin.SetString(SubMenu05.6.Label,$LOCALIZE[344])</onclick>
-        <onclick>Skin.SetString(SubMenu05.6.Path,ActivateWindow(videos,videodb://movies/actors/,return))</onclick>
-        <!-- Sub TVShows -->
-        <onclick>Skin.Reset(SubMenu06.Label)</onclick>
-        <include content="ResetSubMenuItem">
-            <param name="id2" value="06" />
-        </include>
-        <onclick>Skin.SetString(SubMenu06.Label,$LOCALIZE[31955])</onclick>
-        <onclick>Skin.SetString(SubMenu06.1.Label,$LOCALIZE[31328])</onclick>
-        <onclick>Skin.SetString(SubMenu06.1.Path,ActivateWindow(videos,videodb://recentlyaddedepisodes/,return))</onclick>
-        <onclick>Skin.SetString(SubMenu06.2.Label,$LOCALIZE[369])</onclick>
-        <onclick>Skin.SetString(SubMenu06.2.Path,ActivateWindow(videos,videodb://tvshows/titles/,return))</onclick>
-        <onclick>Skin.SetString(SubMenu06.3.Label,$LOCALIZE[135])</onclick>
-        <onclick>Skin.SetString(SubMenu06.3.Path,ActivateWindow(videos,videodb://tvshows/genres/,return))</onclick>
-        <onclick>Skin.SetString(SubMenu06.4.Label,$LOCALIZE[652])</onclick>
-        <onclick>Skin.SetString(SubMenu06.4.Path,ActivateWindow(videos,videodb://tvshows/years/,return))</onclick>
-        <onclick>Skin.SetString(SubMenu06.5.Label,$LOCALIZE[344])</onclick>
-        <onclick>Skin.SetString(SubMenu06.5.Path,ActivateWindow(videos,videodb://tvshows/actors/,return))</onclick>
-        <!-- Sub MusicVideo -->
-        <onclick>Skin.Reset(SubMenu07.Label)</onclick>
-        <include content="ResetSubMenuItem">
-            <param name="id2" value="07" />
-        </include>
-        <onclick>Skin.SetString(SubMenu07.Label,$LOCALIZE[31961])</onclick>
-        <onclick>Skin.SetString(SubMenu07.1.Label,$LOCALIZE[31328])</onclick>
-        <onclick>Skin.SetString(SubMenu07.1.Path,ActivateWindow(videos,videodb://recentlyaddedmusicvideos/,return))</onclick>
-        <onclick>Skin.SetString(SubMenu07.2.Label,$LOCALIZE[369])</onclick>
-        <onclick>Skin.SetString(SubMenu07.2.Path,ActivateWindow(videos,videodb://musicvideos/titles/,return))</onclick>
-        <onclick>Skin.SetString(SubMenu07.3.Label,$LOCALIZE[135])</onclick>
-        <onclick>Skin.SetString(SubMenu07.3.Path,ActivateWindow(videos,videodb://musicvideos/genres/,return))</onclick>
-        <onclick>Skin.SetString(SubMenu07.4.Label,$LOCALIZE[652])</onclick>
-        <onclick>Skin.SetString(SubMenu07.4.Path,ActivateWindow(videos,videodb://musicvideos/years/,return))</onclick>
-        <onclick>Skin.SetString(SubMenu07.5.Label,$LOCALIZE[133])</onclick>
-        <onclick>Skin.SetString(SubMenu07.5.Path,ActivateWindow(videos,videodb://musicvideos/artists/,return))</onclick>
-        <onclick>Skin.SetString(SubMenu07.6.Label,$LOCALIZE[132])</onclick>
-        <onclick>Skin.SetString(SubMenu07.6.Path,ActivateWindow(videos,videodb://musicvideos/albums/,return))</onclick>
-        <!-- Sub Musics -->
-        <onclick>Skin.Reset(SubMenu08.Label)</onclick>
-        <include content="ResetSubMenuItem">
-            <param name="id2" value="08" />
-        </include>
-        <onclick>Skin.SetString(SubMenu08.Label,$LOCALIZE[31956])</onclick>
-        <onclick>Skin.SetString(SubMenu08.1.Label,$LOCALIZE[133])</onclick>
-        <onclick>Skin.SetString(SubMenu08.1.Path,ActivateWindow(music,musicdb://artists/,return))</onclick>
-        <onclick>Skin.SetString(SubMenu08.2.Label,$LOCALIZE[132])</onclick>
-        <onclick>Skin.SetString(SubMenu08.2.Path,ActivateWindow(music,musicdb://albums/,return))</onclick>
-        <onclick>Skin.SetString(SubMenu08.3.Label,$LOCALIZE[134])</onclick>
-        <onclick>Skin.SetString(SubMenu08.3.Path,ActivateWindow(music,musicdb://songs/,return))</onclick>
-        <onclick>Skin.SetString(SubMenu08.4.Label,$LOCALIZE[744])</onclick>
-        <onclick>Skin.SetString(SubMenu08.4.Path,ActivateWindow(music,sources://music/,return))</onclick>
-        <onclick>Skin.SetString(SubMenu08.5.Label,$LOCALIZE[14022])</onclick>
-        <onclick>Skin.SetString(SubMenu08.5.Path,ActivateWindow(music,musicdb://,return))</onclick>
-        <onclick>Skin.SetString(SubMenu08.6.Label,$LOCALIZE[24001])</onclick>
-        <onclick>Skin.SetString(SubMenu08.6.Path,ActivateWindow(music,addons://sources/audio/,return))</onclick>
-        <!-- Sub PlayDisc -->
-        <onclick>Skin.Reset(SubMenu09.Label)</onclick>
-        <include content="ResetSubMenuItem">
-            <param name="id2" value="09" />
-        </include>
-        <onclick>Skin.SetString(SubMenu09.Label,$LOCALIZE[31958])</onclick>
-        <onclick>Skin.SetString(SubMenu09.1.Label,$LOCALIZE[13391])</onclick>
-        <onclick>Skin.SetString(SubMenu09.1.Path,EjectTray)</onclick>
-        <!-- Sub Settings -->
-        <onclick>Skin.Reset(SubMenu10.Label)</onclick>
-        <include content="ResetSubMenuItem">
-            <param name="id2" value="10" />
-        </include>
-        <onclick>Skin.SetString(SubMenu10.Label,$LOCALIZE[31959])</onclick>
-        <onclick>Skin.SetString(SubMenu10.1.Label,$LOCALIZE[5])</onclick>
-        <onclick>Skin.SetString(SubMenu10.1.Path,ActivateWindow(settings))</onclick>
-        <onclick>Skin.SetString(SubMenu10.2.Label,$LOCALIZE[7])</onclick>
-        <onclick>Skin.SetString(SubMenu10.2.Path,ActivateWindow(filemanager))</onclick>
-        <onclick>Skin.SetString(SubMenu10.3.Label,$LOCALIZE[13200])</onclick>
-        <onclick>Skin.SetString(SubMenu10.3.Path,ActivateWindow(profiles))</onclick>
-        <onclick>Skin.SetString(SubMenu10.4.Label,$LOCALIZE[130])</onclick>
-        <onclick>Skin.SetString(SubMenu10.4.Path,ActivateWindow(systeminfo))</onclick>
-        <onclick>Skin.SetString(SubMenu10.5.Label,$LOCALIZE[14111])</onclick>
-        <onclick>Skin.SetString(SubMenu10.5.Path,ActivateWindow(eventlog,events://,return))</onclick>
-        <!-- SubMenu 11 -->
-        <onclick>Skin.Reset(SubMenu11.Label)</onclick>
-        <include content="ResetSubMenuItem">
-            <param name="id2" value="11" />
-        </include>
-        <!-- SubMenu 12 -->
-        <onclick>Skin.Reset(SubMenu12.Label)</onclick>
-        <include content="ResetSubMenuItem">
-            <param name="id2" value="12" />
-        </include>
-        <!-- SubMenu 13 -->
-        <onclick>Skin.Reset(SubMenu13.Label)</onclick>
-        <include content="ResetSubMenuItem">
-            <param name="id2" value="13" />
-        </include>
-        <!-- SubMenu 14 -->
-        <onclick>Skin.Reset(SubMenu14.Label)</onclick>
-        <include content="ResetSubMenuItem">
-            <param name="id2" value="14" />
-        </include>
-        <!-- SubMenu 15 -->
-        <onclick>Skin.Reset(SubMenu15.Label)</onclick>
-        <include content="ResetSubMenuItem">
-            <param name="id2" value="15" />
-        </include>
-        <!-- SubMenu 16 -->
-        <onclick>Skin.Reset(SubMenu16.Label)</onclick>
-        <include content="ResetSubMenuItem">
-            <param name="id2" value="16" />
-        </include>
-        <!-- SubMenu 17 -->
-        <onclick>Skin.Reset(SubMenu17.Label)</onclick>
-        <include content="ResetSubMenuItem">
-            <param name="id2" value="17" />
-        </include>
-        <!-- SubMenu 18 -->
-        <onclick>Skin.Reset(SubMenu18.Label)</onclick>
-        <include content="ResetSubMenuItem">
-            <param name="id2" value="18" />
-        </include>
-        <!-- SubMenu 19 -->
-        <onclick>Skin.Reset(SubMenu19.Label)</onclick>
-        <include content="ResetSubMenuItem">
-            <param name="id2" value="19" />
-        </include>
-        <!-- SubMenu 20 -->
-        <onclick>Skin.Reset(SubMenu20.Label)</onclick>
-        <include content="ResetSubMenuItem">
-            <param name="id2" value="20" />
-        </include>
-    </include>
+	</include>
+	<!-- Reset SubMenu Item -->
+	<include name="ResetSubMenuItem">
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].1.Label)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].1.Path)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].2.Label)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].2.Path)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].3.Label)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].3.Path)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].4.Label)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].4.Path)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].5.Label)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].5.Path)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].6.Label)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].6.Path)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].7.Label)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].7.Path)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].8.Label)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].8.Path)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].9.Label)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].9.Path)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].10.Label)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))">Skin.Reset(SubMenu$PARAM[id2].10.Path)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.1.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.1.Sub)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.2.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.2.Sub)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.3.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.3.Sub)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.4.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.4.Sub)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.5.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.5.Sub)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.6.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.6.Sub)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.7.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.7.Sub)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.8.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.8.Sub)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.9.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.9.Sub)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.10.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.10.Sub)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.11.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.11.Sub)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.12.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.12.Sub)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.13.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.13.Sub)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.14.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.14.Sub)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.15.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.15.Sub)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.16.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.16.Sub)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.17.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.17.Sub)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.18.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.18.Sub)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.19.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.19.Sub)</onclick>
+		<onclick condition="String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label)) + String.IsEqual(Skin.String(HomeItem.20.Sub),SubMenu$PARAM[id2])">Skin.Reset(HomeItem.20.Sub)</onclick>
+	</include>
+	<!-- SubMenus Item Settings -->
+	<include name="HomeMainSubMenusItemSettings">
+		<control type="button" id="2$PARAM[id2]00">
+			<width>750</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>[B]$LOCALIZE[89002] - $PARAM[id2][/B]</label>
+			<label2>[COLOR=selected]$VAR[UsersSubMenu$PARAM[id2]Name][/COLOR]</label2>
+			<textcolor>blue</textcolor>
+			<focusedcolor>blue</focusedcolor>
+			<texturefocus>MenuItemFO.png</texturefocus>
+			<texturenofocus>MenuItemNF.png</texturenofocus>
+			<onclick>Skin.SetString(SubMenu$PARAM[id2].Label)</onclick>
+			<include content="ResetSubMenuItem">
+				<param name="id2" value="$PARAM[id2]" />
+			</include>
+		</control>
+		<control type="button" id="2$PARAM[id2]01">
+			<width>750</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>- $LOCALIZE[89500] [B]1[/B]</label>
+			<label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].1.Label)][/COLOR]</label2>
+			<textcolor>grey</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus>MenuItemFO.png</texturefocus>
+			<texturenofocus>MenuItemNF.png</texturenofocus>
+			<onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].1,Home)</onclick>
+			<onclick condition="Skin.String(SubMenu$PARAM[id2].1.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
+			<onclick>ActivateWindow(2115)</onclick>
+			<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
+		</control>
+		<control type="button" id="2$PARAM[id2]02">
+			<width>750</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>- $LOCALIZE[89500] [B]2[/B]</label>
+			<label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].2.Label)][/COLOR]</label2>
+			<textcolor>grey</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus>MenuItemFO.png</texturefocus>
+			<texturenofocus>MenuItemNF.png</texturenofocus>
+			<onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].2,Home)</onclick>
+			<onclick condition="Skin.String(SubMenu$PARAM[id2].2.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
+			<onclick>ActivateWindow(2115)</onclick>
+			<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
+			<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].1.Label))</visible>
+		</control>
+		<control type="button" id="2$PARAM[id2]03">
+			<width>750</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>- $LOCALIZE[89500] [B]3[/B]</label>
+			<label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].3.Label)][/COLOR]</label2>
+			<textcolor>grey</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus>MenuItemFO.png</texturefocus>
+			<texturenofocus>MenuItemNF.png</texturenofocus>
+			<onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].3,Home)</onclick>
+			<onclick condition="Skin.String(SubMenu$PARAM[id2].3.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
+			<onclick>ActivateWindow(2115)</onclick>
+			<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
+			<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].2.Label))</visible>
+		</control>
+		<control type="button" id="2$PARAM[id2]04">
+			<width>750</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>- $LOCALIZE[89500] [B]4[/B]</label>
+			<label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].4.Label)][/COLOR]</label2>
+			<textcolor>grey</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus>MenuItemFO.png</texturefocus>
+			<texturenofocus>MenuItemNF.png</texturenofocus>
+			<onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].4,Home)</onclick>
+			<onclick condition="Skin.String(SubMenu$PARAM[id2].4.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
+			<onclick>ActivateWindow(2115)</onclick>
+			<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
+			<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].3.Label))</visible>
+		</control>
+		<control type="button" id="2$PARAM[id2]05">
+			<width>750</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>- $LOCALIZE[89500] [B]5[/B]</label>
+			<label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].5.Label)][/COLOR]</label2>
+			<textcolor>grey</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus>MenuItemFO.png</texturefocus>
+			<texturenofocus>MenuItemNF.png</texturenofocus>
+			<onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].5,Home)</onclick>
+			<onclick condition="Skin.String(SubMenu$PARAM[id2].5.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
+			<onclick>ActivateWindow(2115)</onclick>
+			<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
+			<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].4.Label))</visible>
+		</control>
+		<control type="button" id="2$PARAM[id2]06">
+			<width>750</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>- $LOCALIZE[89500] [B]6[/B]</label>
+			<label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].6.Label)][/COLOR]</label2>
+			<textcolor>grey</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus>MenuItemFO.png</texturefocus>
+			<texturenofocus>MenuItemNF.png</texturenofocus>
+			<onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].6,Home)</onclick>
+			<onclick condition="Skin.String(SubMenu$PARAM[id2].6.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
+			<onclick>ActivateWindow(2115)</onclick>
+			<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
+			<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].5.Label))</visible>
+		</control>
+		<control type="button" id="2$PARAM[id2]07">
+			<width>750</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>- $LOCALIZE[89500] [B]7[/B]</label>
+			<label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].7.Label)][/COLOR]</label2>
+			<textcolor>grey</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus>MenuItemFO.png</texturefocus>
+			<texturenofocus>MenuItemNF.png</texturenofocus>
+			<onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].7,Home)</onclick>
+			<onclick condition="Skin.String(SubMenu$PARAM[id2].7.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
+			<onclick>ActivateWindow(2115)</onclick>
+			<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
+			<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].6.Label))</visible>
+		</control>
+		<control type="button" id="2$PARAM[id2]08">
+			<width>750</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>- $LOCALIZE[89500] [B]8[/B]</label>
+			<label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].8.Label)][/COLOR]</label2>
+			<textcolor>grey</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus>MenuItemFO.png</texturefocus>
+			<texturenofocus>MenuItemNF.png</texturenofocus>
+			<onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].8,Home)</onclick>
+			<onclick condition="Skin.String(SubMenu$PARAM[id2].8.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
+			<onclick>ActivateWindow(2115)</onclick>
+			<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
+			<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].7.Label))</visible>
+		</control>
+		<control type="button" id="2$PARAM[id2]09">
+			<width>750</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>- $LOCALIZE[89500] [B]9[/B]</label>
+			<label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].9.Label)][/COLOR]</label2>
+			<textcolor>grey</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus>MenuItemFO.png</texturefocus>
+			<texturenofocus>MenuItemNF.png</texturenofocus>
+			<onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].9,Home)</onclick>
+			<onclick condition="Skin.String(SubMenu$PARAM[id2].9.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
+			<onclick>ActivateWindow(2115)</onclick>
+			<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
+			<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].8.Label))</visible>
+		</control>
+		<control type="button" id="2$PARAM[id2]10">
+			<width>750</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>- $LOCALIZE[89500] [B]10[/B]</label>
+			<label2>[COLOR=selected]$INFO[Skin.String(SubMenu$PARAM[id2].10.Label)][/COLOR]</label2>
+			<textcolor>grey</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus>MenuItemFO.png</texturefocus>
+			<texturenofocus>MenuItemNF.png</texturenofocus>
+			<onclick>SetProperty(UsrSelectBtn,SubMenu$PARAM[id2].10,Home)</onclick>
+			<onclick condition="Skin.String(SubMenu$PARAM[id2].10.Label)">SetProperty(UsrSelectBtnClear,Clear,Home)</onclick>
+			<onclick>ActivateWindow(2115)</onclick>
+			<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].Label))</visible>
+			<visible>!String.IsEmpty(Skin.String(SubMenu$PARAM[id2].9.Label))</visible>
+		</control>
+	</include>
+	<!-- SubMenu Type Choices -->
+	<include name="SubMenuTypeChoices">
+		<content>
+			<item>
+				<description>Clear Setting</description>
+				<label>$LOCALIZE[89013]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>String.IsEqual(Window(Home).Property(UsrSelectBtnClear),Clear)</visible>
+			</item>
+			<item>
+				<description>Submenu set 01</description>
+				<label>$VAR[UsersSubMenu01Name]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu01)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu01.Label))</visible>
+			</item>
+			<item>
+				<description>Submenu set 02</description>
+				<label>$VAR[UsersSubMenu02Name]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu02)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu02.Label))</visible>
+			</item>
+			<item>
+				<description>Submenu set 03</description>
+				<label>$VAR[UsersSubMenu03Name]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu03)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu03.Label))</visible>
+			</item>
+			<item>
+				<description>Submenu set 04</description>
+				<label>$VAR[UsersSubMenu04Name]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu04)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu04.Label))</visible>
+			</item>
+			<item>
+				<description>Submenu set 05</description>
+				<label>$VAR[UsersSubMenu05Name]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu05)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu05.Label))</visible>
+			</item>
+			<item>
+				<description>Submenu set 06</description>
+				<label>$VAR[UsersSubMenu06Name]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu06)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu06.Label))</visible>
+			</item>
+			<item>
+				<description>Submenu set 07</description>
+				<label>$VAR[UsersSubMenu07Name]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu07)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu07.Label))</visible>
+			</item>
+			<item>
+				<description>Submenu set 08</description>
+				<label>$VAR[UsersSubMenu08Name]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu08)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu08.Label))</visible>
+			</item>
+			<item>
+				<description>Submenu set 09</description>
+				<label>$VAR[UsersSubMenu09Name]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu09)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu09.Label))</visible>
+			</item>
+			<item>
+				<description>Submenu set 10</description>
+				<label>$VAR[UsersSubMenu10Name]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu10)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu10.Label))</visible>
+			</item>
+			<item>
+				<description>Submenu set 11</description>
+				<label>$VAR[UsersSubMenu11Name]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu11)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu11.Label))</visible>
+			</item>
+			<item>
+				<description>Submenu set 12</description>
+				<label>$VAR[UsersSubMenu12Name]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu12)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu12.Label))</visible>
+			</item>
+			<item>
+				<description>Submenu set 13</description>
+				<label>$VAR[UsersSubMenu13Name]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu13)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu13.Label))</visible>
+			</item>
+			<item>
+				<description>Submenu set 14</description>
+				<label>$VAR[UsersSubMenu14Name]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu14)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu14.Label))</visible>
+			</item>
+			<item>
+				<description>Submenu set 15</description>
+				<label>$VAR[UsersSubMenu15Name]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu15)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu16.Label))</visible>
+			</item>
+			<item>
+				<description>Submenu set 16</description>
+				<label>$VAR[UsersSubMenu16Name]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu16)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu16.Label))</visible>
+			</item>
+			<item>
+				<description>Submenu set 17</description>
+				<label>$VAR[UsersSubMenu17Name]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu17)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu17.Label))</visible>
+			</item>
+			<item>
+				<description>Submenu set 18</description>
+				<label>$VAR[UsersSubMenu18Name]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu18)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu18.Label))</visible>
+			</item>
+			<item>
+				<description>Submenu set 19</description>
+				<label>$VAR[UsersSubMenu19Name]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu19)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu19.Label))</visible>
+			</item>
+			<item>
+				<description>Submenu set 20</description>
+				<label>$VAR[UsersSubMenu20Name]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu20)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Skin.String(SubMenu20.Label))</visible>
+			</item>
+			<item>
+				<description>Submenu Favourites</description>
+				<label>$LOCALIZE[1036]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu21)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>System.HasAddon(script.favourites)</visible>
+			</item>
+		</content>
+	</include>
+	<!-- Default SubMenu -->
+	<include name="DefaultSubMenu">
+		<!-- Sub Pictures -->
+		<onload>Skin.SetString(SubMenu01.Label,$LOCALIZE[31951])</onload>
+		<onload>Skin.SetString(SubMenu01.1.Label,$LOCALIZE[24001])</onload>
+		<onload>Skin.SetString(SubMenu01.1.Path,ActivateWindow(pictures,addons://sources/image/,return))</onload>
+		<!-- Sub Radio -->
+		<onload>Skin.SetString(SubMenu02.Label,$LOCALIZE[31960])</onload>
+		<onload>Skin.SetString(SubMenu02.1.Label,$LOCALIZE[19019])</onload>
+		<onload>Skin.SetString(SubMenu02.1.Path,ActivateWindow(radiochannels))</onload>
+		<onload>Skin.SetString(SubMenu02.2.Label,$LOCALIZE[19069])</onload>
+		<onload>Skin.SetString(SubMenu02.2.Path,ActivateWindow(radioguide))</onload>
+		<onload>Skin.SetString(SubMenu02.3.Label,$LOCALIZE[19017])</onload>
+		<onload>Skin.SetString(SubMenu02.3.Path,ActivateWindow(radiorecordings))</onload>
+		<onload>Skin.SetString(SubMenu02.4.Label,$LOCALIZE[19138])</onload>
+		<onload>Skin.SetString(SubMenu02.4.Path,ActivateWindow(radiotimerrules))</onload>
+		<onload>Skin.SetString(SubMenu02.5.Label,$LOCALIZE[19040])</onload>
+		<onload>Skin.SetString(SubMenu02.5.Path,ActivateWindow(radiotimers))</onload>
+		<onload>Skin.SetString(SubMenu02.6.Label,$LOCALIZE[137])</onload>
+		<onload>Skin.SetString(SubMenu02.6.Path,ActivateWindow(radiosearch))</onload>
+		<!-- Sub TV -->
+		<onload>Skin.SetString(SubMenu03.Label,$LOCALIZE[31952])</onload>
+		<onload>Skin.SetString(SubMenu03.1.Label,$LOCALIZE[19019])</onload>
+		<onload>Skin.SetString(SubMenu03.1.Path,ActivateWindow(tvchannels))</onload>
+		<onload>Skin.SetString(SubMenu03.2.Label,$LOCALIZE[19069])</onload>
+		<onload>Skin.SetString(SubMenu03.2.Path,ActivateWindow(tvguide))</onload>
+		<onload>Skin.SetString(SubMenu03.3.Label,$LOCALIZE[19017])</onload>
+		<onload>Skin.SetString(SubMenu03.3.Path,ActivateWindow(tvrecordings))</onload>
+		<onload>Skin.SetString(SubMenu03.4.Label,$LOCALIZE[19138])</onload>
+		<onload>Skin.SetString(SubMenu03.4.Path,ActivateWindow(tvtimerrules))</onload>
+		<onload>Skin.SetString(SubMenu03.5.Label,$LOCALIZE[19040])</onload>
+		<onload>Skin.SetString(SubMenu03.5.Path,ActivateWindow(tvtimers))</onload>
+		<onload>Skin.SetString(SubMenu03.6.Label,$LOCALIZE[137])</onload>
+		<onload>Skin.SetString(SubMenu03.6.Path,ActivateWindow(tvsearch))</onload>
+		<!-- Sub Videos -->
+		<onload>Skin.SetString(SubMenu04.Label,$LOCALIZE[31953])</onload>
+		<onload>Skin.SetString(SubMenu04.1.Label,$LOCALIZE[744])</onload>
+		<onload>Skin.SetString(SubMenu04.1.Path,ActivateWindow(videos,sources://video/,return))</onload>
+		<onload>Skin.SetString(SubMenu04.2.Label,$LOCALIZE[14022])</onload>
+		<onload>Skin.SetString(SubMenu04.2.Path,ActivateWindow(videos,library://video/,return))</onload>
+		<onload>Skin.SetString(SubMenu04.3.Label,$LOCALIZE[24001])</onload>
+		<onload>Skin.SetString(SubMenu04.3.Path,ActivateWindow(videos,addons://sources/video/,return))</onload>
+		<!-- Sub Movies -->
+		<onload>Skin.SetString(SubMenu05.Label,$LOCALIZE[31954])</onload>
+		<onload>Skin.SetString(SubMenu05.1.Label,$LOCALIZE[31328])</onload>
+		<onload>Skin.SetString(SubMenu05.1.Path,ActivateWindow(videos,videodb://recentlyaddedmovies/,return))</onload>
+		<onload>Skin.SetString(SubMenu05.2.Label,$LOCALIZE[20434])</onload>
+		<onload>Skin.SetString(SubMenu05.2.Path,ActivateWindow(videos,videodb://movies/sets/,return))</onload>
+		<onload>Skin.SetString(SubMenu05.3.Label,$LOCALIZE[369])</onload>
+		<onload>Skin.SetString(SubMenu05.3.Path,ActivateWindow(videos,videodb://movies/titles/,return))</onload>
+		<onload>Skin.SetString(SubMenu05.4.Label,$LOCALIZE[135])</onload>
+		<onload>Skin.SetString(SubMenu05.4.Path,ActivateWindow(videos,videodb://movies/genres/,return))</onload>
+		<onload>Skin.SetString(SubMenu05.5.Label,$LOCALIZE[652])</onload>
+		<onload>Skin.SetString(SubMenu05.5.Path,ActivateWindow(videos,videodb://movies/years/,return))</onload>
+		<onload>Skin.SetString(SubMenu05.6.Label,$LOCALIZE[344])</onload>
+		<onload>Skin.SetString(SubMenu05.6.Path,ActivateWindow(videos,videodb://movies/actors/,return))</onload>
+		<!-- Sub TVShows -->
+		<onload>Skin.SetString(SubMenu06.Label,$LOCALIZE[31955])</onload>
+		<onload>Skin.SetString(SubMenu06.1.Label,$LOCALIZE[31328])</onload>
+		<onload>Skin.SetString(SubMenu06.1.Path,ActivateWindow(videos,videodb://recentlyaddedepisodes/,return))</onload>
+		<onload>Skin.SetString(SubMenu06.2.Label,$LOCALIZE[369])</onload>
+		<onload>Skin.SetString(SubMenu06.2.Path,ActivateWindow(videos,videodb://tvshows/titles/,return))</onload>
+		<onload>Skin.SetString(SubMenu06.3.Label,$LOCALIZE[135])</onload>
+		<onload>Skin.SetString(SubMenu06.3.Path,ActivateWindow(videos,videodb://tvshows/genres/,return))</onload>
+		<onload>Skin.SetString(SubMenu06.4.Label,$LOCALIZE[652])</onload>
+		<onload>Skin.SetString(SubMenu06.4.Path,ActivateWindow(videos,videodb://tvshows/years/,return))</onload>
+		<onload>Skin.SetString(SubMenu06.5.Label,$LOCALIZE[344])</onload>
+		<onload>Skin.SetString(SubMenu06.5.Path,ActivateWindow(videos,videodb://tvshows/actors/,return))</onload>
+		<!-- Sub MusicVideo -->
+		<onload>Skin.SetString(SubMenu07.Label,$LOCALIZE[31961])</onload>
+		<onload>Skin.SetString(SubMenu07.1.Label,$LOCALIZE[31328])</onload>
+		<onload>Skin.SetString(SubMenu07.1.Path,ActivateWindow(videos,videodb://recentlyaddedmusicvideos/,return))</onload>
+		<onload>Skin.SetString(SubMenu07.2.Label,$LOCALIZE[369])</onload>
+		<onload>Skin.SetString(SubMenu07.2.Path,ActivateWindow(videos,videodb://musicvideos/titles/,return))</onload>
+		<onload>Skin.SetString(SubMenu07.3.Label,$LOCALIZE[135])</onload>
+		<onload>Skin.SetString(SubMenu07.3.Path,ActivateWindow(videos,videodb://musicvideos/genres/,return))</onload>
+		<onload>Skin.SetString(SubMenu07.4.Label,$LOCALIZE[652])</onload>
+		<onload>Skin.SetString(SubMenu07.4.Path,ActivateWindow(videos,videodb://musicvideos/years/,return))</onload>
+		<onload>Skin.SetString(SubMenu07.5.Label,$LOCALIZE[133])</onload>
+		<onload>Skin.SetString(SubMenu07.5.Path,ActivateWindow(videos,videodb://musicvideos/artists/,return))</onload>
+		<onload>Skin.SetString(SubMenu07.6.Label,$LOCALIZE[132])</onload>
+		<onload>Skin.SetString(SubMenu07.6.Path,ActivateWindow(videos,videodb://musicvideos/albums/,return))</onload>
+		<!-- Sub Musics -->
+		<onload>Skin.SetString(SubMenu08.Label,$LOCALIZE[31956])</onload>
+		<onload>Skin.SetString(SubMenu08.1.Label,$LOCALIZE[133])</onload>
+		<onload>Skin.SetString(SubMenu08.1.Path,ActivateWindow(music,musicdb://artists/,return))</onload>
+		<onload>Skin.SetString(SubMenu08.2.Label,$LOCALIZE[132])</onload>
+		<onload>Skin.SetString(SubMenu08.2.Path,ActivateWindow(music,musicdb://albums/,return))</onload>
+		<onload>Skin.SetString(SubMenu08.3.Label,$LOCALIZE[134])</onload>
+		<onload>Skin.SetString(SubMenu08.3.Path,ActivateWindow(music,musicdb://songs/,return))</onload>
+		<onload>Skin.SetString(SubMenu08.4.Label,$LOCALIZE[744])</onload>
+		<onload>Skin.SetString(SubMenu08.4.Path,ActivateWindow(music,sources://music/,return))</onload>
+		<onload>Skin.SetString(SubMenu08.5.Label,$LOCALIZE[14022])</onload>
+		<onload>Skin.SetString(SubMenu08.5.Path,ActivateWindow(music,musicdb://,return))</onload>
+		<onload>Skin.SetString(SubMenu08.6.Label,$LOCALIZE[24001])</onload>
+		<onload>Skin.SetString(SubMenu08.6.Path,ActivateWindow(music,addons://sources/audio/,return))</onload>
+		<!-- Sub PlayDisc -->
+		<onload>Skin.SetString(SubMenu09.Label,$LOCALIZE[31958])</onload>
+		<onload>Skin.SetString(SubMenu09.1.Label,$LOCALIZE[13391])</onload>
+		<onload>Skin.SetString(SubMenu09.1.Path,EjectTray)</onload>
+		<!-- Sub Settings -->
+		<onload>Skin.SetString(SubMenu10.Label,$LOCALIZE[31959])</onload>
+		<onload>Skin.SetString(SubMenu10.1.Label,$LOCALIZE[5])</onload>
+		<onload>Skin.SetString(SubMenu10.1.Path,ActivateWindow(settings))</onload>
+		<onload>Skin.SetString(SubMenu10.2.Label,$LOCALIZE[7])</onload>
+		<onload>Skin.SetString(SubMenu10.2.Path,ActivateWindow(filemanager))</onload>
+		<onload>Skin.SetString(SubMenu10.3.Label,$LOCALIZE[13200])</onload>
+		<onload>Skin.SetString(SubMenu10.3.Path,ActivateWindow(profiles))</onload>
+		<onload>Skin.SetString(SubMenu10.4.Label,$LOCALIZE[130])</onload>
+		<onload>Skin.SetString(SubMenu10.4.Path,ActivateWindow(systeminfo))</onload>
+		<onload>Skin.SetString(SubMenu10.5.Label,$LOCALIZE[14111])</onload>
+		<onload>Skin.SetString(SubMenu10.5.Path,ActivateWindow(eventlog,events://,return))</onload>
+	</include>
+	<!-- Rest SubMenu Items -->
+	<include name="ResetSubMenuItems">
+		<!-- Sub Pictures -->
+		<onclick>Skin.Reset(SubMenu01.Label)</onclick>
+		<include content="ResetSubMenuItem">
+			<param name="id2" value="01" />
+		</include>
+		<onclick>Skin.SetString(SubMenu01.Label,$LOCALIZE[31951])</onclick>
+		<onclick>Skin.SetString(SubMenu01.1.Label,$LOCALIZE[24001])</onclick>
+		<onclick>Skin.SetString(SubMenu01.1.Path,ActivateWindow(pictures,addons://sources/image/,return))</onclick>
+		<!-- Sub Radio -->
+		<onclick>Skin.Reset(SubMenu02.Label)</onclick>
+		<include content="ResetSubMenuItem">
+			<param name="id2" value="02" />
+		</include>
+		<onclick>Skin.SetString(SubMenu02.Label,$LOCALIZE[31960])</onclick>
+		<onclick>Skin.SetString(SubMenu02.1.Label,$LOCALIZE[19019])</onclick>
+		<onclick>Skin.SetString(SubMenu02.1.Path,ActivateWindow(radiochannels))</onclick>
+		<onclick>Skin.SetString(SubMenu02.2.Label,$LOCALIZE[19069])</onclick>
+		<onclick>Skin.SetString(SubMenu02.2.Path,ActivateWindow(radioguide))</onclick>
+		<onclick>Skin.SetString(SubMenu02.3.Label,$LOCALIZE[19017])</onclick>
+		<onclick>Skin.SetString(SubMenu02.3.Path,ActivateWindow(radiorecordings))</onclick>
+		<onclick>Skin.SetString(SubMenu02.4.Label,$LOCALIZE[19138])</onclick>
+		<onclick>Skin.SetString(SubMenu02.4.Path,ActivateWindow(radiotimerrules))</onclick>
+		<onclick>Skin.SetString(SubMenu02.5.Label,$LOCALIZE[19040])</onclick>
+		<onclick>Skin.SetString(SubMenu02.5.Path,ActivateWindow(radiotimers))</onclick>
+		<onclick>Skin.SetString(SubMenu02.6.Label,$LOCALIZE[137])</onclick>
+		<onclick>Skin.SetString(SubMenu02.6.Path,ActivateWindow(radiosearch))</onclick>
+		<!-- Sub TV -->
+		<onclick>Skin.Reset(SubMenu03.Label)</onclick>
+		<include content="ResetSubMenuItem">
+			<param name="id2" value="03" />
+		</include>
+		<onclick>Skin.SetString(SubMenu03.Label,$LOCALIZE[31952])</onclick>
+		<onclick>Skin.SetString(SubMenu03.1.Label,$LOCALIZE[19019])</onclick>
+		<onclick>Skin.SetString(SubMenu03.1.Path,ActivateWindow(tvchannels))</onclick>
+		<onclick>Skin.SetString(SubMenu03.2.Label,$LOCALIZE[19069])</onclick>
+		<onclick>Skin.SetString(SubMenu03.2.Path,ActivateWindow(tvguide))</onclick>
+		<onclick>Skin.SetString(SubMenu03.3.Label,$LOCALIZE[19017])</onclick>
+		<onclick>Skin.SetString(SubMenu03.3.Path,ActivateWindow(tvrecordings))</onclick>
+		<onclick>Skin.SetString(SubMenu03.4.Label,$LOCALIZE[19138])</onclick>
+		<onclick>Skin.SetString(SubMenu03.4.Path,ActivateWindow(tvtimerrules))</onclick>
+		<onclick>Skin.SetString(SubMenu03.5.Label,$LOCALIZE[19040])</onclick>
+		<onclick>Skin.SetString(SubMenu03.5.Path,ActivateWindow(tvtimers))</onclick>
+		<onclick>Skin.SetString(SubMenu03.6.Label,$LOCALIZE[137])</onclick>
+		<onclick>Skin.SetString(SubMenu03.6.Path,ActivateWindow(tvsearch))</onclick>
+		<!-- Sub Videos -->
+		<onclick>Skin.Reset(SubMenu04.Label)</onclick>
+		<include content="ResetSubMenuItem">
+			<param name="id2" value="04" />
+		</include>
+		<onclick>Skin.SetString(SubMenu04.Label,$LOCALIZE[31953])</onclick>
+		<onclick>Skin.SetString(SubMenu04.1.Label,$LOCALIZE[744])</onclick>
+		<onclick>Skin.SetString(SubMenu04.1.Path,ActivateWindow(videos,sources://video/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu04.2.Label,$LOCALIZE[14022])</onclick>
+		<onclick>Skin.SetString(SubMenu04.2.Path,ActivateWindow(videos,library://video/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu04.3.Label,$LOCALIZE[24001])</onclick>
+		<onclick>Skin.SetString(SubMenu04.3.Path,ActivateWindow(videos,addons://sources/video/,return))</onclick>
+		<!-- Sub Movies -->
+		<onclick>Skin.Reset(SubMenu05.Label)</onclick>
+		<include content="ResetSubMenuItem">
+			<param name="id2" value="05" />
+		</include>
+		<onclick>Skin.SetString(SubMenu05.Label,$LOCALIZE[31954])</onclick>
+		<onclick>Skin.SetString(SubMenu05.1.Label,$LOCALIZE[31328])</onclick>
+		<onclick>Skin.SetString(SubMenu05.1.Path,ActivateWindow(videos,videodb://recentlyaddedmovies/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu05.2.Label,$LOCALIZE[20434])</onclick>
+		<onclick>Skin.SetString(SubMenu05.2.Path,ActivateWindow(videos,videodb://movies/sets/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu05.3.Label,$LOCALIZE[369])</onclick>
+		<onclick>Skin.SetString(SubMenu05.3.Path,ActivateWindow(videos,videodb://movies/titles/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu05.4.Label,$LOCALIZE[135])</onclick>
+		<onclick>Skin.SetString(SubMenu05.4.Path,ActivateWindow(videos,videodb://movies/genres/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu05.5.Label,$LOCALIZE[652])</onclick>
+		<onclick>Skin.SetString(SubMenu05.5.Path,ActivateWindow(videos,videodb://movies/years/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu05.6.Label,$LOCALIZE[344])</onclick>
+		<onclick>Skin.SetString(SubMenu05.6.Path,ActivateWindow(videos,videodb://movies/actors/,return))</onclick>
+		<!-- Sub TVShows -->
+		<onclick>Skin.Reset(SubMenu06.Label)</onclick>
+		<include content="ResetSubMenuItem">
+			<param name="id2" value="06" />
+		</include>
+		<onclick>Skin.SetString(SubMenu06.Label,$LOCALIZE[31955])</onclick>
+		<onclick>Skin.SetString(SubMenu06.1.Label,$LOCALIZE[31328])</onclick>
+		<onclick>Skin.SetString(SubMenu06.1.Path,ActivateWindow(videos,videodb://recentlyaddedepisodes/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu06.2.Label,$LOCALIZE[369])</onclick>
+		<onclick>Skin.SetString(SubMenu06.2.Path,ActivateWindow(videos,videodb://tvshows/titles/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu06.3.Label,$LOCALIZE[135])</onclick>
+		<onclick>Skin.SetString(SubMenu06.3.Path,ActivateWindow(videos,videodb://tvshows/genres/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu06.4.Label,$LOCALIZE[652])</onclick>
+		<onclick>Skin.SetString(SubMenu06.4.Path,ActivateWindow(videos,videodb://tvshows/years/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu06.5.Label,$LOCALIZE[344])</onclick>
+		<onclick>Skin.SetString(SubMenu06.5.Path,ActivateWindow(videos,videodb://tvshows/actors/,return))</onclick>
+		<!-- Sub MusicVideo -->
+		<onclick>Skin.Reset(SubMenu07.Label)</onclick>
+		<include content="ResetSubMenuItem">
+			<param name="id2" value="07" />
+		</include>
+		<onclick>Skin.SetString(SubMenu07.Label,$LOCALIZE[31961])</onclick>
+		<onclick>Skin.SetString(SubMenu07.1.Label,$LOCALIZE[31328])</onclick>
+		<onclick>Skin.SetString(SubMenu07.1.Path,ActivateWindow(videos,videodb://recentlyaddedmusicvideos/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu07.2.Label,$LOCALIZE[369])</onclick>
+		<onclick>Skin.SetString(SubMenu07.2.Path,ActivateWindow(videos,videodb://musicvideos/titles/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu07.3.Label,$LOCALIZE[135])</onclick>
+		<onclick>Skin.SetString(SubMenu07.3.Path,ActivateWindow(videos,videodb://musicvideos/genres/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu07.4.Label,$LOCALIZE[652])</onclick>
+		<onclick>Skin.SetString(SubMenu07.4.Path,ActivateWindow(videos,videodb://musicvideos/years/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu07.5.Label,$LOCALIZE[133])</onclick>
+		<onclick>Skin.SetString(SubMenu07.5.Path,ActivateWindow(videos,videodb://musicvideos/artists/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu07.6.Label,$LOCALIZE[132])</onclick>
+		<onclick>Skin.SetString(SubMenu07.6.Path,ActivateWindow(videos,videodb://musicvideos/albums/,return))</onclick>
+		<!-- Sub Musics -->
+		<onclick>Skin.Reset(SubMenu08.Label)</onclick>
+		<include content="ResetSubMenuItem">
+			<param name="id2" value="08" />
+		</include>
+		<onclick>Skin.SetString(SubMenu08.Label,$LOCALIZE[31956])</onclick>
+		<onclick>Skin.SetString(SubMenu08.1.Label,$LOCALIZE[133])</onclick>
+		<onclick>Skin.SetString(SubMenu08.1.Path,ActivateWindow(music,musicdb://artists/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu08.2.Label,$LOCALIZE[132])</onclick>
+		<onclick>Skin.SetString(SubMenu08.2.Path,ActivateWindow(music,musicdb://albums/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu08.3.Label,$LOCALIZE[134])</onclick>
+		<onclick>Skin.SetString(SubMenu08.3.Path,ActivateWindow(music,musicdb://songs/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu08.4.Label,$LOCALIZE[744])</onclick>
+		<onclick>Skin.SetString(SubMenu08.4.Path,ActivateWindow(music,sources://music/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu08.5.Label,$LOCALIZE[14022])</onclick>
+		<onclick>Skin.SetString(SubMenu08.5.Path,ActivateWindow(music,musicdb://,return))</onclick>
+		<onclick>Skin.SetString(SubMenu08.6.Label,$LOCALIZE[24001])</onclick>
+		<onclick>Skin.SetString(SubMenu08.6.Path,ActivateWindow(music,addons://sources/audio/,return))</onclick>
+		<!-- Sub PlayDisc -->
+		<onclick>Skin.Reset(SubMenu09.Label)</onclick>
+		<include content="ResetSubMenuItem">
+			<param name="id2" value="09" />
+		</include>
+		<onclick>Skin.SetString(SubMenu09.Label,$LOCALIZE[31958])</onclick>
+		<onclick>Skin.SetString(SubMenu09.1.Label,$LOCALIZE[13391])</onclick>
+		<onclick>Skin.SetString(SubMenu09.1.Path,EjectTray)</onclick>
+		<!-- Sub Settings -->
+		<onclick>Skin.Reset(SubMenu10.Label)</onclick>
+		<include content="ResetSubMenuItem">
+			<param name="id2" value="10" />
+		</include>
+		<onclick>Skin.SetString(SubMenu10.Label,$LOCALIZE[31959])</onclick>
+		<onclick>Skin.SetString(SubMenu10.1.Label,$LOCALIZE[5])</onclick>
+		<onclick>Skin.SetString(SubMenu10.1.Path,ActivateWindow(settings))</onclick>
+		<onclick>Skin.SetString(SubMenu10.2.Label,$LOCALIZE[7])</onclick>
+		<onclick>Skin.SetString(SubMenu10.2.Path,ActivateWindow(filemanager))</onclick>
+		<onclick>Skin.SetString(SubMenu10.3.Label,$LOCALIZE[13200])</onclick>
+		<onclick>Skin.SetString(SubMenu10.3.Path,ActivateWindow(profiles))</onclick>
+		<onclick>Skin.SetString(SubMenu10.4.Label,$LOCALIZE[130])</onclick>
+		<onclick>Skin.SetString(SubMenu10.4.Path,ActivateWindow(systeminfo))</onclick>
+		<onclick>Skin.SetString(SubMenu10.5.Label,$LOCALIZE[14111])</onclick>
+		<onclick>Skin.SetString(SubMenu10.5.Path,ActivateWindow(eventlog,events://,return))</onclick>
+		<!-- SubMenu 11 -->
+		<onclick>Skin.Reset(SubMenu11.Label)</onclick>
+		<include content="ResetSubMenuItem">
+			<param name="id2" value="11" />
+		</include>
+		<!-- SubMenu 12 -->
+		<onclick>Skin.Reset(SubMenu12.Label)</onclick>
+		<include content="ResetSubMenuItem">
+			<param name="id2" value="12" />
+		</include>
+		<!-- SubMenu 13 -->
+		<onclick>Skin.Reset(SubMenu13.Label)</onclick>
+		<include content="ResetSubMenuItem">
+			<param name="id2" value="13" />
+		</include>
+		<!-- SubMenu 14 -->
+		<onclick>Skin.Reset(SubMenu14.Label)</onclick>
+		<include content="ResetSubMenuItem">
+			<param name="id2" value="14" />
+		</include>
+		<!-- SubMenu 15 -->
+		<onclick>Skin.Reset(SubMenu15.Label)</onclick>
+		<include content="ResetSubMenuItem">
+			<param name="id2" value="15" />
+		</include>
+		<!-- SubMenu 16 -->
+		<onclick>Skin.Reset(SubMenu16.Label)</onclick>
+		<include content="ResetSubMenuItem">
+			<param name="id2" value="16" />
+		</include>
+		<!-- SubMenu 17 -->
+		<onclick>Skin.Reset(SubMenu17.Label)</onclick>
+		<include content="ResetSubMenuItem">
+			<param name="id2" value="17" />
+		</include>
+		<!-- SubMenu 18 -->
+		<onclick>Skin.Reset(SubMenu18.Label)</onclick>
+		<include content="ResetSubMenuItem">
+			<param name="id2" value="18" />
+		</include>
+		<!-- SubMenu 19 -->
+		<onclick>Skin.Reset(SubMenu19.Label)</onclick>
+		<include content="ResetSubMenuItem">
+			<param name="id2" value="19" />
+		</include>
+		<!-- SubMenu 20 -->
+		<onclick>Skin.Reset(SubMenu20.Label)</onclick>
+		<include content="ResetSubMenuItem">
+			<param name="id2" value="20" />
+		</include>
+	</include>
 </includes>

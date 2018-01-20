@@ -12,11 +12,11 @@
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="IncludesPVR.xml" />
 	<include file="IncludesBackgroundBuilding.xml" />
-    <include file="IncludesHomeAddons.xml" />
-    <include file="IncludesHomeMainMenus.xml" />
-    <include file="IncludesHomeSubMenus.xml" />
-    <include file="IncludesHomeWidgets.xml" />
-    <include file="IncludesMenuItemChoices.xml" />
+	<include file="IncludesHomeAddons.xml" />
+	<include file="IncludesHomeMainMenus.xml" />
+	<include file="IncludesHomeSubMenus.xml" />
+	<include file="IncludesHomeWidgets.xml" />
+	<include file="IncludesMenuItemChoices.xml" />
 	<include file="DharmaView.xml" />
 	<include file="IncludesVariables.xml" />
 	<!-- CONSTANTS -->
@@ -69,26 +69,26 @@
 		<value>flagging/lists/3D.png</value>
 	</variable>
 	<variable name="IconWallThumb">
-	    <value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.arctic.zephyr/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.arctic.zephyr/,.png]</value>
-        <value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.coloured/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.coloured/,.jpg]</value>
-        <value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.filmstrip/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.filmstrip/,.jpg]</value>
-        <value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.grey/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.grey/,.jpg]</value>
-        <value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.poster/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.poster/,.jpg]</value>
-        <value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.white/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</value>
+		<value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.arctic.zephyr/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.arctic.zephyr/,.png]</value>
+		<value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.coloured/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.coloured/,.jpg]</value>
+		<value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.filmstrip/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.filmstrip/,.jpg]</value>
+		<value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.grey/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.grey/,.jpg]</value>
+		<value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.poster/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.poster/,.jpg]</value>
+		<value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.white/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</value>
 		<value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.transparent/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.transparent/,.png]</value>
 		<value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.xzener-flat/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.xzener-flat/,.png]</value>
-		<value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.xzener-reflection/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.xzener-reflection/,.png]</value>      
+		<value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.xzener-reflection/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.xzener-reflection/,.png]</value>
 		<value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.users/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.users/,.png]</value>
-        <value condition="Container.Content(genres) + !Window.IsActive(videos) + String.IsEqual(Skin.String(MusicGenreIcons.path),resource://resource.images.musicgenreicons.grey/)">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.grey/,.jpg]</value>
-        <value condition="Container.Content(genres) + !Window.IsActive(videos) + String.IsEqual(Skin.String(MusicGenreIcons.path),resource://resource.images.musicgenreicons.poster/)">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.poster/,.jpg]</value>
-        <value condition="Container.Content(genres) + !Window.IsActive(videos) + String.IsEqual(Skin.String(MusicGenreIcons.path),resource://resource.images.musicgenreicons.text/)">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.text/,.jpg]</value>        
-		<value condition="Container.Content(genres) + !Window.IsActive(videos) + String.IsEqual(Skin.String(MusicGenreIcons.path),resource://resource.images.musicgenreicons.users/)">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.users/,.png]</value>        
-        <value condition="Container.Content(studios) + String.IsEqual(Skin.String(StudiosImages.path),resource://resource.images.studios.white/)">$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]</value>
-		<value condition="Container.Content(studios) + String.IsEqual(Skin.String(StudiosImages.path),resource://resource.images.studios.coloured/)">$INFO[ListItem.Label,resource://resource.images.studios.coloured/,.png]</value>               
-		<value condition="Container.Content(studios) + String.IsEqual(Skin.String(StudiosImages.path),resource://resource.images.studios.users/)">$INFO[ListItem.Label,resource://resource.images.studios.users/,.png]</value>		
-        <value condition="Container.Content(countries) + String.IsEqual(Skin.String(LanguageFlags.path),resource://resource.images.languageflags.colour/)">$INFO[ListItem.Label,resource://resource.images.languageflags.colour/,.png]</value>
+		<value condition="Container.Content(genres) + !Window.IsActive(videos) + String.IsEqual(Skin.String(MusicGenreIcons.path),resource://resource.images.musicgenreicons.grey/)">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.grey/,.jpg]</value>
+		<value condition="Container.Content(genres) + !Window.IsActive(videos) + String.IsEqual(Skin.String(MusicGenreIcons.path),resource://resource.images.musicgenreicons.poster/)">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.poster/,.jpg]</value>
+		<value condition="Container.Content(genres) + !Window.IsActive(videos) + String.IsEqual(Skin.String(MusicGenreIcons.path),resource://resource.images.musicgenreicons.text/)">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.text/,.jpg]</value>
+		<value condition="Container.Content(genres) + !Window.IsActive(videos) + String.IsEqual(Skin.String(MusicGenreIcons.path),resource://resource.images.musicgenreicons.users/)">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.users/,.png]</value>
+		<value condition="Container.Content(studios) + String.IsEqual(Skin.String(StudiosImages.path),resource://resource.images.studios.white/)">$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]</value>
+		<value condition="Container.Content(studios) + String.IsEqual(Skin.String(StudiosImages.path),resource://resource.images.studios.coloured/)">$INFO[ListItem.Label,resource://resource.images.studios.coloured/,.png]</value>
+		<value condition="Container.Content(studios) + String.IsEqual(Skin.String(StudiosImages.path),resource://resource.images.studios.users/)">$INFO[ListItem.Label,resource://resource.images.studios.users/,.png]</value>
+		<value condition="Container.Content(countries) + String.IsEqual(Skin.String(LanguageFlags.path),resource://resource.images.languageflags.colour/)">$INFO[ListItem.Label,resource://resource.images.languageflags.colour/,.png]</value>
 		<value condition="Container.Content(countries) + String.IsEqual(Skin.String(LanguageFlags.path),resource://resource.images.languageflags.users/)">$INFO[ListItem.Label,resource://resource.images.languageflags.users/,.png]</value>
-        <value condition="!String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
+		<value condition="!String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
 	<variable name="BannerThumb">
@@ -99,25 +99,25 @@
 		<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
-    <variable name="PosterThumb3">
-	    <value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.arctic.zephyr/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.arctic.zephyr/,.png]</value>
-        <value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.coloured/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.coloured/,.jpg]</value>
-        <value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.filmstrip/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.filmstrip/,.jpg]</value>
-        <value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.grey/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.grey/,.jpg]</value>
-        <value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.poster/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.poster/,.jpg]</value>
-        <value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.white/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</value>
+	<variable name="PosterThumb3">
+		<value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.arctic.zephyr/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.arctic.zephyr/,.png]</value>
+		<value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.coloured/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.coloured/,.jpg]</value>
+		<value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.filmstrip/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.filmstrip/,.jpg]</value>
+		<value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.grey/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.grey/,.jpg]</value>
+		<value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.poster/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.poster/,.jpg]</value>
+		<value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.white/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</value>
 		<value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.transparent/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.transparent/,.png]</value>
 		<value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.xzener-flat/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.xzener-flat/,.png]</value>
-		<value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.xzener-reflection/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.xzener-reflection/,.png]</value>      
-        <value condition="Container.Content(genres) + !Window.IsActive(videos) + String.IsEqual(Skin.String(MusicGenreIcons.path),resource://resource.images.musicgenreicons.grey/)">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.grey/,.jpg]</value>
-        <value condition="Container.Content(genres) + !Window.IsActive(videos) + String.IsEqual(Skin.String(MusicGenreIcons.path),resource://resource.images.musicgenreicons.poster/)">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.poster/,.jpg]</value>
-        <value condition="Container.Content(genres) + !Window.IsActive(videos) + String.IsEqual(Skin.String(MusicGenreIcons.path),resource://resource.images.musicgenreicons.text/)">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.text/,.jpg]</value>        
-        <value condition="Container.Content(studios) + String.IsEqual(Skin.String(StudiosImages.path),resource://resource.images.studios.white/)">$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]</value>
-		<value condition="Container.Content(studios) + String.IsEqual(Skin.String(StudiosImages.path),resource://resource.images.studios.coloured/)">$INFO[ListItem.Label,resource://resource.images.studios.coloured/,.png]</value>               
-        <value condition="Container.Content(countries) + String.IsEqual(Skin.String(LanguageFlags.path),resource://resource.images.languageflags.colour/)">$INFO[ListItem.Label,resource://resource.images.languageflags.colour/,.png]</value>
-        <value condition="!String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
-        <value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
-	    <value>$INFO[ListItem.Icon]</value>
+		<value condition="Container.Content(genres) + Window.IsActive(videos) + String.IsEqual(Skin.String(MovieGenreIcons.path),resource://resource.images.moviegenreicons.xzener-reflection/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.xzener-reflection/,.png]</value>
+		<value condition="Container.Content(genres) + !Window.IsActive(videos) + String.IsEqual(Skin.String(MusicGenreIcons.path),resource://resource.images.musicgenreicons.grey/)">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.grey/,.jpg]</value>
+		<value condition="Container.Content(genres) + !Window.IsActive(videos) + String.IsEqual(Skin.String(MusicGenreIcons.path),resource://resource.images.musicgenreicons.poster/)">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.poster/,.jpg]</value>
+		<value condition="Container.Content(genres) + !Window.IsActive(videos) + String.IsEqual(Skin.String(MusicGenreIcons.path),resource://resource.images.musicgenreicons.text/)">$INFO[ListItem.Label,resource://resource.images.musicgenreicons.text/,.jpg]</value>
+		<value condition="Container.Content(studios) + String.IsEqual(Skin.String(StudiosImages.path),resource://resource.images.studios.white/)">$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]</value>
+		<value condition="Container.Content(studios) + String.IsEqual(Skin.String(StudiosImages.path),resource://resource.images.studios.coloured/)">$INFO[ListItem.Label,resource://resource.images.studios.coloured/,.png]</value>
+		<value condition="Container.Content(countries) + String.IsEqual(Skin.String(LanguageFlags.path),resource://resource.images.languageflags.colour/)">$INFO[ListItem.Label,resource://resource.images.languageflags.colour/,.png]</value>
+		<value condition="!String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+		<value>$INFO[ListItem.Icon]</value>
 	</variable>
 	<variable name="MusicInfoPanelLabel">
 		<value condition="Container.Content(Artists)">$INFO[ListItem.Label]</value>
@@ -131,8 +131,8 @@
 		<value condition="![Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)]">DialogBack.png</value>
 		<value>DialogBack2.png</value>
 	</variable>
-    <variable name="PlayerTitle">
-        <value condition="Player.HasVideo">$INFO[VideoPlayer.Title]</value>
+	<variable name="PlayerTitle">
+		<value condition="Player.HasVideo">$INFO[VideoPlayer.Title]</value>
 		<value condition="Player.HasAudio + !String.EndsWith(MusicPlayer.Title,.pvr)">$INFO[MusicPlayer.Title]</value>
 		<value>$INFO[Player.Title]</value>
 	</variable>
@@ -184,16 +184,16 @@
 		<value>$LOCALIZE[19199] - $LOCALIZE[19023]</value>
 	</variable>
 	<variable name="PVRTimerIcon">
-	  <value condition="ListItem.IsRecording">PVR-IsRecording.png</value>
-	  <value condition="ListItem.HasTimerSchedule + ListItem.TimerHasError">PVR-HasTimerScheduleError.png</value>
-	  <value condition="ListItem.HasTimer + ListItem.TimerHasError">PVR-HasTimerError.png</value>
-	  <value condition="ListItem.HasTimerSchedule + ListItem.TimerHasConflict">PVR-HasTimerScheduleConflict.png</value>
-	  <value condition="ListItem.HasTimer + ListItem.TimerHasConflict">PVR-HasTimerConflict.png</value>
-	  <value condition="ListItem.HasRecording">PVR-HasRecording.png</value>
-	  <value condition="ListItem.HasTimerSchedule + !ListItem.TimerIsActive">PVR-HasTimerScheduleDisabled.png</value>
-	  <value condition="ListItem.HasTimer + !ListItem.TimerIsActive">PVR-HasTimerDisabled.png</value>
-	  <value condition="ListItem.HasTimerSchedule">PVR-HasTimerSchedule.png</value>
-	  <value condition="ListItem.HasTimer">PVR-HasTimer.png</value>
+		<value condition="ListItem.IsRecording">PVR-IsRecording.png</value>
+		<value condition="ListItem.HasTimerSchedule + ListItem.TimerHasError">PVR-HasTimerScheduleError.png</value>
+		<value condition="ListItem.HasTimer + ListItem.TimerHasError">PVR-HasTimerError.png</value>
+		<value condition="ListItem.HasTimerSchedule + ListItem.TimerHasConflict">PVR-HasTimerScheduleConflict.png</value>
+		<value condition="ListItem.HasTimer + ListItem.TimerHasConflict">PVR-HasTimerConflict.png</value>
+		<value condition="ListItem.HasRecording">PVR-HasRecording.png</value>
+		<value condition="ListItem.HasTimerSchedule + !ListItem.TimerIsActive">PVR-HasTimerScheduleDisabled.png</value>
+		<value condition="ListItem.HasTimer + !ListItem.TimerIsActive">PVR-HasTimerDisabled.png</value>
+		<value condition="ListItem.HasTimerSchedule">PVR-HasTimerSchedule.png</value>
+		<value condition="ListItem.HasTimer">PVR-HasTimer.png</value>
 	</variable>
 	<variable name="PVRTimerLabel">
 	  <value condition="ListItem.IsRecording">$LOCALIZE[19043]</value>
@@ -288,7 +288,7 @@
 			</focusedlayout>
 		</control>
 	</include>
-    <!-- Dialog Background Common-->
+	<!-- Dialog Background Common-->
 	<include name="DialogBackgroundCommons">
 		<control type="image">
 			<description>background image</description>
@@ -712,7 +712,7 @@
 			<font>font12</font>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
-            <visible>!VideoPlayer.Content(LiveTV)</visible>
+			<visible>!VideoPlayer.Content(LiveTV)</visible>
 		</control>
 		<control type="label">
 			<description>Album Label</description>
@@ -726,7 +726,7 @@
 			<font>font12</font>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
-            <visible>VideoPlayer.Content(LiveTV)</visible>
+			<visible>VideoPlayer.Content(LiveTV)</visible>
 		</control>
 		<control type="label">
 			<description>Time Label</description>
@@ -1632,129 +1632,129 @@
 			<label2>$INFO[ListItem.FilenameAndPath]</label2>
 			<visible>!String.IsEmpty(ListItem.FilenameAndPath)</visible>
 		</item>
-    </include>
-    <include name="SettingsContentDefault">
-        <content>
-            <item id="1">
-                <label>14200</label>
-                <label2>31430</label2>
-                <onclick>ActivateWindow(PlayerSettings)</onclick>
-                <icon>special://skin/extras/default/settings-default.jpg</icon>
-            </item>
-            <item id="2">
-                <label>14211</label>
-                <label2>31431</label2>
-                <onclick>ActivateWindow(MediaSettings)</onclick>
-                <icon>special://skin/extras/default/settings-default.jpg</icon>
-            </item>
-            <item id="3">
-                <label>14204</label>
-                <label2>31432</label2>
-                <onclick>ActivateWindow(PVRSettings)</onclick>
-                <icon>special://skin/extras/default/settings-default.jpg</icon>
-            </item>
-            <item id="4">
-                <label>24001</label>
-                <label2>31433</label2>
-                <onclick>ActivateWindow(AddonBrowser)</onclick>
-                <icon>special://skin/extras/default/settings-default.jpg</icon>
-            </item>
-            <item id="5">
-                <label>14036</label>
-                <label2>31434</label2>
-                <onclick>ActivateWindow(ServiceSettings)</onclick>
-                <icon>special://skin/extras/default/settings-default.jpg</icon>
-            </item>
-            <item id="6">
-                <label>14206</label>
-                <label2>31436</label2>
-                <onclick>ActivateWindow(InterfaceSettings)</onclick>
-                <icon>special://skin/extras/default/settings-default.jpg</icon>
-            </item>
-            <item id="7">
-                <label>13000</label>
-                <label2>31435</label2>
-                <onclick>ActivateWindow(SystemSettings)</onclick>
-                <icon>special://skin/extras/default/settings-default.jpg</icon>
-            </item>
-            <item id="8">
-                <label>89041</label>
-                <label2>89051</label2>
-                <onclick>RunAddon(service.libreelec.settings)</onclick>
-                <icon>special://skin/extras/default/settings-default.jpg</icon>
-                <visible>System.HasAddon(service.libreelec.settings)</visible>
-            </item>
-            <item id="9">
-                <label>166</label>
-                <label2>88070</label2>
-                <onclick>ActivateWindow(SkinSettings)</onclick>
-                <icon>special://skin/extras/default/settings-default.jpg</icon>
-            </item>
-        </content>
-    </include>
-    <include name="SettingsContentCustom">
-        <content>
-            <item id="1">
-                <label>14200</label>
-                <label2>31430</label2>
-                <onclick>ActivateWindow(PlayerSettings)</onclick>
-                <icon>special://skin/extras/settings/player.jpg</icon>
-            </item>
-            <item id="2">
-                <label>14211</label>
-                <label2>31431</label2>
-                <onclick>ActivateWindow(MediaSettings)</onclick>
-                <icon>special://skin/extras/settings/media.jpg</icon>
-            </item>
-            <item id="3">
-                <label>14204</label>
-                <label2>31432</label2>
-                <onclick>ActivateWindow(PVRSettings)</onclick>
-                <icon>special://skin/extras/settings/tv.jpg</icon>
-            </item>
-            <item id="4">
-                <label>24001</label>
-                <label2>31433</label2>
-                <onclick>ActivateWindow(AddonBrowser)</onclick>
-                <icon>special://skin/extras/settings/addons.jpg</icon>
-            </item>
-            <item id="5">
-                <label>14036</label>
-                <label2>31434</label2>
-                <onclick>ActivateWindow(ServiceSettings)</onclick>
-                <icon>special://skin/extras/settings/service.jpg</icon>
-            </item>
-            <item id="6">
-                <label>14206</label>
-                <label2>31436</label2>
-                <onclick>ActivateWindow(InterfaceSettings)</onclick>
-                <icon>special://skin/extras/settings/interface.jpg</icon>
-            </item>
-            <item id="7">
-                <label>13000</label>
-                <label2>31435</label2>
-                <onclick>ActivateWindow(SystemSettings)</onclick>
-                <icon>special://skin/extras/settings/system.jpg</icon>
-            </item>
-            <item id="8">
-                <label>89041</label>
-                <label2>89051</label2>
-                <onclick>RunAddon(service.libreelec.settings)</onclick>
-                <icon>special://skin/extras/settings/libreelec.jpg</icon>
-                <visible>System.HasAddon(service.libreelec.settings)</visible>
-            </item>
-            <item id="9">
-                <label>166</label>
-                <label2>88070</label2>
-                <onclick>ActivateWindow(SkinSettings)</onclick>
-                <icon>special://skin/extras/settings/skin.jpg</icon>
-            </item>
-        </content>
-    </include>
-    <include name="CustomSlideDialog">
+	</include>
+	<include name="SettingsContentDefault">
+		<content>
+			<item id="1">
+				<label>14200</label>
+				<label2>31430</label2>
+				<onclick>ActivateWindow(PlayerSettings)</onclick>
+				<icon>special://skin/extras/default/settings-default.jpg</icon>
+			</item>
+			<item id="2">
+				<label>14211</label>
+				<label2>31431</label2>
+				<onclick>ActivateWindow(MediaSettings)</onclick>
+				<icon>special://skin/extras/default/settings-default.jpg</icon>
+			</item>
+			<item id="3">
+				<label>14204</label>
+				<label2>31432</label2>
+				<onclick>ActivateWindow(PVRSettings)</onclick>
+				<icon>special://skin/extras/default/settings-default.jpg</icon>
+			</item>
+			<item id="4">
+				<label>24001</label>
+				<label2>31433</label2>
+				<onclick>ActivateWindow(AddonBrowser)</onclick>
+				<icon>special://skin/extras/default/settings-default.jpg</icon>
+			</item>
+			<item id="5">
+				<label>14036</label>
+				<label2>31434</label2>
+				<onclick>ActivateWindow(ServiceSettings)</onclick>
+				<icon>special://skin/extras/default/settings-default.jpg</icon>
+			</item>
+			<item id="6">
+				<label>14206</label>
+				<label2>31436</label2>
+				<onclick>ActivateWindow(InterfaceSettings)</onclick>
+				<icon>special://skin/extras/default/settings-default.jpg</icon>
+			</item>
+			<item id="7">
+				<label>13000</label>
+				<label2>31435</label2>
+				<onclick>ActivateWindow(SystemSettings)</onclick>
+				<icon>special://skin/extras/default/settings-default.jpg</icon>
+			</item>
+			<item id="8">
+				<label>89041</label>
+				<label2>89051</label2>
+				<onclick>RunAddon(service.libreelec.settings)</onclick>
+				<icon>special://skin/extras/default/settings-default.jpg</icon>
+				<visible>System.HasAddon(service.libreelec.settings)</visible>
+			</item>
+			<item id="9">
+				<label>166</label>
+				<label2>88070</label2>
+				<onclick>ActivateWindow(SkinSettings)</onclick>
+				<icon>special://skin/extras/default/settings-default.jpg</icon>
+			</item>
+		</content>
+	</include>
+	<include name="SettingsContentCustom">
+		<content>
+			<item id="1">
+				<label>14200</label>
+				<label2>31430</label2>
+				<onclick>ActivateWindow(PlayerSettings)</onclick>
+				<icon>special://skin/extras/settings/player.jpg</icon>
+			</item>
+			<item id="2">
+				<label>14211</label>
+				<label2>31431</label2>
+				<onclick>ActivateWindow(MediaSettings)</onclick>
+				<icon>special://skin/extras/settings/media.jpg</icon>
+			</item>
+			<item id="3">
+				<label>14204</label>
+				<label2>31432</label2>
+				<onclick>ActivateWindow(PVRSettings)</onclick>
+				<icon>special://skin/extras/settings/tv.jpg</icon>
+			</item>
+			<item id="4">
+				<label>24001</label>
+				<label2>31433</label2>
+				<onclick>ActivateWindow(AddonBrowser)</onclick>
+				<icon>special://skin/extras/settings/addons.jpg</icon>
+			</item>
+			<item id="5">
+				<label>14036</label>
+				<label2>31434</label2>
+				<onclick>ActivateWindow(ServiceSettings)</onclick>
+				<icon>special://skin/extras/settings/service.jpg</icon>
+			</item>
+			<item id="6">
+				<label>14206</label>
+				<label2>31436</label2>
+				<onclick>ActivateWindow(InterfaceSettings)</onclick>
+				<icon>special://skin/extras/settings/interface.jpg</icon>
+			</item>
+			<item id="7">
+				<label>13000</label>
+				<label2>31435</label2>
+				<onclick>ActivateWindow(SystemSettings)</onclick>
+				<icon>special://skin/extras/settings/system.jpg</icon>
+			</item>
+			<item id="8">
+				<label>89041</label>
+				<label2>89051</label2>
+				<onclick>RunAddon(service.libreelec.settings)</onclick>
+				<icon>special://skin/extras/settings/libreelec.jpg</icon>
+				<visible>System.HasAddon(service.libreelec.settings)</visible>
+			</item>
+			<item id="9">
+				<label>166</label>
+				<label2>88070</label2>
+				<onclick>ActivateWindow(SkinSettings)</onclick>
+				<icon>special://skin/extras/settings/skin.jpg</icon>
+			</item>
+		</content>
+	</include>
+	<include name="CustomSlideDialog">
 		<control type="group">
 			<depth>DepthSideBlade</depth>
-            <animation effect="slide" start="400,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+			<animation effect="slide" start="400,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="400,0" time="300" tween="quadratic" easing="out">WindowClose</animation>
 			<control type="image">
 				<left>400r</left>
@@ -1764,7 +1764,7 @@
 				<texture border="15,0,0,0" flipx="true">MediaBladeSub.png</texture>
 			</control>
 			<control type="button">
-                <description>Close Window Button</description>
+				<description>Close Window Button</description>
 				<left>380r</left>
 				<top>0</top>
 				<width>64</width>
@@ -1852,9 +1852,9 @@
 						<label>$INFO[ListItem.label]</label>
 					</control>
 				</focusedlayout>
-                <include content="$PARAM[include_name]">            
-                    <param name="id_win" value="$PARAM[id_win]" />            
-                </include>
+				<include content="$PARAM[include_name]">
+					<param name="id_win" value="$PARAM[id_win]" />
+				</include>
 			</control>
 			<control type="scrollbar" id="60">
 				<left>1256</left>
@@ -1872,7 +1872,7 @@
 				<orientation>vertical</orientation>
 				<visible>Control.IsVisible(450)</visible>
 			</control>
-            <control type="label">
+			<control type="label">
 				<description>Page Label</description>
 				<right>30</right>
 				<top>670</top>
@@ -1884,12 +1884,12 @@
 				<textcolor>grey</textcolor>
 				<label>([COLOR=blue]$INFO[Container(450).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=blue]$INFO[Container(450).CurrentPage]/$INFO[Container(450).NumPages][/COLOR])</label>
 			</control>
-		</control>    
-    </include>
-    <include name="CustomRecommendedDialog">
+		</control>
+	</include>
+	<include name="CustomRecommendedDialog">
 		<control type="group">
-            <depth>DepthSideBlade</depth>
-            <animation effect="slide" start="400,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+			<depth>DepthSideBlade</depth>
+			<animation effect="slide" start="400,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="400,0" time="300" tween="quadratic" easing="out">WindowClose</animation>
 			<control type="image">
 				<left>400r</left>
@@ -1899,7 +1899,7 @@
 				<texture border="15,0,0,0" flipx="true">HomeBladeSub.png</texture>
 			</control>
 			<control type="button">
-                <description>Close Window Button</description>
+				<description>Close Window Button</description>
 				<left>380r</left>
 				<top>0</top>
 				<width>64</width>
@@ -1925,8 +1925,8 @@
 				<aligny>center</aligny>
 				<textcolor>blue</textcolor>
 				<label>[B]$PARAM[dlg_title][/B]</label>
-			</control>   
-            <control type="image">
+			</control>
+			<control type="image">
 				<left>370r</left>
 				<top>30</top>
 				<width>200</width>
@@ -1997,7 +1997,7 @@
 						<label>$PARAM[list_label]</label>
 					</control>
 				</focusedlayout>
-                <include>$PARAM[include_name]</include>
+				<include>$PARAM[include_name]</include>
 			</control>
 			<control type="scrollbar" id="60">
 				<left>1256</left>
@@ -2015,7 +2015,7 @@
 				<orientation>vertical</orientation>
 				<visible>Control.IsVisible(450)</visible>
 			</control>
-            <control type="label">
+			<control type="label">
 				<description>Page Label</description>
 				<right>30</right>
 				<top>670</top>
@@ -2028,1073 +2028,1073 @@
 				<label>([COLOR=blue]$INFO[Container(450).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=blue]$INFO[Container(450).CurrentPage]/$INFO[Container(450).NumPages][/COLOR])</label>
 			</control>
 		</control>
-    </include>
-    <include name="RecommendedAlbumContent">
-        <content>
-            <item id="1">
-                <label>$INFO[Window(Home).Property(RecommendedAlbum.1.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedAlbum.1.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2123)</onclick>
-                <onclick>$INFO[Window(Home).Property(RecommendedAlbum.1.Play)]</onclick>
-                <onclick>fullscreen</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedAlbum.1.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title))</visible>
-            </item>
-            <item id="2">
-                <label>$INFO[Window(Home).Property(RecommendedAlbum.2.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedAlbum.2.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2123)</onclick>
-                <onclick>$INFO[Window(Home).Property(RecommendedAlbum.2.Play)]</onclick>
-                <onclick>fullscreen</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedAlbum.2.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.2.Title))</visible>
-            </item>
-            <item id="3">
-                <label>$INFO[Window(Home).Property(RecommendedAlbum.3.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedAlbum.3.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2123)</onclick>
-                <onclick>$INFO[Window(Home).Property(RecommendedAlbum.3.Play)]</onclick>
-                <onclick>fullscreen</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedAlbum.3.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.3.Title))</visible>
-            </item>
-            <item id="4">
-                <label>$INFO[Window(Home).Property(RecommendedAlbum.4.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedAlbum.4.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2123)</onclick>
-                <onclick>$INFO[Window(Home).Property(RecommendedAlbum.4.Play)]</onclick>
-                <onclick>fullscreen</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedAlbum.4.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.4.Title))</visible>
-            </item>
-            <item id="5">
-                <label>$INFO[Window(Home).Property(RecommendedAlbum.5.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedAlbum.5.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2123)</onclick>
-                <onclick>$INFO[Window(Home).Property(RecommendedAlbum.5.Play)]</onclick>
-                <onclick>fullscreen</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedAlbum.5.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.5.Title))</visible>
-            </item>
-            <item id="6">
-                <label>$INFO[Window(Home).Property(RecommendedAlbum.6.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedAlbum.6.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2123)</onclick>
-                <onclick>$INFO[Window(Home).Property(RecommendedAlbum.6.Play)]</onclick>
-                <onclick>fullscreen</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedAlbum.6.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.6.Title))</visible>
-            </item>
-            <item id="7">
-                <label>$INFO[Window(Home).Property(RecommendedAlbum.7.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedAlbum.7.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2123)</onclick>
-                <onclick>$INFO[Window(Home).Property(RecommendedAlbum.7.Play)]</onclick>
-                <onclick>fullscreen</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedAlbum.7.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.7.Title))</visible>
-            </item>
-            <item id="8">
-                <label>$INFO[Window(Home).Property(RecommendedAlbum.8.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedAlbum.8.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2123)</onclick>
-                <onclick>$INFO[Window(Home).Property(RecommendedAlbum.8.Play)]</onclick>
-                <onclick>fullscreen</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedAlbum.8.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.8.Title))</visible>
-            </item>
-            <item id="9">
-                <label>$INFO[Window(Home).Property(RecommendedAlbum.9.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedAlbum.9.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2123)</onclick>
-                <onclick>$INFO[Window(Home).Property(RecommendedAlbum.9.Play)]</onclick>
-                <onclick>fullscreen</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedAlbum.9.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.9.Title))</visible>
-            </item>
-            <item id="10">
-                <label>$INFO[Window(Home).Property(RecommendedAlbum.10.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedAlbum.10.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2123)</onclick>
-                <onclick>$INFO[Window(Home).Property(RecommendedAlbum.10.Play)]</onclick>
-                <onclick>fullscreen</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedAlbum.10.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.10.Title))</visible>
-            </item>
-            <item id="11">
-                <label>$INFO[Window(Home).Property(RecommendedAlbum.11.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedAlbum.11.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2123)</onclick>
-                <onclick>$INFO[Window(Home).Property(RecommendedAlbum.11.Play)]</onclick>
-                <onclick>fullscreen</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedAlbum.11.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.11.Title))</visible>
-            </item>
-            <item id="12">
-                <label>$INFO[Window(Home).Property(RecommendedAlbum.12.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedAlbum.12.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2123)</onclick>
-                <onclick>$INFO[Window(Home).Property(RecommendedAlbum.12.Play)]</onclick>
-                <onclick>fullscreen</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedAlbum.12.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.12.Title))</visible>
-            </item>
-            <item id="13">
-                <label>$INFO[Window(Home).Property(RecommendedAlbum.13.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedAlbum.13.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2123)</onclick>
-                <onclick>$INFO[Window(Home).Property(RecommendedAlbum.13.Play)]</onclick>
-                <onclick>fullscreen</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedAlbum.13.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.13.Title))</visible>
-            </item>
-            <item id="14">
-                <label>$INFO[Window(Home).Property(RecommendedAlbum.14.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedAlbum.14.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2123)</onclick>
-                <onclick>$INFO[Window(Home).Property(RecommendedAlbum.14.Play)]</onclick>
-                <onclick>fullscreen</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedAlbum.14.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.14.Title))</visible>
-            </item>
-            <item id="15">
-                <label>$INFO[Window(Home).Property(RecommendedAlbum.15.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedAlbum.15.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2123)</onclick>
-                <onclick>$INFO[Window(Home).Property(RecommendedAlbum.15.Play)]</onclick>
-                <onclick>fullscreen</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedAlbum.15.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.15.Title))</visible>
-            </item>
-            <item id="16">
-                <label>$INFO[Window(Home).Property(RecommendedAlbum.16.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedAlbum.16.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2123)</onclick>
-                <onclick>$INFO[Window(Home).Property(RecommendedAlbum.16.Play)]</onclick>
-                <onclick>fullscreen</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedAlbum.16.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.16.Title))</visible>
-            </item>
-            <item id="17">
-                <label>$INFO[Window(Home).Property(RecommendedAlbum.17.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedAlbum.17.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2123)</onclick>
-                <onclick>$INFO[Window(Home).Property(RecommendedAlbum.17.Play)]</onclick>
-                <onclick>fullscreen</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedAlbum.17.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.17.Title))</visible>
-            </item>
-            <item id="18">
-                <label>$INFO[Window(Home).Property(RecommendedAlbum.18.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedAlbum.18.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2123)</onclick>
-                <onclick>$INFO[Window(Home).Property(RecommendedAlbum.18.Play)]</onclick>
-                <onclick>fullscreen</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedAlbum.18.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.18.Title))</visible>
-            </item>
-            <item id="19">
-                <label>$INFO[Window(Home).Property(RecommendedAlbum.19.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedAlbum.19.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2123)</onclick>
-                <onclick>$INFO[Window(Home).Property(RecommendedAlbum.19.Play)]</onclick>
-                <onclick>fullscreen</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedAlbum.19.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.19.Title))</visible>
-            </item>
-            <item id="20">
-                <label>$INFO[Window(Home).Property(RecommendedAlbum.20.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedAlbum.20.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2123)</onclick>
-                <onclick>$INFO[Window(Home).Property(RecommendedAlbum.20.Play)]</onclick>
-                <onclick>fullscreen</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedAlbum.20.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.20.Title))</visible>
-            </item>
-            <item id="21">
-                <label>$INFO[Window(Home).Property(RecentAlbum.1.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecentAlbum.1.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2123)</onclick>
-                <onclick>$INFO[Window(Home).Property(RecentAlbum.1.Play)]</onclick>
-                <onclick>fullscreen</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecentAlbum.1.Thumb)]</thumb>
-                <visible>String.IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title)) + !String.IsEmpty(Window(Home).Property(RecentAlbum.1.Title))</visible>
-            </item>
-            <item id="22">
-                <label></label>
-                <label2>- $LOCALIZE[89703]</label2>
-                <onclick>PreviousMenu</onclick>
-                <icon>-</icon>
-                <thumb>-</thumb>
-                <visible>String.IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title)) + String.IsEmpty(Window(Home).Property(RecentAlbum.1.Title))</visible>
-            </item>
-        </content>
-    </include>
-    <include name="RecommendedEpisodesContent">
-        <content>
-            <item id="1">
-                <label>$INFO[Window(Home).Property(RecommendedEpisode.1.TVshowTitle)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedEpisode.1.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.1.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.1.Title)] - </label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2124)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.1.File)])</onclick>						
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedEpisode.1.Art(thumb))]</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.1.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.1.TVshowTitle))</visible>
-            </item>
-            <item id="2">
-                <label>$INFO[Window(Home).Property(RecommendedEpisode.2.TVshowTitle)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedEpisode.2.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.2.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.2.Title)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2124)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.2.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedEpisode.2.Art(thumb))]</thumb>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.2.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.2.TVshowTitle))</visible>
-            </item>
-            <item id="3">
-                <label>$INFO[Window(Home).Property(RecommendedEpisode.3.TVshowTitle)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedEpisode.3.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.3.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.3.Title)] - </label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2124)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.3.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedEpisode.3.Art(thumb))]</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.3.Art(tvshow.clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.3.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.3.TVshowTitle))</visible>
-            </item>
-            <item id="4">
-                <label>$INFO[Window(Home).Property(RecommendedEpisode.4.TVshowTitle)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedEpisode.4.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.4.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.4.Title)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2124)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.4.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedEpisode.4.Art(thumb))]</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.4.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.4.TVshowTitle))</visible>
-            </item>
-            <item id="5">
-                <label>$INFO[Window(Home).Property(RecommendedEpisode.5.TVshowTitle)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedEpisode.5.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.5.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.5.Title)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2124)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.5.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedEpisode.5.Art(thumb))]</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.5.Art(tvshow.clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.5.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.5.TVshowTitle))</visible>
-            </item>
-            <item id="6">
-                <label>$INFO[Window(Home).Property(RecommendedEpisode.6.TVshowTitle)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedEpisode.6.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.6.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.6.Title)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2124)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.6.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedEpisode.6.Art(thumb))]</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.6.Art(tvshow.clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.6.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.6.TVshowTitle))</visible>
-            </item>
-            <item id="7">
-                <label>$INFO[Window(Home).Property(RecommendedEpisode.7.TVshowTitle)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedEpisode.7.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.7.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.7.Title)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2124)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.7.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedEpisode.7.Art(thumb))]</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.7.Art(tvshow.clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.7.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.7.TVshowTitle))</visible>
-            </item>
-            <item id="8">
-                <label>$INFO[Window(Home).Property(RecommendedEpisode.8.TVshowTitle)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedEpisode.8.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.8.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.8.Title)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2124)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.8.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedEpisode.8.Art(thumb))]</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.8.Art(tvshow.clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.8.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.8.TVshowTitle))</visible>
-            </item>
-            <item id="9">
-                <label>$INFO[Window(Home).Property(RecommendedEpisode.9.TVshowTitle)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedEpisode.9.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.9.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.9.Title)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2124)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.9.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedEpisode.9.Art(thumb))]</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.9.Art(tvshow.clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.9.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.9.TVshowTitle))</visible>
-            </item>
-            <item id="10">
-                <label>$INFO[Window(Home).Property(RecommendedEpisode.10.TVshowTitle)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedEpisode.10.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.10.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.10.Title)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2124)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.10.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedEpisode.10.Art(thumb))]</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.10.Art(tvshow.clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.10.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.10.TVshowTitle))</visible>
-            </item>
-            <item id="11">
-                <label>$INFO[Window(Home).Property(RecommendedEpisode.11.TVshowTitle)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedEpisode.11.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.11.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.11.Title)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2124)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.11.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedEpisode.11.Art(thumb))]</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.11.Art(tvshow.clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.11.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.11.TVshowTitle))</visible>
-            </item>
-            <item id="12">
-                <label>$INFO[Window(Home).Property(RecommendedEpisode.12.TVshowTitle)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedEpisode.12.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.12.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.12.Title)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2124)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.12.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedEpisode.12.Art(thumb))]</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.12.Art(tvshow.clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.12.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.12.TVshowTitle))</visible>
-            </item>
-            <item id="13">
-                <label>$INFO[Window(Home).Property(RecommendedEpisode.13.TVshowTitle)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedEpisode.13.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.13.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.13.Title)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2124)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.13.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedEpisode.13.Art(thumb))]</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.13.Art(tvshow.clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.13.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.13.TVshowTitle))</visible>
-            </item>
-            <item id="14">
-                <label>$INFO[Window(Home).Property(RecommendedEpisode.14.TVshowTitle)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedEpisode.14.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.14.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.14.Title)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2124)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.14.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedEpisode.14.Art(thumb))]</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.14.Art(tvshow.clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.14.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.14.TVshowTitle))</visible>
-            </item>
-            <item id="15">
-                <label>$INFO[Window(Home).Property(RecommendedEpisode.15.TVshowTitle)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedEpisode.15.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.15.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.15.Title)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2124)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.15.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedEpisode.15.Art(thumb))]</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.15.Art(tvshow.clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.15.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.15.TVshowTitle))</visible>
-            </item>
-            <item id="16">
-                <label>$INFO[Window(Home).Property(RecommendedEpisode.16.TVshowTitle)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedEpisode.16.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.16.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.16.Title)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2124)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.16.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedEpisode.16.Art(thumb))]</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.16.Art(tvshow.clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.16.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.16.TVshowTitle))</visible>
-            </item>
-            <item id="17">
-                <label>$INFO[Window(Home).Property(RecommendedEpisode.17.TVshowTitle)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedEpisode.17.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.17.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.17.Title)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2124)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.17.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedEpisode.17.Art(thumb))]</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.17.Art(tvshow.clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.17.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.17.TVshowTitle))</visible>
-            </item>
-            <item id="18">
-                <label>$INFO[Window(Home).Property(RecommendedEpisode.18.TVshowTitle)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedEpisode.18.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.18.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.18.Title)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2124)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.18.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedEpisode.18.Art(thumb))]</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.18.Art(tvshow.clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.18.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.18.TVshowTitle))</visible>
-            </item>
-            <item id="19">
-                <label>$INFO[Window(Home).Property(RecommendedEpisode.19.TVshowTitle)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedEpisode.19.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.19.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.19.Title)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2124)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.19.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedEpisode.19.Art(thumb))]</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.19.Art(tvshow.clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.19.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.19.TVshowTitle))</visible>
-            </item>
-            <item id="20">
-                <label>$INFO[Window(Home).Property(RecommendedEpisode.20.TVshowTitle)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedEpisode.20.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.20.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.20.Title)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2124)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.20.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedEpisode.20.Art(thumb))]</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.20.Art(tvshow.clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.20.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.20.TVshowTitle))</visible>
-            </item>
-            <item id="21">
-                <label>- $LOCALIZE[89703]</label>
-                <label2></label2>
-                <onclick>PreviousMenu</onclick>
-                <icon>-</icon>
-                <thumb>-</thumb>
-                <visible>String.IsEmpty(Window(Home).Property(RecommendedEpisode.1.TVshowTitle))</visible>
-            </item>
-        </content>
-    </include>
-    <include name="RecommendedMoviesContent">
-        <content>
-            <item id="1">
-                <label>$INFO[Window(Home).Property(RecommendedMovie.1.Title)]</label>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2125)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.1.File)])</onclick>
-                <icon>$INFO[Window(Home).Property(RecommendedMovie.1.Art(poster))]</icon>
-                <thumb>-</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.1.Art(clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.1.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.1.Title))</visible>
-            </item>
-            <item id="2">
-                <label>$INFO[Window(Home).Property(RecommendedMovie.2.Title)]</label>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2125)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.2.File)])</onclick>
-                <icon>$INFO[Window(Home).Property(RecommendedMovie.2.Art(poster))]</icon>
-                <thumb>-</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.2.Art(clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.2.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.2.Title))</visible>
-            </item>
-            <item id="3">
-                <label>$INFO[Window(Home).Property(RecommendedMovie.3.Title)]</label>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2125)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.3.File)])</onclick>
-                <icon>$INFO[Window(Home).Property(RecommendedMovie.3.Art(poster))]</icon>
-                <thumb>-</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.3.Art(clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.3.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.3.Title))</visible>
-            </item>
-            <item id="4">
-                <label>$INFO[Window(Home).Property(RecommendedMovie.4.Title)]</label>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2125)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.4.File)])</onclick>
-                <icon>$INFO[Window(Home).Property(RecommendedMovie.4.Art(poster))]</icon>
-                <thumb>-</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.4.Art(clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.4.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.4.Title))</visible>
-            </item>
-            <item id="5">
-                <label>$INFO[Window(Home).Property(RecommendedMovie.5.Title)]</label>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2125)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.5.File)])</onclick>
-                <icon>$INFO[Window(Home).Property(RecommendedMovie.5.Art(poster))]</icon>
-                <thumb>-</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.5.Art(clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.5.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.5.Title))</visible>
-            </item>
-            <item id="6">
-                <label>$INFO[Window(Home).Property(RecommendedMovie.6.Title)]</label>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2125)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.6.File)])</onclick>
-                <icon>$INFO[Window(Home).Property(RecommendedMovie.6.Art(poster))]</icon>
-                <thumb>-</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.6.Art(clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.6.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.6.Title))</visible>
-            </item>
-            <item id="7">
-                <label>$INFO[Window(Home).Property(RecommendedMovie.7.Title)]</label>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2125)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.7.File)])</onclick>
-                <icon>$INFO[Window(Home).Property(RecommendedMovie.7.Art(poster))]</icon>
-                <thumb>-</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.7.Art(clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.7.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.7.Title))</visible>
-            </item>
-            <item id="8">
-                <label>$INFO[Window(Home).Property(RecommendedMovie.8.Title)]</label>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2125)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.8.File)])</onclick>
-                <icon>$INFO[Window(Home).Property(RecommendedMovie.8.Art(poster))]</icon>
-                <thumb>-</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.8.Art(clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.8.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.8.Title))</visible>
-            </item>
-            <item id="9">
-                <label>$INFO[Window(Home).Property(RecommendedMovie.9.Title)]</label>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2125)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.9.File)])</onclick>
-                <icon>$INFO[Window(Home).Property(RecommendedMovie.9.Art(poster))]</icon>
-                <thumb>-</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.9.Art(clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.9.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.9.Title))</visible>
-            </item>
-            <item id="10">
-                <label>$INFO[Window(Home).Property(RecommendedMovie.10.Title)]</label>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2125)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.10.File)])</onclick>
-                <icon>$INFO[Window(Home).Property(RecommendedMovie.10.Art(poster))]</icon>
-                <thumb>-</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.10.Art(clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.10.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.10.Title))</visible>
-            </item>
-            <item id="11">
-                <label>$INFO[Window(Home).Property(RecommendedMovie.11.Title)]</label>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2125)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.11.File)])</onclick>
-                <icon>$INFO[Window(Home).Property(RecommendedMovie.11.Art(poster))]</icon>
-                <thumb>-</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.11.Art(clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.11.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.11.Title))</visible>
-            </item>
-            <item id="12">
-                <label>$INFO[Window(Home).Property(RecommendedMovie.12.Title)]</label>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2125)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.12.File)])</onclick>
-                <icon>$INFO[Window(Home).Property(RecommendedMovie.12.Art(poster))]</icon>
-                <thumb>-</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.12.Art(clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.12.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.12.Title))</visible>
-            </item>
-            <item id="13">
-                <label>$INFO[Window(Home).Property(RecommendedMovie.13.Title)]</label>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2125)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.13.File)])</onclick>
-                <icon>$INFO[Window(Home).Property(RecommendedMovie.13.Art(poster))]</icon>
-                <thumb>-</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.13.Art(clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.13.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.13.Title))</visible>
-            </item>
-            <item id="14">
-                <label>$INFO[Window(Home).Property(RecommendedMovie.14.Title)]</label>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2125)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.14.File)])</onclick>
-                <icon>$INFO[Window(Home).Property(RecommendedMovie.14.Art(poster))]</icon>
-                <thumb>-</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.14.Art(clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.14.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.14.Title))</visible>
-            </item>
-            <item id="15">
-                <label>$INFO[Window(Home).Property(RecommendedMovie.15.Title)]</label>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2125)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.15.File)])</onclick>
-                <icon>$INFO[Window(Home).Property(RecommendedMovie.15.Art(poster))]</icon>
-                <thumb>-</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.15.Art(clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.15.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.15.Title))</visible>
-            </item>
-            <item id="16">
-                <label>$INFO[Window(Home).Property(RecommendedMovie.16.Title)]</label>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2125)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.16.File)])</onclick>
-                <icon>$INFO[Window(Home).Property(RecommendedMovie.16.Art(poster))]</icon>
-                <thumb>-</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.16.Art(clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.16.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.16.Title))</visible>
-            </item>
-            <item id="17">
-                <label>$INFO[Window(Home).Property(RecommendedMovie.17.Title)]</label>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2125)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.17.File)])</onclick>
-                <icon>$INFO[Window(Home).Property(RecommendedMovie.17.Art(poster))]</icon>
-                <thumb>-</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.17.Art(clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.17.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.17.Title))</visible>
-            </item>
-            <item id="18">
-                <label>$INFO[Window(Home).Property(RecommendedMovie.18.Title)]</label>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2125)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.18.File)])</onclick>
-                <icon>$INFO[Window(Home).Property(RecommendedMovie.18.Art(poster))]</icon>
-                <thumb>-</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.18.Art(clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.18.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.18.Title))</visible>
-            </item>
-            <item id="19">
-                <label>$INFO[Window(Home).Property(RecommendedMovie.19.Title)]</label>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2125)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.19.File)])</onclick>
-                <icon>$INFO[Window(Home).Property(RecommendedMovie.19.Art(poster))]</icon>
-                <thumb>-</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.19.Art(clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.19.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.19.Title))</visible>
-            </item>
-            <item id="20">
-                <label>$INFO[Window(Home).Property(RecommendedMovie.20.Title)]</label>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2125)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.20.File)])</onclick>
-                <icon>$INFO[Window(Home).Property(RecommendedMovie.20.Art(poster))]</icon>
-                <thumb>-</thumb>
-                <property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.20.Art(clearlogo))]</property>
-                <property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.20.PercentPlayed)]</property>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.20.Title))</visible>
-            </item>
-            <item id="21">
-                <label>- $LOCALIZE[89703] - </label>
-                <label2></label2>
-                <onclick>PreviousMenu</onclick>
-                <icon>-</icon>
-                <thumb>-</thumb>
-                <visible>String.IsEmpty(Window(Home).Property(RecommendedMovie.1.Title))</visible>
-            </item>
-        </content>
-    </include>
-    <include name="RecommendedMusicVideoContent">
-        <content>
-            <item id="1">
-                <label>$INFO[Window(Home).Property(RecommendedMusicVideo.1.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedMusicVideo.1.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2126)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.1.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.1.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.1.Title))</visible>
-            </item>
-            <item id="2">
-                <label>$INFO[Window(Home).Property(RecommendedMusicVideo.2.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedMusicVideo.2.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2126)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.2.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.2.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.2.Title))</visible>
-            </item>
-            <item id="3">
-                <label>$INFO[Window(Home).Property(RecommendedMusicVideo.3.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedMusicVideo.3.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2126)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.3.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.3.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.3.Title))</visible>
-            </item>
-            <item id="4">
-                <label>$INFO[Window(Home).Property(RecommendedMusicVideo.4.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedMusicVideo.4.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2126)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.4.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.4.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.4.Title))</visible>
-            </item>
-            <item id="5">
-                <label>$INFO[Window(Home).Property(RecommendedMusicVideo.5.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedMusicVideo.5.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2126)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.5.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.5.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.5.Title))</visible>
-            </item>
-            <item id="6">
-                <label>$INFO[Window(Home).Property(RecommendedMusicVideo.6.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedMusicVideo.6.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2126)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.6.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.6.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.6.Title))</visible>
-            </item>
-            <item id="7">
-                <label>$INFO[Window(Home).Property(RecommendedMusicVideo.7.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedMusicVideo.7.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2126)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.7.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.7.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.7.Title))</visible>
-            </item>
-            <item id="8">
-                <label>$INFO[Window(Home).Property(RecommendedMusicVideo.8.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedMusicVideo.8.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2126)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.8.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.8.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.8.Title))</visible>
-            </item>
-            <item id="9">
-                <label>$INFO[Window(Home).Property(RecommendedMusicVideo.9.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedMusicVideo.9.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2126)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.9.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.9.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.9.Title))</visible>
-            </item>
-            <item id="10">
-                <label>$INFO[Window(Home).Property(RecommendedMusicVideo.10.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedMusicVideo.10.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2126)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.10.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.10.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.10.Title))</visible>
-            </item>
-            <item id="11">
-                <label>$INFO[Window(Home).Property(RecommendedMusicVideo.11.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedMusicVideo.11.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2126)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.11.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.11.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.11.Title))</visible>
-            </item>
-            <item id="12">
-                <label>$INFO[Window(Home).Property(RecommendedMusicVideo.12.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedMusicVideo.12.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2126)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.12.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.12.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.12.Title))</visible>
-            </item>
-            <item id="13">
-                <label>$INFO[Window(Home).Property(RecommendedMusicVideo.13.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedMusicVideo.13.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2126)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.13.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.13.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.13.Title))</visible>
-            </item>
-            <item id="14">
-                <label>$INFO[Window(Home).Property(RecommendedMusicVideo.14.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedMusicVideo.14.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2126)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.14.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.14.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.14.Title))</visible>
-            </item>
-            <item id="15">
-                <label>$INFO[Window(Home).Property(RecommendedMusicVideo.15.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedMusicVideo.15.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2126)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.15.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.15.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.15.Title))</visible>
-            </item>
-            <item id="16">
-                <label>$INFO[Window(Home).Property(RecommendedMusicVideo.16.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedMusicVideo.16.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2126)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.16.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.16.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.16.Title))</visible>
-            </item>
-            <item id="17">
-                <label>$INFO[Window(Home).Property(RecommendedMusicVideo.17.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedMusicVideo.17.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2126)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.17.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.17.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.17.Title))</visible>
-            </item>
-            <item id="18">
-                <label>$INFO[Window(Home).Property(RecommendedMusicVideo.18.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedMusicVideo.18.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2126)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.18.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.18.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.18.Title))</visible>
-            </item>
-            <item id="19">
-                <label>$INFO[Window(Home).Property(RecommendedMusicVideo.19.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedMusicVideo.19.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2126)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.19.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.19.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.19.Title))</visible>
-            </item>
-            <item id="20">
-                <label>$INFO[Window(Home).Property(RecommendedMusicVideo.20.Title)]</label>
-                <label2>$INFO[Window(Home).Property(RecommendedMusicVideo.20.Artist)]</label2>
-                <onclick>PlayList.Clear</onclick>
-                <onclick>Dialog.Close(2126)</onclick>
-                <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.20.File)])</onclick>
-                <icon>-</icon>
-                <thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.20.Thumb)]</thumb>
-                <visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.20.Title))</visible>
-            </item>
-            <item id="21">
-                <label></label>
-                <label2>- $LOCALIZE[89703]</label2>
-                <onclick>PreviousMenu</onclick>
-                <icon>-</icon>
-                <thumb>-</thumb>
-                <visible>String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.1.Title))</visible>
-            </item>
-        </content>
 	</include>
-    <include name="ItemMenuColors">
-        <content>
-            <item id="1">
-                <description>MenuColor0</description>
-                <label>[COLOR=FF0084FF]$LOCALIZE[88107][/COLOR]</label>
-                <onclick>Skin.SetString(MenuColor,FF0084FF,)</onclick>
-                <onclick>Skin.SetString(MenuColorName,$LOCALIZE[88107],)</onclick>
-                <onclick>PreviousMenu</onclick>
-            </item>
-            <item id="2">
-                <description>MenuColor1</description>
-                <label>[COLOR=FF03D6D9]$LOCALIZE[88108][/COLOR]</label>
-                <onclick>Skin.SetString(MenuColor,FF03D6D9,)</onclick>
-                <onclick>Skin.SetString(MenuColorName,$LOCALIZE[88108],)</onclick>
-                <onclick>PreviousMenu</onclick>
-            </item>
-            <item id="3">
-                <description>MenuColor2</description>
-                <label>[COLOR=FFFFFFFF]$LOCALIZE[88109][/COLOR]</label>
-                <onclick>Skin.SetString(MenuColor,FFFFFFFF,)</onclick>
-                <onclick>Skin.SetString(MenuColorName,$LOCALIZE[88109],)</onclick>
-                <onclick>PreviousMenu</onclick>
-            </item>
-            <item id="4">
-                <description>MenuColor3</description>
-                <label>[COLOR=FF999999]$LOCALIZE[88110][/COLOR]</label>
-                <onclick>Skin.SetString(MenuColor,FF999999,)</onclick>
-                <onclick>Skin.SetString(MenuColorName,$LOCALIZE[88110],)</onclick>
-                <onclick>PreviousMenu</onclick>
-            </item>
-            <item id="5">
-                <description>MenuColor4</description>
-                <label>[COLOR=FFEC0000]$LOCALIZE[88111][/COLOR]</label>
-                <onclick>Skin.SetString(MenuColor,FFEC0000,)</onclick>
-                <onclick>Skin.SetString(MenuColorName,$LOCALIZE[88111],)</onclick>
-                <onclick>PreviousMenu</onclick>
-            </item>
-            <item id="6">
-                <description>MenuColor5</description>
-                <label>[COLOR=84FF00FF]$LOCALIZE[88112][/COLOR]</label>
-                <onclick>Skin.SetString(MenuColor,84FF00FF,)</onclick>
-                <onclick>Skin.SetString(MenuColorName,$LOCALIZE[88112],)</onclick>
-                <onclick>PreviousMenu</onclick>
-            </item>
-            <item id="7">
-                <description>MenuColor6</description>
-                <label>[COLOR=FF7F2BAA]$LOCALIZE[88113][/COLOR]</label>
-                <onclick>Skin.SetString(MenuColor,FF7F2BAA,)</onclick>
-                <onclick>Skin.SetString(MenuColorName,$LOCALIZE[88113],)</onclick>
-                <onclick>PreviousMenu</onclick>
-            </item>
-            <item id="8">
-                <description>MenuColor7</description>
-                <label>[COLOR=FFFF8C00]$LOCALIZE[88114][/COLOR]</label>
-                <onclick>Skin.SetString(MenuColor,FFFF8C00,)</onclick>
-                <onclick>Skin.SetString(MenuColorName,$LOCALIZE[88114],)</onclick>
-                <onclick>PreviousMenu</onclick>
-            </item>
-            <item id="9">
-                <description>MenuColor8</description>
-                <label>[COLOR=FFFFFF00]$LOCALIZE[88115][/COLOR]</label>
-                <onclick>Skin.SetString(MenuColor,FFFFFF00,)</onclick>
-                <onclick>Skin.SetString(MenuColorName,$LOCALIZE[88115],)</onclick>
-                <onclick>PreviousMenu</onclick>
-            </item>
-            <item id="10">
-                <description>MenuColor9</description>
-                <label>[COLOR=FF6DF300]$LOCALIZE[88116][/COLOR]</label>
-                <onclick>Skin.SetString(MenuColor,FF6DF300,)</onclick>
-                <onclick>Skin.SetString(MenuColorName,$LOCALIZE[88116],)</onclick>
-                <onclick>PreviousMenu</onclick>
-            </item>
-            <item id="11">
-                <description>MenuColor Default</description>
-                <label>[COLOR=blue]$LOCALIZE[571][/COLOR]</label>
-                <onclick>Skin.SetString(MenuColor,blue,)</onclick>
-                <onclick>Skin.Reset(MenuColorName)</onclick>
-                <onclick>PreviousMenu</onclick>
-            </item>
-        </content>
+	<include name="RecommendedAlbumContent">
+		<content>
+			<item id="1">
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.1.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedAlbum.1.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2123)</onclick>
+				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.1.Play)]</onclick>
+				<onclick>fullscreen</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.1.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title))</visible>
+			</item>
+			<item id="2">
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.2.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedAlbum.2.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2123)</onclick>
+				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.2.Play)]</onclick>
+				<onclick>fullscreen</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.2.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.2.Title))</visible>
+			</item>
+			<item id="3">
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.3.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedAlbum.3.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2123)</onclick>
+				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.3.Play)]</onclick>
+				<onclick>fullscreen</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.3.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.3.Title))</visible>
+			</item>
+			<item id="4">
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.4.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedAlbum.4.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2123)</onclick>
+				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.4.Play)]</onclick>
+				<onclick>fullscreen</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.4.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.4.Title))</visible>
+			</item>
+			<item id="5">
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.5.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedAlbum.5.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2123)</onclick>
+				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.5.Play)]</onclick>
+				<onclick>fullscreen</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.5.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.5.Title))</visible>
+			</item>
+			<item id="6">
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.6.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedAlbum.6.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2123)</onclick>
+				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.6.Play)]</onclick>
+				<onclick>fullscreen</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.6.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.6.Title))</visible>
+			</item>
+			<item id="7">
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.7.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedAlbum.7.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2123)</onclick>
+				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.7.Play)]</onclick>
+				<onclick>fullscreen</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.7.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.7.Title))</visible>
+			</item>
+			<item id="8">
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.8.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedAlbum.8.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2123)</onclick>
+				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.8.Play)]</onclick>
+				<onclick>fullscreen</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.8.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.8.Title))</visible>
+			</item>
+			<item id="9">
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.9.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedAlbum.9.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2123)</onclick>
+				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.9.Play)]</onclick>
+				<onclick>fullscreen</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.9.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.9.Title))</visible>
+			</item>
+			<item id="10">
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.10.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedAlbum.10.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2123)</onclick>
+				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.10.Play)]</onclick>
+				<onclick>fullscreen</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.10.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.10.Title))</visible>
+			</item>
+			<item id="11">
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.11.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedAlbum.11.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2123)</onclick>
+				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.11.Play)]</onclick>
+				<onclick>fullscreen</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.11.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.11.Title))</visible>
+			</item>
+			<item id="12">
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.12.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedAlbum.12.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2123)</onclick>
+				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.12.Play)]</onclick>
+				<onclick>fullscreen</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.12.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.12.Title))</visible>
+			</item>
+			<item id="13">
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.13.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedAlbum.13.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2123)</onclick>
+				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.13.Play)]</onclick>
+				<onclick>fullscreen</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.13.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.13.Title))</visible>
+			</item>
+			<item id="14">
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.14.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedAlbum.14.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2123)</onclick>
+				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.14.Play)]</onclick>
+				<onclick>fullscreen</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.14.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.14.Title))</visible>
+			</item>
+			<item id="15">
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.15.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedAlbum.15.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2123)</onclick>
+				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.15.Play)]</onclick>
+				<onclick>fullscreen</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.15.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.15.Title))</visible>
+			</item>
+			<item id="16">
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.16.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedAlbum.16.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2123)</onclick>
+				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.16.Play)]</onclick>
+				<onclick>fullscreen</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.16.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.16.Title))</visible>
+			</item>
+			<item id="17">
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.17.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedAlbum.17.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2123)</onclick>
+				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.17.Play)]</onclick>
+				<onclick>fullscreen</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.17.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.17.Title))</visible>
+			</item>
+			<item id="18">
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.18.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedAlbum.18.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2123)</onclick>
+				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.18.Play)]</onclick>
+				<onclick>fullscreen</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.18.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.18.Title))</visible>
+			</item>
+			<item id="19">
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.19.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedAlbum.19.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2123)</onclick>
+				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.19.Play)]</onclick>
+				<onclick>fullscreen</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.19.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.19.Title))</visible>
+			</item>
+			<item id="20">
+				<label>$INFO[Window(Home).Property(RecommendedAlbum.20.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedAlbum.20.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2123)</onclick>
+				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.20.Play)]</onclick>
+				<onclick>fullscreen</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.20.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.20.Title))</visible>
+			</item>
+			<item id="21">
+				<label>$INFO[Window(Home).Property(RecentAlbum.1.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecentAlbum.1.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2123)</onclick>
+				<onclick>$INFO[Window(Home).Property(RecentAlbum.1.Play)]</onclick>
+				<onclick>fullscreen</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecentAlbum.1.Thumb)]</thumb>
+				<visible>String.IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title)) + !String.IsEmpty(Window(Home).Property(RecentAlbum.1.Title))</visible>
+			</item>
+			<item id="22">
+				<label></label>
+				<label2>- $LOCALIZE[89703]</label2>
+				<onclick>PreviousMenu</onclick>
+				<icon>-</icon>
+				<thumb>-</thumb>
+				<visible>String.IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title)) + String.IsEmpty(Window(Home).Property(RecentAlbum.1.Title))</visible>
+			</item>
+		</content>
 	</include>
-    <include name="ItemMenuFocus">
-        <content>
-            <item id="1">
-                <description>Focus -2</description>
-                <label>$LOCALIZE[88083] 2</label>
-                <onclick>Skin.SetString(CustomFocus,-2,)</onclick>
-                <onclick>Skin.SetString(CustomFocusName,$LOCALIZE[88083] 2,)</onclick>
-                <onclick>PreviousMenu</onclick>
-            </item>
-            <item id="2">
-                <description>Focus -1</description>
-                <label>$LOCALIZE[88083] 1</label>
-                <onclick>Skin.SetString(CustomFocus,-1,)</onclick>
-                <onclick>Skin.SetString(CustomFocusName,$LOCALIZE[88083] 1,)</onclick>
-                <onclick>PreviousMenu</onclick>
-            </item>
-            <item id="3">
-                <description>Focus 0</description>
-                <label>$LOCALIZE[571]</label>
-                <onclick>Skin.Reset(CustomFocus)</onclick>
-                <onclick>Skin.Reset(CustomFocusName)</onclick>
-                <onclick>PreviousMenu</onclick>
-            </item>
-            <item id="4">
-                <description>Focus 1</description>
-                <label>$LOCALIZE[88084] 1</label>
-                <onclick>Skin.SetString(CustomFocus,1,)</onclick>
-                <onclick>Skin.SetString(CustomFocusName,$LOCALIZE[88084] 1,)</onclick>
-                <onclick>PreviousMenu</onclick>
-            </item>
-            <item id="5">
-                <description>Focus 2</description>
-                <label>$LOCALIZE[88084] 2</label>
-                <onclick>Skin.SetString(CustomFocus,2,)</onclick>
-                <onclick>Skin.SetString(CustomFocusName,$LOCALIZE[88084] 2,)</onclick>
-                <onclick>PreviousMenu</onclick>
-            </item>
-            <item id="6">
-                <description>Focus Manual</description>
-                <label>$LOCALIZE[88085]</label>
-                <onclick>Skin.SetNumeric(CustomFocus)</onclick>
-                <onclick>Skin.SetString(CustomFocusName,$LOCALIZE[88085],)</onclick>
-                <onclick>PreviousMenu</onclick>
-            </item>
-        </content>
+	<include name="RecommendedEpisodesContent">
+		<content>
+			<item id="1">
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.1.TVshowTitle)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedEpisode.1.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.1.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.1.Title)] - </label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2124)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.1.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.1.Art(thumb))]</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.1.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.1.TVshowTitle))</visible>
+			</item>
+			<item id="2">
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.2.TVshowTitle)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedEpisode.2.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.2.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.2.Title)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2124)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.2.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.2.Art(thumb))]</thumb>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.2.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.2.TVshowTitle))</visible>
+			</item>
+			<item id="3">
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.3.TVshowTitle)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedEpisode.3.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.3.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.3.Title)] - </label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2124)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.3.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.3.Art(thumb))]</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.3.Art(tvshow.clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.3.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.3.TVshowTitle))</visible>
+			</item>
+			<item id="4">
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.4.TVshowTitle)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedEpisode.4.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.4.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.4.Title)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2124)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.4.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.4.Art(thumb))]</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.4.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.4.TVshowTitle))</visible>
+			</item>
+			<item id="5">
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.5.TVshowTitle)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedEpisode.5.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.5.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.5.Title)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2124)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.5.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.5.Art(thumb))]</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.5.Art(tvshow.clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.5.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.5.TVshowTitle))</visible>
+			</item>
+			<item id="6">
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.6.TVshowTitle)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedEpisode.6.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.6.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.6.Title)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2124)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.6.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.6.Art(thumb))]</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.6.Art(tvshow.clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.6.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.6.TVshowTitle))</visible>
+			</item>
+			<item id="7">
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.7.TVshowTitle)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedEpisode.7.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.7.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.7.Title)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2124)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.7.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.7.Art(thumb))]</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.7.Art(tvshow.clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.7.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.7.TVshowTitle))</visible>
+			</item>
+			<item id="8">
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.8.TVshowTitle)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedEpisode.8.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.8.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.8.Title)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2124)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.8.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.8.Art(thumb))]</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.8.Art(tvshow.clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.8.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.8.TVshowTitle))</visible>
+			</item>
+			<item id="9">
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.9.TVshowTitle)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedEpisode.9.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.9.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.9.Title)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2124)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.9.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.9.Art(thumb))]</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.9.Art(tvshow.clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.9.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.9.TVshowTitle))</visible>
+			</item>
+			<item id="10">
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.10.TVshowTitle)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedEpisode.10.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.10.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.10.Title)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2124)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.10.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.10.Art(thumb))]</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.10.Art(tvshow.clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.10.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.10.TVshowTitle))</visible>
+			</item>
+			<item id="11">
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.11.TVshowTitle)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedEpisode.11.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.11.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.11.Title)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2124)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.11.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.11.Art(thumb))]</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.11.Art(tvshow.clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.11.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.11.TVshowTitle))</visible>
+			</item>
+			<item id="12">
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.12.TVshowTitle)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedEpisode.12.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.12.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.12.Title)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2124)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.12.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.12.Art(thumb))]</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.12.Art(tvshow.clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.12.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.12.TVshowTitle))</visible>
+			</item>
+			<item id="13">
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.13.TVshowTitle)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedEpisode.13.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.13.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.13.Title)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2124)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.13.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.13.Art(thumb))]</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.13.Art(tvshow.clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.13.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.13.TVshowTitle))</visible>
+			</item>
+			<item id="14">
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.14.TVshowTitle)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedEpisode.14.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.14.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.14.Title)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2124)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.14.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.14.Art(thumb))]</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.14.Art(tvshow.clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.14.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.14.TVshowTitle))</visible>
+			</item>
+			<item id="15">
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.15.TVshowTitle)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedEpisode.15.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.15.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.15.Title)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2124)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.15.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.15.Art(thumb))]</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.15.Art(tvshow.clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.15.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.15.TVshowTitle))</visible>
+			</item>
+			<item id="16">
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.16.TVshowTitle)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedEpisode.16.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.16.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.16.Title)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2124)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.16.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.16.Art(thumb))]</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.16.Art(tvshow.clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.16.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.16.TVshowTitle))</visible>
+			</item>
+			<item id="17">
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.17.TVshowTitle)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedEpisode.17.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.17.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.17.Title)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2124)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.17.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.17.Art(thumb))]</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.17.Art(tvshow.clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.17.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.17.TVshowTitle))</visible>
+			</item>
+			<item id="18">
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.18.TVshowTitle)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedEpisode.18.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.18.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.18.Title)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2124)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.18.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.18.Art(thumb))]</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.18.Art(tvshow.clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.18.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.18.TVshowTitle))</visible>
+			</item>
+			<item id="19">
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.19.TVshowTitle)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedEpisode.19.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.19.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.19.Title)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2124)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.19.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.19.Art(thumb))]</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.19.Art(tvshow.clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.19.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.19.TVshowTitle))</visible>
+			</item>
+			<item id="20">
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.20.TVshowTitle)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedEpisode.20.Season)]x$INFO[Window(Home).Property(RecommendedEpisode.20.Episode)]. $INFO[Window(Home).Property(RecommendedEpisode.20.Title)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2124)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.20.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.20.Art(thumb))]</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.20.Art(tvshow.clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.20.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.20.TVshowTitle))</visible>
+			</item>
+			<item id="21">
+				<label>- $LOCALIZE[89703]</label>
+				<label2></label2>
+				<onclick>PreviousMenu</onclick>
+				<icon>-</icon>
+				<thumb>-</thumb>
+				<visible>String.IsEmpty(Window(Home).Property(RecommendedEpisode.1.TVshowTitle))</visible>
+			</item>
+		</content>
 	</include>
-	<include name="WeatherIcons">		
+	<include name="RecommendedMoviesContent">
+		<content>
+			<item id="1">
+				<label>$INFO[Window(Home).Property(RecommendedMovie.1.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2125)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.1.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecommendedMovie.1.Art(poster))]</icon>
+				<thumb>-</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.1.Art(clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.1.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.1.Title))</visible>
+			</item>
+			<item id="2">
+				<label>$INFO[Window(Home).Property(RecommendedMovie.2.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2125)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.2.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecommendedMovie.2.Art(poster))]</icon>
+				<thumb>-</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.2.Art(clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.2.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.2.Title))</visible>
+			</item>
+			<item id="3">
+				<label>$INFO[Window(Home).Property(RecommendedMovie.3.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2125)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.3.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecommendedMovie.3.Art(poster))]</icon>
+				<thumb>-</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.3.Art(clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.3.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.3.Title))</visible>
+			</item>
+			<item id="4">
+				<label>$INFO[Window(Home).Property(RecommendedMovie.4.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2125)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.4.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecommendedMovie.4.Art(poster))]</icon>
+				<thumb>-</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.4.Art(clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.4.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.4.Title))</visible>
+			</item>
+			<item id="5">
+				<label>$INFO[Window(Home).Property(RecommendedMovie.5.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2125)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.5.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecommendedMovie.5.Art(poster))]</icon>
+				<thumb>-</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.5.Art(clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.5.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.5.Title))</visible>
+			</item>
+			<item id="6">
+				<label>$INFO[Window(Home).Property(RecommendedMovie.6.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2125)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.6.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecommendedMovie.6.Art(poster))]</icon>
+				<thumb>-</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.6.Art(clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.6.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.6.Title))</visible>
+			</item>
+			<item id="7">
+				<label>$INFO[Window(Home).Property(RecommendedMovie.7.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2125)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.7.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecommendedMovie.7.Art(poster))]</icon>
+				<thumb>-</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.7.Art(clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.7.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.7.Title))</visible>
+			</item>
+			<item id="8">
+				<label>$INFO[Window(Home).Property(RecommendedMovie.8.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2125)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.8.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecommendedMovie.8.Art(poster))]</icon>
+				<thumb>-</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.8.Art(clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.8.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.8.Title))</visible>
+			</item>
+			<item id="9">
+				<label>$INFO[Window(Home).Property(RecommendedMovie.9.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2125)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.9.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecommendedMovie.9.Art(poster))]</icon>
+				<thumb>-</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.9.Art(clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.9.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.9.Title))</visible>
+			</item>
+			<item id="10">
+				<label>$INFO[Window(Home).Property(RecommendedMovie.10.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2125)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.10.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecommendedMovie.10.Art(poster))]</icon>
+				<thumb>-</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.10.Art(clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.10.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.10.Title))</visible>
+			</item>
+			<item id="11">
+				<label>$INFO[Window(Home).Property(RecommendedMovie.11.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2125)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.11.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecommendedMovie.11.Art(poster))]</icon>
+				<thumb>-</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.11.Art(clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.11.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.11.Title))</visible>
+			</item>
+			<item id="12">
+				<label>$INFO[Window(Home).Property(RecommendedMovie.12.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2125)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.12.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecommendedMovie.12.Art(poster))]</icon>
+				<thumb>-</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.12.Art(clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.12.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.12.Title))</visible>
+			</item>
+			<item id="13">
+				<label>$INFO[Window(Home).Property(RecommendedMovie.13.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2125)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.13.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecommendedMovie.13.Art(poster))]</icon>
+				<thumb>-</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.13.Art(clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.13.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.13.Title))</visible>
+			</item>
+			<item id="14">
+				<label>$INFO[Window(Home).Property(RecommendedMovie.14.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2125)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.14.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecommendedMovie.14.Art(poster))]</icon>
+				<thumb>-</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.14.Art(clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.14.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.14.Title))</visible>
+			</item>
+			<item id="15">
+				<label>$INFO[Window(Home).Property(RecommendedMovie.15.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2125)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.15.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecommendedMovie.15.Art(poster))]</icon>
+				<thumb>-</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.15.Art(clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.15.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.15.Title))</visible>
+			</item>
+			<item id="16">
+				<label>$INFO[Window(Home).Property(RecommendedMovie.16.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2125)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.16.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecommendedMovie.16.Art(poster))]</icon>
+				<thumb>-</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.16.Art(clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.16.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.16.Title))</visible>
+			</item>
+			<item id="17">
+				<label>$INFO[Window(Home).Property(RecommendedMovie.17.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2125)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.17.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecommendedMovie.17.Art(poster))]</icon>
+				<thumb>-</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.17.Art(clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.17.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.17.Title))</visible>
+			</item>
+			<item id="18">
+				<label>$INFO[Window(Home).Property(RecommendedMovie.18.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2125)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.18.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecommendedMovie.18.Art(poster))]</icon>
+				<thumb>-</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.18.Art(clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.18.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.18.Title))</visible>
+			</item>
+			<item id="19">
+				<label>$INFO[Window(Home).Property(RecommendedMovie.19.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2125)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.19.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecommendedMovie.19.Art(poster))]</icon>
+				<thumb>-</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.19.Art(clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.19.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.19.Title))</visible>
+			</item>
+			<item id="20">
+				<label>$INFO[Window(Home).Property(RecommendedMovie.20.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2125)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.20.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecommendedMovie.20.Art(poster))]</icon>
+				<thumb>-</thumb>
+				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.20.Art(clearlogo))]</property>
+				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.20.PercentPlayed)]</property>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.20.Title))</visible>
+			</item>
+			<item id="21">
+				<label>- $LOCALIZE[89703] - </label>
+				<label2></label2>
+				<onclick>PreviousMenu</onclick>
+				<icon>-</icon>
+				<thumb>-</thumb>
+				<visible>String.IsEmpty(Window(Home).Property(RecommendedMovie.1.Title))</visible>
+			</item>
+		</content>
+	</include>
+	<include name="RecommendedMusicVideoContent">
+		<content>
+			<item id="1">
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.1.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedMusicVideo.1.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2126)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.1.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.1.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.1.Title))</visible>
+			</item>
+			<item id="2">
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.2.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedMusicVideo.2.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2126)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.2.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.2.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.2.Title))</visible>
+			</item>
+			<item id="3">
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.3.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedMusicVideo.3.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2126)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.3.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.3.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.3.Title))</visible>
+			</item>
+			<item id="4">
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.4.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedMusicVideo.4.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2126)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.4.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.4.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.4.Title))</visible>
+			</item>
+			<item id="5">
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.5.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedMusicVideo.5.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2126)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.5.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.5.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.5.Title))</visible>
+			</item>
+			<item id="6">
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.6.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedMusicVideo.6.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2126)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.6.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.6.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.6.Title))</visible>
+			</item>
+			<item id="7">
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.7.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedMusicVideo.7.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2126)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.7.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.7.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.7.Title))</visible>
+			</item>
+			<item id="8">
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.8.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedMusicVideo.8.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2126)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.8.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.8.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.8.Title))</visible>
+			</item>
+			<item id="9">
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.9.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedMusicVideo.9.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2126)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.9.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.9.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.9.Title))</visible>
+			</item>
+			<item id="10">
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.10.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedMusicVideo.10.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2126)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.10.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.10.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.10.Title))</visible>
+			</item>
+			<item id="11">
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.11.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedMusicVideo.11.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2126)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.11.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.11.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.11.Title))</visible>
+			</item>
+			<item id="12">
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.12.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedMusicVideo.12.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2126)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.12.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.12.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.12.Title))</visible>
+			</item>
+			<item id="13">
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.13.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedMusicVideo.13.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2126)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.13.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.13.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.13.Title))</visible>
+			</item>
+			<item id="14">
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.14.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedMusicVideo.14.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2126)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.14.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.14.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.14.Title))</visible>
+			</item>
+			<item id="15">
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.15.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedMusicVideo.15.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2126)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.15.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.15.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.15.Title))</visible>
+			</item>
+			<item id="16">
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.16.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedMusicVideo.16.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2126)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.16.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.16.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.16.Title))</visible>
+			</item>
+			<item id="17">
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.17.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedMusicVideo.17.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2126)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.17.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.17.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.17.Title))</visible>
+			</item>
+			<item id="18">
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.18.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedMusicVideo.18.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2126)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.18.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.18.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.18.Title))</visible>
+			</item>
+			<item id="19">
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.19.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedMusicVideo.19.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2126)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.19.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.19.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.19.Title))</visible>
+			</item>
+			<item id="20">
+				<label>$INFO[Window(Home).Property(RecommendedMusicVideo.20.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecommendedMusicVideo.20.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>Dialog.Close(2126)</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.20.File)])</onclick>
+				<icon>-</icon>
+				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.20.Thumb)]</thumb>
+				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.20.Title))</visible>
+			</item>
+			<item id="21">
+				<label></label>
+				<label2>- $LOCALIZE[89703]</label2>
+				<onclick>PreviousMenu</onclick>
+				<icon>-</icon>
+				<thumb>-</thumb>
+				<visible>String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.1.Title))</visible>
+			</item>
+		</content>
+	</include>
+	<include name="ItemMenuColors">
+		<content>
+			<item id="1">
+				<description>MenuColor0</description>
+				<label>[COLOR=FF0084FF]$LOCALIZE[88107][/COLOR]</label>
+				<onclick>Skin.SetString(MenuColor,FF0084FF,)</onclick>
+				<onclick>Skin.SetString(MenuColorName,$LOCALIZE[88107],)</onclick>
+				<onclick>PreviousMenu</onclick>
+			</item>
+			<item id="2">
+				<description>MenuColor1</description>
+				<label>[COLOR=FF03D6D9]$LOCALIZE[88108][/COLOR]</label>
+				<onclick>Skin.SetString(MenuColor,FF03D6D9,)</onclick>
+				<onclick>Skin.SetString(MenuColorName,$LOCALIZE[88108],)</onclick>
+				<onclick>PreviousMenu</onclick>
+			</item>
+			<item id="3">
+				<description>MenuColor2</description>
+				<label>[COLOR=FFFFFFFF]$LOCALIZE[88109][/COLOR]</label>
+				<onclick>Skin.SetString(MenuColor,FFFFFFFF,)</onclick>
+				<onclick>Skin.SetString(MenuColorName,$LOCALIZE[88109],)</onclick>
+				<onclick>PreviousMenu</onclick>
+			</item>
+			<item id="4">
+				<description>MenuColor3</description>
+				<label>[COLOR=FF999999]$LOCALIZE[88110][/COLOR]</label>
+				<onclick>Skin.SetString(MenuColor,FF999999,)</onclick>
+				<onclick>Skin.SetString(MenuColorName,$LOCALIZE[88110],)</onclick>
+				<onclick>PreviousMenu</onclick>
+			</item>
+			<item id="5">
+				<description>MenuColor4</description>
+				<label>[COLOR=FFEC0000]$LOCALIZE[88111][/COLOR]</label>
+				<onclick>Skin.SetString(MenuColor,FFEC0000,)</onclick>
+				<onclick>Skin.SetString(MenuColorName,$LOCALIZE[88111],)</onclick>
+				<onclick>PreviousMenu</onclick>
+			</item>
+			<item id="6">
+				<description>MenuColor5</description>
+				<label>[COLOR=84FF00FF]$LOCALIZE[88112][/COLOR]</label>
+				<onclick>Skin.SetString(MenuColor,84FF00FF,)</onclick>
+				<onclick>Skin.SetString(MenuColorName,$LOCALIZE[88112],)</onclick>
+				<onclick>PreviousMenu</onclick>
+			</item>
+			<item id="7">
+				<description>MenuColor6</description>
+				<label>[COLOR=FF7F2BAA]$LOCALIZE[88113][/COLOR]</label>
+				<onclick>Skin.SetString(MenuColor,FF7F2BAA,)</onclick>
+				<onclick>Skin.SetString(MenuColorName,$LOCALIZE[88113],)</onclick>
+				<onclick>PreviousMenu</onclick>
+			</item>
+			<item id="8">
+				<description>MenuColor7</description>
+				<label>[COLOR=FFFF8C00]$LOCALIZE[88114][/COLOR]</label>
+				<onclick>Skin.SetString(MenuColor,FFFF8C00,)</onclick>
+				<onclick>Skin.SetString(MenuColorName,$LOCALIZE[88114],)</onclick>
+				<onclick>PreviousMenu</onclick>
+			</item>
+			<item id="9">
+				<description>MenuColor8</description>
+				<label>[COLOR=FFFFFF00]$LOCALIZE[88115][/COLOR]</label>
+				<onclick>Skin.SetString(MenuColor,FFFFFF00,)</onclick>
+				<onclick>Skin.SetString(MenuColorName,$LOCALIZE[88115],)</onclick>
+				<onclick>PreviousMenu</onclick>
+			</item>
+			<item id="10">
+				<description>MenuColor9</description>
+				<label>[COLOR=FF6DF300]$LOCALIZE[88116][/COLOR]</label>
+				<onclick>Skin.SetString(MenuColor,FF6DF300,)</onclick>
+				<onclick>Skin.SetString(MenuColorName,$LOCALIZE[88116],)</onclick>
+				<onclick>PreviousMenu</onclick>
+			</item>
+			<item id="11">
+				<description>MenuColor Default</description>
+				<label>[COLOR=blue]$LOCALIZE[571][/COLOR]</label>
+				<onclick>Skin.SetString(MenuColor,blue,)</onclick>
+				<onclick>Skin.Reset(MenuColorName)</onclick>
+				<onclick>PreviousMenu</onclick>
+			</item>
+		</content>
+	</include>
+	<include name="ItemMenuFocus">
+		<content>
+			<item id="1">
+				<description>Focus -2</description>
+				<label>$LOCALIZE[88083] 2</label>
+				<onclick>Skin.SetString(CustomFocus,-2,)</onclick>
+				<onclick>Skin.SetString(CustomFocusName,$LOCALIZE[88083] 2,)</onclick>
+				<onclick>PreviousMenu</onclick>
+			</item>
+			<item id="2">
+				<description>Focus -1</description>
+				<label>$LOCALIZE[88083] 1</label>
+				<onclick>Skin.SetString(CustomFocus,-1,)</onclick>
+				<onclick>Skin.SetString(CustomFocusName,$LOCALIZE[88083] 1,)</onclick>
+				<onclick>PreviousMenu</onclick>
+			</item>
+			<item id="3">
+				<description>Focus 0</description>
+				<label>$LOCALIZE[571]</label>
+				<onclick>Skin.Reset(CustomFocus)</onclick>
+				<onclick>Skin.Reset(CustomFocusName)</onclick>
+				<onclick>PreviousMenu</onclick>
+			</item>
+			<item id="4">
+				<description>Focus 1</description>
+				<label>$LOCALIZE[88084] 1</label>
+				<onclick>Skin.SetString(CustomFocus,1,)</onclick>
+				<onclick>Skin.SetString(CustomFocusName,$LOCALIZE[88084] 1,)</onclick>
+				<onclick>PreviousMenu</onclick>
+			</item>
+			<item id="5">
+				<description>Focus 2</description>
+				<label>$LOCALIZE[88084] 2</label>
+				<onclick>Skin.SetString(CustomFocus,2,)</onclick>
+				<onclick>Skin.SetString(CustomFocusName,$LOCALIZE[88084] 2,)</onclick>
+				<onclick>PreviousMenu</onclick>
+			</item>
+			<item id="6">
+				<description>Focus Manual</description>
+				<label>$LOCALIZE[88085]</label>
+				<onclick>Skin.SetNumeric(CustomFocus)</onclick>
+				<onclick>Skin.SetString(CustomFocusName,$LOCALIZE[88085],)</onclick>
+				<onclick>PreviousMenu</onclick>
+			</item>
+		</content>
+	</include>
+	<include name="WeatherIcons">
 		<param name="left">0</param>
 		<param name="top">0</param>
 		<param name="width">60</param>
@@ -3109,7 +3109,7 @@
 				<width>$PARAM[width]</width>
 				<height>$PARAM[height]</height>
 				<texture>$PARAM[image_1]</texture>
-				<aspectratio>keep</aspectratio>				
+				<aspectratio>keep</aspectratio>
 				<visible>!Skin.HasSetting(WeatherIcons.multi)</visible>
 			</control>
 			<control type="multiimage">
@@ -3119,7 +3119,7 @@
 				<width>$PARAM[width]</width>
 				<height>$PARAM[height]</height>
 				<imagepath>$PARAM[image_multi]</imagepath>
-				<aspectratio>keep</aspectratio>				
+				<aspectratio>keep</aspectratio>
 				<timeperimage>100</timeperimage>
 				<randomize>false</randomize>
 				<fadetime>300</fadetime>
@@ -3130,7 +3130,7 @@
 			</control>
 		</definition>
 	</include>
-	<include name="WeatherIconsWidgets">		
+	<include name="WeatherIconsWidgets">
 		<param name="left">10</param>
 		<param name="top">10</param>
 		<param name="width">180</param>
@@ -3148,7 +3148,7 @@
 				<texture>$PARAM[image_1]</texture>
 				<aspectratio>keep</aspectratio>
 				<bordertexture border="5">$PARAM[image_border]</bordertexture>
-                <bordersize>5</bordersize>				
+				<bordersize>5</bordersize>
 				<visible>!Skin.HasSetting(WeatherIcons.multi)</visible>
 			</control>
 			<control type="image">
@@ -3157,7 +3157,7 @@
 				<top>$PARAM[top]</top>
 				<width>$PARAM[width]</width>
 				<height>$PARAM[height]</height>
-				<texture>$PARAM[image_border]</texture>			
+				<texture>$PARAM[image_border]</texture>
 				<visible>Skin.HasSetting(WeatherIcons.multi)</visible>
 			</control>
 			<control type="multiimage">
@@ -3167,7 +3167,7 @@
 				<width>$PARAM[width]</width>
 				<height>$PARAM[height]</height>
 				<imagepath>$PARAM[image_multi]</imagepath>
-				<aspectratio>keep</aspectratio>		
+				<aspectratio>keep</aspectratio>
 				<timeperimage>100</timeperimage>
 				<randomize>false</randomize>
 				<fadetime>300</fadetime>
@@ -3178,7 +3178,7 @@
 			</control>
 		</definition>
 	</include>
-	<include name="WeatherIconsWidgets2">		
+	<include name="WeatherIconsWidgets2">
 		<param name="left">0</param>
 		<param name="top">10</param>
 		<param name="width">120</param>
@@ -3216,262 +3216,262 @@
 				<fadetime>300</fadetime>
 				<pauseatend>1000</pauseatend>
 				<include>VisibleFadeEffect</include>
-				<animation effect="fade" time="150">WindowClose</animation>				
+				<animation effect="fade" time="150">WindowClose</animation>
 				<visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + Skin.HasSetting(WeatherIcons.multi)</visible>
 			</control>
 		</definition>
 	</include>
-    <!-- Dialog YesNo -->
-    <include name="DialogYesNo">
-        <param name="dialogincludeno">DialogClickNo</param>
-        <definition>
-            <include content="DialogBackgroundCommons">
-                <param name="DialogBackgroundWidth" value="650" />
-                <param name="DialogBackgroundHeight" value="260" />
-                <param name="DialogHeaderWidth" value="570" />
-                <param name="DialogHeaderLabel" value="$PARAM[dialogheaderlabel]" />
-                <param name="DialogHeaderId" value="1" />
-                <param name="CloseButtonLeft" value="560" />
-                <param name="CloseButtonNav" value="9000" />
-            </include>
-            <control type="textbox" id="9">
-                <description>text</description>
-                <left>30</left>
-                <top>62</top>
-                <width>590</width>
-                <height>98</height>
-                <align>left</align>
-                <label>$PARAM[dialogtext]</label>
-                <font>font13</font>
-                <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
-            </control>
-            <control type="grouplist" id="9000">
-                <left>25</left>
-                <top>195</top>
-                <width>600</width>
-                <height>40</height>
-                <align>center</align>
-                <itemgap>0</itemgap>
-                <orientation>horizontal</orientation>
-                <control type="button" id="11">
-                    <description>OK button</description>
-                    <width>200</width>
-                    <height>40</height>
-                    <label>107</label>
-                    <font>font12_title</font>
-                    <textcolor>white</textcolor>
-                    <focusedcolor>white</focusedcolor>
-                    <align>center</align>
-                    <include>$PARAM[dialogincludeyes]</include>
-                </control>
-                <control type="button" id="10">
-                    <description>Cancel button</description>
-                    <width>200</width>
-                    <height>40</height>
-                    <label>106</label>
-                    <font>font12_title</font>
-                    <textcolor>white</textcolor>
-                    <focusedcolor>white</focusedcolor>
-                    <align>center</align>
-                    <include>$PARAM[dialogincludeno]</include>
-                </control>
-            </control>
-        </definition>
-    </include>
-    
-    <!-- *** Reset *** -->
-    
-    <!-- Reset General -->
-    <include name="DialogResetGeneral">
-        <onclick>Skin.Reset(AutoScroll)</onclick>
-        <onclick>Skin.Reset(Show_SlideShow_Paused)</onclick>
-        <onclick>Skin.Reset(WindowedTrailer)</onclick>
-        <onclick>Skin.Reset(HideFilenameFlagging)</onclick>
-        <onclick>Skin.Reset(HideEPGwithRDS)</onclick>
-        <onclick>Skin.Reset(LyricScript_Path)</onclick>
+	<!-- Dialog YesNo -->
+	<include name="DialogYesNo">
+		<param name="dialogincludeno">DialogClickNo</param>
+		<definition>
+			<include content="DialogBackgroundCommons">
+				<param name="DialogBackgroundWidth" value="650" />
+				<param name="DialogBackgroundHeight" value="260" />
+				<param name="DialogHeaderWidth" value="570" />
+				<param name="DialogHeaderLabel" value="$PARAM[dialogheaderlabel]" />
+				<param name="DialogHeaderId" value="1" />
+				<param name="CloseButtonLeft" value="560" />
+				<param name="CloseButtonNav" value="9000" />
+			</include>
+			<control type="textbox" id="9">
+				<description>text</description>
+				<left>30</left>
+				<top>62</top>
+				<width>590</width>
+				<height>98</height>
+				<align>left</align>
+				<label>$PARAM[dialogtext]</label>
+				<font>font13</font>
+				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+			</control>
+			<control type="grouplist" id="9000">
+				<left>25</left>
+				<top>195</top>
+				<width>600</width>
+				<height>40</height>
+				<align>center</align>
+				<itemgap>0</itemgap>
+				<orientation>horizontal</orientation>
+				<control type="button" id="11">
+					<description>OK button</description>
+					<width>200</width>
+					<height>40</height>
+					<label>107</label>
+					<font>font12_title</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<align>center</align>
+					<include>$PARAM[dialogincludeyes]</include>
+				</control>
+				<control type="button" id="10">
+					<description>Cancel button</description>
+					<width>200</width>
+					<height>40</height>
+					<label>106</label>
+					<font>font12_title</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<align>center</align>
+					<include>$PARAM[dialogincludeno]</include>
+				</control>
+			</control>
+		</definition>
+	</include>
+
+	<!-- *** Reset *** -->
+
+	<!-- Reset General -->
+	<include name="DialogResetGeneral">
+		<onclick>Skin.Reset(AutoScroll)</onclick>
+		<onclick>Skin.Reset(Show_SlideShow_Paused)</onclick>
+		<onclick>Skin.Reset(WindowedTrailer)</onclick>
+		<onclick>Skin.Reset(HideFilenameFlagging)</onclick>
+		<onclick>Skin.Reset(HideEPGwithRDS)</onclick>
+		<onclick>Skin.Reset(LyricScript_Path)</onclick>
 		<onclick>Skin.Reset(LrclyricsAlternativeView)</onclick>
-        <onclick>Skin.Reset(Use_Startup_Playlist)</onclick>
-        <onclick>Skin.Reset(Startup_Playlist_Path)</onclick>
-        <onclick>Skin.Reset(DurationSplashScreen)</onclick>
-        <onclick>Skin.Reset(ActivateGlobalSearch)</onclick>
-        <onclick>Skin.Reset(ActivateWatchitLater)</onclick>
-        <onclick>Skin.Reset(ActivateScriptPlaylist)</onclick>
-        <include>DialogClickNo</include>
-    </include>
-    <!-- Reset Options -->
-    <include name="DialogResetOptions">
-        <onclick>Skin.Reset(HomePageVideoInfo)</onclick>
-        <onclick>Skin.Reset(HomePageMusicInfo)</onclick>
-        <onclick>Skin.Reset(FullScreenClock)</onclick>
-        <onclick>Skin.Reset(SlideShowInfo)</onclick>
-        <onclick>Skin.Reset(HomePageWeatherInfo)</onclick>
-        <onclick>Skin.Reset(NoLogo)</onclick>
-        <onclick>Skin.Reset(HidePlayerPanel)</onclick>
-        <onclick>Skin.Reset(EnableHomeStats)</onclick>
-        <onclick>Skin.Reset(NoFloor)</onclick>
-        <onclick>Skin.Reset(NoFloorAll)</onclick>
-        <onclick>Skin.Reset(StudiosImages.name)</onclick>
-        <onclick>Skin.Reset(StudiosImages.ext)</onclick>
-        <onclick>Skin.Reset(StudiosImages.path)</onclick>
-        <onclick>Skin.Reset(LanguageFlags.name)</onclick>
-        <onclick>Skin.Reset(LanguageFlags.ext)</onclick>
-        <onclick>Skin.Reset(LanguageFlags.path)</onclick>		
-        <onclick>Skin.Reset(MovieGenreIcons.name)</onclick>
-        <onclick>Skin.Reset(MovieGenreIcons.ext)</onclick>
-        <onclick>Skin.Reset(MovieGenreIcons.path)</onclick>
-        <onclick>Skin.Reset(MusicGenreIcons.name)</onclick>
-        <onclick>Skin.Reset(MusicGenreIcons.ext)</onclick>
-        <onclick>Skin.Reset(MusicGenreIcons.path)</onclick>		
-        <onclick>Skin.Reset(WeatherIcons.name)</onclick>
-        <onclick>Skin.Reset(WeatherIcons.ext)</onclick>
-        <onclick>Skin.Reset(WeatherIcons.path)</onclick>
-        <onclick>Skin.Reset(WeatherIcons.multi)</onclick>
-        <onclick>Skin.Reset(NoSlideAddon)</onclick>
-        <onclick>Skin.Reset(NoLabelAddon)</onclick>
-        <onclick>Skin.Reset(EnableWidgetsTitle)</onclick>
-        <onclick>Skin.Reset(HideReloadSkinButton)</onclick>
-        <onclick>Skin.Reset(HidePowerButton)</onclick>
-        <onclick>Skin.Reset(UsrPwrBtnCmd.Label)</onclick>
-        <onclick>Skin.Reset(UsrPwrBtnCmd.Path)</onclick>
-        <onclick>Skin.Reset(HideFavoritesButton)</onclick>
-        <onclick>Skin.Reset(UsrFavBtnCmd.Label)</onclick>
-        <onclick>Skin.Reset(UsrFavBtnCmd.Path)</onclick>
-        <onclick>Skin.Reset(EnableSkinDebug))</onclick>       
-        <include>DialogClickNo</include>
-    </include>
-    <!-- Reset Main Menu -->
-    <include name="DialogMainMenu">
-        <onclick>Skin.Reset(LowerMenu)</onclick>
-        <onclick>Skin.Reset(WrapAroundHomeMenu)</onclick>
-        <onclick>Skin.Reset(FixedEndingMenu)</onclick>
-        <onclick>Skin.Reset(NoSlide)</onclick>
-        <onclick>Skin.Reset(MenuColorName)</onclick>
-        <onclick>Skin.Reset(MenuColor)</onclick>
-        <onclick>Skin.Reset(MenuColor.name)</onclick>
-        <onclick>Skin.Reset(MenuColor.base)</onclick>
-        <onclick>Skin.Reset(CustomFocusName)</onclick>
-        <onclick>Skin.Reset(CustomFocus)</onclick>
-        <include>DialogClickNo</include>
-    </include>
-    <!-- Reset User Widgets -->
-    <include name="DialogUserWidgets">
-        <onclick>Skin.Reset(ChannelTV.1.Label)</onclick>
-        <onclick>Skin.Reset(ChannelTV.2.Label)</onclick>
-        <onclick>Skin.Reset(ChannelTV.3.Label)</onclick>
-        <onclick>Skin.Reset(ChannelTV.4.Label)</onclick>
-        <onclick>Skin.Reset(ChannelTV.5.Label)</onclick>
-        <onclick>Skin.Reset(ChannelTV.6.Label)</onclick>
-        <onclick>Skin.Reset(ChannelTV.7.Label)</onclick>
-        <onclick>Skin.Reset(ChannelTV.8.Label)</onclick>
-        <onclick>Skin.Reset(ChannelTV.9.Label)</onclick>
-        <onclick>Skin.Reset(ChannelTV.10.Label)</onclick>
-        <onclick>Skin.Reset(ChannelRadio.1.Label)</onclick>
-        <onclick>Skin.Reset(ChannelRadio.2.Label)</onclick>
-        <onclick>Skin.Reset(ChannelRadio.3.Label)</onclick>
-        <onclick>Skin.Reset(ChannelRadio.4.Label)</onclick>
-        <onclick>Skin.Reset(ChannelRadio.5.Label)</onclick>
-        <onclick>Skin.Reset(ChannelRadio.6.Label)</onclick>
-        <onclick>Skin.Reset(ChannelRadio.7.Label)</onclick>
-        <onclick>Skin.Reset(ChannelRadio.8.Label)</onclick>
-        <onclick>Skin.Reset(ChannelRadio.9.Label)</onclick>
-        <onclick>Skin.Reset(ChannelRadio.10.Label)</onclick>
-        <include>DialogClickNo</include>
-    </include>
-    <!-- Reset Backgrounds -->
-    <include name="DialogBackgrounds">
-        <onclick>Skin.Reset(HideBackGroundFanart)</onclick>
-        <onclick>Skin.Reset(HideVisualizationFanart)</onclick>
-        <onclick>Skin.Reset(ShowBackgroundVideo)</onclick>
-        <onclick>Skin.Reset(HomeFanart.name)</onclick>
-        <onclick>Skin.Reset(HomeFanart.path)</onclick>
-        <onclick>Skin.Reset(HomeFanart.ext)</onclick>
-        <onclick>Skin.Reset(MovieGenreFanart.name)</onclick>
-        <onclick>Skin.Reset(MovieGenreFanart.path)</onclick>
-        <onclick>Skin.Reset(MovieGenreFanart.ext)</onclick>		
-        <onclick>Skin.Reset(WeatherFanart.name)</onclick>
-        <onclick>Skin.Reset(WeatherFanart.ext)</onclick>
-        <onclick>Skin.Reset(WeatherFanart.path)</onclick>
-        <onclick>Skin.Reset(WeatherFanart.multi)</onclick>
-        <onclick>Skin.Reset(SeparateBackground)</onclick>
-        <onclick>Skin.Reset(UseCustomBackground)</onclick>
-        <onclick>Skin.Reset(CustomBackgroundPath)</onclick>
-        <onclick>Skin.Reset(HomeItem.1.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.2.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.3.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.4.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.5.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.6.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.7.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.8.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.9.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.10.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.11.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.12.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.13.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.14.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.15.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.16.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.17.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.18.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.19.CBackground)</onclick>
-        <onclick>Skin.Reset(HomeItem.20.CBackground)</onclick>        
-        <include>DialogClickNo</include>
-    </include>
-    <!-- Reset All Menu -->
-    <include name="DialogAllMenu">
-        <include>ResetAddonSetItems</include>
-        <include>ResetSubMenuItems</include>
-        <include>ResetMainMenuItems</include>
-        <include>DialogClickNo</include>
-    </include>
-    <!-- Reset Settings MainMenu -->
-    <include name="DialogSettingsMainMenu">
-        <include>ResetMainMenuItems</include>
-        <include>DialogClickNo</include>
-    </include>
-    <!-- Reset Settings SubMenu -->
-    <include name="DialogSettingsSubMenu">
-        <include>ResetSubMenuItems</include>
-        <include>DialogClickNo</include>
-    </include>
-    <!-- Reset Settings AddonsSet -->
-    <include name="DialogSettingsAddonsSet">
-        <include>ResetAddonSetItems</include>
-        <include>DialogClickNo</include>
-    </include>
-    <!-- Random Playlist Yes -->
-    <include name="RandomPlaylistYes">
-        <onclick>Skin.SetBool(EnableRandomPlaylist)</onclick>
-        <include>DialogClickNo</include>
-    </include>
-    <!-- Random Playlist No -->
-    <include name="RandomPlaylistNo">
-        <onclick>Skin.Reset(EnableRandomPlaylist)</onclick>
-        <include>DialogClickNo</include>
-    </include>
-    <!-- Reset Skin -->
-    <include name="DialogResetSkin">
-        <onclick>Skin.ResetSettings</onclick>
-        <onclick>ReloadSkin()</onclick>
-        <include>DialogClickNo</include>
-        <onclick>ActivateWindow(Home)</onclick>
-    </include>
-    <!-- Click No -->
-    <include name="DialogClickNo">
-        <onclick>PreviousMenu</onclick>
-    </include>
-    <!-- Default Init Setup -->
+		<onclick>Skin.Reset(Use_Startup_Playlist)</onclick>
+		<onclick>Skin.Reset(Startup_Playlist_Path)</onclick>
+		<onclick>Skin.Reset(DurationSplashScreen)</onclick>
+		<onclick>Skin.Reset(ActivateGlobalSearch)</onclick>
+		<onclick>Skin.Reset(ActivateWatchitLater)</onclick>
+		<onclick>Skin.Reset(ActivateScriptPlaylist)</onclick>
+		<include>DialogClickNo</include>
+	</include>
+	<!-- Reset Options -->
+	<include name="DialogResetOptions">
+		<onclick>Skin.Reset(HomePageVideoInfo)</onclick>
+		<onclick>Skin.Reset(HomePageMusicInfo)</onclick>
+		<onclick>Skin.Reset(FullScreenClock)</onclick>
+		<onclick>Skin.Reset(SlideShowInfo)</onclick>
+		<onclick>Skin.Reset(HomePageWeatherInfo)</onclick>
+		<onclick>Skin.Reset(NoLogo)</onclick>
+		<onclick>Skin.Reset(HidePlayerPanel)</onclick>
+		<onclick>Skin.Reset(EnableHomeStats)</onclick>
+		<onclick>Skin.Reset(NoFloor)</onclick>
+		<onclick>Skin.Reset(NoFloorAll)</onclick>
+		<onclick>Skin.Reset(StudiosImages.name)</onclick>
+		<onclick>Skin.Reset(StudiosImages.ext)</onclick>
+		<onclick>Skin.Reset(StudiosImages.path)</onclick>
+		<onclick>Skin.Reset(LanguageFlags.name)</onclick>
+		<onclick>Skin.Reset(LanguageFlags.ext)</onclick>
+		<onclick>Skin.Reset(LanguageFlags.path)</onclick>
+		<onclick>Skin.Reset(MovieGenreIcons.name)</onclick>
+		<onclick>Skin.Reset(MovieGenreIcons.ext)</onclick>
+		<onclick>Skin.Reset(MovieGenreIcons.path)</onclick>
+		<onclick>Skin.Reset(MusicGenreIcons.name)</onclick>
+		<onclick>Skin.Reset(MusicGenreIcons.ext)</onclick>
+		<onclick>Skin.Reset(MusicGenreIcons.path)</onclick>
+		<onclick>Skin.Reset(WeatherIcons.name)</onclick>
+		<onclick>Skin.Reset(WeatherIcons.ext)</onclick>
+		<onclick>Skin.Reset(WeatherIcons.path)</onclick>
+		<onclick>Skin.Reset(WeatherIcons.multi)</onclick>
+		<onclick>Skin.Reset(NoSlideAddon)</onclick>
+		<onclick>Skin.Reset(NoLabelAddon)</onclick>
+		<onclick>Skin.Reset(EnableWidgetsTitle)</onclick>
+		<onclick>Skin.Reset(HideReloadSkinButton)</onclick>
+		<onclick>Skin.Reset(HidePowerButton)</onclick>
+		<onclick>Skin.Reset(UsrPwrBtnCmd.Label)</onclick>
+		<onclick>Skin.Reset(UsrPwrBtnCmd.Path)</onclick>
+		<onclick>Skin.Reset(HideFavoritesButton)</onclick>
+		<onclick>Skin.Reset(UsrFavBtnCmd.Label)</onclick>
+		<onclick>Skin.Reset(UsrFavBtnCmd.Path)</onclick>
+		<onclick>Skin.Reset(EnableSkinDebug))</onclick>
+		<include>DialogClickNo</include>
+	</include>
+	<!-- Reset Main Menu -->
+	<include name="DialogMainMenu">
+		<onclick>Skin.Reset(LowerMenu)</onclick>
+		<onclick>Skin.Reset(WrapAroundHomeMenu)</onclick>
+		<onclick>Skin.Reset(FixedEndingMenu)</onclick>
+		<onclick>Skin.Reset(NoSlide)</onclick>
+		<onclick>Skin.Reset(MenuColorName)</onclick>
+		<onclick>Skin.Reset(MenuColor)</onclick>
+		<onclick>Skin.Reset(MenuColor.name)</onclick>
+		<onclick>Skin.Reset(MenuColor.base)</onclick>
+		<onclick>Skin.Reset(CustomFocusName)</onclick>
+		<onclick>Skin.Reset(CustomFocus)</onclick>
+		<include>DialogClickNo</include>
+	</include>
+	<!-- Reset User Widgets -->
+	<include name="DialogUserWidgets">
+		<onclick>Skin.Reset(ChannelTV.1.Label)</onclick>
+		<onclick>Skin.Reset(ChannelTV.2.Label)</onclick>
+		<onclick>Skin.Reset(ChannelTV.3.Label)</onclick>
+		<onclick>Skin.Reset(ChannelTV.4.Label)</onclick>
+		<onclick>Skin.Reset(ChannelTV.5.Label)</onclick>
+		<onclick>Skin.Reset(ChannelTV.6.Label)</onclick>
+		<onclick>Skin.Reset(ChannelTV.7.Label)</onclick>
+		<onclick>Skin.Reset(ChannelTV.8.Label)</onclick>
+		<onclick>Skin.Reset(ChannelTV.9.Label)</onclick>
+		<onclick>Skin.Reset(ChannelTV.10.Label)</onclick>
+		<onclick>Skin.Reset(ChannelRadio.1.Label)</onclick>
+		<onclick>Skin.Reset(ChannelRadio.2.Label)</onclick>
+		<onclick>Skin.Reset(ChannelRadio.3.Label)</onclick>
+		<onclick>Skin.Reset(ChannelRadio.4.Label)</onclick>
+		<onclick>Skin.Reset(ChannelRadio.5.Label)</onclick>
+		<onclick>Skin.Reset(ChannelRadio.6.Label)</onclick>
+		<onclick>Skin.Reset(ChannelRadio.7.Label)</onclick>
+		<onclick>Skin.Reset(ChannelRadio.8.Label)</onclick>
+		<onclick>Skin.Reset(ChannelRadio.9.Label)</onclick>
+		<onclick>Skin.Reset(ChannelRadio.10.Label)</onclick>
+		<include>DialogClickNo</include>
+	</include>
+	<!-- Reset Backgrounds -->
+	<include name="DialogBackgrounds">
+		<onclick>Skin.Reset(HideBackGroundFanart)</onclick>
+		<onclick>Skin.Reset(HideVisualizationFanart)</onclick>
+		<onclick>Skin.Reset(ShowBackgroundVideo)</onclick>
+		<onclick>Skin.Reset(HomeFanart.name)</onclick>
+		<onclick>Skin.Reset(HomeFanart.path)</onclick>
+		<onclick>Skin.Reset(HomeFanart.ext)</onclick>
+		<onclick>Skin.Reset(MovieGenreFanart.name)</onclick>
+		<onclick>Skin.Reset(MovieGenreFanart.path)</onclick>
+		<onclick>Skin.Reset(MovieGenreFanart.ext)</onclick>
+		<onclick>Skin.Reset(WeatherFanart.name)</onclick>
+		<onclick>Skin.Reset(WeatherFanart.ext)</onclick>
+		<onclick>Skin.Reset(WeatherFanart.path)</onclick>
+		<onclick>Skin.Reset(WeatherFanart.multi)</onclick>
+		<onclick>Skin.Reset(SeparateBackground)</onclick>
+		<onclick>Skin.Reset(UseCustomBackground)</onclick>
+		<onclick>Skin.Reset(CustomBackgroundPath)</onclick>
+		<onclick>Skin.Reset(HomeItem.1.CBackground)</onclick>
+		<onclick>Skin.Reset(HomeItem.2.CBackground)</onclick>
+		<onclick>Skin.Reset(HomeItem.3.CBackground)</onclick>
+		<onclick>Skin.Reset(HomeItem.4.CBackground)</onclick>
+		<onclick>Skin.Reset(HomeItem.5.CBackground)</onclick>
+		<onclick>Skin.Reset(HomeItem.6.CBackground)</onclick>
+		<onclick>Skin.Reset(HomeItem.7.CBackground)</onclick>
+		<onclick>Skin.Reset(HomeItem.8.CBackground)</onclick>
+		<onclick>Skin.Reset(HomeItem.9.CBackground)</onclick>
+		<onclick>Skin.Reset(HomeItem.10.CBackground)</onclick>
+		<onclick>Skin.Reset(HomeItem.11.CBackground)</onclick>
+		<onclick>Skin.Reset(HomeItem.12.CBackground)</onclick>
+		<onclick>Skin.Reset(HomeItem.13.CBackground)</onclick>
+		<onclick>Skin.Reset(HomeItem.14.CBackground)</onclick>
+		<onclick>Skin.Reset(HomeItem.15.CBackground)</onclick>
+		<onclick>Skin.Reset(HomeItem.16.CBackground)</onclick>
+		<onclick>Skin.Reset(HomeItem.17.CBackground)</onclick>
+		<onclick>Skin.Reset(HomeItem.18.CBackground)</onclick>
+		<onclick>Skin.Reset(HomeItem.19.CBackground)</onclick>
+		<onclick>Skin.Reset(HomeItem.20.CBackground)</onclick>
+		<include>DialogClickNo</include>
+	</include>
+	<!-- Reset All Menu -->
+	<include name="DialogAllMenu">
+		<include>ResetAddonSetItems</include>
+		<include>ResetSubMenuItems</include>
+		<include>ResetMainMenuItems</include>
+		<include>DialogClickNo</include>
+	</include>
+	<!-- Reset Settings MainMenu -->
+	<include name="DialogSettingsMainMenu">
+		<include>ResetMainMenuItems</include>
+		<include>DialogClickNo</include>
+	</include>
+	<!-- Reset Settings SubMenu -->
+	<include name="DialogSettingsSubMenu">
+		<include>ResetSubMenuItems</include>
+		<include>DialogClickNo</include>
+	</include>
+	<!-- Reset Settings AddonsSet -->
+	<include name="DialogSettingsAddonsSet">
+		<include>ResetAddonSetItems</include>
+		<include>DialogClickNo</include>
+	</include>
+	<!-- Random Playlist Yes -->
+	<include name="RandomPlaylistYes">
+		<onclick>Skin.SetBool(EnableRandomPlaylist)</onclick>
+		<include>DialogClickNo</include>
+	</include>
+	<!-- Random Playlist No -->
+	<include name="RandomPlaylistNo">
+		<onclick>Skin.Reset(EnableRandomPlaylist)</onclick>
+		<include>DialogClickNo</include>
+	</include>
+	<!-- Reset Skin -->
+	<include name="DialogResetSkin">
+		<onclick>Skin.ResetSettings</onclick>
+		<onclick>ReloadSkin()</onclick>
+		<include>DialogClickNo</include>
+		<onclick>ActivateWindow(Home)</onclick>
+	</include>
+	<!-- Click No -->
+	<include name="DialogClickNo">
+		<onclick>PreviousMenu</onclick>
+	</include>
+	<!-- Default Init Setup -->
 	<include name="DefaultInitialSetup">
-        <!-- SubMenu -->
-        <include>DefaultSubMenu</include>
-        <!-- MainMenu -->
-        <include>DefaultMainMenu</include>
-        <!-- Other -->
-        <onload>Skin.SetBool(EnableWidgetsTitle)</onload>
-        <onload>Skin.SetBool(SingleGlobalBackground)</onload>
-        <onload>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(Favourites))</onload>
-        <onload>Skin.SetString(UsrPwrBtnCmd.Path,ActivateWindow(ShutdownMenu))</onload>
-        <onload condition="!System.HasAddon(script.randomandlastitems)">Skin.Setbool(ActivateScriptPlaylist)</onload>
-        <onload>Skin.SetBool(InitialSetUpRun)</onload>
+		<!-- SubMenu -->
+		<include>DefaultSubMenu</include>
+		<!-- MainMenu -->
+		<include>DefaultMainMenu</include>
+		<!-- Other -->
+		<onload>Skin.SetBool(EnableWidgetsTitle)</onload>
+		<onload>Skin.SetBool(SingleGlobalBackground)</onload>
+		<onload>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(Favourites))</onload>
+		<onload>Skin.SetString(UsrPwrBtnCmd.Path,ActivateWindow(ShutdownMenu))</onload>
+		<onload condition="!System.HasAddon(script.randomandlastitems)">Skin.Setbool(ActivateScriptPlaylist)</onload>
+		<onload>Skin.SetBool(InitialSetUpRun)</onload>
 	</include>
 </includes>

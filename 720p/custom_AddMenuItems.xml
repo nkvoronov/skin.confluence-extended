@@ -9,12 +9,12 @@
 	<onload>SetProperty(MenuItemType,MainMenu)</onload>
 	<onunload>ClearProperty(MenuItemType)</onunload>
 	<onunload>ClearProperty(UsrSelectPath,Home)</onunload>
-    <onunload>ClearProperty(UsrSelectBtnClear,Home)</onunload>
+	<onunload>ClearProperty(UsrSelectBtnClear,Home)</onunload>
 	<controls>
-        <include content="CustomSlideDialog">
-            <param name="dlg_title" value="$LOCALIZE[89700] $LOCALIZE[89001]" />
-            <param name="id_win" value="2114" />
-            <param name="include_name" value="MenuItemChoices" />
-        </include>
+		<include content="CustomSlideDialog">
+			<param name="dlg_title" value="$LOCALIZE[89700] $LOCALIZE[89001]" />
+			<param name="id_win" value="2114" />
+			<param name="include_name" value="MenuItemChoices" />
+		</include>
 	</controls>
 </window>

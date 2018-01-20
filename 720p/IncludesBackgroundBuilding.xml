@@ -21,32 +21,32 @@
 			<include>VisibleFadeEffect</include>
 			<visible>!Skin.HasSetting(SeparateBackground)</visible>
 		</control>
-        <control type="group">
-            <visible>Window.IsVisible(Home) + Skin.HasSetting(SeparateBackground)</visible>
-		    <control type="multiimage" id="90000">
-			    <posx>0</posx>
-			    <posy>0</posy>
-			    <width>1280</width>
-			    <height>720</height>
-			    <imagepath background="true">$INFO[Container(9000).ListItem.Icon]</imagepath>
-			    <timeperimage>10000</timeperimage>
-			    <randomize>true</randomize>
-			    <fadetime>1000</fadetime>
-			    <include>VisibleFadeEffect</include>
-                <visible>String.IsEmpty(Skin.String(HomeFanart.path)) | String.IsEmpty(Control.GetLabel(90001))</visible>
-		    </control>
-            <control type="multiimage" id="90001">
-			    <posx>0</posx>
-			    <posy>0</posy>
-			    <width>1280</width>
-			    <height>720</height>
-                <imagepath background="true">$INFO[Skin.String(HomeFanart.path)]$INFO[Container(9000).ListItem.Property(TypeItem)]$INFO[Skin.String(HomeFanart.ext)]</imagepath>
-			    <timeperimage>10000</timeperimage>
-			    <randomize>true</randomize>
-			    <fadetime>1000</fadetime>
-			    <include>VisibleFadeEffect</include>
-                <visible>!String.IsEmpty(Skin.String(HomeFanart.path))</visible>
-            </control>
+		<control type="group">
+		<visible>Window.IsVisible(Home) + Skin.HasSetting(SeparateBackground)</visible>
+			<control type="multiimage" id="90000">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<imagepath background="true">$INFO[Container(9000).ListItem.Icon]</imagepath>
+				<timeperimage>10000</timeperimage>
+				<randomize>true</randomize>
+				<fadetime>1000</fadetime>
+				<include>VisibleFadeEffect</include>
+				<visible>String.IsEmpty(Skin.String(HomeFanart.path)) | String.IsEmpty(Control.GetLabel(90001))</visible>
+			</control>
+		<control type="multiimage" id="90001">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<imagepath background="true">$INFO[Skin.String(HomeFanart.path)]$INFO[Container(9000).ListItem.Property(TypeItem)]$INFO[Skin.String(HomeFanart.ext)]</imagepath>
+			<timeperimage>10000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+			<visible>!String.IsEmpty(Skin.String(HomeFanart.path))</visible>
+		</control>
 		</control>
 		<control type="image">
 			<depth>DepthBackground</depth>
@@ -335,7 +335,7 @@
 					<visible>!Skin.HasSetting(NoFloorAll)</visible>
 				</control>
 			</control>
-            <control type="group">
+			<control type="group">
 				<include>VisibleFadeEffect</include>
 				<visible>Control.IsVisible(5033)</visible>
 				<control type="image">
@@ -350,154 +350,154 @@
 					<posy>652</posy>
 					<width>1230</width>
 					<height>64</height>
-					<texture border="15">ContentPanelMirror.png</texture> 
+					<texture border="15">ContentPanelMirror.png</texture>
 					 <visible>!Skin.HasSetting(NoFloorAll)</visible>
 				</control>
 			</control>
 		</control>
 	</include>
-    <include name="CommonCustomBackground">
-        <control type="group">
-            <visible>!Window.IsVisible(Home) + Skin.HasSetting(SeparateBackground)</visible>
-            <control type="multiimage" id="90002">
-                <description>User Separate Background Image 01</description>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>1280</width>
-                <height>720</height>
-                <imagepath background="true">$VAR[CommonMenuItemBackground]</imagepath>
-                <timeperimage>10000</timeperimage>
-                <randomize>true</randomize>
-                <fadetime>1000</fadetime>
-                <visible>!String.IsEmpty(Window(Home).Property(MenuItemActive)) + [String.IsEmpty(Skin.String(HomeFanart.path)) | String.IsEmpty(Control.GetLabel(90003))]</visible>
-            </control>
-            <control type="multiimage" id="90003">
-                <description>User Separate Background Image 01 HomeFanart</description>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>1280</width>
-                <height>720</height>
-                <imagepath background="true">$VAR[CommonMenuItemBackgroundHomeFanart]</imagepath>
-                <timeperimage>10000</timeperimage>
-                <randomize>true</randomize>
-                <fadetime>1000</fadetime>
-                <visible>!String.IsEmpty(Window(Home).Property(MenuItemActive)) + !String.IsEmpty(Skin.String(HomeFanart.path))</visible>
-            </control>
-            <control type="multiimage"  id="90004">
-                <description>User Separate Background Image 02</description>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>1280</width>
-                <height>720</height>
-                <imagepath background="true">$INFO[Window(Home).Property(MenuBackground)]</imagepath>
-                <timeperimage>10000</timeperimage>
-                <randomize>true</randomize>
-                <fadetime>1000</fadetime>
-                <visible>String.IsEmpty(Window(Home).Property(MenuItemActive)) + [String.IsEmpty(Skin.String(HomeFanart.path)) | String.IsEmpty(Control.GetLabel(90005))]</visible>
-            </control>
-            <control type="multiimage"  id="90005">
-                <description>User Separate Background Image 02 HomeFanart</description>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>1280</width>
-                <height>720</height>
-                <imagepath background="true">$INFO[Window(Home).Property(MenuBackgroundHomeFanart)]</imagepath>
-                <timeperimage>10000</timeperimage>
-                <randomize>true</randomize>
-                <fadetime>1000</fadetime>
-                <visible>String.IsEmpty(Window(Home).Property(MenuItemActive)) + !String.IsEmpty(Skin.String(HomeFanart.path))</visible>
-            </control>
-        </control>
-    </include>
-    <include name="CommonCustomBackgroundSettings">
-        <control type="group">
-            <control type="multiimage" id="90006">
-                <description>User Separate Background Image Settings</description>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>1280</width>
-                <height>720</height>
-                <imagepath background="true">$VAR[BackgroundSettings]</imagepath>
-                <timeperimage>10000</timeperimage>
-                <randomize>true</randomize>
-                <fadetime>1000</fadetime>
-                <visible>String.IsEmpty(Skin.String(HomeFanart.path)) | String.IsEmpty(Control.GetLabel(90007))</visible>
-            </control>
-            <control type="multiimage" id="90007">
-                <description>User Separate Background Image Settings HomeFanart</description>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>1280</width>
-                <height>720</height>
-                <imagepath background="true">$VAR[BackgroundSettingsHomeFanart]</imagepath>
-                <timeperimage>10000</timeperimage>
-                <randomize>true</randomize>
-                <fadetime>1000</fadetime>
-                <visible>!String.IsEmpty(Skin.String(HomeFanart.path))</visible>
-            </control>            
-        </control>
-    </include>
-    <include name="PreviewPVRBackground">
-        <control type="group">
+	<include name="CommonCustomBackground">
+		<control type="group">
+			<visible>!Window.IsVisible(Home) + Skin.HasSetting(SeparateBackground)</visible>
+			<control type="multiimage" id="90002">
+				<description>User Separate Background Image 01</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<imagepath background="true">$VAR[CommonMenuItemBackground]</imagepath>
+				<timeperimage>10000</timeperimage>
+				<randomize>true</randomize>
+				<fadetime>1000</fadetime>
+				<visible>!String.IsEmpty(Window(Home).Property(MenuItemActive)) + [String.IsEmpty(Skin.String(HomeFanart.path)) | String.IsEmpty(Control.GetLabel(90003))]</visible>
+			</control>
+			<control type="multiimage" id="90003">
+				<description>User Separate Background Image 01 HomeFanart</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<imagepath background="true">$VAR[CommonMenuItemBackgroundHomeFanart]</imagepath>
+				<timeperimage>10000</timeperimage>
+				<randomize>true</randomize>
+				<fadetime>1000</fadetime>
+				<visible>!String.IsEmpty(Window(Home).Property(MenuItemActive)) + !String.IsEmpty(Skin.String(HomeFanart.path))</visible>
+			</control>
+			<control type="multiimage"  id="90004">
+				<description>User Separate Background Image 02</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<imagepath background="true">$INFO[Window(Home).Property(MenuBackground)]</imagepath>
+				<timeperimage>10000</timeperimage>
+				<randomize>true</randomize>
+				<fadetime>1000</fadetime>
+				<visible>String.IsEmpty(Window(Home).Property(MenuItemActive)) + [String.IsEmpty(Skin.String(HomeFanart.path)) | String.IsEmpty(Control.GetLabel(90005))]</visible>
+			</control>
+			<control type="multiimage"  id="90005">
+				<description>User Separate Background Image 02 HomeFanart</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<imagepath background="true">$INFO[Window(Home).Property(MenuBackgroundHomeFanart)]</imagepath>
+				<timeperimage>10000</timeperimage>
+				<randomize>true</randomize>
+				<fadetime>1000</fadetime>
+				<visible>String.IsEmpty(Window(Home).Property(MenuItemActive)) + !String.IsEmpty(Skin.String(HomeFanart.path))</visible>
+			</control>
+		</control>
+	</include>
+	<include name="CommonCustomBackgroundSettings">
+		<control type="group">
+			<control type="multiimage" id="90006">
+				<description>User Separate Background Image Settings</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<imagepath background="true">$VAR[BackgroundSettings]</imagepath>
+				<timeperimage>10000</timeperimage>
+				<randomize>true</randomize>
+				<fadetime>1000</fadetime>
+				<visible>String.IsEmpty(Skin.String(HomeFanart.path)) | String.IsEmpty(Control.GetLabel(90007))</visible>
+			</control>
+			<control type="multiimage" id="90007">
+				<description>User Separate Background Image Settings HomeFanart</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<imagepath background="true">$VAR[BackgroundSettingsHomeFanart]</imagepath>
+				<timeperimage>10000</timeperimage>
+				<randomize>true</randomize>
+				<fadetime>1000</fadetime>
+				<visible>!String.IsEmpty(Skin.String(HomeFanart.path))</visible>
+			</control>
+		</control>
+	</include>
+	<include name="PreviewPVRBackground">
+		<control type="group">
 			<visible>!Player.HasVideo</visible>
-            <control type="group">
-                <visible>!Skin.HasSetting(SeparateBackground)</visible>
-                <control type="image">
-                    <left>5</left>
-                    <top>5</top>
-                    <width>680</width>
-                    <height>390</height>
-                    <texture fallback="special://skin/extras/default/SKINDEFAULT.jpg">$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</texture>
-                    <include>VisibleFadeEffect</include>
-                    <visible>![Skin.HasSetting(UseCustomBackground) + !String.IsEmpty(Skin.String(CustomBackgroundPath))]</visible>
-                </control>
-                <control type="image">
-                    <left>5</left>
-                    <top>5</top>
-                    <width>680</width>
-                    <height>390</height>
-                    <texture>$INFO[Skin.String(CustomBackgroundPath)]</texture>
-                    <include>VisibleFadeEffect</include>
-                    <visible>Skin.HasSetting(UseCustomBackground) + !String.IsEmpty(Skin.String(CustomBackgroundPath))</visible>
-                </control>
-            </control>
-            <control type="group">
-                <visible>Skin.HasSetting(SeparateBackground)</visible>
-                <control type="image">
-                    <left>5</left>
-                    <top>5</top>
-                    <width>680</width>
-                    <height>390</height>
-                    <texture>$VAR[CommonMenuItemBackground]</texture>
-                    <include>VisibleFadeEffect</include>
-                    <visible>!String.IsEmpty(Window(Home).Property(MenuItemActive)) + String.IsEmpty(Skin.String(HomeFanart.path))</visible>
-                </control>
-                <control type="image">
-                    <left>5</left>
-                    <top>5</top>
-                    <width>680</width>
-                    <height>390</height>
-                    <texture>$VAR[CommonMenuItemBackgroundHomeFanart]</texture>
-                    <include>VisibleFadeEffect</include>
-                    <visible>!String.IsEmpty(Window(Home).Property(MenuItemActive)) + !String.IsEmpty(Skin.String(HomeFanart.path))</visible>
-                </control>
-                <control type="image">
-                    <left>5</left>
-                    <top>5</top>
-                    <width>680</width>
-                    <height>390</height>
-                    <texture>$INFO[Window(Home).Property(MenuBackground)]</texture>
-                    <include>VisibleFadeEffect</include>
-                    <visible>String.IsEmpty(Window(Home).Property(MenuItemActive)) + String.IsEmpty(Skin.String(HomeFanart.path))</visible>
-                </control>
-                <control type="image">
-                    <left>5</left>
-                    <top>5</top>
-                    <width>680</width>
-                    <height>390</height>
-                    <texture>$INFO[Window(Home).Property(MenuBackgroundHomeFanart)]</texture>
-                    <include>VisibleFadeEffect</include>
-                    <visible>String.IsEmpty(Window(Home).Property(MenuItemActive)) + !String.IsEmpty(Skin.String(HomeFanart.path))</visible>
+			<control type="group">
+				<visible>!Skin.HasSetting(SeparateBackground)</visible>
+				<control type="image">
+					<left>5</left>
+					<top>5</top>
+					<width>680</width>
+					<height>390</height>
+					<texture fallback="special://skin/extras/default/SKINDEFAULT.jpg">$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</texture>
+					<include>VisibleFadeEffect</include>
+					<visible>![Skin.HasSetting(UseCustomBackground) + !String.IsEmpty(Skin.String(CustomBackgroundPath))]</visible>
+				</control>
+				<control type="image">
+					<left>5</left>
+					<top>5</top>
+					<width>680</width>
+					<height>390</height>
+					<texture>$INFO[Skin.String(CustomBackgroundPath)]</texture>
+					<include>VisibleFadeEffect</include>
+					<visible>Skin.HasSetting(UseCustomBackground) + !String.IsEmpty(Skin.String(CustomBackgroundPath))</visible>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Skin.HasSetting(SeparateBackground)</visible>
+				<control type="image">
+					<left>5</left>
+					<top>5</top>
+					<width>680</width>
+					<height>390</height>
+					<texture>$VAR[CommonMenuItemBackground]</texture>
+					<include>VisibleFadeEffect</include>
+					<visible>!String.IsEmpty(Window(Home).Property(MenuItemActive)) + String.IsEmpty(Skin.String(HomeFanart.path))</visible>
+				</control>
+				<control type="image">
+					<left>5</left>
+					<top>5</top>
+					<width>680</width>
+					<height>390</height>
+					<texture>$VAR[CommonMenuItemBackgroundHomeFanart]</texture>
+					<include>VisibleFadeEffect</include>
+					<visible>!String.IsEmpty(Window(Home).Property(MenuItemActive)) + !String.IsEmpty(Skin.String(HomeFanart.path))</visible>
+				</control>
+				<control type="image">
+					<left>5</left>
+					<top>5</top>
+					<width>680</width>
+					<height>390</height>
+					<texture>$INFO[Window(Home).Property(MenuBackground)]</texture>
+					<include>VisibleFadeEffect</include>
+					<visible>String.IsEmpty(Window(Home).Property(MenuItemActive)) + String.IsEmpty(Skin.String(HomeFanart.path))</visible>
+				</control>
+				<control type="image">
+					<left>5</left>
+					<top>5</top>
+					<width>680</width>
+					<height>390</height>
+					<texture>$INFO[Window(Home).Property(MenuBackgroundHomeFanart)]</texture>
+					<include>VisibleFadeEffect</include>
+					<visible>String.IsEmpty(Window(Home).Property(MenuItemActive)) + !String.IsEmpty(Skin.String(HomeFanart.path))</visible>
 				</control>
 			</control>
 		</control>

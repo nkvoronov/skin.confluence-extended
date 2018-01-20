@@ -17,10 +17,10 @@
 	<onunload>ClearProperty(SwapItemPlaylist,Home)</onunload>
 	<onunload>ClearProperty(UsrSelectBtn,Home)</onunload>
 	<controls>
-        <include content="CustomSlideDialog">
-            <param name="dlg_title" value="$LOCALIZE[89700] $LOCALIZE[89400]" />
-            <param name="id_win" value="2128" />
-            <param name="include_name" value="MoveMenuItemChoices" />
-        </include>
+		<include content="CustomSlideDialog">
+			<param name="dlg_title" value="$LOCALIZE[89700] $LOCALIZE[89400]" />
+			<param name="id_win" value="2128" />
+			<param name="include_name" value="MoveMenuItemChoices" />
+		</include>
 	</controls>
 </window>

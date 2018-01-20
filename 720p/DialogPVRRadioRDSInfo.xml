@@ -555,7 +555,6 @@
 			<label>$INFO[RDS.ProgEditStaff]</label>
 			<visible>!String.IsEmpty(RDS.ProgEditStaff)</visible>
 		</control>
-
 		<control type="grouplist">
 			<left>10</left>
 			<top>280</top>
@@ -869,7 +868,6 @@
 				<visible>!String.IsEmpty(RDS.EmailHotline)</visible>
 			</control>
 		</control>
-
 		<control type="group" id="70">
 			<description>Radio text info list</description>
 			<left>40</left>

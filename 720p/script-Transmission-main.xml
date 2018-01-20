@@ -3,7 +3,7 @@
 	<defaultcontrol always="true">111</defaultcontrol>
 	<allowoverlays>false</allowoverlays>
 	<animation effect="fade" time="250">WindowOpen</animation>
-	<animation effect="fade" time="250">WindowClose</animation>	
+	<animation effect="fade" time="250">WindowClose</animation>
 	<coordinates>
 		<system>1</system>
 		<left>160</left>
@@ -29,8 +29,8 @@
 			<texturefocus>DialogCloseButton-focus.png</texturefocus>
 			<texturenofocus>DialogCloseButton.png</texturenofocus>
 			<visible>system.getbool(input.enablemouse)</visible>
-                        <onleft>111</onleft>
-                        <ondown>120</ondown>
+			<onleft>111</onleft>
+			<ondown>120</ondown>
 		</control>
 		<control type="image">
 			<description>Dialog Header image</description>
@@ -191,7 +191,7 @@
 			<visible>true</visible>
 			<onleft>111</onleft>
 			<onright>117</onright>
-                        <onup>117</onup>
+			<onup>117</onup>
 			<pagecontrol>121</pagecontrol>
 			<itemlayout width="560" height="70">
 				<control type="image">

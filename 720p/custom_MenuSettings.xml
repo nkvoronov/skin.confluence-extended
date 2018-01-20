@@ -2,7 +2,7 @@
 <window id="2123">
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<controls>
-        <include>CommonCustomBackgroundSettings</include>
+		<include>CommonCustomBackgroundSettings</include>
 		<include>CommonBackground</include>
 		<control type="image">
 			<left>0</left>
@@ -124,17 +124,17 @@
 				<content>
 					<item id="1">
 						<label>$LOCALIZE[513]</label>
-                        <label2>$LOCALIZE[513]</label2>
+						<label2>$LOCALIZE[513]</label2>
 						<onclick>noop</onclick>
 					</item>
 					<item id="2">
 						<label>$LOCALIZE[88123]</label>
 						<label2>$LOCALIZE[88123]</label2>
 						<onclick>noop</onclick>
-					</item>  
-                    <item id="3">
+					</item>
+					<item id="3">
 						<label>$LOCALIZE[31200]</label>
-                        <label2>$LOCALIZE[31200]</label2>
+						<label2>$LOCALIZE[31200]</label2>
 						<onclick>noop</onclick>
 					</item>
 				</content>
@@ -167,7 +167,7 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="group" id="9010">
-                <!-- Menus -->
+				<!-- Menus -->
 				<control type="grouplist" id="9001">
 					<visible>Container(9000).Hasfocus(1)</visible>
 					<left>290</left>
@@ -180,114 +180,114 @@
 					<onright>61</onright>
 					<onup>9001</onup>
 					<ondown>9001</ondown>
-                    <!-- Home menu 01 -->
-                    <include content="HomeMainMenuItemSettings">
-                        <param name="id" value="1" />
-                        <param name="id2" value="01" />
-                    </include>
-                    <!-- Home menu 02 -->
-                    <include content="HomeMainMenuItemSettings">
-                        <param name="id" value="2" />
-                        <param name="id2" value="02" />
-                    </include>
-                    <!-- Home menu 03 -->
-                    <include content="HomeMainMenuItemSettings">
-                        <param name="id" value="3" />
-                        <param name="id2" value="03" />
-                    </include>
-                    <!-- Home menu 04 -->
-                    <include content="HomeMainMenuItemSettings">
-                        <param name="id" value="4" />
-                        <param name="id2" value="04" />
-                    </include>
-                    <!-- Home menu 05 -->
-                    <include content="HomeMainMenuItemSettings">
-                        <param name="id" value="5" />
-                        <param name="id2" value="05" />
-                    </include>
-                    <!-- Home menu 06 -->
-                    <include content="HomeMainMenuItemSettings">
-                        <param name="id" value="6" />
-                        <param name="id2" value="06" />
-                    </include>
-                    <!-- Home menu 07 -->
-                    <include content="HomeMainMenuItemSettings">
-                        <param name="id" value="7" />
-                        <param name="id2" value="07" />
-                    </include>
-                    <!-- Home menu 08 -->
-                    <include content="HomeMainMenuItemSettings">
-                        <param name="id" value="8" />
-                        <param name="id2" value="08" />
-                    </include>
-                    <!-- Home menu 09 -->
-                    <include content="HomeMainMenuItemSettings">
-                        <param name="id" value="9" />
-                        <param name="id2" value="09" />
-                    </include>
-                    <!-- Home menu 10 -->
-                    <include content="HomeMainMenuItemSettings">
-                        <param name="id" value="10" />
-                        <param name="id2" value="10" />
-                    </include>
-                    <!-- Home menu 11 -->
-                    <include content="HomeMainMenuItemSettings">
-                        <param name="id" value="11" />
-                        <param name="id2" value="11" />
-                    </include>
-                    <!-- Home menu 12 -->
-                    <include content="HomeMainMenuItemSettings">
-                        <param name="id" value="12" />
-                        <param name="id2" value="12" />
-                    </include>
-                    <!-- Home menu 13 -->
-                    <include content="HomeMainMenuItemSettings">
-                        <param name="id" value="13" />
-                        <param name="id2" value="13" />
-                    </include>
-                    <!-- Home menu 14 -->
-                    <include content="HomeMainMenuItemSettings">
-                        <param name="id" value="14" />
-                        <param name="id2" value="14" />
-                    </include>
-                    <!-- Home menu 15 -->
-                    <include content="HomeMainMenuItemSettings">
-                        <param name="id" value="15" />
-                        <param name="id2" value="15" />
-                    </include>
-                    <!-- Home menu 16 -->
-                    <include content="HomeMainMenuItemSettings">
-                        <param name="id" value="16" />
-                        <param name="id2" value="16" />
-                    </include>
-                    <!-- Home menu 17 -->
-                    <include content="HomeMainMenuItemSettings">
-                        <param name="id" value="17" />
-                        <param name="id2" value="17" />
-                    </include>
-                    <!-- Home menu 18 -->
-                    <include content="HomeMainMenuItemSettings">
-                        <param name="id" value="18" />
-                        <param name="id2" value="18" />
-                    </include>
-                    <!-- Home menu 19 -->
-                    <include content="HomeMainMenuItemSettings">
-                        <param name="id" value="19" />
-                        <param name="id2" value="19" />
-                    </include>
-                    <!-- Home menu 20 -->
-                     <include content="HomeMainMenuItemSettings">
-                        <param name="id" value="20" />
-                        <param name="id2" value="20" />
-                    </include>
-                    <control type="image" id="100">
-                        <description>Separator Image</description>
-                        <height>2</height>
-                        <texture>separator2.png</texture>
-                    </control>
-                    <control type="button" id="101">
-                        <description>Reset Section</description>
-                        <width>750</width>
+					<!-- Home menu 01 -->
+					<include content="HomeMainMenuItemSettings">
+						<param name="id" value="1" />
+						<param name="id2" value="01" />
+					</include>
+					<!-- Home menu 02 -->
+					<include content="HomeMainMenuItemSettings">
+						<param name="id" value="2" />
+						<param name="id2" value="02" />
+					</include>
+					<!-- Home menu 03 -->
+					<include content="HomeMainMenuItemSettings">
+						<param name="id" value="3" />
+						<param name="id2" value="03" />
+					</include>
+					<!-- Home menu 04 -->
+					<include content="HomeMainMenuItemSettings">
+						<param name="id" value="4" />
+						<param name="id2" value="04" />
+					</include>
+					<!-- Home menu 05 -->
+					<include content="HomeMainMenuItemSettings">
+						<param name="id" value="5" />
+						<param name="id2" value="05" />
+					</include>
+					<!-- Home menu 06 -->
+					<include content="HomeMainMenuItemSettings">
+						<param name="id" value="6" />
+						<param name="id2" value="06" />
+					</include>
+					<!-- Home menu 07 -->
+					<include content="HomeMainMenuItemSettings">
+						<param name="id" value="7" />
+						<param name="id2" value="07" />
+					</include>
+					<!-- Home menu 08 -->
+					<include content="HomeMainMenuItemSettings">
+						<param name="id" value="8" />
+						<param name="id2" value="08" />
+					</include>
+					<!-- Home menu 09 -->
+					<include content="HomeMainMenuItemSettings">
+						<param name="id" value="9" />
+						<param name="id2" value="09" />
+					</include>
+					<!-- Home menu 10 -->
+					<include content="HomeMainMenuItemSettings">
+						<param name="id" value="10" />
+						<param name="id2" value="10" />
+					</include>
+					<!-- Home menu 11 -->
+					<include content="HomeMainMenuItemSettings">
+						<param name="id" value="11" />
+						<param name="id2" value="11" />
+					</include>
+					<!-- Home menu 12 -->
+					<include content="HomeMainMenuItemSettings">
+						<param name="id" value="12" />
+						<param name="id2" value="12" />
+					</include>
+					<!-- Home menu 13 -->
+					<include content="HomeMainMenuItemSettings">
+						<param name="id" value="13" />
+						<param name="id2" value="13" />
+					</include>
+					<!-- Home menu 14 -->
+					<include content="HomeMainMenuItemSettings">
+						<param name="id" value="14" />
+						<param name="id2" value="14" />
+					</include>
+					<!-- Home menu 15 -->
+					<include content="HomeMainMenuItemSettings">
+						<param name="id" value="15" />
+						<param name="id2" value="15" />
+					</include>
+					<!-- Home menu 16 -->
+					<include content="HomeMainMenuItemSettings">
+						<param name="id" value="16" />
+						<param name="id2" value="16" />
+					</include>
+					<!-- Home menu 17 -->
+					<include content="HomeMainMenuItemSettings">
+						<param name="id" value="17" />
+						<param name="id2" value="17" />
+					</include>
+					<!-- Home menu 18 -->
+					<include content="HomeMainMenuItemSettings">
+						<param name="id" value="18" />
+						<param name="id2" value="18" />
+					</include>
+					<!-- Home menu 19 -->
+					<include content="HomeMainMenuItemSettings">
+						<param name="id" value="19" />
+						<param name="id2" value="19" />
+					</include>
+					<!-- Home menu 20 -->
+					 <include content="HomeMainMenuItemSettings">
+						<param name="id" value="20" />
+						<param name="id2" value="20" />
+					</include>
+					<control type="image" id="100">
+						<description>Separator Image</description>
+						<height>2</height>
+						<texture>separator2.png</texture>
+					</control>
+					<control type="button" id="101">
+						<description>Reset Section</description>
+						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
 						<label>$LOCALIZE[10041]</label>
@@ -295,9 +295,9 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-                        <onclick>ActivateWindow(2151)</onclick>                       
-                    </control>
-                </control>
+						<onclick>ActivateWindow(2151)</onclick>
+					</control>
+				</control>
 				<control type="scrollbar" id="61">
 					<left>1060</left>
 					<top>60</top>
@@ -314,7 +314,7 @@
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(1)</visible>
 				</control>
-                <!-- Submenu sets -->
+				<!-- Submenu sets -->
 				<control type="grouplist" id="9002">
 					<visible>Container(9000).Hasfocus(2)</visible>
 					<left>290</left>
@@ -327,94 +327,94 @@
 					<onright>62</onright>
 					<onup>9002</onup>
 					<ondown>9002</ondown>
-                    <!-- Submenu set 01 -->
-                    <include content="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="01" />
-                    </include>                                      
-                    <!-- Submenu set 02 -->
-                   <include content="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="02" />
-                    </include>
-                    <!-- Submenu set 03 -->
-                   <include content="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="03" />
-                    </include>                   
-                    <!-- Submenu set 04 -->
-                   <include content="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="04" />
-                    </include>
-                    <!-- Submenu set 05 -->
-                   <include content="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="05" />
-                    </include>                   
-                    <!-- Submenu set 06 -->
-                   <include content="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="06" />
-                    </include>
-                    <!-- Submenu set 07 -->
-                   <include content="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="07" />
-                    </include>                   
-                    <!-- Submenu set 08 -->
-                   <include content="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="08" />
-                    </include>
-                    <!-- Submenu set 09 -->
-                   <include content="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="09" />
-                    </include>                   
-                    <!-- Submenu set 10 -->
-                   <include content="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="10" />
-                    </include>
-                    <!-- Submenu set 11 -->
-                   <include content="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="11" />
-                    </include>                   
-                    <!-- Submenu set 12 -->
-                   <include content="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="12" />
-                    </include>
-                    <!-- Submenu set 13 -->
-                   <include content="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="13" />
-                    </include>                   
-                    <!-- Submenu set 14 -->
-                   <include content="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="14" />
-                    </include>
-                    <!-- Submenu set 15 -->
-                   <include content="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="15" />
-                    </include>                   
-                    <!-- Submenu set 16 -->
-                   <include content="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="16" />
-                    </include>
-                    <!-- Submenu set 17 -->
-                   <include content="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="17" />
-                    </include>
-                    <!-- Submenu set 18 -->
-                   <include content="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="18" />
-                    </include>
-                    <!-- Submenu set 19 -->
-                   <include content="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="19" />
-                    </include>                   
-                    <!-- Submenu set 20 -->
-                   <include content="HomeMainSubMenusItemSettings">
-                        <param name="id2" value="20" />
-                    </include>
-                    <control type="image" id="200">
-                        <description>Separator Image</description>
-                        <height>2</height>
-                        <texture>separator2.png</texture>
-                    </control>
-                    <control type="button" id="201">
-                        <description>Reset Section</description>
-                        <width>750</width>
+					<!-- Submenu set 01 -->
+					<include content="HomeMainSubMenusItemSettings">
+						<param name="id2" value="01" />
+					</include>
+					<!-- Submenu set 02 -->
+					<include content="HomeMainSubMenusItemSettings">
+						<param name="id2" value="02" />
+					</include>
+					<!-- Submenu set 03 -->
+					<include content="HomeMainSubMenusItemSettings">
+						<param name="id2" value="03" />
+					</include>
+					<!-- Submenu set 04 -->
+					<include content="HomeMainSubMenusItemSettings">
+						<param name="id2" value="04" />
+					</include>
+					<!-- Submenu set 05 -->
+					<include content="HomeMainSubMenusItemSettings">
+						<param name="id2" value="05" />
+					</include>
+					<!-- Submenu set 06 -->
+					<include content="HomeMainSubMenusItemSettings">
+						<param name="id2" value="06" />
+					</include>
+					<!-- Submenu set 07 -->
+					<include content="HomeMainSubMenusItemSettings">
+						<param name="id2" value="07" />
+					</include>
+					<!-- Submenu set 08 -->
+					<include content="HomeMainSubMenusItemSettings">
+						<param name="id2" value="08" />
+					</include>
+					<!-- Submenu set 09 -->
+					<include content="HomeMainSubMenusItemSettings">
+						<param name="id2" value="09" />
+					</include>
+					<!-- Submenu set 10 -->
+					<include content="HomeMainSubMenusItemSettings">
+						<param name="id2" value="10" />
+					</include>
+					<!-- Submenu set 11 -->
+					<include content="HomeMainSubMenusItemSettings">
+						<param name="id2" value="11" />
+					</include>
+					<!-- Submenu set 12 -->
+					<include content="HomeMainSubMenusItemSettings">
+						<param name="id2" value="12" />
+					</include>
+					<!-- Submenu set 13 -->
+					<include content="HomeMainSubMenusItemSettings">
+						<param name="id2" value="13" />
+					</include>
+					<!-- Submenu set 14 -->
+					<include content="HomeMainSubMenusItemSettings">
+						<param name="id2" value="14" />
+					</include>
+					<!-- Submenu set 15 -->
+					<include content="HomeMainSubMenusItemSettings">
+						<param name="id2" value="15" />
+					</include>
+					<!-- Submenu set 16 -->
+					<include content="HomeMainSubMenusItemSettings">
+						<param name="id2" value="16" />
+					</include>
+					<!-- Submenu set 17 -->
+					<include content="HomeMainSubMenusItemSettings">
+						<param name="id2" value="17" />
+					</include>
+					<!-- Submenu set 18 -->
+					<include content="HomeMainSubMenusItemSettings">
+						<param name="id2" value="18" />
+					</include>
+					<!-- Submenu set 19 -->
+					<include content="HomeMainSubMenusItemSettings">
+						<param name="id2" value="19" />
+					</include>
+					<!-- Submenu set 20 -->
+					<include content="HomeMainSubMenusItemSettings">
+						<param name="id2" value="20" />
+					</include>
+					<control type="image" id="200">
+						<description>Separator Image</description>
+						<height>2</height>
+						<texture>separator2.png</texture>
+					</control>
+					<control type="button" id="201">
+						<description>Reset Section</description>
+						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
 						<label>$LOCALIZE[10041]</label>
@@ -422,9 +422,9 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-                        <onclick>ActivateWindow(2152)</onclick>                       
-                    </control>                    
-                </control>
+						<onclick>ActivateWindow(2152)</onclick>
+					</control>
+				</control>
 				<control type="scrollbar" id="62">
 					<left>1060</left>
 					<top>60</top>
@@ -441,7 +441,7 @@
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(2)</visible>
 				</control>
-                <!-- Addons sets -->
+				<!-- Addons sets -->
 				<control type="grouplist" id="9003">
 					<visible>Container(9000).Hasfocus(3)</visible>
 					<left>290</left>
@@ -454,94 +454,94 @@
 					<onright>63</onright>
 					<onup>9005</onup>
 					<ondown>9003</ondown>
-                    <!-- Addon set 01 -->
-                    <include content="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="01" />
-                    </include>
-                    <!-- Addon set 02 -->
-                    <include content="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="02" />
-                    </include>
-                    <!-- Addon set 03 -->
-                    <include content="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="03" />
-                    </include>
-                    <!-- Addon set 04 -->
-                    <include content="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="04" />
-                    </include>
-                    <!-- Addon set 05 -->
-                    <include content="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="05" />
-                    </include>
-                    <!-- Addon set 06 -->
-                    <include content="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="06" />
-                    </include>
-                    <!-- Addon set 07 -->
-                    <include content="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="07" />
-                    </include>
-                    <!-- Addon set 08 -->
-                    <include content="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="08" />
-                    </include>
-                    <!-- Addon set 09 -->
-                    <include content="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="09" />
-                    </include>
-                    <!-- Addon set 10 -->
-                    <include content="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="10" />
-                    </include>
-                    <!-- Addon set 11 -->
-                    <include content="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="11" />
-                    </include>
-                    <!-- Addon set 12 -->
-                    <include content="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="12" />
-                    </include>
-                    <!-- Addon set 13 -->
-                    <include content="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="13" />
-                    </include>
-                    <!-- Addon set 14 -->
-                    <include content="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="14" />
-                    </include>
-                    <!-- Addon set 15 -->
-                    <include content="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="15" />
-                    </include>
-                    <!-- Addon set 16 -->
-                    <include content="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="16" />
-                    </include>
-                    <!-- Addon set 17 -->
-                    <include content="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="17" />
-                    </include>
-                    <!-- Addon set 18 -->
-                    <include content="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="18" />
-                    </include>
-                    <!-- Addon set 19 -->
-                    <include content="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="19" />
-                    </include>
-                    <!-- Addon set 20 -->
-                    <include content="HomeMainAddonSetsItemSettings">
-                        <param name="id2" value="20" />
-                    </include>
-                    <control type="image" id="300">
-                        <description>Separator Image</description>
-                        <height>2</height>
-                        <texture>separator2.png</texture>
-                    </control>
-                    <control type="button" id="301">
-                        <description>Reset Section</description>
-                        <width>750</width>
+					<!-- Addon set 01 -->
+					<include content="HomeMainAddonSetsItemSettings">
+						<param name="id2" value="01" />
+					</include>
+					<!-- Addon set 02 -->
+					<include content="HomeMainAddonSetsItemSettings">
+						<param name="id2" value="02" />
+					</include>
+					<!-- Addon set 03 -->
+					<include content="HomeMainAddonSetsItemSettings">
+						<param name="id2" value="03" />
+					</include>
+					<!-- Addon set 04 -->
+					<include content="HomeMainAddonSetsItemSettings">
+						<param name="id2" value="04" />
+					</include>
+					<!-- Addon set 05 -->
+					<include content="HomeMainAddonSetsItemSettings">
+						<param name="id2" value="05" />
+					</include>
+					<!-- Addon set 06 -->
+					<include content="HomeMainAddonSetsItemSettings">
+						<param name="id2" value="06" />
+					</include>
+					<!-- Addon set 07 -->
+					<include content="HomeMainAddonSetsItemSettings">
+						<param name="id2" value="07" />
+					</include>
+					<!-- Addon set 08 -->
+					<include content="HomeMainAddonSetsItemSettings">
+						<param name="id2" value="08" />
+					</include>
+					<!-- Addon set 09 -->
+					<include content="HomeMainAddonSetsItemSettings">
+						<param name="id2" value="09" />
+					</include>
+					<!-- Addon set 10 -->
+					<include content="HomeMainAddonSetsItemSettings">
+						<param name="id2" value="10" />
+					</include>
+					<!-- Addon set 11 -->
+					<include content="HomeMainAddonSetsItemSettings">
+						<param name="id2" value="11" />
+					</include>
+					<!-- Addon set 12 -->
+					<include content="HomeMainAddonSetsItemSettings">
+						<param name="id2" value="12" />
+					</include>
+					<!-- Addon set 13 -->
+					<include content="HomeMainAddonSetsItemSettings">
+						<param name="id2" value="13" />
+					</include>
+					<!-- Addon set 14 -->
+					<include content="HomeMainAddonSetsItemSettings">
+						<param name="id2" value="14" />
+					</include>
+					<!-- Addon set 15 -->
+					<include content="HomeMainAddonSetsItemSettings">
+						<param name="id2" value="15" />
+					</include>
+					<!-- Addon set 16 -->
+					<include content="HomeMainAddonSetsItemSettings">
+						<param name="id2" value="16" />
+					</include>
+					<!-- Addon set 17 -->
+					<include content="HomeMainAddonSetsItemSettings">
+						<param name="id2" value="17" />
+					</include>
+					<!-- Addon set 18 -->
+					<include content="HomeMainAddonSetsItemSettings">
+						<param name="id2" value="18" />
+					</include>
+					<!-- Addon set 19 -->
+					<include content="HomeMainAddonSetsItemSettings">
+						<param name="id2" value="19" />
+					</include>
+					<!-- Addon set 20 -->
+					<include content="HomeMainAddonSetsItemSettings">
+						<param name="id2" value="20" />
+					</include>
+					<control type="image" id="300">
+						<description>Separator Image</description>
+						<height>2</height>
+						<texture>separator2.png</texture>
+					</control>
+					<control type="button" id="301">
+						<description>Reset Section</description>
+						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
 						<label>$LOCALIZE[10041]</label>
@@ -549,9 +549,9 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-                        <onclick>ActivateWindow(2153)</onclick>                       
-                    </control>
-                </control>
+						<onclick>ActivateWindow(2153)</onclick>
+					</control>
+				</control>
 				<control type="scrollbar" id="63">
 					<left>1060</left>
 					<top>60</top>
@@ -569,7 +569,7 @@
 					<visible>Container(9000).Hasfocus(3)</visible>
 				</control>
 			</control>
-            <control type="image">
+			<control type="image">
 				<description>separator image</description>
 				<left>290</left>
 				<top>525</top>
@@ -588,7 +588,7 @@
 				<align>justify</align>
 				<textcolor>white</textcolor>
 				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
-                <label>$INFO[Container(9000).ListItem.Label2]</label>
+				<label>$INFO[Container(9000).ListItem.Label2]</label>
 			</control>
 		</control>
 		<include>CommonNowPlaying</include>

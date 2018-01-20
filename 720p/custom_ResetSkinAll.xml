@@ -8,10 +8,10 @@
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
-        <include content="DialogYesNo">
-            <param name="dialogheaderlabel" value="$LOCALIZE[10035]" />
-            <param name="dialogtext" value="$LOCALIZE[10045]" />
-            <param name="dialogincludeyes" value="DialogResetGeneral" />
-        </include>
+		<include content="DialogYesNo">
+			<param name="dialogheaderlabel" value="$LOCALIZE[10035]" />
+			<param name="dialogtext" value="$LOCALIZE[10045]" />
+			<param name="dialogincludeyes" value="DialogResetGeneral" />
+		</include>
 	</controls>
 </window>

@@ -2,7 +2,7 @@
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<controls>
-        <include>CommonCustomBackgroundSettings</include>
+		<include>CommonCustomBackgroundSettings</include>
 		<include>CommonBackground</include>
 		<control type="image">
 			<left>0</left>
@@ -117,8 +117,8 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>
-                <include condition="Skin.HasSetting(SeparateBackground)">SettingsContentCustom</include>
-                <include condition="!Skin.HasSetting(SeparateBackground)">SettingsContentDefault</include>
+				<include condition="Skin.HasSetting(SeparateBackground)">SettingsContentCustom</include>
+				<include condition="!Skin.HasSetting(SeparateBackground)">SettingsContentDefault</include>
 			</control>
 			<control type="image">
 				<left>268</left>

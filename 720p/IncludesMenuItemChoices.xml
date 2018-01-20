@@ -15,8 +15,8 @@
 				<onclick>Dialog.Close(2114)</onclick>
 				<onclick>Skin.Reset(UsrSelectAddon)</onclick>
 				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>Window.IsVisible(2114)</visible>
-                <visible>String.IsEqual(Window(Home).Property(UsrSelectBtnClear),Clear)</visible>
+				<visible>Window.IsVisible(2114)</visible>
+				<visible>String.IsEqual(Window(Home).Property(UsrSelectBtnClear),Clear)</visible>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MainMenu)</visible>
 			</item>
 			<item>
@@ -26,8 +26,8 @@
 				<onclick>Dialog.Close(2115)</onclick>
 				<onclick>Skin.Reset(UsrSelectAddon)</onclick>
 				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                <visible>Window.IsVisible(2115)</visible>
-                <visible>String.IsEqual(Window(Home).Property(UsrSelectBtnClear),Clear)</visible>
+				<visible>Window.IsVisible(2115)</visible>
+				<visible>String.IsEqual(Window(Home).Property(UsrSelectBtnClear),Clear)</visible>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MainMenu)</visible>
 			</item>
 			<item>
@@ -36,10 +36,10 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(weather))</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31950])</onclick>
-                <onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[8])</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
+				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[8])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,WeatherDaily)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,WeatherDaily)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,weather)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/weather.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
@@ -50,7 +50,7 @@
 			<item>
 				<description>Pictures</description>
 				<label>$LOCALIZE[1] ></label>
-                <onclick>SetProperty(MenuItemType,PicturesMenu)</onclick>
+				<onclick>SetProperty(MenuItemType,PicturesMenu)</onclick>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MainMenu)</visible>
 			</item>
 			<item>
@@ -105,7 +105,7 @@
 				<label>$LOCALIZE[446] ></label>
 				<onclick>SetProperty(MenuItemType,PlayDiscMenu)</onclick>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MainMenu)</visible>
-			</item>            
+			</item>
 			<item>
 				<description>Programs</description>
 				<label>$LOCALIZE[0]</label>
@@ -113,7 +113,7 @@
 				<onclick condition="!System.Platform.Android">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(programs,addons://sources/executable/,return))</onclick>
 				<onclick condition="System.Platform.Android">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(Programs))</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31957])</onclick>
-                <onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[0])</onclick>
+				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[0])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
@@ -140,7 +140,7 @@
 				<label>$LOCALIZE[13005] ></label>
 				<onclick>SetProperty(MenuItemType,ShutDownMenu)</onclick>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MainMenu)</visible>
-			</item>            
+			</item>
 			<item>
 				<description>Playlists</description>
 				<label>$LOCALIZE[559] ></label>
@@ -164,7 +164,7 @@
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,addons)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://Home/addons/$INFO[Skin.String(UsrSelectAddon)]/fanart.jpg)</onclick>			
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://Home/addons/$INFO[Skin.String(UsrSelectAddon)]/fanart.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MainMenu)</visible>
@@ -174,12 +174,12 @@
 				<label>$LOCALIZE[137]</label>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,RunScript(script.globalsearch))</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32000])</onclick>
-                <onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[137])</onclick>
+				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[137])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,search)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/search.jpg)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/search.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>!Skin.HasSetting(DisableGlobalSearch)</visible>
@@ -190,12 +190,12 @@
 				<label>$LOCALIZE[0] ($LOCALIZE[89021])</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,RunAddon(plugin.program.advanced.launcher))</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[89021])</onclick>				
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[89021])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,addons)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/launcher.jpg)</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/launcher.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>System.HasAddon(plugin.program.advanced.launcher)</visible>
@@ -211,7 +211,7 @@
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,addons)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/addons.jpg)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/addons.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MainMenu)</visible>
@@ -223,12 +223,12 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(pictures))</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31951])</onclick>
-                <onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[1])</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
+				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[1])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,pictures)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/pictures.jpg)</onclick>			
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/pictures.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),PicturesMenu)</visible>
@@ -238,13 +238,13 @@
 				<label>$LOCALIZE[1] - $LOCALIZE[24001]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(pictures,addons://sources/image/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31951])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31951])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[24001])</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,pictures)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/pictures.jpg)</onclick>			
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/pictures.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),PicturesMenu)</visible>
@@ -256,12 +256,12 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,PlayDVD)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31958])</onclick>
-                <onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[446])</onclick>                
+				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[446])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,dvd)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/dvd.jpg)</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/dvd.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),PlayDiscMenu)</visible>
@@ -271,13 +271,13 @@
 				<label>$LOCALIZE[446] - $LOCALIZE[13391]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,EjectTray)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31958])</onclick>
-				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[13391])</onclick>								
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31958])</onclick>
+				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[13391])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,dvd)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/dvd.jpg)</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/dvd.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),PlayDiscMenu)</visible>
@@ -288,15 +288,15 @@
 				<label>$LOCALIZE[559] - $LOCALIZE[2]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetFile(UsrSelectAddon,.xsp,special://musicplaylists/)</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(music,"$INFO[Skin.String(UsrSelectAddon)]",return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32001])</onclick>
-				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[559] $LOCALIZE[2])</onclick>				
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(music,"$INFO[Skin.String(UsrSelectAddon)]",return))</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32001])</onclick>
+				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[559] $LOCALIZE[2])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,MusicPlayList)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,musicplaylist)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/playlists.jpg)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Playlist,$INFO[Skin.String(UsrSelectAddon)])</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,musicplaylist)</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/playlists.jpg)</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Playlist,$INFO[Skin.String(UsrSelectAddon)])</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),PlayListMenu)</visible>
@@ -306,15 +306,15 @@
 				<label>$LOCALIZE[559] - $LOCALIZE[3]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetFile(UsrSelectAddon,.xsp,special://videoplaylists/)</onclick>
-                <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,"$INFO[Skin.String(UsrSelectAddon)]",return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32001])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,"$INFO[Skin.String(UsrSelectAddon)]",return))</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32001])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[559] $LOCALIZE[3])</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,VideoPlayList)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,videoplaylist)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/playlists.jpg)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Playlist,$INFO[Skin.String(UsrSelectAddon)])</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/playlists.jpg)</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Playlist,$INFO[Skin.String(UsrSelectAddon)])</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),PlayListMenu)</visible>
@@ -324,13 +324,13 @@
 				<label>$LOCALIZE[559] - $LOCALIZE[89023]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,RunAddon(script.simpleplaylists))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32001])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32001])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[89023])</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,movies)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/playlists.jpg)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/playlists.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>System.HasAddon(script.simpleplaylists)</visible>
@@ -341,13 +341,13 @@
 				<label>$LOCALIZE[559] - $LOCALIZE[2] ($LOCALIZE[513])</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(music,special://musicplaylists/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32001])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32001])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[2] $LOCALIZE[513])</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,musicplaylist)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/playlists.jpg)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/playlists.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>Library.HasContent(Music)</visible>
@@ -358,12 +358,12 @@
 				<label>$LOCALIZE[559] - $LOCALIZE[3] ($LOCALIZE[513])</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,special://videoplaylists/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32001])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32001])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[3] $LOCALIZE[513])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,video)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,video)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/playlists.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -374,12 +374,12 @@
 				<description>Music</description>
 				<label>$LOCALIZE[2]</label>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(music))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[2])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentAlbums)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,music)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,music)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -389,13 +389,13 @@
 				<description>Music Recently Added</description>
 				<label>$LOCALIZE[2] - $LOCALIZE[359]</label>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(music,musicdb://recentlyaddedalbums/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[359])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentAlbums)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,music)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>			
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>Library.HasContent(music)</visible>
@@ -405,13 +405,13 @@
 				<description>Music Recently Played</description>
 				<label>$LOCALIZE[2] - $LOCALIZE[517]</label>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(music,musicdb://recentlyplayedalbums/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[517])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentAlbums)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,music)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>			
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>Library.HasContent(music)</visible>
@@ -422,13 +422,13 @@
 				<label>$LOCALIZE[2] - $LOCALIZE[89026]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(2123))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[89026])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentAlbums)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,music)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>Library.HasContent(music)</visible>
@@ -438,7 +438,7 @@
 				<description>Music Genre</description>
 				<label>$LOCALIZE[2] - $LOCALIZE[135]</label>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(music,musicdb://genres/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[135])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
@@ -454,13 +454,13 @@
 				<description>Music Artists</description>
 				<label>$LOCALIZE[2] - $LOCALIZE[133]</label>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(music,musicdb://artists/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[133])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentAlbums)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,music)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>			
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>Library.HasContent(music)</visible>
@@ -470,13 +470,13 @@
 				<description>Music Albums</description>
 				<label>$LOCALIZE[2] - $LOCALIZE[132]</label>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(music,musicdb://albums/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[132])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentAlbums)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,music)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>Library.HasContent(music)</visible>
@@ -486,7 +486,7 @@
 				<description>Music Songs</description>
 				<label>$LOCALIZE[2] - $LOCALIZE[134]</label>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(music,musicdb://songs/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[134])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
@@ -502,13 +502,13 @@
 				<description>Music Top 100</description>
 				<label>$LOCALIZE[2] - $LOCALIZE[271]</label>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(music,musicdb://top100/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[271])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentAlbums)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,music)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>Library.HasContent(music)</visible>
@@ -518,13 +518,13 @@
 				<description>Music Top 100 Songs</description>
 				<label>$LOCALIZE[2] - $LOCALIZE[10504]</label>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(music,musicdb://top100/songs/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[10504])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentAlbums)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,music)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>Library.HasContent(music)</visible>
@@ -534,13 +534,13 @@
 				<description>Music Top 100 Albums</description>
 				<label>$LOCALIZE[2] - $LOCALIZE[10505]</label>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(music,musicdb://top100/albums/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[10505])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentAlbums)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,music)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>Library.HasContent(music)</visible>
@@ -550,7 +550,7 @@
 				<description>Music Music Roles</description>
 				<label>$LOCALIZE[2] - $LOCALIZE[29994]</label>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(music,library://music/musicroles/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[521])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
@@ -566,7 +566,7 @@
 				<description>Music Years</description>
 				<label>$LOCALIZE[2] - $LOCALIZE[652]</label>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(music,musicdb://years/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[652])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
@@ -582,7 +582,7 @@
 				<description>Music Singles</description>
 				<label>$LOCALIZE[2] - $LOCALIZE[1050]</label>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(music,musicdb://singles/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[1050])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
@@ -593,18 +593,18 @@
 				<include>CloseMenuChoice</include>
 				<visible>Library.HasContent(music)</visible>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MusicMenu)</visible>
-			</item>            
+			</item>
 			<item>
 				<description>Music Files</description>
 				<label>$LOCALIZE[2] - $LOCALIZE[744]</label>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(music,sources://music/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[744])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentAlbums)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,music)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>			
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MusicMenu)</visible>
@@ -614,13 +614,13 @@
 				<label>$LOCALIZE[2] - $LOCALIZE[24001]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(music,addons://sources/audio/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[24001])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentAlbums)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,music)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>			
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>Library.HasContent(music)</visible>
@@ -631,13 +631,13 @@
 				<label>$LOCALIZE[2] - $LOCALIZE[24001]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(music,addons://sources/audio/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[24001])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentAlbums)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,music)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>			
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>!Library.HasContent(music)</visible>
@@ -647,13 +647,13 @@
 				<description>Music PartyMode</description>
 				<label>$LOCALIZE[2] - $LOCALIZE[589]</label>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,PlayerControl(PartyMode(music))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[589])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentAlbums)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,music)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>Library.HasContent(music)</visible>
@@ -664,13 +664,13 @@
 				<label>$LOCALIZE[2] - $LOCALIZE[653]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,UpdateLibrary(music))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[24069])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentAlbums)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,music)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>		
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MusicMenu)</visible>
@@ -680,13 +680,13 @@
 				<label>$LOCALIZE[2] - $LOCALIZE[89028]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,CleanLibrary(music))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31956])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[89028])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentAlbums)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,music)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MusicMenu)</visible>
@@ -697,13 +697,13 @@
 				<label>$LOCALIZE[3] - $LOCALIZE[14022]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,library://video/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31953])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31953])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[14022])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,video)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/video.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/video.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),VideoMenu)</visible>
@@ -715,13 +715,13 @@
 				<onclick>Skin.Setpath(UsrSelectAddon,library://video/)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,$INFO[Skin.String(UsrSelectAddon)],return))</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Playlist,$INFO[Skin.String(UsrSelectAddon)])</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31953])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31953])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[89029])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,VideoNode)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,videonode)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/video.jpg)</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/video.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),VideoMenu)</visible>
@@ -732,13 +732,13 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.Setpath(UsrSelectAddon)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,"$INFO[Skin.String(UsrSelectAddon)]",return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31953])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31953])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[20334])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,video)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/video.jpg)</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/video.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),VideoMenu)</visible>
@@ -748,13 +748,13 @@
 				<label>$LOCALIZE[3] - $LOCALIZE[744]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,sources://video/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31953])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31953])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[744])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,video)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/video.jpg)</onclick>		
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/video.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),VideoMenu)</visible>
@@ -764,13 +764,13 @@
 				<label>$LOCALIZE[3] - $LOCALIZE[24001]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,addons://sources/video/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31953])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31953])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[24001])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,video)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/videos.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/videos.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),VideoMenu)</visible>
@@ -780,13 +780,13 @@
 				<label>$LOCALIZE[3] - $LOCALIZE[653]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,UpdateLibrary(video))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31953])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31953])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[653])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,video)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/video.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/video.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),VideoMenu)</visible>
@@ -796,13 +796,13 @@
 				<label>$LOCALIZE[3] - $LOCALIZE[89028]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,CleanLibrary(video))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31953])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31953])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[89028])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,video)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/video.jpg)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/video.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),VideoMenu)</visible>
@@ -813,13 +813,13 @@
 				<label>$LOCALIZE[342]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://movies/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[342])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMovies)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,movies)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MoviesMenu)</visible>
@@ -829,13 +829,13 @@
 				<label>$LOCALIZE[342] - $LOCALIZE[31328]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://recentlyaddedmovies/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31328])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMovies)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,movies)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MoviesMenu)</visible>
@@ -845,13 +845,13 @@
 				<label>$LOCALIZE[342] - $LOCALIZE[89030]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(2125))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[89030])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMovies)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,movies)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MoviesMenu)</visible>
@@ -861,13 +861,13 @@
 				<label>$LOCALIZE[342] - $LOCALIZE[135]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://movies/genres/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[135])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMovies)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,movies)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MoviesMenu)</visible>
@@ -877,13 +877,13 @@
 				<label>$LOCALIZE[342] - $LOCALIZE[369]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://movies/titles/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[369])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMovies)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,movies)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MoviesMenu)</visible>
@@ -893,13 +893,13 @@
 				<label>$LOCALIZE[342] - $LOCALIZE[652]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://movies/years/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[652])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMovies)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,movies)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MoviesMenu)</visible>
@@ -909,13 +909,13 @@
 				<label>$LOCALIZE[342] - $LOCALIZE[344]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://movies/actors/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[344])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMovies)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,movies)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MoviesMenu)</visible>
@@ -925,13 +925,13 @@
 				<label>$LOCALIZE[342] - $LOCALIZE[20348]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://movies/directors/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[20348])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMovies)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,movies)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MoviesMenu)</visible>
@@ -941,29 +941,29 @@
 				<label>$LOCALIZE[342] - $LOCALIZE[20388]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://movies/studios/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[20388])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMovies)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,movies)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MoviesMenu)</visible>
-			</item>            
+			</item>
 			<item>
 				<description>Movie Sets</description>
 				<label>$LOCALIZE[342] - $LOCALIZE[20434]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://movies/sets/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[20434])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMovies)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,movies)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>Library.HasContent(MovieSets)</visible>
@@ -974,13 +974,13 @@
 				<label>$LOCALIZE[342] - $LOCALIZE[20451]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://movies/countries/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[20451])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMovies)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,movies)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>Library.HasContent(MovieSets)</visible>
@@ -991,13 +991,13 @@
 				<label>$LOCALIZE[342] - $LOCALIZE[20459]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://movies/tags/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31954])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[20459])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMovies)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,movies)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MoviesMenu)</visible>
@@ -1008,13 +1008,13 @@
 				<label>$LOCALIZE[20343]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://tvshows/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31955])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31955])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[20343])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentEpisodes)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,tvshows)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),TVShowsMenu)</visible>
@@ -1024,13 +1024,13 @@
 				<label>$LOCALIZE[20343] - $LOCALIZE[31328]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://recentlyaddedepisodes/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31955])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31955])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31328])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentEpisodes)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,tvshows)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),TVShowsMenu)</visible>
@@ -1040,29 +1040,29 @@
 				<label>$LOCALIZE[20343] - $LOCALIZE[89034]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(2124))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31955])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31955])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[89034])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentEpisodes)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,tvshows)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),TVShowsMenu)</visible>
-			</item>            
+			</item>
 			<item>
 				<description>In Progress TVShows</description>
 				<label>$LOCALIZE[20343] - $LOCALIZE[626]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,library://video/inprogressshows.xml/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31955])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31955])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[626])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentEpisodes)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,tvshows)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),TVShowsMenu)</visible>
@@ -1072,13 +1072,13 @@
 				<label>$LOCALIZE[20343] - $LOCALIZE[135]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://tvshows/genres/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31955])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31955])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[135])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentEpisodes)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,tvshows)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>			
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),TVShowsMenu)</visible>
@@ -1088,13 +1088,13 @@
 				<label>$LOCALIZE[20343] - $LOCALIZE[369]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://tvshows/titles/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31955])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31955])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[369])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentEpisodes)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,tvshows)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),TVShowsMenu)</visible>
@@ -1104,13 +1104,13 @@
 				<label>$LOCALIZE[20343] - $LOCALIZE[652]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://tvshows/years/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31955])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31955])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[652])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentEpisodes)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,tvshows)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),TVShowsMenu)</visible>
@@ -1120,29 +1120,29 @@
 				<label>$LOCALIZE[20343] - $LOCALIZE[344]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://tvshows/actors/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31955])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31955])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[344])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentEpisodes)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,tvshows)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),TVShowsMenu)</visible>
-			</item>            
+			</item>
 			<item>
 				<description>TVShows Studios</description>
 				<label>$LOCALIZE[20343] - $LOCALIZE[20388]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://tvshows/studios/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31955])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31955])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[20388])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentEpisodes)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,tvshows)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),TVShowsMenu)</visible>
@@ -1152,13 +1152,13 @@
 				<label>$LOCALIZE[20343] - $LOCALIZE[20459]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://tvshows/tags/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31955])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31955])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[20459])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentEpisodes)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,tvshows)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),TVShowsMenu)</visible>
@@ -1169,13 +1169,13 @@
 				<label>$LOCALIZE[20391]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://musicvideos/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[20391])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMusicVideo)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,musicvideos)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/musicvideos.jpg)</onclick>               
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/musicvideos.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MusicVideoMenu)</visible>
@@ -1185,23 +1185,23 @@
 				<label>$LOCALIZE[20391] - $LOCALIZE[31328]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(Videos,RecentlyAddedMusicVideos,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31328])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMusicVideo)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,musicvideos)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,musicvideos)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/musicvideos.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MusicVideoMenu)</visible>
-			</item>            
+			</item>
 			<item>
 				<description>Recommended MusicVideo</description>
 				<label>$LOCALIZE[20391] - $LOCALIZE[89037]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(2126))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[89037])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
@@ -1217,28 +1217,28 @@
 				<label>$LOCALIZE[20391] - $LOCALIZE[135]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://musicvideos/genres/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[135])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMusicVideo)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,musicvideos)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,musicvideos)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/musicvideos.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MusicVideoMenu)</visible>
-			</item>            
+			</item>
 			<item>
 				<description>MusicVideo Titles</description>
 				<label>$LOCALIZE[20391] - $LOCALIZE[369]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://musicvideos/titles/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[369])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMusicVideo)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,musicvideos)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,musicvideos)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/musicvideos.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1249,12 +1249,12 @@
 				<label>$LOCALIZE[20391] - $LOCALIZE[652]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://musicvideos/years/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[652])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMusicVideo)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,musicvideos)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,musicvideos)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/musicvideos.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1265,12 +1265,12 @@
 				<label>$LOCALIZE[20391] - $LOCALIZE[133]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://musicvideos/artists/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[133])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMusicVideo)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,musicvideos)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,musicvideos)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/musicvideos.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1281,12 +1281,12 @@
 				<label>$LOCALIZE[20391] - $LOCALIZE[132]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://musicvideos/albums/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[132])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMusicVideo)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,musicvideos)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,musicvideos)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/musicvideos.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1297,12 +1297,12 @@
 				<label>$LOCALIZE[20391] - $LOCALIZE[20348]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://musicvideos/directors/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[20348])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMusicVideo)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,musicvideos)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,musicvideos)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/musicvideos.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1313,12 +1313,12 @@
 				<label>$LOCALIZE[20391] - $LOCALIZE[20388]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://musicvideos/studios/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[20388])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMusicVideo)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,musicvideos)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,musicvideos)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/musicvideos.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1329,45 +1329,45 @@
 				<label>$LOCALIZE[20391] - $LOCALIZE[20459]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(videos,videodb://musicvideos/tags/,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[20459])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMusicVideo)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,musicvideos)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/musicvideos.jpg)</onclick>                
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/musicvideos.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MusicVideoMenu)</visible>
 			</item>
-            <item>
+			<item>
 				<description>MusicVideo PartyMode</description>
 				<label>$LOCALIZE[20391] - $LOCALIZE[589]</label>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,PlayerControl(PartyMode(video))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31961])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[589])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMusicVideo)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,musicvideos)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/musicvideos.jpg)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/musicvideos.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>Library.HasContent(music)</visible>
 				<visible>String.IsEqual(Window.Property(MenuItemType),MusicVideoMenu)</visible>
 			</item>
-            <!-- LiveTV Menu -->
+			<!-- LiveTV Menu -->
 			<item>
 				<description>Live TV Channels</description>
 				<label>$LOCALIZE[19020] - $LOCALIZE[19019]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(tvchannels))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31952])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31952])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[19019])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,livetv)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,livetv)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/livetv.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1378,12 +1378,12 @@
 				<label>$LOCALIZE[19020] - $LOCALIZE[19069]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(tvguide))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31952])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31952])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[19069])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,livetv)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,livetv)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/livetv.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1394,12 +1394,12 @@
 				<label>$LOCALIZE[19020] - $LOCALIZE[19017]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(tvrecordings))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31952])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31952])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[19017])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,livetv)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,livetv)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/livetv.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1410,12 +1410,12 @@
 				<label>$LOCALIZE[19020] - $LOCALIZE[19138]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(tvtimerrules))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31952])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31952])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[19138])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,livetv)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,livetv)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/livetv.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1426,12 +1426,12 @@
 				<label>$LOCALIZE[19020] - $LOCALIZE[19040]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(tvtimers))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31952])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31952])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[19040])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,livetv)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,livetv)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/livetv.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1442,29 +1442,29 @@
 				<label>$LOCALIZE[19020] - $LOCALIZE[137]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(tvsearch))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31952])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31952])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[137])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,livetv)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,livetv)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/livetv.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),LiveTVMenu)</visible>
 			</item>
-            <!-- Radio Menu -->
+			<!-- Radio Menu -->
 			<item>
 				<description>Radio Channels</description>
 				<label>$LOCALIZE[19021] - $LOCALIZE[19019]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(radiochannels))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31960])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31960])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[19019])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,radio)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,radio)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/radio.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1475,12 +1475,12 @@
 				<label>$LOCALIZE[19021] - $LOCALIZE[19069]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(radioguide))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31960])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31960])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[19069])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,radio)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,radio)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/radio.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1491,12 +1491,12 @@
 				<label>$LOCALIZE[19021] - $LOCALIZE[19163]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(radiorecordings))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31960])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31960])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[19163])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,radio)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,radio)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/radio.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1507,12 +1507,12 @@
 				<label>$LOCALIZE[19021] - $LOCALIZE[19138]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(radiotimerrules))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31960])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31960])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[19138])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,radio)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,radio)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/radio.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1523,12 +1523,12 @@
 				<label>$LOCALIZE[19021] - $LOCALIZE[19040]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(radiotimers))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31960])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31960])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[19040])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,radio)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,radio)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/radio.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1539,18 +1539,18 @@
 				<label>$LOCALIZE[19021] - $LOCALIZE[137]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(radiosearch))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31960])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31960])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[137])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,radio)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,radio)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/radio.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
 				<visible>String.IsEqual(Window.Property(MenuItemType),RadioMenu)</visible>
 			</item>
-            <!-- Favourites Menu -->
+			<!-- Favourites Menu -->
 			<item>
 				<description>Favourites</description>
 				<label>$LOCALIZE[1036] - $LOCALIZE[424]</label>
@@ -1559,11 +1559,11 @@
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,favourites)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/favourites.jpg)</onclick>			
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/favourites.jpg)</onclick>
 				<onclick condition="Window.IsVisible(2115)">Dialog.Close(2115)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Dialog.Close(2114)</onclick>
 				<onclick>RunScript(script.favourites,changetitle=true&amp;property=$INFO[Window(Home).Property(UsrSelectBtn)])</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>				
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<visible>System.HasAddon(script.favourites)</visible>
 				<visible>String.IsEqual(Window.Property(MenuItemType),FavouritesMenu)</visible>
 			</item>
@@ -1572,7 +1572,7 @@
 				<label>$LOCALIZE[1036] - $LOCALIZE[513]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(favourites))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32002])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32002])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[1036])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu21)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
@@ -1589,12 +1589,12 @@
 				<label>$LOCALIZE[13200]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(profiles))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32003])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32003])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[13200])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,profile)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,profile)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/profile.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1605,12 +1605,12 @@
 				<label>$LOCALIZE[13200] - $LOCALIZE[10029]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(loginscreen))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32003])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32003])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[10029])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,profile)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,profile)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/profile.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1621,12 +1621,12 @@
 				<label>$LOCALIZE[13200] - $LOCALIZE[20126]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,System.LogOff)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32003])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32003])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[20126])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,profile)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,profile)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/profile.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1638,12 +1638,12 @@
 				<label>$LOCALIZE[13005]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(shutdownmenu))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32004])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32004])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[13005])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,power)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,power)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/power.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1654,12 +1654,12 @@
 				<label>$LOCALIZE[13005] - $LOCALIZE[13012]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,Quit)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32004])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32004])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[13012])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,power)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,power)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/power.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1670,12 +1670,12 @@
 				<label>$LOCALIZE[13005] - $LOCALIZE[13016]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,Shutdown)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32004])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32004])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[13016])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,power)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,power)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/power.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1687,12 +1687,12 @@
 				<label>$LOCALIZE[13005] - $LOCALIZE[13011]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,Suspend)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32004])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32004])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[13011])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,power)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,power)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/power.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1704,12 +1704,12 @@
 				<label>$LOCALIZE[13005] - $LOCALIZE[13010]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,Hibernate)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32004])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32004])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[13010])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,power)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,power)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/power.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1721,12 +1721,12 @@
 				<label>$LOCALIZE[13005] - $LOCALIZE[13013]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,Reboot)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32004])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[32004])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[13013])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,power)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,power)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/power.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1739,12 +1739,12 @@
 				<label>$LOCALIZE[13000] - $LOCALIZE[5]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(settings),return)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31959])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31959])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[5])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,settings)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,settings)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/settings.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1755,12 +1755,12 @@
 				<label>$LOCALIZE[13000] - $LOCALIZE[89041]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,RunAddon(service.libreelec.settings),return)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31959])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31959])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[89041])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,settings)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,settings)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/settings.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1772,12 +1772,12 @@
 				<label>$LOCALIZE[13000] - $LOCALIZE[7]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(filemanager))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31959])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31959])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[7])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,settings)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,settings)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/settings.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1788,12 +1788,12 @@
 				<label>$LOCALIZE[13000] - $LOCALIZE[166]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(skinsettings),return)</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31959])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31959])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[166])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,settings)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,settings)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/settings.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1804,12 +1804,12 @@
 				<label>$LOCALIZE[13000] - $LOCALIZE[130]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(systeminfo))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31959])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31959])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[130])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,settings)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,settings)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/settings.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1820,12 +1820,12 @@
 				<label>$LOCALIZE[13000] - $LOCALIZE[10040]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(addonbrowser))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31959])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31959])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[10040])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,settings)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,settings)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/settings.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
@@ -1836,32 +1836,32 @@
 				<label>$LOCALIZE[13000] - $LOCALIZE[14111]</label>
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,ActivateWindow(eventlog,events://,return))</onclick>
-                <onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31959])</onclick>
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31959])</onclick>
 				<onclick condition="Window.IsVisible(2115)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[14111])</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
-				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,settings)</onclick>				
+				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Type,settings)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].DBackground,special://skin/extras/backgrounds/settings.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
-                <visible>system.getbool(eventlog.enabled)</visible>
+				<visible>system.getbool(eventlog.enabled)</visible>
 				<visible>String.IsEqual(Window.Property(MenuItemType),SystemMenu)</visible>
 			</item>
 		</content>
 	</include>
-    <include name="ClearButtonChoice">
+	<include name="ClearButtonChoice">
 		<onclick>Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
-		<onclick>Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Path)</onclick>		
+		<onclick>Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Path)</onclick>
 		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Playlist)</onclick>
 		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Sub)</onclick>
 		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Addon)</onclick>
 		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Type)</onclick>
 		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Widget)</onclick>
 		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].CBackground)</onclick>
-        <onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].DBackground)</onclick>
+		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].DBackground)</onclick>
 	</include>
-    <include name="CloseMenuChoice">
+	<include name="CloseMenuChoice">
 		<onclick condition="Window.IsVisible(2114)">Dialog.Close(2114)</onclick>
 		<onclick condition="Window.IsVisible(2115)">Dialog.Close(2115)</onclick>
 		<onclick>Skin.Reset(UsrSelectAddon)</onclick>

@@ -6,12 +6,12 @@
 		<left>0</left>
 		<top>0</top>
 	</coordinates>
-    <onunload>ClearProperty(UsrSelectBtnClear,Home)</onunload>
+	<onunload>ClearProperty(UsrSelectBtnClear,Home)</onunload>
 	<controls>
-        <include content="CustomSlideDialog">
-            <param name="dlg_title" value="$LOCALIZE[89700] $LOCALIZE[89002]" />
-            <param name="id_win" value="2116" />
-            <param name="include_name" value="SubMenuTypeChoices" />
-        </include>
+		<include content="CustomSlideDialog">
+			<param name="dlg_title" value="$LOCALIZE[89700] $LOCALIZE[89002]" />
+			<param name="id_win" value="2116" />
+			<param name="include_name" value="SubMenuTypeChoices" />
+		</include>
 	</controls>
 </window>

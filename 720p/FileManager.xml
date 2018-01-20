@@ -2,7 +2,7 @@
 <window>
 	<defaultcontrol>20</defaultcontrol>
 	<controls>
-        <include>CommonCustomBackground</include>
+		<include>CommonCustomBackground</include>
 		<include>CommonBackground</include>
 		<control type="image">
 			<left>0</left>

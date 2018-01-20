@@ -2359,13 +2359,13 @@
 			<textcolor>white</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<align>center</align>
-            <texturefocus>button-focus.png</texturefocus>
+			<texturefocus>button-focus.png</texturefocus>
 			<texturenofocus>button-nofocus.png</texturenofocus>
-            <onup>901</onup>
+			<onup>901</onup>
 			<ondown>901</ondown>
 			<onleft>901</onleft>
 			<onright>901</onright>
 			<onclick>Dialog.Close(all,true)</onclick>
-		</control>		
+		</control>
 	</controls>
 </window>

@@ -15,47 +15,47 @@
 			<focusedlayout width="1" height="1"/>
 		</control>
 		<control type="group">
-            <left>90</left>
-            <top>10</top>
-            <animation type="WindowOpen" reversible="false">
-                <effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="225" />
-                <effect type="fade" start="0" end="100" time="225" />
-            </animation>
-            <animation type="WindowClose" reversible="false">
-                <effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="225" />
-                <effect type="fade" start="100" end="0" time="225" />
-            </animation>
-            <control type="image">
-                <left>5</left>
-                <top>5</top>
-                <width>1090</width>
-                <height>650</height>
-                <texture border="15">ContentPanel.png</texture>
-            </control>
-            <control type="image">
-                <left>5</left>
-                <top>5</top>
-                <width>1090</width>
-                <height>650</height>
-                <texture border="15">ContentPanel.png</texture>
-            </control>
-            <control type="button">
-                <description>Close Window button</description>
-                <left>980</left>
-                <top>11</top>
-                <width>64</width>
-                <height>32</height>
-                <label>-</label>
-                <font>-</font>
-                <onclick>PreviousMenu</onclick>
-                <texturefocus>DialogCloseButton-focus.png</texturefocus>
-                <texturenofocus>DialogCloseButton.png</texturenofocus>
-                <onleft>1</onleft>
-                <onright>1</onright>
-                <onup>1</onup>
-                <ondown>1</ondown>
-                <visible>system.getbool(input.enablemouse)</visible>
-            </control>                        
+			<left>90</left>
+			<top>10</top>
+			<animation type="WindowOpen" reversible="false">
+				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="225" />
+				<effect type="fade" start="0" end="100" time="225" />
+			</animation>
+			<animation type="WindowClose" reversible="false">
+				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="225" />
+				<effect type="fade" start="100" end="0" time="225" />
+			</animation>
+			<control type="image">
+				<left>5</left>
+				<top>5</top>
+				<width>1090</width>
+				<height>650</height>
+				<texture border="15">ContentPanel.png</texture>
+			</control>
+			<control type="image">
+				<left>5</left>
+				<top>5</top>
+				<width>1090</width>
+				<height>650</height>
+				<texture border="15">ContentPanel.png</texture>
+			</control>
+			<control type="button">
+				<description>Close Window button</description>
+				<left>980</left>
+				<top>11</top>
+				<width>64</width>
+				<height>32</height>
+				<label>-</label>
+				<font>-</font>
+				<onclick>PreviousMenu</onclick>
+				<texturefocus>DialogCloseButton-focus.png</texturefocus>
+				<texturenofocus>DialogCloseButton.png</texturenofocus>
+				<onleft>1</onleft>
+				<onright>1</onright>
+				<onup>1</onup>
+				<ondown>1</ondown>
+				<visible>system.getbool(input.enablemouse)</visible>
+			</control>
 			<control type="label">
 				<top>30</top>
 				<width>1090</width>
@@ -84,7 +84,7 @@
 					<width>48</width>
 					<height>36</height>
 					<aspectratio>keep</aspectratio>
-                    <texture>$INFO[Container(100).ListItem.Property(VideoResolution),flagging/video/,.png]</texture>
+					<texture>$INFO[Container(100).ListItem.Property(VideoResolution),flagging/video/,.png]</texture>
 				</control>
 				<control type="image">
 					<left>110</left>
@@ -92,7 +92,7 @@
 					<width>75</width>
 					<height>36</height>
 					<aspectratio>keep</aspectratio>
-                    <texture>$INFO[Container(100).ListItem.Property(VideoCodec),flagging/video/,.png]</texture>
+					<texture>$INFO[Container(100).ListItem.Property(VideoCodec),flagging/video/,.png]</texture>
 				</control>
 				<control type="image">
 					<left>207</left>
@@ -100,7 +100,7 @@
 					<width>48</width>
 					<height>36</height>
 					<aspectratio>keep</aspectratio>
-                    <texture>$INFO[Container(100).ListItem.Property(VideoAspect),flagging/aspectratio/,.png]</texture>
+					<texture>$INFO[Container(100).ListItem.Property(VideoAspect),flagging/aspectratio/,.png]</texture>
 				</control>
 				<control type="image">
 					<left>257</left>
@@ -108,7 +108,7 @@
 					<width>75</width>
 					<height>36</height>
 					<aspectratio>keep</aspectratio>
-                    <texture>$INFO[Container(100).ListItem.Property(AudioCodec),flagging/audio/,.png]</texture>
+					<texture>$INFO[Container(100).ListItem.Property(AudioCodec),flagging/audio/,.png]</texture>
 				</control>
 				<control type="image">
 					<left>334</left>
@@ -116,7 +116,7 @@
 					<width>48</width>
 					<height>36</height>
 					<aspectratio>keep</aspectratio>
-                    <texture>$INFO[Container(100).ListItem.Property(AudioChannels),flagging/audio/,.png]</texture>
+					<texture>$INFO[Container(100).ListItem.Property(AudioChannels),flagging/audio/,.png]</texture>
 				</control>
 			</control>
 			<control type="group" id="101">

@@ -4,7 +4,7 @@
 	<menucontrol>9000</menucontrol>
 	<views>50</views>
 	<controls>
-        <include>CommonCustomBackground</include>
+		<include>CommonCustomBackground</include>
 		<include>CommonBackground</include>
 		<control type="image">
 			<left>0</left>
@@ -79,7 +79,7 @@
 				<onclick>Fullscreen</onclick>
 				<visible>Player.HasVideo</visible>
 			</control>
-            <include>PreviewPVRBackground</include>
+			<include>PreviewPVRBackground</include>
 			<control type="videowindow">
 				<left>5</left>
 				<top>5</top>

@@ -12,7 +12,7 @@
 		</control>
 		<control type="group">
 			<visible>!Player.HasVideo</visible>
-            <include>CommonCustomBackground</include>
+			<include>CommonCustomBackground</include>
 			<include>CommonBackground</include>
 		</control>
 		<control type="image">

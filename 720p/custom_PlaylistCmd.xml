@@ -9,11 +9,11 @@
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
-        <include content="DialogYesNo">
-            <param name="dialogheaderlabel" value="$LOCALIZE[24020] - Script Playlists" />
-            <param name="dialogtext" value="$LOCALIZE[88129]" />
-            <param name="dialogincludeyes" value="RandomPlaylistYes" />
-            <param name="dialogincludeno" value="RandomPlaylistNo" />
-        </include>
+		<include content="DialogYesNo">
+			<param name="dialogheaderlabel" value="$LOCALIZE[24020] - Script Playlists" />
+			<param name="dialogtext" value="$LOCALIZE[88129]" />
+			<param name="dialogincludeyes" value="RandomPlaylistYes" />
+			<param name="dialogincludeno" value="RandomPlaylistNo" />
+		</include>
 	</controls>
 </window>
