@@ -5,7 +5,7 @@
 	<onload condition="!Skin.HasSetting(FirstTimeRun)">ActivateWindow(1112)</onload>
 	<views>50,51,550,551,500,514,510</views>
 	<controls>
-        <include>CommonCustomBackground</include>
+		<include>CommonCustomBackground</include>
 		<include>CommonBackground</include>
 		<control type="image">
 			<left>0</left>

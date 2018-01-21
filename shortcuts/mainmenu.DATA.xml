@@ -3,84 +3,84 @@
 	<shortcut>
 		<label>31950</label>
 		<label2>8</label2>
-        <defaultID>weather</defaultID>
+		<defaultID>weather</defaultID>
 		<icon>DefaultFolder.png</icon>
 		<action>ActivateWindow(weather)</action>
 	</shortcut>
 	<shortcut>
 		<label>31951</label>
 		<label2>1</label2>
-        <defaultID>pictures</defaultID>
+		<defaultID>pictures</defaultID>
 		<icon>DefaultFolder.png</icon>
 		<action>ActivateWindow(pictures)</action>
 	</shortcut>
 	<shortcut>
 		<label>31960</label>
 		<label2>19021</label2>
-        <defaultID>radio</defaultID>
+		<defaultID>radio</defaultID>
 		<icon>DefaultTVShows.png</icon>
 		<action>ActivateWindow(radiochannels)</action>
 	</shortcut>
 	<shortcut>
 		<label>31952</label>
 		<label2>19020</label2>
-        <defaultID>livetv</defaultID>
+		<defaultID>livetv</defaultID>
 		<icon>DefaultTVShows.png</icon>
 		<action>ActivateWindow(tvchannels)</action>
 	</shortcut>
 	<shortcut>
 		<label>31953</label>
 		<label2>3</label2>
-        <defaultID>video</defaultID>
+		<defaultID>video</defaultID>
 		<icon>DefaultFolder.png</icon>
 		<action>ActivateWindow(videos,library://video/,return)</action>
 	</shortcut>
 	<shortcut>
 		<label>31954</label>
 		<label2>342</label2>
-        <defaultID>movies</defaultID>
+		<defaultID>movies</defaultID>
 		<icon>DefaultMovies.png</icon>
 		<action>ActivateWindow(videos,videodb://movies/titles/,return)</action>
 	</shortcut>
 	<shortcut>
 		<label>31955</label>
 		<label2>20343</label2>
-        <defaultID>tvshows</defaultID>
+		<defaultID>tvshows</defaultID>
 		<icon>DefaultTVShows.png</icon>
 		<action>ActivateWindow(videos,videodb://tvshows/titles/,return)</action>
 	</shortcut>
 	<shortcut>
 		<label>31961</label>
 		<label2>20389</label2>
-        <defaultID>musicvideos</defaultID>
+		<defaultID>musicvideos</defaultID>
 		<icon>DefaultMusicVideos.png</icon>
 		<action>ActivateWindow(videos,videodb://musicvideos/,return)</action>
 	</shortcut>
 	<shortcut>
 		<label>31956</label>
 		<label2>2</label2>
-        <defaultID>music</defaultID>
+		<defaultID>music</defaultID>
 		<icon>DefaultMusicAlbums.png</icon>
 		<action>ActivateWindow(music)</action>
 	</shortcut>
 	<shortcut>
 		<label>31957</label>
 		<label2>24001</label2>
-        <defaultID>addons</defaultID>
+		<defaultID>addons</defaultID>
 		<icon>DefaultFolder.png</icon>
 		<action>ActivateWindow(programs,addons://sources/executable/,return)</action>
 	</shortcut>
 	<shortcut>
 		<label>31958</label>
 		<label2>446</label2>
-        <defaultID>dvd</defaultID>
+		<defaultID>dvd</defaultID>
 		<icon>DefaultFolder.png</icon>
 		<action>PlayDVD</action>
 	</shortcut>
 	<shortcut>
 		<label>31959</label>
 		<label2>10004</label2>
-        <defaultID>settings</defaultID>
+		<defaultID>settings</defaultID>
 		<icon>DefaultFolder.png</icon>
 		<action>ActivateWindow(settings)</action>
 	</shortcut>

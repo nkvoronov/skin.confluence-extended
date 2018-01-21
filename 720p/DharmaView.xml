@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-		<include name="MediaListView33">
+	<include name="MediaListView33">
 		<control type="group">
 			<visible>Control.IsVisible(5033)</visible>
 			<include>VisibleFadeEffect</include>
@@ -462,7 +462,7 @@
 					<include>AudioChannelsFlaggingConditions</include>
 					<include>AspectCodecFlaggingConditions</include>
 					<include>VideoTypeHackFlaggingConditions</include>
-				</control> 
+				</control>
 				<control type="textbox">
 					<description>Description Value for Movie</description>
 					<left>320</left>

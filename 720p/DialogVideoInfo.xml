@@ -974,11 +974,11 @@
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label>Artwork</label>
 						<onclick condition="Container.Content(movies)">RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
-						<onclick condition="Container.Content(tvshows)">RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>						
+						<onclick condition="Container.Content(tvshows)">RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
 						<onclick condition="Container.Content(musicvideos)">RunScript(script.artwork.downloader, mode=gui, mediatype=musicvideo, dbid=$INFO[ListItem.DBID])</onclick>
 						<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos)</visible>
 						<visible>System.HasAddon(script.artwork.downloader)</visible>
-					</control>                    
+					</control>
 					<control type="button" id="101">
 						<description>Fetch TvTunes stuff</description>
 						<include>ButtonInfoDialogsCommonValues</include>
@@ -998,26 +998,26 @@
 					</control>
 				</control>
 				<control type="button">
-				    <description>left Arrow</description>
-				    <left>245</left>
-				    <top>660</top>
-				    <width>30</width>
-				    <height>40</height>
-				    <texturefocus>arrow-big-left.png</texturefocus>
-				    <texturenofocus>arrow-big-left.png</texturenofocus>
-				    <visible>Container(9000).HasPrevious</visible>
-				    <include>VisibleFadeEffect</include>
+					<description>left Arrow</description>
+					<left>245</left>
+					<top>660</top>
+					<width>30</width>
+					<height>40</height>
+					<texturefocus>arrow-big-left.png</texturefocus>
+					<texturenofocus>arrow-big-left.png</texturenofocus>
+					<visible>Container(9000).HasPrevious</visible>
+					<include>VisibleFadeEffect</include>
 				</control>
 				<control type="button">
-				    <description>right Arrow</description>
-				    <left>1175</left>
-				    <top>660</top>
-				    <width>30</width>
-				    <height>40</height>
-				    <texturefocus>arrow-big-right.png</texturefocus>
-				    <texturenofocus>arrow-big-right.png</texturenofocus>
-				    <visible>Container(9000).HasNext</visible>
-				    <include>VisibleFadeEffect</include>
+					<description>right Arrow</description>
+					<left>1175</left>
+					<top>660</top>
+					<width>30</width>
+					<height>40</height>
+					<texturefocus>arrow-big-right.png</texturefocus>
+					<texturenofocus>arrow-big-right.png</texturenofocus>
+					<visible>Container(9000).HasNext</visible>
+					<include>VisibleFadeEffect</include>
 				</control>
 			</control>
 		</control>

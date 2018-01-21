@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
-    <onload condition="String.IsEmpty(Window(Home).Property(MenuItemActive))">SetProperty(MenuItemActive,settings,Home)</onload>
-    <onload condition="String.IsEmpty(Window(Home).Property(MenuBackground))">SetProperty(MenuBackground,special://skin/extras/backgrounds/settings.jpg,Home)</onload>
+	<onload condition="String.IsEmpty(Window(Home).Property(MenuItemActive))">SetProperty(MenuItemActive,settings,Home)</onload>
+	<onload condition="String.IsEmpty(Window(Home).Property(MenuBackground))">SetProperty(MenuBackground,special://skin/extras/backgrounds/settings.jpg,Home)</onload>
 	<controls>
-        <include>CommonCustomBackground</include>
+		<include>CommonCustomBackground</include>
 		<include>CommonBackground</include>
 		<control type="image">
 			<left>0</left>
@@ -119,8 +119,8 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>
-                <include condition="Skin.HasSetting(SeparateBackground)">SettingsContentCustom</include>
-                <include condition="!Skin.HasSetting(SeparateBackground)">SettingsContentDefault</include>
+				<include condition="Skin.HasSetting(SeparateBackground)">SettingsContentCustom</include>
+				<include condition="!Skin.HasSetting(SeparateBackground)">SettingsContentDefault</include>
 			</control>
 			<control type="image">
 				<left>268</left>

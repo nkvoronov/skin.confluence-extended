@@ -1,97 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
-    <!-- Home Widget -->
+	<!-- Home Widget -->
 	<include name="HomeWidgetDisplay">
 		<control type="group" id="9003">
-            <depth>DepthMenu</depth>
-            <include>HomeWidgetUpDown</include>
+			<depth>DepthMenu</depth>
+			<include>HomeWidgetUpDown</include>
 			<visible>![Window.IsVisible(2123) | Window.IsVisible(2124) | Window.IsVisible(2125) | Window.IsVisible(2126) | Window.IsVisible(Favourites)]</visible>
 			<include>VisibleFadeEffect</include>
 			<animation effect="fade" time="300" delay="1000">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
-            <include>skinshortcuts-template-widgets</include>
-        </control>            
+			<include>skinshortcuts-template-widgets</include>
+		</control>
 	</include>
-    <!-- WEATHER -->
-    <!-- Weather Daily Or Hourly -->
-    <include name="include-Widgets-Weather">
-        <include content="CommonWidgetInclude">
-            <param name="left_widget" value="140" />
-            <param name="visible" value="!IsEmpty(Weather.Plugin) + Weather.IsFetched + $PARAM[visible]" />
-            <param name="label_title" value="$LOCALIZE[$PARAM[widget_name]] $INFO[Window(weather).Property(Location)]" />
-            <param name="list_id" value="$PARAM[list_id]" />
-            <param name="animation_name_include" value="AnimationWidgetCommon" />
-            <param name="item_layout_name_include" value="WeatherWidgetItemsLayout" />
-            <param name="width_widget" value="1000" />
-            <param name="width_widget_item" value="200" />
-            <param name="left_widget_ra" value="1010" />
-            <param name="content_name" value="CommonIncludeContents" />
-            <param name="content_path" value="$PARAM[widget_patch]-contents" />
-        </include>
-    </include>
-    <!-- Weather 36h -->
-    <include name="include-Widgets-WeatherH36">                            
-        <control type="group">
-            <animation type="Visible">
-                <effect type="slide" start="0,-600" end="0,0" time="600" tween="cubic" easing="out" />
-                <effect type="fade" start="0" end="100" time="600" />
-            </animation>
-            <animation type="Hidden">
-                <effect type="slide" start="0,0" end="0,-600" time="600" tween="cubic" easing="out"/>
-                <effect type="fade" start="100" end="0" time="600" />
-            </animation>
-            <animation type="WindowClose">
-                <effect type="slide" start="0,0" end="0,-600" time="600" tween="cubic" easing="out"/>
-                <effect type="fade" start="100" end="0" time="600" />
-            </animation>
-            <visible>!IsEmpty(Weather.Plugin) + Weather.IsFetched + $PARAM[visible]</visible>
-            <left>400</left>
-            <top>40</top>
-            <control type="image">
-                <left>0</left>
-                <top>0</top>
-                <width>500</width>
-                <height>460</height>
-                <texture border="20">ContentPanel.png</texture>
-            </control>
-            <control type="image">
-                <left>20</left>
-                <top>5</top>
-                <width>460</width>
-                <height>90</height>
-                <aspectratio>stretch</aspectratio>
-                <texture>GlassTitleBar.png</texture>
-            </control>
-            <control type="label">
-                <description>Header Label</description>
-                <left>20</left>
-                <top>13</top>
-                <width>460</width>
-                <height>30</height>
-                <font>font13_title</font>
-                <label>31901</label>
-                <align>center</align>
-                <aligny>center</aligny>
-                <textcolor>white</textcolor>
-                <shadowcolor>black</shadowcolor>
-            </control>
-            <control type="group">
-                <description>36-hour 1</description>
-                <left>20</left>
-                <top>60</top>
-                <control type="label">
-                    <description>Day label</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>460</width>
-                    <height>35</height>
-                    <font>font13_title</font>
-                    <label>$INFO[Window(weather).Property(36Hour.1.Heading)]</label>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <textcolor>blue</textcolor>
-                </control>
-                <include content="WeatherIconsWidgets2">
+	<!-- WEATHER -->
+	<!-- Weather Daily Or Hourly -->
+	<include name="include-Widgets-Weather">
+		<include content="CommonWidgetInclude">
+			<param name="left_widget" value="140" />
+			<param name="visible" value="!IsEmpty(Weather.Plugin) + Weather.IsFetched + $PARAM[visible]" />
+			<param name="label_title" value="$LOCALIZE[$PARAM[widget_name]] $INFO[Window(weather).Property(Location)]" />
+			<param name="list_id" value="$PARAM[list_id]" />
+			<param name="animation_name_include" value="AnimationWidgetCommon" />
+			<param name="item_layout_name_include" value="WeatherWidgetItemsLayout" />
+			<param name="width_widget" value="1000" />
+			<param name="width_widget_item" value="200" />
+			<param name="left_widget_ra" value="1010" />
+			<param name="content_name" value="CommonIncludeContents" />
+			<param name="content_path" value="$PARAM[widget_patch]-contents" />
+		</include>
+	</include>
+	<!-- Weather 36h -->
+	<include name="include-Widgets-WeatherH36">
+		<control type="group">
+			<animation type="Visible">
+				<effect type="slide" start="0,-600" end="0,0" time="600" tween="cubic" easing="out" />
+				<effect type="fade" start="0" end="100" time="600" />
+			</animation>
+			<animation type="Hidden">
+				<effect type="slide" start="0,0" end="0,-600" time="600" tween="cubic" easing="out"/>
+				<effect type="fade" start="100" end="0" time="600" />
+			</animation>
+			<animation type="WindowClose">
+				<effect type="slide" start="0,0" end="0,-600" time="600" tween="cubic" easing="out"/>
+				<effect type="fade" start="100" end="0" time="600" />
+			</animation>
+			<visible>!IsEmpty(Weather.Plugin) + Weather.IsFetched + $PARAM[visible]</visible>
+			<left>400</left>
+			<top>40</top>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>500</width>
+				<height>460</height>
+				<texture border="20">ContentPanel.png</texture>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>5</top>
+				<width>460</width>
+				<height>90</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>GlassTitleBar.png</texture>
+			</control>
+			<control type="label">
+				<description>Header Label</description>
+				<left>20</left>
+				<top>13</top>
+				<width>460</width>
+				<height>30</height>
+				<font>font13_title</font>
+				<label>31901</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="group">
+				<description>36-hour 1</description>
+				<left>20</left>
+				<top>60</top>
+				<control type="label">
+					<description>Day label</description>
+					<left>0</left>
+					<top>0</top>
+					<width>460</width>
+					<height>35</height>
+					<font>font13_title</font>
+					<label>$INFO[Window(weather).Property(36Hour.1.Heading)]</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>blue</textcolor>
+				</control>
+				<include content="WeatherIconsWidgets2">
 					<param name="left" value="370" />
 					<param name="top" value="40" />
 					<param name="width" value="80" />
@@ -99,70 +99,70 @@
 					<param name="type" value="36Hour" />
 					<param name="index" value="1" />
 				</include>
-                <control type="label">
-                    <description>Temperature</description>
-                    <left>40</left>
-                    <top>50</top>
-                    <height>20</height>
-                    <font>font13</font>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <label>[COLOR=grey2]$INFO[Window(weather).Property(36Hour.1.TemperatureHeading)][/COLOR] $INFO[Window(weather).Property(36Hour.1.Temperature)]</label>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <visible>Weather.IsFetched</visible>
-                </control>
-                <control type="label">
-                    <description>Feels Like</description>
-                    <left>190</left>
-                    <top>50</top>
-                    <height>20</height>
-                    <font>font13</font>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <label>[COLOR=grey2]$LOCALIZE[402] :[/COLOR] $INFO[Window(weather).Property(36Hour.1.FeelsLike)]</label>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <visible>Weather.IsFetched</visible>
-                </control>
-                <control type="label">
-                    <description>Conditions Label</description>
-                    <left>70</left>
-                    <top>80</top>
-                    <width>320</width>
-                    <height>20</height>
-                    <label>[COLOR=grey2]$LOCALIZE[31905]: [/COLOR] $INFO[Window(weather).Property(36Hour.1.Outlook)]</label>
-                    <font>font13</font>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                </control>
-                <control type="image">
-                    <left>20</left>
-                    <top>120</top>
-                    <width>460</width>
-                    <height>4</height>
-                    <texture>separator.png</texture>
-                </control>
-            </control>
-            <control type="group">
-                <description>36-hour 2</description>
-                <left>20</left>
-                <top>190</top>
-                <control type="label">
-                    <description>Day label</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>460</width>
-                    <height>35</height>
-                    <font>font13_title</font>
-                    <label>$INFO[Window(weather).Property(36Hour.2.Heading)]</label>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <textcolor>blue</textcolor>
-                </control>
-                <include content="WeatherIconsWidgets2">
+				<control type="label">
+					<description>Temperature</description>
+					<left>40</left>
+					<top>50</top>
+					<height>20</height>
+					<font>font13</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>[COLOR=grey2]$INFO[Window(weather).Property(36Hour.1.TemperatureHeading)][/COLOR] $INFO[Window(weather).Property(36Hour.1.Temperature)]</label>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>Weather.IsFetched</visible>
+				</control>
+				<control type="label">
+					<description>Feels Like</description>
+					<left>190</left>
+					<top>50</top>
+					<height>20</height>
+					<font>font13</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>[COLOR=grey2]$LOCALIZE[402] :[/COLOR] $INFO[Window(weather).Property(36Hour.1.FeelsLike)]</label>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>Weather.IsFetched</visible>
+				</control>
+				<control type="label">
+					<description>Conditions Label</description>
+					<left>70</left>
+					<top>80</top>
+					<width>320</width>
+					<height>20</height>
+					<label>[COLOR=grey2]$LOCALIZE[31905]: [/COLOR] $INFO[Window(weather).Property(36Hour.1.Outlook)]</label>
+					<font>font13</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="image">
+					<left>20</left>
+					<top>120</top>
+					<width>460</width>
+					<height>4</height>
+					<texture>separator.png</texture>
+				</control>
+			</control>
+			<control type="group">
+				<description>36-hour 2</description>
+				<left>20</left>
+				<top>190</top>
+				<control type="label">
+					<description>Day label</description>
+					<left>0</left>
+					<top>0</top>
+					<width>460</width>
+					<height>35</height>
+					<font>font13_title</font>
+					<label>$INFO[Window(weather).Property(36Hour.2.Heading)]</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>blue</textcolor>
+				</control>
+				<include content="WeatherIconsWidgets2">
 					<param name="left" value="370" />
 					<param name="top" value="40" />
 					<param name="width" value="80" />
@@ -170,70 +170,70 @@
 					<param name="type" value="36Hour" />
 					<param name="index" value="2" />
 				</include>
-                <control type="label">
-                    <description>Temperature</description>
-                    <left>40</left>
-                    <top>50</top>
-                    <height>20</height>
-                    <font>font13</font>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <label>[COLOR=grey2]$INFO[Window(weather).Property(36Hour.2.TemperatureHeading)][/COLOR] $INFO[Window(weather).Property(36Hour.2.Temperature)]</label>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <visible>Weather.IsFetched</visible>
-                </control>
-                <control type="label">
-                    <description>Feels Like</description>
-                    <left>190</left>
-                    <top>50</top>
-                    <height>20</height>
-                    <font>font13</font>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <label>[COLOR=grey2]$LOCALIZE[402] :[/COLOR] $INFO[Window(weather).Property(36Hour.2.FeelsLike)]</label>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <visible>Weather.IsFetched</visible>
-                </control>
-                <control type="label">
-                    <description>Conditions Label</description>
-                    <left>70</left>
-                    <top>80</top>
-                    <width>320</width>
-                    <height>20</height>
-                    <label>[COLOR=grey2]$LOCALIZE[31905]: [/COLOR] $INFO[Window(weather).Property(36Hour.2.Outlook)]</label>
-                    <font>font13</font>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                </control>
-                <control type="image">
-                    <left>20</left>
-                    <top>120</top>
-                    <width>460</width>
-                    <height>4</height>
-                    <texture>separator.png</texture>
-                </control>
-            </control>
-            <control type="group">
-                <description>36-hour 3</description>
-                <left>20</left>
-                <top>320</top>
-                <control type="label">
-                    <description>Day label</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>460</width>
-                    <height>35</height>
-                    <font>font13_title</font>
-                    <label>$INFO[Window(weather).Property(36Hour.3.Heading)]</label>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <textcolor>blue</textcolor>
-                </control>
-                <include content="WeatherIconsWidgets2">
+				<control type="label">
+					<description>Temperature</description>
+					<left>40</left>
+					<top>50</top>
+					<height>20</height>
+					<font>font13</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>[COLOR=grey2]$INFO[Window(weather).Property(36Hour.2.TemperatureHeading)][/COLOR] $INFO[Window(weather).Property(36Hour.2.Temperature)]</label>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>Weather.IsFetched</visible>
+				</control>
+				<control type="label">
+					<description>Feels Like</description>
+					<left>190</left>
+					<top>50</top>
+					<height>20</height>
+					<font>font13</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>[COLOR=grey2]$LOCALIZE[402] :[/COLOR] $INFO[Window(weather).Property(36Hour.2.FeelsLike)]</label>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>Weather.IsFetched</visible>
+				</control>
+				<control type="label">
+					<description>Conditions Label</description>
+					<left>70</left>
+					<top>80</top>
+					<width>320</width>
+					<height>20</height>
+					<label>[COLOR=grey2]$LOCALIZE[31905]: [/COLOR] $INFO[Window(weather).Property(36Hour.2.Outlook)]</label>
+					<font>font13</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="image">
+					<left>20</left>
+					<top>120</top>
+					<width>460</width>
+					<height>4</height>
+					<texture>separator.png</texture>
+				</control>
+			</control>
+			<control type="group">
+				<description>36-hour 3</description>
+				<left>20</left>
+				<top>320</top>
+				<control type="label">
+					<description>Day label</description>
+					<left>0</left>
+					<top>0</top>
+					<width>460</width>
+					<height>35</height>
+					<font>font13_title</font>
+					<label>$INFO[Window(weather).Property(36Hour.3.Heading)]</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>blue</textcolor>
+				</control>
+				<include content="WeatherIconsWidgets2">
 					<param name="left" value="370" />
 					<param name="top" value="40" />
 					<param name="width" value="80" />
@@ -241,492 +241,492 @@
 					<param name="type" value="36Hour" />
 					<param name="index" value="3" />
 				</include>
-                <control type="label">
-                    <description>Temperature</description>
-                    <left>40</left>
-                    <top>50</top>
-                    <height>20</height>
-                    <font>font13</font>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <label>[COLOR=grey2]$INFO[Window(weather).Property(36Hour.3.TemperatureHeading)][/COLOR] $INFO[Window(weather).Property(36Hour.3.Temperature)]</label>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <visible>Weather.IsFetched</visible>
-                </control>
-                <control type="label">
-                    <description>Feels Like</description>
-                    <left>190</left>
-                    <top>50</top>
-                    <height>20</height>
-                    <font>font13</font>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <label>[COLOR=grey2]$LOCALIZE[402] :[/COLOR] $INFO[Window(weather).Property(36Hour.3.FeelsLike)]</label>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <visible>Weather.IsFetched</visible>
-                </control>
-                <control type="label">
-                    <description>Conditions Label</description>
-                    <left>70</left>
-                    <top>80</top>
-                    <width>320</width>
-                    <height>20</height>
-                    <label>[COLOR=grey2]$LOCALIZE[31905]: [/COLOR] $INFO[Window(weather).Property(36Hour.3.Outlook)]</label>
-                    <font>font13</font>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <shadowcolor>black</shadowcolor>
-                    <textcolor>white</textcolor>
-                </control>
-            </control>	
-        </control>    
-    </include>    
-    <!-- ADDONS -->
-    <include name="include-Widgets-Addons">
-        <include content="CommonWidgetInclude">
-            <param name="left_widget" value="140" />
-            <param name="visible" value="$PARAM[visible]" />
-            <param name="label_title" value="$PARAM[widget_name]" />
-            <param name="list_id" value="$PARAM[list_id]" />
-            <param name="animation_name_include" value="AnimationWidgetCommon" />
-            <param name="item_layout_name_include" value="SquareWidgetItemsLayout" />
-            <param name="width_widget" value="1000" />
-            <param name="width_widget_item" value="200" />
-            <param name="left_widget_ra" value="1010" />
-            <param name="content_name" value="CommonIncludeContents3" />
-            <param name="content_target" value="$PARAM[widget_target]" />
-            <param name="content_path" value="$PARAM[widget_patch]" />
-            <param name="sortby" value="lastused"/>
+				<control type="label">
+					<description>Temperature</description>
+					<left>40</left>
+					<top>50</top>
+					<height>20</height>
+					<font>font13</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>[COLOR=grey2]$INFO[Window(weather).Property(36Hour.3.TemperatureHeading)][/COLOR] $INFO[Window(weather).Property(36Hour.3.Temperature)]</label>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>Weather.IsFetched</visible>
+				</control>
+				<control type="label">
+					<description>Feels Like</description>
+					<left>190</left>
+					<top>50</top>
+					<height>20</height>
+					<font>font13</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>[COLOR=grey2]$LOCALIZE[402] :[/COLOR] $INFO[Window(weather).Property(36Hour.3.FeelsLike)]</label>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>Weather.IsFetched</visible>
+				</control>
+				<control type="label">
+					<description>Conditions Label</description>
+					<left>70</left>
+					<top>80</top>
+					<width>320</width>
+					<height>20</height>
+					<label>[COLOR=grey2]$LOCALIZE[31905]: [/COLOR] $INFO[Window(weather).Property(36Hour.3.Outlook)]</label>
+					<font>font13</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<shadowcolor>black</shadowcolor>
+					<textcolor>white</textcolor>
+				</control>
+			</control>
+		</control>
+	</include>
+	<!-- ADDONS -->
+	<include name="include-Widgets-Addons">
+		<include content="CommonWidgetInclude">
+			<param name="left_widget" value="140" />
+			<param name="visible" value="$PARAM[visible]" />
+			<param name="label_title" value="$PARAM[widget_name]" />
+			<param name="list_id" value="$PARAM[list_id]" />
+			<param name="animation_name_include" value="AnimationWidgetCommon" />
+			<param name="item_layout_name_include" value="SquareWidgetItemsLayout" />
+			<param name="width_widget" value="1000" />
+			<param name="width_widget_item" value="200" />
+			<param name="left_widget_ra" value="1010" />
+			<param name="content_name" value="CommonIncludeContents3" />
+			<param name="content_target" value="$PARAM[widget_target]" />
+			<param name="content_path" value="$PARAM[widget_patch]" />
+			<param name="sortby" value="lastused"/>
 			<param name="sortorder" value="descending"/>
-            <param name="icon" value="$VAR[PosterThumb3]"/>
-            <param name="fallback_image" value="DefaultAddon.png" />
-        </include>
-    </include>
-    <!-- PVRCHANNELS -->
-    <include name="include-Widgets-PVRChannels">
-        <include content="CommonWidgetInclude">
-            <param name="left_widget" value="140" />
-            <param name="visible" value="$PARAM[visible] + System.HasPVRAddon" />
-            <param name="label_title" value="$PARAM[widget_name]" />
-            <param name="list_id" value="$PARAM[list_id]" />
-            <param name="animation_name_include" value="AnimationWidgetCommon" />
-            <param name="item_layout_name_include" value="PVRWidgetItemsLayout" />
-            <param name="width_widget" value="1000" />
-            <param name="width_widget_item" value="200" />
-            <param name="left_widget_ra" value="1010" />
-            <param name="content_name" value="CommonIncludeContents3" />
-            <param name="content_target" value="$PARAM[widget_target]" />
-            <param name="content_path" value="$PARAM[widget_patch]" />
-            <param name="sortby" value="lastplayed"/>
+			<param name="icon" value="$VAR[PosterThumb3]"/>
+			<param name="fallback_image" value="DefaultAddon.png" />
+		</include>
+	</include>
+	<!-- PVRCHANNELS -->
+	<include name="include-Widgets-PVRChannels">
+		<include content="CommonWidgetInclude">
+			<param name="left_widget" value="140" />
+			<param name="visible" value="$PARAM[visible] + System.HasPVRAddon" />
+			<param name="label_title" value="$PARAM[widget_name]" />
+			<param name="list_id" value="$PARAM[list_id]" />
+			<param name="animation_name_include" value="AnimationWidgetCommon" />
+			<param name="item_layout_name_include" value="PVRWidgetItemsLayout" />
+			<param name="width_widget" value="1000" />
+			<param name="width_widget_item" value="200" />
+			<param name="left_widget_ra" value="1010" />
+			<param name="content_name" value="CommonIncludeContents3" />
+			<param name="content_target" value="$PARAM[widget_target]" />
+			<param name="content_path" value="$PARAM[widget_patch]" />
+			<param name="sortby" value="lastplayed"/>
 			<param name="sortorder" value="descending"/>
 			<param name="label2" value="$INFO[ListItem.Title]"/>
-            <param name="fallback_image" value="DefaultTVShows.png" />
-        </include>
-    </include>    
-    <!-- PVRRECORDINGS -->
-    <include name="include-Widgets-PVRRecordings">
-        <include content="CommonWidgetInclude">
-            <param name="left_widget" value="140" />
-            <param name="visible" value="$PARAM[visible] + System.HasPVRAddon" />
-            <param name="label_title" value="$PARAM[widget_name]" />
-            <param name="list_id" value="$PARAM[list_id]" />
-            <param name="animation_name_include" value="AnimationWidgetCommon" />
-            <param name="item_layout_name_include" value="PVRWidgetItemsLayout" />
-            <param name="width_widget" value="1000" />
-            <param name="width_widget_item" value="200" />
-            <param name="left_widget_ra" value="1010" />
-            <param name="content_name" value="CommonIncludeContents3" />
-            <param name="content_target" value="$PARAM[widget_target]" />
-            <param name="content_path" value="$PARAM[widget_patch]" />
-            <param name="sortby" value="date"/>
+			<param name="fallback_image" value="DefaultTVShows.png" />
+		</include>
+	</include>
+	<!-- PVRRECORDINGS -->
+	<include name="include-Widgets-PVRRecordings">
+		<include content="CommonWidgetInclude">
+			<param name="left_widget" value="140" />
+			<param name="visible" value="$PARAM[visible] + System.HasPVRAddon" />
+			<param name="label_title" value="$PARAM[widget_name]" />
+			<param name="list_id" value="$PARAM[list_id]" />
+			<param name="animation_name_include" value="AnimationWidgetCommon" />
+			<param name="item_layout_name_include" value="PVRWidgetItemsLayout" />
+			<param name="width_widget" value="1000" />
+			<param name="width_widget_item" value="200" />
+			<param name="left_widget_ra" value="1010" />
+			<param name="content_name" value="CommonIncludeContents3" />
+			<param name="content_target" value="$PARAM[widget_target]" />
+			<param name="content_path" value="$PARAM[widget_patch]" />
+			<param name="sortby" value="date"/>
 			<param name="sortorder" value="descending"/>
-            <param name="label" value="$INFO[ListItem.ChannelName]"/>
+			<param name="label" value="$INFO[ListItem.ChannelName]"/>
 			<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
-            <param name="fallback_image" value="DefaultTVShows.png" />
-        </include>
-    </include>    
-    <!-- PVRCHANNELSCUSTOM -->
-    <include name="include-Widgets-PVRChannelsCustom">
-        <include content="CommonWidgetInclude">
-            <param name="left_widget" value="140" />
-            <param name="visible" value="$PARAM[visible] + System.HasPVRAddon" />
-            <param name="label_title" value="$PARAM[widget_name]" />
-            <param name="list_id" value="$PARAM[list_id]" />
-            <param name="animation_name_include" value="AnimationWidgetCommon" />
-            <param name="item_layout_name_include" value="PVRWidgetItemsLayout" />
-            <param name="width_widget" value="1000" />
-            <param name="width_widget_item" value="200" />
-            <param name="left_widget_ra" value="1010" />
-            <param name="content_name" value="CommonIncludeContents" />
-            <param name="content_target" value="$PARAM[widget_target]" />
-            <param name="content_path" value="$PARAM[widget_patch]" />
-            <param name="label2" value="$INFO[ListItem.Property(Title)]"/>
-            <param name="fallback_image" value="DefaultTVShows.png" />
-        </include>
-    </include>    
-    <!-- PLAYLIST -->
-    <include name="include-Widgets-Playlists">
-        <include content="CommonWidgetInclude">
-            <param name="left_widget" value="140" />
-            <param name="visible" value="$PARAM[visible]" />
-            <param name="label_title" value="$PARAM[widget_name]" />
-            <param name="list_id" value="$PARAM[list_id]" />
-            <param name="animation_name_include" value="AnimationWidgetCommon" />
-            <param name="item_layout_name_include" value="SquareWidgetItemsLayout" />
-            <param name="width_widget" value="1000" />
-            <param name="width_widget_item" value="200" />
-            <param name="left_widget_ra" value="1010" />
-            <param name="content_name" value="CommonIncludeContents3" />
-            <param name="content_target" value="$PARAM[widget_target]" />
-            <param name="content_path" value="$PARAM[widget_patch]" />
-            <param name="sortby" value="lastused"/>
+			<param name="fallback_image" value="DefaultTVShows.png" />
+		</include>
+	</include>
+	<!-- PVRCHANNELSCUSTOM -->
+	<include name="include-Widgets-PVRChannelsCustom">
+		<include content="CommonWidgetInclude">
+			<param name="left_widget" value="140" />
+			<param name="visible" value="$PARAM[visible] + System.HasPVRAddon" />
+			<param name="label_title" value="$PARAM[widget_name]" />
+			<param name="list_id" value="$PARAM[list_id]" />
+			<param name="animation_name_include" value="AnimationWidgetCommon" />
+			<param name="item_layout_name_include" value="PVRWidgetItemsLayout" />
+			<param name="width_widget" value="1000" />
+			<param name="width_widget_item" value="200" />
+			<param name="left_widget_ra" value="1010" />
+			<param name="content_name" value="CommonIncludeContents" />
+			<param name="content_target" value="$PARAM[widget_target]" />
+			<param name="content_path" value="$PARAM[widget_patch]" />
+			<param name="label2" value="$INFO[ListItem.Property(Title)]"/>
+			<param name="fallback_image" value="DefaultTVShows.png" />
+		</include>
+	</include>
+	<!-- PLAYLIST -->
+	<include name="include-Widgets-Playlists">
+		<include content="CommonWidgetInclude">
+			<param name="left_widget" value="140" />
+			<param name="visible" value="$PARAM[visible]" />
+			<param name="label_title" value="$PARAM[widget_name]" />
+			<param name="list_id" value="$PARAM[list_id]" />
+			<param name="animation_name_include" value="AnimationWidgetCommon" />
+			<param name="item_layout_name_include" value="SquareWidgetItemsLayout" />
+			<param name="width_widget" value="1000" />
+			<param name="width_widget_item" value="200" />
+			<param name="left_widget_ra" value="1010" />
+			<param name="content_name" value="CommonIncludeContents3" />
+			<param name="content_target" value="$PARAM[widget_target]" />
+			<param name="content_path" value="$PARAM[widget_patch]" />
+			<param name="sortby" value="lastused"/>
 			<param name="sortorder" value="descending"/>
-            <param name="icon" value="$VAR[PosterThumb3]"/>
-            <param name="fallback_image" value="DefaultVideoPlaylists.png" />
-        </include>
-    </include>    
-    <!-- MOVIES -->
-    <include name="include-Widgets-Movies">
-        <include content="CommonWidgetInclude">
-            <param name="left_widget" value="190" />
-            <param name="visible" value="Library.HasContent(Movies) + $PARAM[visible]" />
-            <param name="label_title" value="$PARAM[widget_name]" />
-            <param name="list_id" value="$PARAM[list_id]" />
-            <param name="animation_name_include" value="AnimationWidgetCommon2" />
-            <param name="item_layout_name_include" value="MoviesWidgetItemsLayout" />
-            <param name="width_widget" value="900" />
-            <param name="width_widget_item" value="180" />
-            <param name="left_widget_ra" value="910" />
-            <param name="content_name" value="CommonIncludeContents3" />
-            <param name="content_target" value="$PARAM[widget_target]" />
-            <param name="content_path" value="$PARAM[widget_patch]" />
-            <param name="icon" value="$VAR[PosterThumb]"/>
-            <param name="fallback_image" value="DefaultMovies.png" />
-        </include>
-    </include>
-    <!-- TVSHOWS -->
-    <include name="include-Widgets-TVShows">
-        <include content="CommonWidgetInclude">
-            <param name="left_widget" value="190" />
-            <param name="visible" value="Library.HasContent(Movies) + $PARAM[visible]" />
-            <param name="label_title" value="$PARAM[widget_name]" />
-            <param name="list_id" value="$PARAM[list_id]" />
-            <param name="animation_name_include" value="AnimationWidgetCommon2" />
-            <param name="item_layout_name_include" value="TVShowsWidgetItemsLayout" />
-            <param name="width_widget" value="900" />
-            <param name="width_widget_item" value="180" />
-            <param name="left_widget_ra" value="910" />
-            <param name="content_name" value="CommonIncludeContents3" />
-            <param name="content_target" value="$PARAM[widget_target]" />
-            <param name="content_path" value="$PARAM[widget_patch]" />
-            <param name="icon" value="$VAR[PosterThumb]"/>
-            <param name="fallback_image" value="DefaultTVShows.png" />
-        </include>
-    </include>
-    <!-- EPISODES -->    
-    <include name="include-Widgets-Episodes">
-        <include content="CommonWidgetInclude">
-            <param name="left_widget" value="160" />
-            <param name="visible" value="Library.HasContent(TVShows) + $PARAM[visible]" />
-            <param name="label_title" value="$PARAM[widget_name]" />
-            <param name="list_id" value="$PARAM[list_id]" />
-            <param name="animation_name_include" value="AnimationWidgetCommon3" />
-            <param name="item_layout_name_include" value="EpisodesWidgetItemsLayout" />
-            <param name="width_widget" value="960" />
-            <param name="width_widget_item" value="240" />
-            <param name="left_widget_ra" value="970" />
-            <param name="content_name" value="CommonIncludeContents3" />
-            <param name="content_target" value="$PARAM[widget_target]" />
-            <param name="content_path" value="$PARAM[widget_patch]" />
-            <param name="label2" value="$INFO[ListItem.TVShowTitle]"/>            
-            <param name="fallback_image" value="DefaultTVShows.png" />            
-        </include>
-    </include>
-    <!-- MUSICVIDEO -->
-    <include name="include-Widgets-MusicVideos">
-        <include content="CommonWidgetInclude">
-            <param name="left_widget" value="240" />
-            <param name="visible" value="Library.HasContent(MusicVideos) + $PARAM[visible]" />
-            <param name="label_title" value="$PARAM[widget_name]" />
-            <param name="list_id" value="$PARAM[list_id]" />
-            <param name="animation_name_include" value="AnimationWidgetCommon4" />
-            <param name="item_layout_name_include" value="AlbumsWidgetItemsLayout" />
-            <param name="width_widget" value="800" />
-            <param name="width_widget_item" value="200" />
-            <param name="left_widget_ra" value="810" />
-            <param name="content_name" value="CommonIncludeContents3" />
-            <param name="content_target" value="$PARAM[widget_target]" />
-            <param name="content_path" value="$PARAM[widget_patch]" />
-            <param name="label2" value="$INFO[ListItem.Artist]"/>
-            <param name="fallback_image" value="DefaultMusicVideos.png" />
-        </include>
-    </include>
-    <!-- ALBUMS -->     
-    <include name="include-Widgets-Albums">               
-        <include content="CommonWidgetInclude">
-            <param name="left_widget" value="240" />
-            <param name="visible" value="Library.HasContent(Music) + $PARAM[visible]" />
-            <param name="label_title" value="$PARAM[widget_name]" />
-            <param name="list_id" value="$PARAM[list_id]" />
-            <param name="animation_name_include" value="AnimationWidgetCommon4" />
-            <param name="item_layout_name_include" value="AlbumsWidgetItemsLayout" />
-            <param name="width_widget" value="800" />
-            <param name="width_widget_item" value="200" />
-            <param name="left_widget_ra" value="810" />
-            <param name="content_name" value="CommonIncludeContents3" />
-            <param name="content_target" value="$PARAM[widget_target]" />
-            <param name="content_path" value="$PARAM[widget_patch]" />
-            <param name="label2" value="$INFO[ListItem.Artist]"/>
-            <param name="fallback_image" value="DefaultMusicAlbums.png" />
-        </include>
-    </include>
-    <!-- ARTIST -->
-    <include name="include-Widgets-Artists">
-        <include content="CommonWidgetInclude">
-            <param name="left_widget" value="190" />
-            <param name="visible" value="Library.HasContent(Movies) + $PARAM[visible]" />
-            <param name="label_title" value="$PARAM[widget_name]" />
-            <param name="list_id" value="$PARAM[list_id]" />
-            <param name="animation_name_include" value="AnimationWidgetCommon2" />
-            <param name="item_layout_name_include" value="MoviesWidgetItemsLayout" />
-            <param name="width_widget" value="900" />
-            <param name="width_widget_item" value="180" />
-            <param name="left_widget_ra" value="910" />
-            <param name="content_name" value="CommonIncludeContents3" />
-            <param name="content_target" value="$PARAM[widget_target]" />
-            <param name="content_path" value="$PARAM[widget_patch]" />
-            <param name="icon" value="$VAR[PosterThumb]"/>
-            <param name="fallback_image" value="DefaultMusicArtists.png" />
-        </include>
-    </include>
-    <!-- SONGS -->
-    <include name="include-Widgets-Songs">
-        <include content="CommonWidgetInclude">
-            <param name="left_widget" value="240" />
-            <param name="visible" value="Library.HasContent(Music) + $PARAM[visible]" />
-            <param name="label_title" value="$PARAM[widget_name]" />
-            <param name="list_id" value="$PARAM[list_id]" />
-            <param name="animation_name_include" value="AnimationWidgetCommon4" />
-            <param name="item_layout_name_include" value="AlbumsWidgetItemsLayout" />
-            <param name="width_widget" value="800" />
-            <param name="width_widget_item" value="200" />
-            <param name="left_widget_ra" value="810" />
-            <param name="content_name" value="CommonIncludeContents3" />
-            <param name="content_target" value="$PARAM[widget_target]" />
-            <param name="content_path" value="$PARAM[widget_patch]" />
-            <param name="label2" value="$INFO[ListItem.Artist]"/>
-            <param name="fallback_image" value="DefaultMusicSongs.png" />
-        </include>
-    </include>
-    <!-- MIXED -->     
-    <include name="include-Widgets-Mixed">               
-        <include content="CommonWidgetInclude">
-            <param name="left_widget" value="240" />
-            <param name="visible" value="Library.HasContent(Music) + $PARAM[visible]" />
-            <param name="label_title" value="$PARAM[widget_name]" />
-            <param name="list_id" value="$PARAM[list_id]" />
-            <param name="animation_name_include" value="AnimationWidgetCommon4" />
-            <param name="item_layout_name_include" value="AlbumsWidgetItemsLayout" />
-            <param name="width_widget" value="800" />
-            <param name="width_widget_item" value="200" />
-            <param name="left_widget_ra" value="810" />
-            <param name="content_name" value="CommonIncludeContents3" />
-            <param name="content_target" value="$PARAM[widget_target]" />
-            <param name="content_path" value="$PARAM[widget_patch]" />
-            <param name="label2" value="$INFO[ListItem.Artist]"/>           
-            <param name="fallback_image" value="DefaultMusicAlbums.png" />
-        </include>
-    </include>    
-    <!-- FAVOURITES -->
-    <include name="include-Widgets-Favourites">
-        <include content="CommonWidgetInclude">
-            <param name="left_widget" value="140" />
-            <param name="visible" value="$PARAM[visible]" />
-            <param name="label_title" value="$PARAM[widget_name]" />
-            <param name="list_id" value="$PARAM[list_id]" />
-            <param name="animation_name_include" value="AnimationWidgetCommon" />
-            <param name="item_layout_name_include" value="SquareWidgetItemsLayout" />
-            <param name="width_widget" value="1000" />
-            <param name="width_widget_item" value="200" />
-            <param name="left_widget_ra" value="1010" />
-            <param name="content_name" value="CommonIncludeContents3" />
-            <param name="content_target" value="$PARAM[widget_target]" />
-            <param name="content_path" value="$PARAM[widget_patch]" />
-            <param name="favourites" value="true" />
-            <param name="icon" value="$VAR[PosterThumb3]"/>
-        </include>
-    </include>
-    <!-- OTHER -->
-    <include name="include-Widgets-Other">
-        <include content="CommonWidgetInclude">
-            <param name="left_widget" value="140" />
-            <param name="visible" value="$PARAM[visible]" />
-            <param name="label_title" value="$PARAM[widget_name]" />
-            <param name="list_id" value="$PARAM[list_id]" />
-            <param name="animation_name_include" value="AnimationWidgetCommon" />
-            <param name="item_layout_name_include" value="SquareWidgetItemsLayout" />
-            <param name="width_widget" value="1000" />
-            <param name="width_widget_item" value="200" />
-            <param name="left_widget_ra" value="1010" />
-            <param name="content_name" value="CommonIncludeContents3" />
-            <param name="content_target" value="$PARAM[widget_target]" />
-            <param name="content_path" value="$PARAM[widget_patch]" />
-            <param name="icon" value="$VAR[PosterThumb3]"/>
-        </include>
-    </include>   
-    <!-- Common Widget -->
-    <include name="CommonWidgetInclude">
-        <param name="height_widget_item" default="220" />
-        <param name="left_widget_la" default="-40" />
-        <param name="content_name" default="" />
-        <param name="content_target" default="" />
-        <param name="content_path" default="" />
-        <param name="content_limit" default="$VAR[WidgetLimitItemsName]" />
-        <param name="fallback_image">DefaultFolder.png</param>
-        <param name="icon">$INFO[ListItem.Icon]</param>
+			<param name="icon" value="$VAR[PosterThumb3]"/>
+			<param name="fallback_image" value="DefaultVideoPlaylists.png" />
+		</include>
+	</include>
+	<!-- MOVIES -->
+	<include name="include-Widgets-Movies">
+		<include content="CommonWidgetInclude">
+			<param name="left_widget" value="190" />
+			<param name="visible" value="Library.HasContent(Movies) + $PARAM[visible]" />
+			<param name="label_title" value="$PARAM[widget_name]" />
+			<param name="list_id" value="$PARAM[list_id]" />
+			<param name="animation_name_include" value="AnimationWidgetCommon2" />
+			<param name="item_layout_name_include" value="MoviesWidgetItemsLayout" />
+			<param name="width_widget" value="900" />
+			<param name="width_widget_item" value="180" />
+			<param name="left_widget_ra" value="910" />
+			<param name="content_name" value="CommonIncludeContents3" />
+			<param name="content_target" value="$PARAM[widget_target]" />
+			<param name="content_path" value="$PARAM[widget_patch]" />
+			<param name="icon" value="$VAR[PosterThumb]"/>
+			<param name="fallback_image" value="DefaultMovies.png" />
+		</include>
+	</include>
+	<!-- TVSHOWS -->
+	<include name="include-Widgets-TVShows">
+		<include content="CommonWidgetInclude">
+			<param name="left_widget" value="190" />
+			<param name="visible" value="Library.HasContent(Movies) + $PARAM[visible]" />
+			<param name="label_title" value="$PARAM[widget_name]" />
+			<param name="list_id" value="$PARAM[list_id]" />
+			<param name="animation_name_include" value="AnimationWidgetCommon2" />
+			<param name="item_layout_name_include" value="TVShowsWidgetItemsLayout" />
+			<param name="width_widget" value="900" />
+			<param name="width_widget_item" value="180" />
+			<param name="left_widget_ra" value="910" />
+			<param name="content_name" value="CommonIncludeContents3" />
+			<param name="content_target" value="$PARAM[widget_target]" />
+			<param name="content_path" value="$PARAM[widget_patch]" />
+			<param name="icon" value="$VAR[PosterThumb]"/>
+			<param name="fallback_image" value="DefaultTVShows.png" />
+		</include>
+	</include>
+	<!-- EPISODES -->
+	<include name="include-Widgets-Episodes">
+		<include content="CommonWidgetInclude">
+			<param name="left_widget" value="160" />
+			<param name="visible" value="Library.HasContent(TVShows) + $PARAM[visible]" />
+			<param name="label_title" value="$PARAM[widget_name]" />
+			<param name="list_id" value="$PARAM[list_id]" />
+			<param name="animation_name_include" value="AnimationWidgetCommon3" />
+			<param name="item_layout_name_include" value="EpisodesWidgetItemsLayout" />
+			<param name="width_widget" value="960" />
+			<param name="width_widget_item" value="240" />
+			<param name="left_widget_ra" value="970" />
+			<param name="content_name" value="CommonIncludeContents3" />
+			<param name="content_target" value="$PARAM[widget_target]" />
+			<param name="content_path" value="$PARAM[widget_patch]" />
+			<param name="label2" value="$INFO[ListItem.TVShowTitle]"/>
+			<param name="fallback_image" value="DefaultTVShows.png" />
+		</include>
+	</include>
+	<!-- MUSICVIDEO -->
+	<include name="include-Widgets-MusicVideos">
+		<include content="CommonWidgetInclude">
+			<param name="left_widget" value="240" />
+			<param name="visible" value="Library.HasContent(MusicVideos) + $PARAM[visible]" />
+			<param name="label_title" value="$PARAM[widget_name]" />
+			<param name="list_id" value="$PARAM[list_id]" />
+			<param name="animation_name_include" value="AnimationWidgetCommon4" />
+			<param name="item_layout_name_include" value="AlbumsWidgetItemsLayout" />
+			<param name="width_widget" value="800" />
+			<param name="width_widget_item" value="200" />
+			<param name="left_widget_ra" value="810" />
+			<param name="content_name" value="CommonIncludeContents3" />
+			<param name="content_target" value="$PARAM[widget_target]" />
+			<param name="content_path" value="$PARAM[widget_patch]" />
+			<param name="label2" value="$INFO[ListItem.Artist]"/>
+			<param name="fallback_image" value="DefaultMusicVideos.png" />
+		</include>
+	</include>
+	<!-- ALBUMS -->
+	<include name="include-Widgets-Albums">
+		<include content="CommonWidgetInclude">
+			<param name="left_widget" value="240" />
+			<param name="visible" value="Library.HasContent(Music) + $PARAM[visible]" />
+			<param name="label_title" value="$PARAM[widget_name]" />
+			<param name="list_id" value="$PARAM[list_id]" />
+			<param name="animation_name_include" value="AnimationWidgetCommon4" />
+			<param name="item_layout_name_include" value="AlbumsWidgetItemsLayout" />
+			<param name="width_widget" value="800" />
+			<param name="width_widget_item" value="200" />
+			<param name="left_widget_ra" value="810" />
+			<param name="content_name" value="CommonIncludeContents3" />
+			<param name="content_target" value="$PARAM[widget_target]" />
+			<param name="content_path" value="$PARAM[widget_patch]" />
+			<param name="label2" value="$INFO[ListItem.Artist]"/>
+			<param name="fallback_image" value="DefaultMusicAlbums.png" />
+		</include>
+	</include>
+	<!-- ARTIST -->
+	<include name="include-Widgets-Artists">
+		<include content="CommonWidgetInclude">
+			<param name="left_widget" value="190" />
+			<param name="visible" value="Library.HasContent(Movies) + $PARAM[visible]" />
+			<param name="label_title" value="$PARAM[widget_name]" />
+			<param name="list_id" value="$PARAM[list_id]" />
+			<param name="animation_name_include" value="AnimationWidgetCommon2" />
+			<param name="item_layout_name_include" value="MoviesWidgetItemsLayout" />
+			<param name="width_widget" value="900" />
+			<param name="width_widget_item" value="180" />
+			<param name="left_widget_ra" value="910" />
+			<param name="content_name" value="CommonIncludeContents3" />
+			<param name="content_target" value="$PARAM[widget_target]" />
+			<param name="content_path" value="$PARAM[widget_patch]" />
+			<param name="icon" value="$VAR[PosterThumb]"/>
+			<param name="fallback_image" value="DefaultMusicArtists.png" />
+		</include>
+	</include>
+	<!-- SONGS -->
+	<include name="include-Widgets-Songs">
+		<include content="CommonWidgetInclude">
+			<param name="left_widget" value="240" />
+			<param name="visible" value="Library.HasContent(Music) + $PARAM[visible]" />
+			<param name="label_title" value="$PARAM[widget_name]" />
+			<param name="list_id" value="$PARAM[list_id]" />
+			<param name="animation_name_include" value="AnimationWidgetCommon4" />
+			<param name="item_layout_name_include" value="AlbumsWidgetItemsLayout" />
+			<param name="width_widget" value="800" />
+			<param name="width_widget_item" value="200" />
+			<param name="left_widget_ra" value="810" />
+			<param name="content_name" value="CommonIncludeContents3" />
+			<param name="content_target" value="$PARAM[widget_target]" />
+			<param name="content_path" value="$PARAM[widget_patch]" />
+			<param name="label2" value="$INFO[ListItem.Artist]"/>
+			<param name="fallback_image" value="DefaultMusicSongs.png" />
+		</include>
+	</include>
+	<!-- MIXED -->
+	<include name="include-Widgets-Mixed">
+		<include content="CommonWidgetInclude">
+			<param name="left_widget" value="240" />
+			<param name="visible" value="Library.HasContent(Music) + $PARAM[visible]" />
+			<param name="label_title" value="$PARAM[widget_name]" />
+			<param name="list_id" value="$PARAM[list_id]" />
+			<param name="animation_name_include" value="AnimationWidgetCommon4" />
+			<param name="item_layout_name_include" value="AlbumsWidgetItemsLayout" />
+			<param name="width_widget" value="800" />
+			<param name="width_widget_item" value="200" />
+			<param name="left_widget_ra" value="810" />
+			<param name="content_name" value="CommonIncludeContents3" />
+			<param name="content_target" value="$PARAM[widget_target]" />
+			<param name="content_path" value="$PARAM[widget_patch]" />
+			<param name="label2" value="$INFO[ListItem.Artist]"/>
+			<param name="fallback_image" value="DefaultMusicAlbums.png" />
+		</include>
+	</include>
+	<!-- FAVOURITES -->
+	<include name="include-Widgets-Favourites">
+		<include content="CommonWidgetInclude">
+			<param name="left_widget" value="140" />
+			<param name="visible" value="$PARAM[visible]" />
+			<param name="label_title" value="$PARAM[widget_name]" />
+			<param name="list_id" value="$PARAM[list_id]" />
+			<param name="animation_name_include" value="AnimationWidgetCommon" />
+			<param name="item_layout_name_include" value="SquareWidgetItemsLayout" />
+			<param name="width_widget" value="1000" />
+			<param name="width_widget_item" value="200" />
+			<param name="left_widget_ra" value="1010" />
+			<param name="content_name" value="CommonIncludeContents3" />
+			<param name="content_target" value="$PARAM[widget_target]" />
+			<param name="content_path" value="$PARAM[widget_patch]" />
+			<param name="favourites" value="true" />
+			<param name="icon" value="$VAR[PosterThumb3]"/>
+		</include>
+	</include>
+	<!-- OTHER -->
+	<include name="include-Widgets-Other">
+		<include content="CommonWidgetInclude">
+			<param name="left_widget" value="140" />
+			<param name="visible" value="$PARAM[visible]" />
+			<param name="label_title" value="$PARAM[widget_name]" />
+			<param name="list_id" value="$PARAM[list_id]" />
+			<param name="animation_name_include" value="AnimationWidgetCommon" />
+			<param name="item_layout_name_include" value="SquareWidgetItemsLayout" />
+			<param name="width_widget" value="1000" />
+			<param name="width_widget_item" value="200" />
+			<param name="left_widget_ra" value="1010" />
+			<param name="content_name" value="CommonIncludeContents3" />
+			<param name="content_target" value="$PARAM[widget_target]" />
+			<param name="content_path" value="$PARAM[widget_patch]" />
+			<param name="icon" value="$VAR[PosterThumb3]"/>
+		</include>
+	</include>
+	<!-- Common Widget -->
+	<include name="CommonWidgetInclude">
+		<param name="height_widget_item" default="220" />
+		<param name="left_widget_la" default="-40" />
+		<param name="content_name" default="" />
+		<param name="content_target" default="" />
+		<param name="content_path" default="" />
+		<param name="content_limit" default="$VAR[WidgetLimitItemsName]" />
+		<param name="fallback_image">DefaultFolder.png</param>
+		<param name="icon">$INFO[ListItem.Icon]</param>
 		<param name="label">$INFO[ListItem.Label]</param>
 		<param name="label2">$INFO[ListItem.Label2]</param>
-        <param name="favourites">false</param>
-        <param name="sortby"></param>
+		<param name="favourites">false</param>
+		<param name="sortby"></param>
 		<param name="sortorder"></param>
-        <definition>
-            <control type="group">
-                <left>$PARAM[left_widget]</left>
-                <top>55</top>
-                <visible>$PARAM[visible]</visible>
-                <include>VisibleFadeEffect</include>
-                <control type="label">
-                    <description>Title Label</description>
-                    <left>0</left>
-                    <top>220</top>
-                    <height>20</height>
-                    <width>$PARAM[width_widget]</width>
-                    <label>$PARAM[label_title]</label>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <font>font12_title</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) + Skin.HasSetting(EnableWidgetsTitle)</visible>
-                </control>
-                <control type="list" id="$PARAM[list_id]">
-                    <include content="$PARAM[animation_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                    </include>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <onleft>$PARAM[list_id]</onleft>
-                    <onright>$PARAM[list_id]</onright>
-                    <include>HomeWidgetUpDown</include>
-                    <viewtype label="535">list</viewtype>
-                    <pagecontrol>-</pagecontrol>
-                    <scrolltime>200</scrolltime>
-                    <orientation>Horizontal</orientation>
-                    <preloaditems>1</preloaditems>
-                    <onunfocus>ClearProperty(weatherfanartcode,home)</onunfocus>
-                    <onunfocus>ClearProperty(mediaartfanart,home)</onunfocus>
-                    <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-                    <onclick condition="$PARAM[favourites]">$INFO[ListItem.FileNameAndPath]</onclick>
-                    <include content="$PARAM[item_layout_name_include]">
-                        <param name="list_id" value="$PARAM[list_id]" />
-                        <param name="height_widget_item" value="$PARAM[height_widget_item]" />
-                        <param name="width_widget_item" value="$PARAM[width_widget_item]" />
-                        <param name="fallback_image" value="$PARAM[fallback_image]" />
-                        <param name="icon" value="$PARAM[icon]" />
-                        <param name="label" value="$PARAM[label]" />
-                        <param name="label2" value="$PARAM[label2]" />
-                    </include>
-                    <include content="$PARAM[content_name]">
-                        <param name="content_target" value="$PARAM[content_target]" />
-                        <param name="content_path" value="$PARAM[content_path]" />
-                        <param name="content_limit" value="$PARAM[content_limit]" />
-                        <param name="sortby" value="$PARAM[sortby]" />
-                        <param name="sortorder" value="$PARAM[sortorder]" />                        
-                    </include>
-                </control>
-                <control type="button">
-                    <description>Left Arrow</description>
-                    <left>$PARAM[left_widget_la]</left>
-                    <top>90</top>
-                    <width>30</width>
-                    <height>40</height>
-                    <texturefocus>arrow-big-left.png</texturefocus>
-                    <texturenofocus>arrow-big-left.png</texturenofocus>
-                    <onclick>Control.Move($PARAM[list_id],-1)</onclick>
-                    <visible>Control.HasFocus($PARAM[list_id]) + Container($PARAM[list_id]).HasPrevious</visible>
-                    <include>VisibleFadeEffect</include>
-                </control>
-                <control type="button">
-                    <description>Right Arrow</description>
-                    <left>$PARAM[left_widget_ra]</left>
-                    <top>90</top>
-                    <width>30</width>
-                    <height>40</height>
-                    <texturefocus>arrow-big-right.png</texturefocus>
-                    <texturenofocus>arrow-big-right.png</texturenofocus>
-                    <onclick>Control.Move($PARAM[list_id],1)</onclick>
-                    <visible>Control.HasFocus($PARAM[list_id]) + Container($PARAM[list_id]).HasNext</visible>
-                    <include>VisibleFadeEffect</include>
-                </control>
-            </control>
-        </definition>
-    </include>
-    <!-- Common Includes -->
-    <include name="CommonIncludeContents">
-        <content>
-            <include content="$PARAM[content_path]">
-                <param name="id2" value="$PARAM[content_target]" />
-            </include>
-        </content>
-    </include>
-    <include name="CommonIncludeContents2">
-        <content>$PARAM[content_path]</content>
-    </include>
-    <include name="CommonIncludeContents3">
-        <content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[content_target]" limit="$PARAM[content_limit]">$PARAM[content_path]</content>
-    </include>
-    <!-- Animation Widget -->
-    <include name="AnimationWidgetCommon">
-        <animation effect="slide" start="0,0" end="100,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
-        <animation effect="slide" start="0,0" end="200,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
-        <animation effect="slide" start="0,0" end="300,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
-        <animation effect="slide" start="0,0" end="400,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
-    </include>
-    <include name="AnimationWidgetCommon2">
-        <animation effect="slide" start="0,0" end="90,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
-        <animation effect="slide" start="0,0" end="180,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
-        <animation effect="slide" start="0,0" end="270,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
-        <animation effect="slide" start="0,0" end="360,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
-    </include>    
-    <include name="AnimationWidgetCommon3">
-        <animation effect="slide" start="0,0" end="120,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
-        <animation effect="slide" start="0,0" end="240,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
-        <animation effect="slide" start="0,0" end="360,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
-    </include>    
-    <include name="AnimationWidgetCommon4">
-        <animation effect="slide" start="0,0" end="100,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
-        <animation effect="slide" start="0,0" end="200,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
-        <animation effect="slide" start="0,0" end="300,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
-    </include>
-    <!-- Widget Items Layout -->
-    <include name="WeatherWidgetItemsLayout">
-        <param name="height_widget_item" default="220" />
-        <param name="width_widget_item" default="200" />
-        <definition>
-            <itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
-                <control type="image">
-                    <description>Background</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget_item]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <texture border="15">RecentAddedBack.png</texture>
-                </control>
-                <include content="WeatherIconsWidgets">
+		<definition>
+			<control type="group">
+				<left>$PARAM[left_widget]</left>
+				<top>55</top>
+				<visible>$PARAM[visible]</visible>
+				<include>VisibleFadeEffect</include>
+				<control type="label">
+					<description>Title Label</description>
+					<left>0</left>
+					<top>220</top>
+					<height>20</height>
+					<width>$PARAM[width_widget]</width>
+					<label>$PARAM[label_title]</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) + Skin.HasSetting(EnableWidgetsTitle)</visible>
+				</control>
+				<control type="list" id="$PARAM[list_id]">
+					<include content="$PARAM[animation_name_include]">
+						<param name="list_id" value="$PARAM[list_id]" />
+					</include>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width_widget]</width>
+					<height>$PARAM[height_widget_item]</height>
+					<onleft>$PARAM[list_id]</onleft>
+					<onright>$PARAM[list_id]</onright>
+					<include>HomeWidgetUpDown</include>
+					<viewtype label="535">list</viewtype>
+					<pagecontrol>-</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<orientation>Horizontal</orientation>
+					<preloaditems>1</preloaditems>
+					<onunfocus>ClearProperty(weatherfanartcode,home)</onunfocus>
+					<onunfocus>ClearProperty(mediaartfanart,home)</onunfocus>
+					<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+					<onclick condition="$PARAM[favourites]">$INFO[ListItem.FileNameAndPath]</onclick>
+					<include content="$PARAM[item_layout_name_include]">
+						<param name="list_id" value="$PARAM[list_id]" />
+						<param name="height_widget_item" value="$PARAM[height_widget_item]" />
+						<param name="width_widget_item" value="$PARAM[width_widget_item]" />
+						<param name="fallback_image" value="$PARAM[fallback_image]" />
+						<param name="icon" value="$PARAM[icon]" />
+						<param name="label" value="$PARAM[label]" />
+						<param name="label2" value="$PARAM[label2]" />
+					</include>
+					<include content="$PARAM[content_name]">
+						<param name="content_target" value="$PARAM[content_target]" />
+						<param name="content_path" value="$PARAM[content_path]" />
+						<param name="content_limit" value="$PARAM[content_limit]" />
+						<param name="sortby" value="$PARAM[sortby]" />
+						<param name="sortorder" value="$PARAM[sortorder]" />
+					</include>
+				</control>
+				<control type="button">
+					<description>Left Arrow</description>
+					<left>$PARAM[left_widget_la]</left>
+					<top>90</top>
+					<width>30</width>
+					<height>40</height>
+					<texturefocus>arrow-big-left.png</texturefocus>
+					<texturenofocus>arrow-big-left.png</texturenofocus>
+					<onclick>Control.Move($PARAM[list_id],-1)</onclick>
+					<visible>Control.HasFocus($PARAM[list_id]) + Container($PARAM[list_id]).HasPrevious</visible>
+					<include>VisibleFadeEffect</include>
+				</control>
+				<control type="button">
+					<description>Right Arrow</description>
+					<left>$PARAM[left_widget_ra]</left>
+					<top>90</top>
+					<width>30</width>
+					<height>40</height>
+					<texturefocus>arrow-big-right.png</texturefocus>
+					<texturenofocus>arrow-big-right.png</texturenofocus>
+					<onclick>Control.Move($PARAM[list_id],1)</onclick>
+					<visible>Control.HasFocus($PARAM[list_id]) + Container($PARAM[list_id]).HasNext</visible>
+					<include>VisibleFadeEffect</include>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<!-- Common Includes -->
+	<include name="CommonIncludeContents">
+		<content>
+			<include content="$PARAM[content_path]">
+				<param name="id2" value="$PARAM[content_target]" />
+			</include>
+		</content>
+	</include>
+	<include name="CommonIncludeContents2">
+		<content>$PARAM[content_path]</content>
+	</include>
+	<include name="CommonIncludeContents3">
+		<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[content_target]" limit="$PARAM[content_limit]">$PARAM[content_path]</content>
+	</include>
+	<!-- Animation Widget -->
+	<include name="AnimationWidgetCommon">
+		<animation effect="slide" start="0,0" end="100,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
+		<animation effect="slide" start="0,0" end="200,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
+		<animation effect="slide" start="0,0" end="300,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
+		<animation effect="slide" start="0,0" end="400,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
+	</include>
+	<include name="AnimationWidgetCommon2">
+		<animation effect="slide" start="0,0" end="90,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
+		<animation effect="slide" start="0,0" end="180,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
+		<animation effect="slide" start="0,0" end="270,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
+		<animation effect="slide" start="0,0" end="360,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
+	</include>
+	<include name="AnimationWidgetCommon3">
+		<animation effect="slide" start="0,0" end="120,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
+		<animation effect="slide" start="0,0" end="240,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
+		<animation effect="slide" start="0,0" end="360,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
+	</include>
+	<include name="AnimationWidgetCommon4">
+		<animation effect="slide" start="0,0" end="100,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
+		<animation effect="slide" start="0,0" end="200,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
+		<animation effect="slide" start="0,0" end="300,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
+	</include>
+	<!-- Widget Items Layout -->
+	<include name="WeatherWidgetItemsLayout">
+		<param name="height_widget_item" default="220" />
+		<param name="width_widget_item" default="200" />
+		<definition>
+			<itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
+				<control type="image">
+					<description>Background</description>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width_widget_item]</width>
+					<height>$PARAM[height_widget_item]</height>
+					<texture border="15">RecentAddedBack.png</texture>
+				</control>
+				<include content="WeatherIconsWidgets">
 					<param name="left" value="10" />
 					<param name="top" value="10" />
 					<param name="width" value="180" />
@@ -735,60 +735,60 @@
 					<param name="image_multi" value="$INFO[ListItem.Thumb]" />
 					<param name="image_border" value="button-nofocus.png" />
 				</include>
-                <control type="label">
-                    <left>10</left>
-                    <top>15</top>
-                    <width>180</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>$INFO[Skin.String(menuColor)]</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>[B]$INFO[ListItem.Label][/B]</label>
-                </control>
-                <control type="label">
-                    <left>5</left>
-                    <top>165</top>
-                    <width>190</width>
-                    <height>20</height>
-                    <font>font10</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$INFO[ListItem.Property(Infos)]</label>
-                </control>
-                <control type="label">
-                    <left>10</left>
-                    <top>185</top>
-                    <width>180</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$INFO[ListItem.Label2]</label>
-                </control>
-            </itemlayout>
-            <focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
-                <control type="button">
-                    <onfocus>SetProperty(weatherfanartcode,$INFO[Container($PARAM[list_id]).ListItem.Property(FanartCode)],home)</onfocus>
-                    <texturenofocus></texturenofocus>
-                    <texturefocus></texturefocus>
-                </control>
-                <control type="image">
-                    <description>Background</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget_item]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <texture border="15">RecentAddedBack.png</texture>
-                </control>
+				<control type="label">
+					<left>10</left>
+					<top>15</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>$INFO[Skin.String(menuColor)]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>[B]$INFO[ListItem.Label][/B]</label>
+				</control>
+				<control type="label">
+					<left>5</left>
+					<top>165</top>
+					<width>190</width>
+					<height>20</height>
+					<font>font10</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Property(Infos)]</label>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>185</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
+				<control type="button">
+					<onfocus>SetProperty(weatherfanartcode,$INFO[Container($PARAM[list_id]).ListItem.Property(FanartCode)],home)</onfocus>
+					<texturenofocus></texturenofocus>
+					<texturefocus></texturefocus>
+				</control>
+				<control type="image">
+					<description>Background</description>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width_widget_item]</width>
+					<height>$PARAM[height_widget_item]</height>
+					<texture border="15">RecentAddedBack.png</texture>
+				</control>
 				<include content="WeatherIconsWidgets">
 					<param name="left" value="10" />
 					<param name="top" value="10" />
@@ -798,1155 +798,1155 @@
 					<param name="image_multi" value="$INFO[ListItem.Thumb]" />
 					<param name="image_border" value="folder-focus.png" />
 				</include>
-                <control type="label">
-                    <left>10</left>
-                    <top>15</top>
-                    <width>180</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>$INFO[Skin.String(menuColor)]</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>[B]$INFO[ListItem.Label][/B]</label>
-                </control>
-                <control type="label">
-                    <left>5</left>
-                    <top>165</top>
-                    <width>190</width>
-                    <height>20</height>
-                    <font>font10</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$INFO[ListItem.Property(Infos)]</label>
-                </control>
-                <control type="label">
-                    <left>10</left>
-                    <top>185</top>
-                    <width>180</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$INFO[ListItem.Label2]</label>
-                </control>
-                <control type="label">
-                    <left>10</left>
-                    <top>185</top>
-                    <width>180</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>blue</textcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$INFO[ListItem.Label2]</label>
-                    <visible>Control.HasFocus($PARAM[list_id])</visible>
-                </control>
-            </focusedlayout>
-        </definition>
-    </include>
-    <include name="SquareWidgetItemsLayout">
-        <param name="height_widget_item" default="220" />
-        <param name="width_widget_item" default="200" />
-        <param name="icon"></param>
-		<param name="label"></param>
-		<param name="label2"></param>
-        <definition>
-            <itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
-                <control type="image">
-                    <description>Background</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget_item]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <texture border="15">RecentAddedBack.png</texture>
-                </control>
-                <control type="image">
-                    <left>10</left>
-                    <top>10</top>
-                    <width>180</width>
-                    <height>170</height>
-                    <texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
-                    <aspectratio>keep</aspectratio>
-                    <bordertexture border="5">button-nofocus.png</bordertexture>
-                    <bordersize>5</bordersize>
-                </control>
-                <control type="label">
-                    <left>10</left>
-                    <top>185</top>
-                    <width>180</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label]</label>
-                </control>
-            </itemlayout>
-            <focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
-                <control type="button">
-                    <onfocus>SetProperty(mediaartfanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-                    <onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-                    <texturenofocus></texturenofocus>
-                    <texturefocus></texturefocus>
-                </control>
-                <control type="image">
-                    <description>Background</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget_item]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <texture border="15">RecentAddedBack.png</texture>
-                </control>
-                <control type="image">
-                    <left>10</left>
-                    <top>10</top>
-                    <width>180</width>
-                    <height>170</height>
-                    <texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
-                    <aspectratio>keep</aspectratio>
-                    <bordertexture border="5">folder-focus.png</bordertexture>
-                    <bordersize>5</bordersize>
-                    <visible>Control.HasFocus($PARAM[list_id])</visible>
-                </control>
-                <control type="image">
-                    <left>10</left>
-                    <top>10</top>
-                    <width>180</width>
-                    <height>170</height>
-                    <texture fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
-                    <aspectratio>keep</aspectratio>
-                    <bordertexture border="5">button-nofocus.png</bordertexture>
-                    <bordersize>5</bordersize>
-                    <visible>!Control.HasFocus($PARAM[list_id])</visible>
-                </control>
-                <control type="label">
-                    <left>10</left>
-                    <top>185</top>
-                    <width>180</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label]</label>
-                </control>
-                <control type="label">
-                    <left>10</left>
-                    <top>185</top>
-                    <width>180</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>blue</textcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label]</label>
-                    <visible>Control.HasFocus($PARAM[list_id])</visible>
-                </control>
-            </focusedlayout>
-        </definition>
-    </include>
-    <include name="MoviesWidgetItemsLayout">
-        <param name="height_widget_item" default="220" />
-        <param name="width_widget_item" default="180" />
-        <param name="icon"></param>
-		<param name="label"></param>
-		<param name="label2"></param>
-        <definition>
-            <itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
-                <control type="image">
-                    <description>Background</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget_item]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <texture border="15">RecentAddedBack.png</texture>
-                </control>
-                <control type="image">
-                    <left>10</left>
-                    <top>10</top>
-                    <width>160</width>
-                    <height>170</height>
-                    <texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
-                    <aspectratio>keep</aspectratio>
-                    <bordertexture border="5">button-nofocus.png</bordertexture>
-                    <bordersize>5</bordersize>
-                </control>
-                <control type="label">
-                    <left>15</left>
-                    <top>185</top>
-                    <width>150</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label]</label>
-                </control>
-                <control type="progress">
-                    <left>15</left>
-                    <top>182</top>
-                    <width>150</width>
-                    <height>5</height>
-                    <info>ListItem.PercentPlayed</info>
-                    <visible>!String.IsEqual(ListItem.PercentPlayed,0)</visible>
-                </control>
-            </itemlayout>
-            <focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
-                <control type="button">
-                    <onfocus>SetProperty(mediaartfanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-                    <onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-                    <texturenofocus></texturenofocus>
-                    <texturefocus></texturefocus>
-                </control>
-                <control type="image">
-                    <description>Background</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget_item]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <texture border="15">RecentAddedBack.png</texture>
-                </control>
-                <control type="image">
-                    <left>10</left>
-                    <top>10</top>
-                    <width>160</width>
-                    <height>170</height>
-                    <texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
-                    <aspectratio>keep</aspectratio>
-                    <bordertexture border="5">folder-focus.png</bordertexture>
-                    <bordersize>5</bordersize>
-                    <visible>Control.HasFocus($PARAM[list_id])</visible>
-                </control>
-                <control type="image">
-                    <left>10</left>
-                    <top>10</top>
-                    <width>160</width>
-                    <height>170</height>
-                    <texture fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
-                    <aspectratio>keep</aspectratio>
-                    <bordertexture border="5">button-nofocus.png</bordertexture>
-                    <bordersize>5</bordersize>
-                    <visible>!Control.HasFocus($PARAM[list_id])</visible>
-                </control>
-                <control type="label">
-                    <left>15</left>
-                    <top>185</top>
-                    <width>150</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label]</label>
-                    <visible>!Control.HasFocus($PARAM[list_id])</visible>
-                </control>
-                <control type="label">
-                    <left>15</left>
-                    <top>185</top>
-                    <width>150</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>blue</textcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label]</label>
-                    <visible>Control.HasFocus($PARAM[list_id])</visible>
-                </control>
-                <control type="progress">
-                    <left>15</left>
-                    <top>182</top>
-                    <width>150</width>
-                    <height>5</height>
-                    <info>ListItem.PercentPlayed</info>
-                    <visible>!String.IsEqual(ListItem.PercentPlayed,0)</visible>
-                </control>
-            </focusedlayout>        
-        </definition>
-    </include>
-    <include name="EpisodesWidgetItemsLayout">
-        <param name="height_widget_item" default="220" />
-        <param name="width_widget_item" default="240" />
-        <param name="icon"></param>
-		<param name="label"></param>
-		<param name="label2"></param>
-        <definition>
-            <itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
-                <control type="image">
-                    <description>Background</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget_item]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <texture border="15">RecentAddedBack.png</texture>
-                </control>
-                <control type="image">
-                    <left>10</left>
-                    <top>10</top>
-                    <width>220</width>
-                    <height>155</height>
-                    <aspectratio>scale</aspectratio>
-                    <texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
-                    <bordertexture border="5">button-nofocus.png</bordertexture>
-                    <bordersize>5</bordersize>
-                </control>
-                <control type="label">
-                    <left>20</left>
-                    <top>168</top>
-                    <width>200</width>
-                    <height>20</height>
-                    <font>font10</font>
-                    <textcolor>grey2</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label2]</label>
-                </control>
-                <control type="label">
-                    <left>20</left>
-                    <top>185</top>
-                    <width>200</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label]</label>
-                </control>
-            </itemlayout>
-            <focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
-                <control type="button">
-                    <onfocus>SetProperty(mediaartfanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-                    <onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-                    <texturenofocus></texturenofocus>
-                    <texturefocus></texturefocus>
-                </control>
-                <control type="image">
-                    <description>Background</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget_item]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <texture border="15">RecentAddedBack.png</texture>
-                </control>
-                <control type="image">
-                    <left>10</left>
-                    <top>10</top>
-                    <width>220</width>
-                    <height>155</height>
-                    <aspectratio>scale</aspectratio>
-                    <texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
-                    <bordertexture border="5">folder-focus.png</bordertexture>
-                    <bordersize>5</bordersize>
-                    <visible>Control.HasFocus($PARAM[list_id])</visible>
-                </control>
-                <control type="image">
-                    <left>10</left>
-                    <top>10</top>
-                    <width>220</width>
-                    <height>155</height>
-                    <aspectratio>scale</aspectratio>
-                    <texture fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
-                    <bordertexture border="5">button-nofocus.png</bordertexture>
-                    <bordersize>5</bordersize>
-                    <visible>!Control.HasFocus($PARAM[list_id])</visible>
-                </control>
-                <control type="label">
-                    <left>20</left>
-                    <top>168</top>
-                    <width>200</width>
-                    <height>20</height>
-                    <font>font10</font>
-                    <textcolor>grey2</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label2]</label>
-                </control>
-                <control type="label">
-                    <left>20</left>
-                    <top>185</top>
-                    <width>200</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label]</label>
-                    <visible>!Control.HasFocus($PARAM[list_id])</visible>
-                </control>
-                <control type="label">
-                    <left>20</left>
-                    <top>185</top>
-                    <width>200</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>blue</textcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label]</label>
-                    <visible>Control.HasFocus($PARAM[list_id])</visible>
-                </control>
-            </focusedlayout>        
-        </definition>
-    </include>
-    <include name="TVShowsWidgetItemsLayout">
-        <param name="height_widget_item" default="220" />
-        <param name="width_widget_item" default="180" />
-        <param name="icon"></param>
-		<param name="label"></param>
-		<param name="label2"></param>
-        <definition>
-            <itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
-                <control type="image">
-                    <description>Background</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget_item]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <texture border="15">RecentAddedBack.png</texture>
-                </control>
-                <control type="image">
-                    <left>10</left>
-                    <top>10</top>
-                    <width>160</width>
-                    <height>170</height>
-                    <texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
-                    <aspectratio>keep</aspectratio>
-                    <bordertexture border="5">button-nofocus.png</bordertexture>
-                    <bordersize>5</bordersize>
-                </control>
-                <control type="label">
-                    <left>15</left>
-                    <top>185</top>
-                    <width>150</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label]</label>
-                </control>
-                <control type="label">
-                    <left>10</left>
-                    <top>15</top>
-                    <width>150</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>$INFO[Skin.String(menuColor)]</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>[B]$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ][/B]</label>
-                </control>
-            </itemlayout>
-            <focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
-                <control type="button">
-                    <onfocus>SetProperty(mediaartfanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-                    <onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-                    <texturenofocus></texturenofocus>
-                    <texturefocus></texturefocus>
-                </control>
-                <control type="image">
-                    <description>background</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget_item]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <texture border="15">RecentAddedBack.png</texture>
-                </control>
-                <control type="image">
-                    <left>10</left>
-                    <top>10</top>
-                    <width>160</width>
-                    <height>170</height>
-                    <texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
-                    <aspectratio>keep</aspectratio>
-                    <bordertexture border="5">folder-focus.png</bordertexture>
-                    <bordersize>5</bordersize>
-                    <visible>Control.HasFocus($PARAM[list_id])</visible>
-                </control>
-                <control type="image">
-                    <left>10</left>
-                    <top>10</top>
-                    <width>160</width>
-                    <height>170</height>
-                    <texture fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
-                    <aspectratio>keep</aspectratio>
-                    <bordertexture border="5">button-nofocus.png</bordertexture>
-                    <bordersize>5</bordersize>
-                    <visible>!Control.HasFocus($PARAM[list_id])</visible>
-                </control>
-                <control type="label">
-                    <left>15</left>
-                    <top>185</top>
-                    <width>150</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label]</label>
-                    <visible>!Control.HasFocus($PARAM[list_id])</visible>
-                </control>
-                <control type="label">
-                    <left>15</left>
-                    <top>185</top>
-                    <width>150</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>blue</textcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label]</label>
-                    <visible>Control.HasFocus($PARAM[list_id])</visible>
-                </control>
-                <control type="label">
-                    <left>10</left>
-                    <top>15</top>
-                    <width>150</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>$INFO[Skin.String(menuColor)]</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>[B]$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ][/B]</label>
-                </control>
-            </focusedlayout>        
-        </definition>
-    </include>
-    <include name="AlbumsWidgetItemsLayout">
-        <param name="height_widget_item" default="220" />
-        <param name="width_widget_item" default="200" />
-        <param name="icon"></param>
-		<param name="label"></param>
-		<param name="label2"></param>
-        <definition>
-            <itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
-                <control type="image">
-                    <description>Background</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget_item]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <texture border="15">RecentAddedBack.png</texture>
-                </control>
-                <control type="image">
-                    <left>10</left>
-                    <top>10</top>
-                    <width>180</width>
-                    <height>155</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
-                    <bordertexture border="5">button-nofocus.png</bordertexture>
-                    <bordersize>5</bordersize>
-                </control>
-                <control type="label">
-                    <left>10</left>
-                    <top>170</top>
-                    <width>180</width>
-                    <height>20</height>
-                    <font>font10</font>
-                    <textcolor>grey2</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label2]</label>
-                </control>
-                <control type="label">
-                    <left>10</left>
-                    <top>190</top>
-                    <width>180</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label]</label>
-                </control>
-            </itemlayout>
-            <focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
-                <control type="button">
-                    <onfocus>SetProperty(mediaartfanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
-                    <onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-                    <texturenofocus></texturenofocus>
-                    <texturefocus></texturefocus>
-                </control>
-                <control type="image">
-                    <description>Background</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget_item]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <texture border="15">RecentAddedBack.png</texture>
-                </control>
-                <control type="image">
-                    <left>10</left>
-                    <top>10</top>
-                    <width>180</width>
-                    <height>155</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
-                    <bordertexture border="5">folder-focus.png</bordertexture>
-                    <bordersize>5</bordersize>
-                    <visible>Control.HasFocus($PARAM[list_id])</visible>
-                </control>
-                <control type="image">
-                    <left>10</left>
-                    <top>10</top>
-                    <width>180</width>
-                    <height>155</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
-                    <bordertexture border="5">button-nofocus.png</bordertexture>
-                    <bordersize>5</bordersize>
-                    <visible>!Control.HasFocus($PARAM[list_id])</visible>
-                </control>
-                <control type="label">
-                    <left>10</left>
-                    <top>170</top>
-                    <width>180</width>
-                    <height>20</height>
-                    <font>font10</font>
-                    <textcolor>grey2</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label2]</label>
-                </control>
-                <control type="label">
-                    <left>10</left>
-                    <top>190</top>
-                    <width>180</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label]</label>
-                </control>
-                <control type="label">
-                    <left>10</left>
-                    <top>190</top>
-                    <width>180</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>blue</textcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label]</label>
-                    <visible>Control.HasFocus($PARAM[list_id])</visible>
-                </control>
-            </focusedlayout>        
-        </definition>
-    </include>
-    <include name="PVRWidgetItemsLayout">
-        <param name="height_widget_item" default="220" />
-        <param name="width_widget_item" default="200" />
-        <param name="icon"></param>
-		<param name="label"></param>
-		<param name="label2"></param>
-        <definition>
-            <itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
-                <control type="image">
-                    <description>Background</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget_item]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <texture border="15">RecentAddedBack.png</texture>
-                </control>
-                <control type="image">
-                    <left>10</left>
-                    <top>10</top>
-                    <width>180</width>
-                    <height>155</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
-                    <bordertexture border="5">button-nofocus.png</bordertexture>
-                    <bordersize>5</bordersize>
-                </control>
-                <control type="label">
-                    <left>10</left>
-                    <top>170</top>
-                    <width>180</width>
-                    <height>20</height>
-                    <font>font10</font>
-                    <textcolor>grey2</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label2]</label>
-                </control>
-                <control type="label">
-                    <left>10</left>
-                    <top>190</top>
-                    <width>180</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label]</label>
-                </control>
-            </itemlayout>
-            <focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
-                <control type="button">
-                    <onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-                    <texturenofocus></texturenofocus>
-                    <texturefocus></texturefocus>
-                </control>
-                <control type="image">
-                    <description>Background</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>$PARAM[width_widget_item]</width>
-                    <height>$PARAM[height_widget_item]</height>
-                    <texture border="15">RecentAddedBack.png</texture>
-                </control>
-                <control type="image">
-                    <left>10</left>
-                    <top>10</top>
-                    <width>180</width>
-                    <height>155</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
-                    <bordertexture border="5">folder-focus.png</bordertexture>
-                    <bordersize>5</bordersize>
-                    <visible>Control.HasFocus($PARAM[list_id])</visible>
-                </control>
-                <control type="image">
-                    <left>10</left>
-                    <top>10</top>
-                    <width>180</width>
-                    <height>155</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
-                    <bordertexture border="5">button-nofocus.png</bordertexture>
-                    <bordersize>5</bordersize>
-                    <visible>!Control.HasFocus($PARAM[list_id])</visible>
-                </control>
-                <control type="label">
-                    <left>10</left>
-                    <top>170</top>
-                    <width>180</width>
-                    <height>20</height>
-                    <font>font10</font>
-                    <textcolor>grey2</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label2]</label>
-                </control>
-                <control type="label">
-                    <left>10</left>
-                    <top>190</top>
-                    <width>180</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label]</label>
-                </control>
-                <control type="label">
-                    <left>10</left>
-                    <top>190</top>
-                    <width>180</width>
-                    <height>20</height>
-                    <font>font12</font>
-                    <textcolor>blue</textcolor>
-                    <selectedcolor>selected</selectedcolor>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                    <label>$PARAM[label]</label>
-                    <visible>Control.HasFocus($PARAM[list_id])</visible>
-                </control>
-            </focusedlayout>        
-        </definition>
-    </include>
-    <!-- Widget Contents -->
-	<include name="weatherdaily-contents">          
-        <include content="WeatherDailyWidgetItem">
-            <param name="item_id" value="1" />
-        </include>
-        <include content="WeatherDailyWidgetItem">
-            <param name="item_id" value="2" />
-        </include>
-        <include content="WeatherDailyWidgetItem">
-            <param name="item_id" value="3" />
-        </include>
-        <include content="WeatherDailyWidgetItem">
-            <param name="item_id" value="4" />
-        </include>
-        <include content="WeatherDailyWidgetItem">
-            <param name="item_id" value="5" />
-        </include>
-        <include content="WeatherDailyWidgetItem">
-            <param name="item_id" value="6" />
-        </include>
-        <include content="WeatherDailyWidgetItem">
-            <param name="item_id" value="7" />
-        </include>
-        <include content="WeatherDailyWidgetItem">
-            <param name="item_id" value="8" />
-        </include>
-        <include content="WeatherDailyWidgetItem">
-            <param name="item_id" value="9" />
-        </include>
-        <include content="WeatherDailyWidgetItem">
-            <param name="item_id" value="10" />
-        </include>
-        <include content="WeatherDailyWidgetItem">
-            <param name="item_id" value="11" />
-        </include>
-        <include content="WeatherDailyWidgetItem">
-            <param name="item_id" value="12" />
-        </include>
-        <include content="WeatherDailyWidgetItem">
-            <param name="item_id" value="13" />
-        </include>
-        <include content="WeatherDailyWidgetItem">
-            <param name="item_id" value="14" />
-        </include>
+				<control type="label">
+					<left>10</left>
+					<top>15</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>$INFO[Skin.String(menuColor)]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>[B]$INFO[ListItem.Label][/B]</label>
+				</control>
+				<control type="label">
+					<left>5</left>
+					<top>165</top>
+					<width>190</width>
+					<height>20</height>
+					<font>font10</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Property(Infos)]</label>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>185</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>185</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>blue</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+			</focusedlayout>
+		</definition>
 	</include>
-	<include name="weatherhourly-contents">   
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="1" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="2" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="3" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="4" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="5" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="6" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="7" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="8" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="9" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="10" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="11" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="12" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="13" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="14" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="15" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="16" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="17" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="18" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="19" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="20" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="21" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="22" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="23" />
-        </include>
-        <include content="WeatherHourlyWidgetItem">
-            <param name="item_id" value="24" />
-        </include>
+	<include name="SquareWidgetItemsLayout">
+		<param name="height_widget_item" default="220" />
+		<param name="width_widget_item" default="200" />
+		<param name="icon"></param>
+		<param name="label"></param>
+		<param name="label2"></param>
+		<definition>
+			<itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
+				<control type="image">
+					<description>Background</description>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width_widget_item]</width>
+					<height>$PARAM[height_widget_item]</height>
+					<texture border="15">RecentAddedBack.png</texture>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>180</width>
+					<height>170</height>
+					<texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
+					<aspectratio>keep</aspectratio>
+					<bordertexture border="5">button-nofocus.png</bordertexture>
+					<bordersize>5</bordersize>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>185</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
+				<control type="button">
+					<onfocus>SetProperty(mediaartfanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+					<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+					<texturenofocus></texturenofocus>
+					<texturefocus></texturefocus>
+				</control>
+				<control type="image">
+					<description>Background</description>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width_widget_item]</width>
+					<height>$PARAM[height_widget_item]</height>
+					<texture border="15">RecentAddedBack.png</texture>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>180</width>
+					<height>170</height>
+					<texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
+					<aspectratio>keep</aspectratio>
+					<bordertexture border="5">folder-focus.png</bordertexture>
+					<bordersize>5</bordersize>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>180</width>
+					<height>170</height>
+					<texture fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
+					<aspectratio>keep</aspectratio>
+					<bordertexture border="5">button-nofocus.png</bordertexture>
+					<bordersize>5</bordersize>
+					<visible>!Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>185</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label]</label>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>185</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>blue</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label]</label>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+			</focusedlayout>
+		</definition>
 	</include>
-    <!-- Widget Item -->
+	<include name="MoviesWidgetItemsLayout">
+		<param name="height_widget_item" default="220" />
+		<param name="width_widget_item" default="180" />
+		<param name="icon"></param>
+		<param name="label"></param>
+		<param name="label2"></param>
+		<definition>
+			<itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
+				<control type="image">
+					<description>Background</description>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width_widget_item]</width>
+					<height>$PARAM[height_widget_item]</height>
+					<texture border="15">RecentAddedBack.png</texture>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>160</width>
+					<height>170</height>
+					<texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
+					<aspectratio>keep</aspectratio>
+					<bordertexture border="5">button-nofocus.png</bordertexture>
+					<bordersize>5</bordersize>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<top>185</top>
+					<width>150</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label]</label>
+				</control>
+				<control type="progress">
+					<left>15</left>
+					<top>182</top>
+					<width>150</width>
+					<height>5</height>
+					<info>ListItem.PercentPlayed</info>
+					<visible>!String.IsEqual(ListItem.PercentPlayed,0)</visible>
+				</control>
+			</itemlayout>
+			<focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
+				<control type="button">
+					<onfocus>SetProperty(mediaartfanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+					<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+					<texturenofocus></texturenofocus>
+					<texturefocus></texturefocus>
+				</control>
+				<control type="image">
+					<description>Background</description>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width_widget_item]</width>
+					<height>$PARAM[height_widget_item]</height>
+					<texture border="15">RecentAddedBack.png</texture>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>160</width>
+					<height>170</height>
+					<texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
+					<aspectratio>keep</aspectratio>
+					<bordertexture border="5">folder-focus.png</bordertexture>
+					<bordersize>5</bordersize>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>160</width>
+					<height>170</height>
+					<texture fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
+					<aspectratio>keep</aspectratio>
+					<bordertexture border="5">button-nofocus.png</bordertexture>
+					<bordersize>5</bordersize>
+					<visible>!Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<top>185</top>
+					<width>150</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label]</label>
+					<visible>!Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<top>185</top>
+					<width>150</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>blue</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label]</label>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="progress">
+					<left>15</left>
+					<top>182</top>
+					<width>150</width>
+					<height>5</height>
+					<info>ListItem.PercentPlayed</info>
+					<visible>!String.IsEqual(ListItem.PercentPlayed,0)</visible>
+				</control>
+			</focusedlayout>
+		</definition>
+	</include>
+	<include name="EpisodesWidgetItemsLayout">
+		<param name="height_widget_item" default="220" />
+		<param name="width_widget_item" default="240" />
+		<param name="icon"></param>
+		<param name="label"></param>
+		<param name="label2"></param>
+		<definition>
+			<itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
+				<control type="image">
+					<description>Background</description>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width_widget_item]</width>
+					<height>$PARAM[height_widget_item]</height>
+					<texture border="15">RecentAddedBack.png</texture>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>220</width>
+					<height>155</height>
+					<aspectratio>scale</aspectratio>
+					<texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
+					<bordertexture border="5">button-nofocus.png</bordertexture>
+					<bordersize>5</bordersize>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>168</top>
+					<width>200</width>
+					<height>20</height>
+					<font>font10</font>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label2]</label>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>185</top>
+					<width>200</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
+				<control type="button">
+					<onfocus>SetProperty(mediaartfanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+					<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+					<texturenofocus></texturenofocus>
+					<texturefocus></texturefocus>
+				</control>
+				<control type="image">
+					<description>Background</description>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width_widget_item]</width>
+					<height>$PARAM[height_widget_item]</height>
+					<texture border="15">RecentAddedBack.png</texture>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>220</width>
+					<height>155</height>
+					<aspectratio>scale</aspectratio>
+					<texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
+					<bordertexture border="5">folder-focus.png</bordertexture>
+					<bordersize>5</bordersize>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>220</width>
+					<height>155</height>
+					<aspectratio>scale</aspectratio>
+					<texture fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
+					<bordertexture border="5">button-nofocus.png</bordertexture>
+					<bordersize>5</bordersize>
+					<visible>!Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>168</top>
+					<width>200</width>
+					<height>20</height>
+					<font>font10</font>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label2]</label>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>185</top>
+					<width>200</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label]</label>
+					<visible>!Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>185</top>
+					<width>200</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>blue</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label]</label>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+			</focusedlayout>
+		</definition>
+	</include>
+	<include name="TVShowsWidgetItemsLayout">
+		<param name="height_widget_item" default="220" />
+		<param name="width_widget_item" default="180" />
+		<param name="icon"></param>
+		<param name="label"></param>
+		<param name="label2"></param>
+		<definition>
+			<itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
+				<control type="image">
+					<description>Background</description>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width_widget_item]</width>
+					<height>$PARAM[height_widget_item]</height>
+					<texture border="15">RecentAddedBack.png</texture>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>160</width>
+					<height>170</height>
+					<texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
+					<aspectratio>keep</aspectratio>
+					<bordertexture border="5">button-nofocus.png</bordertexture>
+					<bordersize>5</bordersize>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<top>185</top>
+					<width>150</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label]</label>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>15</top>
+					<width>150</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>$INFO[Skin.String(menuColor)]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>[B]$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ][/B]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
+				<control type="button">
+					<onfocus>SetProperty(mediaartfanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+					<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+					<texturenofocus></texturenofocus>
+					<texturefocus></texturefocus>
+				</control>
+				<control type="image">
+					<description>background</description>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width_widget_item]</width>
+					<height>$PARAM[height_widget_item]</height>
+					<texture border="15">RecentAddedBack.png</texture>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>160</width>
+					<height>170</height>
+					<texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
+					<aspectratio>keep</aspectratio>
+					<bordertexture border="5">folder-focus.png</bordertexture>
+					<bordersize>5</bordersize>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>160</width>
+					<height>170</height>
+					<texture fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
+					<aspectratio>keep</aspectratio>
+					<bordertexture border="5">button-nofocus.png</bordertexture>
+					<bordersize>5</bordersize>
+					<visible>!Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<top>185</top>
+					<width>150</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label]</label>
+					<visible>!Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<top>185</top>
+					<width>150</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>blue</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label]</label>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>15</top>
+					<width>150</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>$INFO[Skin.String(menuColor)]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>[B]$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ][/B]</label>
+				</control>
+			</focusedlayout>
+		</definition>
+	</include>
+	<include name="AlbumsWidgetItemsLayout">
+		<param name="height_widget_item" default="220" />
+		<param name="width_widget_item" default="200" />
+		<param name="icon"></param>
+		<param name="label"></param>
+		<param name="label2"></param>
+		<definition>
+			<itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
+				<control type="image">
+					<description>Background</description>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width_widget_item]</width>
+					<height>$PARAM[height_widget_item]</height>
+					<texture border="15">RecentAddedBack.png</texture>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>180</width>
+					<height>155</height>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
+					<bordertexture border="5">button-nofocus.png</bordertexture>
+					<bordersize>5</bordersize>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>170</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font10</font>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label2]</label>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>190</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
+				<control type="button">
+					<onfocus>SetProperty(mediaartfanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
+					<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+					<texturenofocus></texturenofocus>
+					<texturefocus></texturefocus>
+				</control>
+				<control type="image">
+					<description>Background</description>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width_widget_item]</width>
+					<height>$PARAM[height_widget_item]</height>
+					<texture border="15">RecentAddedBack.png</texture>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>180</width>
+					<height>155</height>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
+					<bordertexture border="5">folder-focus.png</bordertexture>
+					<bordersize>5</bordersize>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>180</width>
+					<height>155</height>
+					<aspectratio>keep</aspectratio>
+					<texture fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
+					<bordertexture border="5">button-nofocus.png</bordertexture>
+					<bordersize>5</bordersize>
+					<visible>!Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>170</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font10</font>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label2]</label>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>190</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label]</label>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>190</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>blue</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label]</label>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+			</focusedlayout>
+		</definition>
+	</include>
+	<include name="PVRWidgetItemsLayout">
+		<param name="height_widget_item" default="220" />
+		<param name="width_widget_item" default="200" />
+		<param name="icon"></param>
+		<param name="label"></param>
+		<param name="label2"></param>
+		<definition>
+			<itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
+				<control type="image">
+					<description>Background</description>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width_widget_item]</width>
+					<height>$PARAM[height_widget_item]</height>
+					<texture border="15">RecentAddedBack.png</texture>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>180</width>
+					<height>155</height>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
+					<bordertexture border="5">button-nofocus.png</bordertexture>
+					<bordersize>5</bordersize>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>170</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font10</font>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label2]</label>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>190</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
+				<control type="button">
+					<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
+					<texturenofocus></texturenofocus>
+					<texturefocus></texturefocus>
+				</control>
+				<control type="image">
+					<description>Background</description>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width_widget_item]</width>
+					<height>$PARAM[height_widget_item]</height>
+					<texture border="15">RecentAddedBack.png</texture>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>180</width>
+					<height>155</height>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
+					<bordertexture border="5">folder-focus.png</bordertexture>
+					<bordersize>5</bordersize>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>180</width>
+					<height>155</height>
+					<aspectratio>keep</aspectratio>
+					<texture fallback="$PARAM[fallback_image]">$PARAM[icon]</texture>
+					<bordertexture border="5">button-nofocus.png</bordertexture>
+					<bordersize>5</bordersize>
+					<visible>!Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>170</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font10</font>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label2]</label>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>190</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label]</label>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>190</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>blue</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$PARAM[label]</label>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+			</focusedlayout>
+		</definition>
+	</include>
+	<!-- Widget Contents -->
+	<include name="weatherdaily-contents">
+		<include content="WeatherDailyWidgetItem">
+			<param name="item_id" value="1" />
+		</include>
+		<include content="WeatherDailyWidgetItem">
+			<param name="item_id" value="2" />
+		</include>
+		<include content="WeatherDailyWidgetItem">
+			<param name="item_id" value="3" />
+		</include>
+		<include content="WeatherDailyWidgetItem">
+			<param name="item_id" value="4" />
+		</include>
+		<include content="WeatherDailyWidgetItem">
+			<param name="item_id" value="5" />
+		</include>
+		<include content="WeatherDailyWidgetItem">
+			<param name="item_id" value="6" />
+		</include>
+		<include content="WeatherDailyWidgetItem">
+			<param name="item_id" value="7" />
+		</include>
+		<include content="WeatherDailyWidgetItem">
+			<param name="item_id" value="8" />
+		</include>
+		<include content="WeatherDailyWidgetItem">
+			<param name="item_id" value="9" />
+		</include>
+		<include content="WeatherDailyWidgetItem">
+			<param name="item_id" value="10" />
+		</include>
+		<include content="WeatherDailyWidgetItem">
+			<param name="item_id" value="11" />
+		</include>
+		<include content="WeatherDailyWidgetItem">
+			<param name="item_id" value="12" />
+		</include>
+		<include content="WeatherDailyWidgetItem">
+			<param name="item_id" value="13" />
+		</include>
+		<include content="WeatherDailyWidgetItem">
+			<param name="item_id" value="14" />
+		</include>
+	</include>
+	<include name="weatherhourly-contents">
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="1" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="2" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="3" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="4" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="5" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="6" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="7" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="8" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="9" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="10" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="11" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="12" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="13" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="14" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="15" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="16" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="17" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="18" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="19" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="20" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="21" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="22" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="23" />
+		</include>
+		<include content="WeatherHourlyWidgetItem">
+			<param name="item_id" value="24" />
+		</include>
+	</include>
+	<!-- Widget Item -->
 	<include name="WeatherDailyWidgetItem">
 		<item>
-            <label>$INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDay)] $INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDate)]</label>
-            <label2>$INFO[Window(weather).Property(Daily.$PARAM[item_id].Outlook)]</label2>
-            <onclick>Weather.Refresh</onclick>            
-            <thumb>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(Daily.$PARAM[item_id].FanartCode),,.png]</thumb>
-            <icon>-</icon>
-            <property name="Infos">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].HighTemperature)]  [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].LowTemperature)]</property>
-            <visible>!String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_id].Outlook))</visible>
-            <visible>String.IsEmpty(Skin.String(WeatherIcons.path))</visible>
+			<label>$INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDay)] $INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDate)]</label>
+			<label2>$INFO[Window(weather).Property(Daily.$PARAM[item_id].Outlook)]</label2>
+			<onclick>Weather.Refresh</onclick>
+			<thumb>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(Daily.$PARAM[item_id].FanartCode),,.png]</thumb>
+			<icon>-</icon>
+			<property name="Infos">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].HighTemperature)]  [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].LowTemperature)]</property>
+			<visible>!String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_id].Outlook))</visible>
+			<visible>String.IsEmpty(Skin.String(WeatherIcons.path))</visible>
 		</item>
 		<item>
-            <label>$INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDay)] $INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDate)]</label>
-            <label2>$INFO[Window(weather).Property(Daily.$PARAM[item_id].Outlook)]</label2>
-            <onclick>Weather.Refresh</onclick>
-            <thumb>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Daily.$PARAM[item_id].FanartCode),,.png]</thumb>
-            <icon>-</icon>            
-            <property name="Infos">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].HighTemperature)]  [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].LowTemperature)]</property>            
-            <visible>!String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_id].Outlook))</visible>
-            <visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
+			<label>$INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDay)] $INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDate)]</label>
+			<label2>$INFO[Window(weather).Property(Daily.$PARAM[item_id].Outlook)]</label2>
+			<onclick>Weather.Refresh</onclick>
+			<thumb>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Daily.$PARAM[item_id].FanartCode),,.png]</thumb>
+			<icon>-</icon>
+			<property name="Infos">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].HighTemperature)]  [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].LowTemperature)]</property>
+			<visible>!String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_id].Outlook))</visible>
+			<visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
 		</item>
 		<item>
-            <label>$INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDay)] $INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDate)]</label>
-            <label2>$INFO[Window(weather).Property(Daily.$PARAM[item_id].Outlook)]</label2>
-            <onclick>Weather.Refresh</onclick>
-            <thumb>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Daily.$PARAM[item_id].FanartCode),,/]</thumb>
-            <icon>-</icon>            
-            <property name="Infos">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].HighTemperature)]  [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].LowTemperature)]</property>            
-            <visible>!String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_id].Outlook))</visible>
-            <visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + Skin.HasSetting(WeatherIcons.multi)</visible>
+			<label>$INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDay)] $INFO[Window(weather).Property(Daily.$PARAM[item_id].ShortDate)]</label>
+			<label2>$INFO[Window(weather).Property(Daily.$PARAM[item_id].Outlook)]</label2>
+			<onclick>Weather.Refresh</onclick>
+			<thumb>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Daily.$PARAM[item_id].FanartCode),,/]</thumb>
+			<icon>-</icon>
+			<property name="Infos">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].HighTemperature)]  [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].LowTemperature)]</property>
+			<visible>!String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_id].Outlook))</visible>
+			<visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + Skin.HasSetting(WeatherIcons.multi)</visible>
 		</item>
 	</include>
 	<include name="WeatherHourlyWidgetItem">
 		<item>
-            <label>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Time)] $INFO[Window(weather).Property(Hourly.$PARAM[item_id].ShortDate)]</label>
-            <label2>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Outlook)]</label2>
-            <onclick>Weather.Refresh</onclick>
-            <thumb>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(Hourly.$PARAM[item_id].FanartCode),,.png]</thumb>
-            <icon>-</icon>            
-            <property name="Infos">[COLOR=grey2]$LOCALIZE[401] : [/COLOR]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Temperature)]  ($INFO[Window(weather).Property(Hourly.$PARAM[item_id].FeelsLike)])</property>
-            <visible>!String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_id].Outlook))</visible>
-            <visible>String.IsEmpty(Skin.String(WeatherIcons.path))</visible>
+			<label>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Time)] $INFO[Window(weather).Property(Hourly.$PARAM[item_id].ShortDate)]</label>
+			<label2>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Outlook)]</label2>
+			<onclick>Weather.Refresh</onclick>
+			<thumb>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(Hourly.$PARAM[item_id].FanartCode),,.png]</thumb>
+			<icon>-</icon>
+			<property name="Infos">[COLOR=grey2]$LOCALIZE[401] : [/COLOR]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Temperature)]  ($INFO[Window(weather).Property(Hourly.$PARAM[item_id].FeelsLike)])</property>
+			<visible>!String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_id].Outlook))</visible>
+			<visible>String.IsEmpty(Skin.String(WeatherIcons.path))</visible>
 		</item>
 		<item>
-            <label>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Time)] $INFO[Window(weather).Property(Hourly.$PARAM[item_id].ShortDate)]</label>
-            <label2>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Outlook)]</label2>
-            <onclick>Weather.Refresh</onclick>
-            <thumb>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].FanartCode),,.png]</thumb>
-            <icon>-</icon>            
-            <property name="Infos">[COLOR=grey2]$LOCALIZE[401] : [/COLOR]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Temperature)]  ($INFO[Window(weather).Property(Hourly.$PARAM[item_id].FeelsLike)])</property>            
-            <visible>!String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_id].Outlook))</visible>
-            <visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
+			<label>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Time)] $INFO[Window(weather).Property(Hourly.$PARAM[item_id].ShortDate)]</label>
+			<label2>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Outlook)]</label2>
+			<onclick>Weather.Refresh</onclick>
+			<thumb>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].FanartCode),,.png]</thumb>
+			<icon>-</icon>
+			<property name="Infos">[COLOR=grey2]$LOCALIZE[401] : [/COLOR]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Temperature)]  ($INFO[Window(weather).Property(Hourly.$PARAM[item_id].FeelsLike)])</property>
+			<visible>!String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_id].Outlook))</visible>
+			<visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
 		</item>
 		<item>
-            <label>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Time)] $INFO[Window(weather).Property(Hourly.$PARAM[item_id].ShortDate)]</label>
-            <label2>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Outlook)]</label2>
-            <onclick>Weather.Refresh</onclick>
-            <thumb>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].FanartCode),,/]</thumb>
-            <icon>-</icon>           
-            <property name="Infos">[COLOR=grey2]$LOCALIZE[401] : [/COLOR]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Temperature)]  ($INFO[Window(weather).Property(Hourly.$PARAM[item_id].FeelsLike)])</property>            
-            <visible>!String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_id].Outlook))</visible>
-            <visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + Skin.HasSetting(WeatherIcons.multi)</visible>
+			<label>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Time)] $INFO[Window(weather).Property(Hourly.$PARAM[item_id].ShortDate)]</label>
+			<label2>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Outlook)]</label2>
+			<onclick>Weather.Refresh</onclick>
+			<thumb>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].FanartCode),,/]</thumb>
+			<icon>-</icon>
+			<property name="Infos">[COLOR=grey2]$LOCALIZE[401] : [/COLOR]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Temperature)]  ($INFO[Window(weather).Property(Hourly.$PARAM[item_id].FeelsLike)])</property>
+			<visible>!String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_id].Outlook))</visible>
+			<visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + Skin.HasSetting(WeatherIcons.multi)</visible>
 		</item>
 	</include>
-    <!-- Other -->    
-    <include name="HomeWidgetUpDown">
-        <onup condition="!Skin.HasSetting(HidePowerButton) + Skin.HasSetting(HideFavoritesButton)">22</onup>
-        <onup condition="Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)">21</onup>
-        <onup>20</onup>
-        <ondown condition="!Skin.HasSetting(LowerMenu) + System.HasAddon(script.globalsearch) + Skin.HasSetting(ActivateGlobalSearch)">608</ondown>
-        <ondown condition="!Skin.HasSetting(LowerMenu) + [!System.HasAddon(script.globalsearch) | !Skin.HasSetting(ActivateGlobalSearch)]">603</ondown>
+	<!-- Other -->
+	<include name="HomeWidgetUpDown">
+		<onup condition="!Skin.HasSetting(HidePowerButton) + Skin.HasSetting(HideFavoritesButton)">22</onup>
+		<onup condition="Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)">21</onup>
+		<onup>20</onup>
+		<ondown condition="!Skin.HasSetting(LowerMenu) + System.HasAddon(script.globalsearch) + Skin.HasSetting(ActivateGlobalSearch)">608</ondown>
+		<ondown condition="!Skin.HasSetting(LowerMenu) + [!System.HasAddon(script.globalsearch) | !Skin.HasSetting(ActivateGlobalSearch)]">603</ondown>
 		<ondown condition="Skin.HasSetting(LowerMenu)">9002</ondown>
-    </include>
-    <!-- User Widget -->
-    <include name="HomeMainWidgetsItemSettings">
-        <control type="label" id="$PARAM[id1]00">
-            <width>750</width>
-            <height>45</height>
-            <font>font13_title</font>
-            <label>$PARAM[title]</label>
-            <textcolor>blue</textcolor>
-            <shadowcolor>black</shadowcolor>
-            <align>left</align>
-            <aligny>center</aligny>
-        </control>
-        <control type="button" id="$PARAM[id1]01">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[19029] [B]1[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].1.Label)][/COLOR]</label2>
-            <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
+	</include>
+	<!-- User Widget -->
+	<include name="HomeMainWidgetsItemSettings">
+		<control type="label" id="$PARAM[id1]00">
+			<width>750</width>
+			<height>45</height>
+			<font>font13_title</font>
+			<label>$PARAM[title]</label>
+			<textcolor>blue</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<align>left</align>
+			<aligny>center</aligny>
+		</control>
+		<control type="button" id="$PARAM[id1]01">
+			<width>750</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>- $LOCALIZE[19029] [B]1[/B]</label>
+			<label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].1.Label)][/COLOR]</label2>
+			<textcolor>grey2</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus>MenuItemFO.png</texturefocus>
+			<texturenofocus>MenuItemNF.png</texturenofocus>
 			<onclick>RunScript(script.pvr.favourites,action=select&amp;isradio=$PARAM[type]&amp;property=Channel$PARAM[setchannelstype].1)</onclick>
-        </control>
-        <control type="button" id="$PARAM[id1]02">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[19029] [B]2[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].2.Label)][/COLOR]</label2>
-            <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
+		</control>
+		<control type="button" id="$PARAM[id1]02">
+			<width>750</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>- $LOCALIZE[19029] [B]2[/B]</label>
+			<label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].2.Label)][/COLOR]</label2>
+			<textcolor>grey2</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus>MenuItemFO.png</texturefocus>
+			<texturenofocus>MenuItemNF.png</texturenofocus>
 			<onclick>RunScript(script.pvr.favourites,action=select&amp;isradio=$PARAM[type]&amp;property=Channel$PARAM[setchannelstype].2)</onclick>
-            <visible>!String.IsEmpty(Skin.String(Channel$PARAM[setchannelstype].1.Label))</visible>
-        </control>
-        <control type="button" id="$PARAM[id1]03">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[19029] [B]3[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].3.Label)][/COLOR]</label2>
-            <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
+			<visible>!String.IsEmpty(Skin.String(Channel$PARAM[setchannelstype].1.Label))</visible>
+		</control>
+		<control type="button" id="$PARAM[id1]03">
+			<width>750</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>- $LOCALIZE[19029] [B]3[/B]</label>
+			<label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].3.Label)][/COLOR]</label2>
+			<textcolor>grey2</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus>MenuItemFO.png</texturefocus>
+			<texturenofocus>MenuItemNF.png</texturenofocus>
 			<onclick>RunScript(script.pvr.favourites,action=select&amp;isradio=$PARAM[type]&amp;property=Channel$PARAM[setchannelstype].3)</onclick>
-            <visible>!String.IsEmpty(Skin.String(Channel$PARAM[setchannelstype].2.Label))</visible>
-        </control>
-        <control type="button" id="$PARAM[id1]04">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[19029] [B]4[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].4.Label)][/COLOR]</label2>
-            <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
+			<visible>!String.IsEmpty(Skin.String(Channel$PARAM[setchannelstype].2.Label))</visible>
+		</control>
+		<control type="button" id="$PARAM[id1]04">
+			<width>750</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>- $LOCALIZE[19029] [B]4[/B]</label>
+			<label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].4.Label)][/COLOR]</label2>
+			<textcolor>grey2</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus>MenuItemFO.png</texturefocus>
+			<texturenofocus>MenuItemNF.png</texturenofocus>
 			<onclick>RunScript(script.pvr.favourites,action=select&amp;isradio=$PARAM[type]&amp;property=Channel$PARAM[setchannelstype].4)</onclick>
-            <visible>!String.IsEmpty(Skin.String(Channel$PARAM[setchannelstype].3.Label))</visible>
-        </control>
-        <control type="button" id="$PARAM[id1]05">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[19029] [B]5[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].5.Label)][/COLOR]</label2>
-            <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
+			<visible>!String.IsEmpty(Skin.String(Channel$PARAM[setchannelstype].3.Label))</visible>
+		</control>
+		<control type="button" id="$PARAM[id1]05">
+			<width>750</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>- $LOCALIZE[19029] [B]5[/B]</label>
+			<label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].5.Label)][/COLOR]</label2>
+			<textcolor>grey2</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus>MenuItemFO.png</texturefocus>
+			<texturenofocus>MenuItemNF.png</texturenofocus>
 			<onclick>RunScript(script.pvr.favourites,action=select&amp;isradio=$PARAM[type]&amp;property=Channel$PARAM[setchannelstype].5)</onclick>
-            <visible>!String.IsEmpty(Skin.String(Channel$PARAM[setchannelstype].4.Label))</visible>
-        </control>
-        <control type="button" id="$PARAM[id1]06">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[19029] [B]6[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].6.Label)][/COLOR]</label2>
-            <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
+			<visible>!String.IsEmpty(Skin.String(Channel$PARAM[setchannelstype].4.Label))</visible>
+		</control>
+		<control type="button" id="$PARAM[id1]06">
+			<width>750</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>- $LOCALIZE[19029] [B]6[/B]</label>
+			<label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].6.Label)][/COLOR]</label2>
+			<textcolor>grey2</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus>MenuItemFO.png</texturefocus>
+			<texturenofocus>MenuItemNF.png</texturenofocus>
 			<onclick>RunScript(script.pvr.favourites,action=select&amp;isradio=$PARAM[type]&amp;property=Channel$PARAM[setchannelstype].6)</onclick>
-            <visible>!String.IsEmpty(Skin.String(Channel$PARAM[setchannelstype].5.Label))</visible>
-        </control>
-        <control type="button" id="$PARAM[id1]07">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[19029] [B]7[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].7.Label)][/COLOR]</label2>
-            <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
+			<visible>!String.IsEmpty(Skin.String(Channel$PARAM[setchannelstype].5.Label))</visible>
+		</control>
+		<control type="button" id="$PARAM[id1]07">
+			<width>750</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>- $LOCALIZE[19029] [B]7[/B]</label>
+			<label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].7.Label)][/COLOR]</label2>
+			<textcolor>grey2</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus>MenuItemFO.png</texturefocus>
+			<texturenofocus>MenuItemNF.png</texturenofocus>
 			<onclick>RunScript(script.pvr.favourites,action=select&amp;isradio=$PARAM[type]&amp;property=Channel$PARAM[setchannelstype].7)</onclick>
-            <visible>!String.IsEmpty(Skin.String(Channel$PARAM[setchannelstype].6.Label))</visible>
-        </control>
-        <control type="button" id="$PARAM[id1]08">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[19029] [B]8[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].8.Label)][/COLOR]</label2>
-            <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
+			<visible>!String.IsEmpty(Skin.String(Channel$PARAM[setchannelstype].6.Label))</visible>
+		</control>
+		<control type="button" id="$PARAM[id1]08">
+			<width>750</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>- $LOCALIZE[19029] [B]8[/B]</label>
+			<label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].8.Label)][/COLOR]</label2>
+			<textcolor>grey2</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus>MenuItemFO.png</texturefocus>
+			<texturenofocus>MenuItemNF.png</texturenofocus>
 			<onclick>RunScript(script.pvr.favourites,action=select&amp;isradio=$PARAM[type]&amp;property=Channel$PARAM[setchannelstype].8)</onclick>
-            <visible>!String.IsEmpty(Skin.String(Channel$PARAM[setchannelstype].7.Label))</visible>
-        </control>
-        <control type="button" id="$PARAM[id1]09">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[19029] [B]9[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].9.Label)][/COLOR]</label2>
-            <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
+			<visible>!String.IsEmpty(Skin.String(Channel$PARAM[setchannelstype].7.Label))</visible>
+		</control>
+		<control type="button" id="$PARAM[id1]09">
+			<width>750</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>- $LOCALIZE[19029] [B]9[/B]</label>
+			<label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].9.Label)][/COLOR]</label2>
+			<textcolor>grey2</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus>MenuItemFO.png</texturefocus>
+			<texturenofocus>MenuItemNF.png</texturenofocus>
 			<onclick>RunScript(script.pvr.favourites,action=select&amp;isradio=$PARAM[type]&amp;property=Channel$PARAM[setchannelstype].9)</onclick>
-            <visible>!String.IsEmpty(Skin.String(Channel$PARAM[setchannelstype].8.Label))</visible>
-        </control>
-        <control type="button" id="$PARAM[id1]10">
-            <width>750</width>
-            <height>40</height>
-            <font>font13</font>
-            <label>- $LOCALIZE[19029] [B]10[/B]</label>
-            <label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].10.Label)][/COLOR]</label2>
-            <textcolor>grey2</textcolor>
-            <focusedcolor>white</focusedcolor>
-            <texturefocus>MenuItemFO.png</texturefocus>
-            <texturenofocus>MenuItemNF.png</texturenofocus>
+			<visible>!String.IsEmpty(Skin.String(Channel$PARAM[setchannelstype].8.Label))</visible>
+		</control>
+		<control type="button" id="$PARAM[id1]10">
+			<width>750</width>
+			<height>40</height>
+			<font>font13</font>
+			<label>- $LOCALIZE[19029] [B]10[/B]</label>
+			<label2>[COLOR=selected]$INFO[Skin.String(Channel$PARAM[setchannelstype].10.Label)][/COLOR]</label2>
+			<textcolor>grey2</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus>MenuItemFO.png</texturefocus>
+			<texturenofocus>MenuItemNF.png</texturenofocus>
 			<onclick>RunScript(script.pvr.favourites,action=select&amp;isradio=$PARAM[type]&amp;property=Channel$PARAM[setchannelstype].10)</onclick>
-            <visible>!String.IsEmpty(Skin.String(Channel$PARAM[setchannelstype].9.Label))</visible>
-        </control>
-    </include>
-    <!-- ContentChannelsWidgets -->
+			<visible>!String.IsEmpty(Skin.String(Channel$PARAM[setchannelstype].9.Label))</visible>
+		</control>
+	</include>
+	<!-- ContentChannelsWidgets -->
 	<include name="HomeCustomChannelsItems">
 		<item id="1">
 			<label>$INFO[Skin.String(Channel$PARAM[id2].0.Label)]</label>
@@ -2048,5 +2048,5 @@
 			<property name="Title">$INFO[Window(home).Property(Channel$PARAM[id2].9.Title)]</property>
 			<visible>!String.IsEmpty(Skin.String(Channel$PARAM[id2].9.ChannelId))</visible>
 		</item>
-	</include>    
+	</include>
 </includes>

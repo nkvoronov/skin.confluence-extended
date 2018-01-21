@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">10</defaultcontrol>
-    <onload condition="Skin.HasSetting(EnableSkinDebug)">Skin.ToggleDebug</onload>
-    <include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
-    <onload condition="Skin.HasSetting(EnableSplashScreen) + !String.IsEmpty(Skin.String(SplashScreenPath))">RunScript(script.skin.helper.service,action=splashscreen,file=$INFO[Skin.String(SplashScreenPath)],duration=$VAR[DurationSplashScreenName])</onload>
-    <onload condition="!Skin.HasSetting(EnableSplashScreen)">ReplaceWindow($INFO[System.StartupWindow])</onload>
+	<onload condition="Skin.HasSetting(EnableSkinDebug)">Skin.ToggleDebug</onload>
+	<include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
+	<onload condition="Skin.HasSetting(EnableSplashScreen) + !String.IsEmpty(Skin.String(SplashScreenPath))">RunScript(script.skin.helper.service,action=splashscreen,file=$INFO[Skin.String(SplashScreenPath)],duration=$VAR[DurationSplashScreenName])</onload>
+	<onload condition="!Skin.HasSetting(EnableSplashScreen)">ReplaceWindow($INFO[System.StartupWindow])</onload>
 	<controls>
-        <!-- video control for splash -->
-        <control type="videowindow">
-            <width>100%</width>
-            <height>100%</height>
-        </control>
-        <!-- image control for splash -->
-        <control type="image">
-            <width>100%</width>
-            <height>100%</height>
-            <aspectratio>keep</aspectratio>
-            <texture background="true">$INFO[Window(Home).Property(SkinHelper.SplashScreen)]</texture>
-        </control>
+		<!-- video control for splash -->
+		<control type="videowindow">
+			<width>100%</width>
+			<height>100%</height>
+		</control>
+		<!-- image control for splash -->
+		<control type="image">
+			<width>100%</width>
+			<height>100%</height>
+			<aspectratio>keep</aspectratio>
+			<texture background="true">$INFO[Window(Home).Property(SkinHelper.SplashScreen)]</texture>
+		</control>
 	</controls>
 </window>
