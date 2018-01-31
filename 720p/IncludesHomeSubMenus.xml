@@ -140,6 +140,11 @@
 		<control type="group">
 			<visible>String.IsEqual(Container(9000).ListItem.Property(SubMenu),SubMenu$PARAM[id2])</visible>
 			<include>HomeSubMenuCommonAnimation</include>
+			<animation effect="slide" start="0,0" end="95,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
+			<animation effect="slide" start="0,0" end="190,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
+			<animation effect="slide" start="0,0" end="285,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
+			<animation effect="slide" start="0,0" end="380,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
+			<animation effect="slide" start="0,0" end="475,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
 			<control type="list" id="$PARAM[list_id]">
 				<include>HomeSubMenuCommonValues</include>
 				<onleft>$PARAM[list_id]</onleft>
@@ -241,11 +246,6 @@
 		<animation effect="slide" start="0,-40" end="0,0" delay="200" time="200" tween="quadratic" easing="out"  condition="ControlGroup(9001).HasFocus + Skin.HasSetting(NoSlide)">conditional</animation>
 		<animation effect="slide" start="0,0" end="0,-40" time="200" tween="quadratic" easing="out" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(NoSlide)">Hidden</animation>
 		<animation effect="fade" start="100" end="65" time="200" condition="Window.IsVisible(2123) | Window.IsVisible(2124) | Window.IsVisible(2125) | Window.IsVisible(2126) | Window.IsVisible(Favourites)">conditional</animation>
-		<animation effect="slide" start="0,0" end="95,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,5)">conditional</animation>
-		<animation effect="slide" start="0,0" end="190,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,4)">conditional</animation>
-		<animation effect="slide" start="0,0" end="285,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,3)">conditional</animation>
-		<animation effect="slide" start="0,0" end="380,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,2)">conditional</animation>
-		<animation effect="slide" start="0,0" end="475,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
 	</include>
 	<!-- SubMenu Common Layout -->
 	<include name="HomeSubMenuCommonLayout">
