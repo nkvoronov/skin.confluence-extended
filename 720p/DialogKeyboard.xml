@@ -607,7 +607,7 @@
 					<texture>KeyboardBackKey.png</texture>
 				</control>
 			</control>
-			<include condition="System.HasAddon(plugin.program.autocompletion) + !System.HasHiddenInput">ExtendedInfoAutoComplete</include>
+			<include>ExtendedInfoAutoComplete</include>
 		</control>
 	</controls>
 </window>

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
+	<!-- AutoCompletion Content -->
+	<variable name="AutoCompletionContent">
+		<value condition="System.HasAddon(plugin.program.autocompletion) + !System.HasHiddenInput">plugin://plugin.program.autocompletion?info=autocomplete&amp;&amp;id=$INFO[Control.GetLabel(312).index(1)]&amp;&amp;limit=9</value>
+	</variable>
 	<variable name="PlaylistSortOrder">
 		<value condition="Skin.HasSetting(EnableRandomPlaylist)">Random</value>
 		<value>Last</value>
