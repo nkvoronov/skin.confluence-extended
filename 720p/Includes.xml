@@ -1365,10 +1365,10 @@
 				<top>0</top>
 				<width>860</width>
 				<height>120</height>
-				<texture border="20">OverlayDialogBackground.png</texture>
+				<texture border="40">$VAR[SelectBack]</texture>
 			</control>
 			<control type="panel" id="5001">
-				<left>15</left>
+				<left>35</left>
 				<top>20</top>
 				<width>860</width>
 				<height>120</height>
@@ -1379,16 +1379,16 @@
 				<onback>noop</onback>
 				<orientation>vertical</orientation>
 				<scrolltime tween="quadratic" easing="out">200</scrolltime>
-				<itemlayout height="40" width="210">
+				<itemlayout height="40" width="200">
 					<control type="image">
 						<top>5</top>
-						<width>200</width>
+						<width>190</width>
 						<height>30</height>
 						<texture>KeyboardKeyNF.png</texture>
 					</control>
 					<control type="label">
 						<top>5</top>
-						<width>196</width>
+						<width>186</width>
 						<height>30</height>
 						<align>center</align>
 						<textcolor>grey</textcolor>
@@ -1397,16 +1397,16 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="40" width="210">
+				<focusedlayout height="40" width="200">
 					<control type="image">
 						<top>5</top>
-						<width>200</width>
+						<width>190</width>
 						<height>30</height>
-						<texture border="5" colordiffuse="$VAR[MainColorOne]">KeyboardKey.png</texture>
+						<texture border="5">KeyboardKey.png</texture>
 					</control>
 					<control type="label">
 						<top>5</top>
-						<width>200</width>
+						<width>190</width>
 						<height>30</height>
 						<align>center</align>
 						<textoffsetx>5</textoffsetx>
@@ -1414,7 +1414,7 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>
-				<content>plugin://plugin.program.autocompletion?info=autocomplete&amp;&amp;id=$INFO[Control.GetLabel(312).index(1)]&amp;&amp;limit=8</content>
+				<content>$VAR[AutoCompletionContent]</content>
 			</control>
 		</control>
 	</include>
