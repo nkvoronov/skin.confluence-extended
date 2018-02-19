@@ -2,7 +2,7 @@
 <includes>
 	<!-- AutoCompletion Content -->
 	<variable name="AutoCompletionContent">
-		<value condition="System.HasAddon(plugin.program.autocompletion) + !System.HasHiddenInput">plugin://plugin.program.autocompletion?info=autocomplete&amp;&amp;id=$INFO[Control.GetLabel(312).index(1)]&amp;&amp;limit=9</value>
+		<value condition="System.HasAddon(plugin.program.autocompletion) + !System.HasHiddenInput">plugin://plugin.program.autocompletion?info=autocomplete&amp;&amp;id=$INFO[Control.GetLabel(312).index(1)]&amp;&amp;limit=8</value>
 	</variable>
 	<variable name="FavoritesButtonLabel">
 		<value condition="String.IsEmpty(Skin.String(UsrFavBtnCmd.Label))">$LOCALIZE[1036]</value>
