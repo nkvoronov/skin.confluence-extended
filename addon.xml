@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.confluence-extended" version="3.1.6.156" name="Confluence Extended" provider-name="Jezz_X, Team Kodi, YLLOW_DRAGON, plood">
+<addon
+	id="skin.confluence-extended"
+	version="3.1.6.157" 
+	name="Confluence Extended"
+	provider-name="Jezz_X, Team Kodi, YLLOW_DRAGON, plood">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
+		<import addon="script.image.resource.select" version="1.1.0"/>
 		<import addon="script.favourites" version="6.0.3"/>
 		<import addon="script.pvr.favourites" version="2.0.0"/>
 		<import addon="service.skin.widgets" version="0.0.32"/>
 		<import addon="script.randomandlastitems" version="2.2.2"/>
-		<import addon="script.image.resource.select" version="1.1.0"/>
+
 	</requires>
-	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" debugging="false" effectslowdown="1.0">
+	<extension
+		point="xbmc.gui.skin"
+		defaultthemename="Textures.xbt"
+		debugging="false"
+		effectslowdown="1.0">
 		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -134,7 +143,7 @@
 		<platform>all</platform>
 		<license>GNU General Public License version 2</license>
 		<forum>http://forum.kodi.tv/forumdisplay.php?fid=125</forum>
-		<website/>
+		<website></website>
 		<email>nkvoronov@gmail.com</email>
 		<source>https://github.com/nkvoronov/skin.confluence-extended.git</source>
 		<assets>

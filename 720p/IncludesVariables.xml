@@ -2598,4 +2598,14 @@
 		<value condition="!String.IsEmpty(ListItem.Art(fanart)) + [!String.IsEmpty(ListItem.Art(animatedfanart)) + Skin.HasSetting(ActivateAnimatedFanarts)]">$INFO[ListItem.Art(animatedfanart)]</value>
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
+	<!-- Background Audio -->
+	<variable name="BackgroundAudio">
+		<value condition="!String.IsEmpty(Skin.String(AudioBackground))">$INFO[Skin.String(AudioBackground)]</value>
+		<value>special://skin/extras/backgrounds/music.jpg</value>
+	</variable>
+	<!-- Background Audio Name -->
+	<variable name="BackgroundAudioName">
+		<value condition="!String.IsEmpty(Skin.String(AudioBackground))">$INFO[Skin.String(AudioBackground)]</value>
+		<value>$LOCALIZE[15109]</value>
+	</variable>
 </includes>
