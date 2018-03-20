@@ -1438,6 +1438,21 @@
 						<aligny>center</aligny>
 					</control>
 					<control type="button" id="506">
+						<description>Audio Background</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[90108]</label>
+						<label2>$VAR[BackgroundAudioName]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(setbackgrounds,AudioBackground,home)</onclick>
+						<onclick>ActivateWindow(1202)</onclick>
+						<enable>Skin.HasSetting(SeparateBackground)</enable>
+					</control>
+					<control type="button" id="507">
 						<description>Home Fanart</description>
 						<width>750</width>
 						<height>40</height>
@@ -1452,7 +1467,7 @@
 						<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=HomeFanart&amp;type=resource.images.skinbackgrounds)</onclick>
 						<enable>Skin.HasSetting(SeparateBackground)</enable>
 					</control>
-					<control type="button" id="507">
+					<control type="button" id="508">
 						<description>MovieGenre Fanart</description>
 						<width>750</width>
 						<height>40</height>
@@ -1466,7 +1481,7 @@
 						<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 						<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=MovieGenreFanart&amp;type=resource.images.moviegenrefanart)</onclick>
 					</control>
-					<control type="button" id="508">
+					<control type="button" id="509">
 						<description>Weather Fanart</description>
 						<width>750</width>
 						<height>40</height>
@@ -1480,7 +1495,7 @@
 						<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 						<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=WeatherFanart&amp;type=resource.images.weatherfanart)</onclick>
 					</control>
-					<control type="radiobutton" id="509">
+					<control type="radiobutton" id="510">
 						<description>Separate Backgrounds</description>
 						<width>750</width>
 						<height>40</height>
@@ -1494,7 +1509,7 @@
 						<selected>Skin.HasSetting(SeparateBackground)</selected>
 						<enable>!Skin.HasSetting(UseCustomBackground)</enable>
 					</control>
-					<control type="radiobutton" id="510">
+					<control type="radiobutton" id="511">
 						<description>Use Custom Background</description>
 						<width>750</width>
 						<height>40</height>
@@ -1508,7 +1523,7 @@
 						<selected>Skin.HasSetting(UseCustomBackground)</selected>
 						<enable>!Skin.HasSetting(SeparateBackground)</enable>
 					</control>
-					<control type="button" id="511">
+					<control type="button" id="512">
 						<description>Custom Background Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -1522,12 +1537,12 @@
 						<onclick>Skin.SetImage(CustomBackgroundPath)</onclick>
 						<enable>Skin.HasSetting(UseCustomBackground)</enable>
 					</control>
-					<control type="image" id="512">
+					<control type="image" id="513">
 						<description>Separator Image</description>
 						<height>2</height>
 						<texture>separator2.png</texture>
 					</control>
-					<control type="button" id="513">
+					<control type="button" id="514">
 						<description>Reset Section</description>
 						<width>750</width>
 						<height>40</height>
@@ -1537,7 +1552,7 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(HideBackGroundFanart)|Skin.Reset(HideVisualizationFanart)|Skin.Reset(ShowBackgroundVideo)|Skin.Reset(HomeFanart.name)|Skin.Reset(HomeFanart.path)|Skin.Reset(HomeFanart.ext)|Skin.Reset(MovieGenreFanart.name)|Skin.Reset(MovieGenreFanart.path)|Skin.Reset(MovieGenreFanart.ext)|Skin.Reset(WeatherFanart.name)|Skin.Reset(WeatherFanart.ext)|Skin.Reset(WeatherFanart.path)|Skin.Reset(WeatherFanart.multi)|Skin.Reset(SeparateBackground)|Skin.Reset(UseCustomBackground)|Skin.Reset(CustomBackgroundPath))</onclick>
+						<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(HideBackGroundFanart)|Skin.Reset(HideVisualizationFanart)|Skin.Reset(ShowBackgroundVideo)|Skin.Reset(AudioBackground)|Skin.Reset(HomeFanart.name)|Skin.Reset(HomeFanart.path)|Skin.Reset(HomeFanart.ext)|Skin.Reset(MovieGenreFanart.name)|Skin.Reset(MovieGenreFanart.path)|Skin.Reset(MovieGenreFanart.ext)|Skin.Reset(WeatherFanart.name)|Skin.Reset(WeatherFanart.ext)|Skin.Reset(WeatherFanart.path)|Skin.Reset(WeatherFanart.multi)|Skin.Reset(SeparateBackground)|Skin.Reset(UseCustomBackground)|Skin.Reset(CustomBackgroundPath))</onclick>
 					</control>
 				</control>
 				<control type="scrollbar" id="65">

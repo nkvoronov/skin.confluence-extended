@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1202">
+	<onunload>ClearProperty(setbackgrounds,home)</onunload>
+	<defaultcontrol always="true">6</defaultcontrol>
+	<coordinates>
+		<left>235</left>
+		<top>75</top>
+	</coordinates>
+	<include>dialogeffect</include>
+	<depth>DepthDialog+</depth>
+	<controls>
+		<include content="DialogSelectValue">
+			<param name="dialogheaderlabel" value="$LOCALIZE[33069]" />
+			<param name="dialogincludeselectval" value="BackgroundsSelVal" />
+			<param name="dialogsettingval" value="setbackgrounds" />
+		</include>
+	</controls>
+</window>
+

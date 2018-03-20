@@ -2,6 +2,18 @@
 <window>
 	<defaultcontrol>-</defaultcontrol>
 	<controls>
+		<control type="multiimage">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<imagepath background="true">$VAR[BackgroundAudio]</imagepath>
+			<timeperimage>10000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<include>VisibleFadeEffect</include>
+			<visible>String.IsEmpty(Player.Art(fanart)) | Skin.HasSetting(HideVisualizationFanart)</visible>
+		</control>
 		<control type="visualisation" id="2">
 			<!-- FIX ME Music Visualization needs to have an id of 2 in this window to be able to lock or change preset -->
 			<description>visualisation</description>

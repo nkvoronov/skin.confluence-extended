@@ -1196,3 +1196,15 @@ msgstr "Вибрати пакет іконок жанрів для фільмі�
 msgctxt "#90107"
 msgid "Choose music genre icons pack"
 msgstr "Вибрати пакет іконок жанрів для музики"
+
+msgctxt "#90108"
+msgid "Choose background for audio"
+msgstr "Вибрати фон для аудіо"
+
+msgctxt "#90109"
+msgid "Single image"
+msgstr "Oдне зображення"
+
+msgctxt "#90110"
+msgid "Multi-image"
+msgstr "Hабір картинок"

@@ -1196,3 +1196,15 @@ msgstr ""
 msgctxt "#90107"
 msgid "Choose music genre icons pack"
 msgstr ""
+
+msgctxt "#90108"
+msgid "Choose background for audio"
+msgstr ""
+
+msgctxt "#90109"
+msgid "Single image"
+msgstr ""
+
+msgctxt "#90110"
+msgid "Multi-image"
+msgstr ""
