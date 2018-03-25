@@ -1,20 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">10</defaultcontrol>
-	<include>Animation_DialogPopupOpenClose</include>
-	<depth>DepthOSD</depth>
+	<coordinates>
+		<left>235</left>
+		<top>75</top>
+	</coordinates>
+	<include>dialogeffect</include>
+	<depth>DepthDialog+</depth>
 	<controls>
 		<control type="group">
-			<centertop>50%</centertop>
-			<centerleft>50%</centerleft>
-			<height>742</height>
-			<width>1220</width>
-			<include content="DialogBackgroundCommons">
-				<param name="width" value="1220" />
-				<param name="height" value="742" />
-				<param name="header_label" value="$ADDON[script.libreelec.devupdate 32145]" />
-				<param name="header_id" value="1" />
-			</include>
+			<control type="image">
+				<description>background image</description>
+				<left>0</left>
+				<top>0</top>
+				<width>850</width>
+				<height>550</height>
+				<texture border="40">$VAR[SelectBack]</texture>
+			</control>
+			<control type="image">
+				<description>Dialog Header image</description>
+				<left>40</left>
+				<top>16</top>
+				<width>770</width>
+				<height>40</height>
+				<texture>dialogheader.png</texture>
+			</control>
+			<control type="label" id="1">
+				<description>header label</description>
+				<left>40</left>
+				<top>20</top>
+				<width>770</width>
+				<height>30</height>
+				<font>font13_title</font>
+				<label>$ADDON[script.libreelec.devupdate 32145]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>selected</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label" id="4">
+				<description>No Settings Label</description>
+				<left>20</left>
+				<top>120</top>
+				<width>550</width>
+				<align>center</align>
+				<font>font13</font>
+			</control>
+			<control type="button">
+				<description>Close Window button</description>
+				<left>760</left>
+				<top>15</top>
+				<width>64</width>
+				<height>32</height>
+				<label>-</label>
+				<font>-</font>
+				<onclick>PreviousMenu</onclick>
+				<texturefocus>DialogCloseButton-focus.png</texturefocus>
+				<texturenofocus>DialogCloseButton.png</texturenofocus>
+				<visible>system.getbool(input.enablemouse)</visible>
+			</control>
 			<control type="group">
 				<description>Bottom panel</description>
 				<top>940</top>
@@ -26,188 +70,251 @@
 					<width>300</width>
 				</control>
 			</control>
-			<control type="image">
-				<left>0</left>
-				<top>80</top>
-				<width>450</width>
-				<height>670</height>
-				<texture border="40">buttons/dialogbutton-nofo.png</texture>
-			</control>
 			<control type="list" id="10">
 				<description>Source list</description>
 				<left>20</left>
-				<top>100</top>
-				<width>450</width>
-				<height>630</height>
+				<top>67</top>
+				<width>250</width>
+				<height>460</height>				
 				<onup>300</onup>
 				<onleft>300</onleft>
 				<onright>610</onright>
 				<pagecontrol>610</pagecontrol>
-				<itemlayout height="70" width="400">
+				<itemlayout height="46" width="250">
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>250</width>
+						<height>40</height>
+						<texture border="5">button-nofocus.png</texture>
+					</control>
 					<control type="label">
 						<visible>String.IsEqual(ListItem.Label2, selected)</visible>
-						<width>400</width>
-						<left>10</left>
+						<left>20</left>
+						<top>0</top>
+						<width>210</width>
+						<height>40</height>
+						<font>font13</font>
+						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>selected</textcolor>
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
 						<visible>!String.IsEqual(ListItem.Label2, selected)</visible>
-						<width>400</width>
-						<left>10</left>
+						<left>20</left>
+						<top>0</top>
+						<width>210</width>
+						<height>40</height>
+						<font>font13</font>
+						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>white</textcolor>
+						<textcolor>grey2</textcolor>
 						<info>ListItem.Label</info>
 					</control>
 				</itemlayout>
-				<focusedlayout height="70" width="400">
+				<focusedlayout height="46" width="250">
 					<control type="image">
-						<width>410</width>
 						<left>0</left>
+						<top>0</top>
+						<width>250</width>
+						<height>40</height>
+						<texture border="5">button-nofocus.png</texture>
+						<visible>!Control.HasFocus(10)</visible>
+						<include>VisibleFadeEffect</include>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>250</width>
+						<height>40</height>
+						<texture border="5">button-focus2.png</texture>
 						<visible>Control.HasFocus(10)</visible>
-						<texture colordiffuse="$VAR[MainColorVar]">lists/focus.png</texture>
+						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="label">
 						<visible>String.IsEqual(ListItem.Label2, selected)</visible>
-						<width>400</width>
-						<left>10</left>
+						<left>20</left>
+						<top>0</top>
+						<width>210</width>
+						<height>40</height>
+						<font>font13</font>
+						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>selected</textcolor>
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
 						<visible>!String.IsEqual(ListItem.Label2, selected)</visible>
-						<width>400</width>
-						<left>10</left>
+						<left>20</left>
+						<top>0</top>
+						<width>210</width>
+						<height>40</height>
+						<font>font13</font>
+						<align>left</align>
 						<aligny>center</aligny>
-						<textcolor>white</textcolor>
+						<textcolor>grey2</textcolor>
 						<info>ListItem.Label</info>
 					</control>
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="610">
-				<left>430</left>
-				<top>100</top>
-				<width>12</width>
-				<height>630</height>
+				<left>270</left>
+				<top>65</top>
+				<width>25</width>
+				<height>464</height>
+				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>ScrollBarNib.png</textureslidernib>
+				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>10</onleft>
 				<onright>20</onright>
-				<orientation>vertical</orientation>
+				<ondown>610</ondown>
+				<onup>610</onup>
 				<showonepage>false</showonepage>
-			</control>
-			<control type="image">
-				<left>435</left>
-				<top>80</top>
-				<width>450</width>
-				<height>670</height>
-				<texture border="40">buttons/dialogbutton-nofo.png</texture>
+				<orientation>vertical</orientation>
 			</control>
 			<control type="list" id="20">
 				<description>Build list</description>
-				<left>455</left>
-				<top>100</top>
-				<width>450</width>
-				<height>630</height>
+				<left>300</left>
+				<top>67</top>
+				<width>300</width>
+				<height>460</height>
 				<onleft>10</onleft>
 				<onright>620</onright>
 				<pagecontrol>620</pagecontrol>
-				<itemlayout height="70" width="420">
+				<itemlayout height="46" width="300">
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>300</width>
+						<height>40</height>
+						<texture border="5">button-nofocus.png</texture>
+					</control>
 					<control type="label">
 						<left>0</left>
-						<width>190</width>
+						<width>130</width>
 						<aligny>center</aligny>
 						<align>center</align>
 						<textcolor>ff87bde1</textcolor>
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<right>100</right>
+						<right>70</right>
 						<aligny>center</aligny>
 						<align>right</align>
 						<textcolor>ffbbbbbb</textcolor>
 						<info>ListItem.Label2</info>
 					</control>
 					<control type="image">
-						<left>340</left>
-						<top>10</top>
-						<height>48</height>
-						<width>48</width>
+						<left>250</left>
+						<top>0</top>
+						<height>46</height>
+						<width>46</width>
 						<info>ListItem.Icon</info>
 					</control>
 				</itemlayout>
-				<focusedlayout height="70" width="420">
+				<focusedlayout height="46" width="300">
 					<control type="image">
-						<width>410</width>
 						<left>0</left>
+						<top>0</top>
+						<width>300</width>
+						<height>40</height>
+						<texture border="5">button-nofocus.png</texture>
+						<visible>!Control.HasFocus(20)</visible>
+						<include>VisibleFadeEffect</include>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>300</width>
+						<height>40</height>
+						<texture border="5">button-focus2.png</texture>
 						<visible>Control.HasFocus(20)</visible>
-						<texture colordiffuse="$VAR[MainColorVar]">lists/focus.png</texture>
+						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="label">
 						<left>0</left>
-						<width>190</width>
+						<width>130</width>
 						<aligny>center</aligny>
 						<align>center</align>
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<right>100</right>
+						<right>70</right>
 						<aligny>center</aligny>
 						<align>right</align>
 						<info>ListItem.Label2</info>
 					</control>
 					<control type="image">
-						<left>340</left>
-						<top>10</top>
-						<height>48</height>
-						<width>48</width>
+						<left>250</left>
+						<top>0</top>
+						<height>46</height>
+						<width>46</width>
 						<info>ListItem.Icon</info>
 					</control>
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="620">
-				<left>865</left>
-				<top>100</top>
-				<width>12</width>
-				<height>630</height>
+				<left>600</left>
+				<top>65</top>
+				<width>25</width>
+				<height>464</height>
+				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>ScrollBarNib.png</textureslidernib>
+				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>20</onleft>
 				<onright>300</onright>
-				<orientation>vertical</orientation>
+				<ondown>620</ondown>
+				<onup>620</onup>
 				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
 			</control>
-			<control type="group">
-				<description>Right panel</description>
-				<control type="grouplist" id="300">
-					<description>Toolbar</description>
-					<left>880</left>
-					<top>80</top>
-					<onleft>620</onleft>
-					<onright>10</onright>
-					<orientation>vertical</orientation>
-					<itemgap>dialogbuttons_itemgap</itemgap>
-					<include content="DefaultDialogButton">
-						<param name="id" value="30" />
-						<param name="label" value="$ADDON[script.libreelec.devupdate 32146]" />
-						<param name="width" value="340" />
-					</include>
-					<include content="DefaultDialogButton">
-						<param name="id" value="40" />
-						<param name="label" value="$ADDON[script.libreelec.devupdate 32147]" />
-						<param name="width" value="340" />
-					</include>
-					<include content="DefaultDialogButton">
-						<param name="id" value="50" />
-						<param name="label" value="$LOCALIZE[222]" />
-						<param name="width" value="340" />
-					</include>
-				</control>
+			<control type="grouplist" id="300">
+				<description>Toolbar</description>
+				<left>640</left>
+				<top>60</top>
+				<onleft>620</onleft>
+				<onright>10</onright>
+				<orientation>vertical</orientation>
 				<control type="label" id="100">
 					<description>Build type label</description>
-					<top>690</top>
-					<right>20</right>
-					<align>right</align>
-					<aligny>top</aligny>
-					<textcolor>button_focus</textcolor>
+					<height>40</height>
+					<aligny>center</aligny>
+					<textcolor>selected</textcolor>
+				</control>
+				<control type="button" id="30">
+					<description>Settings button</description>
+					<width>180</width>
+					<height>40</height>
+					<label>$ADDON[script.libreelec.devupdate 32146]</label>
+					<font>font12_title</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<align>center</align>
+				</control>
+				<control type="button" id="40">
+					<description>History button</description>
+					<width>180</width>
+					<height>40</height>
+					<label>$ADDON[script.libreelec.devupdate 32147]</label>
+					<font>font12_title</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<align>center</align>
+				</control>
+				<control type="button" id="50">
+					<description>Cancel button</description>
+					<width>180</width>
+					<height>40</height>
+					<label>$LOCALIZE[222]</label>
+					<font>font12_title</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<align>center</align>
 				</control>
 			</control>
 		</control>  
