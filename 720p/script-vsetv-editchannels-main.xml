@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<coordinates>
+		<left>130</left>
+		<top>95</top>
+	</coordinates>
+	<include>dialogeffect</include>
+	<depth>DepthDialog+</depth>
+	<controls>
+		<control type="group">
+			<control type="image">
+				<description>background image</description>
+				<left>0</left>
+				<top>0</top>
+				<width>1020</width>
+				<height>530</height>
+				<texture border="40">$VAR[SelectBack]</texture>
+			</control>
+			<control type="image">
+				<description>Dialog Header image</description>
+				<left>30</left>
+				<top>16</top>
+				<width>960</width>
+				<height>40</height>
+				<texture>dialogheader.png</texture>
+			</control>
+			<control type="label" id="1">
+				<description>header label</description>
+				<left>30</left>
+				<top>20</top>
+				<width>960</width>
+				<height>30</height>
+				<font>font13_title</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>selected</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="button">
+				<description>Close Window button</description>
+				<left>930</left>
+				<top>15</top>
+				<width>64</width>
+				<height>32</height>
+				<label>-</label>
+				<font>-</font>
+				<onclick>PreviousMenu</onclick>
+				<texturefocus>DialogCloseButton-focus.png</texturefocus>
+				<texturenofocus>DialogCloseButton.png</texturenofocus>
+				<visible>system.getbool(input.enablemouse)</visible>
+			</control>            
+			<!-- Main -->
+			<control type="group" id="9000">
+				<description>Channel lists</description>
+				<left>30</left>
+				<top>70</top>
+				<width>780</width>
+				<height>460</height>
+				<control type="group" id="8000">
+					<left>0</left>
+					<width>380</width>
+					<description>Available channels lists</description>
+					<control type="grouplist" id="7000">
+						<description>Available channels header</description>
+						<onleft>9001</onleft>
+						<onright>7001</onright>
+						<ondown>22</ondown>
+						<itemgap>10</itemgap>
+						<control type="button" id="20">
+							<description>Button update available channels</description>
+                            <left>0</left>
+                            <top>0</top>
+							<width>360</width>
+                            <height>40</height>
+                            <font>font12</font>
+                            <texturefocus border="5">button-focus2.png</texturefocus>
+                            <texturenofocus border="5">button-nofocus.png</texturenofocus>
+						</control>
+						<control type="button" id="21">
+							<description>Button sort by</description>
+                            <left>0</left>
+                            <top>0</top>
+							<width>360</width>
+							<height>40</height>
+                            <font>font12</font>
+                            <texturefocus border="5">button-focus2.png</texturefocus>
+                            <texturenofocus border="5">button-nofocus.png</texturenofocus>
+						</control>
+					</control>
+					<control type="list" id="22">
+						<description>Available channels lists control</description>
+						<left>0</left>
+						<top>100</top>
+						<width>360</width>
+						<height>334</height>
+						<onup>22</onup>
+						<ondown>22</ondown>
+						<onleft>7000</onleft>
+						<onright>23</onright>
+						<pagecontrol>23</pagecontrol>
+						<scrolltime>200</scrolltime>
+						<itemlayout height="84" width="360">
+                            <control type="image">
+                                <left>0</left>
+                                <top>0</top>
+                                <width>360</width>
+                                <height>78</height>
+                                <texture border="5">button-nofocus.png</texture>
+                            </control>
+							<control type="image">
+								<left>8</left>
+								<top>5</top>
+								<width>74</width>
+								<height>74</height>
+								<texture fallback="DefaultAddonPVRClient.png" background="true">$INFO[Listitem.Icon]</texture>
+								<aspectratio>keep</aspectratio>
+                                <bordertexture border="3">black-back2.png</bordertexture>
+                                <bordersize>2</bordersize>
+							</control>
+							<control type="label">
+								<left>90</left>
+								<top>0</top>
+								<right>10</right>
+								<height>40</height>
+                                <font>font13</font>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <align>left</align>
+                                <aligny>center</aligny>
+								<label>[B]$INFO[ListItem.Label][/B]</label>
+							</control>
+							<control type="textbox">
+								<left>90</left>
+								<top>35</top>
+								<right>10</right>
+								<height>44</height>
+                                <font>font12</font>
+                                <textcolor>grey</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <align>left</align>
+								<label>$INFO[ListItem.Label2]</label>
+							</control>
+						</itemlayout>
+						<focusedlayout height="84" width="360">
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<right>0</right>
+								<height>78</height>
+								<texture border="5">button-nofocus.png</texture>
+                                <visible>!Control.HasFocus(22)</visible>
+                                <include>VisibleFadeEffect</include>
+							</control>
+                            <control type="image">
+								<left>0</left>
+								<top>0</top>
+								<right>0</right>
+								<height>78</height>
+                                <texture border="5">button-focus2.png</texture>
+                                <visible>Control.HasFocus(22)</visible>
+                                <include>VisibleFadeEffect</include>
+                            </control>
+                            <control type="image">
+								<left>8</left>
+								<top>5</top>
+								<width>74</width>
+								<height>74</height>
+								<texture fallback="DefaultAddonPVRClient.png" background="true">$INFO[Listitem.Icon]</texture>
+								<aspectratio>keep</aspectratio>
+                                <bordertexture border="3">black-back2.png</bordertexture>
+                                <bordersize>2</bordersize>
+                            </control>
+							<control type="label">
+								<left>90</left>
+								<top>0</top>
+								<right>10</right>
+								<height>40</height>
+                                <font>font13</font>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <align>left</align>
+                                <aligny>center</aligny>
+								<label>[B]$INFO[ListItem.Label][/B]</label>
+							</control>
+							<control type="textbox">
+								<left>90</left>
+								<top>35</top>
+								<right>10</right>
+								<height>44</height>
+                                <font>font12</font>
+                                <textcolor>grey</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <align>left</align>
+								<label>$INFO[ListItem.Label2]</label>
+							</control>
+						</focusedlayout>
+					</control>
+					<control type="scrollbar" id="23">
+						<left>355</left>
+						<top>95</top>
+						<width>25</width>
+						<height>340</height>
+                        <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+                        <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+                        <texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+                        <textureslidernib>ScrollBarNib.png</textureslidernib>
+                        <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>                        
+						<onleft>22</onleft>
+						<onright>26</onright>
+                        <showonepage>false</showonepage>
+						<orientation>vertical</orientation>
+					</control>
+				</control>
+				<control type="group" id="8001">
+					<left>380</left>
+					<width>380</width>
+					<description>Selected channels lists</description>
+					<control type="grouplist" id="7001">
+						<description>Selected channels header</description>
+						<onleft>7000</onleft>
+						<onright>9001</onright>
+						<ondown>26</ondown>
+						<itemgap>10</itemgap>
+						<control type="button" id="24">
+							<description>Button clear selected channels</description>
+                            <left>0</left>
+                            <top>0</top>
+							<width>360</width>
+                            <height>40</height>
+                            <font>font12</font>
+                            <texturefocus border="5">button-focus2.png</texturefocus>
+                            <texturenofocus border="5">button-nofocus.png</texturenofocus>
+						</control>
+						<control type="button" id="25">
+							<description>Button change all correction</description>
+                            <left>0</left>
+                            <top>0</top>
+							<width>360</width>
+                            <height>40</height>
+                            <font>font12</font>
+                            <texturefocus border="5">button-focus2.png</texturefocus>
+                            <texturenofocus border="5">button-nofocus.png</texturenofocus>
+						</control>
+					</control>
+					<control type="list" id="26">
+						<description>Selected channels lists control</description>
+						<left>0</left>
+						<top>100</top>
+						<width>360</width>
+						<height>334</height>
+						<onup>26</onup>
+						<ondown>26</ondown>
+						<onleft>23</onleft>
+						<onright>27</onright>
+						<pagecontrol>27</pagecontrol>
+						<scrolltime>200</scrolltime>
+						<itemlayout height="84" width="360">
+                            <control type="image">
+                                <left>0</left>
+                                <top>0</top>
+                                <width>360</width>
+                                <height>78</height>
+                                <texture border="5">button-nofocus.png</texture>
+                            </control>
+							<control type="image">
+								<left>8</left>
+								<top>5</top>
+								<width>74</width>
+								<height>74</height>
+								<texture fallback="DefaultAddonPVRClient.png" background="true">$INFO[Listitem.Icon]</texture>
+								<aspectratio>keep</aspectratio>
+                                <bordertexture border="3">black-back2.png</bordertexture>
+                                <bordersize>2</bordersize>
+							</control>
+							<control type="label">
+								<left>90</left>
+								<top>0</top>
+								<right>10</right>
+								<height>40</height>
+                                <font>font13</font>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <align>left</align>
+                                <aligny>center</aligny>
+								<label>[B]$INFO[ListItem.Label][/B]</label>
+							</control>
+							<control type="textbox">
+								<left>90</left>
+								<top>35</top>
+								<right>10</right>
+								<height>44</height>
+                                <font>font12</font>
+                                <textcolor>grey</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <align>left</align>
+								<label>$INFO[ListItem.Label2]</label>
+							</control>
+						</itemlayout>
+						<focusedlayout height="84" width="360">
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<right>0</right>
+								<height>78</height>
+								<texture border="5">button-nofocus.png</texture>
+                                <visible>!Control.HasFocus(26)</visible>
+                                <include>VisibleFadeEffect</include>
+							</control>
+                            <control type="image">
+								<left>0</left>
+								<top>0</top>
+								<right>0</right>
+								<height>78</height>
+                                <texture border="5">button-focus2.png</texture>
+                                <visible>Control.HasFocus(26)</visible>
+                                <include>VisibleFadeEffect</include>
+                            </control>
+                            <control type="image">
+								<left>8</left>
+								<top>5</top>
+								<width>74</width>
+								<height>74</height>
+								<texture fallback="DefaultAddonPVRClient.png" background="true">$INFO[Listitem.Icon]</texture>
+								<aspectratio>keep</aspectratio>
+                                <bordertexture border="3">black-back2.png</bordertexture>
+                                <bordersize>2</bordersize>
+                            </control>
+							<control type="label">
+								<left>90</left>
+								<top>0</top>
+								<right>10</right>
+								<height>40</height>
+                                <font>font13</font>
+                                <textcolor>white</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <align>left</align>
+                                <aligny>center</aligny>
+								<label>[B]$INFO[ListItem.Label][/B]</label>
+							</control>
+							<control type="textbox">
+								<left>90</left>
+								<top>35</top>
+								<right>10</right>
+								<height>44</height>
+                                <font>font12</font>
+                                <textcolor>grey</textcolor>
+                                <selectedcolor>selected</selectedcolor>
+                                <align>left</align>
+								<label>$INFO[ListItem.Label2]</label>
+							</control>
+						</focusedlayout>
+					</control>
+					<control type="scrollbar" id="27">
+						<left>355</left>
+						<top>95</top>
+						<width>25</width>
+						<height>340</height>
+                        <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+                        <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+                        <texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+                        <textureslidernib>ScrollBarNib.png</textureslidernib>
+                        <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+						<onleft>26</onleft>
+						<onright>9001</onright>
+                        <showonepage>false</showonepage>
+						<orientation>vertical</orientation>
+					</control>
+				</control>
+			</control>
+			<!-- include Buttons (Save, Cancel, other) -->
+			<control type="grouplist" id="9001">
+				<description>Button grouplist</description>
+				<left>790</left>
+				<top>70</top>
+				<onleft>7001</onleft>
+				<onright>7000</onright>
+				<itemgap>10</itemgap>
+                <control type="button" id="28">
+                    <description>Button Save</description>
+                    <width>200</width>
+                    <height>40</height>
+                    <font>font12_title</font>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>white</focusedcolor>
+                    <align>center</align>
+                </control>
+                <control type="button" id="29">
+                    <description>Cancel button</description>
+                    <width>200</width>
+                    <height>40</height>
+                    <font>font12_title</font>
+                    <textcolor>white</textcolor>
+                    <focusedcolor>white</focusedcolor>
+                    <align>center</align>
+                </control>
+			</control>
+		</control>
+	</controls>
+</window>
