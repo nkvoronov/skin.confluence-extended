@@ -48,7 +48,7 @@
 				<texturefocus>DialogCloseButton-focus.png</texturefocus>
 				<texturenofocus>DialogCloseButton.png</texturenofocus>
 				<visible>system.getbool(input.enablemouse)</visible>
-			</control>            
+			</control>
 			<!-- Main -->
 			<control type="group" id="9000">
 				<description>Channel lists</description>
@@ -68,23 +68,23 @@
 						<itemgap>10</itemgap>
 						<control type="button" id="20">
 							<description>Button update available channels</description>
-                            <left>0</left>
-                            <top>0</top>
+							<left>0</left>
+							<top>0</top>
 							<width>360</width>
-                            <height>40</height>
-                            <font>font12</font>
-                            <texturefocus border="5">button-focus2.png</texturefocus>
-                            <texturenofocus border="5">button-nofocus.png</texturenofocus>
+							<height>40</height>
+							<font>font12</font>
+							<texturefocus border="5">button-focus2.png</texturefocus>
+							<texturenofocus border="5">button-nofocus.png</texturenofocus>
 						</control>
 						<control type="button" id="21">
 							<description>Button sort by</description>
-                            <left>0</left>
-                            <top>0</top>
+							<left>0</left>
+							<top>0</top>
 							<width>360</width>
 							<height>40</height>
-                            <font>font12</font>
-                            <texturefocus border="5">button-focus2.png</texturefocus>
-                            <texturenofocus border="5">button-nofocus.png</texturenofocus>
+							<font>font12</font>
+							<texturefocus border="5">button-focus2.png</texturefocus>
+							<texturenofocus border="5">button-nofocus.png</texturenofocus>
 						</control>
 					</control>
 					<control type="list" id="22">
@@ -100,13 +100,13 @@
 						<pagecontrol>23</pagecontrol>
 						<scrolltime>200</scrolltime>
 						<itemlayout height="84" width="360">
-                            <control type="image">
-                                <left>0</left>
-                                <top>0</top>
-                                <width>360</width>
-                                <height>78</height>
-                                <texture border="5">button-nofocus.png</texture>
-                            </control>
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<width>360</width>
+								<height>78</height>
+								<texture border="5">button-nofocus.png</texture>
+							</control>
 							<control type="image">
 								<left>8</left>
 								<top>5</top>
@@ -114,19 +114,19 @@
 								<height>74</height>
 								<texture fallback="DefaultAddonPVRClient.png" background="true">$INFO[Listitem.Icon]</texture>
 								<aspectratio>keep</aspectratio>
-                                <bordertexture border="3">black-back2.png</bordertexture>
-                                <bordersize>2</bordersize>
+								<bordertexture border="3">black-back2.png</bordertexture>
+								<bordersize>2</bordersize>
 							</control>
 							<control type="label">
 								<left>90</left>
 								<top>0</top>
 								<right>10</right>
 								<height>40</height>
-                                <font>font13</font>
-                                <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
-                                <align>left</align>
-                                <aligny>center</aligny>
+								<font>font13</font>
+								<textcolor>white</textcolor>
+								<selectedcolor>selected</selectedcolor>
+								<align>left</align>
+								<aligny>center</aligny>
 								<label>[B]$INFO[ListItem.Label][/B]</label>
 							</control>
 							<control type="textbox">
@@ -134,10 +134,10 @@
 								<top>35</top>
 								<right>10</right>
 								<height>44</height>
-                                <font>font12</font>
-                                <textcolor>grey</textcolor>
-                                <selectedcolor>selected</selectedcolor>
-                                <align>left</align>
+								<font>font12</font>
+								<textcolor>grey</textcolor>
+								<selectedcolor>selected</selectedcolor>
+								<align>left</align>
 								<label>$INFO[ListItem.Label2]</label>
 							</control>
 						</itemlayout>
@@ -148,38 +148,38 @@
 								<right>0</right>
 								<height>78</height>
 								<texture border="5">button-nofocus.png</texture>
-                                <visible>!Control.HasFocus(22)</visible>
-                                <include>VisibleFadeEffect</include>
+								<visible>!Control.HasFocus(22)</visible>
+								<include>VisibleFadeEffect</include>
 							</control>
-                            <control type="image">
+							<control type="image">
 								<left>0</left>
 								<top>0</top>
 								<right>0</right>
 								<height>78</height>
-                                <texture border="5">button-focus2.png</texture>
-                                <visible>Control.HasFocus(22)</visible>
-                                <include>VisibleFadeEffect</include>
-                            </control>
-                            <control type="image">
+								<texture border="5">button-focus2.png</texture>
+								<visible>Control.HasFocus(22)</visible>
+								<include>VisibleFadeEffect</include>
+							</control>
+							<control type="image">
 								<left>8</left>
 								<top>5</top>
 								<width>74</width>
 								<height>74</height>
 								<texture fallback="DefaultAddonPVRClient.png" background="true">$INFO[Listitem.Icon]</texture>
 								<aspectratio>keep</aspectratio>
-                                <bordertexture border="3">black-back2.png</bordertexture>
-                                <bordersize>2</bordersize>
-                            </control>
+								<bordertexture border="3">black-back2.png</bordertexture>
+								<bordersize>2</bordersize>
+							</control>
 							<control type="label">
 								<left>90</left>
 								<top>0</top>
 								<right>10</right>
 								<height>40</height>
-                                <font>font13</font>
-                                <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
-                                <align>left</align>
-                                <aligny>center</aligny>
+								<font>font13</font>
+								<textcolor>white</textcolor>
+								<selectedcolor>selected</selectedcolor>
+								<align>left</align>
+								<aligny>center</aligny>
 								<label>[B]$INFO[ListItem.Label][/B]</label>
 							</control>
 							<control type="textbox">
@@ -187,10 +187,10 @@
 								<top>35</top>
 								<right>10</right>
 								<height>44</height>
-                                <font>font12</font>
-                                <textcolor>grey</textcolor>
-                                <selectedcolor>selected</selectedcolor>
-                                <align>left</align>
+								<font>font12</font>
+								<textcolor>grey</textcolor>
+								<selectedcolor>selected</selectedcolor>
+								<align>left</align>
 								<label>$INFO[ListItem.Label2]</label>
 							</control>
 						</focusedlayout>
@@ -200,14 +200,14 @@
 						<top>95</top>
 						<width>25</width>
 						<height>340</height>
-                        <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-                        <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-                        <texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-                        <textureslidernib>ScrollBarNib.png</textureslidernib>
-                        <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>                        
+						<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+						<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+						<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+						<textureslidernib>ScrollBarNib.png</textureslidernib>
+						<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 						<onleft>22</onleft>
 						<onright>26</onright>
-                        <showonepage>false</showonepage>
+						<showonepage>false</showonepage>
 						<orientation>vertical</orientation>
 					</control>
 				</control>
@@ -223,23 +223,23 @@
 						<itemgap>10</itemgap>
 						<control type="button" id="24">
 							<description>Button clear selected channels</description>
-                            <left>0</left>
-                            <top>0</top>
+							<left>0</left>
+							<top>0</top>
 							<width>360</width>
-                            <height>40</height>
-                            <font>font12</font>
-                            <texturefocus border="5">button-focus2.png</texturefocus>
-                            <texturenofocus border="5">button-nofocus.png</texturenofocus>
+							<height>40</height>
+							<font>font12</font>
+							<texturefocus border="5">button-focus2.png</texturefocus>
+							<texturenofocus border="5">button-nofocus.png</texturenofocus>
 						</control>
 						<control type="button" id="25">
 							<description>Button change all correction</description>
-                            <left>0</left>
-                            <top>0</top>
+							<left>0</left>
+							<top>0</top>
 							<width>360</width>
-                            <height>40</height>
-                            <font>font12</font>
-                            <texturefocus border="5">button-focus2.png</texturefocus>
-                            <texturenofocus border="5">button-nofocus.png</texturenofocus>
+							<height>40</height>
+							<font>font12</font>
+							<texturefocus border="5">button-focus2.png</texturefocus>
+							<texturenofocus border="5">button-nofocus.png</texturenofocus>
 						</control>
 					</control>
 					<control type="list" id="26">
@@ -255,13 +255,13 @@
 						<pagecontrol>27</pagecontrol>
 						<scrolltime>200</scrolltime>
 						<itemlayout height="84" width="360">
-                            <control type="image">
-                                <left>0</left>
-                                <top>0</top>
-                                <width>360</width>
-                                <height>78</height>
-                                <texture border="5">button-nofocus.png</texture>
-                            </control>
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<width>360</width>
+								<height>78</height>
+								<texture border="5">button-nofocus.png</texture>
+							</control>
 							<control type="image">
 								<left>8</left>
 								<top>5</top>
@@ -269,19 +269,19 @@
 								<height>74</height>
 								<texture fallback="DefaultAddonPVRClient.png" background="true">$INFO[Listitem.Icon]</texture>
 								<aspectratio>keep</aspectratio>
-                                <bordertexture border="3">black-back2.png</bordertexture>
-                                <bordersize>2</bordersize>
+								<bordertexture border="3">black-back2.png</bordertexture>
+								<bordersize>2</bordersize>
 							</control>
 							<control type="label">
 								<left>90</left>
 								<top>0</top>
 								<right>10</right>
 								<height>40</height>
-                                <font>font13</font>
-                                <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
-                                <align>left</align>
-                                <aligny>center</aligny>
+								<font>font13</font>
+								<textcolor>white</textcolor>
+								<selectedcolor>selected</selectedcolor>
+								<align>left</align>
+								<aligny>center</aligny>
 								<label>[B]$INFO[ListItem.Label][/B]</label>
 							</control>
 							<control type="textbox">
@@ -289,10 +289,10 @@
 								<top>35</top>
 								<right>10</right>
 								<height>44</height>
-                                <font>font12</font>
-                                <textcolor>grey</textcolor>
-                                <selectedcolor>selected</selectedcolor>
-                                <align>left</align>
+								<font>font12</font>
+								<textcolor>grey</textcolor>
+								<selectedcolor>selected</selectedcolor>
+								<align>left</align>
 								<label>$INFO[ListItem.Label2]</label>
 							</control>
 						</itemlayout>
@@ -303,38 +303,38 @@
 								<right>0</right>
 								<height>78</height>
 								<texture border="5">button-nofocus.png</texture>
-                                <visible>!Control.HasFocus(26)</visible>
-                                <include>VisibleFadeEffect</include>
+								<visible>!Control.HasFocus(26)</visible>
+								<include>VisibleFadeEffect</include>
 							</control>
-                            <control type="image">
+							<control type="image">
 								<left>0</left>
 								<top>0</top>
 								<right>0</right>
 								<height>78</height>
-                                <texture border="5">button-focus2.png</texture>
-                                <visible>Control.HasFocus(26)</visible>
-                                <include>VisibleFadeEffect</include>
-                            </control>
-                            <control type="image">
+								<texture border="5">button-focus2.png</texture>
+								<visible>Control.HasFocus(26)</visible>
+								<include>VisibleFadeEffect</include>
+							</control>
+							<control type="image">
 								<left>8</left>
 								<top>5</top>
 								<width>74</width>
 								<height>74</height>
 								<texture fallback="DefaultAddonPVRClient.png" background="true">$INFO[Listitem.Icon]</texture>
 								<aspectratio>keep</aspectratio>
-                                <bordertexture border="3">black-back2.png</bordertexture>
-                                <bordersize>2</bordersize>
-                            </control>
+								<bordertexture border="3">black-back2.png</bordertexture>
+								<bordersize>2</bordersize>
+							</control>
 							<control type="label">
 								<left>90</left>
 								<top>0</top>
 								<right>10</right>
 								<height>40</height>
-                                <font>font13</font>
-                                <textcolor>white</textcolor>
-                                <selectedcolor>selected</selectedcolor>
-                                <align>left</align>
-                                <aligny>center</aligny>
+								<font>font13</font>
+								<textcolor>white</textcolor>
+								<selectedcolor>selected</selectedcolor>
+								<align>left</align>
+								<aligny>center</aligny>
 								<label>[B]$INFO[ListItem.Label][/B]</label>
 							</control>
 							<control type="textbox">
@@ -342,10 +342,10 @@
 								<top>35</top>
 								<right>10</right>
 								<height>44</height>
-                                <font>font12</font>
-                                <textcolor>grey</textcolor>
-                                <selectedcolor>selected</selectedcolor>
-                                <align>left</align>
+								<font>font12</font>
+								<textcolor>grey</textcolor>
+								<selectedcolor>selected</selectedcolor>
+								<align>left</align>
 								<label>$INFO[ListItem.Label2]</label>
 							</control>
 						</focusedlayout>
@@ -355,14 +355,14 @@
 						<top>95</top>
 						<width>25</width>
 						<height>340</height>
-                        <texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-                        <texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-                        <texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-                        <textureslidernib>ScrollBarNib.png</textureslidernib>
-                        <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+						<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+						<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+						<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+						<textureslidernib>ScrollBarNib.png</textureslidernib>
+						<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 						<onleft>26</onleft>
 						<onright>9001</onright>
-                        <showonepage>false</showonepage>
+						<showonepage>false</showonepage>
 						<orientation>vertical</orientation>
 					</control>
 				</control>
@@ -375,24 +375,24 @@
 				<onleft>7001</onleft>
 				<onright>7000</onright>
 				<itemgap>10</itemgap>
-                <control type="button" id="28">
-                    <description>Button Save</description>
-                    <width>200</width>
-                    <height>40</height>
-                    <font>font12_title</font>
-                    <textcolor>white</textcolor>
-                    <focusedcolor>white</focusedcolor>
-                    <align>center</align>
-                </control>
-                <control type="button" id="29">
-                    <description>Cancel button</description>
-                    <width>200</width>
-                    <height>40</height>
-                    <font>font12_title</font>
-                    <textcolor>white</textcolor>
-                    <focusedcolor>white</focusedcolor>
-                    <align>center</align>
-                </control>
+				<control type="button" id="28">
+					<description>Button Save</description>
+					<width>200</width>
+					<height>40</height>
+					<font>font12_title</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<align>center</align>
+				</control>
+				<control type="button" id="29">
+					<description>Cancel button</description>
+					<width>200</width>
+					<height>40</height>
+					<font>font12_title</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<align>center</align>
+				</control>
 			</control>
 		</control>
 	</controls>
