@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
 	id="skin.confluence-extended"
-	version="3.1.6.158" 
+	version="3.1.6.159" 
 	name="Confluence Extended"
 	provider-name="Jezz_X, Team Kodi, YLLOW_DRAGON, plood">
 	<requires>
@@ -11,7 +11,6 @@
 		<import addon="script.pvr.favourites" version="2.0.0"/>
 		<import addon="service.skin.widgets" version="0.0.32"/>
 		<import addon="script.randomandlastitems" version="2.2.2"/>
-
 	</requires>
 	<extension
 		point="xbmc.gui.skin"
