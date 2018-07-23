@@ -1199,7 +1199,7 @@ msgstr "Выбрать пакет иконок жанров для музыки"
 
 msgctxt "#90108"
 msgid "Choose background for audio"
-msgstr "Выбрать фон для аудио" 
+msgstr "Выбрать фон для аудио"
 
 msgctxt "#90109"
 msgid "Single image"
