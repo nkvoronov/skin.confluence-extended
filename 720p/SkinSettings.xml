@@ -980,7 +980,7 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>ActivateWindow(2123)</onclick>
+						<onclick>ActivateWindow(2122)</onclick>
 					</control>
 					<control type="image" id="302">
 						<description>Separator Image</description>

@@ -134,7 +134,11 @@ msgctxt "#31033"
 msgid "Info"
 msgstr ""
 
-#empty strings from id 31034 to 31038
+msgctxt "#31034"
+msgid "Extended info"
+msgstr ""
+
+#empty strings from id 31035 to 31038
 
 msgctxt "#31039"
 msgid "Actions"
@@ -1143,4 +1147,12 @@ msgstr ""
 
 msgctxt "#90110"
 msgid "Multi-image"
+msgstr ""
+
+msgctxt "#90111"
+msgid "Artwork Downloader"
+msgstr ""
+
+msgctxt "#90112"
+msgid "Download Music Theme"
 msgstr ""
