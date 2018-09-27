@@ -1743,23 +1743,23 @@
 				<icon>special://skin/extras/default/settings-default.jpg</icon>
 			</item>
 			<item id="7">
+				<label>166</label>
+				<label2>88070</label2>
+				<onclick>ActivateWindow(SkinSettings)</onclick>
+				<icon>special://skin/extras/default/settings-default.jpg</icon>
+			</item>
+			<item id="8">
 				<label>13000</label>
 				<label2>31435</label2>
 				<onclick>ActivateWindow(SystemSettings)</onclick>
 				<icon>special://skin/extras/default/settings-default.jpg</icon>
 			</item>
-			<item id="8">
+			<item id="9">
 				<label>89041</label>
 				<label2>89051</label2>
 				<onclick>RunAddon(service.libreelec.settings)</onclick>
 				<icon>special://skin/extras/default/settings-default.jpg</icon>
 				<visible>System.HasAddon(service.libreelec.settings)</visible>
-			</item>
-			<item id="9">
-				<label>166</label>
-				<label2>88070</label2>
-				<onclick>ActivateWindow(SkinSettings)</onclick>
-				<icon>special://skin/extras/default/settings-default.jpg</icon>
 			</item>
 		</content>
 	</include>
