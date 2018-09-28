@@ -53,8 +53,8 @@
 				<top>11</top>
 				<width>64</width>
 				<height>32</height>
-				<label>-</label>
-				<font>-</font>
+				<label></label>
+				<font></font>
 				<onclick>PreviousMenu</onclick>
 				<texturefocus>DialogCloseButton-focus.png</texturefocus>
 				<texturenofocus>DialogCloseButton.png</texturenofocus>
@@ -82,7 +82,7 @@
 				<onright>9010</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
-				<pagecontrol>-</pagecontrol>
+				<pagecontrol></pagecontrol>
 				<scrolltime>300</scrolltime>
 				<itemlayout height="50" width="260">
 					<control type="image">
@@ -129,34 +129,28 @@
 					<item id="1">
 						<label>$LOCALIZE[128]</label>
 						<label2>$LOCALIZE[90052]</label2>
-						<onclick>noop</onclick>
 					</item>
 					<item id="2">
 						<label>$LOCALIZE[31112]</label>
 						<label2>$LOCALIZE[90053]</label2>
-						<onclick>noop</onclick>
 					</item>
 					<item id="3">
 						<label>$LOCALIZE[513]</label>
 						<label2>$LOCALIZE[90054]</label2>
-						<onclick>noop</onclick>
 					</item>
 					<item id="4">
 						<label>$LOCALIZE[88130]</label>
 						<label2>$LOCALIZE[90055]</label2>
-						<onclick>noop</onclick>
 						<visible>PVR.HasTVChannels | PVR.HasRadioChannels</visible>
 						<visible>System.HasAddon(script.pvr.favourites)</visible>
 					</item>
 					<item id="5">
 						<label>$LOCALIZE[31102]</label>
 						<label2>$LOCALIZE[90056]</label2>
-						<onclick>noop</onclick>
 					</item>
 					<item id="6">
 						<label>$LOCALIZE[10035]</label>
 						<label2>$LOCALIZE[90057]</label2>
-						<onclick>noop</onclick>
 					</item>
 				</content>
 			</control>

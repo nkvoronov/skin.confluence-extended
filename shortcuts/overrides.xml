@@ -2,22 +2,19 @@
 <overrides>
 	<doNotShareMenu />
 	<alwaysRestore>True</alwaysRestore>
-	<!-- Background -->
 	<background label="smartshortcuts">||BROWSE||plugin://script.skin.helper.service/?action=backgrounds</background>
 	<background label="smartshortcuts">||BROWSE||special://skin/extras/backgrounds</background>
 	<backgroundBrowse default="protocol://">True</backgroundBrowse>
-	<!-- Icons overrides -->
 	<icon image="DefaultShortcut.png">DefaultFolder.png</icon>
 	<icon image="DefaultAudio.png">DefaultFolder.png</icon>
 	<icon image="DefaultPlaylist.png">DefaultVideoPlaylists.png</icon>
 	<icon image="DefaultAudio.png" grouping="pvr-radio">DefaultTVShows.png</icon>
-	<!-- Group override-->
 	<groupoverride group="powermenu" disable_groups="" condition="Window.IsActive(DialogButtonMenu.xml)">Close</groupoverride>
 	<groupoverride group="*" disable_groups="powermenu" condition="">SetProperty(MenuItemActive,$VAR[HomeMenuType],home)</groupoverride>
 	<groupoverride group="*" disable_groups="powermenu" condition="">SetProperty(MenuBackground,$VAR[HomeBackground],home)</groupoverride>
-	<!-- Default Backgrounds -->
 	<backgrounddefault labelID="weather">special://skin/extras/backgrounds/weather.jpg</backgrounddefault>
 	<backgrounddefault labelID="pictures">special://skin/extras/backgrounds/pictures.jpg</backgrounddefault>
+    <backgrounddefault labelID="games">special://skin/extras/backgrounds/games.jpg</backgrounddefault>
 	<backgrounddefault labelID="radio">special://skin/extras/backgrounds/radio.jpg</backgrounddefault>
 	<backgrounddefault labelID="livetv">special://skin/extras/backgrounds/livetv.jpg</backgrounddefault>
 	<backgrounddefault labelID="video">special://skin/extras/backgrounds/video.jpg</backgrounddefault>
@@ -28,19 +25,16 @@
 	<backgrounddefault labelID="addons">special://skin/extras/backgrounds/addons.jpg</backgrounddefault>
 	<backgrounddefault labelID="dvd">special://skin/extras/backgrounds/dvd.jpg</backgrounddefault>
 	<backgrounddefault labelID="settings">special://skin/extras/backgrounds/settings.jpg</backgrounddefault>
-	<!-- Additionnal Widgets -->
 	<widget label="$LOCALIZE[89302]" icon="DefaultFolder.png" type="weathers" path="weatherdaily" target="list">DailyWeather</widget>
 	<widget label="$LOCALIZE[89031]" icon="DefaultRecentlyAddedMovies.png" type="movies" path="videodb://recentlyaddedmovies/" target="videos">RecentMovies</widget>
 	<widget label="$LOCALIZE[89033]" icon="DefaultRecentlyAddedEpisodes.png" type="episodes" path="videodb://recentlyaddedepisodes/" target="videos">RecentEpisodes</widget>
 	<widget label="$LOCALIZE[89036]" icon="DefaultRecentlyAddedMusicVideos.png" type="musicvideos" path="videodb://recentlyaddedmusicvideos/" target="videos">RecentMusicVideo</widget>
 	<widget label="$LOCALIZE[89025]" icon="DefaultMusicRecentlyAdded.png" type="albums" path="musicdb://recentlyaddedalbums/" target="music">RecentAlbums</widget>
-	<!-- Default Widgets -->
 	<widgetdefault labelID="weather">DailyWeather</widgetdefault>
 	<widgetdefault labelID="movies">RecentMovies</widgetdefault>
 	<widgetdefault labelID="tvshows">RecentEpisodes</widgetdefault>
 	<widgetdefault labelID="musicvideos">RecentMusicVideo</widgetdefault>
 	<widgetdefault labelID="music">RecentAlbums</widgetdefault>
-	<!-- Context Menu -->
 	<contextmenu>
 		<enableon>211</enableon>
 		<item control="303">$ADDON[script.skinshortcuts 32002]</item>
@@ -51,11 +45,8 @@
 		<item control="302">$ADDON[script.skinshortcuts 32001]</item>
 		<item control="308">$ADDON[script.skinshortcuts 32028]</item>
 	</contextmenu>
-	<!-- Menus Groupings -->
 	<menus-groupings>
-		<!-- Smart Shortcuts -->
 		<shortcut label="90050" type="" icon="DefaultFolder.png" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=smartshortcuts</shortcut>
-		<!-- Weather -->
 		<node label="8">
 			<shortcut label="8" type="8" icon="DefaultFolder.png">ActivateWindow(Weather)</shortcut>
 			<shortcut label="184" type="8" icon="DefaultFolder.png">Weather.Refresh</shortcut>
@@ -63,7 +54,6 @@
 			<shortcut label="89901" type="8" icon="DefaultFolder.png">Weather.LocationNext</shortcut>
 			<shortcut label="8" type="10004" icon="DefaultFolder.png">ActivateWindow(servicesettings,weather)</shortcut>
 		</node>
-		<!-- Pictures -->
 		<node label="1">
 			<shortcut label="1" type="1" icon="DefaultFolder.png">ActivateWindow(pictures)</shortcut>
 			<shortcut label="1039" type="1" icon="DefaultAddonImages.png">ActivateWindow(pictures,addons://sources/image/,return)</shortcut>

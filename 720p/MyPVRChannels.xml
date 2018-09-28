@@ -73,13 +73,22 @@
 				<width>692</width>
 				<height>402</height>
 				<texturefocus border="3">VideoWindowFO.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<font>-</font>
+				<texturenofocus></texturenofocus>
+				<font></font>
+				<pulseonselect>no</pulseonselect>
 				<onleft>70</onleft>
 				<onclick>Fullscreen</onclick>
 				<visible>Player.HasVideo</visible>
 			</control>
-			<include>PreviewPVRBackground</include>
+			<control type="image">
+				<left>5</left>
+				<top>5</top>
+				<width>680</width>
+				<height>390</height>
+				<texture>special://skin/backgrounds/tv.jpg</texture>
+				<include>VisibleFadeEffect</include>
+				<visible>!Player.HasVideo</visible>
+			</control>
 			<control type="videowindow">
 				<left>5</left>
 				<top>5</top>
@@ -153,7 +162,7 @@
 					<align>justify</align>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<label>$INFO[Container(50).ListItem.Plot]</label>
 					<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
 				</control>

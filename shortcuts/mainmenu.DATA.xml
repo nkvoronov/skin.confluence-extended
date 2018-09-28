@@ -15,6 +15,13 @@
 		<action>ActivateWindow(pictures)</action>
 	</shortcut>
 	<shortcut>
+		<label>31001</label>
+		<label2>24001</label2>
+		<defaultID>games</defaultID>
+		<icon>DefaultFolder.png</icon>
+		<action>ActivateWindow(games)</action>
+	</shortcut>
+	<shortcut>
 		<label>31960</label>
 		<label2>19021</label2>
 		<defaultID>radio</defaultID>

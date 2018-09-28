@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol>-</defaultcontrol>
+	<defaultcontrol></defaultcontrol>
 	<controls>
 		<control type="label" id="1">
 			<description>Clock label</description>
@@ -21,7 +21,7 @@
 		<control type="group" id="0">
 			<depth>DepthOSD+</depth>
 			<left>0</left>
-			<top>0</top>
+			<top>20</top>
 			<animation effect="fade" time="150">VisibleChange</animation>
 			<control type="image">
 				<description>media info background image</description>
@@ -40,7 +40,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<label>-</label>
+				<label></label>
 			</control>
 			<control type="label" id="11">
 				<description>row 2 label</description>
@@ -51,7 +51,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<label>-</label>
+				<label></label>
 			</control>
 			<control type="label" id="12">
 				<description>row 3 label</description>
@@ -62,13 +62,13 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<label>-</label>
+				<label></label>
 			</control>
 		</control>
 		<!-- media infos -->
 		<control type="group" id="1">
 			<depth>DepthOSD</depth>
-			<visible>[Player.ShowInfo | Window.IsActive(VideoOSD)] + ![Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(SliderDialog)]</visible>
+			<visible>[Player.ShowInfo | Window.IsActive(VideoOSD)] + ![Window.IsVisible(OSDSubtitleSettings) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVRChannelGuide) | Window.IsVisible(SliderDialog)]</visible>
 			<animation effect="fade" time="150">VisibleChange</animation>
 			<control type="image" id="1">
 				<left>-20</left>
@@ -179,7 +179,7 @@
 					<label>$LOCALIZE[31040]</label>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<visible>![VideoPlayer.Content(LiveTV) + Player.Recording]</visible>
+					<visible>![VideoPlayer.Content(LiveTV) + PVR.IsRecordingPlayingChannel]</visible>
 					<animation effect="slide" start="0,0" end="0,25" time="0" condition="!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos) + !VideoPlayer.Content(LiveTV) + !PVR.IsPlayingRecording">conditional</animation>
 				</control>
 				<control type="image" id="1">
@@ -188,7 +188,7 @@
 					<height>25</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<texture>PVR-IsRecording.png</texture>
-					<visible>VideoPlayer.Content(LiveTV) + Player.Recording + !Player.ChannelPreviewActive</visible>
+					<visible>VideoPlayer.Content(LiveTV) + PVR.IsRecordingPlayingChannel + !Player.ChannelPreviewActive</visible>
 				</control>
 				<control type="label" id="1">
 					<description>Heading label</description>
@@ -202,7 +202,7 @@
 					<label>$LOCALIZE[19158]</label>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<visible>VideoPlayer.Content(LiveTV) + Player.Recording + !Player.ChannelPreviewActive</visible>
+					<visible>VideoPlayer.Content(LiveTV) + PVR.IsRecordingPlayingChannel + !Player.ChannelPreviewActive</visible>
 				</control>
 				<control type="label" id="1">
 					<description>Studio label</description>
