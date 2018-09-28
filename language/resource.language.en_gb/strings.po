@@ -1114,7 +1114,7 @@ msgid "Path:"
 msgstr ""
 
 msgctxt "#90042"
-msgid "Duration (sec)"
+msgid "Duration"
 msgstr ""
 
 msgctxt "#90044"

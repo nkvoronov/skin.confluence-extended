@@ -203,9 +203,9 @@
 		<value condition="ListItem.HasTimer">PVR-HasTimer.png</value>
 	</variable>
 	<variable name="PVRTimerLabel">
-	  <value condition="ListItem.IsRecording">$LOCALIZE[19043]</value>
-	  <value condition="ListItem.HasTimer + !ListItem.TimerIsActive">$LOCALIZE[19057]</value>
-	  <value condition="ListItem.HasTimer">$LOCALIZE[31510]</value>
+		<value condition="ListItem.IsRecording">$LOCALIZE[19043]</value>
+		<value condition="ListItem.HasTimer + !ListItem.TimerIsActive">$LOCALIZE[19057]</value>
+		<value condition="ListItem.HasTimer">$LOCALIZE[31510]</value>
 	</variable>
 	<!-- INCLUDES -->
 	<include name="MusicInfoPanel">
@@ -1802,23 +1802,23 @@
 				<icon>special://skin/extras/settings/interface.jpg</icon>
 			</item>
 			<item id="7">
+				<label>166</label>
+				<label2>88070</label2>
+				<onclick>ActivateWindow(SkinSettings)</onclick>
+				<icon>special://skin/extras/settings/skin.jpg</icon>
+			</item>
+			<item id="8">
 				<label>13000</label>
 				<label2>31435</label2>
 				<onclick>ActivateWindow(SystemSettings)</onclick>
 				<icon>special://skin/extras/settings/system.jpg</icon>
 			</item>
-			<item id="8">
+			<item id="9">
 				<label>89041</label>
 				<label2>89051</label2>
 				<onclick>RunAddon(service.libreelec.settings)</onclick>
 				<icon>special://skin/extras/settings/libreelec.jpg</icon>
 				<visible>System.HasAddon(service.libreelec.settings)</visible>
-			</item>
-			<item id="9">
-				<label>166</label>
-				<label2>88070</label2>
-				<onclick>ActivateWindow(SkinSettings)</onclick>
-				<icon>special://skin/extras/settings/skin.jpg</icon>
 			</item>
 		</content>
 	</include>

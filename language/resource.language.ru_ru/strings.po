@@ -1114,8 +1114,8 @@ msgid "Path:"
 msgstr "Путь:"
 
 msgctxt "#90042"
-msgid "Duration (sec)"
-msgstr "Длительность (сек)"
+msgid "Duration"
+msgstr "Длительность"
 
 msgctxt "#90044"
 msgid "Disable"
@@ -1175,7 +1175,7 @@ msgstr "Разрешить стену фонов"
 
 msgctxt "#90101"
 msgid "Random Fanart Delay"
-msgstr "Длительность показа для случайных фонов (сек)"
+msgstr "Длительность показа для случайных фонов"
 
 msgctxt "#90102"
 msgid "Enable Animated Fanarts"
