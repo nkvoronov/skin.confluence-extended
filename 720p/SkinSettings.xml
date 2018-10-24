@@ -149,7 +149,7 @@
 						<label2>$LOCALIZE[90056]</label2>
 					</item>
 					<item id="6">
-						<label>$LOCALIZE[10035]</label>
+						<label>$LOCALIZE[13007]</label>
 						<label2>$LOCALIZE[90057]</label2>
 					</item>
 				</content>
@@ -1583,7 +1583,7 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>$LOCALIZE[10035]</label>
+						<label>$LOCALIZE[13007]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>

@@ -33,7 +33,7 @@ msgid "GAMES"
 msgstr ""
 
 msgctxt "#31002"
-msgid "[B]GAME SETTINGS[/B][CR][CR]Configure rewind support & options ·  Configure keyboard use and number of keyboard players"
+msgid "[B]GAME SETTINGS[/B][CR][CR]Configure rewind support & options · Configure keyboard use and number of keyboard players"
 msgstr ""
 
 msgctxt "#31003"
@@ -88,7 +88,11 @@ msgctxt "#31015"
 msgid "Minute"
 msgstr ""
 
-#empty strings from id 31016 to 31022
+msgctxt "#31016"
+msgid "Elapsed time"
+msgstr ""
+
+#empty strings from id 31017 to 31022
 
 msgctxt "#31023"
 msgid "Playing"
@@ -284,14 +288,19 @@ msgstr ""
 
 #. In main language strings its used as submenu
 msgctxt "#31118"
-msgid "Home page programs submenu"
+msgid "Home page \"Add-ons\" submenu"
 msgstr ""
 
 msgctxt "#31119"
 msgid "Hide background fanart"
 msgstr ""
 
-#empty strings from id 31120 to 31121
+#. In main language strings its used as submenu
+msgctxt "#31120"
+msgid "Home page \"Games\" submenu"
+msgstr ""
+
+#empty string with id 31121
 
 #. Boolean settings value
 #: system/settings/settings.xml
@@ -569,11 +578,11 @@ msgid "[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during p
 msgstr ""
 
 msgctxt "#31431"
-msgid "[B]LIBRARY SETTINGS[/B][CR][CR]Configure how the library/file views display media content ·  Configure how library lists/views are navigated · Configure the media database options"
+msgid "[B]LIBRARY SETTINGS[/B][CR][CR]Configure how the library/file views display media content · Configure how library lists/views are navigated · Configure the media database options"
 msgstr ""
 
 msgctxt "#31432"
-msgid "[B]PVR SETTINGS[/B][CR][CR]Configure how the channels & guide are managed  · Configure how Live TV and recordings are managed"
+msgid "[B]PVR SETTINGS[/B][CR][CR]Configure how the channels & guide are managed · Configure how Live TV and recordings are managed"
 msgstr ""
 
 msgctxt "#31433"
@@ -585,7 +594,7 @@ msgid "[B]SERVICES SETTINGS[/B][CR][CR]Configure & manage media sharing services
 msgstr ""
 
 msgctxt "#31435"
-msgid "[B]SYSTEM SETTINGS[/B][CR][CR]Configure display · Configure audio · Configure internet access · Configure power saving· Configure logging"
+msgid "[B]SYSTEM SETTINGS[/B][CR][CR]Configure display · Configure audio · Configure internet access · Configure power saving · Configure logging"
 msgstr ""
 
 msgctxt "#31436"
@@ -696,7 +705,7 @@ msgid "MUSIC"
 msgstr ""
 
 msgctxt "#31957"
-msgid "PROGRAMS"
+msgid "ADD-ONS"
 msgstr ""
 
 msgctxt "#31958"
@@ -712,10 +721,14 @@ msgid "RADIO"
 msgstr ""
 
 msgctxt "#31961"
-msgid "MUSIC VIDEOS"
+msgid "Timeshift"
 msgstr ""
 
 # Extended Added Value
+
+msgctxt "#31962"
+msgid "MUSIC VIDEOS"
+msgstr ""
 
 msgctxt "#32000"
 msgid "SEARCH"
@@ -742,7 +755,7 @@ msgid "Move focus main menu"
 msgstr ""
 
 msgctxt "#88070"
-msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin Â· Add and remove home menu items Â· Change skin backgrounds"
+msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Confluence skin · Add and remove home menu items · Change skin backgrounds"
 msgstr ""
 
 msgctxt "#88071"

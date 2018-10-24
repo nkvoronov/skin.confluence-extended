@@ -72,6 +72,7 @@
 		<value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[13005])">special://skin/extras/backgrounds/power.jpg</value>
 		<value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[1036])">special://skin/extras/backgrounds/favourites.jpg</value>
 		<value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + [String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90001]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90002])]">special://skin/extras/backgrounds/playlists.jpg</value>
+		<value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[31001])">special://skin/extras/backgrounds/games.jpg</value>
 		<value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
 	</variable>
 	<!-- HomeMenuType -->
@@ -92,6 +93,7 @@
 		<value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[13005])">power</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[1036])">favourites</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90001]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90002])">playlists</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[31001])">games</value>
 		<value>$INFO[Container(9000).ListItem.Property(defaultID)]</value>
 	</variable>
 	<!-- HomeFanart Name -->
@@ -124,7 +126,7 @@
 		<value condition="!String.IsEmpty(Skin.String(MovieGenreIcons.name))">$INFO[Skin.String(MovieGenreIcons.name)]</value>
 		<value>$LOCALIZE[231]</value>
 	</variable>
-   <!-- MusicGenreIcons Name -->
+	<!-- MusicGenreIcons Name -->
 	<variable name="MusicGenreIconsName">
 		<value condition="!String.IsEmpty(Skin.String(MusicGenreIcons.name))">$INFO[Skin.String(MusicGenreIcons.name)]</value>
 		<value>$LOCALIZE[231]</value>

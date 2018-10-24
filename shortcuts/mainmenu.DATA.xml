@@ -16,7 +16,7 @@
 	</shortcut>
 	<shortcut>
 		<label>31001</label>
-		<label2>24001</label2>
+		<label2>31001</label2>
 		<defaultID>games</defaultID>
 		<icon>DefaultFolder.png</icon>
 		<action>ActivateWindow(games)</action>
@@ -57,7 +57,7 @@
 		<action>ActivateWindow(videos,videodb://tvshows/titles/,return)</action>
 	</shortcut>
 	<shortcut>
-		<label>31961</label>
+		<label>31962</label>
 		<label2>20389</label2>
 		<defaultID>musicvideos</defaultID>
 		<icon>DefaultMusicVideos.png</icon>
