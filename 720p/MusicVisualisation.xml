@@ -180,14 +180,14 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$VAR[PlayerTitle]</label>
-						<textcolor>orange</textcolor>
+						<textcolor>blue</textcolor>
 						<scroll>true</scroll>
 					</control>
 					<control type="image">
 						<description>Audio Codec Image</description>
 						<width>81</width>
 						<height>29</height>
-						<texture>$INFO[MusicPlayer.Codec,flagging/audio/,.png]</texture>
+						<texture>$VAR[musicplayercodec]</texture>
 						<visible>!Player.ChannelPreviewActive</visible>
 					</control>
 					<control type="group">

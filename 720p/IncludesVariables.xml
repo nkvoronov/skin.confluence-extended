@@ -48,6 +48,10 @@
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),livetv) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[19020])">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[19019]: [/COLOR][/B] $INFO[Window(Home).Property(SkinHelper.TotalTVChannels)]</value>
 		<!-- Radio -->
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),radio) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[19021])">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[19019]: [/COLOR][/B] $INFO[Window(Home).Property(SkinHelper.TotalRadioChannels)]</value>
+ 		<!-- Game -->
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),games) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[15016])">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[15016]: [/COLOR][/B] $INFO[Window(Home).Property(SkinHelper.TotalGamesAddons)]</value>
+ 		<!-- Addons -->
+		<value condition="String.IsEqual(Container(9000).ListItem.Property(defaultID),addons) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[15016]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[24001]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90017])">[B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[3]: [/COLOR][/B] $INFO[Window(Home).Property(SkinHelper.TotalVideoAddons)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[2]: [/COLOR][/B] $INFO[Window(Home).Property(SkinHelper.TotalAudioAddons)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[15016]: [/COLOR][/B] $INFO[Window(Home).Property(SkinHelper.TotalGamesAddons)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[0]: [/COLOR][/B] $INFO[Window(Home).Property(SkinHelper.TotalProgramAddons)]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[1]: [/COLOR][/B] $INFO[Window(Home).Property(SkinHelper.TotalPicturesAddons)]</value>
 		<!-- Other -->
 		<value condition="!String.Contains(System.CPUTemperature,?) + !String.Contains(System.GPUTemperature,?)">[B][COLOR=$INFO[Skin.String(menuColor)]]IP: [/COLOR][/B]$INFO[Network.IPAddress]  [B][COLOR=$INFO[Skin.String(menuColor)]]CPU: [/COLOR][/B]$INFO[System.CPUTemperature]  [B][COLOR=$INFO[Skin.String(menuColor)]]GPU: [/COLOR][/B]$INFO[System.GPUTemperature]</value>
 		<value condition="!String.Contains(System.CPUTemperature,?)">[B][COLOR=$INFO[Skin.String(menuColor)]]IP: [/COLOR][/B]$INFO[Network.IPAddress]  [B][COLOR=$INFO[Skin.String(menuColor)]]CPU: [/COLOR][/B]$INFO[System.CPUTemperature]  [B][COLOR=$INFO[Skin.String(menuColor)]]$LOCALIZE[155]: [/COLOR][/B]$INFO[System.UsedSpacePercent]</value>
@@ -72,7 +76,7 @@
 		<value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[13005])">special://skin/extras/backgrounds/power.jpg</value>
 		<value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[1036])">special://skin/extras/backgrounds/favourites.jpg</value>
 		<value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + [String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90001]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90002])]">special://skin/extras/backgrounds/playlists.jpg</value>
-		<value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[31001])">special://skin/extras/backgrounds/games.jpg</value>
+		<value condition="String.IsEmpty(Container(9000).ListItem.Property(background)) + String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[15016])">special://skin/extras/backgrounds/games.jpg</value>
 		<value>$INFO[Skin.CurrentTheme,special://skin/extras/themes/,.jpg]</value>
 	</variable>
 	<!-- HomeMenuType -->
@@ -93,7 +97,7 @@
 		<value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[13005])">power</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[1036])">favourites</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90001]) | String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[90002])">playlists</value>
-		<value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[31001])">games</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.label2,$LOCALIZE[15016])">games</value>
 		<value>$INFO[Container(9000).ListItem.Property(defaultID)]</value>
 	</variable>
 	<!-- HomeFanart Name -->

@@ -85,7 +85,7 @@
 				<top>5</top>
 				<width>680</width>
 				<height>390</height>
-				<texture>special://skin/backgrounds/tv.jpg</texture>
+				<texture>special://skin/extras/settings/tv.jpg</texture>
 				<include>VisibleFadeEffect</include>
 				<visible>!Player.HasVideo</visible>
 			</control>
@@ -159,7 +159,7 @@
 					<width>690</width>
 					<height>72</height>
 					<font>font13</font>
-					<align>justify</align>
+					<align>left</align>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<pagecontrol></pagecontrol>
@@ -177,7 +177,7 @@
 					<aligny>center</aligny>
 					<scroll>false</scroll>
 					<visible>!String.IsEmpty(Container(50).ListItem.NextTitle)</visible>
-					<label>$LOCALIZE[19031]: $INFO[Container(50).ListItem.NextTitle]</label>
+					<label>[COLOR=blue]$LOCALIZE[19031]:[/COLOR] $INFO[Container(50).ListItem.NextTitle]</label>
 				</control>
 			</control>
 			<control type="group">

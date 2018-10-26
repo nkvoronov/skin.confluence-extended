@@ -225,7 +225,7 @@
 					<height>25</height>
 					<align>left</align>
 					<font>font12</font>
-					<label>$INFO[VideoPlayer.TVShowTitle] ($INFO[VideoPlayer.Season,,x]$INFO[VideoPlayer.Episode])</label>
+					<label>$INFO[VideoPlayer.TVShowTitle] ($INFO[VideoPlayer.Season,$LOCALIZE[20373] , - ]$INFO[VideoPlayer.episode,$LOCALIZE[20359] ,])</label>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>VideoPlayer.Content(Episodes)</visible>
@@ -238,7 +238,7 @@
 					<height>25</height>
 					<align>left</align>
 					<font>font12</font>
-					<label>$INFO[VideoPlayer.Artist] $INFO[VideoPlayer.Album, - ]</label>
+					<label>$INFO[VideoPlayer.Artist]$INFO[VideoPlayer.Album, - ]</label>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>VideoPlayer.Content(MusicVideos)</visible>
@@ -269,8 +269,8 @@
 						<font>font30</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[Player.Title]</label>
-						<textcolor>orange</textcolor>
+						<label>$INFO[Player.Title]$INFO[VideoPlayer.Year,[COLOR=grey2] (,)[/COLOR]]</label>
+						<textcolor>blue</textcolor>
 						<scroll>true</scroll>
 					</control>
 					<control type="image" id="1">
@@ -378,7 +378,7 @@
 					<top>120</top>
 					<width>910</width>
 					<height>25</height>
-					<label>$INFO[VideoPlayer.NextTitle,[B]$LOCALIZE[19031]: [/B]]</label>
+					<label>$INFO[VideoPlayer.NextTitle,[B][COLOR=blue]$LOCALIZE[19031]: [/COLOR][/B]]</label>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12</font>

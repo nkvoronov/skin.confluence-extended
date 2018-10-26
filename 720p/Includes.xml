@@ -525,9 +525,9 @@
 		<value>DialogBack2.png</value>
 	</variable>
 	<variable name="PlayerTitle">
-		<value condition="Player.HasVideo">$INFO[VideoPlayer.Title]</value>
-		<value condition="Player.HasAudio + !String.EndsWith(MusicPlayer.Title,.pvr)">$INFO[MusicPlayer.Title]</value>
-		<value>$INFO[Player.Title]</value>
+		<value condition="Player.HasVideo + !String.IsEmpty(VideoPlayer.Title)">$INFO[VideoPlayer.Title]</value>
+		<value condition="Player.HasAudio + !String.EndsWith(MusicPlayer.Title,.pvr) + !String.IsEmpty(MusicPlayer.Title)">$INFO[MusicPlayer.Title]</value>
+		<value>$LOCALIZE[19055]</value>
 	</variable>
 	<variable name="typehackflagging">
 		<value condition="[String.Contains(ListItem.FilenameAndPath,bluray) | String.Contains(ListItem.FilenameAndPath,bdrip) | String.Contains(ListItem.FilenameAndPath,brrip) | String.Contains(ListItem.FilenameAndPath,bd25) | String.Contains(ListItem.FilenameAndPath,bd50)]">bluray</value>
@@ -548,6 +548,10 @@
 	<variable name="videocodec">
 		<value condition="[String.StartsWith(ListItem.VideoCodec,div) | String.IsEqual(ListItem.VideoCodec,dx50)]">divx</value>
 		<value>$INFO[ListItem.VideoCodec]</value>
+	</variable>
+	<variable name="musicplayercodec">
+		<value condition="String.IsEqual(MusicPlayer.Codec,mp3float)">flagging/audio/MP3.png</value>
+		<value>$INFO[MusicPlayer.Codec,flagging/audio/,.png]</value>
 	</variable>
 	<variable name="SeekLabel">
 		<value condition="Player.IsTempo + String.StartsWith(Player.PlaySpeed,0.)">$LOCALIZE[31045]</value>
@@ -940,11 +944,11 @@
 				<top>53r</top>
 				<width>700</width>
 				<height>20</height>
-				<label>$INFO[Player.Title] - ([COLOR=blue]$INFO[Player.Time] / $INFO[Player.Duration,][/COLOR])</label>
+				<label>[COLOR=blue]$VAR[PlayerTitle][/COLOR]$INFO[VideoPlayer.Year,[COLOR=grey2] (,)[/COLOR]] - ([COLOR=white]$INFO[Player.Time][/COLOR][COLOR=white]$INFO[Player.Duration, [COLOR=blue]/[/COLOR] ][/COLOR])</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey</textcolor>
+				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>!VideoPlayer.HasEpg | !VideoPlayer.Content(LiveTV)</visible>
 			</control>
@@ -953,11 +957,11 @@
 				<top>53r</top>
 				<width>700</width>
 				<height>20</height>
-				<label>$INFO[Player.Title] - ([COLOR=blue]$INFO[PVR.EpgEventElapsedTime] / $INFO[PVR.EpgEventDuration,][/COLOR])</label>
+				<label>[COLOR=blue]$VAR[PlayerTitle][/COLOR]$INFO[VideoPlayer.Year,[COLOR=grey2] (,)[/COLOR]] - ([COLOR=white]$INFO[PVR.EpgEventElapsedTime][/COLOR][COLOR=white]$INFO[PVR.EpgEventDuration, [COLOR=blue]/[/COLOR] ][/COLOR])</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey</textcolor>
+				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>VideoPlayer.HasEpg + VideoPlayer.Content(LiveTV)</visible>
 			</control>
@@ -970,9 +974,9 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey</textcolor>
+				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>Player.HasAudio</visible>
+				<visible>Player.HasAudio + !VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="label">
 				<left>85</left>
@@ -983,7 +987,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey</textcolor>
+				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>Player.HasVideo + VideoPlayer.Content(Movies)</visible>
 			</control>
@@ -992,11 +996,11 @@
 				<top>30r</top>
 				<width>700</width>
 				<height>20</height>
-				<label>$INFO[VideoPlayer.TVShowTitle]</label>
+				<label>$INFO[VideoPlayer.TVShowTitle] ($INFO[VideoPlayer.Season,$LOCALIZE[20373] , - ]$INFO[VideoPlayer.episode,$LOCALIZE[20359] ,])</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey</textcolor>
+				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>Player.HasVideo + VideoPlayer.Content(Episodes)</visible>
 			</control>
@@ -1005,11 +1009,11 @@
 				<top>30r</top>
 				<width>700</width>
 				<height>20</height>
-				<label>$INFO[VideoPlayer.Artist]</label>
+				<label>$INFO[VideoPlayer.Artist]$INFO[VideoPlayer.Album, - ]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey</textcolor>
+				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>Player.HasVideo + VideoPlayer.Content(MusicVideos)</visible>
 			</control>
@@ -1018,13 +1022,26 @@
 				<top>30r</top>
 				<width>700</width>
 				<height>20</height>
-				<label>$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.ChannelNumberLabel, - ([COLOR=blue],[/COLOR])]</label>
+				<label>$INFO[VideoPlayer.ChannelNumberLabel,([COLOR=blue],[/COLOR]) ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.EpisodeName, (,)]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey</textcolor>
+				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>Player.HasVideo + VideoPlayer.Content(LiveTV)</visible>
+			</control>
+			<control type="label">
+				<left>85</left>
+				<top>30r</top>
+				<width>700</width>
+				<height>20</height>
+				<label>$INFO[VideoPlayer.ChannelNumberLabel,([COLOR=blue],[/COLOR]) ]$INFO[VideoPlayer.ChannelName]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>grey2</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>Player.HasAudio + VideoPlayer.Content(LiveTV)</visible>
 			</control>
 		</control>
 	</include>
@@ -1038,7 +1055,7 @@
 				<width>500</width>
 				<height>20</height>
 				<font>font12</font>
-				<textcolor>grey</textcolor>
+				<textcolor>grey2</textcolor>
 				<scroll>false</scroll>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -1052,7 +1069,7 @@
 				<width>500</width>
 				<height>20</height>
 				<font>font12</font>
-				<textcolor>grey</textcolor>
+				<textcolor>grey2</textcolor>
 				<scroll>false</scroll>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -1098,7 +1115,7 @@
 			<top>43</top>
 			<height>30</height>
 			<width>325</width>
-			<label>$INFO[Player.Title]</label>
+			<label>$VAR[PlayerTitle]</label>
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font13_title</font>
@@ -1119,6 +1136,21 @@
 			<font>font12</font>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
+			<visible>!VideoPlayer.Content(LiveTV)</visible>
+		</control>
+		<control type="label">
+			<description>Album Label</description>
+			<left>160</left>
+			<top>70</top>
+			<height>30</height>
+			<width>325</width>
+			<label>$INFO[VideoPlayer.ChannelNumberLabel,([COLOR=blue],[/COLOR]) ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.EpisodeName, (,)]</label>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font12</font>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<visible>VideoPlayer.Content(LiveTV)</visible>
 		</control>
 		<control type="label">
 			<description>Time Label</description>
@@ -1742,6 +1774,7 @@
 	<include name="ExtendedInfoAutoComplete">
 		<control type="group" id="5000">
 			<animation effect="slide" start="0,-240" end="0,0" time="300" tween="quadratic" easing="out">VisibleChange</animation>
+			<visible>System.HasAddon(plugin.program.autocompletion)</visible>
 			<visible>!String.IsEmpty(Control.GetLabel(312).index(1)) + !Control.IsVisible(313)</visible>
 			<top>-120</top>
 			<left>0</left>

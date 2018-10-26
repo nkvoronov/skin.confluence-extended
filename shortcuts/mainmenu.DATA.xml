@@ -16,7 +16,7 @@
 	</shortcut>
 	<shortcut>
 		<label>31001</label>
-		<label2>31001</label2>
+		<label2>15016</label2>
 		<defaultID>games</defaultID>
 		<icon>DefaultFolder.png</icon>
 		<action>ActivateWindow(games)</action>
@@ -75,7 +75,7 @@
 		<label2>24001</label2>
 		<defaultID>addons</defaultID>
 		<icon>DefaultFolder.png</icon>
-		<action>ActivateWindow(programs,addons://sources/executable/,return)</action>
+		<action>ActivateWindow(Programs)</action>
 	</shortcut>
 	<shortcut>
 		<label>31958</label>
