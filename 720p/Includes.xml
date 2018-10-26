@@ -2137,7 +2137,7 @@
 				<label2>31002</label2>
 				<onclick>ActivateWindow(GameSettings)</onclick>
 				<visible>System.GetBool(gamesgeneral.enable)</visible>
-				<icon>special://skin/extras/settings/game.jpg</icon>
+				<icon>special://skin/extras/settings/games.jpg</icon>
 			</item>
 			<item id="4">
 				<label>14204</label>
