@@ -2567,7 +2567,7 @@
 		<value condition="!String.IsEmpty(Skin.String(MovieGenreIcons.name))">$INFO[Skin.String(MovieGenreIcons.name)]</value>
 		<value>$LOCALIZE[231]</value>
 	</variable>
-   <!-- MusicGenreIcons Name -->
+	<!-- MusicGenreIcons Name -->
 	<variable name="MusicGenreIconsName">
 		<value condition="!String.IsEmpty(Skin.String(MusicGenreIcons.name))">$INFO[Skin.String(MusicGenreIcons.name)]</value>
 		<value>$LOCALIZE[231]</value>

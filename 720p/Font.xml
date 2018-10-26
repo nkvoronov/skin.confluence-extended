@@ -345,7 +345,7 @@
 			<style>bold</style>
 		</font>
 	</fontset>
-	<fontset id="DefaultKrypton" idloc="88900">
+	<fontset id="DefaultLeia" idloc="88900">
 	<!-- Normal Fonts -->
 		<font>
 			<name>font10</name>
@@ -429,7 +429,7 @@
 			<size>80</size>
 		</font>
 	</fontset>
-	<fontset id="MassiveKrypton" idloc="88910">
+	<fontset id="MassiveLeia" idloc="88910">
 		<!-- Normal Fonts -->
 		<font>
 			<name>font10</name>
@@ -513,7 +513,7 @@
 			<size>80</size>
 		</font>
 	</fontset>
-	<fontset id="DefaultNoCapsKrypton" idloc="88920">
+	<fontset id="DefaultNoCapsLeia" idloc="88920">
 		<!-- Normal Fonts -->
 		<font>
 			<name>font10</name>

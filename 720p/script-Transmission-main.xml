@@ -24,8 +24,8 @@
 			<height>32</height>
 			<width>64</width>
 			<textoffsety>45</textoffsety>
-			<label>-</label>
-			<font>-</font>
+			<label></label>
+			<font></font>
 			<texturefocus>DialogCloseButton-focus.png</texturefocus>
 			<texturenofocus>DialogCloseButton.png</texturenofocus>
 			<visible>system.getbool(input.enablemouse)</visible>

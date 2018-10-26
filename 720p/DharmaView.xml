@@ -182,7 +182,7 @@
 						<height>480</height>
 						<aspectratio aligny="bottom">stretch</aspectratio>
 						<fadetime>IconCrossfadeTime</fadetime>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<texture background="true">$VAR[PosterThumb]</texture>
 						<bordertexture border="8">ThumbBorder.png</bordertexture>
 						<bordersize>8</bordersize>
 					</control>
@@ -204,7 +204,7 @@
 						<bordertexture border="8">ThumbBorder.png</bordertexture>
 						<bordersize>8</bordersize>
 						<fadetime>200</fadetime>
-						<texture background="true" flipy="true" >$INFO[ListItem.Icon]</texture>
+						<texture background="true" flipy="true" >$VAR[PosterThumb]</texture>
 						<colordiffuse>33FFFFFF</colordiffuse>
 						<visible>!Skin.HasSetting(NoFloorAll)</visible>
 					</control>
@@ -264,7 +264,7 @@
 						<height>480</height>
 						<aspectratio aligny="bottom">stretch</aspectratio>
 						<fadetime>IconCrossfadeTime</fadetime>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<texture background="true">$VAR[PosterThumb]</texture>
 						<bordertexture border="8">ThumbBorder.png</bordertexture>
 						<bordersize>8</bordersize>
 					</control>
@@ -286,7 +286,7 @@
 						<bordertexture border="8">ThumbBorder.png</bordertexture>
 						<bordersize>8</bordersize>
 						<fadetime>200</fadetime>
-						<texture background="true" flipy="true" >$INFO[ListItem.Icon]</texture>
+						<texture background="true" flipy="true" >$VAR[PosterThumb]</texture>
 						<colordiffuse>33FFFFFF</colordiffuse>
 						<visible>!Skin.HasSetting(NoFloorAll)</visible>
 					</control>
@@ -355,7 +355,7 @@
 					<height>210</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<texture background="true">$VAR[PosterThumb]</texture>
 					<bordertexture border="8">ThumbBorder.png</bordertexture>
 					<bordersize>8</bordersize>
 				</control>
@@ -422,7 +422,7 @@
 						<height>480</height>
 						<aspectratio aligny="bottom">stretch</aspectratio>
 						<fadetime>IconCrossfadeTime</fadetime>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<texture background="true">$VAR[PosterThumb]</texture>
 						<bordertexture border="8">ThumbBorder.png</bordertexture>
 						<bordersize>8</bordersize>
 					</control>
@@ -444,7 +444,7 @@
 						<bordertexture border="8">ThumbBorder.png</bordertexture>
 						<bordersize>8</bordersize>
 						<fadetime>200</fadetime>
-						<texture background="true" flipy="true" >$INFO[ListItem.Icon]</texture>
+						<texture background="true" flipy="true" >$VAR[PosterThumb]</texture>
 						<colordiffuse>33FFFFFF</colordiffuse>
 						<visible>!Skin.HasSetting(NoFloorAll)</visible>
 					</control>

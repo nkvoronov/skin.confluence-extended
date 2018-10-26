@@ -51,12 +51,12 @@
 			<animation effect="slide" time="200" condition="Window.Next(Home)">WindowClose</animation>
 			<visible>!Skin.HasSetting(NoFloor)</visible>
 		</control>
-		<!-- Music Info -->
+		<!-- Music and Radio Info -->
 		<control type="group">
 			<depth>DepthMenu</depth>
 			<left>0</left>
 			<top>60</top>
-			<visible>Player.HasAudio + !Skin.HasSetting(homepageMusicinfo) + !VideoPlayer.Content(LiveTV) + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
+			<visible>Player.HasAudio + !Skin.HasSetting(homepageMusicinfo) + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
 			<animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
@@ -77,76 +77,31 @@
 				<top>265</top>
 				<height>25</height>
 				<width>1000</width>
-				<label>$INFO[MusicPlayer.Artist,, - ]$INFO[MusicPlayer.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
+				<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, - ]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>white</textcolor>
+				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
+				<visible>!VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="label">
-				<description>Title label</description>
+				<description>Album Label</description>
 				<left>170</left>
-				<top>285</top>
-				<height>30</height>
-				<width>1000</width>
-				<label>$INFO[MusicPlayer.Title]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font13_title</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-			</control>
-			<control type="label">
-				<description>Time Label</description>
-				<left>170</left>
-				<top>310</top>
-				<height>30</height>
-				<width>300</width>
-				<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=blue] / [/COLOR]]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font12</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-			</control>
-		</control>
-		<!-- LiveTV Info -->
-		<control type="group">
-			<depth>DepthMenu</depth>
-			<left>0</left>
-			<top>50</top>
-			<visible>Player.HasMedia + VideoPlayer.Content(LiveTV) + !Skin.HasSetting(HomePageVideoInfo) + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
-			<animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
-			<include>VisibleFadeEffect</include>
-			<include>Window_OpenClose_Animation</include>
-			<control type="image">
-				<description>Cover image</description>
-				<left>20</left>
-				<top>45</top>
-				<width>120</width>
-				<height>300</height>
-				<aspectratio aligny="bottom">keep</aspectratio>
-				<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(thumb)]</texture>
-				<bordertexture border="8">ThumbBorder.png</bordertexture>
-				<bordersize>5</bordersize>
-			</control>
-			<control type="label">
-				<description>Channel label</description>
-				<left>160</left>
 				<top>265</top>
 				<height>25</height>
-				<width>660</width>
-				<label>$INFO[VideoPlayer.ChannelName]</label>
+				<width>1000</width>
+				<label>$INFO[VideoPlayer.ChannelNumberLabel,([COLOR=blue],[/COLOR]) ]$INFO[VideoPlayer.ChannelName]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>white</textcolor>
+				<textcolor>grey2</textcolor>
 				<shadowcolor>black</shadowcolor>
+				<visible>VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="label">
 				<description>Title label</description>
-				<left>160</left>
+				<left>170</left>
 				<top>285</top>
 				<height>30</height>
 				<width>1000</width>
@@ -154,12 +109,12 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13_title</font>
-				<textcolor>white</textcolor>
+				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
 				<description>Time Label</description>
-				<left>160</left>
+				<left>170</left>
 				<top>310</top>
 				<height>30</height>
 				<width>300</width>
@@ -171,7 +126,7 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 		</control>
-		<!-- LiveTV Info -->
+		<!-- LiveTV Info Rec -->
 		<control type="group">
 			<depth>DepthMenu</depth>
 			<left>490r</left>
@@ -268,16 +223,16 @@
 					<bordersize>4</bordersize>
 				</control>
 				<control type="image">
-					<left>360</left>
+					<left>365</left>
 					<top>5</top>
-					<width>30</width>
+					<width>25</width>
 					<height>25</height>
 					<aspectratio>keep</aspectratio>
 					<texture>PVR-IsRecording.png</texture>
 				</control>
 				<control type="label">
 					<description>Is Recording Header label</description>
-					<left>-50</left>
+					<left>-45</left>
 					<top>5</top>
 					<height>25</height>
 					<width>400</width>
@@ -322,12 +277,12 @@
 			<left>0</left>
 			<top>50</top>
 			<animation effect="slide" start="0,0" end="0,155" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
-			<visible>Player.HasVideo + !Skin.HasSetting(homepageVideoinfo) + !VideoPlayer.Content(LiveTV) + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
+			<visible>Player.HasVideo + !Skin.HasSetting(homepageVideoinfo) + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
 			<!-- Other Videos -->
 			<control type="group">
-				<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos)</visible>
+				<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(LiveTV) + !VideoPlayer.Content(MusicVideos)</visible>
 				<control type="image">
 					<description>Cover image</description>
 					<left>20</left>
@@ -349,7 +304,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -364,6 +319,75 @@
 					<font>font12</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
+				</control>
+			</control>
+			<!-- LiveTV Info -->
+			<control type="group">
+				<visible>VideoPlayer.Content(LiveTV)</visible>
+				<control type="image">
+					<description>Cover image</description>
+					<left>20</left>
+					<top>45</top>
+					<width>120</width>
+					<height>300</height>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(thumb)]</texture>
+					<bordertexture border="8">ThumbBorder.png</bordertexture>
+					<bordersize>5</bordersize>
+				</control>
+				<control type="label">
+					<description>Channel label</description>
+					<left>160</left>
+					<top>265</top>
+					<height>25</height>
+					<width>660</width>
+					<label>$INFO[VideoPlayer.ChannelNumberLabel,([COLOR=blue],[/COLOR]) ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.EpisodeName, (,)]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
+					<description>Title label</description>
+					<left>160</left>
+					<top>285</top>
+					<height>30</height>
+					<width>1000</width>
+					<label>$VAR[PlayerTitle]$INFO[VideoPlayer.Year,[COLOR=grey2] (,)[/COLOR]]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>blue</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="label">
+					<description>Time Label</description>
+					<left>160</left>
+					<top>310</top>
+					<height>30</height>
+					<width>300</width>
+					<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=blue] / [/COLOR]]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>!VideoPlayer.HasEpg</visible>
+				</control>
+				<control type="label">
+					<description>Time Label</description>
+					<left>160</left>
+					<top>310</top>
+					<height>30</height>
+					<width>300</width>
+					<label>$INFO[PVR.EpgEventElapsedTime]$INFO[PVR.EpgEventDuration,[COLOR=blue] / [/COLOR]]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>VideoPlayer.HasEpg</visible>
 				</control>
 			</control>
 			<!-- MusicVideos -->
@@ -386,11 +410,11 @@
 					<top>265</top>
 					<height>25</height>
 					<width>1000</width>
-					<label>$INFO[VideoPlayer.Artist]</label>
+					<label>$INFO[VideoPlayer.Artist]$INFO[VideoPlayer.Album, - ]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<textcolor>white</textcolor>
+					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -403,7 +427,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -444,7 +468,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<textcolor>white</textcolor>
+					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -453,11 +477,11 @@
 					<top>285</top>
 					<height>30</height>
 					<width>1000</width>
-					<label>$INFO[Player.Title]$INFO[VideoPlayer.Year,[COLOR=grey] (,)[/COLOR]]</label>
+					<label>$INFO[Player.Title]$INFO[VideoPlayer.Year,[COLOR=grey2] (,)[/COLOR]]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -498,7 +522,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<textcolor>white</textcolor>
+					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -507,11 +531,11 @@
 					<top>285</top>
 					<height>30</height>
 					<width>1000</width>
-					<label>$INFO[Player.Title]</label>
+					<label>$INFO[Player.Title]$INFO[VideoPlayer.Year,[COLOR=grey2] (,)[/COLOR]]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -538,10 +562,10 @@
 			<top>-20</top>
 			<width>1</width>
 			<height>1</height>
-			<label>-</label>
-			<font>-</font>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
+			<label></label>
+			<font></font>
+			<texturefocus></texturefocus>
+			<texturenofocus></texturenofocus>
 			<onleft>9000</onleft>
 			<onright>9000</onright>
 			<onup>20</onup>
@@ -632,7 +656,7 @@
 						<top>2</top>
 						<width>30</width>
 						<height>30</height>
-						<label>-</label>
+						<label></label>
 						<texturefocus>OSDPrevTrackFO.png</texturefocus>
 						<texturenofocus>OSDPrevTrackNF.png</texturenofocus>
 						<onleft>608</onleft>
@@ -647,7 +671,7 @@
 						<top>2</top>
 						<width>30</width>
 						<height>30</height>
-						<label>-</label>
+						<label></label>
 						<texturefocus>OSDRewindFO.png</texturefocus>
 						<texturenofocus>OSDRewindNF.png</texturenofocus>
 						<onleft>601</onleft>
@@ -662,7 +686,7 @@
 						<top>2</top>
 						<width>30</width>
 						<height>30</height>
-						<label>-</label>
+						<label></label>
 						<texturefocus>OSDPauseFO.png</texturefocus>
 						<texturenofocus>OSDPauseNF.png</texturenofocus>
 						<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
@@ -680,7 +704,7 @@
 						<top>2</top>
 						<width>30</width>
 						<height>30</height>
-						<label>-</label>
+						<label></label>
 						<texturefocus>OSDStopFO.png</texturefocus>
 						<texturenofocus>OSDStopNF.png</texturenofocus>
 						<onleft>603</onleft>
@@ -696,7 +720,7 @@
 						<top>2</top>
 						<width>30</width>
 						<height>30</height>
-						<label>-</label>
+						<label></label>
 						<texturefocus>OSDForwardFO.png</texturefocus>
 						<texturenofocus>OSDForwardNF.png</texturenofocus>
 						<onleft>604</onleft>
@@ -711,7 +735,7 @@
 						<top>2</top>
 						<width>30</width>
 						<height>30</height>
-						<label>-</label>
+						<label></label>
 						<texturefocus>OSDNextTrackFO.png</texturefocus>
 						<texturenofocus>OSDNextTrackNF.png</texturenofocus>
 						<onleft>605</onleft>
@@ -729,7 +753,7 @@
 						<top>2</top>
 						<width>30</width>
 						<height>30</height>
-						<label>-</label>
+						<label></label>
 						<texturefocus>OSDChannelUPFO.png</texturefocus>
 						<texturenofocus>OSDChannelUPNF.png</texturenofocus>
 						<onleft>608</onleft>
@@ -744,7 +768,7 @@
 						<top>2</top>
 						<width>30</width>
 						<height>30</height>
-						<label>-</label>
+						<label></label>
 						<texturefocus>OSDChannelDownFO.png</texturefocus>
 						<texturenofocus>OSDChannelDownNF.png</texturenofocus>
 						<onleft>601</onleft>
@@ -759,7 +783,7 @@
 						<top>2</top>
 						<width>30</width>
 						<height>30</height>
-						<label>-</label>
+						<label></label>
 						<texturefocus>OSDStopFO.png</texturefocus>
 						<texturenofocus>OSDStopNF.png</texturenofocus>
 						<onleft>602</onleft>
@@ -775,7 +799,7 @@
 						<top>2</top>
 						<width>30</width>
 						<height>30</height>
-						<label>-</label>
+						<label></label>
 						<texturefocus>OSDPauseFO.png</texturefocus>
 						<texturenofocus>OSDPauseNF.png</texturenofocus>
 						<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
@@ -795,7 +819,7 @@
 						<top>2</top>
 						<width>30</width>
 						<height>30</height>
-						<label>-</label>
+						<label></label>
 						<texturefocus>OSDRadioRDSFO.png</texturefocus>
 						<texturenofocus>OSDRadioRDSNF.png</texturenofocus>
 						<onleft>604</onleft>
@@ -811,7 +835,7 @@
 						<top>2</top>
 						<width>30</width>
 						<height>30</height>
-						<label>-</label>
+						<label></label>
 						<texturefocus>OSDRecordOffFO.png</texturefocus>
 						<texturenofocus>OSDRecordOffNF.png</texturenofocus>
 						<onleft>605</onleft>
@@ -985,7 +1009,7 @@
 				<width>45</width>
 				<height>45</height>
 				<label>31003</label>
-				<font>-</font>
+				<font></font>
 				<onclick>$VAR[PowerButtonCommand]</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
@@ -1013,7 +1037,7 @@
 				<width>45</width>
 				<height>45</height>
 				<label>1036</label>
-				<font>-</font>
+				<font></font>
 				<onclick>$VAR[FavoritesButtonCommand]</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
@@ -1041,7 +1065,7 @@
 				<width>45</width>
 				<height>45</height>
 				<label>1036</label>
-				<font>-</font>
+				<font></font>
 				<onclick>$VAR[PowerButtonCommand]</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
