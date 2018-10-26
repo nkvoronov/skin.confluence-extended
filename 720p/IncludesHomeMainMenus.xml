@@ -862,70 +862,75 @@
 		<onload>Skin.SetString(HomeItem.2.Sub,SubMenu01)</onload>
 		<onload>Skin.SetString(HomeItem.2.Type,pictures)</onload>
 		<onload>Skin.SetString(HomeItem.2.DBackground,special://skin/extras/backgrounds/pictures.jpg)</onload>
+		<!-- Games -->
+		<onload>Skin.SetString(HomeItem.3.Label,$LOCALIZE[31001])</onload>
+		<onload>Skin.SetString(HomeItem.3.Path,ActivateWindow(games))</onload>
+		<onload>Skin.SetString(HomeItem.3.Type,games)</onload>
+		<onload>Skin.SetString(HomeItem.3.DBackground,special://skin/extras/backgrounds/games.jpg)</onload>
 		<!-- Radio -->
-		<onload>Skin.SetString(HomeItem.3.Label,$LOCALIZE[31960])</onload>
-		<onload>Skin.SetString(HomeItem.3.Path,ActivateWindow(radiochannels))</onload>
-		<onload>Skin.SetString(HomeItem.3.Sub,SubMenu02)</onload>
-		<onload>Skin.SetString(HomeItem.3.Type,radio)</onload>
-		<onload>Skin.SetString(HomeItem.3.DBackground,special://skin/extras/backgrounds/radio.jpg)</onload>
+		<onload>Skin.SetString(HomeItem.4.Label,$LOCALIZE[31960])</onload>
+		<onload>Skin.SetString(HomeItem.4.Path,ActivateWindow(radiochannels))</onload>
+		<onload>Skin.SetString(HomeItem.4.Sub,SubMenu02)</onload>
+		<onload>Skin.SetString(HomeItem.4.Type,radio)</onload>
+		<onload>Skin.SetString(HomeItem.4.DBackground,special://skin/extras/backgrounds/radio.jpg)</onload>
 		<!-- TV -->
-		<onload>Skin.SetString(HomeItem.4.Label,$LOCALIZE[31952])</onload>
-		<onload>Skin.SetString(HomeItem.4.Path,ActivateWindow(tvchannels))</onload>
-		<onload>Skin.SetString(HomeItem.4.Sub,SubMenu03)</onload>
-		<onload>Skin.SetString(HomeItem.4.Type,livetv)</onload>
-		<onload>Skin.SetString(HomeItem.4.DBackground,special://skin/extras/backgrounds/livetv.jpg)</onload>
+		<onload>Skin.SetString(HomeItem.5.Label,$LOCALIZE[31952])</onload>
+		<onload>Skin.SetString(HomeItem.5.Path,ActivateWindow(tvchannels))</onload>
+		<onload>Skin.SetString(HomeItem.5.Sub,SubMenu03)</onload>
+		<onload>Skin.SetString(HomeItem.5.Type,livetv)</onload>
+		<onload>Skin.SetString(HomeItem.5.DBackground,special://skin/extras/backgrounds/livetv.jpg)</onload>
 		<!-- Videos -->
-		<onload>Skin.SetString(HomeItem.5.Label,$LOCALIZE[31953])</onload>
-		<onload>Skin.SetString(HomeItem.5.Path,ActivateWindow(videos,library://video/,return))</onload>
-		<onload>Skin.SetString(HomeItem.5.Sub,SubMenu04)</onload>
-		<onload>Skin.SetString(HomeItem.5.Type,video)</onload>
-		<onload>Skin.SetString(HomeItem.5.DBackground,special://skin/extras/backgrounds/video.jpg)</onload>
+		<onload>Skin.SetString(HomeItem.6.Label,$LOCALIZE[31953])</onload>
+		<onload>Skin.SetString(HomeItem.6.Path,ActivateWindow(videos,library://video/,return))</onload>
+		<onload>Skin.SetString(HomeItem.6.Sub,SubMenu04)</onload>
+		<onload>Skin.SetString(HomeItem.6.Type,video)</onload>
+		<onload>Skin.SetString(HomeItem.6.DBackground,special://skin/extras/backgrounds/video.jpg)</onload>
 		<!-- Movies -->
-		<onload>Skin.SetString(HomeItem.6.Label,$LOCALIZE[31954])</onload>
-		<onload>Skin.SetString(HomeItem.6.Path,ActivateWindow(videos,videodb://movies/titles/,return))</onload>
-		<onload>Skin.SetString(HomeItem.6.Sub,SubMenu05)</onload>
-		<onload>Skin.SetString(HomeItem.6.Widget,RecentMovies)</onload>
-		<onload>Skin.SetString(HomeItem.6.Type,movies)</onload>
-		<onload>Skin.SetString(HomeItem.6.DBackground,special://skin/extras/backgrounds/movies.jpg)</onload>
+		<onload>Skin.SetString(HomeItem.7.Label,$LOCALIZE[31954])</onload>
+		<onload>Skin.SetString(HomeItem.7.Path,ActivateWindow(videos,videodb://movies/titles/,return))</onload>
+		<onload>Skin.SetString(HomeItem.7.Sub,SubMenu05)</onload>
+		<onload>Skin.SetString(HomeItem.7.Widget,RecentMovies)</onload>
+		<onload>Skin.SetString(HomeItem.7.Type,movies)</onload>
+		<onload>Skin.SetString(HomeItem.7.DBackground,special://skin/extras/backgrounds/movies.jpg)</onload>
 		<!-- TVShows -->
-		<onload>Skin.SetString(HomeItem.7.Label,$LOCALIZE[31955])</onload>
-		<onload>Skin.SetString(HomeItem.7.Path,ActivateWindow(videos,videodb://tvshows/titles/,return))</onload>
-		<onload>Skin.SetString(HomeItem.7.Sub,SubMenu06)</onload>
-		<onload>Skin.SetString(HomeItem.7.Widget,RecentEpisodes)</onload>
-		<onload>Skin.SetString(HomeItem.7.Type,tvshows)</onload>
-		<onload>Skin.SetString(HomeItem.7.DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onload>
+		<onload>Skin.SetString(HomeItem.8.Label,$LOCALIZE[31955])</onload>
+		<onload>Skin.SetString(HomeItem.8.Path,ActivateWindow(videos,videodb://tvshows/titles/,return))</onload>
+		<onload>Skin.SetString(HomeItem.8.Sub,SubMenu06)</onload>
+		<onload>Skin.SetString(HomeItem.8.Widget,RecentEpisodes)</onload>
+		<onload>Skin.SetString(HomeItem.8.Type,tvshows)</onload>
+		<onload>Skin.SetString(HomeItem.8.DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onload>
 		<!-- MusicVideo -->
-		<onload>Skin.SetString(HomeItem.8.Label,$LOCALIZE[31961])</onload>
-		<onload>Skin.SetString(HomeItem.8.Path,ActivateWindow(videos,videodb://musicvideos/,return))</onload>
-		<onload>Skin.SetString(HomeItem.8.Sub,SubMenu07)</onload>
-		<onload>Skin.SetString(HomeItem.8.Widget,RecentMusicVideo)</onload>
-		<onload>Skin.SetString(HomeItem.8.Type,musicvideos)</onload>
-		<onload>Skin.SetString(HomeItem.8.DBackground,special://skin/extras/backgrounds/musicvideos.jpg)</onload>
+		<onload>Skin.SetString(HomeItem.9.Label,$LOCALIZE[31962])</onload>
+		<onload>Skin.SetString(HomeItem.9.Path,ActivateWindow(videos,videodb://musicvideos/,return))</onload>
+		<onload>Skin.SetString(HomeItem.9.Sub,SubMenu07)</onload>
+		<onload>Skin.SetString(HomeItem.9.Widget,RecentMusicVideo)</onload>
+		<onload>Skin.SetString(HomeItem.9.Type,musicvideos)</onload>
+		<onload>Skin.SetString(HomeItem.9.DBackground,special://skin/extras/backgrounds/musicvideos.jpg)</onload>
 		<!-- Musics -->
-		<onload>Skin.SetString(HomeItem.9.Label,$LOCALIZE[31956])</onload>
-		<onload>Skin.SetString(HomeItem.9.Path,ActivateWindow(music))</onload>
-		<onload>Skin.SetString(HomeItem.9.Sub,SubMenu08)</onload>
-		<onload>Skin.SetString(HomeItem.9.Widget,RecentAlbums)</onload>
-		<onload>Skin.SetString(HomeItem.9.Type,music)</onload>
-		<onload>Skin.SetString(HomeItem.9.DBackground,special://skin/extras/backgrounds/music.jpg)</onload>
+		<onload>Skin.SetString(HomeItem.10.Label,$LOCALIZE[31956])</onload>
+		<onload>Skin.SetString(HomeItem.10.Path,ActivateWindow(music))</onload>
+		<onload>Skin.SetString(HomeItem.10.Sub,SubMenu08)</onload>
+		<onload>Skin.SetString(HomeItem.10.Widget,RecentAlbums)</onload>
+		<onload>Skin.SetString(HomeItem.10.Type,music)</onload>
+		<onload>Skin.SetString(HomeItem.10.DBackground,special://skin/extras/backgrounds/music.jpg)</onload>
 		<!-- Programs -->
-		<onload>Skin.SetString(HomeItem.10.Label,$LOCALIZE[31957])</onload>
-		<onload condition="!System.Platform.Android">Skin.SetString(HomeItem.10.Path,ActivateWindow(programs,addons://sources/executable/,return))</onload>
-		<onload condition="System.Platform.Android">Skin.SetString(HomeItem.10.Path,ActivateWindow(programs,androidapp://sources/apps/,return))</onload>
-		<onload>Skin.SetString(HomeItem.10.Type,addons)</onload>
-		<onload>Skin.SetString(HomeItem.10.DBackground,special://skin/extras/backgrounds/addons.jpg)</onload>
+		<onload>Skin.SetString(HomeItem.11.Label,$LOCALIZE[31957])</onload>
+		<onload condition="!System.Platform.Android">Skin.SetString(HomeItem.11.Path,ActivateWindow(programs,addons://sources/executable/,return))</onload>
+		<onload condition="System.Platform.Android">Skin.SetString(HomeItem.11.Path,ActivateWindow(programs,androidapp://sources/apps/,return))</onload>
+		<onload>Skin.SetString(HomeItem.11.Type,addons)</onload>
+		<onload>Skin.SetString(HomeItem.11.DBackground,special://skin/extras/backgrounds/addons.jpg)</onload>
 		<!-- PlayDisc -->
-		<onload>Skin.SetString(HomeItem.11.Label,$LOCALIZE[31958])</onload>
-		<onload>Skin.SetString(HomeItem.11.Path,PlayDVD)</onload>
-		<onload>Skin.SetString(HomeItem.11.Sub,SubMenu09)</onload>
-		<onload>Skin.SetString(HomeItem.11.Type,dvd)</onload>
-		<onload>Skin.SetString(HomeItem.11.DBackground,special://skin/extras/backgrounds/dvd.jpg)</onload>
+		<onload>Skin.SetString(HomeItem.12.Label,$LOCALIZE[31958])</onload>
+		<onload>Skin.SetString(HomeItem.12.Path,PlayDVD)</onload>
+		<onload>Skin.SetString(HomeItem.12.Sub,SubMenu09)</onload>
+		<onload>Skin.SetString(HomeItem.12.Type,dvd)</onload>
+		<onload>Skin.SetString(HomeItem.12.DBackground,special://skin/extras/backgrounds/dvd.jpg)</onload>
 		<!-- Settings -->
-		<onload>Skin.SetString(HomeItem.12.Label,$LOCALIZE[31959])</onload>
-		<onload>Skin.SetString(HomeItem.12.Path,ActivateWindow(settings))</onload>
-		<onload>Skin.SetString(HomeItem.12.Sub,SubMenu10)</onload>
-		<onload>Skin.SetString(HomeItem.12.Type,settings)</onload>
-		<onload>Skin.SetString(HomeItem.12.DBackground,special://skin/extras/backgrounds/settings.jpg)</onload>
+		<onload>Skin.SetString(HomeItem.13.Label,$LOCALIZE[31959])</onload>
+		<onload>Skin.SetString(HomeItem.13.Path,ActivateWindow(settings))</onload>
+		<onload>Skin.SetString(HomeItem.13.Sub,SubMenu10)</onload>
+		<onload>Skin.SetString(HomeItem.13.Type,settings)</onload>
+		<onload>Skin.SetString(HomeItem.13.DBackground,special://skin/extras/backgrounds/settings.jpg)</onload>
 	</include>
 	<!-- Rest MainMenu Items -->
 	<include name="ResetMainMenuItems">
@@ -949,111 +954,117 @@
 		<onclick>Skin.SetString(HomeItem.2.DBackground,special://skin/extras/backgrounds/pictures.jpg)</onclick>
 		<onclick>Skin.Reset(HomeItem.2.CBackground)</onclick>
 		<onclick>Skin.Reset(HomeItem.2.Playlist)</onclick>
-		<!-- Radio -->
-		<onclick>Skin.SetString(HomeItem.3.Label,$LOCALIZE[31960])</onclick>
-		<onclick>Skin.SetString(HomeItem.3.Path,ActivateWindow(radiochannels))</onclick>
-		<onclick>Skin.SetString(HomeItem.3.Sub,SubMenu02)</onclick>
+		<!-- Games -->
+		<onclick>Skin.SetString(HomeItem.3.Label,$LOCALIZE[31951])</onclick>
+		<onclick>Skin.SetString(HomeItem.3.Path,ActivateWindow(pictures))</onclick>
+		<onclick>Skin.Reset(HomeItem.3.Sub)</onclick>
 		<onclick>Skin.Reset(HomeItem.3.Addon)</onclick>
 		<onclick>Skin.Reset(HomeItem.3.Widget)</onclick>
-		<onclick>Skin.SetString(HomeItem.3.Type,radio)</onclick>
-		<onclick>Skin.SetString(HomeItem.3.DBackground,special://skin/extras/backgrounds/radio.jpg)</onclick>
+		<onclick>Skin.SetString(HomeItem.3.Type,games)</onclick>
+		<onclick>Skin.SetString(HomeItem.3.DBackground,special://skin/extras/backgrounds/games.jpg)</onclick>
 		<onclick>Skin.Reset(HomeItem.3.CBackground)</onclick>
 		<onclick>Skin.Reset(HomeItem.3.Playlist)</onclick>
-		<!-- TV -->
-		<onclick>Skin.SetString(HomeItem.4.Label,$LOCALIZE[31952])</onclick>
-		<onclick>Skin.SetString(HomeItem.4.Path,ActivateWindow(tvchannels))</onclick>
-		<onclick>Skin.SetString(HomeItem.4.Sub,SubMenu03)</onclick>
+		<!-- Radio -->
+		<onclick>Skin.SetString(HomeItem.4.Label,$LOCALIZE[31960])</onclick>
+		<onclick>Skin.SetString(HomeItem.4.Path,ActivateWindow(radiochannels))</onclick>
+		<onclick>Skin.SetString(HomeItem.4.Sub,SubMenu02)</onclick>
 		<onclick>Skin.Reset(HomeItem.4.Addon)</onclick>
 		<onclick>Skin.Reset(HomeItem.4.Widget)</onclick>
-		<onclick>Skin.SetString(HomeItem.4.Type,livetv)</onclick>
-		<onclick>Skin.SetString(HomeItem.4.DBackground,special://skin/extras/backgrounds/livetv.jpg)</onclick>
+		<onclick>Skin.SetString(HomeItem.4.Type,radio)</onclick>
+		<onclick>Skin.SetString(HomeItem.4.DBackground,special://skin/extras/backgrounds/radio.jpg)</onclick>
 		<onclick>Skin.Reset(HomeItem.4.CBackground)</onclick>
 		<onclick>Skin.Reset(HomeItem.4.Playlist)</onclick>
-		<!-- Videos -->
-		<onclick>Skin.SetString(HomeItem.5.Label,$LOCALIZE[31953])</onclick>
-		<onclick>Skin.SetString(HomeItem.5.Path,ActivateWindow(videos,library://video/,return))</onclick>
-		<onclick>Skin.SetString(HomeItem.5.Sub,SubMenu04)</onclick>
+		<!-- TV -->
+		<onclick>Skin.SetString(HomeItem.5.Label,$LOCALIZE[31952])</onclick>
+		<onclick>Skin.SetString(HomeItem.5.Path,ActivateWindow(tvchannels))</onclick>
+		<onclick>Skin.SetString(HomeItem.5.Sub,SubMenu03)</onclick>
 		<onclick>Skin.Reset(HomeItem.5.Addon)</onclick>
 		<onclick>Skin.Reset(HomeItem.5.Widget)</onclick>
-		<onclick>Skin.SetString(HomeItem.5.Type,video)</onclick>
-		<onclick>Skin.SetString(HomeItem.5.DBackground,special://skin/extras/backgrounds/video.jpg)</onclick>
+		<onclick>Skin.SetString(HomeItem.5.Type,livetv)</onclick>
+		<onclick>Skin.SetString(HomeItem.5.DBackground,special://skin/extras/backgrounds/livetv.jpg)</onclick>
 		<onclick>Skin.Reset(HomeItem.5.CBackground)</onclick>
 		<onclick>Skin.Reset(HomeItem.5.Playlist)</onclick>
-		<!-- Movies -->
-		<onclick>Skin.SetString(HomeItem.6.Label,$LOCALIZE[31954])</onclick>
-		<onclick>Skin.SetString(HomeItem.6.Path,ActivateWindow(videos,videodb://movies/titles/,return))</onclick>
-		<onclick>Skin.SetString(HomeItem.6.Sub,SubMenu05)</onclick>
+		<!-- Videos -->
+		<onclick>Skin.SetString(HomeItem.6.Label,$LOCALIZE[31953])</onclick>
+		<onclick>Skin.SetString(HomeItem.6.Path,ActivateWindow(videos,library://video/,return))</onclick>
+		<onclick>Skin.SetString(HomeItem.6.Sub,SubMenu04)</onclick>
 		<onclick>Skin.Reset(HomeItem.6.Addon)</onclick>
-		<onclick>Skin.SetString(HomeItem.6.Widget,RecentMovies)</onclick>
-		<onclick>Skin.SetString(HomeItem.6.Type,movies)</onclick>
-		<onclick>Skin.SetString(HomeItem.6.DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>
+		<onclick>Skin.Reset(HomeItem.6.Widget)</onclick>
+		<onclick>Skin.SetString(HomeItem.6.Type,video)</onclick>
+		<onclick>Skin.SetString(HomeItem.6.DBackground,special://skin/extras/backgrounds/video.jpg)</onclick>
 		<onclick>Skin.Reset(HomeItem.6.CBackground)</onclick>
 		<onclick>Skin.Reset(HomeItem.6.Playlist)</onclick>
-		<!-- TVShows -->
-		<onclick>Skin.SetString(HomeItem.7.Label,$LOCALIZE[31955])</onclick>
-		<onclick>Skin.SetString(HomeItem.7.Path,ActivateWindow(videos,videodb://tvshows/titles/,return))</onclick>
-		<onclick>Skin.SetString(HomeItem.7.Sub,SubMenu06)</onclick>
+		<!-- Movies -->
+		<onclick>Skin.SetString(HomeItem.7.Label,$LOCALIZE[31954])</onclick>
+		<onclick>Skin.SetString(HomeItem.7.Path,ActivateWindow(videos,videodb://movies/titles/,return))</onclick>
+		<onclick>Skin.SetString(HomeItem.7.Sub,SubMenu05)</onclick>
 		<onclick>Skin.Reset(HomeItem.7.Addon)</onclick>
-		<onclick>Skin.SetString(HomeItem.7.Widget,RecentEpisodes)</onclick>
-		<onclick>Skin.SetString(HomeItem.7.Type,tvshows)</onclick>
-		<onclick>Skin.SetString(HomeItem.7.DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>
+		<onclick>Skin.SetString(HomeItem.7.Widget,RecentMovies)</onclick>
+		<onclick>Skin.SetString(HomeItem.7.Type,movies)</onclick>
+		<onclick>Skin.SetString(HomeItem.7.DBackground,special://skin/extras/backgrounds/movies.jpg)</onclick>
 		<onclick>Skin.Reset(HomeItem.7.CBackground)</onclick>
 		<onclick>Skin.Reset(HomeItem.7.Playlist)</onclick>
-		<!-- MusicVideo -->
-		<onclick>Skin.SetString(HomeItem.8.Label,$LOCALIZE[31961])</onclick>
-		<onclick>Skin.SetString(HomeItem.8.Path,ActivateWindow(videos,videodb://musicvideos/,return))</onclick>
-		<onclick>Skin.SetString(HomeItem.8.Sub,SubMenu07)</onclick>
+		<!-- TVShows -->
+		<onclick>Skin.SetString(HomeItem.8.Label,$LOCALIZE[31955])</onclick>
+		<onclick>Skin.SetString(HomeItem.8.Path,ActivateWindow(videos,videodb://tvshows/titles/,return))</onclick>
+		<onclick>Skin.SetString(HomeItem.8.Sub,SubMenu06)</onclick>
 		<onclick>Skin.Reset(HomeItem.8.Addon)</onclick>
-		<onclick>Skin.SetString(HomeItem.8.Widget,RecentMusicVideo)</onclick>
-		<onclick>Skin.SetString(HomeItem.8.Type,musicvideos)</onclick>
-		<onclick>Skin.SetString(HomeItem.8.DBackground,special://skin/extras/backgrounds/musicvideos.jpg)</onclick>
+		<onclick>Skin.SetString(HomeItem.8.Widget,RecentEpisodes)</onclick>
+		<onclick>Skin.SetString(HomeItem.8.Type,tvshows)</onclick>
+		<onclick>Skin.SetString(HomeItem.8.DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onclick>
 		<onclick>Skin.Reset(HomeItem.8.CBackground)</onclick>
 		<onclick>Skin.Reset(HomeItem.8.Playlist)</onclick>
-		<!-- Musics -->
-		<onclick>Skin.SetString(HomeItem.9.Label,$LOCALIZE[31956])</onclick>
-		<onclick>Skin.SetString(HomeItem.9.Path,ActivateWindow(music))</onclick>
-		<onclick>Skin.SetString(HomeItem.9.Sub,SubMenu08)</onclick>
+		<!-- MusicVideo -->
+		<onclick>Skin.SetString(HomeItem.9.Label,$LOCALIZE[31962])</onclick>
+		<onclick>Skin.SetString(HomeItem.9.Path,ActivateWindow(videos,videodb://musicvideos/,return))</onclick>
+		<onclick>Skin.SetString(HomeItem.9.Sub,SubMenu07)</onclick>
 		<onclick>Skin.Reset(HomeItem.9.Addon)</onclick>
-		<onclick>Skin.SetString(HomeItem.9.Widget,RecentAlbums)</onclick>
-		<onclick>Skin.SetString(HomeItem.9.Type,music)</onclick>
-		<onclick>Skin.SetString(HomeItem.9.DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>
+		<onclick>Skin.SetString(HomeItem.9.Widget,RecentMusicVideo)</onclick>
+		<onclick>Skin.SetString(HomeItem.9.Type,musicvideos)</onclick>
+		<onclick>Skin.SetString(HomeItem.9.DBackground,special://skin/extras/backgrounds/musicvideos.jpg)</onclick>
 		<onclick>Skin.Reset(HomeItem.9.CBackground)</onclick>
 		<onclick>Skin.Reset(HomeItem.9.Playlist)</onclick>
-		<!-- Programs -->
-		<onclick>Skin.SetString(HomeItem.10.Label,$LOCALIZE[31957])</onclick>
-		<onclick condition="!System.Platform.Android">Skin.SetString(HomeItem.10.Path,ActivateWindow(programs,addons://sources/executable/,return))</onclick>
-		<onclick condition="System.Platform.Android">Skin.SetString(HomeItem.10.Path,ActivateWindow(programs,androidapp://sources/apps/,return))</onclick>
-		<onclick>Skin.Reset(HomeItem.10.Sub)</onclick>
+		<!-- Musics -->
+		<onclick>Skin.SetString(HomeItem.10.Label,$LOCALIZE[31956])</onclick>
+		<onclick>Skin.SetString(HomeItem.10.Path,ActivateWindow(music))</onclick>
+		<onclick>Skin.SetString(HomeItem.10.Sub,SubMenu08)</onclick>
 		<onclick>Skin.Reset(HomeItem.10.Addon)</onclick>
-		<onclick>Skin.Reset(HomeItem.10.Widget)</onclick>
-		<onclick>Skin.SetString(HomeItem.10.Type,addons)</onclick>
-		<onclick>Skin.SetString(HomeItem.10.DBackground,special://skin/extras/backgrounds/addons.jpg)</onclick>
+		<onclick>Skin.SetString(HomeItem.10.Widget,RecentAlbums)</onclick>
+		<onclick>Skin.SetString(HomeItem.10.Type,music)</onclick>
+		<onclick>Skin.SetString(HomeItem.10.DBackground,special://skin/extras/backgrounds/music.jpg)</onclick>
 		<onclick>Skin.Reset(HomeItem.10.CBackground)</onclick>
 		<onclick>Skin.Reset(HomeItem.10.Playlist)</onclick>
-		<!-- PlayDisc -->
-		<onclick>Skin.SetString(HomeItem.11.Label,$LOCALIZE[31958])</onclick>
-		<onclick>Skin.SetString(HomeItem.11.Path,PlayDVD)</onclick>
-		<onclick>Skin.SetString(HomeItem.11.Sub,SubMenu09)</onclick>
+		<!-- Programs -->
+		<onclick>Skin.SetString(HomeItem.11.Label,$LOCALIZE[31957])</onclick>
+		<onclick condition="!System.Platform.Android">Skin.SetString(HomeItem.11.Path,ActivateWindow(programs,addons://sources/executable/,return))</onclick>
+		<onclick condition="System.Platform.Android">Skin.SetString(HomeItem.11.Path,ActivateWindow(programs,androidapp://sources/apps/,return))</onclick>
+		<onclick>Skin.Reset(HomeItem.11.Sub)</onclick>
 		<onclick>Skin.Reset(HomeItem.11.Addon)</onclick>
 		<onclick>Skin.Reset(HomeItem.11.Widget)</onclick>
-		<onclick>Skin.SetString(HomeItem.11.Type,dvd)</onclick>
-		<onclick>Skin.SetString(HomeItem.11.DBackground,special://skin/extras/backgrounds/dvd.jpg)</onclick>
+		<onclick>Skin.SetString(HomeItem.11.Type,addons)</onclick>
+		<onclick>Skin.SetString(HomeItem.11.DBackground,special://skin/extras/backgrounds/addons.jpg)</onclick>
 		<onclick>Skin.Reset(HomeItem.11.CBackground)</onclick>
 		<onclick>Skin.Reset(HomeItem.11.Playlist)</onclick>
-		<!-- Settings -->
-		<onclick>Skin.SetString(HomeItem.12.Label,$LOCALIZE[31959])</onclick>
-		<onclick>Skin.SetString(HomeItem.12.Path,ActivateWindow(settings))</onclick>
-		<onclick>Skin.SetString(HomeItem.12.Sub,SubMenu10)</onclick>
+		<!-- PlayDisc -->
+		<onclick>Skin.SetString(HomeItem.12.Label,$LOCALIZE[31958])</onclick>
+		<onclick>Skin.SetString(HomeItem.12.Path,PlayDVD)</onclick>
+		<onclick>Skin.SetString(HomeItem.12.Sub,SubMenu09)</onclick>
 		<onclick>Skin.Reset(HomeItem.12.Addon)</onclick>
 		<onclick>Skin.Reset(HomeItem.12.Widget)</onclick>
-		<onclick>Skin.SetString(HomeItem.12.Type,settings)</onclick>
-		<onclick>Skin.SetString(HomeItem.12.DBackground,special://skin/extras/backgrounds/settings.jpg)</onclick>
+		<onclick>Skin.SetString(HomeItem.12.Type,dvd)</onclick>
+		<onclick>Skin.SetString(HomeItem.12.DBackground,special://skin/extras/backgrounds/dvd.jpg)</onclick>
 		<onclick>Skin.Reset(HomeItem.12.CBackground)</onclick>
 		<onclick>Skin.Reset(HomeItem.12.Playlist)</onclick>
-		<!-- Menu 13 -->
-		<include content="ResetMainMenuItem">
-			<param name="id" value="13" />
-		</include>
+		<!-- Settings -->
+		<onclick>Skin.SetString(HomeItem.13.Label,$LOCALIZE[31959])</onclick>
+		<onclick>Skin.SetString(HomeItem.13.Path,ActivateWindow(settings))</onclick>
+		<onclick>Skin.SetString(HomeItem.13.Sub,SubMenu10)</onclick>
+		<onclick>Skin.Reset(HomeItem.13.Addon)</onclick>
+		<onclick>Skin.Reset(HomeItem.13.Widget)</onclick>
+		<onclick>Skin.SetString(HomeItem.13.Type,settings)</onclick>
+		<onclick>Skin.SetString(HomeItem.13.DBackground,special://skin/extras/backgrounds/settings.jpg)</onclick>
+		<onclick>Skin.Reset(HomeItem.13.CBackground)</onclick>
+		<onclick>Skin.Reset(HomeItem.13.Playlist)</onclick>
 		<!-- Menu 14 -->
 		<include content="ResetMainMenuItem">
 			<param name="id" value="14" />
