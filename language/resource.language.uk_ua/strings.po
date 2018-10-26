@@ -218,7 +218,7 @@ msgstr "Різні параметри"
 
 msgctxt "#31107"
 msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
-msgstr "Приховати маркування, отримані з імен файлів [COLOR = grey3] (наприклад, Blu-Ray, HD-DVD) [/COLOR]"
+msgstr "Приховати маркування, отримані з імен файлів [COLOR = grey3] (Blu-Ray, HD-DVD) [/COLOR]"
 
 msgctxt "#31108"
 msgid "Hide main menu buttons"

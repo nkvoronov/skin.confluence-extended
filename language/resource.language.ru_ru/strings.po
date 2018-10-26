@@ -218,7 +218,7 @@ msgstr "Различные параметры"
 
 msgctxt "#31107"
 msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
-msgstr "Скрыть флаги, полученные из имени видео файла [COLOR=grey3](например BluRray, HD-DVD)[/COLOR]"
+msgstr "Скрыть флаги, полученные из имени видео файла [COLOR=grey3](BluRray, HD-DVD)[/COLOR]"
 
 msgctxt "#31108"
 msgid "Hide main menu buttons"

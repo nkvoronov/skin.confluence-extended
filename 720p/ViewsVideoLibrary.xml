@@ -390,6 +390,7 @@
 						<bordersize>4</bordersize>
 						<fadetime>200</fadetime>
 						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">$VAR[PosterThumb]</texture>
+						<visible>!Skin.HasSetting(NoFloorAll)</visible>
 					</control>
 					<control type="image">
 						<depth>DepthContentPopout</depth>
