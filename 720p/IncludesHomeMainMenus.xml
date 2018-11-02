@@ -900,7 +900,7 @@
 		<onload>Skin.SetString(HomeItem.8.Type,tvshows)</onload>
 		<onload>Skin.SetString(HomeItem.8.DBackground,special://skin/extras/backgrounds/tvshows.jpg)</onload>
 		<!-- MusicVideo -->
-		<onload>Skin.SetString(HomeItem.9.Label,$LOCALIZE[31962])</onload>
+		<onload>Skin.SetString(HomeItem.9.Label,$LOCALIZE[80007])</onload>
 		<onload>Skin.SetString(HomeItem.9.Path,ActivateWindow(videos,videodb://musicvideos/,return))</onload>
 		<onload>Skin.SetString(HomeItem.9.Sub,SubMenu07)</onload>
 		<onload>Skin.SetString(HomeItem.9.Widget,RecentMusicVideo)</onload>
@@ -1015,7 +1015,7 @@
 		<onclick>Skin.Reset(HomeItem.8.CBackground)</onclick>
 		<onclick>Skin.Reset(HomeItem.8.Playlist)</onclick>
 		<!-- MusicVideo -->
-		<onclick>Skin.SetString(HomeItem.9.Label,$LOCALIZE[31962])</onclick>
+		<onclick>Skin.SetString(HomeItem.9.Label,$LOCALIZE[80007])</onclick>
 		<onclick>Skin.SetString(HomeItem.9.Path,ActivateWindow(videos,videodb://musicvideos/,return))</onclick>
 		<onclick>Skin.SetString(HomeItem.9.Sub,SubMenu07)</onclick>
 		<onclick>Skin.Reset(HomeItem.9.Addon)</onclick>

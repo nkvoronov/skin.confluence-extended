@@ -932,7 +932,7 @@
 					<control type="button" id="100">
 						<description>Show ExtendedInfo</description>
 						<include>ButtonInfoDialogsCommonValues</include>
-						<label>31034</label>
+						<label>80000</label>
 						<onclick>PreviousMenu</onclick>
 						<onclick condition="Container.Content(movies)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.ID])</onclick>
 						<onclick condition="Container.Content(tvshows)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.ID])</onclick>

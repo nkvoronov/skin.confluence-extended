@@ -179,7 +179,7 @@
 		<value condition="String.IsEqual(Skin.String(HomeItem.1.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.1.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.1.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.1.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.1.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.1.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.1.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.1.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -195,7 +195,7 @@
 		<value condition="String.IsEqual(Skin.String(HomeItem.2.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.2.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.2.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.2.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.2.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.2.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.2.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.2.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -211,7 +211,7 @@
 		<value condition="String.IsEqual(Skin.String(HomeItem.3.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.3.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.3.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.3.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.3.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.3.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.3.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.3.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -227,7 +227,7 @@
 		<value condition="String.IsEqual(Skin.String(HomeItem.4.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.4.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.4.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.4.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.4.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.4.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.4.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.4.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -243,7 +243,7 @@
 		<value condition="String.IsEqual(Skin.String(HomeItem.5.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.5.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.5.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.5.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.5.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.5.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.5.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.5.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -259,7 +259,7 @@
 		<value condition="String.IsEqual(Skin.String(HomeItem.6.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.6.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.6.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.6.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.6.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.6.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.6.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.6.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -275,7 +275,7 @@
 		<value condition="String.IsEqual(Skin.String(HomeItem.7.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.7.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.7.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.7.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.7.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.7.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.7.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.7.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -291,7 +291,7 @@
 		<value condition="String.IsEqual(Skin.String(HomeItem.8.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.8.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.8.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.8.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.8.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.8.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.8.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.8.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -307,7 +307,7 @@
 		<value condition="String.IsEqual(Skin.String(HomeItem.9.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.9.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.9.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.9.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.9.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.9.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.9.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.9.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -323,7 +323,7 @@
 		<value condition="String.IsEqual(Skin.String(HomeItem.10.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.10.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.10.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.10.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.10.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.10.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.10.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.10.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -339,7 +339,7 @@
 		<value condition="String.IsEqual(Skin.String(HomeItem.11.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.11.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.11.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.11.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.11.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.11.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.11.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.11.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -355,7 +355,7 @@
 		<value condition="String.IsEqual(Skin.String(HomeItem.12.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.12.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.12.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.12.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.12.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.12.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.12.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.12.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -371,7 +371,7 @@
 		<value condition="String.IsEqual(Skin.String(HomeItem.13.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.13.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.13.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.13.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.13.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.13.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.13.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.13.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -387,7 +387,7 @@
 		<value condition="String.IsEqual(Skin.String(HomeItem.14.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.14.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.14.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.14.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.14.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.14.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.14.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.14.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -403,7 +403,7 @@
 		<value condition="String.IsEqual(Skin.String(HomeItem.15.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.15.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.15.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.15.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.15.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.15.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.15.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.15.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -419,7 +419,7 @@
 		<value condition="String.IsEqual(Skin.String(HomeItem.16.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.16.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.16.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.16.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.16.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.16.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.16.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.16.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -435,7 +435,7 @@
 		<value condition="String.IsEqual(Skin.String(HomeItem.17.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.17.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.17.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.17.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.17.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.17.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.17.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.17.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -451,7 +451,7 @@
 		<value condition="String.IsEqual(Skin.String(HomeItem.18.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.18.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.18.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.18.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.18.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.18.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.18.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.18.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -467,7 +467,7 @@
 		<value condition="String.IsEqual(Skin.String(HomeItem.19.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.19.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.19.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.19.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.19.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.19.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.19.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.19.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -483,7 +483,7 @@
 		<value condition="String.IsEqual(Skin.String(HomeItem.20.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.20.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.20.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(HomeItem.20.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(HomeItem.20.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.20.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.20.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(HomeItem.20.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -498,7 +498,7 @@
 		<value condition="String.IsEqual(Skin.String(SubMenu01.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu01.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu01.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(SubMenu01.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(SubMenu01.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu01.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu01.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu01.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -512,7 +512,7 @@
 		<value condition="String.IsEqual(Skin.String(SubMenu02.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu02.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu02.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(SubMenu02.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(SubMenu02.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu02.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu02.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu02.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -526,7 +526,7 @@
 		<value condition="String.IsEqual(Skin.String(SubMenu03.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu03.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu03.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(SubMenu03.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(SubMenu03.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu03.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu03.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu03.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -540,7 +540,7 @@
 		<value condition="String.IsEqual(Skin.String(SubMenu04.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu04.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu04.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(SubMenu04.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(SubMenu04.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu04.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu04.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu04.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -554,7 +554,7 @@
 		<value condition="String.IsEqual(Skin.String(SubMenu05.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu05.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu05.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(SubMenu05.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(SubMenu05.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu05.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu05.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu05.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -568,7 +568,7 @@
 		<value condition="String.IsEqual(Skin.String(SubMenu06.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu06.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu06.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(SubMenu06.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(SubMenu06.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu06.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu06.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu06.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -582,7 +582,7 @@
 		<value condition="String.IsEqual(Skin.String(SubMenu07.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu07.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu07.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(SubMenu07.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(SubMenu07.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu07.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu07.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu07.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -596,7 +596,7 @@
 		<value condition="String.IsEqual(Skin.String(SubMenu08.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu08.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu08.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(SubMenu08.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(SubMenu08.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu08.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu08.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu08.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -610,7 +610,7 @@
 		<value condition="String.IsEqual(Skin.String(SubMenu09.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu09.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu09.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(SubMenu09.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(SubMenu09.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu09.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu09.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu09.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -624,7 +624,7 @@
 		<value condition="String.IsEqual(Skin.String(SubMenu10.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu10.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu10.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(SubMenu10.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(SubMenu10.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu10.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu10.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu10.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -638,7 +638,7 @@
 		<value condition="String.IsEqual(Skin.String(SubMenu11.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu11.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu11.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(SubMenu11.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(SubMenu11.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu11.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu11.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu11.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -652,7 +652,7 @@
 		<value condition="String.IsEqual(Skin.String(SubMenu12.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu12.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu12.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(SubMenu12.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(SubMenu12.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu12.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu12.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu12.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -666,7 +666,7 @@
 		<value condition="String.IsEqual(Skin.String(SubMenu13.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu13.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu13.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(SubMenu13.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(SubMenu13.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu13.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu13.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu13.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -680,7 +680,7 @@
 		<value condition="String.IsEqual(Skin.String(SubMenu14.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu14.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu14.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(SubMenu14.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(SubMenu14.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu14.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu14.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu14.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -694,7 +694,7 @@
 		<value condition="String.IsEqual(Skin.String(SubMenu15.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu15.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu15.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(SubMenu15.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(SubMenu15.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu15.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu15.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu15.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -708,7 +708,7 @@
 		<value condition="String.IsEqual(Skin.String(SubMenu16.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu16.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu16.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(SubMenu16.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(SubMenu16.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu16.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu16.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu16.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -722,7 +722,7 @@
 		<value condition="String.IsEqual(Skin.String(SubMenu17.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu17.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu17.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(SubMenu17.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(SubMenu17.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu17.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu17.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu17.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -736,7 +736,7 @@
 		<value condition="String.IsEqual(Skin.String(SubMenu18.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu18.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu18.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(SubMenu18.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(SubMenu18.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu18.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu18.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu18.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -750,7 +750,7 @@
 		<value condition="String.IsEqual(Skin.String(SubMenu19.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu19.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu19.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(SubMenu19.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(SubMenu19.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu19.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu19.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu19.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -764,7 +764,7 @@
 		<value condition="String.IsEqual(Skin.String(SubMenu20.Label),VIDEOS)">$LOCALIZE[31953]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu20.Label),MOVIES)">$LOCALIZE[31954]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu20.Label),TVSHOWS)">$LOCALIZE[31955]</value>
-		<value condition="String.IsEqual(Skin.String(SubMenu20.Label),MUSIC VIDEOS)">$LOCALIZE[31962]</value>
+		<value condition="String.IsEqual(Skin.String(SubMenu20.Label),MUSIC VIDEOS)">$LOCALIZE[80007]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu20.Label),MUSIC)">$LOCALIZE[31956]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu20.Label),PROGRAMS)">$LOCALIZE[31957]</value>
 		<value condition="String.IsEqual(Skin.String(SubMenu20.Label),SYSTEM)">$LOCALIZE[31959]</value>
@@ -2627,5 +2627,10 @@
 	<variable name="BackgroundAudioName">
 		<value condition="!String.IsEmpty(Skin.String(AudioBackground))">$INFO[Skin.String(AudioBackground)]</value>
 		<value>$LOCALIZE[15109]</value>
+	</variable>
+	<variable name="GlobalSearchLabel2">
+		<value condition="Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)">$INFO[ListItem.Rating]</value>
+		<value condition="Container.Content(Songs) | Container.Content(LiveTV)">$INFO[ListItem.Duration]</value>
+		<value>$INFO[ListItem.Label2]</value>
 	</variable>
 </includes>

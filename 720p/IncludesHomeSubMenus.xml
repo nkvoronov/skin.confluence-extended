@@ -938,7 +938,7 @@
 		<onload>Skin.SetString(SubMenu06.5.Label,$LOCALIZE[344])</onload>
 		<onload>Skin.SetString(SubMenu06.5.Path,ActivateWindow(videos,videodb://tvshows/actors/,return))</onload>
 		<!-- Sub MusicVideo -->
-		<onload>Skin.SetString(SubMenu07.Label,$LOCALIZE[31962])</onload>
+		<onload>Skin.SetString(SubMenu07.Label,$LOCALIZE[80007])</onload>
 		<onload>Skin.SetString(SubMenu07.1.Label,$LOCALIZE[31328])</onload>
 		<onload>Skin.SetString(SubMenu07.1.Path,ActivateWindow(videos,videodb://recentlyaddedmusicvideos/,return))</onload>
 		<onload>Skin.SetString(SubMenu07.2.Label,$LOCALIZE[369])</onload>
@@ -1079,7 +1079,7 @@
 		<include content="ResetSubMenuItem">
 			<param name="id2" value="07" />
 		</include>
-		<onclick>Skin.SetString(SubMenu07.Label,$LOCALIZE[31962])</onclick>
+		<onclick>Skin.SetString(SubMenu07.Label,$LOCALIZE[80007])</onclick>
 		<onclick>Skin.SetString(SubMenu07.1.Label,$LOCALIZE[31328])</onclick>
 		<onclick>Skin.SetString(SubMenu07.1.Path,ActivateWindow(videos,videodb://recentlyaddedmusicvideos/,return))</onclick>
 		<onclick>Skin.SetString(SubMenu07.2.Label,$LOCALIZE[369])</onclick>

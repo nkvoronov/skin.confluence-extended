@@ -124,10 +124,6 @@ msgctxt "#31033"
 msgid "Info"
 msgstr "Информация"
 
-msgctxt "#31034"
-msgid "Extended info"
-msgstr "Дополнительная информация"
-
 msgctxt "#31039"
 msgid "Actions"
 msgstr "Действия"
@@ -240,10 +236,6 @@ msgctxt "#31112"
 msgid "Options"
 msgstr "Параметры"
 
-msgctxt "#31113"
-msgid "Show KODI logo"
-msgstr "Показывать KODI логотип"
-
 msgctxt "#31116"
 msgid "Show recently added albums"
 msgstr "Показывать последние добавленные альбомы"
@@ -284,21 +276,9 @@ msgctxt "#31129"
 msgid "Hide fanart in full screen visualisation"
 msgstr "Скрывать фанарт в полноэкранной визуализации"
 
-msgctxt "#31130"
-msgid "Choose weather backgrounds pack"
-msgstr "Выбрать пакет фонов для погоды"
-
-msgctxt "#31131"
-msgid "Choose home backgrounds pack"
-msgstr "Выбрать пакет фонов для главного экрана"
-
 msgctxt "#31132"
 msgid "Lyrics add-on"
 msgstr "Дополнение текстов песен"
-
-msgctxt "#31133"
-msgid "Choose weather icons pack"
-msgstr "Выбрать пакет иконок для погоды"
 
 msgctxt "#31134"
 msgid "Home page \"Videos\" submenu"
@@ -312,10 +292,6 @@ msgctxt "#31136"
 msgid "Home page \"Pictures\" submenu"
 msgstr "Подменю \"Изображения\" главного экрана"
 
-msgctxt "#31139"
-msgid "Alternative view"
-msgstr "Алтернативный вид"
-
 msgctxt "#31140"
 msgid "Music OSD"
 msgstr "Экранное меню музыки"
@@ -323,10 +299,6 @@ msgstr "Экранное меню музыки"
 msgctxt "#31142"
 msgid "Settings level"
 msgstr "Уровень настроек"
-
-msgctxt "#31149"
-msgid "Choose genre backgrounds pack"
-msgstr "Выбрать пакет фонов для жанров"
 
 msgctxt "#31200"
 msgid "Shortcuts"
@@ -632,29 +604,69 @@ msgctxt "#31961"
 msgid "Timeshift"
 msgstr "Timeshift"
 
+msgctxt "#31962"
+msgid "Choose kind of profile identification"
+msgstr "Выберите вид идентификации профиля"
+
+msgctxt "#31963"
+msgid "Profile name"
+msgstr "Имя профиля"
+
+msgctxt "#31964"
+msgid "Profile avatar"
+msgstr "Аватар профиля"
+
 # Extended Added Value
 
-msgctxt "#31962"
+msgctxt "#80000"
+msgid "Extended info"
+msgstr "Дополнительная информация"
+
+msgctxt "#80001"
+msgid "Show KODI logo"
+msgstr "Показывать KODI логотип"
+
+msgctxt "#80002"
+msgid "Choose weather backgrounds pack"
+msgstr "Выбрать пакет фонов для погоды"
+
+msgctxt "#80003"
+msgid "Choose home backgrounds pack"
+msgstr "Выбрать пакет фонов для главного экрана"
+
+msgctxt "#80004"
+msgid "Choose weather icons pack"
+msgstr "Выбрать пакет иконок для погоды"
+
+msgctxt "#80005"
+msgid "Alternative view"
+msgstr "Алтернативный вид"
+
+msgctxt "#80006"
+msgid "Choose genre backgrounds pack"
+msgstr "Выбрать пакет фонов для жанров"
+
+msgctxt "#80007"
 msgid "MUSIC VIDEOS"
 msgstr "МУЗ. ВИДЕО"
 
-msgctxt "#32000"
+msgctxt "#80008"
 msgid "SEARCH"
 msgstr "ПОИСК"
 
-msgctxt "#32001"
+msgctxt "#80009"
 msgid "PLAYLIST"
 msgstr "ПЛЕЙЛИСТ"
 
-msgctxt "#32002"
+msgctxt "#80010"
 msgid "FAVOURITES"
 msgstr "ИЗБРАННОЕ"
 
-msgctxt "#32003"
+msgctxt "#80011"
 msgid "PROFILE"
 msgstr "ПРОФИЛЬ"
 
-msgctxt "#32004"
+msgctxt "#80012"
 msgid "SHUTDOWN"
 msgstr "ВЫКЛЮЧЕНИЕ"
 
@@ -1077,3 +1089,7 @@ msgstr "Загрузить иллюстрации"
 msgctxt "#90112"
 msgid "Download Music Theme"
 msgstr "Загрузить музыкальную тему"
+
+msgctxt "#90113"
+msgid "Dharma style"
+msgstr "Dharma стиль"

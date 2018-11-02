@@ -1135,7 +1135,7 @@
 						<width>490</width>
 						<height>190</height>
 						<font>font13</font>
-						<align>justify</align>
+						<align>left</align>
 						<textcolor>white</textcolor>
 						<label>$INFO[ListItem.Property(Artist_Description)]</label>
 						<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
