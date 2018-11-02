@@ -4,7 +4,7 @@
 	<onload condition="String.IsEmpty(Window(Home).Property(MenuItemActive))">SetProperty(MenuItemActive,video,Home)</onload>
 	<onload condition="String.IsEmpty(Window(Home).Property(MenuBackground))">SetProperty(MenuBackground,special://skin/extras/backgrounds/video.jpg,Home)</onload>
 	<menucontrol>9000</menucontrol>
-	<views>50,51,500,550,551,560,501,508,504,503,515,505,511,5033</views>
+	<views>50,51,500,550,551,560,501,508,504,503,515,505,511,530</views>
 	<onload condition="!Skin.HasSetting(FirstTimeRun)">ActivateWindow(1112)</onload>
 	<controls>
 		<include>CommonCustomBackground</include>
@@ -28,6 +28,8 @@
 			<include>MediaListView2</include>
 			<!-- view id = 515 -->
 			<include>MediaListView4</include>
+			<!-- view id = 530 -->
+			<include>MediaListView5</include>
 			<!-- view id = 505 -->
 			<include>WideIconView</include>
 			<!-- view id = 511 -->
@@ -38,8 +40,6 @@
 			<include>AddonInfoThumbView1</include>
 			<!-- view id = 560 -->
 			<include>LiveTVView1</include>
-			<!-- view id = 5033 -->
-			<include>MediaListView33</include>
 		</control>
 		<control type="group">
 			<depth>DepthFooter</depth>

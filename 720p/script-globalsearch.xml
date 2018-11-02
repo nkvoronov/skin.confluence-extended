@@ -4,7 +4,7 @@
 	<onload condition="String.IsEmpty(Window(Home).Property(MenuItemActive))">SetProperty(MenuItemActive,search,Home)</onload>
 	<onload condition="String.IsEmpty(Window(Home).Property(MenuBackground))">SetProperty(MenuBackground,special://skin/extras/backgrounds/search.jpg,Home)</onload>
 	<menucontrol>9999</menucontrol>
-	<views>50,51,500,550,551,560,501,508,504,503,515,505,511</views>
+	<views>50,51,500</views>
 	<onload condition="!Skin.HasSetting(FirstTimeRun)">ActivateWindow(1112)</onload>
 	<controls>
 		<control type="label" id="991">
@@ -32,31 +32,31 @@
 			<visible>!Control.IsVisible(999)</visible>
 			<include>Window_OpenClose_Animation</include>
 			<!-- view id = 50 -->
-			<include>CommonRootView</include>
+			<include content="CommonRootView">
+				<param name="isMediaItemDetailBG" value="[ !String.IsEmpty(ListItem.Label2) | !String.IsEmpty(ListItem.Rating) | !String.IsEmpty(ListItem.Duration)]" />
+				<param name="Lab2" value="$VAR[GlobalSearchLabel2]" />
+				<param name="isVisibleWindows" value="Window.IsVisible(script-globalsearch.xml)" />
+				<param name="isWatching" value="!Integer.IsEqual(ListItem.Property(percentplayed),0)" />
+				<param name="isWatched" value="Integer.IsEqual(ListItem.Property(percentplayed),0) + Integer.IsGreater(ListItem.Property(playcount),0)" />
+				<param name="WatchedImage" value="OverlayWatched.png" />
+			</include>
 			<!-- view id = 51 -->
-			<include>FullWidthList</include>
+			<include content="FullWidthList">
+				<param name="IconList" value="$VAR[SearchIconWallThumb]" />
+				<param name="isMediaItemDetailBG" value="[ !String.IsEmpty(ListItem.Label2) | !String.IsEmpty(ListItem.Rating) | !String.IsEmpty(ListItem.Duration)]" />
+				<param name="Lab2" value="$VAR[GlobalSearchLabel2]" />
+				<param name="isVisibleWindows" value="Window.IsVisible(script-globalsearch.xml)" />
+				<param name="isWatching" value="!Integer.IsEqual(ListItem.Property(percentplayed),0)" />
+				<param name="isWatched" value="Integer.IsEqual(ListItem.Property(percentplayed),0) + Integer.IsGreater(ListItem.Property(playcount),0)" />
+				<param name="WatchedImage" value="OverlayWatched.png" />
+			</include>
 			<!-- view id = 500 -->
-			<include>ThumbnailView</include>
-			<!-- view id = 501 -->
-			<include>PosterWrapView</include>
-			<!-- view id = 508 -->
-			<include>PosterWrapView2_Fanart</include>
-			<!-- view id = 503 -->
-			<include>MediaListView3</include>
-			<!-- view id = 504 -->
-			<include>MediaListView2</include>
-			<!-- view id = 515 -->
-			<include>MediaListView4</include>
-			<!-- view id = 505 -->
-			<include>WideIconView</include>
-			<!-- view id = 511 -->
-			<include>MusicVideoInfoListView</include>
-			<!-- view id = 550 -->
-			<include>AddonInfoListView1</include>
-			<!-- view id = 551 -->
-			<include>AddonInfoThumbView1</include>
-			<!-- view id = 560 -->
-			<include>LiveTVView1</include>
+			<include content="ThumbnailView">
+				<param name="IconList" value="$VAR[SearchIconWallThumb]" />
+				<param name="isWatching" value="!Integer.IsEqual(ListItem.Property(percentplayed),0)" />
+				<param name="isWatched" value="Integer.IsEqual(ListItem.Property(percentplayed),0) + Integer.IsGreater(ListItem.Property(playcount),0)" />
+				<param name="WatchedImage" value="OverlayWatched.png" />
+			</include>
 		</control>
 		<control type="group">
 			<depth>DepthFooter</depth>

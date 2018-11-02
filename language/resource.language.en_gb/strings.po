@@ -138,11 +138,7 @@ msgctxt "#31033"
 msgid "Info"
 msgstr ""
 
-msgctxt "#31034"
-msgid "Extended info"
-msgstr ""
-
-#empty strings from id 31035 to 31038
+#empty strings from id 31034 to 31038
 
 msgctxt "#31039"
 msgid "Actions"
@@ -272,11 +268,7 @@ msgctxt "#31112"
 msgid "Options"
 msgstr ""
 
-msgctxt "#31113"
-msgid "Show KODI logo"
-msgstr ""
-
-#empty strings from id 31114 to 31115
+#empty strings from id 31113 to 31115
 
 msgctxt "#31116"
 msgid "Show recently added albums"
@@ -328,21 +320,13 @@ msgctxt "#31129"
 msgid "Hide fanart in full screen visualisation"
 msgstr ""
 
-msgctxt "#31130"
-msgid "Choose weather backgrounds pack"
-msgstr ""
-
-msgctxt "#31131"
-msgid "Choose home backgrounds pack"
-msgstr ""
+#empty strings from id 31130 to 31131
 
 msgctxt "#31132"
 msgid "Lyrics add-on"
 msgstr ""
 
-msgctxt "#31133"
-msgid "Choose weather icons pack"
-msgstr ""
+#empty string with id 31133
 
 #. In main language strings its used as submenu
 msgctxt "#31134"
@@ -357,9 +341,7 @@ msgctxt "#31136"
 msgid "Home page \"Pictures\" submenu"
 msgstr ""
 
-msgctxt "#31139"
-msgid "Alternative view"
-msgstr ""
+#empty strings from id 31137 to 31139
 
 msgctxt "#31140"
 msgid "Music OSD"
@@ -369,10 +351,6 @@ msgstr ""
 
 msgctxt "#31142"
 msgid "Settings level"
-msgstr ""
-
-msgctxt "#31149"
-msgid "Choose genre backgrounds pack"
 msgstr ""
 
 #empty strings from id 31143 to 31199
@@ -724,29 +702,75 @@ msgctxt "#31961"
 msgid "Timeshift"
 msgstr ""
 
+#. Choose profile identifier
+#: /720p/SkinSettings.xml
+msgctxt "#31962"
+msgid "Choose kind of profile identification"
+msgstr ""
+
+#. Label for the kind of profile identification
+#: /720p/SkinSettings.xml
+msgctxt "#31963"
+msgid "Profile name"
+msgstr ""
+
+#. Label for the kind of profile identification
+#: /720p/SkinSettings.xml
+msgctxt "#31964"
+msgid "Profile avatar"
+msgstr ""
+
 # Extended Added Value
 
-msgctxt "#31962"
+msgctxt "#80000"
+msgid "Extended info"
+msgstr ""
+
+msgctxt "#80001"
+msgid "Show KODI logo"
+msgstr ""
+
+msgctxt "#80002"
+msgid "Choose weather backgrounds pack"
+msgstr ""
+
+msgctxt "#80003"
+msgid "Choose home backgrounds pack"
+msgstr ""
+
+msgctxt "#80004"
+msgid "Choose weather icons pack"
+msgstr ""
+
+msgctxt "#80005"
+msgid "Alternative view"
+msgstr ""
+
+msgctxt "#80006"
+msgid "Choose genre backgrounds pack"
+msgstr ""
+
+msgctxt "#80007"
 msgid "MUSIC VIDEOS"
 msgstr ""
 
-msgctxt "#32000"
+msgctxt "#80008"
 msgid "SEARCH"
 msgstr ""
 
-msgctxt "#32001"
+msgctxt "#80009"
 msgid "PLAYLIST"
 msgstr ""
 
-msgctxt "#32002"
+msgctxt "#80010"
 msgid "FAVOURITES"
 msgstr ""
 
-msgctxt "#32003"
+msgctxt "#80011"
 msgid "PROFILE"
 msgstr ""
 
-msgctxt "#32004"
+msgctxt "#80012"
 msgid "SHUTDOWN"
 msgstr ""
 
@@ -1232,4 +1256,8 @@ msgstr ""
 
 msgctxt "#90112"
 msgid "Download Music Theme"
+msgstr ""
+
+msgctxt "#90113"
+msgid "Dharma style"
 msgstr ""

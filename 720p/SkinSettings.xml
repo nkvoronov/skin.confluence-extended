@@ -271,7 +271,19 @@
 						<onclick>Skin.ToggleSetting(HideEPGwithRDS)</onclick>
 						<selected>Skin.HasSetting(HideEPGwithRDS)</selected>
 					</control>
-					<control type="label" id="106">
+					<control type="button" id="106">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>31962</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SelectBool(31962, 31963|show_profilename, 31964|show_profileavatar, 16018|show_none)</onclick>
+						<label2>$VAR[ProfileIdentificationLabel2Var]</label2>
+					</control>
+					<control type="label" id="107">
 						<description>Lyric label</description>
 						<width>750</width>
 						<height>45</height>
@@ -282,7 +294,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="107">
+					<control type="button" id="108">
 						<description>LyricScript Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -295,7 +307,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
 					</control>
-					<control type="button" id="108">
+					<control type="button" id="109">
 						<description>Open Settings LyricScript</description>
 						<width>750</width>
 						<height>40</height>
@@ -308,12 +320,12 @@
 						<enable>!String.IsEmpty(Skin.String(LyricScript_Path))</enable>
 						<onclick>Addon.OpenSettings($INFO[Skin.String(LyricScript_Path)])</onclick>
 					</control>
-					<control type="radiobutton" id="109">
+					<control type="radiobutton" id="110">
 						<description>CU LRC Lyrics Alternative View</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>- $LOCALIZE[31139] CU LRC Lyrics</label>
+						<label>- $LOCALIZE[80005] CU LRC Lyrics</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -322,7 +334,7 @@
 						<selected>Skin.HasSetting(LrclyricsAlternativeView)</selected>
 						<enable>System.HasAddon(script.cu.lrclyrics)</enable>
 					</control>
-					<control type="label" id="110">
+					<control type="label" id="111">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -332,7 +344,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="111">
+					<control type="radiobutton" id="112">
 						<description>Enable Splash Screen (photo, video or music)</description>
 						<width>750</width>
 						<height>40</height>
@@ -345,7 +357,7 @@
 						<onclick>Skin.ToggleSetting(EnableSplashScreen)</onclick>
 						<selected>Skin.HasSetting(EnableSplashScreen)</selected>
 					</control>
-					<control type="button" id="112">
+					<control type="button" id="113">
 						<description>Startup SplashScreen Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -359,7 +371,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Skin.HasSetting(EnableSplashScreen)</enable>
 					</control>
-					<control type="button" id="113">
+					<control type="button" id="114">
 						<description>Duration SplashScreen</description>
 						<width>750</width>
 						<height>40</height>
@@ -374,7 +386,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Skin.HasSetting(EnableSplashScreen)</enable>
 					</control>
-					<control type="label" id="114">
+					<control type="label" id="115">
 						<description>Addons Label</description>
 						<width>750</width>
 						<height>45</height>
@@ -385,7 +397,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="115">
+					<control type="radiobutton" id="116">
 						<description>Activate Global Search</description>
 						<width>750</width>
 						<height>40</height>
@@ -399,7 +411,7 @@
 						<onclick>Skin.ToggleSetting(ActivateGlobalSearch)</onclick>
 						<selected>Skin.HasSetting(ActivateGlobalSearch)</selected>
 					</control>
-					<control type="button" id="116">
+					<control type="button" id="117">
 						<description>Settings Global Search</description>
 						<width>750</width>
 						<height>40</height>
@@ -412,7 +424,7 @@
 						<onclick>Addon.OpenSettings(script.globalsearch)</onclick>
 						<enable>Skin.HasSetting(ActivateGlobalSearch)</enable>
 					</control>
-					<control type="radiobutton" id="117">
+					<control type="radiobutton" id="118">
 						<description>Activate Simple Playlists</description>
 						<width>750</width>
 						<height>40</height>
@@ -426,7 +438,7 @@
 						<onclick>Skin.ToggleSetting(ActivateWatchitLater)</onclick>
 						<selected>Skin.HasSetting(ActivateWatchitLater)</selected>
 					</control>
-					<control type="button" id="118">
+					<control type="button" id="119">
 						<description>Settings Simple Playlists</description>
 						<width>750</width>
 						<height>40</height>
@@ -439,7 +451,7 @@
 						<onclick>Addon.OpenSettings(script.simpleplaylists)</onclick>
 						<enable>Skin.HasSetting(ActivateWatchitLater)</enable>
 					</control>
-					<control type="label" id="119">
+					<control type="label" id="120">
 						<description>Skin Shortcuts Label</description>
 						<width>750</width>
 						<height>45</height>
@@ -450,7 +462,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="120">
+					<control type="button" id="121">
 						<description>Settings Skin Shortcuts</description>
 						<width>750</width>
 						<height>40</height>
@@ -463,7 +475,7 @@
 						<onclick condition="!System.HasAddon(script.skinshortcuts)">InstallAddon(script.skinshortcuts)</onclick>
 						<onclick>Addon.OpenSettings(script.skinshortcuts)</onclick>
 					</control>
-					<control type="label" id="121">
+					<control type="label" id="122">
 						<description>Skin Helper Service Label</description>
 						<width>750</width>
 						<height>45</height>
@@ -474,7 +486,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="122">
+					<control type="button" id="123">
 						<description>Settings Skin Helper Service Art Utils</description>
 						<width>750</width>
 						<height>40</height>
@@ -487,7 +499,7 @@
 						<onclick condition="!System.HasAddon(script.module.metadatautils)">InstallAddon(script.module.metadatautils)</onclick>
 						<onclick>Addon.OpenSettings(script.module.metadatautils)</onclick>
 					</control>
-					<control type="button" id="123">
+					<control type="button" id="124">
 						<description>Settings Skin Helper Service Backgrounds</description>
 						<width>750</width>
 						<height>40</height>
@@ -500,7 +512,7 @@
 						<onclick condition="!System.HasAddon(script.skin.helper.backgrounds)">InstallAddon(script.skin.helper.backgrounds)</onclick>
 						<onclick>Addon.OpenSettings(script.skin.helper.backgrounds)</onclick>
 					</control>
-					<control type="button" id="124">
+					<control type="button" id="125">
 						<description>Settings Skin Helper Service Widgets</description>
 						<width>750</width>
 						<height>40</height>
@@ -513,7 +525,7 @@
 						<onclick condition="!System.HasAddon(script.skin.helper.widgets)">InstallAddon(script.skin.helper.widgets)</onclick>
 						<onclick>Addon.OpenSettings(script.skin.helper.widgets)</onclick>
 					</control>
-					<control type="button" id="125">
+					<control type="button" id="126">
 						<description>Settings Skin Helper Service Skin Backup</description>
 						<width>750</width>
 						<height>40</height>
@@ -526,7 +538,7 @@
 						<onclick condition="!System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>
 						<onclick>Addon.OpenSettings(script.skin.helper.skinbackup)</onclick>
 					</control>
-					<control type="radiobutton" id="126">
+					<control type="radiobutton" id="127">
 						<description>Enable SmartShortcuts Playlists</description>
 						<width>750</width>
 						<height>40</height>
@@ -541,7 +553,7 @@
 						<selected>Skin.HasSetting(ActivateSmartShortcutsPlaylists)</selected>
 						<enable>System.HasAddon(script.skin.helper.service)</enable>
 					</control>
-					<control type="radiobutton" id="127">
+					<control type="radiobutton" id="128">
 						<description>Enable SmartShortcuts Favorites</description>
 						<width>750</width>
 						<height>40</height>
@@ -556,7 +568,7 @@
 						<selected>Skin.HasSetting(ActivateSmartShortcutsFavorites)</selected>
 						<enable>System.HasAddon(script.skin.helper.service)</enable>
 					</control>
-					<control type="radiobutton" id="128">
+					<control type="radiobutton" id="129">
 						<description>Enable Animated Posters</description>
 						<width>750</width>
 						<height>40</height>
@@ -571,7 +583,7 @@
 						<selected>Skin.HasSetting(ActivateAnimatedPosters)</selected>
 						<enable>System.HasAddon(script.skin.helper.service)</enable>
 					</control>
-					<control type="radiobutton" id="129">
+					<control type="radiobutton" id="130">
 						<description>Enable Animated Fanarts</description>
 						<width>750</width>
 						<height>40</height>
@@ -586,7 +598,7 @@
 						<selected>Skin.HasSetting(ActivateAnimatedFanarts)</selected>
 						<enable>System.HasAddon(script.skin.helper.service)</enable>
 					</control>
-					<control type="radiobutton" id="130">
+					<control type="radiobutton" id="131">
 						<description>Enable Wall Backgrounds</description>
 						<width>750</width>
 						<height>40</height>
@@ -601,7 +613,7 @@
 						<selected>Skin.HasSetting(ActivateWallBackgrounds)</selected>
 						<enable>System.HasAddon(script.skin.helper.service)</enable>
 					</control>
-					<control type="button" id="131">
+					<control type="button" id="132">
 						<description>Random Fanart Delay</description>
 						<width>750</width>
 						<height>40</height>
@@ -617,12 +629,12 @@
 						<onclick>Skin.SetNumeric(RandomFanartDelay)</onclick>
 						<enable>System.HasAddon(script.skin.helper.service)</enable>
 					</control>
-					<control type="image" id="132">
+					<control type="image" id="133">
 						<description>Separator Image</description>
 						<height>2</height>
 						<texture>separator2.png</texture>
 					</control>
-					<control type="button" id="133">
+					<control type="button" id="134">
 						<description>Reset Section</description>
 						<width>750</width>
 						<height>40</height>
@@ -632,7 +644,7 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(AutoScroll)|Skin.Reset(Show_SlideShow_Paused)|Skin.Reset(WindowedTrailer)|Skin.Reset(HideFilenameFlagging)|Skin.Reset(HideEPGwithRDS)|Skin.Reset(LyricScript_Path)|Skin.Reset(LrclyricsAlternativeView)|Skin.Reset(EnableSplashScreen)|Skin.Reset(SplashScreenPath)|Skin.Reset(DurationSplashScreen)|Skin.Reset(ActivateGlobalSearch)|Skin.Reset(ActivateWatchitLater)|Skin.Reset(ActivateSmartShortcutsPlaylists)|Skin.Reset(ActivateSmartShortcutsFavorites)|Skin.Reset(ActivateAnimatedPosters)|Skin.Reset(ActivateAnimatedFanarts)|Skin.Reset(ActivateWallBackgrounds)|Skin.Reset(RandomFanartDelay))</onclick>
+						<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(AutoScroll)|Skin.Reset(Show_SlideShow_Paused)|Skin.Reset(WindowedTrailer)|Skin.Reset(HideFilenameFlagging)|Skin.Reset(HideEPGwithRDS)|Skin.Reset(show_profilename)|Skin.Reset(show_profileavatar)|Skin.SetBool(show_none)|Skin.Reset(LyricScript_Path)|Skin.Reset(LrclyricsAlternativeView)|Skin.Reset(EnableSplashScreen)|Skin.Reset(SplashScreenPath)|Skin.Reset(DurationSplashScreen)|Skin.Reset(ActivateGlobalSearch)|Skin.Reset(ActivateWatchitLater)|Skin.Reset(ActivateSmartShortcutsPlaylists)|Skin.Reset(ActivateSmartShortcutsFavorites)|Skin.Reset(ActivateAnimatedPosters)|Skin.Reset(ActivateAnimatedFanarts)|Skin.Reset(ActivateWallBackgrounds)|Skin.Reset(RandomFanartDelay))</onclick>
 					</control>
 				</control>
 				<control type="scrollbar" id="61">
@@ -749,7 +761,7 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31113]</label>
+						<label>$LOCALIZE[80001]</label>
 						<onclick>Skin.ToggleSetting(NoLogo)</onclick>
 						<selected>!Skin.HasSetting(NoLogo)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -880,7 +892,7 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>$LOCALIZE[31133]</label>
+						<label>$LOCALIZE[80004]</label>
 						<label2>$VAR[WeatherIconsName]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
@@ -1451,7 +1463,7 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>$LOCALIZE[31131]</label>
+						<label>$LOCALIZE[80003]</label>
 						<label2>$VAR[HomeFanartName]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
@@ -1466,7 +1478,7 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>$LOCALIZE[31149]</label>
+						<label>$LOCALIZE[80006]</label>
 						<label2>$VAR[MovieGenreFanartName]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
@@ -1480,7 +1492,7 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>$LOCALIZE[31130]</label>
+						<label>$LOCALIZE[80002]</label>
 						<label2>$VAR[WeatherFanartName]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
