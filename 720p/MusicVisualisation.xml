@@ -187,7 +187,7 @@
 						<description>Audio Codec Image</description>
 						<width>81</width>
 						<height>29</height>
-						<texture>$VAR[musicplayercodec]</texture>
+						<texture>$INFO[MusicPlayer.Codec,flagging/audio/,.png]</texture>
 						<visible>!Player.ChannelPreviewActive</visible>
 					</control>
 					<control type="group">
