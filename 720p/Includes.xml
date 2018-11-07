@@ -556,10 +556,6 @@
 		<value condition="[String.StartsWith(ListItem.VideoCodec,div) | String.IsEqual(ListItem.VideoCodec,dx50)]">divx</value>
 		<value>$INFO[ListItem.VideoCodec]</value>
 	</variable>
-	<variable name="musicplayercodec">
-		<value condition="String.IsEqual(MusicPlayer.Codec,mp3float)">flagging/audio/MP3.png</value>
-		<value>$INFO[MusicPlayer.Codec,flagging/audio/,.png]</value>
-	</variable>
 	<variable name="SeekLabel">
 		<value condition="Player.IsTempo + String.StartsWith(Player.PlaySpeed,0.)">$LOCALIZE[31045]</value>
 		<value condition="Player.IsTempo + String.StartsWith(Player.PlaySpeed,1.)">$LOCALIZE[31044]</value>
