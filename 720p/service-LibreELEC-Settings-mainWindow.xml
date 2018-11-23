@@ -116,7 +116,6 @@
 				<showonepage>false</showonepage>
 				<visible>String.IsEqual(Container(1000).ListItem.Property(listTyp), 1300)</visible>
 			</control>
-			<!-- Main Menu (left) -->
 			<control type="list" id="1000">
 				<left>10</left>
 				<top>100</top>
@@ -365,6 +364,7 @@
 								<visible>!String.IsEqual(ListItem.Property(Typ), bool) + !String.IsEqual(ListItem.Property(Typ), button)</visible>
 							</control>
 						</control>
+						<!-- section name / seperator -->
 						<control type="group">
 							<visible>String.IsEqual(ListItem.Property(Typ), separator)</visible>
 							<control type="label">
@@ -378,6 +378,7 @@
 								<visible>true</visible>
 							</control>
 						</control>
+						<!-- boolean value -->
 						<control type="group">
 							<visible>String.IsEqual(ListItem.Property(Typ), bool)</visible>
 							<control type="image">
@@ -399,6 +400,7 @@
 								<visible>String.IsEqual(ListItem.Property(value), 1) | String.IsEqual(ListItem.Property(value), true)</visible>
 							</control>
 						</control>
+						<!-- button / execute value -->
 						<control type="group">
 							<visible>String.IsEqual(ListItem.Property(Typ), button)</visible>
 							<control type="image">
@@ -474,6 +476,7 @@
 								<visible>true</visible>
 							</control>
 						</control>
+						<!-- boolean value -->
 						<control type="group">
 							<visible>String.IsEqual(ListItem.Property(Typ), bool)</visible>
 							<control type="image">
@@ -495,6 +498,7 @@
 								<visible>String.IsEqual(ListItem.Property(value), 1) | String.IsEqual(ListItem.Property(value),true)</visible>
 							</control>
 						</control>
+						<!-- button / execute value -->
 						<control type="group">
 							<visible>String.IsEqual(ListItem.Property(Typ), button)</visible>
 							<control type="image">
@@ -568,7 +572,7 @@
 							<height>20</height>
 							<font>font12</font>
 							<textcolor>blue</textcolor>
-							<label>$ADDON[service.libreelec.settings 601]: [COLOR=white]$INFO[ListItem.Property(Interface)][/COLOR]</label>
+							<label>$ADDON[service.libreelec.settings 601]: [COLOR white]$INFO[ListItem.Property(Interface)][/COLOR]</label>
 							<visible>!String.IsEmpty(ListItem.Property(Interface))</visible>
 						</control>
 						<!-- Connection Address -->
@@ -579,8 +583,8 @@
 							<height>20</height>
 							<font>font12</font>
 							<textcolor>blue</textcolor>
-							<label>$ADDON[service.libreelec.settings 602]: [COLOR=white]$INFO[ListItem.Property(Address)][/COLOR]</label>
 							<visible>String.IsEqual(ListItem.Property(State), online) | String.IsEqual(ListItem.Property(State), ready)</visible>
+							<label>$ADDON[service.libreelec.settings 602]: [COLOR white]$INFO[ListItem.Property(Address)][/COLOR]</label>
 						</control>
 						<!-- Method -->
 						<control type="label">
@@ -590,7 +594,7 @@
 							<height>20</height>
 							<font>font12</font>
 							<textcolor>blue</textcolor>
-							<label>$ADDON[service.libreelec.settings 603]: [COLOR=white]$INFO[ListItem.Property(Method)][/COLOR]</label>
+							<label>$ADDON[service.libreelec.settings 603]: [COLOR white]$INFO[ListItem.Property(Method)][/COLOR]</label>
 						</control>
 						<!-- State -->
 						<control type="label">
@@ -600,7 +604,7 @@
 							<height>20</height>
 							<font>font12</font>
 							<textcolor>blue</textcolor>
-							<label>$ADDON[service.libreelec.settings 604]: [COLOR=white]$INFO[ListItem.Property(State)][/COLOR]</label>
+							<label>$ADDON[service.libreelec.settings 604]: [COLOR white]$INFO[ListItem.Property(State)][/COLOR]</label>
 						</control>
 						<!-- Signal strength -->
 						<control type="progress">
@@ -650,8 +654,18 @@
 							<width>20</width>
 							<height>20</height>
 							<aspectratio>keep</aspectratio>
-							<visible>Integer.IsGreater(ListItem.Property(Security), 0)</visible>
+							<visible>Integer.IsEqual(ListItem.Property(Security), 1)</visible>
 							<texture>os/libreelec/icons/Key.png</texture>
+						</control>
+						<!-- Insecure Symbol (bottom right) -->
+						<control type="image">
+							<left>710</left>
+							<top>50</top>
+							<width>20</width>
+							<height>20</height>
+							<aspectratio>keep</aspectratio>
+							<visible>Integer.IsEqual(ListItem.Property(Security), 0)</visible>
+							<texture>os/libreelec/icons/Unlock.png</texture>
 						</control>
 					</itemlayout>
 					<focusedlayout height="100">
@@ -714,7 +728,7 @@
 							<height>20</height>
 							<font>font12</font>
 							<textcolor>blue</textcolor>
-							<label>$ADDON[service.libreelec.settings 601]: [COLOR=white]$INFO[ListItem.Property(Interface)][/COLOR]</label>
+							<label>$ADDON[service.libreelec.settings 601]: [COLOR white]$INFO[ListItem.Property(Interface)][/COLOR]</label>
 							<visible>!String.IsEmpty(ListItem.Property(Interface))</visible>
 						</control>
 						<!-- Connection Address -->
@@ -726,7 +740,7 @@
 							<font>font12</font>
 							<textcolor>blue</textcolor>
 							<visible>String.IsEqual(ListItem.Property(State), online) | String.IsEqual(ListItem.Property(State), ready)</visible>
-							<label>$ADDON[service.libreelec.settings 602]: [COLOR=white]$INFO[ListItem.Property(Address)][/COLOR]</label>
+							<label>$ADDON[service.libreelec.settings 602]: [COLOR white]$INFO[ListItem.Property(Address)][/COLOR]</label>
 						</control>
 						<!-- Method -->
 						<control type="label">
@@ -736,7 +750,7 @@
 							<height>20</height>
 							<font>font12</font>
 							<textcolor>blue</textcolor>
-							<label>$ADDON[service.libreelec.settings 603]: [COLOR=white]$INFO[ListItem.Property(Method)][/COLOR]</label>
+							<label>$ADDON[service.libreelec.settings 603]: [COLOR white]$INFO[ListItem.Property(Method)][/COLOR]</label>
 						</control>
 						<!-- State -->
 						<control type="label">
@@ -746,7 +760,7 @@
 							<height>20</height>
 							<font>font12</font>
 							<textcolor>blue</textcolor>
-							<label>$ADDON[service.libreelec.settings 604]: [COLOR=white]$INFO[ListItem.Property(State)][/COLOR]</label>
+							<label>$ADDON[service.libreelec.settings 604]: [COLOR white]$INFO[ListItem.Property(State)][/COLOR]</label>
 						</control>
 						<!-- Signal strength -->
 						<control type="progress">
@@ -796,8 +810,18 @@
 							<width>20</width>
 							<height>20</height>
 							<aspectratio>keep</aspectratio>
-							<visible>Integer.IsGreater(ListItem.Property(Security), 0)</visible>
+							<visible>Integer.IsEqual(ListItem.Property(Security), 1)</visible>
 							<texture>os/libreelec/icons/Key.png</texture>
+						</control>
+						<!-- Insecure Symbol (bottom right) -->
+						<control type="image">
+							<left>710</left>
+							<top>50</top>
+							<width>20</width>
+							<height>20</height>
+							<aspectratio>keep</aspectratio>
+							<visible>Integer.IsEqual(ListItem.Property(Security), 0)</visible>
+							<texture>os/libreelec/icons/Unlock.png</texture>
 						</control>
 					</focusedlayout>
 				</control>
@@ -971,7 +995,7 @@
 							<height>20</height>
 							<font>font12</font>
 							<textcolor>blue</textcolor>
-							<label>$ADDON[service.libreelec.settings 605]: [COLOR=white]$INFO[ListItem.Property(Address)][/COLOR]</label>
+							<label>$ADDON[service.libreelec.settings 605]: [COLOR white]$INFO[ListItem.Property(Address)][/COLOR]</label>
 						</control>
 						<!-- Connected State -->
 						<control type="label">
@@ -981,7 +1005,7 @@
 							<height>20</height>
 							<font>font12</font>
 							<textcolor>blue</textcolor>
-							<label>$ADDON[service.libreelec.settings 32333][COLOR=white]$INFO[ListItem.Property(ConnectedState)][/COLOR]</label>
+							<label>$ADDON[service.libreelec.settings 32333][COLOR white]$INFO[ListItem.Property(ConnectedState)][/COLOR]</label>
 						</control>
 						<!-- Paired Symbol (bottom right) -->
 						<control type="image">
@@ -1164,7 +1188,7 @@
 							<height>20</height>
 							<font>font12</font>
 							<textcolor>blue</textcolor>
-							<label>$ADDON[service.libreelec.settings 605]: [COLOR=white]$INFO[ListItem.Property(Address)][/COLOR]</label>
+							<label>$ADDON[service.libreelec.settings 605]: [COLOR white]$INFO[ListItem.Property(Address)][/COLOR]</label>
 						</control>
 						<!-- Connected State -->
 						<control type="label">
@@ -1174,7 +1198,7 @@
 							<height>20</height>
 							<font>font12</font>
 							<textcolor>blue</textcolor>
-							<label>$ADDON[service.libreelec.settings 32333][COLOR=white]$INFO[ListItem.Property(ConnectedState)][/COLOR]</label>
+							<label>$ADDON[service.libreelec.settings 32333][COLOR white]$INFO[ListItem.Property(ConnectedState)][/COLOR]</label>
 						</control>
 						<!-- Paired Symbol (bottom right) -->
 						<control type="image">
@@ -1325,7 +1349,7 @@
 		<include>BehindDialogFadeOut</include>
 		<include content="CommonWindowHeader">
 			<param name="Icon" value="icon_system" />
-			<param name="Label" value="$LOCALIZE[5][COLOR=blue] - [/COLOR]$LOCALIZE[89041]" />
+			<param name="Label" value="$LOCALIZE[5][COLOR blue] - [/COLOR]$LOCALIZE[89041]" />
 		</include>
 	</controls>
 </window>

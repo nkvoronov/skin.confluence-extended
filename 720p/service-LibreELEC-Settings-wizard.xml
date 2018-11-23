@@ -115,8 +115,7 @@
 					<top>120</top>
 					<width>1</width>
 					<height>1</height>
-					<label>
-					</label>
+					<label />
 					<visible>false</visible>
 				</control>
 				<control type="label" id="1399">
@@ -125,8 +124,7 @@
 					<width>750</width>
 					<height>40</height>
 					<font>font24_title</font>
-					<label>
-					</label>
+					<label />
 					<align>left</align>
 					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
@@ -137,8 +135,7 @@
 					<width>750</width>
 					<height>280</height>
 					<font>font12</font>
-					<label>
-					</label>
+					<label />
 					<align>left</align>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
@@ -149,8 +146,7 @@
 						<top>400</top>
 						<width>750</width>
 						<height>20</height>
-						<label>
-						</label>
+						<label />
 						<align>left</align>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -217,8 +213,7 @@
 						<top>120</top>
 						<width>1</width>
 						<height>1</height>
-						<label>
-						</label>
+						<label />
 						<visible>false</visible>
 					</control>
 					<control type="label" id="1404">
@@ -226,8 +221,7 @@
 						<top>305</top>
 						<width>750</width>
 						<height>20</height>
-						<label>
-						</label>
+						<label />
 						<align>left</align>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -250,9 +244,7 @@
 						<pagecontrol>-</pagecontrol>
 						<scrolltime>300</scrolltime>
 						<itemlayout height="54" width="260">
-						</itemlayout>
 						<focusedlayout height="54" width="260">
-						</focusedlayout>
 					</control>
 					<!-- Network Menu Content -->
 					<control type="list" id="1200">
@@ -314,7 +306,7 @@
 								<font>font12</font>
 								<textcolor>blue</textcolor>
 								<visible>String.IsEqual(ListItem.Property(State), online) | String.IsEqual(ListItem.Property(State), ready)</visible>
-								<label>$ADDON[service.libreelec.settings 602]: [COLOR=white]$INFO[ListItem.Property(Address)][/COLOR]</label>
+								<label>$ADDON[service.libreelec.settings 602]: [COLOR white]$INFO[ListItem.Property(Address)][/COLOR]</label>
 							</control>
 							<!-- State -->
 							<control type="label">
@@ -324,7 +316,7 @@
 								<height>20</height>
 								<font>font12</font>
 								<textcolor>blue</textcolor>
-								<label>$ADDON[service.libreelec.settings 604]: [COLOR=white]$INFO[ListItem.Property(State)][/COLOR]</label>
+								<label>$ADDON[service.libreelec.settings 604]: [COLOR white]$INFO[ListItem.Property(State)][/COLOR]</label>
 							</control>
 							<!-- Signal strength -->
 							<control type="progress">
@@ -342,8 +334,18 @@
 								<width>20</width>
 								<height>20</height>
 								<aspectratio>keep</aspectratio>
-								<visible>Integer.IsGreater(ListItem.Property(Security), 0)</visible>
+								<visible>Integer.IsEqual(ListItem.Property(Security), 1)</visible>
 								<texture>os/libreelec/icons/Key.png</texture>
+							</control>
+							<!-- Insecure Symbol (bottom right) -->
+							<control type="image">
+								<left>700</left>
+								<top>10</top>
+								<width>20</width>
+								<height>20</height>
+								<aspectratio>keep</aspectratio>
+								<visible>Integer.IsEqual(ListItem.Property(Security), 0)</visible>
+								<texture>os/libreelec/icons/Unlock.png</texture>
 							</control>
 						</itemlayout>
 						<focusedlayout height="50">
@@ -407,7 +409,7 @@
 								<font>font12</font>
 								<textcolor>blue</textcolor>
 								<visible>String.IsEqual(ListItem.Property(State), online) | String.IsEqual(ListItem.Property(State), ready)</visible>
-								<label>$ADDON[service.libreelec.settings 602]: [COLOR=white]$INFO[ListItem.Property(Address)][/COLOR]</label>
+								<label>$ADDON[service.libreelec.settings 602]: [COLOR white]$INFO[ListItem.Property(Address)][/COLOR]</label>
 							</control>
 							<!-- State -->
 							<control type="label">
@@ -417,7 +419,7 @@
 								<height>20</height>
 								<font>font12</font>
 								<textcolor>blue</textcolor>
-								<label>$ADDON[service.libreelec.settings 604]: [COLOR=white]$INFO[ListItem.Property(State)][/COLOR]</label>
+								<label>$ADDON[service.libreelec.settings 604]: [COLOR white]$INFO[ListItem.Property(State)][/COLOR]</label>
 							</control>
 							<!-- Signal strength -->
 							<control type="progress">

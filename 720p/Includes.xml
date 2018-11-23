@@ -43,6 +43,19 @@
 	<constant name="DepthFloor">-0.20</constant>
 	<constant name="DepthSideBlade">0.15</constant>
 	<!-- VARIABLES -->
+	<variable name="MusicRating">
+		<value condition="Integer.IsGreater(ListItem.Rating,9.5)">10</value>
+		<value condition="Integer.IsGreater(ListItem.Rating,8.5)">9</value>
+		<value condition="Integer.IsGreater(ListItem.Rating,7.5)">8</value>
+		<value condition="Integer.IsGreater(ListItem.Rating,6.5)">7</value>
+		<value condition="Integer.IsGreater(ListItem.Rating,5.5)">6</value>
+		<value condition="Integer.IsGreater(ListItem.Rating,4.5)">5</value>
+		<value condition="Integer.IsGreater(ListItem.Rating,3.5)">4</value>
+		<value condition="Integer.IsGreater(ListItem.Rating,2.5)">3</value>
+		<value condition="Integer.IsGreater(ListItem.Rating,1.5)">2</value>
+		<value condition="Integer.IsGreater(ListItem.Rating,0.5)">1</value>
+		<value>0</value>
+	</variable>
 	<variable name="AddonInfoHeading">
 		<value condition="!String.IsEmpty(Window(home).Property(WhatsNew))">$LOCALIZE[24054]</value>
 		<value>$LOCALIZE[21821]</value>
@@ -547,8 +560,13 @@
 		<value condition="String.Contains(Listitem.mpaa,Rated NR)">mpaa_notrated</value>
 		<value condition="String.Contains(Listitem.mpaa,Not Rated)">mpaa_notrated</value>
 	</variable>
+	<variable name="audiocodec">
+		<value condition="String.StartsWith(ListItem.AudioCodec,mp3)">mp3</value>
+		<value>$INFO[ListItem.AudioCodec]</value>
+	</variable>
 	<variable name="videocodec">
 		<value condition="[String.StartsWith(ListItem.VideoCodec,div) | String.IsEqual(ListItem.VideoCodec,dx50)]">divx</value>
+		<value condition="String.Contains(ListItem.VideoCodec,mpeg4)">mpeg4</value>
 		<value>$INFO[ListItem.VideoCodec]</value>
 	</variable>
 	<variable name="SeekLabel">
@@ -2180,6 +2198,13 @@
 				<icon>special://skin/extras/default/settings-default.jpg</icon>
 				<visible>System.HasAddon(service.libreelec.settings)</visible>
 			</item>
+			<item id="11">
+				<label>CoreELEC</label>
+				<label2>CoreELEC</label2>
+				<onclick>RunAddon(service.coreelec.settings)</onclick>
+				<icon>special://skin/extras/default/settings-default.jpg</icon>
+				<visible>System.HasAddon(service.coreelec.settings)</visible>
+			</item>
 		</content>
 	</include>
 	<include name="ListItemOverlay">
@@ -2274,6 +2299,13 @@
 				<onclick>RunAddon(service.libreelec.settings)</onclick>
 				<icon>special://skin/extras/settings/libreelec.jpg</icon>
 				<visible>System.HasAddon(service.libreelec.settings)</visible>
+			</item>
+			<item id="11">
+				<label>CoreELEC</label>
+				<label2>CoreELEC</label2>
+				<onclick>RunAddon(service.coreelec.settings)</onclick>
+				<icon>special://skin/extras/settings/coreelec.jpg</icon>
+				<visible>System.HasAddon(service.coreelec.settings)</visible>
 			</item>
 		</content>
 	</include>
