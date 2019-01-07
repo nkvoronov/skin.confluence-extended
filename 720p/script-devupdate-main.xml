@@ -61,13 +61,12 @@
 			</control>
 			<control type="group">
 				<description>Bottom panel</description>
-				<top>940</top>
+				<top>210</top>
+				<left>410</left>
 				<control type="textbox" id="200">
 					<description>Info area</description>
-					<left>40</left>
-					<top>25</top>
-					<height>130</height>
-					<width>300</width>
+					<height>100</height>
+					<width>200</width>
 				</control>
 			</control>
 			<control type="list" id="10">
@@ -75,7 +74,7 @@
 				<left>20</left>
 				<top>67</top>
 				<width>250</width>
-				<height>460</height>				
+				<height>460</height>
 				<onup>300</onup>
 				<onleft>300</onleft>
 				<onright>610</onright>
@@ -199,6 +198,7 @@
 						<align>center</align>
 						<textcolor>ff87bde1</textcolor>
 						<info>ListItem.Label</info>
+						<animation effect="slide" start="0,0" end="70,0" time="0" condition="String.IsEmpty(ListItem.Label2)">Conditional</animation>
 					</control>
 					<control type="label">
 						<right>70</right>
@@ -240,6 +240,7 @@
 						<aligny>center</aligny>
 						<align>center</align>
 						<info>ListItem.Label</info>
+						<animation effect="slide" start="0,0" end="70,0" time="0" condition="String.IsEmpty(ListItem.Label2)">Conditional</animation>
 					</control>
 					<control type="label">
 						<right>70</right>
