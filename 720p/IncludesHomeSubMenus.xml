@@ -969,6 +969,8 @@
 		<onload>Skin.SetString(SubMenu09.Label,$LOCALIZE[31958])</onload>
 		<onload>Skin.SetString(SubMenu09.1.Label,$LOCALIZE[13391])</onload>
 		<onload>Skin.SetString(SubMenu09.1.Path,EjectTray)</onload>
+		<onload>Skin.SetString(SubMenu09.2.Label,$LOCALIZE[600])</onload>
+		<onload>Skin.SetString(SubMenu09.2.Path,RipCD)</onload>
 		<!-- Sub Settings -->
 		<onload>Skin.SetString(SubMenu10.Label,$LOCALIZE[31959])</onload>
 		<onload>Skin.SetString(SubMenu10.1.Label,$LOCALIZE[5])</onload>
@@ -1118,6 +1120,8 @@
 		<onclick>Skin.SetString(SubMenu09.Label,$LOCALIZE[31958])</onclick>
 		<onclick>Skin.SetString(SubMenu09.1.Label,$LOCALIZE[13391])</onclick>
 		<onclick>Skin.SetString(SubMenu09.1.Path,EjectTray)</onclick>
+		<onclick>Skin.SetString(SubMenu09.2.Label,$LOCALIZE[600])</onclick>
+		<onclick>Skin.SetString(SubMenu09.2.Path,RipCD)</onclick>
 		<!-- Sub Settings -->
 		<onclick>Skin.Reset(SubMenu10.Label)</onclick>
 		<include content="ResetSubMenuItem">
