@@ -6,4 +6,10 @@
 		<icon>DefaultFolder.png</icon>
 		<action>EjectTray</action>
 	</shortcut>
+	<shortcut>
+		<label>600</label>
+		<label2>446</label2>
+		<icon>DefaultFolder.png</icon>
+		<action>RipCD</action>
+	</shortcut>
 </shortcuts>
