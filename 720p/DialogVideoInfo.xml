@@ -954,7 +954,7 @@
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label>90112</label>
 						<onclick>RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
-						<visible>System.HasAddon(script.tvtunes) + IsEmpty(Window(movieinformation).Property("TvTunes_HideVideoInfoButton")) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
+						<visible>System.HasAddon(script.tvtunes) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
 					</control>
 				</control>
 				<control type="button">
