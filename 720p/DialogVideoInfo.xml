@@ -953,8 +953,8 @@
 						<description>Fetch TvTunes stuff</description>
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label>90112</label>
-						<onclick>RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
-						<visible>System.HasAddon(script.tvtunes) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
+						<onclick>RunScript(script.tvtunes.ex,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
+						<visible>System.HasAddon(script.tvtunes.ex) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
 					</control>
 				</control>
 				<control type="button">
