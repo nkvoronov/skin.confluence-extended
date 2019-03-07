@@ -14,7 +14,7 @@
 	<groupoverride group="*" disable_groups="powermenu" condition="">SetProperty(MenuBackground,$VAR[HomeBackground],home)</groupoverride>
 	<backgrounddefault labelID="weather">special://skin/extras/backgrounds/weather.jpg</backgrounddefault>
 	<backgrounddefault labelID="pictures">special://skin/extras/backgrounds/pictures.jpg</backgrounddefault>
-    <backgrounddefault labelID="games">special://skin/extras/backgrounds/games.jpg</backgrounddefault>
+	<backgrounddefault labelID="games">special://skin/extras/backgrounds/games.jpg</backgrounddefault>
 	<backgrounddefault labelID="radio">special://skin/extras/backgrounds/radio.jpg</backgrounddefault>
 	<backgrounddefault labelID="livetv">special://skin/extras/backgrounds/livetv.jpg</backgrounddefault>
 	<backgrounddefault labelID="video">special://skin/extras/backgrounds/video.jpg</backgrounddefault>
@@ -197,7 +197,7 @@
 			<shortcut label="13391" type="446" icon="DefaultFolder.png">EjectTray()</shortcut>
 			<shortcut label="600" type="446" icon="DefaultFolder.png">RipCD()</shortcut>
 		</node>
-		<!-- Game -->        
+		<!-- Game -->
 		<node label="15016" condition="System.GetBool(gamesgeneral.enable)">
 			<shortcut label="15016" type="15016" icon="icons/sidemenu/games.png">ActivateWindow(games)</shortcut>
 			<node label="35049">
@@ -229,10 +229,10 @@
 				<shortcut label="1039" type="1" icon="DefaultAddonImages.png">ActivateWindow(pictures,addons://sources/image/,return)</shortcut>
 				<content>addon-image</content>
 			</node>
-            <node label="35049" condition="System.GetBool(gamesgeneral.enable)">
-                <shortcut label="35049" type="15016" icon="DefaultAddonGame.png">ActivateWindow(games,addons://sources/game/,return)</shortcut>
-                <content>addon-game</content>
-            </node>
+			<node label="35049" condition="System.GetBool(gamesgeneral.enable)">
+				<shortcut label="35049" type="15016" icon="DefaultAddonGame.png">ActivateWindow(games,addons://sources/game/,return)</shortcut>
+				<content>addon-game</content>
+			</node>
 		</node>
 		<!-- Settings -->
 		<node label="10004">
@@ -296,9 +296,9 @@
 		<node label="1039">
 			<content>addon-image</content>
 		</node>
-        <node label="35049" condition="System.GetBool(gamesgeneral.enable)">
-            <content>addon-game</content>
-        </node>
+		<node label="35049" condition="System.GetBool(gamesgeneral.enable)">
+			<content>addon-game</content>
+		</node>
 	</addons-groupings>
 	<!-- Widget Groupings -->
 	<widgetRename>True</widgetRename>
@@ -419,7 +419,7 @@
 		<node label="24001">
 			<shortcut label="1037" type="24001" icon="DefaultAddonVideo.png" widget="Library" widgetType="addon" widgetTarget="videos">addons://sources/video</shortcut>
 			<shortcut label="1038" type="24001" icon="DefaultAddonMusic.png" widget="Library" widgetType="addon" widgetTarget="music">addons://sources/audio</shortcut>
-			<shortcut label="35049" type="15016" icon="DefaultAddonGame.png" widget="Library" widgetType="addon" widgetTarget="games" condition="System.GetBool(gamesgeneral.enable)">addons://sources/game/</shortcut>            
+			<shortcut label="35049" type="15016" icon="DefaultAddonGame.png" widget="Library" widgetType="addon" widgetTarget="games" condition="System.GetBool(gamesgeneral.enable)">addons://sources/game/</shortcut>
 			<shortcut label="1043" type="24001" icon="DefaultAddonProgram.png" widget="Library" widgetType="addon" widgetTarget="programs">addons://sources/executable</shortcut>
 			<shortcut label="20244" type="24001" icon="DefaultAddonProgram.png" widget="Library" widgetType="addon" widgetTarget="programs" condition="System.Platform.Android">androidapp://sources/apps</shortcut>
 			<shortcut label="1039" type="24001" icon="DefaultAddonPicture.png" widget="Library" widgetType="addon" widgetTarget="pictures">addons://sources/image</shortcut>

@@ -778,8 +778,8 @@
 			<focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
 				<control type="button">
 					<onfocus>SetProperty(weatherfanartcode,$INFO[Container($PARAM[list_id]).ListItem.Property(FanartCode)],home)</onfocus>
-					<texturenofocus></texturenofocus>
-					<texturefocus></texturefocus>
+					<texturenofocus/>
+					<texturefocus/>
 				</control>
 				<control type="image">
 					<description>Background</description>
@@ -897,8 +897,8 @@
 				<control type="button">
 					<onfocus>SetProperty(mediaartfanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 					<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-					<texturenofocus></texturenofocus>
-					<texturefocus></texturefocus>
+					<texturenofocus/>
+					<texturefocus/>
 				</control>
 				<control type="image">
 					<description>Background</description>
@@ -1011,8 +1011,8 @@
 				<control type="button">
 					<onfocus>SetProperty(mediaartfanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 					<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-					<texturenofocus></texturenofocus>
-					<texturefocus></texturefocus>
+					<texturenofocus/>
+					<texturefocus/>
 				</control>
 				<control type="image">
 					<description>Background</description>
@@ -1139,8 +1139,8 @@
 				<control type="button">
 					<onfocus>SetProperty(mediaartfanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 					<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-					<texturenofocus></texturenofocus>
-					<texturefocus></texturefocus>
+					<texturenofocus/>
+					<texturefocus/>
 				</control>
 				<control type="image">
 					<description>Background</description>
@@ -1272,8 +1272,8 @@
 				<control type="button">
 					<onfocus>SetProperty(mediaartfanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 					<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-					<texturenofocus></texturenofocus>
-					<texturefocus></texturefocus>
+					<texturenofocus/>
+					<texturefocus/>
 				</control>
 				<control type="image">
 					<description>background</description>
@@ -1405,8 +1405,8 @@
 				<control type="button">
 					<onfocus>SetProperty(mediaartfanart,$INFO[Container($PARAM[list_id]).ListItem.Art(fanart)],home)</onfocus>
 					<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-					<texturenofocus></texturenofocus>
-					<texturefocus></texturefocus>
+					<texturenofocus/>
+					<texturefocus/>
 				</control>
 				<control type="image">
 					<description>Background</description>
@@ -1536,8 +1536,8 @@
 			<focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
 				<control type="button">
 					<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id])</onfocus>
-					<texturenofocus></texturenofocus>
-					<texturefocus></texturefocus>
+					<texturenofocus/>
+					<texturefocus/>
 				</control>
 				<control type="image">
 					<description>Background</description>

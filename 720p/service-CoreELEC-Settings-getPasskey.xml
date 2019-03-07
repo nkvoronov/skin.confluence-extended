@@ -38,7 +38,7 @@
 					<height>30</height>
 					<font>font12</font>
 					<textcolor>white</textcolor>
-					<label></label>
+					<label/>
 					<align>center</align>
 					<visible>true</visible>
 				</control>
@@ -49,7 +49,7 @@
 					<height>30</height>
 					<font>font24_title</font>
 					<textcolor>blue</textcolor>
-					<label></label>
+					<label/>
 					<align>center</align>
 					<visible>true</visible>
 				</control>
@@ -60,7 +60,7 @@
 					<height>30</height>
 					<font>font24_title</font>
 					<textcolor>blue</textcolor>
-					<label></label>
+					<label/>
 					<align>center</align>
 					<visible>true</visible>
 				</control>
@@ -71,7 +71,7 @@
 					<height>30</height>
 					<font>font24_title</font>
 					<textcolor>blue</textcolor>
-					<label></label>
+					<label/>
 					<align>center</align>
 					<visible>true</visible>
 				</control>
