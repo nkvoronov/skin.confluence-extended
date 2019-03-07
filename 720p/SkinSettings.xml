@@ -50,8 +50,8 @@
 				<top>11</top>
 				<width>64</width>
 				<height>32</height>
-				<label></label>
-				<font></font>
+				<label/>
+				<font/>
 				<onclick>PreviousMenu</onclick>
 				<texturefocus>DialogCloseButton-focus.png</texturefocus>
 				<texturenofocus>DialogCloseButton.png</texturenofocus>
@@ -79,7 +79,7 @@
 				<onright>9010</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
-				<pagecontrol></pagecontrol>
+				<pagecontrol/>
 				<scrolltime>300</scrolltime>
 				<itemlayout height="50" width="260">
 					<control type="image">
@@ -147,7 +147,7 @@
 					</item>
 					<item id="6">
 						<label>$LOCALIZE[89709]</label>
-						<label2></label2>
+						<label2/>
 						<visible>Skin.HasSetting(SeparateBackground)</visible>
 					</item>
 					<item id="7">
@@ -1459,8 +1459,8 @@
 						<top>93</top>
 						<width>33</width>
 						<height>22</height>
-						<label></label>
-						<font></font>
+						<label/>
+						<font/>
 						<texturenofocus>scroll-down-2.png</texturenofocus>
 						<texturefocus>scroll-down-focus-2.png</texturefocus>
 						<onclick>Control.Move(603,1)</onclick>
@@ -1475,8 +1475,8 @@
 						<top>93</top>
 						<width>33</width>
 						<height>22</height>
-						<label></label>
-						<font></font>
+						<label/>
+						<font/>
 						<texturenofocus>scroll-up-2.png</texturenofocus>
 						<texturefocus>scroll-up-focus-2.png</texturefocus>
 						<onclick>Control.Move(603,-1)</onclick>
@@ -1495,7 +1495,7 @@
 						<onright>604</onright>
 						<onup>602</onup>
 						<ondown>600</ondown>
-						<pagecontrol></pagecontrol>
+						<pagecontrol/>
 						<scrolltime>0</scrolltime>
 						<itemlayout height="1" width="750">
 						</itemlayout>

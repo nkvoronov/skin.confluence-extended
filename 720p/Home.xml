@@ -1065,7 +1065,7 @@
 				<width>45</width>
 				<height>45</height>
 				<label>1036</label>
-				<font></font>
+				<font/>
 				<onclick>$VAR[PowerButtonCommand]</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>

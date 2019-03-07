@@ -62,7 +62,7 @@ msgstr "Аппаратное декодирование"
 
 msgctxt "#31011"
 msgid "Inactive"
-msgstr "Неактивный"
+msgstr "Неактивно"
 
 msgctxt "#31012"
 msgid "Decoder"

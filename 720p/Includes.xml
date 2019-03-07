@@ -2344,8 +2344,8 @@
 				<top>0</top>
 				<width>64</width>
 				<height>32</height>
-				<label></label>
-				<font></font>
+				<label/>
+				<font/>
 				<onclick>PreviousMenu</onclick>
 				<texturefocus>DialogCloseButton-focus.png</texturefocus>
 				<texturenofocus>DialogCloseButton.png</texturenofocus>
@@ -2479,8 +2479,8 @@
 				<top>0</top>
 				<width>64</width>
 				<height>32</height>
-				<label></label>
-				<font></font>
+				<label/>
+				<font/>
 				<onclick>PreviousMenu</onclick>
 				<texturefocus>DialogCloseButton-focus.png</texturefocus>
 				<texturenofocus>DialogCloseButton.png</texturenofocus>
@@ -2613,7 +2613,7 @@
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.1.Play)]</onclick>
 				<onclick>fullscreen</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.1.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title))</visible>
 			</item>
@@ -2624,7 +2624,7 @@
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.2.Play)]</onclick>
 				<onclick>fullscreen</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.2.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.2.Title))</visible>
 			</item>
@@ -2635,7 +2635,7 @@
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.3.Play)]</onclick>
 				<onclick>fullscreen</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.3.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.3.Title))</visible>
 			</item>
@@ -2646,7 +2646,7 @@
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.4.Play)]</onclick>
 				<onclick>fullscreen</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.4.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.4.Title))</visible>
 			</item>
@@ -2657,7 +2657,7 @@
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.5.Play)]</onclick>
 				<onclick>fullscreen</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.5.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.5.Title))</visible>
 			</item>
@@ -2668,7 +2668,7 @@
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.6.Play)]</onclick>
 				<onclick>fullscreen</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.6.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.6.Title))</visible>
 			</item>
@@ -2679,7 +2679,7 @@
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.7.Play)]</onclick>
 				<onclick>fullscreen</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.7.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.7.Title))</visible>
 			</item>
@@ -2690,7 +2690,7 @@
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.8.Play)]</onclick>
 				<onclick>fullscreen</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.8.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.8.Title))</visible>
 			</item>
@@ -2701,7 +2701,7 @@
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.9.Play)]</onclick>
 				<onclick>fullscreen</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.9.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.9.Title))</visible>
 			</item>
@@ -2712,7 +2712,7 @@
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.10.Play)]</onclick>
 				<onclick>fullscreen</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.10.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.10.Title))</visible>
 			</item>
@@ -2723,7 +2723,7 @@
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.11.Play)]</onclick>
 				<onclick>fullscreen</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.11.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.11.Title))</visible>
 			</item>
@@ -2734,7 +2734,7 @@
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.12.Play)]</onclick>
 				<onclick>fullscreen</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.12.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.12.Title))</visible>
 			</item>
@@ -2745,7 +2745,7 @@
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.13.Play)]</onclick>
 				<onclick>fullscreen</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.13.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.13.Title))</visible>
 			</item>
@@ -2756,7 +2756,7 @@
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.14.Play)]</onclick>
 				<onclick>fullscreen</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.14.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.14.Title))</visible>
 			</item>
@@ -2767,7 +2767,7 @@
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.15.Play)]</onclick>
 				<onclick>fullscreen</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.15.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.15.Title))</visible>
 			</item>
@@ -2778,7 +2778,7 @@
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.16.Play)]</onclick>
 				<onclick>fullscreen</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.16.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.16.Title))</visible>
 			</item>
@@ -2789,7 +2789,7 @@
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.17.Play)]</onclick>
 				<onclick>fullscreen</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.17.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.17.Title))</visible>
 			</item>
@@ -2800,7 +2800,7 @@
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.18.Play)]</onclick>
 				<onclick>fullscreen</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.18.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.18.Title))</visible>
 			</item>
@@ -2811,7 +2811,7 @@
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.19.Play)]</onclick>
 				<onclick>fullscreen</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.19.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.19.Title))</visible>
 			</item>
@@ -2822,7 +2822,7 @@
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.20.Play)]</onclick>
 				<onclick>fullscreen</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.20.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.20.Title))</visible>
 			</item>
@@ -2833,16 +2833,16 @@
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecentAlbum.1.Play)]</onclick>
 				<onclick>fullscreen</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.1.Thumb)]</thumb>
 				<visible>String.IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title)) + !String.IsEmpty(Window(Home).Property(RecentAlbum.1.Title))</visible>
 			</item>
 			<item id="22">
-				<label></label>
+				<label/>
 				<label2>- $LOCALIZE[89703]</label2>
 				<onclick>PreviousMenu</onclick>
-				<icon></icon>
-				<thumb></thumb>
+				<icon/>
+				<thumb/>
 				<visible>String.IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title)) + String.IsEmpty(Window(Home).Property(RecentAlbum.1.Title))</visible>
 			</item>
 		</content>
@@ -2855,7 +2855,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.1.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.1.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.1.PercentPlayed)]</property>
@@ -2867,7 +2867,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.2.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.2.Art(thumb))]</thumb>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.2.PercentPlayed)]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedEpisode.2.TVshowTitle))</visible>
@@ -2878,7 +2878,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.3.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.3.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.3.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.3.PercentPlayed)]</property>
@@ -2890,7 +2890,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.4.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.4.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.4.PercentPlayed)]</property>
@@ -2902,7 +2902,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.5.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.5.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.5.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.5.PercentPlayed)]</property>
@@ -2914,7 +2914,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.6.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.6.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.6.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.6.PercentPlayed)]</property>
@@ -2926,7 +2926,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.7.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.7.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.7.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.7.PercentPlayed)]</property>
@@ -2938,7 +2938,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.8.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.8.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.8.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.8.PercentPlayed)]</property>
@@ -2950,7 +2950,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.9.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.9.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.9.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.9.PercentPlayed)]</property>
@@ -2962,7 +2962,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.10.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.10.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.10.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.10.PercentPlayed)]</property>
@@ -2974,7 +2974,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.11.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.11.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.11.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.11.PercentPlayed)]</property>
@@ -2986,7 +2986,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.12.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.12.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.12.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.12.PercentPlayed)]</property>
@@ -2998,7 +2998,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.13.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.13.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.13.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.13.PercentPlayed)]</property>
@@ -3010,7 +3010,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.14.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.14.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.14.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.14.PercentPlayed)]</property>
@@ -3022,7 +3022,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.15.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.15.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.15.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.15.PercentPlayed)]</property>
@@ -3034,7 +3034,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.16.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.16.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.16.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.16.PercentPlayed)]</property>
@@ -3046,7 +3046,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.17.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.17.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.17.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.17.PercentPlayed)]</property>
@@ -3058,7 +3058,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.18.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.18.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.18.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.18.PercentPlayed)]</property>
@@ -3070,7 +3070,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.19.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.19.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.19.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.19.PercentPlayed)]</property>
@@ -3082,7 +3082,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.20.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.20.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.20.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.20.PercentPlayed)]</property>
@@ -3090,10 +3090,10 @@
 			</item>
 			<item id="21">
 				<label>- $LOCALIZE[89703]</label>
-				<label2></label2>
+				<label2/>
 				<onclick>PreviousMenu</onclick>
-				<icon></icon>
-				<thumb></thumb>
+				<icon/>
+				<thumb/>
 				<visible>String.IsEmpty(Window(Home).Property(RecommendedEpisode.1.TVshowTitle))</visible>
 			</item>
 		</content>
@@ -3106,7 +3106,7 @@
 				<onclick>Dialog.Close(2125)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.1.File)])</onclick>
 				<icon>$INFO[Window(Home).Property(RecommendedMovie.1.Art(poster))]</icon>
-				<thumb></thumb>
+				<thumb/>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.1.Art(clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.1.PercentPlayed)]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.1.Title))</visible>
@@ -3117,7 +3117,7 @@
 				<onclick>Dialog.Close(2125)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.2.File)])</onclick>
 				<icon>$INFO[Window(Home).Property(RecommendedMovie.2.Art(poster))]</icon>
-				<thumb></thumb>
+				<thumb/>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.2.Art(clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.2.PercentPlayed)]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.2.Title))</visible>
@@ -3128,7 +3128,7 @@
 				<onclick>Dialog.Close(2125)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.3.File)])</onclick>
 				<icon>$INFO[Window(Home).Property(RecommendedMovie.3.Art(poster))]</icon>
-				<thumb></thumb>
+				<thumb/>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.3.Art(clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.3.PercentPlayed)]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.3.Title))</visible>
@@ -3139,7 +3139,7 @@
 				<onclick>Dialog.Close(2125)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.4.File)])</onclick>
 				<icon>$INFO[Window(Home).Property(RecommendedMovie.4.Art(poster))]</icon>
-				<thumb></thumb>
+				<thumb/>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.4.Art(clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.4.PercentPlayed)]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.4.Title))</visible>
@@ -3150,7 +3150,7 @@
 				<onclick>Dialog.Close(2125)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.5.File)])</onclick>
 				<icon>$INFO[Window(Home).Property(RecommendedMovie.5.Art(poster))]</icon>
-				<thumb></thumb>
+				<thumb/>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.5.Art(clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.5.PercentPlayed)]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.5.Title))</visible>
@@ -3161,7 +3161,7 @@
 				<onclick>Dialog.Close(2125)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.6.File)])</onclick>
 				<icon>$INFO[Window(Home).Property(RecommendedMovie.6.Art(poster))]</icon>
-				<thumb></thumb>
+				<thumb/>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.6.Art(clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.6.PercentPlayed)]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.6.Title))</visible>
@@ -3172,7 +3172,7 @@
 				<onclick>Dialog.Close(2125)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.7.File)])</onclick>
 				<icon>$INFO[Window(Home).Property(RecommendedMovie.7.Art(poster))]</icon>
-				<thumb></thumb>
+				<thumb/>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.7.Art(clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.7.PercentPlayed)]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.7.Title))</visible>
@@ -3183,7 +3183,7 @@
 				<onclick>Dialog.Close(2125)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.8.File)])</onclick>
 				<icon>$INFO[Window(Home).Property(RecommendedMovie.8.Art(poster))]</icon>
-				<thumb></thumb>
+				<thumb/>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.8.Art(clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.8.PercentPlayed)]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.8.Title))</visible>
@@ -3194,7 +3194,7 @@
 				<onclick>Dialog.Close(2125)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.9.File)])</onclick>
 				<icon>$INFO[Window(Home).Property(RecommendedMovie.9.Art(poster))]</icon>
-				<thumb></thumb>
+				<thumb/>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.9.Art(clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.9.PercentPlayed)]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.9.Title))</visible>
@@ -3205,7 +3205,7 @@
 				<onclick>Dialog.Close(2125)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.10.File)])</onclick>
 				<icon>$INFO[Window(Home).Property(RecommendedMovie.10.Art(poster))]</icon>
-				<thumb></thumb>
+				<thumb/>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.10.Art(clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.10.PercentPlayed)]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.10.Title))</visible>
@@ -3216,7 +3216,7 @@
 				<onclick>Dialog.Close(2125)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.11.File)])</onclick>
 				<icon>$INFO[Window(Home).Property(RecommendedMovie.11.Art(poster))]</icon>
-				<thumb></thumb>
+				<thumb/>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.11.Art(clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.11.PercentPlayed)]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.11.Title))</visible>
@@ -3227,7 +3227,7 @@
 				<onclick>Dialog.Close(2125)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.12.File)])</onclick>
 				<icon>$INFO[Window(Home).Property(RecommendedMovie.12.Art(poster))]</icon>
-				<thumb></thumb>
+				<thumb/>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.12.Art(clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.12.PercentPlayed)]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.12.Title))</visible>
@@ -3238,7 +3238,7 @@
 				<onclick>Dialog.Close(2125)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.13.File)])</onclick>
 				<icon>$INFO[Window(Home).Property(RecommendedMovie.13.Art(poster))]</icon>
-				<thumb></thumb>
+				<thumb/>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.13.Art(clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.13.PercentPlayed)]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.13.Title))</visible>
@@ -3249,7 +3249,7 @@
 				<onclick>Dialog.Close(2125)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.14.File)])</onclick>
 				<icon>$INFO[Window(Home).Property(RecommendedMovie.14.Art(poster))]</icon>
-				<thumb></thumb>
+				<thumb/>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.14.Art(clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.14.PercentPlayed)]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.14.Title))</visible>
@@ -3260,7 +3260,7 @@
 				<onclick>Dialog.Close(2125)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.15.File)])</onclick>
 				<icon>$INFO[Window(Home).Property(RecommendedMovie.15.Art(poster))]</icon>
-				<thumb></thumb>
+				<thumb/>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.15.Art(clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.15.PercentPlayed)]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.15.Title))</visible>
@@ -3271,7 +3271,7 @@
 				<onclick>Dialog.Close(2125)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.16.File)])</onclick>
 				<icon>$INFO[Window(Home).Property(RecommendedMovie.16.Art(poster))]</icon>
-				<thumb></thumb>
+				<thumb/>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.16.Art(clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.16.PercentPlayed)]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.16.Title))</visible>
@@ -3282,7 +3282,7 @@
 				<onclick>Dialog.Close(2125)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.17.File)])</onclick>
 				<icon>$INFO[Window(Home).Property(RecommendedMovie.17.Art(poster))]</icon>
-				<thumb></thumb>
+				<thumb/>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.17.Art(clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.17.PercentPlayed)]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.17.Title))</visible>
@@ -3293,7 +3293,7 @@
 				<onclick>Dialog.Close(2125)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.18.File)])</onclick>
 				<icon>$INFO[Window(Home).Property(RecommendedMovie.18.Art(poster))]</icon>
-				<thumb></thumb>
+				<thumb/>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.18.Art(clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.18.PercentPlayed)]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.18.Title))</visible>
@@ -3304,7 +3304,7 @@
 				<onclick>Dialog.Close(2125)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.19.File)])</onclick>
 				<icon>$INFO[Window(Home).Property(RecommendedMovie.19.Art(poster))]</icon>
-				<thumb></thumb>
+				<thumb/>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.19.Art(clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.19.PercentPlayed)]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.19.Title))</visible>
@@ -3315,17 +3315,17 @@
 				<onclick>Dialog.Close(2125)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.20.File)])</onclick>
 				<icon>$INFO[Window(Home).Property(RecommendedMovie.20.Art(poster))]</icon>
-				<thumb></thumb>
+				<thumb/>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedMovie.20.Art(clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.20.PercentPlayed)]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMovie.20.Title))</visible>
 			</item>
 			<item id="21">
 				<label>- $LOCALIZE[89703] - </label>
-				<label2></label2>
+				<label2/>
 				<onclick>PreviousMenu</onclick>
-				<icon></icon>
-				<thumb></thumb>
+				<icon/>
+				<thumb/>
 				<visible>String.IsEmpty(Window(Home).Property(RecommendedMovie.1.Title))</visible>
 			</item>
 		</content>
@@ -3338,7 +3338,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2126)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.1.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.1.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.1.Title))</visible>
 			</item>
@@ -3348,7 +3348,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2126)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.2.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.2.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.2.Title))</visible>
 			</item>
@@ -3358,7 +3358,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2126)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.3.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.3.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.3.Title))</visible>
 			</item>
@@ -3368,7 +3368,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2126)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.4.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.4.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.4.Title))</visible>
 			</item>
@@ -3378,7 +3378,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2126)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.5.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.5.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.5.Title))</visible>
 			</item>
@@ -3388,7 +3388,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2126)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.6.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.6.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.6.Title))</visible>
 			</item>
@@ -3398,7 +3398,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2126)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.7.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.7.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.7.Title))</visible>
 			</item>
@@ -3408,7 +3408,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2126)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.8.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.8.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.8.Title))</visible>
 			</item>
@@ -3418,7 +3418,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2126)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.9.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.9.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.9.Title))</visible>
 			</item>
@@ -3428,7 +3428,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2126)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.10.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.10.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.10.Title))</visible>
 			</item>
@@ -3438,7 +3438,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2126)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.11.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.11.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.11.Title))</visible>
 			</item>
@@ -3448,7 +3448,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2126)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.12.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.12.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.12.Title))</visible>
 			</item>
@@ -3458,7 +3458,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2126)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.13.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.13.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.13.Title))</visible>
 			</item>
@@ -3468,7 +3468,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2126)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.14.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.14.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.14.Title))</visible>
 			</item>
@@ -3478,7 +3478,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2126)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.15.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.15.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.15.Title))</visible>
 			</item>
@@ -3488,7 +3488,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2126)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.16.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.16.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.16.Title))</visible>
 			</item>
@@ -3498,7 +3498,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2126)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.17.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.17.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.17.Title))</visible>
 			</item>
@@ -3508,7 +3508,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2126)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.18.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.18.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.18.Title))</visible>
 			</item>
@@ -3518,7 +3518,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2126)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.19.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.19.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.19.Title))</visible>
 			</item>
@@ -3528,16 +3528,16 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2126)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.20.File)])</onclick>
-				<icon></icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.20.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.20.Title))</visible>
 			</item>
 			<item id="21">
-				<label></label>
+				<label/>
 				<label2>- $LOCALIZE[89703]</label2>
 				<onclick>PreviousMenu</onclick>
-				<icon></icon>
-				<thumb></thumb>
+				<icon/>
+				<thumb/>
 				<visible>String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.1.Title))</visible>
 			</item>
 		</content>
@@ -3803,7 +3803,7 @@
 				<description>Reset Background</description>
 				<icon>DefaultAddon.png</icon>
 				<label>$LOCALIZE[15109]</label>
-				<label2></label2>
+				<label2/>
 				<onclick>Skin.Reset($INFO[Window(home).Property(setbackgrounds)])</onclick>
 				<onclick>PreviousMenu</onclick>
 			</item>
@@ -3811,7 +3811,7 @@
 				<description>Own Background</description>
 				<icon>DefaultFile.png</icon>
 				<label>$LOCALIZE[90109]</label>
-				<label2></label2>
+				<label2/>
 				<onclick>Skin.SetImage($INFO[Window(home).Property(setbackgrounds)])</onclick>
 				<onclick>PreviousMenu</onclick>
 			</item>
@@ -3819,7 +3819,7 @@
 				<description>Multi Background</description>
 				<icon>DefaultFolder.png</icon>
 				<label>$LOCALIZE[90110]</label>
-				<label2></label2>
+				<label2/>
 				<onclick>Skin.SetPath($INFO[Window(home).Property(setbackgrounds)])</onclick>
 				<onclick>PreviousMenu</onclick>
 			</item>
@@ -3872,8 +3872,8 @@
 					<top>15</top>
 					<width>64</width>
 					<height>32</height>
-					<label></label>
-					<font></font>
+					<label/>
+					<font/>
 					<onclick>PreviousMenu</onclick>
 					<texturefocus>DialogCloseButton-focus.png</texturefocus>
 					<texturenofocus>DialogCloseButton.png</texturenofocus>

@@ -34,8 +34,8 @@
 				<top>15</top>
 				<width>64</width>
 				<height>32</height>
-				<label></label>
-				<font></font>
+				<label/>
+				<font/>
 				<onclick>PreviousMenu</onclick>
 				<texturefocus>DialogCloseButton-focus.png</texturefocus>
 				<texturenofocus>DialogCloseButton.png</texturenofocus>
@@ -142,7 +142,7 @@
 				<left>570</left>
 				<top>420</top>
 				<subtype>page</subtype>
-				<font></font>
+				<font/>
 				<onleft>110</onleft>
 				<onright>110</onright>
 				<ondown>110</ondown>
@@ -230,7 +230,7 @@
 				<left>570</left>
 				<top>420</top>
 				<subtype>page</subtype>
-				<font></font>
+				<font/>
 				<onleft>120</onleft>
 				<onright>120</onright>
 				<ondown>120</ondown>
