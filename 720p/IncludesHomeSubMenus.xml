@@ -971,18 +971,32 @@
 		<onload>Skin.SetString(SubMenu09.1.Path,EjectTray)</onload>
 		<onload>Skin.SetString(SubMenu09.2.Label,$LOCALIZE[600])</onload>
 		<onload>Skin.SetString(SubMenu09.2.Path,RipCD)</onload>
+		<!-- Sub Programs -->
+		<onload>Skin.SetString(SubMenu10.Label,$LOCALIZE[31957])</onload>
+		<onload>Skin.SetString(SubMenu10.1.Label,$LOCALIZE[24998])</onload>
+		<onload>Skin.SetString(SubMenu10.1.Path,ActivateWindow(addonbrowser,addons://user/,return))</onload>
+		<onload>Skin.SetString(SubMenu10.2.Label,$LOCALIZE[24043])</onload>
+		<onload>Skin.SetString(SubMenu10.2.Path,ActivateWindow(addonbrowser,addons://outdated/,return))</onload>
+		<onload>Skin.SetString(SubMenu10.3.Label,$LOCALIZE[24004])</onload>
+		<onload>Skin.SetString(SubMenu10.3.Path,ActivateWindow(addonbrowser,addons://recently_updated/,return))</onload>
+		<onload>Skin.SetString(SubMenu10.4.Label,$LOCALIZE[24033])</onload>
+		<onload>Skin.SetString(SubMenu10.4.Path,ActivateWindow(addonbrowser,addons://repos/,return))</onload>
+		<onload>Skin.SetString(SubMenu10.5.Label,$LOCALIZE[24041])</onload>
+		<onload>Skin.SetString(SubMenu10.5.Path,InstallFromZip)</onload>
+		<onload>Skin.SetString(SubMenu10.6.Label,$LOCALIZE[137])</onload>
+		<onload>Skin.SetString(SubMenu10.6.Path,ActivateWindow(addonbrowser,addons://search/,return))</onload>
 		<!-- Sub Settings -->
-		<onload>Skin.SetString(SubMenu10.Label,$LOCALIZE[31959])</onload>
-		<onload>Skin.SetString(SubMenu10.1.Label,$LOCALIZE[5])</onload>
-		<onload>Skin.SetString(SubMenu10.1.Path,ActivateWindow(settings))</onload>
-		<onload>Skin.SetString(SubMenu10.2.Label,$LOCALIZE[7])</onload>
-		<onload>Skin.SetString(SubMenu10.2.Path,ActivateWindow(filemanager))</onload>
-		<onload>Skin.SetString(SubMenu10.3.Label,$LOCALIZE[13200])</onload>
-		<onload>Skin.SetString(SubMenu10.3.Path,ActivateWindow(profiles))</onload>
-		<onload>Skin.SetString(SubMenu10.4.Label,$LOCALIZE[130])</onload>
-		<onload>Skin.SetString(SubMenu10.4.Path,ActivateWindow(systeminfo))</onload>
-		<onload>Skin.SetString(SubMenu10.5.Label,$LOCALIZE[14111])</onload>
-		<onload>Skin.SetString(SubMenu10.5.Path,ActivateWindow(eventlog,events://,return))</onload>
+		<onload>Skin.SetString(SubMenu11.Label,$LOCALIZE[31959])</onload>
+		<onload>Skin.SetString(SubMenu11.1.Label,$LOCALIZE[5])</onload>
+		<onload>Skin.SetString(SubMenu11.1.Path,ActivateWindow(settings))</onload>
+		<onload>Skin.SetString(SubMenu11.2.Label,$LOCALIZE[7])</onload>
+		<onload>Skin.SetString(SubMenu11.2.Path,ActivateWindow(filemanager))</onload>
+		<onload>Skin.SetString(SubMenu11.3.Label,$LOCALIZE[13200])</onload>
+		<onload>Skin.SetString(SubMenu11.3.Path,ActivateWindow(profiles))</onload>
+		<onload>Skin.SetString(SubMenu11.4.Label,$LOCALIZE[130])</onload>
+		<onload>Skin.SetString(SubMenu11.4.Path,ActivateWindow(systeminfo))</onload>
+		<onload>Skin.SetString(SubMenu11.5.Label,$LOCALIZE[14111])</onload>
+		<onload>Skin.SetString(SubMenu11.5.Path,ActivateWindow(eventlog,events://,return))</onload>
 	</include>
 	<!-- Rest SubMenu Items -->
 	<include name="ResetSubMenuItems">
@@ -1122,27 +1136,40 @@
 		<onclick>Skin.SetString(SubMenu09.1.Path,EjectTray)</onclick>
 		<onclick>Skin.SetString(SubMenu09.2.Label,$LOCALIZE[600])</onclick>
 		<onclick>Skin.SetString(SubMenu09.2.Path,RipCD)</onclick>
-		<!-- Sub Settings -->
+		<!-- Sub Programs -->
 		<onclick>Skin.Reset(SubMenu10.Label)</onclick>
 		<include content="ResetSubMenuItem">
 			<param name="id2" value="10" />
 		</include>
-		<onclick>Skin.SetString(SubMenu10.Label,$LOCALIZE[31959])</onclick>
-		<onclick>Skin.SetString(SubMenu10.1.Label,$LOCALIZE[5])</onclick>
-		<onclick>Skin.SetString(SubMenu10.1.Path,ActivateWindow(settings))</onclick>
-		<onclick>Skin.SetString(SubMenu10.2.Label,$LOCALIZE[7])</onclick>
-		<onclick>Skin.SetString(SubMenu10.2.Path,ActivateWindow(filemanager))</onclick>
-		<onclick>Skin.SetString(SubMenu10.3.Label,$LOCALIZE[13200])</onclick>
-		<onclick>Skin.SetString(SubMenu10.3.Path,ActivateWindow(profiles))</onclick>
-		<onclick>Skin.SetString(SubMenu10.4.Label,$LOCALIZE[130])</onclick>
-		<onclick>Skin.SetString(SubMenu10.4.Path,ActivateWindow(systeminfo))</onclick>
-		<onclick>Skin.SetString(SubMenu10.5.Label,$LOCALIZE[14111])</onclick>
-		<onclick>Skin.SetString(SubMenu10.5.Path,ActivateWindow(eventlog,events://,return))</onclick>
-		<!-- SubMenu 11 -->
+		<onload>Skin.SetString(SubMenu10.Label,$LOCALIZE[31957])</onload>
+		<onload>Skin.SetString(SubMenu10.1.Label,$LOCALIZE[24998])</onload>
+		<onload>Skin.SetString(SubMenu10.1.Path,ActivateWindow(addonbrowser,addons://user/,return))</onload>
+		<onload>Skin.SetString(SubMenu10.2.Label,$LOCALIZE[24043])</onload>
+		<onload>Skin.SetString(SubMenu10.2.Path,ActivateWindow(addonbrowser,addons://outdated/,return))</onload>
+		<onload>Skin.SetString(SubMenu10.3.Label,$LOCALIZE[24004])</onload>
+		<onload>Skin.SetString(SubMenu10.3.Path,ActivateWindow(addonbrowser,addons://recently_updated/,return))</onload>
+		<onload>Skin.SetString(SubMenu10.4.Label,$LOCALIZE[24033])</onload>
+		<onload>Skin.SetString(SubMenu10.4.Path,ActivateWindow(addonbrowser,addons://repos/,return))</onload>
+		<onload>Skin.SetString(SubMenu10.5.Label,$LOCALIZE[24041])</onload>
+		<onload>Skin.SetString(SubMenu10.5.Path,InstallFromZip)</onload>
+		<onload>Skin.SetString(SubMenu10.6.Label,$LOCALIZE[137])</onload>
+		<onload>Skin.SetString(SubMenu10.6.Path,ActivateWindow(addonbrowser,addons://search/,return))</onload>
+		<!-- Sub Settings -->
 		<onclick>Skin.Reset(SubMenu11.Label)</onclick>
 		<include content="ResetSubMenuItem">
 			<param name="id2" value="11" />
 		</include>
+		<onclick>Skin.SetString(SubMenu11.Label,$LOCALIZE[31959])</onclick>
+		<onclick>Skin.SetString(SubMenu11.1.Label,$LOCALIZE[5])</onclick>
+		<onclick>Skin.SetString(SubMenu11.1.Path,ActivateWindow(settings))</onclick>
+		<onclick>Skin.SetString(SubMenu11.2.Label,$LOCALIZE[7])</onclick>
+		<onclick>Skin.SetString(SubMenu11.2.Path,ActivateWindow(filemanager))</onclick>
+		<onclick>Skin.SetString(SubMenu11.3.Label,$LOCALIZE[13200])</onclick>
+		<onclick>Skin.SetString(SubMenu11.3.Path,ActivateWindow(profiles))</onclick>
+		<onclick>Skin.SetString(SubMenu11.4.Label,$LOCALIZE[130])</onclick>
+		<onclick>Skin.SetString(SubMenu11.4.Path,ActivateWindow(systeminfo))</onclick>
+		<onclick>Skin.SetString(SubMenu11.5.Label,$LOCALIZE[14111])</onclick>
+		<onclick>Skin.SetString(SubMenu11.5.Path,ActivateWindow(eventlog,events://,return))</onclick>
 		<!-- SubMenu 12 -->
 		<onclick>Skin.Reset(SubMenu12.Label)</onclick>
 		<include content="ResetSubMenuItem">
