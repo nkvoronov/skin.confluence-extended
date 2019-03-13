@@ -210,9 +210,9 @@
 			<shortcut label="10040" type="10004" icon="DefaultAddon.png">ActivateWindow(addonbrowser)</shortcut>
 			<shortcut label="24998" type="24001" icon="DefaultAddonsInstalled.png">ActivateWindow(addonbrowser,addons://user/,return)</shortcut>
 			<shortcut label="24043" type="24001" icon="DefaultAddonsUpdates.png">ActivateWindow(addonbrowser,addons://outdated/,return)</shortcut>
-            <shortcut label="24004" type="24001" icon="DefaultAddonsRecentlyUpdated.png">ActivateWindow(addonbrowser,addons://recently_updated/,return)</shortcut>
+			<shortcut label="24004" type="24001" icon="DefaultAddonsRecentlyUpdated.png">ActivateWindow(addonbrowser,addons://recently_updated/,return)</shortcut>
 			<shortcut label="24033" type="24001" icon="DefaultAddonsRepo.png">ActivateWindow(addonbrowser,addons://repos/,return)</shortcut>
-            <shortcut label="24041" type="24001" icon="DefaultAddonsZip.png">InstallFromZip</shortcut>
+			<shortcut label="24041" type="24001" icon="DefaultAddonsZip.png">InstallFromZip</shortcut>
 			<shortcut label="137" type="24001" icon="DefaultAddonsSearch.png">ActivateWindow(addonbrowser,addons://search/,return)</shortcut>
 			<node label="1043">
 				<shortcut label="10001" type="24001" icon="DefaultAddonProgram.png">ActivateWindow(programs,addons://sources/executable/,return)</shortcut>
