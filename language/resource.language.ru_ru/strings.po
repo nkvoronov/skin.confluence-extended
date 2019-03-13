@@ -258,7 +258,7 @@ msgstr "Скрыть фоновый фанарт"
 
 msgctxt "#31120"
 msgid "Home page \"Games\" submenu"
-msgstr "Подменю \ "Игры \"  главного экрана"
+msgstr "Подменю \ "Игры \" главного экрана"
 
 msgctxt "#31122"
 msgid "Hide EPG if RDS is present on channel window"

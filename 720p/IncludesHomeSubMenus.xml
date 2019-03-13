@@ -875,102 +875,100 @@
 		<onload>Skin.SetString(SubMenu01.Label,$LOCALIZE[31951])</onload>
 		<onload>Skin.SetString(SubMenu01.1.Label,$LOCALIZE[24001])</onload>
 		<onload>Skin.SetString(SubMenu01.1.Path,ActivateWindow(pictures,addons://sources/image/,return))</onload>
+		<!-- Sub Games -->
+		<onload>Skin.SetString(SubMenu02.Label,$LOCALIZE[31001])</onload>
+		<onload>Skin.SetString(SubMenu02.1.Label,$LOCALIZE[24001])</onload>
+		<onload>Skin.SetString(SubMenu02.1.Path,ActivateWindow(games,addons://sources/game/,return))</onload>
 		<!-- Sub Radio -->
-		<onload>Skin.SetString(SubMenu02.Label,$LOCALIZE[31960])</onload>
-		<onload>Skin.SetString(SubMenu02.1.Label,$LOCALIZE[19019])</onload>
-		<onload>Skin.SetString(SubMenu02.1.Path,ActivateWindow(radiochannels))</onload>
-		<onload>Skin.SetString(SubMenu02.2.Label,$LOCALIZE[19069])</onload>
-		<onload>Skin.SetString(SubMenu02.2.Path,ActivateWindow(radioguide))</onload>
-		<onload>Skin.SetString(SubMenu02.3.Label,$LOCALIZE[19017])</onload>
-		<onload>Skin.SetString(SubMenu02.3.Path,ActivateWindow(radiorecordings))</onload>
-		<onload>Skin.SetString(SubMenu02.4.Label,$LOCALIZE[19138])</onload>
-		<onload>Skin.SetString(SubMenu02.4.Path,ActivateWindow(radiotimerrules))</onload>
-		<onload>Skin.SetString(SubMenu02.5.Label,$LOCALIZE[19040])</onload>
-		<onload>Skin.SetString(SubMenu02.5.Path,ActivateWindow(radiotimers))</onload>
-		<onload>Skin.SetString(SubMenu02.6.Label,$LOCALIZE[137])</onload>
-		<onload>Skin.SetString(SubMenu02.6.Path,ActivateWindow(radiosearch))</onload>
-		<!-- Sub TV -->
-		<onload>Skin.SetString(SubMenu03.Label,$LOCALIZE[31952])</onload>
+		<onload>Skin.SetString(SubMenu03.Label,$LOCALIZE[31960])</onload>
 		<onload>Skin.SetString(SubMenu03.1.Label,$LOCALIZE[19019])</onload>
-		<onload>Skin.SetString(SubMenu03.1.Path,ActivateWindow(tvchannels))</onload>
+		<onload>Skin.SetString(SubMenu03.1.Path,ActivateWindow(radiochannels))</onload>
 		<onload>Skin.SetString(SubMenu03.2.Label,$LOCALIZE[19069])</onload>
-		<onload>Skin.SetString(SubMenu03.2.Path,ActivateWindow(tvguide))</onload>
+		<onload>Skin.SetString(SubMenu03.2.Path,ActivateWindow(radioguide))</onload>
 		<onload>Skin.SetString(SubMenu03.3.Label,$LOCALIZE[19017])</onload>
-		<onload>Skin.SetString(SubMenu03.3.Path,ActivateWindow(tvrecordings))</onload>
+		<onload>Skin.SetString(SubMenu03.3.Path,ActivateWindow(radiorecordings))</onload>
 		<onload>Skin.SetString(SubMenu03.4.Label,$LOCALIZE[19138])</onload>
-		<onload>Skin.SetString(SubMenu03.4.Path,ActivateWindow(tvtimerrules))</onload>
+		<onload>Skin.SetString(SubMenu03.4.Path,ActivateWindow(radiotimerrules))</onload>
 		<onload>Skin.SetString(SubMenu03.5.Label,$LOCALIZE[19040])</onload>
-		<onload>Skin.SetString(SubMenu03.5.Path,ActivateWindow(tvtimers))</onload>
+		<onload>Skin.SetString(SubMenu03.5.Path,ActivateWindow(radiotimers))</onload>
 		<onload>Skin.SetString(SubMenu03.6.Label,$LOCALIZE[137])</onload>
-		<onload>Skin.SetString(SubMenu03.6.Path,ActivateWindow(tvsearch))</onload>
+		<onload>Skin.SetString(SubMenu03.6.Path,ActivateWindow(radiosearch))</onload>
+		<!-- Sub TV -->
+		<onload>Skin.SetString(SubMenu04.Label,$LOCALIZE[31952])</onload>
+		<onload>Skin.SetString(SubMenu04.1.Label,$LOCALIZE[19019])</onload>
+		<onload>Skin.SetString(SubMenu04.1.Path,ActivateWindow(tvchannels))</onload>
+		<onload>Skin.SetString(SubMenu04.2.Label,$LOCALIZE[19069])</onload>
+		<onload>Skin.SetString(SubMenu04.2.Path,ActivateWindow(tvguide))</onload>
+		<onload>Skin.SetString(SubMenu04.3.Label,$LOCALIZE[19017])</onload>
+		<onload>Skin.SetString(SubMenu04.3.Path,ActivateWindow(tvrecordings))</onload>
+		<onload>Skin.SetString(SubMenu04.4.Label,$LOCALIZE[19138])</onload>
+		<onload>Skin.SetString(SubMenu04.4.Path,ActivateWindow(tvtimerrules))</onload>
+		<onload>Skin.SetString(SubMenu04.5.Label,$LOCALIZE[19040])</onload>
+		<onload>Skin.SetString(SubMenu04.5.Path,ActivateWindow(tvtimers))</onload>
+		<onload>Skin.SetString(SubMenu04.6.Label,$LOCALIZE[137])</onload>
+		<onload>Skin.SetString(SubMenu04.6.Path,ActivateWindow(tvsearch))</onload>
 		<!-- Sub Videos -->
-		<onload>Skin.SetString(SubMenu04.Label,$LOCALIZE[31953])</onload>
-		<onload>Skin.SetString(SubMenu04.1.Label,$LOCALIZE[744])</onload>
-		<onload>Skin.SetString(SubMenu04.1.Path,ActivateWindow(videos,sources://video/,return))</onload>
-		<onload>Skin.SetString(SubMenu04.2.Label,$LOCALIZE[14022])</onload>
-		<onload>Skin.SetString(SubMenu04.2.Path,ActivateWindow(videos,library://video/,return))</onload>
-		<onload>Skin.SetString(SubMenu04.3.Label,$LOCALIZE[24001])</onload>
-		<onload>Skin.SetString(SubMenu04.3.Path,ActivateWindow(videos,addons://sources/video/,return))</onload>
+		<onload>Skin.SetString(SubMenu05.Label,$LOCALIZE[31953])</onload>
+		<onload>Skin.SetString(SubMenu05.1.Label,$LOCALIZE[744])</onload>
+		<onload>Skin.SetString(SubMenu05.1.Path,ActivateWindow(videos,sources://video/,return))</onload>
+		<onload>Skin.SetString(SubMenu05.2.Label,$LOCALIZE[14022])</onload>
+		<onload>Skin.SetString(SubMenu05.2.Path,ActivateWindow(videos,library://video/,return))</onload>
+		<onload>Skin.SetString(SubMenu05.3.Label,$LOCALIZE[24001])</onload>
+		<onload>Skin.SetString(SubMenu05.3.Path,ActivateWindow(videos,addons://sources/video/,return))</onload>
 		<!-- Sub Movies -->
-		<onload>Skin.SetString(SubMenu05.Label,$LOCALIZE[31954])</onload>
-		<onload>Skin.SetString(SubMenu05.1.Label,$LOCALIZE[31328])</onload>
-		<onload>Skin.SetString(SubMenu05.1.Path,ActivateWindow(videos,videodb://recentlyaddedmovies/,return))</onload>
-		<onload>Skin.SetString(SubMenu05.2.Label,$LOCALIZE[20434])</onload>
-		<onload>Skin.SetString(SubMenu05.2.Path,ActivateWindow(videos,videodb://movies/sets/,return))</onload>
-		<onload>Skin.SetString(SubMenu05.3.Label,$LOCALIZE[369])</onload>
-		<onload>Skin.SetString(SubMenu05.3.Path,ActivateWindow(videos,videodb://movies/titles/,return))</onload>
-		<onload>Skin.SetString(SubMenu05.4.Label,$LOCALIZE[135])</onload>
-		<onload>Skin.SetString(SubMenu05.4.Path,ActivateWindow(videos,videodb://movies/genres/,return))</onload>
-		<onload>Skin.SetString(SubMenu05.5.Label,$LOCALIZE[652])</onload>
-		<onload>Skin.SetString(SubMenu05.5.Path,ActivateWindow(videos,videodb://movies/years/,return))</onload>
-		<onload>Skin.SetString(SubMenu05.6.Label,$LOCALIZE[344])</onload>
-		<onload>Skin.SetString(SubMenu05.6.Path,ActivateWindow(videos,videodb://movies/actors/,return))</onload>
-		<!-- Sub TVShows -->
-		<onload>Skin.SetString(SubMenu06.Label,$LOCALIZE[31955])</onload>
+		<onload>Skin.SetString(SubMenu06.Label,$LOCALIZE[31954])</onload>
 		<onload>Skin.SetString(SubMenu06.1.Label,$LOCALIZE[31328])</onload>
-		<onload>Skin.SetString(SubMenu06.1.Path,ActivateWindow(videos,videodb://recentlyaddedepisodes/,return))</onload>
-		<onload>Skin.SetString(SubMenu06.2.Label,$LOCALIZE[369])</onload>
-		<onload>Skin.SetString(SubMenu06.2.Path,ActivateWindow(videos,videodb://tvshows/titles/,return))</onload>
-		<onload>Skin.SetString(SubMenu06.3.Label,$LOCALIZE[135])</onload>
-		<onload>Skin.SetString(SubMenu06.3.Path,ActivateWindow(videos,videodb://tvshows/genres/,return))</onload>
-		<onload>Skin.SetString(SubMenu06.4.Label,$LOCALIZE[652])</onload>
-		<onload>Skin.SetString(SubMenu06.4.Path,ActivateWindow(videos,videodb://tvshows/years/,return))</onload>
-		<onload>Skin.SetString(SubMenu06.5.Label,$LOCALIZE[344])</onload>
-		<onload>Skin.SetString(SubMenu06.5.Path,ActivateWindow(videos,videodb://tvshows/actors/,return))</onload>
-		<!-- Sub MusicVideo -->
-		<onload>Skin.SetString(SubMenu07.Label,$LOCALIZE[80007])</onload>
+		<onload>Skin.SetString(SubMenu06.1.Path,ActivateWindow(videos,videodb://recentlyaddedmovies/,return))</onload>
+		<onload>Skin.SetString(SubMenu06.2.Label,$LOCALIZE[20434])</onload>
+		<onload>Skin.SetString(SubMenu06.2.Path,ActivateWindow(videos,videodb://movies/sets/,return))</onload>
+		<onload>Skin.SetString(SubMenu06.3.Label,$LOCALIZE[369])</onload>
+		<onload>Skin.SetString(SubMenu06.3.Path,ActivateWindow(videos,videodb://movies/titles/,return))</onload>
+		<onload>Skin.SetString(SubMenu06.4.Label,$LOCALIZE[135])</onload>
+		<onload>Skin.SetString(SubMenu06.4.Path,ActivateWindow(videos,videodb://movies/genres/,return))</onload>
+		<onload>Skin.SetString(SubMenu06.5.Label,$LOCALIZE[652])</onload>
+		<onload>Skin.SetString(SubMenu06.5.Path,ActivateWindow(videos,videodb://movies/years/,return))</onload>
+		<onload>Skin.SetString(SubMenu06.6.Label,$LOCALIZE[344])</onload>
+		<onload>Skin.SetString(SubMenu06.6.Path,ActivateWindow(videos,videodb://movies/actors/,return))</onload>
+		<!-- Sub TVShows -->
+		<onload>Skin.SetString(SubMenu07.Label,$LOCALIZE[31955])</onload>
 		<onload>Skin.SetString(SubMenu07.1.Label,$LOCALIZE[31328])</onload>
-		<onload>Skin.SetString(SubMenu07.1.Path,ActivateWindow(videos,videodb://recentlyaddedmusicvideos/,return))</onload>
+		<onload>Skin.SetString(SubMenu07.1.Path,ActivateWindow(videos,videodb://recentlyaddedepisodes/,return))</onload>
 		<onload>Skin.SetString(SubMenu07.2.Label,$LOCALIZE[369])</onload>
-		<onload>Skin.SetString(SubMenu07.2.Path,ActivateWindow(videos,videodb://musicvideos/titles/,return))</onload>
+		<onload>Skin.SetString(SubMenu07.2.Path,ActivateWindow(videos,videodb://tvshows/titles/,return))</onload>
 		<onload>Skin.SetString(SubMenu07.3.Label,$LOCALIZE[135])</onload>
-		<onload>Skin.SetString(SubMenu07.3.Path,ActivateWindow(videos,videodb://musicvideos/genres/,return))</onload>
+		<onload>Skin.SetString(SubMenu07.3.Path,ActivateWindow(videos,videodb://tvshows/genres/,return))</onload>
 		<onload>Skin.SetString(SubMenu07.4.Label,$LOCALIZE[652])</onload>
-		<onload>Skin.SetString(SubMenu07.4.Path,ActivateWindow(videos,videodb://musicvideos/years/,return))</onload>
-		<onload>Skin.SetString(SubMenu07.5.Label,$LOCALIZE[133])</onload>
-		<onload>Skin.SetString(SubMenu07.5.Path,ActivateWindow(videos,videodb://musicvideos/artists/,return))</onload>
-		<onload>Skin.SetString(SubMenu07.6.Label,$LOCALIZE[132])</onload>
-		<onload>Skin.SetString(SubMenu07.6.Path,ActivateWindow(videos,videodb://musicvideos/albums/,return))</onload>
+		<onload>Skin.SetString(SubMenu07.4.Path,ActivateWindow(videos,videodb://tvshows/years/,return))</onload>
+		<onload>Skin.SetString(SubMenu07.5.Label,$LOCALIZE[344])</onload>
+		<onload>Skin.SetString(SubMenu07.5.Path,ActivateWindow(videos,videodb://tvshows/actors/,return))</onload>
+		<!-- Sub MusicVideo -->
+		<onload>Skin.SetString(SubMenu08.Label,$LOCALIZE[80007])</onload>
+		<onload>Skin.SetString(SubMenu08.1.Label,$LOCALIZE[31328])</onload>
+		<onload>Skin.SetString(SubMenu08.1.Path,ActivateWindow(videos,videodb://recentlyaddedmusicvideos/,return))</onload>
+		<onload>Skin.SetString(SubMenu08.2.Label,$LOCALIZE[369])</onload>
+		<onload>Skin.SetString(SubMenu08.2.Path,ActivateWindow(videos,videodb://musicvideos/titles/,return))</onload>
+		<onload>Skin.SetString(SubMenu08.3.Label,$LOCALIZE[135])</onload>
+		<onload>Skin.SetString(SubMenu08.3.Path,ActivateWindow(videos,videodb://musicvideos/genres/,return))</onload>
+		<onload>Skin.SetString(SubMenu08.4.Label,$LOCALIZE[652])</onload>
+		<onload>Skin.SetString(SubMenu08.4.Path,ActivateWindow(videos,videodb://musicvideos/years/,return))</onload>
+		<onload>Skin.SetString(SubMenu08.5.Label,$LOCALIZE[133])</onload>
+		<onload>Skin.SetString(SubMenu08.5.Path,ActivateWindow(videos,videodb://musicvideos/artists/,return))</onload>
+		<onload>Skin.SetString(SubMenu08.6.Label,$LOCALIZE[132])</onload>
+		<onload>Skin.SetString(SubMenu08.6.Path,ActivateWindow(videos,videodb://musicvideos/albums/,return))</onload>
 		<!-- Sub Musics -->
-		<onload>Skin.SetString(SubMenu08.Label,$LOCALIZE[31956])</onload>
-		<onload>Skin.SetString(SubMenu08.1.Label,$LOCALIZE[133])</onload>
-		<onload>Skin.SetString(SubMenu08.1.Path,ActivateWindow(music,musicdb://artists/,return))</onload>
-		<onload>Skin.SetString(SubMenu08.2.Label,$LOCALIZE[132])</onload>
-		<onload>Skin.SetString(SubMenu08.2.Path,ActivateWindow(music,musicdb://albums/,return))</onload>
-		<onload>Skin.SetString(SubMenu08.3.Label,$LOCALIZE[134])</onload>
-		<onload>Skin.SetString(SubMenu08.3.Path,ActivateWindow(music,musicdb://songs/,return))</onload>
-		<onload>Skin.SetString(SubMenu08.4.Label,$LOCALIZE[744])</onload>
-		<onload>Skin.SetString(SubMenu08.4.Path,ActivateWindow(music,sources://music/,return))</onload>
-		<onload>Skin.SetString(SubMenu08.5.Label,$LOCALIZE[14022])</onload>
-		<onload>Skin.SetString(SubMenu08.5.Path,ActivateWindow(music,musicdb://,return))</onload>
-		<onload>Skin.SetString(SubMenu08.6.Label,$LOCALIZE[24001])</onload>
-		<onload>Skin.SetString(SubMenu08.6.Path,ActivateWindow(music,addons://sources/audio/,return))</onload>
-		<!-- Sub PlayDisc -->
-		<onload>Skin.SetString(SubMenu09.Label,$LOCALIZE[31958])</onload>
-		<onload>Skin.SetString(SubMenu09.1.Label,$LOCALIZE[13391])</onload>
-		<onload>Skin.SetString(SubMenu09.1.Path,EjectTray)</onload>
-		<onload>Skin.SetString(SubMenu09.2.Label,$LOCALIZE[600])</onload>
-		<onload>Skin.SetString(SubMenu09.2.Path,RipCD)</onload>
+		<onload>Skin.SetString(SubMenu09.Label,$LOCALIZE[31956])</onload>
+		<onload>Skin.SetString(SubMenu09.1.Label,$LOCALIZE[133])</onload>
+		<onload>Skin.SetString(SubMenu09.1.Path,ActivateWindow(music,musicdb://artists/,return))</onload>
+		<onload>Skin.SetString(SubMenu09.2.Label,$LOCALIZE[132])</onload>
+		<onload>Skin.SetString(SubMenu09.2.Path,ActivateWindow(music,musicdb://albums/,return))</onload>
+		<onload>Skin.SetString(SubMenu09.3.Label,$LOCALIZE[134])</onload>
+		<onload>Skin.SetString(SubMenu09.3.Path,ActivateWindow(music,musicdb://songs/,return))</onload>
+		<onload>Skin.SetString(SubMenu09.4.Label,$LOCALIZE[744])</onload>
+		<onload>Skin.SetString(SubMenu09.4.Path,ActivateWindow(music,sources://music/,return))</onload>
+		<onload>Skin.SetString(SubMenu09.5.Label,$LOCALIZE[14022])</onload>
+		<onload>Skin.SetString(SubMenu09.5.Path,ActivateWindow(music,musicdb://,return))</onload>
+		<onload>Skin.SetString(SubMenu09.6.Label,$LOCALIZE[24001])</onload>
+		<onload>Skin.SetString(SubMenu09.6.Path,ActivateWindow(music,addons://sources/audio/,return))</onload>
 		<!-- Sub Programs -->
 		<onload>Skin.SetString(SubMenu10.Label,$LOCALIZE[31957])</onload>
 		<onload>Skin.SetString(SubMenu10.1.Label,$LOCALIZE[24998])</onload>
@@ -985,18 +983,24 @@
 		<onload>Skin.SetString(SubMenu10.5.Path,InstallFromZip)</onload>
 		<onload>Skin.SetString(SubMenu10.6.Label,$LOCALIZE[137])</onload>
 		<onload>Skin.SetString(SubMenu10.6.Path,ActivateWindow(addonbrowser,addons://search/,return))</onload>
+		<!-- Sub PlayDisc -->
+		<onload>Skin.SetString(SubMenu11.Label,$LOCALIZE[31958])</onload>
+		<onload>Skin.SetString(SubMenu11.1.Label,$LOCALIZE[13391])</onload>
+		<onload>Skin.SetString(SubMenu11.1.Path,EjectTray)</onload>
+		<onload>Skin.SetString(SubMenu11.2.Label,$LOCALIZE[600])</onload>
+		<onload>Skin.SetString(SubMenu11.2.Path,RipCD)</onload>
 		<!-- Sub Settings -->
-		<onload>Skin.SetString(SubMenu11.Label,$LOCALIZE[31959])</onload>
-		<onload>Skin.SetString(SubMenu11.1.Label,$LOCALIZE[5])</onload>
-		<onload>Skin.SetString(SubMenu11.1.Path,ActivateWindow(settings))</onload>
-		<onload>Skin.SetString(SubMenu11.2.Label,$LOCALIZE[7])</onload>
-		<onload>Skin.SetString(SubMenu11.2.Path,ActivateWindow(filemanager))</onload>
-		<onload>Skin.SetString(SubMenu11.3.Label,$LOCALIZE[13200])</onload>
-		<onload>Skin.SetString(SubMenu11.3.Path,ActivateWindow(profiles))</onload>
-		<onload>Skin.SetString(SubMenu11.4.Label,$LOCALIZE[130])</onload>
-		<onload>Skin.SetString(SubMenu11.4.Path,ActivateWindow(systeminfo))</onload>
-		<onload>Skin.SetString(SubMenu11.5.Label,$LOCALIZE[14111])</onload>
-		<onload>Skin.SetString(SubMenu11.5.Path,ActivateWindow(eventlog,events://,return))</onload>
+		<onload>Skin.SetString(SubMenu12.Label,$LOCALIZE[31959])</onload>
+		<onload>Skin.SetString(SubMenu12.1.Label,$LOCALIZE[5])</onload>
+		<onload>Skin.SetString(SubMenu12.1.Path,ActivateWindow(settings))</onload>
+		<onload>Skin.SetString(SubMenu12.2.Label,$LOCALIZE[7])</onload>
+		<onload>Skin.SetString(SubMenu12.2.Path,ActivateWindow(filemanager))</onload>
+		<onload>Skin.SetString(SubMenu12.3.Label,$LOCALIZE[13200])</onload>
+		<onload>Skin.SetString(SubMenu12.3.Path,ActivateWindow(profiles))</onload>
+		<onload>Skin.SetString(SubMenu12.4.Label,$LOCALIZE[130])</onload>
+		<onload>Skin.SetString(SubMenu12.4.Path,ActivateWindow(systeminfo))</onload>
+		<onload>Skin.SetString(SubMenu12.5.Label,$LOCALIZE[14111])</onload>
+		<onload>Skin.SetString(SubMenu12.5.Path,ActivateWindow(eventlog,events://,return))</onload>
 	</include>
 	<!-- Rest SubMenu Items -->
 	<include name="ResetSubMenuItems">
@@ -1008,173 +1012,176 @@
 		<onclick>Skin.SetString(SubMenu01.Label,$LOCALIZE[31951])</onclick>
 		<onclick>Skin.SetString(SubMenu01.1.Label,$LOCALIZE[24001])</onclick>
 		<onclick>Skin.SetString(SubMenu01.1.Path,ActivateWindow(pictures,addons://sources/image/,return))</onclick>
-		<!-- Sub Radio -->
+		<!-- Sub Games -->
 		<onclick>Skin.Reset(SubMenu02.Label)</onclick>
 		<include content="ResetSubMenuItem">
 			<param name="id2" value="02" />
 		</include>
-		<onclick>Skin.SetString(SubMenu02.Label,$LOCALIZE[31960])</onclick>
-		<onclick>Skin.SetString(SubMenu02.1.Label,$LOCALIZE[19019])</onclick>
-		<onclick>Skin.SetString(SubMenu02.1.Path,ActivateWindow(radiochannels))</onclick>
-		<onclick>Skin.SetString(SubMenu02.2.Label,$LOCALIZE[19069])</onclick>
-		<onclick>Skin.SetString(SubMenu02.2.Path,ActivateWindow(radioguide))</onclick>
-		<onclick>Skin.SetString(SubMenu02.3.Label,$LOCALIZE[19017])</onclick>
-		<onclick>Skin.SetString(SubMenu02.3.Path,ActivateWindow(radiorecordings))</onclick>
-		<onclick>Skin.SetString(SubMenu02.4.Label,$LOCALIZE[19138])</onclick>
-		<onclick>Skin.SetString(SubMenu02.4.Path,ActivateWindow(radiotimerrules))</onclick>
-		<onclick>Skin.SetString(SubMenu02.5.Label,$LOCALIZE[19040])</onclick>
-		<onclick>Skin.SetString(SubMenu02.5.Path,ActivateWindow(radiotimers))</onclick>
-		<onclick>Skin.SetString(SubMenu02.6.Label,$LOCALIZE[137])</onclick>
-		<onclick>Skin.SetString(SubMenu02.6.Path,ActivateWindow(radiosearch))</onclick>
-		<!-- Sub TV -->
+		<onclick>Skin.SetString(SubMenu02.Label,$LOCALIZE[31001])</onclick>
+		<onclick>Skin.SetString(SubMenu02.1.Label,$LOCALIZE[24001])</onclick>
+		<onclick>Skin.SetString(SubMenu02.1.Path,ActivateWindow(games,addons://sources/game/,return))</onclick>
+		<!-- Sub Radio -->
 		<onclick>Skin.Reset(SubMenu03.Label)</onclick>
 		<include content="ResetSubMenuItem">
 			<param name="id2" value="03" />
 		</include>
-		<onclick>Skin.SetString(SubMenu03.Label,$LOCALIZE[31952])</onclick>
+		<onclick>Skin.SetString(SubMenu03.Label,$LOCALIZE[31960])</onclick>
 		<onclick>Skin.SetString(SubMenu03.1.Label,$LOCALIZE[19019])</onclick>
-		<onclick>Skin.SetString(SubMenu03.1.Path,ActivateWindow(tvchannels))</onclick>
+		<onclick>Skin.SetString(SubMenu03.1.Path,ActivateWindow(radiochannels))</onclick>
 		<onclick>Skin.SetString(SubMenu03.2.Label,$LOCALIZE[19069])</onclick>
-		<onclick>Skin.SetString(SubMenu03.2.Path,ActivateWindow(tvguide))</onclick>
+		<onclick>Skin.SetString(SubMenu03.2.Path,ActivateWindow(radioguide))</onclick>
 		<onclick>Skin.SetString(SubMenu03.3.Label,$LOCALIZE[19017])</onclick>
-		<onclick>Skin.SetString(SubMenu03.3.Path,ActivateWindow(tvrecordings))</onclick>
+		<onclick>Skin.SetString(SubMenu03.3.Path,ActivateWindow(radiorecordings))</onclick>
 		<onclick>Skin.SetString(SubMenu03.4.Label,$LOCALIZE[19138])</onclick>
-		<onclick>Skin.SetString(SubMenu03.4.Path,ActivateWindow(tvtimerrules))</onclick>
+		<onclick>Skin.SetString(SubMenu03.4.Path,ActivateWindow(radiotimerrules))</onclick>
 		<onclick>Skin.SetString(SubMenu03.5.Label,$LOCALIZE[19040])</onclick>
-		<onclick>Skin.SetString(SubMenu03.5.Path,ActivateWindow(tvtimers))</onclick>
+		<onclick>Skin.SetString(SubMenu03.5.Path,ActivateWindow(radiotimers))</onclick>
 		<onclick>Skin.SetString(SubMenu03.6.Label,$LOCALIZE[137])</onclick>
-		<onclick>Skin.SetString(SubMenu03.6.Path,ActivateWindow(tvsearch))</onclick>
-		<!-- Sub Videos -->
+		<onclick>Skin.SetString(SubMenu03.6.Path,ActivateWindow(radiosearch))</onclick>
+		<!-- Sub TV -->
 		<onclick>Skin.Reset(SubMenu04.Label)</onclick>
 		<include content="ResetSubMenuItem">
 			<param name="id2" value="04" />
 		</include>
-		<onclick>Skin.SetString(SubMenu04.Label,$LOCALIZE[31953])</onclick>
-		<onclick>Skin.SetString(SubMenu04.1.Label,$LOCALIZE[744])</onclick>
-		<onclick>Skin.SetString(SubMenu04.1.Path,ActivateWindow(videos,sources://video/,return))</onclick>
-		<onclick>Skin.SetString(SubMenu04.2.Label,$LOCALIZE[14022])</onclick>
-		<onclick>Skin.SetString(SubMenu04.2.Path,ActivateWindow(videos,library://video/,return))</onclick>
-		<onclick>Skin.SetString(SubMenu04.3.Label,$LOCALIZE[24001])</onclick>
-		<onclick>Skin.SetString(SubMenu04.3.Path,ActivateWindow(videos,addons://sources/video/,return))</onclick>
-		<!-- Sub Movies -->
+		<onclick>Skin.SetString(SubMenu04.Label,$LOCALIZE[31952])</onclick>
+		<onclick>Skin.SetString(SubMenu04.1.Label,$LOCALIZE[19019])</onclick>
+		<onclick>Skin.SetString(SubMenu04.1.Path,ActivateWindow(tvchannels))</onclick>
+		<onclick>Skin.SetString(SubMenu04.2.Label,$LOCALIZE[19069])</onclick>
+		<onclick>Skin.SetString(SubMenu04.2.Path,ActivateWindow(tvguide))</onclick>
+		<onclick>Skin.SetString(SubMenu04.3.Label,$LOCALIZE[19017])</onclick>
+		<onclick>Skin.SetString(SubMenu04.3.Path,ActivateWindow(tvrecordings))</onclick>
+		<onclick>Skin.SetString(SubMenu04.4.Label,$LOCALIZE[19138])</onclick>
+		<onclick>Skin.SetString(SubMenu04.4.Path,ActivateWindow(tvtimerrules))</onclick>
+		<onclick>Skin.SetString(SubMenu04.5.Label,$LOCALIZE[19040])</onclick>
+		<onclick>Skin.SetString(SubMenu04.5.Path,ActivateWindow(tvtimers))</onclick>
+		<onclick>Skin.SetString(SubMenu04.6.Label,$LOCALIZE[137])</onclick>
+		<onclick>Skin.SetString(SubMenu04.6.Path,ActivateWindow(tvsearch))</onclick>
+		<!-- Sub Videos -->
 		<onclick>Skin.Reset(SubMenu05.Label)</onclick>
 		<include content="ResetSubMenuItem">
 			<param name="id2" value="05" />
 		</include>
-		<onclick>Skin.SetString(SubMenu05.Label,$LOCALIZE[31954])</onclick>
-		<onclick>Skin.SetString(SubMenu05.1.Label,$LOCALIZE[31328])</onclick>
-		<onclick>Skin.SetString(SubMenu05.1.Path,ActivateWindow(videos,videodb://recentlyaddedmovies/,return))</onclick>
-		<onclick>Skin.SetString(SubMenu05.2.Label,$LOCALIZE[20434])</onclick>
-		<onclick>Skin.SetString(SubMenu05.2.Path,ActivateWindow(videos,videodb://movies/sets/,return))</onclick>
-		<onclick>Skin.SetString(SubMenu05.3.Label,$LOCALIZE[369])</onclick>
-		<onclick>Skin.SetString(SubMenu05.3.Path,ActivateWindow(videos,videodb://movies/titles/,return))</onclick>
-		<onclick>Skin.SetString(SubMenu05.4.Label,$LOCALIZE[135])</onclick>
-		<onclick>Skin.SetString(SubMenu05.4.Path,ActivateWindow(videos,videodb://movies/genres/,return))</onclick>
-		<onclick>Skin.SetString(SubMenu05.5.Label,$LOCALIZE[652])</onclick>
-		<onclick>Skin.SetString(SubMenu05.5.Path,ActivateWindow(videos,videodb://movies/years/,return))</onclick>
-		<onclick>Skin.SetString(SubMenu05.6.Label,$LOCALIZE[344])</onclick>
-		<onclick>Skin.SetString(SubMenu05.6.Path,ActivateWindow(videos,videodb://movies/actors/,return))</onclick>
-		<!-- Sub TVShows -->
+		<onclick>Skin.SetString(SubMenu05.Label,$LOCALIZE[31953])</onclick>
+		<onclick>Skin.SetString(SubMenu05.1.Label,$LOCALIZE[744])</onclick>
+		<onclick>Skin.SetString(SubMenu05.1.Path,ActivateWindow(videos,sources://video/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu05.2.Label,$LOCALIZE[14022])</onclick>
+		<onclick>Skin.SetString(SubMenu05.2.Path,ActivateWindow(videos,library://video/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu05.3.Label,$LOCALIZE[24001])</onclick>
+		<onclick>Skin.SetString(SubMenu05.3.Path,ActivateWindow(videos,addons://sources/video/,return))</onclick>
+		<!-- Sub Movies -->
 		<onclick>Skin.Reset(SubMenu06.Label)</onclick>
 		<include content="ResetSubMenuItem">
 			<param name="id2" value="06" />
 		</include>
-		<onclick>Skin.SetString(SubMenu06.Label,$LOCALIZE[31955])</onclick>
+		<onclick>Skin.SetString(SubMenu06.Label,$LOCALIZE[31954])</onclick>
 		<onclick>Skin.SetString(SubMenu06.1.Label,$LOCALIZE[31328])</onclick>
-		<onclick>Skin.SetString(SubMenu06.1.Path,ActivateWindow(videos,videodb://recentlyaddedepisodes/,return))</onclick>
-		<onclick>Skin.SetString(SubMenu06.2.Label,$LOCALIZE[369])</onclick>
-		<onclick>Skin.SetString(SubMenu06.2.Path,ActivateWindow(videos,videodb://tvshows/titles/,return))</onclick>
-		<onclick>Skin.SetString(SubMenu06.3.Label,$LOCALIZE[135])</onclick>
-		<onclick>Skin.SetString(SubMenu06.3.Path,ActivateWindow(videos,videodb://tvshows/genres/,return))</onclick>
-		<onclick>Skin.SetString(SubMenu06.4.Label,$LOCALIZE[652])</onclick>
-		<onclick>Skin.SetString(SubMenu06.4.Path,ActivateWindow(videos,videodb://tvshows/years/,return))</onclick>
-		<onclick>Skin.SetString(SubMenu06.5.Label,$LOCALIZE[344])</onclick>
-		<onclick>Skin.SetString(SubMenu06.5.Path,ActivateWindow(videos,videodb://tvshows/actors/,return))</onclick>
-		<!-- Sub MusicVideo -->
+		<onclick>Skin.SetString(SubMenu06.1.Path,ActivateWindow(videos,videodb://recentlyaddedmovies/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu06.2.Label,$LOCALIZE[20434])</onclick>
+		<onclick>Skin.SetString(SubMenu06.2.Path,ActivateWindow(videos,videodb://movies/sets/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu06.3.Label,$LOCALIZE[369])</onclick>
+		<onclick>Skin.SetString(SubMenu06.3.Path,ActivateWindow(videos,videodb://movies/titles/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu06.4.Label,$LOCALIZE[135])</onclick>
+		<onclick>Skin.SetString(SubMenu06.4.Path,ActivateWindow(videos,videodb://movies/genres/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu06.5.Label,$LOCALIZE[652])</onclick>
+		<onclick>Skin.SetString(SubMenu06.5.Path,ActivateWindow(videos,videodb://movies/years/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu06.6.Label,$LOCALIZE[344])</onclick>
+		<onclick>Skin.SetString(SubMenu06.6.Path,ActivateWindow(videos,videodb://movies/actors/,return))</onclick>
+		<!-- Sub TVShows -->
 		<onclick>Skin.Reset(SubMenu07.Label)</onclick>
 		<include content="ResetSubMenuItem">
 			<param name="id2" value="07" />
 		</include>
-		<onclick>Skin.SetString(SubMenu07.Label,$LOCALIZE[80007])</onclick>
+		<onclick>Skin.SetString(SubMenu07.Label,$LOCALIZE[31955])</onclick>
 		<onclick>Skin.SetString(SubMenu07.1.Label,$LOCALIZE[31328])</onclick>
-		<onclick>Skin.SetString(SubMenu07.1.Path,ActivateWindow(videos,videodb://recentlyaddedmusicvideos/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu07.1.Path,ActivateWindow(videos,videodb://recentlyaddedepisodes/,return))</onclick>
 		<onclick>Skin.SetString(SubMenu07.2.Label,$LOCALIZE[369])</onclick>
-		<onclick>Skin.SetString(SubMenu07.2.Path,ActivateWindow(videos,videodb://musicvideos/titles/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu07.2.Path,ActivateWindow(videos,videodb://tvshows/titles/,return))</onclick>
 		<onclick>Skin.SetString(SubMenu07.3.Label,$LOCALIZE[135])</onclick>
-		<onclick>Skin.SetString(SubMenu07.3.Path,ActivateWindow(videos,videodb://musicvideos/genres/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu07.3.Path,ActivateWindow(videos,videodb://tvshows/genres/,return))</onclick>
 		<onclick>Skin.SetString(SubMenu07.4.Label,$LOCALIZE[652])</onclick>
-		<onclick>Skin.SetString(SubMenu07.4.Path,ActivateWindow(videos,videodb://musicvideos/years/,return))</onclick>
-		<onclick>Skin.SetString(SubMenu07.5.Label,$LOCALIZE[133])</onclick>
-		<onclick>Skin.SetString(SubMenu07.5.Path,ActivateWindow(videos,videodb://musicvideos/artists/,return))</onclick>
-		<onclick>Skin.SetString(SubMenu07.6.Label,$LOCALIZE[132])</onclick>
-		<onclick>Skin.SetString(SubMenu07.6.Path,ActivateWindow(videos,videodb://musicvideos/albums/,return))</onclick>
-		<!-- Sub Musics -->
+		<onclick>Skin.SetString(SubMenu07.4.Path,ActivateWindow(videos,videodb://tvshows/years/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu07.5.Label,$LOCALIZE[344])</onclick>
+		<onclick>Skin.SetString(SubMenu07.5.Path,ActivateWindow(videos,videodb://tvshows/actors/,return))</onclick>
+		<!-- Sub MusicVideo -->
 		<onclick>Skin.Reset(SubMenu08.Label)</onclick>
 		<include content="ResetSubMenuItem">
 			<param name="id2" value="08" />
 		</include>
-		<onclick>Skin.SetString(SubMenu08.Label,$LOCALIZE[31956])</onclick>
-		<onclick>Skin.SetString(SubMenu08.1.Label,$LOCALIZE[133])</onclick>
-		<onclick>Skin.SetString(SubMenu08.1.Path,ActivateWindow(music,musicdb://artists/,return))</onclick>
-		<onclick>Skin.SetString(SubMenu08.2.Label,$LOCALIZE[132])</onclick>
-		<onclick>Skin.SetString(SubMenu08.2.Path,ActivateWindow(music,musicdb://albums/,return))</onclick>
-		<onclick>Skin.SetString(SubMenu08.3.Label,$LOCALIZE[134])</onclick>
-		<onclick>Skin.SetString(SubMenu08.3.Path,ActivateWindow(music,musicdb://songs/,return))</onclick>
-		<onclick>Skin.SetString(SubMenu08.4.Label,$LOCALIZE[744])</onclick>
-		<onclick>Skin.SetString(SubMenu08.4.Path,ActivateWindow(music,sources://music/,return))</onclick>
-		<onclick>Skin.SetString(SubMenu08.5.Label,$LOCALIZE[14022])</onclick>
-		<onclick>Skin.SetString(SubMenu08.5.Path,ActivateWindow(music,musicdb://,return))</onclick>
-		<onclick>Skin.SetString(SubMenu08.6.Label,$LOCALIZE[24001])</onclick>
-		<onclick>Skin.SetString(SubMenu08.6.Path,ActivateWindow(music,addons://sources/audio/,return))</onclick>
-		<!-- Sub PlayDisc -->
+		<onclick>Skin.SetString(SubMenu08.Label,$LOCALIZE[80007])</onclick>
+		<onclick>Skin.SetString(SubMenu08.1.Label,$LOCALIZE[31328])</onclick>
+		<onclick>Skin.SetString(SubMenu08.1.Path,ActivateWindow(videos,videodb://recentlyaddedmusicvideos/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu08.2.Label,$LOCALIZE[369])</onclick>
+		<onclick>Skin.SetString(SubMenu08.2.Path,ActivateWindow(videos,videodb://musicvideos/titles/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu08.3.Label,$LOCALIZE[135])</onclick>
+		<onclick>Skin.SetString(SubMenu08.3.Path,ActivateWindow(videos,videodb://musicvideos/genres/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu08.4.Label,$LOCALIZE[652])</onclick>
+		<onclick>Skin.SetString(SubMenu08.4.Path,ActivateWindow(videos,videodb://musicvideos/years/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu08.5.Label,$LOCALIZE[133])</onclick>
+		<onclick>Skin.SetString(SubMenu08.5.Path,ActivateWindow(videos,videodb://musicvideos/artists/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu08.6.Label,$LOCALIZE[132])</onclick>
+		<onclick>Skin.SetString(SubMenu08.6.Path,ActivateWindow(videos,videodb://musicvideos/albums/,return))</onclick>
+		<!-- Sub Musics -->
 		<onclick>Skin.Reset(SubMenu09.Label)</onclick>
 		<include content="ResetSubMenuItem">
 			<param name="id2" value="09" />
 		</include>
-		<onclick>Skin.SetString(SubMenu09.Label,$LOCALIZE[31958])</onclick>
-		<onclick>Skin.SetString(SubMenu09.1.Label,$LOCALIZE[13391])</onclick>
-		<onclick>Skin.SetString(SubMenu09.1.Path,EjectTray)</onclick>
-		<onclick>Skin.SetString(SubMenu09.2.Label,$LOCALIZE[600])</onclick>
-		<onclick>Skin.SetString(SubMenu09.2.Path,RipCD)</onclick>
+		<onclick>Skin.SetString(SubMenu09.Label,$LOCALIZE[31956])</onclick>
+		<onclick>Skin.SetString(SubMenu09.1.Label,$LOCALIZE[133])</onclick>
+		<onclick>Skin.SetString(SubMenu09.1.Path,ActivateWindow(music,musicdb://artists/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu09.2.Label,$LOCALIZE[132])</onclick>
+		<onclick>Skin.SetString(SubMenu09.2.Path,ActivateWindow(music,musicdb://albums/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu09.3.Label,$LOCALIZE[134])</onclick>
+		<onclick>Skin.SetString(SubMenu09.3.Path,ActivateWindow(music,musicdb://songs/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu09.4.Label,$LOCALIZE[744])</onclick>
+		<onclick>Skin.SetString(SubMenu09.4.Path,ActivateWindow(music,sources://music/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu09.5.Label,$LOCALIZE[14022])</onclick>
+		<onclick>Skin.SetString(SubMenu09.5.Path,ActivateWindow(music,musicdb://,return))</onclick>
+		<onclick>Skin.SetString(SubMenu09.6.Label,$LOCALIZE[24001])</onclick>
+		<onclick>Skin.SetString(SubMenu09.6.Path,ActivateWindow(music,addons://sources/audio/,return))</onclick>
 		<!-- Sub Programs -->
 		<onclick>Skin.Reset(SubMenu10.Label)</onclick>
 		<include content="ResetSubMenuItem">
 			<param name="id2" value="10" />
 		</include>
-		<onload>Skin.SetString(SubMenu10.Label,$LOCALIZE[31957])</onload>
-		<onload>Skin.SetString(SubMenu10.1.Label,$LOCALIZE[24998])</onload>
-		<onload>Skin.SetString(SubMenu10.1.Path,ActivateWindow(addonbrowser,addons://user/,return))</onload>
-		<onload>Skin.SetString(SubMenu10.2.Label,$LOCALIZE[24043])</onload>
-		<onload>Skin.SetString(SubMenu10.2.Path,ActivateWindow(addonbrowser,addons://outdated/,return))</onload>
-		<onload>Skin.SetString(SubMenu10.3.Label,$LOCALIZE[24004])</onload>
-		<onload>Skin.SetString(SubMenu10.3.Path,ActivateWindow(addonbrowser,addons://recently_updated/,return))</onload>
-		<onload>Skin.SetString(SubMenu10.4.Label,$LOCALIZE[24033])</onload>
-		<onload>Skin.SetString(SubMenu10.4.Path,ActivateWindow(addonbrowser,addons://repos/,return))</onload>
-		<onload>Skin.SetString(SubMenu10.5.Label,$LOCALIZE[24041])</onload>
-		<onload>Skin.SetString(SubMenu10.5.Path,InstallFromZip)</onload>
-		<onload>Skin.SetString(SubMenu10.6.Label,$LOCALIZE[137])</onload>
-		<onload>Skin.SetString(SubMenu10.6.Path,ActivateWindow(addonbrowser,addons://search/,return))</onload>
-		<!-- Sub Settings -->
+		<onclick>Skin.SetString(SubMenu10.Label,$LOCALIZE[31957])</onclick>
+		<onclick>Skin.SetString(SubMenu10.1.Label,$LOCALIZE[24998])</onclick>
+		<onclick>Skin.SetString(SubMenu10.1.Path,ActivateWindow(addonbrowser,addons://user/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu10.2.Label,$LOCALIZE[24043])</onclick>
+		<onclick>Skin.SetString(SubMenu10.2.Path,ActivateWindow(addonbrowser,addons://outdated/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu10.3.Label,$LOCALIZE[24004])</onclick>
+		<onclick>Skin.SetString(SubMenu10.3.Path,ActivateWindow(addonbrowser,addons://recently_updated/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu10.4.Label,$LOCALIZE[24033])</onclick>
+		<onclick>Skin.SetString(SubMenu10.4.Path,ActivateWindow(addonbrowser,addons://repos/,return))</onclick>
+		<onclick>Skin.SetString(SubMenu10.5.Label,$LOCALIZE[24041])</onclick>
+		<onclick>Skin.SetString(SubMenu10.5.Path,InstallFromZip)</onclick>
+		<onclick>Skin.SetString(SubMenu10.6.Label,$LOCALIZE[137])</onclick>
+		<onclick>Skin.SetString(SubMenu10.6.Path,ActivateWindow(addonbrowser,addons://search/,return))</onclick>
+		<!-- Sub PlayDisc -->
 		<onclick>Skin.Reset(SubMenu11.Label)</onclick>
 		<include content="ResetSubMenuItem">
 			<param name="id2" value="11" />
 		</include>
-		<onclick>Skin.SetString(SubMenu11.Label,$LOCALIZE[31959])</onclick>
-		<onclick>Skin.SetString(SubMenu11.1.Label,$LOCALIZE[5])</onclick>
-		<onclick>Skin.SetString(SubMenu11.1.Path,ActivateWindow(settings))</onclick>
-		<onclick>Skin.SetString(SubMenu11.2.Label,$LOCALIZE[7])</onclick>
-		<onclick>Skin.SetString(SubMenu11.2.Path,ActivateWindow(filemanager))</onclick>
-		<onclick>Skin.SetString(SubMenu11.3.Label,$LOCALIZE[13200])</onclick>
-		<onclick>Skin.SetString(SubMenu11.3.Path,ActivateWindow(profiles))</onclick>
-		<onclick>Skin.SetString(SubMenu11.4.Label,$LOCALIZE[130])</onclick>
-		<onclick>Skin.SetString(SubMenu11.4.Path,ActivateWindow(systeminfo))</onclick>
-		<onclick>Skin.SetString(SubMenu11.5.Label,$LOCALIZE[14111])</onclick>
-		<onclick>Skin.SetString(SubMenu11.5.Path,ActivateWindow(eventlog,events://,return))</onclick>
-		<!-- SubMenu 12 -->
+		<onclick>Skin.SetString(SubMenu11.Label,$LOCALIZE[31958])</onclick>
+		<onclick>Skin.SetString(SubMenu11.1.Label,$LOCALIZE[13391])</onclick>
+		<onclick>Skin.SetString(SubMenu11.1.Path,EjectTray)</onclick>
+		<onclick>Skin.SetString(SubMenu11.2.Label,$LOCALIZE[600])</onclick>
+		<onclick>Skin.SetString(SubMenu11.2.Path,RipCD)</onclick>
+		<!-- Sub Settings -->
 		<onclick>Skin.Reset(SubMenu12.Label)</onclick>
 		<include content="ResetSubMenuItem">
 			<param name="id2" value="12" />
 		</include>
+		<onclick>Skin.SetString(SubMenu12.Label,$LOCALIZE[31959])</onclick>
+		<onclick>Skin.SetString(SubMenu12.1.Label,$LOCALIZE[5])</onclick>
+		<onclick>Skin.SetString(SubMenu12.1.Path,ActivateWindow(settings))</onclick>
+		<onclick>Skin.SetString(SubMenu12.2.Label,$LOCALIZE[7])</onclick>
+		<onclick>Skin.SetString(SubMenu12.2.Path,ActivateWindow(filemanager))</onclick>
+		<onclick>Skin.SetString(SubMenu12.3.Label,$LOCALIZE[13200])</onclick>
+		<onclick>Skin.SetString(SubMenu12.3.Path,ActivateWindow(profiles))</onclick>
+		<onclick>Skin.SetString(SubMenu12.4.Label,$LOCALIZE[130])</onclick>
+		<onclick>Skin.SetString(SubMenu12.4.Path,ActivateWindow(systeminfo))</onclick>
+		<onclick>Skin.SetString(SubMenu12.5.Label,$LOCALIZE[14111])</onclick>
+		<onclick>Skin.SetString(SubMenu12.5.Path,ActivateWindow(eventlog,events://,return))</onclick>
 		<!-- SubMenu 13 -->
 		<onclick>Skin.Reset(SubMenu13.Label)</onclick>
 		<include content="ResetSubMenuItem">

@@ -951,11 +951,24 @@
 				<visible>!String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
 			</item>
 			<item>
-				<description>Programme addons</description>
+				<description>Programs addons</description>
 				<label>$LOCALIZE[1043]</label>
 				<onclick>Skin.Reset(UsrSelectAddon)</onclick>
 				<onclick>Dialog.Close($PARAM[id_win])</onclick>
 				<onclick>Skin.SetAddon(UsrSelectAddon,xbmc.addon.executable)</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$INFO[system.addontitle(Skin.String(UsrSelectAddon))])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,RunAddon($INFO[Skin.String(UsrSelectAddon)]))</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,$INFO[system.addonicon(Skin.String(UsrSelectAddon))])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEqual(Window(Home).Property(UsrSelectBtn),UsrPwrBtnCmd)</visible>
+			</item>
+			<item>
+				<description>Game addons</description>
+				<label>$LOCALIZE[35049]</label>
+				<onclick>Skin.Reset(UsrSelectAddon)</onclick>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetAddon(UsrSelectAddon,kodi.gameclient)</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$INFO[system.addontitle(Skin.String(UsrSelectAddon))])</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,RunAddon($INFO[Skin.String(UsrSelectAddon)]))</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,$INFO[system.addonicon(Skin.String(UsrSelectAddon))])</onclick>

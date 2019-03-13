@@ -7,10 +7,10 @@
 		<top>0</top>
 	</coordinates>
 	<controls>
-        <include content="CustomSlideDialog">
-            <param name="dlg_title" value="$LOCALIZE[89700]" />
-            <param name="id_win" value="2119" />
-            <param name="include_name" value="SelectItemChoices" />
-        </include>
+		<include content="CustomSlideDialog">
+			<param name="dlg_title" value="$LOCALIZE[89700]" />
+			<param name="id_win" value="2119" />
+			<param name="include_name" value="SelectItemChoices" />
+		</include>
 	</controls>
 </window>
