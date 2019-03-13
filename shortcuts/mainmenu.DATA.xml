@@ -4,7 +4,7 @@
 		<label>31950</label>
 		<label2>8</label2>
 		<defaultID>weather</defaultID>
-		<icon>DefaultFolder.png</icon>
+		<icon>DefaultAddonWeather.png</icon>
 		<action>ActivateWindow(weather)</action>
 	</shortcut>
 	<shortcut>
@@ -18,7 +18,7 @@
 		<label>31001</label>
 		<label2>15016</label2>
 		<defaultID>games</defaultID>
-		<icon>DefaultFolder.png</icon>
+		<icon>DefaultGameAddons.png</icon>
 		<action>ActivateWindow(games)</action>
 	</shortcut>
 	<shortcut>
@@ -39,7 +39,7 @@
 		<label>31953</label>
 		<label2>3</label2>
 		<defaultID>video</defaultID>
-		<icon>DefaultFolder.png</icon>
+		<icon>DefaultVideo.png</icon>
 		<action>ActivateWindow(videos,library://video/,return)</action>
 	</shortcut>
 	<shortcut>
@@ -74,14 +74,14 @@
 		<label>31957</label>
 		<label2>24001</label2>
 		<defaultID>addons</defaultID>
-		<icon>DefaultFolder.png</icon>
+		<icon>DefaultAddonProgram.png</icon>
 		<action>ActivateWindow(Programs)</action>
 	</shortcut>
 	<shortcut>
 		<label>31958</label>
 		<label2>446</label2>
 		<defaultID>dvd</defaultID>
-		<icon>DefaultFolder.png</icon>
+		<icon>DefaultDVDRom.png</icon>
 		<action>PlayDVD</action>
 	</shortcut>
 	<shortcut>
