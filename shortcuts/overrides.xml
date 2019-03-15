@@ -199,7 +199,7 @@
 		</node>
 		<!-- Game -->
 		<node label="15016" condition="System.GetBool(gamesgeneral.enable)">
-			<shortcut label="15016" type="15016" icon="icons/sidemenu/games.png">ActivateWindow(games)</shortcut>
+			<shortcut label="15016" type="15016" icon="DefaultAddonGame.png">ActivateWindow(games)</shortcut>
 			<node label="35049">
 				<shortcut label="35049" type="15016" icon="DefaultAddonGame.png">ActivateWindow(games,addons://sources/game/,return)</shortcut>
 				<content>addon-game</content>
