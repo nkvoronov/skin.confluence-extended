@@ -586,27 +586,91 @@
 				<param name="visible_title" value="!String.IsEmpty(Skin.String(ChannelTV.1.ChannelId)) + Skin.HasSetting(EnableWidgetsTitle)" />
 				<param name="list_id" value="8022" />
 				<param name="animation_name_include" value="AnimationWidgetCommon4" />
-				<param name="item_layout_name_include" value="PVRWidgetItemsLayout" />
+				<param name="item_layout_name_include" value="CustomPVRWidgetItemsLayout" />
 				<param name="width_widget" value="800" />
 				<param name="width_widget_item" value="200" />
 				<param name="left_widget_ra" value="810" />
 				<param name="contents_name_include" value="FavoritesPVRChannelsContents" />
 				<param name="contents_type" value="TV" />
 			</include>
-			<!-- Favorites Radio Channels 8023 -->
+			<!-- Last TV Channels 8023 -->
+			<include content="CommonWidgetInclude">
+				<param name="left_widget" value="240" />
+				<param name="visible_widget" value="PVR.HasTVChannels" />
+				<param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(WidgetSet),LastTVChannels)" />
+				<param name="label_title" value="$LOCALIZE[88134]" />
+				<param name="visible_title" value="Integer.IsGreater(Container(8023).NumItems,0) + Skin.HasSetting(EnableWidgetsTitle)" />
+				<param name="list_id" value="8023" />
+				<param name="animation_name_include" value="AnimationWidgetCommon4" />
+				<param name="item_layout_name_include" value="LastPVRWidgetItemsLayout" />
+				<param name="width_widget" value="800" />
+				<param name="width_widget_item" value="200" />
+				<param name="left_widget_ra" value="810" />
+				<param name="contents_name_include" value="LastTVChannelsContents" />
+				<param name="contents_type" value="TV" />
+			</include>
+			<!-- Recording TV Channels 8024 -->
+			<include content="CommonWidgetInclude">
+				<param name="left_widget" value="240" />
+				<param name="visible_widget" value="PVR.HasTVChannels" />
+				<param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(WidgetSet),RecTVChannels)" />
+				<param name="label_title" value="$LOCALIZE[88135]" />
+				<param name="visible_title" value="Integer.IsGreater(Container(8024).NumItems,0) + Skin.HasSetting(EnableWidgetsTitle)" />
+				<param name="list_id" value="8024" />
+				<param name="animation_name_include" value="AnimationWidgetCommon4" />
+				<param name="item_layout_name_include" value="RecPVRWidgetItemsLayout" />
+				<param name="width_widget" value="800" />
+				<param name="width_widget_item" value="200" />
+				<param name="left_widget_ra" value="810" />
+				<param name="contents_name_include" value="RecTVChannelsContents" />
+				<param name="contents_type" value="TV" />
+			</include>
+			<!-- Favorites Radio Channels 8025 -->
 			<include content="CommonWidgetInclude">
 				<param name="left_widget" value="240" />
 				<param name="visible_widget" value="PVR.HasRadioChannels" />
 				<param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(WidgetSet),FavRadioChannels)" />
-				<param name="label_title" value="$LOCALIZE[88134]" />
+				<param name="label_title" value="$LOCALIZE[88133]" />
 				<param name="visible_title" value="!String.IsEmpty(Skin.String(ChannelRadio.1.ChannelId)) + Skin.HasSetting(EnableWidgetsTitle)" />
-				<param name="list_id" value="8023" />
+				<param name="list_id" value="8025" />
 				<param name="animation_name_include" value="AnimationWidgetCommon4" />
-				<param name="item_layout_name_include" value="PVRWidgetItemsLayout" />
+				<param name="item_layout_name_include" value="CustomPVRWidgetItemsLayout" />
 				<param name="width_widget" value="800" />
 				<param name="width_widget_item" value="200" />
 				<param name="left_widget_ra" value="810" />
 				<param name="contents_name_include" value="FavoritesPVRChannelsContents" />
+				<param name="contents_type" value="Radio" />
+			</include>
+			<!-- Last Radio Channels 8026 -->
+			<include content="CommonWidgetInclude">
+				<param name="left_widget" value="240" />
+				<param name="visible_widget" value="PVR.HasRadioChannels" />
+				<param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(WidgetSet),LastRadioChannels)" />
+				<param name="label_title" value="$LOCALIZE[88134]" />
+				<param name="visible_title" value="Integer.IsGreater(Container(8026).NumItems,0) + Skin.HasSetting(EnableWidgetsTitle)" />
+				<param name="list_id" value="8026" />
+				<param name="animation_name_include" value="AnimationWidgetCommon4" />
+				<param name="item_layout_name_include" value="LastPVRWidgetItemsLayout" />
+				<param name="width_widget" value="800" />
+				<param name="width_widget_item" value="200" />
+				<param name="left_widget_ra" value="810" />
+				<param name="contents_name_include" value="LastRadioChannelsContents" />
+				<param name="contents_type" value="Radio" />
+			</include>
+			<!-- Recording Radio Channels 8027 -->
+			<include content="CommonWidgetInclude">
+				<param name="left_widget" value="240" />
+				<param name="visible_widget" value="PVR.HasRadioChannels" />
+				<param name="visible_widget2" value="String.IsEqual(Container(9000).ListItem.Property(WidgetSet),RecRadioChannels)" />
+				<param name="label_title" value="$LOCALIZE[88135]" />
+				<param name="visible_title" value="Integer.IsGreater(Container(8027).NumItems,0) + Skin.HasSetting(EnableWidgetsTitle)" />
+				<param name="list_id" value="8027" />
+				<param name="animation_name_include" value="AnimationWidgetCommon4" />
+				<param name="item_layout_name_include" value="RecPVRWidgetItemsLayout" />
+				<param name="width_widget" value="800" />
+				<param name="width_widget_item" value="200" />
+				<param name="left_widget_ra" value="810" />
+				<param name="contents_name_include" value="RecRadioChannelsContents" />
 				<param name="contents_type" value="Radio" />
 			</include>
 		</control>
@@ -4885,7 +4949,7 @@
 			</item>
 		</content>
 	</include>
-	<include name="PVRWidgetItemsLayout">
+	<include name="CustomPVRWidgetItemsLayout">
 		<param name="height_widget_item" default="220" />
 		<param name="width_widget_item" default="200" />
 		<definition>
@@ -5008,6 +5072,252 @@
 			</focusedlayout>
 		</definition>
 	</include>
+	<include name="LastPVRWidgetItemsLayout">
+		<param name="height_widget_item" default="220" />
+		<param name="width_widget_item" default="200" />
+		<definition>
+			<itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
+				<control type="image">
+					<description>Background</description>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width_widget_item]</width>
+					<height>$PARAM[height_widget_item]</height>
+					<texture border="15">RecentAddedBack.png</texture>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>180</width>
+					<height>155</height>
+					<aspectratio>keep</aspectratio>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<bordertexture border="5">button-nofocus.png</bordertexture>
+					<bordersize>5</bordersize>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>170</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font10</font>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Title]</label>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>190</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
+				<control type="image">
+					<description>background</description>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width_widget_item]</width>
+					<height>$PARAM[height_widget_item]</height>
+					<texture border="15">RecentAddedBack.png</texture>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>180</width>
+					<height>155</height>
+					<aspectratio>keep</aspectratio>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<bordertexture border="5">folder-focus.png</bordertexture>
+					<bordersize>5</bordersize>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>180</width>
+					<height>155</height>
+					<aspectratio>keep</aspectratio>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<bordertexture border="5">button-nofocus.png</bordertexture>
+					<bordersize>5</bordersize>
+					<visible>!Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>170</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font10</font>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Title]</label>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>190</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>190</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>blue</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+			</focusedlayout>
+		</definition>
+	</include>
+	<include name="RecPVRWidgetItemsLayout">
+		<param name="height_widget_item" default="220" />
+		<param name="width_widget_item" default="200" />
+		<definition>
+			<itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
+				<control type="image">
+					<description>Background</description>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width_widget_item]</width>
+					<height>$PARAM[height_widget_item]</height>
+					<texture border="15">RecentAddedBack.png</texture>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>180</width>
+					<height>155</height>
+					<aspectratio>keep</aspectratio>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<bordertexture border="5">button-nofocus.png</bordertexture>
+					<bordersize>5</bordersize>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>170</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font10</font>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]</label>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>190</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.ChannelName]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
+				<control type="image">
+					<description>background</description>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width_widget_item]</width>
+					<height>$PARAM[height_widget_item]</height>
+					<texture border="15">RecentAddedBack.png</texture>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>180</width>
+					<height>155</height>
+					<aspectratio>keep</aspectratio>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<bordertexture border="5">folder-focus.png</bordertexture>
+					<bordersize>5</bordersize>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>10</top>
+					<width>180</width>
+					<height>155</height>
+					<aspectratio>keep</aspectratio>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<bordertexture border="5">button-nofocus.png</bordertexture>
+					<bordersize>5</bordersize>
+					<visible>!Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>170</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font10</font>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]</label>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>190</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.ChannelName]</label>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>190</top>
+					<width>180</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>blue</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+			</focusedlayout>
+		</definition>
+	</include>
 	<include name="FavoritesPVRChannelsContents">
 		<content>
 			<item id="1">
@@ -5112,6 +5422,18 @@
 			</item>
 		</content>
 	</include>
+	<include name="LastTVChannelsContents">
+		<content sortby="lastplayed" sortorder="descending"  target="pvr" limit="25">pvr://channels/tv/*?view=lastplayed</content>
+	</include>
+	<include name="RecTVChannelsContents">
+		<content sortby="date" sortorder="descending" target="pvr" limit="25">pvr://recordings/tv/active?view=flat</content>
+	</include>
+	<include name="LastRadioChannelsContents">
+		<content sortby="lastplayed" sortorder="descending" target="pvr" limit="25">pvr://channels/radio/*?view=lastplayed</content>
+	</include>
+	<include name="RecRadioChannelsContents">
+		<content sortby="date" sortorder="descending" target="pvr" limit="25">pvr://recordings/radio/active?view=flat</content>
+	</include>
 	<include name="HomeWidgetUpDown">
 		<onup condition="!Skin.HasSetting(HidePowerButton) + Skin.HasSetting(HideFavoritesButton)">22</onup>
 		<onup condition="Skin.HasSetting(HidePowerButton) + !Skin.HasSetting(HideFavoritesButton)">21</onup>
@@ -5123,41 +5445,299 @@
 	<include name="WidgetTypeChoices">
 		<content>
 			<item>
+				<description>Main Menu</description>
+				<label>[COLOR=selected]$LOCALIZE[89012][/COLOR]</label>
+				<onclick>SetProperty(MenuItemType,MainMenu)</onclick>
+				<visible>!String.IsEqual(Window.Property(MenuItemType),MainMenu)</visible>
+			</item>
+			<item>
 				<description>Clear Setting</description>
 				<label>$LOCALIZE[89013]</label>
 				<onclick>Dialog.Close($PARAM[id_win])</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,None)</onclick>
 				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 				<visible>Integer.IsEqual(Window(Home).Property(UsrSelectBtnClear),Clear)</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),MainMenu)</visible>
 			</item>
+			<item>
+				<description>Weather</description>
+				<label>$LOCALIZE[8] ></label>
+				<onclick>SetProperty(MenuItemType,WeatherMenu)</onclick>
+				<visible>String.IsEqual(Window.Property(MenuItemType),MainMenu)</visible>
+				<visible>!String.IsEmpty(Weather.Plugin)</visible>
+			</item>
+			<item>
+				<description>Radio</description>
+				<label>$LOCALIZE[19021] ></label>
+				<onclick>SetProperty(MenuItemType,RadioMenu)</onclick>
+				<visible>String.IsEqual(Window.Property(MenuItemType),MainMenu)</visible>
+				<visible>PVR.HasRadioChannels</visible>
+			</item>
+			<item>
+				<description>Live TV</description>
+				<label>$LOCALIZE[19020] ></label>
+				<onclick>SetProperty(MenuItemType,LiveTVMenu)</onclick>
+				<visible>String.IsEqual(Window.Property(MenuItemType),MainMenu)</visible>
+				<visible>PVR.HasTVChannels</visible>
+			</item>
+			<item>
+				<description>Movies</description>
+				<label>$LOCALIZE[342] ></label>
+				<onclick>SetProperty(MenuItemType,MoviesMenu)</onclick>
+				<visible>String.IsEqual(Window.Property(MenuItemType),MainMenu)</visible>
+				<visible>Library.HasContent(Movies)</visible>
+			</item>
+			<item>
+				<description>TVShows</description>
+				<label>$LOCALIZE[20343] ></label>
+				<onclick>SetProperty(MenuItemType,TVShowsMenu)</onclick>
+				<visible>String.IsEqual(Window.Property(MenuItemType),MainMenu)</visible>
+				<visible>Library.HasContent(TVShows)</visible>
+			</item>
+			<item>
+				<description>MusicVideos</description>
+				<label>$LOCALIZE[20389] ></label>
+				<onclick>SetProperty(MenuItemType,MusicVideoMenu)</onclick>
+				<visible>String.IsEqual(Window.Property(MenuItemType),MainMenu)</visible>
+				<visible>Library.HasContent(MusicVideos)</visible>
+			</item>
+			<item>
+				<description>Music</description>
+				<label>$LOCALIZE[2] ></label>
+				<onclick>SetProperty(MenuItemType,MusicMenu)</onclick>
+				<visible>String.IsEqual(Window.Property(MenuItemType),MainMenu)</visible>
+			</item>
+			<item>
+				<description>Playlists</description>
+				<label>$LOCALIZE[559] ></label>
+				<onclick>SetProperty(MenuItemType,PlaylistMenu)</onclick>
+				<visible>$EXP[video_nodes] | $EXP[playlist_movies] | $EXP[playlist_music]</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),MainMenu)</visible>
+			</item>
+			<item>
+				<description>Favourites</description>
+				<label>$LOCALIZE[1036] ></label>
+				<onclick>SetProperty(MenuItemType,FavouritesMenu)</onclick>
+				<visible>String.IsEqual(Window.Property(MenuItemType),MainMenu)</visible>
+			</item>
+			<!-- Weather Menu -->
+			<item>
+				<description>Weather Daily</description>
+				<label>$LOCALIZE[8] - $LOCALIZE[89302]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,WeatherDaily)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Weather.Plugin)</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),WeatherMenu)</visible>
+			</item>
+			<item>
+				<description>Weather Hourly</description>
+				<label>$LOCALIZE[8] - $LOCALIZE[89303]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,WeatherHourly)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Weather.Plugin)</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),WeatherMenu)</visible>
+			</item>
+			<item>
+				<description>Weather 36h</description>
+				<label>$LOCALIZE[8] - $LOCALIZE[33034]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,WeatherH36)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>!String.IsEmpty(Weather.Plugin)</visible>
+				<visible>Skin.HasSetting(LowerMenu)</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),WeatherMenu)</visible>
+			</item>
+			<!-- LiveTV Menu -->
+			<item>
+				<description>Favourites TV channels</description>
+				<label>$LOCALIZE[19020] - $LOCALIZE[88133]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,FavTVChannels)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>PVR.HasTVChannels</visible>
+				<visible>System.HasAddon(script.pvr.favourites)</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),LiveTVMenu)</visible>
+			</item>
+			<item>
+				<description>Last TV channels</description>
+				<label>$LOCALIZE[19020] - $LOCALIZE[88134]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,LastTVChannels)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>PVR.HasTVChannels</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),LiveTVMenu)</visible>
+			</item>
+			<item>
+				<description>Rec TV channels</description>
+				<label>$LOCALIZE[19020] - $LOCALIZE[88135]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecTVChannels)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>PVR.HasTVChannels</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),LiveTVMenu)</visible>
+			</item>
+			<!-- Radio Menu -->
+			<item>
+				<description>Favourites Radio channels</description>
+				<label>$LOCALIZE[19021] - $LOCALIZE[88133]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,FavRadioChannels)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>PVR.HasRadioChannels</visible>
+				<visible>System.HasAddon(script.pvr.favourites)</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),RadioMenu)</visible>
+			</item>
+			<item>
+				<description>Last Radio channels</description>
+				<label>$LOCALIZE[19021] - $LOCALIZE[88134]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,LastRadioChannels)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>PVR.HasRadioChannels</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),RadioMenu)</visible>
+			</item>
+			<item>
+				<description>Rec Radio channels</description>
+				<label>$LOCALIZE[19021] - $LOCALIZE[88135]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecRadioChannels)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>PVR.HasRadioChannels</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),RadioMenu)</visible>
+			</item>
+			<!-- Movies Menu -->
+			<item>
+				<description>UnWatched Movies</description>
+				<label>$LOCALIZE[342] - $LOCALIZE[88131]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,UnWatchedMovies)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>Skin.HasSetting(ActivateScriptPlaylist)</visible>
+				<visible>Library.HasContent(Movies)</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),MoviesMenu)</visible>
+			</item>
+			<item>
+				<description>Recent Movies</description>
+				<label>$LOCALIZE[342] - $LOCALIZE[89031]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMovies)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>Library.HasContent(Movies)</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),MoviesMenu)</visible>
+			</item>
+			<item>
+				<description>Random Movies</description>
+				<label>$LOCALIZE[342] - $LOCALIZE[89032]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RandomMovies)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>Library.HasContent(Movies)</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),MoviesMenu)</visible>
+			</item>
+			<item>
+				<description>Recommended Movies</description>
+				<label>$LOCALIZE[342] - $LOCALIZE[89030]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecommendedMovies)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>Library.HasContent(Movies)</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),MoviesMenu)</visible>
+			</item>
+			<!-- TVShows Menu -->
+			<item>
+				<description>Recent Episodes</description>
+				<label>$LOCALIZE[20343] - $LOCALIZE[89033]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentEpisodes)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>Library.HasContent(TVShows)</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),TVShowsMenu)</visible>
+			</item>
+			<item>
+				<description>Random Episodes</description>
+				<label>$LOCALIZE[20343] - $LOCALIZE[89035]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RandomEpisodes)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>Library.HasContent(TVShows)</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),TVShowsMenu)</visible>
+			</item>
+			<item>
+				<description>Recommended Episodes</description>
+				<label>$LOCALIZE[20343] - $LOCALIZE[89034]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecommendedEpisodes)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>Library.HasContent(TVShows)</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),TVShowsMenu)</visible>
+			</item>
+			<!-- MusicVideo Menu -->
+			<item>
+				<description>Recent Music Video</description>
+				<label>$LOCALIZE[20389] - $LOCALIZE[89036]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMusicVideo)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>Library.HasContent(MusicVideos)</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),MusicVideoMenu)</visible>
+			</item>
+			<item>
+				<description>Random Music Video</description>
+				<label>$LOCALIZE[20389] - $LOCALIZE[89038]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RandomMusicVideo)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>Library.HasContent(MusicVideos)</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),MusicVideoMenu)</visible>
+			</item>
+			<item>
+				<description>Recommended Music Video</description>
+				<label>$LOCALIZE[20389] - $LOCALIZE[89037]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecommendedMusicVideo)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>Library.HasContent(MusicVideos)</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),MusicVideoMenu)</visible>
+			</item>
+			<!-- Music Menu -->
+			<item>
+				<description>Recent Albums</description>
+				<label>$LOCALIZE[2] - $LOCALIZE[89025]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentAlbums)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>Library.HasContent(Music)</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),MusicMenu)</visible>
+			</item>
+			<item>
+				<description>Random Albums</description>
+				<label>$LOCALIZE[2] - $LOCALIZE[89027]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RandomAlbums)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>Library.HasContent(Music)</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),MusicMenu)</visible>
+			</item>
+			<item>
+				<description>Recommended Albums</description>
+				<label>$LOCALIZE[2] - $LOCALIZE[89026]</label>
+				<onclick>Dialog.Close($PARAM[id_win])</onclick>
+				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecommendedAlbums)</onclick>
+				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+				<visible>Library.HasContent(Music)</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),MusicMenu)</visible>
+			</item>
+			<!-- PlayList Menu -->
 			<item>
 				<description>Video Nodes</description>
 				<label>[COLOR=selected]$VAR[CustomWidgetLabel][/COLOR] - $LOCALIZE[157] $LOCALIZE[89029]</label>
 				<onclick>Dialog.Close($PARAM[id_win])</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,VideoNode)</onclick>
 				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>
-					!String.IsEmpty(Skin.String(HomeItem.1.Playlist)) + Skin.String(HomeItem.1.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.1) |
-					!String.IsEmpty(Skin.String(HomeItem.2.Playlist)) + Skin.String(HomeItem.2.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.2) |
-					!String.IsEmpty(Skin.String(HomeItem.3.Playlist)) + Skin.String(HomeItem.3.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.3) |
-					!String.IsEmpty(Skin.String(HomeItem.4.Playlist)) + Skin.String(HomeItem.4.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.4) |
-					!String.IsEmpty(Skin.String(HomeItem.5.Playlist)) + Skin.String(HomeItem.5.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.5) |
-					!String.IsEmpty(Skin.String(HomeItem.6.Playlist)) + Skin.String(HomeItem.6.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.6) |
-					!String.IsEmpty(Skin.String(HomeItem.7.Playlist)) + Skin.String(HomeItem.7.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.7) |
-					!String.IsEmpty(Skin.String(HomeItem.8.Playlist)) + Skin.String(HomeItem.8.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.8) |
-					!String.IsEmpty(Skin.String(HomeItem.9.Playlist)) + Skin.String(HomeItem.9.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.9) |
-					!String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.10.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.10) |
-					!String.IsEmpty(Skin.String(HomeItem.11.Playlist)) + Skin.String(HomeItem.11.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.11) |
-					!String.IsEmpty(Skin.String(HomeItem.12.Playlist)) + Skin.String(HomeItem.12.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.12) |
-					!String.IsEmpty(Skin.String(HomeItem.13.Playlist)) + Skin.String(HomeItem.13.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.13) |
-					!String.IsEmpty(Skin.String(HomeItem.14.Playlist)) + Skin.String(HomeItem.14.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.14) |
-					!String.IsEmpty(Skin.String(HomeItem.15.Playlist)) + Skin.String(HomeItem.15.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.15) |
-					!String.IsEmpty(Skin.String(HomeItem.16.Playlist)) + Skin.String(HomeItem.16.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.16) |
-					!String.IsEmpty(Skin.String(HomeItem.17.Playlist)) + Skin.String(HomeItem.17.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.17) |
-					!String.IsEmpty(Skin.String(HomeItem.18.Playlist)) + Skin.String(HomeItem.18.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.18) |
-					!String.IsEmpty(Skin.String(HomeItem.19.Playlist)) + Skin.String(HomeItem.19.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.19) |
-					!String.IsEmpty(Skin.String(HomeItem.20.Playlist)) + Skin.String(HomeItem.20.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.20)
-				</visible>
+				<visible>$EXP[video_nodes]</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),PlaylistMenu)</visible>
 			</item>
 			<item>
 				<description>Playlist Movies</description>
@@ -5165,28 +5745,8 @@
 				<onclick>Dialog.Close($PARAM[id_win])</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,VideoPlayList)</onclick>
 				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>
-					!String.IsEmpty(Skin.String(HomeItem.1.Playlist)) + Skin.String(HomeItem.1.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.1) |
-					!String.IsEmpty(Skin.String(HomeItem.2.Playlist)) + Skin.String(HomeItem.2.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.2) |
-					!String.IsEmpty(Skin.String(HomeItem.3.Playlist)) + Skin.String(HomeItem.3.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.3) |
-					!String.IsEmpty(Skin.String(HomeItem.4.Playlist)) + Skin.String(HomeItem.4.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.4) |
-					!String.IsEmpty(Skin.String(HomeItem.5.Playlist)) + Skin.String(HomeItem.5.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.5) |
-					!String.IsEmpty(Skin.String(HomeItem.6.Playlist)) + Skin.String(HomeItem.6.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.6) |
-					!String.IsEmpty(Skin.String(HomeItem.7.Playlist)) + Skin.String(HomeItem.7.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.7) |
-					!String.IsEmpty(Skin.String(HomeItem.8.Playlist)) + Skin.String(HomeItem.8.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.8) |
-					!String.IsEmpty(Skin.String(HomeItem.9.Playlist)) + Skin.String(HomeItem.9.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.9) |
-					!String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.10.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.10) |
-					!String.IsEmpty(Skin.String(HomeItem.11.Playlist)) + Skin.String(HomeItem.11.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.11) |
-					!String.IsEmpty(Skin.String(HomeItem.12.Playlist)) + Skin.String(HomeItem.12.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.12) |
-					!String.IsEmpty(Skin.String(HomeItem.13.Playlist)) + Skin.String(HomeItem.13.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.13) |
-					!String.IsEmpty(Skin.String(HomeItem.14.Playlist)) + Skin.String(HomeItem.14.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.14) |
-					!String.IsEmpty(Skin.String(HomeItem.15.Playlist)) + Skin.String(HomeItem.15.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.15) |
-					!String.IsEmpty(Skin.String(HomeItem.16.Playlist)) + Skin.String(HomeItem.16.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.16) |
-					!String.IsEmpty(Skin.String(HomeItem.17.Playlist)) + Skin.String(HomeItem.17.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.17) |
-					!String.IsEmpty(Skin.String(HomeItem.18.Playlist)) + Skin.String(HomeItem.18.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.18) |
-					!String.IsEmpty(Skin.String(HomeItem.19.Playlist)) + Skin.String(HomeItem.19.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.19) |
-					!String.IsEmpty(Skin.String(HomeItem.20.Playlist)) + Skin.String(HomeItem.20.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.20)
-				</visible>
+				<visible>$EXP[playlist_movies]</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),PlaylistMenu)</visible>
 			</item>
 			<item>
 				<description>Playlist Music</description>
@@ -5194,54 +5754,10 @@
 				<onclick>Dialog.Close($PARAM[id_win])</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,MusicPlayList)</onclick>
 				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>
-					!String.IsEmpty(Skin.String(HomeItem.1.Playlist)) + Skin.String(HomeItem.1.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.1) |
-					!String.IsEmpty(Skin.String(HomeItem.2.Playlist)) + Skin.String(HomeItem.2.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.2) |
-					!String.IsEmpty(Skin.String(HomeItem.3.Playlist)) + Skin.String(HomeItem.3.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.3) |
-					!String.IsEmpty(Skin.String(HomeItem.4.Playlist)) + Skin.String(HomeItem.4.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.4) |
-					!String.IsEmpty(Skin.String(HomeItem.5.Playlist)) + Skin.String(HomeItem.5.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.5) |
-					!String.IsEmpty(Skin.String(HomeItem.6.Playlist)) + Skin.String(HomeItem.6.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.6) |
-					!String.IsEmpty(Skin.String(HomeItem.7.Playlist)) + Skin.String(HomeItem.7.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.7) |
-					!String.IsEmpty(Skin.String(HomeItem.8.Playlist)) + Skin.String(HomeItem.8.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.8) |
-					!String.IsEmpty(Skin.String(HomeItem.9.Playlist)) + Skin.String(HomeItem.9.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.9) |
-					!String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.10.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.10) |
-					!String.IsEmpty(Skin.String(HomeItem.11.Playlist)) + Skin.String(HomeItem.11.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.11) |
-					!String.IsEmpty(Skin.String(HomeItem.12.Playlist)) + Skin.String(HomeItem.12.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.12) |
-					!String.IsEmpty(Skin.String(HomeItem.13.Playlist)) + Skin.String(HomeItem.13.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.13) |
-					!String.IsEmpty(Skin.String(HomeItem.14.Playlist)) + Skin.String(HomeItem.14.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.14) |
-					!String.IsEmpty(Skin.String(HomeItem.15.Playlist)) + Skin.String(HomeItem.15.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.15) |
-					!String.IsEmpty(Skin.String(HomeItem.16.Playlist)) + Skin.String(HomeItem.16.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.16) |
-					!String.IsEmpty(Skin.String(HomeItem.17.Playlist)) + Skin.String(HomeItem.17.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.17) |
-					!String.IsEmpty(Skin.String(HomeItem.18.Playlist)) + Skin.String(HomeItem.18.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.18) |
-					!String.IsEmpty(Skin.String(HomeItem.19.Playlist)) + Skin.String(HomeItem.19.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.19) |
-					!String.IsEmpty(Skin.String(HomeItem.20.Playlist)) + Skin.String(HomeItem.20.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.20)
-				</visible>
+				<visible>$EXP[playlist_music]</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),PlaylistMenu)</visible>
 			</item>
-			<item>
-				<description>Weather Daily</description>
-				<label>$LOCALIZE[89302] $LOCALIZE[8]</label>
-				<onclick>Dialog.Close($PARAM[id_win])</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,WeatherDaily)</onclick>
-				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>!String.IsEmpty(Weather.Plugin)</visible>
-			</item>
-			<item>
-				<description>Weather Hourly</description>
-				<label>$LOCALIZE[89303] $LOCALIZE[8]</label>
-				<onclick>Dialog.Close($PARAM[id_win])</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,WeatherHourly)</onclick>
-				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>!String.IsEmpty(Weather.Plugin)</visible>
-			</item>
-			<item>
-				<description>Weather 36h</description>
-				<label>$LOCALIZE[8] $LOCALIZE[33034]</label>
-				<onclick>Dialog.Close($PARAM[id_win])</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,WeatherH36)</onclick>
-				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>!String.IsEmpty(Weather.Plugin)</visible>
-				<visible>Skin.HasSetting(LowerMenu)</visible>
-			</item>
+			<!-- Favourites Menu -->
 			<item>
 				<description>Favourites</description>
 				<label>$LOCALIZE[1036]</label>
@@ -5249,129 +5765,7 @@
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,Favourites)</onclick>
 				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 				<visible>System.HasAddon(script.favourites)</visible>
-			</item>
-			<item>
-				<description>Favourites TV channels</description>
-				<label>$LOCALIZE[88133]</label>
-				<onclick>Dialog.Close($PARAM[id_win])</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,FavTVChannels)</onclick>
-				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>PVR.HasTVChannels</visible>
-				<visible>System.HasAddon(script.pvr.favourites)</visible>
-			</item>
-			<item>
-				<description>Favourites Radio channels</description>
-				<label>$LOCALIZE[88134]</label>
-				<onclick>Dialog.Close($PARAM[id_win])</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,FavRadioChannels)</onclick>
-				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>PVR.HasRadioChannels</visible>
-				<visible>System.HasAddon(script.pvr.favourites)</visible>
-			</item>
-			<item>
-				<description>UnWatched Movies</description>
-				<label>$LOCALIZE[88131]</label>
-				<onclick>Dialog.Close($PARAM[id_win])</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,UnWatchedMovies)</onclick>
-				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>Skin.HasSetting(ActivateScriptPlaylist)</visible>
-				<visible>Library.HasContent(Movies)</visible>
-			</item>
-			<item>
-				<description>Recent Movies</description>
-				<label>$LOCALIZE[89031]</label>
-				<onclick>Dialog.Close($PARAM[id_win])</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMovies)</onclick>
-				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>Library.HasContent(Movies)</visible>
-			</item>
-			<item>
-				<description>Random Movies</description>
-				<label>$LOCALIZE[89032]</label>
-				<onclick>Dialog.Close($PARAM[id_win])</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RandomMovies)</onclick>
-				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>Library.HasContent(Movies)</visible>
-			</item>
-			<item>
-				<description>Recommended Movies</description>
-				<label>$LOCALIZE[89030]</label>
-				<onclick>Dialog.Close($PARAM[id_win])</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecommendedMovies)</onclick>
-				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>Library.HasContent(Movies)</visible>
-			</item>
-			<item>
-				<description>Recent Episodes</description>
-				<label>$LOCALIZE[89033]</label>
-				<onclick>Dialog.Close($PARAM[id_win])</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentEpisodes)</onclick>
-				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>Library.HasContent(TVShows)</visible>
-			</item>
-			<item>
-				<description>Random Episodes</description>
-				<label>$LOCALIZE[89035]</label>
-				<onclick>Dialog.Close($PARAM[id_win])</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RandomEpisodes)</onclick>
-				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>Library.HasContent(TVShows)</visible>
-			</item>
-			<item>
-				<description>Recommended Episodes</description>
-				<label>$LOCALIZE[89034]</label>
-				<onclick>Dialog.Close($PARAM[id_win])</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecommendedEpisodes)</onclick>
-				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>Library.HasContent(TVShows)</visible>
-			</item>
-			<item>
-				<description>Recent Music Video</description>
-				<label>$LOCALIZE[89036]</label>
-				<onclick>Dialog.Close($PARAM[id_win])</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentMusicVideo)</onclick>
-				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>Library.HasContent(MusicVideos)</visible>
-			</item>
-			<item>
-				<description>Random Music Video</description>
-				<label>$LOCALIZE[89038]</label>
-				<onclick>Dialog.Close($PARAM[id_win])</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RandomMusicVideo)</onclick>
-				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>Library.HasContent(MusicVideos)</visible>
-			</item>
-			<item>
-				<description>Recommended Music Video</description>
-				<label>$LOCALIZE[89037]</label>
-				<onclick>Dialog.Close($PARAM[id_win])</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecommendedMusicVideo)</onclick>
-				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>Library.HasContent(MusicVideos)</visible>
-			</item>
-			<item>
-				<description>Recent Albums</description>
-				<label>$LOCALIZE[89025]</label>
-				<onclick>Dialog.Close($PARAM[id_win])</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentAlbums)</onclick>
-				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>Library.HasContent(Music)</visible>
-			</item>
-			<item>
-				<description>Random Albums</description>
-				<label>$LOCALIZE[89027]</label>
-				<onclick>Dialog.Close($PARAM[id_win])</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RandomAlbums)</onclick>
-				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>Library.HasContent(Music)</visible>
-			</item>
-			<item>
-				<description>Recommended Albums</description>
-				<label>$LOCALIZE[89026]</label>
-				<onclick>Dialog.Close($PARAM[id_win])</onclick>
-				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecommendedAlbums)</onclick>
-				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>Library.HasContent(Music)</visible>
+				<visible>String.IsEqual(Window.Property(MenuItemType),FavouritesMenu)</visible>
 			</item>
 		</content>
 	</include>

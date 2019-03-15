@@ -1149,13 +1149,13 @@
 					<ondown>9004</ondown>
 					<include content="HomeMainWidgetsItemSettings">
 						<param name="id1" value="41" />
-						<param name="title" value="$LOCALIZE[88133]" />
+						<param name="title" value="$LOCALIZE[88136]" />
 						<param name="setchannelstype" value="TV" />
 						<param name="type" value="0" />
 					</include>
 					<include content="HomeMainWidgetsItemSettings">
 						<param name="id1" value="42" />
-						<param name="title" value="$LOCALIZE[88134]" />
+						<param name="title" value="$LOCALIZE[88137]" />
 						<param name="setchannelstype" value="Radio" />
 						<param name="type" value="1" />
 					</include>

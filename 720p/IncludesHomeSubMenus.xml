@@ -861,7 +861,7 @@
 			</item>
 			<item>
 				<description>Submenu Favourites</description>
-				<label>$LOCALIZE[1036]</label>
+				<label>$LOCALIZE[80010]</label>
 				<onclick>Dialog.Close($PARAM[id_win])</onclick>
 				<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Sub,SubMenu21)</onclick>
 				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>

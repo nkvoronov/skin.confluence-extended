@@ -19,6 +19,73 @@
 	<include file="IncludesHomeWidgets.xml" />
 	<include file="IncludesMenuItemChoices.xml" />
 	<include file="IncludesVariables.xml" />
+	<!-- EXPRESSION -->
+	<expression name="video_nodes">
+		!String.IsEmpty(Skin.String(HomeItem.1.Playlist)) + Skin.String(HomeItem.1.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.1) |
+		!String.IsEmpty(Skin.String(HomeItem.2.Playlist)) + Skin.String(HomeItem.2.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.2) |
+		!String.IsEmpty(Skin.String(HomeItem.3.Playlist)) + Skin.String(HomeItem.3.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.3) |
+		!String.IsEmpty(Skin.String(HomeItem.4.Playlist)) + Skin.String(HomeItem.4.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.4) |
+		!String.IsEmpty(Skin.String(HomeItem.5.Playlist)) + Skin.String(HomeItem.5.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.5) |
+		!String.IsEmpty(Skin.String(HomeItem.6.Playlist)) + Skin.String(HomeItem.6.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.6) |
+		!String.IsEmpty(Skin.String(HomeItem.7.Playlist)) + Skin.String(HomeItem.7.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.7) |
+		!String.IsEmpty(Skin.String(HomeItem.8.Playlist)) + Skin.String(HomeItem.8.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.8) |
+		!String.IsEmpty(Skin.String(HomeItem.9.Playlist)) + Skin.String(HomeItem.9.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.9) |
+		!String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.10.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.10) |
+		!String.IsEmpty(Skin.String(HomeItem.11.Playlist)) + Skin.String(HomeItem.11.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.11) |
+		!String.IsEmpty(Skin.String(HomeItem.12.Playlist)) + Skin.String(HomeItem.12.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.12) |
+		!String.IsEmpty(Skin.String(HomeItem.13.Playlist)) + Skin.String(HomeItem.13.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.13) |
+		!String.IsEmpty(Skin.String(HomeItem.14.Playlist)) + Skin.String(HomeItem.14.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.14) |
+		!String.IsEmpty(Skin.String(HomeItem.15.Playlist)) + Skin.String(HomeItem.15.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.15) |
+		!String.IsEmpty(Skin.String(HomeItem.16.Playlist)) + Skin.String(HomeItem.16.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.16) |
+		!String.IsEmpty(Skin.String(HomeItem.17.Playlist)) + Skin.String(HomeItem.17.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.17) |
+		!String.IsEmpty(Skin.String(HomeItem.18.Playlist)) + Skin.String(HomeItem.18.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.18) |
+		!String.IsEmpty(Skin.String(HomeItem.19.Playlist)) + Skin.String(HomeItem.19.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.19) |
+		!String.IsEmpty(Skin.String(HomeItem.20.Playlist)) + Skin.String(HomeItem.20.Type,videonode) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.20)
+	</expression>
+	<expression name="playlist_movies">
+		!String.IsEmpty(Skin.String(HomeItem.1.Playlist)) + Skin.String(HomeItem.1.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.1) |
+		!String.IsEmpty(Skin.String(HomeItem.2.Playlist)) + Skin.String(HomeItem.2.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.2) |
+		!String.IsEmpty(Skin.String(HomeItem.3.Playlist)) + Skin.String(HomeItem.3.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.3) |
+		!String.IsEmpty(Skin.String(HomeItem.4.Playlist)) + Skin.String(HomeItem.4.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.4) |
+		!String.IsEmpty(Skin.String(HomeItem.5.Playlist)) + Skin.String(HomeItem.5.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.5) |
+		!String.IsEmpty(Skin.String(HomeItem.6.Playlist)) + Skin.String(HomeItem.6.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.6) |
+		!String.IsEmpty(Skin.String(HomeItem.7.Playlist)) + Skin.String(HomeItem.7.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.7) |
+		!String.IsEmpty(Skin.String(HomeItem.8.Playlist)) + Skin.String(HomeItem.8.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.8) |
+		!String.IsEmpty(Skin.String(HomeItem.9.Playlist)) + Skin.String(HomeItem.9.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.9) |
+		!String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.10.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.10) |
+		!String.IsEmpty(Skin.String(HomeItem.11.Playlist)) + Skin.String(HomeItem.11.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.11) |
+		!String.IsEmpty(Skin.String(HomeItem.12.Playlist)) + Skin.String(HomeItem.12.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.12) |
+		!String.IsEmpty(Skin.String(HomeItem.13.Playlist)) + Skin.String(HomeItem.13.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.13) |
+		!String.IsEmpty(Skin.String(HomeItem.14.Playlist)) + Skin.String(HomeItem.14.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.14) |
+		!String.IsEmpty(Skin.String(HomeItem.15.Playlist)) + Skin.String(HomeItem.15.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.15) |
+		!String.IsEmpty(Skin.String(HomeItem.16.Playlist)) + Skin.String(HomeItem.16.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.16) |
+		!String.IsEmpty(Skin.String(HomeItem.17.Playlist)) + Skin.String(HomeItem.17.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.17) |
+		!String.IsEmpty(Skin.String(HomeItem.18.Playlist)) + Skin.String(HomeItem.18.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.18) |
+		!String.IsEmpty(Skin.String(HomeItem.19.Playlist)) + Skin.String(HomeItem.19.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.19) |
+		!String.IsEmpty(Skin.String(HomeItem.20.Playlist)) + Skin.String(HomeItem.20.Type,videoplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.20)
+	</expression>
+	<expression name="playlist_music">
+		!String.IsEmpty(Skin.String(HomeItem.1.Playlist)) + Skin.String(HomeItem.1.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.1) |
+		!String.IsEmpty(Skin.String(HomeItem.2.Playlist)) + Skin.String(HomeItem.2.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.2) |
+		!String.IsEmpty(Skin.String(HomeItem.3.Playlist)) + Skin.String(HomeItem.3.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.3) |
+		!String.IsEmpty(Skin.String(HomeItem.4.Playlist)) + Skin.String(HomeItem.4.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.4) |
+		!String.IsEmpty(Skin.String(HomeItem.5.Playlist)) + Skin.String(HomeItem.5.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.5) |
+		!String.IsEmpty(Skin.String(HomeItem.6.Playlist)) + Skin.String(HomeItem.6.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.6) |
+		!String.IsEmpty(Skin.String(HomeItem.7.Playlist)) + Skin.String(HomeItem.7.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.7) |
+		!String.IsEmpty(Skin.String(HomeItem.8.Playlist)) + Skin.String(HomeItem.8.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.8) |
+		!String.IsEmpty(Skin.String(HomeItem.9.Playlist)) + Skin.String(HomeItem.9.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.9) |
+		!String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.10.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.10) |
+		!String.IsEmpty(Skin.String(HomeItem.11.Playlist)) + Skin.String(HomeItem.11.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.11) |
+		!String.IsEmpty(Skin.String(HomeItem.12.Playlist)) + Skin.String(HomeItem.12.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.12) |
+		!String.IsEmpty(Skin.String(HomeItem.13.Playlist)) + Skin.String(HomeItem.13.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.13) |
+		!String.IsEmpty(Skin.String(HomeItem.14.Playlist)) + Skin.String(HomeItem.14.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.14) |
+		!String.IsEmpty(Skin.String(HomeItem.15.Playlist)) + Skin.String(HomeItem.15.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.15) |
+		!String.IsEmpty(Skin.String(HomeItem.16.Playlist)) + Skin.String(HomeItem.16.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.16) |
+		!String.IsEmpty(Skin.String(HomeItem.17.Playlist)) + Skin.String(HomeItem.17.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.17) |
+		!String.IsEmpty(Skin.String(HomeItem.18.Playlist)) + Skin.String(HomeItem.18.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.18) |
+		!String.IsEmpty(Skin.String(HomeItem.19.Playlist)) + Skin.String(HomeItem.19.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.19) |
+		!String.IsEmpty(Skin.String(HomeItem.20.Playlist)) + Skin.String(HomeItem.20.Type,musicplaylist) + Integer.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.20)
+	</expression>
 	<!-- CONSTANTS -->
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
