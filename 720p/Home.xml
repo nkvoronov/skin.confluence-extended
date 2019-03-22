@@ -18,6 +18,8 @@
 	<onload>Skin.SetBool(SkinHelper.EnableAddonsLookups)</onload>
 	<onload>Skin.SetString(SkinHelper.RandomFanartDelay, $VAR[RandomFanartDelayName])</onload>
 	<onunload>ClearProperty(SkinHelper.WidgetContainer)</onunload>
+	<!-- ScriptFavourites -->
+	<onload condition="System.HasAddon(script.pvr.favourites)+[PVR.HasTVChannels | PVR.HasRadioChannels]">RunScript(script.pvr.favourites)</onload>
 	<!-- -->
 	<include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
 	<onload condition="!String.IsEmpty(Window(Home).Property(MenuItemActive))">ClearProperty(MenuItemActive,Home)</onload>

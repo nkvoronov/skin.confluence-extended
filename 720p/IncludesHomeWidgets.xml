@@ -578,12 +578,12 @@
 	</include>
 	<!-- Common Widget -->
 	<include name="CommonWidgetInclude">
-		<param name="height_widget_item" default="220" />
-		<param name="left_widget_la" default="-40" />
-		<param name="content_name" default="" />
-		<param name="content_target" default="" />
-		<param name="content_path" default="" />
-		<param name="content_limit" default="$VAR[WidgetLimitItemsName]" />
+		<param name="height_widget_item">220</param>
+		<param name="left_widget_la">-40</param>
+		<param name="content_name"></param>
+		<param name="content_target"></param>
+		<param name="content_path"></param>
+		<param name="content_limit">$VAR[WidgetLimitItemsName]</param>
 		<param name="fallback_image">DefaultFolder.png</param>
 		<param name="icon">$INFO[ListItem.Icon]</param>
 		<param name="label">$INFO[ListItem.Label]</param>
@@ -623,7 +623,7 @@
 					<onright>$PARAM[list_id]</onright>
 					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
 					<preloaditems>1</preloaditems>
@@ -714,8 +714,8 @@
 	</include>
 	<!-- Widget Items Layout -->
 	<include name="WeatherWidgetItemsLayout">
-		<param name="height_widget_item" default="220" />
-		<param name="width_widget_item" default="200" />
+		<param name="height_widget_item">220</param>
+		<param name="width_widget_item">200</param>
 		<definition>
 			<itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
 				<control type="image">
@@ -854,8 +854,8 @@
 		</definition>
 	</include>
 	<include name="SquareWidgetItemsLayout">
-		<param name="height_widget_item" default="220" />
-		<param name="width_widget_item" default="200" />
+		<param name="height_widget_item">220</param>
+		<param name="width_widget_item">200</param>
 		<param name="icon"></param>
 		<param name="label"></param>
 		<param name="label2"></param>
@@ -960,8 +960,8 @@
 		</definition>
 	</include>
 	<include name="MoviesWidgetItemsLayout">
-		<param name="height_widget_item" default="220" />
-		<param name="width_widget_item" default="180" />
+		<param name="height_widget_item">220</param>
+		<param name="width_widget_item">180</param>
 		<param name="icon"></param>
 		<param name="label"></param>
 		<param name="label2"></param>
@@ -1083,8 +1083,8 @@
 		</definition>
 	</include>
 	<include name="EpisodesWidgetItemsLayout">
-		<param name="height_widget_item" default="220" />
-		<param name="width_widget_item" default="240" />
+		<param name="height_widget_item">220</param>
+		<param name="width_widget_item">240</param>
 		<param name="icon"></param>
 		<param name="label"></param>
 		<param name="label2"></param>
@@ -1216,8 +1216,8 @@
 		</definition>
 	</include>
 	<include name="TVShowsWidgetItemsLayout">
-		<param name="height_widget_item" default="220" />
-		<param name="width_widget_item" default="180" />
+		<param name="height_widget_item">220</param>
+		<param name="width_widget_item">180</param>
 		<param name="icon"></param>
 		<param name="label"></param>
 		<param name="label2"></param>
@@ -1349,8 +1349,8 @@
 		</definition>
 	</include>
 	<include name="AlbumsWidgetItemsLayout">
-		<param name="height_widget_item" default="220" />
-		<param name="width_widget_item" default="200" />
+		<param name="height_widget_item">220</param>
+		<param name="width_widget_item">200</param>
 		<param name="icon"></param>
 		<param name="label"></param>
 		<param name="label2"></param>
@@ -1481,8 +1481,8 @@
 		</definition>
 	</include>
 	<include name="PVRWidgetItemsLayout">
-		<param name="height_widget_item" default="220" />
-		<param name="width_widget_item" default="200" />
+		<param name="height_widget_item">220</param>
+		<param name="width_widget_item">200</param>
 		<param name="icon"></param>
 		<param name="label"></param>
 		<param name="label2"></param>

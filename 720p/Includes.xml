@@ -1908,9 +1908,9 @@
 		</control>
 	</include>
 	<include name="CommonWindowHeader">
-		<param name="Icon" default="icon_home" />
-		<param name="Label" default="" />
-		<param name="ShowLabel2" default="False" />
+		<param name="Icon">icon_home</param>
+		<param name="Label"></param>
+		<param name="ShowLabel2">False</param>
 		<definition>
 			<control type="group">
 				<depth>DepthHeader</depth>

@@ -25,7 +25,7 @@
 		<onup condition="System.HasAddon(script.globalsearch) + Skin.HasSetting(ActivateGlobalSearch)">608</onup>
 		<onup condition="!System.HasAddon(script.globalsearch) | !Skin.HasSetting(ActivateGlobalSearch)">603</onup>
 		<ondown>9001</ondown>
-		<pagecontrol>-</pagecontrol>
+		<pagecontrol/>
 		<scrolltime>300</scrolltime>
 		<focusposition>2</focusposition>
 		<movement>1</movement>
