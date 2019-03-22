@@ -31,13 +31,6 @@
 				<texture border="15">ContentPanel.png</texture>
 			</control>
 			<control type="image">
-				<left>265</left>
-				<top>5</top>
-				<width>830</width>
-				<height>630</height>
-				<texture border="15">ContentPanel.png</texture>
-			</control>
-			<control type="image">
 				<left>10</left>
 				<top>10</top>
 				<width>260</width>
@@ -55,50 +48,35 @@
 			<control type="image">
 				<left>268</left>
 				<top>10</top>
-				<width>804</width>
-				<height>50</height>
+				<width>795</width>
+				<height>618</height>
 				<texture border="5">black-back2.png</texture>
 			</control>
 			<control type="image">
 				<left>268</left>
 				<top>10</top>
-				<width>804</width>
-				<height>70</height>
+				<width>794</width>
+				<height>50</height>
 				<aspectratio>stretch</aspectratio>
 				<texture>dialogheader.png</texture>
 			</control>
 			<control type="label" id="32300">
 				<description>header label</description>
 				<left>300</left>
-				<top>20</top>
+				<top>22</top>
 				<width>740</width>
 				<height>30</height>
-				<font>font16caps</font>
-				<label>
-				</label>
-				<align>left</align>
+				<font>font16</font>
+				<label />
+				<align>center</align>
 				<aligny>center</aligny>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="image">
-				<left>270</left>
-				<top>60</top>
-				<width>800</width>
-				<height>450</height>
-				<texture border="5">button-nofocus.png</texture>
-			</control>
-			<control type="image">
-				<left>12</left>
-				<top>11</top>
-				<width>258</width>
-				<height>618</height>
-				<texture border="5">button-nofocus.png</texture>
-			</control>
-			<control type="image">
-				<left>272</left>
+				<left>268</left>
 				<top>509</top>
-				<width>799</width>
+				<width>794</width>
 				<height>120</height>
 				<texture border="5">black-back2.png</texture>
 			</control>
@@ -156,8 +134,7 @@
 						<top>440</top>
 						<width>230</width>
 						<height>40</height>
-						<label>
-						</label>
+						<label />
 						<textcolor>FF999999</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus border="5">button-focus2.png</texturefocus>
@@ -167,8 +144,7 @@
 						<top>440</top>
 						<width>230</width>
 						<height>40</height>
-						<label>
-						</label>
+						<label />
 						<textcolor>FF999999</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus border="5">button-focus2.png</texturefocus>
@@ -182,8 +158,7 @@
 						<colordiffuse>FFFFFFFF</colordiffuse>
 						<texturefocus>button-focus.png</texturefocus>
 						<texturenofocus>button-nofocus.png</texturenofocus>
-						<label>
-						</label>
+						<label />
 						<font>font12</font>
 						<textcolor>FFFFFFFF</textcolor>
 						<disabledcolor>80FFFFFF</disabledcolor>
@@ -198,8 +173,7 @@
 						<colordiffuse>FFFFFFFF</colordiffuse>
 						<texturefocus>button-focus.png</texturefocus>
 						<texturenofocus>button-nofocus.png</texturenofocus>
-						<label>
-						</label>
+						<label />
 						<font>font12</font>
 						<textcolor>FFFFFFFF</textcolor>
 						<disabledcolor>80FFFFFF</disabledcolor>
@@ -244,7 +218,9 @@
 						<pagecontrol/>
 						<scrolltime>300</scrolltime>
 						<itemlayout height="54" width="260">
+						</itemlayout>
 						<focusedlayout height="54" width="260">
+						</focusedlayout>
 					</control>
 					<!-- Network Menu Content -->
 					<control type="list" id="1200">
@@ -334,18 +310,8 @@
 								<width>20</width>
 								<height>20</height>
 								<aspectratio>keep</aspectratio>
-								<visible>Integer.IsEqual(ListItem.Property(Security), 1)</visible>
+								<visible>Integer.IsGreater(ListItem.Property(Security), 0)</visible>
 								<texture>os/coreelec/icons/Key.png</texture>
-							</control>
-							<!-- Insecure Symbol (bottom right) -->
-							<control type="image">
-								<left>700</left>
-								<top>10</top>
-								<width>20</width>
-								<height>20</height>
-								<aspectratio>keep</aspectratio>
-								<visible>Integer.IsEqual(ListItem.Property(Security), 0)</visible>
-								<texture>os/coreelec/icons/Unlock.png</texture>
 							</control>
 						</itemlayout>
 						<focusedlayout height="50">
@@ -461,7 +427,7 @@
 				</control>
 			</control>
 			<control type="button" id="1500">
-				<left>825</left>
+				<left>800</left>
 				<top>575</top>
 				<width>230</width>
 				<height>40</height>
@@ -469,8 +435,7 @@
 				<colordiffuse>FFFFFFFF</colordiffuse>
 				<texturefocus>button-focus.png</texturefocus>
 				<texturenofocus>button-nofocus.png</texturenofocus>
-				<label>
-				</label>
+				<label />
 				<font>font12</font>
 				<textcolor>FFFFFFFF</textcolor>
 				<disabledcolor>80FFFFFF</disabledcolor>
@@ -478,6 +443,24 @@
 				<onup>1000</onup>
 				<onleft>1000</onleft>
 				<visible>!String.IsEmpty(Control.GetLabel(1500))</visible>
+			</control>
+			<control type="button" id="1501">
+				<left>300</left>
+				<top>575</top>
+				<width>230</width>
+				<height>40</height>
+				<visible>true</visible>
+				<colordiffuse>FFFFFFFF</colordiffuse>
+				<texturefocus>button-focus.png</texturefocus>
+				<texturenofocus>button-nofocus.png</texturenofocus>
+				<label />
+				<font>font12</font>
+				<textcolor>FFFFFFFF</textcolor>
+				<disabledcolor>80FFFFFF</disabledcolor>
+				<align>center</align>
+				<onup>1000</onup>
+				<onleft>1000</onleft>
+				<visible>!String.IsEmpty(Control.GetLabel(1501))</visible>
 			</control>
 		</control>
 	</controls>
