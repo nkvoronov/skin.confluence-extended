@@ -698,9 +698,9 @@
 		<animation effect="slide" start="0,0" end="300,0" time="0" condition="Integer.IsEqual(Container($PARAM[list_id]).NumItems,1)">conditional</animation>
 	</include>
 	<include name="CommonWidgetInclude">
-		<param name="height_widget_item" default="220" />
-		<param name="left_widget_la" default="-40" />
-		<param name="contents_type" default="" />
+		<param name="height_widget_item">220</param>
+		<param name="left_widget_la">-40</param>
+		<param name="contents_type"></param>
 		<definition>
 			<control type="group">
 				<left>$PARAM[left_widget]</left>
@@ -734,7 +734,7 @@
 					<onright>$PARAM[list_id]</onright>
 					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
 					<include content="$PARAM[item_layout_name_include]">
@@ -774,9 +774,9 @@
 		</definition>
 	</include>
 	<include name="CommonWidgetPlayListInclude">
-		<param name="height_widget_item" default="220" />
-		<param name="left_widget_la" default="-40" />
-		<param name="contents_type" default="" />
+		<param name="height_widget_item">220</param>
+		<param name="left_widget_la">-40</param>
+		<param name="contents_type"></param>
 		<definition>
 			<control type="group">
 				<left>$PARAM[left_widget]</left>
@@ -811,7 +811,7 @@
 					<onright>$PARAM[list_id]</onright>
 					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
 					<include content="$PARAM[item_layout_name_include]">
@@ -836,7 +836,7 @@
 					<onright>$PARAM[list_id]</onright>
 					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
 					<include content="$PARAM[item_layout_name_include]">
@@ -861,7 +861,7 @@
 					<onright>$PARAM[list_id]</onright>
 					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
 					<include content="$PARAM[item_layout_name_include]">
@@ -886,7 +886,7 @@
 					<onright>$PARAM[list_id]</onright>
 					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
 					<include content="$PARAM[item_layout_name_include]">
@@ -911,7 +911,7 @@
 					<onright>$PARAM[list_id]</onright>
 					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
 					<include content="$PARAM[item_layout_name_include]">
@@ -936,7 +936,7 @@
 					<onright>$PARAM[list_id]</onright>
 					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
 					<include content="$PARAM[item_layout_name_include]">
@@ -961,7 +961,7 @@
 					<onright>$PARAM[list_id]</onright>
 					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
 					<include content="$PARAM[item_layout_name_include]">
@@ -986,7 +986,7 @@
 					<onright>$PARAM[list_id]</onright>
 					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
 					<include content="$PARAM[item_layout_name_include]">
@@ -1011,7 +1011,7 @@
 					<onright>$PARAM[list_id]</onright>
 					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
 					<include content="$PARAM[item_layout_name_include]">
@@ -1036,7 +1036,7 @@
 					<onright>$PARAM[list_id]</onright>
 					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
 					<include content="$PARAM[item_layout_name_include]">
@@ -1061,7 +1061,7 @@
 					<onright>$PARAM[list_id]</onright>
 					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
 					<include content="$PARAM[item_layout_name_include]">
@@ -1086,7 +1086,7 @@
 					<onright>$PARAM[list_id]</onright>
 					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
 					<include content="$PARAM[item_layout_name_include]">
@@ -1111,7 +1111,7 @@
 					<onright>$PARAM[list_id]</onright>
 					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
 					<include content="$PARAM[item_layout_name_include]">
@@ -1136,7 +1136,7 @@
 					<onright>$PARAM[list_id]</onright>
 					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
 					<include content="$PARAM[item_layout_name_include]">
@@ -1161,7 +1161,7 @@
 					<onright>$PARAM[list_id]</onright>
 					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
 					<include content="$PARAM[item_layout_name_include]">
@@ -1186,7 +1186,7 @@
 					<onright>$PARAM[list_id]</onright>
 					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
 					<include content="$PARAM[item_layout_name_include]">
@@ -1211,7 +1211,7 @@
 					<onright>$PARAM[list_id]</onright>
 					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
 					<include content="$PARAM[item_layout_name_include]">
@@ -1236,7 +1236,7 @@
 					<onright>$PARAM[list_id]</onright>
 					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
 					<include content="$PARAM[item_layout_name_include]">
@@ -1261,7 +1261,7 @@
 					<onright>$PARAM[list_id]</onright>
 					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
 					<include content="$PARAM[item_layout_name_include]">
@@ -1286,7 +1286,7 @@
 					<onright>$PARAM[list_id]</onright>
 					<include>HomeWidgetUpDown</include>
 					<viewtype label="535">list</viewtype>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<scrolltime>200</scrolltime>
 					<orientation>Horizontal</orientation>
 					<include content="$PARAM[item_layout_name_include]">
@@ -1326,8 +1326,8 @@
 		</definition>
 	</include>
 	<include name="WeatherWidgetItemsLayout">
-		<param name="height_widget_item" default="220" />
-		<param name="width_widget_item" default="200" />
+		<param name="height_widget_item">220</param>
+		<param name="width_widget_item">200</param>
 		<definition>
 			<itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
 				<control type="image">
@@ -1588,7 +1588,7 @@
 			<label2>$INFO[Window(weather).Property(Daily.$PARAM[item_id].Outlook)]</label2>
 			<onclick>Weather.Refresh</onclick>
 			<thumb>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(Daily.$PARAM[item_id].FanartCode),,.png]</thumb>
-			<icon>-</icon>
+			<icon/>
 			<property name="Infos">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].HighTemperature)]  [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].LowTemperature)]</property>
 			<visible>!String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_id].Outlook))</visible>
 			<visible>String.IsEmpty(Skin.String(WeatherIcons.path))</visible>
@@ -1598,7 +1598,7 @@
 			<label2>$INFO[Window(weather).Property(Daily.$PARAM[item_id].Outlook)]</label2>
 			<onclick>Weather.Refresh</onclick>
 			<thumb>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Daily.$PARAM[item_id].FanartCode),,.png]</thumb>
-			<icon>-</icon>
+			<icon/>
 			<property name="Infos">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].HighTemperature)]  [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].LowTemperature)]</property>
 			<visible>!String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_id].Outlook))</visible>
 			<visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
@@ -1608,7 +1608,7 @@
 			<label2>$INFO[Window(weather).Property(Daily.$PARAM[item_id].Outlook)]</label2>
 			<onclick>Weather.Refresh</onclick>
 			<thumb>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Daily.$PARAM[item_id].FanartCode),,/]</thumb>
-			<icon>-</icon>
+			<icon/>
 			<property name="Infos">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].HighTemperature)]  [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(weather).Property(Daily.$PARAM[item_id].LowTemperature)]</property>
 			<visible>!String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_id].Outlook))</visible>
 			<visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + Skin.HasSetting(WeatherIcons.multi)</visible>
@@ -1620,7 +1620,7 @@
 			<label2>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Outlook)]</label2>
 			<onclick>Weather.Refresh</onclick>
 			<thumb>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(Hourly.$PARAM[item_id].FanartCode),,.png]</thumb>
-			<icon>-</icon>
+			<icon/>
 			<property name="Infos">[COLOR=grey2]$LOCALIZE[401] : [/COLOR]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Temperature)]  ($INFO[Window(weather).Property(Hourly.$PARAM[item_id].FeelsLike)])</property>
 			<visible>!String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_id].Outlook))</visible>
 			<visible>String.IsEmpty(Skin.String(WeatherIcons.path))</visible>
@@ -1630,7 +1630,7 @@
 			<label2>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Outlook)]</label2>
 			<onclick>Weather.Refresh</onclick>
 			<thumb>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].FanartCode),,.png]</thumb>
-			<icon>-</icon>
+			<icon/>
 			<property name="Infos">[COLOR=grey2]$LOCALIZE[401] : [/COLOR]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Temperature)]  ($INFO[Window(weather).Property(Hourly.$PARAM[item_id].FeelsLike)])</property>
 			<visible>!String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_id].Outlook))</visible>
 			<visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + !Skin.HasSetting(WeatherIcons.multi)</visible>
@@ -1640,15 +1640,15 @@
 			<label2>$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Outlook)]</label2>
 			<onclick>Weather.Refresh</onclick>
 			<thumb>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].FanartCode),,/]</thumb>
-			<icon>-</icon>
+			<icon/>
 			<property name="Infos">[COLOR=grey2]$LOCALIZE[401] : [/COLOR]$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Temperature)]  ($INFO[Window(weather).Property(Hourly.$PARAM[item_id].FeelsLike)])</property>
 			<visible>!String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_id].Outlook))</visible>
 			<visible>!String.IsEmpty(Skin.String(WeatherIcons.path)) + Skin.HasSetting(WeatherIcons.multi)</visible>
 		</item>
 	</include>
 	<include name="FavouritesWidgetItemsLayout">
-		<param name="height_widget_item" default="220" />
-		<param name="width_widget_item" default="200" />
+		<param name="height_widget_item">220</param>
+		<param name="width_widget_item">200</param>
 		<definition>
 			<itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
 				<control type="image">
@@ -1838,8 +1838,8 @@
 		</content>
 	</include>
 	<include name="MoviesWidgetItemsLayout">
-		<param name="height_widget_item" default="220" />
-		<param name="width_widget_item" default="180" />
+		<param name="height_widget_item">220</param>
+		<param name="width_widget_item">180</param>
 		<definition>
 			<itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
 				<control type="image">
@@ -2565,8 +2565,8 @@
 		<content target="video" limit="10">$VAR[VideoNodeContent]</content>
 	</include>
 	<include name="EpisodesWidgetItemsLayout">
-		<param name="height_widget_item" default="220" />
-		<param name="width_widget_item" default="240" />
+		<param name="height_widget_item">220</param>
+		<param name="width_widget_item">240</param>
 		<definition>
 			<itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
 				<control type="image">
@@ -2695,7 +2695,7 @@
 				<label2>$INFO[Window(Home).Property(RecentEpisode.1.TVshowTitle)] - $INFO[Window(Home).Property(RecentEpisode.1.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.1.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentEpisode.1.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecentEpisode.1.Art(tvshow.clearlogo))]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecentEpisode.1.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
@@ -2705,7 +2705,7 @@
 				<label2>$INFO[Window(Home).Property(RecentEpisode.2.TVshowTitle)] - $INFO[Window(Home).Property(RecentEpisode.2.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.2.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentEpisode.2.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecentEpisode.2.Art(tvshow.clearlogo))]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecentEpisode.2.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
@@ -2715,7 +2715,7 @@
 				<label2>$INFO[Window(Home).Property(RecentEpisode.3.TVshowTitle)] - $INFO[Window(Home).Property(RecentEpisode.3.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.3.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentEpisode.3.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecentEpisode.3.Art(tvshow.clearlogo))]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecentEpisode.3.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
@@ -2725,7 +2725,7 @@
 				<label2>$INFO[Window(Home).Property(RecentEpisode.4.TVshowTitle)] - $INFO[Window(Home).Property(RecentEpisode.4.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.4.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentEpisode.4.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecentEpisode.4.Art(tvshow.clearlogo))]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecentEpisode.4.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
@@ -2735,7 +2735,7 @@
 				<label2>$INFO[Window(Home).Property(RecentEpisode.5.TVshowTitle)] - $INFO[Window(Home).Property(RecentEpisode.5.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.5.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentEpisode.5.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecentEpisode.5.Art(tvshow.clearlogo))]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecentEpisode.5.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
@@ -2745,7 +2745,7 @@
 				<label2>$INFO[Window(Home).Property(RecentEpisode.6.TVshowTitle)] - $INFO[Window(Home).Property(RecentEpisode.6.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.6.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentEpisode.6.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecentEpisode.6.Art(tvshow.clearlogo))]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecentEpisode.6.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
@@ -2755,7 +2755,7 @@
 				<label2>$INFO[Window(Home).Property(RecentEpisode.7.TVshowTitle)] - $INFO[Window(Home).Property(RecentEpisode.7.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.7.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentEpisode.7.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecentEpisode.7.Art(tvshow.clearlogo))]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecentEpisode.7.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
@@ -2765,7 +2765,7 @@
 				<label2>$INFO[Window(Home).Property(RecentEpisode.8.TVshowTitle)] - $INFO[Window(Home).Property(RecentEpisode.8.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.8.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentEpisode.8.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecentEpisode.8.Art(tvshow.clearlogo))]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecentEpisode.8.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
@@ -2775,7 +2775,7 @@
 				<label2>$INFO[Window(Home).Property(RecentEpisode.9.TVshowTitle)] - $INFO[Window(Home).Property(RecentEpisode.9.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.9.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentEpisode.9.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecentEpisode.9.Art(tvshow.clearlogo))]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecentEpisode.9.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
@@ -2785,7 +2785,7 @@
 				<label2>$INFO[Window(Home).Property(RecentEpisode.10.TVshowTitle)] - $INFO[Window(Home).Property(RecentEpisode.10.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.10.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentEpisode.10.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecentEpisode.10.Art(tvshow.clearlogo))]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RecentEpisode.10.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
@@ -2795,7 +2795,7 @@
 				<label2>$INFO[Window.Property(LatestEpisode.1.ShowTitle)] - $INFO[Window.Property(LatestEpisode.1.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestEpisode.1.Path)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestEpisode.1.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestEpisode.1.EpisodeTitle)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -2804,7 +2804,7 @@
 				<label2>$INFO[Window.Property(LatestEpisode.2.ShowTitle)] - $INFO[Window.Property(LatestEpisode.2.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestEpisode.2.Path)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestEpisode.2.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestEpisode.2.EpisodeTitle)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -2813,7 +2813,7 @@
 				<label2>$INFO[Window.Property(LatestEpisode.3.ShowTitle)] - $INFO[Window.Property(LatestEpisode.3.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestEpisode.3.Path)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestEpisode.3.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestEpisode.3.EpisodeTitle)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -2822,7 +2822,7 @@
 				<label2>$INFO[Window.Property(LatestEpisode.4.ShowTitle)] - $INFO[Window.Property(LatestEpisode.4.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestEpisode.4.Path)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestEpisode.4.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestEpisode.4.EpisodeTitle)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -2831,7 +2831,7 @@
 				<label2>$INFO[Window.Property(LatestEpisode.5.ShowTitle)] - $INFO[Window.Property(LatestEpisode.5.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestEpisode.5.Path)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestEpisode.5.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestEpisode.5.EpisodeTitle)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -2840,7 +2840,7 @@
 				<label2>$INFO[Window.Property(LatestEpisode.6.ShowTitle)] - $INFO[Window.Property(LatestEpisode.6.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestEpisode.6.Path)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestEpisode.6.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestEpisode.6.EpisodeTitle)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -2849,7 +2849,7 @@
 				<label2>$INFO[Window.Property(LatestEpisode.7.ShowTitle)] - $INFO[Window.Property(LatestEpisode.7.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestEpisode.7.Path)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestEpisode.7.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestEpisode.7.EpisodeTitle)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -2858,7 +2858,7 @@
 				<label2>$INFO[Window.Property(LatestEpisode.8.ShowTitle)] - $INFO[Window.Property(LatestEpisode.8.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestEpisode.8.Path)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestEpisode.8.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestEpisode.8.EpisodeTitle)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -2867,7 +2867,7 @@
 				<label2>$INFO[Window.Property(LatestEpisode.9.ShowTitle)] - $INFO[Window.Property(LatestEpisode.9.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestEpisode.9.Path)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestEpisode.9.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestEpisode.9.EpisodeTitle)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -2876,7 +2876,7 @@
 				<label2>$INFO[Window.Property(LatestEpisode.10.ShowTitle)] - $INFO[Window.Property(LatestEpisode.10.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestEpisode.10.Path)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestEpisode.10.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestEpisode.10.EpisodeTitle)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -2889,7 +2889,7 @@
 				<label2>$INFO[Window(Home).Property(RandomEpisode.1.TVshowTitle)] - $INFO[Window(Home).Property(RandomEpisode.1.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.1.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomEpisode.1.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RandomEpisode.1.Art(tvshow.clearlogo))]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomEpisode.1.TVshowTitle))</visible>
@@ -2899,7 +2899,7 @@
 				<label2>$INFO[Window(Home).Property(RandomEpisode.2.TVshowTitle)] - $INFO[Window(Home).Property(RandomEpisode.2.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.2.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomEpisode.2.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RandomEpisode.2.Art(tvshow.clearlogo))]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomEpisode.2.TVshowTitle))</visible>
@@ -2909,7 +2909,7 @@
 				<label2>$INFO[Window(Home).Property(RandomEpisode.3.TVshowTitle)] - $INFO[Window(Home).Property(RandomEpisode.3.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.3.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomEpisode.3.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RandomEpisode.3.Art(tvshow.clearlogo))]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomEpisode.3.TVshowTitle))</visible>
@@ -2919,7 +2919,7 @@
 				<label2>$INFO[Window(Home).Property(RandomEpisode.4.TVshowTitle)] - $INFO[Window(Home).Property(RandomEpisode.4.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.4.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomEpisode.4.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RandomEpisode.4.Art(tvshow.clearlogo))]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomEpisode.4.TVshowTitle))</visible>
@@ -2929,7 +2929,7 @@
 				<label2>$INFO[Window(Home).Property(RandomEpisode.5.TVshowTitle)] - $INFO[Window(Home).Property(RandomEpisode.5.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.5.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomEpisode.5.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RandomEpisode.5.Art(tvshow.clearlogo))]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomEpisode.5.TVshowTitle))</visible>
@@ -2939,7 +2939,7 @@
 				<label2>$INFO[Window(Home).Property(RandomEpisode.6.TVshowTitle)] - $INFO[Window(Home).Property(RandomEpisode.6.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.6.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomEpisode.6.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RandomEpisode.6.Art(tvshow.clearlogo))]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomEpisode.6.TVshowTitle))</visible>
@@ -2949,7 +2949,7 @@
 				<label2>$INFO[Window(Home).Property(RandomEpisode.7.TVshowTitle)] - $INFO[Window(Home).Property(RandomEpisode.7.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.7.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomEpisode.7.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RandomEpisode.7.Art(tvshow.clearlogo))]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomEpisode.7.TVshowTitle))</visible>
@@ -2959,7 +2959,7 @@
 				<label2>$INFO[Window(Home).Property(RandomEpisode.8.TVshowTitle)] - $INFO[Window(Home).Property(RandomEpisode.8.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.8.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomEpisode.8.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RandomEpisode.8.Art(tvshow.clearlogo))]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomEpisode.8.TVshowTitle))</visible>
@@ -2969,7 +2969,7 @@
 				<label2>$INFO[Window(Home).Property(RandomEpisode.9.TVshowTitle)] - $INFO[Window(Home).Property(RandomEpisode.9.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.9.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomEpisode.9.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RandomEpisode.9.Art(tvshow.clearlogo))]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomEpisode.9.TVshowTitle))</visible>
@@ -2979,7 +2979,7 @@
 				<label2>$INFO[Window(Home).Property(RandomEpisode.10.TVshowTitle)] - $INFO[Window(Home).Property(RandomEpisode.10.EpisodeNo)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.10.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomEpisode.10.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RandomEpisode.10.Art(tvshow.clearlogo))]</property>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomEpisode.10.TVshowTitle))</visible>
@@ -2994,7 +2994,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick condition="Window.IsVisible(2124)">Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.1.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.1.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.1.PercentPlayed)]</property>
@@ -3006,7 +3006,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick condition="Window.IsVisible(2124)">Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.2.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.2.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.2.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.2.PercentPlayed)]</property>
@@ -3018,7 +3018,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick condition="Window.IsVisible(2124)">Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.3.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.3.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.3.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.3.PercentPlayed)]</property>
@@ -3030,7 +3030,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick condition="Window.IsVisible(2124)">Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.4.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.4.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.4.PercentPlayed)]</property>
@@ -3042,7 +3042,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick condition="Window.IsVisible(2124)">Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.5.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.5.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.5.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.5.PercentPlayed)]</property>
@@ -3054,7 +3054,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick condition="Window.IsVisible(2124)">Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.6.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.6.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.6.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.6.PercentPlayed)]</property>
@@ -3066,7 +3066,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick condition="Window.IsVisible(2124)">Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.7.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.7.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.7.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.7.PercentPlayed)]</property>
@@ -3078,7 +3078,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick condition="Window.IsVisible(2124)">Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.8.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.8.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.8.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.8.PercentPlayed)]</property>
@@ -3090,7 +3090,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick condition="Window.IsVisible(2124)">Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.9.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.9.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.9.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.9.PercentPlayed)]</property>
@@ -3102,7 +3102,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick condition="Window.IsVisible(2124)">Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.10.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.10.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.10.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.10.PercentPlayed)]</property>
@@ -3114,7 +3114,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.11.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.11.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.11.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.11.PercentPlayed)]</property>
@@ -3126,7 +3126,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.12.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.12.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.12.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.12.PercentPlayed)]</property>
@@ -3138,7 +3138,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.13.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.13.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.13.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.13.PercentPlayed)]</property>
@@ -3150,7 +3150,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.14.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.14.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.14.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.14.PercentPlayed)]</property>
@@ -3162,7 +3162,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.15.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.15.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.15.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.15.PercentPlayed)]</property>
@@ -3174,7 +3174,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.16.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.16.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.16.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.16.PercentPlayed)]</property>
@@ -3186,7 +3186,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.17.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.17.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.17.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.17.PercentPlayed)]</property>
@@ -3198,7 +3198,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.18.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.18.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.18.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.18.PercentPlayed)]</property>
@@ -3210,7 +3210,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.19.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.19.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.19.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.19.PercentPlayed)]</property>
@@ -3222,7 +3222,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.20.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedEpisode.20.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecommendedEpisode.20.Art(tvshow.clearlogo))]</property>
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedEpisode.20.PercentPlayed)]</property>
@@ -3234,7 +3234,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2124)</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.1.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentEpisode.1.Art(thumb))]</thumb>
 				<property name="Logo">$INFO[Window(Home).Property(RecentEpisode.1.Art(tvshow.clearlogo))]</property>
 				<visible>String.IsEmpty(Window(Home).Property(RecommendedEpisode.1.TVshowTitle)) + !String.IsEmpty(Window(Home).Property(RecentEpisode.1.TVshowTitle)) + Window.IsVisible(2124)</visible>
@@ -3242,8 +3242,8 @@
 		</content>
 	</include>
 	<include name="AlbumsWidgetItemsLayout">
-		<param name="height_widget_item" default="220" />
-		<param name="width_widget_item" default="200" />
+		<param name="height_widget_item">220</param>
+		<param name="width_widget_item">200</param>
 		<definition>
 			<itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
 				<control type="image">
@@ -3371,7 +3371,7 @@
 				<label2>$INFO[Window.Property(RecentMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(RecentMusicVideo.1.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(RecentMusicVideo.1.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(RecentMusicVideo.1.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3380,7 +3380,7 @@
 				<label2>$INFO[Window.Property(RecentMusicVideo.2.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(RecentMusicVideo.2.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(RecentMusicVideo.2.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(RecentMusicVideo.2.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3389,7 +3389,7 @@
 				<label2>$INFO[Window.Property(RecentMusicVideo.3.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(RecentMusicVideo.3.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(RecentMusicVideo.3.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(RecentMusicVideo.3.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3398,7 +3398,7 @@
 				<label2>$INFO[Window.Property(RecentMusicVideo.4.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(RecentMusicVideo.4.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(RecentMusicVideo.4.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(RecentMusicVideo.4.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3407,7 +3407,7 @@
 				<label2>$INFO[Window.Property(RecentMusicVideo.5.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(RecentMusicVideo.5.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(RecentMusicVideo.5.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(RecentMusicVideo.5.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3416,7 +3416,7 @@
 				<label2>$INFO[Window.Property(RecentMusicVideo.6.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(RecentMusicVideo.6.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(RecentMusicVideo.6.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(RecentMusicVideo.6.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3425,7 +3425,7 @@
 				<label2>$INFO[Window.Property(RecentMusicVideo.7.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(RecentMusicVideo.7.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(RecentMusicVideo.7.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(RecentMusicVideo.7.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3434,7 +3434,7 @@
 				<label2>$INFO[Window.Property(RecentMusicVideo.8.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(RecentMusicVideo.8.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(RecentMusicVideo.8.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(RecentMusicVideo.8.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3443,7 +3443,7 @@
 				<label2>$INFO[Window.Property(RecentMusicVideo.9.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(RecentMusicVideo.9.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(RecentMusicVideo.9.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(RecentMusicVideo.9.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3452,7 +3452,7 @@
 				<label2>$INFO[Window.Property(RecentMusicVideo.10.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(RecentMusicVideo.10.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(RecentMusicVideo.10.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(RecentMusicVideo.10.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3461,7 +3461,7 @@
 				<label2>$INFO[Window.Property(LatestMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMusicVideo.1.Path)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestMusicVideo.1.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestMusicVideo.1.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3470,7 +3470,7 @@
 				<label2>$INFO[Window.Property(LatestMusicVideo.2.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMusicVideo.2.Path)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestMusicVideo.2.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestMusicVideo.2.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3479,7 +3479,7 @@
 				<label2>$INFO[Window.Property(LatestMusicVideo.3.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMusicVideo.3.Path)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestMusicVideo.3.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestMusicVideo.3.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3488,7 +3488,7 @@
 				<label2>$INFO[Window.Property(LatestMusicVideo.4.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMusicVideo.4.Path)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestMusicVideo.4.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestMusicVideo.4.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3497,7 +3497,7 @@
 				<label2>$INFO[Window.Property(LatestMusicVideo.5.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMusicVideo.5.Path)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestMusicVideo.5.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestMusicVideo.5.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3506,7 +3506,7 @@
 				<label2>$INFO[Window.Property(LatestMusicVideo.6.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMusicVideo.6.Path)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestMusicVideo.6.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestMusicVideo.6.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3515,7 +3515,7 @@
 				<label2>$INFO[Window.Property(LatestMusicVideo.7.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMusicVideo.7.Path)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestMusicVideo.7.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestMusicVideo.7.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3524,7 +3524,7 @@
 				<label2>$INFO[Window.Property(LatestMusicVideo.8.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMusicVideo.8.Path)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestMusicVideo.8.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestMusicVideo.8.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3533,7 +3533,7 @@
 				<label2>$INFO[Window.Property(LatestMusicVideo.9.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMusicVideo.9.Path)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestMusicVideo.9.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestMusicVideo.9.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3542,7 +3542,7 @@
 				<label2>$INFO[Window.Property(LatestMusicVideo.10.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMusicVideo.10.Path)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestMusicVideo.10.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestMusicVideo.10.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3555,7 +3555,7 @@
 				<label2>$INFO[Window.Property(RandomMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMusicVideo.1.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.1.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomMusicVideo.1.Title))</visible>
 			</item>
@@ -3564,7 +3564,7 @@
 				<label2>$INFO[Window.Property(RandomMusicVideo.2.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMusicVideo.2.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.2.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomMusicVideo.2.Title))</visible>
 			</item>
@@ -3573,7 +3573,7 @@
 				<label2>$INFO[Window.Property(RandomMusicVideo.3.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMusicVideo.3.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.3.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomMusicVideo.3.Title))</visible>
 			</item>
@@ -3582,7 +3582,7 @@
 				<label2>$INFO[Window.Property(RandomMusicVideo.4.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMusicVideo.4.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.4.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomMusicVideo.4.Title))</visible>
 			</item>
@@ -3591,7 +3591,7 @@
 				<label2>$INFO[Window.Property(RandomMusicVideo.5.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMusicVideo.5.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.5.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomMusicVideo.5.Title))</visible>
 			</item>
@@ -3600,7 +3600,7 @@
 				<label2>$INFO[Window.Property(RandomMusicVideo.6.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMusicVideo.6.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.6.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomMusicVideo.6.Title))</visible>
 			</item>
@@ -3609,7 +3609,7 @@
 				<label2>$INFO[Window.Property(RandomMusicVideo.7.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMusicVideo.7.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.7.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomMusicVideo.7.Title))</visible>
 			</item>
@@ -3618,7 +3618,7 @@
 				<label2>$INFO[Window.Property(RandomMusicVideo.8.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMusicVideo.8.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.8.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomMusicVideo.8.Title))</visible>
 			</item>
@@ -3627,7 +3627,7 @@
 				<label2>$INFO[Window.Property(RandomMusicVideo.9.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMusicVideo.9.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.9.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomMusicVideo.9.Title))</visible>
 			</item>
@@ -3636,7 +3636,7 @@
 				<label2>$INFO[Window.Property(RandomMusicVideo.10.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMusicVideo.10.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.10.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomMusicVideo.10.Title))</visible>
 			</item>
@@ -3649,7 +3649,7 @@
 				<label2>$INFO[Window.Property(RecommendedMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.1.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.1.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.1.Title))</visible>
 			</item>
@@ -3658,7 +3658,7 @@
 				<label2>$INFO[Window.Property(RecommendedMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.2.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.2.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.2.Title))</visible>
 			</item>
@@ -3667,7 +3667,7 @@
 				<label2>$INFO[Window.Property(RecommendedMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.3.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.3.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.3.Title))</visible>
 			</item>
@@ -3676,7 +3676,7 @@
 				<label2>$INFO[Window.Property(RecommendedMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.4.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.4.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.4.Title))</visible>
 			</item>
@@ -3685,7 +3685,7 @@
 				<label2>$INFO[Window.Property(RecommendedMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.5.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.5.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.5.Title))</visible>
 			</item>
@@ -3694,7 +3694,7 @@
 				<label2>$INFO[Window.Property(RecommendedMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.6.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.6.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.6.Title))</visible>
 			</item>
@@ -3703,7 +3703,7 @@
 				<label2>$INFO[Window.Property(RecommendedMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.7.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.7.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.7.Title))</visible>
 			</item>
@@ -3712,7 +3712,7 @@
 				<label2>$INFO[Window.Property(RecommendedMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.8.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.8.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.8.Title))</visible>
 			</item>
@@ -3721,7 +3721,7 @@
 				<label2>$INFO[Window.Property(RecommendedMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.9.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.9.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.9.Title))</visible>
 			</item>
@@ -3730,7 +3730,7 @@
 				<label2>$INFO[Window.Property(RecommendedMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.10.File)])</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.10.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedMusicVideo.10.Title))</visible>
 			</item>
@@ -3743,7 +3743,7 @@
 				<label2>$INFO[Window(Home).Property(RecentAlbum.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RecentAlbum.1.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.1.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecentAlbum.1.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3752,7 +3752,7 @@
 				<label2>$INFO[Window(Home).Property(RecentAlbum.2.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RecentAlbum.2.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.2.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecentAlbum.2.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3761,7 +3761,7 @@
 				<label2>$INFO[Window(Home).Property(RecentAlbum.3.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RecentAlbum.3.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.3.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecentAlbum.3.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3770,7 +3770,7 @@
 				<label2>$INFO[Window(Home).Property(RecentAlbum.4.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RecentAlbum.4.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.4.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecentAlbum.4.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3779,7 +3779,7 @@
 				<label2>$INFO[Window(Home).Property(RecentAlbum.5.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RecentAlbum.5.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.5.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecentAlbum.5.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3788,7 +3788,7 @@
 				<label2>$INFO[Window(Home).Property(RecentAlbum.6.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RecentAlbum.6.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.6.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecentAlbum.6.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3797,7 +3797,7 @@
 				<label2>$INFO[Window(Home).Property(RecentAlbum.7.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RecentAlbum.7.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.7.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecentAlbum.7.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3806,7 +3806,7 @@
 				<label2>$INFO[Window(Home).Property(RecentAlbum.8.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RecentAlbum.8.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.8.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecentAlbum.8.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3815,7 +3815,7 @@
 				<label2>$INFO[Window(Home).Property(RecentAlbum.9.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RecentAlbum.9.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.9.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecentAlbum.9.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3824,7 +3824,7 @@
 				<label2>$INFO[Window(Home).Property(RecentAlbum.10.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RecentAlbum.10.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.10.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecentAlbum.10.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3833,7 +3833,7 @@
 				<label2>$INFO[Window.Property(LatestAlbum.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia("$INFO[Window.Property(LatestAlbum.1.Path)]")</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestAlbum.1.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestAlbum.1.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3842,7 +3842,7 @@
 				<label2>$INFO[Window.Property(LatestAlbum.2.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia("$INFO[Window.Property(LatestAlbum.2.Path)]")</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestAlbum.2.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestAlbum.2.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3851,7 +3851,7 @@
 				<label2>$INFO[Window.Property(LatestAlbum.3.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia("$INFO[Window.Property(LatestAlbum.3.Path)]")</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestAlbum.3.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestAlbum.3.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3860,7 +3860,7 @@
 				<label2>$INFO[Window.Property(LatestAlbum.4.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia("$INFO[Window.Property(LatestAlbum.4.Path)]")</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestAlbum.4.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestAlbum.4.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3869,7 +3869,7 @@
 				<label2>$INFO[Window.Property(LatestAlbum.5.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia("$INFO[Window.Property(LatestAlbum.5.Path)]")</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestAlbum.5.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestAlbum.5.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3878,7 +3878,7 @@
 				<label2>$INFO[Window.Property(LatestAlbum.6.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia("$INFO[Window.Property(LatestAlbum.6.Path)]")</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestAlbum.6.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestAlbum.6.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3887,7 +3887,7 @@
 				<label2>$INFO[Window.Property(LatestAlbum.7.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia("$INFO[Window.Property(LatestAlbum.7.Path)]")</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestAlbum.7.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestAlbum.7.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3896,7 +3896,7 @@
 				<label2>$INFO[Window.Property(LatestAlbum.8.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia("$INFO[Window.Property(LatestAlbum.8.Path)]")</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestAlbum.8.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestAlbum.8.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3905,7 +3905,7 @@
 				<label2>$INFO[Window.Property(LatestAlbum.9.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia("$INFO[Window.Property(LatestAlbum.9.Path)]")</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestAlbum.9.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestAlbum.9.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3914,7 +3914,7 @@
 				<label2>$INFO[Window.Property(LatestAlbum.10.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia("$INFO[Window.Property(LatestAlbum.10.Path)]")</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window.Property(LatestAlbum.10.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window.Property(LatestAlbum.10.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -3927,7 +3927,7 @@
 				<label2>$INFO[Window(Home).Property(RandomAlbum.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RandomAlbum.1.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomAlbum.1.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomAlbum.1.Title))</visible>
 			</item>
@@ -3936,7 +3936,7 @@
 				<label2>$INFO[Window(Home).Property(RandomAlbum.2.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RandomAlbum.2.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomAlbum.2.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomAlbum.2.Title))</visible>
 			</item>
@@ -3945,7 +3945,7 @@
 				<label2>$INFO[Window(Home).Property(RandomAlbum.3.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RandomAlbum.3.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomAlbum.3.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomAlbum.3.Title))</visible>
 			</item>
@@ -3954,7 +3954,7 @@
 				<label2>$INFO[Window(Home).Property(RandomAlbum.4.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RandomAlbum.4.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomAlbum.4.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomAlbum.4.Title))</visible>
 			</item>
@@ -3963,7 +3963,7 @@
 				<label2>$INFO[Window(Home).Property(RandomAlbum.5.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RandomAlbum.5.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomAlbum.5.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomAlbum.5.Title))</visible>
 			</item>
@@ -3972,7 +3972,7 @@
 				<label2>$INFO[Window(Home).Property(RandomAlbum.6.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RandomAlbum.6.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomAlbum.6.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomAlbum.6.Title))</visible>
 			</item>
@@ -3981,7 +3981,7 @@
 				<label2>$INFO[Window(Home).Property(RandomAlbum.7.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RandomAlbum.7.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomAlbum.7.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomAlbum.7.Title))</visible>
 			</item>
@@ -3990,7 +3990,7 @@
 				<label2>$INFO[Window(Home).Property(RandomAlbum.8.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RandomAlbum.8.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomAlbum.8.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomAlbum.8.Title))</visible>
 			</item>
@@ -3999,7 +3999,7 @@
 				<label2>$INFO[Window(Home).Property(RandomAlbum.9.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RandomAlbum.9.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomAlbum.9.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomAlbum.9.Title))</visible>
 			</item>
@@ -4008,7 +4008,7 @@
 				<label2>$INFO[Window(Home).Property(RandomAlbum.10.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(RandomAlbum.10.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RandomAlbum.10.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RandomAlbum.10.Title))</visible>
 			</item>
@@ -4022,7 +4022,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick condition="Window.IsVisible(2123)">Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.1.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.1.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title))</visible>
 			</item>
@@ -4032,7 +4032,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick condition="Window.IsVisible(2123)">Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.2.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.2.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.2.Title))</visible>
 			</item>
@@ -4042,7 +4042,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick condition="Window.IsVisible(2123)">Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.3.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.3.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.3.Title))</visible>
 			</item>
@@ -4052,7 +4052,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick condition="Window.IsVisible(2123)">Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.4.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.4.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.4.Title))</visible>
 			</item>
@@ -4062,7 +4062,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick condition="Window.IsVisible(2123)">Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.5.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.5.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.5.Title))</visible>
 			</item>
@@ -4072,7 +4072,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick condition="Window.IsVisible(2123)">Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.6.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.6.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.6.Title))</visible>
 			</item>
@@ -4082,7 +4082,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick condition="Window.IsVisible(2123)">Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.7.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.7.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.7.Title))</visible>
 			</item>
@@ -4092,7 +4092,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick condition="Window.IsVisible(2123)">Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.8.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.8.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.8.Title))</visible>
 			</item>
@@ -4102,7 +4102,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick condition="Window.IsVisible(2123)">Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.9.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.9.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.9.Title))</visible>
 			</item>
@@ -4112,7 +4112,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick condition="Window.IsVisible(2123)">Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.10.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.10.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.10.Title))</visible>
 			</item>
@@ -4122,7 +4122,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.11.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.11.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.11.Title)) + Window.IsVisible(2123)</visible>
 			</item>
@@ -4132,7 +4132,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.12.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.12.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.12.Title)) + Window.IsVisible(2123)</visible>
 			</item>
@@ -4142,7 +4142,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.13.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.13.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.13.Title)) + Window.IsVisible(2123)</visible>
 			</item>
@@ -4152,7 +4152,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.14.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.14.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.14.Title)) + Window.IsVisible(2123)</visible>
 			</item>
@@ -4162,7 +4162,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.15.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.15.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.15.Title)) + Window.IsVisible(2123)</visible>
 			</item>
@@ -4172,7 +4172,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.16.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.16.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.16.Title)) + Window.IsVisible(2123)</visible>
 			</item>
@@ -4182,7 +4182,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.17.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.17.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.17.Title)) + Window.IsVisible(2123)</visible>
 			</item>
@@ -4192,7 +4192,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.18.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.18.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.18.Title)) + Window.IsVisible(2123)</visible>
 			</item>
@@ -4202,7 +4202,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.19.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.19.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.19.Title)) + Window.IsVisible(2123)</visible>
 			</item>
@@ -4212,7 +4212,7 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecommendedAlbum.20.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.20.Thumb)]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(RecommendedAlbum.20.Title)) + Window.IsVisible(2123)</visible>
 			</item>
@@ -4222,15 +4222,15 @@
 				<onclick>PlayList.Clear</onclick>
 				<onclick>Dialog.Close(2123)</onclick>
 				<onclick>$INFO[Window(Home).Property(RecentAlbum.1.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.1.Thumb)]</thumb>
 				<visible>String.IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title)) + !String.IsEmpty(Window(Home).Property(RecentAlbum.1.Title)) + Window.IsVisible(2123)</visible>
 			</item>
 		</content>
 	</include>
 	<include name="PlayListMoviesWidgetItemsLayout">
-		<param name="height_widget_item" default="220" />
-		<param name="width_widget_item" default="180" />
+		<param name="height_widget_item">220</param>
+		<param name="width_widget_item">180</param>
 		<definition>
 			<itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
 				<control type="image">
@@ -4421,8 +4421,8 @@
 		</content>
 	</include>
 	<include name="PlayListEpisodesWidgetItemsLayout">
-		<param name="height_widget_item" default="220" />
-		<param name="width_widget_item" default="240" />
+		<param name="height_widget_item">220</param>
+		<param name="width_widget_item">240</param>
 		<definition>
 				<itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
 				<control type="image">
@@ -4551,7 +4551,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].1.EpisodeNo)] - $INFO[Window(Home).Property(HomePlayList$PARAM[id2].1.TVshowTitle)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].1.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].1.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].1.Title))</visible>
 			</item>
@@ -4560,7 +4560,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].2.EpisodeNo)] - $INFO[Window(Home).Property(HomePlayList$PARAM[id2].2.TVshowTitle)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].2.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].2.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].2.Title))</visible>
 			</item>
@@ -4569,7 +4569,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].3.EpisodeNo)] - $INFO[Window(Home).Property(HomePlayList$PARAM[id2].3.TVshowTitle)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].3.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].3.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].3.Title))</visible>
 			</item>
@@ -4578,7 +4578,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].4.EpisodeNo)] - $INFO[Window(Home).Property(HomePlayList$PARAM[id2].4.TVshowTitle)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].4.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].4.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].4.Title))</visible>
 			</item>
@@ -4587,7 +4587,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].5.EpisodeNo)] - $INFO[Window(Home).Property(HomePlayList$PARAM[id2].5.TVshowTitle)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].5.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].5.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].5.Title))</visible>
 			</item>
@@ -4596,7 +4596,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].6.EpisodeNo)] - $INFO[Window(Home).Property(HomePlayList$PARAM[id2].6.TVshowTitle)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].6.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].6.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].6.Title))</visible>
 			</item>
@@ -4605,7 +4605,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].7.EpisodeNo)] - $INFO[Window(Home).Property(HomePlayList$PARAM[id2].7.TVshowTitle)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].7.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].7.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].7.Title))</visible>
 			</item>
@@ -4614,7 +4614,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].8.EpisodeNo)] - $INFO[Window(Home).Property(HomePlayList$PARAM[id2].8.TVshowTitle)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].8.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].8.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].8.Title))</visible>
 			</item>
@@ -4623,7 +4623,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].9.EpisodeNo)] - $INFO[Window(Home).Property(HomePlayList$PARAM[id2].9.TVshowTitle)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].9.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].9.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].9.Title))</visible>
 			</item>
@@ -4632,15 +4632,15 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].10.EpisodeNo)] - $INFO[Window(Home).Property(HomePlayList$PARAM[id2].10.TVshowTitle)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].10.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].10.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].10.Title))</visible>
 			</item>
 		</content>
 	</include>
 	<include name="PlayListAlbumsWidgetItemsLayout">
-		<param name="height_widget_item" default="220" />
-		<param name="width_widget_item" default="200" />
+		<param name="height_widget_item">220</param>
+		<param name="width_widget_item">200</param>
 		<definition>
 			<itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
 				<control type="image">
@@ -4768,7 +4768,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].1.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].1.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].1.Title))</visible>
 			</item>
@@ -4777,7 +4777,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].2.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].2.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].2.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].2.Title))</visible>
 			</item>
@@ -4786,7 +4786,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].3.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].3.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].3.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].3.Title))</visible>
 			</item>
@@ -4795,7 +4795,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].4.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].4.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].4.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].4.Title))</visible>
 			</item>
@@ -4804,7 +4804,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].5.Artist)]]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].5.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].5.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].5.Title))</visible>
 			</item>
@@ -4813,7 +4813,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].6.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].6.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].6.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].6.Title))</visible>
 			</item>
@@ -4822,7 +4822,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].7.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].7.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].7.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].7.Title))</visible>
 			</item>
@@ -4831,7 +4831,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].8.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].8.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].8.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].8.Title))</visible>
 			</item>
@@ -4840,7 +4840,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].9.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].9.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].9.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].9.Title))</visible>
 			</item>
@@ -4849,7 +4849,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].10.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].10.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].10.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].10.Title))</visible>
 			</item>
@@ -4862,7 +4862,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].1.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].1.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].1.Title))</visible>
 			</item>
@@ -4871,7 +4871,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].2.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].2.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].2.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].2.Title))</visible>
 			</item>
@@ -4880,7 +4880,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].3.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].3.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].3.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].3.Title))</visible>
 			</item>
@@ -4889,7 +4889,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].4.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].4.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].4.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].4.Title))</visible>
 			</item>
@@ -4898,7 +4898,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].5.Artist)]]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].5.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].5.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].5.Title))</visible>
 			</item>
@@ -4907,7 +4907,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].6.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].6.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].6.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].6.Title))</visible>
 			</item>
@@ -4916,7 +4916,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].7.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].7.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].7.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].7.Title))</visible>
 			</item>
@@ -4925,7 +4925,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].8.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].8.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].8.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].8.Title))</visible>
 			</item>
@@ -4934,7 +4934,7 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].9.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].9.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].9.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].9.Title))</visible>
 			</item>
@@ -4943,15 +4943,17 @@
 				<label2>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].10.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].10.Play)]</onclick>
-				<icon>-</icon>
+				<icon/>
 				<thumb>$INFO[Window(Home).Property(HomePlayList$PARAM[id2].10.Art(thumb))]</thumb>
 				<visible>!String.IsEmpty(Window(Home).Property(HomePlayList$PARAM[id2].10.Title))</visible>
 			</item>
 		</content>
 	</include>
-	<include name="CustomPVRWidgetItemsLayout">
-		<param name="height_widget_item" default="220" />
-		<param name="width_widget_item" default="200" />
+	<include name="PVRWidgetItemsLayout">
+		<param name="height_widget_item">220</param>
+		<param name="width_widget_item">200</param>
+		<param name="main_label">$INFO[ListItem.Title]</param>
+		<param name="sub_label">$INFO[ListItem.Label]</param>
 		<definition>
 			<itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
 				<control type="image">
@@ -4983,7 +4985,7 @@
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Property(Title)]</label>
+					<label>$PARAM[main_label]</label>
 				</control>
 				<control type="label">
 					<left>10</left>
@@ -4996,7 +4998,7 @@
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label]</label>
+					<label>$PARAM[sub_label]</label>
 				</control>
 			</itemlayout>
 			<focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
@@ -5041,7 +5043,7 @@
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Property(StartTime)] - $INFO[ListItem.Property(EndTime)] $INFO[ListItem.Property(Title)]</label>
+					<label>$PARAM[main_label]</label>
 				</control>
 				<control type="label">
 					<left>10</left>
@@ -5054,7 +5056,7 @@
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label]</label>
+					<label>$PARAM[sub_label]</label>
 				</control>
 				<control type="label">
 					<left>10</left>
@@ -5071,252 +5073,31 @@
 				</control>
 			</focusedlayout>
 		</definition>
+	</include>
+	<include name="CustomPVRWidgetItemsLayout">
+		<include content="PVRWidgetItemsLayout">
+			<param name="list_id" value="$PARAM[list_id]" />
+			<param name="height_widget_item" value="$PARAM[height_widget_item]" />
+			<param name="width_widget_item" value="$PARAM[width_widget_item]" />
+			<param name="main_label" value="$INFO[ListItem.Property(Title)]"/>
+		</include>
 	</include>
 	<include name="LastPVRWidgetItemsLayout">
-		<param name="height_widget_item" default="220" />
-		<param name="width_widget_item" default="200" />
-		<definition>
-			<itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
-				<control type="image">
-					<description>Background</description>
-					<left>0</left>
-					<top>0</top>
-					<width>$PARAM[width_widget_item]</width>
-					<height>$PARAM[height_widget_item]</height>
-					<texture border="15">RecentAddedBack.png</texture>
-				</control>
-				<control type="image">
-					<left>10</left>
-					<top>10</top>
-					<width>180</width>
-					<height>155</height>
-					<aspectratio>keep</aspectratio>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<bordertexture border="5">button-nofocus.png</bordertexture>
-					<bordersize>5</bordersize>
-				</control>
-				<control type="label">
-					<left>10</left>
-					<top>170</top>
-					<width>180</width>
-					<height>20</height>
-					<font>font10</font>
-					<textcolor>grey2</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<selectedcolor>selected</selectedcolor>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Title]</label>
-				</control>
-				<control type="label">
-					<left>10</left>
-					<top>190</top>
-					<width>180</width>
-					<height>20</height>
-					<font>font12</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<selectedcolor>selected</selectedcolor>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label]</label>
-				</control>
-			</itemlayout>
-			<focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
-				<control type="image">
-					<description>background</description>
-					<left>0</left>
-					<top>0</top>
-					<width>$PARAM[width_widget_item]</width>
-					<height>$PARAM[height_widget_item]</height>
-					<texture border="15">RecentAddedBack.png</texture>
-				</control>
-				<control type="image">
-					<left>10</left>
-					<top>10</top>
-					<width>180</width>
-					<height>155</height>
-					<aspectratio>keep</aspectratio>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<bordertexture border="5">folder-focus.png</bordertexture>
-					<bordersize>5</bordersize>
-					<visible>Control.HasFocus($PARAM[list_id])</visible>
-				</control>
-				<control type="image">
-					<left>10</left>
-					<top>10</top>
-					<width>180</width>
-					<height>155</height>
-					<aspectratio>keep</aspectratio>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<bordertexture border="5">button-nofocus.png</bordertexture>
-					<bordersize>5</bordersize>
-					<visible>!Control.HasFocus($PARAM[list_id])</visible>
-				</control>
-				<control type="label">
-					<left>10</left>
-					<top>170</top>
-					<width>180</width>
-					<height>20</height>
-					<font>font10</font>
-					<textcolor>grey2</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<selectedcolor>selected</selectedcolor>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Title]</label>
-				</control>
-				<control type="label">
-					<left>10</left>
-					<top>190</top>
-					<width>180</width>
-					<height>20</height>
-					<font>font12</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<selectedcolor>selected</selectedcolor>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label]</label>
-				</control>
-				<control type="label">
-					<left>10</left>
-					<top>190</top>
-					<width>180</width>
-					<height>20</height>
-					<font>font12</font>
-					<textcolor>blue</textcolor>
-					<selectedcolor>selected</selectedcolor>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label]</label>
-					<visible>Control.HasFocus($PARAM[list_id])</visible>
-				</control>
-			</focusedlayout>
-		</definition>
+		<include content="PVRWidgetItemsLayout">
+			<param name="list_id" value="$PARAM[list_id]" />
+			<param name="height_widget_item" value="$PARAM[height_widget_item]" />
+			<param name="width_widget_item" value="$PARAM[width_widget_item]" />
+			<param name="main_label" value="$INFO[ListItem.Title]"/>
+		</include>
 	</include>
 	<include name="RecPVRWidgetItemsLayout">
-		<param name="height_widget_item" default="220" />
-		<param name="width_widget_item" default="200" />
-		<definition>
-			<itemlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
-				<control type="image">
-					<description>Background</description>
-					<left>0</left>
-					<top>0</top>
-					<width>$PARAM[width_widget_item]</width>
-					<height>$PARAM[height_widget_item]</height>
-					<texture border="15">RecentAddedBack.png</texture>
-				</control>
-				<control type="image">
-					<left>10</left>
-					<top>10</top>
-					<width>180</width>
-					<height>155</height>
-					<aspectratio>keep</aspectratio>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<bordertexture border="5">button-nofocus.png</bordertexture>
-					<bordersize>5</bordersize>
-				</control>
-				<control type="label">
-					<left>10</left>
-					<top>170</top>
-					<width>180</width>
-					<height>20</height>
-					<font>font10</font>
-					<textcolor>grey2</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<selectedcolor>selected</selectedcolor>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]</label>
-				</control>
-				<control type="label">
-					<left>10</left>
-					<top>190</top>
-					<width>180</width>
-					<height>20</height>
-					<font>font12</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<selectedcolor>selected</selectedcolor>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.ChannelName]</label>
-				</control>
-			</itemlayout>
-			<focusedlayout height="$PARAM[height_widget_item]" width="$PARAM[width_widget_item]">
-				<control type="image">
-					<description>background</description>
-					<left>0</left>
-					<top>0</top>
-					<width>$PARAM[width_widget_item]</width>
-					<height>$PARAM[height_widget_item]</height>
-					<texture border="15">RecentAddedBack.png</texture>
-				</control>
-				<control type="image">
-					<left>10</left>
-					<top>10</top>
-					<width>180</width>
-					<height>155</height>
-					<aspectratio>keep</aspectratio>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<bordertexture border="5">folder-focus.png</bordertexture>
-					<bordersize>5</bordersize>
-					<visible>Control.HasFocus($PARAM[list_id])</visible>
-				</control>
-				<control type="image">
-					<left>10</left>
-					<top>10</top>
-					<width>180</width>
-					<height>155</height>
-					<aspectratio>keep</aspectratio>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<bordertexture border="5">button-nofocus.png</bordertexture>
-					<bordersize>5</bordersize>
-					<visible>!Control.HasFocus($PARAM[list_id])</visible>
-				</control>
-				<control type="label">
-					<left>10</left>
-					<top>170</top>
-					<width>180</width>
-					<height>20</height>
-					<font>font10</font>
-					<textcolor>grey2</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<selectedcolor>selected</selectedcolor>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]</label>
-				</control>
-				<control type="label">
-					<left>10</left>
-					<top>190</top>
-					<width>180</width>
-					<height>20</height>
-					<font>font12</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<selectedcolor>selected</selectedcolor>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.ChannelName]</label>
-				</control>
-				<control type="label">
-					<left>10</left>
-					<top>190</top>
-					<width>180</width>
-					<height>20</height>
-					<font>font12</font>
-					<textcolor>blue</textcolor>
-					<selectedcolor>selected</selectedcolor>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label]</label>
-					<visible>Control.HasFocus($PARAM[list_id])</visible>
-				</control>
-			</focusedlayout>
-		</definition>
+		<include content="PVRWidgetItemsLayout">
+			<param name="list_id" value="$PARAM[list_id]" />
+			<param name="height_widget_item" value="$PARAM[height_widget_item]" />
+			<param name="width_widget_item" value="$PARAM[width_widget_item]" />
+			<param name="main_label" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
+			<param name="sub_label" value="$INFO[ListItem.ChannelName]"/>
+		</include>
 	</include>
 	<include name="FavoritesPVRChannelsContents">
 		<content>
@@ -5324,7 +5105,7 @@
 				<label>$INFO[Skin.String(Channel$PARAM[type].1.Label)]</label>
 				<onclick>RunScript(script.pvr.favourites,action=play&amp;channelid=$INFO[Skin.String(Channel$PARAM[type].1.ChannelId)])</onclick>
 				<icon>$INFO[Skin.String(Channel$PARAM[type].1.Icon)]</icon>
-				<thumb>-</thumb>
+				<thumb/>
 				<property name="StartTime">$INFO[Window(Home).Property(Channel$PARAM[type].1.StartTime)]</property>
 				<property name="EndTime">$INFO[Window(Home).Property(Channel$PARAM[type].1.EndTime)]</property>
 				<property name="Title">$INFO[Window(Home).Property(Channel$PARAM[type].1.Title)]</property>
@@ -5334,7 +5115,7 @@
 				<label>$INFO[Skin.String(Channel$PARAM[type].2.Label)]</label>
 				<onclick>RunScript(script.pvr.favourites,action=play&amp;channelid=$INFO[Skin.String(Channel$PARAM[type].2.ChannelId)])</onclick>
 				<icon>$INFO[Skin.String(Channel$PARAM[type].2.Icon)]</icon>
-				<thumb>-</thumb>
+				<thumb/>
 				<property name="StartTime">$INFO[Window(Home).Property(Channel$PARAM[type].2.StartTime)]</property>
 				<property name="EndTime">$INFO[Window(Home).Property(Channel$PARAM[type].2.EndTime)]</property>
 				<property name="Title">$INFO[Window(Home).Property(Channel$PARAM[type].2.Title)]</property>
@@ -5344,7 +5125,7 @@
 				<label>$INFO[Skin.String(Channel$PARAM[type].3.Label)]</label>
 				<onclick>RunScript(script.pvr.favourites,action=play&amp;channelid=$INFO[Skin.String(Channel$PARAM[type].3.ChannelId)])</onclick>
 				<icon>$INFO[Skin.String(Channel$PARAM[type].3.Icon)]</icon>
-				<thumb>-</thumb>
+				<thumb/>
 				<property name="StartTime">$INFO[Window(Home).Property(Channel$PARAM[type].3.StartTime)]</property>
 				<property name="EndTime">$INFO[Window(Home).Property(Channel$PARAM[type].3.EndTime)]</property>
 				<property name="Title">$INFO[Window(Home).Property(Channel$PARAM[type].3.Title)]</property>
@@ -5354,7 +5135,7 @@
 				<label>$INFO[Skin.String(Channel$PARAM[type].4.Label)]</label>
 				<onclick>RunScript(script.pvr.favourites,action=play&amp;channelid=$INFO[Skin.String(Channel$PARAM[type].4.ChannelId)])</onclick>
 				<icon>$INFO[Skin.String(Channel$PARAM[type].4.Icon)]</icon>
-				<thumb>-</thumb>
+				<thumb/>
 				<property name="StartTime">$INFO[Window(Home).Property(Channel$PARAM[type].4.StartTime)]</property>
 				<property name="EndTime">$INFO[Window(Home).Property(Channel$PARAM[type].4.EndTime)]</property>
 				<property name="Title">$INFO[Window(Home).Property(Channel$PARAM[type].4.Title)]</property>
@@ -5364,7 +5145,7 @@
 				<label>$INFO[Skin.String(Channel$PARAM[type].5.Label)]</label>
 				<onclick>RunScript(script.pvr.favourites,action=play&amp;channelid=$INFO[Skin.String(Channel$PARAM[type].5.ChannelId)])</onclick>
 				<icon>$INFO[Skin.String(Channel$PARAM[type].5.Icon)]</icon>
-				<thumb>-</thumb>
+				<thumb/>
 				<property name="StartTime">$INFO[Window(Home).Property(Channel$PARAM[type].5.StartTime)]</property>
 				<property name="EndTime">$INFO[Window(Home).Property(Channel$PARAM[type].5.EndTime)]</property>
 				<property name="Title">$INFO[Window(Home).Property(Channel$PARAM[type].5.Title)]</property>
@@ -5374,7 +5155,7 @@
 				<label>$INFO[Skin.String(Channel$PARAM[type].6.Label)]</label>
 				<onclick>RunScript(script.pvr.favourites,action=play&amp;channelid=$INFO[Skin.String(Channel$PARAM[type].6.ChannelId)])</onclick>
 				<icon>$INFO[Skin.String(Channel$PARAM[type].6.Icon)]</icon>
-				<thumb>-</thumb>
+				<thumb/>
 				<property name="StartTime">$INFO[Window(Home).Property(Channel$PARAM[type].6.StartTime)]</property>
 				<property name="EndTime">$INFO[Window(Home).Property(Channel$PARAM[type].6.EndTime)]</property>
 				<property name="Title">$INFO[Window(Home).Property(Channel$PARAM[type].6.Title)]</property>
@@ -5384,7 +5165,7 @@
 				<label>$INFO[Skin.String(Channel$PARAM[type].7.Label)]</label>
 				<onclick>RunScript(script.pvr.favourites,action=play&amp;channelid=$INFO[Skin.String(Channel$PARAM[type].7.ChannelId)])</onclick>
 				<icon>$INFO[Skin.String(Channel$PARAM[type].7.Icon)]</icon>
-				<thumb>-</thumb>
+				<thumb/>
 				<property name="StartTime">$INFO[Window(Home).Property(Channel$PARAM[type].7.StartTime)]</property>
 				<property name="EndTime">$INFO[Window(Home).Property(Channel$PARAM[type].7.EndTime)]</property>
 				<property name="Title">$INFO[Window(Home).Property(Channel$PARAM[type].7.Title)]</property>
@@ -5394,7 +5175,7 @@
 				<label>$INFO[Skin.String(Channel$PARAM[type].8.Label)]</label>
 				<onclick>RunScript(script.pvr.favourites,action=play&amp;channelid=$INFO[Skin.String(Channel$PARAM[type].8.ChannelId)])</onclick>
 				<icon>$INFO[Skin.String(Channel$PARAM[type].8.Icon)]</icon>
-				<thumb>-</thumb>
+				<thumb/>
 				<property name="StartTime">$INFO[Window(Home).Property(Channel$PARAM[type].8.StartTime)]</property>
 				<property name="EndTime">$INFO[Window(Home).Property(Channel$PARAM[type].8.EndTime)]</property>
 				<property name="Title">$INFO[Window(Home).Property(Channel$PARAM[type].8.Title)]</property>
@@ -5404,7 +5185,7 @@
 				<label>$INFO[Skin.String(Channel$PARAM[type].9.Label)]</label>
 				<onclick>RunScript(script.pvr.favourites,action=play&amp;channelid=$INFO[Skin.String(Channel$PARAM[type].9.ChannelId)])</onclick>
 				<icon>$INFO[Skin.String(Channel$PARAM[type].9.Icon)]</icon>
-				<thumb>-</thumb>
+				<thumb/>
 				<property name="StartTime">$INFO[Window(Home).Property(Channel$PARAM[type].9.StartTime)]</property>
 				<property name="EndTime">$INFO[Window(Home).Property(Channel$PARAM[type].9.EndTime)]</property>
 				<property name="Title">$INFO[Window(Home).Property(Channel$PARAM[type].9.Title)]</property>
@@ -5414,7 +5195,7 @@
 				<label>$INFO[Skin.String(Channel$PARAM[type].10.Label)]</label>
 				<onclick>RunScript(script.pvr.favourites,action=play&amp;channelid=$INFO[Skin.String(Channel$PARAM[type].10.ChannelId)])</onclick>
 				<icon>$INFO[Skin.String(Channel$PARAM[type].10.Icon)]</icon>
-				<thumb>-</thumb>
+				<thumb/>
 				<property name="StartTime">$INFO[Window(Home).Property(Channel$PARAM[type].10.StartTime)]</property>
 				<property name="EndTime">$INFO[Window(Home).Property(Channel$PARAM[type].10.EndTime)]</property>
 				<property name="Title">$INFO[Window(Home).Property(Channel$PARAM[type].10.Title)]</property>
@@ -5422,17 +5203,43 @@
 			</item>
 		</content>
 	</include>
+	<include name="PatchContents">
+		<param name="sortby"></param>
+		<param name="sortorder">descending</param>
+		<param name="limit">25</param>
+		<param name="target"></param>
+		<param name="content_path"></param>
+		<definition>
+			<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]"  target="$PARAM[target]" limit="$PARAM[sortby]">$PARAM[content_path]</content>
+		</definition>
+	</include>
 	<include name="LastTVChannelsContents">
-		<content sortby="lastplayed" sortorder="descending"  target="pvr" limit="25">pvr://channels/tv/*?view=lastplayed</content>
+		<include content="PatchContents">
+			<param name="sortby" value="lastplayed"/>
+			<param name="target" value="pvr"/>
+			<param name="content_path" value="pvr://channels/tv/*?view=lastplayed"/>
+		</include>
 	</include>
 	<include name="RecTVChannelsContents">
-		<content sortby="date" sortorder="descending" target="pvr" limit="25">pvr://recordings/tv/active?view=flat</content>
+		<include content="PatchContents">
+			<param name="sortby" value="date"/>
+			<param name="target" value="pvr"/>
+			<param name="content_path" value="pvr://recordings/tv/active?view=flat"/>
+		</include>
 	</include>
 	<include name="LastRadioChannelsContents">
-		<content sortby="lastplayed" sortorder="descending" target="pvr" limit="25">pvr://channels/radio/*?view=lastplayed</content>
+		<include content="PatchContents">
+			<param name="sortby" value="lastplayed"/>
+			<param name="target" value="pvr"/>
+			<param name="content_path" value="pvr://channels/radio/*?view=lastplayed"/>
+		</include>
 	</include>
 	<include name="RecRadioChannelsContents">
-		<content sortby="date" sortorder="descending" target="pvr" limit="25">pvr://recordings/radio/active?view=flat</content>
+		<include content="PatchContents">
+			<param name="sortby" value="date"/>
+			<param name="target" value="pvr"/>
+			<param name="content_path" value="pvr://recordings/radio/active?view=flat"/>
+		</include>
 	</include>
 	<include name="HomeWidgetUpDown">
 		<onup condition="!Skin.HasSetting(HidePowerButton) + Skin.HasSetting(HideFavoritesButton)">22</onup>

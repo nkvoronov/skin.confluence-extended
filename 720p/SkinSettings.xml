@@ -1863,7 +1863,7 @@
 					<width>750</width>
 					<height>530</height>
 					<itemgap>-1</itemgap>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol/>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<onup>9007</onup>

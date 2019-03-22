@@ -233,7 +233,7 @@
 		<width>1140</width>
 		<height>35</height>
 		<viewtype label="535">list</viewtype>
-		<pagecontrol>-</pagecontrol>
+		<pagecontrol/>
 		<scrolltime>200</scrolltime>
 		<orientation>Horizontal</orientation>
 		<include>HomeSubMenuUpDown</include>
