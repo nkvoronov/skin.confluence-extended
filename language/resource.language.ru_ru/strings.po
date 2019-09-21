@@ -218,7 +218,7 @@ msgstr "Различные параметры"
 
 msgctxt "#31107"
 msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
-msgstr "Скрыть флаги, полученные из имени видео файла [COLOR=grey3](BluRray, HD-DVD)[/COLOR]"
+msgstr "Скрыть флаги, полученные из имени видео файла [COLOR=grey3](например BluRray, HD-DVD)[/COLOR]"
 
 msgctxt "#31108"
 msgid "Hide main menu buttons"
@@ -242,7 +242,7 @@ msgstr "Параметры"
 
 msgctxt "#31113"
 msgid "Background path Master:"
-msgstr "Путь к фонам мастера:"
+msgstr "Фоновый путь мастера:"
 
 msgctxt "#31114"
 msgid "System"
@@ -250,7 +250,7 @@ msgstr "Система"
 
 msgctxt "#31115"
 msgid "Main button playlists"
-msgstr "Кнопка плейлисты"
+msgstr "Основные кнопки плейлистов "
 
 msgctxt "#31116"
 msgid "Show recently added albums"
@@ -262,7 +262,7 @@ msgstr "Показывать последнее добавленное виде�
 
 msgctxt "#31118"
 msgid "Home page \"Add-ons\" submenu"
-msgstr "Подменю \"Дополнения\" главного экрана"
+msgstr "Страница \"Дополнений\" подменю"
 
 msgctxt "#31119"
 msgid "Hide background fanart"
@@ -270,7 +270,7 @@ msgstr "Скрыть фоновый фанарт"
 
 msgctxt "#31120"
 msgid "Home page \"Games\" submenu"
-msgstr "Подменю \ "Игры \" главного экрана"
+msgstr "Страница \"Игры\" подменю"
 
 msgctxt "#31122"
 msgid "Hide EPG if RDS is present on channel window"
@@ -326,7 +326,7 @@ msgstr "плейлист"
 
 msgctxt "#31145"
 msgid "playlist path"
-msgstr "плейлист путь"
+msgstr "путь к плейлисту"
 
 msgctxt "#31200"
 msgid "Shortcuts"
@@ -354,7 +354,7 @@ msgstr "Следующие серии"
 
 msgctxt "#31209"
 msgid "Hide Master profile main menu buttons"
-msgstr "Скрыть кнопки главного меню мастер профиля"
+msgstr "Скрыть кнопки главного меню главного профиля"
 
 msgctxt "#31300"
 msgid "Current temperature"
