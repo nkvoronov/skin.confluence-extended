@@ -543,7 +543,7 @@
 							<height>16</height>
 							<texture>PVR-HasArchive.png</texture>
 							<visible>!ListItem.IsRecording + ListItem.HasArchive</visible>
-						</control>                        
+						</control>
 						<control type="label">
 							<left>8</left>
 							<top>95</top>
@@ -638,7 +638,7 @@
 							<height>16</height>
 							<texture>PVR-HasArchive.png</texture>
 							<visible>!ListItem.IsRecording + ListItem.HasArchive</visible>
-						</control>                        
+						</control>
 						<control type="label">
 							<left>8</left>
 							<top>95</top>
