@@ -80,10 +80,6 @@ msgctxt "#31015"
 msgid "Minute"
 msgstr "хв."
 
-msgctxt "#31016"
-msgid "Elapsed time"
-msgstr "Минулий час"
-
 msgctxt "#31017"
 msgid "Unavailable"
 msgstr "Недоступно"
@@ -218,7 +214,7 @@ msgstr "Різні параметри"
 
 msgctxt "#31107"
 msgid "Hide flagging read from video filenames [COLOR=grey3](e.g. Blu-ray, HD-DVD)[/COLOR]"
-msgstr "Приховати маркування, отримані з імен файлів [COLOR = grey3] (Blu-Ray, HD-DVD) [/COLOR]"
+msgstr "Приховати маркування, отримані з імен файлів [COLOR = grey3] (наприклад, Blu-Ray, HD-DVD) [/COLOR]"
 
 msgctxt "#31108"
 msgid "Hide main menu buttons"
@@ -239,6 +235,10 @@ msgstr "Приховати"
 msgctxt "#31112"
 msgid "Options"
 msgstr "Параметри"
+
+msgctxt "#31114"
+msgid "System"
+msgstr "Система"
 
 msgctxt "#31116"
 msgid "Show recently added albums"
@@ -262,7 +262,7 @@ msgstr "Підміню \"Ігри\" головного екрану"
 
 msgctxt "#31122"
 msgid "Hide EPG if RDS is present on channel window"
-msgstr "Приховати RDS якщо на каналі присутній RDS"
+msgstr "Сховати EPG, якщо RDS присутній у вікні каналу"
 
 msgctxt "#31124"
 msgid "Show background \"Now playing\" video"
@@ -278,7 +278,7 @@ msgstr "Тексти"
 
 msgctxt "#31129"
 msgid "Hide fanart in full screen visualisation"
-msgstr "Приховувати фанарт в повноекранної візуалізації"
+msgstr "Приховати фанарт в режимі візуалізації на весь екран"
 
 msgctxt "#31132"
 msgid "Lyrics add-on"
@@ -286,15 +286,15 @@ msgstr "Надбудова \"Тексти\""
 
 msgctxt "#31134"
 msgid "Home page \"Videos\" submenu"
-msgstr "Підміню \"Відео\" головного екрану"
+msgstr "Субменю сторінки \"Відео\""
 
 msgctxt "#31135"
 msgid "Home page \"Music\" submenu"
-msgstr "Підміню \"Музика\" головного екрану"
+msgstr "Субменю сторінки \"Музика\""
 
 msgctxt "#31136"
 msgid "Home page \"Pictures\" submenu"
-msgstr "Підміню \"Фото\" головного екрану"
+msgstr "Субменю сторінки \"Фото\""
 
 msgctxt "#31140"
 msgid "Music OSD"
@@ -303,6 +303,10 @@ msgstr "OSD музики"
 msgctxt "#31142"
 msgid "Settings level"
 msgstr "Рівень налаштувань"
+
+msgctxt "#31143"
+msgid "Use"
+msgstr "Застосувати"
 
 msgctxt "#31200"
 msgid "Shortcuts"
@@ -606,7 +610,7 @@ msgstr "РАДІО"
 
 msgctxt "#31961"
 msgid "Timeshift"
-msgstr "Timeshift"
+msgstr "Зрушення в часі"
 
 msgctxt "#31962"
 msgid "Choose kind of profile identification"
@@ -614,7 +618,7 @@ msgstr "Виберіть вид ідентифікації профілю"
 
 msgctxt "#31963"
 msgid "Profile name"
-msgstr "Імя профілю"
+msgstr "Назва профілю"
 
 msgctxt "#31964"
 msgid "Profile avatar"

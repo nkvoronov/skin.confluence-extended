@@ -303,6 +303,14 @@
 							<texture>PVR-IsRecording.png</texture>
 							<visible>ListItem.IsRecording</visible>
 						</control>
+						<control type="image">
+							<left>5</left>
+							<top>37</top>
+							<width>16</width>
+							<height>16</height>
+							<texture>PVR-HasArchive.png</texture>
+							<visible>!ListItem.IsRecording + ListItem.HasArchive</visible>
+						</control>
 					</itemlayout>
 					<focusedlayout height="60" width="390">
 						<control type="image">
@@ -398,6 +406,14 @@
 							<height>16</height>
 							<texture>PVR-IsRecording.png</texture>
 							<visible>ListItem.IsRecording</visible>
+						</control>
+						<control type="image">
+							<left>5</left>
+							<top>37</top>
+							<width>16</width>
+							<height>16</height>
+							<texture>PVR-HasArchive.png</texture>
+							<visible>!ListItem.IsRecording + ListItem.HasArchive</visible>
 						</control>
 					</focusedlayout>
 				</control>
@@ -520,6 +536,14 @@
 							<texture>PVR-IsRecording.png</texture>
 							<visible>ListItem.IsRecording</visible>
 						</control>
+						<control type="image">
+							<left>16</left>
+							<top>37</top>
+							<width>16</width>
+							<height>16</height>
+							<texture>PVR-HasArchive.png</texture>
+							<visible>!ListItem.IsRecording + ListItem.HasArchive</visible>
+						</control>                        
 						<control type="label">
 							<left>8</left>
 							<top>95</top>
@@ -607,6 +631,14 @@
 							<texture>PVR-IsRecording.png</texture>
 							<visible>ListItem.IsRecording</visible>
 						</control>
+						<control type="image">
+							<left>16</left>
+							<top>37</top>
+							<width>16</width>
+							<height>16</height>
+							<texture>PVR-HasArchive.png</texture>
+							<visible>!ListItem.IsRecording + ListItem.HasArchive</visible>
+						</control>                        
 						<control type="label">
 							<left>8</left>
 							<top>95</top>
