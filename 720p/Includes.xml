@@ -440,14 +440,18 @@
 		<value condition="!String.IsEmpty(ListItem.AddonSize)">$INFO[ListItem.AddonSize]</value>
 	</variable>
 	<variable name="MusicInfoHeader">
-		<value condition="Container.Content(Artists)">$INFO[ListItem.Artist]</value>
-		<value condition="Container.Content(Albums)">$INFO[ListItem.Album]</value>
-		<value condition="Container.Content(Songs)">$INFO[ListItem.Title]</value>
+		<value condition="String.IsEqual(ListItem.DbType,artist">$INFO[ListItem.Artist]</value>
+		<value condition="String.IsEqual(ListItem.DbType,album)">$INFO[ListItem.Album]</value>
+		<value condition="String.IsEqual(ListItem.DbType,song)">$INFO[ListItem.Title]</value>
 	</variable>
 	<variable name="MusicInfoLabel">
-		<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Description)]</value>
-		<value condition="Container.Content(Albums)">$INFO[ListItem.Property(Album_Description)]</value>
-		<value condition="Container.Content(Songs)">$INFO[ListItem.Comment]</value>
+		<value condition="String.IsEqual(ListItem.DbType,song) + !String.IsEmpty(ListItem.Comment)">$INFO[ListItem.Comment]</value>
+		<value condition="String.IsEqual(ListItem.DbType,album) + !String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
+		<value condition="String.IsEqual(ListItem.DbType,artist)">$VAR[MusicInfoTextArtist]</value>
+	</variable>
+	<variable name="MusicInfoTextArtist">
+		<value condition="!String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
+		<value condition="String.IsEmpty(ListItem.Property(Artist_Description)) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))">$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)]</value>
 	</variable>
 	<variable name="MusicInfoListViewLabel">
 		<value condition="Control.IsVisible(506)">$LOCALIZE[544]</value>
@@ -467,10 +471,18 @@
 		<value condition="Control.IsVisible(507)">$INFO[Player.Art(thumb)]</value>
 	</variable>
 	<variable name="MusicInfoListThumb">
-		<value condition="Container.Content(Artists) + !String.IsEmpty(Container(50).Listitem.Icon)">$INFO[Container(50).Listitem.Icon]</value>
-		<value condition="[Container.Content(Albums) | Container.Content(Songs)] + !String.IsEmpty(Container.Art(artist.thumb))">$INFO[Container.Art(artist.thumb)]</value>
-		<value condition="Container.Content(Artists)">DefaultAlbumCover.png</value>
-		<value condition="Container.Content(Albums) | Container.Content(Songs)">DefaultArtist.png</value>
+		<value condition="String.IsEqual(ListItem.DbType,artist) + !String.IsEmpty(Container(50).Listitem.Icon)">$INFO[Container(50).Listitem.Icon]</value>
+		<value condition="[String.IsEqual(ListItem.DbType,album) | String.IsEqual(ListItem.DbType,song)] + !String.IsEmpty(ListItem.Art(artist.thumb))">$INFO[ListItem.Art(artist.thumb)]</value>
+		<value condition="String.IsEqual(ListItem.DbType,artist)">DefaultAlbumCover.png</value>
+		<value condition="String.IsEqual(ListItem.DbType,album) | String.IsEqual(ListItem.DbType,song)">DefaultArtist.png</value>
+	</variable>
+	<variable name="GenreVar">
+		<value condition="!String.IsEmpty(ListItem.Property(Genre))">$INFO[ListItem.Property(Genre)]</value>
+		<value>$INFO[ListItem.Genre]</value>
+	</variable>
+	<variable name="InfoListPathVar">
+		<value condition="!String.IsEmpty(ListItem.FolderPath)">$INFO[ListItem.FolderPath]</value>
+		<value></value>
 	</variable>
 	<variable name="MediaInfoOverlayVar">
 		<value condition="ListItem.IsCollection">flagging/video/Set.png</value>
@@ -549,9 +561,9 @@
 		<value>$INFO[Player.Icon]</value>
 	</variable>
 	<variable name="MusicInfoPanelLabel">
-		<value condition="Container.Content(Artists)">$INFO[ListItem.Label]</value>
-		<value condition="Container.Content(Songs)">$INFO[ListItem.Label,[COLOR=selected][B],[/B][/COLOR] - ]$INFO[ListItem.Label2]</value>
-		<value>$INFO[ListItem.TrackNumber,([COLOR=selected][B],[/B][/COLOR]) - ]$INFO[ListItem.Label]</value>
+		<value condition="String.IsEqual(listItem.DBType,artist)">$INFO[ListItem.Label]</value>
+		<value condition="String.IsEqual(ListItem.DBType,albums)">$INFO[ListItem.Label,[COLOR=selected][B],[/B][/COLOR] - ]$INFO[ListItem.Label2]</value>
+		<value>$INFO[ListItem.TrackNumber,[B],. [/B]]$INFO[ListItem.Label]</value>
 	</variable>
 	<variable name="PlayList">
 		<value condition="Window.IsActive(Videos) + !String.IsEqual(Playlist.Length(video),0)">ActivateWindow(videoplaylist)</value>
@@ -729,6 +741,13 @@
 					<label>$INFO[ListItem.Duration]</label>
 				</control>
 			</focusedlayout>
+			<include condition="!String.IsEmpty(Window(Home).Property(GlobalSearch.SearchString))" content="CommonIncludeContents3">
+				<param name="content_target" value=""/>
+				<param name="content_path" value="$VAR[InfoListPathVar]"/>
+				<param name="sortby" value=""/>
+				<param name="sortorder" value="ascending"/>
+				<param name="content_limit" value=""/>
+			</include>
 		</control>
 	</include>
 	<!-- Dialog Background Common-->
@@ -1970,8 +1989,8 @@
 		</item>
 		<item>
 			<label>$LOCALIZE[515]:</label>
-			<label2>$INFO[ListItem.Genre]</label2>
-			<visible>!String.IsEmpty(ListItem.Genre)</visible>
+			<label2>$VAR[GenreVar]</label2>
+			<visible>!String.IsEmpty(ListItem.Property(Genre)) | !String.IsEmpty(ListItem.Genre)</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[175]:</label>
@@ -2012,8 +2031,8 @@
 		</item>
 		<item>
 			<label>$LOCALIZE[515]:</label>
-			<label2>$INFO[ListItem.Genre]</label2>
-			<visible>!String.IsEmpty(ListItem.Genre)</visible>
+			<label2>$VAR[GenreVar]</label2>
+			<visible>!String.IsEmpty(ListItem.Property(Genre)) | !String.IsEmpty(ListItem.Genre)</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[563]:</label>
@@ -2074,8 +2093,8 @@
 		</item>
 		<item>
 			<label>$LOCALIZE[515]:</label>
-			<label2>$INFO[ListItem.Genre]</label2>
-			<visible>!String.IsEmpty(ListItem.Genre)</visible>
+			<label2>$VAR[GenreVar]</label2>
+			<visible>!String.IsEmpty(ListItem.Property(Genre)) | !String.IsEmpty(ListItem.Genre)</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[175]:</label>

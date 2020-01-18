@@ -91,7 +91,7 @@
 				</control>
 				<control type="label">
 					<include>WindowTitleCommons</include>
-					<label>[COLOR=blue] - [/COLOR]$INFO[Window.Property(GlobalSearch.SearchString)]</label>
+					<label>$INFO[Window(Home).Property(GlobalSearch.SearchString),[COLOR=blue] - [/COLOR],]</label>
 				</control>
 			</control>
 			<include>Clock</include>

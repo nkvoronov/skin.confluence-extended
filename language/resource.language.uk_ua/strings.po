@@ -1189,3 +1189,19 @@ msgstr "Завантажити музичну тему"
 msgctxt "#90113"
 msgid "Dharma style"
 msgstr "Dharma стиль"
+
+msgctxt "#90114"
+msgid "Search local library"
+msgstr "Шукати в медіатеці"
+
+msgctxt "#90115"
+msgid "Search add-ons"
+msgstr "Шукати доповнення"
+
+msgctxt "#90116"
+msgid "Search YouTube"
+msgstr "Шукати в YouTube"
+
+msgctxt "#90117"
+msgid "Search TheMovieDB"
+msgstr "Шукати в TheMovieDB"
