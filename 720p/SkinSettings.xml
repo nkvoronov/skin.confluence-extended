@@ -412,6 +412,33 @@
 						<enable>Skin.HasSetting(ActivateGlobalSearch)</enable>
 					</control>
 					<control type="radiobutton" id="117">
+						<description>Activate Extended Info</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[24000] Extended Info</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick condition="!System.HasAddon(script.extendedinfo)">InstallAddon(script.extendedinfo)</onclick>
+						<onclick>Skin.ToggleSetting(ActivateExtendedInfo)</onclick>
+						<selected>Skin.HasSetting(ActivateExtendedInfo)</selected>
+					</control>
+					<control type="button" id="118">
+						<description>Settings Extended Info</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>- $LOCALIZE[24020]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Addon.OpenSettings(script.extendedinfo)</onclick>
+						<enable>Skin.HasSetting(ActivateExtendedInfo)</enable>
+					</control>
+					<control type="radiobutton" id="119">
 						<description>Activate Simple Playlists</description>
 						<width>750</width>
 						<height>40</height>
@@ -425,7 +452,7 @@
 						<onclick>Skin.ToggleSetting(ActivateWatchitLater)</onclick>
 						<selected>Skin.HasSetting(ActivateWatchitLater)</selected>
 					</control>
-					<control type="button" id="118">
+					<control type="button" id="120">
 						<description>Settings Simple Playlists</description>
 						<width>750</width>
 						<height>40</height>
@@ -438,7 +465,7 @@
 						<onclick>Addon.OpenSettings(script.simpleplaylists)</onclick>
 						<enable>Skin.HasSetting(ActivateWatchitLater)</enable>
 					</control>
-					<control type="radiobutton" id="119">
+					<control type="radiobutton" id="121">
 						<description>Activate Script Playlists</description>
 						<width>750</width>
 						<height>40</height>
@@ -452,7 +479,7 @@
 						<selected>Skin.HasSetting(ActivateScriptPlaylist)</selected>
 						<enable>System.HasAddon(script.randomandlastitems)</enable>
 					</control>
-					<control type="button" id="120">
+					<control type="button" id="122">
 						<description>Settings Script Playlists</description>
 						<width>750</width>
 						<height>40</height>
@@ -466,7 +493,7 @@
 						<enable>Skin.HasSetting(ActivateScriptPlaylist)</enable>
 						<visible>System.HasAddon(script.randomandlastitems)</visible>
 					</control>
-					<control type="button" id="121">
+					<control type="button" id="123">
 						<description>Settings Service Skin Widgets</description>
 						<width>750</width>
 						<height>40</height>
@@ -479,12 +506,12 @@
 						<onclick>Addon.OpenSettings(service.skin.widgets)</onclick>
 						<enable>System.HasAddon(service.skin.widgets)</enable>
 					</control>
-					<control type="image" id="122">
+					<control type="image" id="124">
 						<description>Separator Image</description>
 						<height>2</height>
 						<texture>separator2.png</texture>
 					</control>
-					<control type="button" id="123">
+					<control type="button" id="125">
 						<description>Reset Section</description>
 						<width>750</width>
 						<height>40</height>

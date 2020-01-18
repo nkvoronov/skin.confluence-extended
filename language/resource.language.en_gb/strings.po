@@ -1239,3 +1239,19 @@ msgstr ""
 msgctxt "#90113"
 msgid "Dharma style"
 msgstr ""
+
+msgctxt "#90114"
+msgid "Search local library"
+msgstr ""
+
+msgctxt "#90115"
+msgid "Search add-ons"
+msgstr ""
+
+msgctxt "#90116"
+msgid "Search YouTube"
+msgstr ""
+
+msgctxt "#90117"
+msgid "Search TheMovieDB"
+msgstr ""

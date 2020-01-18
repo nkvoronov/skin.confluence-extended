@@ -134,9 +134,9 @@
 							</control>
 						</focusedlayout>
 						<content>
-							<include condition="String.IsEqual(ListItem.DBTYPE,artist)">MusicInfoArtistInfo</include>
-							<include condition="String.IsEqual(ListItem.DBTYPE,album)">MusicInfoAlbumInfo</include>
-							<include condition="String.IsEqual(ListItem.DBTYPE,song)">MusicInfoSongInfo</include>
+							<include condition="String.IsEqual(ListItem.DBType,artist)">MusicInfoArtistInfo</include>
+							<include condition="String.IsEqual(ListItem.DBType,album)">MusicInfoAlbumInfo</include>
+							<include condition="String.IsEqual(ListItem.DBType,song)">MusicInfoSongInfo</include>
 						</content>
 					</control>
 				</control>
@@ -167,7 +167,7 @@
 					<height>4</height>
 					<aspectratio>stretch</aspectratio>
 					<texture>separator.png</texture>
-					<visible>String.IsEqual(ListItem.DBTYPE,song)</visible>
+					<visible>String.IsEqual(ListItem.DBType,song)</visible>
 				</control>
 				<control type="image">
 					<description>Thumb</description>
@@ -178,7 +178,7 @@
 					<texture>$VAR[MusicInfoListThumb]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>
-				<include content="MusicInfoPanel" condition="String.IsEqual(ListItem.DBTYPE,artist) | String.IsEqual(ListItem.DBTYPE,album) | String.IsEqual(ListItem.DBTYPE,song)">
+				<include content="MusicInfoPanel" condition="String.IsEqual(ListItem.DBType,artist) | String.IsEqual(ListItem.DBType,album) | String.IsEqual(ListItem.DBType,song)">
 					<param name="panel-left" value="340"/>
 					<param name="panel-width" value="900"/>
 					<param name="item-width" value="450"/>
@@ -207,14 +207,24 @@
 						<label/>
 					</control>
 					<control type="button" id="12">
-						<description>Get Fanart / Album info</description>
+						<description>Album info</description>
 						<include>ButtonInfoDialogsCommonValues</include>
+						<visible>String.IsEmpty(Window(Home).Property(GlobalSearch.SearchString))</visible>
 						<label/>
 					</control>
 					<control type="button" id="7">
 						<description>Set my rating</description>
 						<include>ButtonInfoDialogsCommonValues</include>
 						<label/>
+					</control>
+					<control type="button" id="440">
+						<description>YouTube</description>
+						<include>ButtonInfoDialogsCommonValues</include>
+						<label>$LOCALIZE[90116]</label>
+						<onclick>PreviousMenu</onclick>
+						<onclick condition="!String.IsEqual(ListItem.DBType,song)">RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Artist] $INFO[ListItem.Album])</onclick>
+						<onclick condition="String.IsEqual(ListItem.DBType,song)">RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Artist] $INFO[ListItem.Title])</onclick>
+						<visible>System.hasAddon(script.extendedinfo) + Skin.HasSetting(ActivateExtendedInfo)</visible>
 					</control>
 				</control>
 			</control>

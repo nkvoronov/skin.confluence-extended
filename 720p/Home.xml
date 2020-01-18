@@ -600,7 +600,6 @@
 				<colordiffuse>CCFFFFFF</colordiffuse>
 				<texture flipy="true" border="0,5,0,0" flipx="true">HomeSubEnd.png</texture>
 				<animation effect="slide" start="0,0" end="145,0" time="0" condition="!System.HasAddon(script.globalsearch) | !Skin.HasSetting(ActivateGlobalSearch)">Conditional</animation>
-				<visible>Skin.HasSetting(ActivateGlobalSearch) | [ Player.HasMedia +!Skin.HasSetting(HidePlayerPanel) ] | [ !Player.HasMedia + Skin.HasSetting(EnableHomeStats) ]</visible>
 			</control>
 			<control type="radiobutton" id="608">
 				<colordiffuse>CCFFFFFF</colordiffuse>
@@ -620,7 +619,7 @@
 				<texturenofocus flipy="true" border="5">HomeSubNF.png</texturenofocus>
 				<pulseonselect>false</pulseonselect>
 				<label>137</label>
-				<onclick>RunScript(script.globalsearch)</onclick>
+				<onclick>ActivateWindow(2212)</onclick>
 				<textureradioonfocus>icon_search.png</textureradioonfocus>
 				<textureradioonnofocus>icon_search.png</textureradioonnofocus>
 				<textureradioofffocus>icon_search.png</textureradioofffocus>
@@ -630,7 +629,6 @@
 				<onup condition="!Skin.HasSetting(LowerMenu)">9003</onup>
 				<onup condition="Skin.HasSetting(LowerMenu)">9002</onup>
 				<ondown>9000</ondown>
-				<visible>System.HasAddon(script.globalsearch) + Skin.HasSetting(ActivateGlobalSearch)</visible>
 			</control>
 			<control type="group" id="600">
 				<left>180</left>

@@ -1137,3 +1137,19 @@ msgstr "Загрузить музыкальную тему"
 msgctxt "#90113"
 msgid "Dharma style"
 msgstr "Dharma стиль"
+
+msgctxt "#90114"
+msgid "Search local library"
+msgstr "Искать в медиатеке"
+
+msgctxt "#90115"
+msgid "Search add-ons"
+msgstr "Поиск дополнений"
+
+msgctxt "#90116"
+msgid "Search YouTube"
+msgstr "Искать в YouTube"
+
+msgctxt "#90117"
+msgid "Search TheMovieDB"
+msgstr "Искать в TheMovieDB"
