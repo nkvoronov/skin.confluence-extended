@@ -152,6 +152,15 @@
 				<ondown>9999</ondown>
 				<onback>50</onback>
 				<itemgap>0</itemgap>
+				<control type="radiobutton" id="990">
+					<description>Search button</description>
+					<include>ButtonCommonValues</include>
+					<textureradioonfocus>icon_search_home.png</textureradioonfocus>
+					<textureradioonnofocus>icon_search_home.png</textureradioonnofocus>
+					<textureradioofffocus>icon_search_home.png</textureradioofffocus>
+					<textureradiooffnofocus>icon_search_home.png</textureradiooffnofocus>
+					<label>137</label>
+				</control>
 				<control type="label" id="200">
 					<width>250</width>
 					<height>35</height>
@@ -167,15 +176,6 @@
 					<include>ButtonCommonValues</include>
 					<onclick>Container.NextViewMode</onclick>
 					<label/>
-				</control>
-				<control type="radiobutton" id="990">
-					<description>Search button</description>
-					<include>ButtonCommonValues</include>
-					<textureradioonfocus>icon_search_home.png</textureradioonfocus>
-					<textureradioonnofocus>icon_search_home.png</textureradioonnofocus>
-					<textureradioofffocus>icon_search_home.png</textureradioofffocus>
-					<textureradiooffnofocus>icon_search_home.png</textureradiooffnofocus>
-					<label>137</label>
 				</control>
 				<control type="label" id="201">
 					<width>250</width>

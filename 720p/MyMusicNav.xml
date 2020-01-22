@@ -41,7 +41,7 @@
 		<include>ScrollOffsetLabel</include>
 		<include content="CommonWindowHeader">
 			<param name="Icon" value="icon_music" />
-			<param name="Label" value="$LOCALIZE[10516]" />
+			<param name="Label" value="$LOCALIZE[2]" />
 		</include>
 		<control type="group">
 			<left>-250</left>

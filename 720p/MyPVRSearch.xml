@@ -412,7 +412,7 @@
 						<width>800</width>
 						<height>63</height>
 						<font>font12</font>
-						<align>justify</align>
+						<align>left</align>
 						<textcolor>grey</textcolor>
 						<autoscroll delay="10000" time="3000" repeat="6000">true</autoscroll>
 						<label>$INFO[ListItem.Plot]</label>

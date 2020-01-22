@@ -276,7 +276,7 @@
 						<height>83</height>
 						<font>font12</font>
 						<label>$LOCALIZE[31422]</label>
-						<align>justify</align>
+						<align>left</align>
 						<textcolor>white</textcolor>
 						<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 						<visible>Control.Hasfocus(4)</visible>
@@ -289,7 +289,7 @@
 						<height>83</height>
 						<font>font12</font>
 						<label>$LOCALIZE[31423]</label>
-						<align>justify</align>
+						<align>left</align>
 						<textcolor>white</textcolor>
 						<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 						<visible>Control.Hasfocus(5)</visible>

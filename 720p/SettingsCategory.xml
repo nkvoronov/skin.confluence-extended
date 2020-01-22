@@ -183,7 +183,7 @@
 				<width>736</width>
 				<height>83</height>
 				<font>font12</font>
-				<align>justify</align>
+				<align>left</align>
 				<textcolor>white</textcolor>
 				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 			</control>

@@ -184,7 +184,7 @@
 						<width>600</width>
 						<height>218</height>
 						<font>font13</font>
-						<align>justify</align>
+						<align>left</align>
 						<textcolor>white</textcolor>
 						<label>$VAR[AddonInfoDescription]</label>
 						<pagecontrol>60</pagecontrol>

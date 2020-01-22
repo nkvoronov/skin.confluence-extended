@@ -110,11 +110,11 @@ msgstr "Расположение"
 
 msgctxt "#31028"
 msgid "Poster wrap"
-msgstr "карусель постеров"
+msgstr "Карусель постеров"
 
 msgctxt "#31029"
 msgid "Fanart"
-msgstr "фанарт"
+msgstr "Фанарт"
 
 msgctxt "#31031"
 msgid "Pic thumbs"
@@ -122,7 +122,7 @@ msgstr "эскизы фото"
 
 msgctxt "#31032"
 msgid "Image wrap"
-msgstr "карусель изображений"
+msgstr "Карусель изображений"
 
 msgctxt "#31033"
 msgid "Info"

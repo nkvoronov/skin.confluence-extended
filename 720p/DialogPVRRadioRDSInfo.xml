@@ -922,7 +922,7 @@
 				<width>800</width>
 				<height>120</height>
 				<font>font12</font>
-				<align>justify</align>
+				<align>left</align>
 				<pagecontrol>60</pagecontrol>
 				<label/>
 			</control>
