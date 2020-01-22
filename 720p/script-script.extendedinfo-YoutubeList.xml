@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<defaultcontrol always="true">500</defaultcontrol>
+	<onload condition="String.IsEmpty(Window(Home).Property(MenuItemActive))">SetProperty(MenuItemActive,video,Home)</onload>
+	<onload condition="String.IsEmpty(Window(Home).Property(MenuBackground))">SetProperty(MenuBackground,special://skin/extras/backgrounds/video.jpg,Home)</onload>
+	<menucontrol>9000</menucontrol>
+	<views>500</views>
+	<onload condition="!Skin.HasSetting(FirstTimeRun)">ActivateWindow(1112)</onload>
+	<controls>
+		<include>CommonCustomBackground</include>
+		<include>CommonBackground</include>
+		<control type="image">
+			<depth>DepthBackground</depth>
+			<include>BackgroundDimensions</include>
+			<aspectratio>scale</aspectratio>
+			<texture>$INFO[ListItem.Thumb]</texture>
+			<include>VisibleFadeEffect</include>
+			<visible>!String.IsEqual(Window.Property(Type),$LOCALIZE[19029])</visible>
+		</control>
+		<control type="image">
+			<depth>DepthBackground</depth>
+			<include>BackgroundDimensions</include>
+			<aspectratio>scale</aspectratio>
+			<texture>$INFO[ListItem.Art(fanart)]</texture>
+			<include>VisibleFadeEffect</include>
+			<visible>String.IsEqual(Window.Property(Type),$LOCALIZE[19029])</visible>
+		</control>
+		<include>ContentPanelBackgrounds</include>
+		<control type="group">
+			<include>Window_OpenClose_Animation</include>
+			<control type="group">
+				<visible>Control.IsVisible(500)</visible>
+				<include>VisibleFadeEffect</include>
+				<control type="panel" id="500">
+					<left>90</left>
+					<top>80</top>
+					<width>1080</width>
+					<height>558</height>
+					<onleft>9000</onleft>
+					<onright>60</onright>
+					<onup>700</onup>
+					<ondown>600</ondown>
+					<viewtype label="21371">list</viewtype>
+					<pagecontrol>60</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<preloaditems>2</preloaditems>
+					<itemlayout height="186" width="216">
+						<control type="image">
+							<left>28</left>
+							<top>0</top>
+							<width>160</width>
+							<height>160</height>
+							<bordertexture border="5">button-nofocus.png</bordertexture>
+							<bordersize>5</bordersize>
+							<texture background="true" fallback="DefaultFolder.png">$VAR[IconWallThumb]</texture>
+							<aspectratio>keep</aspectratio>
+						</control>
+						<control type="label">
+							<left>8</left>
+							<top>160</top>
+							<width>200</width>
+							<height>25</height>
+							<font>font12</font>
+							<textcolor>grey2</textcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]$INFO[ListItem.Property(itemcount),[COLOR=blue] - [/COLOR], $LOCALIZE[36913]]</label>
+							<visible>String.IsEqual(Window.Property(Type),$LOCALIZE[19029])</visible>
+						</control>
+						<control type="group">
+							<visible>!String.IsEqual(Window.Property(Type),$LOCALIZE[19029])</visible>
+							<control type="label">
+								<left>8</left>
+								<top>145</top>
+								<width>200</width>
+								<height>25</height>
+								<font>font12</font>
+								<textcolor>grey2</textcolor>
+								<selectedcolor>selected</selectedcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+							<control type="label">
+								<left>8</left>
+								<top>160</top>
+								<width>200</width>
+								<height>25</height>
+								<font>font10</font>
+								<textcolor>grey2</textcolor>
+								<selectedcolor>selected</selectedcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Premiered]$INFO[ListItem.Property(viewcount),[COLOR=blue] - [/COLOR]$ADDON[script.extendedinfo 32061] , ]$INFO[ListItem.Property(duration),[COLOR=blue] - [/COLOR],]</label>
+							</control>
+						</control>
+					</itemlayout>
+					<focusedlayout height="186" width="216">
+						<control type="image">
+							<left>28</left>
+							<top>0</top>
+							<width>160</width>
+							<height>160</height>
+							<bordertexture border="5">folder-focus.png</bordertexture>
+							<bordersize>5</bordersize>
+							<texture background="true" fallback="DefaultFolder.png">$VAR[IconWallThumb]</texture>
+							<aspectratio>keep</aspectratio>
+						</control>
+						<control type="label">
+							<left>8</left>
+							<top>160</top>
+							<width>200</width>
+							<height>25</height>
+							<font>font12</font>
+							<textcolor>white</textcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]$INFO[ListItem.Property(itemcount),[COLOR=blue] - [/COLOR], $LOCALIZE[36913]]</label>
+							<visible>String.IsEqual(Window.Property(Type),$LOCALIZE[19029])</visible>
+						</control>
+						<control type="group">
+							<visible>!String.IsEqual(Window.Property(Type),$LOCALIZE[19029])</visible>
+							<control type="label">
+								<left>8</left>
+								<top>145</top>
+								<width>200</width>
+								<height>25</height>
+								<font>font12</font>
+								<textcolor>white</textcolor>
+								<selectedcolor>selected</selectedcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+							<control type="label">
+								<left>8</left>
+								<top>160</top>
+								<width>200</width>
+								<height>25</height>
+								<font>font10</font>
+								<textcolor>grey2</textcolor>
+								<selectedcolor>selected</selectedcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Premiered]$INFO[ListItem.Property(viewcount),[COLOR=blue] - [/COLOR]$ADDON[script.extendedinfo 32061] , ]$INFO[ListItem.Property(duration),[COLOR=blue] - [/COLOR],]$INFO[ListItem.Property(itemcount),[COLOR=blue] - [/COLOR], $LOCALIZE[36913]]</label>
+							</control>
+						</control>
+					</focusedlayout>
+				</control>
+				<control type="scrollbar" id="60">
+					<left>1170</left>
+					<top>80</top>
+					<width>25</width>
+					<height>550</height>
+					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+					<texturesliderbar border="2,16,2,16">ScrollBarV_bar.png</texturesliderbar>
+					<texturesliderbarfocus border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+					<textureslidernib>ScrollBarNib.png</textureslidernib>
+					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+					<onleft>500</onleft>
+					<onright>9000</onright>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+					<visible>Control.IsVisible(500)</visible>
+				</control>
+				<control type="button" id="600">
+					<onfocus>SetFocus(500)</onfocus>
+					<width>1</width>
+					<height>1</height>
+					<left>-1000</left>
+				</control>
+				<control type="button" id="700">
+					<onfocus>SetFocus(500)</onfocus>
+					<width>1</width>
+					<height>1</height>
+					<left>-1000</left>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<depth>DepthFooter</depth>
+			<include content="CommonPageCount">
+				<param name="Info1" value="$INFO[Window.Property(TotalItems),([COLOR=blue],[/COLOR]) $LOCALIZE[31025]]$INFO[Window.Property(CurrentPage), - $LOCALIZE[31024] ([COLOR=blue]]$INFO[Window.Property(TotalPages),/,[/COLOR])]" />
+				<param name="Info2" value="" />
+			</include>
+			<include>CommonNowPlaying</include>
+		</control>
+		<include>MainWindowMouseButtons</include>
+		<include>BehindDialogFadeOut</include>
+		<include>ScrollOffsetLabel</include>
+		<include content="CommonWindowHeader">
+			<param name="Icon" value="icon_video" />
+			<param name="Label" value="YouTube$INFO[Window.Property(Filter_Label),[COLOR=blue] - [/COLOR],]" />
+			<param name="ShowContainer" value="False" />
+		</include>
+		<control type="group">
+			<left>-250</left>
+			<include>SideBladeLeft</include>
+			<control type="grouplist" id="9000">
+				<left>0</left>
+				<top>60</top>
+				<width>250</width>
+				<height>640</height>
+				<onleft>500</onleft>
+				<onright>500</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<onback>500</onback>
+				<itemgap>0</itemgap>
+				<control type="radiobutton" id="6000">
+					<description>Search button</description>
+					<include>ButtonCommonValues</include>
+					<textureradioonfocus>icon_search_home.png</textureradioonfocus>
+					<textureradioonnofocus>icon_search_home.png</textureradioonnofocus>
+					<textureradioofffocus>icon_search_home.png</textureradioofffocus>
+					<textureradiooffnofocus>icon_search_home.png</textureradiooffnofocus>
+					<label>137</label>
+				</control>
+				<control type="radiobutton" id="7000">
+					<include>ButtonCommonValues</include>
+					<label>$ADDON[script.extendedinfo 32024]</label>
+				</control>
+				<control type="label" id="200">
+					<width>250</width>
+					<height>35</height>
+					<font>font12</font>
+					<label>31006</label>
+					<textcolor>blue</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+				<control type="button" id="5001">
+					<description>Sort by button</description>
+					<include>ButtonCommonValues</include>
+					<onup>6000</onup>
+					<label>$ADDON[script.extendedinfo 32104]:</label>
+					<label2>$INFO[Window.Property(Sort_Label)]</label2>
+				</control>
+				<control type="button" id="5007">
+					<description>Type</description>
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[467]:</label>
+					<label2>$INFO[Window.Property(Type)]</label2>
+				</control>
+				<control type="label" id="5333">
+					<width>250</width>
+					<height>35</height>
+					<font>font12</font>
+					<label>$ADDON[script.extendedinfo 32023]</label>
+					<textcolor>blue</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+				<control type="button" id="5002">
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[172]</label>
+				</control>
+				<control type="button" id="5003">
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[248]</label>
+				</control>
+				<control type="button" id="5006">
+					<include>ButtonCommonValues</include>
+					<label>$ADDON[script.extendedinfo 32066]</label>
+				</control>
+				<control type="button" id="5008">
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[180]</label>
+				</control>
+				<control type="button" id="5009">
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[287]</label>
+				</control>
+				<control type="button" id="5012">
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[169]</label>
+				</control>
+				<control type="button" id="5013">
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[564]</label>
+				</control>
+				<control type="button" id="5005">
+					<include>ButtonCommonValues</include>
+					<label>$ADDON[script.extendedinfo 32022]</label>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>

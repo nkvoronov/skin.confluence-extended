@@ -1424,7 +1424,7 @@
 					<top>335</top>
 					<width>340</width>
 					<height>25</height>
-					<label fallback="10005">$INFO[listitem.Year]</label>
+					<label fallback="10005">$INFO[ListItem.Year]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13</font>
@@ -1448,7 +1448,7 @@
 					<top>360</top>
 					<width>340</width>
 					<height>25</height>
-					<label fallback="10005">$INFO[listitem.Genre]</label>
+					<label fallback="10005">$INFO[ListItem.Genre]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13</font>

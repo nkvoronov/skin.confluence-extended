@@ -156,7 +156,7 @@
 					<height>122</height>
 					<label>$VAR[MusicInfoLabel]</label>
 					<font>font13</font>
-					<align>justify</align>
+					<align>left</align>
 					<textcolor>white</textcolor>
 					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>

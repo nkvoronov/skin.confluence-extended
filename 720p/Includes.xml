@@ -440,7 +440,7 @@
 		<value condition="!String.IsEmpty(ListItem.AddonSize)">$INFO[ListItem.AddonSize]</value>
 	</variable>
 	<variable name="MusicInfoHeader">
-		<value condition="String.IsEqual(ListItem.DbType,artist">$INFO[ListItem.Artist]</value>
+		<value condition="String.IsEqual(ListItem.DbType,artist)">$INFO[ListItem.Artist]</value>
 		<value condition="String.IsEqual(ListItem.DbType,album)">$INFO[ListItem.Album]</value>
 		<value condition="String.IsEqual(ListItem.DbType,song)">$INFO[ListItem.Title]</value>
 	</variable>
@@ -456,11 +456,12 @@
 	<variable name="MusicInfoListViewLabel">
 		<value condition="Control.IsVisible(506)">$LOCALIZE[544]</value>
 		<value condition="Control.IsVisible(507) + !Player.HasAudio">$LOCALIZE[31040]</value>
-		<value condition="Control.IsVisible(507) + Player.HasAudio">$LOCALIZE[31040]$INFO[musicplayer.Playlistposition,: ]$INFO[musicplayer.Playlistlength,/]</value>
+		<value condition="Control.IsVisible(507) + Player.HasAudio">$LOCALIZE[31040]$INFO[musicplayer.Playlistposition, ]$INFO[musicplayer.Playlistlength,[COLOR blue] / [/COLOR]]</value>
 	</variable>
 	<variable name="MusicInfoListViewPanel">
-		<value condition="Control.IsVisible(506)">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title,,[CR]]$INFO[ListItem.Artist,,[CR]]$INFO[ListItem.Album,[COLOR grey2],[/COLOR][CR]]$INFO[ListItem.DiscNumber,[COLOR grey2]$LOCALIZE[427] ,[/COLOR][CR]]$INFO[ListItem.Year,[COLOR grey2], | [/COLOR]]$INFO[ListItem.Genre,[COLOR grey2],[/COLOR][CR]]$INFO[ListItem.PlayCount,$LOCALIZE[567]: ,[CR]]$INFO[ListItem.Time,$LOCALIZE[180]: ,/]$INFO[ListItem.Duration,,[CR]]</value>
-		<value condition="Control.IsVisible(507) + Player.HasAudio">$INFO[MusicPlayer.TrackNumber,,. ]$INFO[MusicPlayer.Title,,[CR]]$INFO[MusicPlayer.Artist,,[CR]]$INFO[MusicPlayer.Album,[COLOR grey2],[/COLOR][CR]]$INFO[MusicPlayer.DiscNumber,[COLOR grey2]$LOCALIZE[427] ,[/COLOR][CR]]$INFO[MusicPlayer.Year,[COLOR grey2], | [/COLOR]]$INFO[MusicPlayer.Genre,[COLOR grey2],[/COLOR][CR]]$INFO[MusicPlayer.PlayCount,$LOCALIZE[567]: ,[CR]]$INFO[MusicPlayer.Time,$LOCALIZE[31016]: ,/]$INFO[MusicPlayer.Duration,,[CR]]</value>
+		<value condition="Control.IsVisible(506) + String.IsEqual(ListItem.DbType,album)">$INFO[ListItem.Album,,[CR][CR]]$INFO[ListItem.Artist,[COLOR grey2],[/COLOR][CR]]$INFO[ListItem.Year,[B],[/B][CR]]$INFO[ListItem.Genre,[I],[/I][CR]]</value>
+		<value condition="Control.IsVisible(506) + String.IsEqual(ListItem.DbType,song)">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title,,[CR][CR]]$INFO[ListItem.Artist,[COLOR grey2],[/COLOR][CR]]$INFO[ListItem.Album,[COLOR grey2],[/COLOR][CR]]$INFO[ListItem.DiscNumber,[COLOR grey2]$LOCALIZE[427] ,[/COLOR][CR]]$INFO[ListItem.Year,[B],[/B][CR]]$INFO[ListItem.Genre,[I],[/I][CR]]$INFO[ListItem.PlayCount,$LOCALIZE[567]: ,[CR]]$INFO[ListItem.Time,$LOCALIZE[180]: ,[COLOR blue] / [/COLOR]]$INFO[ListItem.Duration,,[CR]]</value>
+		<value condition="Control.IsVisible(507) + Player.HasAudio">$INFO[MusicPlayer.TrackNumber,,. ]$INFO[MusicPlayer.Title,,[CR][CR]]$INFO[MusicPlayer.Artist,[COLOR grey2],[/COLOR][CR]]$INFO[MusicPlayer.Album,[COLOR grey2],[/COLOR][CR]]$INFO[MusicPlayer.DiscNumber,[COLOR grey2]$LOCALIZE[427] ,[/COLOR][CR]]$INFO[MusicPlayer.Year,[B],[/B][CR]]$INFO[MusicPlayer.Genre,[I],[/I][CR]]$INFO[MusicPlayer.PlayCount,$LOCALIZE[567]: ,[CR]]$INFO[MusicPlayer.Time,$LOCALIZE[31016]: ,[COLOR blue] / [/COLOR]]$INFO[MusicPlayer.Duration,,[CR]]</value>
 	</variable>
 	<variable name="MusicInfoListViewtRating">
 		<value condition="Control.IsVisible(506)">$INFO[ListItem.UserRating,ratings/,.png]</value>
@@ -1111,37 +1112,41 @@
 		</control>
 	</include>
 	<include name="CommonPageCount">
-		<control type="group">
-			<animation effect="slide" start="0,0" end="-90,0" time="0" condition="system.getbool(input.enablemouse)">Conditional</animation>
-			<control type="label">
-				<description>Page Count Label</description>
-				<right>40</right>
-				<top>53r</top>
-				<width>500</width>
-				<height>20</height>
-				<font>font12</font>
-				<textcolor>grey2</textcolor>
-				<scroll>false</scroll>
-				<align>right</align>
-				<aligny>center</aligny>
-				<label>$INFO[Container.NumItems,([COLOR=blue],[/COLOR]) $LOCALIZE[31025]]$INFO[Container.CurrentPage, - $LOCALIZE[31024] ([COLOR=blue]]$INFO[Container.NumPages,/,[/COLOR])]</label>
-				<include>Window_OpenClose_Animation</include>
+		<param name="Info1">$INFO[Container.NumItems,([COLOR=blue],[/COLOR]) $LOCALIZE[31025]]$INFO[Container.CurrentPage, - $LOCALIZE[31024] ([COLOR=blue]]$INFO[Container.NumPages,/,[/COLOR])]</param>
+		<param name="Info2">$INFO[Container.TotalTime,$LOCALIZE[31009] ([COLOR=blue],[/COLOR])]</param>
+		<definition>
+			<control type="group">
+				<animation effect="slide" start="0,0" end="-90,0" time="0" condition="system.getbool(input.enablemouse)">Conditional</animation>
+				<control type="label">
+					<description>Page Count Label</description>
+					<right>40</right>
+					<top>53r</top>
+					<width>500</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>grey2</textcolor>
+					<scroll>false</scroll>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$PARAM[Info1]</label>
+					<include>Window_OpenClose_Animation</include>
+				</control>
+				<control type="label">
+					<description>Container Duration Label</description>
+					<right>40</right>
+					<top>32r</top>
+					<width>500</width>
+					<height>20</height>
+					<font>font12</font>
+					<textcolor>grey2</textcolor>
+					<scroll>false</scroll>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$PARAM[Info2]</label>
+					<include>Window_OpenClose_Animation</include>
+				</control>
 			</control>
-			<control type="label">
-				<description>Container Duration Label</description>
-				<right>40</right>
-				<top>32r</top>
-				<width>500</width>
-				<height>20</height>
-				<font>font12</font>
-				<textcolor>grey2</textcolor>
-				<scroll>false</scroll>
-				<align>right</align>
-				<aligny>center</aligny>
-				<label>$INFO[Container.TotalTime,$LOCALIZE[31009] ([COLOR=blue],[/COLOR])]</label>
-				<include>Window_OpenClose_Animation</include>
-			</control>
-		</control>
+		</definition>
 	</include>
 	<include name="SmallMusicInfo">
 		<control type="image">
@@ -1931,6 +1936,7 @@
 	<include name="CommonWindowHeader">
 		<param name="Icon">icon_home</param>
 		<param name="Label"></param>
+		<param name="ShowContainer">True</param>
 		<param name="ShowLabel2">False</param>
 		<definition>
 			<control type="group">
@@ -1960,6 +1966,7 @@
 						<include>WindowTitleCommons</include>
 						<label>[COLOR=blue] - [/COLOR]$INFO[Container.FolderName]</label>
 						<visible>!String.IsEmpty(Container.FolderName)</visible>
+						<visible>$PARAM[ShowContainer]</visible>
 					</control>
 					<control type="label">
 						<include>WindowTitleCommons</include>

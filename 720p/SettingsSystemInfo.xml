@@ -300,7 +300,7 @@
 					<width>720</width>
 					<height>350</height>
 					<font>font13</font>
-					<align>justify</align>
+					<align>left</align>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<pagecontrol>61</pagecontrol>
