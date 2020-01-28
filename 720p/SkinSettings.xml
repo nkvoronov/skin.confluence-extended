@@ -822,6 +822,19 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="209">
+						<description>Enable Search Button</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[90118]</label>
+						<onclick>Skin.ToggleSetting(EnableSearchButton)</onclick>
+						<selected>Skin.HasSetting(EnableSearchButton)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="210">
 						<description>No Floor Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -834,7 +847,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="210">
+					<control type="radiobutton" id="211">
 						<description>No Floor Everywhere Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -847,7 +860,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="label" id="211">
+					<control type="label" id="212">
 						<description>Images Label</description>
 						<width>750</width>
 						<height>45</height>
@@ -858,7 +871,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="212">
+					<control type="button" id="213">
 						<description>Studios Images</description>
 						<width>750</width>
 						<height>40</height>
@@ -872,7 +885,7 @@
 						<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 						<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=StudiosImages&amp;type=resource.images.studios)</onclick>
 					</control>
-					<control type="button" id="213">
+					<control type="button" id="214">
 						<description>Language Flags</description>
 						<width>750</width>
 						<height>40</height>
@@ -886,7 +899,7 @@
 						<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 						<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=LanguageFlags&amp;type=resource.images.languageflags)</onclick>
 					</control>
-					<control type="button" id="214">
+					<control type="button" id="215">
 						<description>Movie Genre Icons</description>
 						<width>750</width>
 						<height>40</height>
@@ -900,7 +913,7 @@
 						<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 						<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=MovieGenreIcons&amp;type=resource.images.moviegenreicons)</onclick>
 					</control>
-					<control type="button" id="215">
+					<control type="button" id="216">
 						<description>Music Genre Icons</description>
 						<width>750</width>
 						<height>40</height>
@@ -914,7 +927,7 @@
 						<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 						<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=MusicGenreIcons&amp;type=resource.images.musicgenreicons)</onclick>
 					</control>
-					<control type="button" id="216">
+					<control type="button" id="217">
 						<description>Weather Icons</description>
 						<width>750</width>
 						<height>40</height>
@@ -928,7 +941,7 @@
 						<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 						<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=WeatherIcons&amp;type=resource.images.weathericons)</onclick>
 					</control>
-					<control type="label" id="217">
+					<control type="label" id="218">
 						<description>Addons Label</description>
 						<width>750</width>
 						<height>45</height>
@@ -939,7 +952,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="218">
+					<control type="radiobutton" id="219">
 						<description>No Slide Addon</description>
 						<width>750</width>
 						<height>40</height>
@@ -952,7 +965,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="219">
+					<control type="radiobutton" id="220">
 						<description>No Label Addon</description>
 						<width>750</width>
 						<height>40</height>
@@ -965,7 +978,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="label" id="220">
+					<control type="label" id="221">
 						<description>Widget Label</description>
 						<width>750</width>
 						<height>45</height>
@@ -976,7 +989,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="221">
+					<control type="radiobutton" id="222">
 						<description>No Widget Title</description>
 						<width>750</width>
 						<height>40</height>
@@ -989,7 +1002,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="button" id="222">
+					<control type="button" id="223">
 						<description>Widget Limit Items</description>
 						<width>750</width>
 						<height>40</height>
@@ -1003,7 +1016,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="label" id="223">
+					<control type="label" id="224">
 						<description>Buttons Label</description>
 						<width>750</width>
 						<height>45</height>
@@ -1014,7 +1027,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="224">
+					<control type="radiobutton" id="225">
 						<description>Hide Power Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -1027,7 +1040,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="button" id="225">
+					<control type="button" id="226">
 						<description>Power Button Action</description>
 						<width>750</width>
 						<height>40</height>
@@ -1042,7 +1055,7 @@
 						<onclick>ActivateWindow(2119)</onclick>
 						<enable>!Skin.HasSetting(HidePowerButton)</enable>
 					</control>
-					<control type="radiobutton" id="226">
+					<control type="radiobutton" id="227">
 						<description>Hide Favorites Button</description>
 						<width>750</width>
 						<height>40</height>
@@ -1055,7 +1068,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="button" id="227">
+					<control type="button" id="228">
 						<description>Favorites Button Action</description>
 						<width>750</width>
 						<height>40</height>
@@ -1070,7 +1083,7 @@
 						<onclick>ActivateWindow(2119)</onclick>
 						<enable>!Skin.HasSetting(HideFavoritesButton)</enable>
 					</control>
-					<control type="label" id="228">
+					<control type="label" id="229">
 						<description>Debug Label</description>
 						<width>750</width>
 						<height>45</height>
@@ -1081,7 +1094,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="229">
+					<control type="radiobutton" id="230">
 						<description>Enable Skin Debug</description>
 						<width>750</width>
 						<height>40</height>
@@ -1095,12 +1108,12 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="image" id="230">
+					<control type="image" id="231">
 						<description>Separator Image</description>
 						<height>2</height>
 						<texture>separator2.png</texture>
 					</control>
-					<control type="button" id="231">
+					<control type="button" id="232">
 						<description>Reset Section</description>
 						<width>750</width>
 						<height>40</height>
@@ -1110,7 +1123,7 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(HomePageVideoInfo)|Skin.Reset(HomePageMusicInfo)|Skin.Reset(FullScreenClock)|Skin.Reset(SlideShowInfo)|Skin.Reset(HomePageWeatherInfo)|Skin.Reset(NoLogo)|Skin.Reset(HidePlayerPanel)|Skin.Reset(EnableHomeStats)|Skin.Reset(NoFloor)|Skin.Reset(NoFloorAll)|Skin.Reset(StudiosImages.name)|Skin.Reset(StudiosImages.ext)|Skin.Reset(StudiosImages.path)|Skin.Reset(LanguageFlags.name)|Skin.Reset(LanguageFlags.ext)|Skin.Reset(LanguageFlags.path)|Skin.Reset(MovieGenreIcons.name)|Skin.Reset(MovieGenreIcons.ext)|Skin.Reset(MovieGenreIcons.path)|Skin.Reset(MusicGenreIcons.name)|Skin.Reset(MusicGenreIcons.ext)|Skin.Reset(MusicGenreIcons.path)|Skin.Reset(WeatherIcons.name)|Skin.Reset(WeatherIcons.ext)|Skin.Reset(WeatherIcons.path)|Skin.Reset(WeatherIcons.multi)|Skin.Reset(NoSlideAddon)|Skin.Reset(NoLabelAddon)|Skin.Reset(WidgetLimitItems)|Skin.Reset(EnableWidgetsTitle)|Skin.Reset(HidePowerButton)|Skin.Reset(UsrPwrBtnCmd.Label)|Skin.Reset(UsrPwrBtnCmd.Path)|Skin.Reset(HideFavoritesButton)|Skin.Reset(UsrFavBtnCmd.Label)|Skin.Reset(UsrFavBtnCmd.Path)|Skin.Reset(EnableSkinDebug))</onclick>
+						<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(HomePageVideoInfo)|Skin.Reset(HomePageMusicInfo)|Skin.Reset(FullScreenClock)|Skin.Reset(SlideShowInfo)|Skin.Reset(HomePageWeatherInfo)|Skin.Reset(NoLogo)|Skin.Reset(HidePlayerPanel)|Skin.Reset(EnableHomeStats)|Skin.Reset(EnableSearchButton)|Skin.Reset(NoFloor)|Skin.Reset(NoFloorAll)|Skin.Reset(StudiosImages.name)|Skin.Reset(StudiosImages.ext)|Skin.Reset(StudiosImages.path)|Skin.Reset(LanguageFlags.name)|Skin.Reset(LanguageFlags.ext)|Skin.Reset(LanguageFlags.path)|Skin.Reset(MovieGenreIcons.name)|Skin.Reset(MovieGenreIcons.ext)|Skin.Reset(MovieGenreIcons.path)|Skin.Reset(MusicGenreIcons.name)|Skin.Reset(MusicGenreIcons.ext)|Skin.Reset(MusicGenreIcons.path)|Skin.Reset(WeatherIcons.name)|Skin.Reset(WeatherIcons.ext)|Skin.Reset(WeatherIcons.path)|Skin.Reset(WeatherIcons.multi)|Skin.Reset(NoSlideAddon)|Skin.Reset(NoLabelAddon)|Skin.Reset(WidgetLimitItems)|Skin.Reset(EnableWidgetsTitle)|Skin.Reset(HidePowerButton)|Skin.Reset(UsrPwrBtnCmd.Label)|Skin.Reset(UsrPwrBtnCmd.Path)|Skin.Reset(HideFavoritesButton)|Skin.Reset(UsrFavBtnCmd.Label)|Skin.Reset(UsrFavBtnCmd.Path)|Skin.Reset(EnableSkinDebug))</onclick>
 					</control>
 				</control>
 				<control type="scrollbar" id="62">
@@ -1687,7 +1700,7 @@
 				<colordiffuse>40FFFFFF</colordiffuse>
 			</control>
 			<control type="textbox" id="6">
-				<description>description area</description>
+				<description>Description</description>
 				<left>297</left>
 				<top>532</top>
 				<width>736</width>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window type="dialog" id="2125">
+<window id="2125" type="dialog">
 	<defaultcontrol always="true">450</defaultcontrol>
 	<coordinates>
 		<system>1</system>
@@ -7,13 +7,13 @@
 		<top>0</top>
 	</coordinates>
 	<controls>
-        <include content="CustomRandomDialog">
-            <param name="dlg_title" value="$LOCALIZE[89032]" />
-            <param name="id_win" value="2125" />
-            <param name="fallback_pic" value="DefaultMovies.png" />
-            <param name="list_pic" value="$VAR[PosterThumb2]" />
-            <param name="list_label" value="$INFO[ListItem.Label]" />
-            <param name="include_name" value="RandomMoviesContent" />
-        </include>
+		<include content="CustomRandomDialog">
+			<param name="dlg_title" value="$LOCALIZE[89032]" />
+			<param name="id_win" value="2125" />
+			<param name="fallback_pic" value="DefaultMovies.png" />
+			<param name="list_pic" value="$VAR[PosterThumb2]" />
+			<param name="list_label" value="$INFO[ListItem.Label]" />
+			<param name="include_name" value="RandomMoviesContent" />
+		</include>
 	</controls>
 </window>

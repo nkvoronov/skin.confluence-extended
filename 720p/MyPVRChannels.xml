@@ -178,7 +178,7 @@
 					<label>$INFO[Container(50).ListItem.EndTime]</label>
 				</control>
 				<control type="textbox">
-					<description>Plot Value for TVShow</description>
+					<description>Description For TVShow</description>
 					<left>0</left>
 					<top>52</top>
 					<width>690</width>
@@ -701,7 +701,7 @@
 						<textcolor>grey</textcolor>
 					</control>
 					<control type="textbox">
-						<description>Plot value</description>
+						<description>Description</description>
 						<left>280</left>
 						<top>57</top>
 						<width>840</width>

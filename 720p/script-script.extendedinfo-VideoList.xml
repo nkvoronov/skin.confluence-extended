@@ -196,7 +196,7 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="label">
-						<description>Premiered txt</description>
+						<description>Premiered Text</description>
 						<left>810</left>
 						<top>425</top>
 						<width>140</width>
@@ -208,19 +208,19 @@
 						<textcolor>blue</textcolor>
 					</control>
 					<control type="label">
-						<description>Premiered Value</description>
+						<description>Premiered</description>
 						<left>960</left>
 						<top>425</top>
 						<width>300</width>
 						<height>25</height>
-						<label>$INFO[ListItem.Premiered]</label>
+						<label fallback="10005">$INFO[ListItem.Premiered]</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>font13</font>
 						<scroll>true</scroll>
 					</control>
 					<control type="label">
-						<description>Genre txt</description>
+						<description>Genre Text</description>
 						<left>810</left>
 						<top>450</top>
 						<width>140</width>
@@ -232,12 +232,12 @@
 						<textcolor>blue</textcolor>
 					</control>
 					<control type="fadelabel">
-						<description>Genre Value</description>
+						<description>Genre</description>
 						<left>960</left>
 						<top>450</top>
 						<width>240</width>
 						<height>25</height>
-						<label>$INFO[ListItem.Genre]</label>
+						<label fallback="10005">$INFO[ListItem.Genre]</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>font13</font>
@@ -256,7 +256,7 @@
 						<left>825</left>
 						<top>490</top>
 						<width>380</width>
-						<height>148</height>
+						<height>146</height>
 						<font>font13</font>
 						<align>left</align>
 						<textcolor>white</textcolor>

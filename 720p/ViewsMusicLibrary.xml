@@ -152,41 +152,41 @@
 					<bordertexture border="8">ThumbShadow.png</bordertexture>
 					<bordersize>8</bordersize>
 				</control>
-				<control type="label">
-					<description>Description Header txt</description>
-					<left>10</left>
-					<top>240</top>
-					<width>290</width>
-					<height>20</height>
-					<label>$VAR[MusicInfoListViewLabel]</label>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font12_title</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<visible>!ListItem.IsParentFolder</visible>
-				</control>
-				<control type="image">
-					<left>10</left>
-					<top>280</top>
-					<width>168</width>
-					<height>20</height>
-					<texture fallback="ratings/0.png">$VAR[MusicInfoListViewtRating]</texture>
-					<visible>!ListItem.IsParentFolder</visible>
-				</control>
-				<control type="label">
-					<left>10</left>
-					<top>320</top>
-					<width>290</width>
-					<height>200</height>
-					<label>$VAR[MusicInfoListViewPanel]</label>
-					<wrapmultiline>true</wrapmultiline>
-					<scroll>true</scroll>
-					<align>left</align>
-					<font>font12_title</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<visible>!ListItem.IsParentFolder</visible>
+				<control type="group">
+					<visible>!ListItem.IsParentFolder | Control.IsVisible(507)</visible>
+					<control type="label">
+						<description>Description Header</description>
+						<left>10</left>
+						<top>240</top>
+						<width>290</width>
+						<height>20</height>
+						<label>$VAR[MusicInfoListViewLabel]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font12_title</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+					<control type="image">
+						<left>10</left>
+						<top>280</top>
+						<width>168</width>
+						<height>20</height>
+						<texture fallback="ratings/0.png">$VAR[MusicInfoListViewtRating]</texture>
+					</control>
+					<control type="label">
+						<left>10</left>
+						<top>320</top>
+						<width>290</width>
+						<height>200</height>
+						<label>$VAR[MusicInfoListViewPanel]</label>
+						<wrapmultiline>true</wrapmultiline>
+						<scroll>true</scroll>
+						<align>left</align>
+						<font>font12_title</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
 				</control>
 			</control>
 		</definition>
@@ -332,7 +332,7 @@
 		<control type="group">
 			<left>180</left>
 			<top>40</top>
-			<visible>Control.IsVisible(509) + !Skin.HasSetting(View509HideInfo)</visible>
+			<visible>Control.IsVisible(509) + !Skin.HasSetting(View509HideInfo) + !ListItem.IsParentFolder</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="image">
 				<left>0</left>
@@ -353,7 +353,6 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Property(Album_Artist)]</label>
-				<visible>!ListItem.IsParentFolder</visible>
 			</control>
 			<control type="label">
 				<left>40</left>
@@ -367,33 +366,17 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
-				<visible>!ListItem.IsParentFolder</visible>
-			</control>
-			<control type="label">
-				<left>40</left>
-				<top>50</top>
-				<width>840</width>
-				<height>20</height>
-				<font>font24_title</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>..</label>
-				<visible>ListItem.IsParentFolder</visible>
 			</control>
 			<control type="group">
 				<left>40</left>
 				<top>80</top>
-				<visible>!ListItem.IsParentFolder</visible>
 				<control type="label">
 					<left>0</left>
 					<top>0</top>
 					<width>400</width>
 					<height>30</height>
 					<font>font13_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<scroll>true</scroll>
 					<align>left</align>
@@ -446,7 +429,7 @@
 					<visible>!String.IsEmpty(ListItem.Userrating)</visible>
 				</control>
 				<control type="label">
-					<description>Rating value</description>
+					<description>Rating</description>
 					<left>100</left>
 					<top>95</top>
 					<width>160</width>
@@ -455,11 +438,11 @@
 					<visible>!String.IsEmpty(ListItem.Userrating)</visible>
 				</control>
 				<control type="textbox">
-					<description>Description Value for Album</description>
+					<description>Description For Album</description>
 					<left>0</left>
 					<top>152</top>
 					<width>850</width>
-					<height>150</height>
+					<height>140</height>
 					<font>font13</font>
 					<align>left</align>
 					<pagecontrol/>
@@ -805,7 +788,7 @@
 					<top>310</top>
 					<visible>!ListItem.IsParentFolder</visible>
 					<control type="label">
-						<description>Born txt</description>
+						<description>Born Text</description>
 						<left>0</left>
 						<top>0</top>
 						<width>140</width>
@@ -818,7 +801,7 @@
 						<visible>!String.IsEmpty(ListItem.Property(Artist_Born))</visible>
 					</control>
 					<control type="label">
-						<description>Born Value</description>
+						<description>Born</description>
 						<left>150</left>
 						<top>0</top>
 						<width>350</width>
@@ -831,7 +814,7 @@
 						<visible>!String.IsEmpty(ListItem.Property(Artist_Born))</visible>
 					</control>
 					<control type="label">
-						<description>Formed txt</description>
+						<description>Formed Text</description>
 						<left>0</left>
 						<top>0</top>
 						<width>140</width>
@@ -844,7 +827,7 @@
 						<visible>!String.IsEmpty(ListItem.Property(Artist_Formed))</visible>
 					</control>
 					<control type="label">
-						<description>Formed Value</description>
+						<description>Formed</description>
 						<left>150</left>
 						<top>0</top>
 						<width>350</width>
@@ -857,7 +840,7 @@
 						<visible>!String.IsEmpty(ListItem.Property(Artist_Formed))</visible>
 					</control>
 					<control type="label">
-						<description>Genre txt</description>
+						<description>Genre Text</description>
 						<left>0</left>
 						<top>30</top>
 						<width>140</width>
@@ -870,7 +853,7 @@
 						<visible>!String.IsEmpty(ListItem.Property(Artist_Genre))</visible>
 					</control>
 					<control type="label">
-						<description>Genre Value</description>
+						<description>Genre</description>
 						<left>150</left>
 						<top>30</top>
 						<width>300</width>
@@ -890,7 +873,7 @@
 						<texture>separator.png</texture>
 					</control>
 					<control type="textbox">
-						<description>Description Value for Artist</description>
+						<description>Description For Artist</description>
 						<left>10</left>
 						<top>72</top>
 						<width>490</width>
@@ -1038,33 +1021,34 @@
 					<bordertexture border="8">ThumbShadow.png</bordertexture>
 					<bordersize>8</bordersize>
 				</control>
-				<control type="label">
-					<description>Description Header txt</description>
-					<left>10</left>
-					<top>240</top>
-					<width>290</width>
-					<height>25</height>
-					<label>$LOCALIZE[21821]</label>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font12_title</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
+				<control type="group">
 					<visible>!ListItem.IsParentFolder</visible>
-				</control>
-				<control type="textbox">
-					<description>Description Value for Album</description>
-					<left>10</left>
-					<top>280</top>
-					<width>290</width>
-					<height>295</height>
-					<font>font13</font>
-					<align>left</align>
-					<pagecontrol/>
-					<textcolor>white</textcolor>
-					<label>$VAR[MusicInfoLabel]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-					<visible>!ListItem.IsParentFolder</visible>
+					<control type="label">
+						<description>Description Header</description>
+						<left>10</left>
+						<top>240</top>
+						<width>290</width>
+						<height>25</height>
+						<label>$LOCALIZE[21821]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font12_title</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+					<control type="textbox">
+						<description>Description For Album</description>
+						<left>10</left>
+						<top>280</top>
+						<width>290</width>
+						<height>285</height>
+						<font>font13</font>
+						<align>left</align>
+						<pagecontrol/>
+						<textcolor>white</textcolor>
+						<label>$VAR[MusicInfoLabel]</label>
+						<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					</control>
 				</control>
 			</control>
 		</control>

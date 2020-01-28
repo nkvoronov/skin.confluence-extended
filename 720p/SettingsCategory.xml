@@ -179,7 +179,7 @@
 				<colordiffuse>40FFFFFF</colordiffuse>
 			</control>
 			<control type="textbox" id="6">
-				<description>description area</description>
+				<description>Description</description>
 				<left>297</left>
 				<top>532</top>
 				<width>736</width>

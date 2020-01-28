@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window type="dialog" id="2124">
+<window id="2124" type="dialog">
 	<defaultcontrol always="true">450</defaultcontrol>
 	<coordinates>
 		<system>1</system>
@@ -7,13 +7,13 @@
 		<top>0</top>
 	</coordinates>
 	<controls>
-        <include content="CustomRandomDialog">
-            <param name="dlg_title" value="$LOCALIZE[89035]" />
-            <param name="id_win" value="2124" />
-            <param name="fallback_pic" value="DefaultTVShows.png" />
-            <param name="list_pic" value="$INFO[Container(450).ListItem.Thumb]" />
-            <param name="list_label" value="$INFO[ListItem.TVShowTitle] - $INFO[ListItem.Label]" />
-            <param name="include_name" value="RandomEpisodesContent" />
-        </include>
+		<include content="CustomRandomDialog">
+			<param name="dlg_title" value="$LOCALIZE[89035]" />
+			<param name="id_win" value="2124" />
+			<param name="fallback_pic" value="DefaultTVShows.png" />
+			<param name="list_pic" value="$INFO[Container(450).ListItem.Thumb]" />
+			<param name="list_label" value="$INFO[ListItem.TVShowTitle] - $INFO[ListItem.Label]" />
+			<param name="include_name" value="RandomEpisodesContent" />
+		</include>
 	</controls>
 </window>

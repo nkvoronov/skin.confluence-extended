@@ -165,7 +165,7 @@
 			<showonepage>true</showonepage>
 		</control>
 		<control type="textbox" id="400">
-			<description>PLOT</description>
+			<description>Description</description>
 			<left>40</left>
 			<top>402</top>
 			<width>750</width>

@@ -17,7 +17,7 @@
 			<param name="CloseButtonNav" value="9000" />
 		</include>
 		<control type="textbox" id="9">
-			<description>text</description>
+			<description>Text</description>
 			<left>30</left>
 			<top>62</top>
 			<width>590</width>

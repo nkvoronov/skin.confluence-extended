@@ -1307,3 +1307,7 @@ msgstr ""
 msgctxt "#90117"
 msgid "Search TheMovieDB"
 msgstr ""
+
+msgctxt "#90118"
+msgid "Show search button"
+msgstr ""

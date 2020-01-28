@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window type="dialog" id="2126">
+<window id="2126" type="dialog">
 	<defaultcontrol always="true">450</defaultcontrol>
 	<coordinates>
 		<system>1</system>
@@ -7,13 +7,13 @@
 		<top>0</top>
 	</coordinates>
 	<controls>
-        <include content="CustomRandomDialog">
-            <param name="dlg_title" value="$LOCALIZE[89038]" />
-            <param name="id_win" value="2126" />
-            <param name="fallback_pic" value="DefaultMusicVideos.png" />
-            <param name="list_pic" value="$INFO[Container(450).ListItem.Thumb]" />
-            <param name="list_label" value="$INFO[ListItem.Artist] - $INFO[ListItem.Label]" />
-            <param name="include_name" value="RandomMusicVideoContent" />
-        </include>
+		<include content="CustomRandomDialog">
+			<param name="dlg_title" value="$LOCALIZE[89038]" />
+			<param name="id_win" value="2126" />
+			<param name="fallback_pic" value="DefaultMusicVideos.png" />
+			<param name="list_pic" value="$INFO[Container(450).ListItem.Thumb]" />
+			<param name="list_label" value="$INFO[ListItem.Artist] - $INFO[ListItem.Label]" />
+			<param name="include_name" value="RandomMusicVideoContent" />
+		</include>
 	</controls>
 </window>

@@ -182,7 +182,7 @@
 				<texture border="5">black-back2.png</texture>
 			</control>
 			<control type="textbox">
-				<description>Appearance Description</description>
+				<description>Description</description>
 				<left>300</left>
 				<top>522</top>
 				<width>740</width>
