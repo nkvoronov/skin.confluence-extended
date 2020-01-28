@@ -1141,3 +1141,7 @@ msgstr "Шукати в YouTube"
 msgctxt "#90117"
 msgid "Search TheMovieDB"
 msgstr "Шукати в TheMovieDB"
+
+msgctxt "#90118"
+msgid "Show search button"
+msgstr "Показувати кнопку пошуку"

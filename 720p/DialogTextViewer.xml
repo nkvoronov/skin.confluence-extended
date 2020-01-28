@@ -46,7 +46,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="textbox" id="5">
-					<description>textarea</description>
+					<description>Text Area</description>
 					<left>210</left>
 					<top>92</top>
 					<width>1000</width>

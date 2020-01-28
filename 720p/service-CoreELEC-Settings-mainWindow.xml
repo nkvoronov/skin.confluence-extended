@@ -1224,7 +1224,7 @@
 				</control>
 			</control>
 			<control type="textbox" id="1400">
-				<description>Appearance Description</description>
+				<description>Description</description>
 				<left>285</left>
 				<top>520</top>
 				<width>740</width>

@@ -78,6 +78,7 @@
 						<label>[B]$INFO[ListItem.Label][/B]</label>
 					</control>
 					<control type="textbox">
+						<description>Description</description>
 						<left>90</left>
 						<top>32</top>
 						<width>870</width>
@@ -143,6 +144,7 @@
 						<label>[B]$INFO[ListItem.Label][/B]</label>
 					</control>
 					<control type="textbox">
+						<description>Description</description>
 						<left>90</left>
 						<top>32</top>
 						<width>870</width>

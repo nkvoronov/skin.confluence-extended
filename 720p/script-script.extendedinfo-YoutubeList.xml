@@ -144,7 +144,7 @@
 								<selectedcolor>selected</selectedcolor>
 								<align>center</align>
 								<aligny>center</aligny>
-								<label>$INFO[ListItem.Premiered]$INFO[ListItem.Property(viewcount),[COLOR=blue] - [/COLOR]$ADDON[script.extendedinfo 32061] , ]$INFO[ListItem.Property(duration),[COLOR=blue] - [/COLOR],]$INFO[ListItem.Property(itemcount),[COLOR=blue] - [/COLOR], $LOCALIZE[36913]]</label>
+								<label>$INFO[ListItem.Premiered]$INFO[ListItem.Property(viewcount),[COLOR=blue] - [/COLOR]$ADDON[script.extendedinfo 32061] , ]$INFO[ListItem.Property(duration),[COLOR=blue] - [/COLOR],]</label>
 							</control>
 						</control>
 					</focusedlayout>

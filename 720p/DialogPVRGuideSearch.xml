@@ -55,7 +55,7 @@
 			<ondown>10</ondown>
 		</control>
 		<control type="textbox">
-			<description>Search help</description>
+			<description>Search Help</description>
 			<left>30</left>
 			<top>157</top>
 			<width>800</width>

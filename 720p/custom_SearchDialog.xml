@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window type="dialog" id="2212">
+<window id="2212" type="dialog">
 	<defaultcontrol>9001</defaultcontrol>
 	<include>dialogeffect</include>
 	<coordinates>

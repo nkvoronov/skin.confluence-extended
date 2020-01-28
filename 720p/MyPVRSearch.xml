@@ -406,7 +406,7 @@
 						<textcolor>grey</textcolor>
 					</control>
 					<control type="textbox">
-						<description>Plot value</description>
+						<description>Description</description>
 						<left>280</left>
 						<top>57</top>
 						<width>800</width>

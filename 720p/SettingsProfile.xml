@@ -269,7 +269,7 @@
 						<colordiffuse>40FFFFFF</colordiffuse>
 					</control>
 					<control type="textbox">
-						<description>description area</description>
+						<description>Description</description>
 						<left>7</left>
 						<top>32</top>
 						<width>736</width>
@@ -282,7 +282,7 @@
 						<visible>Control.Hasfocus(4)</visible>
 					</control>
 					<control type="textbox">
-						<description>description area</description>
+						<description>Description</description>
 						<left>7</left>
 						<top>32</top>
 						<width>736</width>

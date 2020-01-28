@@ -4226,6 +4226,7 @@
 		<onclick>Skin.Reset(NoLogo)</onclick>
 		<onclick>Skin.Reset(HidePlayerPanel)</onclick>
 		<onclick>Skin.Reset(EnableHomeStats)</onclick>
+		<onclick>Skin.Reset(EnableSearchButton)</onclick>
 		<onclick>Skin.Reset(NoFloor)</onclick>
 		<onclick>Skin.Reset(NoFloorAll)</onclick>
 		<onclick>Skin.Reset(StudiosImages.name)</onclick>

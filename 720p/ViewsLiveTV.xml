@@ -149,7 +149,7 @@
 					<pauseatend>1000</pauseatend>
 				</control>
 				<control type="textbox">
-					<description>Description Value for TV Show</description>
+					<description>Description For TVShow</description>
 					<left>10</left>
 					<top>332</top>
 					<width>290</width>
