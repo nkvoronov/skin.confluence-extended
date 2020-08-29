@@ -228,6 +228,10 @@ msgctxt "#31352"
 msgid "Stop"
 msgstr "Stopp"
 
+msgctxt "#31353"
+msgid "Fast forward"
+msgstr "Edasi"
+
 msgctxt "#31354"
 msgid "Rewind"
 msgstr "Tagasi"
@@ -327,6 +331,10 @@ msgstr "ESITA PLAAT"
 msgctxt "#31959"
 msgid "SYSTEM"
 msgstr "SÜSTEEM"
+
+msgctxt "#31961"
+msgid "Timeshift"
+msgstr "Ajanihe"
 
 msgctxt "#31963"
 msgid "Profile name"
