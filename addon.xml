@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.confluence-extended-s" version="4.7.5.190" name="Confluence Extended Shortcuts" provider-name="Jezz_X, Team Kodi, YLLOW_DRAGON, plood">
+<addon id="skin.confluence-extended-s" version="4.7.5.191" name="Confluence Extended Shortcuts" provider-name="Jezz_X, Team Kodi, YLLOW_DRAGON, plood">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0"/>
-		<import addon="script.image.resource.select" version="1.1.0"/>
-		<import addon="script.skinshortcuts" version="1.0.10"/>
-		<import addon="script.skin.helper.service" version="1.0.10"/>
-		<import addon="script.skin.helper.skinbackup" version="1.0.10"/>
-		<import addon="script.skin.helper.widgets" version="1.0.10"/>
-		<import addon="script.skin.helper.backgrounds" version="1.0.10"/>
-		<import addon="script.skin.helper.colorpicker" version="1.0.0"/>
+		<import addon="script.image.resource.select" version="3.0.2"/>
+		<import addon="script.skinshortcuts" version="1.0.20"/>
+		<import addon="script.skin.helper.service" version="1.1.26"/>
+		<import addon="script.skin.helper.skinbackup" version="1.0.20"/>
+		<import addon="script.skin.helper.widgets" version="1.0.39"/>
+		<import addon="script.skin.helper.backgrounds" version="1.0.34"/>
+		<import addon="script.skin.helper.colorpicker" version="1.0.13"/>
 	</requires>
 	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" debugging="false" effectslowdown="1.0">
 		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
